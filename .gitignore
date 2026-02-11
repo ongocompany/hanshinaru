@@ -1,0 +1,33 @@
+# macOS 시스템 파일
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# 썸네일
+._*
+
+# 임시 파일
+*~
+*.swp
+*.swo
+
+# IDE 설정 (개인 환경)
+.vscode/
+.idea/
+
+# 로그 파일
+*.log
+npm-debug.log*
+
+# 환경 변수 (민감 정보)
+.env
+.env.local
+
+# Node.js (나중에 필요할 수도)
+node_modules/
+dist/
+build/
+
+# 백업 파일
+*.bak
+*.backup

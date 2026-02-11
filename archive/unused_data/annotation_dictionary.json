@@ -1,0 +1,2343 @@
+[
+  {
+    "key": "초당",
+    "type": "era",
+    "priority": "medium",
+    "title": {
+      "ko": "초당",
+      "zh": "初唐"
+    },
+    "aliases": [
+      "初唐"
+    ],
+    "wikipedia": {
+      "koTitle": "당나라",
+      "enTitle": ""
+    },
+    "manualOnly": true
+  },
+  {
+    "key": "성당",
+    "type": "era",
+    "priority": "medium",
+    "title": {
+      "ko": "성당",
+      "zh": "盛唐"
+    },
+    "aliases": [
+      "盛唐"
+    ],
+    "wikipedia": {
+      "koTitle": "당나라",
+      "enTitle": ""
+    },
+    "manualOnly": true
+  },
+  {
+    "key": "중당",
+    "type": "era",
+    "priority": "medium",
+    "title": {
+      "ko": "중당",
+      "zh": "中唐"
+    },
+    "aliases": [
+      "中唐"
+    ],
+    "wikipedia": {
+      "koTitle": "당나라",
+      "enTitle": ""
+    },
+    "manualOnly": true
+  },
+  {
+    "key": "만당",
+    "type": "era",
+    "priority": "medium",
+    "title": {
+      "ko": "만당",
+      "zh": "晩唐"
+    },
+    "aliases": [
+      "말당",
+      "晩唐"
+    ],
+    "wikipedia": {
+      "koTitle": "당나라",
+      "enTitle": ""
+    },
+    "manualOnly": true
+  },
+  {
+    "key": "당 고조",
+    "type": "person",
+    "priority": "high",
+    "title": {
+      "ko": "당 고조",
+      "zh": "唐高祖"
+    },
+    "aliases": [
+      "이연",
+      "李淵"
+    ],
+    "wikipedia": {
+      "koTitle": "당 고조",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "이연",
+    "type": "person",
+    "priority": "high",
+    "title": {
+      "ko": "이연",
+      "zh": "李淵"
+    },
+    "aliases": [
+      "당 고조"
+    ],
+    "wikipedia": {
+      "koTitle": "이연",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "이세민",
+    "type": "person",
+    "priority": "high",
+    "title": {
+      "ko": "이세민",
+      "zh": "李世民"
+    },
+    "aliases": [
+      "당 태종",
+      "唐太宗"
+    ],
+    "wikipedia": {
+      "koTitle": "이세민",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "당 태종",
+    "type": "person",
+    "priority": "high",
+    "title": {
+      "ko": "당 태종",
+      "zh": "唐太宗"
+    },
+    "aliases": [
+      "이세민"
+    ],
+    "wikipedia": {
+      "koTitle": "당 태종",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "당 고종",
+    "type": "person",
+    "priority": "high",
+    "title": {
+      "ko": "당 고종",
+      "zh": "唐高宗"
+    },
+    "aliases": [
+      "이치",
+      "李治"
+    ],
+    "wikipedia": {
+      "koTitle": "당 고종",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "측천무후",
+    "type": "person",
+    "priority": "high",
+    "title": {
+      "ko": "측천무후",
+      "zh": "則天武后"
+    },
+    "aliases": [
+      "무측천",
+      "武則天"
+    ],
+    "wikipedia": {
+      "koTitle": "측천무후",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "무측천",
+    "type": "person",
+    "priority": "high",
+    "title": {
+      "ko": "무측천",
+      "zh": "武則天"
+    },
+    "aliases": [
+      "측천무후"
+    ],
+    "wikipedia": {
+      "koTitle": "무측천",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "당 중종",
+    "type": "person",
+    "priority": "medium",
+    "title": {
+      "ko": "당 중종",
+      "zh": "唐中宗"
+    },
+    "aliases": [
+      "이현",
+      "李顯"
+    ],
+    "wikipedia": {
+      "koTitle": "당 중종",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "당 예종",
+    "type": "person",
+    "priority": "medium",
+    "title": {
+      "ko": "당 예종",
+      "zh": "唐睿宗"
+    },
+    "aliases": [
+      "이단",
+      "李旦"
+    ],
+    "wikipedia": {
+      "koTitle": "당 예종",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "당 현종",
+    "type": "person",
+    "priority": "high",
+    "title": {
+      "ko": "당 현종",
+      "zh": "唐玄宗"
+    },
+    "aliases": [
+      "현종",
+      "이융기",
+      "李隆基"
+    ],
+    "wikipedia": {
+      "koTitle": "당 현종",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "현종",
+    "type": "person",
+    "priority": "high",
+    "title": {
+      "ko": "현종",
+      "zh": "玄宗"
+    },
+    "aliases": [
+      "당 현종"
+    ],
+    "wikipedia": {
+      "koTitle": "현종",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "당 숙종",
+    "type": "person",
+    "priority": "high",
+    "title": {
+      "ko": "당 숙종",
+      "zh": "唐肅宗"
+    },
+    "aliases": [
+      "이형",
+      "李亨",
+      "숙종"
+    ],
+    "wikipedia": {
+      "koTitle": "당 숙종",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "당 대종",
+    "type": "person",
+    "priority": "medium",
+    "title": {
+      "ko": "당 대종",
+      "zh": "唐代宗"
+    },
+    "aliases": [
+      "이예",
+      "李豫"
+    ],
+    "wikipedia": {
+      "koTitle": "당 대종",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "당 덕종",
+    "type": "person",
+    "priority": "medium",
+    "title": {
+      "ko": "당 덕종",
+      "zh": "唐德宗"
+    },
+    "aliases": [
+      "이괄",
+      "李适",
+      "이적"
+    ],
+    "wikipedia": {
+      "koTitle": "당 덕종",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "당 헌종",
+    "type": "person",
+    "priority": "medium",
+    "title": {
+      "ko": "당 헌종",
+      "zh": "唐憲宗"
+    },
+    "aliases": [
+      "이순",
+      "李純"
+    ],
+    "wikipedia": {
+      "koTitle": "당 헌종",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "당 목종",
+    "type": "person",
+    "priority": "low",
+    "title": {
+      "ko": "당 목종",
+      "zh": "唐穆宗"
+    },
+    "aliases": [
+      "이항",
+      "李恒"
+    ],
+    "wikipedia": {
+      "koTitle": "당 목종",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "당 경종",
+    "type": "person",
+    "priority": "low",
+    "title": {
+      "ko": "당 경종",
+      "zh": "唐敬宗"
+    },
+    "aliases": [
+      "이담",
+      "李湛"
+    ],
+    "wikipedia": {
+      "koTitle": "당 경종",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "당 문종",
+    "type": "person",
+    "priority": "low",
+    "title": {
+      "ko": "당 문종",
+      "zh": "唐文宗"
+    },
+    "aliases": [
+      "이앙",
+      "李昂"
+    ],
+    "wikipedia": {
+      "koTitle": "당 문종",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "당 무종",
+    "type": "person",
+    "priority": "low",
+    "title": {
+      "ko": "당 무종",
+      "zh": "唐武宗"
+    },
+    "aliases": [
+      "이염",
+      "李炎"
+    ],
+    "wikipedia": {
+      "koTitle": "당 무종",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "당 선종",
+    "type": "person",
+    "priority": "low",
+    "title": {
+      "ko": "당 선종",
+      "zh": "唐宣宗"
+    },
+    "aliases": [
+      "이침",
+      "李忱"
+    ],
+    "wikipedia": {
+      "koTitle": "당 선종",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "당 의종",
+    "type": "person",
+    "priority": "low",
+    "title": {
+      "ko": "당 의종",
+      "zh": "唐懿宗"
+    },
+    "aliases": [
+      "이추",
+      "李漼"
+    ],
+    "wikipedia": {
+      "koTitle": "당 의종",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "당 희종",
+    "type": "person",
+    "priority": "low",
+    "title": {
+      "ko": "당 희종",
+      "zh": "唐僖宗"
+    },
+    "aliases": [
+      "이연",
+      "李儇"
+    ],
+    "wikipedia": {
+      "koTitle": "당 희종",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "당 소종",
+    "type": "person",
+    "priority": "low",
+    "title": {
+      "ko": "당 소종",
+      "zh": "唐昭宗"
+    },
+    "aliases": [
+      "이엽",
+      "李曄"
+    ],
+    "wikipedia": {
+      "koTitle": "당 소종",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "당 애종",
+    "type": "person",
+    "priority": "low",
+    "title": {
+      "ko": "당 애종",
+      "zh": "唐哀帝"
+    },
+    "aliases": [
+      "이축",
+      "李柷"
+    ],
+    "wikipedia": {
+      "koTitle": "당 애종",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "양귀비",
+    "type": "person",
+    "priority": "high",
+    "title": {
+      "ko": "양귀비",
+      "zh": "楊貴妃"
+    },
+    "aliases": [
+      "양옥환",
+      "楊玉環"
+    ],
+    "wikipedia": {
+      "koTitle": "양귀비",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "양국충",
+    "type": "person",
+    "priority": "high",
+    "title": {
+      "ko": "양국충",
+      "zh": "楊國忠"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "양국충",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "이임보",
+    "type": "person",
+    "priority": "high",
+    "title": {
+      "ko": "이임보",
+      "zh": "李林甫"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "이임보",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "고력사",
+    "type": "person",
+    "priority": "medium",
+    "title": {
+      "ko": "고력사",
+      "zh": "高力士"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "고력사",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "괵국부인",
+    "type": "person",
+    "priority": "medium",
+    "title": {
+      "ko": "괵국부인",
+      "zh": "虢國夫人"
+    },
+    "aliases": [
+      "虢國夫人 楊氏",
+      "양귀비의 언니"
+    ],
+    "wikipedia": {
+      "koTitle": "괵국부인",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "한국부인",
+    "type": "person",
+    "priority": "low",
+    "title": {
+      "ko": "한국부인",
+      "zh": "韓國夫人"
+    },
+    "aliases": [
+      "韓國夫人 楊氏"
+    ],
+    "wikipedia": {
+      "koTitle": "한국부인",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "진국부인",
+    "type": "person",
+    "priority": "low",
+    "title": {
+      "ko": "진국부인",
+      "zh": "秦國夫人"
+    },
+    "aliases": [
+      "秦國夫人 楊氏"
+    ],
+    "wikipedia": {
+      "koTitle": "진국부인",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "양현염",
+    "type": "person",
+    "priority": "low",
+    "title": {
+      "ko": "양현염",
+      "zh": "楊玄琰"
+    },
+    "aliases": [
+      "양귀비의 부친"
+    ],
+    "wikipedia": {
+      "koTitle": "양현염",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "안녹산",
+    "type": "person",
+    "priority": "high",
+    "title": {
+      "ko": "안녹산",
+      "zh": "安祿山"
+    },
+    "aliases": [
+      "安禄山"
+    ],
+    "wikipedia": {
+      "koTitle": "안녹산",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "사사명",
+    "type": "person",
+    "priority": "high",
+    "title": {
+      "ko": "사사명",
+      "zh": "史思明"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "사사명",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "안경서",
+    "type": "person",
+    "priority": "medium",
+    "title": {
+      "ko": "안경서",
+      "zh": "安慶緒"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "안경서",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "안경종",
+    "type": "person",
+    "priority": "low",
+    "title": {
+      "ko": "안경종",
+      "zh": "安慶宗"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "안경종",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "곽자의",
+    "type": "person",
+    "priority": "high",
+    "title": {
+      "ko": "곽자의",
+      "zh": "郭子儀"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "곽자의",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "이광필",
+    "type": "person",
+    "priority": "high",
+    "title": {
+      "ko": "이광필",
+      "zh": "李光弼"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "이광필",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "봉상청",
+    "type": "person",
+    "priority": "medium",
+    "title": {
+      "ko": "봉상청",
+      "zh": "封常清"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "봉상청",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "고선지",
+    "type": "person",
+    "priority": "medium",
+    "title": {
+      "ko": "고선지",
+      "zh": "高仙芝"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "고선지",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "장순",
+    "type": "person",
+    "priority": "medium",
+    "title": {
+      "ko": "장순",
+      "zh": "張巡"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "장순",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "허원",
+    "type": "person",
+    "priority": "low",
+    "title": {
+      "ko": "허원",
+      "zh": "許遠"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "허원",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "이필",
+    "type": "person",
+    "priority": "low",
+    "title": {
+      "ko": "이필",
+      "zh": "李泌"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "이필",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "황소",
+    "type": "person",
+    "priority": "high",
+    "title": {
+      "ko": "황소",
+      "zh": "黃巢"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "황소",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "주전충",
+    "type": "person",
+    "priority": "high",
+    "title": {
+      "ko": "주전충",
+      "zh": "朱全忠"
+    },
+    "aliases": [
+      "주온",
+      "朱溫"
+    ],
+    "wikipedia": {
+      "koTitle": "주전충",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "이극용",
+    "type": "person",
+    "priority": "medium",
+    "title": {
+      "ko": "이극용",
+      "zh": "李克用"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "이극용",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "이사원",
+    "type": "person",
+    "priority": "low",
+    "title": {
+      "ko": "이사원",
+      "zh": "李嗣源"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "이사원",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "이존욱",
+    "type": "person",
+    "priority": "low",
+    "title": {
+      "ko": "이존욱",
+      "zh": "李存勖"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "이존욱",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "이무정",
+    "type": "person",
+    "priority": "low",
+    "title": {
+      "ko": "이무정",
+      "zh": "李茂貞"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "이무정",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "송경",
+    "type": "person",
+    "priority": "medium",
+    "title": {
+      "ko": "송경",
+      "zh": "宋璟"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "송경",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "요숭",
+    "type": "person",
+    "priority": "medium",
+    "title": {
+      "ko": "요숭",
+      "zh": "姚崇"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "요숭",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "장구령",
+    "type": "person",
+    "priority": "medium",
+    "title": {
+      "ko": "장구령",
+      "zh": "張九齡"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "장구령",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "배관",
+    "type": "person",
+    "priority": "low",
+    "title": {
+      "ko": "배관",
+      "zh": "裴寬"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "배관",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "우문융",
+    "type": "person",
+    "priority": "low",
+    "title": {
+      "ko": "우문융",
+      "zh": "宇文融"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "우문융",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "이덕유",
+    "type": "person",
+    "priority": "medium",
+    "title": {
+      "ko": "이덕유",
+      "zh": "李德裕"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "이덕유",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "우우",
+    "type": "person",
+    "priority": "medium",
+    "title": {
+      "ko": "우우",
+      "zh": "牛僧孺"
+    },
+    "aliases": [
+      "우승유"
+    ],
+    "wikipedia": {
+      "koTitle": "우우",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "이종민",
+    "type": "person",
+    "priority": "low",
+    "title": {
+      "ko": "이종민",
+      "zh": "李宗閔"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "이종민",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "왕우",
+    "type": "person",
+    "priority": "low",
+    "title": {
+      "ko": "왕우",
+      "zh": "王鉷"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "왕우",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "위거",
+    "type": "person",
+    "priority": "low",
+    "title": {
+      "ko": "위거",
+      "zh": "韋據"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "위거",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "절도사",
+    "type": "office",
+    "priority": "high",
+    "title": {
+      "ko": "절도사",
+      "zh": "節度使"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "절도사",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "번진",
+    "type": "institution",
+    "priority": "high",
+    "title": {
+      "ko": "번진",
+      "zh": "藩鎭"
+    },
+    "aliases": [
+      "번진 체제",
+      "藩鎭體制"
+    ],
+    "wikipedia": {
+      "koTitle": "번진",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "과거제",
+    "type": "institution",
+    "priority": "high",
+    "title": {
+      "ko": "과거제",
+      "zh": "科擧"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "과거제",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "진사과",
+    "type": "office",
+    "priority": "medium",
+    "title": {
+      "ko": "진사과",
+      "zh": "進士科"
+    },
+    "aliases": [
+      "진사"
+    ],
+    "wikipedia": {
+      "koTitle": "진사과",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "삼성육부",
+    "type": "institution",
+    "priority": "medium",
+    "title": {
+      "ko": "삼성육부",
+      "zh": "三省六部"
+    },
+    "aliases": [
+      "삼성",
+      "육부"
+    ],
+    "wikipedia": {
+      "koTitle": "삼성육부",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "중서성",
+    "type": "institution",
+    "priority": "low",
+    "title": {
+      "ko": "중서성",
+      "zh": "中書省"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "중서성",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "문하성",
+    "type": "institution",
+    "priority": "low",
+    "title": {
+      "ko": "문하성",
+      "zh": "門下省"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "문하성",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "상서성",
+    "type": "institution",
+    "priority": "low",
+    "title": {
+      "ko": "상서성",
+      "zh": "尙書省"
+    },
+    "aliases": [
+      "상서성",
+      "尚書省"
+    ],
+    "wikipedia": {
+      "koTitle": "상서성",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "양세법",
+    "type": "institution",
+    "priority": "high",
+    "title": {
+      "ko": "양세법",
+      "zh": "兩稅法"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "양세법",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "균전제",
+    "type": "institution",
+    "priority": "medium",
+    "title": {
+      "ko": "균전제",
+      "zh": "均田制"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "균전제",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "조용조",
+    "type": "institution",
+    "priority": "medium",
+    "title": {
+      "ko": "조용조",
+      "zh": "租庸調"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "조용조",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "부병제",
+    "type": "institution",
+    "priority": "medium",
+    "title": {
+      "ko": "부병제",
+      "zh": "府兵制"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "부병제",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "모병제",
+    "type": "institution",
+    "priority": "medium",
+    "title": {
+      "ko": "모병제",
+      "zh": "募兵制"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "모병제",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "환관",
+    "type": "office",
+    "priority": "high",
+    "title": {
+      "ko": "환관",
+      "zh": "宦官"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "환관",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "금군",
+    "type": "office",
+    "priority": "low",
+    "title": {
+      "ko": "금군",
+      "zh": "禁軍"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "금군",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "신책군",
+    "type": "office",
+    "priority": "low",
+    "title": {
+      "ko": "신책군",
+      "zh": "神策軍"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "신책군",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "문벌귀족",
+    "type": "institution",
+    "priority": "medium",
+    "title": {
+      "ko": "문벌귀족",
+      "zh": "門閥貴族"
+    },
+    "aliases": [
+      "문벌"
+    ],
+    "wikipedia": {
+      "koTitle": "문벌귀족",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "봉선",
+    "type": "institution",
+    "priority": "low",
+    "title": {
+      "ko": "봉선",
+      "zh": "封禪"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "봉선",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "화친",
+    "type": "institution",
+    "priority": "low",
+    "title": {
+      "ko": "화친",
+      "zh": "和親"
+    },
+    "aliases": [
+      "화번",
+      "和番"
+    ],
+    "wikipedia": {
+      "koTitle": "화친",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "장안",
+    "type": "place",
+    "priority": "high",
+    "title": {
+      "ko": "장안",
+      "zh": "長安"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "장안",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "낙양",
+    "type": "place",
+    "priority": "high",
+    "title": {
+      "ko": "낙양",
+      "zh": "洛陽"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "낙양",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "관중",
+    "type": "place",
+    "priority": "medium",
+    "title": {
+      "ko": "관중",
+      "zh": "關中"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "관중",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "사천",
+    "type": "place",
+    "priority": "medium",
+    "title": {
+      "ko": "사천",
+      "zh": "四川"
+    },
+    "aliases": [
+      "촉",
+      "蜀"
+    ],
+    "wikipedia": {
+      "koTitle": "사천",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "강남",
+    "type": "place",
+    "priority": "medium",
+    "title": {
+      "ko": "강남",
+      "zh": "江南"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "강남",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "범양",
+    "type": "place",
+    "priority": "medium",
+    "title": {
+      "ko": "범양",
+      "zh": "范陽"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "범양",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "하동",
+    "type": "place",
+    "priority": "medium",
+    "title": {
+      "ko": "하동",
+      "zh": "河東"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "하동",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "동관",
+    "type": "place",
+    "priority": "medium",
+    "title": {
+      "ko": "동관",
+      "zh": "潼關"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "동관",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "함곡관",
+    "type": "place",
+    "priority": "medium",
+    "title": {
+      "ko": "함곡관",
+      "zh": "函谷關"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "함곡관",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "태산",
+    "type": "place",
+    "priority": "low",
+    "title": {
+      "ko": "태산",
+      "zh": "泰山"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "태산",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "황하",
+    "type": "place",
+    "priority": "low",
+    "title": {
+      "ko": "황하",
+      "zh": "黃河"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "황하",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "장강",
+    "type": "place",
+    "priority": "low",
+    "title": {
+      "ko": "장강",
+      "zh": "長江"
+    },
+    "aliases": [
+      "양자강"
+    ],
+    "wikipedia": {
+      "koTitle": "장강",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "서역",
+    "type": "place",
+    "priority": "medium",
+    "title": {
+      "ko": "서역",
+      "zh": "西域"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "서역",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "실크로드",
+    "type": "place",
+    "priority": "medium",
+    "title": {
+      "ko": "실크로드",
+      "zh": "絲綢之路"
+    },
+    "aliases": [
+      "비단길"
+    ],
+    "wikipedia": {
+      "koTitle": "실크로드",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "토번",
+    "type": "place",
+    "priority": "medium",
+    "title": {
+      "ko": "토번",
+      "zh": "吐蕃"
+    },
+    "aliases": [
+      "티베트 제국"
+    ],
+    "wikipedia": {
+      "koTitle": "토번",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "돌궐",
+    "type": "place",
+    "priority": "medium",
+    "title": {
+      "ko": "돌궐",
+      "zh": "突厥"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "돌궐",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "거란",
+    "type": "place",
+    "priority": "medium",
+    "title": {
+      "ko": "거란",
+      "zh": "契丹"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "거란",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "안사의 난",
+    "type": "event",
+    "priority": "high",
+    "title": {
+      "ko": "안사의 난",
+      "zh": "安史之亂"
+    },
+    "aliases": [
+      "안녹산의 난"
+    ],
+    "wikipedia": {
+      "koTitle": "안사의 난",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "현무문 사건",
+    "type": "event",
+    "priority": "high",
+    "title": {
+      "ko": "현무문 사건",
+      "zh": "玄武門之變"
+    },
+    "aliases": [
+      "현무문의 변"
+    ],
+    "wikipedia": {
+      "koTitle": "현무문 사건",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "정관의 치",
+    "type": "event",
+    "priority": "medium",
+    "title": {
+      "ko": "정관의 치",
+      "zh": "貞觀之治"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "정관의 치",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "개원의 치",
+    "type": "event",
+    "priority": "high",
+    "title": {
+      "ko": "개원의 치",
+      "zh": "開元之治"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "개원의 치",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "천보 연간",
+    "type": "event",
+    "priority": "medium",
+    "title": {
+      "ko": "천보 연간",
+      "zh": "天寶"
+    },
+    "aliases": [
+      "천보"
+    ],
+    "wikipedia": {
+      "koTitle": "천보 연간",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "원화 중흥",
+    "type": "event",
+    "priority": "medium",
+    "title": {
+      "ko": "원화 중흥",
+      "zh": "元和中興"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "원화 중흥",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "감로의 변",
+    "type": "event",
+    "priority": "medium",
+    "title": {
+      "ko": "감로의 변",
+      "zh": "甘露之變"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "감로의 변",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "황소의 난",
+    "type": "event",
+    "priority": "high",
+    "title": {
+      "ko": "황소의 난",
+      "zh": "黃巢之亂"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "황소의 난",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "당 멸망",
+    "type": "event",
+    "priority": "high",
+    "title": {
+      "ko": "당 멸망",
+      "zh": "唐滅亡"
+    },
+    "aliases": [
+      "당나라 멸망"
+    ],
+    "wikipedia": {
+      "koTitle": "당 멸망",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "오대십국",
+    "type": "event",
+    "priority": "medium",
+    "title": {
+      "ko": "오대십국",
+      "zh": "五代十國"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "오대십국",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "불교",
+    "type": "culture",
+    "priority": "medium",
+    "title": {
+      "ko": "불교",
+      "zh": "佛敎"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "불교",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "도교",
+    "type": "culture",
+    "priority": "medium",
+    "title": {
+      "ko": "도교",
+      "zh": "道敎"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "도교",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "유교",
+    "type": "culture",
+    "priority": "medium",
+    "title": {
+      "ko": "유교",
+      "zh": "儒敎"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "유교",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "선종",
+    "type": "culture",
+    "priority": "medium",
+    "title": {
+      "ko": "선종",
+      "zh": "禪宗"
+    },
+    "aliases": [
+      "선불교"
+    ],
+    "wikipedia": {
+      "koTitle": "선종",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "정토신앙",
+    "type": "culture",
+    "priority": "low",
+    "title": {
+      "ko": "정토신앙",
+      "zh": "淨土"
+    },
+    "aliases": [
+      "정토"
+    ],
+    "wikipedia": {
+      "koTitle": "정토신앙",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "산수시",
+    "type": "culture",
+    "priority": "medium",
+    "title": {
+      "ko": "산수시",
+      "zh": "山水詩"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "산수시",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "변새시",
+    "type": "culture",
+    "priority": "medium",
+    "title": {
+      "ko": "변새시",
+      "zh": "邊塞詩"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "변새시",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "전원시",
+    "type": "culture",
+    "priority": "medium",
+    "title": {
+      "ko": "전원시",
+      "zh": "田園詩"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "전원시",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "궁체시",
+    "type": "culture",
+    "priority": "low",
+    "title": {
+      "ko": "궁체시",
+      "zh": "宮體詩"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "궁체시",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "근체시",
+    "type": "culture",
+    "priority": "medium",
+    "title": {
+      "ko": "근체시",
+      "zh": "近體詩"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "근체시",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "고체시",
+    "type": "culture",
+    "priority": "medium",
+    "title": {
+      "ko": "고체시",
+      "zh": "古體詩"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "고체시",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "전고",
+    "type": "culture",
+    "priority": "high",
+    "title": {
+      "ko": "전고",
+      "zh": "典故"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "전고",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "공자",
+    "type": "person",
+    "priority": "high",
+    "title": {
+      "ko": "공자",
+      "zh": "孔子"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "공자",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "맹자",
+    "type": "person",
+    "priority": "high",
+    "title": {
+      "ko": "맹자",
+      "zh": "孟子"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "맹자",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "노자",
+    "type": "person",
+    "priority": "high",
+    "title": {
+      "ko": "노자",
+      "zh": "老子"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "노자",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "장자",
+    "type": "person",
+    "priority": "high",
+    "title": {
+      "ko": "장자",
+      "zh": "莊子"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "장자",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "굴원",
+    "type": "person",
+    "priority": "high",
+    "title": {
+      "ko": "굴원",
+      "zh": "屈原"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "굴원",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "사마천",
+    "type": "person",
+    "priority": "high",
+    "title": {
+      "ko": "사마천",
+      "zh": "司馬遷"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "사마천",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "진시황",
+    "type": "person",
+    "priority": "high",
+    "title": {
+      "ko": "진시황",
+      "zh": "秦始皇"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "진시황",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "항우",
+    "type": "person",
+    "priority": "high",
+    "title": {
+      "ko": "항우",
+      "zh": "項羽"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "항우",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "유방",
+    "type": "person",
+    "priority": "high",
+    "title": {
+      "ko": "유방",
+      "zh": "劉邦"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "유방",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "한고조",
+    "type": "person",
+    "priority": "high",
+    "title": {
+      "ko": "한고조",
+      "zh": "漢高祖"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "한고조",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "한무제",
+    "type": "person",
+    "priority": "high",
+    "title": {
+      "ko": "한무제",
+      "zh": "漢武帝"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "한무제",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "장건",
+    "type": "person",
+    "priority": "high",
+    "title": {
+      "ko": "장건",
+      "zh": "張騫"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "장건",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "소무",
+    "type": "person",
+    "priority": "high",
+    "title": {
+      "ko": "소무",
+      "zh": "蘇武"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "소무",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "이릉",
+    "type": "person",
+    "priority": "high",
+    "title": {
+      "ko": "이릉",
+      "zh": "李陵"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "이릉",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "반초",
+    "type": "person",
+    "priority": "high",
+    "title": {
+      "ko": "반초",
+      "zh": "班超"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "반초",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "왕소군",
+    "type": "person",
+    "priority": "high",
+    "title": {
+      "ko": "왕소군",
+      "zh": "王昭君"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "왕소군",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "사마상여",
+    "type": "person",
+    "priority": "medium",
+    "title": {
+      "ko": "사마상여",
+      "zh": "司馬相如"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "사마상여",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "탁문군",
+    "type": "person",
+    "priority": "medium",
+    "title": {
+      "ko": "탁문군",
+      "zh": "卓文君"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "탁문군",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "조조",
+    "type": "person",
+    "priority": "medium",
+    "title": {
+      "ko": "조조",
+      "zh": "曹操"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "조조",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "조비",
+    "type": "person",
+    "priority": "low",
+    "title": {
+      "ko": "조비",
+      "zh": "曹丕"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "조비",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "제갈량",
+    "type": "person",
+    "priority": "medium",
+    "title": {
+      "ko": "제갈량",
+      "zh": "諸葛亮"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "제갈량",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "관우",
+    "type": "person",
+    "priority": "low",
+    "title": {
+      "ko": "관우",
+      "zh": "關羽"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "관우",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "유비",
+    "type": "person",
+    "priority": "low",
+    "title": {
+      "ko": "유비",
+      "zh": "劉備"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "유비",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "동탁",
+    "type": "person",
+    "priority": "low",
+    "title": {
+      "ko": "동탁",
+      "zh": "董卓"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "동탁",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "왕희지",
+    "type": "person",
+    "priority": "medium",
+    "title": {
+      "ko": "왕희지",
+      "zh": "王羲之"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "왕희지",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  },
+  {
+    "key": "도연명",
+    "type": "person",
+    "priority": "medium",
+    "title": {
+      "ko": "도연명",
+      "zh": "陶淵明"
+    },
+    "aliases": [],
+    "wikipedia": {
+      "koTitle": "도연명",
+      "enTitle": ""
+    },
+    "manualOnly": false
+  }
+]

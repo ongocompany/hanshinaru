@@ -1,0 +1,6532 @@
+[
+  {
+    "poetZh": "王勃",
+    "poetKo": "왕발",
+    "authorTitleId": "C358",
+    "birth": 649,
+    "death": 676,
+    "raw": "649~676",
+    "works": [
+      {
+        "titleId": "C97",
+        "poemNo": 92,
+        "poemNoStr": "092",
+        "title": {
+          "zh": "〈送杜少府[1]之任蜀州[2]〉",
+          "ko": "〈蜀州로 부임해 가는 杜少府를 보내며〉"
+        },
+        "poet": {
+          "zh": "王勃",
+          "ko": "왕발"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "城闕輔三秦[3] / 風煙望五津[4]"
+      }
+    ]
+  },
+  {
+    "poetZh": "沈佺期",
+    "poetKo": "심전기",
+    "authorTitleId": "C397",
+    "birth": 656,
+    "death": 714,
+    "raw": "656~714?",
+    "works": [
+      {
+        "titleId": "C228",
+        "poemNo": 223,
+        "poemNoStr": "223",
+        "title": {
+          "zh": "〈古意 呈補闕喬知之[1]〉",
+          "ko": "〈古意:補闕 喬知之에게 드린다〉"
+        },
+        "poet": {
+          "zh": "沈佺期",
+          "ko": "심전기"
+        },
+        "juan": "卷四",
+        "category": "七言樂府",
+        "meter": 7,
+        "preview": "盧家少婦鬱金堂[2] / 海燕雙棲玳瑁梁[3]"
+      }
+    ]
+  },
+  {
+    "poetZh": "張九齡",
+    "poetKo": "장구령",
+    "authorTitleId": "C382",
+    "birth": 678,
+    "death": 740,
+    "raw": "678~740",
+    "works": [
+      {
+        "titleId": "C5",
+        "poemNo": 2,
+        "poemNoStr": "002",
+        "title": {
+          "zh": "〈感遇〉 其二",
+          "ko": "〈感遇〉 네 수 중 두 번째 시"
+        },
+        "poet": {
+          "zh": "張九齡",
+          "ko": "장구령"
+        },
+        "juan": "卷一",
+        "category": "五言古詩",
+        "meter": 5,
+        "preview": "蘭葉春葳蕤[1] / 桂華[2]秋皎潔"
+      },
+      {
+        "titleId": "C6",
+        "poemNo": 3,
+        "poemNoStr": "003",
+        "title": {
+          "zh": "〈感遇〉 其三",
+          "ko": "〈感遇〉 네 수중 세 번째 시"
+        },
+        "poet": {
+          "zh": "張九齡",
+          "ko": "장구령"
+        },
+        "juan": "卷一",
+        "category": "五言古詩",
+        "meter": 5,
+        "preview": "幽林歸獨臥[1] / 滯虛洗孤淸"
+      },
+      {
+        "titleId": "C7",
+        "poemNo": 4,
+        "poemNoStr": "004",
+        "title": {
+          "zh": "〈感遇〉 其四",
+          "ko": "〈感遇〉 네 수 중 네 번째 시"
+        },
+        "poet": {
+          "zh": "張九齡",
+          "ko": "장구령"
+        },
+        "juan": "卷一",
+        "category": "五言古詩",
+        "meter": 5,
+        "preview": "江南有丹橘 / 經冬猶綠林"
+      },
+      {
+        "titleId": "C96",
+        "poemNo": 91,
+        "poemNoStr": "091",
+        "title": {
+          "zh": "〈望月懷遠〉",
+          "ko": "〈달을 보며 멀리 있는 사람을 그리워하다〉"
+        },
+        "poet": {
+          "zh": "張九齡",
+          "ko": "장구령"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "海上生明月 / 天涯共此時[1]"
+      }
+    ]
+  },
+  {
+    "poetZh": "唐 玄宗",
+    "poetKo": "당 현종",
+    "authorTitleId": "C338",
+    "birth": 685,
+    "death": 762,
+    "raw": "685~762",
+    "works": [
+      {
+        "titleId": "C95",
+        "poemNo": 90,
+        "poemNoStr": "090",
+        "title": {
+          "zh": "〈經鄒魯[1] 祭孔子而嘆之〉",
+          "ko": "〈鄒魯를 지나며 孔子에게 제사 드리고 탄식하다〉"
+        },
+        "poet": {
+          "zh": "唐 玄宗",
+          "ko": "당 현종"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "夫子何爲者 / 棲棲[2]一代中"
+      }
+    ]
+  },
+  {
+    "poetZh": "王之渙",
+    "poetKo": "왕지환",
+    "authorTitleId": "C360",
+    "birth": 688,
+    "death": 742,
+    "raw": "688~742",
+    "works": [
+      {
+        "titleId": "C323",
+        "poemNo": 316,
+        "poemNoStr": "316",
+        "title": {
+          "zh": "〈出塞[1]〉",
+          "ko": "〈변방을 나서며〉"
+        },
+        "poet": {
+          "zh": "王之渙",
+          "ko": "왕지환"
+        },
+        "juan": "卷六",
+        "category": "七言樂府",
+        "meter": 7,
+        "preview": "黃河遠上白雲間[2] / 一片孤城萬仞山[3]"
+      }
+    ]
+  },
+  {
+    "poetZh": "孟浩然",
+    "poetKo": "맹호연",
+    "authorTitleId": "C347",
+    "birth": 689,
+    "death": 740,
+    "raw": "689~740",
+    "works": [
+      {
+        "titleId": "C22",
+        "poemNo": 19,
+        "poemNoStr": "019",
+        "title": {
+          "zh": "〈夏日南亭懷辛大[1]〉",
+          "ko": "〈여름날 남정에서 신대를 그리워하다〉"
+        },
+        "poet": {
+          "zh": "孟浩然",
+          "ko": "맹호연"
+        },
+        "juan": "卷一",
+        "category": "五言古詩",
+        "meter": 5,
+        "preview": "山光[2]忽西落 / 池月漸東上"
+      },
+      {
+        "titleId": "C23",
+        "poemNo": 20,
+        "poemNoStr": "020",
+        "title": {
+          "zh": "〈宿業師山房 待丁大 不至[1]〉",
+          "ko": "〈업사산방에 묵으며 정대를 기다렸으나 오지 않다〉"
+        },
+        "poet": {
+          "zh": "孟浩然",
+          "ko": "맹호연"
+        },
+        "juan": "卷一",
+        "category": "五言古詩",
+        "meter": 5,
+        "preview": "夕陽度西嶺 / 群壑倏已暝[2]"
+      },
+      {
+        "titleId": "C55",
+        "poemNo": 52,
+        "poemNoStr": "052",
+        "title": {
+          "zh": "〈夜歸鹿門歌[1]〉",
+          "ko": "〈밤에 녹문산으로 돌아가며 부른 노래〉"
+        },
+        "poet": {
+          "zh": "孟浩然",
+          "ko": "맹호연"
+        },
+        "juan": "卷二",
+        "category": "七言古詩",
+        "meter": 7,
+        "preview": "山寺鳴鐘晝已昏 / 漁梁[2]渡頭爭渡喧"
+      },
+      {
+        "titleId": "C129",
+        "poemNo": 124,
+        "poemNoStr": "124",
+        "title": {
+          "zh": "〈臨洞庭湖 上張丞相[1]〉",
+          "ko": "〈洞庭湖를 보며 張丞相께 올리다〉"
+        },
+        "poet": {
+          "zh": "孟浩然",
+          "ko": "맹호연"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "八月湖水平 / 涵虛混太淸[2]"
+      },
+      {
+        "titleId": "C130",
+        "poemNo": 125,
+        "poemNoStr": "125",
+        "title": {
+          "zh": "〈與諸子 登峴山[1]〉",
+          "ko": "〈여러 벗들과 峴山에 올라〉"
+        },
+        "poet": {
+          "zh": "孟浩然",
+          "ko": "맹호연"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "人事有代謝[2] / 往來[3]成古今"
+      },
+      {
+        "titleId": "C131",
+        "poemNo": 126,
+        "poemNoStr": "126",
+        "title": {
+          "zh": "〈淸明日[1] 宴梅道士房〉",
+          "ko": "〈淸明日에 梅道士의 방에서 연회를 열다〉"
+        },
+        "poet": {
+          "zh": "孟浩然",
+          "ko": "맹호연"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "林臥愁春盡 / 開軒[2]覽物華"
+      },
+      {
+        "titleId": "C132",
+        "poemNo": 127,
+        "poemNoStr": "127",
+        "title": {
+          "zh": "〈歲暮歸南山[1]〉",
+          "ko": "〈歲暮에 南山으로 돌아가다〉"
+        },
+        "poet": {
+          "zh": "孟浩然",
+          "ko": "맹호연"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "北闕休上書[2] / 南山歸弊廬[3]"
+      },
+      {
+        "titleId": "C133",
+        "poemNo": 128,
+        "poemNoStr": "128",
+        "title": {
+          "zh": "〈過[1]故人莊〉",
+          "ko": "〈벗의 田莊에 들르다〉"
+        },
+        "poet": {
+          "zh": "孟浩然",
+          "ko": "맹호연"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "故人具鷄黍[2] / 邀我至田家"
+      },
+      {
+        "titleId": "C134",
+        "poemNo": 129,
+        "poemNoStr": "129",
+        "title": {
+          "zh": "〈秦中寄遠上人[1]〉",
+          "ko": "〈秦中에서 遠上人에게 부치다〉"
+        },
+        "poet": {
+          "zh": "孟浩然",
+          "ko": "맹호연"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "一丘常欲臥[2] / 三徑苦無資[3]"
+      },
+      {
+        "titleId": "C135",
+        "poemNo": 130,
+        "poemNoStr": "130",
+        "title": {
+          "zh": "〈宿桐廬江 寄廣陵舊游[1]〉",
+          "ko": "〈桐廬江에서 머물며 廣陵의 옛 친구에게 부치다〉"
+        },
+        "poet": {
+          "zh": "孟浩然",
+          "ko": "맹호연"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "山暝聽猿愁[2] / 滄江[3]急夜流"
+      },
+      {
+        "titleId": "C136",
+        "poemNo": 131,
+        "poemNoStr": "131",
+        "title": {
+          "zh": "〈留別王維[1]〉",
+          "ko": "〈王維와 이별하며〉"
+        },
+        "poet": {
+          "zh": "孟浩然",
+          "ko": "맹호연"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "寂寂竟何待 / 朝朝空自歸"
+      },
+      {
+        "titleId": "C137",
+        "poemNo": 132,
+        "poemNoStr": "132",
+        "title": {
+          "zh": "〈早寒 江上有懷[1]〉",
+          "ko": "〈새벽 추위에 강가에서 감회가 생겨〉"
+        },
+        "poet": {
+          "zh": "孟浩然",
+          "ko": "맹호연"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "木落雁南渡[2] / 北風江上寒"
+      },
+      {
+        "titleId": "C238",
+        "poemNo": 231,
+        "poemNoStr": "231",
+        "title": {
+          "zh": "〈宿建德江[1]〉",
+          "ko": "〈건덕강에서 투숙하며〉"
+        },
+        "poet": {
+          "zh": "孟浩然",
+          "ko": "맹호연"
+        },
+        "juan": "卷五",
+        "category": "五言絶句",
+        "meter": 5,
+        "preview": "移舟泊煙渚[2] / 日暮客愁新"
+      },
+      {
+        "titleId": "C239",
+        "poemNo": 232,
+        "poemNoStr": "232",
+        "title": {
+          "zh": "〈春曉〉",
+          "ko": "〈봄 아침〉"
+        },
+        "poet": {
+          "zh": "孟浩然",
+          "ko": "맹호연"
+        },
+        "juan": "卷五",
+        "category": "五言絶句",
+        "meter": 5,
+        "preview": "春眠不覺曉[1] / 處處聞啼鳥"
+      }
+    ]
+  },
+  {
+    "poetZh": "王昌齡",
+    "poetKo": "왕창령",
+    "authorTitleId": "C361",
+    "birth": 689,
+    "death": 756,
+    "raw": "689?~756",
+    "works": [
+      {
+        "titleId": "C39",
+        "poemNo": 36,
+        "poemNoStr": "036",
+        "title": {
+          "zh": "〈塞下曲[1]〉",
+          "ko": "〈변방의 노래〉"
+        },
+        "poet": {
+          "zh": "王昌齡",
+          "ko": "왕창령"
+        },
+        "juan": "卷一",
+        "category": "五言樂府",
+        "meter": 5,
+        "preview": "蟬鳴空桑林[2] / 八月蕭關[3]道"
+      },
+      {
+        "titleId": "C40",
+        "poemNo": 37,
+        "poemNoStr": "037",
+        "title": {
+          "zh": "〈塞下曲〉其二",
+          "ko": "〈변방의 노래〉두 번째 시"
+        },
+        "poet": {
+          "zh": "王昌齡",
+          "ko": "왕창령"
+        },
+        "juan": "卷一",
+        "category": "五言樂府",
+        "meter": 5,
+        "preview": "飮馬[1]渡秋水 / 水寒風似刀"
+      },
+      {
+        "titleId": "C271",
+        "poemNo": 264,
+        "poemNoStr": "264",
+        "title": {
+          "zh": "〈芙蓉樓送辛漸[1]〉",
+          "ko": "〈芙蓉樓에서 辛漸을 보내다〉"
+        },
+        "poet": {
+          "zh": "王昌齡",
+          "ko": "왕창령"
+        },
+        "juan": "卷六",
+        "category": "七言絶句",
+        "meter": 7,
+        "preview": "寒雨連江夜入吳[2] / 平明[3]送客楚山[4]孤洛陽親友如相問"
+      },
+      {
+        "titleId": "C272",
+        "poemNo": 265,
+        "poemNoStr": "265",
+        "title": {
+          "zh": "〈閨怨〉",
+          "ko": "〈아내의 원망〉"
+        },
+        "poet": {
+          "zh": "王昌齡",
+          "ko": "왕창령"
+        },
+        "juan": "卷六",
+        "category": "七言絶句",
+        "meter": 7,
+        "preview": "閨中少婦不知愁[1] / 春日凝妝上翠樓[2]"
+      },
+      {
+        "titleId": "C273",
+        "poemNo": 266,
+        "poemNoStr": "266",
+        "title": {
+          "zh": "〈春宮曲[1]〉",
+          "ko": "〈춘궁의 노래〉"
+        },
+        "poet": {
+          "zh": "王昌齡",
+          "ko": "왕창령"
+        },
+        "juan": "卷六",
+        "category": "七言絶句",
+        "meter": 7,
+        "preview": "昨夜風開露井桃[2] / 未央[3]前殿月輪高"
+      },
+      {
+        "titleId": "C321",
+        "poemNo": 314,
+        "poemNoStr": "314",
+        "title": {
+          "zh": "〈長信怨[1]〉",
+          "ko": "〈장신원〉"
+        },
+        "poet": {
+          "zh": "王昌齡",
+          "ko": "왕창령"
+        },
+        "juan": "卷六",
+        "category": "七言樂府",
+        "meter": 7,
+        "preview": "奉帚平明金殿開[2] / 且將[3]團扇[4]共徘徊玉顔不及寒鴉色"
+      },
+      {
+        "titleId": "C322",
+        "poemNo": 315,
+        "poemNoStr": "315",
+        "title": {
+          "zh": "〈出塞[1]〉",
+          "ko": "〈변방을 나서며〉"
+        },
+        "poet": {
+          "zh": "王昌齡",
+          "ko": "왕창령"
+        },
+        "juan": "卷六",
+        "category": "七言樂府",
+        "meter": 7,
+        "preview": "秦時明月漢時關 / 萬里長征人未還[2]"
+      }
+    ]
+  },
+  {
+    "poetZh": "李頎",
+    "poetKo": "이기",
+    "authorTitleId": "C373",
+    "birth": 690,
+    "death": 751,
+    "raw": "690~751?",
+    "works": [
+      {
+        "titleId": "C50",
+        "poemNo": 47,
+        "poemNoStr": "047",
+        "title": {
+          "zh": "〈古意[1]〉",
+          "ko": "〈고의〉"
+        },
+        "poet": {
+          "zh": "李頎",
+          "ko": "이기"
+        },
+        "juan": "卷二",
+        "category": "七言古詩",
+        "meter": 7,
+        "preview": "男兒事長征少小幽燕[2] / 客賭勝[3]馬蹄下由來輕七尺[4]"
+      },
+      {
+        "titleId": "C51",
+        "poemNo": 48,
+        "poemNoStr": "048",
+        "title": {
+          "zh": "〈送陳章甫〉",
+          "ko": "〈진장보를 전송하며〉"
+        },
+        "poet": {
+          "zh": "李頎",
+          "ko": "이기"
+        },
+        "juan": "卷二",
+        "category": "七言古詩",
+        "meter": 7,
+        "preview": "四月南風大麥黃 / 棗花未落桐陰長[1]"
+      },
+      {
+        "titleId": "C52",
+        "poemNo": 49,
+        "poemNoStr": "049",
+        "title": {
+          "zh": "〈琴歌〉",
+          "ko": "〈거문고 노래〉"
+        },
+        "poet": {
+          "zh": "李頎",
+          "ko": "이기"
+        },
+        "juan": "卷二",
+        "category": "七言古詩",
+        "meter": 7,
+        "preview": "主人有酒歡今夕 / 請奏鳴琴廣陵客[1]"
+      },
+      {
+        "titleId": "C53",
+        "poemNo": 50,
+        "poemNoStr": "050",
+        "title": {
+          "zh": "〈聽[1]董大[2]彈胡笳弄[3]兼寄語房給事[4]〉",
+          "ko": "〈동대가 호가롱을 타는 것을 듣고 겸하여 방급사에게 말을 전하다〉"
+        },
+        "poet": {
+          "zh": "李頎",
+          "ko": "이기"
+        },
+        "juan": "卷二",
+        "category": "七言古詩",
+        "meter": 7,
+        "preview": "蔡女[5]昔造胡笳聲 / 一彈一十有八拍[6]"
+      },
+      {
+        "titleId": "C54",
+        "poemNo": 51,
+        "poemNoStr": "051",
+        "title": {
+          "zh": "〈聽安萬善[1]吹觱篥[2]歌〉",
+          "ko": "〈안만선이 부르는 필률가를 듣고〉"
+        },
+        "poet": {
+          "zh": "李頎",
+          "ko": "이기"
+        },
+        "juan": "卷二",
+        "category": "七言古詩",
+        "meter": 7,
+        "preview": "南山[3]截竹爲觱篥 / 此樂本自龜玆[4]出"
+      },
+      {
+        "titleId": "C78",
+        "poemNo": 75,
+        "poemNoStr": "075",
+        "title": {
+          "zh": "〈古從軍行〉",
+          "ko": "〈옛 출정의 노래〉"
+        },
+        "poet": {
+          "zh": "李頎",
+          "ko": "이기"
+        },
+        "juan": "卷二",
+        "category": "七言樂府",
+        "meter": 7,
+        "preview": "白日登山望烽火 / 黃昏飮馬傍交河[1]"
+      },
+      {
+        "titleId": "C178",
+        "poemNo": 173,
+        "poemNoStr": "173",
+        "title": {
+          "zh": "〈送魏萬[1]之京〉",
+          "ko": "〈서울 가는 魏萬을 전송하며〉"
+        },
+        "poet": {
+          "zh": "李頎",
+          "ko": "이기"
+        },
+        "juan": "卷四",
+        "category": "七言律詩",
+        "meter": 7,
+        "preview": "朝聞游子[2]唱離歌 / 昨夜微霜初度河"
+      }
+    ]
+  },
+  {
+    "poetZh": "祖詠",
+    "poetKo": "조영",
+    "authorTitleId": "C389",
+    "birth": 699,
+    "death": 746,
+    "raw": "699~746?",
+    "works": [
+      {
+        "titleId": "C177",
+        "poemNo": 172,
+        "poemNoStr": "172",
+        "title": {
+          "zh": "〈望薊門[1]〉",
+          "ko": "〈薊門을 바라보며〉"
+        },
+        "poet": {
+          "zh": "祖詠",
+          "ko": "조영"
+        },
+        "juan": "卷四",
+        "category": "七言律詩",
+        "meter": 7,
+        "preview": "燕臺一去[2]客心驚 / 笳鼓喧喧漢將營[3]"
+      },
+      {
+        "titleId": "C237",
+        "poemNo": 230,
+        "poemNoStr": "230",
+        "title": {
+          "zh": "〈終南望餘雪[1]〉",
+          "ko": "〈종남산에서 쌓인 눈을 바라보다〉"
+        },
+        "poet": {
+          "zh": "祖詠",
+          "ko": "조영"
+        },
+        "juan": "卷五",
+        "category": "五言絶句",
+        "meter": 5,
+        "preview": "終南陰嶺[2]秀 / 積雪浮雲端"
+      }
+    ]
+  },
+  {
+    "poetZh": "高適",
+    "poetKo": "고적",
+    "authorTitleId": "C329",
+    "birth": 700,
+    "death": 765,
+    "raw": "700?~765",
+    "works": [
+      {
+        "titleId": "C77",
+        "poemNo": 74,
+        "poemNoStr": "074",
+        "title": {
+          "zh": "〈燕歌行[1] 幷序〉",
+          "ko": "〈연가행 병서〉"
+        },
+        "poet": {
+          "zh": "高適",
+          "ko": "고적"
+        },
+        "juan": "卷二",
+        "category": "七言樂府",
+        "meter": 7,
+        "preview": "開元二十六年 客有從御史大夫張公[2] / 出塞而還者 作燕歌行以示適 感征戍之事 因而和焉"
+      },
+      {
+        "titleId": "C181",
+        "poemNo": 176,
+        "poemNoStr": "176",
+        "title": {
+          "zh": "〈送李少府貶峽中[1]王少府貶長沙[2]〉",
+          "ko": "〈峽中으로 폄적된 李少府와 長沙로 폄적된 王少府를 보내며〉"
+        },
+        "poet": {
+          "zh": "高適",
+          "ko": "고적"
+        },
+        "juan": "卷四",
+        "category": "七言律詩",
+        "meter": 7,
+        "preview": "嗟君此別意何如 / 駐馬銜杯問謫居[3]"
+      }
+    ]
+  },
+  {
+    "poetZh": "李白",
+    "poetKo": "이백",
+    "authorTitleId": "C375",
+    "birth": 701,
+    "death": 762,
+    "raw": "701~762",
+    "works": [
+      {
+        "titleId": "C9",
+        "poemNo": 6,
+        "poemNoStr": "006",
+        "title": {
+          "zh": "〈月下獨酌〉",
+          "ko": "〈달 아래 홀로 술을 마시며〉"
+        },
+        "poet": {
+          "zh": "李白",
+          "ko": "이백"
+        },
+        "juan": "卷一",
+        "category": "五言古詩",
+        "meter": 5,
+        "preview": "花間[1]一壺酒 / 獨酌無相親"
+      },
+      {
+        "titleId": "C10",
+        "poemNo": 7,
+        "poemNoStr": "007",
+        "title": {
+          "zh": "〈春思〉",
+          "ko": "〈봄 그리움〉"
+        },
+        "poet": {
+          "zh": "李白",
+          "ko": "이백"
+        },
+        "juan": "卷一",
+        "category": "五言古詩",
+        "meter": 5,
+        "preview": "燕草如碧絲[1] / 秦桑低綠枝"
+      },
+      {
+        "titleId": "C41",
+        "poemNo": 38,
+        "poemNoStr": "038",
+        "title": {
+          "zh": "〈關山月[1]鼓角橫吹曲〉",
+          "ko": "〈관산월〉"
+        },
+        "poet": {
+          "zh": "李白",
+          "ko": "이백"
+        },
+        "juan": "卷一",
+        "category": "五言樂府",
+        "meter": 5,
+        "preview": "明月出天山[2] / 蒼茫雲海間"
+      },
+      {
+        "titleId": "C42",
+        "poemNo": 39,
+        "poemNoStr": "039",
+        "title": {
+          "zh": "〈子夜四時歌 春歌〉",
+          "ko": "〈자야사시가 봄노래〉"
+        },
+        "poet": {
+          "zh": "李白",
+          "ko": "이백"
+        },
+        "juan": "卷一",
+        "category": "五言樂府",
+        "meter": 5,
+        "preview": "秦地羅敷[1]女 / 釆桑綠水邊"
+      },
+      {
+        "titleId": "C43",
+        "poemNo": 40,
+        "poemNoStr": "040",
+        "title": {
+          "zh": "〈子夜四時歌 夏歌〉",
+          "ko": "〈자야사시가 여름노래〉"
+        },
+        "poet": {
+          "zh": "李白",
+          "ko": "이백"
+        },
+        "juan": "卷一",
+        "category": "五言樂府",
+        "meter": 5,
+        "preview": "鏡湖[1]三百里 / 菡萏[2]發荷花"
+      },
+      {
+        "titleId": "C44",
+        "poemNo": 41,
+        "poemNoStr": "041",
+        "title": {
+          "zh": "〈子夜四時歌 秋歌〉",
+          "ko": "〈자야사시가 가을노래〉"
+        },
+        "poet": {
+          "zh": "李白",
+          "ko": "이백"
+        },
+        "juan": "卷一",
+        "category": "五言樂府",
+        "meter": 5,
+        "preview": "長安一片月 / 萬戶擣衣聲"
+      },
+      {
+        "titleId": "C45",
+        "poemNo": 42,
+        "poemNoStr": "042",
+        "title": {
+          "zh": "〈子夜四時歌 冬歌〉",
+          "ko": "〈자야사시가 겨울 노래〉"
+        },
+        "poet": {
+          "zh": "李白",
+          "ko": "이백"
+        },
+        "juan": "卷一",
+        "category": "五言樂府",
+        "meter": 5,
+        "preview": "明朝驛使[1]發 / 一夜絮征袍[2]"
+      },
+      {
+        "titleId": "C46",
+        "poemNo": 43,
+        "poemNoStr": "043",
+        "title": {
+          "zh": "〈長干行〉",
+          "ko": "〈장간행〉"
+        },
+        "poet": {
+          "zh": "李白",
+          "ko": "이백"
+        },
+        "juan": "卷一",
+        "category": "五言樂府",
+        "meter": 5,
+        "preview": "妾髮初覆額[1] / 折花門前劇[2]"
+      },
+      {
+        "titleId": "C56",
+        "poemNo": 53,
+        "poemNoStr": "053",
+        "title": {
+          "zh": "〈廬山[1]謠 寄盧侍御虛舟[2]〉",
+          "ko": "〈여산의 노래 시어사 노허주에게 부치다〉"
+        },
+        "poet": {
+          "zh": "李白",
+          "ko": "이백"
+        },
+        "juan": "卷二",
+        "category": "七言古詩",
+        "meter": 7,
+        "preview": "我本楚狂人[3]鳳歌笑孔丘 / 手持綠玉杖[4]朝別黃鶴樓[5]"
+      },
+      {
+        "titleId": "C57",
+        "poemNo": 54,
+        "poemNoStr": "054",
+        "title": {
+          "zh": "〈夢遊天姥吟留別〉",
+          "ko": "〈꿈속에서 천모산에 노닌 것으로 이별을 읊다〉"
+        },
+        "poet": {
+          "zh": "李白",
+          "ko": "이백"
+        },
+        "juan": "卷二",
+        "category": "七言古詩",
+        "meter": 7,
+        "preview": "海客談瀛洲[1]煙濤微茫信難求 / 越人語天姥[2]雲霓明滅或可覩"
+      },
+      {
+        "titleId": "C58",
+        "poemNo": 55,
+        "poemNoStr": "055",
+        "title": {
+          "zh": "〈金陵酒肆留別〉",
+          "ko": "〈금릉의 술집에서 벗들과 이별하며〉"
+        },
+        "poet": {
+          "zh": "李白",
+          "ko": "이백"
+        },
+        "juan": "卷二",
+        "category": "七言古詩",
+        "meter": 7,
+        "preview": "風吹柳花滿店香 / 吳姬壓酒喚客嘗[1]"
+      },
+      {
+        "titleId": "C59",
+        "poemNo": 56,
+        "poemNoStr": "056",
+        "title": {
+          "zh": "〈宣州[1]謝朓樓[2]餞別校書叔雲[3]〉",
+          "ko": "〈선주 사조루에서 교서 숙운을 전별하다〉"
+        },
+        "poet": {
+          "zh": "李白",
+          "ko": "이백"
+        },
+        "juan": "卷二",
+        "category": "七言古詩",
+        "meter": 7,
+        "preview": "棄我去者 昨日之日不可留 / 亂我心者 今日之日多煩憂"
+      },
+      {
+        "titleId": "C82",
+        "poemNo": 79,
+        "poemNoStr": "079",
+        "title": {
+          "zh": "〈蜀道難〉",
+          "ko": "〈촉도의 험난함〉"
+        },
+        "poet": {
+          "zh": "李白",
+          "ko": "이백"
+        },
+        "juan": "卷二",
+        "category": "七言樂府",
+        "meter": 7,
+        "preview": "噫吁戲[1] 危乎高哉 / 蜀道之難難於上靑天"
+      },
+      {
+        "titleId": "C83",
+        "poemNo": 80,
+        "poemNoStr": "080",
+        "title": {
+          "zh": "〈長相思[1]〉二首之一",
+          "ko": "〈한없는 그리움〉두 수 중 첫 번째 시"
+        },
+        "poet": {
+          "zh": "李白",
+          "ko": "이백"
+        },
+        "juan": "卷二",
+        "category": "七言樂府",
+        "meter": 7,
+        "preview": "長相思在長安絡緯[2]秋啼金井闌[3] / 微霜凄凄簟色寒"
+      },
+      {
+        "titleId": "C84",
+        "poemNo": 81,
+        "poemNoStr": "081",
+        "title": {
+          "zh": "〈長相思〉 二首之二",
+          "ko": "〈한없는 그리움〉두 수 중 두 번째 시"
+        },
+        "poet": {
+          "zh": "李白",
+          "ko": "이백"
+        },
+        "juan": "卷二",
+        "category": "七言樂府",
+        "meter": 7,
+        "preview": "日色欲[1]盡花含煙 / 月明如[2]素[3]愁不眠趙瑟[4]"
+      },
+      {
+        "titleId": "C85",
+        "poemNo": 82,
+        "poemNoStr": "082",
+        "title": {
+          "zh": "〈行路難〉三首之一",
+          "ko": "〈가는 길 험난해라〉세 수 중 첫 번째 시"
+        },
+        "poet": {
+          "zh": "李白",
+          "ko": "이백"
+        },
+        "juan": "卷二",
+        "category": "七言樂府",
+        "meter": 7,
+        "preview": "金樽淸酒斗十千[1] / 玉盤珍羞[2]値萬錢"
+      },
+      {
+        "titleId": "C86",
+        "poemNo": 83,
+        "poemNoStr": "083",
+        "title": {
+          "zh": "〈行路難〉其二",
+          "ko": "〈가는 길 험난해라〉세 수 중 두 번째 시"
+        },
+        "poet": {
+          "zh": "李白",
+          "ko": "이백"
+        },
+        "juan": "卷二",
+        "category": "七言樂府",
+        "meter": 7,
+        "preview": "大道如靑天我獨不得出 / 羞逐長安社中兒[1]"
+      },
+      {
+        "titleId": "C87",
+        "poemNo": 84,
+        "poemNoStr": "084",
+        "title": {
+          "zh": "〈行路難〉其三",
+          "ko": "〈가는 길 험난해라〉세 수 중 세 번째 시"
+        },
+        "poet": {
+          "zh": "李白",
+          "ko": "이백"
+        },
+        "juan": "卷二",
+        "category": "七言樂府",
+        "meter": 7,
+        "preview": "有耳莫洗潁川水[1] / 有口莫食首陽蕨[2]"
+      },
+      {
+        "titleId": "C88",
+        "poemNo": 85,
+        "poemNoStr": "085",
+        "title": {
+          "zh": "〈將進酒[1]〉",
+          "ko": "〈술 권하네〉"
+        },
+        "poet": {
+          "zh": "李白",
+          "ko": "이백"
+        },
+        "juan": "卷二",
+        "category": "七言樂府",
+        "meter": 7,
+        "preview": "君不見黃河之水天上來 / 奔流到海不復回"
+      },
+      {
+        "titleId": "C105",
+        "poemNo": 100,
+        "poemNoStr": "100",
+        "title": {
+          "zh": "〈贈孟浩然〉",
+          "ko": "〈孟浩然에게 주다〉"
+        },
+        "poet": {
+          "zh": "李白",
+          "ko": "이백"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "吾愛孟夫子[1] / 風流[2]天下聞"
+      },
+      {
+        "titleId": "C106",
+        "poemNo": 101,
+        "poemNoStr": "101",
+        "title": {
+          "zh": "〈渡荊門送別〉",
+          "ko": "〈荊門을 건너 송별하며〉"
+        },
+        "poet": {
+          "zh": "李白",
+          "ko": "이백"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "渡遠[1]荊門[2]外來從楚國遊 / 山隨平野盡"
+      },
+      {
+        "titleId": "C107",
+        "poemNo": 102,
+        "poemNoStr": "102",
+        "title": {
+          "zh": "〈送友人〉",
+          "ko": "〈벗을 보내며〉"
+        },
+        "poet": {
+          "zh": "李白",
+          "ko": "이백"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "靑山[1]橫北郭 / 白水[2]繞東城"
+      },
+      {
+        "titleId": "C108",
+        "poemNo": 103,
+        "poemNoStr": "103",
+        "title": {
+          "zh": "〈聽蜀僧濬[1]彈琴〉",
+          "ko": "〈蜀 땅 승려 濬의 거문고 소리를 듣고〉"
+        },
+        "poet": {
+          "zh": "李白",
+          "ko": "이백"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "蜀僧抱綠綺[2] / 西下峨眉[3]峰"
+      },
+      {
+        "titleId": "C109",
+        "poemNo": 104,
+        "poemNoStr": "104",
+        "title": {
+          "zh": "〈夜泊牛渚[1]懷古〉",
+          "ko": "〈밤에 牛渚에서 정박하며 옛일을 회고하다〉"
+        },
+        "poet": {
+          "zh": "李白",
+          "ko": "이백"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "牛渚西江[2]夜 / 靑天無片雲"
+      },
+      {
+        "titleId": "C180",
+        "poemNo": 175,
+        "poemNoStr": "175",
+        "title": {
+          "zh": "〈登金陵[1]鳳凰臺[2]〉",
+          "ko": "〈金陵의 鳳凰臺에 올라〉"
+        },
+        "poet": {
+          "zh": "李白",
+          "ko": "이백"
+        },
+        "juan": "卷四",
+        "category": "七言律詩",
+        "meter": 7,
+        "preview": "鳳凰臺上鳳凰遊 / 鳳去臺空江自流"
+      },
+      {
+        "titleId": "C240",
+        "poemNo": 233,
+        "poemNoStr": "233",
+        "title": {
+          "zh": "〈夜思[1]〉",
+          "ko": "〈깊은 밤의 그리움〉"
+        },
+        "poet": {
+          "zh": "李白",
+          "ko": "이백"
+        },
+        "juan": "卷五",
+        "category": "五言絶句",
+        "meter": 5,
+        "preview": "床前明月光[2] / 疑是地上霜[3]"
+      },
+      {
+        "titleId": "C241",
+        "poemNo": 234,
+        "poemNoStr": "234",
+        "title": {
+          "zh": "〈怨情〉",
+          "ko": "〈원망하는 마음〉"
+        },
+        "poet": {
+          "zh": "李白",
+          "ko": "이백"
+        },
+        "juan": "卷五",
+        "category": "五言絶句",
+        "meter": 5,
+        "preview": "美人捲珠簾[1] / 深坐顰蛾眉[2]"
+      },
+      {
+        "titleId": "C262",
+        "poemNo": 255,
+        "poemNoStr": "255",
+        "title": {
+          "zh": "〈玉階怨[1]〉",
+          "ko": "〈옥계의 원망〉"
+        },
+        "poet": {
+          "zh": "李白",
+          "ko": "이백"
+        },
+        "juan": "卷五",
+        "category": "五言樂府",
+        "meter": 5,
+        "preview": "玉階生白露 / 夜久侵[2]羅襪"
+      },
+      {
+        "titleId": "C275",
+        "poemNo": 268,
+        "poemNoStr": "268",
+        "title": {
+          "zh": "〈送孟浩然之廣陵[1]〉",
+          "ko": "〈광릉 가는 맹호연을 보내며〉"
+        },
+        "poet": {
+          "zh": "李白",
+          "ko": "이백"
+        },
+        "juan": "卷六",
+        "category": "七言絶句",
+        "meter": 7,
+        "preview": "故人西辭黃鶴樓[2] / 煙花三月下揚州[3]"
+      },
+      {
+        "titleId": "C276",
+        "poemNo": 269,
+        "poemNoStr": "269",
+        "title": {
+          "zh": "〈早發白帝城[1]〉",
+          "ko": "〈아침에 백제성을 출발하며〉"
+        },
+        "poet": {
+          "zh": "李白",
+          "ko": "이백"
+        },
+        "juan": "卷六",
+        "category": "七言絶句",
+        "meter": 7,
+        "preview": "朝辭白帝彩雲間[2] / 千里江陵[3]一日還"
+      },
+      {
+        "titleId": "C324",
+        "poemNo": 317,
+        "poemNoStr": "317",
+        "title": {
+          "zh": "〈淸平調[1] 其一〉",
+          "ko": "〈청평조 첫 번째 시〉"
+        },
+        "poet": {
+          "zh": "李白",
+          "ko": "이백"
+        },
+        "juan": "卷六",
+        "category": "七言樂府",
+        "meter": 7,
+        "preview": "雲想衣裳花想容[2] / 春風拂檻[3]露華[4]濃若非群玉山[5]"
+      },
+      {
+        "titleId": "C325",
+        "poemNo": 318,
+        "poemNoStr": "318",
+        "title": {
+          "zh": "〈淸平調 其二〉",
+          "ko": "〈청평조 두 번째 시〉"
+        },
+        "poet": {
+          "zh": "李白",
+          "ko": "이백"
+        },
+        "juan": "卷六",
+        "category": "七言樂府",
+        "meter": 7,
+        "preview": "一枝紅艶露凝香[1] / 雲雨巫山枉斷腸[2]"
+      },
+      {
+        "titleId": "C326",
+        "poemNo": 319,
+        "poemNoStr": "319",
+        "title": {
+          "zh": "〈淸平調 其三〉",
+          "ko": "〈청평조 세 번째 시〉"
+        },
+        "poet": {
+          "zh": "李白",
+          "ko": "이백"
+        },
+        "juan": "卷六",
+        "category": "七言樂府",
+        "meter": 7,
+        "preview": "名花傾國兩相歡[1] / 常得君王帶笑看"
+      }
+    ]
+  },
+  {
+    "poetZh": "王維",
+    "poetKo": "왕유",
+    "authorTitleId": "C359",
+    "birth": 701,
+    "death": 759,
+    "raw": "701~759",
+    "works": [
+      {
+        "titleId": "C17",
+        "poemNo": 14,
+        "poemNoStr": "014",
+        "title": {
+          "zh": "〈送綦毋潛[1]落第還鄕〉",
+          "ko": "〈과거에 낙방하여 고향으로 돌아가는 기무잠을 전송하며〉"
+        },
+        "poet": {
+          "zh": "王維",
+          "ko": "왕유"
+        },
+        "juan": "卷一",
+        "category": "五言古詩",
+        "meter": 5,
+        "preview": "聖代無隱者 / 英靈盡來歸[2]"
+      },
+      {
+        "titleId": "C18",
+        "poemNo": 15,
+        "poemNoStr": "015",
+        "title": {
+          "zh": "〈靑谿〉",
+          "ko": "〈청계〉"
+        },
+        "poet": {
+          "zh": "王維",
+          "ko": "왕유"
+        },
+        "juan": "卷一",
+        "category": "五言古詩",
+        "meter": 5,
+        "preview": "言入黃花川[1] / 每逐靑谿水[2]"
+      },
+      {
+        "titleId": "C19",
+        "poemNo": 16,
+        "poemNoStr": "016",
+        "title": {
+          "zh": "渭川田家",
+          "ko": "〈위천의 농가〉"
+        },
+        "poet": {
+          "zh": "王維",
+          "ko": "왕유"
+        },
+        "juan": "卷一",
+        "category": "五言古詩",
+        "meter": 5,
+        "preview": "斜光[1]照墟落[2] / 窮巷[3]牛羊歸"
+      },
+      {
+        "titleId": "C20",
+        "poemNo": 17,
+        "poemNoStr": "017",
+        "title": {
+          "zh": "〈西施詠〉",
+          "ko": "〈서시를 노래하다〉"
+        },
+        "poet": {
+          "zh": "王維",
+          "ko": "왕유"
+        },
+        "juan": "卷一",
+        "category": "五言古詩",
+        "meter": 5,
+        "preview": "艶色天下重 / 西施[1]寧久微"
+      },
+      {
+        "titleId": "C79",
+        "poemNo": 76,
+        "poemNoStr": "076",
+        "title": {
+          "zh": "〈洛陽女兒行[1]〉",
+          "ko": "〈낙양의 여자아이〉"
+        },
+        "poet": {
+          "zh": "王維",
+          "ko": "왕유"
+        },
+        "juan": "卷二",
+        "category": "七言樂府",
+        "meter": 7,
+        "preview": "洛陽女兒對門居 / 纔可容顔十五餘"
+      },
+      {
+        "titleId": "C80",
+        "poemNo": 77,
+        "poemNoStr": "077",
+        "title": {
+          "zh": "〈老將行[1]〉",
+          "ko": "〈노장군을 노래하다〉"
+        },
+        "poet": {
+          "zh": "王維",
+          "ko": "왕유"
+        },
+        "juan": "卷二",
+        "category": "七言樂府",
+        "meter": 7,
+        "preview": "少年十五二十時 / 步行奪得胡馬騎[2]"
+      },
+      {
+        "titleId": "C81",
+        "poemNo": 78,
+        "poemNoStr": "078",
+        "title": {
+          "zh": "〈桃源行〉",
+          "ko": "〈도원을 노래하다〉"
+        },
+        "poet": {
+          "zh": "王維",
+          "ko": "왕유"
+        },
+        "juan": "卷二",
+        "category": "七言樂府",
+        "meter": 7,
+        "preview": "漁舟逐水愛山春 / 兩岸桃花夾古[1]津"
+      },
+      {
+        "titleId": "C120",
+        "poemNo": 115,
+        "poemNoStr": "115",
+        "title": {
+          "zh": "〈輞川[1]閑居 贈裴秀才迪[2]〉",
+          "ko": "〈輞川에서 한가롭게 지내며 裴迪 秀才에게 주다〉"
+        },
+        "poet": {
+          "zh": "王維",
+          "ko": "왕유"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "寒山[3]轉[4]蒼翠秋水日潺湲[5] / 倚杖柴門外"
+      },
+      {
+        "titleId": "C121",
+        "poemNo": 116,
+        "poemNoStr": "116",
+        "title": {
+          "zh": "〈山居[1]秋暝〉",
+          "ko": "〈산속의 가을밤〉"
+        },
+        "poet": {
+          "zh": "王維",
+          "ko": "왕유"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "空山新雨後 / 天氣晩來秋"
+      },
+      {
+        "titleId": "C122",
+        "poemNo": 117,
+        "poemNoStr": "117",
+        "title": {
+          "zh": "〈歸嵩山[1]作〉",
+          "ko": "〈嵩山으로 돌아가며 짓다〉"
+        },
+        "poet": {
+          "zh": "王維",
+          "ko": "왕유"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "淸川帶長薄[2] / 車馬去閑閑[3]"
+      },
+      {
+        "titleId": "C123",
+        "poemNo": 118,
+        "poemNoStr": "118",
+        "title": {
+          "zh": "〈終南山[1]〉",
+          "ko": "〈종남산〉"
+        },
+        "poet": {
+          "zh": "王維",
+          "ko": "왕유"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "太乙[2]近天都[3] / 連山接海隅[4]"
+      },
+      {
+        "titleId": "C124",
+        "poemNo": 119,
+        "poemNoStr": "119",
+        "title": {
+          "zh": "〈酬張少府[1]〉",
+          "ko": "〈張少府에게 답하다〉"
+        },
+        "poet": {
+          "zh": "王維",
+          "ko": "왕유"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "晩年有好靜 / 萬事不關心"
+      },
+      {
+        "titleId": "C125",
+        "poemNo": 120,
+        "poemNoStr": "120",
+        "title": {
+          "zh": "〈過香積寺[1]〉",
+          "ko": "〈香積寺를 지나며〉"
+        },
+        "poet": {
+          "zh": "王維",
+          "ko": "왕유"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "不知香積寺 / 數里入雲峰"
+      },
+      {
+        "titleId": "C126",
+        "poemNo": 121,
+        "poemNoStr": "121",
+        "title": {
+          "zh": "〈送梓州[1]李使君[2]〉",
+          "ko": "〈梓州로 李使君을 보내며〉"
+        },
+        "poet": {
+          "zh": "王維",
+          "ko": "왕유"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "萬壑樹參天 / 千山響杜鵑"
+      },
+      {
+        "titleId": "C127",
+        "poemNo": 122,
+        "poemNoStr": "122",
+        "title": {
+          "zh": "〈漢江臨汎[1]〉",
+          "ko": "〈漢江에 배를 타고 가다〉"
+        },
+        "poet": {
+          "zh": "王維",
+          "ko": "왕유"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "楚塞三湘[2]接 / 荊門九派[3]通"
+      },
+      {
+        "titleId": "C128",
+        "poemNo": 123,
+        "poemNoStr": "123",
+        "title": {
+          "zh": "〈終南別業[1]〉",
+          "ko": "〈終南山 別莊〉"
+        },
+        "poet": {
+          "zh": "王維",
+          "ko": "왕유"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "中歲頗好道[2] / 晩家南山[3]陲"
+      },
+      {
+        "titleId": "C183",
+        "poemNo": 178,
+        "poemNoStr": "178",
+        "title": {
+          "zh": "〈和賈舍人早朝大明宮之作〉",
+          "ko": "〈賈舍人의 〈大明宮의 새벽 조회〉에 화답하다〉"
+        },
+        "poet": {
+          "zh": "王維",
+          "ko": "왕유"
+        },
+        "juan": "卷四",
+        "category": "七言律詩",
+        "meter": 7,
+        "preview": "絳幘鷄人送曉籌[1] / 尙衣方進翠雲裘[2]"
+      },
+      {
+        "titleId": "C184",
+        "poemNo": 179,
+        "poemNoStr": "179",
+        "title": {
+          "zh": "〈奉和聖製 從蓬萊[1]向興慶[2]閣道[3]中留春雨中春望之作 應制〉",
+          "ko": "〈황제가 지으신 〈蓬萊宮에서 興慶宮으로 가는 도중 봄비 가운데 머물며 봄 풍경을 바라본다〉는 시를 받들어 和韻하여 應製하다〉"
+        },
+        "poet": {
+          "zh": "王維",
+          "ko": "왕유"
+        },
+        "juan": "卷四",
+        "category": "七言律詩",
+        "meter": 7,
+        "preview": "渭水自縈秦塞[4]曲 / 黃山[5]舊繞漢宮斜"
+      },
+      {
+        "titleId": "C185",
+        "poemNo": 180,
+        "poemNoStr": "180",
+        "title": {
+          "zh": "〈積雨輞川莊作[1]〉",
+          "ko": "〈장맛비 내리는 輞川의 別莊에서 짓다〉"
+        },
+        "poet": {
+          "zh": "王維",
+          "ko": "왕유"
+        },
+        "juan": "卷四",
+        "category": "七言律詩",
+        "meter": 7,
+        "preview": "積雨空林煙火遲 / 蒸藜炊黍餉東菑[2]"
+      },
+      {
+        "titleId": "C186",
+        "poemNo": 181,
+        "poemNoStr": "181",
+        "title": {
+          "zh": "〈酬郭給事[1]〉",
+          "ko": "〈郭給事와 酬唱하다〉"
+        },
+        "poet": {
+          "zh": "王維",
+          "ko": "왕유"
+        },
+        "juan": "卷四",
+        "category": "七言律詩",
+        "meter": 7,
+        "preview": "洞門高閣靄餘輝[2] / 桃李陰陰[3]柳絮飛"
+      },
+      {
+        "titleId": "C231",
+        "poemNo": 224,
+        "poemNoStr": "224",
+        "title": {
+          "zh": "〈鹿柴[1]〉",
+          "ko": "〈녹채〉"
+        },
+        "poet": {
+          "zh": "王維",
+          "ko": "왕유"
+        },
+        "juan": "卷五",
+        "category": "五言絶句",
+        "meter": 5,
+        "preview": "空山不見人 / 但聞人語響"
+      },
+      {
+        "titleId": "C232",
+        "poemNo": 225,
+        "poemNoStr": "225",
+        "title": {
+          "zh": "〈竹里館[1]〉",
+          "ko": "〈죽리관〉"
+        },
+        "poet": {
+          "zh": "王維",
+          "ko": "왕유"
+        },
+        "juan": "卷五",
+        "category": "五言絶句",
+        "meter": 5,
+        "preview": "獨坐幽篁[2]裏 / 彈琴復長嘯[3]"
+      },
+      {
+        "titleId": "C233",
+        "poemNo": 226,
+        "poemNoStr": "226",
+        "title": {
+          "zh": "〈送別[1]〉",
+          "ko": "〈벗을 떠나보내며〉"
+        },
+        "poet": {
+          "zh": "王維",
+          "ko": "왕유"
+        },
+        "juan": "卷五",
+        "category": "五言絶句",
+        "meter": 5,
+        "preview": "山中相送罷[2] / 日暮掩柴扉"
+      },
+      {
+        "titleId": "C234",
+        "poemNo": 227,
+        "poemNoStr": "227",
+        "title": {
+          "zh": "〈相思[1]〉",
+          "ko": "〈그리움〉"
+        },
+        "poet": {
+          "zh": "王維",
+          "ko": "왕유"
+        },
+        "juan": "卷五",
+        "category": "五言絶句",
+        "meter": 5,
+        "preview": "紅豆[2]生南國[3] / 春[4]來發幾枝"
+      },
+      {
+        "titleId": "C235",
+        "poemNo": 228,
+        "poemNoStr": "228",
+        "title": {
+          "zh": "〈雜詩〉",
+          "ko": "〈잡시〉"
+        },
+        "poet": {
+          "zh": "王維",
+          "ko": "왕유"
+        },
+        "juan": "卷五",
+        "category": "五言絶句",
+        "meter": 5,
+        "preview": "君自故鄕來 / 應知故鄕事"
+      },
+      {
+        "titleId": "C270",
+        "poemNo": 263,
+        "poemNoStr": "263",
+        "title": {
+          "zh": "〈九月九日憶山東兄弟[1]〉",
+          "ko": "〈구월 구일 산동의 형제를 생각하며〉"
+        },
+        "poet": {
+          "zh": "王維",
+          "ko": "왕유"
+        },
+        "juan": "卷六",
+        "category": "七言絶句",
+        "meter": 7,
+        "preview": "獨在異鄕爲異客 / 每逢佳節倍思親"
+      },
+      {
+        "titleId": "C319",
+        "poemNo": 312,
+        "poemNoStr": "312",
+        "title": {
+          "zh": "〈渭城曲[1]〉",
+          "ko": "〈위성의 노래〉"
+        },
+        "poet": {
+          "zh": "王維",
+          "ko": "왕유"
+        },
+        "juan": "卷六",
+        "category": "七言樂府",
+        "meter": 7,
+        "preview": "渭城朝雨浥輕塵[2] / 客舍靑靑柳色新"
+      },
+      {
+        "titleId": "C320",
+        "poemNo": 313,
+        "poemNoStr": "313",
+        "title": {
+          "zh": "〈秋夜曲[1]〉",
+          "ko": "〈가을밤의 노래〉"
+        },
+        "poet": {
+          "zh": "王維",
+          "ko": "왕유"
+        },
+        "juan": "卷六",
+        "category": "七言樂府",
+        "meter": 7,
+        "preview": "桂魄[2]初生秋露微 / 輕羅已薄未更衣"
+      }
+    ]
+  },
+  {
+    "poetZh": "崔顥",
+    "poetKo": "최호",
+    "authorTitleId": "C396",
+    "birth": 704,
+    "death": 754,
+    "raw": "704?~754",
+    "works": [
+      {
+        "titleId": "C175",
+        "poemNo": 170,
+        "poemNoStr": "170",
+        "title": {
+          "zh": "〈黃鶴樓〉",
+          "ko": "〈황학루〉"
+        },
+        "poet": {
+          "zh": "崔顥",
+          "ko": "최호"
+        },
+        "juan": "卷四",
+        "category": "七言律詩",
+        "meter": 7,
+        "preview": "昔人已乘黃鶴[1]去 / 此地空餘黃鶴樓[2]"
+      },
+      {
+        "titleId": "C176",
+        "poemNo": 171,
+        "poemNoStr": "171",
+        "title": {
+          "zh": "〈行經華陰[1]〉",
+          "ko": "〈華陰을 지나며〉"
+        },
+        "poet": {
+          "zh": "崔顥",
+          "ko": "최호"
+        },
+        "juan": "卷四",
+        "category": "七言律詩",
+        "meter": 7,
+        "preview": "岧嶢[2]太華俯咸京[3] / 天外三峰削不成[4]"
+      },
+      {
+        "titleId": "C260",
+        "poemNo": 253,
+        "poemNoStr": "253",
+        "title": {
+          "zh": "〈長干行[1] 二首其一〉",
+          "ko": "〈장간행 두 수 중 첫 번째 시〉"
+        },
+        "poet": {
+          "zh": "崔顥",
+          "ko": "최호"
+        },
+        "juan": "卷五",
+        "category": "五言樂府",
+        "meter": 5,
+        "preview": "君[2]家何處住 / 妾住在橫塘[3]"
+      },
+      {
+        "titleId": "C261",
+        "poemNo": 254,
+        "poemNoStr": "254",
+        "title": {
+          "zh": "〈長干行 二首其二〉",
+          "ko": "〈장간행 두 수 중 두 번째 시〉"
+        },
+        "poet": {
+          "zh": "崔顥",
+          "ko": "최호"
+        },
+        "juan": "卷五",
+        "category": "五言樂府",
+        "meter": 5,
+        "preview": "家臨九江水[1] / 來去九江側[2]"
+      }
+    ]
+  },
+  {
+    "poetZh": "崔曙",
+    "poetKo": "최서",
+    "authorTitleId": "C395",
+    "birth": 704,
+    "death": 739,
+    "raw": "704?~739",
+    "works": [
+      {
+        "titleId": "C179",
+        "poemNo": 174,
+        "poemNoStr": "174",
+        "title": {
+          "zh": "〈九日[1]登望仙臺[2] 呈劉明府[3]容〉",
+          "ko": "〈九日 望仙臺에 올라 明府 劉容에게 바치다〉"
+        },
+        "poet": {
+          "zh": "崔曙",
+          "ko": "최서"
+        },
+        "juan": "卷四",
+        "category": "七言律詩",
+        "meter": 7,
+        "preview": "漢文皇帝[4]有高臺[5] / 此日登臨曙色開"
+      }
+    ]
+  },
+  {
+    "poetZh": "常建",
+    "poetKo": "상건",
+    "authorTitleId": "C351",
+    "birth": 708,
+    "death": 765,
+    "raw": "708~765?",
+    "works": [
+      {
+        "titleId": "C103",
+        "poemNo": 98,
+        "poemNoStr": "098",
+        "title": {
+          "zh": "〈題破山寺[1]後禪院〉",
+          "ko": "〈破山寺 뒤에 있는 禪院을 읊다〉"
+        },
+        "poet": {
+          "zh": "常建",
+          "ko": "상건"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "淸晨入古寺 / 初日照高林"
+      }
+    ]
+  },
+  {
+    "poetZh": "劉長卿",
+    "poetKo": "유장경",
+    "authorTitleId": "C370",
+    "birth": 709,
+    "death": 780,
+    "raw": "709?~780?",
+    "works": [
+      {
+        "titleId": "C139",
+        "poemNo": 134,
+        "poemNoStr": "134",
+        "title": {
+          "zh": "〈送李中丞[1]歸漢陽[2]別業〉",
+          "ko": "〈漢陽의 別莊으로 돌아가는 李中丞을 전송하며〉"
+        },
+        "poet": {
+          "zh": "劉長卿",
+          "ko": "유장경"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "流落征南將 / 曾驅十萬師"
+      },
+      {
+        "titleId": "C140",
+        "poemNo": 135,
+        "poemNoStr": "135",
+        "title": {
+          "zh": "〈餞別[1]王十一[2]南游〉",
+          "ko": "〈王十一을 南方으로 떠나보내며〉"
+        },
+        "poet": {
+          "zh": "劉長卿",
+          "ko": "유장경"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "望君煙水闊[3] / 揮手淚霑巾"
+      },
+      {
+        "titleId": "C141",
+        "poemNo": 136,
+        "poemNoStr": "136",
+        "title": {
+          "zh": "〈尋南溪常山道人[1]隱居〉",
+          "ko": "〈南溪 常山道人의 隱居를 찾다〉"
+        },
+        "poet": {
+          "zh": "劉長卿",
+          "ko": "유장경"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "一路經行處 / 莓苔[2]見屐痕"
+      },
+      {
+        "titleId": "C142",
+        "poemNo": 137,
+        "poemNoStr": "137",
+        "title": {
+          "zh": "〈新年作[1]〉",
+          "ko": "〈새해에 짓다〉"
+        },
+        "poet": {
+          "zh": "劉長卿",
+          "ko": "유장경"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "鄕心新歲切[2] / 天畔獨潸然[3]"
+      },
+      {
+        "titleId": "C200",
+        "poemNo": 195,
+        "poemNoStr": "195",
+        "title": {
+          "zh": "〈江州重別薛六柳八二員外[1]〉",
+          "ko": "〈江州에서 薛六 柳八 두 員外郞과 다시 이별하다〉"
+        },
+        "poet": {
+          "zh": "劉長卿",
+          "ko": "유장경"
+        },
+        "juan": "卷四",
+        "category": "七言律詩",
+        "meter": 7,
+        "preview": "生涯豈料承優詔[2] / 世事空知學醉歌"
+      },
+      {
+        "titleId": "C201",
+        "poemNo": 196,
+        "poemNoStr": "196",
+        "title": {
+          "zh": "〈長沙過賈誼宅[1]〉",
+          "ko": "〈長沙에서 賈誼의 옛 집을 지나며 〉"
+        },
+        "poet": {
+          "zh": "劉長卿",
+          "ko": "유장경"
+        },
+        "juan": "卷四",
+        "category": "七言律詩",
+        "meter": 7,
+        "preview": "三年謫宦此棲遲[2] / 萬古惟留楚客[3]悲"
+      },
+      {
+        "titleId": "C202",
+        "poemNo": 197,
+        "poemNoStr": "197",
+        "title": {
+          "zh": "〈自夏口至鸚鵡洲 夕望岳陽 寄源中丞[1]〉",
+          "ko": "〈夏口에서 鸚鵡洲로 와서 저물녘 岳陽을 바라보며 源中丞에게 부치다〉"
+        },
+        "poet": {
+          "zh": "劉長卿",
+          "ko": "유장경"
+        },
+        "juan": "卷四",
+        "category": "七言律詩",
+        "meter": 7,
+        "preview": "汀洲[2]無浪復無煙 / 楚客相思益渺然"
+      },
+      {
+        "titleId": "C244",
+        "poemNo": 237,
+        "poemNoStr": "237",
+        "title": {
+          "zh": "〈送靈澈[1]〉",
+          "ko": "〈영철을 보내며〉"
+        },
+        "poet": {
+          "zh": "劉長卿",
+          "ko": "유장경"
+        },
+        "juan": "卷五",
+        "category": "五言絶句",
+        "meter": 5,
+        "preview": "蒼蒼[2]竹林寺[3] / 杳杳[4]鐘聲晩"
+      },
+      {
+        "titleId": "C245",
+        "poemNo": 238,
+        "poemNoStr": "238",
+        "title": {
+          "zh": "〈彈琴[1]〉",
+          "ko": "〈거문고를 타다〉"
+        },
+        "poet": {
+          "zh": "劉長卿",
+          "ko": "유장경"
+        },
+        "juan": "卷五",
+        "category": "五言絶句",
+        "meter": 5,
+        "preview": "泠泠七弦上[2] / 靜聽松風寒[3]"
+      },
+      {
+        "titleId": "C246",
+        "poemNo": 239,
+        "poemNoStr": "239",
+        "title": {
+          "zh": "〈送上人[1]〉",
+          "ko": "〈上人을 전송하며〉"
+        },
+        "poet": {
+          "zh": "劉長卿",
+          "ko": "유장경"
+        },
+        "juan": "卷五",
+        "category": "五言絶句",
+        "meter": 5,
+        "preview": "孤雲將野鶴[2] / 豈向人間住"
+      }
+    ]
+  },
+  {
+    "poetZh": "杜甫",
+    "poetKo": "두보",
+    "authorTitleId": "C341",
+    "birth": 712,
+    "death": 770,
+    "raw": "712~770",
+    "works": [
+      {
+        "titleId": "C12",
+        "poemNo": 9,
+        "poemNoStr": "009",
+        "title": {
+          "zh": "〈贈衛八處士[1]〉",
+          "ko": "〈위팔처사에게 주다〉"
+        },
+        "poet": {
+          "zh": "杜甫",
+          "ko": "두보"
+        },
+        "juan": "卷一",
+        "category": "五言古詩",
+        "meter": 5,
+        "preview": "人生不相見 / 動[2]如參與商[3]"
+      },
+      {
+        "titleId": "C13",
+        "poemNo": 10,
+        "poemNoStr": "010",
+        "title": {
+          "zh": "〈佳人〉",
+          "ko": "〈미인〉"
+        },
+        "poet": {
+          "zh": "杜甫",
+          "ko": "두보"
+        },
+        "juan": "卷一",
+        "category": "五言古詩",
+        "meter": 5,
+        "preview": "絶代有佳人 / 幽居在空谷"
+      },
+      {
+        "titleId": "C14",
+        "poemNo": 11,
+        "poemNoStr": "011",
+        "title": {
+          "zh": "〈夢李白〉 二首之一",
+          "ko": "〈꿈에서 이백을 보고〉 두 수 중 첫 번째 시"
+        },
+        "poet": {
+          "zh": "杜甫",
+          "ko": "두보"
+        },
+        "juan": "卷一",
+        "category": "五言古詩",
+        "meter": 5,
+        "preview": "死別已呑聲[1] / 生別長惻惻[2]"
+      },
+      {
+        "titleId": "C15",
+        "poemNo": 12,
+        "poemNoStr": "012",
+        "title": {
+          "zh": "〈夢李白〉 二首之二",
+          "ko": "〈꿈에서 이백을 보고〉 두 수 중 두 번째 시"
+        },
+        "poet": {
+          "zh": "杜甫",
+          "ko": "두보"
+        },
+        "juan": "卷一",
+        "category": "五言古詩",
+        "meter": 5,
+        "preview": "浮雲終日行 / 遊子[1]久不至"
+      },
+      {
+        "titleId": "C63",
+        "poemNo": 60,
+        "poemNoStr": "060",
+        "title": {
+          "zh": "〈韋諷[1]錄事宅觀曹將軍[2]畫馬圖引[3]〉",
+          "ko": "〈위풍 녹사의 댁에서 조 장군이 그린 말 그림을 보고서〉"
+        },
+        "poet": {
+          "zh": "杜甫",
+          "ko": "두보"
+        },
+        "juan": "卷二",
+        "category": "七言古詩",
+        "meter": 7,
+        "preview": "國初已來畫鞍馬 / 神妙獨數江都王[4]"
+      },
+      {
+        "titleId": "C64",
+        "poemNo": 61,
+        "poemNoStr": "061",
+        "title": {
+          "zh": "〈丹靑[1]引贈曹將軍霸[2]〉",
+          "ko": "〈단청인:조패 장군에게 주다〉"
+        },
+        "poet": {
+          "zh": "杜甫",
+          "ko": "두보"
+        },
+        "juan": "卷二",
+        "category": "七言古詩",
+        "meter": 7,
+        "preview": "將軍魏武[3]之子孫 / 於今爲庶爲淸門[4]"
+      },
+      {
+        "titleId": "C65",
+        "poemNo": 62,
+        "poemNoStr": "062",
+        "title": {
+          "zh": "〈寄韓諫議[1]〉",
+          "ko": "〈한 간의에게 부치다〉"
+        },
+        "poet": {
+          "zh": "杜甫",
+          "ko": "두보"
+        },
+        "juan": "卷二",
+        "category": "七言古詩",
+        "meter": 7,
+        "preview": "今我不樂思岳陽[2] / 身欲奮飛病在牀"
+      },
+      {
+        "titleId": "C66",
+        "poemNo": 63,
+        "poemNoStr": "063",
+        "title": {
+          "zh": "〈古柏[1]行〉",
+          "ko": "〈오래된 측백나무〉"
+        },
+        "poet": {
+          "zh": "杜甫",
+          "ko": "두보"
+        },
+        "juan": "卷二",
+        "category": "七言古詩",
+        "meter": 7,
+        "preview": "孔明廟[2]前有老柏 / 柯如靑銅根如石"
+      },
+      {
+        "titleId": "C67",
+        "poemNo": 64,
+        "poemNoStr": "064",
+        "title": {
+          "zh": "〈觀公孫大娘[1]弟子舞劍器行 幷序〉",
+          "ko": "〈공손대랑의 제자가 검기무 추는 것을 보고 병서〉"
+        },
+        "poet": {
+          "zh": "杜甫",
+          "ko": "두보"
+        },
+        "juan": "卷二",
+        "category": "七言古詩",
+        "meter": 7,
+        "preview": "大曆二年十月十九日 蘷府別駕元持宅[2] / 見臨潁李十二娘[3]"
+      },
+      {
+        "titleId": "C89",
+        "poemNo": 86,
+        "poemNoStr": "086",
+        "title": {
+          "zh": "〈兵車行[1]〉",
+          "ko": "〈병거행〉"
+        },
+        "poet": {
+          "zh": "杜甫",
+          "ko": "두보"
+        },
+        "juan": "卷二",
+        "category": "七言樂府",
+        "meter": 7,
+        "preview": "車轔轔[2] 馬蕭蕭[3]行人[4]弓箭各在腰 / 耶娘妻子走相送"
+      },
+      {
+        "titleId": "C90",
+        "poemNo": 87,
+        "poemNoStr": "087",
+        "title": {
+          "zh": "〈麗人行〉",
+          "ko": "〈아름다운 사람들〉"
+        },
+        "poet": {
+          "zh": "杜甫",
+          "ko": "두보"
+        },
+        "juan": "卷二",
+        "category": "七言樂府",
+        "meter": 7,
+        "preview": "三月三日[1]天氣新 / 長安水邊[2]多麗人"
+      },
+      {
+        "titleId": "C91",
+        "poemNo": 88,
+        "poemNoStr": "088",
+        "title": {
+          "zh": "〈哀江頭〉",
+          "ko": "〈강어귀에서 슬퍼하다〉"
+        },
+        "poet": {
+          "zh": "杜甫",
+          "ko": "두보"
+        },
+        "juan": "卷二",
+        "category": "七言樂府",
+        "meter": 7,
+        "preview": "少陵野老呑聲哭[1] / 春日潛行曲江[2]曲"
+      },
+      {
+        "titleId": "C92",
+        "poemNo": 89,
+        "poemNoStr": "089",
+        "title": {
+          "zh": "〈哀王孫〉",
+          "ko": "〈왕손을 애달파하다〉"
+        },
+        "poet": {
+          "zh": "杜甫",
+          "ko": "두보"
+        },
+        "juan": "卷二",
+        "category": "七言樂府",
+        "meter": 7,
+        "preview": "長安城頭頭白烏[1] / 夜飛延秋門[2]上呼"
+      },
+      {
+        "titleId": "C110",
+        "poemNo": 105,
+        "poemNoStr": "105",
+        "title": {
+          "zh": "〈月夜〉",
+          "ko": "〈달밤〉"
+        },
+        "poet": {
+          "zh": "杜甫",
+          "ko": "두보"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "今夜鄜州[1]月 / 閨中只獨看"
+      },
+      {
+        "titleId": "C111",
+        "poemNo": 106,
+        "poemNoStr": "106",
+        "title": {
+          "zh": "〈春望〉",
+          "ko": "〈봄날 바라보며〉"
+        },
+        "poet": {
+          "zh": "杜甫",
+          "ko": "두보"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "國破[1]山河在 / 城春草木深[2]"
+      },
+      {
+        "titleId": "C112",
+        "poemNo": 107,
+        "poemNoStr": "107",
+        "title": {
+          "zh": "〈春宿左省〉",
+          "ko": "〈봄에 門下省에 숙직하며〉"
+        },
+        "poet": {
+          "zh": "杜甫",
+          "ko": "두보"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "花隱掖垣[1]暮 / 啾啾棲鳥過"
+      },
+      {
+        "titleId": "C113",
+        "poemNo": 108,
+        "poemNoStr": "108",
+        "title": {
+          "zh": "〈至德二載 甫自京金光門[1]出 間道[2]歸鳳翔[3] 乾元初 從左拾遺移華州掾[4] 與親故別 因出此門 有悲往事〉",
+          "ko": "〈至德 2년(757)에 나는 서울의 金光門을 나와 샛길로 鳳翔에 돌아갔다. 乾元 元年(758)에 左拾遺에서 華州掾으로 폄직되어 친구들과 이별하였는데, 이로 인해 이 문을 나오니 지난 일에 대한 슬픔이 있었다〉"
+        },
+        "poet": {
+          "zh": "杜甫",
+          "ko": "두보"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "此道昔歸順[5] / 西郊胡[6]正繁"
+      },
+      {
+        "titleId": "C114",
+        "poemNo": 109,
+        "poemNoStr": "109",
+        "title": {
+          "zh": "〈月夜憶舍弟[1]〉",
+          "ko": "〈달밤에 동생을 생각하다〉"
+        },
+        "poet": {
+          "zh": "杜甫",
+          "ko": "두보"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "戍鼓[2]斷人行[3] / 邊秋[4]一雁聲"
+      },
+      {
+        "titleId": "C115",
+        "poemNo": 110,
+        "poemNoStr": "110",
+        "title": {
+          "zh": "〈天末懷李白〉",
+          "ko": "〈하늘 끝에서 李白을 그리워하다〉"
+        },
+        "poet": {
+          "zh": "杜甫",
+          "ko": "두보"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "涼風起天末[1] / 君子[2]意如何"
+      },
+      {
+        "titleId": "C116",
+        "poemNo": 111,
+        "poemNoStr": "111",
+        "title": {
+          "zh": "〈奉濟驛[1]重送[2]嚴公[3]四韻[4]〉",
+          "ko": "〈奉濟驛에서 嚴公을 거듭 전송하는 四韻〉"
+        },
+        "poet": {
+          "zh": "杜甫",
+          "ko": "두보"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "遠送從此別 / 靑山空復情"
+      },
+      {
+        "titleId": "C117",
+        "poemNo": 112,
+        "poemNoStr": "112",
+        "title": {
+          "zh": "〈別房太尉[1]墓〉",
+          "ko": "〈房太尉의 墓를 떠나며〉"
+        },
+        "poet": {
+          "zh": "杜甫",
+          "ko": "두보"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "他鄕復行役[2] / 駐馬別孤墳"
+      },
+      {
+        "titleId": "C118",
+        "poemNo": 113,
+        "poemNoStr": "113",
+        "title": {
+          "zh": "〈旅夜書懷〉",
+          "ko": "〈나그네가 밤에 회포를 쓰다〉"
+        },
+        "poet": {
+          "zh": "杜甫",
+          "ko": "두보"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "細草微風岸 / 危檣[1]獨夜舟"
+      },
+      {
+        "titleId": "C119",
+        "poemNo": 114,
+        "poemNoStr": "114",
+        "title": {
+          "zh": "〈登岳陽樓[1]〉",
+          "ko": "〈岳陽樓에 올라서〉"
+        },
+        "poet": {
+          "zh": "杜甫",
+          "ko": "두보"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "昔聞洞庭水 / 今上岳陽樓"
+      },
+      {
+        "titleId": "C187",
+        "poemNo": 182,
+        "poemNoStr": "182",
+        "title": {
+          "zh": "〈蜀相[1]〉",
+          "ko": "〈蜀漢의 승상〉"
+        },
+        "poet": {
+          "zh": "杜甫",
+          "ko": "두보"
+        },
+        "juan": "卷四",
+        "category": "七言律詩",
+        "meter": 7,
+        "preview": "丞相祠堂[2]何處尋 / 錦官城[3]外柏森森"
+      },
+      {
+        "titleId": "C188",
+        "poemNo": 183,
+        "poemNoStr": "183",
+        "title": {
+          "zh": "〈客至[1]〉",
+          "ko": "〈객이 오다〉"
+        },
+        "poet": {
+          "zh": "杜甫",
+          "ko": "두보"
+        },
+        "juan": "卷四",
+        "category": "七言律詩",
+        "meter": 7,
+        "preview": "舍南舍北皆春水[2] / 但見群鷗日日來[3]"
+      },
+      {
+        "titleId": "C189",
+        "poemNo": 184,
+        "poemNoStr": "184",
+        "title": {
+          "zh": "〈野望〉",
+          "ko": "〈들녘을 바라보다〉"
+        },
+        "poet": {
+          "zh": "杜甫",
+          "ko": "두보"
+        },
+        "juan": "卷四",
+        "category": "七言律詩",
+        "meter": 7,
+        "preview": "西山[1]白雪三城戍[2] / 南浦淸江萬里橋[3]"
+      },
+      {
+        "titleId": "C190",
+        "poemNo": 185,
+        "poemNoStr": "185",
+        "title": {
+          "zh": "〈聞官軍收河南河北[1]〉",
+          "ko": "〈官軍이 河南 河北을 수복했다는 소식을 듣고〉"
+        },
+        "poet": {
+          "zh": "杜甫",
+          "ko": "두보"
+        },
+        "juan": "卷四",
+        "category": "七言律詩",
+        "meter": 7,
+        "preview": "劍外[2]忽傳收薊北[3] / 初聞涕淚滿衣裳"
+      },
+      {
+        "titleId": "C191",
+        "poemNo": 186,
+        "poemNoStr": "186",
+        "title": {
+          "zh": "〈登高[1]〉",
+          "ko": "〈등고〉"
+        },
+        "poet": {
+          "zh": "杜甫",
+          "ko": "두보"
+        },
+        "juan": "卷四",
+        "category": "七言律詩",
+        "meter": 7,
+        "preview": "風急天高猿嘯哀[2] / 渚淸沙白鳥飛回"
+      },
+      {
+        "titleId": "C192",
+        "poemNo": 187,
+        "poemNoStr": "187",
+        "title": {
+          "zh": "〈登樓〉",
+          "ko": "〈누대에 오르다〉"
+        },
+        "poet": {
+          "zh": "杜甫",
+          "ko": "두보"
+        },
+        "juan": "卷四",
+        "category": "七言律詩",
+        "meter": 7,
+        "preview": "花近高樓傷客心 / 萬方多難此登臨"
+      },
+      {
+        "titleId": "C193",
+        "poemNo": 188,
+        "poemNoStr": "188",
+        "title": {
+          "zh": "〈宿府〉",
+          "ko": "〈幕府에서 묵으며〉"
+        },
+        "poet": {
+          "zh": "杜甫",
+          "ko": "두보"
+        },
+        "juan": "卷四",
+        "category": "七言律詩",
+        "meter": 7,
+        "preview": "淸秋幕府井梧[1]寒 / 獨宿江城蠟炬[2]殘"
+      },
+      {
+        "titleId": "C194",
+        "poemNo": 189,
+        "poemNoStr": "189",
+        "title": {
+          "zh": "〈閣[1]夜〉",
+          "ko": "〈西閣의 밤〉"
+        },
+        "poet": {
+          "zh": "杜甫",
+          "ko": "두보"
+        },
+        "juan": "卷四",
+        "category": "七言律詩",
+        "meter": 7,
+        "preview": "歲暮陰陽[2]催短景[3] / 天涯[4]霜雪霽[5]寒宵五更[6]"
+      },
+      {
+        "titleId": "C195",
+        "poemNo": 190,
+        "poemNoStr": "190",
+        "title": {
+          "zh": "〈詠懷古跡 其一〉",
+          "ko": "〈옛 자취를 읊으며 심회를 적다 첫 번째 시〉"
+        },
+        "poet": {
+          "zh": "杜甫",
+          "ko": "두보"
+        },
+        "juan": "卷四",
+        "category": "七言律詩",
+        "meter": 7,
+        "preview": "支離東北風塵際[1] / 漂泊西南[2]天地間"
+      },
+      {
+        "titleId": "C196",
+        "poemNo": 191,
+        "poemNoStr": "191",
+        "title": {
+          "zh": "〈詠懷古跡 其二〉",
+          "ko": "〈옛 자취를 읊으며 심회를 적다 두 번째 시〉"
+        },
+        "poet": {
+          "zh": "杜甫",
+          "ko": "두보"
+        },
+        "juan": "卷四",
+        "category": "七言律詩",
+        "meter": 7,
+        "preview": "搖落深知宋玉悲[1] / 風流儒雅亦吾師[2]"
+      },
+      {
+        "titleId": "C197",
+        "poemNo": 192,
+        "poemNoStr": "192",
+        "title": {
+          "zh": "〈詠懷古跡 其三〉",
+          "ko": "〈옛 자취를 읊으며 심회를 적다 세 번째 시〉"
+        },
+        "poet": {
+          "zh": "杜甫",
+          "ko": "두보"
+        },
+        "juan": "卷四",
+        "category": "七言律詩",
+        "meter": 7,
+        "preview": "群山萬壑赴荊門[1] / 生長明妃[2]尙有村"
+      },
+      {
+        "titleId": "C198",
+        "poemNo": 193,
+        "poemNoStr": "193",
+        "title": {
+          "zh": "〈詠懷古迹 其四〉",
+          "ko": "〈옛 자취를 읊으며 심회를 적다 네 번째 시〉"
+        },
+        "poet": {
+          "zh": "杜甫",
+          "ko": "두보"
+        },
+        "juan": "卷四",
+        "category": "七言律詩",
+        "meter": 7,
+        "preview": "蜀主窺吳幸三峽[1] / 崩年亦在永安宮[2]"
+      },
+      {
+        "titleId": "C199",
+        "poemNo": 194,
+        "poemNoStr": "194",
+        "title": {
+          "zh": "〈詠懷古跡 其五〉",
+          "ko": "〈옛 자취를 읊으며 심회를 적다 다섯 번째 시〉"
+        },
+        "poet": {
+          "zh": "杜甫",
+          "ko": "두보"
+        },
+        "juan": "卷四",
+        "category": "七言律詩",
+        "meter": 7,
+        "preview": "諸葛大名垂宇宙 / 宗臣遺像肅淸高[1]"
+      },
+      {
+        "titleId": "C242",
+        "poemNo": 235,
+        "poemNoStr": "235",
+        "title": {
+          "zh": "〈八陣圖[1]〉",
+          "ko": "〈팔진도〉"
+        },
+        "poet": {
+          "zh": "杜甫",
+          "ko": "두보"
+        },
+        "juan": "卷五",
+        "category": "五言絶句",
+        "meter": 5,
+        "preview": "功蓋三分國[2] / 名成八陣圖"
+      },
+      {
+        "titleId": "C278",
+        "poemNo": 271,
+        "poemNoStr": "271",
+        "title": {
+          "zh": "〈江南逢李龜年[1]〉",
+          "ko": "〈강남에서 李龜年을 만나다〉"
+        },
+        "poet": {
+          "zh": "杜甫",
+          "ko": "두보"
+        },
+        "juan": "卷六",
+        "category": "七言絶句",
+        "meter": 7,
+        "preview": "岐王宅裏尋常見[2] / 崔九堂前幾度聞[3]"
+      }
+    ]
+  },
+  {
+    "poetZh": "岑參",
+    "poetKo": "잠삼",
+    "authorTitleId": "C379",
+    "birth": 715,
+    "death": 770,
+    "raw": "715~770",
+    "works": [
+      {
+        "titleId": "C60",
+        "poemNo": 57,
+        "poemNoStr": "057",
+        "title": {
+          "zh": "〈[1]走馬川[2]行 奉送封大夫[3]出師西征〉",
+          "ko": "〈주마천행:봉대부의 서역 출정을 봉송하며〉"
+        },
+        "poet": {
+          "zh": "岑參",
+          "ko": "잠삼"
+        },
+        "juan": "卷二",
+        "category": "七言古詩",
+        "meter": 7,
+        "preview": "君不見走馬川行[4] / 雪海[5]邊平沙莽莽黃入天"
+      },
+      {
+        "titleId": "C61",
+        "poemNo": 58,
+        "poemNoStr": "058",
+        "title": {
+          "zh": "〈輪臺歌 奉送封大夫出師西征〉",
+          "ko": "〈윤대가:봉대부의 서역 출정을 봉송하며〉"
+        },
+        "poet": {
+          "zh": "岑參",
+          "ko": "잠삼"
+        },
+        "juan": "卷二",
+        "category": "七言古詩",
+        "meter": 7,
+        "preview": "輪臺城頭夜吹角[1] / 輪臺城北旄頭落[2]"
+      },
+      {
+        "titleId": "C62",
+        "poemNo": 59,
+        "poemNoStr": "059",
+        "title": {
+          "zh": "〈白雪歌 送武判官[1]歸京〉",
+          "ko": "〈백설가:서울로 돌아가는 무판관을 보내며〉"
+        },
+        "poet": {
+          "zh": "岑參",
+          "ko": "잠삼"
+        },
+        "juan": "卷二",
+        "category": "七言古詩",
+        "meter": 7,
+        "preview": "北風卷地白草[2]折 / 胡天八月卽飛雪"
+      },
+      {
+        "titleId": "C104",
+        "poemNo": 99,
+        "poemNoStr": "099",
+        "title": {
+          "zh": "〈寄左省杜拾遺〉",
+          "ko": "〈門下省 杜拾遺에게 부치다〉"
+        },
+        "poet": {
+          "zh": "岑參",
+          "ko": "잠삼"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "聯步趨丹陛[1] / 分曹限紫微[2]"
+      },
+      {
+        "titleId": "C182",
+        "poemNo": 177,
+        "poemNoStr": "177",
+        "title": {
+          "zh": "〈奉和中書舍人賈至早朝大明宮[1]〉",
+          "ko": "〈中書舍人 賈至의 〈大明宮의 새벽 조회〉를 받들어 和韻하다〉"
+        },
+        "poet": {
+          "zh": "岑參",
+          "ko": "잠삼"
+        },
+        "juan": "卷四",
+        "category": "七言律詩",
+        "meter": 7,
+        "preview": "鷄鳴紫陌[2]曙光寒 / 鶯囀皇州[3]春色闌[4]"
+      },
+      {
+        "titleId": "C277",
+        "poemNo": 270,
+        "poemNoStr": "270",
+        "title": {
+          "zh": "〈逢入京使〉",
+          "ko": "〈서울로 들어가는 使者를 만나〉"
+        },
+        "poet": {
+          "zh": "岑參",
+          "ko": "잠삼"
+        },
+        "juan": "卷六",
+        "category": "七言絶句",
+        "meter": 7,
+        "preview": "故園東望路漫漫[1] / 雙袖龍鍾淚不乾[2]"
+      }
+    ]
+  },
+  {
+    "poetZh": "錢起",
+    "poetKo": "전기",
+    "authorTitleId": "C387",
+    "birth": 722,
+    "death": 780,
+    "raw": "722~780",
+    "works": [
+      {
+        "titleId": "C144",
+        "poemNo": 139,
+        "poemNoStr": "139",
+        "title": {
+          "zh": "〈谷口[1]書齋 寄楊補闕[2]〉",
+          "ko": "〈谷口의 書齋에서 楊補闕에게 부치다〉"
+        },
+        "poet": {
+          "zh": "錢起",
+          "ko": "전기"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "泉壑帶茅茨[3] / 雲霞生薛帷[4]"
+      },
+      {
+        "titleId": "C203",
+        "poemNo": 198,
+        "poemNoStr": "198",
+        "title": {
+          "zh": "〈贈闕下裴舍人[1]〉",
+          "ko": "〈宮廷의 裴舍人께〉"
+        },
+        "poet": {
+          "zh": "錢起",
+          "ko": "전기"
+        },
+        "juan": "卷四",
+        "category": "七言律詩",
+        "meter": 7,
+        "preview": "二月黃鸝飛上林[2] / 春城紫禁曉陰陰[3]"
+      }
+    ]
+  },
+  {
+    "poetZh": "元結",
+    "poetKo": "원결",
+    "authorTitleId": "C363",
+    "birth": 723,
+    "death": 772,
+    "raw": "723~772",
+    "works": [
+      {
+        "titleId": "C68",
+        "poemNo": 65,
+        "poemNoStr": "065",
+        "title": {
+          "zh": "〈石魚湖[1]上醉歌 幷序〉",
+          "ko": "〈석어호 가에서 취하여 노래 부르다 병서〉"
+        },
+        "poet": {
+          "zh": "元結",
+          "ko": "원결"
+        },
+        "juan": "卷二",
+        "category": "七言古詩",
+        "meter": 7,
+        "preview": "漫叟[2]以公田米釀酒 因休暇則載酒於湖上 時取一醉 / 歡醉中 據湖岸 引臂向魚取酒[3]"
+      }
+    ]
+  },
+  {
+    "poetZh": "韋應物",
+    "poetKo": "위응물",
+    "authorTitleId": "C365",
+    "birth": 737,
+    "death": 792,
+    "raw": "737~792",
+    "works": [
+      {
+        "titleId": "C31",
+        "poemNo": 28,
+        "poemNoStr": "028",
+        "title": {
+          "zh": "〈初發揚子[1]寄元大校書[2]〉",
+          "ko": "〈양자진을 떠나면서 교서랑 원대에게 부치다〉"
+        },
+        "poet": {
+          "zh": "韋應物",
+          "ko": "위응물"
+        },
+        "juan": "卷一",
+        "category": "五言古詩",
+        "meter": 5,
+        "preview": "悽悽去親愛[3] / 泛泛入煙霧"
+      },
+      {
+        "titleId": "C32",
+        "poemNo": 29,
+        "poemNoStr": "029",
+        "title": {
+          "zh": "〈寄全椒山[1]中道士〉",
+          "ko": "〈전초산의 도사에게 부치다〉"
+        },
+        "poet": {
+          "zh": "韋應物",
+          "ko": "위응물"
+        },
+        "juan": "卷一",
+        "category": "五言古詩",
+        "meter": 5,
+        "preview": "今朝郡齋[2]冷 / 忽念山中客"
+      },
+      {
+        "titleId": "C33",
+        "poemNo": 30,
+        "poemNoStr": "030",
+        "title": {
+          "zh": "〈長安遇馮著[1]〉",
+          "ko": "〈장안에서 풍저를 만나다〉"
+        },
+        "poet": {
+          "zh": "韋應物",
+          "ko": "위응물"
+        },
+        "juan": "卷一",
+        "category": "五言古詩",
+        "meter": 5,
+        "preview": "客從東方來 / 衣上灞陵[2]雨"
+      },
+      {
+        "titleId": "C34",
+        "poemNo": 31,
+        "poemNoStr": "031",
+        "title": {
+          "zh": "〈夕次[1]盱眙縣[2]〉",
+          "ko": "〈저녁에 우이현에서 묵다〉"
+        },
+        "poet": {
+          "zh": "韋應物",
+          "ko": "위응물"
+        },
+        "juan": "卷一",
+        "category": "五言古詩",
+        "meter": 5,
+        "preview": "落帆逗淮鎭[3] / 停舫臨孤驛"
+      },
+      {
+        "titleId": "C35",
+        "poemNo": 32,
+        "poemNoStr": "032",
+        "title": {
+          "zh": "〈東郊〉",
+          "ko": "〈동교에서〉"
+        },
+        "poet": {
+          "zh": "韋應物",
+          "ko": "위응물"
+        },
+        "juan": "卷一",
+        "category": "五言古詩",
+        "meter": 5,
+        "preview": "吏舍跼[1]終年 / 出郊[2]曠淸曙[3]"
+      },
+      {
+        "titleId": "C36",
+        "poemNo": 33,
+        "poemNoStr": "033",
+        "title": {
+          "zh": "〈送楊氏女[1]〉",
+          "ko": "〈양씨녀를 보내며〉"
+        },
+        "poet": {
+          "zh": "韋應物",
+          "ko": "위응물"
+        },
+        "juan": "卷一",
+        "category": "五言古詩",
+        "meter": 5,
+        "preview": "永日方慼慼[2] / 出行復悠悠"
+      },
+      {
+        "titleId": "C145",
+        "poemNo": 140,
+        "poemNoStr": "140",
+        "title": {
+          "zh": "〈淮上[1]喜會梁川[2]故人〉",
+          "ko": "〈淮水가에서 梁川의 친구를 즐겁게 만나다〉"
+        },
+        "poet": {
+          "zh": "韋應物",
+          "ko": "위응물"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "江漢[3]曾爲客 / 相逢每醉還"
+      },
+      {
+        "titleId": "C146",
+        "poemNo": 141,
+        "poemNoStr": "141",
+        "title": {
+          "zh": "〈賦得[1]暮雨 送李冑[2]〉",
+          "ko": "〈저녁비:李冑를 보내다〉"
+        },
+        "poet": {
+          "zh": "韋應物",
+          "ko": "위응물"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "楚江[3]微雨裡 / 建業[4]暮鐘時"
+      },
+      {
+        "titleId": "C204",
+        "poemNo": 199,
+        "poemNoStr": "199",
+        "title": {
+          "zh": "〈寄李儋元錫[1]〉",
+          "ko": "〈李儋 元錫에게 부치다〉"
+        },
+        "poet": {
+          "zh": "韋應物",
+          "ko": "위응물"
+        },
+        "juan": "卷四",
+        "category": "七言律詩",
+        "meter": 7,
+        "preview": "去年花裏逢君別 / 今日花開又[2]一年"
+      },
+      {
+        "titleId": "C247",
+        "poemNo": 240,
+        "poemNoStr": "240",
+        "title": {
+          "zh": "〈秋夜寄丘員外[1]〉",
+          "ko": "〈가을밤 丘員外에게 부치다〉"
+        },
+        "poet": {
+          "zh": "韋應物",
+          "ko": "위응물"
+        },
+        "juan": "卷五",
+        "category": "五言絶句",
+        "meter": 5,
+        "preview": "懷君屬秋夜[2] / 散步詠涼天"
+      },
+      {
+        "titleId": "C279",
+        "poemNo": 272,
+        "poemNoStr": "272",
+        "title": {
+          "zh": "〈滁州[1]西澗[2]〉",
+          "ko": "〈滁州의 서쪽 시내〉"
+        },
+        "poet": {
+          "zh": "韋應物",
+          "ko": "위응물"
+        },
+        "juan": "卷六",
+        "category": "七言絶句",
+        "meter": 7,
+        "preview": "獨憐幽草澗邊生 / 上有黃鸝[3]深樹鳴"
+      }
+    ]
+  },
+  {
+    "poetZh": "盧綸",
+    "poetKo": "노륜",
+    "authorTitleId": "C337",
+    "birth": 748,
+    "death": 799,
+    "raw": "748?~799",
+    "works": [
+      {
+        "titleId": "C207",
+        "poemNo": 202,
+        "poemNoStr": "202",
+        "title": {
+          "zh": "〈晩次鄂州[1]〉",
+          "ko": "〈저물녘 鄂州에 머물며〉"
+        },
+        "poet": {
+          "zh": "盧綸",
+          "ko": "노륜"
+        },
+        "juan": "卷四",
+        "category": "七言律詩",
+        "meter": 7,
+        "preview": "雲開遠見漢陽城[2] / 猶是孤帆一日程"
+      },
+      {
+        "titleId": "C263",
+        "poemNo": 256,
+        "poemNoStr": "256",
+        "title": {
+          "zh": "〈塞下曲[1] 四首其一〉",
+          "ko": "〈변방의 노래 네 수 중 첫 번째 시〉"
+        },
+        "poet": {
+          "zh": "盧綸",
+          "ko": "노륜"
+        },
+        "juan": "卷五",
+        "category": "五言樂府",
+        "meter": 5,
+        "preview": "鷲翎金僕姑[2] / 燕尾繡蝥弧[3]"
+      },
+      {
+        "titleId": "C264",
+        "poemNo": 257,
+        "poemNoStr": "257",
+        "title": {
+          "zh": "〈塞下曲 四首其二〉",
+          "ko": "〈변방의 노래 네 수 중 두 번째 시〉"
+        },
+        "poet": {
+          "zh": "盧綸",
+          "ko": "노륜"
+        },
+        "juan": "卷五",
+        "category": "五言樂府",
+        "meter": 5,
+        "preview": "林暗草驚風[1] / 將軍夜引弓[2]"
+      },
+      {
+        "titleId": "C265",
+        "poemNo": 258,
+        "poemNoStr": "258",
+        "title": {
+          "zh": "〈塞下曲 四首其三〉",
+          "ko": "〈변방의 노래 네 수 중 세 번째 시〉"
+        },
+        "poet": {
+          "zh": "盧綸",
+          "ko": "노륜"
+        },
+        "juan": "卷五",
+        "category": "五言樂府",
+        "meter": 5,
+        "preview": "月黑雁飛高[1] / 單于夜遁逃[2]"
+      },
+      {
+        "titleId": "C266",
+        "poemNo": 259,
+        "poemNoStr": "259",
+        "title": {
+          "zh": "〈塞下曲 四首其四〉",
+          "ko": "〈변방의 노래 네 수 중 네 번째 시〉"
+        },
+        "poet": {
+          "zh": "盧綸",
+          "ko": "노륜"
+        },
+        "juan": "卷五",
+        "category": "五言樂府",
+        "meter": 5,
+        "preview": "野幕敞瓊筵[1] / 羌戎賀勞旋[2]"
+      }
+    ]
+  },
+  {
+    "poetZh": "李益",
+    "poetKo": "이익",
+    "authorTitleId": "C378",
+    "birth": 749,
+    "death": 829,
+    "raw": "749~829",
+    "works": [
+      {
+        "titleId": "C267",
+        "poemNo": 260,
+        "poemNoStr": "260",
+        "title": {
+          "zh": "〈江南曲〉",
+          "ko": "〈강남곡〉"
+        },
+        "poet": {
+          "zh": "李益",
+          "ko": "이익"
+        },
+        "juan": "卷五",
+        "category": "五言樂府",
+        "meter": 5,
+        "preview": "嫁得瞿塘賈[1] / 朝朝誤妾期"
+      },
+      {
+        "titleId": "C286",
+        "poemNo": 279,
+        "poemNoStr": "279",
+        "title": {
+          "zh": "〈夜上受降城[1]聞笛〉",
+          "ko": "〈밤에 受降城에 올라 피리소리를 듣다〉"
+        },
+        "poet": {
+          "zh": "李益",
+          "ko": "이익"
+        },
+        "juan": "卷六",
+        "category": "七言絶句",
+        "meter": 7,
+        "preview": "回樂烽[2]前沙似雪 / 受降城外[3]月如霜"
+      }
+    ]
+  },
+  {
+    "poetZh": "孟郊",
+    "poetKo": "맹교",
+    "authorTitleId": "C346",
+    "birth": 751,
+    "death": 814,
+    "raw": "751~814",
+    "works": [
+      {
+        "titleId": "C48",
+        "poemNo": 45,
+        "poemNoStr": "045",
+        "title": {
+          "zh": "〈遊子吟〉",
+          "ko": "〈나그네 노래〉"
+        },
+        "poet": {
+          "zh": "孟郊",
+          "ko": "맹교"
+        },
+        "juan": "卷一",
+        "category": "五言樂府",
+        "meter": 5,
+        "preview": "慈母手中線[1] / 遊子身上衣"
+      }
+    ]
+  },
+  {
+    "poetZh": "韓愈",
+    "poetKo": "한유",
+    "authorTitleId": "C401",
+    "birth": 768,
+    "death": 824,
+    "raw": "768~824",
+    "works": [
+      {
+        "titleId": "C69",
+        "poemNo": 66,
+        "poemNoStr": "066",
+        "title": {
+          "zh": "〈山石〉",
+          "ko": "〈산석〉"
+        },
+        "poet": {
+          "zh": "韓愈",
+          "ko": "한유"
+        },
+        "juan": "卷二",
+        "category": "七言古詩",
+        "meter": 7,
+        "preview": "山石犖确[1]行徑微 / 黃昏到寺蝙蝠飛"
+      },
+      {
+        "titleId": "C70",
+        "poemNo": 67,
+        "poemNoStr": "067",
+        "title": {
+          "zh": "〈八月十五夜贈張功曹[1]〉",
+          "ko": "〈팔월 십오일 밤 장공조에게〉"
+        },
+        "poet": {
+          "zh": "韓愈",
+          "ko": "한유"
+        },
+        "juan": "卷二",
+        "category": "七言古詩",
+        "meter": 7,
+        "preview": "纖雲四捲天無河 / 淸風吹空月舒波"
+      },
+      {
+        "titleId": "C71",
+        "poemNo": 68,
+        "poemNoStr": "068",
+        "title": {
+          "zh": "〈謁衡嶽廟[1]遂宿嶽寺題門樓〉",
+          "ko": "〈형악묘에 배알하고 드디어 형산의 절에서 묵으며 문루에 제하다〉"
+        },
+        "poet": {
+          "zh": "韓愈",
+          "ko": "한유"
+        },
+        "juan": "卷二",
+        "category": "七言古詩",
+        "meter": 7,
+        "preview": "五嶽祭秩皆三公[2] / 四方環鎭嵩當中[3]"
+      },
+      {
+        "titleId": "C72",
+        "poemNo": 69,
+        "poemNoStr": "069",
+        "title": {
+          "zh": "〈石鼓[1]歌〉",
+          "ko": "〈석고의 노래〉"
+        },
+        "poet": {
+          "zh": "韓愈",
+          "ko": "한유"
+        },
+        "juan": "卷二",
+        "category": "七言古詩",
+        "meter": 7,
+        "preview": "張生[2]手持石鼓文[3] / 勸我試作石鼓歌"
+      }
+    ]
+  },
+  {
+    "poetZh": "白居易",
+    "poetKo": "백거이",
+    "authorTitleId": "C349",
+    "birth": 772,
+    "death": 846,
+    "raw": "772~846",
+    "works": [
+      {
+        "titleId": "C75",
+        "poemNo": 72,
+        "poemNoStr": "072",
+        "title": {
+          "zh": "〈琵琶[1]行 幷序〉",
+          "ko": "〈비파행 병서〉"
+        },
+        "poet": {
+          "zh": "白居易",
+          "ko": "백거이"
+        },
+        "juan": "卷二",
+        "category": "七言古詩",
+        "meter": 7,
+        "preview": "元和十年 予左遷九江郡司馬[2] / 明年秋 送客湓浦口[3]"
+      },
+      {
+        "titleId": "C157",
+        "poemNo": 152,
+        "poemNoStr": "152",
+        "title": {
+          "zh": "〈賦得古原草 送別[1]〉",
+          "ko": "〈옛 언덕의 풀:이별노래〉"
+        },
+        "poet": {
+          "zh": "白居易",
+          "ko": "백거이"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "離離[2]原上草 / 一歲一枯榮"
+      },
+      {
+        "titleId": "C213",
+        "poemNo": 208,
+        "poemNoStr": "208",
+        "title": {
+          "zh": "〈自河南經亂[1]關內阻飢[2] 兄弟離散 各在一處 因望月有感 聊書所懷 寄上浮梁大兄[3]於潛七兄[4]烏江十五兄[5] 兼示符離及下邽弟妹[6]〉",
+          "ko": "〈河南 지방이 난리를 겪고서부터 關內 지방은 굶주림에 시달리는데 형제마저 이산가족이 되어 각자 다른 지방에 살게 되었다. 달을 보자니 느낀 바가 있어 이에 애오라지 품은 생각을 써서 浮梁에 있는 大兄, 於潛에 있는 七兄, 烏江에 있는 十五兄에게 부치고 아울러 符離와 下邽에 있는 아우와 누이에게 보이다〉"
+        },
+        "poet": {
+          "zh": "白居易",
+          "ko": "백거이"
+        },
+        "juan": "卷四",
+        "category": "七言律詩",
+        "meter": 7,
+        "preview": "時難年荒世業空[7] / 弟兄羈旅各西東"
+      },
+      {
+        "titleId": "C253",
+        "poemNo": 246,
+        "poemNoStr": "246",
+        "title": {
+          "zh": "〈問劉十九[1]〉",
+          "ko": "〈劉十九에게 묻다〉"
+        },
+        "poet": {
+          "zh": "白居易",
+          "ko": "백거이"
+        },
+        "juan": "卷五",
+        "category": "五言絶句",
+        "meter": 5,
+        "preview": "綠螘新醅酒[2] / 紅泥小火爐"
+      },
+      {
+        "titleId": "C289",
+        "poemNo": 282,
+        "poemNoStr": "282",
+        "title": {
+          "zh": "〈後宮詞[1]〉",
+          "ko": "〈후궁사〉"
+        },
+        "poet": {
+          "zh": "白居易",
+          "ko": "백거이"
+        },
+        "juan": "卷六",
+        "category": "七言絶句",
+        "meter": 7,
+        "preview": "淚濕[2]羅巾夢不成 / 夜深前殿按歌聲[3]"
+      }
+    ]
+  },
+  {
+    "poetZh": "劉禹錫",
+    "poetKo": "유우석",
+    "authorTitleId": "C369",
+    "birth": 772,
+    "death": 842,
+    "raw": "772~842",
+    "works": [
+      {
+        "titleId": "C155",
+        "poemNo": 150,
+        "poemNoStr": "150",
+        "title": {
+          "zh": "〈蜀先主廟[1]〉",
+          "ko": "〈蜀漢 先主의 사당〉"
+        },
+        "poet": {
+          "zh": "劉禹錫",
+          "ko": "유우석"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "天地英雄[2]氣 / 千秋尙凜然[3]"
+      },
+      {
+        "titleId": "C209",
+        "poemNo": 204,
+        "poemNoStr": "204",
+        "title": {
+          "zh": "〈西塞山懷古[1]〉",
+          "ko": "〈西塞山에서 회고하다〉"
+        },
+        "poet": {
+          "zh": "劉禹錫",
+          "ko": "유우석"
+        },
+        "juan": "卷四",
+        "category": "七言律詩",
+        "meter": 7,
+        "preview": "王濬樓船下益州[2] / 金陵[3]王氣黯然收"
+      },
+      {
+        "titleId": "C287",
+        "poemNo": 280,
+        "poemNoStr": "280",
+        "title": {
+          "zh": "〈烏衣巷[1]〉",
+          "ko": "〈오의항〉"
+        },
+        "poet": {
+          "zh": "劉禹錫",
+          "ko": "유우석"
+        },
+        "juan": "卷六",
+        "category": "七言絶句",
+        "meter": 7,
+        "preview": "朱雀橋邊野草花[2] / 烏衣巷口夕陽斜"
+      },
+      {
+        "titleId": "C288",
+        "poemNo": 281,
+        "poemNoStr": "281",
+        "title": {
+          "zh": "〈春詞〉",
+          "ko": "〈봄의 노래〉"
+        },
+        "poet": {
+          "zh": "劉禹錫",
+          "ko": "유우석"
+        },
+        "juan": "卷六",
+        "category": "七言絶句",
+        "meter": 7,
+        "preview": "新妝宜面[1]下朱樓 / 深鎖春光一院愁[2]"
+      }
+    ]
+  },
+  {
+    "poetZh": "柳宗元",
+    "poetKo": "유종원",
+    "authorTitleId": "C371",
+    "birth": 773,
+    "death": 819,
+    "raw": "773~819",
+    "works": [
+      {
+        "titleId": "C38",
+        "poemNo": 35,
+        "poemNoStr": "035",
+        "title": {
+          "zh": "〈溪居[1]〉",
+          "ko": "〈시냇가에 살다〉"
+        },
+        "poet": {
+          "zh": "柳宗元",
+          "ko": "유종원"
+        },
+        "juan": "卷一",
+        "category": "五言古詩",
+        "meter": 5,
+        "preview": "久爲簪組[2]累 / 幸此南夷[3]謫"
+      },
+      {
+        "titleId": "C73",
+        "poemNo": 70,
+        "poemNoStr": "070",
+        "title": {
+          "zh": "〈漁翁〉",
+          "ko": "〈늙은 어부〉"
+        },
+        "poet": {
+          "zh": "柳宗元",
+          "ko": "유종원"
+        },
+        "juan": "卷二",
+        "category": "七言古詩",
+        "meter": 7,
+        "preview": "漁翁夜傍西巖宿 / 曉汲淸湘然楚竹[1]"
+      },
+      {
+        "titleId": "C208",
+        "poemNo": 203,
+        "poemNoStr": "203",
+        "title": {
+          "zh": "〈登柳州[1]城樓 寄漳汀封連[2]四州刺史〉",
+          "ko": "〈柳州城 樓閣에 올라 漳州, 汀州, 封州, 連州 네 刺史에게 부치다〉"
+        },
+        "poet": {
+          "zh": "柳宗元",
+          "ko": "유종원"
+        },
+        "juan": "卷四",
+        "category": "七言律詩",
+        "meter": 7,
+        "preview": "城上高樓接大荒[3] / 海天愁思[4]正茫茫"
+      },
+      {
+        "titleId": "C251",
+        "poemNo": 244,
+        "poemNoStr": "244",
+        "title": {
+          "zh": "〈江雪〉",
+          "ko": "〈강설〉"
+        },
+        "poet": {
+          "zh": "柳宗元",
+          "ko": "유종원"
+        },
+        "juan": "卷五",
+        "category": "五言絶句",
+        "meter": 5,
+        "preview": "千山鳥飛絶 / 萬徑人蹤滅[1]"
+      }
+    ]
+  },
+  {
+    "poetZh": "元稹",
+    "poetKo": "원진",
+    "authorTitleId": "C364",
+    "birth": 779,
+    "death": 831,
+    "raw": "779~831",
+    "works": [
+      {
+        "titleId": "C211",
+        "poemNo": 206,
+        "poemNoStr": "206",
+        "title": {
+          "zh": "〈遣悲懷 其二〉",
+          "ko": "〈슬픈 마음을 풀어놓다 두 번째 시〉"
+        },
+        "poet": {
+          "zh": "元稹",
+          "ko": "원진"
+        },
+        "juan": "卷四",
+        "category": "七言律詩",
+        "meter": 7,
+        "preview": "昔日戱言身後事[1] / 今朝都[2]到眼前來"
+      },
+      {
+        "titleId": "C212",
+        "poemNo": 207,
+        "poemNoStr": "207",
+        "title": {
+          "zh": "〈遣悲懷 其三〉",
+          "ko": "〈슬픈 마음을 풀어놓다 세 번째 시〉"
+        },
+        "poet": {
+          "zh": "元稹",
+          "ko": "원진"
+        },
+        "juan": "卷四",
+        "category": "七言律詩",
+        "meter": 7,
+        "preview": "閑坐悲君亦自悲 / 百年都[1]是幾多時"
+      },
+      {
+        "titleId": "C252",
+        "poemNo": 245,
+        "poemNoStr": "245",
+        "title": {
+          "zh": "〈行宮[1]〉",
+          "ko": "〈행궁〉"
+        },
+        "poet": {
+          "zh": "元稹",
+          "ko": "원진"
+        },
+        "juan": "卷五",
+        "category": "五言絶句",
+        "meter": 5,
+        "preview": "寥落[2]古行宮 / 宮花寂寞紅"
+      }
+    ]
+  },
+  {
+    "poetZh": "杜牧",
+    "poetKo": "두목",
+    "authorTitleId": "C340",
+    "birth": 803,
+    "death": 852,
+    "raw": "803~852?",
+    "works": [
+      {
+        "titleId": "C296",
+        "poemNo": 289,
+        "poemNoStr": "289",
+        "title": {
+          "zh": "〈將赴吳興 登樂遊原[1]〉",
+          "ko": "〈오흥의 임소로 가면서 樂遊原에 오르다〉"
+        },
+        "poet": {
+          "zh": "杜牧",
+          "ko": "두목"
+        },
+        "juan": "卷六",
+        "category": "七言絶句",
+        "meter": 7,
+        "preview": "淸時[2]有味是無能 / 閑愛孤雲靜愛僧"
+      },
+      {
+        "titleId": "C297",
+        "poemNo": 290,
+        "poemNoStr": "290",
+        "title": {
+          "zh": "〈赤壁[1]〉",
+          "ko": "〈적벽〉"
+        },
+        "poet": {
+          "zh": "杜牧",
+          "ko": "두목"
+        },
+        "juan": "卷六",
+        "category": "七言絶句",
+        "meter": 7,
+        "preview": "折戟沈沙鐵未銷[2] / 自將[3]磨洗認前朝"
+      },
+      {
+        "titleId": "C298",
+        "poemNo": 291,
+        "poemNoStr": "291",
+        "title": {
+          "zh": "〈泊秦淮[1]〉",
+          "ko": "〈秦淮河에 정박하여〉"
+        },
+        "poet": {
+          "zh": "杜牧",
+          "ko": "두목"
+        },
+        "juan": "卷六",
+        "category": "七言絶句",
+        "meter": 7,
+        "preview": "煙籠寒水月籠沙 / 夜泊秦淮近酒家"
+      },
+      {
+        "titleId": "C299",
+        "poemNo": 292,
+        "poemNoStr": "292",
+        "title": {
+          "zh": "〈寄揚州韓綽判官[1]〉",
+          "ko": "〈揚州의 韓綽 判官에게 부치다〉"
+        },
+        "poet": {
+          "zh": "杜牧",
+          "ko": "두목"
+        },
+        "juan": "卷六",
+        "category": "七言絶句",
+        "meter": 7,
+        "preview": "靑山隱隱[2]水迢迢[3] / 秋盡江南草未凋[4]"
+      },
+      {
+        "titleId": "C300",
+        "poemNo": 293,
+        "poemNoStr": "293",
+        "title": {
+          "zh": "〈遣懷〉",
+          "ko": "〈심회를 풀다〉"
+        },
+        "poet": {
+          "zh": "杜牧",
+          "ko": "두목"
+        },
+        "juan": "卷六",
+        "category": "七言絶句",
+        "meter": 7,
+        "preview": "落魄江湖[1]載酒行 / 楚腰纖細掌中輕[2]"
+      },
+      {
+        "titleId": "C301",
+        "poemNo": 294,
+        "poemNoStr": "294",
+        "title": {
+          "zh": "〈秋夕[1]〉",
+          "ko": "〈가을 저녁〉"
+        },
+        "poet": {
+          "zh": "杜牧",
+          "ko": "두목"
+        },
+        "juan": "卷六",
+        "category": "七言絶句",
+        "meter": 7,
+        "preview": "銀燭秋光冷畫屛[2] / 輕羅小扇撲流螢[3]"
+      },
+      {
+        "titleId": "C302",
+        "poemNo": 295,
+        "poemNoStr": "295",
+        "title": {
+          "zh": "〈贈別 二首之一〉",
+          "ko": "〈헤어지며 주다 두 수 중 첫 번째 시〉"
+        },
+        "poet": {
+          "zh": "杜牧",
+          "ko": "두목"
+        },
+        "juan": "卷六",
+        "category": "七言絶句",
+        "meter": 7,
+        "preview": "娉娉嫋嫋[1]十三餘 / 豆蔲梢頭二月初[2]"
+      },
+      {
+        "titleId": "C303",
+        "poemNo": 296,
+        "poemNoStr": "296",
+        "title": {
+          "zh": "〈贈別 二首之二〉",
+          "ko": "〈헤어지며 주다 두 수 중 두 번째 시〉"
+        },
+        "poet": {
+          "zh": "杜牧",
+          "ko": "두목"
+        },
+        "juan": "卷六",
+        "category": "七言絶句",
+        "meter": 7,
+        "preview": "多情却似總無情[1] / 唯覺樽[2]前笑不成"
+      },
+      {
+        "titleId": "C304",
+        "poemNo": 297,
+        "poemNoStr": "297",
+        "title": {
+          "zh": "〈金谷園[1]〉",
+          "ko": "〈금곡원〉"
+        },
+        "poet": {
+          "zh": "杜牧",
+          "ko": "두목"
+        },
+        "juan": "卷六",
+        "category": "七言絶句",
+        "meter": 7,
+        "preview": "繁華事[2]散逐香塵[3] / 流水[4]無情草自春"
+      }
+    ]
+  },
+  {
+    "poetZh": "李商隱",
+    "poetKo": "이상은",
+    "authorTitleId": "C377",
+    "birth": 813,
+    "death": 858,
+    "raw": "813~858",
+    "works": [
+      {
+        "titleId": "C161",
+        "poemNo": 156,
+        "poemNoStr": "156",
+        "title": {
+          "zh": "〈蟬〉",
+          "ko": "〈매미〉"
+        },
+        "poet": {
+          "zh": "李商隱",
+          "ko": "이상은"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "本以高難飽[1] / 徒勞恨費聲"
+      },
+      {
+        "titleId": "C162",
+        "poemNo": 157,
+        "poemNoStr": "157",
+        "title": {
+          "zh": "〈風雨〉",
+          "ko": "〈비바람 〉"
+        },
+        "poet": {
+          "zh": "李商隱",
+          "ko": "이상은"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "淒涼寶劍篇[1] / 羈泊[2]欲窮年"
+      },
+      {
+        "titleId": "C163",
+        "poemNo": 158,
+        "poemNoStr": "158",
+        "title": {
+          "zh": "〈落花〉",
+          "ko": "〈낙화〉"
+        },
+        "poet": {
+          "zh": "李商隱",
+          "ko": "이상은"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "高閣客竟去 / 小園花亂飛"
+      },
+      {
+        "titleId": "C164",
+        "poemNo": 159,
+        "poemNoStr": "159",
+        "title": {
+          "zh": "〈涼思〉",
+          "ko": "〈가을 생각〉"
+        },
+        "poet": {
+          "zh": "李商隱",
+          "ko": "이상은"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "客去波平檻 / 蟬休露滿枝"
+      },
+      {
+        "titleId": "C165",
+        "poemNo": 160,
+        "poemNoStr": "160",
+        "title": {
+          "zh": "〈北靑蘿[1]〉",
+          "ko": "〈북청라〉"
+        },
+        "poet": {
+          "zh": "李商隱",
+          "ko": "이상은"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "殘陽西入崦[2] / 茅屋訪孤僧[3]"
+      },
+      {
+        "titleId": "C214",
+        "poemNo": 209,
+        "poemNoStr": "209",
+        "title": {
+          "zh": "〈錦瑟〉",
+          "ko": "〈금슬〉"
+        },
+        "poet": {
+          "zh": "李商隱",
+          "ko": "이상은"
+        },
+        "juan": "卷四",
+        "category": "七言律詩",
+        "meter": 7,
+        "preview": "錦瑟無端五十弦[1] / 一弦一柱[2]思華年"
+      },
+      {
+        "titleId": "C215",
+        "poemNo": 210,
+        "poemNoStr": "210",
+        "title": {
+          "zh": "〈無題〉",
+          "ko": "〈무제〉"
+        },
+        "poet": {
+          "zh": "李商隱",
+          "ko": "이상은"
+        },
+        "juan": "卷四",
+        "category": "七言律詩",
+        "meter": 7,
+        "preview": "昨夜星辰昨夜風 / 畫樓西畔桂堂東[1]"
+      },
+      {
+        "titleId": "C216",
+        "poemNo": 211,
+        "poemNoStr": "211",
+        "title": {
+          "zh": "〈隋宮[1]〉",
+          "ko": "〈隋나라 궁전〉"
+        },
+        "poet": {
+          "zh": "李商隱",
+          "ko": "이상은"
+        },
+        "juan": "卷四",
+        "category": "七言律詩",
+        "meter": 7,
+        "preview": "紫泉宮殿鎖煙霞[2] / 欲取蕪城作帝家[3]"
+      },
+      {
+        "titleId": "C217",
+        "poemNo": 212,
+        "poemNoStr": "212",
+        "title": {
+          "zh": "〈無題 二首之一〉",
+          "ko": "〈무제 두 수 중 첫 번째 시〉"
+        },
+        "poet": {
+          "zh": "李商隱",
+          "ko": "이상은"
+        },
+        "juan": "卷四",
+        "category": "七言律詩",
+        "meter": 7,
+        "preview": "來是空言去絶蹤 / 月斜樓上五更鐘[1]"
+      },
+      {
+        "titleId": "C218",
+        "poemNo": 213,
+        "poemNoStr": "213",
+        "title": {
+          "zh": "〈無題 四首其二〉",
+          "ko": "〈무제 네 수 가운데 두 번째 시〉"
+        },
+        "poet": {
+          "zh": "李商隱",
+          "ko": "이상은"
+        },
+        "juan": "卷四",
+        "category": "七言律詩",
+        "meter": 7,
+        "preview": "颯颯東風細雨來[1] / 芙蓉塘外有輕雷[2]"
+      },
+      {
+        "titleId": "C219",
+        "poemNo": 214,
+        "poemNoStr": "214",
+        "title": {
+          "zh": "〈籌筆驛[1]〉",
+          "ko": "〈籌筆驛에서〉"
+        },
+        "poet": {
+          "zh": "李商隱",
+          "ko": "이상은"
+        },
+        "juan": "卷四",
+        "category": "七言律詩",
+        "meter": 7,
+        "preview": "猿鳥[2]猶疑畏簡書[3] / 風雲常[4]爲護儲胥[5]"
+      },
+      {
+        "titleId": "C220",
+        "poemNo": 215,
+        "poemNoStr": "215",
+        "title": {
+          "zh": "〈無題〉",
+          "ko": "〈무제〉"
+        },
+        "poet": {
+          "zh": "李商隱",
+          "ko": "이상은"
+        },
+        "juan": "卷四",
+        "category": "七言律詩",
+        "meter": 7,
+        "preview": "相見時難別亦難[1] / 東風[2]無力百花殘"
+      },
+      {
+        "titleId": "C221",
+        "poemNo": 216,
+        "poemNoStr": "216",
+        "title": {
+          "zh": "〈春雨〉",
+          "ko": "〈봄비〉"
+        },
+        "poet": {
+          "zh": "李商隱",
+          "ko": "이상은"
+        },
+        "juan": "卷四",
+        "category": "七言律詩",
+        "meter": 7,
+        "preview": "悵臥[1]新春白袷衣[2] / 白門[3]寥落[4]意多違紅樓[5]"
+      },
+      {
+        "titleId": "C222",
+        "poemNo": 217,
+        "poemNoStr": "217",
+        "title": {
+          "zh": "〈無題 二首之二〉",
+          "ko": "〈무제 두 수 중 두 번째 시〉"
+        },
+        "poet": {
+          "zh": "李商隱",
+          "ko": "이상은"
+        },
+        "juan": "卷四",
+        "category": "七言律詩",
+        "meter": 7,
+        "preview": "鳳尾香羅[1]薄幾重 / 碧文圓頂夜深縫[2]"
+      },
+      {
+        "titleId": "C223",
+        "poemNo": 218,
+        "poemNoStr": "218",
+        "title": {
+          "zh": "〈無題 二首其二〉",
+          "ko": "〈무제 두 수 가운데 두 번째 시〉"
+        },
+        "poet": {
+          "zh": "李商隱",
+          "ko": "이상은"
+        },
+        "juan": "卷四",
+        "category": "七言律詩",
+        "meter": 7,
+        "preview": "重帷深下莫愁[1]堂 / 臥後淸宵細細長[2]"
+      },
+      {
+        "titleId": "C255",
+        "poemNo": 248,
+        "poemNoStr": "248",
+        "title": {
+          "zh": "〈登樂遊原[1]〉",
+          "ko": "〈낙유원에 오르다〉"
+        },
+        "poet": {
+          "zh": "李商隱",
+          "ko": "이상은"
+        },
+        "juan": "卷五",
+        "category": "五言絶句",
+        "meter": 5,
+        "preview": "向晩意不適 / 驅車登古原[2]"
+      },
+      {
+        "titleId": "C305",
+        "poemNo": 298,
+        "poemNoStr": "298",
+        "title": {
+          "zh": "〈夜雨寄北[1]〉",
+          "ko": "〈비 내리는 밤 북녘에 부치다〉"
+        },
+        "poet": {
+          "zh": "李商隱",
+          "ko": "이상은"
+        },
+        "juan": "卷六",
+        "category": "七言絶句",
+        "meter": 7,
+        "preview": "君問歸期未有期 / 巴山[2]夜雨漲秋池"
+      },
+      {
+        "titleId": "C306",
+        "poemNo": 299,
+        "poemNoStr": "299",
+        "title": {
+          "zh": "〈寄令狐郎中[1]〉",
+          "ko": "〈令狐郎中에게 부치다〉"
+        },
+        "poet": {
+          "zh": "李商隱",
+          "ko": "이상은"
+        },
+        "juan": "卷六",
+        "category": "七言絶句",
+        "meter": 7,
+        "preview": "嵩雲秦樹[2]久離居 / 雙鯉[3]迢迢一紙筆"
+      },
+      {
+        "titleId": "C307",
+        "poemNo": 300,
+        "poemNoStr": "300",
+        "title": {
+          "zh": "〈爲有[1]〉",
+          "ko": "〈있기 때문에〉"
+        },
+        "poet": {
+          "zh": "李商隱",
+          "ko": "이상은"
+        },
+        "juan": "卷六",
+        "category": "七言絶句",
+        "meter": 7,
+        "preview": "爲有雲屛[2]無限嬌 / 鳳城[3]寒盡怕春宵"
+      },
+      {
+        "titleId": "C308",
+        "poemNo": 301,
+        "poemNoStr": "301",
+        "title": {
+          "zh": "〈隋宮[1]〉",
+          "ko": "〈수나라 궁전〉"
+        },
+        "poet": {
+          "zh": "李商隱",
+          "ko": "이상은"
+        },
+        "juan": "卷六",
+        "category": "七言絶句",
+        "meter": 7,
+        "preview": "乘興南游[2]不戒嚴[3] / 九重誰省諫書函[4]"
+      },
+      {
+        "titleId": "C309",
+        "poemNo": 302,
+        "poemNoStr": "302",
+        "title": {
+          "zh": "〈瑤池〉",
+          "ko": "〈요지〉"
+        },
+        "poet": {
+          "zh": "李商隱",
+          "ko": "이상은"
+        },
+        "juan": "卷六",
+        "category": "七言絶句",
+        "meter": 7,
+        "preview": "瑤池阿母[1]綺窗開 / 黃竹歌[2]聲動地哀"
+      },
+      {
+        "titleId": "C310",
+        "poemNo": 303,
+        "poemNoStr": "303",
+        "title": {
+          "zh": "〈嫦娥[1]〉",
+          "ko": "〈상아〉"
+        },
+        "poet": {
+          "zh": "李商隱",
+          "ko": "이상은"
+        },
+        "juan": "卷六",
+        "category": "七言絶句",
+        "meter": 7,
+        "preview": "雲母屛風[2]燭影深 / 長河[3]漸落曉星沈"
+      },
+      {
+        "titleId": "C311",
+        "poemNo": 304,
+        "poemNoStr": "304",
+        "title": {
+          "zh": "〈賈生[1]〉",
+          "ko": "〈가생〉"
+        },
+        "poet": {
+          "zh": "李商隱",
+          "ko": "이상은"
+        },
+        "juan": "卷六",
+        "category": "七言絶句",
+        "meter": 7,
+        "preview": "宣室求賢訪逐臣[2] / 賈生才調更無倫[3]"
+      }
+    ]
+  },
+  {
+    "poetZh": "韋莊",
+    "poetKo": "위장",
+    "authorTitleId": "C366",
+    "birth": 836,
+    "death": 910,
+    "raw": "836~910",
+    "works": [
+      {
+        "titleId": "C315",
+        "poemNo": 308,
+        "poemNoStr": "308",
+        "title": {
+          "zh": "〈金陵圖[1]〉",
+          "ko": "〈금릉도〉"
+        },
+        "poet": {
+          "zh": "韋莊",
+          "ko": "위장"
+        },
+        "juan": "卷六",
+        "category": "七言絶句",
+        "meter": 7,
+        "preview": "江雨霏霏江草齊[2] / 六朝[3]如夢鳥空啼"
+      }
+    ]
+  },
+  {
+    "poetZh": "白居易[1]",
+    "poetKo": "백거이",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C74",
+        "poemNo": 71,
+        "poemNoStr": "071",
+        "title": {
+          "zh": "〈長恨歌〉",
+          "ko": "〈장한가〉"
+        },
+        "poet": {
+          "zh": "白居易[1]",
+          "ko": "백거이"
+        },
+        "juan": "卷二",
+        "category": "七言古詩",
+        "meter": 7,
+        "preview": "漢皇重色思傾國[2] / 御宇[3]多年求不得"
+      }
+    ]
+  },
+  {
+    "poetZh": "岑參[2]",
+    "poetKo": "잠삼",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C28",
+        "poemNo": 25,
+        "poemNoStr": "025",
+        "title": {
+          "zh": "〈與高適薛據登慈恩寺浮圖[1]〉",
+          "ko": "〈고적, 설거와 함께 자은사 부도에 오르다〉"
+        },
+        "poet": {
+          "zh": "岑參[2]",
+          "ko": "잠삼"
+        },
+        "juan": "卷一",
+        "category": "五言古詩",
+        "meter": 5,
+        "preview": "塔勢如湧出 / 孤高聳天宮[3]"
+      }
+    ]
+  },
+  {
+    "poetZh": "常建[1]",
+    "poetKo": "상건",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C27",
+        "poemNo": 24,
+        "poemNoStr": "024",
+        "title": {
+          "zh": "〈宿王昌齡隱居〉",
+          "ko": "〈왕창령이 은거하던 곳에 머물다〉"
+        },
+        "poet": {
+          "zh": "常建[1]",
+          "ko": "상건"
+        },
+        "juan": "卷一",
+        "category": "五言古詩",
+        "meter": 5,
+        "preview": "淸溪深不測 / 隱處唯孤雲"
+      }
+    ]
+  },
+  {
+    "poetZh": "陳陶[2]",
+    "poetKo": "진도",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C316",
+        "poemNo": 309,
+        "poemNoStr": "309",
+        "title": {
+          "zh": "〈隴西行[1]〉",
+          "ko": "〈농서행〉"
+        },
+        "poet": {
+          "zh": "陳陶[2]",
+          "ko": "진도"
+        },
+        "juan": "卷六",
+        "category": "七言絶句",
+        "meter": 7,
+        "preview": "誓掃匈奴[3]不顧身 / 五千貂錦[4]喪胡塵[5]"
+      }
+    ]
+  },
+  {
+    "poetZh": "陳子昻[2]",
+    "poetKo": "진자앙",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C49",
+        "poemNo": 46,
+        "poemNoStr": "046",
+        "title": {
+          "zh": "〈登幽州臺[1]歌〉",
+          "ko": "〈유주대에 올라 부른 노래〉"
+        },
+        "poet": {
+          "zh": "陳子昻[2]",
+          "ko": "진자앙"
+        },
+        "juan": "卷二",
+        "category": "七言古詩",
+        "meter": 7,
+        "preview": "前不見古人[3]後不見來者[4] / 念天地之悠悠[5]獨愴然而涕下[6]"
+      }
+    ]
+  },
+  {
+    "poetZh": "崔塗",
+    "poetKo": "최도",
+    "authorTitleId": "C394",
+    "birth": null,
+    "death": null,
+    "raw": "854?~?",
+    "works": [
+      {
+        "titleId": "C171",
+        "poemNo": 166,
+        "poemNoStr": "166",
+        "title": {
+          "zh": "〈孤雁〉",
+          "ko": "〈외로운 기러기〉"
+        },
+        "poet": {
+          "zh": "崔塗",
+          "ko": "최도"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "幾行歸去[1]盡 / 片影[2]獨何之"
+      }
+    ]
+  },
+  {
+    "poetZh": "崔塗[2]",
+    "poetKo": "최도",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C170",
+        "poemNo": 165,
+        "poemNoStr": "165",
+        "title": {
+          "zh": "〈巴山道中 除夜有懷[1]〉",
+          "ko": "〈巴山으로 가는 도중 그믐날 밤 감회가 있어〉"
+        },
+        "poet": {
+          "zh": "崔塗[2]",
+          "ko": "최도"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "迢遞[3]三巴[4]路羈危[5] / 萬里身[6]亂山殘雪[7]"
+      }
+    ]
+  },
+  {
+    "poetZh": "戴叔倫[2]",
+    "poetKo": "대숙륜",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C149",
+        "poemNo": 144,
+        "poemNoStr": "144",
+        "title": {
+          "zh": "〈客舍 與故人偶集[1]〉",
+          "ko": "〈客舍에서 친구와 우연히 만나다〉"
+        },
+        "poet": {
+          "zh": "戴叔倫[2]",
+          "ko": "대숙륜"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "天秋月又滿 / 城闕[3]夜千重"
+      }
+    ]
+  },
+  {
+    "poetZh": "杜甫[1]",
+    "poetKo": "두보",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C11",
+        "poemNo": 8,
+        "poemNoStr": "008",
+        "title": {
+          "zh": "〈望嶽〉",
+          "ko": "〈태산을 바라보며〉"
+        },
+        "poet": {
+          "zh": "杜甫[1]",
+          "ko": "두보"
+        },
+        "juan": "卷一",
+        "category": "五言古詩",
+        "meter": 5,
+        "preview": "岱宗[2]夫如何 / 齊魯[3]靑未了"
+      }
+    ]
+  },
+  {
+    "poetZh": "杜牧[1]",
+    "poetKo": "두목",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C158",
+        "poemNo": 153,
+        "poemNoStr": "153",
+        "title": {
+          "zh": "〈旅宿〉",
+          "ko": "〈여관에서 묵다〉"
+        },
+        "poet": {
+          "zh": "杜牧[1]",
+          "ko": "두목"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "旅館無良伴 / 凝情自悄然[2]"
+      }
+    ]
+  },
+  {
+    "poetZh": "杜秋娘[2]",
+    "poetKo": "두추낭",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C327",
+        "poemNo": 320,
+        "poemNoStr": "320",
+        "title": {
+          "zh": "〈金縷衣[1]〉",
+          "ko": "〈금루의〉"
+        },
+        "poet": {
+          "zh": "杜秋娘[2]",
+          "ko": "두추낭"
+        },
+        "juan": "卷六",
+        "category": "七言樂府",
+        "meter": 7,
+        "preview": "勸君莫惜金縷衣 / 勸君惜取少年時"
+      }
+    ]
+  },
+  {
+    "poetZh": "杜審言[3]",
+    "poetKo": "두심언",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C99",
+        "poemNo": 94,
+        "poemNoStr": "094",
+        "title": {
+          "zh": "〈和晉陵[1]陸丞[2]早春遊望〉",
+          "ko": "〈晉陵 陸丞의 〈早春遊望〉에 화답하다〉"
+        },
+        "poet": {
+          "zh": "杜審言[3]",
+          "ko": "두심언"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "獨有宦遊人 / 偏驚物候新"
+      }
+    ]
+  },
+  {
+    "poetZh": "杜荀鶴[1]",
+    "poetKo": "두순학",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C172",
+        "poemNo": 167,
+        "poemNoStr": "167",
+        "title": {
+          "zh": "〈春宮怨〉",
+          "ko": "〈春宮 안의 원망〉"
+        },
+        "poet": {
+          "zh": "杜荀鶴[1]",
+          "ko": "두순학"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "早被嬋娟[2]誤 / 欲妝臨鏡慵[3]"
+      }
+    ]
+  },
+  {
+    "poetZh": "顧況[1]",
+    "poetKo": "고황",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C285",
+        "poemNo": 278,
+        "poemNoStr": "278",
+        "title": {
+          "zh": "〈宮詞〉",
+          "ko": "〈궁사〉"
+        },
+        "poet": {
+          "zh": "顧況[1]",
+          "ko": "고황"
+        },
+        "juan": "卷六",
+        "category": "七言絶句",
+        "meter": 7,
+        "preview": "玉樓天半起笙歌[2] / 風送宮嬪笑語和[3]"
+      }
+    ]
+  },
+  {
+    "poetZh": "韓翃",
+    "poetKo": "한굉",
+    "authorTitleId": "C399",
+    "birth": null,
+    "death": null,
+    "raw": "생몰년 미상",
+    "works": [
+      {
+        "titleId": "C205",
+        "poemNo": 200,
+        "poemNoStr": "200",
+        "title": {
+          "zh": "〈同題仙游觀[1]〉",
+          "ko": "〈仙游觀에 함께 題하다〉"
+        },
+        "poet": {
+          "zh": "韓翃",
+          "ko": "한굉"
+        },
+        "juan": "卷四",
+        "category": "七言律詩",
+        "meter": 7,
+        "preview": "仙臺下見五城樓[2] / 風物[3]淒淒宿雨收"
+      },
+      {
+        "titleId": "C281",
+        "poemNo": 274,
+        "poemNoStr": "274",
+        "title": {
+          "zh": "〈寒食[1]〉",
+          "ko": "〈한식〉"
+        },
+        "poet": {
+          "zh": "韓翃",
+          "ko": "한굉"
+        },
+        "juan": "卷六",
+        "category": "七言絶句",
+        "meter": 7,
+        "preview": "春城[2]無處不飛花 / 寒食東風御柳[3]斜"
+      }
+    ]
+  },
+  {
+    "poetZh": "韓翃[2]",
+    "poetKo": "한굉",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C147",
+        "poemNo": 142,
+        "poemNoStr": "142",
+        "title": {
+          "zh": "〈酬程延[1]秋夜卽事見贈〉",
+          "ko": "〈程延의 〈秋夜卽事〉를 받고 화답하다〉"
+        },
+        "poet": {
+          "zh": "韓翃[2]",
+          "ko": "한굉"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "長簟迎風早[3] / 空城澹月華"
+      }
+    ]
+  },
+  {
+    "poetZh": "韓偓[1]",
+    "poetKo": "한악",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C314",
+        "poemNo": 307,
+        "poemNoStr": "307",
+        "title": {
+          "zh": "〈已涼〉",
+          "ko": "〈날이 서늘해진 후〉"
+        },
+        "poet": {
+          "zh": "韓偓[1]",
+          "ko": "한악"
+        },
+        "juan": "卷六",
+        "category": "七言絶句",
+        "meter": 7,
+        "preview": "碧闌干外繡[2]簾垂 / 猩色[3]屛風畫折枝[4]"
+      }
+    ]
+  },
+  {
+    "poetZh": "賀知章[2]",
+    "poetKo": "하지장",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C268",
+        "poemNo": 261,
+        "poemNoStr": "261",
+        "title": {
+          "zh": "〈回鄕偶書[1]〉",
+          "ko": "〈고향으로 돌아와 쓰다〉"
+        },
+        "poet": {
+          "zh": "賀知章[2]",
+          "ko": "하지장"
+        },
+        "juan": "卷六",
+        "category": "七言絶句",
+        "meter": 7,
+        "preview": "少小離家[3]老大回 / 鄕音無改[4]鬢毛衰[5]"
+      }
+    ]
+  },
+  {
+    "poetZh": "皇甫冉[1]",
+    "poetKo": "황보염",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C206",
+        "poemNo": 201,
+        "poemNoStr": "201",
+        "title": {
+          "zh": "〈春思〉",
+          "ko": "〈봄 그리움〉"
+        },
+        "poet": {
+          "zh": "皇甫冉[1]",
+          "ko": "황보염"
+        },
+        "juan": "卷四",
+        "category": "七言律詩",
+        "meter": 7,
+        "preview": "鶯啼燕語[2]報新年 / 馬邑[3]龍堆[4]路幾千家住層城隣漢苑[5]"
+      }
+    ]
+  },
+  {
+    "poetZh": "賈島[2]",
+    "poetKo": "가도",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C256",
+        "poemNo": 249,
+        "poemNoStr": "249",
+        "title": {
+          "zh": "〈尋隱者不遇[1]〉",
+          "ko": "〈은자를 찾아갔으나 만나지 못하다〉"
+        },
+        "poet": {
+          "zh": "賈島[2]",
+          "ko": "가도"
+        },
+        "juan": "卷五",
+        "category": "五言絶句",
+        "meter": 5,
+        "preview": "松下問童子[3] / 言師採藥去"
+      }
+    ]
+  },
+  {
+    "poetZh": "金昌緖[1]",
+    "poetKo": "김창서",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C258",
+        "poemNo": 251,
+        "poemNoStr": "251",
+        "title": {
+          "zh": "〈春怨〉",
+          "ko": "〈봄날의 원망〉"
+        },
+        "poet": {
+          "zh": "金昌緖[1]",
+          "ko": "김창서"
+        },
+        "juan": "卷五",
+        "category": "五言絶句",
+        "meter": 5,
+        "preview": "打起黃鶯兒[2] / 莫敎枝上啼"
+      }
+    ]
+  },
+  {
+    "poetZh": "李白[1]",
+    "poetKo": "이백",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C8",
+        "poemNo": 5,
+        "poemNoStr": "005",
+        "title": {
+          "zh": "〈下終南山 過斛斯山人 宿置酒〉",
+          "ko": "〈종남산에서 내려와 곡사산인의 집에 들렀다가 묵으며 술을 마시다〉"
+        },
+        "poet": {
+          "zh": "李白[1]",
+          "ko": "이백"
+        },
+        "juan": "卷一",
+        "category": "五言古詩",
+        "meter": 5,
+        "preview": "暮從碧山[2]下 / 山月隨人歸"
+      }
+    ]
+  },
+  {
+    "poetZh": "李端[2]",
+    "poetKo": "이단",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C248",
+        "poemNo": 241,
+        "poemNoStr": "241",
+        "title": {
+          "zh": "〈聽箏[1]〉",
+          "ko": "〈箏을 듣다〉"
+        },
+        "poet": {
+          "zh": "李端[2]",
+          "ko": "이단"
+        },
+        "juan": "卷五",
+        "category": "五言絶句",
+        "meter": 5,
+        "preview": "鳴箏金粟柱[3] / 素手玉房[4]前"
+      }
+    ]
+  },
+  {
+    "poetZh": "李頻[2]",
+    "poetKo": "이빈",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C257",
+        "poemNo": 250,
+        "poemNoStr": "250",
+        "title": {
+          "zh": "〈渡漢江[1]〉",
+          "ko": "〈漢水를 건너며〉"
+        },
+        "poet": {
+          "zh": "李頻[2]",
+          "ko": "이빈"
+        },
+        "juan": "卷五",
+        "category": "五言絶句",
+        "meter": 5,
+        "preview": "嶺外[3]音書絶 / 經冬復歷[4]春"
+      }
+    ]
+  },
+  {
+    "poetZh": "李商隱[2]",
+    "poetKo": "이상은",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C76",
+        "poemNo": 73,
+        "poemNoStr": "073",
+        "title": {
+          "zh": "〈韓碑[1]〉",
+          "ko": "〈한비〉"
+        },
+        "poet": {
+          "zh": "李商隱[2]",
+          "ko": "이상은"
+        },
+        "juan": "卷二",
+        "category": "七言古詩",
+        "meter": 7,
+        "preview": "元和天子神武姿[3] / 彼何人哉軒與羲[4]"
+      }
+    ]
+  },
+  {
+    "poetZh": "李益[2]",
+    "poetKo": "이익",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C151",
+        "poemNo": 146,
+        "poemNoStr": "146",
+        "title": {
+          "zh": "〈喜見外弟[1] 又言別〉",
+          "ko": "〈외사촌 동생을 반갑게 보고 다시 이별을 고하다〉"
+        },
+        "poet": {
+          "zh": "李益[2]",
+          "ko": "이익"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "十年離亂後 / 長大一相逢"
+      }
+    ]
+  },
+  {
+    "poetZh": "劉方平",
+    "poetKo": "류방평",
+    "authorTitleId": "C367",
+    "birth": null,
+    "death": null,
+    "raw": "생몰년 미상",
+    "works": [
+      {
+        "titleId": "C283",
+        "poemNo": 276,
+        "poemNoStr": "276",
+        "title": {
+          "zh": "〈春怨〉",
+          "ko": "〈봄날의 원망〉"
+        },
+        "poet": {
+          "zh": "劉方平",
+          "ko": "류방평"
+        },
+        "juan": "卷六",
+        "category": "七言絶句",
+        "meter": 7,
+        "preview": "紗窗日落漸黃昏 / 金屋[1]無人見淚痕"
+      }
+    ]
+  },
+  {
+    "poetZh": "劉方平[2]",
+    "poetKo": "류방평",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C282",
+        "poemNo": 275,
+        "poemNoStr": "275",
+        "title": {
+          "zh": "〈月夜[1]〉",
+          "ko": "〈달밤〉"
+        },
+        "poet": {
+          "zh": "劉方平[2]",
+          "ko": "류방평"
+        },
+        "juan": "卷六",
+        "category": "七言絶句",
+        "meter": 7,
+        "preview": "更深月色半人家[3] / 北斗闌干[4]南斗斜"
+      }
+    ]
+  },
+  {
+    "poetZh": "劉眘虛[2]",
+    "poetKo": "유신허",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C148",
+        "poemNo": 143,
+        "poemNoStr": "143",
+        "title": {
+          "zh": "〈闕題[1]〉",
+          "ko": "〈제목이 누락됨〉"
+        },
+        "poet": {
+          "zh": "劉眘虛[2]",
+          "ko": "유신허"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "道由白雲盡 / 春與靑溪長"
+      }
+    ]
+  },
+  {
+    "poetZh": "劉長卿[2]",
+    "poetKo": "유장경",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C138",
+        "poemNo": 133,
+        "poemNoStr": "133",
+        "title": {
+          "zh": "〈秋日登吳公臺上寺[1]遠眺〉",
+          "ko": "〈가을날 吳公臺 근처 절에 올라 멀리 바라보다〉"
+        },
+        "poet": {
+          "zh": "劉長卿[2]",
+          "ko": "유장경"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "古臺搖落後 / 秋日望鄕心"
+      }
+    ]
+  },
+  {
+    "poetZh": "柳中庸[1]",
+    "poetKo": "류중용",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C284",
+        "poemNo": 277,
+        "poemNoStr": "277",
+        "title": {
+          "zh": "〈征人怨〉",
+          "ko": "〈원정을 떠난 사람의 원망〉"
+        },
+        "poet": {
+          "zh": "柳中庸[1]",
+          "ko": "류중용"
+        },
+        "juan": "卷六",
+        "category": "七言絶句",
+        "meter": 7,
+        "preview": "歲歲金河[2]復玉關[3] / 朝朝馬策與刀環[4]"
+      }
+    ]
+  },
+  {
+    "poetZh": "柳宗元[2]",
+    "poetKo": "유종원",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C37",
+        "poemNo": 34,
+        "poemNoStr": "034",
+        "title": {
+          "zh": "〈晨詣超師院讀禪經[1]〉",
+          "ko": "〈새벽 초사원에 이르러 선경을 읽으며〉"
+        },
+        "poet": {
+          "zh": "柳宗元[2]",
+          "ko": "유종원"
+        },
+        "juan": "卷一",
+        "category": "五言古詩",
+        "meter": 5,
+        "preview": "汲井漱寒齒 / 淸心拂塵服"
+      }
+    ]
+  },
+  {
+    "poetZh": "盧綸[2]",
+    "poetKo": "노륜",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C150",
+        "poemNo": 145,
+        "poemNoStr": "145",
+        "title": {
+          "zh": "〈李端[1]公〉",
+          "ko": "〈李端公에게〉"
+        },
+        "poet": {
+          "zh": "盧綸[2]",
+          "ko": "노륜"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "故關衰草遍 / 離別正堪悲"
+      }
+    ]
+  },
+  {
+    "poetZh": "駱賓王[1]",
+    "poetKo": "낙빈왕",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C98",
+        "poemNo": 93,
+        "poemNoStr": "093",
+        "title": {
+          "zh": "〈在獄詠蟬 幷序〉",
+          "ko": "〈감옥에서 매미를 읊다 병서〉"
+        },
+        "poet": {
+          "zh": "駱賓王[1]",
+          "ko": "낙빈왕"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "余禁所禁垣西 是法廳事[2] / 也有古槐數株焉 雖生意可知 同殷仲文之古樹[3]"
+      }
+    ]
+  },
+  {
+    "poetZh": "馬戴",
+    "poetKo": "마대",
+    "authorTitleId": "C345",
+    "birth": null,
+    "death": null,
+    "raw": "생몰년 미상",
+    "works": [
+      {
+        "titleId": "C168",
+        "poemNo": 163,
+        "poemNoStr": "163",
+        "title": {
+          "zh": "〈楚江[1]懷古〉",
+          "ko": "〈楚江에서 옛일을 생각하며〉"
+        },
+        "poet": {
+          "zh": "馬戴",
+          "ko": "마대"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "露氣寒光集 / 微陽下楚邱[2]"
+      }
+    ]
+  },
+  {
+    "poetZh": "馬戴[1]",
+    "poetKo": "마대",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C167",
+        "poemNo": 162,
+        "poemNoStr": "162",
+        "title": {
+          "zh": "〈灞上秋居〉",
+          "ko": "〈灞水 언덕의 가을〉"
+        },
+        "poet": {
+          "zh": "馬戴[1]",
+          "ko": "마대"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "灞原[2]風雨定 / 晩見雁行頻"
+      }
+    ]
+  },
+  {
+    "poetZh": "孟浩然[3]",
+    "poetKo": "맹호연",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C21",
+        "poemNo": 18,
+        "poemNoStr": "018",
+        "title": {
+          "zh": "〈秋登蘭山[1]寄張五[2]〉",
+          "ko": "〈가을날 난산에 올라 장오에게 부치다〉"
+        },
+        "poet": {
+          "zh": "孟浩然[3]",
+          "ko": "맹호연"
+        },
+        "juan": "卷一",
+        "category": "五言古詩",
+        "meter": 5,
+        "preview": "北山[4]白雲裏 / 隱者自怡悅"
+      }
+    ]
+  },
+  {
+    "poetZh": "孟郊[1]",
+    "poetKo": "맹교",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C47",
+        "poemNo": 44,
+        "poemNoStr": "044",
+        "title": {
+          "zh": "〈烈女操〉",
+          "ko": "〈열녀의 노래〉"
+        },
+        "poet": {
+          "zh": "孟郊[1]",
+          "ko": "맹교"
+        },
+        "juan": "卷一",
+        "category": "五言樂府",
+        "meter": 5,
+        "preview": "梧桐[2]相待老 / 鴛鴦[3]會雙死"
+      }
+    ]
+  },
+  {
+    "poetZh": "裴迪[2]",
+    "poetKo": "배적",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C236",
+        "poemNo": 229,
+        "poemNoStr": "229",
+        "title": {
+          "zh": "〈送崔九[1]〉",
+          "ko": "〈최구를 전송하며〉"
+        },
+        "poet": {
+          "zh": "裴迪[2]",
+          "ko": "배적"
+        },
+        "juan": "卷五",
+        "category": "五言絶句",
+        "meter": 5,
+        "preview": "歸山深淺去 / 須盡丘壑美[3]"
+      }
+    ]
+  },
+  {
+    "poetZh": "綦毋潛[2]",
+    "poetKo": "기무잠",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C26",
+        "poemNo": 23,
+        "poemNoStr": "023",
+        "title": {
+          "zh": "〈春泛若耶溪[1]〉",
+          "ko": "〈봄날 약야계에 배를 띄우다〉"
+        },
+        "poet": {
+          "zh": "綦毋潛[2]",
+          "ko": "기무잠"
+        },
+        "juan": "卷一",
+        "category": "五言古詩",
+        "meter": 5,
+        "preview": "幽意[3]無斷絶 / 此去隨所偶[4]"
+      }
+    ]
+  },
+  {
+    "poetZh": "錢起[1]",
+    "poetKo": "전기",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C143",
+        "poemNo": 138,
+        "poemNoStr": "138",
+        "title": {
+          "zh": "〈送僧歸日本〉",
+          "ko": "〈日本으로 돌아가는 승려를 전송하며〉"
+        },
+        "poet": {
+          "zh": "錢起[1]",
+          "ko": "전기"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "上國[2]隨緣[3]住來途[4] / 若夢行浮天滄海遠"
+      }
+    ]
+  },
+  {
+    "poetZh": "秦韜玉",
+    "poetKo": "진도옥",
+    "authorTitleId": "C392",
+    "birth": null,
+    "death": null,
+    "raw": "생몰년 미상",
+    "works": [
+      {
+        "titleId": "C227",
+        "poemNo": 222,
+        "poemNoStr": "222",
+        "title": {
+          "zh": "〈貧女〉",
+          "ko": "〈가난한 여인〉"
+        },
+        "poet": {
+          "zh": "秦韜玉",
+          "ko": "진도옥"
+        },
+        "juan": "卷四",
+        "category": "七言律詩",
+        "meter": 7,
+        "preview": "蓬門未識綺羅香[1] / 擬託良媒益自傷[2]"
+      }
+    ]
+  },
+  {
+    "poetZh": "邱爲[1]",
+    "poetKo": "구위",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C25",
+        "poemNo": 22,
+        "poemNoStr": "022",
+        "title": {
+          "zh": "〈尋西山隱者不遇〉",
+          "ko": "〈서산의 은자를 찾아가나 만나지 못하다〉"
+        },
+        "poet": {
+          "zh": "邱爲[1]",
+          "ko": "구위"
+        },
+        "juan": "卷一",
+        "category": "五言古詩",
+        "meter": 5,
+        "preview": "絶頂一茅茨[2] / 直上三十里"
+      }
+    ]
+  },
+  {
+    "poetZh": "權德輿[2]",
+    "poetKo": "권덕여",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C250",
+        "poemNo": 243,
+        "poemNoStr": "243",
+        "title": {
+          "zh": "〈玉臺體[1]〉",
+          "ko": "〈옥대체〉"
+        },
+        "poet": {
+          "zh": "權德輿[2]",
+          "ko": "권덕여"
+        },
+        "juan": "卷五",
+        "category": "五言絶句",
+        "meter": 5,
+        "preview": "昨夜裙帶解[3] / 今朝蟢子飛[4]"
+      }
+    ]
+  },
+  {
+    "poetZh": "僧 皎然[2]",
+    "poetKo": "승 교연",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C174",
+        "poemNo": 169,
+        "poemNoStr": "169",
+        "title": {
+          "zh": "〈尋陸鴻漸[1]不遇〉",
+          "ko": "〈陸鴻漸을 찾아갔으나 만나지 못하다〉"
+        },
+        "poet": {
+          "zh": "僧 皎然[2]",
+          "ko": "승 교연"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "移家雖帶郭 / 野徑入桑麻"
+      }
+    ]
+  },
+  {
+    "poetZh": "沈佺期[2]",
+    "poetKo": "심전기",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C100",
+        "poemNo": 95,
+        "poemNoStr": "095",
+        "title": {
+          "zh": "〈雜詩[1]〉",
+          "ko": "〈잡시〉"
+        },
+        "poet": {
+          "zh": "沈佺期[2]",
+          "ko": "심전기"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "聞道黃龍戍[3] / 頻年[4]不解兵"
+      }
+    ]
+  },
+  {
+    "poetZh": "司空曙",
+    "poetKo": "사공서",
+    "authorTitleId": "C350",
+    "birth": null,
+    "death": null,
+    "raw": "생몰년 미상",
+    "works": [
+      {
+        "titleId": "C153",
+        "poemNo": 148,
+        "poemNoStr": "148",
+        "title": {
+          "zh": "〈喜外弟盧綸[1]見宿〉",
+          "ko": "〈외사촌 동생 盧綸이 찾아와 머문 것을 기뻐하며〉"
+        },
+        "poet": {
+          "zh": "司空曙",
+          "ko": "사공서"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "靜夜四無隣 / 荒居舊業[2]貧"
+      },
+      {
+        "titleId": "C154",
+        "poemNo": 149,
+        "poemNoStr": "149",
+        "title": {
+          "zh": "〈賊平[1]後 送人北歸〉",
+          "ko": "〈적들이 평정된 뒤 북으로 돌아가는 사람을 전송하며〉"
+        },
+        "poet": {
+          "zh": "司空曙",
+          "ko": "사공서"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "世亂同南去 / 時淸[2]獨北還"
+      }
+    ]
+  },
+  {
+    "poetZh": "司空曙[3]",
+    "poetKo": "사공서",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C152",
+        "poemNo": 147,
+        "poemNoStr": "147",
+        "title": {
+          "zh": "〈雲陽館[1] 與韓紳[2]宿別〉",
+          "ko": "〈雲陽館에서 韓紳과 묵고 이별하다〉"
+        },
+        "poet": {
+          "zh": "司空曙[3]",
+          "ko": "사공서"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "故人江海別[4] / 幾度[5]隔山川"
+      }
+    ]
+  },
+  {
+    "poetZh": "宋之問",
+    "poetKo": "송지문",
+    "authorTitleId": "C354",
+    "birth": null,
+    "death": null,
+    "raw": "?~712",
+    "works": [
+      {
+        "titleId": "C101",
+        "poemNo": 96,
+        "poemNoStr": "096",
+        "title": {
+          "zh": "〈題大庾嶺[1]北驛〉",
+          "ko": "〈大庾嶺 北驛에 쓰다〉"
+        },
+        "poet": {
+          "zh": "宋之問",
+          "ko": "송지문"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "陽月[2]南飛雁 / 傳聞至此回[3]"
+      }
+    ]
+  },
+  {
+    "poetZh": "王昌齡[3]",
+    "poetKo": "왕창령",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C24",
+        "poemNo": 21,
+        "poemNoStr": "021",
+        "title": {
+          "zh": "〈同從弟[1]南齋翫月憶山陰[2]崔少府〉",
+          "ko": "〈종제와 함께 남재에서 달을 감상하며 산음의 최소부를 생각하다〉"
+        },
+        "poet": {
+          "zh": "王昌齡[3]",
+          "ko": "왕창령"
+        },
+        "juan": "卷一",
+        "category": "五言古詩",
+        "meter": 5,
+        "preview": "高臥南齋時 / 開帷月初吐"
+      }
+    ]
+  },
+  {
+    "poetZh": "王翰[1]",
+    "poetKo": "왕한",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C274",
+        "poemNo": 267,
+        "poemNoStr": "267",
+        "title": {
+          "zh": "〈涼州詞〉",
+          "ko": "〈양주의 노래〉"
+        },
+        "poet": {
+          "zh": "王翰[1]",
+          "ko": "왕한"
+        },
+        "juan": "卷六",
+        "category": "七言絶句",
+        "meter": 7,
+        "preview": "葡萄美酒夜光杯[2] / 欲飮琵琶馬上催[3]"
+      }
+    ]
+  },
+  {
+    "poetZh": "王建[1]",
+    "poetKo": "왕건",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C249",
+        "poemNo": 242,
+        "poemNoStr": "242",
+        "title": {
+          "zh": "〈新嫁娘〉",
+          "ko": "〈새색시〉"
+        },
+        "poet": {
+          "zh": "王建[1]",
+          "ko": "왕건"
+        },
+        "juan": "卷五",
+        "category": "五言絶句",
+        "meter": 5,
+        "preview": "三日入廚下[2] / 洗手作羹湯[3]"
+      }
+    ]
+  },
+  {
+    "poetZh": "王灣[3]",
+    "poetKo": "왕만",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C102",
+        "poemNo": 97,
+        "poemNoStr": "097",
+        "title": {
+          "zh": "〈次北固山[1]下[2]〉",
+          "ko": "〈北固山 아래 머물다〉"
+        },
+        "poet": {
+          "zh": "王灣[3]",
+          "ko": "왕만"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "客路靑山外[4] / 行舟綠水[5]前"
+      }
+    ]
+  },
+  {
+    "poetZh": "王維[1]",
+    "poetKo": "왕유",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C16",
+        "poemNo": 13,
+        "poemNoStr": "013",
+        "title": {
+          "zh": "〈送別〉",
+          "ko": "〈송별〉"
+        },
+        "poet": {
+          "zh": "王維[1]",
+          "ko": "왕유"
+        },
+        "juan": "卷一",
+        "category": "五言古詩",
+        "meter": 5,
+        "preview": "下馬飮君酒[2] / 問君何所之[3]"
+      }
+    ]
+  },
+  {
+    "poetZh": "王之渙[2]",
+    "poetKo": "왕지환",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C243",
+        "poemNo": 236,
+        "poemNoStr": "236",
+        "title": {
+          "zh": "〈登鸛雀樓[1]〉",
+          "ko": "〈관작루에 올라〉"
+        },
+        "poet": {
+          "zh": "王之渙[2]",
+          "ko": "왕지환"
+        },
+        "juan": "卷五",
+        "category": "五言絶句",
+        "meter": 5,
+        "preview": "白日依山盡 / 黃河入海流"
+      }
+    ]
+  },
+  {
+    "poetZh": "韋應物[2]",
+    "poetKo": "위응물",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C30",
+        "poemNo": 27,
+        "poemNoStr": "027",
+        "title": {
+          "zh": "〈郡齋雨中與諸文士燕集[1]〉",
+          "ko": "〈군의 관사에서 비가 오는 가운데 여러 문사들과 연회를 열며〉"
+        },
+        "poet": {
+          "zh": "韋應物[2]",
+          "ko": "위응물"
+        },
+        "juan": "卷一",
+        "category": "五言古詩",
+        "meter": 5,
+        "preview": "兵衛森畫戟[3] / 宴寢凝淸香"
+      }
+    ]
+  },
+  {
+    "poetZh": "韋莊[2]",
+    "poetKo": "위장",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C173",
+        "poemNo": 168,
+        "poemNoStr": "168",
+        "title": {
+          "zh": "〈章臺[1]夜思〉",
+          "ko": "〈章臺에서 밤에 그리워하다〉"
+        },
+        "poet": {
+          "zh": "韋莊[2]",
+          "ko": "위장"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "淸瑟[3]怨遙夜 / 繞弦風雨哀"
+      }
+    ]
+  },
+  {
+    "poetZh": "溫庭筠",
+    "poetKo": "온정균",
+    "authorTitleId": "C355",
+    "birth": null,
+    "death": null,
+    "raw": "약 812~866",
+    "works": [
+      {
+        "titleId": "C224",
+        "poemNo": 219,
+        "poemNoStr": "219",
+        "title": {
+          "zh": "〈利州南渡[1]〉",
+          "ko": "〈利州에서 남으로 건너가며〉"
+        },
+        "poet": {
+          "zh": "溫庭筠",
+          "ko": "온정균"
+        },
+        "juan": "卷四",
+        "category": "七言律詩",
+        "meter": 7,
+        "preview": "澹然[2]空水對斜暉 / 曲島蒼茫接翠微[3]"
+      },
+      {
+        "titleId": "C225",
+        "poemNo": 220,
+        "poemNoStr": "220",
+        "title": {
+          "zh": "〈蘇武廟[1]〉",
+          "ko": "〈蘇武의 사당에서〉"
+        },
+        "poet": {
+          "zh": "溫庭筠",
+          "ko": "온정균"
+        },
+        "juan": "卷四",
+        "category": "七言律詩",
+        "meter": 7,
+        "preview": "蘇武魂銷漢使前[2] / 古祠高樹兩茫然[3]"
+      },
+      {
+        "titleId": "C312",
+        "poemNo": 305,
+        "poemNoStr": "305",
+        "title": {
+          "zh": "〈瑤瑟怨[1]〉",
+          "ko": "〈비파에 담은 원망〉"
+        },
+        "poet": {
+          "zh": "溫庭筠",
+          "ko": "온정균"
+        },
+        "juan": "卷六",
+        "category": "七言絶句",
+        "meter": 7,
+        "preview": "氷簟銀牀[2]夢不成 / 碧天如水夜雲輕[3]"
+      }
+    ]
+  },
+  {
+    "poetZh": "溫庭筠[1]",
+    "poetKo": "온정균",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C166",
+        "poemNo": 161,
+        "poemNoStr": "161",
+        "title": {
+          "zh": "〈送人東遊〉",
+          "ko": "〈동쪽으로 떠나는 사람을 전송하다〉"
+        },
+        "poet": {
+          "zh": "溫庭筠[1]",
+          "ko": "온정균"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "荒戍落黃葉 / 浩然離故關"
+      }
+    ]
+  },
+  {
+    "poetZh": "無名氏",
+    "poetKo": "무명씨",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C318",
+        "poemNo": 311,
+        "poemNoStr": "311",
+        "title": {
+          "zh": "〈雜詩〉",
+          "ko": "〈잡시〉"
+        },
+        "poet": {
+          "zh": "無名氏",
+          "ko": "무명씨"
+        },
+        "juan": "卷六",
+        "category": "七言絶句",
+        "meter": 7,
+        "preview": "盡寒食雨草萋萋[1] / 著[2]麥苗風柳映堤"
+      }
+    ]
+  },
+  {
+    "poetZh": "西鄙人[2]",
+    "poetKo": "서비인",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C259",
+        "poemNo": 252,
+        "poemNoStr": "252",
+        "title": {
+          "zh": "〈哥舒[1]歌〉",
+          "ko": "〈哥舒翰 노래〉"
+        },
+        "poet": {
+          "zh": "西鄙人[2]",
+          "ko": "서비인"
+        },
+        "juan": "卷五",
+        "category": "五言絶句",
+        "meter": 5,
+        "preview": "北斗七星[3]高 / 哥舒夜帶刀[4]"
+      }
+    ]
+  },
+  {
+    "poetZh": "許渾",
+    "poetKo": "허혼",
+    "authorTitleId": "C402",
+    "birth": null,
+    "death": null,
+    "raw": "?~858?",
+    "works": [
+      {
+        "titleId": "C160",
+        "poemNo": 155,
+        "poemNoStr": "155",
+        "title": {
+          "zh": "〈早秋〉",
+          "ko": "〈이른 가을〉"
+        },
+        "poet": {
+          "zh": "許渾",
+          "ko": "허혼"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "遙夜汎[1]淸瑟[2] / 西風生翠蘿[3]"
+      }
+    ]
+  },
+  {
+    "poetZh": "許渾[4]",
+    "poetKo": "허혼",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C159",
+        "poemNo": 154,
+        "poemNoStr": "154",
+        "title": {
+          "zh": "〈秋日赴闕[1] 題潼關[2]驛樓[3]〉",
+          "ko": "〈가을날 서울로 가면서 潼關 驛樓에 쓰다〉"
+        },
+        "poet": {
+          "zh": "許渾[4]",
+          "ko": "허혼"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "紅葉晩蕭蕭[5] / 長亭[6]酒一瓢"
+      }
+    ]
+  },
+  {
+    "poetZh": "薛逢[2]",
+    "poetKo": "설봉",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C226",
+        "poemNo": 221,
+        "poemNoStr": "221",
+        "title": {
+          "zh": "〈宮詞[1]〉",
+          "ko": "〈궁사〉"
+        },
+        "poet": {
+          "zh": "薛逢[2]",
+          "ko": "설봉"
+        },
+        "juan": "卷四",
+        "category": "七言律詩",
+        "meter": 7,
+        "preview": "十二樓[3]中盡曉妝[4] / 望仙樓[5]上望君王"
+      }
+    ]
+  },
+  {
+    "poetZh": "元結[1]",
+    "poetKo": "원결",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C29",
+        "poemNo": 26,
+        "poemNoStr": "026",
+        "title": {
+          "zh": "〈賊退示官吏〉幷序",
+          "ko": "〈적이 물러간 뒤 관리에게 보인다〉병서"
+        },
+        "poet": {
+          "zh": "元結[1]",
+          "ko": "원결"
+        },
+        "juan": "卷一",
+        "category": "五言古詩",
+        "meter": 5,
+        "preview": "癸卯歲[2] 西原[3] / 賊入道州 焚燒殺掠 幾盡而去"
+      }
+    ]
+  },
+  {
+    "poetZh": "元稹[1]",
+    "poetKo": "원진",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C210",
+        "poemNo": 205,
+        "poemNoStr": "205",
+        "title": {
+          "zh": "〈遣悲懷 其一〉",
+          "ko": "〈슬픈 마음을 풀어놓다 첫 번째 시〉"
+        },
+        "poet": {
+          "zh": "元稹[1]",
+          "ko": "원진"
+        },
+        "juan": "卷四",
+        "category": "七言律詩",
+        "meter": 7,
+        "preview": "謝公最小偏憐女[2] / 自嫁黔婁百事乖[3]"
+      }
+    ]
+  },
+  {
+    "poetZh": "張祜",
+    "poetKo": "장호",
+    "authorTitleId": "C386",
+    "birth": null,
+    "death": null,
+    "raw": "생몰년 미상",
+    "works": [
+      {
+        "titleId": "C290",
+        "poemNo": 283,
+        "poemNoStr": "283",
+        "title": {
+          "zh": "〈贈內人[1]〉",
+          "ko": "〈나인에게 주다〉"
+        },
+        "poet": {
+          "zh": "張祜",
+          "ko": "장호"
+        },
+        "juan": "卷六",
+        "category": "七言絶句",
+        "meter": 7,
+        "preview": "禁門宮樹月痕[2]過 / 媚眼惟看宿鷺窠[3]"
+      },
+      {
+        "titleId": "C291",
+        "poemNo": 284,
+        "poemNoStr": "284",
+        "title": {
+          "zh": "〈集靈臺[1] 二首之一〉",
+          "ko": "〈집영대 두 수 중 첫 번째 시〉"
+        },
+        "poet": {
+          "zh": "張祜",
+          "ko": "장호"
+        },
+        "juan": "卷六",
+        "category": "七言絶句",
+        "meter": 7,
+        "preview": "日光斜照集靈臺 / 紅樹[2]花迎曉露開"
+      },
+      {
+        "titleId": "C292",
+        "poemNo": 285,
+        "poemNoStr": "285",
+        "title": {
+          "zh": "〈集靈臺 二首之二〉",
+          "ko": "〈집영대 두 수 중 두 번째 시〉"
+        },
+        "poet": {
+          "zh": "張祜",
+          "ko": "장호"
+        },
+        "juan": "卷六",
+        "category": "七言絶句",
+        "meter": 7,
+        "preview": "虢國夫人承主恩[1] / 平明[2]騎馬入宮門"
+      },
+      {
+        "titleId": "C293",
+        "poemNo": 286,
+        "poemNoStr": "286",
+        "title": {
+          "zh": "〈題金陵渡[1]〉",
+          "ko": "〈금릉도에 쓰다〉"
+        },
+        "poet": {
+          "zh": "張祜",
+          "ko": "장호"
+        },
+        "juan": "卷六",
+        "category": "七言絶句",
+        "meter": 7,
+        "preview": "金陵津渡小山樓[2] / 一宿行人自可愁"
+      }
+    ]
+  },
+  {
+    "poetZh": "張祜[1]",
+    "poetKo": "장호",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C254",
+        "poemNo": 247,
+        "poemNoStr": "247",
+        "title": {
+          "zh": "〈何滿子〉",
+          "ko": "〈하만자〉"
+        },
+        "poet": {
+          "zh": "張祜[1]",
+          "ko": "장호"
+        },
+        "juan": "卷五",
+        "category": "五言絶句",
+        "meter": 5,
+        "preview": "故國[2]三千里 / 深宮二十年"
+      }
+    ]
+  },
+  {
+    "poetZh": "張籍[1]",
+    "poetKo": "장적",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C156",
+        "poemNo": 151,
+        "poemNoStr": "151",
+        "title": {
+          "zh": "〈沒蕃故人〉",
+          "ko": "〈吐蕃에서 죽은 친구〉"
+        },
+        "poet": {
+          "zh": "張籍[1]",
+          "ko": "장적"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "前年伐月支[2] / 城下[3]沒全師"
+      }
+    ]
+  },
+  {
+    "poetZh": "張繼[2]",
+    "poetKo": "장계",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C280",
+        "poemNo": 273,
+        "poemNoStr": "273",
+        "title": {
+          "zh": "〈楓橋夜泊[1]〉",
+          "ko": "〈밤에 풍교에 배를 대다〉"
+        },
+        "poet": {
+          "zh": "張繼[2]",
+          "ko": "장계"
+        },
+        "juan": "卷六",
+        "category": "七言絶句",
+        "meter": 7,
+        "preview": "月落烏啼霜滿天 / 江楓漁火[3]對愁眠"
+      }
+    ]
+  },
+  {
+    "poetZh": "張九齡[1]",
+    "poetKo": "장구령",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C4",
+        "poemNo": 1,
+        "poemNoStr": "001",
+        "title": {
+          "zh": "〈感遇〉 四首",
+          "ko": "〈感遇〉 네 수 중 첫 번째 시"
+        },
+        "poet": {
+          "zh": "張九齡[1]",
+          "ko": "장구령"
+        },
+        "juan": "卷一",
+        "category": "五言古詩",
+        "meter": 5,
+        "preview": "孤鴻海上來 / 池潢[2]不敢顧"
+      }
+    ]
+  },
+  {
+    "poetZh": "張泌[2]",
+    "poetKo": "장필",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C317",
+        "poemNo": 310,
+        "poemNoStr": "310",
+        "title": {
+          "zh": "〈寄人[1]〉",
+          "ko": "〈그 사람에게 부치다〉"
+        },
+        "poet": {
+          "zh": "張泌[2]",
+          "ko": "장필"
+        },
+        "juan": "卷六",
+        "category": "七言絶句",
+        "meter": 7,
+        "preview": "別夢依依到謝家[3] / 小廊回合[4]曲闌斜"
+      }
+    ]
+  },
+  {
+    "poetZh": "張喬[1]",
+    "poetKo": "장교",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C169",
+        "poemNo": 164,
+        "poemNoStr": "164",
+        "title": {
+          "zh": "〈書邊事〉",
+          "ko": "〈변방의 일을 쓰다〉"
+        },
+        "poet": {
+          "zh": "張喬[1]",
+          "ko": "장교"
+        },
+        "juan": "卷三",
+        "category": "五言律詩",
+        "meter": 5,
+        "preview": "調角斷淸秋[2] / 征人倚戍樓[3]"
+      }
+    ]
+  },
+  {
+    "poetZh": "張旭[2]",
+    "poetKo": "장욱",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C269",
+        "poemNo": 262,
+        "poemNoStr": "262",
+        "title": {
+          "zh": "〈桃花谿[1]〉",
+          "ko": "〈도화계〉"
+        },
+        "poet": {
+          "zh": "張旭[2]",
+          "ko": "장욱"
+        },
+        "juan": "卷六",
+        "category": "七言絶句",
+        "meter": 7,
+        "preview": "隱隱飛橋隔野煙[3] / 石磯[4]西畔問漁船"
+      }
+    ]
+  },
+  {
+    "poetZh": "鄭畋[2]",
+    "poetKo": "정전",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C313",
+        "poemNo": 306,
+        "poemNoStr": "306",
+        "title": {
+          "zh": "〈馬嵬坡[1]〉",
+          "ko": "〈마외파〉"
+        },
+        "poet": {
+          "zh": "鄭畋[2]",
+          "ko": "정전"
+        },
+        "juan": "卷六",
+        "category": "七言絶句",
+        "meter": 7,
+        "preview": "玄宗回馬楊妃死[3] / 雲雨難忘日月新[4]"
+      }
+    ]
+  },
+  {
+    "poetZh": "朱慶餘",
+    "poetKo": "주경여",
+    "authorTitleId": "C390",
+    "birth": null,
+    "death": null,
+    "raw": "생몰년 미상",
+    "works": [
+      {
+        "titleId": "C295",
+        "poemNo": 288,
+        "poemNoStr": "288",
+        "title": {
+          "zh": "〈近試上張水部[1]〉",
+          "ko": "〈시험이 가까워 장수부께 올리다〉"
+        },
+        "poet": {
+          "zh": "朱慶餘",
+          "ko": "주경여"
+        },
+        "juan": "卷六",
+        "category": "七言絶句",
+        "meter": 7,
+        "preview": "洞房[2]昨夜停紅燭 / 待曉堂前拜舅姑[3]"
+      }
+    ]
+  },
+  {
+    "poetZh": "朱慶餘[1]",
+    "poetKo": "주경여",
+    "authorTitleId": null,
+    "birth": null,
+    "death": null,
+    "raw": "",
+    "works": [
+      {
+        "titleId": "C294",
+        "poemNo": 287,
+        "poemNoStr": "287",
+        "title": {
+          "zh": "〈宮詞〉",
+          "ko": "〈궁사〉"
+        },
+        "poet": {
+          "zh": "朱慶餘[1]",
+          "ko": "주경여"
+        },
+        "juan": "卷六",
+        "category": "七言絶句",
+        "meter": 7,
+        "preview": "寂寂花時閉院門 / 美人相竝立瓊軒[2]"
+      }
+    ]
+  }
+]
