@@ -32,6 +32,14 @@ function normalizeZhName(s) {
   return String(s || "").replace(/\[\d+\]/g, "");
 }
 
+function normalizePoetName(s) {
+  // 작가 매칭용 정규화: 주석번호 제거 + 직함 접두(예: "僧 ") 제거 + 공백 정리
+  return normalizeZhName(s)
+    .replace(/^僧\s+/u, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
 function formatLife(life) {
   if (!life) return "";
   const b = life.birth ?? "";
@@ -852,13 +860,13 @@ function bindModalOpeners(root) {
       }
 
       // 1차: poet.zh → authorId 매핑
-      const poetKey = normalizeZhName(p?.poet?.zh || "").trim();
+      const poetKey = normalizePoetName(p?.poet?.zh || "");
       let authorId = STATE.authorIdByPoetZh.get(poetKey);
 
       // 2차 fallback: authors를 돌며 name.zh 정규화 비교
       if (!authorId && poetKey) {
         for (const [aid, a] of STATE.authorById.entries()) {
-          const k = normalizeZhName(a?.name?.zh || "").trim();
+          const k = normalizePoetName(a?.name?.zh || "");
           if (k === poetKey) {
             authorId = aid;
             break;
@@ -900,14 +908,14 @@ function bindModalOpeners(root) {
 // ===== 8) 데이터 결합 =====
 function buildAuthorEvents(authorsDB, poemsCompact) {
   const poems = Array.isArray(poemsCompact) ? poemsCompact : (poemsCompact.items || []);
-  const poemsByPoetZh = groupByKey(poems, p => normalizeZhName(p?.poet?.zh || "").trim());
+  const poemsByPoetZh = groupByKey(poems, p => normalizePoetName(p?.poet?.zh || ""));
 
   const authors = Object.values(authorsDB.authors || {});
   const events = [];
 
   for (const a of authors) {
     const authorId = a.titleId;
-    const nameZh = normalizeZhName(a?.name?.zh || "").trim();
+    const nameZh = normalizePoetName(a?.name?.zh || "");
     const nameKo = a?.name?.ko || "";
     const lifeStr = formatLife(a.life) || (a?.life?.raw ? `(${a.life.raw})` : "");
     const year = a?.life?.birth ?? null;
@@ -947,14 +955,14 @@ function buildAuthorPoemIndex(authorsDB, poemsCompact) {
   // poet.zh(정규화) → authorId 매핑
   const authorIdByPoetZh = new Map();
   for (const a of authors) {
-    const k = normalizeZhName(a?.name?.zh || "").trim();
+    const k = normalizePoetName(a?.name?.zh || "");
     if (k) authorIdByPoetZh.set(k, a.titleId);
   }
 
   // authorId → poems[]
   const poemsByAuthorId = new Map();
   for (const p of poems) {
-    const poetKey = normalizeZhName(p?.poet?.zh || "").trim();
+    const poetKey = normalizePoetName(p?.poet?.zh || "");
     const aid = authorIdByPoetZh.get(poetKey);
     if (!aid) continue;
 
@@ -1016,6 +1024,19 @@ async function main() {
     const left = (aByYear.get(y) || []).slice(0, 2).map(renderAuthorCard);
     const right = (hByYear.get(y) || []).map(renderHistoryCard);
     root.appendChild(renderPrimaryItem(y, left, right));
+  }
+
+  const unknownYearAuthors = authorEvents
+    .filter(a => a.year == null)
+    .sort((a, b) => {
+      const ak = String(a.nameKo || "").trim();
+      const bk = String(b.nameKo || "").trim();
+      return ak.localeCompare(bk, "ko");
+    });
+  if (unknownYearAuthors.length) {
+    root.appendChild(
+      renderPrimaryItem("연도 미상", unknownYearAuthors.map(renderAuthorCard), [])
+    );
   }
 
   bindAccordions(root);
