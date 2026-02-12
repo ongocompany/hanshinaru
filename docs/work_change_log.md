@@ -183,3 +183,71 @@
   - `연도 미상` 라벨 row 추가 로직 존재 확인
 - Notes:
   - 이 이력은 형님 확인 요청으로 로그에 후반영함.
+
+## [Task ID] 2026-02-12-0900-gemini-unknown-author-research
+
+### START
+- Time: 2026-02-12 09:00
+- Owner: Gemini(태훈)
+- Requester: JIN
+- Request Summary: 생몰년 미상 작가들의 활동 시기 추가 조사 및 문서화.
+- Why: 데이터 정비를 위해 작가들의 활동 시기(초/성/중/만당) 분류가 필요함.
+- Planned Scope:
+  - 파일: `docs/unknown_author.md`
+  - 예상 변경: 추가 조사 필요 대상 13명의 활동 시기 추적 및 결과 정리
+- Status: In Progress
+
+### END
+- Time: 2026-02-12 09:10
+- Status: Done
+- Changed Files:
+  - `docs/unknown_author.md:112` (추가 조사 결과 섹션 및 종합 분류 표 추가)
+- Validation:
+  - 각 작가별 연호, 급제 년도, 교유 관계 등을 근거로 시대 분류 완료.
+- Notes:
+  - 朱慶餘는 중당 말기~만당 초기에 걸치나 급제 년도(826) 기준으로 중당으로 분류함.
+
+### END
+- Time: 2026-02-12 09:10
+- Status: Done
+- Changed Files:
+  - `docs/unknown_author.md:112` (추가 조사 결과 섹션 및 종합 분류 표 추가)
+- Validation:
+  - 각 작가별 연호, 급제 년도, 교유 관계 등을 근거로 시대 분류 완료.
+- Notes:
+  - 朱慶餘는 중당 말기~만당 초기에 걸치나 급제 년도(826) 기준으로 중당으로 분류함.
+  - 중복 기록된 로그를 정리하고 최종 결과를 반영함.
+
+## [Task ID] 2026-02-12-1530-claude-era-field-add
+
+### START
+- Time: 2026-02-12 15:30
+- Owner: Claude(민철)
+- Requester: JIN
+- Request Summary: 전체 작가 76명에게 시대(era) 필드를 추가. 생몰년 있는 작가는 birth 기준 자동 계산, 생몰년 미상 28명은 태훈(Gemini) 조사 결과 반영.
+- Why: 작가 데이터 정합성 확보 및 향후 시대별 필터링/정렬 기능 구현 기반 마련.
+- Planned Scope:
+  - 파일: `public/index/db_author.with_ko.json`
+  - 예상 변경: 전체 작가 객체에 `era` 필드 추가 (period, confidence, source)
+  - 파일: `scripts/add_era_field.js` (신규)
+  - 예상 변경: 시대 필드 추가 자동화 스크립트 작성
+- Status: In Progress
+
+### END
+- Time: 2026-02-12 15:45
+- Status: Done
+- Changed Files:
+  - `public/index/db_author.with_ko.json:전체` (전체 76명 작가에게 era 필드 추가)
+  - `scripts/add_era_field.js:1` (시대 필드 추가 자동화 스크립트 신규 작성)
+  - `public/index/db_author.with_ko.backup.json:1` (백업 파일 자동 생성)
+- Validation:
+  - JSON 문법 검증: ✅ 정상
+  - 총 작가 수: 76명
+  - era 필드 보유: 76명 (100%)
+  - 시대별 분포: 초당 25명, 성당 18명, 중당 20명, 만당 13명
+  - 샘플 검증: 이백(701년생→초당), 온정균(생몰년 미상→만당) 정상
+- Notes:
+  - 생년 기준 자동 계산: 48명
+  - 태훈(Gemini) 조사 결과 반영: 28명
+  - 백업 파일 위치: `public/index/db_author.with_ko.backup.json`
+  - era 필드 구조: `{period, confidence, source}`
