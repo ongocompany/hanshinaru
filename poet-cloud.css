@@ -1,0 +1,37 @@
+/* Styles for poet cloud layout */
+body { padding:24px; background:#fff; }
+.cloud-wrap { display:flex; flex-direction:column; gap:18px; align-items:center; }
+.poet-block { width:680px; height:400px; background:transparent; border-radius:8px; position:relative; overflow:hidden; border:1px dashed rgba(0,0,0,0.06); }
+.poet-block:nth-child(1)::before{ content:''; position:absolute; inset:0; background:radial-gradient(circle at 50% 40%, rgba(139,0,0,0.06), transparent 40%); pointer-events:none; }
+.poet-block:nth-child(2)::before{ content:''; position:absolute; inset:0; background:radial-gradient(circle at 50% 40%, rgba(0,102,204,0.05), transparent 40%); pointer-events:none; }
+.poet-block:nth-child(3)::before{ content:''; position:absolute; inset:0; background:radial-gradient(circle at 50% 40%, rgba(34,139,34,0.05), transparent 40%); pointer-events:none; }
+.poet-block:nth-child(4)::before{ content:''; position:absolute; inset:0; background:radial-gradient(circle at 50% 40%, rgba(128,0,128,0.05), transparent 40%); pointer-events:none; }
+.poet-block .block-title { position:absolute; left:12px; top:8px; font-size:14px; color:#333; z-index:10; background:transparent; }
+.poet-name-item { position:absolute; white-space:nowrap; cursor:pointer; color:#111; user-select:none; display:inline-block; transform-origin:center center; will-change:transform, opacity; text-rendering:optimizeLegibility; }
+.poet-name-item:hover { color:#8b0000; transform:scale(1.08) translateZ(0); z-index:1200; }
+
+/* pulsing animation for names (subtle) */
+@keyframes pulse {
+	0% { transform: scale(1); }
+	50% { transform: scale(1.06); }
+	100% { transform: scale(1); }
+}
+
+/* nicer appearance */
+.poet-name-item { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans KR', 'Yu Gothic', 'Apple SD Gothic Neo', sans-serif; font-weight:600; text-shadow: 0 1px 0 rgba(255,255,255,0.6), 0 6px 10px rgba(2,6,23,0.06); }
+
+/* group palettes (applied inline from script too) */
+.palette-0 { color: #7b1e1e; }
+.palette-1 { color: #0b61a4; }
+.palette-2 { color: #2e8b57; }
+.palette-3 { color: #6b2e6b; }
+
+/* subtle glow when hovered */
+.poet-name-item:hover { text-shadow: 0 2px 6px rgba(139,0,0,0.15); }
+
+
+/* ensure our .card rules (from zoom-demo.css) remain compatible */
+.poet-block .card { background:transparent; box-shadow:none; padding:0; height:auto; line-height:1; }
+
+/* responsive */
+@media (max-width:740px){ .poet-block { transform:scale(0.9); } }

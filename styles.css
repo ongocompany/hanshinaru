@@ -33,7 +33,7 @@ body {
   padding: 30px 20px;
 }
 
-/* 중앙 시간축(세로선) */
+/* [v2 리뉴얼] 기존 중앙 세로선 → 시대별 .era-timeline-line으로 대체
 .timeline::before {
   content: "";
   position: absolute;
@@ -43,17 +43,16 @@ body {
   background: #aaa;
   transform: translateX(-50%);
 }
+*/
 
-/* 연도 1행(row) 레이아웃: [왼쪽] [마커] [오른쪽] */
+/* [v2 리뉴얼] 기존 연도별 가로 행 → .era-section으로 대체
 .timeline-item {
   display: grid;
   grid-template-columns: 1fr 80px 1fr;
-  align-items: start; /* 펼침으로 row 높이가 커져도 마커는 위쪽 기준 */
+  align-items: start;
   margin: 12px 0;
   column-gap: 8px;
 }
-
-/* 좌/우 컬럼 */
 .timeline-left {
   display: flex;
   flex-direction: column;
@@ -66,10 +65,6 @@ body {
   align-items: flex-start;
   gap: 10px;
 }
-
-/* =========================
-   3) Timeline Marker
-   ========================= */
 .timeline-marker {
   position: relative;
   display: flex;
@@ -82,10 +77,291 @@ body {
   border-radius: 12px;
   font-size: 12px;
 }
+*/
 
-/* =========================
-   4) Card System (공통)
-   ========================= */
+/* ===== [v2 리뉴얼] 시대별 세로 타임라인 ===== */
+.era-section {
+  position: relative;
+  margin: 0;
+}
+.era-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 20px 0 10px;
+  position: relative;
+  z-index: 2;
+}
+.era-label {
+  background: #8b0000;
+  color: #fff;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.era-label-sub {
+  font-size: 13px;
+  color: #777;
+}
+.era-body {
+  display: grid;
+  grid-template-columns: 1fr 60px 1fr;
+  column-gap: 12px;
+  min-height: 100px;
+}
+.era-center {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.era-timeline-line {
+  width: 2px;
+  background: #aaa;
+  height: 100%;
+}
+.era-left {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 10px 0;
+}
+.era-right {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 10px 0;
+}
+
+/* 隋 / 五代十國 북엔드 */
+.era-bookend {
+  text-align: center;
+  padding: 16px 0;
+  position: relative;
+  z-index: 2;
+}
+.era-bookend-label {
+  display: inline-block;
+  background: #444;
+  color: #fff;
+  padding: 4px 14px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* ===== [v2 리뉴얼] 시인 이름 워드클라우드 ===== */
+.poet-names {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 2px;
+  align-items: baseline;
+  justify-content: flex-end;
+  line-height: 1.6;
+}
+.poet-names.empty {
+  color: #999;
+  font-size: 14px;
+}
+.poet-name {
+  cursor: pointer;
+  color: #222;
+  transition: color 0.15s ease;
+  white-space: nowrap;
+}
+.poet-name:hover {
+  color: #8b0000;
+}
+.poet-sep {
+  color: #ccc;
+  font-size: 12px;
+  user-select: none;
+}
+
+/* ===== [v2 리뉴얼] 메인 역사 카드 (4대 사건) ===== */
+.history-main-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.history-main-top {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.history-main-portrait {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #ddd;
+  flex-shrink: 0;
+}
+.history-main-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.history-main-title {
+  font-weight: 700;
+  font-size: 15px;
+}
+.history-main-title .zh {
+  font-weight: normal;
+  color: #555;
+  margin-left: 4px;
+}
+.history-main-life {
+  font-size: 12px;
+  color: #777;
+}
+.history-main-tags {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+.history-main-summary {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #444;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.history-detail-toggle {
+  border: 1px solid #ddd;
+  background: #fafafa;
+  border-radius: 6px;
+  padding: 4px 10px;
+  cursor: pointer;
+  font-size: 12px;
+  color: #555;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  align-self: flex-start;
+}
+.history-detail-toggle .chev {
+  font-size: 14px;
+  transition: transform 0.15s ease;
+}
+.history-detail-toggle[aria-expanded="true"] .chev {
+  transform: rotate(180deg);
+}
+.history-detail-panel {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #444;
+  padding-top: 6px;
+}
+.history-detail-panel ul {
+  margin: 0;
+  padding: 0 0 0 16px;
+}
+.history-detail-panel li {
+  margin: 4px 0;
+}
+
+/* ===== [v2 리뉴얼] 소규모 역사 이벤트 (점) ===== */
+.history-minor-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.history-minor {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: default;
+  font-size: 13px;
+  color: #555;
+}
+.history-minor-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #999;
+  flex-shrink: 0;
+}
+.history-minor-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ===== [v2 리뉴얼] 호버 팝업 (시인/역사 공용) ===== */
+.hover-popup {
+  position: fixed;
+  z-index: 10000;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  padding: 12px 14px;
+  max-width: 280px;
+  pointer-events: none;
+}
+.hover-popup[hidden] {
+  display: none !important;
+}
+
+/* 시인 팝업 */
+.poet-popup {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.poet-popup-name {
+  font-weight: 700;
+  font-size: 15px;
+}
+.poet-popup-name .zh {
+  font-weight: normal;
+  color: #555;
+}
+.poet-popup-life {
+  font-size: 12px;
+  color: #777;
+}
+.poet-popup-count {
+  font-size: 13px;
+  color: #8b0000;
+  font-weight: 600;
+}
+.poet-popup-bio {
+  font-size: 13px;
+  line-height: 1.4;
+  color: #444;
+}
+
+/* 역사 미니팝업 */
+.history-popup {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.history-popup-title {
+  font-weight: 700;
+  font-size: 14px;
+}
+.history-popup-title .zh {
+  font-weight: normal;
+  color: #555;
+}
+.history-popup-summary {
+  font-size: 13px;
+  line-height: 1.4;
+  color: #444;
+}
+
+/* [v2 리뉴얼] 기존 카드 시스템 → 시인 워드클라우드 + 시대별 역사카드로 대체
 .card {
   width: 100%;
   max-width: 420px;
@@ -93,8 +369,6 @@ body {
   border: 1px solid #ddd;
   border-radius: 8px;
 }
-
-/* 타임라인 카드 규격 */
 .card.compact {
   height: 130px;
   display: flex;
@@ -103,11 +377,10 @@ body {
   gap: 2px;
   padding: 10px;
 }
-
-/* 펼침 상태 */
 .card.compact.expanded {
   height: auto;
 }
+*/
 
 /* =========================
    5) Tag System (공통)
@@ -121,26 +394,21 @@ body {
   color: #333;
 }
 
-/* =========================
-   6) 2줄 요약(공통) + 좌우 padding(형 확정)
-   ========================= */
+/* [v2 리뉴얼] 기존 타임라인 카드용 2줄 요약 → 새 카드에서 history-main-summary로 대체
 .author-bio,
 .history-desc {
   font-size: 16px;
   line-height: 1.4;
   color: #444;
-
-  padding: 0 6px; /* 두 줄 요약만 안쪽으로 */
-
+  padding: 0 6px;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+*/
 
-/* =========================
-   7) Author Card (왼쪽)
-   ========================= */
+/* [v2 리뉴얼] 기존 작가 카드 → .poet-name 워드클라우드로 대체
 .author-top {
   display: flex;
   gap: 8px;
@@ -161,16 +429,14 @@ body {
 .author-name { font-weight: bold; font-size: 20px; }
 .author-name .zh { margin-left: 4px; font-weight: normal; color: #555; }
 .author-name .life { margin-left: 4px; font-size: 12px; color: #777; }
-
 .author-tags {
   display: flex;
   gap: 4px;
   flex-wrap: wrap;
 }
+*/
 
-/* =========================
-   8) History Card (오른쪽)
-   ========================= */
+/* [v2 리뉴얼] 기존 역사 카드 → .history-main-card + .history-minor로 대체
 .history-top {
   display: flex;
   gap: 8px;
@@ -201,14 +467,12 @@ body {
   line-height: 1.5;
   color: #444;
 }
-
 .history-sub{
   display: flex;
   gap: 6px;
   align-items: center;
   justify-content: flex-end;
 }
-
 .history-detail-list{
   margin: 0;
   padding: 0 0 0 16px;
@@ -216,12 +480,10 @@ body {
 .history-detail-list li{
   margin: 4px 0;
 }
+*/
 
-/* =========================
-   9) Accordion / Handle (타임라인 카드용)
-   ========================= */
+/* [v2 리뉴얼] 기존 타임라인 카드용 아코디언 → history-detail-toggle로 대체
 .works-panel { margin-top: 2px; }
-
 .works-handle {
   margin-top: 2px;
   padding: 0;
@@ -230,7 +492,6 @@ body {
   border: none;
   background: transparent;
   cursor: pointer;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -243,8 +504,11 @@ body {
   transition: transform 0.15s ease;
 }
 .card.expanded .works-handle .chev { transform: rotate(180deg); }
+*/
 
-/* 작품 리스트 */
+/* =========================
+   9) 작품 리스트 (모달 내부에서 사용 — 유지)
+   ========================= */
 .works-list {
   list-style: none;
   padding: 0;
@@ -426,6 +690,20 @@ body {
   padding: 10px;
 }
 .placeholder{ background: #fafafa; color: #777; }
+
+/* ===== 출생지 지도 & 관계도 (모달 내) ===== */
+.map-container {
+  height: 180px;
+  background: #eef;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.graph-container {
+  height: 180px;
+  background: #fafafa;
+  border-radius: 10px;
+  overflow: hidden;
+}
 
 /* 모달 내 공통 블록 */
 .block-title{

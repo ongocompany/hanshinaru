@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Poet Cloud Layout</title>
+  <link rel="stylesheet" href="zoom-demo.css">
+  <link rel="stylesheet" href="poet-cloud.css">
+  <style>h1{font-size:18px;margin-bottom:12px;text-align:center}</style>
+  </head>
+<body>
+  <h1>시인 목록 - 워드클라우드 시뮬레이션</h1>
+  <div class="cloud-wrap">
+    <div class="poet-block" data-group="초당"><div class="block-title">초당</div></div>
+    <div class="poet-block" data-group="성당"><div class="block-title">성당</div></div>
+    <div class="poet-block" data-group="중당"><div class="block-title">중당</div></div>
+    <div class="poet-block" data-group="만당"><div class="block-title">만당</div></div>
+  </div>
+
+  <script>
+  // Generate clustered, non-overlapping 2-3 char names inside each block
+  (function(){
+    const blocks = document.querySelectorAll('.poet-block');
+    const counts = [8,27,27,14];
+    const syllables = ['가','나','다','라','마','바','사','아','자','차','카','타','파','하','이','우','현','명','진','석','도','경','수','진','윤','빈','원'];
+
+    function makeName(){
+      const len = Math.random() < 0.5 ? 2 : 3;
+      let name='';
+      for(let i=0;i<len;i++) name += syllables[Math.floor(Math.random()*syllables.length)];
+      return name;
+    }
+
+    function intersects(a,b,margin=4){
+      return !(a.r + margin < b.l || a.l > b.r + margin || a.b + margin < b.t || a.t > b.b + margin);
+    }
+
+    blocks.forEach((block, idx)=>{
+      const n = counts[idx] || 10;
+      const placed = [];
+      const br = block.getBoundingClientRect();
+      const padding = 12;
+      const centerX = br.width/2;
+      const centerY = br.height/2;
+      // horizontal bias distances (wider horizontally)
+      const maxX = br.width * 0.48;
+      const maxY = br.height * 0.20;
+
+      // color palettes per group (harmonized)
+      const palettes = [ ['#7b1e1e','#a62b2b','#e07a7a'], ['#0b61a4','#2b88d8','#6fb1ff'], ['#2e8b57','#58a476','#96d3a5'], ['#6b2e6b','#8f4fa4','#c6a0d5'] ];
+
+      for(let i=0;i<n;i++){
+        const name = makeName();
+        const el = document.createElement('div');
+        el.className = 'card poet-name-item';
+        el.textContent = name;
+
+        // size categories (few big, many small) for aesthetic cloud
+        const sizeBuckets = [42,34,28,22,18,14];
+        const probs = [0.03,0.06,0.12,0.24,0.30,0.25];
+        let r = Math.random();
+        let fs = 14;
+        for(let s=0;s<sizeBuckets.length;s++){ r -= probs[s]; if(r<=0){ fs = sizeBuckets[s]; break; } }
+        el.style.fontSize = fs + 'px';
+
+        // random slight rotation for organic look
+        const rot = (Math.random()*24 - 12).toFixed(1); // -12 to 12 deg
+        el.style.transform = `rotate(${rot}deg)`;
+
+        // color from palette
+        const pal = palettes[idx % palettes.length];
+        el.style.color = pal[Math.floor(Math.random()*pal.length)];
+
+        // emphasize larger ones with higher z-index
+        if(fs >= 34) el.style.zIndex = 1100; else if(fs >= 28) el.style.zIndex = 1050;
+
+        el.style.visibility = 'hidden';
+        block.appendChild(el);
+
+        // measure then place inside horizontally-elongated cluster with collision avoidance
+        const nr = el.getBoundingClientRect();
+        const w = nr.width; const h = nr.height;
+
+        let placedPos = null;
+        const attempts = 500;
+        for(let a=0;a<attempts;a++){
+          const rx = (Math.random() - 0.5) * 2 * maxX * Math.pow(Math.random(),0.6);
+          const ry = (Math.random() - 0.5) * 2 * maxY * Math.pow(Math.random(),1.4);
+          let x = Math.round(centerX + rx - w/2);
+          let y = Math.round(centerY + ry - h/2);
+          x = Math.max(padding, Math.min(br.width - w - padding, x));
+          y = Math.max(padding + 26, Math.min(br.height - h - padding, y));
+          const rect = { l:x, t:y, r:x + w, b:y + h };
+          let ok = true; for(const p of placed){ if(intersects(rect,p,2)){ ok=false; break; } }
+          if(ok){ placedPos = {x,y,rect}; break; }
+        }
+
+        if(!placedPos){
+          // fallback grid scan
+          outer: for(let yy=padding+24; yy<br.height-h-padding; yy+=6){
+            for(let xx=padding; xx<br.width-w-padding; xx+=6){
+              const rect = { l:xx, t:yy, r:xx+w, b:yy+h };
+              let ok=true; for(const p of placed){ if(intersects(rect,p,2)){ ok=false; break; } }
+              if(ok){ placedPos={x:xx,y:yy,rect}; break outer; }
+            }
+          }
+        }
+
+        if(!placedPos){
+          const rx = Math.max(padding, Math.min(br.width - w - padding, Math.floor(Math.random()*(br.width-w-2*padding))+padding));
+          const ry = Math.max(padding+24, Math.min(br.height - h - padding, Math.floor(Math.random()*(br.height-h-2*padding))+padding+24));
+          placedPos = {x:rx,y:ry, rect:{l:rx,t:ry,r:rx+w,b:ry+h}};
+        }
+
+        el.style.left = placedPos.x + 'px';
+        el.style.top = placedPos.y + 'px';
+        // pulsing animation gentle and slightly varied
+        const dur = (0.85 + Math.random()*0.6).toFixed(2);
+        const delay = (Math.random()*1.2).toFixed(2);
+        el.style.animation = `pulse ${dur}s ease-in-out ${delay}s infinite`;
+        el.style.visibility = 'visible';
+        placed.push(placedPos.rect);
+      }
+    });
+  })();
+  </script>
+  <script src="zoom-demo.js"></script>
+</body>
+</html>

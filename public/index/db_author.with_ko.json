@@ -294,7 +294,16 @@
         "period": "high",
         "confidence": "high",
         "source": "bio_era"
-      }
+      },
+      "birthplace": {
+        "name": "하남성 공현",
+        "nameZh": "河南省 鞏縣",
+        "lat": 34.77,
+        "lng": 112.98
+      },
+      "relations": [
+        { "targetId": "C375", "type": "friend", "label": "친구(벗)", "desc": "744년 낙양에서 만나 의기투합, '이두'로 병칭" }
+      ]
     },
     "C342": {
       "titleId": "C342",
@@ -420,7 +429,16 @@
         "period": "high",
         "confidence": "high",
         "source": "bio_era"
-      }
+      },
+      "birthplace": {
+        "name": "호북성 양양",
+        "nameZh": "湖北省 襄陽縣",
+        "lat": 32.00,
+        "lng": 112.14
+      },
+      "relations": [
+        { "targetId": "C375", "type": "admirer", "label": "존경받음", "desc": "이백이 〈贈孟浩然〉에서 '吾愛孟夫子'라고 읊음" }
+      ]
     },
     "C348": {
       "titleId": "C348",
@@ -1008,7 +1026,18 @@
         "period": "high",
         "confidence": "high",
         "source": "bio_era"
-      }
+      },
+      "birthplace": {
+        "name": "사천성 면양 (출생지: 쇄엽성)",
+        "nameZh": "四川省 綿陽縣 (出生: 碎葉城)",
+        "lat": 31.47,
+        "lng": 104.73
+      },
+      "relations": [
+        { "targetId": "C341", "type": "friend", "label": "친구(벗)", "desc": "두보와 이백은 744년 낙양에서 만나 의기투합" },
+        { "targetId": "C347", "type": "respect", "label": "존경", "desc": "〈贈孟浩然〉에서 '吾愛孟夫子 風流天下聞'이라 읊음" },
+        { "targetId": "C398", "type": "patron", "label": "추천받음", "desc": "하지장이 '謫仙人'이라 감탄하며 현종에게 천거" }
+      ]
     },
     "C376": {
       "titleId": "C376",
@@ -1491,7 +1520,16 @@
         "period": "early",
         "confidence": "high",
         "source": "birth_year"
-      }
+      },
+      "birthplace": {
+        "name": "절강성 소흥",
+        "nameZh": "浙江省 杭州市 蕭山區",
+        "lat": 30.18,
+        "lng": 120.26
+      },
+      "relations": [
+        { "targetId": "C375", "type": "recommend", "label": "추천", "desc": "이백의 시를 읽고 '謫仙人'이라 감탄, 현종에게 천거" }
+      ]
     },
     "C399": {
       "titleId": "C399",

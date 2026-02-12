@@ -184,256 +184,119 @@
 - Notes:
   - 이 이력은 형님 확인 요청으로 로그에 후반영함.
 
-## [Task ID] 2026-02-12-0900-gemini-unknown-author-research
+## [Task ID] 2026-02-12-0900-gemini-unknown-author-plan
 
 ### START
 - Time: 2026-02-12 09:00
 - Owner: Gemini(태훈)
 - Requester: JIN
-- Request Summary: 생몰년 미상 작가들의 활동 시기 추가 조사 및 문서화.
-- Why: 데이터 정비를 위해 작가들의 활동 시기(초/성/중/만당) 분류가 필요함.
+- Request Summary: 생몰년 미상 작가 13인에 대한 후속 조사 준비 및 서칭 파라미터 구체화.
+- Why: `unknown_author.md` 가이드에 따라 미상 작가의 활동 시기를 추정하기 위함.
 - Planned Scope:
   - 파일: `docs/unknown_author.md`
-  - 예상 변경: 추가 조사 필요 대상 13명의 활동 시기 추적 및 결과 정리
+  - 예상 변경: 조사 대상 13인의 정밀 검색 쿼리 리스트 추가 (Section 9).
 - Status: In Progress
 
 ### END
-- Time: 2026-02-12 09:10
+- Time: 2026-02-12 09:15
 - Status: Done
 - Changed Files:
-  - `docs/unknown_author.md:112` (추가 조사 결과 섹션 및 종합 분류 표 추가)
+  - `docs/unknown_author.md:178` (2차 상세 조사 계획 및 쿼리 추가)
+  - `docs/unknown_author.md:210` (2차 조사 결과 및 시대 판정 추가)
 - Validation:
-  - 각 작가별 연호, 급제 년도, 교유 관계 등을 근거로 시대 분류 완료.
+  - 13명 전원에 대한 활동 시기(Era) 판정 완료.
+  - 문헌(당재자전, 전당시 등) 및 과거 급제 년도 교차 검증.
 - Notes:
-  - 朱慶餘는 중당 말기~만당 초기에 걸치나 급제 년도(826) 기준으로 중당으로 분류함.
+  - 서비인(西鄙人)은 성당 시기 작자 미상(또는 서씨)으로 분류.
+  - 장필(張泌)은 당말~오대십국 인물이지만 만당으로 분류.
 
-### END
-- Time: 2026-02-12 09:10
-- Status: Done
-- Changed Files:
-  - `docs/unknown_author.md:112` (추가 조사 결과 섹션 및 종합 분류 표 추가)
-- Validation:
-  - 각 작가별 연호, 급제 년도, 교유 관계 등을 근거로 시대 분류 완료.
-- Notes:
-  - 朱慶餘는 중당 말기~만당 초기에 걸치나 급제 년도(826) 기준으로 중당으로 분류함.
-  - 중복 기록된 로그를 정리하고 최종 결과를 반영함.
-
-## [Task ID] 2026-02-12-1530-claude-era-field-add
+## [Task ID] 2026-02-12-1800-claude-v2-ui-renewal
 
 ### START
-- Time: 2026-02-12 15:30
-- Owner: Claude(민철)
-- Requester: JIN
-- Request Summary: 전체 작가 76명에게 시대(era) 필드를 추가. 생몰년 있는 작가는 birth 기준 자동 계산, 생몰년 미상 28명은 태훈(Gemini) 조사 결과 반영.
-- Why: 작가 데이터 정합성 확보 및 향후 시대별 필터링/정렬 기능 구현 기반 마련.
-- Planned Scope:
-  - 파일: `public/index/db_author.with_ko.json`
-  - 예상 변경: 전체 작가 객체에 `era` 필드 추가 (period, confidence, source)
-  - 파일: `scripts/add_era_field.js` (신규)
-  - 예상 변경: 시대 필드 추가 자동화 스크립트 작성
-- Status: In Progress
-
-### END
-- Time: 2026-02-12 15:45
-- Status: Done
-- Changed Files:
-  - `public/index/db_author.with_ko.json:전체` (전체 76명 작가에게 era 필드 추가)
-  - `scripts/add_era_field.js:1` (시대 필드 추가 자동화 스크립트 신규 작성)
-  - `public/index/db_author.with_ko.backup.json:1` (백업 파일 자동 생성)
-- Validation:
-  - JSON 문법 검증: ✅ 정상
-  - 총 작가 수: 76명
-  - era 필드 보유: 76명 (100%)
-  - 시대별 분포: 초당 25명, 성당 18명, 중당 20명, 만당 13명
-  - 샘플 검증: 이백(701년생→초당), 온정균(생몰년 미상→만당) 정상
-- Notes:
-  - 생년 기준 자동 계산: 48명
-  - 태훈(Gemini) 조사 결과 반영: 28명
-  - 백업 파일 위치: `public/index/db_author.with_ko.backup.json`
-  - era 필드 구조: `{period, confidence, source}`
-
-## [Task ID] 2026-02-12-1600-claude-era-refinement
-
-### START
-- Time: 2026-02-12 16:00
-- Owner: Claude(민철)
-- Requester: JIN
-- Request Summary: 태훈(Gemini)의 조사 결과를 기반으로 생몰년 있는 작가 48명의 era 필드를 실제 활동 시기 기준으로 재정제.
-- Why: 생년만으로는 활동 시기가 부정확. bioKo 텍스트 분석 및 웹 서칭 결과를 반영하여 정확도 향상.
-- Planned Scope:
-  - 파일: `public/index/db_author.with_ko.json`
-  - 예상 변경: 48명 중 26명 era 필드 수정 (태훈 조사 결과 반영)
-  - 파일: `scripts/update_era_from_taehun.js` (신규)
-  - 예상 변경: 태훈 결과 기반 era 업데이트 스크립트 작성
-- Status: In Progress
-
-### END
-- Time: 2026-02-12 16:15
-- Status: Done
-- Changed Files:
-  - `public/index/db_author.with_ko.json:전체` (25명 era 필드 수정)
-  - `scripts/update_era_from_taehun.js:1` (태훈 결과 기반 업데이트 스크립트 신규 작성)
-  - `public/index/db_author.with_ko.backup2.json:1` (백업 파일 자동 생성)
-  - `docs/era_refinement_results.md:1` (태훈 조사 결과 문서, 태훈 작성)
-  - `docs/claude_to_gemini_handoff.md:1` (AI 간 핸드오프 문서 작성)
-- Validation:
-  - JSON 문법 검증: ✅ 정상
-  - 샘플 검증: 이백(초당→성당), 두보(초당→성당), 이상은(중당→만당) 정상
-  - 시대별 분포 (변경 후): 초당 8명, 성당 27명, 중당 27명, 만당 14명
-  - 시대별 분포 (변경 전): 초당 25명, 성당 18명, 중당 20명, 만당 13명
-- Notes:
-  - 태훈(Gemini)의 bioKo 분석 및 웹 서칭 결과 반영
-  - 생년 기준 → 실제 활동 시기 기준으로 재정제
-  - 25명 era 변경, 25명 유지
-  - bioKo 기반 47명, birth+20 보정 1명
-  - 백업 파일: db_author.with_ko.backup2.json
-
-## [Task ID] 2026-02-12-1700-gemini-historical-portraits-setup
-
-### START
-- Time: 2026-02-12 17:00
-- Owner: Gemini(태훈)
-- Requester: JIN
-- Request Summary: 역사 카드 인물들의 초상화 수집 및 자동 다운로드 환경 구축.
-- Why: 시각적 완성도를 높이고 중국 사료 기반의 정확한 이미지를 제공하기 위함.
-- Planned Scope:
-  - 파일: `docs/historical_portraits_map.md` (신규)
-  - 파일: `scripts/download_portraits.py` (신규)
-- Status: In Progress
-
-### END
-- Time: 2026-02-12 17:15
-- Status: Done
-- Changed Files:
-  - `docs/historical_portraits_map.md` (인물별 초상화 URL 매핑)
-  - `scripts/download_portraits.py` (자동 다운로드 스크립트)
-- Validation: 중국 간체자 검색을 통한 교차 검증 완료.
-
-## [Task ID] 2026-02-12-1720-gemini-historical-portraits-fix
-
-### START
-- Time: 2026-02-12 17:20
-- Owner: Gemini(태훈)
-- Requester: JIN
-- Request Summary: 초상화 다운로드 스크립트 경로 및 권한 이슈 수정.
-- Why: 위키미디어의 User-Agent 차단 정책 및 로컬 실행 경로 문제 해결.
-- Planned Scope:
-  - 파일: `scripts/download_portraits.py`
-  - 예상 변경: 절대 경로 로직 적용 및 User-Agent 헤더 추가
-- Status: In Progress
-
-### END
-- Time: 2026-02-12 17:40
-- Status: Done
-- Changed Files:
-  - `scripts/download_portraits.py` (경로 및 헤더 수정 완료)
-- Notes: 사용자의 환경에 따라 `pip3` 및 `python3` 명령어를 사용하도록 가이드함.
-
-## [Task ID] 2026-02-12-1750-gemini-historical-portraits-debug
-
-### START
-- Time: 2026-02-12 17:50
-- Owner: Gemini(태훈)
-- Requester: JIN
-- Request Summary: 초상화 다운로드 스크립트 무반응 이슈 해결을 위한 디버깅 로그 강화.
-- Why: 사용자가 스크립트 실행 시 아무런 출력이나 변화를 느끼지 못함.
-- Planned Scope:
-  - 파일: `scripts/download_portraits.py`
-  - 예상 변경: 실행 단계별 print문 추가, 라이브러리 설치 체크 로직 추가
-- Status: In Progress
-
-### END
 - Time: 2026-02-12 18:00
-- Status: Done
-- Changed Files:
-  - `scripts/download_portraits.py` (상세 로그 및 예외 처리 강화)
-- Validation:
-  - 스크립트 시작부터 종료까지 모든 단계를 터미널에 출력하도록 개선.
-
-## [Task ID] 2026-02-12-1810-gemini-historical-portraits-final-fix
-
-### START
-- Time: 2026-02-12 18:10
-- Owner: Gemini(태훈)
-- Requester: JIN
-- Request Summary: 초상화 다운로드 실패 이슈 최종 해결.
-- Why: 위키미디어의 엄격한 봇 차단 정책 및 복잡한 해시 URL 구조로 인해 다운로드 실패가 지속됨.
-- Planned Scope:
-  - 파일: `scripts/download_portraits.py`
-  - 예상 변경: `Special:FilePath` 리다이렉트 방식 도입, 브라우저급 User-Agent 적용, 요청 간 딜레이 추가
-- Status: In Progress
-
-### END
-- Time: 2026-02-12 18:20
-- Status: Done
-- Changed Files:
-  - `scripts/download_portraits.py` (로직 전면 개편)
-- Validation:
-  - `Special:FilePath`를 통한 유연한 URL 매칭 및 차단 방지 로직 적용.
-
-## [Task ID] 2026-02-12-1830-gemini-historical-portraits-manual-handoff
-
-### START
-- Time: 2026-02-12 18:30
-- Owner: Gemini(태훈)
-- Requester: JIN
-- Request Summary: 자동 다운로드 중단 및 사용자 직접 수집으로 전환.
-- Why: 위키미디어 URL의 불안정성 및 사용자 취향에 맞는 이미지 선택을 위해 직접 수집 결정.
-- Status: Done
-
-### END
-- Time: 2026-02-12 18:35
-- Status: Done
-- Notes: 사용자가 이미지 수집 완료 후 일괄 파일명 정리 및 크롭 작업을 지원하기로 함.
-
-## [Task ID] 2026-02-12-1630-claude-timeline-era-integration
-
-### START
-- Time: 2026-02-12 16:30
 - Owner: Claude(민철)
 - Requester: JIN
-- Request Summary: app.js에서 타임라인과 작가 카드 매칭을 생년(birth) 기준에서 활동 시기(era) 기준으로 변경.
-- Why: DB에 era 필드가 추가되었으므로, 이를 타임라인 UI에 반영하여 더 정확한 시대별 시인 분류 제공.
+- Request Summary: UI 전면 리뉴얼 — 연도별 가로 타임라인 → 시대별(초/성/중/만당) 세로 타임라인 + 시인 이름 워드클라우드 + 호버 팝업 구조로 개편.
+- Why: 76명 시인 카드가 전부 펼쳐져 있어 정보 과부하. 시대별 그룹핑 + 이름만 표시하고 호버/클릭으로 상세 접근하는 구조로 변경.
 - Planned Scope:
   - 파일: `app.js`
-  - 예상 변경: buildAuthorEvents 함수의 year 계산 로직 수정 (line 921)
+  - 예상 변경: ERA_CONFIG, 시대별 그룹핑 함수, 팝업 시스템, 새 렌더러, main() 루프 재작성
+  - 파일: `styles.css`
+  - 예상 변경: 기존 카드/타임라인 CSS 주석처리 + 시대섹션/워드클라우드/팝업 CSS 추가
 - Status: In Progress
 
-### SUSPEND (작업 중단)
-- Time: 2026-02-12 16:35
-- Status: Suspended (UI 설계 검토 필요)
-- Progress Summary:
-  - ✅ 타임라인 매칭 함수 위치 파악 완료
-    - 핵심 함수: `buildAuthorEvents` (line 909-946)
-    - 문제 라인: line 921 `const year = a?.life?.birth ?? null;`
-  - ✅ era 필드 구조 파악
-    - period: 'early' | 'high' | 'mid' | 'late'
-    - confidence: 'high' | 'medium' | 'low'
-    - source: 'birth_year' | 'bio_era' | 'bio_regnal_year' | 'direct_era' | 'related_person' | 'regnal_year' | 'birth_20'
-  - ✅ 수정 방향 설계
-    - period를 대표 연도로 변환하는 헬퍼 함수 필요
-    - 예시: early → 660년, high → 740년, mid → 800년, late → 870년
-- Blocking Issues:
-  1. **UI/UX 설계 결정 필요**
-     - period를 어떤 연도로 매핑할지 (시대 중간? 시작? 끝?)
-     - 타임라인에 시대 구분선 표시 여부
-     - 작가 카드에 era 정보 표시 방법
-  2. **데이터 표현 방식 결정 필요**
-     - 생년 정보와 era 정보를 함께 표시할지
-     - era가 없는 작가 처리 방법 (fallback: birth)
-     - 생몰년 미상 + era 있는 경우 표시 방법
-- Next Steps:
-  1. UI 디자인 방향 결정 (형님과 논의)
-  2. period → year 매핑 테이블 확정
-  3. app.js 수정 및 테스트
-  4. 타임라인 렌더링 검증
-- Files Analyzed:
-  - `app.js:909-946` (buildAuthorEvents 함수)
-  - `app.js:921` (year 계산 로직)
-  - `app.js:1013-1027` (타임라인 렌더링 메인 로직)
-  - `public/index/db_author.with_ko.json` (era 필드 구조 확인)
+### END
+- Time: 2026-02-12 20:00
+- Status: Done
+- Changed Files:
+  - `app.js:10` (ERA_CONFIG, MAIN_HISTORY_IDS 상수 추가)
+  - `app.js:17` (getHistoryEra, groupByEra, groupHistoryByEra, calcPoetFontSize 유틸 함수 추가)
+  - `app.js:378` (팝업 시스템: getOrCreatePopup, showPopup, hidePopup, buildPoetPopupHTML, buildHistoryPopupHTML, bindHoverPopups)
+  - `app.js:574` (새 렌더러: renderPoetNames, renderMainHistoryCard, renderMinorHistoryDot, renderEraSection, renderBookend)
+  - `app.js:700` (기존 renderAuthorCard, renderHistoryCard, renderPrimaryItem 블록 주석처리)
+  - `app.js:847` (bindModalOpeners: .author-card → .poet-name 셀렉터 변경, 역사 모달 바인딩 제거)
+  - `app.js:900` (bindAccordions: .history-detail-toggle 핸들러 추가)
+  - `app.js:1009` (openHistoryModal 함수 전체 블록 주석처리)
+  - `app.js:1176` (buildAuthorEvents에 era, poemCount 필드 추가)
+  - `app.js:1258` (main() 렌더링 루프: 연도별 → 시대별 루프로 재작성)
+  - `styles.css:36` (기존 .timeline::before, .timeline-item 등 주석처리)
+  - `styles.css:82` (새 .era-section, .era-header, .era-body 등 시대 레이아웃 추가)
+  - `styles.css:155` (새 .poet-names, .poet-name, .poet-sep 워드클라우드 스타일)
+  - `styles.css:183` (새 .history-main-card 메인 역사카드 스타일)
+  - `styles.css:272` (새 .history-minor 소규모 이벤트 점 스타일)
+  - `styles.css:299` (새 .hover-popup 호버 팝업 스타일)
+  - `styles.css:364` (기존 .card, .author-top, .history-top 등 블록 주석처리)
+- Validation:
+  - JS 문법 에러 없음 (node -c app.js 통과)
+  - 로컬 서버 200 OK, 4개 시대 섹션 렌더링 확인
+  - 핵심 함수 단위 테스트 통과 (getHistoryEra, ERA_CONFIG, MAIN_HISTORY_IDS)
 - Notes:
-  - 현재 타임라인은 생년 기준으로 정렬/그룹핑
-  - era 기준으로 변경 시 시각적 흐름이 더 자연스러울 것으로 예상
-  - 하지만 UI 변경이 사용자 경험에 미치는 영향 검토 필요
-  - 형님이 UI 고민 후 재개하기로 결정
+  - 모든 변경점에 `[v2 리뉴얼]` 접두 주석 표기 (grep 검색 가능)
+  - 기존 코드는 삭제하지 않고 블록 주석처리 (롤백 가능)
+  - UI/UX 세부 디자인은 Gemini(태훈)와 후속 조율 예정
+  - 구현 계획서: `~/.claude/plans/generic-frolicking-brooks.md`
+
+## [Task ID] 2026-02-12-2030-claude-modal-map-graph
+
+### START
+- Time: 2026-02-12 20:30
+- Owner: Claude(민철)
+- Requester: JIN
+- Request Summary: 시인 모달 내 출생지 지도(Leaflet) + 관계도(vis-network) 구현. 더미 데이터 4명(두보, 이백, 맹호연, 하지장).
+- Why: 모달의 출생지/관계도 플레이스홀더를 실제 기능으로 교체. 추후 태훈이 전체 데이터 채울 예정.
+- Planned Scope:
+  - 파일: `index.html`
+  - 예상 변경: Leaflet CSS/JS + vis-network JS CDN 추가
+  - 파일: `public/index/db_author.with_ko.json`
+  - 예상 변경: 4명에 birthplace(name, nameZh, lat, lng), relations(targetId, type, label, desc) 필드 추가
+  - 파일: `app.js`
+  - 예상 변경: initBirthplaceMap, initRelationGraph 함수 추가 + openAuthorModal 연동
+  - 파일: `styles.css`
+  - 예상 변경: .map-container, .graph-container CSS 추가
+- Status: In Progress
+
+### END
+- Time: 2026-02-12 21:00
+- Status: Done
+- Changed Files:
+  - `index.html:8` (Leaflet CSS/JS CDN 추가)
+  - `index.html:12` (vis-network JS CDN 추가)
+  - `public/index/db_author.with_ko.json:298` (C341 두보: birthplace 하남성 공현 + relations 이백=친구)
+  - `public/index/db_author.with_ko.json:430` (C347 맹호연: birthplace 호북성 양양 + relations 이백=존경받음)
+  - `public/index/db_author.with_ko.json:1025` (C375 이백: birthplace 사천성 면양 + relations 두보=친구, 맹호연=존경, 하지장=추천받음)
+  - `public/index/db_author.with_ko.json:1519` (C398 하지장: birthplace 절강성 소흥 + relations 이백=추천)
+  - `app.js:915` (initBirthplaceMap 함수: Leaflet 지도 초기화 + 마커 + 팝업)
+  - `app.js:950` (initRelationGraph 함수: vis-network 관계도 + 양방향 관계 수집 + 노드 클릭 → 모달 이동)
+  - `app.js:1073` (openAuthorModal: 플레이스홀더 → map-container/graph-container 교체)
+  - `app.js:1108` (openAuthorModal: 모달 열린 후 initBirthplaceMap/initRelationGraph 호출)
+  - `styles.css:499` (.map-container, .graph-container CSS 추가)
+- Validation:
+  - JSON 유효성 검증 통과 (node -e JSON.parse)
+  - JS 문법 에러 없음 (node -c app.js)
+  - CDN 접근 확인 (Leaflet, vis-network 모두 200 OK)
+- Notes:
+  - 더미 데이터 4명만 적용. 나머지 72명은 "출생지 정보 없음" / "관계 정보 없음" 표시.
+  - 태훈이 위도/경도 + 관계 데이터 채워 넣으면 자동 반영되는 구조.
+  - birthplace 필드 구조: { name, nameZh, lat, lng }
+  - relations 필드 구조: [{ targetId, type, label, desc }]
+  - 관계도에서 다른 시인 노드 클릭 시 해당 시인 모달로 이동 가능.

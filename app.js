@@ -7,6 +7,21 @@
 // - 클릭(시인/작품) → 시인 모달 열기 + 작품 섹션 펼치기
 // ------------------------------------------------------------
 
+// ===== [v2 리뉴얼] 시대별 타임라인 상수 =====
+// 기존: 연도(year)별 가로 행 → 변경: 시대(era)별 세로 타임라인
+const ERA_CONFIG = [
+  { key: "pre",   label: "隋",       zhLabel: "隋"      },
+  { key: "early", label: "초당",     zhLabel: "初唐"    },
+  { key: "high",  label: "성당",     zhLabel: "盛唐"    },
+  { key: "mid",   label: "중당",     zhLabel: "中唐"    },
+  { key: "late",  label: "만당",     zhLabel: "晩唐"    },
+  { key: "post",  label: "오대십국", zhLabel: "五代十國" },
+];
+
+// [v2 리뉴얼] 오른쪽에 큰 카드로 표시할 메인 역사 이벤트 4개
+// 나머지는 점+제목만 표시하고 호버시 summary 팝업
+const MAIN_HISTORY_IDS = new Set(["H001", "H003", "H005", "H007"]);
+
 // ===== 0) 공통 유틸 =====
 async function loadJSON(url) {
   const res = await fetch(url);
@@ -98,6 +113,7 @@ function groupByKey(items, keyFn) {
   return map;
 }
 
+/* [v2 리뉴얼] 기존 연도별 그룹핑 → main()에서 더 이상 사용하지 않지만 유틸로 보존 */
 function groupByYear(items) {
   const map = new Map();
   for (const it of items) {
@@ -106,6 +122,69 @@ function groupByYear(items) {
     map.get(it.year).push(it);
   }
   return map;
+}
+
+// ===== [v2 리뉴얼] 시대별 그룹핑 유틸 =====
+
+// 역사 이벤트의 연도 → 시대(era) 매핑
+// 시인은 DB에 era.period가 있지만, 역사 이벤트는 연도로 판별해야 함
+function getHistoryEra(year) {
+  if (year == null) return null;
+  if (year < 618)  return "pre";    // 수나라
+  if (year < 713)  return "early";  // 초당 618-712
+  if (year < 766)  return "high";   // 성당 713-765
+  if (year < 835)  return "mid";    // 중당 766-834
+  if (year <= 960) return "late";   // 만당 835-960
+  return "post";                    // 오대십국
+}
+
+// 시인 이벤트를 era별로 그룹핑 (작품수 내림차순 정렬 = 워드클라우드 크기 순)
+function groupByEra(authorEvents) {
+  const map = new Map();
+  for (const era of ["early", "high", "mid", "late"]) {
+    map.set(era, []);
+  }
+  for (const a of authorEvents) {
+    const key = a.era || "early";
+    if (map.has(key)) map.get(key).push(a);
+  }
+  for (const [, arr] of map) {
+    arr.sort((a, b) => (b.poemCount || 0) - (a.poemCount || 0));
+  }
+  return map;
+}
+
+// 역사 이벤트를 era별로 main(큰카드 4개) / minor(점+제목)로 분류
+function groupHistoryByEra(historyEvents) {
+  const map = new Map();
+  for (const era of ["early", "high", "mid", "late"]) {
+    map.set(era, { main: [], minor: [] });
+  }
+  // 중복 제거 (H009, H015 등 JSON에 중복 있음)
+  const seen = new Set();
+  for (const h of historyEvents) {
+    if (seen.has(h.titleId)) continue;
+    seen.add(h.titleId);
+    const eraKey = getHistoryEra(h.year);
+    if (!eraKey || !map.has(eraKey)) continue;
+    const bucket = map.get(eraKey);
+    if (MAIN_HISTORY_IDS.has(h.titleId)) {
+      bucket.main.push(h);
+    } else {
+      bucket.minor.push(h);
+    }
+  }
+  return map;
+}
+
+// 작품수 → 폰트 크기 (log2 스케일: 0편=14px ~ 39편=32px)
+// 워드클라우드 효과: 두보(39편)가 가장 크고, 1편짜리는 작게
+function calcPoetFontSize(poemCount) {
+  const MIN_SIZE = 14;
+  const MAX_SIZE = 32;
+  if (poemCount <= 1) return MIN_SIZE;
+  const ratio = Math.log2(poemCount) / Math.log2(39);
+  return Math.round(MIN_SIZE + ratio * (MAX_SIZE - MIN_SIZE));
 }
 
 // ===== 0.5) 주석 시스템 (하이브리드: 인라인 + 하단 리스트) =====
@@ -297,6 +376,131 @@ function bindAnnotationHovers(container) {
   });
 }
 
+// ===== [v2 리뉴얼] 호버 팝업 시스템 =====
+// 용도: 시인 이름 호버 → 미니 카드 / 소규모 역사 이벤트 호버 → summary 팝업
+// 기존 annotation-tooltip과 별개 (annotation은 모달 내부 전용)
+
+function getOrCreatePopup() {
+  let popup = document.getElementById("hover-popup");
+  if (!popup) {
+    popup = document.createElement("div");
+    popup.id = "hover-popup";
+    popup.className = "hover-popup";
+    popup.hidden = true;
+    document.body.appendChild(popup);
+  }
+  return popup;
+}
+
+function showPopup(html, anchorRect) {
+  const popup = getOrCreatePopup();
+  popup.innerHTML = html;
+  popup.hidden = false;
+
+  // 위치 계산: 요소 아래 중앙 정렬
+  const popupRect = popup.getBoundingClientRect();
+  let top = anchorRect.bottom + 8;
+  let left = anchorRect.left + (anchorRect.width / 2) - (popupRect.width / 2);
+
+  // 뷰포트 경계 체크
+  if (left < 10) left = 10;
+  if (left + popupRect.width > window.innerWidth - 10) {
+    left = window.innerWidth - popupRect.width - 10;
+  }
+  if (top + popupRect.height > window.innerHeight - 10) {
+    top = anchorRect.top - popupRect.height - 8; // 위로 뒤집기
+  }
+
+  popup.style.position = "fixed";
+  popup.style.top = `${top}px`;
+  popup.style.left = `${left}px`;
+}
+
+function hidePopup() {
+  const popup = document.getElementById("hover-popup");
+  if (popup) popup.hidden = true;
+}
+
+// 시인 이름 호버 팝업 내용 생성
+function buildPoetPopupHTML(authorId) {
+  const a = STATE.authorById.get(authorId);
+  if (!a) return "";
+
+  const nameKo = escapeHTML(a?.name?.ko || "");
+  const nameZh = escapeHTML(normalizeZhName(a?.name?.zh || ""));
+  const lifeStr = escapeHTML(formatLife(a.life) || a?.life?.raw || "");
+  const poemCount = (STATE.poemsByAuthorId.get(authorId) || []).length;
+  const bio = escapeHTML((a.bioKo || "").slice(0, 80));
+
+  return `
+    <div class="poet-popup">
+      <div class="poet-popup-name">${nameKo} <span class="zh">${nameZh}</span></div>
+      ${lifeStr ? `<div class="poet-popup-life">${lifeStr}</div>` : ""}
+      <div class="poet-popup-count">작품 ${poemCount}편</div>
+      ${bio ? `<div class="poet-popup-bio">${bio}…</div>` : ""}
+    </div>
+  `;
+}
+
+// 소규모 역사 이벤트 호버 팝업 내용 생성
+function buildHistoryPopupHTML(historyId) {
+  const h = STATE.historyById.get(historyId);
+  if (!h) return "";
+
+  const title = escapeHTML(h?.name?.ko || h?.name?.zh || "");
+  const zh = h?.name?.zh ? escapeHTML(normalizeZhName(h.name.zh)) : "";
+  const summary = escapeHTML((h.summary || "").split("\n")[0].slice(0, 120));
+
+  return `
+    <div class="history-popup">
+      <div class="history-popup-title">${title} ${zh ? `<span class="zh">${zh}</span>` : ""}</div>
+      <div class="history-popup-summary">${summary}…</div>
+    </div>
+  `;
+}
+
+// 타임라인 호버 이벤트 위임 (시인 이름 + 소규모 역사 이벤트)
+function bindHoverPopups(root) {
+  let hoverTimeout = null;
+
+  root.addEventListener("mouseover", (e) => {
+    // 시인 이름 호버
+    const poetSpan = e.target.closest(".poet-name[data-author-id]");
+    if (poetSpan) {
+      clearTimeout(hoverTimeout);
+      hoverTimeout = setTimeout(() => {
+        const authorId = poetSpan.getAttribute("data-author-id");
+        const html = buildPoetPopupHTML(authorId);
+        if (html) showPopup(html, poetSpan.getBoundingClientRect());
+      }, 200); // 200ms 딜레이: 너무 빠르면 깜빡임
+      return;
+    }
+
+    // 소규모 역사 이벤트 호버
+    const minorDot = e.target.closest(".history-minor[data-history-id]");
+    if (minorDot) {
+      clearTimeout(hoverTimeout);
+      hoverTimeout = setTimeout(() => {
+        const historyId = minorDot.getAttribute("data-history-id");
+        const html = buildHistoryPopupHTML(historyId);
+        if (html) showPopup(html, minorDot.getBoundingClientRect());
+      }, 200);
+      return;
+    }
+  });
+
+  root.addEventListener("mouseout", (e) => {
+    const poetSpan = e.target.closest(".poet-name[data-author-id]");
+    const minorDot = e.target.closest(".history-minor[data-history-id]");
+    if (poetSpan || minorDot) {
+      clearTimeout(hoverTimeout);
+      hidePopup();
+    }
+  });
+}
+
+// ===== [v2 리뉴얼] 호버 팝업 시스템 끝 =====
+
 /**
  * 주석 크로스 링크 바인딩 (본문 ↔ 하단 양방향 이동)
  * @param {HTMLElement} container - 이벤트를 바인딩할 컨테이너 (보통 modal-body)
@@ -361,137 +565,168 @@ const DUMMY_UI = {
   historyTags: ["사건"],
 };
 
-// ===== 2) 카드 렌더 =====
-function renderAuthorCard(a) {
-  const tags = DUMMY_UI.authorTags.map(t => `<span class="tag">${t}</span>`).join("");
+// ===== [v2 리뉴얼] 시대별 타임라인 렌더러 =====
+// 기존 renderAuthorCard/renderHistoryCard/renderPrimaryItem을 대체
+// 기존 함수는 아래에 주석처리하여 보존
 
-  // ✅ 중요: w.poemId / w.titleId 혼재 대응
+// 시인 이름 나열 (워드클라우드 스타일: 한자 이름 + | 구분 + 크기 차등)
+function renderPoetNames(authors) {
+  if (!authors.length) return el(`<div class="poet-names empty">-</div>`);
+
+  const spans = authors.map(a => {
+    const fontSize = calcPoetFontSize(a.poemCount || 0);
+    return `<span class="poet-name"
+                  data-author-id="${escapeHTML(a.authorId)}"
+                  style="font-size: ${fontSize}px"
+                  title="${escapeHTML(a.nameKo || '')} (${escapeHTML(a.nameZh)})"
+            >${escapeHTML(a.nameZh)}</span>`;
+  }).join('<span class="poet-sep"> | </span>');
+
+  return el(`<div class="poet-names">${spans}</div>`);
+}
+
+// 메인 역사 카드 (4개: 당건국, 개원지치, 안사지란, 황소지란)
+// 모달 대신 인라인 아코디언으로 상세 펼치기/접기
+function renderMainHistoryCard(h) {
+  const title = h?.name?.ko || h?.name?.zh || "";
+  const zh = h?.name?.zh ? ` <span class="zh">${escapeHTML(h.name.zh)}</span>` : "";
+  const lifeStr = formatEventLife(h.life);
+  const tags = renderTagChips(getHistoryTagList(h), 3);
+  const summary = escapeHTML((h.summary || "").split("\n")[0] || "");
+  const paragraphs = splitParagraphs(h.detail);
+  const detailHTML = paragraphs.length
+    ? paragraphs.map(p => `<p>${escapeHTML(p)}</p>`).join("")
+    : `<div class="muted">상세 없음</div>`;
+
+  return el(`
+    <article class="history-main-card" data-history-id="${escapeHTML(h.titleId || "")}">
+      <div class="history-main-top">
+        <img class="history-main-portrait" src="${DUMMY_UI.defaultAvatar}" alt="" />
+        <div class="history-main-info">
+          <div class="history-main-title">${escapeHTML(title)}${zh}</div>
+          ${lifeStr ? `<div class="history-main-life">${escapeHTML(lifeStr)}</div>` : ""}
+          <div class="history-main-tags">${tags}</div>
+        </div>
+      </div>
+      <div class="history-main-summary">${summary}</div>
+      <button class="history-detail-toggle" aria-expanded="false">
+        <span class="chev">&#x25BE;</span> 상세보기
+      </button>
+      <div class="history-detail-panel" hidden>
+        ${detailHTML}
+      </div>
+    </article>
+  `);
+}
+
+// 소규모 역사 이벤트 (점 + 연도 + 제목, 호버시 summary 팝업)
+function renderMinorHistoryDot(h) {
+  const title = h?.name?.ko || h?.name?.zh || "";
+  const year = h.year ?? "";
+  return el(`
+    <div class="history-minor" data-history-id="${escapeHTML(h.titleId || "")}">
+      <span class="history-minor-dot"></span>
+      <span class="history-minor-title">${escapeHTML(String(year))} ${escapeHTML(title)}</span>
+    </div>
+  `);
+}
+
+// 시대 섹션 조립 (3열: 왼쪽 시인 | 가운데 타임라인선 | 오른쪽 역사)
+function renderEraSection(eraConfig, poetNamesNode, mainCards, minorDots) {
+  const section = el(`
+    <section class="era-section" data-era="${eraConfig.key}">
+      <div class="era-header">
+        <div class="era-label">${eraConfig.zhLabel}</div>
+        <div class="era-label-sub">${escapeHTML(eraConfig.label)}</div>
+      </div>
+      <div class="era-body">
+        <div class="era-left"></div>
+        <div class="era-center">
+          <div class="era-timeline-line"></div>
+        </div>
+        <div class="era-right"></div>
+      </div>
+    </section>
+  `);
+
+  const left = section.querySelector(".era-left");
+  const right = section.querySelector(".era-right");
+
+  if (poetNamesNode) left.appendChild(poetNamesNode);
+
+  for (const card of mainCards) right.appendChild(card);
+
+  if (minorDots.length) {
+    const minorGroup = el(`<div class="history-minor-group"></div>`);
+    for (const dot of minorDots) minorGroup.appendChild(dot);
+    right.appendChild(minorGroup);
+  }
+
+  return section;
+}
+
+// 隋 / 五代十國 북엔드 라벨
+function renderBookend(label) {
+  return el(`
+    <div class="era-bookend">
+      <div class="era-bookend-label">${escapeHTML(label)}</div>
+    </div>
+  `);
+}
+
+// ===== [v2 리뉴얼] 시대별 타임라인 렌더러 끝 =====
+
+/* ===== [v2 리뉴얼] 기존 카드 렌더러 3개 주석처리 시작 =====
+   renderAuthorCard  → renderPoetNames로 대체 (시인 이름 워드클라우드)
+   renderHistoryCard → renderMainHistoryCard + renderMinorHistoryDot으로 대체
+   renderPrimaryItem → renderEraSection으로 대체 (시대별 세로 타임라인)
+
+function renderAuthorCard(a) {
+  const tags = DUMMY_UI.authorTags.map(t => '<span class="tag">' + t + '</span>').join("");
   const works = (a.works || []).map(w => {
-    const pid = w.poemId || w.titleId || "";            // <-- 핵심
+    const pid = w.poemId || w.titleId || "";
     const no  = w.poemNoStr || w.poemNo || "";
     const t   = w.titleCompact || w.title || "";
     const m   = w.meta || "";
-
-    return `
-      <li class="work-item" data-poem-id="${escapeHTML(pid)}">
-        <span class="work-no">${escapeHTML(no)}</span>
-        <span class="work-title">${escapeHTML(t)}</span>
-        <span class="work-meta">${escapeHTML(m)}</span>
-      </li>
-    `;
+    return '<li class="work-item" data-poem-id="' + escapeHTML(pid) + '">'
+      + '<span class="work-no">' + escapeHTML(no) + '</span>'
+      + '<span class="work-title">' + escapeHTML(t) + '</span>'
+      + '<span class="work-meta">' + escapeHTML(m) + '</span></li>';
   }).join("");
-
-  return el(`
-    <article class="card author-card compact" data-author-id="${escapeHTML(a.authorId)}">
-      <div class="author-top">
-        <img class="author-avatar" src="${DUMMY_UI.defaultAvatar}" alt="" />
-        <div class="author-main">
-          <div class="author-name">
-            ${a.nameKo ? `${escapeHTML(a.nameKo)} ` : ""}
-            <span class="zh">${escapeHTML(a.nameZh)}</span>
-            ${a.lifeStr ? `<span class="life">${escapeHTML(a.lifeStr)}</span>` : ""}
-          </div>
-          <div class="author-tags">${tags}</div>
-        </div>
-      </div>
-
-      <div class="author-bio">${escapeHTML(a.bio || "")}</div>
-
-      <button class="works-toggle works-handle" aria-expanded="false" title="작품 펼치기">
-        <span class="chev">▾</span>
-      </button>
-
-      <div class="works-panel" hidden>
-        <ul class="works-list">${works}</ul>
-      </div>
-    </article>
-  `);
+  return el('...');  // 생략 (전체 HTML 템플릿)
 }
 
 function renderHistoryCard(h) {
-  const title = h?.name?.ko || h?.name?.zh || h.title || "";
-  const zh = h?.name?.zh ? ` <span class="zh">${escapeHTML(h.name.zh)}</span>` : "";
-  const lifeStr = formatEventLife(h.life);
-  const tags = renderTagChips(getHistoryTagList(h) || DUMMY_UI.historyTags, 3);
-
-
-  const summary = (h.summary || "").split("\n")[0] || "";
-  const paragraphs = splitParagraphs(h.detail);
-  const detailHTML = paragraphs.length
-    ? `<div class="history-detail-paras">
-        ${paragraphs.slice(0, 2).map(p => `<p>${escapeHTML(p)}</p>`).join("")}
-      </div>`
-    : `<div class="muted">상세 없음</div>`;
-
-
-  return el(`
-    <article class="card history-card compact" data-history-id="${escapeHTML(h.titleId || h.id || "")}">
-      <div class="history-top">
-        <div class="history-main">
-          <div class="history-title">${escapeHTML(title)}${zh}</div>
-          <div class="history-sub">
-            ${lifeStr ? `<span class="life">${escapeHTML(lifeStr)}</span>` : ""}
-            <span class="history-tags">${tags}</span>
-          </div>
-        </div>
-        <img class="history-avatar" src="${DUMMY_UI.defaultAvatar}" alt="" />
-      </div>
-
-      <div class="history-desc">${escapeHTML(summary)}</div>
-
-      <button class="works-toggle works-handle" aria-expanded="false" title="상세 펼치기">
-        <span class="chev">▾</span>
-      </button>
-
-      <div class="works-panel" hidden>
-        <div class="history-detail">${detailHTML}</div>
-      </div>
-    </article>
-  `);
+  // 역사 카드 렌더러 (모달 클릭 방식 → 인라인 아코디언으로 변경)
+  return el('...');  // 생략
 }
 
-function renderPrimaryItem(year, leftNodes = [], rightNodes = []) {
-  const row = el(`
-    <div class="timeline-item primary">
-      <div class="timeline-left"></div>
-      <div class="timeline-marker primary"><span class="year">${year}</span></div>
-      <div class="timeline-right"></div>
-    </div>
-  `);
-
-  const L = row.querySelector(".timeline-left");
-  const R = row.querySelector(".timeline-right");
-  leftNodes.forEach(n => L.appendChild(n));
-  rightNodes.forEach(n => R.appendChild(n));
-  return row;
+function renderPrimaryItem(year, leftNodes, rightNodes) {
+  // 연도별 가로 행 렌더러 (시대별 세로 섹션으로 변경)
+  return el('...');  // 생략
 }
+
+===== [v2 리뉴얼] 기존 카드 렌더러 3개 주석처리 끝 ===== */
 
 // ===== 3) 타임라인 카드 아코디언 =====
+/* [v2 리뉴얼] 기존 .works-toggle 아코디언은 타임라인에서 더 이상 사용하지 않음
+   (모달 내부의 작품 아코디언은 bindPoemSections가 별도 관리)
+   새로 추가: .history-detail-toggle (메인 역사 카드 상세 펼치기/접기) */
 function bindAccordions(root) {
   root.addEventListener("click", (e) => {
-    const btn = e.target.closest(".works-toggle");
-    if (!btn) return;
+    // [v2 리뉴얼] 메인 역사 카드의 상세 아코디언
+    const histBtn = e.target.closest(".history-detail-toggle");
+    if (histBtn) {
+      const card = histBtn.closest(".history-main-card");
+      const panel = card?.querySelector(".history-detail-panel");
+      if (!card || !panel) return;
 
-    const card = btn.closest(".card");
-    const panel = card?.querySelector(".works-panel");
-    if (!card || !panel) return;
-
-    const expanded = btn.getAttribute("aria-expanded") === "true";
-
-    // 다른 카드 닫기
-    root.querySelectorAll(".card.expanded").forEach(c => {
-      if (c !== card) {
-        c.classList.remove("expanded");
-        const p = c.querySelector(".works-panel");
-        const b = c.querySelector(".works-toggle");
-        if (p) p.hidden = true;
-        if (b) b.setAttribute("aria-expanded", "false");
-      }
-    });
-
-    btn.setAttribute("aria-expanded", String(!expanded));
-    panel.hidden = expanded;
-    card.classList.toggle("expanded", !expanded);
+      const expanded = histBtn.getAttribute("aria-expanded") === "true";
+      histBtn.setAttribute("aria-expanded", String(!expanded));
+      panel.hidden = expanded;
+      card.classList.toggle("expanded", !expanded);
+      return;
+    }
   });
 }
 
@@ -677,6 +912,133 @@ function bindPoemSections(modalBody) {
   });
 }
 
+// ===== 6-A) 출생지 지도 (Leaflet) =====
+/**
+ * 모달 내 출생지 지도를 초기화한다.
+ * @param {HTMLElement} container - 지도를 넣을 빈 div (.map-container)
+ * @param {object} birthplace - { name, nameZh, lat, lng }
+ */
+function initBirthplaceMap(container, birthplace) {
+  if (!birthplace || birthplace.lat == null || birthplace.lng == null) {
+    container.innerHTML = '<div class="muted" style="padding:10px">출생지 정보 없음</div>';
+    return;
+  }
+  if (typeof L === "undefined") {
+    container.innerHTML = '<div class="muted" style="padding:10px">Leaflet 로드 실패</div>';
+    return;
+  }
+
+  const map = L.map(container, { scrollWheelZoom: false }).setView(
+    [birthplace.lat, birthplace.lng],
+    6 // 중국 성 단위가 잘 보이는 줌 레벨
+  );
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a>',
+    maxZoom: 18,
+  }).addTo(map);
+
+  L.marker([birthplace.lat, birthplace.lng])
+    .addTo(map)
+    .bindPopup(`<b>${birthplace.nameZh || ""}</b><br>${birthplace.name || ""}`)
+    .openPopup();
+
+  // 모달 리사이즈 시 지도 타일 깨짐 방지
+  setTimeout(() => map.invalidateSize(), 300);
+}
+
+// ===== 6-B) 관계도 (vis-network) =====
+/**
+ * 모달 내 시인 관계도를 초기화한다.
+ * 현재 시인을 중심 노드로 놓고, relations 배열의 대상을 연결선으로 표시.
+ * @param {HTMLElement} container - 관계도를 넣을 빈 div (.graph-container)
+ * @param {string} authorId - 현재 시인의 titleId
+ */
+function initRelationGraph(container, authorId) {
+  const a = STATE.authorById.get(authorId);
+  if (!a) return;
+
+  // 현재 시인의 relations + 다른 시인이 나를 가리키는 relations 모두 수집
+  const edgesRaw = [];
+  const nodeIds = new Set([authorId]);
+
+  // (1) 내 relations
+  if (a.relations) {
+    a.relations.forEach(r => {
+      edgesRaw.push({ from: authorId, to: r.targetId, label: r.label, desc: r.desc, type: r.type });
+      nodeIds.add(r.targetId);
+    });
+  }
+
+  // (2) 다른 시인 → 나를 가리키는 relations
+  for (const [id, other] of STATE.authorById) {
+    if (id === authorId || !other.relations) continue;
+    other.relations.forEach(r => {
+      if (r.targetId === authorId) {
+        edgesRaw.push({ from: id, to: authorId, label: r.label, desc: r.desc, type: r.type });
+        nodeIds.add(id);
+      }
+    });
+  }
+
+  if (!edgesRaw.length) {
+    container.innerHTML = '<div class="muted" style="padding:10px">관계 정보 없음</div>';
+    return;
+  }
+  if (typeof vis === "undefined") {
+    container.innerHTML = '<div class="muted" style="padding:10px">vis-network 로드 실패</div>';
+    return;
+  }
+
+  // 노드 생성
+  const nodes = [];
+  for (const nid of nodeIds) {
+    const p = STATE.authorById.get(nid);
+    const label = p ? (p.name?.ko || p.name?.zh || nid) : nid;
+    nodes.push({
+      id: nid,
+      label,
+      shape: "circle",
+      color: nid === authorId
+        ? { background: "#8b0000", border: "#5a0000", highlight: { background: "#a00", border: "#5a0000" } }
+        : { background: "#4a90d9", border: "#2a6cb0", highlight: { background: "#5aa0e9", border: "#2a6cb0" } },
+      font: { color: "#fff", size: 14, face: "system-ui" },
+      size: nid === authorId ? 30 : 22,
+    });
+  }
+
+  // 엣지 생성
+  const edges = edgesRaw.map((e, i) => ({
+    id: i,
+    from: e.from,
+    to: e.to,
+    label: e.label || "",
+    arrows: e.type === "friend" ? "" : "to",
+    color: { color: "#888", highlight: "#444" },
+    font: { size: 11, color: "#555", strokeWidth: 2, strokeColor: "#fff" },
+    title: e.desc || "",
+    smooth: { type: "curvedCW", roundness: 0.2 },
+  }));
+
+  const data = {
+    nodes: new vis.DataSet(nodes),
+    edges: new vis.DataSet(edges),
+  };
+  const options = {
+    interaction: { hover: true, zoomView: false, dragView: false },
+    physics: { enabled: false },
+    layout: { randomSeed: 42 },
+  };
+
+  const network = new vis.Network(container, data, options);
+
+  // 노드 클릭 시 해당 시인 모달 열기 (자기 자신 제외)
+  network.on("click", params => {
+    if (params.nodes.length === 1 && params.nodes[0] !== authorId) {
+      openAuthorModal(params.nodes[0]);
+    }
+  });
+}
+
 // ===== 6) 시인 모달 =====
 function openAuthorModal(authorId, ctx) {
   const a = STATE.authorById.get(authorId);
@@ -711,13 +1073,13 @@ function openAuthorModal(authorId, ctx) {
       <section class="author-grid2">
         <div class="panel">
           <div class="panel-title">출생지</div>
-          <div class="panel-sub">출생지 자동 추출(백엔드 후처리 예정)</div>
-          <div class="panel-box placeholder">지도(준비중)</div>
+          <div class="panel-sub">${a.birthplace ? escapeHTML(a.birthplace.nameZh || "") : "출생지 정보 없음"}</div>
+          <div class="panel-box map-container" id="modal-map"></div>
         </div>
         <div class="panel">
           <div class="panel-title">관계도</div>
-          <div class="panel-sub">교유/제자/영향 관계(준비중)</div>
-          <div class="panel-box placeholder">관계도(준비중)</div>
+          <div class="panel-sub">교유/제자/영향 관계</div>
+          <div class="panel-box graph-container" id="modal-graph"></div>
         </div>
       </section>
 
@@ -745,6 +1107,14 @@ function openAuthorModal(authorId, ctx) {
   modalBody.dataset.poemBound = "1";
 }
 
+  // 출생지 지도 초기화
+  const mapEl = document.getElementById("modal-map");
+  if (mapEl) initBirthplaceMap(mapEl, a.birthplace || null);
+
+  // 관계도 초기화
+  const graphEl = document.getElementById("modal-graph");
+  if (graphEl) initRelationGraph(graphEl, authorId);
+
   // 특정 작품으로 진입: 자동 펼침 + 스크롤
   if (ctx?.openPoemId) {
     try {
@@ -763,7 +1133,9 @@ function openAuthorModal(authorId, ctx) {
   }
 }
 
-// ===== 6.5) 역사 모달 =====
+/* ===== [v2 리뉴얼] 역사 모달 주석처리 =====
+   이유: 역사 이벤트는 이제 인라인 카드(메인 4개) + 호버 팝업(나머지)으로 표시
+   복원 필요시: 이 블록 주석 해제 + bindModalOpeners에서 (3) 역사 카드 클릭 섹션도 복원
 function openHistoryModal(historyId) {
   // ✅ historyId는 카드의 data-history-id에서 넘어옵니다.
   // 우리 스키마에서는 보통 titleId(H001 같은 값)로 들어오므로,
@@ -841,6 +1213,7 @@ function openHistoryModal(historyId) {
 
   openModal({ title: "사건", bodyHTML });
 }
+===== [v2 리뉴얼] 역사 모달 주석처리 끝 ===== */
 
 
 // ===== 7) 클릭 → 모달 열기 =====
@@ -884,17 +1257,17 @@ function bindModalOpeners(root) {
       return;
     }
 
-    // (2) 시인 카드 클릭(핸들 제외)
-    const card = e.target.closest(".author-card[data-author-id]");
-    if (card) {
-      if (e.target.closest(".works-toggle")) return;
-      const authorId = card.getAttribute("data-author-id");
+    // [v2 리뉴얼] (2) 시인 이름 클릭 → 작가 모달 열기
+    // 기존: .author-card[data-author-id] → 변경: .poet-name[data-author-id]
+    const poetSpan = e.target.closest(".poet-name[data-author-id]");
+    if (poetSpan) {
+      const authorId = poetSpan.getAttribute("data-author-id");
       if (!authorId) return;
       openAuthorModal(authorId, {});
       return;
     }
 
-    // (3) 역사 카드 클릭(핸들 제외)
+    /* [v2 리뉴얼] (3) 역사 카드 클릭 → 모달 제거 (인라인 아코디언으로 대체)
     const hcard = e.target.closest(".history-card[data-history-id]");
     if (hcard) {
       if (e.target.closest(".works-toggle")) return;
@@ -902,6 +1275,7 @@ function bindModalOpeners(root) {
       if (!hid) return;
       openHistoryModal(hid);
     }
+    */
   });
 }
 
@@ -931,6 +1305,10 @@ function buildAuthorEvents(authorsDB, poemsCompact) {
       meta: [p.category, p.juan].filter(Boolean).join(" · "),
     }));
 
+    // [v2 리뉴얼] era, poemCount 추가 (시대별 그룹핑 + 폰트 크기 계산용)
+    const era = a?.era?.period || null;
+    const poemCount = worksRaw.length;
+
     events.push({
       year,
       authorId,
@@ -939,6 +1317,8 @@ function buildAuthorEvents(authorsDB, poemsCompact) {
       lifeStr,
       bio: (a?.bioKo || "").slice(0, 120),
       works,
+      era,        // [v2] 'early'|'high'|'mid'|'late'
+      poemCount,  // [v2] 워드클라우드 폰트 크기 계산용
     });
   }
 
@@ -1016,32 +1396,43 @@ async function main() {
     .filter(h => h && h.year != null)
     .sort((a, b) => (a.year ?? 9999) - (b.year ?? 9999));
 
-  const aByYear = groupByYear(authorEvents);
-  const hByYear = groupByYear(historyEvents);
-  const years = Array.from(new Set([...aByYear.keys(), ...hByYear.keys()])).sort((a, b) => a - b);
+  /* [v2 리뉴얼] 기존 연도별 렌더링 루프 → 시대별 렌더링으로 대체
+     기존 코드:
+       const aByYear = groupByYear(authorEvents);
+       const hByYear = groupByYear(historyEvents);
+       for (const y of years) { ... renderPrimaryItem(y, left, right) }
+       // + 연도 미상 작가 별도 처리
+     변경 이유: 시인 76명 카드가 한꺼번에 펼쳐지는 정보 과부하 → 시대별 워드클라우드로 개편
+  */
 
-  for (const y of years) {
-    const left = (aByYear.get(y) || []).slice(0, 2).map(renderAuthorCard);
-    const right = (hByYear.get(y) || []).map(renderHistoryCard);
-    root.appendChild(renderPrimaryItem(y, left, right));
+  // 시대별 그룹핑
+  const authorsByEra = groupByEra(authorEvents);
+  const historyByEra = groupHistoryByEra(historyEvents);
+
+  // 隋 북엔드
+  root.appendChild(renderBookend("隋"));
+
+  // 4개 시대 섹션 렌더링
+  const eras = ERA_CONFIG.filter(e => ["early", "high", "mid", "late"].includes(e.key));
+  for (const eraConf of eras) {
+    const poets = authorsByEra.get(eraConf.key) || [];
+    const hGroup = historyByEra.get(eraConf.key) || { main: [], minor: [] };
+
+    const poetNamesNode = renderPoetNames(poets);
+    const mainCards = hGroup.main.map(renderMainHistoryCard);
+    const minorDots = hGroup.minor.map(renderMinorHistoryDot);
+
+    root.appendChild(renderEraSection(eraConf, poetNamesNode, mainCards, minorDots));
   }
 
-  const unknownYearAuthors = authorEvents
-    .filter(a => a.year == null)
-    .sort((a, b) => {
-      const ak = String(a.nameKo || "").trim();
-      const bk = String(b.nameKo || "").trim();
-      return ak.localeCompare(bk, "ko");
-    });
-  if (unknownYearAuthors.length) {
-    root.appendChild(
-      renderPrimaryItem("연도 미상", unknownYearAuthors.map(renderAuthorCard), [])
-    );
-  }
+  // 五代十國 북엔드
+  root.appendChild(renderBookend("五代十國"));
 
+  // 이벤트 바인딩
   bindAccordions(root);
   bindModalUI();
   bindModalOpeners(root);
+  bindHoverPopups(root); // [v2 리뉴얼] 호버 팝업 바인딩 추가
 }
 
 main().catch(err => {
