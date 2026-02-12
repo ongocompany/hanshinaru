@@ -251,3 +251,39 @@
   - 태훈(Gemini) 조사 결과 반영: 28명
   - 백업 파일 위치: `public/index/db_author.with_ko.backup.json`
   - era 필드 구조: `{period, confidence, source}`
+
+## [Task ID] 2026-02-12-1600-claude-era-refinement
+
+### START
+- Time: 2026-02-12 16:00
+- Owner: Claude(민철)
+- Requester: JIN
+- Request Summary: 태훈(Gemini)의 조사 결과를 기반으로 생몰년 있는 작가 48명의 era 필드를 실제 활동 시기 기준으로 재정제.
+- Why: 생년만으로는 활동 시기가 부정확. bioKo 텍스트 분석 및 웹 서칭 결과를 반영하여 정확도 향상.
+- Planned Scope:
+  - 파일: `public/index/db_author.with_ko.json`
+  - 예상 변경: 48명 중 26명 era 필드 수정 (태훈 조사 결과 반영)
+  - 파일: `scripts/update_era_from_taehun.js` (신규)
+  - 예상 변경: 태훈 결과 기반 era 업데이트 스크립트 작성
+- Status: In Progress
+
+### END
+- Time: 2026-02-12 16:15
+- Status: Done
+- Changed Files:
+  - `public/index/db_author.with_ko.json:전체` (25명 era 필드 수정)
+  - `scripts/update_era_from_taehun.js:1` (태훈 결과 기반 업데이트 스크립트 신규 작성)
+  - `public/index/db_author.with_ko.backup2.json:1` (백업 파일 자동 생성)
+  - `docs/era_refinement_results.md:1` (태훈 조사 결과 문서, 태훈 작성)
+  - `docs/claude_to_gemini_handoff.md:1` (AI 간 핸드오프 문서 작성)
+- Validation:
+  - JSON 문법 검증: ✅ 정상
+  - 샘플 검증: 이백(초당→성당), 두보(초당→성당), 이상은(중당→만당) 정상
+  - 시대별 분포 (변경 후): 초당 8명, 성당 27명, 중당 27명, 만당 14명
+  - 시대별 분포 (변경 전): 초당 25명, 성당 18명, 중당 20명, 만당 13명
+- Notes:
+  - 태훈(Gemini)의 bioKo 분석 및 웹 서칭 결과 반영
+  - 생년 기준 → 실제 활동 시기 기준으로 재정제
+  - 25명 era 변경, 25명 유지
+  - bioKo 기반 47명, birth+20 보정 1명
+  - 백업 파일: db_author.with_ko.backup2.json
