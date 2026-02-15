@@ -22,6 +22,14 @@ const ERA_CONFIG = [
 // 나머지는 점+제목만 표시하고 호버시 summary 팝업
 const MAIN_HISTORY_IDS = new Set(["H001", "H003", "H005", "H007"]);
 
+// [v3 시대섹션 리디자인] 시대별 상세 정보 + 분기점 사건 ID
+const ERA_DETAILS = {
+  early: { yearRange: "618~712", featuredEventId: "H001" },
+  high:  { yearRange: "713~765", featuredEventId: "H003" },
+  mid:   { yearRange: "766~835", featuredEventId: "H005" },
+  late:  { yearRange: "836~907", featuredEventId: "H007" },
+};
+
 // ===== 0) 공통 유틸 =====
 async function loadJSON(url) {
   const res = await fetch(url);
@@ -40,6 +48,14 @@ function escapeHTML(s) {
     .replaceAll("&", "&amp;")
     .replaceAll("<", "&lt;")
     .replaceAll(">", "&gt;");
+}
+
+function hexToRgb(hex) {
+  const h = (hex || "#000000").replace("#", "");
+  const r = parseInt(h.substring(0, 2), 16) || 0;
+  const g = parseInt(h.substring(2, 4), 16) || 0;
+  const b = parseInt(h.substring(4, 6), 16) || 0;
+  return `${r},${g},${b}`;
 }
 
 function normalizeZhName(s) {
@@ -94,6 +110,12 @@ function renderTagChips(tags, max = 3) {
   return arr.map(t => `<span class="tag">${escapeHTML(t)}</span>`).join("");
 }
 
+// ===== 주석 표시(†) 숨김 처리 =====
+// escapeHTML 후에 적용: †를 hidden span으로 감싸서 CSS로 on/off 가능
+function hideDaggers(escapedHTML) {
+  return escapedHTML.replace(/†/g, '<span class="note-dagger">†</span>');
+}
+
 // ===== history 카드용: detail 문자열을 문단 배열로 =====
 function splitParagraphs(text) {
   const s = String(text || "").trim();
@@ -126,9 +148,18 @@ function groupByYear(items) {
 
 // ===== [v2 리뉴얼] 시대별 그룹핑 유틸 =====
 
+// 연도와 다른 시대에 배치해야 하는 역사 이벤트 오버라이드
+// (안사의 난은 755년이지만 중당의 분기점, 두보 전란 체험도 중당 소속)
+const HISTORY_ERA_OVERRIDE = {
+  "H005": "mid",   // 안사의 난 (755) → 중당 분기점
+  "H020": "mid",   // 두보와 전란의 체험 (760) → 중당
+};
+
 // 역사 이벤트의 연도 → 시대(era) 매핑
 // 시인은 DB에 era.period가 있지만, 역사 이벤트는 연도로 판별해야 함
-function getHistoryEra(year) {
+// titleId가 있으면 오버라이드 먼저 확인
+function getHistoryEra(year, titleId) {
+  if (titleId && HISTORY_ERA_OVERRIDE[titleId]) return HISTORY_ERA_OVERRIDE[titleId];
   if (year == null) return null;
   if (year < 618)  return "pre";    // 수나라
   if (year < 713)  return "early";  // 초당 618-712
@@ -165,7 +196,7 @@ function groupHistoryByEra(historyEvents) {
   for (const h of historyEvents) {
     if (seen.has(h.titleId)) continue;
     seen.add(h.titleId);
-    const eraKey = getHistoryEra(h.year);
+    const eraKey = getHistoryEra(h.year, h.titleId);
     if (!eraKey || !map.has(eraKey)) continue;
     const bucket = map.get(eraKey);
     if (MAIN_HISTORY_IDS.has(h.titleId)) {
@@ -434,10 +465,13 @@ function buildPoetPopupHTML(authorId) {
 
   return `
     <div class="poet-popup">
-      <div class="poet-popup-name">${nameKo} <span class="zh">${nameZh}</span></div>
-      ${lifeStr ? `<div class="poet-popup-life">${lifeStr}</div>` : ""}
-      <div class="poet-popup-count">작품 ${poemCount}편</div>
-      ${bio ? `<div class="poet-popup-bio">${bio}…</div>` : ""}
+      <img class="poet-popup-avatar" src="${getAuthorAvatar(authorId)}" alt="" ${AVATAR_ONERROR} />
+      <div class="poet-popup-info">
+        <div class="poet-popup-name">${nameKo} <span class="zh">${nameZh}</span></div>
+        ${lifeStr ? `<div class="poet-popup-life">${lifeStr}</div>` : ""}
+        <div class="poet-popup-count">작품 ${poemCount}편</div>
+        ${bio ? `<div class="poet-popup-bio">${bio}…</div>` : ""}
+      </div>
     </div>
   `;
 }
@@ -449,7 +483,7 @@ function buildHistoryPopupHTML(historyId) {
 
   const title = escapeHTML(h?.name?.ko || h?.name?.zh || "");
   const zh = h?.name?.zh ? escapeHTML(normalizeZhName(h.name.zh)) : "";
-  const summary = escapeHTML((h.summary || "").split("\n")[0].slice(0, 120));
+  const summary = hideDaggers(escapeHTML((h.summary || "").split("\n")[0].slice(0, 120)));
 
   return `
     <div class="history-popup">
@@ -487,12 +521,38 @@ function bindHoverPopups(root) {
       }, 200);
       return;
     }
+
+    // [v3] 시인 미니카드 호버
+    const poetCard = e.target.closest(".v3-poet-card[data-author-id]");
+    if (poetCard) {
+      clearTimeout(hoverTimeout);
+      hoverTimeout = setTimeout(() => {
+        const authorId = poetCard.getAttribute("data-author-id");
+        const html = buildPoetPopupHTML(authorId);
+        if (html) showPopup(html, poetCard.getBoundingClientRect());
+      }, 200);
+      return;
+    }
+
+    // [v3] 이벤트 점 호버
+    const eventDot = e.target.closest(".v3-event-dot[data-history-id]");
+    if (eventDot) {
+      clearTimeout(hoverTimeout);
+      hoverTimeout = setTimeout(() => {
+        const historyId = eventDot.getAttribute("data-history-id");
+        const html = buildHistoryPopupHTML(historyId);
+        if (html) showPopup(html, eventDot.getBoundingClientRect());
+      }, 200);
+      return;
+    }
   });
 
   root.addEventListener("mouseout", (e) => {
     const poetSpan = e.target.closest(".poet-name[data-author-id]");
     const minorDot = e.target.closest(".history-minor[data-history-id]");
-    if (poetSpan || minorDot) {
+    const poetCard = e.target.closest(".v3-poet-card[data-author-id]");
+    const eventDot = e.target.closest(".v3-event-dot[data-history-id]");
+    if (poetSpan || minorDot || poetCard || eventDot) {
       clearTimeout(hoverTimeout);
       hidePopup();
     }
@@ -565,6 +625,15 @@ const DUMMY_UI = {
   historyTags: ["사건"],
 };
 
+// 시인 초상화 경로 반환 (없으면 기본 이미지 fallback)
+function getAuthorAvatar(authorId) {
+  if (!authorId) return DUMMY_UI.defaultAvatar;
+  return `public/assets/avatars/${authorId}.jpg`;
+}
+// img onerror용 fallback 속성 문자열
+const AVATAR_ONERROR = `onerror="this.onerror=null;this.src='${DUMMY_UI.defaultAvatar}'"`;
+
+
 // ===== [v2 리뉴얼] 시대별 타임라인 렌더러 =====
 // 기존 renderAuthorCard/renderHistoryCard/renderPrimaryItem을 대체
 // 기존 함수는 아래에 주석처리하여 보존
@@ -579,7 +648,7 @@ function renderPoetNames(authors) {
                   data-author-id="${escapeHTML(a.authorId)}"
                   style="font-size: ${fontSize}px"
                   title="${escapeHTML(a.nameKo || '')} (${escapeHTML(a.nameZh)})"
-            >${escapeHTML(a.nameZh)}</span>`;
+            ><img class="poet-name-avatar" src="${getAuthorAvatar(a.authorId)}" alt="" ${AVATAR_ONERROR} />${escapeHTML(a.nameZh)}</span>`;
   }).join('<span class="poet-sep"> | </span>');
 
   return el(`<div class="poet-names">${spans}</div>`);
@@ -592,10 +661,10 @@ function renderMainHistoryCard(h) {
   const zh = h?.name?.zh ? ` <span class="zh">${escapeHTML(h.name.zh)}</span>` : "";
   const lifeStr = formatEventLife(h.life);
   const tags = renderTagChips(getHistoryTagList(h), 3);
-  const summary = escapeHTML((h.summary || "").split("\n")[0] || "");
+  const summary = hideDaggers(escapeHTML((h.summary || "").split("\n")[0] || ""));
   const paragraphs = splitParagraphs(h.detail);
   const detailHTML = paragraphs.length
-    ? paragraphs.map(p => `<p>${escapeHTML(p)}</p>`).join("")
+    ? paragraphs.map(p => `<p>${hideDaggers(escapeHTML(p))}</p>`).join("")
     : `<div class="muted">상세 없음</div>`;
 
   return el(`
@@ -675,6 +744,176 @@ function renderBookend(label) {
 }
 
 // ===== [v2 리뉴얼] 시대별 타임라인 렌더러 끝 =====
+
+// ===== [v3 시대섹션 리디자인] 성당 프로토타입 =====
+
+// 시인 미니카드 배치: 줄마다 개수가 다른 들쭉날쭉 그리드
+// seed 기반 패턴으로 동일 데이터엔 동일 배치 유지
+function distributeIrregularRows(count) {
+  const pattern = [5, 7, 4, 6, 5, 3, 7, 6];
+  const rows = [];
+  let remaining = count;
+  let i = 0;
+  while (remaining > 0) {
+    const maxSize = pattern[i % pattern.length];
+    const take = Math.min(remaining, maxSize);
+    rows.push(take);
+    remaining -= take;
+    i++;
+  }
+  return rows;
+}
+
+// 시인 미니카드 렌더 (오른쪽 정렬, 줄마다 랜덤 개수)
+function renderPoetMiniCards(authors) {
+  if (!authors.length) return el(`<div class="v3-poet-grid empty">-</div>`);
+
+  const rowSizes = distributeIrregularRows(authors.length);
+  const container = el(`<div class="v3-poet-grid"></div>`);
+  let idx = 0;
+
+  for (const size of rowSizes) {
+    const row = el(`<div class="v3-poet-row"></div>`);
+    for (let j = 0; j < size; j++) {
+      const a = authors[idx++];
+      // 한자 이름에서 성씨 제외한 짧은 이름 or 전체 (2~3자)
+      const zhName = escapeHTML(a.nameZh || "");
+      const koName = escapeHTML(a.nameKo || "");
+      const card = el(`
+        <div class="v3-poet-card"
+             data-author-id="${escapeHTML(a.authorId)}"
+             title="${koName} (${zhName})">
+          <span class="v3-poet-card-name">${zhName}</span>
+        </div>
+      `);
+      row.appendChild(card);
+    }
+    container.appendChild(row);
+  }
+
+  return container;
+}
+
+// 분기점 사건 렌더 (서브헤더 + 점선 + 설명박스 + 더보기)
+// eraConfig/eraDetail을 받아서 서브헤더 2칼럼 구성
+function renderFeaturedEvent(historyEvent, eraConfig, eraDetail) {
+  if (!historyEvent) return el(`<div class="v3-featured empty"></div>`);
+
+  const eventTitle = historyEvent?.name?.ko || "";
+  const eventZh = historyEvent?.name?.zh ? normalizeZhName(historyEvent.name.zh) : "";
+  const eventLife = formatEventLife(historyEvent.life);
+
+  // 시대 라벨: "盛唐 성당 · 713~765"
+  const eraZh = eraConfig?.zhLabel || "";
+  const eraKo = eraConfig?.label || "";
+  const eraRange = eraDetail?.yearRange || "";
+
+  // summary + detail을 한 박스에 모두 표시 (펼침 버튼 없이 전체 노출)
+  const summaryText = hideDaggers(escapeHTML(historyEvent.summary || ""));
+  const paragraphs = splitParagraphs(historyEvent.detail);
+  const detailHTML = paragraphs.length
+    ? paragraphs.map(p => `<p>${hideDaggers(escapeHTML(p))}</p>`).join("")
+    : "";
+
+  return el(`
+    <div class="v3-featured">
+      <div class="v3-sub-header">
+        <span class="v3-era-info"><span class="v3-era-zh">${escapeHTML(eraZh)}</span> ${escapeHTML(eraKo)} · ${escapeHTML(eraRange)}</span>
+        <span class="v3-event-info">${escapeHTML(eventTitle)} ${eventZh ? escapeHTML(eventZh) : ""} ${eventLife ? `<span class="v3-event-life">${escapeHTML(eventLife)}</span>` : ""}</span>
+      </div>
+      <div class="v3-featured-divider"></div>
+      <div class="v3-desc-box">
+        <div class="v3-featured-text">${summaryText}</div>
+        ${detailHTML ? `<div class="v3-featured-text">${detailHTML}</div>` : ""}
+      </div>
+    </div>
+  `);
+}
+
+// v3 시대 섹션 조립 (성당 프로토타입)
+// era-header 제거 → 시대 라벨은 우측 서브헤더 안에 통합
+// 사건 점은 타임라인 선 위에 직접 배치
+function renderEraSection_v3(eraConfig, eraDetail, poetCards, featuredNode, dotEvents) {
+  // 2행 그리드: Row1=헤더(우측만), Row2=시인·도트·설명 (같은 줄 시작)
+  const section = el(`
+    <section class="era-section v3" data-era="${eraConfig.key}">
+      <div class="era-body v3">
+        <div class="era-center v3">
+          <div class="era-timeline-line"></div>
+        </div>
+        <div class="v3-featured-header"></div>
+        <div class="era-left v3"></div>
+        <div class="v3-timeline-dots"></div>
+        <div class="v3-featured-content"></div>
+      </div>
+    </section>
+  `);
+
+  const left = section.querySelector(".era-left.v3");
+  const featHeader = section.querySelector(".v3-featured-header");
+  const featContent = section.querySelector(".v3-featured-content");
+  const timelineDots = section.querySelector(".v3-timeline-dots");
+
+  // 좌측 Row2: 시인 미니카드 (오른쪽 정렬)
+  if (poetCards) left.appendChild(poetCards);
+
+  // 우측: featuredNode에서 헤더(Row1)와 설명(Row2) 분리
+  if (featuredNode) {
+    const subHeader = featuredNode.querySelector(".v3-sub-header");
+    const divider = featuredNode.querySelector(".v3-featured-divider");
+    const descBox = featuredNode.querySelector(".v3-desc-box");
+
+    if (subHeader) featHeader.appendChild(subHeader);
+    if (divider) featHeader.appendChild(divider);
+    if (descBox) featContent.appendChild(descBox);
+  }
+
+  // 가운데 Row2: 사건 점을 타임라인 선 위에 배치
+  if (dotEvents && dotEvents.length) {
+    for (const h of dotEvents) {
+      const title = h?.name?.ko || h?.name?.zh || "";
+      const year = h.year ?? "";
+      const dot = el(`
+        <div class="v3-event-dot" data-history-id="${escapeHTML(h.titleId || "")}">
+          <span class="v3-dot-marker"></span>
+          <span class="v3-dot-label">
+            <span class="v3-dot-year">${escapeHTML(String(year))}</span>
+            <span class="v3-dot-title">${escapeHTML(title)}</span>
+          </span>
+        </div>
+      `);
+      timelineDots.appendChild(dot);
+    }
+  }
+
+  return section;
+}
+
+// v3 분기점 사건 더보기 토글 바인딩
+function bindFeaturedToggle(root) {
+  root.addEventListener("click", (e) => {
+    const btn = e.target.closest(".v3-featured-toggle");
+    if (!btn) return;
+
+    const featured = btn.closest(".v3-featured");
+    const detail = featured?.querySelector(".v3-featured-detail");
+    const summary = featured?.querySelector(".v3-featured-summary");
+    if (!detail) return;
+
+    const expanded = btn.getAttribute("aria-expanded") === "true";
+    btn.setAttribute("aria-expanded", String(!expanded));
+    detail.hidden = expanded;
+    btn.querySelector(".v3-featured-toggle-icon").textContent = expanded ? "▾" : "▴";
+
+    // summary의 line-clamp 해제/복원
+    if (summary) {
+      summary.style.webkitLineClamp = expanded ? "5" : "unset";
+      summary.style.overflow = expanded ? "hidden" : "visible";
+    }
+  });
+}
+
+// ===== [v3 시대섹션 리디자인] 끝 =====
 
 /* ===== [v2 리뉴얼] 기존 카드 렌더러 3개 주석처리 시작 =====
    renderAuthorCard  → renderPoetNames로 대체 (시인 이름 워드클라우드)
@@ -771,10 +1010,9 @@ function renderPoemSection(p) {
   const notes  = Array.isArray(p.notes) ? p.notes : [];
   const titleId = p.titleId || "";  // 고유 ID (예: "C8", "C9")
 
-  // 제목도 주석 파싱 (펼침/접힘 상태 모두 적용)
+  // 제목 주석 파싱
   const titleFullRaw = p?.title?.zh ?? "";
   const titleFull = parseTextWithNotes(titleFullRaw, notes, titleId);
-  const titleCompact = parseTextWithNotes(normalizeZhName(titleFullRaw), notes, titleId);
 
   const meta = [p.category, p.juan, p.meter ? `${p.meter}언` : ""].filter(Boolean).join(" · ");
 
@@ -790,7 +1028,7 @@ function renderPoemSection(p) {
     poemZh = poetParsed + "<br><br>" + poemZh;
   }
 
-  const jipZh  = escapeHTML(p.jipyeongZh || "");  // 집평은 주석 없음
+  const jipZh  = parseTextWithNotes(p.jipyeongZh || "", notes, titleId);  // 집평도 주석 파싱
 
   const notesHTML = notes.length
     ? `<ul class="note-list">${notes.map(n => `
@@ -805,111 +1043,298 @@ function renderPoemSection(p) {
   const trKo  = escapeHTML(p.translationKo || "");
   const jipKo = escapeHTML(p.jipyeongKo || "");
 
-  const pinyin = escapeHTML(p.pinyin || "");
-  const pingze = escapeHTML(p.pingze || "");
+  // 심화자료 데이터
+  const pinyinRaw = p.pinyin || "";
+  const pingzeRaw = p.pingze || "";
+  const poemSimpRaw = p.poemSimp || "";
+  const ytLinks = (p.media && Array.isArray(p.media.youtube)) ? p.media.youtube : [];
+
+  // 제목/시인 병음 데이터
+  const titleSimp = p.titleSimp || "";
+  const titlePinyin = p.titlePinyin || "";
+  const poetSimp = p.poetSimp || "";
+  const poetPinyin = p.poetPinyin || "";
+
+  // 제목 병음 루비 생성
+  function buildTitlePinyinRuby(simp, pinyin) {
+    if (!simp || !pinyin) return "";
+    const chars = Array.from(simp).filter(ch => ch >= "\u4e00" && ch <= "\u9fff");
+    const syllables = pinyin.split(/\s+/).filter(Boolean);
+    let ruby = "";
+    for (let i = 0; i < chars.length; i++) {
+      const ch = escapeHTML(chars[i]);
+      const py = escapeHTML(syllables[i] || "");
+      ruby += `<ruby>${ch}<rp>(</rp><rt>${py}</rt><rp>)</rp></ruby>`;
+    }
+    return ruby;
+  }
+
+  // 본문 제목+시인 표시용 HTML (주석 포함)
+  const titleZhRaw = p?.title?.zh ?? "";
+  const poetZhRaw = p?.poet?.zh ?? "";
+  const poemTitleDisplay = `<div class="poem-body-title">${parseTextWithNotes(titleZhRaw, notes, titleId)}</div>`;
+  const poemPoetDisplay = `<div class="poem-body-poet">${escapeHTML(poetZhRaw)}</div>`;
+
+  // 병음 칸: 간체자 + 병음 루비문자
+  let pinyinHTML = "";
+  if (poemSimpRaw || pinyinRaw) {
+    // 제목/시인 병음 루비
+    const titleRuby = buildTitlePinyinRuby(titleSimp, titlePinyin);
+    const poetRuby = buildTitlePinyinRuby(poetSimp, poetPinyin);
+    const titlePinyinLine = titleRuby ? `<div class="ruby-title">${titleRuby}</div>` : "";
+    const poetPinyinLine = poetRuby ? `<div class="ruby-poet">${poetRuby}</div>` : "";
+
+    const simpLines = poemSimpRaw.split("\n");
+    const pinyinLines = pinyinRaw.split("\n");
+    const maxLen = Math.max(simpLines.length, pinyinLines.length);
+    let rubyRows = "";
+    for (let li = 0; li < maxLen; li++) {
+      const chars = Array.from(simpLines[li] || "").filter(ch => ch >= "\u4e00" && ch <= "\u9fff");
+      const syllables = (pinyinLines[li] || "").split(/\s+/).filter(Boolean);
+      let lineRuby = "";
+      for (let ci = 0; ci < chars.length; ci++) {
+        const ch = escapeHTML(chars[ci]);
+        const py = escapeHTML(syllables[ci] || "");
+        lineRuby += `<ruby>${ch}<rp>(</rp><rt>${py}</rt><rp>)</rp></ruby>`;
+      }
+      rubyRows += `<div class="ruby-line">${lineRuby}</div>`;
+    }
+    pinyinHTML = `
+      ${titlePinyinLine}${poetPinyinLine}
+      <div class="ruby-grid">${rubyRows}</div>
+      <div class="tts-label">보통화(普通話) 시 낭송 듣기</div>
+      <div class="tts-player" data-poem-no="${escapeHTML(poemNoStr)}">
+        <button type="button" class="tts-btn" data-speed="normal">
+          <span class="tts-icon">&#9654;</span> 정상속도
+        </button>
+        <button type="button" class="tts-btn" data-speed="slow">
+          <span class="tts-icon">&#9654;</span> 느리게
+        </button>
+        <span class="tts-status"></span>
+      </div>`;
+  }
+
+  // 평측 칸: 간체자 + 평측 루비문자 (절구/율시만)
+  let pingzeHTML = "";
+  if (pingzeRaw && poemSimpRaw) {
+    const simpLines = poemSimpRaw.split("\n");
+    const pingzeLines = pingzeRaw.split("\n");
+    const maxLen = Math.max(simpLines.length, pingzeLines.length);
+    let pzRows = "";
+    for (let li = 0; li < maxLen; li++) {
+      const chars = Array.from(simpLines[li] || "").filter(ch => ch >= "\u4e00" && ch <= "\u9fff");
+      const tones = Array.from(pingzeLines[li] || "");
+      let lineRuby = "";
+      for (let ci = 0; ci < chars.length; ci++) {
+        const ch = escapeHTML(chars[ci]);
+        const tone = escapeHTML(tones[ci] || "");
+        const toneClass = tone === "平" ? "tone-ping" : tone === "仄" ? "tone-ze" : "";
+        lineRuby += `<ruby class="${toneClass}">${ch}<rp>(</rp><rt>${tone}</rt><rp>)</rp></ruby>`;
+      }
+      pzRows += `<div class="ruby-line">${lineRuby}</div>`;
+    }
+    pingzeHTML = `<div class="ruby-grid pingze">${pzRows}</div>`;
+  }
+
+  // 배경그림 데이터 (없으면 랜덤 배경 없이 plain 모드)
+  const bgImage = p.bgImage || "";
+  const bgImageUrl = bgImage
+    ? `public/assets/poem-bg/${escapeHTML(bgImage)}`
+    : "";
+
+  // YouTube 임베드 플레이어
+  function extractYoutubeId(url) {
+    const m = url.match(/(?:youtu\.be\/|youtube\.com\/watch\?v=|youtube\.com\/embed\/)([^&?#\s]+)/);
+    return m ? m[1] : null;
+  }
+
+  let mediaHTML = "";
+  if (ytLinks.length > 0) {
+    const embeds = ytLinks.map((url) => {
+      const vid = extractYoutubeId(url);
+      if (!vid) return "";
+      return `<div class="yt-embed-wrap">
+        <iframe src="https://www.youtube.com/embed/${escapeHTML(vid)}"
+          frameborder="0" allowfullscreen
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          loading="lazy"></iframe>
+      </div>`;
+    }).filter(Boolean).join("");
+    mediaHTML = embeds;
+  }
+
+  // 심화자료 2컬럼 레이아웃 구성
+  let deepContentHTML = "";
+  if (pinyinHTML && pingzeHTML) {
+    // 병음 + 평측 둘 다 있음 → 2컬럼
+    deepContentHTML = `
+      <div class="deep-two-col">
+        <div class="poem-block">
+          <div class="block-title">간체자 &amp; 병음</div>
+          <div class="block-box">${pinyinHTML}</div>
+        </div>
+        <div class="poem-block">
+          <div class="block-title">평측</div>
+          <div class="block-box">${pingzeHTML}</div>
+        </div>
+      </div>
+      ${mediaHTML ? `<div class="poem-block">
+        <div class="block-title">YouTube 낭송</div>
+        <div class="block-box">${mediaHTML}</div>
+      </div>` : ""}`;
+  } else if (pinyinHTML && !pingzeHTML && mediaHTML) {
+    // 병음만 + YouTube → 2컬럼 (미니)
+    deepContentHTML = `
+      <div class="deep-two-col">
+        <div class="poem-block">
+          <div class="block-title">간체자 &amp; 병음</div>
+          <div class="block-box">${pinyinHTML}</div>
+        </div>
+        <div class="poem-block">
+          <div class="block-title">YouTube 낭송</div>
+          <div class="block-box">${mediaHTML}</div>
+        </div>
+      </div>`;
+  } else {
+    // 각각 따로 표시
+    deepContentHTML = `
+      ${pinyinHTML ? `<div class="poem-block">
+        <div class="block-title">간체자 &amp; 병음</div>
+        <div class="block-box">${pinyinHTML}</div>
+      </div>` : ""}
+      ${pingzeHTML ? `<div class="poem-block">
+        <div class="block-title">평측</div>
+        <div class="block-box">${pingzeHTML}</div>
+      </div>` : ""}
+      ${mediaHTML ? `<div class="poem-block">
+        <div class="block-title">YouTube 낭송</div>
+        <div class="block-box">${mediaHTML}</div>
+      </div>` : ""}`;
+  }
+
+  // 배경 그림 유무에 따라 hero 영역 분기
+  const hasImage = !!p.bgImage;
+  const heroClass = hasImage ? 'poem-hero' : 'poem-hero-plain';
+
+  let heroStyle = '';
+  if (hasImage) {
+    heroStyle = `style="background-image:url('${bgImageUrl}')"`;
+  }
 
   return `
     <section class="poem-sec" data-poem-sec="${escapeHTML(p.titleId)}">
-      <button class="poem-head" type="button" aria-expanded="false">
+      <div class="poem-head-bar">
         <div class="poem-head-line">
           <span class="poem-no">${escapeHTML(poemNoStr)}</span>
-          <span class="poem-title compact">${titleCompact}</span>
-          <span class="poem-title full">${titleFull}</span>
+          <span class="poem-title">${titleFull}</span>
         </div>
         <div class="poem-head-meta">${escapeHTML(meta)}</div>
-      </button>
+      </div>
 
-      <div class="poem-body" hidden>
-        <div class="poem-block">
-          <div class="block-title">시 본문(한자)</div>
-          <div class="block-box pre">${poemZh}</div>
-        </div>
-
-        <div class="poem-block">
-          <div class="block-title">집평(한자)</div>
-          <div class="block-box pre">${jipZh || `<span class="muted">집평 없음</span>`}</div>
-        </div>
-
-        <div class="poem-block notes">
-          <div class="block-title">주석</div>
-          <div class="block-box">${notesHTML}</div>
-        </div>
-
-        <button class="subtoggle" type="button" aria-expanded="false">상세보기 ▾</button>
-        <div class="subpanel" hidden>
-          <div class="poem-block">
-            <div class="block-title">시 번역문</div>
-            <div class="block-box pre">${trKo || `<span class="muted">번역 없음</span>`}</div>
-          </div>
-          <div class="poem-block">
-            <div class="block-title">집평 번역문</div>
-            <div class="block-box pre">${jipKo || `<span class="muted">집평 번역 없음</span>`}</div>
-          </div>
-
-          <button class="subtoggle deep" type="button" aria-expanded="false">심화자료 ▾</button>
-          <div class="subpanel deep" hidden>
-            <div class="poem-block">
-              <div class="block-title">병음</div>
-              <div class="block-box pre">${pinyin || `<span class="muted">준비중</span>`}</div>
-            </div>
-            <div class="poem-block">
-              <div class="block-title">평측</div>
-              <div class="block-box pre">${pingze || `<span class="muted">준비중</span>`}</div>
-            </div>
-            <div class="poem-block">
-              <div class="block-title">멀티미디어</div>
-              <div class="block-box"><span class="muted">유튜브 낭송/낭독 음원 등 (준비중)</span></div>
-            </div>
+      <div class="poem-body">
+        <div class="${heroClass}" ${heroStyle}>
+          <div class="poem-hero-text">
+            ${poemTitleDisplay}${poemPoetDisplay}${poemZh}
           </div>
         </div>
+
+        ${trKo ? `
+        <div class="poem-section-block poem-sec-translation">
+          <div class="poem-sec-label">번역</div>
+          <div class="poem-sec-text pre">${trKo}</div>
+        </div>` : ''}
+
+        ${jipZh ? `
+        <div class="poem-section-block poem-sec-commentary">
+          <div class="poem-sec-label">집평</div>
+          <div class="poem-sec-text pre">${jipZh}</div>
+        </div>` : ''}
+
+        ${jipKo ? `
+        <div class="poem-section-block poem-sec-commentary-tr">
+          <div class="poem-sec-label">집평 번역</div>
+          <div class="poem-sec-text pre">${jipKo}</div>
+        </div>` : ''}
+
+        <div class="poem-section-block poem-sec-notes">
+          <div class="poem-sec-label">주석</div>
+          <div class="poem-sec-text">${notesHTML}</div>
+        </div>
+
+        ${deepContentHTML ? `
+        <div class="poem-section-block poem-sec-advanced">
+          <div class="poem-sec-label">심화자료</div>
+          ${deepContentHTML}
+        </div>` : ''}
       </div>
     </section>
   `;
 }
 
 function bindPoemSections(modalBody) {
-  // 작품 섹션 아코디언 (한 번에 하나)
+  // TTS 재생 (이벤트 위임)
   modalBody.addEventListener("click", (e) => {
-    const head = e.target.closest(".poem-head");
-    if (!head) return;
-
-    const sec = head.closest(".poem-sec");
-    const body = sec?.querySelector(".poem-body");
-    if (!sec || !body) return;
-
-    const expanded = head.getAttribute("aria-expanded") === "true";
-
-    // 다른 섹션 닫기
-    modalBody.querySelectorAll(".poem-sec").forEach(s => {
-      if (s !== sec) {
-        const h = s.querySelector(".poem-head");
-        const b = s.querySelector(".poem-body");
-        if (h) h.setAttribute("aria-expanded", "false");
-        if (b) b.hidden = true;
-        s.classList.remove("expanded");
-        // nested 초기화
-        s.querySelectorAll(".subtoggle").forEach(btn => btn.setAttribute("aria-expanded", "false"));
-        s.querySelectorAll(".subpanel").forEach(p => p.hidden = true);
-      }
-    });
-
-    head.setAttribute("aria-expanded", String(!expanded));
-    body.hidden = expanded;
-    sec.classList.toggle("expanded", !expanded);
-  });
-
-  // 상세보기/심화자료 토글
-  modalBody.addEventListener("click", (e) => {
-    const btn = e.target.closest(".subtoggle");
+    const btn = e.target.closest(".tts-btn");
     if (!btn) return;
 
-    const panel = btn.nextElementSibling;
-    if (!panel || !panel.classList.contains("subpanel")) return;
+    const player = btn.closest(".tts-player");
+    if (!player) return;
 
-    const expanded = btn.getAttribute("aria-expanded") === "true";
-    btn.setAttribute("aria-expanded", String(!expanded));
-    panel.hidden = expanded;
+    const poemNo = player.dataset.poemNo;
+    const speed = btn.dataset.speed;
+    handleTtsPlay(player, btn, poemNo, speed);
   });
+}
+
+// ── TTS 재생 전역 상태 ──
+let _ttsAudio = null;
+let _ttsBtn = null;
+let _ttsPlayer = null;
+
+function handleTtsPlay(player, btn, poemNo, speed) {
+  // 같은 버튼 다시 누르면 정지
+  if (_ttsBtn === btn && _ttsAudio && !_ttsAudio.paused) {
+    stopTtsPlayback();
+    return;
+  }
+  // 기존 재생 정지
+  stopTtsPlayback();
+
+  const src = `public/audio/${poemNo}_${speed}.mp3`;
+  const audio = new Audio(src);
+  _ttsAudio = audio;
+  _ttsBtn = btn;
+  _ttsPlayer = player;
+
+  btn.classList.add("playing");
+  btn.querySelector(".tts-icon").innerHTML = "&#9724;";
+  const status = player.querySelector(".tts-status");
+  if (status) status.textContent = speed === "normal" ? "재생 중..." : "느리게 재생 중...";
+
+  audio.play().catch(() => {
+    if (status) status.textContent = "파일 없음";
+    stopTtsPlayback();
+  });
+
+  audio.onended = () => stopTtsPlayback();
+}
+
+function stopTtsPlayback() {
+  if (_ttsAudio) {
+    _ttsAudio.pause();
+    _ttsAudio.currentTime = 0;
+    _ttsAudio = null;
+  }
+  if (_ttsBtn) {
+    _ttsBtn.classList.remove("playing");
+    _ttsBtn.querySelector(".tts-icon").innerHTML = "&#9654;";
+    _ttsBtn = null;
+  }
+  if (_ttsPlayer) {
+    const status = _ttsPlayer.querySelector(".tts-status");
+    if (status) status.textContent = "";
+    _ttsPlayer = null;
+  }
 }
 
 // ===== 6-A) 출생지 지도 (Leaflet) =====
@@ -964,7 +1389,15 @@ function initRelationGraph(container, authorId) {
   // (1) 내 relations
   if (a.relations) {
     a.relations.forEach(r => {
-      edgesRaw.push({ from: authorId, to: r.targetId, label: r.label, desc: r.desc, type: r.type });
+      edgesRaw.push({
+        from: authorId,
+        to: r.targetId,
+        label: r.label,
+        desc: r.desc,
+        type: r.type,
+        targetName: r.targetName,
+        targetNameKo: r.targetNameKo
+      });
       nodeIds.add(r.targetId);
     });
   }
@@ -993,16 +1426,20 @@ function initRelationGraph(container, authorId) {
   const nodes = [];
   for (const nid of nodeIds) {
     const p = STATE.authorById.get(nid);
-    const label = p ? (p.name?.ko || p.name?.zh || nid) : nid;
+    const extRel = edgesRaw.find(e => e.to === nid || e.from === nid);
+    const nameLabel = p ? (p.name?.ko || p.name?.zh || nid) : (extRel?.targetNameKo || extRel?.targetName || nid);
     nodes.push({
       id: nid,
-      label,
-      shape: "circle",
+      title: nameLabel, // 툴팁으로 이름 표시
+      shape: "circularImage", // 원형 이미지
+      image: getAuthorAvatar(nid), // 실제 초상화 (없으면 onerror fallback)
       color: nid === authorId
         ? { background: "#8b0000", border: "#5a0000", highlight: { background: "#a00", border: "#5a0000" } }
-        : { background: "#4a90d9", border: "#2a6cb0", highlight: { background: "#5aa0e9", border: "#2a6cb0" } },
-      font: { color: "#fff", size: 14, face: "system-ui" },
-      size: nid === authorId ? 30 : 22,
+        : p
+          ? { background: "#4a90d9", border: "#2a6cb0", highlight: { background: "#5aa0e9", border: "#2a6cb0" } }
+          : { background: "#8a8a8a", border: "#666", highlight: { background: "#999", border: "#666" } },
+      size: nid === authorId ? 50 : 35, // 크기 상향 조정
+      borderWidth: 3,
     });
   }
 
@@ -1024,8 +1461,21 @@ function initRelationGraph(container, authorId) {
     edges: new vis.DataSet(edges),
   };
   const options = {
-    interaction: { hover: true, zoomView: false, dragView: false },
-    physics: { enabled: false },
+    nodes: { brokenImage: DUMMY_UI.defaultAvatar }, // 이미지 로드 실패 시 기본 이미지
+    interaction: { hover: true, zoomView: true, dragView: true }, // 줌/드래그 허용
+    physics: {
+      enabled: true, // 물리 엔진 활성화 (노드 간격 자동 조절)
+      solver: "repulsion",
+      repulsion: {
+        nodeDistance: 100, // 노드 간 거리 (좁힘)
+        springLength: 100,
+        centralGravity: 0.8, // 중심으로 당기는 힘 (강하게)
+      },
+      stabilization: { // 초기 배치 안정화
+        iterations: 200,
+        fit: true,
+      },
+    },
     layout: { randomSeed: 42 },
   };
 
@@ -1033,7 +1483,7 @@ function initRelationGraph(container, authorId) {
 
   // 노드 클릭 시 해당 시인 모달 열기 (자기 자신 제외)
   network.on("click", params => {
-    if (params.nodes.length === 1 && params.nodes[0] !== authorId) {
+    if (params.nodes.length === 1 && params.nodes[0] !== authorId && STATE.authorById.has(params.nodes[0])) {
       openAuthorModal(params.nodes[0]);
     }
   });
@@ -1059,7 +1509,7 @@ function openAuthorModal(authorId, ctx) {
   const bodyHTML = `
     <div class="author-modal">
       <section class="author-hero">
-        <img class="author-photo" src="${DUMMY_UI.defaultAvatar}" alt="" />
+        <img class="author-photo" src="${getAuthorAvatar(authorId)}" alt="${escapeHTML(nameKo)}" ${AVATAR_ONERROR} />
         <div class="author-meta">
           <div class="author-name-line">
             <span class="name-ko">${escapeHTML(nameKo)}</span>
@@ -1160,14 +1610,14 @@ function openHistoryModal(historyId) {
   // summary는 보통 한 덩어리 문자열(긴 문장)이므로, 그대로 보여주되 줄바꿈이 있으면 줄 단위로 나눕니다.
   const summaryLines = String(h.summary || "").split("\n").map(s => s.trim()).filter(Boolean);
   const summaryHTML = summaryLines.length
-    ? `<div class="block-box">${summaryLines.map(s => `<p>${escapeHTML(s)}</p>`).join("")}</div>`
+    ? `<div class="block-box">${summaryLines.map(s => `<p>${hideDaggers(escapeHTML(s))}</p>`).join("")}</div>`
     : `<div class="block-box muted">요약 없음</div>`;
 
   // detail은 \n\n(빈 줄) 기준으로 문단이 나뉘어 있으니 splitParagraphs로 <p> 처리합니다.
   const paragraphs = splitParagraphs(h.detail);
   const detailHTML = paragraphs.length
     ? `<div class="history-detail-paras modal">
-        ${paragraphs.map(p => `<p>${escapeHTML(p)}</p>`).join("")}
+        ${paragraphs.map(p => `<p>${hideDaggers(escapeHTML(p))}</p>`).join("")}
       </div>`
     : `<div class="muted">상세 없음</div>`;
 
@@ -1262,6 +1712,15 @@ function bindModalOpeners(root) {
     const poetSpan = e.target.closest(".poet-name[data-author-id]");
     if (poetSpan) {
       const authorId = poetSpan.getAttribute("data-author-id");
+      if (!authorId) return;
+      openAuthorModal(authorId, {});
+      return;
+    }
+
+    // [v3] 시인 미니카드 클릭 → 작가 모달 열기
+    const poetCard = e.target.closest(".v3-poet-card[data-author-id]");
+    if (poetCard) {
+      const authorId = poetCard.getAttribute("data-author-id");
       if (!authorId) return;
       openAuthorModal(authorId, {});
       return;
@@ -1418,6 +1877,23 @@ async function main() {
     const poets = authorsByEra.get(eraConf.key) || [];
     const hGroup = historyByEra.get(eraConf.key) || { main: [], minor: [] };
 
+    // [v3] 전체 시대에 새 디자인 적용
+    const eraDetail = ERA_DETAILS[eraConf.key];
+    if (eraDetail) {
+      // 분기점 사건 분리: featured 1개 + 나머지 dot
+      const allEvents = [...hGroup.main, ...hGroup.minor]
+        .sort((a, b) => (a.year ?? 0) - (b.year ?? 0));
+      const featuredEvent = allEvents.find(h => h.titleId === eraDetail.featuredEventId);
+      const dotEvents = allEvents.filter(h => h.titleId !== eraDetail.featuredEventId);
+
+      const poetCards = renderPoetMiniCards(poets);
+      const featuredNode = renderFeaturedEvent(featuredEvent || null, eraConf, eraDetail);
+
+      root.appendChild(renderEraSection_v3(eraConf, eraDetail, poetCards, featuredNode, dotEvents));
+      continue;
+    }
+
+    // 기존 v2 렌더링
     const poetNamesNode = renderPoetNames(poets);
     const mainCards = hGroup.main.map(renderMainHistoryCard);
     const minorDots = hGroup.minor.map(renderMinorHistoryDot);
@@ -1433,6 +1909,7 @@ async function main() {
   bindModalUI();
   bindModalOpeners(root);
   bindHoverPopups(root); // [v2 리뉴얼] 호버 팝업 바인딩 추가
+  bindFeaturedToggle(root); // [v3] 분기점 사건 더보기 토글
 }
 
 main().catch(err => {

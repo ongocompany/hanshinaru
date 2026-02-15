@@ -3,10 +3,10 @@
    ========================= */
 * { box-sizing: border-box; } /* padding/border 포함한 박스 계산 */
 body {
-  margin: 0; /* 브라우저 기본 여백 제거 */
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif; /* 기본 폰트 스택 */
-  background: #f4f4f4; /* 배경색 */
-  color: #222; /* 기본 글자색 */
+  margin: 0;
+  font-family: 'Noto Serif KR', 'Noto Serif TC', Georgia, serif;  /* 한글=본명조, 중문=본명조TC */
+  background: #f4f4f4;
+  color: #222;
 }
 
 /* Header / Footer */
@@ -170,6 +170,17 @@ body {
   color: #222;
   transition: color 0.15s ease;
   white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+.poet-name-avatar {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  object-fit: cover;
+  vertical-align: middle;
+  border: 1px solid #ccc;
 }
 .poet-name:hover {
   color: #8b0000;
@@ -315,8 +326,22 @@ body {
 /* 시인 팝업 */
 .poet-popup {
   display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+}
+.poet-popup-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 2px solid #ddd;
+}
+.poet-popup-info {
+  display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 3px;
 }
 .poet-popup-name {
   font-weight: 700;
@@ -552,26 +577,26 @@ body {
 }
 
 .modal{
-  width: min(900px, 96vw);
+  width: min(860px, 96vw);
   max-height: 88vh;
   overflow: auto;
-  background: #fff;
+  background: #faf8f5;
   border: 1px solid #ddd;
   border-radius: 12px;
-  padding: 14px;
+  padding: 24px;
 }
 
 .modal-header{
   display: flex;
   align-items: center;
-  justify-content: flex-end !important; /* ✅ 오른쪽으로 몰기 */
+  justify-content: space-between;
   gap: 12px;
-  padding-bottom: none !important;
-  border-bottom: none !important; padding-bottom: 0 !important;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e8e4df;
+  margin-bottom: 12px;
 }
 
 .modal-title{
-  display: none !important;
   font-size: 16px;
   font-weight: 700;
 }
@@ -726,7 +751,7 @@ body {
    - 순서: 1)시본문(한자) 2)집평(한자) 3)주석
    - 상세보기: 4)시번역 5)집평번역
    - 심화자료: 병음/평측/멀티미디어
-   - 본문에는 제목/시인명 재노출 없음(형 확정)
+   - 본문에 제목/시인명 표시 (v3 변경)
    ========================= */
 .poem-list{
   display: flex;
@@ -735,18 +760,17 @@ body {
 }
 
 .poem-sec{
-  border: 1px solid #eee;
+  border: 1px solid #e8e4df;
   border-radius: 12px;
   overflow: hidden;
+  margin-bottom: 16px;
 }
 
-.poem-head{
-  width: 100%;
-  text-align: left;
-  background: #fff;
-  border: none;
-  padding: 10px 12px;
-  cursor: pointer;
+/* 시 제목 헤더 바 (클릭 불필요, 표시용) */
+.poem-head-bar{
+  background: #f0ebe4;
+  padding: 12px 16px;
+  border-bottom: 1px solid #e8e4df;
 }
 
 .poem-head-line{
@@ -767,13 +791,6 @@ body {
   font-size: 15px;
 }
 
-/* 기본: compact 제목만 보이게 */
-.poem-title.full{ display: none; }
-
-/* 펼침 상태(.expanded)에서는 full 제목 노출 */
-.poem-sec.expanded .poem-title.compact{ display: none; }
-.poem-sec.expanded .poem-title.full{ display: inline; }
-
 .poem-head-meta{
   margin-top: 2px;
   font-size: 12px;
@@ -781,26 +798,49 @@ body {
 }
 
 .poem-body{
-  padding: 10px 12px 12px;
-  border-top: 1px solid #eee;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0;
 }
 
-.poem-block{
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
+/* ── 섹션별 배경색 (두루마리: 위→아래 점점 진해짐) ── */
+.poem-sec-label{
+  font-size: 12px;
+  font-weight: 600;
+  color: #8a7e6e;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
 }
 
-.block-box.pre{
+.poem-section-block{
+  padding: 20px 24px;
+}
+
+.poem-sec-body{
+  background: #faf8f5;      /* 시 본문: 따뜻한 종이색 */
+}
+.poem-sec-translation{
+  background: #f5f2ed;      /* 번역: 약간 더 진한 종이 */
+}
+.poem-sec-commentary{
+  background: #f0ede7;      /* 집평: 더 진한 톤 */
+}
+.poem-sec-commentary-tr{
+  background: #ece8e1;      /* 집평 번역 */
+}
+.poem-sec-notes{
+  background: #e8e4dd;      /* 주석: 가장 진한 톤 */
+}
+.poem-sec-advanced{
+  background: #e4e0d9;      /* 심화자료 */
+}
+
+.poem-sec-text{
+  line-height: 1.7;
+}
+
+.poem-sec-text.pre{
   white-space: pre-wrap;
-}
-
-/* 주석 영역은 배경 다르게 */
-.poem-block.notes .block-box{
-  background: #fff;
 }
 
 /* 주석 리스트 */
@@ -824,37 +864,291 @@ body {
 .note-head{ color: #333; cursor: pointer; }
 .note-text{ color: #444; }
 
-/* 상세보기/심화자료 버튼 */
-.subtoggle{
-  border: 1px solid #ddd;
-  background: #fff;
-  border-radius: 10px;
-  padding: 8px 10px;
-  cursor: pointer;
-  font-size: 13px;
-  font-weight: 700;
+/* 심화자료 내부 block-title은 표시 */
+.poem-section-block .block-title{
+  font-size: 12px;
+  font-weight: 600;
+  color: #8a7e6e;
+  margin-bottom: 6px;
 }
 
-.subpanel{
-  margin-top: 6px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-/* 콤팩트 원칙: 의미 없는 섹션 라벨(요약/설명/작품 등)은 전부 숨김 */
-.block-title,
+/* 시인모달 그리드 패널(출생지/관계도) 라벨은 숨김 유지 */
 .panel-title,
 .panel-sub { display: none !important; }
+
+/* 작품/설명 섹션 라벨도 숨김 (author-bio-full, author-works-full) */
+.author-bio-full .block-title,
+.author-works-full .block-title { display: none !important; }
 
 /* 역사 모달: 지도/멀티미디어 자리(풀폭) */
 .history-modal .history-map-full .panel-box{ height: 240px; }
 .history-modal .history-media .panel-box{ height: 120px; }
 
+/* =====================================================================
+   [v3 시대섹션 리디자인] 성당 프로토타입
+   Readdy 톤앤매너: 크림 배경 + 고전 서체 + 금색 포인트
+   ===================================================================== */
+
+/* --- v3 시대 섹션 전체 --- */
+.era-section.v3 {
+  background: #fff;
+  border-radius: 0;                /* 둥근 모서리 제거 → 섹션끼리 딱 붙음 */
+  margin: 0;                       /* 섹션 간 간격 제거 */
+  padding: 0 20px;                 /* 하단 패딩 제거 → 타임라인 바닥까지 연결 */
+}
+
+/* 시대별 배경색 — 당삼채 모티프, 거의 흰색에 가까운 은은한 색조 */
+.era-section.v3[data-era="early"] { background: rgb(255, 255, 255); }   /* 흰색 */
+.era-section.v3[data-era="high"]  { background: rgb(244, 249, 255); }   /* 살짝 푸른 기운 */
+.era-section.v3[data-era="mid"]   { background: rgb(255, 252, 246); }   /* 살짝 따뜻한 기운 */
+.era-section.v3[data-era="late"]  { background: rgb(246, 255, 249); }   /* 살짝 풀빛 기운 */
+
+/* --- v3 시대 헤더: 제거됨 (서브헤더로 우측 칼럼 안에 통합) --- */
+
+/* --- v3 시대 바디 (3칼럼 × 2행 그리드) ---
+   Row1: [빈칸] [타임라인선] [서브헤더+점선]
+   Row2: [시인카드] [도트]    [설명박스]     ← 세 개가 같은 줄 시작 */
+.era-body.v3 {
+  display: grid;
+  grid-template-columns: 1fr 40px 1fr;
+  grid-template-rows: auto 1fr;
+  column-gap: 8px;
+  min-height: 200px;
+}
+
+/* --- v3 좌측: 시인 미니카드 (Row2) --- */
+.era-left.v3 {
+  grid-column: 1;
+  grid-row: 2;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;       /* 오른쪽 정렬 (타임라인 쪽) */
+  padding: 12px 0 24px;
+}
+
+.v3-poet-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-end;           /* 줄 단위 오른쪽 정렬 */
+}
+.v3-poet-grid.empty {
+  color: #999;
+  font-size: 14px;
+}
+
+.v3-poet-row {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;       /* 줄 내부도 오른쪽 정렬 */
+}
+
+.v3-poet-card {
+  width: 58px;
+  height: 58px;
+  background: #fff;
+  border: 1px solid #d4c5a9;       /* 한지풍 테두리 */
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  position: relative;
+}
+.v3-poet-card:hover {
+  transform: scale(1.12);
+  box-shadow: 0 3px 12px rgba(90, 62, 40, 0.2);
+  border-color: #8b6914;           /* 금색 보더 */
+  z-index: 2;
+}
+
+.v3-poet-card-name {
+  font-family: fangsong, 'LXGW WenKai Mono TC', 'Noto Serif TC', serif;  /* 한자 고전체 */
+  font-size: 16px;
+  font-weight: 600;
+  color: #3a2a18;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  text-align: center;
+  user-select: none;
+}
+
+/* --- v3 가운데 타임라인 (Row1~2 전체 관통) --- */
+.era-center.v3 {
+  grid-column: 2;
+  grid-row: 1 / -1;               /* 양쪽 행 모두 관통 */
+  position: relative;
+  overflow: visible;               /* 점 라벨이 우측으로 삐져나갈 수 있게 */
+}
+
+/* v3 타임라인 선: 부모 전체 높이를 꽉 채움 (absolute) */
+.era-section.v3 .era-timeline-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  background: #aaa;
+  height: auto;
+  z-index: 1;
+}
+
+/* 사건 점 컨테이너 (Row2, 중앙 칼럼): 균등 분포 */
+.v3-timeline-dots {
+  grid-column: 2;
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;   /* 같은 간격으로 골고루 분포 */
+  align-items: center;
+  overflow: visible;
+  z-index: 2;
+  padding: 12px 0;
+}
+
+/* 개별 사건 점: 마커는 타임라인 위, 텍스트는 우측으로 삐져나감 */
+.v3-event-dot {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: default;
+  width: 10px;                     /* 마커 크기만큼만 */
+}
+
+.v3-dot-marker {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #c9b896;
+  border: 2px solid #a09070;
+  flex-shrink: 0;
+  z-index: 3;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+/* 연도+제목 라벨: 마커 우측으로 삐져나감 */
+.v3-dot-label {
+  position: absolute;
+  left: 18px;                      /* 마커 오른쪽으로 */
+  white-space: nowrap;
+  display: flex;
+  gap: 6px;
+  align-items: baseline;
+  font-size: 15px;
+  color: #5a4a38;
+  pointer-events: auto;
+  transition: color 0.15s ease;
+}
+
+.v3-event-dot:hover .v3-dot-marker {
+  background: #8b6914;
+  border-color: #6b4f0a;
+}
+.v3-event-dot:hover .v3-dot-label {
+  color: #8b6914;
+}
+
+.v3-dot-year {
+  font-weight: 700;
+  font-size: 14px;
+  color: #8c7a62;
+}
+
+.v3-dot-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* --- v3 우측 Row1: 서브헤더 + 점선 --- */
+.v3-featured-header {
+  grid-column: 3;
+  grid-row: 1;
+  padding: 16px 0 0;
+}
+
+/* --- v3 우측 Row2: 설명 텍스트 --- */
+.v3-featured-content {
+  grid-column: 3;
+  grid-row: 2;
+  padding: 0 0 24px;
+}
+
+/* 서브헤더: 2칼럼 (왼=시대라벨, 우=사건이름) */
+.v3-sub-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  padding-bottom: 8px;
+}
+.v3-era-info {
+  font-size: 18px;
+  font-weight: 700;
+  color: #5a3e28;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+.v3-era-zh {
+  font-family: fangsong, 'LXGW WenKai Mono TC', 'Noto Serif TC', serif;  /* 시대 한자 고전체 */
+  font-size: 42px;
+  line-height: 1;
+  color: #3a2a18;
+}
+.v3-event-info {
+  font-family: fangsong, 'LXGW WenKai Mono TC', 'Noto Serif TC', serif;  /* 사건명 고전체 */
+  font-size: 17px;
+  font-weight: 600;
+  color: #8b6914;
+  text-align: right;
+  white-space: nowrap;
+}
+.v3-event-life {
+  font-size: 14px;
+  font-weight: normal;
+  color: #a0927c;
+  margin-left: 4px;
+}
+
+/* 점선 구분 */
+.v3-featured-divider {
+  border: none;
+  border-top: 2px dashed #c9b896;
+}
+
+/* 설명 텍스트 박스: 투명 배경, 최대 400px, 오른쪽 정렬 */
+.v3-desc-box {
+  max-width: 400px;
+  margin-left: auto;               /* 오른쪽으로 밀기 */
+  display: flex;
+  flex-direction: column;
+  gap: 0;                          /* summary ↔ detail 갭 없음 */
+  padding-top: 10px;
+}
+
+/* 설명 텍스트: 줄임 없이 전체 노출 */
+.v3-featured-text {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #4a3d2e;
+}
+.v3-featured-text p {
+  margin: 0 0 10px;
+}
+
+/* ===================================================================== */
+
 /* =========================
    10) Hidden attribute (JS 토글 안정화)
    ========================= */
 [hidden] { display: none !important; }
+
+/* 주석 십자가(†) 숨김 — display: inline으로 바꾸면 다시 표시됨 */
+.note-dagger { display: none; }
 
 /* =========================
    11) 주석 시스템 (하이브리드: 인라인 + 툴팁)
@@ -915,4 +1209,293 @@ body {
 
 .highlight-flash {
   animation: highlight-flash 2s ease;
+}
+
+/* =====================================================================
+   심화자료: 간체자 & 병음 / 평측 / 멀티미디어 / TTS / 배경그림
+   ===================================================================== */
+
+/* 루비문자: 간체자 + 병음/평측 */
+.ruby-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.ruby-line {
+  font-family: fangsong, 'LXGW WenKai Mono TC', 'Noto Serif TC', serif;
+  font-size: 20px;
+  letter-spacing: 6px;
+  line-height: 2.2;
+  color: #333;
+  text-align: center;
+}
+.ruby-line ruby {
+  ruby-align: center;
+}
+.ruby-line rt {
+  font-size: 11px;
+  font-style: italic;
+  color: #888;
+  font-family: Georgia, 'Noto Serif KR', serif;
+  letter-spacing: 0;
+}
+/* 평측 루비 — 平은 파랑, 仄은 빨강 */
+.ruby-grid.pingze .tone-ping rt { color: #1565c0; font-style: normal; font-weight: 600; }
+.ruby-grid.pingze .tone-ze rt { color: #c62828; font-style: normal; font-weight: 600; }
+.ruby-grid.pingze ruby { font-size: 20px; }
+
+/* TTS 재생 버튼 */
+.tts-player {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px dashed #ddd;
+}
+.tts-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px 12px;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  background: #fafafa;
+  cursor: pointer;
+  font-size: 12px;
+  color: #555;
+  transition: all 0.2s;
+}
+.tts-btn:hover {
+  background: #f0f0f0;
+  border-color: #999;
+}
+.tts-btn.playing {
+  background: #e8f5e9;
+  border-color: #4caf50;
+  color: #2e7d32;
+}
+.tts-icon {
+  font-size: 10px;
+}
+.tts-status {
+  font-size: 12px;
+  color: #888;
+  font-style: italic;
+}
+
+/* 시 본문 내 제목/시인 표시 */
+.poem-body-title {
+  text-align: center;
+  font-family: fangsong, 'LXGW WenKai Mono TC', 'Noto Serif TC', serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  letter-spacing: 2px;
+}
+.poem-body-poet {
+  text-align: right;
+  font-family: fangsong, 'LXGW WenKai Mono TC', 'Noto Serif TC', serif;
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #555;
+}
+.poem-body-text {
+  white-space: pre-wrap;
+}
+/* 한글해석 가운데 정렬 */
+.poem-translation {
+  text-align: center;
+}
+
+/* 병음 섹션 내 제목/시인 루비 */
+.ruby-title {
+  text-align: center;
+  font-family: fangsong, 'LXGW WenKai Mono TC', 'Noto Serif TC', serif;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 2px;
+  letter-spacing: 4px;
+  line-height: 2.2;
+}
+.ruby-poet {
+  text-align: right;
+  font-family: fangsong, 'LXGW WenKai Mono TC', 'Noto Serif TC', serif;
+  font-size: 18px;
+  margin-bottom: 10px;
+  letter-spacing: 4px;
+  line-height: 2.2;
+  color: #555;
+}
+.ruby-title rt, .ruby-poet rt {
+  font-size: 10px;
+  font-style: italic;
+  color: #888;
+  font-family: Georgia, 'Noto Serif KR', serif;
+  letter-spacing: 0;
+}
+
+/* TTS 라벨 */
+.tts-label {
+  font-size: 12px;
+  color: #888;
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px dashed #ddd;
+  margin-bottom: 2px;
+}
+
+/* 심화자료 2컬럼 레이아웃 */
+.deep-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+@media (max-width: 768px) {
+  .deep-two-col {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* YouTube 임베드 플레이어 */
+.yt-embed-wrap {
+  position: relative;
+  width: 100%;
+  margin-bottom: 8px;
+}
+.yt-embed-wrap:last-child {
+  margin-bottom: 0;
+}
+.yt-embed-wrap iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 8px;
+  border: none;
+}
+
+/* ── poem-hero: 배경그림 + 시 본문 (두루마리 컨셉) ── */
+.poem-hero{
+  position: relative;
+  background-size: cover;
+  background-position: bottom center;  /* 그림 하단=주제 부분이 보임 */
+  background-repeat: no-repeat;
+  min-height: 240px;
+  padding: 40px 32px 60px;
+}
+
+/* 하단 그라데이션 페이드 → 다음 섹션 색으로 자연스럽게 */
+.poem-hero::after{
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 80px;
+  background: linear-gradient(transparent, #f5f2ed);
+  pointer-events: none;
+}
+
+.poem-hero-text{
+  position: relative;
+  z-index: 1;
+  white-space: pre-line;
+  font-family: fangsong, 'LXGW WenKai Mono TC', 'Noto Serif TC', serif;
+  font-size: 18px;
+  line-height: 2.0;
+  color: #2a2520;
+  text-shadow: 0 0 16px rgba(255,255,255,0.9), 0 0 8px rgba(255,255,255,0.7);
+  text-align: center;
+}
+
+/* 배경 그림 위 주석 스타일 */
+.poem-hero .note-word{
+  color: #5a3e1b;
+  border-bottom-color: #c4a06a;
+}
+.poem-hero .note-word:hover{
+  color: #3a2510;
+  border-bottom-color: #a0805a;
+}
+.poem-hero .note-ref{
+  color: rgba(90,62,27,0.6);
+}
+
+/* 배경 위 제목/시인 */
+.poem-hero .poem-body-title{
+  font-size: 22px;
+  font-weight: 700;
+  color: #2a2520;
+  text-align: center;
+  margin-bottom: 4px;
+}
+.poem-hero .poem-body-poet{
+  font-size: 16px;
+  color: #5a4a3a;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+/* ── poem-hero-plain: 그림 없는 시 (종이색 배경) ── */
+.poem-hero-plain{
+  background: #faf8f5;
+  padding: 32px 32px 24px;
+}
+
+.poem-hero-plain .poem-hero-text{
+  text-align: left;
+  text-shadow: none;
+  padding-left: 8px;
+}
+
+.poem-hero-plain .poem-body-title{
+  font-size: 20px;
+  font-weight: 700;
+  color: #2a2520;
+  text-align: left;
+  margin-bottom: 4px;
+}
+.poem-hero-plain .poem-body-poet{
+  font-size: 15px;
+  color: #5a4a3a;
+  text-align: left;
+  margin-bottom: 12px;
+}
+
+/* ── 구형 스타일 호환 (관리툴용) ── */
+.poem-bg-wrap {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.poem-text-overlay {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  white-space: pre-line;
+  font-family: fangsong, 'LXGW WenKai Mono TC', 'Noto Serif TC', serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #fff;
+  max-width: 80%;
+  max-height: 85%;
+  overflow: auto;
+}
+.poem-text-overlay .note-word {
+  color: #ffd54f;
+  border-bottom-color: #ffd54f;
+}
+.poem-text-overlay .note-word:hover {
+  color: #ffecb3;
+  border-bottom-color: #ffecb3;
+}
+.poem-text-overlay .note-ref {
+  color: rgba(255,255,255,0.7);
+}
+.poem-text-overlay .poem-body-title {
+  color: #fff;
+}
+.poem-text-overlay .poem-body-poet {
+  color: rgba(255,255,255,0.85);
 }
