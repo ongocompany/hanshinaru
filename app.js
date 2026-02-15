@@ -1016,18 +1016,6 @@ function renderPoemSection(p) {
 
   const meta = [p.category, p.juan, p.meter ? `${p.meter}언` : ""].filter(Boolean).join(" · ");
 
-  // 시인 이름 파싱 (주석이 있을 수 있음)
-  const poetZh = p?.poet?.zh ?? "";
-  const poetParsed = parseTextWithNotes(poetZh, notes, titleId);
-
-  // 본문 파싱
-  let poemZh = parseTextWithNotes(p.poemZh || "", notes, titleId);
-
-  // 시인 이름에 주석이 있으면 본문 앞에 추가
-  if (poetZh && /\[\d+\]/.test(poetZh)) {
-    poemZh = poetParsed + "<br><br>" + poemZh;
-  }
-
   const jipZh  = parseTextWithNotes(p.jipyeongZh || "", notes, titleId);  // 집평도 주석 파싱
 
   const notesHTML = notes.length
@@ -1040,7 +1028,6 @@ function renderPoemSection(p) {
       `).join("")}</ul>`
     : `<div class="muted">주석 없음</div>`;
 
-  const trKo  = escapeHTML(p.translationKo || "");
   const jipKo = escapeHTML(p.jipyeongKo || "");
 
   // 심화자료 데이터
@@ -1069,11 +1056,10 @@ function renderPoemSection(p) {
     return ruby;
   }
 
-  // 본문 제목+시인 표시용 HTML (주석 포함)
-  const titleZhRaw = p?.title?.zh ?? "";
+  // 제목/시인 표시용 (한자+한글)
+  const titleKo = p?.title?.ko ?? "";
   const poetZhRaw = p?.poet?.zh ?? "";
-  const poemTitleDisplay = `<div class="poem-body-title">${parseTextWithNotes(titleZhRaw, notes, titleId)}</div>`;
-  const poemPoetDisplay = `<div class="poem-body-poet">${escapeHTML(poetZhRaw)}</div>`;
+  const poetZhClean = poetZhRaw.replace(/\[\d+\]/g, "").trim();  // 주석번호 제거
 
   // 병음 칸: 간체자 + 병음 루비문자
   let pinyinHTML = "";
@@ -1136,11 +1122,8 @@ function renderPoemSection(p) {
     pingzeHTML = `<div class="ruby-grid pingze">${pzRows}</div>`;
   }
 
-  // 배경그림 데이터 (없으면 랜덤 배경 없이 plain 모드)
-  const bgImage = p.bgImage || "";
-  const bgImageUrl = bgImage
-    ? `public/assets/poem-bg/${escapeHTML(bgImage)}`
-    : "";
+  // 번역문 (2컬럼용)
+  const trKoRaw = p.translationKo || "";
 
   // YouTube 임베드 플레이어
   function extractYoutubeId(url) {
@@ -1212,37 +1195,34 @@ function renderPoemSection(p) {
       </div>` : ""}`;
   }
 
-  // 배경 그림 유무에 따라 hero 영역 분기
-  const hasImage = !!p.bgImage;
-  const heroClass = hasImage ? 'poem-hero' : 'poem-hero-plain';
-
-  let heroStyle = '';
-  if (hasImage) {
-    heroStyle = `style="background-image:url('${bgImageUrl}')"`;
+  // 시 본문 2컬럼 (한자 | 한글) 구성
+  const poemZhLines = (p.poemZh || "").split("\n");
+  const trKoLines = trKoRaw.split("\n");
+  const maxLines = Math.max(poemZhLines.length, trKoLines.length);
+  let bilingualRows = "";
+  for (let i = 0; i < maxLines; i++) {
+    const zhLine = parseTextWithNotes(poemZhLines[i] || "", notes, titleId);
+    const koLine = escapeHTML(trKoLines[i] || "");
+    bilingualRows += `<div class="bl-row"><div class="bl-zh">${zhLine}</div><div class="bl-ko">${koLine}</div></div>`;
   }
 
   return `
     <section class="poem-sec" data-poem-sec="${escapeHTML(p.titleId)}">
-      <div class="poem-head-bar">
+      <button class="poem-head" type="button" aria-expanded="false">
         <div class="poem-head-line">
           <span class="poem-no">${escapeHTML(poemNoStr)}</span>
           <span class="poem-title">${titleFull}</span>
         </div>
         <div class="poem-head-meta">${escapeHTML(meta)}</div>
-      </div>
+      </button>
 
-      <div class="poem-body">
-        <div class="${heroClass}" ${heroStyle}>
-          <div class="poem-hero-text">
-            ${poemTitleDisplay}${poemPoetDisplay}${poemZh}
-          </div>
+      <div class="poem-body" hidden>
+        <div class="poem-text-box">
+          <div class="poem-title-zh">${parseTextWithNotes(titleFullRaw, notes, titleId)}</div>
+          ${titleKo ? `<div class="poem-title-ko">${escapeHTML(titleKo)}</div>` : ''}
+          <div class="poem-poet-zh">${parseTextWithNotes(poetZhRaw, notes, titleId)}</div>
+          <div class="poem-bilingual">${bilingualRows}</div>
         </div>
-
-        ${trKo ? `
-        <div class="poem-section-block poem-sec-translation">
-          <div class="poem-sec-label">번역</div>
-          <div class="poem-sec-text pre">${trKo}</div>
-        </div>` : ''}
 
         ${jipZh ? `
         <div class="poem-section-block poem-sec-commentary">
@@ -1272,6 +1252,33 @@ function renderPoemSection(p) {
 }
 
 function bindPoemSections(modalBody) {
+  // 작품 섹션 아코디언 (한 번에 하나만 펼침)
+  modalBody.addEventListener("click", (e) => {
+    const head = e.target.closest(".poem-head");
+    if (!head) return;
+
+    const sec = head.closest(".poem-sec");
+    const body = sec?.querySelector(".poem-body");
+    if (!sec || !body) return;
+
+    const expanded = head.getAttribute("aria-expanded") === "true";
+
+    // 다른 섹션 닫기
+    modalBody.querySelectorAll(".poem-sec").forEach(s => {
+      if (s !== sec) {
+        const h = s.querySelector(".poem-head");
+        const b = s.querySelector(".poem-body");
+        if (h) h.setAttribute("aria-expanded", "false");
+        if (b) b.hidden = true;
+        s.classList.remove("expanded");
+      }
+    });
+
+    head.setAttribute("aria-expanded", String(!expanded));
+    body.hidden = expanded;
+    sec.classList.toggle("expanded", !expanded);
+  });
+
   // TTS 재생 (이벤트 위임)
   modalBody.addEventListener("click", (e) => {
     const btn = e.target.closest(".tts-btn");

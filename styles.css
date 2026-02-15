@@ -766,12 +766,16 @@ body {
   margin-bottom: 16px;
 }
 
-/* 시 제목 헤더 바 (클릭 불필요, 표시용) */
-.poem-head-bar{
+/* 아코디언 헤더 (클릭해서 펼침) */
+.poem-head{
+  width: 100%;
+  text-align: left;
   background: #f0ebe4;
+  border: none;
   padding: 12px 16px;
-  border-bottom: 1px solid #e8e4df;
+  cursor: pointer;
 }
+.poem-head:hover{ background: #e8e3db; }
 
 .poem-head-line{
   display: flex;
@@ -803,7 +807,70 @@ body {
   gap: 0;
 }
 
-/* ── 섹션별 배경색 (두루마리: 위→아래 점점 진해짐) ── */
+/* ── 시 텍스트 박스 (책 레이아웃) ── */
+.poem-text-box{
+  background: #faf8f5;
+  padding: 28px 32px;
+  display: inline-flex;
+  flex-direction: column;
+  align-self: center;        /* 유동 폭: 시에 맞게 */
+  min-width: 60%;
+  max-width: 100%;
+}
+
+.poem-title-zh{
+  text-align: center;
+  font-family: fangsong, 'LXGW WenKai Mono TC', 'Noto Serif TC', serif;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 2px;
+}
+
+.poem-title-ko{
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 6px;
+}
+
+.poem-poet-zh{
+  text-align: right;
+  font-family: fangsong, 'LXGW WenKai Mono TC', 'Noto Serif TC', serif;
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+/* 2컬럼: 한자 | 한글 */
+.poem-bilingual{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.bl-row{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  line-height: 1.9;
+}
+
+.bl-zh{
+  font-family: fangsong, 'LXGW WenKai Mono TC', 'Noto Serif TC', serif;
+  font-size: 17px;
+  color: #222;
+  text-align: left;
+}
+
+.bl-ko{
+  font-size: 14px;
+  color: #555;
+  line-height: 1.9;
+  text-align: left;
+}
+
+/* ── 섹션별 배경색 (위→아래 점점 진해짐) ── */
 .poem-sec-label{
   font-size: 12px;
   font-weight: 600;
@@ -816,23 +883,17 @@ body {
   padding: 20px 24px;
 }
 
-.poem-sec-body{
-  background: #faf8f5;      /* 시 본문: 따뜻한 종이색 */
-}
-.poem-sec-translation{
-  background: #f5f2ed;      /* 번역: 약간 더 진한 종이 */
-}
 .poem-sec-commentary{
-  background: #f0ede7;      /* 집평: 더 진한 톤 */
+  background: #f0ede7;
 }
 .poem-sec-commentary-tr{
-  background: #ece8e1;      /* 집평 번역 */
+  background: #ece8e1;
 }
 .poem-sec-notes{
-  background: #e8e4dd;      /* 주석: 가장 진한 톤 */
+  background: #e8e4dd;
 }
 .poem-sec-advanced{
-  background: #e4e0d9;      /* 심화자료 */
+  background: #e4e0d9;
 }
 
 .poem-sec-text{
@@ -1154,26 +1215,21 @@ body {
    11) 주석 시스템 (하이브리드: 인라인 + 툴팁)
    ========================= */
 
-/* 주석 키워드 하이라이팅 */
+/* 주석 키워드 하이라이팅 (밑줄 없이 색상만) */
 .note-word {
-  color: #d35400;              /* 주황빛 강조 */
-  cursor: pointer;             /* 손가락 커서 */
-  border-bottom: 1px dotted #d35400;  /* 점선 밑줄 */
-  transition: color 0.2s ease, border-color 0.2s ease;
+  color: #d35400;
+  cursor: pointer;
+  border-bottom: none;
+  transition: color 0.2s ease;
 }
 
 .note-word:hover {
-  color: #e67e22;              /* 호버 시 밝은 주황 */
-  border-bottom-color: #e67e22;
+  color: #e67e22;
 }
 
-/* 윗첨자 번호 */
+/* 윗첨자 번호 — 숨김 (디지털에서 색인 불필요) */
 .note-ref {
-  font-size: 0.7em;            /* 70% 크기 */
-  vertical-align: super;       /* 윗첨자 위치 */
-  color: #999;                 /* 회색 */
-  margin-left: 1px;            /* 앞 글자와 간격 */
-  font-weight: normal;
+  display: none;
 }
 
 /* 주석 툴팁 */

@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>당시삼백수 - 데이터 관리툴</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="admin.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="https://unpkg.com/cropperjs@1.6.2/dist/cropper.min.css">
+</head>
+<body>
+
+  <!-- 상단 헤더 -->
+  <header class="admin-header">
+    <h1>당시삼백수 데이터 관리툴</h1>
+    <div class="header-status">
+      <a href="../tools/poetry_editor.html" target="_blank" class="btn btn-secondary" style="text-decoration:none; margin-right:8px; font-size:13px; padding:6px 12px;">한시 에디터</a>
+      <span id="load-status">로딩 중...</span>
+      <button id="btn-save" class="btn btn-save" disabled>저장</button>
+    </div>
+  </header>
+
+  <!-- 데이터 로드 상태 표시 -->
+  <div class="load-indicator" id="load-indicator">
+    <div class="load-item" id="load-author">
+      <span class="load-dot"></span>
+      <span>시인 데이터</span>
+      <span class="load-count" id="count-author">-</span>
+    </div>
+    <div class="load-item" id="load-poem">
+      <span class="load-dot"></span>
+      <span>시 데이터</span>
+      <span class="load-count" id="count-poem">-</span>
+    </div>
+    <div class="load-item" id="load-history">
+      <span class="load-dot"></span>
+      <span>역사 데이터</span>
+      <span class="load-count" id="count-history">-</span>
+    </div>
+  </div>
+
+  <!-- 탭 네비게이션 -->
+  <nav class="tab-nav">
+    <button class="tab-btn active" data-tab="author">시인관리</button>
+    <button class="tab-btn" data-tab="poem">시관리</button>
+    <button class="tab-btn" data-tab="history">역사관리</button>
+    <button class="tab-btn" data-tab="validator">데이터검증</button>
+  </nav>
+
+  <!-- 탭 패널들 -->
+  <main class="tab-panels">
+    <section class="tab-panel active" id="panel-author">
+      <!-- 검색 + 필터 바 -->
+      <div class="author-toolbar">
+        <input type="text" id="author-search" placeholder="시인 이름 검색 (한/중)..." class="author-search-input">
+        <div class="author-filters">
+          <div class="filter-group" id="era-filter">
+            <button class="filter-btn active" data-era="all">전체</button>
+            <button class="filter-btn" data-era="early">초당</button>
+            <button class="filter-btn" data-era="high">성당</button>
+            <button class="filter-btn" data-era="mid">중당</button>
+            <button class="filter-btn" data-era="late">만당</button>
+          </div>
+          <select id="author-sort" class="author-sort-select">
+            <option value="name-asc">이름 가나다순</option>
+            <option value="year-asc">연도순 (오래된순)</option>
+            <option value="poems-desc">작품수 많은순</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- 좌=목록, 우=편집 -->
+      <div class="author-split">
+        <!-- 좌측: 시인 목록 -->
+        <div class="author-list-pane">
+          <div class="author-list-scroll">
+            <table class="data-table" id="author-table">
+              <thead>
+                <tr>
+                  <th style="width:50px">ID</th>
+                  <th style="width:140px">이름</th>
+                  <th style="width:90px">생몰년</th>
+                  <th style="width:60px">시대</th>
+                  <th style="width:40px">작품</th>
+                  <th style="width:40px">출생지</th>
+                  <th style="width:40px">관계</th>
+                </tr>
+              </thead>
+              <tbody id="author-tbody"></tbody>
+            </table>
+          </div>
+          <div class="author-list-footer">
+            <span id="author-list-count">0명 표시</span>
+            <button class="btn btn-secondary" id="btn-add-author">+ 시인 추가</button>
+          </div>
+        </div>
+
+        <!-- 우측: 시인 편집 -->
+        <div class="author-edit-pane" id="author-edit-pane">
+          <div class="edit-placeholder" id="edit-placeholder">
+            좌측 목록에서 시인을 선택하세요
+          </div>
+          <div class="edit-form-wrap" id="edit-form-wrap" hidden>
+            <div class="edit-header">
+              <h3 id="edit-title">시인 편집</h3>
+              <div class="edit-actions">
+                <button class="btn btn-secondary" id="btn-revert-author">이 시인 되돌리기</button>
+                <button class="btn btn-discard" id="btn-delete-author">삭제</button>
+              </div>
+            </div>
+            <form id="author-form" autocomplete="off">
+              <!-- 초상화 관리 -->
+              <fieldset class="edit-section avatar-section">
+                <legend>초상화</legend>
+                <div class="avatar-row">
+                  <div class="avatar-preview-wrap">
+                    <img id="avatar-preview" class="avatar-preview" src="../public/assets/avatars/default-author.jpg" alt="초상화">
+                    <div id="avatar-status-badge" class="avatar-badge" hidden></div>
+                  </div>
+                  <div class="avatar-controls">
+                    <div class="avatar-search-row">
+                      <button type="button" class="btn btn-secondary" id="btn-avatar-google" title="Google 이미지 검색">Google 검색</button>
+                      <button type="button" class="btn btn-secondary" id="btn-avatar-baidu" title="Baidu 이미지 검색">Baidu 검색</button>
+                    </div>
+                    <div class="avatar-input-row">
+                      <input type="text" id="avatar-url-input" placeholder="이미지 URL 붙여넣기..." class="avatar-url-field">
+                      <button type="button" class="btn btn-secondary" id="btn-avatar-url">적용</button>
+                    </div>
+                    <div class="avatar-input-row">
+                      <label class="btn btn-secondary avatar-file-label">
+                        파일 선택
+                        <input type="file" id="avatar-file-input" accept="image/*" hidden>
+                      </label>
+                      <span class="avatar-hint">또는 Ctrl+V로 클립보드 이미지 붙여넣기</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- 크롭 영역 (이미지 로드 시 표시) -->
+                <div id="avatar-crop-area" class="avatar-crop-area" hidden>
+                  <div class="avatar-crop-container">
+                    <img id="avatar-crop-image">
+                  </div>
+                  <div class="avatar-crop-actions">
+                    <button type="button" class="btn btn-save" id="btn-avatar-crop-confirm">크롭 확인 (500×500 저장)</button>
+                    <button type="button" class="btn btn-secondary" id="btn-avatar-crop-cancel">취소</button>
+                  </div>
+                </div>
+              </fieldset>
+
+              <!-- 기본정보 -->
+              <fieldset class="edit-section">
+                <legend>기본정보</legend>
+                <div class="form-row">
+                  <label>ID</label>
+                  <input type="text" id="f-titleId" class="readonly-field" readonly>
+                </div>
+                <div class="form-row">
+                  <label>한자 이름 <span class="req">*</span></label>
+                  <input type="text" id="f-name-zh" class="required-field" data-field="name.zh">
+                </div>
+                <div class="form-row">
+                  <label>한글 이름</label>
+                  <input type="text" id="f-name-ko" data-field="name.ko">
+                </div>
+                <div class="form-row form-row-inline">
+                  <div>
+                    <label>출생</label>
+                    <input type="number" id="f-birth" data-field="life.birth" style="width:80px">
+                    <label class="check-label"><input type="checkbox" id="f-birthApprox" data-field="life.birthApprox"> 추정</label>
+                  </div>
+                  <div>
+                    <label>사망</label>
+                    <input type="number" id="f-death" data-field="life.death" style="width:80px">
+                    <label class="check-label"><input type="checkbox" id="f-deathApprox" data-field="life.deathApprox"> 추정</label>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <label>생몰년 원문</label>
+                  <input type="text" id="f-life-raw" data-field="life.raw">
+                </div>
+                <div class="form-row">
+                  <label class="check-label full-width">
+                    <input type="checkbox" id="f-isExtra" data-field="isExtra">
+                    당시삼백수 미등재 시인 (추가 시인)
+                  </label>
+                </div>
+              </fieldset>
+
+              <!-- 시대 분류 -->
+              <fieldset class="edit-section">
+                <legend>시대 분류</legend>
+                <div class="form-row">
+                  <label>시대</label>
+                  <div class="radio-group" id="f-era-period">
+                    <label><input type="radio" name="era-period" value="early" data-field="era.period"> 초당</label>
+                    <label><input type="radio" name="era-period" value="high" data-field="era.period"> 성당</label>
+                    <label><input type="radio" name="era-period" value="mid" data-field="era.period"> 중당</label>
+                    <label><input type="radio" name="era-period" value="late" data-field="era.period"> 만당</label>
+                  </div>
+                </div>
+                <div class="form-row form-row-inline">
+                  <div>
+                    <label>확신도</label>
+                    <select id="f-era-confidence" data-field="era.confidence">
+                      <option value="high">높음</option>
+                      <option value="medium">보통</option>
+                      <option value="low">낮음</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label>판단 근거</label>
+                    <select id="f-era-source" data-field="era.source">
+                      <option value="birth_year">출생년도</option>
+                      <option value="bio_era">전기 시대</option>
+                      <option value="bio_regnal_year">전기 연호</option>
+                      <option value="activity">활동시기</option>
+                      <option value="manual">수동 지정</option>
+                    </select>
+                  </div>
+                </div>
+              </fieldset>
+
+              <!-- 약전 -->
+              <fieldset class="edit-section">
+                <legend>약전 (bioKo)</legend>
+                <div class="form-row">
+                  <textarea id="f-bioKo" data-field="bioKo" rows="6"></textarea>
+                </div>
+              </fieldset>
+
+              <!-- 출생지 -->
+              <fieldset class="edit-section">
+                <legend>출생지</legend>
+                <div id="birthplace-wrap">
+                  <div id="birthplace-empty" class="bp-empty">
+                    출생지 정보 없음
+                    <button type="button" class="btn btn-secondary" id="btn-add-birthplace">+ 출생지 추가</button>
+                  </div>
+                  <div id="birthplace-form" hidden>
+                    <div class="form-row form-row-inline">
+                      <div>
+                        <label>출생지명 (한글)</label>
+                        <input type="text" id="f-bp-name" placeholder="예: 사천성 면주">
+                      </div>
+                      <div>
+                        <label>출생지명 (한자)</label>
+                        <input type="text" id="f-bp-nameZh" placeholder="예: 四川省 綿州">
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <label>장소 검색</label>
+                      <div class="geo-search-wrap">
+                        <input type="text" id="f-bp-search" placeholder="지명 입력 후 Enter (예: 四川省 綿州)">
+                        <div id="geo-results" class="geo-results" hidden></div>
+                      </div>
+                    </div>
+                    <div class="form-row form-row-inline">
+                      <div>
+                        <label>위도 (lat)</label>
+                        <input type="number" id="f-bp-lat" step="0.01" placeholder="31.46">
+                      </div>
+                      <div>
+                        <label>경도 (lng)</label>
+                        <input type="number" id="f-bp-lng" step="0.01" placeholder="104.68">
+                      </div>
+                    </div>
+                    <div id="bp-map" class="bp-map"></div>
+                    <div class="form-row" style="margin-top:8px; text-align:right">
+                      <button type="button" class="btn btn-discard" id="btn-del-birthplace" style="font-size:12px; padding:3px 10px">출생지 삭제</button>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+
+              <!-- 교유관계 -->
+              <fieldset class="edit-section">
+                <legend>교유관계 (<span id="f-rel-count">0</span>건)</legend>
+                <div id="relations-wrap">
+                  <table class="data-table rel-table" id="rel-table">
+                    <thead>
+                      <tr>
+                        <th style="width:30px">#</th>
+                        <th style="width:150px">대상</th>
+                        <th style="width:90px">유형</th>
+                        <th style="width:90px">라벨</th>
+                        <th>설명</th>
+                        <th style="width:40px"></th>
+                      </tr>
+                    </thead>
+                    <tbody id="rel-tbody"></tbody>
+                  </table>
+                  <div style="margin-top:8px; display:flex; gap:8px">
+                    <button type="button" class="btn btn-secondary" id="btn-add-rel">+ 관계 추가</button>
+                    <button type="button" class="btn btn-secondary" id="btn-add-ext-rel">+ 외부 인물</button>
+                  </div>
+                </div>
+              </fieldset>
+
+              <!-- 작품 목록 (읽기전용) -->
+              <fieldset class="edit-section">
+                <legend>등재 작품 (<span id="f-poem-count">0</span>편)</legend>
+                <div id="f-poem-list" class="poem-list-readonly"></div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="tab-panel" id="panel-poem">
+      <!-- 검색 + 필터 바 -->
+      <div class="poem-toolbar">
+        <input type="text" id="poem-search" placeholder="시 제목·시인 검색 (한/중)..." class="poem-search-input">
+        <div class="poem-filters">
+          <select id="poem-category-filter" class="poem-category-select">
+            <option value="all">전체</option>
+            <option value="五言古詩">5언고시</option>
+            <option value="七言古詩">7언고시</option>
+            <option value="五言律詩">5언율시</option>
+            <option value="七言律詩">7언율시</option>
+            <option value="五言絶句">5언절구</option>
+            <option value="七言絶句">7언절구</option>
+            <option value="五言樂府">5언악부</option>
+            <option value="七言樂府">7언악부</option>
+          </select>
+          <select id="poem-sort" class="poem-sort-select">
+            <option value="no-asc">번호순</option>
+            <option value="title-asc">제목순</option>
+            <option value="poet-asc">시인순</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- 좌=목록, 중=편집, 우=미리보기 (3컬럼) -->
+      <div class="poem-split">
+        <!-- 좌측: 시 목록 -->
+        <div class="poem-list-pane" id="poem-list-pane">
+          <div class="poem-list-scroll">
+            <table class="data-table" id="poem-table">
+              <thead>
+                <tr>
+                  <th style="width:50px">No</th>
+                  <th>제목</th>
+                  <th style="width:80px">시인</th>
+                </tr>
+              </thead>
+              <tbody id="poem-tbody"></tbody>
+            </table>
+          </div>
+          <div class="poem-list-footer">
+            <span id="poem-list-count">0편 표시</span>
+          </div>
+        </div>
+
+        <!-- 리사이즈 핸들 1 -->
+        <div class="resize-handle" id="resize-handle-1"></div>
+
+        <!-- 중간: 시 편집 -->
+        <div class="poem-edit-pane" id="poem-edit-pane">
+          <div class="edit-placeholder" id="poem-edit-placeholder">
+            좌측 목록에서 시를 선택하세요
+          </div>
+          <div class="edit-form-wrap" id="poem-edit-form-wrap" hidden>
+            <div class="edit-header">
+              <h3 id="poem-edit-title">시 편집</h3>
+              <div class="edit-actions">
+                <button class="btn btn-primary" id="btn-confirm-poem">이 시 확정</button>
+                <button class="btn btn-secondary" id="btn-revert-poem">이 시 되돌리기</button>
+              </div>
+            </div>
+            <form id="poem-form" autocomplete="off">
+              <!-- 기본정보 -->
+              <fieldset class="edit-section">
+                <legend>기본정보</legend>
+                <div class="form-row form-row-inline">
+                  <div>
+                    <label>No</label>
+                    <input type="text" id="pf-poemNoStr" class="readonly-field" readonly>
+                  </div>
+                  <div>
+                    <label>titleId</label>
+                    <input type="text" id="pf-titleId" class="readonly-field" readonly>
+                  </div>
+                  <div>
+                    <label>권</label>
+                    <input type="text" id="pf-juan" class="readonly-field" readonly>
+                  </div>
+                </div>
+                <div class="form-row form-row-inline">
+                  <div>
+                    <label>분류</label>
+                    <select id="pf-category" data-field="category">
+                      <option value="五言古詩">五言古詩</option>
+                      <option value="七言古詩">七言古詩</option>
+                      <option value="五言律詩">五言律詩</option>
+                      <option value="七言律詩">七言律詩</option>
+                      <option value="五言絶句">五言絶句</option>
+                      <option value="七言絶句">七言絶句</option>
+                      <option value="五言樂府">五言樂府</option>
+                      <option value="七言樂府">七言樂府</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label>Meter</label>
+                    <select id="pf-meter" data-field="meter">
+                      <option value="5">5언</option>
+                      <option value="7">7언</option>
+                    </select>
+                  </div>
+                </div>
+              </fieldset>
+
+              <!-- 제목 -->
+              <fieldset class="edit-section">
+                <legend>제목</legend>
+                <div class="form-row">
+                  <label>한자 제목 <span class="req">*</span></label>
+                  <input type="text" id="pf-title-zh" class="required-field" data-field="title.zh">
+                </div>
+                <div class="form-row">
+                  <label>한글 제목</label>
+                  <input type="text" id="pf-title-ko" data-field="title.ko">
+                </div>
+              </fieldset>
+
+              <!-- 시인 -->
+              <fieldset class="edit-section">
+                <legend>시인</legend>
+                <div class="form-row form-row-inline">
+                  <div>
+                    <label>시인 (한자)</label>
+                    <input type="text" id="pf-poet-zh" data-field="poet.zh">
+                  </div>
+                  <div>
+                    <label>시인 (한글)</label>
+                    <input type="text" id="pf-poet-ko" data-field="poet.ko">
+                  </div>
+                </div>
+              </fieldset>
+
+              <!-- 원문 -->
+              <fieldset class="edit-section">
+                <legend>원문 (poemZh)</legend>
+                <div class="form-row">
+                  <textarea id="pf-poemZh" data-field="poemZh" rows="8" class="poem-text-zh"></textarea>
+                </div>
+              </fieldset>
+
+              <!-- 번역 -->
+              <fieldset class="edit-section">
+                <legend>한국어 번역</legend>
+                <div class="form-row">
+                  <textarea id="pf-translationKo" data-field="translationKo" rows="8"></textarea>
+                </div>
+              </fieldset>
+
+              <!-- 집평 -->
+              <fieldset class="edit-section">
+                <legend>집평 (集評)</legend>
+                <div class="form-row">
+                  <label>집평 원문</label>
+                  <textarea id="pf-jipyeongZh" data-field="jipyeongZh" rows="4" class="poem-text-zh"></textarea>
+                </div>
+                <div class="form-row">
+                  <label>집평 번역</label>
+                  <textarea id="pf-jipyeongKo" data-field="jipyeongKo" rows="4"></textarea>
+                </div>
+              </fieldset>
+
+              <!-- 주석 -->
+              <fieldset class="edit-section">
+                <legend>주석 (<span id="pf-note-count">0</span>개)</legend>
+                <div id="pf-notes-list" class="notes-edit-list"></div>
+                <div style="margin-top:8px">
+                  <button type="button" class="btn btn-secondary" id="btn-add-note">+ 주석 추가</button>
+                </div>
+              </fieldset>
+
+              <!-- TTS 재생 -->
+              <fieldset class="edit-section">
+                <legend>TTS 재생</legend>
+                <div class="tts-player-row">
+                  <button type="button" class="btn btn-secondary tts-btn" id="btn-tts-normal">
+                    <span class="tts-icon">&#9654;</span> 정상속도
+                  </button>
+                  <button type="button" class="btn btn-secondary tts-btn" id="btn-tts-slow">
+                    <span class="tts-icon">&#9654;</span> 느리게(-35%)
+                  </button>
+                  <span class="tts-status" id="tts-status"></span>
+                </div>
+              </fieldset>
+
+              <!-- 간체자/병음/평측 자동 생성 -->
+              <fieldset class="edit-section">
+                <legend>간체자 &amp; 병음 &amp; 평측</legend>
+                <button type="button" class="btn btn-secondary" id="btn-gen-pinyin">자동 생성</button>
+                <span class="gen-status" id="gen-pinyin-status"></span>
+                <div class="form-group" style="margin-top:8px">
+                  <label>간체자 (poemSimp)</label>
+                  <textarea id="pf-poemSimp" data-field="poemSimp" rows="4" class="poem-text-zh"></textarea>
+                </div>
+                <div class="form-group">
+                  <label>병음 (pinyin)</label>
+                  <textarea id="pf-pinyin" data-field="pinyin" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                  <label>평측 (pingze) — 절구/율시만</label>
+                  <textarea id="pf-pingze" data-field="pingze" rows="4" class="poem-text-zh"></textarea>
+                </div>
+              </fieldset>
+
+              <!-- 유튜브 링크 -->
+              <fieldset class="edit-section">
+                <legend>유튜브 링크 (<span id="pf-yt-count">0</span>개)</legend>
+                <div id="pf-youtube-list" class="youtube-edit-list"></div>
+                <div style="margin-top:8px; display:flex; gap:8px">
+                  <button type="button" class="btn btn-secondary" id="btn-add-youtube">+ 링크 추가</button>
+                  <button type="button" class="btn btn-secondary" id="btn-search-youtube">YouTube 검색</button>
+                </div>
+              </fieldset>
+
+            </form>
+          </div>
+        </div>
+
+        <!-- 리사이즈 핸들 2 -->
+        <div class="resize-handle" id="resize-handle-2"></div>
+
+        <!-- 우측: 실시간 미리보기 -->
+        <div class="poem-preview-pane" id="poem-preview-pane">
+          <div class="preview-placeholder" id="preview-placeholder">
+            시를 선택하면 미리보기가 표시됩니다
+          </div>
+          <div class="preview-content" id="preview-content" hidden>
+            <!-- Sticky 툴바 영역 -->
+            <div class="preview-toolbar" id="preview-toolbar">
+              <!-- 에디터 툴바 -->
+              <div class="editor-toolbar">
+                <select id="ed-font" class="ed-select" title="글꼴">
+                  <option value="fangsong">仿宋 (fangsong)</option>
+                  <option value="'LXGW WenKai Mono TC'">隸書 (LXGW)</option>
+                  <option value="'Noto Serif KR'">명조 (KR)</option>
+                  <option value="'Noto Serif TC'">明體 (TC)</option>
+                  <option value="Georgia">Georgia</option>
+                </select>
+                <input type="number" id="ed-size" class="ed-num" value="18" min="10" max="60" title="글자 크기(px)">
+                <span class="ed-sep"></span>
+                <button type="button" class="ed-btn" id="ed-bold" title="굵게"><b>B</b></button>
+                <button type="button" class="ed-btn" id="ed-italic" title="기울임"><i>I</i></button>
+                <button type="button" class="ed-btn" id="ed-underline" title="밑줄"><u>U</u></button>
+                <span class="ed-sep"></span>
+                <button type="button" class="ed-btn" id="ed-align-left" title="좌측 정렬">&#9776;</button>
+                <button type="button" class="ed-btn" id="ed-align-center" title="중앙 정렬">&#9778;</button>
+                <button type="button" class="ed-btn" id="ed-align-right" title="우측 정렬">&#9782;</button>
+              </div>
+              <!-- 박스 컨트롤 -->
+              <div class="box-controls" id="box-controls">
+                <div class="bc-row">
+                  <label>배경색</label>
+                  <input type="color" id="bg-ctrl-color" value="#000000">
+                  <label>투명도</label>
+                  <input type="range" id="bg-ctrl-opacity" min="0" max="1" step="0.05" value="0.6">
+                  <span id="bg-ctrl-opacity-val">0.60</span>
+                </div>
+                <div class="bc-row">
+                  <label>라운드</label>
+                  <input type="range" id="bg-ctrl-radius" min="0" max="30" step="1" value="8">
+                  <span id="bg-ctrl-radius-val">8px</span>
+                  <label>간격</label>
+                  <input type="range" id="bg-ctrl-padding" min="4" max="40" step="1" value="16">
+                  <span id="bg-ctrl-padding-val">16px</span>
+                </div>
+                <div class="bc-row">
+                  <label>가로</label>
+                  <label class="radio-label"><input type="radio" name="bg-align-h" value="left" checked> 좌</label>
+                  <label class="radio-label"><input type="radio" name="bg-align-h" value="center"> 중</label>
+                  <label class="radio-label"><input type="radio" name="bg-align-h" value="right"> 우</label>
+                  <label style="margin-left:12px">세로</label>
+                  <label class="radio-label"><input type="radio" name="bg-align-v" value="top" checked> 위</label>
+                  <label class="radio-label"><input type="radio" name="bg-align-v" value="center"> 중</label>
+                  <label class="radio-label"><input type="radio" name="bg-align-v" value="bottom"> 아래</label>
+                </div>
+                <div class="bc-row bc-canvas-row">
+                  <label>캔버스 가로</label>
+                  <input type="range" id="bg-ctrl-width" min="200" max="1400" step="10" value="800">
+                  <span id="bg-ctrl-width-val">자동</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 배경 그림 관리 -->
+            <div class="preview-bg-section">
+              <div class="bg-image-section">
+                <div class="bg-thumb-wrap">
+                  <img id="pf-bg-thumb" class="bg-thumb" src="" alt="" hidden>
+                  <div id="pf-bg-empty" class="bg-empty-msg">그림 없음</div>
+                </div>
+                <div class="bg-actions">
+                  <input type="file" id="pf-bg-file" accept="image/*" hidden>
+                  <button type="button" class="btn btn-secondary btn-sm" id="btn-bg-upload">파일 선택</button>
+                  <button type="button" class="btn btn-secondary btn-sm" id="btn-bg-paste">URL 붙여넣기</button>
+                  <button type="button" class="btn btn-danger-sm" id="btn-bg-delete" hidden>삭제</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 실시간 미리보기 본문 -->
+            <div class="preview-body" id="preview-body">
+              <!-- JS가 실시간으로 채울 미리보기 -->
+            </div>
+
+            <!-- 하단 액션 버튼 -->
+            <div class="preview-actions">
+              <button type="button" class="btn btn-secondary" id="btn-bg-preview">모달 미리보기</button>
+              <button type="button" class="btn btn-primary" id="btn-preview-confirm">이 시 확정</button>
+              <button type="button" class="btn btn-secondary" id="btn-preview-revert">되돌리기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="tab-panel" id="panel-history">
+      <div class="panel-placeholder">역사 관리 (6단계에서 구현)</div>
+    </section>
+    <section class="tab-panel" id="panel-validator">
+      <div class="validator-header">
+        <h2>데이터 검증</h2>
+        <button class="btn btn-primary" id="btn-run-validate">검증 실행</button>
+      </div>
+      <div id="validator-empty" class="validator-empty">
+        "검증 실행" 버튼을 클릭하면 전체 데이터를 검사합니다.
+      </div>
+      <div id="validator-results" hidden>
+        <!-- 요약 -->
+        <div class="v-summary" id="v-summary"></div>
+        <!-- 결과 섹션들 -->
+        <div id="v-errors"></div>
+        <div id="v-warnings"></div>
+        <div id="v-infos"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 모달 미리보기 (최종 확인용) -->
+  <div class="modal-overlay" id="bg-preview-overlay" hidden>
+    <div class="poem-preview-modal">
+      <div class="bg-modal-header">
+        <h3>시 모달 미리보기</h3>
+        <button type="button" class="btn-close-modal" id="btn-bg-modal-close">&times;</button>
+      </div>
+      <div class="poem-preview-body" id="poem-preview-body">
+        <!-- JS가 채울 시 전체 미리보기 -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 변경사항 알림 바 -->
+  <div class="change-bar" id="change-bar" hidden>
+    <span id="change-count">0건 수정됨</span>
+    <button id="btn-save-bottom" class="btn btn-save">저장</button>
+    <button id="btn-discard" class="btn btn-discard">전체 되돌리기</button>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/cropperjs@1.6.2/dist/cropper.min.js"></script>
+  <script src="https://unpkg.com/pinyin-pro@3.26.0/dist/index.js"></script>
+  <script src="admin.js"></script>
+  <script src="author-manager.js"></script>
+  <script src="poem-manager.js"></script>
+  <script src="birthplace-editor.js"></script>
+  <script src="relation-editor.js"></script>
+  <script src="avatar-editor.js"></script>
+  <script src="validator.js"></script>
+</body>
+</html>
