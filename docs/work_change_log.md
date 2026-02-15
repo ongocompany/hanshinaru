@@ -1426,3 +1426,66 @@
   - 집평 번역(한글) 주석은 로직상 불가 → 형 합의하에 포기
   - 이체자 차이 6건(五岳/五嶽 등)은 데이터 이슈 → 추후 데이터 정제시 해결
   - GitHub Pages 소스 브랜치가 jin-practice-01로 설정됨 (main 아님) → 형 확인 후 유지 결정
+
+## [Task ID] 2026-02-16-claude-admin-poem-sort-history-tab
+
+### START
+- Time: 2026-02-16
+- Owner: Claude
+- Requester: JIN
+- Request Summary: 시관리 탭 소팅 개선 + 역사관리 탭 신규 구현
+- Why: 시대순 소팅 추가 요청 + 역사 데이터 편집 기능 필요
+
+### END
+- Time: 2026-02-16
+- Status: Done
+
+- Changed Files:
+  - `admin/index.html` — 시관리 소팅 드롭다운에 "시대순" 옵션 추가 + 역사관리 탭 전체 UI
+  - `admin/poem-manager.js:181-228` — getPoetAuthorMap() 헬퍼 + sortPoemList() 시대순/시인순(가나다)/제목순(가나다) 개선
+  - `admin/history-manager.js` — 신규 파일: 역사관리 모듈 전체 (목록/편집/추가/삭제/되돌리기)
+  - `admin/admin.css:1501-1612` — 역사관리 탭 스타일
+  - `admin/admin.js:110-113` — initHistoryManager() 호출 추가
+
+- 상세 변경내역:
+  1. **시관리 소팅**: 시대순(초→성→중→만, 출생연도순) 추가, 시인순→한글 가나다순, 제목순→한글 가나다순
+  2. **역사관리 탭**: 분기점(4개)/단일항목 서브탭, 검색, 시대별 소팅, 편집폼(제목ko/zh, 연도, 시대, 내용), 주석 읽기전용 표시
+  3. **분기점 삭제 방지**: MILESTONE_IDS에 속한 H001/H003/H005/H007은 삭제 불가
+
+## [Task ID] 2026-02-16-claude-ui-manager-tab
+
+### START
+- Time: 2026-02-16
+- Owner: Claude
+- Requester: JIN
+- Request Summary: 관리툴에 "UI관리" 탭 신규 구현 — 시대별 배경색, 시 모달 섹션 배경색, 폰트(캐릭터셋) 관리
+- Why: CSS 하드코딩된 색상/폰트를 관리툴에서 수정 가능하게 + fangsong 볼드 문제 해결 + adobe-fangsong-std 적용
+- Ref: `docs/FromJin/11.UI관리툴작업지시_민철에게.md`
+
+### END
+- Time: 2026-02-16
+- Status: Done
+
+- Changed Files (7개):
+  - `public/index/ui_settings.json` — **신규**: UI 설정 JSON (시대별 색상, 섹션 색상, 폰트 5세트)
+  - `admin/index.html:48-49` — "UI관리" 탭 버튼 + 탭 패널 HTML (4컬럼 시대색상, 섹션색상, 폰트설정, 미리보기)
+  - `admin/ui-manager.js` — **신규**: UI 관리 모듈 전체 (렌더링, 컬러피커, 폰트 드롭다운, 굵기 선택, 실시간 미리보기)
+  - `admin/admin.css:1614-1780` — UI관리 탭 스타일 (4컬럼 그리드, 컬러피커, 폰트카드, 미리보기)
+  - `admin/admin.js` — DATA/ORIGINAL/FILE_HANDLES에 uiSettings 추가, 로딩/저장/되돌리기/변경감지 연결
+  - `app.js:1925-1960` — applyUISettings() 함수: ui_settings.json → CSS 변수 주입
+  - `styles.css` — 하드코딩 색상/폰트 17곳을 var(--xxx, 기본값) 으로 전환
+
+- 상세 변경내역:
+  1. **시대별 타임라인 배경색**: 4컬럼 동시 비교 + 컬러피커/텍스트 입력 양방향 동기화
+  2. **시 모달 섹션 배경색**: 시본문, 집평(한자/한글), 주석, 심화자료, 작품리스트 6개 영역
+  3. **폰트 관리 5세트**: 한자제목, 한자본문, 한자시인명, 한글본문, 한글보조 — 각각 폰트/크기/굵기/색상 설정
+  4. **폰트 선택지**: Adobe 仿宋(Typekit), 시스템 仿宋, LXGW 霞鹜文楷, Noto明朝TC, Noto명조KR, Georgia
+  5. **굵기 선택**: 300~700 (5단계) — fangsong faux bold 문제 해결용
+  6. **저장 방식**: 기존 시인/시/역사 JSON과 동일 (File System Access API 또는 다운로드)
+  7. **CSS 변수 적용**: app.js에서 ui_settings.json 로딩 → document.documentElement.style에 CSS 변수 설정 → styles.css에서 var() fallback으로 참조
+
+- Notes:
+  - fangsong이 둥글둥글 보이는 원인: font-weight 600~700이 적용된 곳에서 브라우저 faux bold 발생
+  - Adobe Typekit (kitId: dje5vco)는 index.html에 이미 로딩되어 있으나, CSS에서 fangsong(시스템)을 쓰고 있어 미적용 상태였음
+  - ui_settings.json 기본값에서 adobe-fangsong-std로 변경해 놓음
+  - ui_settings.json이 없거나 로드 실패해도 CSS var() fallback으로 기존 화면 유지됨
