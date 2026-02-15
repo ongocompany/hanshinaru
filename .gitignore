@@ -23,6 +23,10 @@ npm-debug.log*
 .env
 .env.local
 
+# Notion 연동 (API 키 포함)
+scripts/notion-config.json
+scripts/notion-page-map.json
+
 # Node.js (나중에 필요할 수도)
 node_modules/
 dist/

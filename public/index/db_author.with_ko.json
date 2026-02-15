@@ -21,7 +21,27 @@
         "period": "mid",
         "confidence": "high",
         "source": "birth_year"
-      }
+      },
+      "birthplace": {
+        "name": "하북성 범양",
+        "nameZh": "河北省 范陽 (지금의 北京市 房山區)",
+        "lat": 39.73,
+        "lng": 116.14
+      },
+      "relations": [
+        {
+          "targetId": "C401",
+          "type": "student",
+          "label": "제자",
+          "desc": "한유의 권면으로 환속하여 시문을 배움 (퇴고의 일화)"
+        },
+        {
+          "targetId": "C346",
+          "type": "friend",
+          "label": "시우(詩友)",
+          "desc": "맹교와 함께 '교한도수(郊寒島瘦)'라 불리며 교유함"
+        }
+      ]
     },
     "C329": {
       "titleId": "C329",
@@ -42,7 +62,27 @@
         "period": "high",
         "confidence": "high",
         "source": "bio_era"
-      }
+      },
+      "birthplace": {
+        "name": "하북성 발해",
+        "nameZh": "河北省 渤海 (지금의 河北省 滄州市)",
+        "lat": 38.3,
+        "lng": 116.84
+      },
+      "relations": [
+        {
+          "targetId": "C375",
+          "type": "friend",
+          "label": "친구",
+          "desc": "이백, 두보와 함께 양원(梁園)에서 사냥하며 시를 지음"
+        },
+        {
+          "targetId": "C341",
+          "type": "friend",
+          "label": "친구",
+          "desc": "두보와 깊은 우정을 나누었으며, 안사의 난 때 서로의 안부를 걱정함"
+        }
+      ]
     },
     "C330": {
       "titleId": "C330",
@@ -63,14 +103,28 @@
         "period": "mid",
         "confidence": "high",
         "source": "bio_regnal_year"
-      }
+      },
+      "birthplace": {
+        "name": "강소성 소주",
+        "nameZh": "江蘇省 蘇州 (지금의 江蘇省 蘇州市)",
+        "lat": 31.3,
+        "lng": 120.58
+      },
+      "relations": [
+        {
+          "targetId": "C349",
+          "type": "recommend",
+          "label": "발탁",
+          "desc": "백거이의 시 재능을 알아보고 '장안의 쌀값이 비싸도 지내기 쉽겠다'고 칭찬 (낙양지귀)"
+        }
+      ]
     },
     "C331": {
       "titleId": "C331",
       "sourceUrl": "https://db.cyberseodang.or.kr/front/alphaList/BookMain.do?bnCode=jti_4c0103&titleId=C331&compare=false",
       "name": {
         "zh": "皎然",
-        "ko": ""
+        "ko": "교연"
       },
       "life": {
         "birth": null,
@@ -84,7 +138,29 @@
         "period": "mid",
         "confidence": "medium",
         "source": "regnal_year"
-      }
+      },
+      "birthplace": {
+        "name": "절강성 호주",
+        "nameZh": "浙江省 湖州 (지금의 浙江省 湖州市 長興縣)",
+        "lat": 31.02,
+        "lng": 119.91
+      },
+      "relations": [
+        {
+          "targetId": "EXT_lu_yu",
+          "targetName": "陸羽",
+          "targetNameKo": "육우",
+          "type": "friend",
+          "label": "다우(茶友)",
+          "desc": "다경(茶經)의 저자 육우와 깊은 교분을 나누며 차와 시를 논함"
+        },
+        {
+          "targetId": "C365",
+          "type": "friend",
+          "label": "친구",
+          "desc": "위응물과 시를 주고받으며 교유함"
+        }
+      ]
     },
     "C332": {
       "titleId": "C332",
@@ -105,7 +181,27 @@
         "period": "high",
         "confidence": "high",
         "source": "birth_20"
-      }
+      },
+      "birthplace": {
+        "name": "강소성 소주",
+        "nameZh": "江蘇省 蘇州 (지금의 江蘇省 蘇州市)",
+        "lat": 31.3,
+        "lng": 120.58
+      },
+      "relations": [
+        {
+          "targetId": "C359",
+          "type": "friend",
+          "label": "친구",
+          "desc": "왕유와 함께 전원시를 짓고 교유함"
+        },
+        {
+          "targetId": "C370",
+          "type": "friend",
+          "label": "친구",
+          "desc": "유장경과 교유함"
+        }
+      ]
     },
     "C333": {
       "titleId": "C333",
@@ -126,7 +222,21 @@
         "period": "high",
         "confidence": "high",
         "source": "birth_year"
-      }
+      },
+      "birthplace": {
+        "name": "감숙성 천수",
+        "nameZh": "甘肅省 天水 (지금의 甘肅省 秦安縣)",
+        "lat": 34.86,
+        "lng": 105.67
+      },
+      "relations": [
+        {
+          "targetId": "C401",
+          "type": "colleague",
+          "label": "동료",
+          "desc": "한유와 동시대에 활동하며 문학적 교류를 함"
+        }
+      ]
     },
     "C334": {
       "titleId": "C334",
@@ -147,7 +257,21 @@
         "period": "high",
         "confidence": "high",
         "source": "bio_regnal_year"
-      }
+      },
+      "birthplace": {
+        "name": "강서성 남창",
+        "nameZh": "江西省 南昌 (지금의 江西省 南昌市)",
+        "lat": 28.68,
+        "lng": 115.85
+      },
+      "relations": [
+        {
+          "targetId": "C359",
+          "type": "friend",
+          "label": "친구",
+          "desc": "왕유가 기무잠의 낙향을 배웅하며 시를 지어줌 (送綦毋潛落第還鄕)"
+        }
+      ]
     },
     "C335": {
       "titleId": "C335",
@@ -168,7 +292,14 @@
         "period": "high",
         "confidence": "high",
         "source": "regnal_year"
-      }
+      },
+      "birthplace": {
+        "name": "절강성 항주(추정)",
+        "nameZh": "浙江省 杭州 (지금의 浙江省 杭州市)",
+        "lat": 30.27,
+        "lng": 120.15
+      },
+      "relations": []
     },
     "C336": {
       "titleId": "C336",
@@ -189,7 +320,21 @@
         "period": "early",
         "confidence": "high",
         "source": "birth_year"
-      }
+      },
+      "birthplace": {
+        "name": "절강성 의오",
+        "nameZh": "浙江省 義烏 (지금의 浙江省 義烏市)",
+        "lat": 29.3,
+        "lng": 120.07
+      },
+      "relations": [
+        {
+          "targetId": "C358",
+          "type": "colleague",
+          "label": "초당4걸",
+          "desc": "왕발, 양형, 노조린과 함께 초당사걸(初唐四傑)로 불림"
+        }
+      ]
     },
     "C337": {
       "titleId": "C337",
@@ -210,7 +355,21 @@
         "period": "mid",
         "confidence": "high",
         "source": "bio_era"
-      }
+      },
+      "birthplace": {
+        "name": "산서성 영제",
+        "nameZh": "山西省 永濟 (지금의 山西省 永濟市)",
+        "lat": 34.86,
+        "lng": 110.44
+      },
+      "relations": [
+        {
+          "targetId": "C378",
+          "type": "colleague",
+          "label": "대력십재자",
+          "desc": "이익 등과 함께 대력십재자(大曆十才子)로 꼽힘"
+        }
+      ]
     },
     "C338": {
       "titleId": "C338",
@@ -231,7 +390,29 @@
         "period": "high",
         "confidence": "high",
         "source": "bio_regnal_year"
-      }
+      },
+      "birthplace": {
+        "name": "산서성 장안",
+        "nameZh": "陝西省 長安 (지금의 陝西省 西安市)",
+        "lat": 34.34,
+        "lng": 108.94
+      },
+      "relations": [
+        {
+          "targetId": "EXT_yang_guifei",
+          "targetName": "楊貴妃",
+          "targetNameKo": "양귀비",
+          "type": "friend",
+          "label": "총애",
+          "desc": "현종의 총애를 받은 귀비"
+        },
+        {
+          "targetId": "C375",
+          "type": "patron",
+          "label": "후원",
+          "desc": "이백을 한림공봉으로 임명"
+        }
+      ]
     },
     "C339": {
       "titleId": "C339",
@@ -252,7 +433,21 @@
         "period": "mid",
         "confidence": "high",
         "source": "bio_regnal_year"
-      }
+      },
+      "birthplace": {
+        "name": "강소성 금단",
+        "nameZh": "江蘇省 金壇 (지금의 江蘇省 常州市 金壇區)",
+        "lat": 31.74,
+        "lng": 119.57
+      },
+      "relations": [
+        {
+          "targetId": "C365",
+          "type": "friend",
+          "label": "친구",
+          "desc": "위응물과 시를 주고받으며 교유함"
+        }
+      ]
     },
     "C340": {
       "titleId": "C340",
@@ -273,7 +468,27 @@
         "period": "mid",
         "confidence": "high",
         "source": "birth_year"
-      }
+      },
+      "birthplace": {
+        "name": "산서성 장안",
+        "nameZh": "陝西省 長安 (지금의 陝西省 西安市)",
+        "lat": 34.34,
+        "lng": 108.94
+      },
+      "relations": [
+        {
+          "targetId": "C377",
+          "type": "rival",
+          "label": "소이두",
+          "desc": "이상은과 함께 만당의 대표 시인 '소이두(小李杜)'로 병칭됨"
+        },
+        {
+          "targetId": "C349",
+          "type": "respect",
+          "label": "존경",
+          "desc": "백거이를 존경하여 그의 묘지명을 씀"
+        }
+      ]
     },
     "C341": {
       "titleId": "C341",
@@ -302,7 +517,12 @@
         "lng": 112.98
       },
       "relations": [
-        { "targetId": "C375", "type": "friend", "label": "친구(벗)", "desc": "744년 낙양에서 만나 의기투합, '이두'로 병칭" }
+        {
+          "targetId": "C375",
+          "type": "friend",
+          "label": "친구(벗)",
+          "desc": "744년 낙양에서 만나 의기투합, '이두'로 병칭"
+        }
       ]
     },
     "C342": {
@@ -324,7 +544,23 @@
         "period": "late",
         "confidence": "high",
         "source": "birth_year"
-      }
+      },
+      "birthplace": {
+        "name": "안휘성 지주",
+        "nameZh": "安徽省 池州 (지금의 安徽省 池州市 石台縣)",
+        "lat": 30.2,
+        "lng": 117.48
+      },
+      "relations": [
+        {
+          "targetId": "EXT_zhu_wen",
+          "targetName": "朱溫",
+          "targetNameKo": "주전충",
+          "type": "patron",
+          "label": "후원",
+          "desc": "당말의 군벌 주전충의 후원을 받음"
+        }
+      ]
     },
     "C343": {
       "titleId": "C343",
@@ -345,7 +581,33 @@
         "period": "early",
         "confidence": "high",
         "source": "birth_year"
-      }
+      },
+      "birthplace": {
+        "name": "호북성 양양",
+        "nameZh": "湖北省 襄陽 (지금의 湖北省 襄陽市)",
+        "lat": 32.01,
+        "lng": 112.12
+      },
+      "relations": [
+        {
+          "targetId": "C341",
+          "type": "friend",
+          "label": "조손(祖孫)",
+          "desc": "두보의 친할아버지"
+        },
+        {
+          "targetId": "C354",
+          "type": "colleague",
+          "label": "동료",
+          "desc": "송지문과 함께 율시의 형식을 정립함"
+        },
+        {
+          "targetId": "C397",
+          "type": "colleague",
+          "label": "동료",
+          "desc": "심전기와 교유함"
+        }
+      ]
     },
     "C344": {
       "titleId": "C344",
@@ -366,7 +628,29 @@
         "period": "mid",
         "confidence": "medium",
         "source": "regnal_year"
-      }
+      },
+      "birthplace": {
+        "name": "강소성 진강",
+        "nameZh": "江蘇省 鎮江 (지금의 江蘇省 鎮江市)",
+        "lat": 32.2,
+        "lng": 119.45
+      },
+      "relations": [
+        {
+          "targetId": "C340",
+          "type": "friend",
+          "label": "시의 소재",
+          "desc": "두목이 그녀의 기구한 삶을 소재로 〈두추낭시(杜秋娘詩)〉를 지음"
+        },
+        {
+          "targetId": "EXT_xianzong",
+          "targetName": "唐憲宗",
+          "targetNameKo": "당 헌종",
+          "type": "patron",
+          "label": "총애",
+          "desc": "헌종의 후궁으로 총애를 받음"
+        }
+      ]
     },
     "C345": {
       "titleId": "C345",
@@ -387,7 +671,21 @@
         "period": "late",
         "confidence": "high",
         "source": "regnal_year"
-      }
+      },
+      "birthplace": {
+        "name": "강소성 동해",
+        "nameZh": "江蘇省 東海 (지금의 江蘇省 連雲港市 東海縣)",
+        "lat": 34.54,
+        "lng": 118.76
+      },
+      "relations": [
+        {
+          "targetId": "C328",
+          "type": "friend",
+          "label": "친구",
+          "desc": "가도와 시를 주고받으며 교유함"
+        }
+      ]
     },
     "C346": {
       "titleId": "C346",
@@ -408,7 +706,27 @@
         "period": "mid",
         "confidence": "high",
         "source": "bio_regnal_year"
-      }
+      },
+      "birthplace": {
+        "name": "절강성 호주",
+        "nameZh": "浙江省 湖州 (지금의 浙江省 湖州市 德清縣)",
+        "lat": 30.54,
+        "lng": 119.97
+      },
+      "relations": [
+        {
+          "targetId": "C401",
+          "type": "friend",
+          "label": "지기(知己)",
+          "desc": "한유와 깊은 우정을 나누며 '한맹(韓孟)'으로 병칭됨"
+        },
+        {
+          "targetId": "C328",
+          "type": "friend",
+          "label": "시우(詩友)",
+          "desc": "가도와 함께 고음(苦吟)하는 시풍을 공유함"
+        }
+      ]
     },
     "C347": {
       "titleId": "C347",
@@ -433,11 +751,16 @@
       "birthplace": {
         "name": "호북성 양양",
         "nameZh": "湖北省 襄陽縣",
-        "lat": 32.00,
+        "lat": 32,
         "lng": 112.14
       },
       "relations": [
-        { "targetId": "C375", "type": "admirer", "label": "존경받음", "desc": "이백이 〈贈孟浩然〉에서 '吾愛孟夫子'라고 읊음" }
+        {
+          "targetId": "C375",
+          "type": "admirer",
+          "label": "존경받음",
+          "desc": "이백이 〈贈孟浩然〉에서 '吾愛孟夫子'라고 읊음"
+        }
       ]
     },
     "C348": {
@@ -459,7 +782,21 @@
         "period": "high",
         "confidence": "high",
         "source": "related_person"
-      }
+      },
+      "birthplace": {
+        "name": "산서성 운성(하동)",
+        "nameZh": "山西省 運城 (河東 裴氏)",
+        "lat": 35.02,
+        "lng": 110.99
+      },
+      "relations": [
+        {
+          "targetId": "C359",
+          "type": "friend",
+          "label": "절친",
+          "desc": "왕유와 망천 별장에서 함께 지내며 시를 주고받음 (망천제영)"
+        }
+      ]
     },
     "C349": {
       "titleId": "C349",
@@ -480,7 +817,33 @@
         "period": "mid",
         "confidence": "high",
         "source": "birth_year"
-      }
+      },
+      "birthplace": {
+        "name": "하남성 신정",
+        "nameZh": "河南省 新鄭 (지금의 河南省 鄭州市 新鄭市)",
+        "lat": 34.39,
+        "lng": 113.73
+      },
+      "relations": [
+        {
+          "targetId": "C364",
+          "type": "friend",
+          "label": "절친",
+          "desc": "원진과 평생의 벗으로 '원백(元白)'이라 불림"
+        },
+        {
+          "targetId": "C369",
+          "type": "friend",
+          "label": "친구",
+          "desc": "유우석과 만년에 낙양에서 교유하며 '유백(劉白)'이라 불림"
+        },
+        {
+          "targetId": "C330",
+          "type": "teacher",
+          "label": "멘토",
+          "desc": "고황에게 시적 재능을 인정받음"
+        }
+      ]
     },
     "C350": {
       "titleId": "C350",
@@ -501,7 +864,27 @@
         "period": "mid",
         "confidence": "high",
         "source": "direct_era"
-      }
+      },
+      "birthplace": {
+        "name": "산서성 태원",
+        "nameZh": "山西省 太原 (지금의 山西省 太原市)",
+        "lat": 37.87,
+        "lng": 112.54
+      },
+      "relations": [
+        {
+          "targetId": "C337",
+          "type": "friend",
+          "label": "친구",
+          "desc": "노륜과 깊은 교분을 나누며 대력십재자로 함께 활동함"
+        },
+        {
+          "targetId": "C378",
+          "type": "colleague",
+          "label": "대력십재자",
+          "desc": "이익 등과 함께 대력 연간의 대표 시인으로 꼽힘"
+        }
+      ]
     },
     "C351": {
       "titleId": "C351",
@@ -522,7 +905,21 @@
         "period": "high",
         "confidence": "high",
         "source": "bio_regnal_year"
-      }
+      },
+      "birthplace": {
+        "name": "하남성 형양",
+        "nameZh": "河南省 滎陽 (지금의 河南省 鄭州市 滎陽市)",
+        "lat": 34.78,
+        "lng": 113.38
+      },
+      "relations": [
+        {
+          "targetId": "C361",
+          "type": "friend",
+          "label": "동기",
+          "desc": "왕창령과 같은 해(727년)에 진사에 급제하여 교유함"
+        }
+      ]
     },
     "C352": {
       "titleId": "C352",
@@ -543,7 +940,23 @@
         "period": "high",
         "confidence": "high",
         "source": "regnal_year"
-      }
+      },
+      "birthplace": {
+        "name": "(서쪽 변경)",
+        "nameZh": "西鄙 (출생지 미상)",
+        "lat": 36.05,
+        "lng": 103.79
+      },
+      "relations": [
+        {
+          "targetId": "EXT_geshu_han",
+          "targetName": "哥舒翰",
+          "targetNameKo": "가서한",
+          "type": "respect",
+          "label": "찬양",
+          "desc": "당나라 장군 가서한의 위엄을 노래한 민요(가서가)의 작자"
+        }
+      ]
     },
     "C353": {
       "titleId": "C353",
@@ -564,7 +977,21 @@
         "period": "late",
         "confidence": "high",
         "source": "regnal_year"
-      }
+      },
+      "birthplace": {
+        "name": "산서성 만영",
+        "nameZh": "山西省 萬榮 (지금의 山西省 運城市 萬榮縣)",
+        "lat": 35.41,
+        "lng": 110.83
+      },
+      "relations": [
+        {
+          "targetId": "C340",
+          "type": "friend",
+          "label": "친구",
+          "desc": "두목과 동시대에 활동하며 시를 주고받음"
+        }
+      ]
     },
     "C354": {
       "titleId": "C354",
@@ -585,7 +1012,29 @@
         "period": "early",
         "confidence": "high",
         "source": "direct_era"
-      }
+      },
+      "birthplace": {
+        "name": "산서성 분양",
+        "nameZh": "山西省 汾陽 (지금의 山西省 呂梁市 汾陽市)",
+        "lat": 37.26,
+        "lng": 111.78
+      },
+      "relations": [
+        {
+          "targetId": "C397",
+          "type": "colleague",
+          "label": "심송",
+          "desc": "심전기와 함께 '심송(沈宋)'으로 불리며 율시 형식을 완성함"
+        },
+        {
+          "targetId": "EXT_wu_zetian",
+          "targetName": "武則天",
+          "targetNameKo": "측천무후",
+          "type": "patron",
+          "label": "후원",
+          "desc": "측천무후의 총애를 받아 궁정 시인으로 활동함"
+        }
+      ]
     },
     "C355": {
       "titleId": "C355",
@@ -606,7 +1055,29 @@
         "period": "late",
         "confidence": "high",
         "source": "direct_era"
-      }
+      },
+      "birthplace": {
+        "name": "산서성 기현",
+        "nameZh": "山西省 祁縣 (지금의 山西省 晉中市 祁縣)",
+        "lat": 37.35,
+        "lng": 112.33
+      },
+      "relations": [
+        {
+          "targetId": "C377",
+          "type": "colleague",
+          "label": "온이",
+          "desc": "이상은과 함께 '온이(溫李)'로 병칭되며 화려한 시풍을 구사함"
+        },
+        {
+          "targetId": "EXT_yu_xuanji",
+          "targetName": "魚玄機",
+          "targetNameKo": "어현기",
+          "type": "student",
+          "label": "제자",
+          "desc": "여류 시인 어현기의 스승이자 문학적 동반자"
+        }
+      ]
     },
     "C356": {
       "titleId": "C356",
@@ -627,7 +1098,27 @@
         "period": "mid",
         "confidence": "high",
         "source": "direct_era"
-      }
+      },
+      "birthplace": {
+        "name": "하남성 허창",
+        "nameZh": "河南省 許昌 (지금의 河南省 許昌市)",
+        "lat": 34.03,
+        "lng": 113.85
+      },
+      "relations": [
+        {
+          "targetId": "C384",
+          "type": "friend",
+          "label": "장왕",
+          "desc": "장적과 함께 '장왕(張王)'으로 불리며 악부시를 잘 지음"
+        },
+        {
+          "targetId": "C401",
+          "type": "friend",
+          "label": "친구",
+          "desc": "한유의 문하에 출입하며 교유함"
+        }
+      ]
     },
     "C357": {
       "titleId": "C357",
@@ -648,7 +1139,23 @@
         "period": "high",
         "confidence": "high",
         "source": "bio_regnal_year"
-      }
+      },
+      "birthplace": {
+        "name": "하남성 낙양",
+        "nameZh": "河南省 洛陽 (지금의 河南省 洛陽市)",
+        "lat": 34.62,
+        "lng": 112.45
+      },
+      "relations": [
+        {
+          "targetId": "EXT_zhang_yue",
+          "targetName": "張說",
+          "targetNameKo": "장설",
+          "type": "patron",
+          "label": "인정",
+          "desc": "재상 장설이 왕만의 시 '해일생잔야'를 격찬하여 현판으로 걸게 함"
+        }
+      ]
     },
     "C358": {
       "titleId": "C358",
@@ -669,7 +1176,21 @@
         "period": "early",
         "confidence": "high",
         "source": "birth_year"
-      }
+      },
+      "birthplace": {
+        "name": "산서성 하진",
+        "nameZh": "山西省 河津 (지금의 山西省 運城市 河津市)",
+        "lat": 35.59,
+        "lng": 110.71
+      },
+      "relations": [
+        {
+          "targetId": "C336",
+          "type": "colleague",
+          "label": "초당4걸",
+          "desc": "낙빈왕, 양형, 노조린과 함께 초당사걸의 으뜸으로 꼽힘"
+        }
+      ]
     },
     "C359": {
       "titleId": "C359",
@@ -690,7 +1211,27 @@
         "period": "high",
         "confidence": "high",
         "source": "bio_era"
-      }
+      },
+      "birthplace": {
+        "name": "산서성 운성",
+        "nameZh": "山西省 運城 (河東 蒲州)",
+        "lat": 34.98,
+        "lng": 110.77
+      },
+      "relations": [
+        {
+          "targetId": "C348",
+          "type": "friend",
+          "label": "절친",
+          "desc": "망천 별장에서 배적과 함께 지내며 시를 주고받음 (망천제영)"
+        },
+        {
+          "targetId": "C347",
+          "type": "friend",
+          "label": "친구",
+          "desc": "맹호연과 깊은 우정을 나누며 그의 죽음을 애도함"
+        }
+      ]
     },
     "C360": {
       "titleId": "C360",
@@ -711,7 +1252,27 @@
         "period": "early",
         "confidence": "high",
         "source": "birth_year"
-      }
+      },
+      "birthplace": {
+        "name": "산서성 태원",
+        "nameZh": "山西省 太原 (지금의 山西省 太原市)",
+        "lat": 37.87,
+        "lng": 112.54
+      },
+      "relations": [
+        {
+          "targetId": "C361",
+          "type": "friend",
+          "label": "기정화벽",
+          "desc": "왕창령, 고적과 함께 술집에서 노래 대결을 펼침 (기정화벽)"
+        },
+        {
+          "targetId": "C329",
+          "type": "friend",
+          "label": "친구",
+          "desc": "고적과 교유함"
+        }
+      ]
     },
     "C361": {
       "titleId": "C361",
@@ -732,7 +1293,27 @@
         "period": "high",
         "confidence": "high",
         "source": "bio_era"
-      }
+      },
+      "birthplace": {
+        "name": "산서성 태원",
+        "nameZh": "山西省 太原 (지금의 山西省 太原市)",
+        "lat": 37.87,
+        "lng": 112.54
+      },
+      "relations": [
+        {
+          "targetId": "C375",
+          "type": "friend",
+          "label": "친구",
+          "desc": "이백이 왕창령의 좌천을 안타까워하며 시를 보냄 (聞王昌齡左遷龍標遙有此寄)"
+        },
+        {
+          "targetId": "C360",
+          "type": "friend",
+          "label": "기정화벽",
+          "desc": "왕지환, 고적과 함께 시명을 겨룸"
+        }
+      ]
     },
     "C362": {
       "titleId": "C362",
@@ -753,7 +1334,23 @@
         "period": "high",
         "confidence": "medium",
         "source": "direct_era"
-      }
+      },
+      "birthplace": {
+        "name": "산서성 태원",
+        "nameZh": "山西省 太原 (지금의 山西省 太原市)",
+        "lat": 37.87,
+        "lng": 112.54
+      },
+      "relations": [
+        {
+          "targetId": "EXT_zhang_shuo",
+          "targetName": "張說",
+          "targetNameKo": "장설",
+          "type": "patron",
+          "label": "후원",
+          "desc": "재상 장설의 지우를 입어 발탁됨"
+        }
+      ]
     },
     "C363": {
       "titleId": "C363",
@@ -774,7 +1371,21 @@
         "period": "high",
         "confidence": "high",
         "source": "birth_year"
-      }
+      },
+      "birthplace": {
+        "name": "하남성 노산",
+        "nameZh": "河南省 魯山 (지금의 河南省 平頂山市 魯山縣)",
+        "lat": 33.83,
+        "lng": 112.9
+      },
+      "relations": [
+        {
+          "targetId": "C341",
+          "type": "friend",
+          "label": "친구",
+          "desc": "두보와 교유하며 시를 주고받음"
+        }
+      ]
     },
     "C364": {
       "titleId": "C364",
@@ -795,7 +1406,29 @@
         "period": "mid",
         "confidence": "high",
         "source": "birth_year"
-      }
+      },
+      "birthplace": {
+        "name": "하남성 낙양",
+        "nameZh": "河南省 洛陽 (지금의 河南省 洛陽市)",
+        "lat": 34.62,
+        "lng": 112.45
+      },
+      "relations": [
+        {
+          "targetId": "C349",
+          "type": "friend",
+          "label": "절친",
+          "desc": "백거이와 평생의 벗으로 '원백(元白)'이라 불림"
+        },
+        {
+          "targetId": "EXT_xue_tao",
+          "targetName": "薛濤",
+          "targetNameKo": "설도",
+          "type": "friend",
+          "label": "연인/친구",
+          "desc": "여류 시인 설도와 시를 주고받으며 깊은 정을 나눔"
+        }
+      ]
     },
     "C365": {
       "titleId": "C365",
@@ -816,7 +1449,21 @@
         "period": "mid",
         "confidence": "high",
         "source": "bio_era"
-      }
+      },
+      "birthplace": {
+        "name": "산서성 장안",
+        "nameZh": "陝西省 長安 (지금의 陝西省 西安市)",
+        "lat": 34.34,
+        "lng": 108.94
+      },
+      "relations": [
+        {
+          "targetId": "C331",
+          "type": "friend",
+          "label": "친구",
+          "desc": "승려 교연과 시를 주고받으며 교유함"
+        }
+      ]
     },
     "C366": {
       "titleId": "C366",
@@ -837,7 +1484,23 @@
         "period": "late",
         "confidence": "high",
         "source": "birth_year"
-      }
+      },
+      "birthplace": {
+        "name": "산서성 장안",
+        "nameZh": "陝西省 長安 (지금의 陝西省 西安市)",
+        "lat": 34.34,
+        "lng": 108.94
+      },
+      "relations": [
+        {
+          "targetId": "EXT_wang_jian",
+          "targetName": "王建",
+          "targetNameKo": "왕건(전촉)",
+          "type": "patron",
+          "label": "주군",
+          "desc": "전촉(前蜀)의 황제 왕건을 보좌하여 재상이 됨"
+        }
+      ]
     },
     "C367": {
       "titleId": "C367",
@@ -858,7 +1521,21 @@
         "period": "high",
         "confidence": "high",
         "source": "regnal_year"
-      }
+      },
+      "birthplace": {
+        "name": "하남성 낙양",
+        "nameZh": "河南省 洛陽 (지금의 河南省 洛陽市)",
+        "lat": 34.62,
+        "lng": 112.45
+      },
+      "relations": [
+        {
+          "targetId": "C403",
+          "type": "friend",
+          "label": "친구",
+          "desc": "황보염과 교유함"
+        }
+      ]
     },
     "C368": {
       "titleId": "C368",
@@ -879,7 +1556,21 @@
         "period": "high",
         "confidence": "high",
         "source": "direct_era"
-      }
+      },
+      "birthplace": {
+        "name": "강서성 신간",
+        "nameZh": "江西省 新干 (지금의 江西省 吉安市 新干縣)",
+        "lat": 27.76,
+        "lng": 115.35
+      },
+      "relations": [
+        {
+          "targetId": "C347",
+          "type": "friend",
+          "label": "친구",
+          "desc": "맹호연과 교유함"
+        }
+      ]
     },
     "C369": {
       "titleId": "C369",
@@ -900,7 +1591,27 @@
         "period": "mid",
         "confidence": "high",
         "source": "birth_year"
-      }
+      },
+      "birthplace": {
+        "name": "절강성 가흥",
+        "nameZh": "浙江省 嘉興 (지금의 浙江省 嘉興市)",
+        "lat": 30.75,
+        "lng": 120.75
+      },
+      "relations": [
+        {
+          "targetId": "C349",
+          "type": "friend",
+          "label": "친구",
+          "desc": "백거이와 함께 '유백(劉白)'으로 불리며 만년을 함께함"
+        },
+        {
+          "targetId": "C371",
+          "type": "friend",
+          "label": "절친",
+          "desc": "유종원과 정치적 동지이자 문학적 벗으로 깊이 교류함"
+        }
+      ]
     },
     "C370": {
       "titleId": "C370",
@@ -921,7 +1632,21 @@
         "period": "mid",
         "confidence": "high",
         "source": "bio_era"
-      }
+      },
+      "birthplace": {
+        "name": "하북성 하간",
+        "nameZh": "河北省 河間 (지금의 河北省 滄州市)",
+        "lat": 38.3,
+        "lng": 116.84
+      },
+      "relations": [
+        {
+          "targetId": "C332",
+          "type": "friend",
+          "label": "친구",
+          "desc": "구위와 교유하며 시를 주고받음"
+        }
+      ]
     },
     "C371": {
       "titleId": "C371",
@@ -942,7 +1667,27 @@
         "period": "mid",
         "confidence": "high",
         "source": "birth_year"
-      }
+      },
+      "birthplace": {
+        "name": "산서성 영제",
+        "nameZh": "山西省 永濟 (지금의 山西省 運城市 永濟市)",
+        "lat": 34.86,
+        "lng": 110.44
+      },
+      "relations": [
+        {
+          "targetId": "C369",
+          "type": "friend",
+          "label": "절친",
+          "desc": "유우석과 평생의 동지로 '유류(劉柳)'라 불림"
+        },
+        {
+          "targetId": "C401",
+          "type": "friend",
+          "label": "동지",
+          "desc": "한유와 함께 고문 운동을 주도함"
+        }
+      ]
     },
     "C372": {
       "titleId": "C372",
@@ -963,7 +1708,21 @@
         "period": "mid",
         "confidence": "high",
         "source": "regnal_year"
-      }
+      },
+      "birthplace": {
+        "name": "산서성 영제(추정)",
+        "nameZh": "山西省 永濟 (河東 柳氏)",
+        "lat": 34.86,
+        "lng": 110.44
+      },
+      "relations": [
+        {
+          "targetId": "C373",
+          "type": "friend",
+          "label": "친구",
+          "desc": "이기와 동시대에 활동하며 교유함"
+        }
+      ]
     },
     "C373": {
       "titleId": "C373",
@@ -984,7 +1743,27 @@
         "period": "high",
         "confidence": "high",
         "source": "bio_era"
-      }
+      },
+      "birthplace": {
+        "name": "하북성 조현",
+        "nameZh": "河北省 趙縣 (지금의 河北省 石家莊市 趙縣)",
+        "lat": 37.75,
+        "lng": 114.77
+      },
+      "relations": [
+        {
+          "targetId": "C359",
+          "type": "friend",
+          "label": "친구",
+          "desc": "왕유와 교유함"
+        },
+        {
+          "targetId": "C329",
+          "type": "friend",
+          "label": "친구",
+          "desc": "고적과 함께 변새시를 지음"
+        }
+      ]
     },
     "C374": {
       "titleId": "C374",
@@ -1005,7 +1784,21 @@
         "period": "mid",
         "confidence": "high",
         "source": "direct_era"
-      }
+      },
+      "birthplace": {
+        "name": "하북성 조현",
+        "nameZh": "河北省 趙縣 (지금의 河北省 石家莊市 趙縣)",
+        "lat": 37.75,
+        "lng": 114.77
+      },
+      "relations": [
+        {
+          "targetId": "C378",
+          "type": "colleague",
+          "label": "대력십재자",
+          "desc": "이익 등과 함께 대력십재자로 활동함"
+        }
+      ]
     },
     "C375": {
       "titleId": "C375",
@@ -1034,9 +1827,24 @@
         "lng": 104.73
       },
       "relations": [
-        { "targetId": "C341", "type": "friend", "label": "친구(벗)", "desc": "두보와 이백은 744년 낙양에서 만나 의기투합" },
-        { "targetId": "C347", "type": "respect", "label": "존경", "desc": "〈贈孟浩然〉에서 '吾愛孟夫子 風流天下聞'이라 읊음" },
-        { "targetId": "C398", "type": "patron", "label": "추천받음", "desc": "하지장이 '謫仙人'이라 감탄하며 현종에게 천거" }
+        {
+          "targetId": "C341",
+          "type": "friend",
+          "label": "친구(벗)",
+          "desc": "두보와 이백은 744년 낙양에서 만나 의기투합"
+        },
+        {
+          "targetId": "C347",
+          "type": "respect",
+          "label": "존경",
+          "desc": "〈贈孟浩然〉에서 '吾愛孟夫子 風流天下聞'이라 읊음"
+        },
+        {
+          "targetId": "C398",
+          "type": "patron",
+          "label": "추천받음",
+          "desc": "하지장이 '謫仙人'이라 감탄하며 현종에게 천거"
+        }
       ]
     },
     "C376": {
@@ -1058,7 +1866,23 @@
         "period": "late",
         "confidence": "high",
         "source": "regnal_year"
-      }
+      },
+      "birthplace": {
+        "name": "복건성 남평",
+        "nameZh": "福建省 南平 (지금의 福建省 南平市)",
+        "lat": 26.64,
+        "lng": 118.17
+      },
+      "relations": [
+        {
+          "targetId": "EXT_yao_he",
+          "targetName": "姚合",
+          "targetNameKo": "요합",
+          "type": "friend",
+          "label": "친구",
+          "desc": "시인 요합과 교유함"
+        }
+      ]
     },
     "C377": {
       "titleId": "C377",
@@ -1079,7 +1903,35 @@
         "period": "late",
         "confidence": "high",
         "source": "bio_era"
-      }
+      },
+      "birthplace": {
+        "name": "하남성 심양",
+        "nameZh": "河南省 沁陽 (지금의 河南省 焦作市 沁陽市)",
+        "lat": 35.08,
+        "lng": 112.94
+      },
+      "relations": [
+        {
+          "targetId": "C340",
+          "type": "rival",
+          "label": "소이두",
+          "desc": "두목과 함께 만당의 대표 시인으로 병칭됨"
+        },
+        {
+          "targetId": "C355",
+          "type": "colleague",
+          "label": "온이",
+          "desc": "온정균과 함께 유미주의적 시풍을 공유함"
+        },
+        {
+          "targetId": "EXT_linghu_chu",
+          "targetName": "令狐楚",
+          "targetNameKo": "영호초",
+          "type": "patron",
+          "label": "후원",
+          "desc": "영호초의 후원을 받아 관직에 나아감"
+        }
+      ]
     },
     "C378": {
       "titleId": "C378",
@@ -1100,7 +1952,21 @@
         "period": "mid",
         "confidence": "high",
         "source": "bio_regnal_year"
-      }
+      },
+      "birthplace": {
+        "name": "감숙성 무위",
+        "nameZh": "甘肅省 武威 (지금의 甘肅省 武威市)",
+        "lat": 37.92,
+        "lng": 102.63
+      },
+      "relations": [
+        {
+          "targetId": "C337",
+          "type": "colleague",
+          "label": "대력십재자",
+          "desc": "노륜과 함께 대력십재자로 꼽힘"
+        }
+      ]
     },
     "C379": {
       "titleId": "C379",
@@ -1121,7 +1987,27 @@
         "period": "high",
         "confidence": "high",
         "source": "birth_year"
-      }
+      },
+      "birthplace": {
+        "name": "하남성 남양",
+        "nameZh": "河南省 南陽 (지금의 河南省 南陽市)",
+        "lat": 32.99,
+        "lng": 112.52
+      },
+      "relations": [
+        {
+          "targetId": "C341",
+          "type": "friend",
+          "label": "친구",
+          "desc": "두보와 교유하며 시를 주고받음"
+        },
+        {
+          "targetId": "C329",
+          "type": "friend",
+          "label": "친구",
+          "desc": "고적과 함께 당나라 변새시의 양대 산맥"
+        }
+      ]
     },
     "C380": {
       "titleId": "C380",
@@ -1142,7 +2028,21 @@
         "period": "mid",
         "confidence": "high",
         "source": "direct_era"
-      }
+      },
+      "birthplace": {
+        "name": "호북성 양양",
+        "nameZh": "湖北省 襄陽 (지금의 湖北省 襄陽市)",
+        "lat": 32.01,
+        "lng": 112.12
+      },
+      "relations": [
+        {
+          "targetId": "C367",
+          "type": "friend",
+          "label": "친구",
+          "desc": "유방평과 교유함"
+        }
+      ]
     },
     "C381": {
       "titleId": "C381",
@@ -1163,7 +2063,14 @@
         "period": "late",
         "confidence": "high",
         "source": "regnal_year"
-      }
+      },
+      "birthplace": {
+        "name": "안휘성 지주",
+        "nameZh": "安徽省 池州 (지금의 安徽省 池州市)",
+        "lat": 30.66,
+        "lng": 117.49
+      },
+      "relations": []
     },
     "C382": {
       "titleId": "C382",
@@ -1184,7 +2091,27 @@
         "period": "high",
         "confidence": "high",
         "source": "bio_regnal_year"
-      }
+      },
+      "birthplace": {
+        "name": "광동성 소관",
+        "nameZh": "廣東省 韶關 (지금의 廣東省 韶關市 曲江區)",
+        "lat": 24.81,
+        "lng": 113.59
+      },
+      "relations": [
+        {
+          "targetId": "C359",
+          "type": "patron",
+          "label": "후원",
+          "desc": "왕유를 발탁하여 우습유로 천거함"
+        },
+        {
+          "targetId": "C347",
+          "type": "patron",
+          "label": "후원",
+          "desc": "맹호연과 교유하며 그를 후원함"
+        }
+      ]
     },
     "C383": {
       "titleId": "C383",
@@ -1205,7 +2132,21 @@
         "period": "high",
         "confidence": "high",
         "source": "related_person"
-      }
+      },
+      "birthplace": {
+        "name": "강소성 소주",
+        "nameZh": "江蘇省 蘇州 (지금의 江蘇省 蘇州市)",
+        "lat": 31.3,
+        "lng": 120.58
+      },
+      "relations": [
+        {
+          "targetId": "C375",
+          "type": "friend",
+          "label": "주중팔선",
+          "desc": "이백, 하지장 등과 함께 술을 즐기며 '주중팔선'으로 불림"
+        }
+      ]
     },
     "C384": {
       "titleId": "C384",
@@ -1226,7 +2167,27 @@
         "period": "mid",
         "confidence": "high",
         "source": "birth_year"
-      }
+      },
+      "birthplace": {
+        "name": "안휘성 화주",
+        "nameZh": "安徽省 和州 (지금의 安徽省 馬鞍山市 和縣)",
+        "lat": 31.7,
+        "lng": 118.35
+      },
+      "relations": [
+        {
+          "targetId": "C401",
+          "type": "student",
+          "label": "제자",
+          "desc": "한유의 문하에서 수학하며 그를 따름"
+        },
+        {
+          "targetId": "C356",
+          "type": "friend",
+          "label": "장왕",
+          "desc": "왕건과 함께 악부시에 능하여 '장왕(張王)'으로 병칭됨"
+        }
+      ]
     },
     "C385": {
       "titleId": "C385",
@@ -1247,7 +2208,14 @@
         "period": "late",
         "confidence": "high",
         "source": "direct_era"
-      }
+      },
+      "birthplace": {
+        "name": "안휘성 회남(추정)",
+        "nameZh": "安徽省 淮南 (지금의 安徽省 淮南市)",
+        "lat": 32.63,
+        "lng": 116.99
+      },
+      "relations": []
     },
     "C386": {
       "titleId": "C386",
@@ -1268,7 +2236,29 @@
         "period": "mid",
         "confidence": "medium",
         "source": "direct_era"
-      }
+      },
+      "birthplace": {
+        "name": "하북성 청하",
+        "nameZh": "河北省 清河 (지금의 河北省 邢臺市 清河縣)",
+        "lat": 37.05,
+        "lng": 115.66
+      },
+      "relations": [
+        {
+          "targetId": "C340",
+          "type": "friend",
+          "label": "친구",
+          "desc": "두목과 시를 주고받으며 교유함"
+        },
+        {
+          "targetId": "EXT_linghu_chu",
+          "targetName": "令狐楚",
+          "targetNameKo": "영호초",
+          "type": "patron",
+          "label": "후원",
+          "desc": "절도사 영호초의 막료로 활동하며 후원을 받음"
+        }
+      ]
     },
     "C387": {
       "titleId": "C387",
@@ -1289,7 +2279,27 @@
         "period": "mid",
         "confidence": "high",
         "source": "bio_era"
-      }
+      },
+      "birthplace": {
+        "name": "절강성 호주",
+        "nameZh": "浙江省 湖州 (지금의 浙江省 湖州市)",
+        "lat": 30.89,
+        "lng": 120.08
+      },
+      "relations": [
+        {
+          "targetId": "C337",
+          "type": "colleague",
+          "label": "대력십재자",
+          "desc": "노륜 등과 함께 대력십재자로 꼽힘"
+        },
+        {
+          "targetId": "C359",
+          "type": "friend",
+          "label": "친구",
+          "desc": "왕유와 시를 주고받으며 교유함"
+        }
+      ]
     },
     "C388": {
       "titleId": "C388",
@@ -1310,7 +2320,23 @@
         "period": "mid",
         "confidence": "high",
         "source": "birth_year"
-      }
+      },
+      "birthplace": {
+        "name": "하남성 형양",
+        "nameZh": "河南省 滎陽 (지금의 河南省 鄭州市 滎陽市)",
+        "lat": 34.78,
+        "lng": 113.38
+      },
+      "relations": [
+        {
+          "targetId": "EXT_xizong",
+          "targetName": "唐僖宗",
+          "targetNameKo": "당 희종",
+          "type": "patron",
+          "label": "주군",
+          "desc": "황소의 난 때 희종을 보좌하여 난을 평정하는 데 기여함"
+        }
+      ]
     },
     "C389": {
       "titleId": "C389",
@@ -1331,7 +2357,21 @@
         "period": "high",
         "confidence": "high",
         "source": "bio_regnal_year"
-      }
+      },
+      "birthplace": {
+        "name": "하남성 낙양",
+        "nameZh": "河南省 洛陽 (지금의 河南省 洛陽市)",
+        "lat": 34.62,
+        "lng": 112.45
+      },
+      "relations": [
+        {
+          "targetId": "C359",
+          "type": "friend",
+          "label": "친구",
+          "desc": "왕유와 시를 주고받으며 교유함"
+        }
+      ]
     },
     "C390": {
       "titleId": "C390",
@@ -1352,7 +2392,21 @@
         "period": "mid",
         "confidence": "high",
         "source": "regnal_year"
-      }
+      },
+      "birthplace": {
+        "name": "절강성 소흥",
+        "nameZh": "浙江省 紹興 (지금의 浙江省 紹興市)",
+        "lat": 30,
+        "lng": 120.58
+      },
+      "relations": [
+        {
+          "targetId": "C384",
+          "type": "teacher",
+          "label": "스승",
+          "desc": "과거 급제 전 장적에게 시를 바쳐 인정을 받음 (근사장수부)"
+        }
+      ]
     },
     "C391": {
       "titleId": "C391",
@@ -1373,7 +2427,14 @@
         "period": "late",
         "confidence": "medium",
         "source": "direct_era"
-      }
+      },
+      "birthplace": {
+        "name": "강서성 파양",
+        "nameZh": "江西省 鄱陽 (지금의 江西省 上饒市 鄱陽縣)",
+        "lat": 29,
+        "lng": 116.67
+      },
+      "relations": []
     },
     "C392": {
       "titleId": "C392",
@@ -1394,7 +2455,14 @@
         "period": "late",
         "confidence": "high",
         "source": "regnal_year"
-      }
+      },
+      "birthplace": {
+        "name": "산서성 장안",
+        "nameZh": "陝西省 長安 (지금의 陝西省 西安市)",
+        "lat": 34.34,
+        "lng": 108.94
+      },
+      "relations": []
     },
     "C393": {
       "titleId": "C393",
@@ -1415,7 +2483,23 @@
         "period": "early",
         "confidence": "high",
         "source": "birth_year"
-      }
+      },
+      "birthplace": {
+        "name": "사천성 사홍",
+        "nameZh": "四川省 射洪 (지금의 四川省 遂寧市 射洪市)",
+        "lat": 30.87,
+        "lng": 105.38
+      },
+      "relations": [
+        {
+          "targetId": "EXT_wu_zetian",
+          "targetName": "武則天",
+          "targetNameKo": "측천무후",
+          "type": "patron",
+          "label": "주군",
+          "desc": "측천무후에게 상소를 올려 인정을 받음"
+        }
+      ]
     },
     "C394": {
       "titleId": "C394",
@@ -1436,7 +2520,14 @@
         "period": "late",
         "confidence": "high",
         "source": "direct_era"
-      }
+      },
+      "birthplace": {
+        "name": "절강성 부양",
+        "nameZh": "浙江省 富陽 (지금의 浙江省 杭州市 富陽區)",
+        "lat": 30.05,
+        "lng": 119.95
+      },
+      "relations": []
     },
     "C395": {
       "titleId": "C395",
@@ -1457,7 +2548,14 @@
         "period": "high",
         "confidence": "high",
         "source": "bio_regnal_year"
-      }
+      },
+      "birthplace": {
+        "name": "하남성 상구",
+        "nameZh": "河南省 商丘 (지금의 河南省 商丘市)",
+        "lat": 34.41,
+        "lng": 115.65
+      },
+      "relations": []
     },
     "C396": {
       "titleId": "C396",
@@ -1478,7 +2576,21 @@
         "period": "high",
         "confidence": "high",
         "source": "bio_regnal_year"
-      }
+      },
+      "birthplace": {
+        "name": "하남성 개봉",
+        "nameZh": "河南省 開封 (지금의 河南省 開封市)",
+        "lat": 34.79,
+        "lng": 114.3
+      },
+      "relations": [
+        {
+          "targetId": "C375",
+          "type": "rival",
+          "label": "경쟁",
+          "desc": "황학루에서 이백이 최호의 시를 보고 '더 이상 쓸 말이 없다'며 붓을 꺾음"
+        }
+      ]
     },
     "C397": {
       "titleId": "C397",
@@ -1499,7 +2611,21 @@
         "period": "early",
         "confidence": "high",
         "source": "birth_year"
-      }
+      },
+      "birthplace": {
+        "name": "하남성 내황",
+        "nameZh": "河南省 內黃 (지금의 河南省 安陽市 內黃縣)",
+        "lat": 35.95,
+        "lng": 114.9
+      },
+      "relations": [
+        {
+          "targetId": "C354",
+          "type": "colleague",
+          "label": "심송",
+          "desc": "송지문과 함께 율시의 격률을 완성하여 '심송(沈宋)'으로 불림"
+        }
+      ]
     },
     "C398": {
       "titleId": "C398",
@@ -1528,7 +2654,12 @@
         "lng": 120.26
       },
       "relations": [
-        { "targetId": "C375", "type": "recommend", "label": "추천", "desc": "이백의 시를 읽고 '謫仙人'이라 감탄, 현종에게 천거" }
+        {
+          "targetId": "C375",
+          "type": "recommend",
+          "label": "추천",
+          "desc": "이백의 시를 읽고 '謫仙人'이라 감탄, 현종에게 천거"
+        }
       ]
     },
     "C399": {
@@ -1550,7 +2681,21 @@
         "period": "mid",
         "confidence": "medium",
         "source": "direct_era"
-      }
+      },
+      "birthplace": {
+        "name": "하남성 남양",
+        "nameZh": "河南省 南陽 (지금의 河南省 南陽市)",
+        "lat": 32.99,
+        "lng": 112.52
+      },
+      "relations": [
+        {
+          "targetId": "C337",
+          "type": "colleague",
+          "label": "대력십재자",
+          "desc": "노륜 등과 함께 대력십재자로 활동함"
+        }
+      ]
     },
     "C400": {
       "titleId": "C400",
@@ -1571,7 +2716,21 @@
         "period": "late",
         "confidence": "high",
         "source": "birth_year"
-      }
+      },
+      "birthplace": {
+        "name": "산서성 장안",
+        "nameZh": "陝西省 長安 (지금의 陝西省 西安市)",
+        "lat": 34.34,
+        "lng": 108.94
+      },
+      "relations": [
+        {
+          "targetId": "C377",
+          "type": "relative",
+          "label": "이모부",
+          "desc": "이상은이 한악의 이모부임 (인척 관계)"
+        }
+      ]
     },
     "C401": {
       "titleId": "C401",
@@ -1592,7 +2751,41 @@
         "period": "mid",
         "confidence": "high",
         "source": "birth_year"
-      }
+      },
+      "birthplace": {
+        "name": "하남성 맹주",
+        "nameZh": "河南省 孟州 (지금의 河南省 焦作市 孟州市)",
+        "lat": 34.91,
+        "lng": 112.79
+      },
+      "relations": [
+        {
+          "targetId": "C371",
+          "type": "friend",
+          "label": "동지",
+          "desc": "유종원과 함께 고문 운동을 제창함"
+        },
+        {
+          "targetId": "C346",
+          "type": "friend",
+          "label": "한맹",
+          "desc": "맹교와 깊은 우정을 나누며 '한맹(韓孟)'으로 불림"
+        },
+        {
+          "targetId": "C328",
+          "type": "teacher",
+          "label": "스승",
+          "desc": "가도의 재능을 아껴 환속을 권유하고 시를 가르침"
+        },
+        {
+          "targetId": "EXT_li_he",
+          "targetName": "李賀",
+          "targetNameKo": "이하",
+          "type": "patron",
+          "label": "후원",
+          "desc": "이하의 재능을 높이 평가하여 후원함"
+        }
+      ]
     },
     "C402": {
       "titleId": "C402",
@@ -1613,7 +2806,21 @@
         "period": "late",
         "confidence": "high",
         "source": "direct_era"
-      }
+      },
+      "birthplace": {
+        "name": "강소성 진강",
+        "nameZh": "江蘇省 鎮江 (지금의 江蘇省 鎮江市)",
+        "lat": 32.2,
+        "lng": 119.45
+      },
+      "relations": [
+        {
+          "targetId": "C340",
+          "type": "friend",
+          "label": "친구",
+          "desc": "두목과 교유함"
+        }
+      ]
     },
     "C403": {
       "titleId": "C403",
@@ -1634,7 +2841,27 @@
         "period": "high",
         "confidence": "high",
         "source": "birth_year"
-      }
+      },
+      "birthplace": {
+        "name": "강소성 진강",
+        "nameZh": "江蘇省 鎮江 (지금의 江蘇省 鎮江市)",
+        "lat": 32.2,
+        "lng": 119.45
+      },
+      "relations": [
+        {
+          "targetId": "C370",
+          "type": "friend",
+          "label": "친구",
+          "desc": "유장경과 깊은 교분을 나눔"
+        },
+        {
+          "targetId": "C384",
+          "type": "friend",
+          "label": "친구",
+          "desc": "장적과 교유함"
+        }
+      ]
     }
   }
 }
