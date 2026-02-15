@@ -250,6 +250,30 @@ function parseTextWithNotes(text, notes, titleId = "") {
 
   if (matches.length === 0) return escapeHTML(text);
 
+  // 원본→clean 위치 매핑 테이블 (줄바꿈+[번호] 제거 후 위치 역산용)
+  // cleanText: [번호] 제거 + \n→공백 치환
+  const cleanText = text.replace(/\[\d+\]/g, "").replace(/\n/g, " ");
+  // 원본 인덱스 → clean 인덱스 매핑
+  const origToClean = [];
+  let ci = 0;
+  const markerPattern = /\[\d+\]/g;
+  const markerSet = new Set();
+  let mm;
+  while ((mm = markerPattern.exec(text)) !== null) {
+    for (let k = mm.index; k < mm.index + mm[0].length; k++) markerSet.add(k);
+  }
+  for (let oi = 0; oi < text.length; oi++) {
+    origToClean[oi] = ci;
+    if (!markerSet.has(oi)) ci++;
+  }
+  origToClean[text.length] = ci;
+
+  // clean → 원본 역매핑
+  const cleanToOrig = [];
+  for (let oi = 0; oi < text.length; oi++) {
+    if (!markerSet.has(oi)) cleanToOrig.push(oi);
+  }
+
   // 2단계: 각 [번호] 앞에 head 키워드가 있는지 확인
   for (const m of matches) {
     const note = notesByNo.get(m.noteNo);
@@ -258,11 +282,21 @@ function parseTextWithNotes(text, notes, titleId = "") {
     const head = note.head;
     const headStart = m.index - head.length;
 
-    // [번호] 바로 앞에 head가 있는지 확인
+    // 1차: 정확 매칭 (줄바꿈 없는 경우 — 대부분)
     if (headStart >= 0 && text.substring(headStart, m.index) === head) {
       m.headStart = headStart;
       m.headLength = head.length;
       m.noteText = note.text;
+    } else {
+      // 2차: clean text에서 매칭 (줄바꿈/[번호]가 끼어있는 경우)
+      const cleanIdx = origToClean[m.index]; // [번호] 위치의 clean index
+      const cleanHeadStart = cleanIdx - head.length;
+      if (cleanHeadStart >= 0 && cleanText.substring(cleanHeadStart, cleanIdx) === head) {
+        // clean 위치 → 원본 위치 역산
+        m.headStart = cleanToOrig[cleanHeadStart];
+        m.headLength = m.index - m.headStart;
+        m.noteText = note.text;
+      }
     }
   }
 
@@ -281,15 +315,38 @@ function parseTextWithNotes(text, notes, titleId = "") {
 
     if (m.headStart !== undefined) {
       // head 키워드가 있으면
-      const keyword = text.substring(m.headStart, m.index);
-      result =
-        `<span class="note-word" id="note-ref-${uniqueId}" data-note-no="${m.noteNo}" data-note-text="${escapeHTML(m.noteText)}">${escapeHTML(keyword)}</span>` +
-        `<sup class="note-ref">${m.noteNo}</sup>` +
-        result;
+      const rawKeyword = text.substring(m.headStart, m.index);
+      // 원본에 [번호]나 \n이 끼어있을 수 있음 → 제거한 표시용 텍스트 생성
+      const displayParts = rawKeyword.replace(/\[\d+\]/g, "").split("\n");
+      const noteAttr = `data-note-no="${m.noteNo}" data-note-text="${escapeHTML(m.noteText)}"`;
+
+      if (displayParts.length <= 1) {
+        // 줄바꿈 없음 — 기존 방식
+        result =
+          `<span class="note-word" id="note-ref-${uniqueId}" ${noteAttr}>${escapeHTML(displayParts[0])}</span>` +
+          `<sup class="note-ref">${m.noteNo}</sup>` +
+          result;
+      } else {
+        // 줄바꿈 있음 — span을 줄별로 분할 (\n으로 split해도 태그 안 깨지게)
+        let spans = "";
+        for (let pi = 0; pi < displayParts.length; pi++) {
+          if (displayParts[pi]) {
+            const idAttr = pi === 0 ? ` id="note-ref-${uniqueId}"` : "";
+            spans += `<span class="note-word"${idAttr} ${noteAttr}>${escapeHTML(displayParts[pi])}</span>`;
+          }
+          if (pi < displayParts.length - 1) spans += "\n";
+        }
+        result = spans + `<sup class="note-ref">${m.noteNo}</sup>` + result;
+      }
       lastIndex = m.headStart;
     } else {
-      // head 키워드가 없으면 [번호]만 윗첨자로
-      result = `<sup class="note-ref" id="note-ref-${uniqueId}">${m.noteNo}</sup>` + result;
+      // head 키워드가 없으면 → 주석 내용이 있으면 [번호] 자체를 호버 가능하게
+      const note = notesByNo.get(m.noteNo);
+      if (note && note.text) {
+        result = `<span class="note-word" id="note-ref-${uniqueId}" data-note-no="${m.noteNo}" data-note-text="${escapeHTML(note.text)}">[${m.noteNo}]</span>` + result;
+      } else {
+        result = `<sup class="note-ref" id="note-ref-${uniqueId}">${m.noteNo}</sup>` + result;
+      }
       lastIndex = m.index;
     }
   }
@@ -1196,12 +1253,16 @@ function renderPoemSection(p) {
   }
 
   // 시 본문 2컬럼 (한자 | 한글) 구성
-  const poemZhLines = (p.poemZh || "").split("\n");
-  const trKoLines = trKoRaw.split("\n");
+  // 전체 텍스트를 먼저 주석 파싱 → 줄 분리 (줄 경계에 걸친 head도 처리 가능)
+  const parsedPoemZh = parseTextWithNotes(p.poemZh || "", notes, titleId);
+  const poemZhLines = parsedPoemZh.split("\n");
+  const allTrKoLines = trKoRaw.split("\n");
+  // 번역 데이터 앞 2줄은 제목+시인 이름 → 상단에 이미 표시하므로 본문에서 제외
+  const trKoLines = allTrKoLines.length > 2 ? allTrKoLines.slice(2) : allTrKoLines;
   const maxLines = Math.max(poemZhLines.length, trKoLines.length);
   let bilingualRows = "";
   for (let i = 0; i < maxLines; i++) {
-    const zhLine = parseTextWithNotes(poemZhLines[i] || "", notes, titleId);
+    const zhLine = poemZhLines[i] || "";
     const koLine = escapeHTML(trKoLines[i] || "");
     bilingualRows += `<div class="bl-row"><div class="bl-zh">${zhLine}</div><div class="bl-ko">${koLine}</div></div>`;
   }
@@ -1263,20 +1324,49 @@ function bindPoemSections(modalBody) {
 
     const expanded = head.getAttribute("aria-expanded") === "true";
 
-    // 다른 섹션 닫기
-    modalBody.querySelectorAll(".poem-sec").forEach(s => {
-      if (s !== sec) {
-        const h = s.querySelector(".poem-head");
-        const b = s.querySelector(".poem-body");
-        if (h) h.setAttribute("aria-expanded", "false");
-        if (b) b.hidden = true;
-        s.classList.remove("expanded");
-      }
-    });
+    if (expanded) {
+      // 닫기
+      head.setAttribute("aria-expanded", "false");
+      body.hidden = true;
+      sec.classList.remove("expanded");
+    } else {
+      const modal = sec.closest(".modal");
 
-    head.setAttribute("aria-expanded", String(!expanded));
-    body.hidden = expanded;
-    sec.classList.toggle("expanded", !expanded);
+      // ① 먼저 이 작품을 아래로 펼침
+      head.setAttribute("aria-expanded", "true");
+      body.hidden = false;
+      sec.classList.add("expanded");
+
+      // ② 이전 작품 닫기 전에 현재 화면상 위치 기억
+      const secTopBefore = sec.getBoundingClientRect().top;
+
+      // ③ 이전 작품 닫기
+      modalBody.querySelectorAll(".poem-sec").forEach(s => {
+        if (s !== sec) {
+          const h = s.querySelector(".poem-head");
+          const b = s.querySelector(".poem-body");
+          if (h) h.setAttribute("aria-expanded", "false");
+          if (b) b.hidden = true;
+          s.classList.remove("expanded");
+        }
+      });
+
+      // ④ 닫혀서 줄어든 높이만큼 스크롤 보정 → 화면 점프 방지
+      if (modal) {
+        const secTopAfter = sec.getBoundingClientRect().top;
+        modal.scrollTop -= (secTopBefore - secTopAfter);
+      }
+
+      // ⑤ 부드럽게 위로 올려서 작품 상단이 모달 상단에 붙게
+      requestAnimationFrame(() => {
+        if (modal) {
+          const modalRect = modal.getBoundingClientRect();
+          const secRect = sec.getBoundingClientRect();
+          const targetScroll = secRect.top - modalRect.top + modal.scrollTop;
+          modal.scrollTo({ top: targetScroll, behavior: "smooth" });
+        }
+      });
+    }
   });
 
   // TTS 재생 (이벤트 위임)
