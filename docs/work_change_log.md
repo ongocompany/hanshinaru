@@ -1378,3 +1378,51 @@
   6. 관리툴 미리보기도 동일 구조로 동기화
 
 - END: 2026-02-15 (Claude)
+
+---
+
+## [Task ID] 2026-02-16-claude-ui-feedback-annotation-fix
+
+### START
+- Time: 2026-02-16
+- Owner: Claude
+- Requester: JIN
+- Request Summary: 형 UI 피드백 반영 (텍스트 크기/간격/스크롤/번역 중복) + 주석 매칭 버그 수정
+- Why: 모달 가독성 개선 + 줄바꿈 걸친 주석 33건 미표시 문제 해결
+
+### END
+- Time: 2026-02-16
+- Status: Done
+- Commits:
+  - `6c7cb11` — [Claude][UI] 형 피드백 반영: 아코디언 복구 + 2컬럼 시 레이아웃 + 관리툴 수정
+  - `0b562cc` — [Claude][Fix] 주석 매칭 개선 + UI 피드백 반영
+  - `a012106` — [All] 전체 사이트 업데이트
+
+- Changed Files:
+  - `app.js:250-340` — parseTextWithNotes: origToClean/cleanToOrig 위치 매핑으로 줄바꿈 걸친 head 매칭
+  - `app.js:315-350` — head 없는 주석도 [번호] 호버 가능하게 note-word span 처리
+  - `app.js:1253-1260` — poemZh 전체 텍스트 파싱 (줄별→전체) + 번역 앞 2줄 제거
+  - `app.js:1324-1372` — 아코디언 스크롤: 열기→위치보정→부드러운 스크롤
+  - `styles.css:761-880` — 시 본문/제목 크기 조정 + 작품 리스트 컴팩트 간격
+  - `admin/admin.js:170-195` — saveAll: 변경 없어도 저장 가능
+  - `admin/admin.css` — 관리툴 2컬럼 레이아웃 복구
+  - `admin/index.html` — No 컬럼 50px, 시인 컬럼 80px
+
+- 상세 변경내역:
+  1. **시 본문 텍스트 크기**: .bl-zh 18px, .bl-ko 17px, .poem-title-zh 22px, .poem-title-ko 16px
+  2. **번역 제목/시인 중복 제거**: translationKo 앞 2줄 slice(2)로 건너뛰기
+  3. **작품 리스트 컴팩트**: poem-sec margin 4px, border-radius 8px, padding 축소
+  4. **아코디언 스크롤 UX**: 4차례 반복 수정 → 최종: 열기→보정→smooth scroll
+  5. **주석 줄바꿈 매칭**: clean text(줄바꿈+[번호] 제거) 2차 매칭으로 26수/33건 해결
+  6. **집평 한자 주석**: head 미매칭시 [번호] 자체를 note-word로 처리 → 호버 가능
+  7. **관리툴 저장**: 변경 없어도 저장 버튼 동작
+
+- 수정 영향받은 시 (26수, 주석 33건):
+  No.1,3(장구령), 7,79,82(이백), 8,10,11,12,63,89,106(두보),
+  15,16,17,116(왕유), 22(구위), 27,28,33(위응물), 45(맹교),
+  68(한유), 73(이상은), 97(왕만), 124(맹호연), 161(온정균)
+
+- Notes:
+  - 집평 번역(한글) 주석은 로직상 불가 → 형 합의하에 포기
+  - 이체자 차이 6건(五岳/五嶽 등)은 데이터 이슈 → 추후 데이터 정제시 해결
+  - GitHub Pages 소스 브랜치가 jin-practice-01로 설정됨 (main 아님) → 형 확인 후 유지 결정
