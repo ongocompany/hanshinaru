@@ -98,7 +98,7 @@ async function loadAllData() {
 
   // UI 설정 로드 (별도 — 없으면 기본값 사용)
   try {
-    const uiRes = await fetch(DATA_PATHS.uiSettings);
+    const uiRes = await fetch(withNoCacheQuery(DATA_PATHS.uiSettings), { cache: "no-store" });
     if (uiRes.ok) {
       DATA.uiSettings = await uiRes.json();
     }
@@ -143,16 +143,21 @@ async function loadAllData() {
 }
 
 async function loadJSON(key) {
-  const res = await fetch(DATA_PATHS[key]);
+  const res = await fetch(withNoCacheQuery(DATA_PATHS[key]), { cache: "no-store" });
   if (res.ok) return await res.json();
 
   // owned 복사본이 없을 때는 원본으로 폴백
   if (key === "poem") {
-    const fallback = await fetch("../public/index/poems.full.json");
+    const fallback = await fetch(withNoCacheQuery("../public/index/poems.full.json"), { cache: "no-store" });
     if (fallback.ok) return await fallback.json();
   }
 
   throw new Error(`HTTP ${res.status}`);
+}
+
+function withNoCacheQuery(path) {
+  const sep = path.includes("?") ? "&" : "?";
+  return `${path}${sep}_ts=${Date.now()}`;
 }
 
 function setLoadState(key, state) {

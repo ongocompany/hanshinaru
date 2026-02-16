@@ -470,6 +470,37 @@
                 </div>
               </fieldset>
 
+              <!-- 집필본 확인 -->
+              <fieldset class="edit-section owned-readonly-section">
+                <legend>집필본 확인 (Owned)</legend>
+                <div class="form-row form-row-inline">
+                  <div>
+                    <label>상태</label>
+                    <input type="text" id="pf-owned-status" class="readonly-field" readonly>
+                  </div>
+                  <div>
+                    <label>최근수정</label>
+                    <input type="text" id="pf-owned-updatedAt" class="readonly-field" readonly>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <label>메타 요약</label>
+                  <input type="text" id="pf-owned-meta-summary" class="readonly-field" readonly>
+                </div>
+                <div class="form-row">
+                  <label>집필 번역 (translationKoOwned)</label>
+                  <textarea id="pf-translationKoOwned-view" rows="6" class="readonly-field" readonly></textarea>
+                </div>
+                <div class="form-row">
+                  <label>집필 집평 번역 (jipyeongKoOwned)</label>
+                  <textarea id="pf-jipyeongKoOwned-view" rows="5" class="readonly-field" readonly></textarea>
+                </div>
+                <div class="form-row">
+                  <label>집필 주석 (notesOwned) (<span id="pf-owned-note-count">0</span>개)</label>
+                  <div id="pf-owned-notes-view" class="owned-notes-readonly"></div>
+                </div>
+              </fieldset>
+
               <!-- 주석 -->
               <fieldset class="edit-section">
                 <legend>주석 (<span id="pf-note-count">0</span>개)</legend>
@@ -745,6 +776,7 @@
             <option value="updated-desc">최근수정순</option>
           </select>
           <label class="check-label writing-check"><input type="checkbox" id="writing-owned-only"> 집필본 있는 항목만</label>
+          <label class="check-label writing-check"><input type="checkbox" id="writing-new-notes-only"> 신규 주석만 보기</label>
           <button class="btn btn-secondary" id="btn-writing-seed-samples">샘플 5건 생성</button>
         </div>
       </div>
@@ -827,6 +859,13 @@
                 <div>
                   <label class="dual-label">원문 (poemZh)</label>
                   <textarea id="wf-poemZh" class="poem-text-zh writing-source" rows="12" readonly></textarea>
+                  <div class="writing-source-preview-wrap">
+                    <div class="writing-source-preview-legend">
+                      본문 주석 표시: <span class="writing-note-inline writing-note-inline-legacy">[기존 번호]</span>
+                      + <span class="writing-note-inline writing-note-inline-owned">[집필 번호]</span>
+                    </div>
+                    <div id="wf-poemZh-preview" class="writing-source-preview"></div>
+                  </div>
                 </div>
                 <div>
                   <label class="dual-label">신규 번역 (translationKoOwned)</label>
@@ -841,6 +880,13 @@
                 <div>
                   <label class="dual-label">집평 원문 (jipyeongZh)</label>
                   <textarea id="wf-jipyeongZh" class="poem-text-zh writing-source" rows="9" readonly></textarea>
+                  <div class="writing-source-preview-wrap">
+                    <div class="writing-source-preview-legend">
+                      집평 주석 표시: <span class="writing-note-inline writing-note-inline-legacy">[기존 번호]</span>
+                      + <span class="writing-note-inline writing-note-inline-owned">[집필 번호]</span>
+                    </div>
+                    <div id="wf-jipyeongZh-preview" class="writing-source-preview"></div>
+                  </div>
                 </div>
                 <div>
                   <label class="dual-label">신규 집평 번역 (jipyeongKoOwned)</label>
@@ -851,6 +897,7 @@
 
             <fieldset class="edit-section" id="wf-owned-notes-fieldset">
               <legend>집필 주석 (notesOwned) (<span id="wf-owned-note-count">0</span>개)</legend>
+              <div id="wf-owned-note-summary" class="writing-note-summary"></div>
               <div id="wf-owned-notes-list" class="notes-edit-list"></div>
               <div style="margin-top:8px">
                 <button type="button" class="btn btn-secondary" id="btn-writing-add-note">+ 주석 추가</button>

@@ -1258,14 +1258,21 @@ body {
 
 /* 주석 키워드 하이라이팅 (밑줄 없이 색상만) */
 .note-word {
-  color: #d35400;
   cursor: pointer;
   border-bottom: none;
   transition: color 0.2s ease;
 }
-
-.note-word:hover {
+.note-word-legacy {
+  color: #d35400;
+}
+.note-word-legacy:hover {
   color: #e67e22;
+}
+.note-word-owned {
+  color: #1f7a43;
+}
+.note-word-owned:hover {
+  color: #2c9d5a;
 }
 
 /* 윗첨자 번호 — 숨김 (디지털에서 색인 불필요) */
@@ -1504,13 +1511,21 @@ body {
 }
 
 /* 배경 그림 위 주석 스타일 */
-.poem-hero .note-word{
+.poem-hero .note-word-legacy{
   color: #5a3e1b;
   border-bottom-color: #c4a06a;
 }
-.poem-hero .note-word:hover{
+.poem-hero .note-word-legacy:hover{
   color: #3a2510;
   border-bottom-color: #a0805a;
+}
+.poem-hero .note-word-owned{
+  color: #2e6340;
+  border-bottom-color: #7bb38f;
+}
+.poem-hero .note-word-owned:hover{
+  color: #224a30;
+  border-bottom-color: #5d9b74;
 }
 .poem-hero .note-ref{
   color: rgba(90,62,27,0.6);
@@ -1580,13 +1595,21 @@ body {
   max-height: 85%;
   overflow: auto;
 }
-.poem-text-overlay .note-word {
+.poem-text-overlay .note-word-legacy {
   color: #ffd54f;
   border-bottom-color: #ffd54f;
 }
-.poem-text-overlay .note-word:hover {
+.poem-text-overlay .note-word-legacy:hover {
   color: #ffecb3;
   border-bottom-color: #ffecb3;
+}
+.poem-text-overlay .note-word-owned {
+  color: #8dffb3;
+  border-bottom-color: #8dffb3;
+}
+.poem-text-overlay .note-word-owned:hover {
+  color: #c7ffdc;
+  border-bottom-color: #c7ffdc;
 }
 .poem-text-overlay .note-ref {
   color: rgba(255,255,255,0.7);

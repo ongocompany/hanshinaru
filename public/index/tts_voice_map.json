@@ -1,0 +1,52 @@
+[
+  {
+    "poemNoStr": "043",
+    "titleZh": "〈長干行〉",
+    "poetZh": "李白",
+    "speaker": "Serena",
+    "instruct": "sad",
+    "instructCustom": "采用中国古诗朗诵风格，温柔细腻地朗诵，带有青梅竹马的怀念和离别的哀愁，声音轻柔，表达对远方丈夫的深切思念",
+    "reason": "여성 화자(상인 아내)의 애절한 그리움을 노래함 (여성화자 샘플)",
+    "confidence": "high"
+  },
+  {
+    "poemNoStr": "225",
+    "titleZh": "〈竹里館〉",
+    "poetZh": "王維",
+    "speaker": "Dylan",
+    "instruct": "calm",
+    "instructCustom": "采用中国古诗朗诵风格，平和淡然地朗诵，语速适中，声音沉稳自然，展现隐居竹林的闲适与宁静",
+    "reason": "자연 속의 한가로움, 차분하고 맑은 성인 남성의 목소리가 어울림 (담백한 남성 화자)",
+    "confidence": "high"
+  },
+  {
+    "poemNoStr": "085",
+    "titleZh": "〈將進酒〉",
+    "poetZh": "李白",
+    "speaker": "Eric",
+    "instruct": "majestic",
+    "instructCustom": "采用中国古诗朗诵风格，豪放不羁地朗诵，声音高亢激昂，表现出李白的狂放与自信，节奏感强",
+    "reason": "이백의 대표적인 호방한 시, 웅장하고 힘찬 톤 필요 (웅장한 남성 화자)",
+    "confidence": "high"
+  },
+  {
+    "poemNoStr": "186",
+    "titleZh": "〈登高〉",
+    "poetZh": "杜甫",
+    "speaker": "Uncle_Fu",
+    "instruct": "sad",
+    "instructCustom": "采用中国古诗朗诵风格，苍凉悲壮地朗诵，声音低沉，表现出晚年杜甫的潦倒与忧国忧民",
+    "reason": "두보의 노년의 슬픔과 비장함이 담긴 시, 중후한 남성음 (비장한 남성 화자)",
+    "confidence": "high"
+  },
+  {
+    "poemNoStr": "001",
+    "titleZh": "〈感遇〉 四首",
+    "poetZh": "張九齡",
+    "speaker": "Uncle_Fu",
+    "instruct": "calm",
+    "instructCustom": "采用中国古诗朗诵风格，平和淡然地朗诵，语速适中，声音沉稳，表达诗人对人生感悟的深沉与淡泊",
+    "reason": "담담하게 인생의 감회를 읊는 시, 차분하고 깊이 있는 톤 (중후한 남성 화자)",
+    "confidence": "high"
+  }
+]

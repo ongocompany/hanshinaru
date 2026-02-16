@@ -1,0 +1,5 @@
+edge-tts
+qwen-tts
+pypinyin
+beautifulsoup4
+requests

@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>히어로 섹션 테스트 v3</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #1a1a1a;
+            overflow: hidden;
+        }
+
+        /* ===== 뷰포트 (창문) ===== */
+        .hero-section {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* ===== 장면 래퍼 — 배경 이미지의 좌표계 ===== */
+        .hero-scene {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 1408px;
+            transform: translateY(-50%);
+        }
+
+        /* ===== 배경 이미지 — 원본 사이즈 고정, 가로 무한 스크롤 =====
+           핵심: transform: translateX()로 GPU 가속 스크롤.
+           div를 이미지 2장 너비로 만들어서 한 장 분량만큼 이동하면
+           시작점과 끝점이 완전히 동일 → 완벽한 무한 루프. */
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 10514px; /* 5257px × 2 */
+            height: 1408px;
+            background-image: url('docs/reference/메인페이지히어로섹션/river_scroll.jpg');
+            background-size: 5257px 1408px;
+            background-repeat: repeat-x;
+            animation: scroll-bg 72s linear infinite;
+            will-change: transform;
+        }
+
+        @keyframes scroll-bg {
+            0%   { transform: translateX(0); }
+            100% { transform: translateX(-5257px); }
+        }
+
+        /* ===== 배 영상 — 장면 좌표계 기준 배치 ===== */
+        .hero-video {
+            position: absolute;
+            top: 780px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 220px;
+            height: auto;
+            object-fit: contain;
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        /* ===== PNG 프레임 폴백용 캔버스 ===== */
+        .hero-canvas {
+            position: absolute;
+            top: 780px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 220px;
+            height: 124px;
+            z-index: 2;
+            pointer-events: none;
+            display: none;
+        }
+
+        /* ===== 안개 캔버스 — 파티클 기반 ===== */
+        .hero-mist-canvas {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 3;
+            pointer-events: none;
+        }
+
+        /* ===== 히어로 카피 ===== */
+        .hero-copy {
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 600px;
+            height: auto;
+            z-index: 4;
+            pointer-events: none;
+        }
+
+        /* ===== 테스트용 컨트롤 ===== */
+        .controls {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 12px;
+            border-radius: 8px;
+            z-index: 100;
+            font-size: 13px;
+            font-family: sans-serif;
+        }
+
+        .controls button {
+            display: inline-block;
+            margin: 2px;
+            padding: 6px 10px;
+            background: #8b4513;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        .controls button:hover {
+            background: #a0522d;
+        }
+
+        .controls .btn-row {
+            display: flex;
+            gap: 4px;
+            margin: 4px 0;
+        }
+
+        .controls .info {
+            margin-top: 8px;
+            padding-top: 8px;
+            border-top: 1px solid rgba(255,255,255,0.3);
+            font-size: 11px;
+            color: #ccc;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-section">
+        <div class="hero-scene">
+            <div class="hero-bg"></div>
+
+            <video class="hero-video" autoplay loop muted playsinline>
+                <source src="docs/reference/메인페이지히어로섹션/rawingboat_1.webm" type="video/webm">
+            </video>
+            <canvas id="heroCanvas" class="hero-canvas" width="442" height="249"></canvas>
+
+            <!-- 안개: CSS gradient 대신 canvas 파티클 -->
+            <canvas class="hero-mist-canvas" id="mistCanvas"></canvas>
+
+            <img class="hero-copy" src="docs/reference/메인페이지히어로섹션/samusa.png" alt="思無邪">
+        </div>
+    </div>
+
+    <div class="controls">
+        <strong>히어로 테스트 v3</strong>
+        <div class="btn-row">
+            <button onclick="pauseAnim()">⏸ 배경</button>
+            <button onclick="resumeAnim()">▶ 배경</button>
+            <button onclick="toggleMist()">🌫 안개</button>
+        </div>
+        <div class="btn-row">
+            <button onclick="moveBoat(0, -20)">⬆</button>
+            <button onclick="moveBoat(0, 20)">⬇</button>
+            <button onclick="moveBoat(-20, 0)">⬅</button>
+            <button onclick="moveBoat(20, 0)">➡</button>
+        </div>
+        <div class="info">
+            배 top: <span id="boatTop">780</span>px,
+            left: <span id="boatLeft">50%</span><br>
+            뷰포트: <span id="vpSize"></span>
+        </div>
+    </div>
+
+    <script>
+        const heroBg = document.querySelector('.hero-bg');
+        const videoEl = document.querySelector('.hero-video');
+        const canvasEl = document.getElementById('heroCanvas');
+        const boatTopEl = document.getElementById('boatTop');
+        const boatLeftEl = document.getElementById('boatLeft');
+        const vpSizeEl = document.getElementById('vpSize');
+
+        let boatTop = 780;
+        let boatLeftOffset = 0; // 50% 기준 px 오프셋
+
+        function updateVPInfo() {
+            vpSizeEl.textContent = `${window.innerWidth} × ${window.innerHeight}`;
+        }
+        updateVPInfo();
+        window.addEventListener('resize', updateVPInfo);
+
+        function pauseAnim() {
+            heroBg.style.animationPlayState = 'paused';
+        }
+
+        function resumeAnim() {
+            heroBg.style.animationPlayState = 'running';
+        }
+
+        // 배 위치 미세조정 (상하좌우)
+        function moveBoat(dx, dy) {
+            boatTop += dy;
+            boatLeftOffset += dx;
+            const transform = `translateX(calc(-50% + ${boatLeftOffset}px))`;
+            videoEl.style.top = boatTop + 'px';
+            videoEl.style.transform = transform;
+            canvasEl.style.top = boatTop + 'px';
+            canvasEl.style.transform = transform;
+            boatTopEl.textContent = boatTop;
+            boatLeftEl.textContent = boatLeftOffset === 0 ? '50%' : `50% + ${boatLeftOffset}px`;
+        }
+
+        // ===== 안개 파티클 시스템 =====
+        const mistCanvas = document.getElementById('mistCanvas');
+        const mistCtx = mistCanvas.getContext('2d');
+        let mistEnabled = true;
+        const particles = [];
+        const PARTICLE_COUNT = 80;
+
+        // 캔버스 크기를 장면 래퍼 기준으로 고정
+        function resizeMistCanvas() {
+            mistCanvas.width = window.innerWidth;
+            mistCanvas.height = 1408;
+        }
+        resizeMistCanvas();
+        window.addEventListener('resize', resizeMistCanvas);
+
+        // 파티클: 하단(강 영역)에서 생성 → 위로 피어오름
+        function createParticle(init) {
+            const w = mistCanvas.width;
+            const h = mistCanvas.height;
+            // 안개가 피어오르는 영역: 이미지 하단 60% (강+수면 부근)
+            const spawnZoneTop = h * 0.5;
+            return {
+                x: Math.random() * w,
+                // init=true면 이미 퍼져있는 상태, false면 하단에서 새로 생성
+                y: init
+                    ? spawnZoneTop + Math.random() * (h - spawnZoneTop)
+                    : h + Math.random() * 100,
+                // 안개 덩어리 크기 (크게)
+                radius: 150 + Math.random() * 250,
+                // 상승 속도 (천천히)
+                vy: -(0.2 + Math.random() * 0.4),
+                // 좌우 표류 (바람에 흔들리는 느낌)
+                vx: (Math.random() - 0.5) * 0.5,
+                // 좌우 흔들림 (sin파)
+                swayOffset: Math.random() * Math.PI * 2,
+                swaySpeed: 0.005 + Math.random() * 0.01,
+                swayAmount: 10 + Math.random() * 20,
+                // 기본 투명도 (눈에 잘 보이게)
+                baseAlpha: 0.15 + Math.random() * 0.2,
+                life: 0,
+                maxLife: 500 + Math.random() * 400,
+            };
+        }
+
+        for (let i = 0; i < PARTICLE_COUNT; i++) {
+            particles.push(createParticle(true));
+        }
+
+        function drawMist() {
+            const w = mistCanvas.width;
+            const h = mistCanvas.height;
+            mistCtx.clearRect(0, 0, w, h);
+
+            if (!mistEnabled) {
+                requestAnimationFrame(drawMist);
+                return;
+            }
+
+            // 겹칠수록 진해지는 블렌딩
+            mistCtx.globalCompositeOperation = 'source-over';
+
+            for (let i = 0; i < particles.length; i++) {
+                const p = particles[i];
+
+                // 이동: 상승 + 좌우 표류 + sin파 흔들림
+                p.y += p.vy;
+                p.x += p.vx + Math.sin(p.swayOffset + p.life * p.swaySpeed) * 0.3;
+                p.life++;
+
+                // ── 투명도 계산 ──
+                // 1) 높이에 따라: 하단(y=h)=진함, 위로 갈수록 사라짐
+                //    안개 시작 지점(이미지 40% 높이) 위로 가면 급격히 투명
+                const fadeStart = h * 0.35; // 이 위로 올라가면 사라지기 시작
+                let fadeByHeight;
+                if (p.y > h * 0.6) {
+                    fadeByHeight = 1.0; // 하단 40%: 최대 농도
+                } else if (p.y > fadeStart) {
+                    // 중간: 서서히 옅어짐
+                    fadeByHeight = (p.y - fadeStart) / (h * 0.6 - fadeStart);
+                    fadeByHeight = fadeByHeight * fadeByHeight; // 제곱 커브
+                } else {
+                    fadeByHeight = 0; // 위쪽: 완전 투명
+                }
+
+                // 2) 수명 페이드인/아웃
+                let lifeFade = 1;
+                if (p.life < 50) lifeFade = p.life / 50;
+                else if (p.life > p.maxLife - 80) lifeFade = Math.max(0, (p.maxLife - p.life) / 80);
+
+                const alpha = p.baseAlpha * fadeByHeight * lifeFade;
+
+                if (alpha > 0.005) {
+                    const grad = mistCtx.createRadialGradient(
+                        p.x, p.y, 0,
+                        p.x, p.y, p.radius
+                    );
+                    // 중심이 가장 진하고 가장자리로 자연스럽게 사라짐
+                    grad.addColorStop(0,   `rgba(240, 240, 245, ${alpha})`);
+                    grad.addColorStop(0.3, `rgba(235, 235, 240, ${alpha * 0.7})`);
+                    grad.addColorStop(0.6, `rgba(230, 230, 238, ${alpha * 0.3})`);
+                    grad.addColorStop(1,   `rgba(225, 225, 235, 0)`);
+
+                    mistCtx.beginPath();
+                    mistCtx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+                    mistCtx.fillStyle = grad;
+                    mistCtx.fill();
+                }
+
+                // 재생성: 위로 사라지거나 수명 종료
+                if (p.y + p.radius < h * 0.2 || p.life >= p.maxLife) {
+                    particles[i] = createParticle(false);
+                }
+
+                // 좌우 래핑
+                if (p.x < -p.radius) p.x = w + p.radius;
+                if (p.x > w + p.radius) p.x = -p.radius;
+            }
+
+            requestAnimationFrame(drawMist);
+        }
+
+        drawMist();
+
+        function toggleMist() {
+            mistEnabled = !mistEnabled;
+        }
+
+        // ===== WebM 알파 채널 지원 감지 =====
+        (function detectAlphaSupport() {
+            if (!videoEl) return;
+
+            videoEl.addEventListener('canplay', function onCanPlay() {
+                videoEl.removeEventListener('canplay', onCanPlay);
+                try {
+                    const c = document.createElement('canvas');
+                    c.width = videoEl.videoWidth || 100;
+                    c.height = videoEl.videoHeight || 100;
+                    const ctx = c.getContext('2d');
+                    ctx.drawImage(videoEl, 0, 0);
+
+                    const corners = [
+                        [0, 0],
+                        [c.width - 1, 0],
+                        [0, c.height - 1],
+                        [c.width - 1, c.height - 1]
+                    ];
+                    let transparentCount = 0;
+                    for (const [x, y] of corners) {
+                        const px = ctx.getImageData(x, y, 1, 1).data;
+                        if (px[3] < 250) transparentCount++;
+                    }
+
+                    if (transparentCount === 0) {
+                        console.log('WebM 알파 미지원 → PNG 폴백');
+                        videoEl.style.display = 'none';
+                        startFrameFallback();
+                    } else {
+                        console.log(`WebM 알파 지원 확인 (투명 모서리 ${transparentCount}/4)`);
+                    }
+                } catch (e) {
+                    console.warn('Alpha 감지 실패:', e);
+                }
+            });
+
+            setTimeout(() => {
+                if (!videoEl.videoWidth) {
+                    console.warn('Video 로딩 실패 → PNG 폴백');
+                    videoEl.style.display = 'none';
+                    startFrameFallback();
+                }
+            }, 3000);
+        })();
+
+        // ===== PNG 시퀀스 폴백 =====
+        function startFrameFallback() {
+            const canvas = canvasEl;
+            const ctx = canvas.getContext('2d');
+            canvas.style.display = 'block';
+
+            const frameCount = 47;
+            const fps = 12;
+            const imgs = [];
+            let loaded = 0;
+
+            for (let i = 1; i <= frameCount; i++) {
+                const idx = String(i).padStart(4, '0');
+                const img = new Image();
+                img.src = `docs/reference/메인페이지히어로섹션/frames_alpha/frame_${idx}.png`;
+                img.onload = () => loaded++;
+                imgs.push(img);
+            }
+
+            let current = 0;
+            function play() {
+                if (imgs[current] && imgs[current].complete) {
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+                    ctx.drawImage(imgs[current], 0, 0, canvas.width, canvas.height);
+                }
+                current = (current + 1) % frameCount;
+            }
+
+            const waitForLoad = setInterval(() => {
+                if (loaded >= 1) {
+                    clearInterval(waitForLoad);
+                    setInterval(play, 1000 / fps);
+                    play();
+                }
+            }, 100);
+        }
+    </script>
+</body>
+</html>

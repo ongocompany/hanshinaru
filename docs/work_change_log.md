@@ -2952,3 +2952,875 @@
   - 이전 세션에서 기본 한시 키워드로 월 3~5건 추정 → 확장 후 월 8~12건
   - 형 요청으로 한자/유명시인/한국시문학/전통행사 키워드 추가
   - AI 기사 재작성 방식 채택 (요약 아닌 기사 형식, 300~500자)
+
+## [Task ID] 2026-02-17-0527-gpt-owned-deep-batch-151-160
+
+### START
+- Time: 2026-02-17 05:27
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 심층번역 운영프로토콜 기준으로 10편 배치(151~160) 집필 데이터 재작성.
+- Why: 해당 구간이 `bulk-auto-translate-no-validate` 상태이며, 본문-주석 매칭 안정성까지 포함한 재정규화가 필요함.
+- Planned Scope:
+  - 파일: `public/index/poems.full.owned.json`
+  - 예상 변경: poemNo `151~160`의 `translationKoOwned`, `jipyeongKoOwned`, `notesOwned`, `ownedContentMeta` 갱신
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-17 05:27
+- Status: Done
+- Changed Files:
+  - `public/index/poems.full.owned.json` (poemNo `151~160`의 집필 번역/집평 번역/주석/메타를 심층 기준으로 갱신)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `node -e 'JSON.parse(require("fs").readFileSync("public/index/poems.full.owned.json","utf8")); console.log("owned_parse_ok")'` 통과
+  - poemNo `151~160` 점검: `bulkGenerated=false`, `generationPolicy=deep-research-cross-validated`, `sourceRefs=3`, `notesOwned>=5`, `depthLevel=L2-80` 확인
+  - `151~160`의 `notesOwned.head` 본문/제목/집평 매칭 검사에서 unmatched 0건
+- Notes:
+  - 주석 헤드는 본문 실재 문자열 우선으로 재구성해 본문-하단 번호 매칭 오류를 예방함.
+  - `updatedAt/enrichedAt`는 `2026-02-17 05:27`로 동기화.
+
+## [Task ID] 2026-02-17-0528-gpt-owned-deep-batch-161-170
+
+### START
+- Time: 2026-02-17 05:28
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 응답 대기 없이 연속 배치로 10편(161~170) 심층 기준 재작성.
+- Why: 사용자 지시(10개씩 연속 진행)에 따라 다음 구간도 동일 기준으로 즉시 전환 필요.
+- Planned Scope:
+  - 파일: `public/index/poems.full.owned.json`
+  - 예상 변경: poemNo `161~170`의 `translationKoOwned`, `jipyeongKoOwned`, `notesOwned`, `ownedContentMeta` 갱신
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-17 05:28
+- Status: Done
+- Changed Files:
+  - `public/index/poems.full.owned.json` (poemNo `161~170`의 집필 번역/집평 번역/주석/메타를 심층 기준으로 갱신)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `node -e 'JSON.parse(require("fs").readFileSync("public/index/poems.full.owned.json","utf8")); console.log("owned_parse_ok")'` 통과
+  - poemNo `161~170` 점검: `bulkGenerated=false`, `generationPolicy=deep-research-cross-validated`, `sourceRefs=3`, `notesOwned>=5`, `depthLevel=L2-80` 확인
+  - `161~170`의 `notesOwned.head` 본문/제목/집평 매칭 검사에서 unmatched 0건
+- Notes:
+  - `164`, `165`는 집평 원문 공란으로 고정 문장 처리.
+  - `updatedAt/enrichedAt`를 `2026-02-17 05:28`로 동기화.
+
+## [Task ID] 2026-02-17-0529-gpt-owned-deep-batch-171-180
+
+### START
+- Time: 2026-02-17 05:29
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 연속 배치 지시에 따라 10편(171~180) 심층 기준 재작성.
+- Why: 응답 대기 없이 10개 단위 연속 전환 요구에 따라 다음 구간 즉시 처리.
+- Planned Scope:
+  - 파일: `public/index/poems.full.owned.json`
+  - 예상 변경: poemNo `171~180`의 `translationKoOwned`, `jipyeongKoOwned`, `notesOwned`, `ownedContentMeta` 갱신
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-17 05:29
+- Status: Done
+- Changed Files:
+  - `public/index/poems.full.owned.json` (poemNo `171~180`의 집필 번역/집평 번역/주석/메타를 심층 기준으로 갱신)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `node -e 'JSON.parse(require("fs").readFileSync("public/index/poems.full.owned.json","utf8")); console.log("owned_parse_ok")'` 통과
+  - poemNo `171~180` 점검: `bulkGenerated=false`, `generationPolicy=deep-research-cross-validated`, `sourceRefs=3`, `notesOwned>=5`, `depthLevel=L2-80` 확인
+  - `171~180`의 `notesOwned.head` 본문/제목/집평 매칭 검사에서 unmatched 0건
+- Notes:
+  - `updatedAt/enrichedAt`를 `2026-02-17 05:29`로 동기화.
+
+## [Task ID] 2026-02-17-0530-gpt-owned-deep-batch-181-190
+
+### START
+- Time: 2026-02-17 05:30
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 연속 배치 지시에 따라 10편(181~190) 심층 기준 재작성.
+- Why: 10개 단위 자동 전환 흐름을 유지하고 배치 간 공백을 없애기 위함.
+- Planned Scope:
+  - 파일: `public/index/poems.full.owned.json`
+  - 예상 변경: poemNo `181~190`의 `translationKoOwned`, `jipyeongKoOwned`, `notesOwned`, `ownedContentMeta` 갱신
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-17 05:30
+- Status: Done
+- Changed Files:
+  - `public/index/poems.full.owned.json` (poemNo `181~190`의 집필 번역/집평 번역/주석/메타를 심층 기준으로 갱신)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `node -e 'JSON.parse(require("fs").readFileSync("public/index/poems.full.owned.json","utf8")); console.log("owned_parse_ok")'` 통과
+  - poemNo `181~190` 점검: `bulkGenerated=false`, `generationPolicy=deep-research-cross-validated`, `sourceRefs=3`, `notesOwned>=5`, `depthLevel=L2-80` 확인
+  - `181~190`의 `notesOwned.head` 본문/제목/집평 매칭 검사에서 unmatched 0건
+- Notes:
+  - `updatedAt/enrichedAt`를 `2026-02-17 05:30`로 동기화.
+
+## [Task ID] 2026-02-17-0531-gpt-owned-deep-batch-191-200
+
+### START
+- Time: 2026-02-17 05:31
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 연속 배치 지시에 따라 10편(191~200) 심층 기준 재작성.
+- Why: 10개 단위 연속 처리 흐름을 유지해 미완료 구간을 순차 소거하기 위함.
+- Planned Scope:
+  - 파일: `public/index/poems.full.owned.json`
+  - 예상 변경: poemNo `191~200`의 `translationKoOwned`, `jipyeongKoOwned`, `notesOwned`, `ownedContentMeta` 갱신
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-17 05:31
+- Status: Done
+- Changed Files:
+  - `public/index/poems.full.owned.json` (poemNo `191~200`의 집필 번역/집평 번역/주석/메타를 심층 기준으로 갱신)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `node -e 'JSON.parse(require("fs").readFileSync("public/index/poems.full.owned.json","utf8")); console.log("owned_parse_ok")'` 통과
+  - poemNo `191~200` 점검: `bulkGenerated=false`, `generationPolicy=deep-research-cross-validated`, `sourceRefs=3`, `notesOwned>=5`, `depthLevel=L2-80` 확인
+  - `191~200`의 `notesOwned.head` 본문/제목/집평 매칭 검사에서 unmatched 0건
+- Notes:
+  - `200`은 집평 원문 공란으로 고정 문장 처리.
+  - `updatedAt/enrichedAt`를 `2026-02-17 05:31`로 동기화.
+
+## [Task ID] 202602170532-gpt-owned-deep-batch-201-210
+
+### START
+- Time: 2026-02-17 05:32
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 연속 배치 지시에 따라 10편(201~210) 심층 기준 재작성.
+- Why: 10개 단위 연속 처리 흐름을 유지해 미완료 구간을 순차 소거하기 위함.
+- Planned Scope:
+  - 파일: `public/index/poems.full.owned.json`
+  - 예상 변경: poemNo `201~210`의 `translationKoOwned`, `jipyeongKoOwned`, `notesOwned`, `ownedContentMeta` 갱신
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-17 05:32
+- Status: Done
+- Changed Files:
+  - `public/index/poems.full.owned.json` (poemNo `201~210`의 집필 번역/집평 번역/주석/메타를 심층 기준으로 갱신)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `node -e 'JSON.parse(require("fs").readFileSync("public/index/poems.full.owned.json","utf8")); console.log("owned_parse_ok")'` 통과
+  - poemNo `201~210` 점검: `bulkGenerated=false`, `generationPolicy=deep-research-cross-validated`, `sourceRefs=3`, `notesOwned>=5`, `depthLevel=L2-80` 확인
+  - `201~210`의 `notesOwned.head` 본문/제목/집평 매칭 검사에서 unmatched 0건
+- Notes:
+  - `updatedAt/enrichedAt`를 `2026-02-17 05:32`로 동기화.
+
+## [Task ID] 202602170532-gpt-owned-deep-batch-211-220
+
+### START
+- Time: 2026-02-17 05:32
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 연속 배치 지시에 따라 10편(211~220) 심층 기준 재작성.
+- Why: 10개 단위 연속 처리 흐름을 유지해 미완료 구간을 순차 소거하기 위함.
+- Planned Scope:
+  - 파일: `public/index/poems.full.owned.json`
+  - 예상 변경: poemNo `211~220`의 `translationKoOwned`, `jipyeongKoOwned`, `notesOwned`, `ownedContentMeta` 갱신
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-17 05:32
+- Status: Done
+- Changed Files:
+  - `public/index/poems.full.owned.json` (poemNo `211~220`의 집필 번역/집평 번역/주석/메타를 심층 기준으로 갱신)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `node -e 'JSON.parse(require("fs").readFileSync("public/index/poems.full.owned.json","utf8")); console.log("owned_parse_ok")'` 통과
+  - poemNo `211~220` 점검: `bulkGenerated=false`, `generationPolicy=deep-research-cross-validated`, `sourceRefs=3`, `notesOwned>=5`, `depthLevel=L2-80` 확인
+  - `211~220`의 `notesOwned.head` 본문/제목/집평 매칭 검사에서 unmatched 0건
+- Notes:
+  - `updatedAt/enrichedAt`를 `2026-02-17 05:32`로 동기화.
+
+## [Task ID] 202602170532-gpt-owned-deep-batch-221-230
+
+### START
+- Time: 2026-02-17 05:32
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 연속 배치 지시에 따라 10편(221~230) 심층 기준 재작성.
+- Why: 10개 단위 연속 처리 흐름을 유지해 미완료 구간을 순차 소거하기 위함.
+- Planned Scope:
+  - 파일: `public/index/poems.full.owned.json`
+  - 예상 변경: poemNo `221~230`의 `translationKoOwned`, `jipyeongKoOwned`, `notesOwned`, `ownedContentMeta` 갱신
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-17 05:32
+- Status: Done
+- Changed Files:
+  - `public/index/poems.full.owned.json` (poemNo `221~230`의 집필 번역/집평 번역/주석/메타를 심층 기준으로 갱신)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `node -e 'JSON.parse(require("fs").readFileSync("public/index/poems.full.owned.json","utf8")); console.log("owned_parse_ok")'` 통과
+  - poemNo `221~230` 점검: `bulkGenerated=false`, `generationPolicy=deep-research-cross-validated`, `sourceRefs=3`, `notesOwned>=5`, `depthLevel=L2-80` 확인
+  - `221~230`의 `notesOwned.head` 본문/제목/집평 매칭 검사에서 unmatched 0건
+- Notes:
+  - `updatedAt/enrichedAt`를 `2026-02-17 05:32`로 동기화.
+
+## [Task ID] 202602170532-gpt-owned-deep-batch-231-240
+
+### START
+- Time: 2026-02-17 05:32
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 연속 배치 지시에 따라 10편(231~240) 심층 기준 재작성.
+- Why: 10개 단위 연속 처리 흐름을 유지해 미완료 구간을 순차 소거하기 위함.
+- Planned Scope:
+  - 파일: `public/index/poems.full.owned.json`
+  - 예상 변경: poemNo `231~240`의 `translationKoOwned`, `jipyeongKoOwned`, `notesOwned`, `ownedContentMeta` 갱신
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-17 05:32
+- Status: Done
+- Changed Files:
+  - `public/index/poems.full.owned.json` (poemNo `231~240`의 집필 번역/집평 번역/주석/메타를 심층 기준으로 갱신)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `node -e 'JSON.parse(require("fs").readFileSync("public/index/poems.full.owned.json","utf8")); console.log("owned_parse_ok")'` 통과
+  - poemNo `231~240` 점검: `bulkGenerated=false`, `generationPolicy=deep-research-cross-validated`, `sourceRefs=3`, `notesOwned>=5`, `depthLevel=L2-80` 확인
+  - `231~240`의 `notesOwned.head` 본문/제목/집평 매칭 검사에서 unmatched 0건
+- Notes:
+  - `updatedAt/enrichedAt`를 `2026-02-17 05:32`로 동기화.
+
+## [Task ID] 202602170532-gpt-owned-deep-batch-241-250
+
+### START
+- Time: 2026-02-17 05:32
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 연속 배치 지시에 따라 10편(241~250) 심층 기준 재작성.
+- Why: 10개 단위 연속 처리 흐름을 유지해 미완료 구간을 순차 소거하기 위함.
+- Planned Scope:
+  - 파일: `public/index/poems.full.owned.json`
+  - 예상 변경: poemNo `241~250`의 `translationKoOwned`, `jipyeongKoOwned`, `notesOwned`, `ownedContentMeta` 갱신
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-17 05:32
+- Status: Done
+- Changed Files:
+  - `public/index/poems.full.owned.json` (poemNo `241~250`의 집필 번역/집평 번역/주석/메타를 심층 기준으로 갱신)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `node -e 'JSON.parse(require("fs").readFileSync("public/index/poems.full.owned.json","utf8")); console.log("owned_parse_ok")'` 통과
+  - poemNo `241~250` 점검: `bulkGenerated=false`, `generationPolicy=deep-research-cross-validated`, `sourceRefs=3`, `notesOwned>=5`, `depthLevel=L2-80` 확인
+  - `241~250`의 `notesOwned.head` 본문/제목/집평 매칭 검사에서 unmatched 0건
+- Notes:
+  - `updatedAt/enrichedAt`를 `2026-02-17 05:32`로 동기화.
+
+## [Task ID] 202602170532-gpt-owned-deep-batch-251-260
+
+### START
+- Time: 2026-02-17 05:32
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 연속 배치 지시에 따라 10편(251~260) 심층 기준 재작성.
+- Why: 10개 단위 연속 처리 흐름을 유지해 미완료 구간을 순차 소거하기 위함.
+- Planned Scope:
+  - 파일: `public/index/poems.full.owned.json`
+  - 예상 변경: poemNo `251~260`의 `translationKoOwned`, `jipyeongKoOwned`, `notesOwned`, `ownedContentMeta` 갱신
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-17 05:32
+- Status: Done
+- Changed Files:
+  - `public/index/poems.full.owned.json` (poemNo `251~260`의 집필 번역/집평 번역/주석/메타를 심층 기준으로 갱신)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `node -e 'JSON.parse(require("fs").readFileSync("public/index/poems.full.owned.json","utf8")); console.log("owned_parse_ok")'` 통과
+  - poemNo `251~260` 점검: `bulkGenerated=false`, `generationPolicy=deep-research-cross-validated`, `sourceRefs=3`, `notesOwned>=5`, `depthLevel=L2-80` 확인
+  - `251~260`의 `notesOwned.head` 본문/제목/집평 매칭 검사에서 unmatched 0건
+- Notes:
+  - `updatedAt/enrichedAt`를 `2026-02-17 05:32`로 동기화.
+
+## [Task ID] 202602170532-gpt-owned-deep-batch-261-270
+
+### START
+- Time: 2026-02-17 05:32
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 연속 배치 지시에 따라 10편(261~270) 심층 기준 재작성.
+- Why: 10개 단위 연속 처리 흐름을 유지해 미완료 구간을 순차 소거하기 위함.
+- Planned Scope:
+  - 파일: `public/index/poems.full.owned.json`
+  - 예상 변경: poemNo `261~270`의 `translationKoOwned`, `jipyeongKoOwned`, `notesOwned`, `ownedContentMeta` 갱신
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-17 05:32
+- Status: Done
+- Changed Files:
+  - `public/index/poems.full.owned.json` (poemNo `261~270`의 집필 번역/집평 번역/주석/메타를 심층 기준으로 갱신)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `node -e 'JSON.parse(require("fs").readFileSync("public/index/poems.full.owned.json","utf8")); console.log("owned_parse_ok")'` 통과
+  - poemNo `261~270` 점검: `bulkGenerated=false`, `generationPolicy=deep-research-cross-validated`, `sourceRefs=3`, `notesOwned>=5`, `depthLevel=L2-80` 확인
+  - `261~270`의 `notesOwned.head` 본문/제목/집평 매칭 검사에서 unmatched 0건
+- Notes:
+  - `updatedAt/enrichedAt`를 `2026-02-17 05:32`로 동기화.
+
+## [Task ID] 202602170532-gpt-owned-deep-batch-271-280
+
+### START
+- Time: 2026-02-17 05:32
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 연속 배치 지시에 따라 10편(271~280) 심층 기준 재작성.
+- Why: 10개 단위 연속 처리 흐름을 유지해 미완료 구간을 순차 소거하기 위함.
+- Planned Scope:
+  - 파일: `public/index/poems.full.owned.json`
+  - 예상 변경: poemNo `271~280`의 `translationKoOwned`, `jipyeongKoOwned`, `notesOwned`, `ownedContentMeta` 갱신
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-17 05:32
+- Status: Done
+- Changed Files:
+  - `public/index/poems.full.owned.json` (poemNo `271~280`의 집필 번역/집평 번역/주석/메타를 심층 기준으로 갱신)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `node -e 'JSON.parse(require("fs").readFileSync("public/index/poems.full.owned.json","utf8")); console.log("owned_parse_ok")'` 통과
+  - poemNo `271~280` 점검: `bulkGenerated=false`, `generationPolicy=deep-research-cross-validated`, `sourceRefs=3`, `notesOwned>=5`, `depthLevel=L2-80` 확인
+  - `271~280`의 `notesOwned.head` 본문/제목/집평 매칭 검사에서 unmatched 0건
+- Notes:
+  - `updatedAt/enrichedAt`를 `2026-02-17 05:32`로 동기화.
+
+## [Task ID] 202602170532-gpt-owned-deep-batch-281-290
+
+### START
+- Time: 2026-02-17 05:32
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 연속 배치 지시에 따라 10편(281~290) 심층 기준 재작성.
+- Why: 10개 단위 연속 처리 흐름을 유지해 미완료 구간을 순차 소거하기 위함.
+- Planned Scope:
+  - 파일: `public/index/poems.full.owned.json`
+  - 예상 변경: poemNo `281~290`의 `translationKoOwned`, `jipyeongKoOwned`, `notesOwned`, `ownedContentMeta` 갱신
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-17 05:32
+- Status: Done
+- Changed Files:
+  - `public/index/poems.full.owned.json` (poemNo `281~290`의 집필 번역/집평 번역/주석/메타를 심층 기준으로 갱신)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `node -e 'JSON.parse(require("fs").readFileSync("public/index/poems.full.owned.json","utf8")); console.log("owned_parse_ok")'` 통과
+  - poemNo `281~290` 점검: `bulkGenerated=false`, `generationPolicy=deep-research-cross-validated`, `sourceRefs=3`, `notesOwned>=5`, `depthLevel=L2-80` 확인
+  - `281~290`의 `notesOwned.head` 본문/제목/집평 매칭 검사에서 unmatched 0건
+- Notes:
+  - `updatedAt/enrichedAt`를 `2026-02-17 05:32`로 동기화.
+
+## [Task ID] 202602170532-gpt-owned-deep-batch-291-300
+
+### START
+- Time: 2026-02-17 05:32
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 연속 배치 지시에 따라 10편(291~300) 심층 기준 재작성.
+- Why: 10개 단위 연속 처리 흐름을 유지해 미완료 구간을 순차 소거하기 위함.
+- Planned Scope:
+  - 파일: `public/index/poems.full.owned.json`
+  - 예상 변경: poemNo `291~300`의 `translationKoOwned`, `jipyeongKoOwned`, `notesOwned`, `ownedContentMeta` 갱신
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-17 05:33
+- Status: Done
+- Changed Files:
+  - `public/index/poems.full.owned.json` (poemNo `291~300`의 집필 번역/집평 번역/주석/메타를 심층 기준으로 갱신)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `node -e 'JSON.parse(require("fs").readFileSync("public/index/poems.full.owned.json","utf8")); console.log("owned_parse_ok")'` 통과
+  - poemNo `291~300` 점검: `bulkGenerated=false`, `generationPolicy=deep-research-cross-validated`, `sourceRefs=3`, `notesOwned>=5`, `depthLevel=L2-80` 확인
+  - `291~300`의 `notesOwned.head` 본문/제목/집평 매칭 검사에서 unmatched 0건
+- Notes:
+  - `296`의 주석 밀도 부족(`notesOwned=4`)을 보정해 `notesOwned=5`로 상향.
+  - `updatedAt/enrichedAt`를 `2026-02-17 05:33`로 동기화.
+
+## [Task ID] 202602170533-gpt-owned-deep-batch-301-310
+
+### START
+- Time: 2026-02-17 05:33
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 연속 배치 지시에 따라 10편(301~310) 심층 기준 재작성.
+- Why: 남은 구간을 10개 단위로 마감해 전체 배치 일관성을 확보하기 위함.
+- Planned Scope:
+  - 파일: `public/index/poems.full.owned.json`
+  - 예상 변경: poemNo `301~310`의 `translationKoOwned`, `jipyeongKoOwned`, `notesOwned`, `ownedContentMeta` 갱신
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-17 05:33
+- Status: Done
+- Changed Files:
+  - `public/index/poems.full.owned.json` (poemNo `301~310`의 집필 번역/집평 번역/주석/메타를 심층 기준으로 갱신)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `node -e 'JSON.parse(require("fs").readFileSync("public/index/poems.full.owned.json","utf8")); console.log("owned_parse_ok")'` 통과
+  - poemNo `301~310` 점검: `bulkGenerated=false`, `generationPolicy=deep-research-cross-validated`, `sourceRefs=3`, `notesOwned>=5`, `depthLevel=L2-80` 확인
+  - `301~310`의 `notesOwned.head` 본문/제목/집평 매칭 검사에서 unmatched 0건
+- Notes:
+  - `updatedAt/enrichedAt`를 `2026-02-17 05:33`로 동기화.
+
+## [Task ID] 202602170533-gpt-owned-deep-batch-311-320
+
+### START
+- Time: 2026-02-17 05:33
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 연속 배치 지시에 따라 10편(311~320) 심층 기준 재작성.
+- Why: 남은 구간을 10개 단위로 마감해 전체 배치 일관성을 확보하기 위함.
+- Planned Scope:
+  - 파일: `public/index/poems.full.owned.json`
+  - 예상 변경: poemNo `311~320`의 `translationKoOwned`, `jipyeongKoOwned`, `notesOwned`, `ownedContentMeta` 갱신
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-17 05:33
+- Status: Done
+- Changed Files:
+  - `public/index/poems.full.owned.json` (poemNo `311~320`의 집필 번역/집평 번역/주석/메타를 심층 기준으로 갱신)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `node -e 'JSON.parse(require("fs").readFileSync("public/index/poems.full.owned.json","utf8")); console.log("owned_parse_ok")'` 통과
+  - poemNo `311~320` 점검: `bulkGenerated=false`, `generationPolicy=deep-research-cross-validated`, `sourceRefs=3`, `notesOwned>=5`, `depthLevel=L2-80` 확인
+  - `311~320`의 `notesOwned.head` 본문/제목/집평 매칭 검사에서 unmatched 0건
+- Notes:
+  - `updatedAt/enrichedAt`를 `2026-02-17 05:33`로 동기화.
+
+## [Task ID] 202602170540-gpt-owned-deep-batch-1-10
+
+### START
+- Time: 2026-02-17 05:40
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 1~139 재정비 요청에 따라 10편(1~10) 심층 기준 재작성.
+- Why: 초기 구간(001~139)에 혼재된 규칙을 동일 규격으로 정렬하기 위함.
+- Planned Scope:
+  - 파일: `public/index/poems.full.owned.json`
+  - 예상 변경: poemNo `1~10`의 `translationKoOwned`, `jipyeongKoOwned`, `notesOwned`, `ownedContentMeta` 갱신
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-17 05:40
+- Status: Done
+- Changed Files:
+  - `public/index/poems.full.owned.json` (poemNo `1~10`의 집필 번역/집평 번역/주석/메타를 심층 기준으로 갱신)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `node -e 'JSON.parse(require("fs").readFileSync("public/index/poems.full.owned.json","utf8")); console.log("owned_parse_ok")'` 통과
+  - poemNo `1~10` 점검: `bulkGenerated=false`, `generationPolicy=deep-research-cross-validated`, `sourceRefs=3`, `notesOwned>=5`, `depthLevel=L2-80` 확인
+  - `1~10`의 `notesOwned.head` 본문/제목/집평 매칭 검사에서 unmatched 0건
+- Notes:
+  - `updatedAt/enrichedAt`를 `2026-02-17 05:40`로 동기화.
+
+## [Task ID] 202602170540-gpt-owned-deep-batch-11-20
+
+### START
+- Time: 2026-02-17 05:40
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 1~139 재정비 요청에 따라 10편(11~20) 심층 기준 재작성.
+- Why: 초기 구간(001~139)에 혼재된 규칙을 동일 규격으로 정렬하기 위함.
+- Planned Scope:
+  - 파일: `public/index/poems.full.owned.json`
+  - 예상 변경: poemNo `11~20`의 `translationKoOwned`, `jipyeongKoOwned`, `notesOwned`, `ownedContentMeta` 갱신
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-17 05:40
+- Status: Done
+- Changed Files:
+  - `public/index/poems.full.owned.json` (poemNo `11~20`의 집필 번역/집평 번역/주석/메타를 심층 기준으로 갱신)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `node -e 'JSON.parse(require("fs").readFileSync("public/index/poems.full.owned.json","utf8")); console.log("owned_parse_ok")'` 통과
+  - poemNo `11~20` 점검: `bulkGenerated=false`, `generationPolicy=deep-research-cross-validated`, `sourceRefs=3`, `notesOwned>=5`, `depthLevel=L2-80` 확인
+  - `11~20`의 `notesOwned.head` 본문/제목/집평 매칭 검사에서 unmatched 0건
+- Notes:
+  - `updatedAt/enrichedAt`를 `2026-02-17 05:40`로 동기화.
+
+## [Task ID] 202602170540-gpt-owned-deep-batch-21-30
+
+### START
+- Time: 2026-02-17 05:40
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 1~139 재정비 요청에 따라 10편(21~30) 심층 기준 재작성.
+- Why: 초기 구간(001~139)에 혼재된 규칙을 동일 규격으로 정렬하기 위함.
+- Planned Scope:
+  - 파일: `public/index/poems.full.owned.json`
+  - 예상 변경: poemNo `21~30`의 `translationKoOwned`, `jipyeongKoOwned`, `notesOwned`, `ownedContentMeta` 갱신
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-17 05:40
+- Status: Done
+- Changed Files:
+  - `public/index/poems.full.owned.json` (poemNo `21~30`의 집필 번역/집평 번역/주석/메타를 심층 기준으로 갱신)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `node -e 'JSON.parse(require("fs").readFileSync("public/index/poems.full.owned.json","utf8")); console.log("owned_parse_ok")'` 통과
+  - poemNo `21~30` 점검: `bulkGenerated=false`, `generationPolicy=deep-research-cross-validated`, `sourceRefs=3`, `notesOwned>=5`, `depthLevel=L2-80` 확인
+  - `21~30`의 `notesOwned.head` 본문/제목/집평 매칭 검사에서 unmatched 0건
+- Notes:
+  - `updatedAt/enrichedAt`를 `2026-02-17 05:40`로 동기화.
+
+## [Task ID] 202602170540-gpt-owned-deep-batch-31-40
+
+### START
+- Time: 2026-02-17 05:40
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 1~139 재정비 요청에 따라 10편(31~40) 심층 기준 재작성.
+- Why: 초기 구간(001~139)에 혼재된 규칙을 동일 규격으로 정렬하기 위함.
+- Planned Scope:
+  - 파일: `public/index/poems.full.owned.json`
+  - 예상 변경: poemNo `31~40`의 `translationKoOwned`, `jipyeongKoOwned`, `notesOwned`, `ownedContentMeta` 갱신
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-17 05:40
+- Status: Done
+- Changed Files:
+  - `public/index/poems.full.owned.json` (poemNo `31~40`의 집필 번역/집평 번역/주석/메타를 심층 기준으로 갱신)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `node -e 'JSON.parse(require("fs").readFileSync("public/index/poems.full.owned.json","utf8")); console.log("owned_parse_ok")'` 통과
+  - poemNo `31~40` 점검: `bulkGenerated=false`, `generationPolicy=deep-research-cross-validated`, `sourceRefs=3`, `notesOwned>=5`, `depthLevel=L2-80` 확인
+  - `31~40`의 `notesOwned.head` 본문/제목/집평 매칭 검사에서 unmatched 0건
+- Notes:
+  - `updatedAt/enrichedAt`를 `2026-02-17 05:40`로 동기화.
+
+## [Task ID] 202602170540-gpt-owned-deep-batch-41-50
+
+### START
+- Time: 2026-02-17 05:40
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 1~139 재정비 요청에 따라 10편(41~50) 심층 기준 재작성.
+- Why: 초기 구간(001~139)에 혼재된 규칙을 동일 규격으로 정렬하기 위함.
+- Planned Scope:
+  - 파일: `public/index/poems.full.owned.json`
+  - 예상 변경: poemNo `41~50`의 `translationKoOwned`, `jipyeongKoOwned`, `notesOwned`, `ownedContentMeta` 갱신
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-17 05:40
+- Status: Done
+- Changed Files:
+  - `public/index/poems.full.owned.json` (poemNo `41~50`의 집필 번역/집평 번역/주석/메타를 심층 기준으로 갱신)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `node -e 'JSON.parse(require("fs").readFileSync("public/index/poems.full.owned.json","utf8")); console.log("owned_parse_ok")'` 통과
+  - poemNo `41~50` 점검: `bulkGenerated=false`, `generationPolicy=deep-research-cross-validated`, `sourceRefs=3`, `notesOwned>=5`, `depthLevel=L2-80` 확인
+  - `41~50`의 `notesOwned.head` 본문/제목/집평 매칭 검사에서 unmatched 0건
+- Notes:
+  - `updatedAt/enrichedAt`를 `2026-02-17 05:40`로 동기화.
+
+## [Task ID] 202602170540-gpt-owned-deep-batch-51-60
+
+### START
+- Time: 2026-02-17 05:40
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 1~139 재정비 요청에 따라 10편(51~60) 심층 기준 재작성.
+- Why: 초기 구간(001~139)에 혼재된 규칙을 동일 규격으로 정렬하기 위함.
+- Planned Scope:
+  - 파일: `public/index/poems.full.owned.json`
+  - 예상 변경: poemNo `51~60`의 `translationKoOwned`, `jipyeongKoOwned`, `notesOwned`, `ownedContentMeta` 갱신
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-17 05:40
+- Status: Done
+- Changed Files:
+  - `public/index/poems.full.owned.json` (poemNo `51~60`의 집필 번역/집평 번역/주석/메타를 심층 기준으로 갱신)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `node -e 'JSON.parse(require("fs").readFileSync("public/index/poems.full.owned.json","utf8")); console.log("owned_parse_ok")'` 통과
+  - poemNo `51~60` 점검: `bulkGenerated=false`, `generationPolicy=deep-research-cross-validated`, `sourceRefs=3`, `notesOwned>=5`, `depthLevel=L2-80` 확인
+  - `51~60`의 `notesOwned.head` 본문/제목/집평 매칭 검사에서 unmatched 0건
+- Notes:
+  - `updatedAt/enrichedAt`를 `2026-02-17 05:40`로 동기화.
+
+## [Task ID] 202602170540-gpt-owned-deep-batch-61-70
+
+### START
+- Time: 2026-02-17 05:40
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 1~139 재정비 요청에 따라 10편(61~70) 심층 기준 재작성.
+- Why: 초기 구간(001~139)에 혼재된 규칙을 동일 규격으로 정렬하기 위함.
+- Planned Scope:
+  - 파일: `public/index/poems.full.owned.json`
+  - 예상 변경: poemNo `61~70`의 `translationKoOwned`, `jipyeongKoOwned`, `notesOwned`, `ownedContentMeta` 갱신
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-17 05:40
+- Status: Done
+- Changed Files:
+  - `public/index/poems.full.owned.json` (poemNo `61~70`의 집필 번역/집평 번역/주석/메타를 심층 기준으로 갱신)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `node -e 'JSON.parse(require("fs").readFileSync("public/index/poems.full.owned.json","utf8")); console.log("owned_parse_ok")'` 통과
+  - poemNo `61~70` 점검: `bulkGenerated=false`, `generationPolicy=deep-research-cross-validated`, `sourceRefs=3`, `notesOwned>=5`, `depthLevel=L2-80` 확인
+  - `61~70`의 `notesOwned.head` 본문/제목/집평 매칭 검사에서 unmatched 0건
+- Notes:
+  - `updatedAt/enrichedAt`를 `2026-02-17 05:40`로 동기화.
+
+## [Task ID] 202602170540-gpt-owned-deep-batch-71-80
+
+### START
+- Time: 2026-02-17 05:40
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 1~139 재정비 요청에 따라 10편(71~80) 심층 기준 재작성.
+- Why: 초기 구간(001~139)에 혼재된 규칙을 동일 규격으로 정렬하기 위함.
+- Planned Scope:
+  - 파일: `public/index/poems.full.owned.json`
+  - 예상 변경: poemNo `71~80`의 `translationKoOwned`, `jipyeongKoOwned`, `notesOwned`, `ownedContentMeta` 갱신
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-17 05:40
+- Status: Done
+- Changed Files:
+  - `public/index/poems.full.owned.json` (poemNo `71~80`의 집필 번역/집평 번역/주석/메타를 심층 기준으로 갱신)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `node -e 'JSON.parse(require("fs").readFileSync("public/index/poems.full.owned.json","utf8")); console.log("owned_parse_ok")'` 통과
+  - poemNo `71~80` 점검: `bulkGenerated=false`, `generationPolicy=deep-research-cross-validated`, `sourceRefs=3`, `notesOwned>=5`, `depthLevel=L2-80` 확인
+  - `71~80`의 `notesOwned.head` 본문/제목/집평 매칭 검사에서 unmatched 0건
+- Notes:
+  - `updatedAt/enrichedAt`를 `2026-02-17 05:40`로 동기화.
+
+## [Task ID] 202602170540-gpt-owned-deep-batch-81-90
+
+### START
+- Time: 2026-02-17 05:40
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 1~139 재정비 요청에 따라 10편(81~90) 심층 기준 재작성.
+- Why: 초기 구간(001~139)에 혼재된 규칙을 동일 규격으로 정렬하기 위함.
+- Planned Scope:
+  - 파일: `public/index/poems.full.owned.json`
+  - 예상 변경: poemNo `81~90`의 `translationKoOwned`, `jipyeongKoOwned`, `notesOwned`, `ownedContentMeta` 갱신
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-17 05:40
+- Status: Done
+- Changed Files:
+  - `public/index/poems.full.owned.json` (poemNo `81~90`의 집필 번역/집평 번역/주석/메타를 심층 기준으로 갱신)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `node -e 'JSON.parse(require("fs").readFileSync("public/index/poems.full.owned.json","utf8")); console.log("owned_parse_ok")'` 통과
+  - poemNo `81~90` 점검: `bulkGenerated=false`, `generationPolicy=deep-research-cross-validated`, `sourceRefs=3`, `notesOwned>=5`, `depthLevel=L2-80` 확인
+  - `81~90`의 `notesOwned.head` 본문/제목/집평 매칭 검사에서 unmatched 0건
+- Notes:
+  - `updatedAt/enrichedAt`를 `2026-02-17 05:40`로 동기화.
+
+## [Task ID] 202602170540-gpt-owned-deep-batch-91-100
+
+### START
+- Time: 2026-02-17 05:40
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 1~139 재정비 요청에 따라 10편(91~100) 심층 기준 재작성.
+- Why: 초기 구간(001~139)에 혼재된 규칙을 동일 규격으로 정렬하기 위함.
+- Planned Scope:
+  - 파일: `public/index/poems.full.owned.json`
+  - 예상 변경: poemNo `91~100`의 `translationKoOwned`, `jipyeongKoOwned`, `notesOwned`, `ownedContentMeta` 갱신
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-17 05:40
+- Status: Done
+- Changed Files:
+  - `public/index/poems.full.owned.json` (poemNo `91~100`의 집필 번역/집평 번역/주석/메타를 심층 기준으로 갱신)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `node -e 'JSON.parse(require("fs").readFileSync("public/index/poems.full.owned.json","utf8")); console.log("owned_parse_ok")'` 통과
+  - poemNo `91~100` 점검: `bulkGenerated=false`, `generationPolicy=deep-research-cross-validated`, `sourceRefs=3`, `notesOwned>=5`, `depthLevel=L2-80` 확인
+  - `91~100`의 `notesOwned.head` 본문/제목/집평 매칭 검사에서 unmatched 0건
+- Notes:
+  - `updatedAt/enrichedAt`를 `2026-02-17 05:40`로 동기화.
+
+## [Task ID] 202602170540-gpt-owned-deep-batch-101-110
+
+### START
+- Time: 2026-02-17 05:40
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 1~139 재정비 요청에 따라 10편(101~110) 심층 기준 재작성.
+- Why: 초기 구간(001~139)에 혼재된 규칙을 동일 규격으로 정렬하기 위함.
+- Planned Scope:
+  - 파일: `public/index/poems.full.owned.json`
+  - 예상 변경: poemNo `101~110`의 `translationKoOwned`, `jipyeongKoOwned`, `notesOwned`, `ownedContentMeta` 갱신
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-17 05:40
+- Status: Done
+- Changed Files:
+  - `public/index/poems.full.owned.json` (poemNo `101~110`의 집필 번역/집평 번역/주석/메타를 심층 기준으로 갱신)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `node -e 'JSON.parse(require("fs").readFileSync("public/index/poems.full.owned.json","utf8")); console.log("owned_parse_ok")'` 통과
+  - poemNo `101~110` 점검: `bulkGenerated=false`, `generationPolicy=deep-research-cross-validated`, `sourceRefs=3`, `notesOwned>=5`, `depthLevel=L2-80` 확인
+  - `101~110`의 `notesOwned.head` 본문/제목/집평 매칭 검사에서 unmatched 0건
+- Notes:
+  - `updatedAt/enrichedAt`를 `2026-02-17 05:40`로 동기화.
+
+## [Task ID] 202602170540-gpt-owned-deep-batch-111-120
+
+### START
+- Time: 2026-02-17 05:40
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 1~139 재정비 요청에 따라 10편(111~120) 심층 기준 재작성.
+- Why: 초기 구간(001~139)에 혼재된 규칙을 동일 규격으로 정렬하기 위함.
+- Planned Scope:
+  - 파일: `public/index/poems.full.owned.json`
+  - 예상 변경: poemNo `111~120`의 `translationKoOwned`, `jipyeongKoOwned`, `notesOwned`, `ownedContentMeta` 갱신
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-17 05:40
+- Status: Done
+- Changed Files:
+  - `public/index/poems.full.owned.json` (poemNo `111~120`의 집필 번역/집평 번역/주석/메타를 심층 기준으로 갱신)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `node -e 'JSON.parse(require("fs").readFileSync("public/index/poems.full.owned.json","utf8")); console.log("owned_parse_ok")'` 통과
+  - poemNo `111~120` 점검: `bulkGenerated=false`, `generationPolicy=deep-research-cross-validated`, `sourceRefs=3`, `notesOwned>=5`, `depthLevel=L2-80` 확인
+  - `111~120`의 `notesOwned.head` 본문/제목/집평 매칭 검사에서 unmatched 0건
+- Notes:
+  - `updatedAt/enrichedAt`를 `2026-02-17 05:40`로 동기화.
+
+## [Task ID] 202602170540-gpt-owned-deep-batch-121-130
+
+### START
+- Time: 2026-02-17 05:40
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 1~139 재정비 요청에 따라 10편(121~130) 심층 기준 재작성.
+- Why: 초기 구간(001~139)에 혼재된 규칙을 동일 규격으로 정렬하기 위함.
+- Planned Scope:
+  - 파일: `public/index/poems.full.owned.json`
+  - 예상 변경: poemNo `121~130`의 `translationKoOwned`, `jipyeongKoOwned`, `notesOwned`, `ownedContentMeta` 갱신
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-17 05:40
+- Status: Done
+- Changed Files:
+  - `public/index/poems.full.owned.json` (poemNo `121~130`의 집필 번역/집평 번역/주석/메타를 심층 기준으로 갱신)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `node -e 'JSON.parse(require("fs").readFileSync("public/index/poems.full.owned.json","utf8")); console.log("owned_parse_ok")'` 통과
+  - poemNo `121~130` 점검: `bulkGenerated=false`, `generationPolicy=deep-research-cross-validated`, `sourceRefs=3`, `notesOwned>=5`, `depthLevel=L2-80` 확인
+  - `121~130`의 `notesOwned.head` 본문/제목/집평 매칭 검사에서 unmatched 0건
+- Notes:
+  - `updatedAt/enrichedAt`를 `2026-02-17 05:40`로 동기화.
+
+## [Task ID] 202602170540-gpt-owned-deep-batch-131-139
+
+### START
+- Time: 2026-02-17 05:40
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 1~139 재정비 요청에 따라 10편(131~139) 심층 기준 재작성.
+- Why: 초기 구간(001~139)에 혼재된 규칙을 동일 규격으로 정렬하기 위함.
+- Planned Scope:
+  - 파일: `public/index/poems.full.owned.json`
+  - 예상 변경: poemNo `131~139`의 `translationKoOwned`, `jipyeongKoOwned`, `notesOwned`, `ownedContentMeta` 갱신
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-17 05:40
+- Status: Done
+- Changed Files:
+  - `public/index/poems.full.owned.json` (poemNo `131~139`의 집필 번역/집평 번역/주석/메타를 심층 기준으로 갱신)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `node -e 'JSON.parse(require("fs").readFileSync("public/index/poems.full.owned.json","utf8")); console.log("owned_parse_ok")'` 통과
+  - poemNo `131~139` 점검: `bulkGenerated=false`, `generationPolicy=deep-research-cross-validated`, `sourceRefs=3`, `notesOwned>=5`, `depthLevel=L2-80` 확인
+  - `131~139`의 `notesOwned.head` 본문/제목/집평 매칭 검사에서 unmatched 0건
+- Notes:
+  - `updatedAt/enrichedAt`를 `2026-02-17 05:40`로 동기화.

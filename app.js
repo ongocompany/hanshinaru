@@ -226,11 +226,15 @@ function calcPoetFontSize(poemCount) {
  * @param {string} text - 원본 텍스트
  * @param {Array} notes - 주석 배열 [{ no, head, text }, ...]
  * @param {string} titleId - 작품 ID (ID 고유성 보장용)
+ * @param {"legacy"|"owned"} noteSource - 주석 출처 구분 (색상/스타일용)
  * @returns {string} HTML 문자열
  */
-function parseTextWithNotes(text, notes, titleId = "") {
+function parseTextWithNotes(text, notes, titleId = "", noteSource = "legacy") {
   if (!text) return "";
   if (!Array.isArray(notes) || notes.length === 0) return escapeHTML(text);
+  const sourceKey = noteSource === "owned" ? "owned" : "legacy";
+  const noteWordClass = `note-word note-word-${sourceKey}`;
+  const noteRefClass = `note-ref note-ref-${sourceKey}`;
 
   // notes를 번호로 맵핑
   const notesByNo = new Map(notes.map(n => [String(n.no), n]));
@@ -323,8 +327,8 @@ function parseTextWithNotes(text, notes, titleId = "") {
       if (displayParts.length <= 1) {
         // 줄바꿈 없음 — 기존 방식
         result =
-          `<span class="note-word" id="note-ref-${uniqueId}" ${noteAttr}>${escapeHTML(displayParts[0])}</span>` +
-          `<sup class="note-ref">${m.noteNo}</sup>` +
+          `<span class="${noteWordClass}" id="note-ref-${uniqueId}" ${noteAttr}>${escapeHTML(displayParts[0])}</span>` +
+          `<sup class="${noteRefClass}">${m.noteNo}</sup>` +
           result;
       } else {
         // 줄바꿈 있음 — span을 줄별로 분할 (\n으로 split해도 태그 안 깨지게)
@@ -332,20 +336,20 @@ function parseTextWithNotes(text, notes, titleId = "") {
         for (let pi = 0; pi < displayParts.length; pi++) {
           if (displayParts[pi]) {
             const idAttr = pi === 0 ? ` id="note-ref-${uniqueId}"` : "";
-            spans += `<span class="note-word"${idAttr} ${noteAttr}>${escapeHTML(displayParts[pi])}</span>`;
+            spans += `<span class="${noteWordClass}"${idAttr} ${noteAttr}>${escapeHTML(displayParts[pi])}</span>`;
           }
           if (pi < displayParts.length - 1) spans += "\n";
         }
-        result = spans + `<sup class="note-ref">${m.noteNo}</sup>` + result;
+        result = spans + `<sup class="${noteRefClass}">${m.noteNo}</sup>` + result;
       }
       lastIndex = m.headStart;
     } else {
       // head 키워드가 없으면 → 주석 내용이 있으면 [번호] 자체를 호버 가능하게
       const note = notesByNo.get(m.noteNo);
       if (note && note.text) {
-        result = `<span class="note-word" id="note-ref-${uniqueId}" data-note-no="${m.noteNo}" data-note-text="${escapeHTML(note.text)}">[${m.noteNo}]</span>` + result;
+        result = `<span class="${noteWordClass}" id="note-ref-${uniqueId}" data-note-no="${m.noteNo}" data-note-text="${escapeHTML(note.text)}">[${m.noteNo}]</span>` + result;
       } else {
-        result = `<sup class="note-ref" id="note-ref-${uniqueId}">${m.noteNo}</sup>` + result;
+        result = `<sup class="${noteRefClass}" id="note-ref-${uniqueId}">${m.noteNo}</sup>` + result;
       }
       lastIndex = m.index;
     }
@@ -1117,19 +1121,20 @@ function renderPoemSection(p) {
   const legacyNotes = Array.isArray(p.notes) ? p.notes : [];
   const useOwnedNotes = ownedNotes.length > 0;
   const notes = useOwnedNotes ? ownedNotes : legacyNotes;
+  const noteSource = useOwnedNotes ? "owned" : "legacy";
   const titleId = p.titleId || poemNoStr || "";  // 고유 ID (예: "C8", "C9")
 
   // 제목 주석 파싱
   const titleFullRaw = p?.title?.zh ?? "";
   const titleFullSource = useOwnedNotes ? injectNoteMarkersByHead(titleFullRaw, notes) : titleFullRaw;
-  const titleFull = parseTextWithNotes(titleFullSource, notes, titleId);
+  const titleFull = parseTextWithNotes(titleFullSource, notes, titleId, noteSource);
 
   const meta = [p.category, p.juan, p.meter ? `${p.meter}언` : ""].filter(Boolean).join(" · ");
 
   const jipZhSource = useOwnedNotes
     ? injectNoteMarkersByHead(p.jipyeongZh || "", notes)
     : (p.jipyeongZh || "");
-  const jipZh = parseTextWithNotes(jipZhSource, notes, titleId);  // 집평도 주석 파싱
+  const jipZh = parseTextWithNotes(jipZhSource, notes, titleId, noteSource);  // 집평도 주석 파싱
 
   const notesHTML = notes.length
     ? `<ul class="note-list">${notes.map(n => `
@@ -1315,7 +1320,7 @@ function renderPoemSection(p) {
   const poemZhSource = useOwnedNotes
     ? injectNoteMarkersByHead(p.poemZh || "", notes)
     : (p.poemZh || "");
-  const parsedPoemZh = parseTextWithNotes(poemZhSource, notes, titleId);
+  const parsedPoemZh = parseTextWithNotes(poemZhSource, notes, titleId, noteSource);
   const poemZhLines = parsedPoemZh.split("\n");
   const allTrKoLines = trKoRaw.split("\n");
   // 번역 데이터 앞 2줄은 제목+시인 이름 → 상단에 이미 표시하므로 본문에서 제외
@@ -1340,9 +1345,9 @@ function renderPoemSection(p) {
 
       <div class="poem-body" hidden>
         <div class="poem-text-box">
-          <div class="poem-title-zh">${parseTextWithNotes(titleFullSource, notes, titleId)}</div>
+          <div class="poem-title-zh">${parseTextWithNotes(titleFullSource, notes, titleId, noteSource)}</div>
           ${titleKo ? `<div class="poem-title-ko">${escapeHTML(titleKo)}</div>` : ''}
-          <div class="poem-poet-zh">${parseTextWithNotes(poetZhSource, notes, titleId)}</div>
+          <div class="poem-poet-zh">${parseTextWithNotes(poetZhSource, notes, titleId, noteSource)}</div>
           <div class="poem-bilingual">${bilingualRows}</div>
         </div>
 

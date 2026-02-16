@@ -271,6 +271,9 @@ function selectPoem(index) {
   document.getElementById("pf-jipyeongZh").value = poem.jipyeongZh || "";
   document.getElementById("pf-jipyeongKo").value = poem.jipyeongKo || "";
 
+  // 집필본(Owned) 확인 패널
+  renderOwnedReadonlySection(poem);
+
   // 주석
   renderNotesList(index);
 
@@ -306,6 +309,51 @@ function selectPoem(index) {
   document.getElementById("preview-content").hidden = false;
   loadEditorToolbar(poem);
   updatePreviewLive();
+}
+
+function renderOwnedReadonlySection(poem) {
+  const meta = poem?.ownedContentMeta || {};
+  const ownedNotes = Array.isArray(poem?.notesOwned) ? poem.notesOwned : [];
+  const sourceRefs = Array.isArray(meta.sourceRefs) ? meta.sourceRefs.length : 0;
+  const hasOwned =
+    String(poem?.translationKoOwned || "").trim() ||
+    String(poem?.jipyeongKoOwned || "").trim() ||
+    ownedNotes.length > 0;
+
+  const status = String(meta.status || (hasOwned ? "editing" : "none"));
+  const updatedAt = String(meta.updatedAt || "-");
+  const depth = String(meta.depthLevel || "-");
+  const policy = String(meta.generationPolicy || "-");
+  const bulk = meta.bulkGenerated === true ? "true" : (meta.bulkGenerated === false ? "false" : "-");
+  const summary = `depth=${depth} · bulk=${bulk} · refs=${sourceRefs} · policy=${policy}`;
+
+  const statusEl = document.getElementById("pf-owned-status");
+  const updatedEl = document.getElementById("pf-owned-updatedAt");
+  const summaryEl = document.getElementById("pf-owned-meta-summary");
+  const trEl = document.getElementById("pf-translationKoOwned-view");
+  const jpEl = document.getElementById("pf-jipyeongKoOwned-view");
+  const notesCountEl = document.getElementById("pf-owned-note-count");
+  const notesWrapEl = document.getElementById("pf-owned-notes-view");
+
+  if (statusEl) statusEl.value = status;
+  if (updatedEl) updatedEl.value = updatedAt;
+  if (summaryEl) summaryEl.value = summary;
+  if (trEl) trEl.value = poem?.translationKoOwned || "";
+  if (jpEl) jpEl.value = poem?.jipyeongKoOwned || "";
+  if (notesCountEl) notesCountEl.textContent = String(ownedNotes.length);
+
+  if (!notesWrapEl) return;
+  if (ownedNotes.length === 0) {
+    notesWrapEl.innerHTML = '<div class="muted">집필 주석이 없습니다.</div>';
+    return;
+  }
+
+  notesWrapEl.innerHTML = ownedNotes.map((note) => `
+    <div class="owned-note-item">
+      <span class="owned-note-head">[${escapeHTMLAdmin(note.no || "")}] ${escapeHTMLAdmin(note.head || "")}</span>
+      <span class="owned-note-text"> — ${escapeHTMLAdmin(note.text || "")}</span>
+    </div>
+  `).join("");
 }
 
 // ─── 주석 렌더링 (동적) ─────────────────────
@@ -972,9 +1020,12 @@ function getRandomBgFilename(poemNo) {
 }
 
 // 주석 파싱 (app.js parseTextWithNotes 동일 로직)
-function parseTextWithNotesAdmin(text, notes, titleId) {
+function parseTextWithNotesAdmin(text, notes, titleId, noteSource = "legacy") {
   if (!text) return "";
   if (!Array.isArray(notes) || notes.length === 0) return escapeHTMLAdmin(text);
+  const sourceKey = noteSource === "owned" ? "owned" : "legacy";
+  const noteWordClass = `note-word note-word-${sourceKey}`;
+  const noteRefClass = `note-ref note-ref-${sourceKey}`;
   const notesByNo = new Map(notes.map(n => [String(n.no), n]));
   const pattern = /\[(\d+)\]/g;
   const matches = [];
@@ -1003,11 +1054,11 @@ function parseTextWithNotesAdmin(text, notes, titleId) {
     if (m.headStart !== undefined) {
       const keyword = text.substring(m.headStart, m.index);
       result =
-        `<span class="note-word" id="note-ref-${uniqueId}" data-note-no="${m.noteNo}" data-note-text="${escapeHTMLAdmin(m.noteText)}">${escapeHTMLAdmin(keyword)}</span>` +
-        `<sup class="note-ref">${m.noteNo}</sup>` + result;
+        `<span class="${noteWordClass}" id="note-ref-${uniqueId}" data-note-no="${m.noteNo}" data-note-text="${escapeHTMLAdmin(m.noteText)}">${escapeHTMLAdmin(keyword)}</span>` +
+        `<sup class="${noteRefClass}">${m.noteNo}</sup>` + result;
       lastIndex = m.headStart;
     } else {
-      result = `<sup class="note-ref" id="note-ref-${uniqueId}">${m.noteNo}</sup>` + result;
+      result = `<sup class="${noteRefClass}" id="note-ref-${uniqueId}">${m.noteNo}</sup>` + result;
       lastIndex = m.index;
     }
   }
@@ -1093,6 +1144,7 @@ function renderPoemPreview(poem) {
   const legacyNotes = Array.isArray(poem.notes) ? poem.notes : [];
   const useOwnedNotes = ownedNotes.length > 0;
   const notes = useOwnedNotes ? ownedNotes : legacyNotes;
+  const noteSource = useOwnedNotes ? "owned" : "legacy";
   const titleId = poem.titleId || "";
 
   // 주석 파싱 적용
@@ -1100,7 +1152,7 @@ function renderPoemPreview(poem) {
   const titleSource = useOwnedNotes
     ? injectNoteMarkersByHeadAdmin(normalizeZhNameAdmin(titleFullRaw), notes)
     : normalizeZhNameAdmin(titleFullRaw);
-  const titleParsed = parseTextWithNotesAdmin(titleSource, notes, titleId);
+  const titleParsed = parseTextWithNotesAdmin(titleSource, notes, titleId, noteSource);
   const poetZh = poem?.poet?.zh ?? "";
   const poetZhSource = useOwnedNotes ? injectNoteMarkersByHeadAdmin(poetZh, notes) : poetZh;
   const meta = [poem.category, poem.juan, poem.meter ? `${poem.meter}언` : ""].filter(Boolean).join(" · ");
@@ -1112,8 +1164,8 @@ function renderPoemPreview(poem) {
   const jipZhSource = useOwnedNotes
     ? injectNoteMarkersByHeadAdmin(poem.jipyeongZh || "", notes)
     : (poem.jipyeongZh || "");
-  let poemZh = parseTextWithNotesAdmin(poemZhSource, notes, titleId);
-  const jipZh = parseTextWithNotesAdmin(jipZhSource, notes, titleId);
+  let poemZh = parseTextWithNotesAdmin(poemZhSource, notes, titleId, noteSource);
+  const jipZh = parseTextWithNotesAdmin(jipZhSource, notes, titleId, noteSource);
   const trKo = esc(poem.translationKoOwned || poem.translationKo || "");
   const jipKo = esc(cleanLegacyKoReferencesAdmin(poem.jipyeongKoOwned || poem.jipyeongKo || ""));
 
@@ -1158,7 +1210,7 @@ function renderPoemPreview(poem) {
 
   // 제목+시인 (본문 상단)
   const titleDisplay = `<div class="poem-body-title">${titleParsed}</div>`;
-  const poetDisplay = `<div class="poem-body-poet">${parseTextWithNotesAdmin(poetZhSource, notes, titleId)}</div>`;
+  const poetDisplay = `<div class="poem-body-poet">${parseTextWithNotesAdmin(poetZhSource, notes, titleId, noteSource)}</div>`;
 
   // 본문 HTML (배경 그림 모드)
   const bgUrl = getBgImageUrl(poem);

@@ -1,0 +1,12 @@
+{
+  "name": "tangshi",
+  "version": "1.0.0",
+  "description": "Tangshi Timeline Project",
+  "scripts": {
+    "build:db": "node scripts/build_pingshui_db.js",
+    "merge:poets": "node scripts/merge_poet_data.js"
+  },
+  "dependencies": {
+    "pinyin-pro": "^3.26.0"
+  }
+}

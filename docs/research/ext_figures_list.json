@@ -1,0 +1,92 @@
+[
+  {
+    "id": "EXT_geshu_han",
+    "name": "哥舒翰",
+    "nameKo": "가서한",
+    "desc": "당나라 장군 가서한의 위엄을 노래한 민요(가서가)의 작자"
+  },
+  {
+    "id": "EXT_li_he",
+    "name": "李賀",
+    "nameKo": "이하",
+    "desc": "이하의 재능을 높이 평가하여 후원함"
+  },
+  {
+    "id": "EXT_linghu_chu",
+    "name": "令狐楚",
+    "nameKo": "영호초",
+    "desc": "영호초의 후원을 받아 관직에 나아감"
+  },
+  {
+    "id": "EXT_lu_yu",
+    "name": "陸羽",
+    "nameKo": "육우",
+    "desc": "다경(茶經)의 저자 육우와 깊은 교분을 나누며 차와 시를 논함"
+  },
+  {
+    "id": "EXT_wang_jian",
+    "name": "王建",
+    "nameKo": "왕건(전촉)",
+    "desc": "전촉(前蜀)의 황제 왕건을 보좌하여 재상이 됨"
+  },
+  {
+    "id": "EXT_wu_zetian",
+    "name": "武則天",
+    "nameKo": "측천무후",
+    "desc": "측천무후의 총애를 받아 궁정 시인으로 활동함"
+  },
+  {
+    "id": "EXT_xianzong",
+    "name": "唐憲宗",
+    "nameKo": "당 헌종",
+    "desc": "헌종의 후궁으로 총애를 받음"
+  },
+  {
+    "id": "EXT_xizong",
+    "name": "唐僖宗",
+    "nameKo": "당 희종",
+    "desc": "황소의 난 때 희종을 보좌하여 난을 평정하는 데 기여함"
+  },
+  {
+    "id": "EXT_xue_tao",
+    "name": "薛濤",
+    "nameKo": "설도",
+    "desc": "여류 시인 설도와 시를 주고받으며 깊은 정을 나눔"
+  },
+  {
+    "id": "EXT_yang_guifei",
+    "name": "楊貴妃",
+    "nameKo": "양귀비",
+    "desc": "현종의 총애를 받은 귀비"
+  },
+  {
+    "id": "EXT_yao_he",
+    "name": "姚合",
+    "nameKo": "요합",
+    "desc": "시인 요합과 교유함"
+  },
+  {
+    "id": "EXT_yu_xuanji",
+    "name": "魚玄機",
+    "nameKo": "어현기",
+    "desc": "여류 시인 어현기의 스승이자 문학적 동반자"
+  },
+  {
+    "id": "EXT_zhang_shuo",
+    "name": "張說",
+    "nameKo": "장설",
+    "desc": "재상 장설의 지우를 입어 발탁됨"
+  },
+  {
+    "id": "EXT_zhang_yue",
+    "name": "張說",
+    "nameKo": "장설",
+    "desc": "재상 장설이 왕만의 시 '해일생잔야'를 격찬하여 현판으로 걸게 함"
+  },
+  {
+    "id": "EXT_zhu_wen",
+    "name": "朱溫",
+    "nameKo": "주전충",
+    "desc": "당말의 군벌 주전충의 후원을 받음"
+  }
+]

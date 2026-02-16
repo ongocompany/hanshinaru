@@ -1,0 +1,804 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>작품 이미지 프롬프트 스튜디오</title>
+  <style>
+    :root {
+      --bg: #f5f7fa;
+      --panel: #ffffff;
+      --ink: #1f2937;
+      --muted: #6b7280;
+      --line: #d1d5db;
+      --accent: #0f766e;
+      --accent-soft: #ccfbf1;
+      --warn: #dc2626;
+      --warn-soft: #fef2f2;
+      --done: #16a34a;
+      --done-soft: #dcfce7;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at top right, #dbeafe 0%, transparent 38%),
+        radial-gradient(circle at bottom left, #ccfbf1 0%, transparent 40%),
+        var(--bg);
+      color: var(--ink);
+      font-family: "Pretendard", "Noto Sans KR", "Apple SD Gothic Neo", sans-serif;
+    }
+
+    .shell {
+      max-width: 1540px;
+      margin: 0 auto;
+      padding: 16px;
+    }
+
+    .title {
+      margin: 0 0 2px;
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+
+    .subtitle {
+      margin: 0 0 14px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 340px 1fr 360px;
+      gap: 14px;
+      min-height: calc(100vh - 100px);
+    }
+
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 14px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+      display: flex;
+      flex-direction: column;
+      min-height: 0;
+    }
+
+    .panel h2 {
+      margin: 0 0 8px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .group {
+      margin-bottom: 12px;
+      padding-bottom: 12px;
+      border-bottom: 1px dashed #dbe4ea;
+    }
+    .group:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+
+    .row {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      margin-bottom: 6px;
+    }
+    .row:last-child { margin-bottom: 0; }
+
+    label {
+      font-size: 12px;
+      color: var(--muted);
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="number"],
+    select,
+    textarea {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 8px 10px;
+      font-size: 13px;
+      background: #fff;
+      color: var(--ink);
+    }
+
+    textarea {
+      min-height: 72px;
+      resize: vertical;
+      line-height: 1.45;
+    }
+
+    input[type="checkbox"] {
+      accent-color: var(--accent);
+    }
+
+    button {
+      border: 1px solid var(--accent);
+      border-radius: 8px;
+      padding: 7px 12px;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+      background: var(--accent-soft);
+      color: #134e4a;
+      white-space: nowrap;
+    }
+    button:disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+    }
+
+    button.secondary {
+      border-color: #94a3b8;
+      background: #f8fafc;
+      color: #334155;
+    }
+
+    button.warn {
+      border-color: var(--warn);
+      background: var(--warn-soft);
+      color: #991b1b;
+    }
+
+    button.big {
+      font-size: 14px;
+      padding: 10px 16px;
+    }
+
+    .hint {
+      font-size: 11px;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+
+    .status {
+      margin-top: 10px;
+      font-size: 12px;
+      color: #155e75;
+      background: #ecfeff;
+      border: 1px solid #a5f3fc;
+      border-radius: 8px;
+      padding: 8px 12px;
+      min-height: 34px;
+      line-height: 1.4;
+    }
+
+    .split-actions {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .works-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 6px;
+    }
+
+    .works-count {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .work-list {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: #fcfdff;
+      overflow: auto;
+      max-height: calc(100vh - 465px);
+      min-height: 220px;
+    }
+
+    .work-item {
+      display: grid;
+      grid-template-columns: 22px 1fr;
+      gap: 8px;
+      padding: 8px;
+      border-bottom: 1px solid #eef2f7;
+      cursor: pointer;
+      transition: background 0.12s ease;
+    }
+    .work-item:last-child {
+      border-bottom: 0;
+    }
+    .work-item:hover {
+      background: #f8fafc;
+    }
+    .work-item.selected {
+      background: #f0fdfa;
+      outline: 1px solid #14b8a6;
+      outline-offset: -1px;
+    }
+    .work-item.done {
+      background: #f0fdf4;
+    }
+
+    .work-item input[type="checkbox"] {
+      margin-top: 2px;
+    }
+
+    .work-title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 2px;
+    }
+
+    .work-title {
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 1.3;
+    }
+
+    .work-ok {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 30px;
+      padding: 2px 7px;
+      border-radius: 999px;
+      border: 1px solid #16a34a;
+      background: #dcfce7;
+      color: #166534;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 0.03em;
+    }
+
+    .work-meta {
+      font-size: 11px;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+
+    .work-preview {
+      font-size: 11px;
+      color: #475569;
+      line-height: 1.35;
+    }
+
+    .selection-box {
+      border: 1px solid #dbeafe;
+      background: #eff6ff;
+      border-radius: 10px;
+      padding: 10px;
+      margin-bottom: 10px;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .style-box {
+      border: 1px solid #bae6fd;
+      background: #f0f9ff;
+      border-radius: 10px;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    .style-box .style-title {
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .style-box .style-items {
+      font-size: 12px;
+      color: #0f172a;
+      line-height: 1.5;
+    }
+
+    .settings-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+    .settings-grid .full {
+      grid-column: 1 / -1;
+    }
+
+    .api-key-row {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+    .api-key-row input {
+      flex: 1;
+    }
+
+    .api-key-tools {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      margin-top: 6px;
+      flex-wrap: wrap;
+    }
+
+    .generation-actions {
+      display: flex;
+      gap: 8px;
+      margin-top: 6px;
+      flex-wrap: wrap;
+    }
+
+    .catalog-tools {
+      display: flex;
+      gap: 8px;
+      margin-top: 8px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .results-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+
+    .results-count {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .result-list {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      overflow: auto;
+      background: #fcfdff;
+      max-height: calc(100vh - 460px);
+      min-height: 240px;
+      padding: 8px;
+      margin-bottom: 10px;
+      margin-top: 8px;
+    }
+
+    .result-card {
+      border: 1px solid #dbe4ea;
+      border-radius: 10px;
+      background: #fff;
+      padding: 9px;
+      margin-bottom: 8px;
+    }
+    .result-card:last-child { margin-bottom: 0; }
+
+    .result-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 8px;
+      margin-bottom: 4px;
+    }
+    .result-title {
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 1.3;
+    }
+    .result-meta {
+      font-size: 11px;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+    .result-scene {
+      font-size: 12px;
+      color: #0f172a;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 6px 8px;
+      margin-bottom: 6px;
+    }
+
+    .field-label {
+      font-size: 11px;
+      color: #475569;
+      margin: 4px 0;
+      display: block;
+    }
+
+    .result-actions {
+      display: flex;
+      gap: 6px;
+      margin-top: 6px;
+      flex-wrap: wrap;
+    }
+
+    .ratio-select {
+      width: 102px;
+      min-width: 102px;
+    }
+
+    .queue-shell {
+      margin-top: 12px;
+      border-top: 1px dashed #dbe4ea;
+      padding-top: 12px;
+    }
+
+    .queue-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+
+    .queue-list {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: #fcfdff;
+      max-height: 170px;
+      overflow: auto;
+      padding: 6px;
+      margin-bottom: 8px;
+    }
+
+    .queue-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 6px 8px;
+      margin-bottom: 5px;
+      font-size: 12px;
+      background: #fff;
+      cursor: pointer;
+    }
+    .queue-item:last-child { margin-bottom: 0; }
+    .queue-item.active {
+      background: #ecfeff;
+      border-color: #67e8f9;
+      outline: 2px solid #22d3ee;
+      outline-offset: 0;
+    }
+    .queue-item.done {
+      background: #f0fdf4;
+      border-color: #86efac;
+    }
+    .queue-item.active.done {
+      outline: 2px solid #22d3ee;
+    }
+
+    .queue-state {
+      font-size: 11px;
+      color: #64748b;
+      white-space: nowrap;
+    }
+
+    .queue-hint {
+      font-size: 11px;
+      color: var(--muted);
+      margin: 6px 0;
+      line-height: 1.45;
+      padding: 6px 8px;
+      background: #fffbeb;
+      border: 1px dashed #fbbf24;
+      border-radius: 6px;
+    }
+
+    .queue-actions {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-bottom: 8px;
+    }
+
+    .image-collection-list {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: #fcfdff;
+      max-height: calc(100vh - 280px);
+      min-height: 260px;
+      overflow: auto;
+      padding: 6px;
+      margin-bottom: 8px;
+    }
+
+    .img-col-item {
+      display: grid;
+      grid-template-columns: 68px 1fr;
+      gap: 8px;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 6px 8px;
+      margin-bottom: 5px;
+      background: #fff;
+    }
+    .img-col-item:last-child { margin-bottom: 0; }
+
+    .img-thumb {
+      width: 68px;
+      height: 68px;
+      border-radius: 6px;
+      object-fit: cover;
+      background: #e2e8f0;
+      border: 1px solid #cbd5e1;
+    }
+
+    .img-meta {
+      min-width: 0;
+    }
+    .img-title {
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 1.35;
+      margin-bottom: 2px;
+    }
+    .img-sub {
+      font-size: 11px;
+      color: var(--muted);
+      line-height: 1.35;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .badge {
+      font-size: 11px;
+      color: #0f766e;
+      background: #ccfbf1;
+      border: 1px solid #99f6e4;
+      border-radius: 999px;
+      padding: 2px 8px;
+    }
+
+    .empty-msg {
+      font-size: 13px;
+      color: var(--muted);
+      text-align: center;
+      padding: 28px 14px;
+    }
+
+    .footer-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    @media (max-width: 1440px) {
+      .layout {
+        grid-template-columns: 320px 1fr;
+      }
+      .layout > :nth-child(3) {
+        grid-column: 1 / -1;
+      }
+      .result-list {
+        max-height: 360px;
+      }
+      .image-collection-list {
+        max-height: 260px;
+        min-height: 200px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+      .work-list {
+        max-height: 240px;
+      }
+      .result-list {
+        max-height: 320px;
+      }
+      .settings-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <h1 class="title">작품 이미지 프롬프트 스튜디오</h1>
+    <p class="subtitle">작품 선택 → GPT 생성 → Midjourney 프롬프트 복사/내보내기</p>
+
+    <div class="layout">
+      <aside class="panel">
+        <div class="group">
+          <h2>1. 작품 DB 로드</h2>
+          <div class="row">
+            <input id="dbPath" type="text" value="../public/index/poems.full.json">
+            <button id="btnLoadPath" type="button">로드</button>
+          </div>
+          <div class="row">
+            <input id="dbFileInput" type="file" accept="application/json" style="font-size:12px">
+          </div>
+          <div class="hint">`poems.full.json` 또는 `archive/database.json` 구조를 지원합니다.</div>
+        </div>
+
+        <div class="group">
+          <h2>2. 작품 검색/선택</h2>
+          <div class="row">
+            <input id="queryInput" type="text" placeholder="제목/시인/본문 검색">
+          </div>
+          <div class="row">
+            <input id="poetInput" type="text" placeholder="시인명 필터">
+          </div>
+          <div class="split-actions">
+            <button id="btnApplyFilter" type="button">필터 적용</button>
+            <button id="btnResetFilter" type="button" class="secondary">필터 초기화</button>
+          </div>
+        </div>
+
+        <div class="group" style="flex:1; min-height:0;">
+          <div class="works-header">
+            <h2 style="margin:0;">작품 목록</h2>
+            <span id="worksCount" class="works-count">0 / 0</span>
+          </div>
+
+          <div class="split-actions" style="margin-bottom:8px;">
+            <button id="btnSelectFiltered" type="button" class="secondary">필터 전부 선택</button>
+            <button id="btnClearSelection" type="button" class="secondary">선택 해제</button>
+          </div>
+
+          <div id="workList" class="work-list">
+            <div class="empty-msg">작품 DB를 먼저 로드해주세요.</div>
+          </div>
+        </div>
+
+        <div id="leftStatus" class="status">준비 완료</div>
+      </aside>
+
+      <section class="panel">
+        <h2>3. 생성 설정</h2>
+
+        <div id="selectionSummary" class="selection-box">
+          선택된 작품: 0편
+        </div>
+
+        <div class="style-box">
+          <div class="style-title">공통 스타일(항상 포함)</div>
+          <div class="style-items">
+            - 수묵화(문인화) 느낌<br>
+            - 단순한 색 사용<br>
+            - 시적인 느낌
+          </div>
+        </div>
+
+        <div class="settings-grid">
+          <div class="full">
+            <label for="apiKeyInput">OpenAI API Key</label>
+            <div class="api-key-row">
+              <input id="apiKeyInput" type="password" placeholder="sk-...">
+              <button id="btnToggleApiKey" type="button" class="secondary">보기</button>
+            </div>
+            <div class="api-key-tools">
+              <label><input id="rememberApiKey" type="checkbox"> 이 브라우저에 키 저장</label>
+              <button id="btnForgetApiKey" type="button" class="secondary">저장키 삭제</button>
+            </div>
+          </div>
+          <div>
+            <label for="modelInput">모델</label>
+            <input id="modelInput" type="text" value="gpt-4.1">
+          </div>
+          <div>
+            <label for="temperatureInput">Temperature</label>
+            <input id="temperatureInput" type="number" min="0" max="2" step="0.1" value="0.4">
+          </div>
+          <div>
+            <label for="globalAspectRatio">기본 비율</label>
+            <select id="globalAspectRatio">
+              <option value="3:2" selected>3:2</option>
+              <option value="1:1">1:1</option>
+              <option value="2:3">2:3</option>
+              <option value="4:3">4:3</option>
+              <option value="3:4">3:4</option>
+              <option value="16:9">16:9</option>
+              <option value="9:16">9:16</option>
+            </select>
+          </div>
+          <div class="full">
+            <label><input id="dryRunToggle" type="checkbox"> API 호출 없이 dry-run 생성</label>
+          </div>
+          <div class="full">
+            <label><input id="openMidjourneyAfterGenerate" type="checkbox"> 생성 완료 후 Midjourney 탭 열기(프롬프트 복사)</label>
+          </div>
+        </div>
+
+        <div class="generation-actions">
+          <button id="btnGenerate" type="button" class="big">프롬프트 생성</button>
+          <button id="btnGenerateSelectedTop5" type="button" class="secondary">선택 중 5편만 생성</button>
+        </div>
+
+        <div class="catalog-tools">
+          <label class="secondary" style="padding:7px 12px; border:1px solid #94a3b8; border-radius:8px; cursor:pointer; font-size:12px; font-weight:700; background:#f8fafc; color:#334155;">
+            프롬프트 JSON 불러오기
+            <input id="promptCatalogFileInput" type="file" accept="application/json,.json" hidden>
+          </label>
+          <button id="btnApplyCatalogSelection" type="button" class="secondary">선택작품 프롬프트 불러오기</button>
+          <label><input id="autoApplyCatalogOnSelect" type="checkbox" checked> 작품 선택 시 자동 반영</label>
+        </div>
+
+        <div class="hint" style="margin-top:8px;">
+          실제 API 호출 모드에서는 선택된 작품들을 한 번에 요청합니다.
+        </div>
+
+        <div id="centerStatus" class="status">아직 생성 전</div>
+
+        <div class="results-header" style="margin-top:12px;">
+          <h2 style="margin:0;">생성 결과</h2>
+          <span id="resultsCount" class="results-count">0개</span>
+        </div>
+
+        <div id="resultList" class="result-list">
+          <div class="empty-msg">생성된 프롬프트가 없습니다.</div>
+        </div>
+
+        <div class="footer-actions">
+          <button id="btnCopyAllPrompts" type="button" class="secondary" disabled>전체 프롬프트 복사</button>
+          <button id="btnExportJson" type="button" disabled>결과 JSON 저장</button>
+          <button id="btnClearResults" type="button" class="warn">결과 초기화</button>
+        </div>
+
+        <div class="queue-shell">
+          <div class="queue-head">
+            <h2 style="margin:0;">이미지 큐 (최대 5)</h2>
+            <span id="queueCountBadge" class="badge">0/5</span>
+          </div>
+
+          <div class="queue-actions">
+            <button id="btnBuildQueueFromSelection" type="button" class="secondary">선택에서 큐 5개 구성</button>
+            <button id="btnClearQueue" type="button" class="secondary">큐 초기화</button>
+            <label class="secondary" style="padding:7px 12px; border:1px solid #94a3b8; border-radius:8px; cursor:pointer; font-size:12px; font-weight:700; background:#f8fafc; color:#334155;">
+              파일 추가
+              <input id="queueFileInput" type="file" accept="image/*" hidden>
+            </label>
+          </div>
+
+          <div id="queueList" class="queue-list">
+            <div class="empty-msg" style="padding:16px 10px;">아직 큐가 없습니다.</div>
+          </div>
+
+          <div class="queue-hint">
+            활성 큐 항목에서 Ctrl/Cmd+V 붙여넣기 하면 이미지가 `작품코드.jpg`로 자동 저장됩니다.
+          </div>
+
+        </div>
+      </section>
+
+      <aside class="panel">
+        <div class="queue-head">
+          <h2 style="margin:0;">이미지 미리보기</h2>
+          <span id="imageCollectionCount" class="badge">0개</span>
+        </div>
+        <div class="hint" style="margin-bottom:8px;">
+          붙여넣기/파일 추가한 이미지가 작품코드와 함께 썸네일로 표시됩니다. 기존 이미지 폴더 불러오기는 파일명이 작품코드(`C14.jpg` 등)일 때 자동 매칭됩니다.
+        </div>
+        <div class="queue-actions" style="margin-bottom:8px;">
+          <label class="secondary" style="padding:7px 12px; border:1px solid #94a3b8; border-radius:8px; cursor:pointer; font-size:12px; font-weight:700; background:#f8fafc; color:#334155;">
+            기존 이미지 폴더 불러오기
+            <input id="existingImagesDirInput" type="file" accept="image/*" webkitdirectory directory multiple hidden>
+          </label>
+        </div>
+
+        <div id="imageCollectionList" class="image-collection-list">
+          <div class="empty-msg" style="padding:16px 10px;">저장된 이미지가 없습니다.</div>
+        </div>
+
+        <div class="queue-actions" style="margin-top:auto;">
+          <button id="btnDownloadImageZip" type="button" disabled>이미지 ZIP 다운로드</button>
+          <button id="btnExportImageManifest" type="button" class="secondary" disabled>이미지 manifest 저장</button>
+          <button id="btnClearImages" type="button" class="warn">이미지 초기화</button>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/jszip@3.10.1/dist/jszip.min.js"></script>
+  <script src="./midjourney_prompt_generator_ui.js"></script>
+</body>
+</html>

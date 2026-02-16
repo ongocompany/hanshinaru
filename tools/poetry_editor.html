@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>한시 작성 도우미 (Poetry Editor)</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --panel: #ffffff;
+      --border: #e2e8f0;
+      --primary: #0f766e;
+      --text: #1e293b;
+      --ping: #3b82f6; /* 평성 - 파랑 */
+      --ze: #ef4444;   /* 측성 - 빨강 */
+    }
+    body { margin: 0; padding: 20px; font-family: "Pretendard", serif; background: var(--bg); color: var(--text); }
+    .container { max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: 300px 1fr; gap: 20px; }
+    .panel { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 20px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
+    h1 { margin: 0 0 20px; font-size: 20px; color: var(--primary); }
+    h2 { margin: 0 0 12px; font-size: 16px; border-bottom: 2px solid var(--bg); padding-bottom: 8px; }
+    
+    .control-group { margin-bottom: 16px; }
+    label { display: block; font-size: 13px; color: #64748b; margin-bottom: 4px; }
+    select, button { width: 100%; padding: 8px; border: 1px solid var(--border); border-radius: 6px; font-size: 14px; }
+    button { background: var(--primary); color: white; font-weight: bold; cursor: pointer; border: none; margin-top: 8px; }
+    button:hover { opacity: 0.9; }
+    button.secondary { background: #64748b; }
+    
+    .legend { display: flex; gap: 10px; margin-top: 10px; font-size: 12px; }
+    .legend-item { display: flex; align-items: center; gap: 4px; }
+    .dot { width: 10px; height: 10px; border-radius: 50%; }
+    .dot.ping { background: var(--ping); }
+    .dot.ze { background: var(--ze); }
+
+    .editor-area { display: flex; flex-direction: column; gap: 10px; }
+    .poem-row { display: flex; gap: 8px; margin-bottom: 12px; align-items: flex-start; }
+    .char-box { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+    .char-input { width: 48px; height: 48px; font-size: 24px; text-align: center; border: 1px solid var(--border); border-radius: 8px; font-family: "Noto Serif KR", serif; }
+    .char-input:focus { outline: 2px solid var(--primary); border-color: transparent; }
+    .tone-indicator { font-size: 11px; height: 16px; color: #94a3b8; display: flex; align-items: center; gap: 2px; }
+    .tone-mark { width: 8px; height: 8px; border-radius: 50%; background: #cbd5e1; }
+    
+    .is-ping .tone-mark { background: var(--ping); }
+    .is-ze .tone-mark { background: var(--ze); }
+    .violation .char-input { border-color: var(--ze); background-color: #fef2f2; }
+    .violation .tone-indicator { color: var(--ze); font-weight: bold; }
+
+    .analysis-box { margin-top: 20px; padding: 12px; background: #f1f5f9; border-radius: 8px; font-size: 13px; line-height: 1.6; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <aside class="panel">
+      <h1>한시 작성 도우미</h1>
+      <div class="control-group">
+        <label>형식 선택</label>
+        <select id="template-select">
+          <option value="5-jue-ping">오언절구 (평기식)</option>
+          <option value="5-jue-ze">오언절구 (측기식)</option>
+          <option value="7-jue-ping">칠언절구 (평기식)</option>
+          <option value="7-jue-ze">칠언절구 (측기식)</option>
+          <option value="5-lu-ping">오언율시 (평기식)</option>
+          <option value="7-lu-ping">칠언율시 (평기식)</option>
+        </select>
+      </div>
+      <div class="control-group">
+        <button id="btn-reset">초기화</button>
+        <button id="btn-copy" class="secondary">텍스트 복사</button>
+      </div>
+      <div class="legend">
+        <div class="legend-item"><span class="dot ping"></span> 평성(平)</div>
+        <div class="legend-item"><span class="dot ze"></span> 측성(仄)</div>
+      </div>
+      <div class="analysis-box" id="analysis-result">작성을 시작하면 평측 분석 결과가 표시됩니다.</div>
+    </aside>
+    <main class="panel">
+      <h2>작성 영역</h2>
+      <div id="editor-grid" class="editor-area"></div>
+    </main>
+  </div>
+  <script src="https://unpkg.com/pinyin-pro@3.26.0/dist/index.js"></script>
+  <script src="poetry_editor.js"></script>
+</body>
+</html>
