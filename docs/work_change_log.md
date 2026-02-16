@@ -2385,3 +2385,307 @@
 - Notes:
   - CSS justify-content는 transition 불가 → max-width 1200px→660px 축소 방식으로 센터 애니메이션 구현
   - 기존 app.js의 ERA_CONFIG 색상은 유지 (CSS에서 오버라이드)
+
+## [Task ID] 2026-02-16-2121-gpt-protocol-update-for-next-ai
+
+### START
+- Time: 2026-02-16 21:21
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 내일 다른 AI가 그대로 수행할 수 있도록 심층번역 운영프로토콜에 검색 조건/작성 방법/워크플로우/저장 규칙을 상세 반영 요청.
+- Why: 현재 프로토콜이 요약 수준이라 실작업 기준 일관성이 부족하고, 인수인계용 실행 문서가 필요함.
+- Planned Scope:
+  - 파일: `docs/research/12_심층번역_운영프로토콜_260216_CH.md`
+  - 예상 변경: 진행현황, 검색 조건, 작성 규칙, 배치 워크플로우, 금지사항, 체크리스트 추가/수정
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-16 21:22
+- Status: Done
+- Changed Files:
+  - `docs/research/12_심층번역_운영프로토콜_260216_CH.md` (검색 조건/작성 방법/워크플로우/저장 규칙/금지사항/체크리스트를 실행 문서 수준으로 전면 확장)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - 문서 구조 확인: 목적/현황/검색조건/작성법/메타규칙/워크플로우/품질게이트/금지사항/체크리스트 섹션 반영 완료
+- Notes:
+  - 내일 타 AI가 그대로 실행 가능한 인수인계 문서로 작성됨.
+  - 저장 대상은 `poems.full.owned.json`, 원본 보존 원칙을 명시함.
+
+## [Task ID] 2026-02-16-2130-gpt-owned-deep-batch-046-055
+
+### START
+- Time: 2026-02-16 21:30
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 심층번역 운영프로토콜 기준으로 owned 데이터 10편 배치(046~055) 재집필.
+- Why: placeholder 구간 제거 및 시어체/집평 직역 분리 품질 반영.
+- Planned Scope:
+  - 파일: `public/index/poems.full.owned.json`
+  - 예상 변경: 046~055의 `translationKoOwned`, `jipyeongKoOwned`, `notesOwned`, `ownedContentMeta` 갱신
+- Status: In Progress
+
+### END
+- Time: 2026-02-16 21:35
+- Status: Done
+- Changed Files:
+  - `public/index/poems.full.owned.json` (046~055 placeholder 제거, owned 4개 필드 전면 갱신)
+- Validation:
+  - JSON 파싱 확인 완료
+  - 046/047/050/054/055 샘플 점검: placeholder 미검출, notesOwned 5개, 메타 정책 반영 확인
+- Notes:
+  - 다음 배치 시작 번호: 056
+
+## [Task ID] 2026-02-16-2136-gpt-owned-deep-batch-056-065
+
+### START
+- Time: 2026-02-16 21:36
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 심층번역 운영프로토콜 기준으로 owned 데이터 10편 배치(056~065) 재집필.
+- Why: placeholder 제거 + 장편(60~64)의 시어체/집평직역/주석 정합성 보강.
+- Planned Scope:
+  - 파일: `public/index/poems.full.owned.json`
+  - 예상 변경: 056~065의 `translationKoOwned`, `jipyeongKoOwned`, `notesOwned`, `ownedContentMeta` 갱신
+- Status: In Progress
+
+### END
+- Time: 2026-02-16 21:49
+- Status: Done
+- Changed Files:
+  - `public/index/poems.full.owned.json` (056~065 owned 4개 필드 갱신)
+- Validation:
+  - JSON 파싱 확인 완료
+  - 056/057/060/061/064/065 샘플 점검: placeholder 미검출, notesOwned 5개, 메타 정책 반영 확인
+- Notes:
+  - 다음 배치 시작 번호: 066
+
+## [Task ID] 2026-02-16-2150-gpt-owned-deep-batch-066-075
+
+### START
+- Time: 2026-02-16 21:50
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 심층번역 운영프로토콜 기준으로 owned 데이터 10편 배치(066~075) 재집필.
+- Why: 중/장편 구간(069, 071, 072) 포함 placeholder 제거 및 주석 키워드 보강.
+- Planned Scope:
+  - 파일: `public/index/poems.full.owned.json`
+  - 예상 변경: 066~075의 `translationKoOwned`, `jipyeongKoOwned`, `notesOwned`, `ownedContentMeta` 갱신
+- Status: In Progress
+
+### END
+- Time: 2026-02-16 21:52
+- Status: Done
+- Changed Files:
+  - `public/index/poems.full.owned.json` (066~075 owned 4개 필드 갱신)
+- Validation:
+  - JSON 파싱 확인 완료
+  - 066/068/069/071/072/075 샘플 점검: placeholder 미검출, notesOwned 5개, 메타 정책 반영 확인
+- Notes:
+  - 다음 배치 시작 번호: 076
+
+## [Task ID] 2026-02-16-2154-gpt-owned-deep-batch-076-085
+
+### START
+- Time: 2026-02-16 21:54
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 심층번역 운영프로토콜 기준으로 owned 데이터 10편 배치(076~085) 재집필.
+- Why: 장단편 혼합 구간(079 포함) placeholder 제거 및 주석 키워드 체계 정리.
+- Planned Scope:
+  - 파일: `public/index/poems.full.owned.json`
+  - 예상 변경: 076~085의 `translationKoOwned`, `jipyeongKoOwned`, `notesOwned`, `ownedContentMeta` 갱신
+- Status: In Progress
+
+### END
+- Time: 2026-02-16 21:58
+- Status: Done
+- Changed Files:
+  - `public/index/poems.full.owned.json` (076~085 owned 4개 필드 갱신)
+- Validation:
+  - JSON 파싱 확인 완료
+  - 076/079/080/082/084/085 샘플 점검: placeholder 미검출, notesOwned 5개, 메타 정책 반영 확인
+- Notes:
+  - 다음 배치 시작 번호: 086
+
+## [Task ID] 2026-02-16-2200-gpt-owned-deep-batch-086-095
+
+### START
+- Time: 2026-02-16 22:00
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 심층번역 운영프로토콜 기준으로 owned 데이터 10편 배치(086~095) 재집필.
+- Why: 전란·풍자 집중 구간(086~089)과 오율 구간(090~095) placeholder 제거 및 주석 정합성 보강.
+- Planned Scope:
+  - 파일: `public/index/poems.full.owned.json`
+  - 예상 변경: 086~095의 `translationKoOwned`, `jipyeongKoOwned`, `notesOwned`, `ownedContentMeta` 갱신
+- Status: In Progress
+
+### END
+- Time: 2026-02-16 22:06
+- Status: Done
+- Changed Files:
+  - `public/index/poems.full.owned.json` (086~095 owned 4개 필드 갱신)
+- Validation:
+  - JSON 파싱 확인 완료
+  - 086/087/090/093/094/095 샘플 점검: placeholder 미검출, notesOwned 5개, 메타 정책 반영 확인
+- Notes:
+  - 다음 배치 시작 번호: 096
+
+## [Task ID] 2026-02-16-2207-gpt-owned-deep-batch-096-105
+
+### START
+- Time: 2026-02-16 22:07
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 심층번역 운영프로토콜 기준으로 owned 데이터 10편 배치(096~105) 재집필.
+- Why: 오율 중심 구간 placeholder 제거 + 본문/집평 어조 통일.
+- Planned Scope:
+  - 파일: `public/index/poems.full.owned.json`
+  - 예상 변경: 096~105의 `translationKoOwned`, `jipyeongKoOwned`, `notesOwned`, `ownedContentMeta` 갱신
+- Status: In Progress
+
+### END
+- Time: 2026-02-16 22:11
+- Status: Done
+- Changed Files:
+  - `public/index/poems.full.owned.json` (096~105 owned 4개 필드 갱신)
+- Validation:
+  - JSON 파싱 확인 완료
+  - 096/097/100/101/104/105 샘플 점검: placeholder 미검출, notesOwned 5개, 메타 정책 반영 확인
+- Notes:
+  - 다음 배치 시작 번호: 106
+
+## [Task ID] 2026-02-16-2213-gpt-owned-deep-batch-106-115
+
+### START
+- Time: 2026-02-16 22:13
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 심층번역 운영프로토콜 기준으로 owned 데이터 10편 배치(106~115) 재집필.
+- Why: 두보/왕유 오율 핵심 구간 placeholder 제거 + 집평 반어/흥기 해석 보강.
+- Planned Scope:
+  - 파일: `public/index/poems.full.owned.json`
+  - 예상 변경: 106~115의 `translationKoOwned`, `jipyeongKoOwned`, `notesOwned`, `ownedContentMeta` 갱신
+- Status: In Progress
+
+### END
+- Time: 2026-02-16 22:19
+- Status: Done
+- Changed Files:
+  - `public/index/poems.full.owned.json` (106~115 owned 4개 필드 갱신)
+- Validation:
+  - JSON 파싱 확인 완료
+  - 106/107/110/113/114/115 샘플 점검: placeholder 미검출, notesOwned 5개, 메타 정책 반영 확인
+- Notes:
+  - 다음 배치 시작 번호: 116
+
+## [Task ID] 2026-02-16-2222-gpt-owned-deep-batch-116-125
+
+### START
+- Time: 2026-02-16 22:22
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 심층번역 운영프로토콜 기준으로 owned 데이터 10편 배치(116~125) 재집필.
+- Why: 왕유/맹호연 산수오율 구간 placeholder 제거 및 주석 키워드 정밀화.
+- Planned Scope:
+  - 파일: `public/index/poems.full.owned.json`
+  - 예상 변경: 116~125의 `translationKoOwned`, `jipyeongKoOwned`, `notesOwned`, `ownedContentMeta` 갱신
+- Status: In Progress
+
+### END
+- Time: 2026-02-16 22:28
+- Status: Done
+- Changed Files:
+  - `public/index/poems.full.owned.json` (116~125 owned 4개 필드 갱신)
+- Validation:
+  - JSON 파싱 확인 완료
+  - 116/118/120/122/124/125 샘플 점검: placeholder 미검출, notesOwned 5개, 메타 정책 반영 확인
+- Notes:
+  - 다음 배치 시작 번호: 126
+
+## [Task ID] 2026-02-16-2232-gpt-owned-deep-batch-126-135
+
+### START
+- Time: 2026-02-16 22:32
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 심층번역 운영프로토콜 기준으로 owned 데이터 10편 배치(126~135) 재집필.
+- Why: 맹호연/유장경 구간 placeholder 제거 및 주석 키워드 정제.
+- Planned Scope:
+  - 파일: `public/index/poems.full.owned.json`
+  - 예상 변경: 126~135의 `translationKoOwned`, `jipyeongKoOwned`, `notesOwned`, `ownedContentMeta` 갱신
+- Status: In Progress
+
+### END
+- Time: 2026-02-16 22:39
+- Status: Done
+- Changed Files:
+  - `public/index/poems.full.owned.json` (126~135 owned 4개 필드 갱신)
+- Validation:
+  - JSON 파싱 확인 완료
+  - 126/127/130/132/134/135 샘플 점검: placeholder 미검출, notesOwned 5개, 메타 정책 반영 확인
+- Notes:
+  - 다음 배치 시작 번호: 136
+
+## [Task ID] 2026-02-17-0345-gpt-owned-deep-batch-136-137
+
+### START
+- Time: 2026-02-17 03:45
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 심층번역 운영프로토콜 기준으로 owned 데이터 검증 착수 전 샘플 2편(136~137) 선작업 요청.
+- Why: 136번부터 재집필을 시작하되, 먼저 2편을 반영해 품질 기준 이해를 확인한 뒤 나머지 구간을 진행하기 위함.
+- Planned Scope:
+  - 파일: `public/index/poems.full.owned.json`
+  - 예상 변경: 136~137의 `translationKoOwned`, `jipyeongKoOwned`, `notesOwned`, `ownedContentMeta` 갱신
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-17 03:47
+- Status: Done
+- Changed Files:
+  - `public/index/poems.full.owned.json` (poemNo `136`, `137`의 `translationKoOwned`, `jipyeongKoOwned`, `notesOwned`, `ownedContentMeta` 심층 기준 갱신)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `node -e 'JSON.parse(require("fs").readFileSync("public/index/poems.full.owned.json","utf8")); console.log("owned_parse_ok")'` 통과
+  - poemNo `136`, `137` 점검: `bulkGenerated=false`, `generationPolicy=deep-research-cross-validated`, `sourceRefs=3`, `notesOwned>=5` 확인
+- Notes:
+  - 136은 주석을 6개로 보강해 `notesOwned` 최소 기준(5개 이상) 충족.
+  - 137은 자동초안 집평/주석을 전면 교체하고 절단된 주석 내용을 재작성해 정합성 복구.
+  - `updatedAt/enrichedAt`를 `2026-02-17 03:47`로 보정해 메타 키 누락 없이 저장.
+  - 다음 진행 대기 구간: `138~147` (사용자 확인 후 진행).
+
+## [Task ID] 2026-02-17-1430-cl-server-infra-plan
+
+### START
+- Time: 2026-02-17 14:30
+- Owner: Claude(민철)
+- Requester: JIN
+- Request Summary: tangshi.kr에 서버 환경 구축 방향 논의 + 작업계획서 7번 항목 추가
+- Why: 회원가입, 게시판, 검색, 실시간 TTS, 한시도우미 AI 운영을 위한 백엔드 환경 필요
+- Planned Scope:
+  - 파일: `docs/FromJin/12_남은사항들_작업계획서_CL.md`
+  - 예상 변경: 7번 항목(서버 환경 구축) 신규 추가 + 전체 요약표/권장 작업 순서/담당자별 요약 업데이트
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-17 14:35
+- Status: Done
+- Changed Files:
+  - `docs/FromJin/12_남은사항들_작업계획서_CL.md`
+    - 전체 요약표에 7번 행 추가 (서버 환경 구축, ★★★, 민철+지훈, ✅확정)
+    - 7번 섹션 신규 작성: 배경, 확정사항, 아키텍처도, 서비스 선정 근거, TTS 시나리오 2개, 워크플로우(Phase 1~4), 비용 비교표, 대안 비교
+    - 권장 작업 순서에 7번 Phase1~3 추가
+    - 담당자별 요약: 형(서버 환경 확정 ✅), 민철(Supabase 연동, TTS 프론트), 지훈(서버리스 GPU 배포, AI API 래퍼) 반영
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Notes:
+  - 형과 논의 결과: Supabase(BaaS) + 서버리스 GPU(RunPod/Modal) 하이브리드 확정
+  - VPS 직접 운영은 관리 부담으로 기각, Firebase는 과금 예측성 문제로 기각
+  - 예상 월 비용: 초기 무료~$5, 성장기 $25~50, 활성화 $50~100
+  - Qwen3-TTS CustomVoice 모델로 3초 음성 클로닝 → "내 목소리로 읽어주는 한시" 서비스 가능
