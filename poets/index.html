@@ -1,196 +1,713 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>시인들 | 당시삼백수</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>當詩人 — 당나라 시인들</title>
+  <link rel="stylesheet" href="https://use.typekit.net/dje5vco.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&family=Noto+Serif+KR:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* ===== Reset & Base ===== */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
-  <script>
-    (function(d) {
-      var config = {
-        kitId: 'dje5vco',
-        scriptTimeout: 3000,
-        async: true
-      },
-      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-    })(document);
-  </script>
+    body {
+      font-family: 'Noto Serif KR', serif;
+      background: #fff;
+      color: #333;
+      line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
+    }
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Ma+Shan+Zheng&family=Noto+Serif+KR:wght@300;400;500;600;700&family=Noto+Serif+TC:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    /* ===== Navigation ===== */
+    .top-nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      padding: 16px 0;
+      box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+      transition: background 0.4s, box-shadow 0.4s, padding 0.4s;
+    }
+    .top-nav.is-scrolled {
+      background: rgba(44, 24, 16, 0.95);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+      padding: 10px 0;
+    }
+    .nav-inner {
+      max-width: 1200px; margin: 0 auto; padding: 0 32px;
+      display: flex; justify-content: space-between; align-items: center;
+      transition: max-width 0.4s ease;
+    }
+    .top-nav.is-scrolled .nav-inner {
+      max-width: 660px;
+    }
+    .nav-brand {
+      font-family: 'adobe-fangsong-std', fangsong, 'LXGW WenKai Mono TC', 'Noto Serif TC', serif;
+      font-size: 24px; color: #fff; text-decoration: none;
+      opacity: 0.9; transition: opacity 0.3s, color 0.4s;
+    }
+    .nav-brand:hover { opacity: 1; }
+    .nav-links { display: flex; gap: 28px; }
+    .nav-links a {
+      color: rgba(255,255,255,0.75); text-decoration: none;
+      font-size: 15px; transition: color 0.4s;
+    }
+    .nav-links a:hover, .nav-links a.active { color: #fff; }
 
-  <link rel="stylesheet" href="../pages/readdy_like.css" />
-  <script src="../pages/readdy_like.js" defer></script>
+    /* ===== Hero ===== */
+    .hero {
+      position: relative; height: 100vh; display: flex;
+      align-items: center; justify-content: center; overflow: hidden;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.5)),
+                  #3a2218;
+    }
+    .hero-title {
+      font-family: 'adobe-fangsong-std', fangsong, 'LXGW WenKai Mono TC', 'Noto Serif TC', serif;
+      font-size: clamp(80px, 12vw, 140px);
+      color: #fff; font-weight: bold;
+      text-shadow: 0 4px 30px rgba(0,0,0,0.4);
+      margin-bottom: 24px;
+    }
+    .hero-subtitle {
+      font-size: 20px; color: rgba(255,255,255,0.9);
+      max-width: 700px; margin: 0 auto; line-height: 1.9;
+    }
+    .hero-subtitle .zh {
+      font-family: 'adobe-fangsong-std', fangsong, serif;
+    }
+
+    /* ===== Sections ===== */
+    .section {
+      padding: 80px 32px;
+    }
+    .section--warm { background: rgb(250, 248, 245); }
+    .section--white { background: #fff; }
+    .section-inner {
+      max-width: 1100px; margin: 0 auto;
+    }
+
+    /* ===== Intro ===== */
+    .intro-text {
+      text-align: center; font-size: 18px;
+      color: #444; line-height: 1.9;
+    }
+    .intro-text .zh { font-family: 'adobe-fangsong-std', fangsong, serif; }
+
+    /* ===== Era Grid (2-column: sidebar + content) ===== */
+    .era-grid {
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      gap: 48px;
+    }
+
+    /* Sidebar */
+    .era-sidebar { position: sticky; top: 100px; align-self: start; }
+    .era-number {
+      font-family: 'adobe-fangsong-std', fangsong, 'LXGW WenKai Mono TC', 'Noto Serif TC', serif;
+      font-size: 64px; font-weight: bold; line-height: 1;
+      color: #3a2a18;
+    }
+    .era-title-zh {
+      font-family: 'adobe-fangsong-std', fangsong, 'LXGW WenKai Mono TC', 'Noto Serif TC', serif;
+      font-size: 56px; font-weight: bold; margin: 8px 0;
+      color: #3a2a18;
+    }
+    .era-title-ko { font-size: 22px; color: #666; margin-bottom: 4px; }
+    .era-tagline { font-size: 18px; color: #888; }
+
+    /* Content column */
+    .era-content { display: flex; flex-direction: column; gap: 24px; }
+    .era-desc { font-size: 18px; color: #333; line-height: 1.9; }
+    .era-desc .zh { font-family: 'adobe-fangsong-std', fangsong, serif; }
+
+    /* ===== Poet Card ===== */
+    .poet-card {
+      background: #fff; border-radius: 16px;
+      padding: 28px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      display: flex; gap: 24px; align-items: flex-start;
+    }
+    .poet-card--featured {
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    }
+
+    .poet-avatar {
+      width: 96px; height: 96px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      font-family: 'adobe-fangsong-std', fangsong, serif;
+      font-size: 32px;
+      color: #3a2a18;
+      background: var(--era-bg);
+    }
+    .poet-avatar--lg {
+      width: 112px; height: 112px;
+      font-size: 40px;
+      border: 4px solid #fff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .poet-info { flex: 1; }
+    .poet-name-row { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+    .poet-name-zh {
+      font-family: 'adobe-fangsong-std', fangsong, serif;
+      font-size: 28px; font-weight: bold;
+      color: #3a2a18;
+    }
+    .poet-name-ko { font-size: 18px; color: #666; }
+    .poet-badge {
+      padding: 3px 12px; border-radius: 20px;
+      color: #fff; font-size: 14px;
+      background: #3a2a18;
+    }
+    .poet-bio { font-size: 18px; color: #333; line-height: 1.8; margin-bottom: 12px; }
+
+    /* Representative work box */
+    .work-box {
+      border-radius: 10px; padding: 16px;
+      border-left: 4px solid #3a2a18;
+      background: var(--era-bg2);
+    }
+    .work-label { font-size: 13px; color: #777; margin-bottom: 4px; }
+    .work-title {
+      font-family: 'adobe-fangsong-std', fangsong, serif;
+      font-size: 20px; margin-bottom: 4px;
+    }
+    .work-desc { font-size: 16px; color: #555; }
+    .work-desc .zh { font-family: 'adobe-fangsong-std', fangsong, serif; }
+
+    /* ===== Info Box (relationships, events) ===== */
+    .info-box {
+      border-radius: 16px; padding: 24px;
+      border-left: 4px solid #3a2a18;
+      background: var(--era-bg2);
+    }
+    .info-box-title {
+      font-size: 22px; font-weight: bold;
+      margin-bottom: 12px; display: flex; align-items: center; gap: 8px;
+      color: #3a2a18;
+    }
+    .info-box-title .zh { font-family: 'adobe-fangsong-std', fangsong, serif; }
+    .info-box p, .info-box li {
+      font-size: 18px; color: #333; line-height: 1.8;
+    }
+    .info-box .zh { font-family: 'adobe-fangsong-std', fangsong, serif; }
+    .info-box ul { list-style: none; }
+    .info-box ul li { padding-left: 16px; position: relative; margin-bottom: 8px; }
+    .info-box ul li::before {
+      content: '•'; position: absolute; left: 0;
+    }
+
+    .info-sub-title {
+      font-family: 'adobe-fangsong-std', fangsong, serif;
+      font-size: 20px; font-weight: bold; margin-bottom: 8px;
+      color: #3a2a18;
+    }
+    .info-sub-group { margin-bottom: 16px; }
+    .info-sub-group:last-child { margin-bottom: 0; }
+
+    /* ===== Conclusion ===== */
+    .conclusion-card {
+      background: #fff; border-radius: 16px;
+      padding: 28px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      margin-bottom: 24px;
+    }
+    .conclusion-title {
+      font-size: 22px; font-weight: bold; margin-bottom: 16px;
+      display: flex; align-items: center; gap: 8px;
+      color: #3a2a18;
+    }
+    .conclusion-closing {
+      border-radius: 16px; padding: 28px;
+      border-left: 4px solid #3a2a18;
+      background: rgba(58,42,24,0.04);
+      text-align: center; font-size: 20px; line-height: 1.8;
+    }
+    .conclusion-closing .zh { font-family: 'adobe-fangsong-std', fangsong, serif; }
+
+    /* ===== Footer ===== */
+    .site-footer {
+      background: #2c1810; color: rgba(255,255,255,0.7);
+      padding: 48px 32px; text-align: center;
+    }
+    .footer-nav { display: flex; justify-content: center; gap: 32px; margin-bottom: 20px; }
+    .footer-nav a {
+      color: rgba(255,255,255,0.7); text-decoration: none;
+      font-size: 15px; transition: color 0.3s;
+    }
+    .footer-nav a:hover { color: #fff; }
+    .footer-copy { font-size: 14px; opacity: 0.5; }
+
+    /* ===== Fade animation ===== */
+    .fade-in {
+      opacity: 0; transform: translateY(30px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+    /* ===== Color Themes per Era (통일: #3a2a18) ===== */
+    .era-early, .era-high, .era-mid, .era-late, .era-legacy {
+      --era: #3a2a18;
+      --era-bg: #f5f0e8;
+      --era-bg2: rgba(58,42,24,0.06);
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 768px) {
+      .era-grid { grid-template-columns: 1fr; gap: 24px; }
+      .era-sidebar { position: static; }
+      .era-number { font-size: 40px; }
+      .era-title-zh { font-size: 36px; }
+      .poet-card { flex-direction: column; align-items: center; text-align: center; }
+      .poet-avatar { margin-bottom: 8px; }
+      .hero-title { font-size: 60px; }
+      .hero-subtitle { font-size: 17px; padding: 0 16px; }
+      .section { padding: 48px 16px; }
+      .nav-links { gap: 16px; }
+      .nav-links a { font-size: 13px; }
+    }
+  </style>
 </head>
-<body class="subpage" data-page="poets">
-  <nav class="top-nav" data-top-nav>
-    <div class="container nav-inner">
-      <a class="nav-brand" href="../index.html">唐詩選集</a>
-      <div class="nav-menu">
-        <a class="nav-link" href="../index.html" data-page-target="home">메인</a>
-        <a class="nav-link" href="../poets/" data-page-target="poets">시인들</a>
-        <a class="nav-link" href="../poem/" data-page-target="poem">시</a>
-        <a class="nav-link" href="../history/" data-page-target="history">역사</a>
-        <a class="nav-link" href="../tang-poetry-300/" data-page-target="t300">당시삼백수</a>
+<body>
+
+  <!-- Navigation -->
+  <nav class="top-nav" id="topNav">
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">當時三百首</a>
+      <div class="nav-links">
+        <a href="/poets/" class="active">시인</a>
+        <a href="/poem/">시</a>
+        <a href="/history/">역사</a>
+        <a href="/tang300/">당시삼백수</a>
+        <a href="/timeline/">타임라인</a>
       </div>
     </div>
   </nav>
 
-  <header class="hero">
-    <div class="hero-media tone-rust"><span>Hero Placeholder / Poets</span></div>
-    <div class="hero-content">
-      <h1 class="hero-zh">當詩人</h1>
-      <p class="hero-ko">당대 시인들</p>
-      <p class="hero-en">POETS OF THE TANG DYNASTY</p>
-      <p class="hero-lead">초당, 성당, 중당, 만당으로 이어지는 시인군을 구조적으로 먼저 배치했습니다. 이미지 데이터가 비어 있는 위치는 검수용 컬러 박스로 대체해 두었습니다.</p>
+  <!-- Hero -->
+  <section class="hero">
+    <div style="text-align:center; color:#fff; padding:0 32px;">
+      <h1 class="hero-title">當詩人</h1>
+      <p class="hero-subtitle">
+        중국 역사상 가장 화려하고 국제적인 문화를 꽃 피웠던 <span class="zh">唐</span>,
+        하지만 그에 못지 않게 잦은 변란과 역사적 변고 속에서 당대의 시인들은
+        정신적 도피처이자 현실에 대한 처절한 절규로 <span class="zh">詩</span>를 선택했다.
+      </p>
     </div>
-  </header>
+  </section>
 
-  <main>
-    <section class="page-section">
-      <div class="container">
-        <div class="section-grid fade-section">
-          <aside class="sticky-title">
-            <p class="index-badge">00</p>
-            <h2 class="section-title-zh">導覽</h2>
-            <p class="section-title-ko">페이지 안내</p>
-            <p class="section-kicker">시대별 구조 미리보기</p>
-          </aside>
-          <div class="stack">
-            <article class="info-card">
-              <h3>시대별 묶음 구조</h3>
-              <p>레퍼런스와 동일하게 <strong>좌측 고정 타이틀 + 우측 본문</strong> 구성을 유지했습니다. 각 섹션은 스크롤 시 페이드 인되고, 모바일에서는 단일 컬럼으로 자동 전환됩니다.</p>
-            </article>
-            <div class="image-placeholder tone-stone h-md"><span>섹션 대표 이미지 자리</span></div>
-          </div>
+  <!-- Introduction -->
+  <section class="section section--white fade-in">
+    <div class="section-inner">
+      <p class="intro-text">
+        명나라 고병<span class="zh">(高棅)</span>의 분류법에 따라 당나라 시의 역사를 <strong>초당, 성당, 중당, 만당</strong>의 네 시기로 나누어,<br>
+        그 시대를 품미한 시인들과 그들의 삶을 따라가 본다.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== 01 초당 ===================== -->
+  <section class="section section--warm fade-in era-early">
+    <div class="section-inner">
+      <div class="era-grid">
+        <div class="era-sidebar">
+          <div class="era-number">01</div>
+          <h2 class="era-title-zh">初唐</h2>
+          <p class="era-title-ko">초당 (618~712)</p>
+          <p class="era-tagline">새로운 형식을 찾아서</p>
         </div>
-      </div>
-    </section>
+        <div class="era-content">
+          <p class="era-desc">
+            당나라 건국 초기, 문단은 여전히 남북조 시대의 화려하지만 내용이 빈약한 <span class="zh">궁체시(宮體詩)</span>가 지배하고 있었다. 초당의 시인들은 이러한 유약함을 버리고 시에 '뼈대(기골)'를 세우기 시작했다.
+          </p>
 
-    <section class="page-section alt">
-      <div class="container">
-        <div class="section-grid fade-section">
-          <aside class="sticky-title">
-            <p class="index-badge">01</p>
-            <h2 class="section-title-zh">初唐</h2>
-            <p class="section-title-ko">초당 (618~712)</p>
-            <p class="section-kicker">새로운 문체의 개막</p>
-          </aside>
-          <div class="stack">
-            <div class="twocol">
-              <article class="info-card">
-                <h3>王勃 / 왕발</h3>
-                <p class="meta">초당사걸의 대표</p>
-                <p>궁체시의 장식성을 넘어 문장 골격을 세운 인물로 배치했습니다. 추후 실제 초상화 연결 시 카드 상단 박스를 이미지로 바꾸면 됩니다.</p>
-              </article>
-              <article class="info-card">
-                <h3>陳子昂 / 진자앙</h3>
-                <p class="meta">한위풍 복고 제창</p>
-                <p>복고주의와 기골 강조를 핵심 설명으로 넣어 레퍼런스의 서사 방향을 유지했습니다.</p>
-              </article>
-            </div>
-            <div class="image-placeholder tone-amber h-sm"><span>초당 시인 군상 이미지 자리</span></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="page-section">
-      <div class="container">
-        <div class="section-grid fade-section">
-          <aside class="sticky-title">
-            <p class="index-badge">02</p>
-            <h2 class="section-title-zh">盛唐</h2>
-            <p class="section-title-ko">성당 (713~765)</p>
-            <p class="section-kicker">절정의 이중축</p>
-          </aside>
-          <div class="stack">
-            <article class="info-card">
-              <h3>李白 · 杜甫</h3>
-              <p>시선과 시성의 대비를 중심축으로 구성했습니다. 감정의 분출과 현실 인식이 병렬로 보이도록 블록을 분할했습니다.</p>
-              <div class="quote-block">
-                <p>"낭만의 폭발"과 "시대의 기록"을 한 화면에서 비교하는 구조입니다.</p>
+          <!-- 왕발 -->
+          <div class="poet-card">
+            <div class="poet-avatar" style="font-size:36px;">王勃</div>
+            <div class="poet-info">
+              <div class="poet-name-row">
+                <span class="poet-name-zh">王勃</span>
+                <span class="poet-name-ko">왕발</span>
               </div>
-            </article>
-            <div class="twocol">
-              <div class="image-placeholder tone-rust h-sm"><span>李白 초상 자리</span></div>
-              <div class="image-placeholder tone-ink h-sm"><span>杜甫 초상 자리</span></div>
+              <p class="poet-bio">
+                6세에 글을 지은 신동이자 <strong>'초당사걸(初唐四傑)'</strong>의 으뜸. 20대 후반에 요절했으나, 그의 천재성은 강렬한 흔적을 남겼다.
+              </p>
+              <div class="work-box">
+                <p class="work-label">대표작</p>
+                <p class="work-title">《登王閣序》</p>
+                <p class="work-desc">"지는 노을은 외로운 오리 한 마리와 나란히 날고<span class="zh">(落霞與孤鶩齊飛)</span>..."</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 진자앙 -->
+          <div class="poet-card">
+            <div class="poet-avatar">陳子昂</div>
+            <div class="poet-info">
+              <div class="poet-name-row">
+                <span class="poet-name-zh">陳子昂</span>
+                <span class="poet-name-ko">진자앙</span>
+              </div>
+              <p class="poet-bio">
+                "한나라와 위나라의 품골로 돌아가자"고 외치며 복고주의를 제창했다. 그의 등장은 성당 시의 황금기를 여는 전주곡이었다.
+              </p>
+              <div class="work-box">
+                <p class="work-label">대표작</p>
+                <p class="work-title">《登幽州臺歌》</p>
+                <p class="work-desc">광활한 시공간 속 인간의 고독을 노래한 짧지만 웅장한 시이다.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 장약허 -->
+          <div class="poet-card">
+            <div class="poet-avatar">張若虛</div>
+            <div class="poet-info">
+              <div class="poet-name-row">
+                <span class="poet-name-zh">張若虛</span>
+                <span class="poet-name-ko">장약허</span>
+              </div>
+              <p class="poet-bio">
+                평생 단 두 편의 시만 남겼으나, 그중 한 편으로 당나라 시 전체를 압도했다는 평가를 받는다.
+              </p>
+              <div class="work-box">
+                <p class="work-label">대표작</p>
+                <p class="work-title">《春江花月夜》</p>
+                <p class="work-desc">달, 강, 꽃, 밤을 소재로 인생의 무상함과 우주의 영원함을 절묘하게 엮어냈다.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 초당사걸 관계 -->
+          <div class="info-box">
+            <div class="info-box-title">
+              시인들의 관계: 초당사걸<span class="zh">(初唐四傑)</span>
+            </div>
+            <p>
+              <span class="zh">王勃, 楊炯, 盧照鄰, 駱賓王</span> 네 사람을 일컫는다. 이들은 귀족 중심의 문학 풍토에서 벗어나 하급 관리로서 겪는 현실과 기개를 시에 담았다. 서로 경쟁하면서도 당나라 시의 엄격한 형식(근체시)을 정착시키는 데 함께 기여했다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 02 성당 ===================== -->
+  <section class="section section--white fade-in era-high">
+    <div class="section-inner">
+      <div class="era-grid">
+        <div class="era-sidebar">
+          <div class="era-number">02</div>
+          <h2 class="era-title-zh">盛唐</h2>
+          <p class="era-title-ko">성당 (713~765)</p>
+          <p class="era-tagline">시의 황금시대</p>
+        </div>
+        <div class="era-content">
+          <p class="era-desc">
+            당 현종의 '개원의 치'로 국력은 정점에 달했고, 과거 제도의 정착으로 수많은 인재가 배출되었다. 그러나 시대의 끝자락에 터진 <strong>'안사의 난(755)'</strong>은 시인들의 운명을 송두리째 바꿔놓았다.
+          </p>
+
+          <!-- 이백 -->
+          <div class="poet-card poet-card--featured">
+            <div class="poet-avatar poet-avatar--lg">李白</div>
+            <div class="poet-info">
+              <div class="poet-name-row">
+                <span class="poet-name-zh" style="font-size:32px;">李白</span>
+                <span class="poet-badge">詩仙</span>
+              </div>
+              <p class="poet-name-ko" style="margin-bottom:12px;">이백 — 시선(詩仙)</p>
+              <p class="poet-bio">
+                하늘에서 유배 온 신선. 술과 달, 그림자를 벗 삼아 거침없는 낭만을 노래했다.
+              </p>
+              <div class="work-box">
+                <p class="work-label">대표작</p>
+                <p class="work-title">《將進酒》, 《望廬山瀑布》, 《靜夜思》</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 두보 -->
+          <div class="poet-card poet-card--featured">
+            <div class="poet-avatar poet-avatar--lg">杜甫</div>
+            <div class="poet-info">
+              <div class="poet-name-row">
+                <span class="poet-name-zh" style="font-size:32px;">杜甫</span>
+                <span class="poet-badge">詩聖</span>
+              </div>
+              <p class="poet-name-ko" style="margin-bottom:12px;">두보 — 시성(詩聖)</p>
+              <p class="poet-bio">
+                평생 가난과 전란 속에 살았던 현실주의자. 나라를 걱정하고 백성의 고통을 대변했다.
+              </p>
+              <div class="work-box">
+                <p class="work-label">대표작</p>
+                <p class="work-title">《春望》, 《登高》, 《江村》</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 왕유 -->
+          <div class="poet-card poet-card--featured">
+            <div class="poet-avatar poet-avatar--lg">王維</div>
+            <div class="poet-info">
+              <div class="poet-name-row">
+                <span class="poet-name-zh" style="font-size:32px;">王維</span>
+                <span class="poet-badge">詩佛</span>
+              </div>
+              <p class="poet-name-ko" style="margin-bottom:12px;">왕유 — 시불(詩佛)</p>
+              <p class="poet-bio">
+                시인이자 화가. "시 속에 그림이 있고<span class="zh">(詩中有畫)</span>, 그림 속에 시가 있다<span class="zh">(畫中有詩)</span>"는 평을 듣는다. 불교에 심취해 '시불(詩佛)'로 불린다.
+              </p>
+            </div>
+          </div>
+
+          <!-- 안사의 난 -->
+          <div class="info-box">
+            <div class="info-box-title">
+              역사적 사건: 안사의 난<span class="zh">(安史之亂)</span>
+            </div>
+            <p style="margin-bottom:12px;">당나라를 멸망 직전으로 몰고 간 이 반란은 시의 색깔을 바꾸었다.</p>
+            <ul>
+              <li><strong>이백</strong>은 반란군 연루 의혹으로 유배를 가는 고초를 겪었다.</li>
+              <li><strong>두보</strong>는 포로로 잡히거나 가족과 생이별하며 <span class="zh">《春望》</span>("나라는 깨어졌으나 산하는 그대로인데...") 같은 피눈물 나는 걸작을 남겼다.</li>
+            </ul>
+          </div>
+
+          <!-- 이백과 두보 관계 -->
+          <div class="info-box">
+            <div class="info-box-title">
+              시인들의 관계: 이백과 두보
+            </div>
+            <p>
+              중국 문학사에서 가장 위대한 만남이다. 44세의 이백과 33세의 무명 시인 두보는 낙양에서 만나 짧은 여행을 함께했다. 자유분방한 이백에게 두보는 깊은 감명을 받았고, 평생 이백을 그리워하는 시를 썼다. (반면 이백이 두보에게 쓴 시는 상대적으로 적다.)
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 03 중당 ===================== -->
+  <section class="section section--warm fade-in era-mid">
+    <div class="section-inner">
+      <div class="era-grid">
+        <div class="era-sidebar">
+          <div class="era-number">03</div>
+          <h2 class="era-title-zh">中唐</h2>
+          <p class="era-title-ko">중당 (766~835)</p>
+          <p class="era-tagline">변화와 사회 비판</p>
+        </div>
+        <div class="era-content">
+          <p class="era-desc">
+            전란 후 국운은 기울었고 사회 모순은 심해졌다. 시인들은 성당의 웅장함을 흉내 내기보다, 아주 쉬운 언어로 사회를 고발하거나 반대로 아주 기이한 표현을 쓰는 쪽으로 갈라졌다.
+          </p>
+
+          <!-- 백거이 -->
+          <div class="poet-card">
+            <div class="poet-avatar">白居易</div>
+            <div class="poet-info">
+              <div class="poet-name-row">
+                <span class="poet-name-zh">白居易</span>
+                <span class="poet-name-ko">백거이</span>
+              </div>
+              <p class="poet-bio">
+                "글을 모르는 노파도 이해할 수 있게 썼다"는 일화가 있을 정도로 쉬운 시를 추구했다. 신악부 운동을 통해 부패한 정치를 비판했다.
+              </p>
+              <div class="work-box">
+                <p class="work-label">대표작</p>
+                <p class="work-title">《長恨歌》(현종과 양귀비의 사랑), 《琵琶行》</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 한유 -->
+          <div class="poet-card">
+            <div class="poet-avatar">韓愈</div>
+            <div class="poet-info">
+              <div class="poet-name-row">
+                <span class="poet-name-zh">韓愈</span>
+                <span class="poet-name-ko">한유</span>
+              </div>
+              <p class="poet-bio">
+                "문장은 모름지기 선진(先秦)과 양한(兩漢) 시대로 돌아가야 한다"며 고문 부흥 운동을 이끌었다. 시에서도 철학적이고 산문적인 기풍을 도입했다.
+              </p>
+            </div>
+          </div>
+
+          <!-- 이하 -->
+          <div class="poet-card">
+            <div class="poet-avatar">李賀</div>
+            <div class="poet-info">
+              <div class="poet-name-row">
+                <span class="poet-name-zh">李賀</span>
+                <span class="poet-badge">詩鬼</span>
+              </div>
+              <p class="poet-name-ko" style="margin-bottom:12px;">이하 — 시귀(詩鬼)</p>
+              <p class="poet-bio">
+                27세에 요절한 천재. 귀신, 죽음, 환상 등 기괴하고 탐미적인 시어들을 구사했다.
+              </p>
+            </div>
+          </div>
+
+          <!-- 원백과 한유-유종원 관계 -->
+          <div class="info-box">
+            <div class="info-box-title">
+              시인들의 관계
+            </div>
+            <div class="info-sub-group">
+              <div class="info-sub-title">元白(원백)</div>
+              <p>
+                <span class="zh">元稹</span>과 <span class="zh">白居易</span>: '원백'이라 불리며 평생의 지기였다. 서로 좌천되어 멀리 떨어져 있을 때 주고받은 시들은 애절한 우정의 대명사이다.
+              </p>
+            </div>
+            <div class="info-sub-group">
+              <div class="info-sub-title">韓愈와 柳宗元</div>
+              <p>
+                정치적 개혁을 꿈꾸다 함께 좌천되었지만, 문학적으로 서로를 격려하며 고문 운동을 완성한 동지이다.
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="page-section alt">
-      <div class="container">
-        <div class="section-grid fade-section">
-          <aside class="sticky-title">
-            <p class="index-badge">03</p>
-            <h2 class="section-title-zh">中唐</h2>
-            <p class="section-title-ko">중당 (766~835)</p>
-            <p class="section-kicker">제도와 비판의 시대</p>
-          </aside>
-          <div class="stack">
-            <div class="twocol">
-              <article class="info-card">
-                <h3>白居易 / 백거이</h3>
-                <p>신악부 운동과 사회비판 시풍을 대표 카드로 배치했습니다.</p>
-              </article>
-              <article class="info-card">
-                <h3>韓愈 / 한유</h3>
-                <p>산문 혁신과 문학 이론을 연결하는 설명 카드입니다.</p>
-              </article>
+  <!-- ===================== 04 만당 ===================== -->
+  <section class="section section--white fade-in era-late">
+    <div class="section-inner">
+      <div class="era-grid">
+        <div class="era-sidebar">
+          <div class="era-number">04</div>
+          <h2 class="era-title-zh">晩唐</h2>
+          <p class="era-title-ko">만당 (836~907)</p>
+          <p class="era-tagline">황혼의 미학</p>
+        </div>
+        <div class="era-content">
+          <p class="era-desc">
+            당나라의 몰락이 가속화되던 시기이다. 시인들은 거창한 구국(救國)의 이념보다는 개인의 내면, 과거에 대한 회상, 퇴폐적이고 감상적인 미학에 빠져들었다.
+          </p>
+
+          <!-- 이상은 -->
+          <div class="poet-card">
+            <div class="poet-avatar">李商隱</div>
+            <div class="poet-info">
+              <div class="poet-name-row">
+                <span class="poet-name-zh">李商隱</span>
+                <span class="poet-name-ko">이상은</span>
+              </div>
+              <p class="poet-bio">
+                만당 최고의 시인. 당쟁(우이당쟁)의 틈바구니에서 불우한 관직 생활을 했다. 그의 시는 화려하지만 난해하고, 몽환적인 사랑을 다룬 '무제(無題)' 시가 유명하다.
+              </p>
+              <div class="work-box">
+                <p class="work-label">대표작</p>
+                <p class="work-title">《錦瑟》, 《夜雨寄北》</p>
+              </div>
             </div>
-            <div class="image-placeholder tone-olive h-sm"><span>중당 대표 시인 이미지 자리</span></div>
+          </div>
+
+          <!-- 두목 -->
+          <div class="poet-card">
+            <div class="poet-avatar">杜牧</div>
+            <div class="poet-info">
+              <div class="poet-name-row">
+                <span class="poet-name-zh">杜牧</span>
+                <span class="poet-name-ko">두목</span>
+              </div>
+              <p class="poet-bio">
+                호방하고 풍류를 즐겼던 시인으로, 역사적 사건을 재해석하는 영사(詠史)시에 능했다.
+              </p>
+              <div class="work-box">
+                <p class="work-label">대표작</p>
+                <p class="work-title">《江南春》, 《山行》</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 소이두 관계 -->
+          <div class="info-box">
+            <div class="info-box-title">
+              시인들의 관계: 소이두<span class="zh">(小李杜)</span>
+            </div>
+            <p>
+              성당 시대의 큰 별 '이백과 두보<span class="zh">(李杜)</span>'에 비견하여, 만당의 <strong>이상은<span class="zh">(李)</span>과 두목<span class="zh">(杜)</span></strong>을 합쳐 '소이두'라 부른다. 전성기의 기백은 사라졌지만, 섬세하고 감각적인 시풍으로 당나라 시의 마지막 불꽃을 태웠다는 평가를 받는다.
+            </p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="page-section">
-      <div class="container">
-        <div class="section-grid fade-section">
-          <aside class="sticky-title">
-            <p class="index-badge">04</p>
-            <h2 class="section-title-zh">晩唐</h2>
-            <p class="section-title-ko">만당 (836~907)</p>
-            <p class="section-kicker">섬세한 정조와 쇠퇴의 그림자</p>
-          </aside>
-          <div class="stack">
-            <article class="info-card">
-              <h3>李商隱 · 杜牧</h3>
-              <p>함축적 상징, 애상성, 도시 감각이 부각되는 시기로 구성했습니다. 실제 데이터 연결 시 작품 예시만 동적으로 채우면 됩니다.</p>
-            </article>
-            <div class="image-placeholder tone-stone h-md"><span>만당 시풍 키비주얼 자리</span></div>
+  <!-- ===================== 후대영향 ===================== -->
+  <section class="section section--warm fade-in era-legacy">
+    <div class="section-inner">
+      <div class="era-grid">
+        <div class="era-sidebar">
+          <h2 class="era-title-zh" style="font-size:48px;">後代影響</h2>
+          <p class="era-title-ko">후대에 미친 영향과 평가</p>
+        </div>
+        <div class="era-content">
+
+          <!-- 송나라 이후의 평가 -->
+          <div class="conclusion-card">
+            <h3 class="conclusion-title">송나라 이후의 평가</h3>
+            <p class="era-desc">
+              후대 사람들은 당나라 시<span class="zh">(唐詩)</span>를 '<span class="zh">情(정, 감정)</span>'이 위주가 된 시, 송나라 시<span class="zh">(宋詩)</span>를 '<span class="zh">理(이, 이치)</span>'가 위주가 된 시로 구분하며, 서정시의 정점은 역시 당나라라고 평가했다.
+            </p>
           </div>
+
+          <!-- 동아시아에 미친 영향 -->
+          <div class="conclusion-card">
+            <h3 class="conclusion-title">동아시아에 미친 영향</h3>
+            <div class="info-sub-group">
+              <h4 class="info-sub-title">한국</h4>
+              <p class="era-desc">
+                신라의 <span class="zh">崔致遠(최치원)</span>부터 고려, 조선의 선비들에 이르기까지, 시를 짓는다는 것은 곧 당나라 시를 배운다는 것을 의미했다. 특히 두보의 시는 언해(한글 번역)되어 교과서처럼 쓰였다.
+              </p>
+            </div>
+            <div class="info-sub-group">
+              <h4 class="info-sub-title">일본</h4>
+              <p class="era-desc">
+                헤이안 시대부터 당나라 시는 귀족들의 필수 교양이었으며, 백거이의 시는 일본 문학(겐지모노가타리 등)에 지대한 영향을 미쳤다.
+              </p>
+            </div>
+          </div>
+
+          <!-- 마무리 인용 -->
+          <div class="conclusion-closing">
+            <span class="zh">當詩三百首</span>에 담긴 이별의 아픔, 권력의 무상, 자연에 대한 경외는<br>
+            천 년이 지난 오늘날 현대인의 마음에도 깊은 울림을 준다.
+          </div>
+
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="page-section alt">
-      <div class="container">
-        <div class="section-grid fade-section">
-          <aside class="sticky-title">
-            <p class="index-badge">05</p>
-            <h2 class="section-title-zh">關係圖</h2>
-            <p class="section-title-ko">시인 관계도</p>
-            <p class="section-kicker">후속 데이터 결합 영역</p>
-          </aside>
-          <div class="stack">
-            <div class="image-placeholder tone-ink h-lg"><span>관계 그래프 자리 (추후 vis-network 연동 가능)</span></div>
-            <article class="info-card">
-              <h4>연동 메모</h4>
-              <p>현재는 디자인 검증 목적이므로 플레이스홀더만 두었습니다. 이후 기존 프로젝트의 관계 데이터 로직을 붙이면 인터랙션을 바로 확장할 수 있습니다.</p>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
+  <!-- Footer -->
   <footer class="site-footer">
-    <div class="container">Tangshi Prototype · Readdy 레퍼런스 기반 페이지 구조 테스트</div>
+    <div class="footer-nav">
+      <a href="/">메인</a>
+      <a href="/poets/">시인</a>
+      <a href="/poem/">시</a>
+      <a href="/history/">역사</a>
+      <a href="/tang300/">당시삼백수</a>
+      <a href="/timeline/">타임라인</a>
+    </div>
+    <p class="footer-copy">唐詩三百首 &copy; 2025</p>
   </footer>
+
+  <script>
+    // Scroll-based nav background
+    const nav = document.getElementById('topNav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('is-scrolled', window.scrollY > 60);
+    }, { passive: true });
+
+    // Fade-in on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) e.target.classList.add('visible');
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -10% 0px' });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+
 </body>
 </html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <base href="../">
+  <title>당시삼백수 타임라인</title>
+
+  <!-- 웹폰트: Adobe Fonts (fangsong 仿宋) -->
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'dje5vco',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+
+  <!-- 웹폰트: Google Fonts (Noto Serif KR·TC, LXGW WenKai Mono TC) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&family=Noto+Serif+KR:wght@200..900&family=Noto+Serif+TC:wght@200..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- 지도: Leaflet (출생지 표시용) -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- 관계도: vis-network (시인 교유 관계 표시용) -->
+  <script src="https://unpkg.com/vis-network@9.1.9/standalone/umd/vis-network.min.js"></script>
+</head>
+<body style="padding-top: 60px;">
+
+<!-- ===== 네비게이션 ===== -->
+<nav class="top-nav" id="topNav">
+  <div class="nav-inner">
+    <a href="/" class="nav-brand">當時三百首</a>
+    <div class="nav-links">
+      <a href="/poets/">시인</a>
+      <a href="/poem/">시</a>
+      <a href="/history/">역사</a>
+      <a href="/tang300/">당시삼백수</a>
+      <a href="/timeline/" class="active">타임라인</a>
+    </div>
+  </div>
+</nav>
+
+<main class="timeline" id="timeline"></main>
+
+<!-- 공용 모달(시인/작품/사건 모두 이 틀을 사용) -->
+<div id="modal-overlay" class="modal-overlay" hidden>
+  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-header">
+      <div class="modal-title" id="modal-title"></div>
+      <button class="modal-close" id="modal-close" aria-label="닫기">✕</button>
+    </div>
+    <div class="modal-body" id="modal-body"></div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+
+<footer class="site-footer" style="background:#2c1810; color:rgba(255,255,255,0.6); padding:40px 32px;">
+  <div style="display:flex; justify-content:center; gap:28px; margin-bottom:16px;">
+    <a href="/" style="color:rgba(255,255,255,0.7); text-decoration:none; font-size:14px;">메인</a>
+    <a href="/poets/" style="color:rgba(255,255,255,0.7); text-decoration:none; font-size:14px;">시인</a>
+    <a href="/poem/" style="color:rgba(255,255,255,0.7); text-decoration:none; font-size:14px;">시</a>
+    <a href="/history/" style="color:rgba(255,255,255,0.7); text-decoration:none; font-size:14px;">역사</a>
+    <a href="/tang300/" style="color:rgba(255,255,255,0.7); text-decoration:none; font-size:14px;">당시삼백수</a>
+    <a href="/timeline/" style="color:rgba(255,255,255,0.7); text-decoration:none; font-size:14px;">타임라인</a>
+  </div>
+  <p style="font-size:13px;">唐詩三百首 &copy; 2025 · 자료 출처: 동양고전종합DB</p>
+</footer>
+
+<script>
+  // Scroll-based nav
+  const topNav = document.getElementById('topNav');
+  window.addEventListener('scroll', () => {
+    topNav.classList.toggle('is-scrolled', window.scrollY > 60);
+  }, { passive: true });
+</script>
+
+</body>
+</html>

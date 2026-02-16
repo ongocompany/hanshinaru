@@ -2,7 +2,8 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <title>당시삼백수 타임라인</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>당시삼백수 — 시와 역사를 시간축 위에서 나란히 읽다</title>
 
   <!-- 웹폰트: Adobe Fonts (fangsong 仿宋) -->
   <script>
@@ -16,45 +17,1068 @@
     })(document);
   </script>
 
-  <!-- 웹폰트: Google Fonts (Noto Serif KR·TC, LXGW WenKai Mono TC) -->
+  <!-- 웹폰트: Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&family=Noto+Serif+KR:wght@200..900&family=Noto+Serif+TC:wght@200..900&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* ===== 네비게이션 ===== */
+    .top-nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      padding: 16px 0;
+      box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+      transition: background 0.4s, box-shadow 0.4s, padding 0.4s;
+    }
+    .top-nav.is-scrolled {
+      background: rgba(44, 24, 16, 0.95);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+      padding: 10px 0;
+    }
+    .nav-inner {
+      max-width: 1200px; margin: 0 auto; padding: 0 32px;
+      display: flex; justify-content: space-between; align-items: center;
+      transition: max-width 0.4s ease;
+    }
+    .top-nav.is-scrolled .nav-inner {
+      max-width: 660px;
+    }
+    .nav-brand {
+      font-family: 'adobe-fangsong-std', serif;
+      font-size: 24px; color: #2c1810; text-decoration: none;
+      opacity: 0.9; transition: opacity 0.3s, color 0.4s;
+    }
+    .nav-brand:hover { opacity: 1; }
+    .top-nav.is-scrolled .nav-brand { color: #fff; }
+    .nav-links { display: flex; gap: 28px; }
+    .nav-links a {
+      color: rgba(44, 24, 16, 0.65); text-decoration: none;
+      font-size: 15px; transition: color 0.4s;
+    }
+    .nav-links a:hover { color: #2c1810; }
+    .top-nav.is-scrolled .nav-links a { color: rgba(255,255,255,0.75); }
+    .top-nav.is-scrolled .nav-links a:hover { color: #fff; }
 
-  <!-- 지도: Leaflet (출생지 표시용) -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    @media (max-width: 768px) {
+      .nav-links { gap: 16px; }
+      .nav-links a { font-size: 13px; }
+    }
 
-  <!-- 관계도: vis-network (시인 교유 관계 표시용) -->
-  <script src="https://unpkg.com/vis-network@9.1.9/standalone/umd/vis-network.min.js"></script>
+    /* ===== 기본 리셋 ===== */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Noto Serif KR', 'adobe-fangsong-std', serif;
+      background: #f5f2e8;
+      color: #2c1810;
+    }
+
+    /* ===== A. 히어로 섹션 ===== */
+    .hero-section {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      background: #e8e4d8;
+    }
+
+    .hero-scene {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      height: 1408px;
+      transform: translateY(-50%);
+    }
+
+    .hero-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 10514px;
+      height: 1408px;
+      background-image: url('public/assets/hero/river_scroll.jpg');
+      background-size: 5257px 1408px;
+      background-repeat: repeat-x;
+      animation: scroll-bg 72s linear infinite;
+      will-change: transform;
+    }
+
+    @keyframes scroll-bg {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-5257px); }
+    }
+
+    .hero-video {
+      position: absolute;
+      top: 840px;
+      left: 50%;
+      transform: translateX(calc(-50% - 240px));
+      width: 220px;
+      height: auto;
+      object-fit: contain;
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    .hero-canvas {
+      position: absolute;
+      top: 840px;
+      left: 50%;
+      transform: translateX(calc(-50% - 240px));
+      width: 220px;
+      height: 124px;
+      z-index: 2;
+      pointer-events: none;
+      display: none;
+    }
+
+    .hero-mist-canvas {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 3;
+      pointer-events: none;
+    }
+
+    .hero-copy {
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      height: auto;
+      z-index: 4;
+      pointer-events: none;
+    }
+
+    /* 히어로 하단 스크롤 힌트 */
+    .hero-scroll-hint {
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 5;
+      color: rgba(44, 24, 16, 0.5);
+      font-size: 14px;
+      text-align: center;
+      animation: bounce 2s ease-in-out infinite;
+    }
+
+    .hero-scroll-hint::after {
+      content: '▼';
+      display: block;
+      margin-top: 4px;
+      font-size: 12px;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateX(-50%) translateY(0); }
+      50% { transform: translateX(-50%) translateY(8px); }
+    }
+
+    /* ===== B. 日日五首 ===== */
+    .daily-five-section {
+      padding: 80px 40px;
+      background: #f5f2e8;
+      text-align: center;
+    }
+
+    .section-title {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 28px;
+      font-weight: 600;
+      color: #2c1810;
+      margin-bottom: 12px;
+    }
+
+    .section-title-zh {
+      font-family: 'LXGW WenKai Mono TC', 'adobe-fangsong-std', serif;
+      font-size: 36px;
+      font-weight: 400;
+      color: #2c1810;
+      letter-spacing: 0.15em;
+      margin-bottom: 8px;
+    }
+
+    .section-subtitle {
+      font-size: 15px;
+      color: #8b7355;
+      margin-bottom: 48px;
+    }
+
+    .poem-cards {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .poem-card {
+      flex: 0 0 190px;
+      height: 253px;  /* 3:4 비율 */
+      border-radius: 8px;
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .poem-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 40px rgba(44, 24, 16, 0.2);
+    }
+
+    /* 이미지 없을 때 플레이스홀더 */
+    .poem-card-placeholder {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px 16px;
+    }
+
+    .poem-card-verse {
+      font-family: 'LXGW WenKai Mono TC', 'adobe-fangsong-std', serif;
+      writing-mode: vertical-rl;
+      font-size: 16px;
+      line-height: 2;
+      color: rgba(44, 24, 16, 0.5);
+      letter-spacing: 0.1em;
+      max-height: 200px;
+      overflow: hidden;
+    }
+
+    /* 하단 캡션 */
+    .poem-card-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 20px 14px 14px;
+      background: linear-gradient(to top, rgba(44,24,16,0.75), rgba(44,24,16,0.3) 60%, transparent);
+      color: #f5f2e8;
+    }
+
+    .poem-card-poet {
+      font-size: 11px;
+      opacity: 0.75;
+      margin-bottom: 3px;
+    }
+
+    .poem-card-title {
+      font-family: 'LXGW WenKai Mono TC', 'adobe-fangsong-std', serif;
+      font-size: 15px;
+      line-height: 1.3;
+    }
+
+    /* 모바일 대응 */
+    @media (max-width: 1024px) {
+      .poem-cards { gap: 16px; }
+      .poem-card { flex: 0 0 160px; height: 213px; }
+    }
+
+    @media (max-width: 768px) {
+      .poem-cards {
+        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: center;
+      }
+      .poem-card {
+        flex: 0 0 calc(33.33% - 10px);
+        height: 200px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .daily-five-section { padding: 60px 20px; }
+      .poem-cards { gap: 10px; }
+      .poem-card {
+        flex: 0 0 calc(50% - 8px);
+        height: 180px;
+      }
+      .poem-card-verse { font-size: 14px; }
+    }
+
+    /* ===== C. 이달의 시인 ===== */
+    .poet-month-section {
+      padding: 80px 40px;
+      background: #ece8dc;
+    }
+
+    .poet-month-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .poet-month-portrait {
+      flex: 0 0 240px;
+      height: 320px;
+      border-radius: 12px;
+      background: linear-gradient(160deg, #c8b898 0%, #b8a888 50%, #a89878 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .poet-month-portrait img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .poet-month-portrait-placeholder {
+      font-family: 'LXGW WenKai Mono TC', 'adobe-fangsong-std', serif;
+      font-size: 72px;
+      color: rgba(44, 24, 16, 0.15);
+      writing-mode: vertical-rl;
+      letter-spacing: 0.2em;
+    }
+
+    .poet-month-text {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .poet-month-label {
+      font-size: 13px;
+      color: #8b7355;
+      letter-spacing: 0.1em;
+      margin-bottom: 12px;
+    }
+
+    .poet-month-name {
+      font-family: 'LXGW WenKai Mono TC', 'adobe-fangsong-std', serif;
+      font-size: 42px;
+      font-weight: 400;
+      color: #2c1810;
+      margin-bottom: 4px;
+      line-height: 1.2;
+    }
+
+    .poet-month-name-ko {
+      font-size: 18px;
+      color: #8b7355;
+      margin-bottom: 20px;
+    }
+
+    .poet-month-bio {
+      font-size: 15px;
+      line-height: 1.9;
+      color: #4a3728;
+      margin-bottom: 24px;
+    }
+
+    .poet-month-quote {
+      font-family: 'LXGW WenKai Mono TC', 'adobe-fangsong-std', serif;
+      font-size: 20px;
+      color: #2c1810;
+      line-height: 2;
+      padding-left: 16px;
+      border-left: 3px solid rgba(139, 115, 85, 0.3);
+      margin-bottom: 24px;
+    }
+
+    .poet-month-link {
+      display: inline-block;
+      font-size: 14px;
+      color: #8b7355;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(139, 115, 85, 0.3);
+      padding-bottom: 2px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .poet-month-link:hover {
+      color: #2c1810;
+      border-color: #2c1810;
+    }
+
+    @media (max-width: 768px) {
+      .poet-month-inner {
+        flex-direction: column;
+        gap: 32px;
+        text-align: center;
+      }
+      .poet-month-portrait { flex: 0 0 auto; width: 180px; height: 240px; margin: 0 auto; }
+      .poet-month-quote { border-left: none; padding-left: 0; text-align: center; }
+      .poet-month-name { font-size: 36px; }
+    }
+
+    /* ===== D. 소식 ===== */
+    .news-section {
+      padding: 80px 40px;
+      background: #f5f2e8;
+    }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      max-width: 1000px;
+      margin: 48px auto 0;
+    }
+
+    .video-card {
+      border-radius: 12px;
+      overflow: hidden;
+      background: #fff;
+      text-decoration: none;
+      color: #2c1810;
+      transition: transform 0.3s, box-shadow 0.3s;
+      border: 1px solid rgba(139, 115, 85, 0.1);
+    }
+
+    .video-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    }
+
+    .video-thumb {
+      width: 100%;
+      aspect-ratio: 16/9;
+      background: linear-gradient(160deg, #d4c4a8, #b8a88c);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .video-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .video-play-icon {
+      position: absolute;
+      width: 48px;
+      height: 48px;
+      background: rgba(44, 24, 16, 0.7);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .video-play-icon::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 8px 0 8px 14px;
+      border-color: transparent transparent transparent #f5f2e8;
+      margin-left: 3px;
+    }
+
+    .video-info {
+      padding: 16px;
+    }
+
+    .video-title {
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 1.4;
+      margin-bottom: 6px;
+    }
+
+    .video-channel {
+      font-size: 12px;
+      color: #8b7355;
+    }
+
+    @media (max-width: 768px) {
+      .video-grid { grid-template-columns: 1fr; max-width: 480px; }
+    }
+
+    /* ===== E. 영상 ===== */
+    .video-section {
+      padding: 80px 40px;
+      background: #ece8dc;
+    }
+
+    .news-list {
+      max-width: 800px;
+      margin: 48px auto 0;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .news-item {
+      display: flex;
+      gap: 20px;
+      padding: 24px;
+      background: #fff;
+      border-radius: 12px;
+      text-decoration: none;
+      color: #2c1810;
+      transition: transform 0.2s, box-shadow 0.2s;
+      border: 1px solid rgba(139, 115, 85, 0.1);
+      align-items: flex-start;
+    }
+
+    .news-item:hover {
+      transform: translateX(4px);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    }
+
+    .news-date {
+      flex: 0 0 auto;
+      text-align: center;
+      padding: 8px 12px;
+      background: rgba(139, 115, 85, 0.08);
+      border-radius: 8px;
+      line-height: 1.2;
+    }
+
+    .news-date-month {
+      font-size: 12px;
+      color: #8b7355;
+    }
+
+    .news-date-day {
+      font-size: 24px;
+      font-weight: 600;
+      color: #2c1810;
+    }
+
+    .news-body {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .news-tag {
+      display: inline-block;
+      font-size: 11px;
+      color: #8b7355;
+      background: rgba(139, 115, 85, 0.1);
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-bottom: 6px;
+    }
+
+    .news-title {
+      font-size: 17px;
+      font-weight: 600;
+      line-height: 1.4;
+      margin-bottom: 6px;
+    }
+
+    .news-summary {
+      font-size: 14px;
+      color: #6b5b4b;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 480px) {
+      .news-item { flex-direction: column; gap: 12px; }
+      .news-date { flex-direction: row; display: flex; gap: 6px; align-items: baseline; }
+    }
+
+    /* ===== F. 서브페이지 소개 ===== */
+    .explore-section {
+      padding: 80px 40px;
+      background: #f5f2e8;
+    }
+
+    .explore-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 48px auto 0;
+    }
+
+    .explore-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 28px 20px;
+      text-align: center;
+      text-decoration: none;
+      color: #2c1810;
+      transition: transform 0.3s, box-shadow 0.3s;
+      border: 1px solid rgba(139, 115, 85, 0.12);
+    }
+
+    .explore-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    }
+
+    .explore-card-icon {
+      font-size: 36px;
+      margin-bottom: 14px;
+    }
+
+    .explore-card-name {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .explore-card-desc {
+      font-size: 13px;
+      color: #8b7355;
+      line-height: 1.6;
+    }
+
+    /* ===== G. 푸터 ===== */
+    .site-footer {
+      padding: 40px;
+      background: #2c1810;
+      color: rgba(245, 242, 232, 0.6);
+      text-align: center;
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+    .site-footer a {
+      color: rgba(245, 242, 232, 0.8);
+      text-decoration: none;
+    }
+
+    .site-footer a:hover {
+      color: #f5f2e8;
+    }
+  </style>
 </head>
 <body>
 
-<header class="site-header">
-  <h1>당시삼백수</h1>
-  <p>시간축 위에서 시와 역사를 나란히 읽다</p>
-</header>
-
-<main class="timeline" id="timeline"></main>
-
-<!-- 공용 모달(시인/작품/사건 모두 이 틀을 사용) -->
-<div id="modal-overlay" class="modal-overlay" hidden>
-  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
-    <div class="modal-header">
-      <div class="modal-title" id="modal-title"></div>
-      <button class="modal-close" id="modal-close" aria-label="닫기">✕</button>
+  <!-- ===== 네비게이션 ===== -->
+  <nav class="top-nav" id="topNav">
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">當時三百首</a>
+      <div class="nav-links">
+        <a href="/poets/">시인</a>
+        <a href="/poem/">시</a>
+        <a href="/history/">역사</a>
+        <a href="/tang300/">당시삼백수</a>
+        <a href="/timeline/">타임라인</a>
+      </div>
     </div>
-    <div class="modal-body" id="modal-body"></div>
-  </div>
-</div>
+  </nav>
 
-<script src="app.js"></script>
+  <!-- ===== A. 히어로 섹션 ===== -->
+  <section class="hero-section">
+    <div class="hero-scene">
+      <div class="hero-bg"></div>
 
-<footer class="site-footer">
-  <p>자료 출처: 동양고전종합DB · 비상업적 연구용</p>
-</footer>
+      <video class="hero-video" autoplay loop muted playsinline>
+        <source src="public/assets/hero/rawingboat_1.webm" type="video/webm">
+      </video>
+      <canvas id="heroCanvas" class="hero-canvas" width="442" height="249"></canvas>
+
+      <canvas class="hero-mist-canvas" id="mistCanvas"></canvas>
+
+      <img class="hero-copy" src="public/assets/hero/samusa.png" alt="思無邪">
+    </div>
+
+    <div class="hero-scroll-hint">아래로 스크롤</div>
+  </section>
+
+  <!-- ===== B. 日日五首 ===== -->
+  <section class="daily-five-section">
+    <h2 class="section-title-zh">日日五首</h2>
+    <p class="section-subtitle">하루 다섯 수, 두 달이면 당시삼백수</p>
+    <div class="poem-cards" id="dailyFivePoems">
+      <!-- JS에서 로딩 -->
+    </div>
+  </section>
+
+  <!-- ===== C. 이달의 시인 ===== -->
+  <section class="poet-month-section">
+    <div class="poet-month-inner">
+      <div class="poet-month-portrait">
+        <div class="poet-month-portrait-placeholder">詩仙</div>
+      </div>
+      <div class="poet-month-text">
+        <div class="poet-month-label">이달의 시인 — 2月</div>
+        <h2 class="poet-month-name">李白</h2>
+        <div class="poet-month-name-ko">이백 (701 - 762)</div>
+        <p class="poet-month-bio">
+          시선(詩仙)이라 불리는 당나라 최고의 낭만 시인. 촉(蜀) 땅에서 태어나 천하를 유랑하며
+          술과 달과 자연을 노래했다. 호방하고 거침없는 상상력으로 중국 시가사에 전무후무한 경지를 열었으며,
+          두보와 함께 '이두(李杜)'로 병칭된다. 당시삼백수에 29수가 수록되어 가장 많은 작품을 남겼다.
+        </p>
+        <div class="poet-month-quote">
+          舉頭望明月<br>低頭思故鄉
+        </div>
+        <a class="poet-month-link" href="timeline/#poet-李白">이백의 작품 보러 가기 &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== D. 소식 ===== -->
+  <section class="news-section">
+    <h2 class="section-title" style="text-align:center;">소식</h2>
+    <p class="section-subtitle" style="text-align:center;">한시와 고전의 오늘</p>
+    <div class="news-list">
+      <a class="news-item" href="#">
+        <div class="news-date">
+          <div class="news-date-month">2월</div>
+          <div class="news-date-day">16</div>
+        </div>
+        <div class="news-body">
+          <span class="news-tag">사이트</span>
+          <div class="news-title">당시삼백수 TTS 낭송 기능 준비 중</div>
+          <div class="news-summary">Qwen3-TTS를 활용해 320수 전체의 중국어 낭송 오디오를 제작하고 있습니다. 5명의 화자가 시의 분위기에 맞춰 낭송합니다.</div>
+        </div>
+      </a>
+      <a class="news-item" href="#">
+        <div class="news-date">
+          <div class="news-date-month">2월</div>
+          <div class="news-date-day">10</div>
+        </div>
+        <div class="news-body">
+          <span class="news-tag">행사</span>
+          <div class="news-title">제42회 전국 한시 백일장 개최 안내</div>
+          <div class="news-summary">한국한시협회 주최, 3월 서울 남산에서 개최 예정. 대학생부와 일반부로 나뉘며, 한시 짓기와 한시 짝짓기 부문 진행.</div>
+        </div>
+      </a>
+      <a class="news-item" href="#">
+        <div class="news-date">
+          <div class="news-date-month">1월</div>
+          <div class="news-date-day">25</div>
+        </div>
+        <div class="news-body">
+          <span class="news-tag">교양</span>
+          <div class="news-title">AI가 한시를 읽는 시대 — 고전 문학과 기술의 만남</div>
+          <div class="news-summary">평측 분석, 병음 생성, TTS 낭송까지. 인공지능이 당시삼백수를 어떻게 새롭게 해석하고 있는지 살펴봅니다.</div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== E. 영상 ===== -->
+  <section class="video-section">
+    <h2 class="section-title" style="text-align:center;">한시 영상</h2>
+    <p class="section-subtitle" style="text-align:center;">보고 듣는 당시삼백수</p>
+    <div class="video-grid">
+      <a class="video-card" href="https://www.youtube.com/results?search_query=%E5%94%90%E8%AF%97%E4%B8%89%E7%99%BE%E9%A6%96+%E6%9C%97%E8%AF%BB" target="_blank" rel="noopener">
+        <div class="video-thumb">
+          <div class="video-play-icon"></div>
+        </div>
+        <div class="video-info">
+          <div class="video-title">당시삼백수 낭송 - 오언절구 편</div>
+          <div class="video-channel">에이전트 큐레이션 예정</div>
+        </div>
+      </a>
+      <a class="video-card" href="https://www.youtube.com/results?search_query=%E6%9D%8E%E7%99%BD+%E5%94%90%E8%AF%97" target="_blank" rel="noopener">
+        <div class="video-thumb">
+          <div class="video-play-icon"></div>
+        </div>
+        <div class="video-info">
+          <div class="video-title">이백의 시 세계 - 술과 달의 시인</div>
+          <div class="video-channel">에이전트 큐레이션 예정</div>
+        </div>
+      </a>
+      <a class="video-card" href="https://www.youtube.com/results?search_query=%E5%94%90%E6%9C%9D+%E5%8E%86%E5%8F%B2" target="_blank" rel="noopener">
+        <div class="video-thumb">
+          <div class="video-play-icon"></div>
+        </div>
+        <div class="video-info">
+          <div class="video-title">당나라 역사 다큐 - 시의 황금시대</div>
+          <div class="video-channel">에이전트 큐레이션 예정</div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== F. 둘러보기 ===== -->
+  <section class="explore-section">
+    <h2 class="section-title" style="text-align:center;">둘러보기</h2>
+    <p class="section-subtitle" style="text-align:center;">당시삼백수의 세계를 탐험하세요</p>
+    <div class="explore-grid">
+      <a class="explore-card" href="timeline/">
+        <div class="explore-card-icon">📜</div>
+        <div class="explore-card-name">타임라인</div>
+        <div class="explore-card-desc">시와 역사를 시간축 위에서 나란히 읽는 인터랙티브 뷰</div>
+      </a>
+      <a class="explore-card" href="poets/">
+        <div class="explore-card-icon">🖌</div>
+        <div class="explore-card-name">시인 72명</div>
+        <div class="explore-card-desc">이백, 두보, 왕유 등 시인의 생애와 작품 세계</div>
+      </a>
+      <a class="explore-card" href="poem/">
+        <div class="explore-card-icon">🏮</div>
+        <div class="explore-card-name">시 320수</div>
+        <div class="explore-card-desc">주석, 병음, 평측 분석과 함께 읽는 시</div>
+      </a>
+      <a class="explore-card" href="history/">
+        <div class="explore-card-icon">⛩</div>
+        <div class="explore-card-name">당나라 역사</div>
+        <div class="explore-card-desc">290년 흥망성쇠를 한눈에 보는 연표</div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== G. 푸터 ===== -->
+  <footer class="site-footer">
+    <p>당시삼백수 — 시와 역사를 시간축 위에서 나란히 읽다</p>
+    <p>자료 출처: 동양고전종합DB · 비상업적 연구용</p>
+    <p style="margin-top: 12px;">
+      <a href="timeline/">타임라인</a> ·
+      <a href="poets/">시인</a> ·
+      <a href="poem/">시</a> ·
+      <a href="history/">역사</a> ·
+      <a href="admin/">관리</a>
+    </p>
+  </footer>
+
+  <script>
+    // ===== 네비게이션 스크롤 =====
+    const topNav = document.getElementById('topNav');
+    window.addEventListener('scroll', () => {
+      topNav.classList.toggle('is-scrolled', window.scrollY > 60);
+    }, { passive: true });
+
+    // ===== 안개 파티클 시스템 =====
+    const mistCanvas = document.getElementById('mistCanvas');
+    const mistCtx = mistCanvas.getContext('2d');
+    const particles = [];
+    const PARTICLE_COUNT = 80;
+
+    function resizeMistCanvas() {
+      mistCanvas.width = window.innerWidth;
+      mistCanvas.height = 1408;
+    }
+    resizeMistCanvas();
+    window.addEventListener('resize', resizeMistCanvas);
+
+    function createParticle(init) {
+      const w = mistCanvas.width;
+      const h = mistCanvas.height;
+      const spawnZoneTop = h * 0.5;
+      return {
+        x: Math.random() * w,
+        y: init
+          ? spawnZoneTop + Math.random() * (h - spawnZoneTop)
+          : h + Math.random() * 100,
+        radius: 150 + Math.random() * 250,
+        vy: -(0.2 + Math.random() * 0.4),
+        vx: (Math.random() - 0.5) * 0.5,
+        swayOffset: Math.random() * Math.PI * 2,
+        swaySpeed: 0.005 + Math.random() * 0.01,
+        baseAlpha: 0.15 + Math.random() * 0.2,
+        life: 0,
+        maxLife: 500 + Math.random() * 400,
+      };
+    }
+
+    for (let i = 0; i < PARTICLE_COUNT; i++) {
+      particles.push(createParticle(true));
+    }
+
+    function drawMist() {
+      const w = mistCanvas.width;
+      const h = mistCanvas.height;
+      mistCtx.clearRect(0, 0, w, h);
+
+      for (let i = 0; i < particles.length; i++) {
+        const p = particles[i];
+        p.y += p.vy;
+        p.x += p.vx + Math.sin(p.swayOffset + p.life * p.swaySpeed) * 0.3;
+        p.life++;
+
+        const fadeStart = h * 0.35;
+        let fadeByHeight;
+        if (p.y > h * 0.6) fadeByHeight = 1.0;
+        else if (p.y > fadeStart) {
+          fadeByHeight = (p.y - fadeStart) / (h * 0.6 - fadeStart);
+          fadeByHeight *= fadeByHeight;
+        } else fadeByHeight = 0;
+
+        let lifeFade = 1;
+        if (p.life < 50) lifeFade = p.life / 50;
+        else if (p.life > p.maxLife - 80) lifeFade = Math.max(0, (p.maxLife - p.life) / 80);
+
+        const alpha = p.baseAlpha * fadeByHeight * lifeFade;
+
+        if (alpha > 0.005) {
+          const grad = mistCtx.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.radius);
+          grad.addColorStop(0,   `rgba(240, 240, 245, ${alpha})`);
+          grad.addColorStop(0.3, `rgba(235, 235, 240, ${alpha * 0.7})`);
+          grad.addColorStop(0.6, `rgba(230, 230, 238, ${alpha * 0.3})`);
+          grad.addColorStop(1,   `rgba(225, 225, 235, 0)`);
+          mistCtx.beginPath();
+          mistCtx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+          mistCtx.fillStyle = grad;
+          mistCtx.fill();
+        }
+
+        if (p.y + p.radius < h * 0.2 || p.life >= p.maxLife) {
+          particles[i] = createParticle(false);
+        }
+        if (p.x < -p.radius) p.x = w + p.radius;
+        if (p.x > w + p.radius) p.x = -p.radius;
+      }
+      requestAnimationFrame(drawMist);
+    }
+    drawMist();
+
+    // ===== WebM 알파 감지 + PNG 폴백 =====
+    const videoEl = document.querySelector('.hero-video');
+    const canvasEl = document.getElementById('heroCanvas');
+
+    (function detectAlpha() {
+      if (!videoEl) return;
+      videoEl.addEventListener('canplay', function onCanPlay() {
+        videoEl.removeEventListener('canplay', onCanPlay);
+        try {
+          const c = document.createElement('canvas');
+          c.width = videoEl.videoWidth || 100;
+          c.height = videoEl.videoHeight || 100;
+          const ctx = c.getContext('2d');
+          ctx.drawImage(videoEl, 0, 0);
+          const corners = [[0,0],[c.width-1,0],[0,c.height-1],[c.width-1,c.height-1]];
+          let ok = 0;
+          for (const [x,y] of corners) {
+            if (ctx.getImageData(x,y,1,1).data[3] < 250) ok++;
+          }
+          if (ok === 0) { videoEl.style.display = 'none'; startFrameFallback(); }
+        } catch(e) {}
+      });
+      setTimeout(() => {
+        if (!videoEl.videoWidth) { videoEl.style.display = 'none'; startFrameFallback(); }
+      }, 3000);
+    })();
+
+    function startFrameFallback() {
+      const canvas = canvasEl;
+      const ctx = canvas.getContext('2d');
+      canvas.style.display = 'block';
+      const frameCount = 47, fps = 12, imgs = [];
+      let loaded = 0;
+      for (let i = 1; i <= frameCount; i++) {
+        const img = new Image();
+        img.src = `public/assets/hero/frames_alpha/frame_${String(i).padStart(4,'0')}.png`;
+        img.onload = () => loaded++;
+        imgs.push(img);
+      }
+      let current = 0;
+      function play() {
+        if (imgs[current]?.complete) {
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+          ctx.drawImage(imgs[current], 0, 0, canvas.width, canvas.height);
+        }
+        current = (current + 1) % frameCount;
+      }
+      const wait = setInterval(() => {
+        if (loaded >= 1) { clearInterval(wait); setInterval(play, 1000/fps); play(); }
+      }, 100);
+    }
+
+    // ===== 日日五首 =====
+    // 플레이스홀더 배경 (이미지 없을 때 카드별 색상)
+    const CARD_COLORS = [
+      'linear-gradient(160deg, #d4c4a8 0%, #c4b498 50%, #b8a88c 100%)',
+      'linear-gradient(160deg, #c8bfa8 0%, #b8af98 50%, #a89f88 100%)',
+      'linear-gradient(160deg, #d0c8b0 0%, #c0b8a0 50%, #b0a890 100%)',
+      'linear-gradient(160deg, #ccc0a0 0%, #bcb090 50%, #aca080 100%)',
+      'linear-gradient(160deg, #d8d0b8 0%, #c8c0a8 50%, #b8b098 100%)',
+    ];
+
+    function stripNotes(text) {
+      return (text || '').replace(/[\[\［]\s*\d+\s*[\]\］]/g, '');
+    }
+
+    function getPoetName(poet) {
+      if (!poet) return { zh: '', ko: '' };
+      if (typeof poet === 'object') return { zh: stripNotes(poet.zh || ''), ko: poet.ko || '' };
+      return { zh: stripNotes(String(poet)), ko: '' };
+    }
+
+    function getPoemTitle(title) {
+      if (!title) return '';
+      if (typeof title === 'object') return stripNotes(title.zh || title.ko || '');
+      return stripNotes(String(title));
+    }
+
+    function getFirstLines(poem, count) {
+      const raw = (poem.poemSimp || poem.poemZh || '').replace(/[\[\［]\s*\d+\s*[\]\］]/g, '');
+      const lines = raw.split(/[\n\r]+/).filter(l => l.trim());
+      return lines.slice(0, count).map(l => l.trim());
+    }
+
+    (async function loadDailyFive() {
+      try {
+        let poems = [];
+        try {
+          const ownedRes = await fetch('public/index/poems.full.owned.json');
+          if (!ownedRes.ok) throw new Error(`owned HTTP ${ownedRes.status}`);
+          poems = await ownedRes.json();
+        } catch (_) {
+          const res = await fetch('public/index/poems.full.json');
+          poems = await res.json();
+        }
+
+        // 날짜 기반 시드로 5수 선택 (매일 바뀜, 모든 방문자 동일)
+        const today = new Date();
+        const seed = today.getFullYear() * 10000 + (today.getMonth()+1) * 100 + today.getDate();
+        const indices = [];
+        for (let i = 0; i < poems.length; i++) indices.push(i);
+        // Fisher-Yates with seeded random
+        let s = seed;
+        function seededRand() { s = (s * 16807 + 0) % 2147483647; return s / 2147483647; }
+        for (let i = indices.length - 1; i > 0; i--) {
+          const j = Math.floor(seededRand() * (i + 1));
+          [indices[i], indices[j]] = [indices[j], indices[i]];
+        }
+        const picked = indices.slice(0, 5).map(i => poems[i]);
+
+        const container = document.getElementById('dailyFivePoems');
+        container.innerHTML = picked.map((p, idx) => {
+          const poet = getPoetName(p.poet);
+          const title = getPoemTitle(p.title);
+          const lines = getFirstLines(p, 4);
+          const noStr = p.poemNoStr || String(p.poemNo || '').padStart(3, '0');
+          // 이미지 경로 (나중에 형이 만들면 자동 적용)
+          const imgPath = `public/assets/daily/${noStr}.jpg`;
+
+          return `
+            <div class="poem-card"
+                 data-img="${imgPath}"
+                 style="background: ${CARD_COLORS[idx % 5]}"
+                 onclick="location.href='timeline/#poem-${p.poemNo || ''}'">
+              <div class="poem-card-placeholder">
+                <div class="poem-card-verse">${lines.join('')}</div>
+              </div>
+              <div class="poem-card-caption">
+                <div class="poem-card-poet">${poet.zh}${poet.ko ? ' · ' + poet.ko : ''}</div>
+                <div class="poem-card-title">${title}</div>
+              </div>
+            </div>`;
+        }).join('');
+
+        // 이미지 존재하면 배경으로 교체 (점진적 적용)
+        container.querySelectorAll('.poem-card[data-img]').forEach(card => {
+          const img = new Image();
+          img.src = card.dataset.img;
+          img.onload = () => {
+            card.style.background = `url(${card.dataset.img}) center/cover`;
+            const placeholder = card.querySelector('.poem-card-placeholder');
+            if (placeholder) placeholder.style.display = 'none';
+          };
+        });
+
+      } catch(e) {
+        console.warn('日日五首 로딩 실패:', e);
+      }
+    })();
+  </script>
 
 </body>
 </html>

@@ -1,188 +1,985 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>역사 | 당시삼백수</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>唐朝史 — 당나라 역사</title>
+  <link rel="stylesheet" href="https://use.typekit.net/dje5vco.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&family=Noto+Serif+KR:wght@400;700&family=Cinzel:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    /* ===== Reset & Base ===== */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
-  <script>
-    (function(d) {
-      var config = {
-        kitId: 'dje5vco',
-        scriptTimeout: 3000,
-        async: true
-      },
-      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-    })(document);
-  </script>
+    body {
+      font-family: 'Noto Serif KR', serif;
+      background: #fff;
+      color: #333;
+      line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
+    }
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Ma+Shan+Zheng&family=Noto+Serif+KR:wght@300;400;500;600;700&family=Noto+Serif+TC:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    /* ===== Navigation ===== */
+    .top-nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      padding: 16px 0;
+      box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+      transition: background 0.4s, box-shadow 0.4s, padding 0.4s;
+    }
+    .top-nav.is-scrolled {
+      background: rgba(44, 24, 16, 0.95);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+      padding: 10px 0;
+    }
+    .nav-inner {
+      max-width: 1200px; margin: 0 auto; padding: 0 32px;
+      display: flex; justify-content: space-between; align-items: center;
+      transition: max-width 0.4s ease;
+    }
+    .top-nav.is-scrolled .nav-inner {
+      max-width: 660px;
+    }
+    .nav-brand {
+      font-family: 'adobe-fangsong-std', fangsong, 'LXGW WenKai Mono TC', 'Noto Serif TC', serif;
+      font-size: 24px; color: #fff; text-decoration: none;
+      opacity: 0.9; transition: opacity 0.3s, color 0.4s;
+    }
+    .nav-brand:hover { opacity: 1; }
+    .nav-links { display: flex; gap: 28px; }
+    .nav-links a {
+      color: rgba(255,255,255,0.75); text-decoration: none;
+      font-size: 15px; transition: color 0.4s;
+    }
+    .nav-links a:hover, .nav-links a.active { color: #fff; }
 
-  <link rel="stylesheet" href="../pages/readdy_like.css" />
-  <script src="../pages/readdy_like.js" defer></script>
+    /* ===== Hero ===== */
+    .hero {
+      position: relative; height: 100vh; display: flex;
+      align-items: center; justify-content: center; overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    }
+    .hero-bg img {
+      width: 100%; height: 100%; object-fit: cover; object-position: center;
+    }
+    .hero-overlay {
+      position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.3), rgba(0,0,0,0.5));
+    }
+    .hero-content {
+      position: relative; z-index: 10; text-align: center; color: #fff; padding: 0 32px;
+    }
+    .hero-title {
+      font-family: 'adobe-fangsong-std', fangsong, 'LXGW WenKai Mono TC', 'Noto Serif TC', serif;
+      font-size: clamp(64px, 10vw, 120px);
+      font-weight: bold; margin-bottom: 24px;
+      text-shadow: 0 4px 30px rgba(0,0,0,0.4);
+    }
+    .hero-subtitle-ko {
+      font-family: 'Noto Serif KR', serif;
+      font-size: clamp(32px, 6vw, 64px); margin-bottom: 16px;
+    }
+    .hero-subtitle-en {
+      font-family: 'Cinzel', serif;
+      font-size: clamp(18px, 3vw, 32px); font-weight: 300;
+      letter-spacing: 0.1em;
+    }
+    .hero-date {
+      font-family: 'Noto Serif KR', serif;
+      margin-top: 32px; font-size: 20px;
+    }
+
+    /* ===== Sections ===== */
+    .section {
+      padding: 96px 32px;
+    }
+    .section--warm { background: #faf8f5; }
+    .section--white { background: #fff; }
+    .section-inner {
+      max-width: 1100px; margin: 0 auto;
+    }
+
+    /* ===== 2-column grid (sidebar + content) ===== */
+    .era-grid {
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      gap: 48px;
+    }
+
+    /* Sidebar */
+    .era-sidebar { position: sticky; top: 100px; align-self: start; }
+    .era-number {
+      font-family: 'adobe-fangsong-std', fangsong, 'LXGW WenKai Mono TC', 'Noto Serif TC', serif;
+      font-size: 72px; font-weight: bold; line-height: 1;
+      color: #3a2a18;
+      margin-bottom: 24px;
+    }
+    .era-title-zh {
+      font-family: 'adobe-fangsong-std', fangsong, 'LXGW WenKai Mono TC', 'Noto Serif TC', serif;
+      font-size: 48px; font-weight: bold; color: #3a2a18; margin-bottom: 8px;
+    }
+    .era-title-ko {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 20px; color: #666; margin-bottom: 4px;
+    }
+    .era-title-en {
+      font-family: 'Cinzel', serif;
+      font-size: 18px; color: #888;
+    }
+    .era-date {
+      font-family: 'Noto Serif KR', serif;
+      margin-top: 24px; font-size: 16px; color: #999;
+    }
+
+    /* Content column */
+    .era-content {
+      display: flex; flex-direction: column; gap: 48px;
+    }
+    .body-text {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 16px; color: #333; line-height: 1.9;
+    }
+    .body-text .zh {
+      font-family: 'adobe-fangsong-std', fangsong, serif;
+    }
+
+    /* ===== Sub-section heading (bullet + title) ===== */
+    .sub-heading {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 24px; font-weight: bold;
+      color: #3a2a18;
+      margin-bottom: 16px;
+      display: flex; align-items: center; gap: 12px;
+    }
+    .sub-heading .dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: #3a2a18; flex-shrink: 0;
+    }
+
+    /* ===== Image containers ===== */
+    .img-rounded {
+      border-radius: 16px; overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    .img-rounded img {
+      width: 100%; height: auto; display: block;
+    }
+    .img-rounded-lg {
+      border-radius: 16px; overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+    }
+    .img-rounded-lg img {
+      width: 100%; height: auto; display: block;
+    }
+    .img-caption {
+      padding: 16px 24px; text-align: center;
+      font-family: 'Noto Serif KR', serif;
+      font-size: 14px; color: #666;
+    }
+    .img-caption--gray { background: #F9FAFB; }
+    .img-caption--white { background: #fff; }
+
+    /* ===== Center-aligned section header ===== */
+    .section-header {
+      text-align: center; margin-bottom: 64px;
+    }
+    .section-header-zh {
+      font-family: 'adobe-fangsong-std', fangsong, 'LXGW WenKai Mono TC', 'Noto Serif TC', serif;
+      font-size: 56px; font-weight: bold; color: #3a2a18; margin-bottom: 16px;
+    }
+    .section-header-sub {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 22px; color: #666;
+    }
+
+    /* ===== Card grid (3-col for economy/military) ===== */
+    .card-grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      margin-bottom: 48px;
+    }
+    .card {
+      background: #fff; border-radius: 16px; padding: 32px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    .card-icon {
+      width: 64px; height: 64px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 24px; font-size: 32px;
+      background: #f5f2e8; color: #3a2a18;
+      font-family: 'adobe-fangsong-std', fangsong, serif;
+    }
+    .card-title {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 24px; font-weight: bold; color: #3a2a18; margin-bottom: 16px;
+    }
+    .card-text {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 16px; color: #555; line-height: 1.8;
+    }
+    .card-text .zh {
+      font-family: 'adobe-fangsong-std', fangsong, serif;
+    }
+
+    /* ===== 2-col card grid (for military foreign relations) ===== */
+    .card-grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+    }
+
+    /* ===== Info panels (institutions, successors) ===== */
+    .info-panel {
+      background: #F9FAFB; border-radius: 16px; padding: 40px;
+      margin-bottom: 48px;
+    }
+    .info-panel:last-child { margin-bottom: 0; }
+    .info-panel-title {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 28px; font-weight: bold; color: #3a2a18; margin-bottom: 24px;
+      display: flex; align-items: center; gap: 12px;
+    }
+    .info-panel-text {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 16px; color: #333; line-height: 1.9;
+    }
+    .info-panel-text .zh {
+      font-family: 'adobe-fangsong-std', fangsong, serif;
+    }
+
+    /* ===== 3-col ministry grid ===== */
+    .ministry-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+      margin-top: 24px;
+    }
+    .ministry-card {
+      background: #fff; border-radius: 12px; padding: 24px; text-align: center;
+    }
+    .ministry-name {
+      font-family: 'adobe-fangsong-std', fangsong, 'LXGW WenKai Mono TC', 'Noto Serif TC', serif;
+      font-size: 40px; color: #3a2a18; margin-bottom: 12px;
+    }
+    .ministry-desc {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 15px; color: #666;
+    }
+
+    /* ===== Tax sub-section ===== */
+    .tax-item { margin-bottom: 24px; }
+    .tax-item:last-child { margin-bottom: 0; }
+    .tax-title {
+      font-family: 'adobe-fangsong-std', fangsong, 'LXGW WenKai Mono TC', 'Noto Serif TC', serif;
+      font-size: 22px; font-weight: bold; color: #3a2a18; margin-bottom: 12px;
+    }
+    .tax-text {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 16px; color: #555; line-height: 1.8;
+    }
+    .tax-text .zh {
+      font-family: 'adobe-fangsong-std', fangsong, serif;
+    }
+
+    /* ===== Colored dot for card titles ===== */
+    .color-dot {
+      display: inline-block; width: 12px; height: 12px;
+      border-radius: 50%; margin-right: 8px; vertical-align: middle;
+      background: #3a2a18;
+    }
+
+    /* ===== East Asia shadow cards ===== */
+    .ea-card {
+      background: #fff; border-radius: 16px; padding: 40px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      margin-bottom: 48px;
+    }
+    .ea-card:last-child { margin-bottom: 0; }
+    .ea-card-title {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 28px; font-weight: bold; color: #3a2a18; margin-bottom: 24px;
+      display: flex; align-items: center; gap: 12px;
+    }
+    .ea-sub-section { margin-bottom: 24px; }
+    .ea-sub-section:last-child { margin-bottom: 0; }
+    .ea-sub-title {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 20px; font-weight: bold; color: #3a2a18; margin-bottom: 12px;
+    }
+
+    /* ===== Footer ===== */
+    .site-footer {
+      background: #2c1810; color: rgba(255,255,255,0.7);
+      padding: 48px 32px; text-align: center;
+    }
+    .footer-nav { display: flex; justify-content: center; gap: 32px; margin-bottom: 20px; }
+    .footer-nav a {
+      color: rgba(255,255,255,0.7); text-decoration: none;
+      font-size: 15px; transition: color 0.3s;
+    }
+    .footer-nav a:hover { color: #fff; }
+    .footer-copy { font-size: 14px; opacity: 0.5; }
+
+    /* ===== Fade animation ===== */
+    .fade-in {
+      opacity: 0; transform: translateY(30px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+    /* ===== Overview sidebar header (reuses section-header-zh styling) ===== */
+    .overview-title-zh {
+      font-family: 'adobe-fangsong-std', fangsong, 'LXGW WenKai Mono TC', 'Noto Serif TC', serif;
+      font-size: 56px; font-weight: bold; color: #3a2a18;
+    }
+    .overview-sub {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 22px; color: #666; margin-top: 8px;
+    }
+
+    /* ===== Military section sub-headings ===== */
+    .military-panel-title {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 28px; font-weight: bold; color: #3a2a18; margin-bottom: 24px;
+    }
+    .military-card-heading {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 24px; font-weight: bold; color: #3a2a18; margin-bottom: 16px;
+      display: flex; align-items: center; gap: 12px;
+    }
+
+    /* ===== Inline strong with zh styling (replaces inline font-family) ===== */
+    .zh-lead {
+      font-family: 'adobe-fangsong-std', fangsong, 'LXGW WenKai Mono TC', 'Noto Serif TC', serif;
+      font-size: 22px;
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 768px) {
+      .era-grid { grid-template-columns: 1fr; gap: 24px; }
+      .era-sidebar { position: static; }
+      .era-number { font-size: 48px; }
+      .era-title-zh { font-size: 36px; }
+      .hero-title { font-size: 60px; }
+      .section { padding: 48px 16px; }
+      .section-header-zh { font-size: 36px; }
+      .card-grid-3 { grid-template-columns: 1fr; }
+      .card-grid-2 { grid-template-columns: 1fr; }
+      .ministry-grid { grid-template-columns: 1fr; }
+      .nav-links { gap: 16px; }
+      .nav-links a { font-size: 13px; }
+    }
+  </style>
 </head>
-<body class="subpage" data-page="history">
-  <nav class="top-nav" data-top-nav>
-    <div class="container nav-inner">
-      <a class="nav-brand" href="../index.html">唐詩選集</a>
-      <div class="nav-menu">
-        <a class="nav-link" href="../index.html" data-page-target="home">메인</a>
-        <a class="nav-link" href="../poets/" data-page-target="poets">시인들</a>
-        <a class="nav-link" href="../poem/" data-page-target="poem">시</a>
-        <a class="nav-link" href="../history/" data-page-target="history">역사</a>
-        <a class="nav-link" href="../tang-poetry-300/" data-page-target="t300">당시삼백수</a>
+<body>
+
+  <!-- Navigation -->
+  <nav class="top-nav" id="topNav">
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">當時三百首</a>
+      <div class="nav-links">
+        <a href="/poets/">시인</a>
+        <a href="/poem/">시</a>
+        <a href="/history/" class="active">역사</a>
+        <a href="/tang300/">당시삼백수</a>
+        <a href="/timeline/">타임라인</a>
       </div>
     </div>
   </nav>
 
-  <header class="hero">
-    <div class="hero-media tone-stone"><span>Hero Placeholder / History</span></div>
-    <div class="hero-content">
-      <h1 class="hero-zh">唐朝史</h1>
-      <p class="hero-ko">당나라 역사</p>
-      <p class="hero-en">POLITICS, EMPIRES, COLLAPSE</p>
-      <p class="hero-lead">시대 서사를 크게 5단계로 쪼개 레퍼런스 구조를 따랐습니다. 각 구간은 스티키 타이틀과 설명 카드 조합이며, 지도·연표·삽화 영역은 컬러 박스로 비워 둔 상태입니다.</p>
+  <!-- ==================== Hero ==================== -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img
+        src="https://readdy.ai/api/search-image?query=majestic%20ancient%20chinese%20tang%20dynasty%20imperial%20palace%20with%20grand%20architecture%20golden%20roofs%20and%20red%20pillars%20under%20dramatic%20sunset%20sky%2C%20cinematic%20wide%20angle%20view%2C%20historical%20epic%20atmosphere%2C%20rich%20warm%20colors%20with%20golden%20and%20crimson%20tones%2C%20misty%20mountains%20in%20background%2C%20traditional%20chinese%20painting%20aesthetic&width=1920&height=1080&seq=tanghistory001&orientation=landscape"
+        alt="Tang Dynasty"
+      />
+      <div class="hero-overlay"></div>
     </div>
-  </header>
+    <div class="hero-content">
+      <h1 class="hero-title">唐朝史</h1>
+      <p class="hero-subtitle-ko">당나라 역사</p>
+      <p class="hero-subtitle-en">The History of Tang Dynasty</p>
+      <div class="hero-date">618 - 907</div>
+    </div>
+  </section>
 
-  <main>
-    <section class="page-section">
-      <div class="container">
-        <div class="section-grid fade-section">
-          <aside class="sticky-title">
-            <p class="index-badge">01</p>
-            <h2 class="section-title-zh">建國</h2>
-            <p class="section-title-ko">건국과 통합</p>
-            <p class="section-kicker">618~649</p>
-          </aside>
-          <div class="stack">
-            <article class="info-card">
-              <h3>이연·이세민 체제 확립</h3>
-              <p>수나라 말기의 혼란 이후 당 왕조가 성립하고 중앙집권 체제가 정비되는 구간입니다. 정책 요약과 인물 요약 카드로 확장 가능한 베이스를 마련했습니다.</p>
-            </article>
-            <div class="image-placeholder tone-amber h-sm"><span>초기 장안 지도/궁정 이미지 자리</span></div>
-          </div>
+  <!-- ==================== Overview ==================== -->
+  <section class="section section--white fade-in">
+    <div class="section-inner">
+      <div class="era-grid">
+        <div class="era-sidebar">
+          <h2 class="overview-title-zh">概要</h2>
+          <p class="overview-sub">Overview</p>
         </div>
-      </div>
-    </section>
+        <div class="era-content">
+          <div class="body-text" style="display:flex; flex-direction:column; gap:24px;">
+            <p>
+              <strong class="zh-lead">當(唐)</strong>은 수나라(隋)를 이어 중국을 지배했던 왕조로, 618년 당 고조 이연에 의해 건국되어 907년 애종이 주전충에게 선양할 때까지 <strong>289년간</strong> 존속했다. 수도는 <strong class="zh">長安(장안)</strong>, 현재의 시안이었으며, <span class="zh">洛陽(낙양)</span>을 <span class="zh">東都(동도)</span>로 삼아 중시했다.
+            </p>
+            <p>
+              당나라는 <strong>중국 제국 역사의 황금기</strong>로 평가받는다. 정치적으로는 율령 체제를 완성하여 중앙 집권적인 통치 기구를 확립했고, 경제적으로는 균전제와 조용조 제도를 통해 안정을 꾀하다가 후기에는 양세법을 도입하여 사회 변화에 대응했다.
+            </p>
+            <p>
+              문화적으로는 개방적이고 국제적인 성격을 띠어 시(詩), 서예, 회화 등 예술이 크게 융성했으며, 특히 <strong class="zh">唐詩(당시)</strong>는 중국 문학의 정점으로 꼽힌다. 대외적으로는 돌궐, 토번, 고구려 등 주변국과 활발히 교류하거나 경쟁하며 동아시아 문화권의 기틀을 마련했다.
+            </p>
+          </div>
 
-    <section class="page-section alt">
-      <div class="container">
-        <div class="section-grid fade-section">
-          <aside class="sticky-title">
-            <p class="index-badge">02</p>
-            <h2 class="section-title-zh">全盛</h2>
-            <p class="section-title-ko">개원·천보의 전성기</p>
-            <p class="section-kicker">713~755</p>
-          </aside>
-          <div class="stack">
-            <article class="info-card">
-              <h3>경제·문화·국제 교류의 정점</h3>
-              <p>과거제 확대, 장안 중심 국제도시 성장, 귀족문화 확산을 한 묶음으로 표현했습니다.</p>
-            </article>
-            <div class="twocol">
-              <div class="image-placeholder tone-olive h-sm"><span>장안 도시 풍경 자리</span></div>
-              <div class="image-placeholder tone-ink h-sm"><span>교역·사절 이미지 자리</span></div>
+          <div class="img-rounded-lg" style="margin-top:16px;">
+            <img
+              src="https://readdy.ai/api/search-image?query=detailed%20historical%20map%20of%20tang%20dynasty%20china%20at%20its%20peak%20showing%20maximum%20territorial%20extent%20with%20provinces%20cities%20and%20trade%20routes%2C%20cartographic%20style%20with%20traditional%20chinese%20aesthetic%2C%20warm%20parchment%20colors%2C%20clear%20geographical%20labels%20in%20classical%20style&width=1200&height=700&seq=tanghistory002&orientation=landscape"
+              alt="Tang Dynasty Territory Map"
+            />
+            <div class="img-caption img-caption--gray">
+              당나라 전성기 영토 지도 (최대 강역)
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="page-section">
-      <div class="container">
-        <div class="section-grid fade-section">
-          <aside class="sticky-title">
-            <p class="index-badge">03</p>
-            <h2 class="section-title-zh">安史之亂</h2>
-            <p class="section-title-ko">안사의 난</p>
-            <p class="section-kicker">755~763</p>
-          </aside>
-          <div class="stack">
-            <article class="info-card">
-              <h3>제국 시스템의 붕괴 시작</h3>
-              <p>군벌화와 재정 파탄, 인구 이동, 시인들의 전쟁 체험을 연결하는 핵심 이벤트 섹션입니다.</p>
-              <div class="quote-block">
-                <p>두보의 전란 시편을 직접 링크하는 구조를 이 블록 아래 붙일 수 있습니다.</p>
-              </div>
-            </article>
-            <div class="image-placeholder tone-rust h-md"><span>전란 지도/난민 이동 시각화 자리</span></div>
-          </div>
+  <!-- ==================== 01 建國與初唐 ==================== -->
+  <section class="section section--warm fade-in">
+    <div class="section-inner">
+      <div class="era-grid">
+        <div class="era-sidebar">
+          <div class="era-number">01</div>
+          <h2 class="era-title-zh">建國與初唐</h2>
+          <p class="era-title-ko">건국과 초당</p>
+          <p class="era-title-en">Founding and Early Tang</p>
+          <div class="era-date">618 - 712</div>
         </div>
-      </div>
-    </section>
-
-    <section class="page-section alt">
-      <div class="container">
-        <div class="section-grid fade-section">
-          <aside class="sticky-title">
-            <p class="index-badge">04</p>
-            <h2 class="section-title-zh">再建與分裂</h2>
-            <p class="section-title-ko">중당의 재건과 균열</p>
-            <p class="section-kicker">764~835</p>
-          </aside>
-          <div class="stack">
-            <div class="twocol">
-              <article class="info-card">
-                <h3>재정·제도 복구</h3>
-                <p>양세법 등 제도적 재정비를 다룹니다.</p>
-              </article>
-              <article class="info-card">
-                <h3>번진과 환관 문제</h3>
-                <p>중앙권력 약화를 구조적으로 설명하는 카드입니다.</p>
-              </article>
+        <div class="era-content">
+          <!-- 당의 건국 -->
+          <div>
+            <h3 class="sub-heading">
+              <span class="dot"></span>
+              당의 건국 (618)
+            </h3>
+            <p class="body-text" style="margin-bottom:24px;">
+              수나라 양제의 폭정과 고구려 원정 실패로 인한 국력 소모로 각지에서 반란이 일어났다. 태원 유수였던 <strong class="zh">李淵(이연, 당 고조)</strong>은 차남 <span class="zh">李世民(이세민)</span> 등의 보좌를 받아 거병하여 장안을 점령하고, 618년 수 공제로부터 선양을 받아 당을 건국했다.
+            </p>
+            <div class="img-rounded">
+              <img
+                src="https://readdy.ai/api/search-image?query=emperor%20li%20yuan%20founding%20tang%20dynasty%20in%20grand%20throne%20room%20with%20officials%20bowing%2C%20traditional%20chinese%20historical%20painting%20style%2C%20solemn%20ceremonial%20atmosphere%2C%20rich%20imperial%20colors%20with%20gold%20and%20red%2C%20detailed%20period%20costumes%20and%20architecture&width=900&height=600&seq=tanghistory003&orientation=landscape"
+                alt="Tang Founding"
+              />
             </div>
-            <div class="image-placeholder tone-stone h-sm"><span>중당 정치구조 도식 자리</span></div>
+          </div>
+
+          <!-- 현무문의 변 -->
+          <div>
+            <h3 class="sub-heading">
+              <span class="dot"></span>
+              현무문의 변 (626)
+            </h3>
+            <p class="body-text">
+              통일 과정에서 큰 공을 세운 <span class="zh">秦王(진왕)</span> 이세민과 황태자 <span class="zh">李建成(이건성)</span> 사이의 권력 투쟁이 격화되었다. 626년 이세민은 현무문에서 형 이건성과 동생 <span class="zh">李元吉(이원길)</span>을 살해하고 권력을 장악했다(현무문의 변). 이연은 곧 퇴위하고 이세민이 제2대 황제 <strong class="zh">太宗(태종)</strong>으로 즉위했다.
+            </p>
+          </div>
+
+          <!-- 정관의 치 -->
+          <div>
+            <h3 class="sub-heading">
+              <span class="dot"></span>
+              <span class="zh">貞觀之治</span> (정관의 치)
+            </h3>
+            <p class="body-text" style="margin-bottom:24px;">
+              태종은 <span class="zh">魏徵(위징)</span>, <span class="zh">房玄齡(방현령)</span>, <span class="zh">杜如晦(두여회)</span> 등 유능한 인재를 등용하고 간언을 받아들여 정치를 쇄신했다. 율령 격식을 정비하여 3성 6부제를 확립하고, 균전제와 부병제를 실시하여 제국의 기틀을 다졌다. 대외적으로는 동돌궐을 정벌하여 <strong class="zh">'天可汗(천가한)'</strong>이라는 칭호를 얻었다.
+            </p>
+            <div class="img-rounded">
+              <img
+                src="https://readdy.ai/api/search-image?query=emperor%20taizong%20of%20tang%20dynasty%20in%20imperial%20study%20room%20consulting%20with%20wise%20ministers%20and%20scholars%2C%20classical%20chinese%20painting%20style%2C%20harmonious%20governance%20scene%2C%20warm%20scholarly%20atmosphere%2C%20traditional%20architecture%20with%20scrolls%20and%20books&width=900&height=600&seq=tanghistory004&orientation=landscape"
+                alt="Reign of Taizong"
+              />
+            </div>
+          </div>
+
+          <!-- 고종의 통치 -->
+          <div>
+            <h3 class="sub-heading">
+              <span class="dot"></span>
+              고종의 통치
+            </h3>
+            <p class="body-text">
+              태종의 뒤를 이은 고종은 서돌궐을 평정하고, 신라와 연합하여 백제(660)와 고구려(668)를 멸망시키는 등 당나라의 영토를 최대로 확장했다. 그러나 말년에는 황후인 <strong class="zh">武則天(무측천, 측천무후)</strong>이 실권을 장악하기 시작했다.
+            </p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="page-section">
-      <div class="container">
-        <div class="section-grid fade-section">
-          <aside class="sticky-title">
-            <p class="index-badge">05</p>
-            <h2 class="section-title-zh">晩唐與終局</h2>
-            <p class="section-title-ko">만당의 쇠퇴와 멸망</p>
-            <p class="section-kicker">836~907</p>
-          </aside>
-          <div class="stack">
-            <article class="info-card">
-              <h3>황소의 난 이후</h3>
-              <p>중앙 통치 붕괴와 군웅할거, 오대십국으로의 전환을 요약합니다. 이 구간은 타임라인 데이터와 직접 연결하기 좋은 위치입니다.</p>
-            </article>
-            <div class="image-placeholder tone-ink h-sm"><span>멸망 직전 연표/세력도 자리</span></div>
+  <!-- ==================== 02 武周與盛唐 ==================== -->
+  <section class="section section--white fade-in">
+    <div class="section-inner">
+      <div class="era-grid">
+        <div class="era-sidebar">
+          <div class="era-number">02</div>
+          <h2 class="era-title-zh">武周與盛唐</h2>
+          <p class="era-title-ko">무주 혁명과 성당</p>
+          <p class="era-title-en">Wu Zhou and High Tang</p>
+          <div class="era-date">690 - 765</div>
+        </div>
+        <div class="era-content">
+          <!-- 측천무후의 집권 -->
+          <div>
+            <h3 class="sub-heading">
+              <span class="dot"></span>
+              측천무후의 집권
+            </h3>
+            <p class="body-text" style="margin-bottom:24px;">
+              고종 사후 중종과 예종을 차례로 폐위시킨 무측천은 690년 스스로 황제에 올라 국호를 <strong class="zh">周(주)</strong>로 고쳤다(무주 혁명). 그녀는 <strong>중국 역사상 유일한 여황제</strong>로, 공포 정치를 펼치기도 했으나 과거제를 강화하여 문벌 귀족 세력을 억누르고 신진 관료를 등용하여 왕권을 강화했다.
+            </p>
+            <div class="img-rounded">
+              <img
+                src="https://readdy.ai/api/search-image?query=empress%20wu%20zetian%20on%20imperial%20throne%20in%20magnificent%20palace%20hall%2C%20powerful%20and%20authoritative%20presence%2C%20traditional%20chinese%20historical%20painting%20style%2C%20dramatic%20lighting%20with%20golden%20accents%2C%20ornate%20imperial%20regalia%20and%20architecture&width=900&height=600&seq=tanghistory005&orientation=landscape"
+                alt="Empress Wu Zetian"
+              />
+            </div>
+          </div>
+
+          <!-- 개원의 치 -->
+          <div>
+            <h3 class="sub-heading">
+              <span class="dot"></span>
+              <span class="zh">開元之治</span> (개원의 치)
+            </h3>
+            <p class="body-text" style="margin-bottom:24px;">
+              712년 예종의 아들 <span class="zh">李隆基(이융기, 현종)</span>가 위황후 일파를 제거하고 즉위했다. 현종은 초기에 <span class="zh">姚崇(요숭)</span>, <span class="zh">宋璟(송경)</span> 등 명신을 기용하여 정치를 개혁하고, 부병제의 붕괴에 대응하여 모병제를 도입하는 등 국력을 크게 신장시켰다. 이 시기 당나라는 정치적 안정과 경제적 번영을 누리며 <strong>문화의 절정기</strong>를 맞이했다(성당, High Tang).
+            </p>
+            <div class="img-rounded">
+              <img
+                src="https://readdy.ai/api/search-image?query=prosperous%20tang%20dynasty%20changan%20city%20street%20scene%20with%20merchants%20scholars%20and%20international%20traders%2C%20bustling%20marketplace%20atmosphere%2C%20vibrant%20colors%2C%20traditional%20chinese%20architecture%2C%20cosmopolitan%20golden%20age%20setting&width=900&height=600&seq=tanghistory006&orientation=landscape"
+                alt="Kaiyuan Era Prosperity"
+              />
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="page-section alt">
-      <div class="container">
-        <div class="section-grid fade-section">
-          <aside class="sticky-title">
-            <p class="index-badge">06</p>
-            <h2 class="section-title-zh">歷史年表</h2>
-            <p class="section-title-ko">연표 모듈</p>
-            <p class="section-kicker">후속 인터랙션 영역</p>
-          </aside>
-          <div class="stack">
-            <div class="image-placeholder tone-olive h-lg"><span>연대표 인터랙티브 영역 자리</span></div>
-            <article class="info-card">
-              <h4>연동 메모</h4>
-              <p>`public/index/history_cards.json`과 연결하면 현 페이지를 정적 레이아웃에서 데이터 기반 뷰로 전환할 수 있습니다.</p>
-            </article>
+  <!-- ==================== 03 安史之亂與中唐 ==================== -->
+  <section class="section section--warm fade-in">
+    <div class="section-inner">
+      <div class="era-grid">
+        <div class="era-sidebar">
+          <div class="era-number">03</div>
+          <h2 class="era-title-zh">安史之亂與中唐</h2>
+          <p class="era-title-ko">안사의 난과 중당</p>
+          <p class="era-title-en">An Lushan Rebellion</p>
+          <div class="era-date">755 - 835</div>
+        </div>
+        <div class="era-content">
+          <!-- 안사의 난 -->
+          <div>
+            <h3 class="sub-heading">
+              <span class="dot"></span>
+              안사의 난 (755~763)
+            </h3>
+            <p class="body-text" style="margin-bottom:24px;">
+              현종 말기, 정치는 부패하고 <span class="zh">楊貴妃(양귀비)</span> 일족이 권력을 전횡했다. 변방의 절도사 <strong class="zh">安祿山(안녹산)</strong>과 <strong class="zh">史思明(사사명)</strong>이 755년 반란을 일으켜 장안과 낙양이 함락되었다. 현종은 촉으로 피난을 갔고, 태자 숙종이 즉위하여 위구르의 도움을 받아 반란을 진압했다. 이 난으로 당나라는 쇠퇴의 길로 접어들었다.
+            </p>
+            <div class="img-rounded">
+              <img
+                src="https://readdy.ai/api/search-image?query=dramatic%20battle%20scene%20of%20an%20lushan%20rebellion%20with%20tang%20dynasty%20soldiers%20and%20rebels%20fighting%2C%20chaotic%20warfare%20atmosphere%2C%20traditional%20chinese%20historical%20painting%20style%2C%20dark%20stormy%20skies%2C%20intense%20action%20and%20movement&width=900&height=600&seq=tanghistory007&orientation=landscape"
+                alt="An Lushan Rebellion"
+              />
+            </div>
+          </div>
+
+          <!-- 정치/사회적 변화 -->
+          <div>
+            <h3 class="sub-heading">
+              <span class="dot"></span>
+              정치/사회적 변화
+            </h3>
+            <p class="body-text">
+              안사의 난 이후 중앙 정부의 통제력이 약화되면서 지방의 절도사들이 독자적인 세력을 구축하는 <strong class="zh">藩鎭(번진)</strong>의 할거가 심화되었다. 또한 북방 민족의 압박으로 인구가 강남으로 이동하면서 강남 지역의 경제적 중요성이 커졌다.
+            </p>
+          </div>
+
+          <!-- 재정 위기와 개혁 -->
+          <div>
+            <h3 class="sub-heading">
+              <span class="dot"></span>
+              재정 위기와 개혁
+            </h3>
+            <p class="body-text">
+              전란으로 호구 파악이 불가능해져 기존의 조용조 체제가 붕괴되었다. 이에 덕종 때인 780년, 재상 <span class="zh">楊炎(양염)</span>의 건의로 자산을 기준으로 세금을 걷는 <strong class="zh">兩稅法(양세법)</strong>을 시행하여 재정 위기를 타개하려 했다.
+            </p>
           </div>
         </div>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
+  <!-- ==================== 04 衰退與滅亡 ==================== -->
+  <section class="section section--white fade-in">
+    <div class="section-inner">
+      <div class="era-grid">
+        <div class="era-sidebar">
+          <div class="era-number">04</div>
+          <h2 class="era-title-zh">衰退與滅亡</h2>
+          <p class="era-title-ko">쇠퇴와 멸망</p>
+          <p class="era-title-en">Late Tang and Fall</p>
+          <div class="era-date">836 - 907</div>
+        </div>
+        <div class="era-content">
+          <!-- 원화 중흥 -->
+          <div>
+            <h3 class="sub-heading">
+              <span class="dot"></span>
+              <span class="zh">元和中興</span> (원화 중흥)
+            </h3>
+            <p class="body-text">
+              헌종은 번진 세력을 무력으로 제압하고 중앙 집권을 회복하려 노력하여 일시적인 중흥을 이룩했다.
+            </p>
+          </div>
+
+          <!-- 정치적 혼란 -->
+          <div>
+            <h3 class="sub-heading">
+              <span class="dot"></span>
+              정치적 혼란
+            </h3>
+            <p class="body-text">
+              그러나 헌종 이후 환관들이 황제의 폐립에 관여할 정도로 권력이 비대해졌고(<span class="zh">甘露之變</span>, 감로의 변), 조정 신료들은 <strong class="zh">牛李黨爭(우이당쟁)</strong>이라 불리는 붕당 싸움에 몰두하여 정치는 더욱 혼란해졌다.
+            </p>
+          </div>
+
+          <!-- 민란과 멸망 -->
+          <div>
+            <h3 class="sub-heading">
+              <span class="dot"></span>
+              민란과 멸망
+            </h3>
+            <p class="body-text" style="margin-bottom:24px;">
+              토지 겸병과 가혹한 세금으로 농민들의 삶이 피폐해지자, 875년 <strong class="zh">黃巢之亂(황소의 난)</strong>이 일어났다. 황소의 난은 당나라 전역을 휩쓸며 통치 기반을 완전히 무너뜨렸다. 결국 907년, 황소의 난 진압 과정에서 성장한 절도사 <span class="zh">朱全忠(주전충)</span>이 애종을 폐위시키고 <span class="zh">後梁(후량)</span>을 건국함으로써 당나라는 멸망했다.
+            </p>
+            <div class="img-rounded">
+              <img
+                src="https://readdy.ai/api/search-image?query=peasant%20rebellion%20in%20late%20tang%20dynasty%20with%20farmers%20uprising%20against%20imperial%20forces%2C%20dramatic%20historical%20scene%2C%20traditional%20chinese%20painting%20style%2C%20turbulent%20atmosphere%20with%20smoke%20and%20chaos%2C%20muted%20earth%20tones&width=900&height=600&seq=tanghistory008&orientation=landscape"
+                alt="Huang Chao Rebellion"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 經濟與貿易 ==================== -->
+  <section class="section section--warm fade-in">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2 class="section-header-zh">經濟與貿易</h2>
+        <p class="section-header-sub">Economy and Trade</p>
+      </div>
+
+      <div class="card-grid-3">
+        <!-- 농업과 수공업 -->
+        <div class="card">
+          <div class="card-icon">農</div>
+          <h3 class="card-title">농업과 수공업</h3>
+          <p class="card-text">
+            화북 지방의 밭농사와 강남 지방의 벼농사가 발달했으며, 특히 <span class="zh">茶(차)</span> 재배가 확산되어 대중적인 음료가 되었다. 수공업에서는 비단 직조 기술이 정교해졌고, <span class="zh">唐三彩(당삼채)</span>와 같은 도자기 산업이 번영했다.
+          </p>
+        </div>
+
+        <!-- 상업과 도시 발달 -->
+        <div class="card">
+          <div class="card-icon">商</div>
+          <h3 class="card-title">상업과 도시 발달</h3>
+          <p class="card-text">
+            대운하를 통해 강남의 물자가 북쪽으로 운송되면서 상업이 활발해졌다. 장안과 낙양에는 <span class="zh">市廛(시전)</span>이 설치되어 엄격한 관리 하에 매매가 이루어졌으나, 후기에는 야시장도 등장했다.
+          </p>
+        </div>
+
+        <!-- 대외 무역 -->
+        <div class="card">
+          <div class="card-icon">貿</div>
+          <h3 class="card-title">대외 무역</h3>
+          <p class="card-text">
+            실크로드(육로)를 통해 서역의 상인들이 장안을 왕래하며 서역의 문물(<span class="zh">胡風</span>, 호풍)을 전했다. 또한 해상 실크로드가 활성화되어 <span class="zh">廣州(광저우)</span> 등에 <span class="zh">市舶司(시박사)</span>가 설치되었다.
+          </p>
+        </div>
+      </div>
+
+      <div class="img-rounded-lg">
+        <img
+          src="https://readdy.ai/api/search-image?query=ancient%20silk%20road%20trade%20routes%20map%20showing%20tang%20dynasty%20land%20and%20maritime%20trade%20paths%20connecting%20china%20to%20central%20asia%20middle%20east%20and%20beyond%2C%20historical%20cartography%20style%2C%20warm%20vintage%20colors%2C%20detailed%20route%20markings&width=1200&height=600&seq=tanghistory009&orientation=landscape"
+          alt="Silk Road Trade Routes"
+        />
+        <div class="img-caption img-caption--white">
+          당나라 대외 무역로 (육상 및 해상 실크로드)
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 制度與行政 ==================== -->
+  <section class="section section--white fade-in">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2 class="section-header-zh">制度與行政</h2>
+        <p class="section-header-sub">Institutions and Administration</p>
+      </div>
+
+      <!-- 중앙 정치 제도 -->
+      <div class="info-panel">
+        <h3 class="info-panel-title">중앙 정치 제도</h3>
+        <p class="info-panel-text" style="margin-bottom:24px;">
+          <strong class="zh-lead">三省六部制(3성 6부제)</strong>를 완비했다. <span class="zh">中書省(중서성)</span>(정책 입안), <span class="zh">門下省(문하성)</span>(심의 및 거부권), <span class="zh">尚書省(상서성)</span>(정책 집행)이 권력을 분담하고 견제했다. 상서성 아래에는 이(인사), 호(재정), 예(의례/교육), 병(군사), 형(사법), 공(토목)의 6부를 두어 행정 실무를 담당하게 했다.
+        </p>
+        <div class="ministry-grid">
+          <div class="ministry-card">
+            <div class="ministry-name">中書省</div>
+            <p class="ministry-desc">정책 입안</p>
+          </div>
+          <div class="ministry-card">
+            <div class="ministry-name">門下省</div>
+            <p class="ministry-desc">심의 및 거부권</p>
+          </div>
+          <div class="ministry-card">
+            <div class="ministry-name">尚書省</div>
+            <p class="ministry-desc">정책 집행</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 관리 선발 제도 -->
+      <div class="info-panel">
+        <h3 class="info-panel-title">관리 선발 제도</h3>
+        <p class="info-panel-text">
+          <strong class="zh-lead">科擧制(과거제)</strong>가 정착되어 문벌 귀족 중심의 사회에서 능력 중심의 관료제 사회로 이행하는 계기가 되었다. 특히 시와 문장 실력을 중시하는 <strong class="zh">進士科(진사과)</strong>가 가장 권위 있었다.
+        </p>
+      </div>
+
+      <!-- 토지 및 조세 제도 -->
+      <div class="info-panel">
+        <h3 class="info-panel-title">토지 및 조세 제도</h3>
+        <div>
+          <div class="tax-item">
+            <h4 class="tax-title">均田制 (균전제)</h4>
+            <p class="tax-text">
+              성인 남자에게 토지를 지급하고, 죽으면 국가에 반납하게 한 제도.
+            </p>
+          </div>
+          <div class="tax-item">
+            <h4 class="tax-title">租庸調 (조용조)</h4>
+            <p class="tax-text">
+              균전제를 바탕으로 곡물(<span class="zh">租</span>), 노동력(<span class="zh">庸</span>), 직물(<span class="zh">調</span>)을 납부하게 한 세금 제도.
+            </p>
+          </div>
+          <div class="tax-item">
+            <h4 class="tax-title">兩稅法 (양세법)</h4>
+            <p class="tax-text">
+              안사의 난 이후 균전제가 붕괴되자, 자산의 많고 적음에 따라 여름과 가을 두 번에 걸쳐 세금을 걷는 제도로 전환했다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 軍事與征伐 ==================== -->
+  <section class="section section--warm fade-in">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2 class="section-header-zh">軍事與征伐</h2>
+        <p class="section-header-sub">Military and Conquests</p>
+      </div>
+
+      <!-- 군사 제도 -->
+      <div class="card" style="padding:40px; margin-bottom:48px;">
+        <h3 class="military-panel-title">군사 제도</h3>
+        <p class="body-text">
+          초기에는 병농일치의 <strong class="zh">府兵制(부병제)</strong>를 실시하여, 평시에는 농사를 짓고 농한기에 훈련을 받으며, 전쟁 시 징집되었다. 그러나 균전제의 붕괴와 장기적인 변방 수비의 필요성으로 인해 직업 군인을 모집하는 <strong class="zh">募兵制(모병제)</strong>로 전환되었다. 이는 절도사가 사병(<span class="zh">私兵</span>)을 양성하여 중앙 정부에 대항하는 원인이 되었다.
+        </p>
+      </div>
+
+      <!-- 주요 대외 관계 -->
+      <h3 class="military-panel-title" style="text-align:center; margin-bottom:32px;">
+        주요 대외 관계
+      </h3>
+
+      <div class="card-grid-2">
+        <!-- 돌궐 -->
+        <div class="card" style="padding:32px;">
+          <h4 class="military-card-heading">
+            <span class="color-dot"></span>
+            돌궐 (Turk)
+          </h4>
+          <p class="card-text">
+            태종 때 동돌궐을 정복하고 <span class="zh">羈縻政策(기미정책)</span>(현지 족장을 통해 간접 통치)을 실시했다. 고종 때는 서돌궐을 멸망시켰다.
+          </p>
+        </div>
+
+        <!-- 토번 -->
+        <div class="card" style="padding:32px;">
+          <h4 class="military-card-heading">
+            <span class="color-dot"></span>
+            토번 (Tibet)
+          </h4>
+          <p class="card-text">
+            티베트 고원의 강국으로 당과 화친과 대립을 반복했다. 태종 때 <span class="zh">文成公主(문성공주)</span>가 토번의 <span class="zh">松贊干布(송첸캄포)</span>에게 시집가 불교와 당의 문화를 전했다.
+          </p>
+        </div>
+
+        <!-- 고구려/백제/신라 -->
+        <div class="card" style="padding:32px;">
+          <h4 class="military-card-heading">
+            <span class="color-dot"></span>
+            고구려/백제/신라
+          </h4>
+          <p class="card-text">
+            당은 고구려 원정에 실패한 후 신라와 연합(나당 연합)하여 백제와 고구려를 차례로 멸망시켰다. 이후 한반도 지배권을 두고 신라와 나당 전쟁을 벌였으나 패배하여 대동강 이남의 지배권을 신라에 넘겨주었다.
+          </p>
+        </div>
+
+        <!-- 도호부 -->
+        <div class="card" style="padding:32px;">
+          <h4 class="military-card-heading">
+            <span class="color-dot"></span>
+            <span class="zh">都護府</span> (도호부)
+          </h4>
+          <p class="card-text">
+            정복한 지역을 다스리기 위해 <span class="zh">安西(안서)</span>(서역), <span class="zh">安東(안동)</span>(고구려 옛 땅), <span class="zh">安南(안남)</span>(베트남), 안북, 단우, 북정 등 6도호부를 설치하여 통치했다.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 後續王朝與影響 ==================== -->
+  <section class="section section--white fade-in">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2 class="section-header-zh">後續王朝與影響</h2>
+        <p class="section-header-sub">Successors and Impact on Chinese History</p>
+      </div>
+
+      <!-- 오대십국 시대 -->
+      <div class="info-panel">
+        <h3 class="info-panel-title">
+          <span class="zh">五代十國</span> 시대
+        </h3>
+        <p class="info-panel-text">
+          당 멸망 후 각지의 절도사들이 독립하여 5개의 왕조(중원)와 10개의 나라(지방)가 난립하는 분열기가 이어졌다. 이는 당나라 말기 번진 할거의 연장선이었다.
+        </p>
+      </div>
+
+      <!-- 제도적 유산 -->
+      <div class="info-panel">
+        <h3 class="info-panel-title">제도적 유산</h3>
+        <p class="info-panel-text">
+          당의 3성 6부제, 과거제, 주현제 등은 <span class="zh">宋(송)</span>나라를 거쳐 <span class="zh">明(명)</span>, <span class="zh">淸(청)</span>에 이르기까지 중국 왕조 통치 체제의 기본 골격이 되었다. 특히 과거제는 <span class="zh">士大夫(사대부)</span> 계층을 형성하는 기반이 되었다.
+        </p>
+      </div>
+
+      <!-- 문화적 유산 -->
+      <div class="info-panel">
+        <h3 class="info-panel-title">문화적 유산</h3>
+        <p class="info-panel-text">
+          <span class="zh">李白(이백)</span>, <span class="zh">杜甫(두보)</span>로 대표되는 <span class="zh">唐詩(당시)</span>는 중국 문학의 최고봉으로 후대에 끊임없이 애송되고 모방되었다. 불교의 토착화(<span class="zh">禪宗</span>, 선종의 발달)와 유교, 도교의 조화는 중국 사상사의 중요한 흐름을 형성했다.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 東亞影響 ==================== -->
+  <section class="section section--warm fade-in">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2 class="section-header-zh">東亞影響</h2>
+        <p class="section-header-sub">Impact on Korea and East Asia</p>
+      </div>
+
+      <!-- 동아시아 문화권의 완성 -->
+      <div class="ea-card">
+        <h3 class="ea-card-title">동아시아 문화권의 완성</h3>
+        <p class="body-text">
+          당의 율령, 유교, 불교, 한자는 한국(<span class="zh">新羅(신라)</span>/<span class="zh">渤海(발해)</span>), 일본, 베트남 등에 전파되어 동아시아 공통의 문화를 형성했다.
+        </p>
+      </div>
+
+      <!-- 한국 -->
+      <div class="ea-card">
+        <h3 class="ea-card-title">한국 (삼국 및 남북국 시대)</h3>
+        <div class="ea-sub-section">
+          <h4 class="ea-sub-title">정치/군사</h4>
+          <p class="body-text">
+            나당 연합과 나당 전쟁을 통해 신라의 삼국 통일 과정에 깊이 개입했다. 발해와는 초기 대립했으나 점차 교류하며 문물을 수용했다(<span class="zh">渤海館</span>, 발해관).
+          </p>
+        </div>
+        <div class="ea-sub-section">
+          <h4 class="ea-sub-title">문화 교류</h4>
+          <p class="body-text">
+            수많은 유학생(<span class="zh">崔致遠(최치원)</span> 등)과 승려(<span class="zh">慧超(혜초)</span> 등)가 당나라에 왕래하며 선진 문물을 수용했다. <span class="zh">新羅坊(신라방)</span>(거주지), <span class="zh">新羅所(신라소)</span>(관청), <span class="zh">新羅院(신라원)</span>(사찰) 등 신라인의 집단 거주지가 형성될 정도로 교류가 활발했다.
+          </p>
+        </div>
+      </div>
+
+      <!-- 일본 -->
+      <div class="ea-card">
+        <h3 class="ea-card-title">일본</h3>
+        <p class="body-text">
+          <span class="zh">遣唐使(견당사)</span>를 파견하여 당의 문물을 적극적으로 수입했다. 이를 바탕으로 <span class="zh">大化改新(다이카 개신)</span>을 단행하여 율령 국가 체제를 정비하고, 하쿠호 문화와 덴표 문화를 꽃피웠다. <span class="zh">阿倍仲麻呂(아베 노 나카마로, 조형)</span> 같은 인물은 당의 관료로 활동하기도 했다.
+        </p>
+      </div>
+
+      <!-- 베트남 -->
+      <div class="ea-card">
+        <h3 class="ea-card-title">베트남</h3>
+        <p class="body-text">
+          <span class="zh">安南都護府(안남도호부)</span>가 설치되어 당의 직접 지배를 받았으며, 이 과정에서 중국의 제도와 문화가 깊이 이식되었다.
+        </p>
+      </div>
+
+      <div class="img-rounded-lg" style="margin-top:16px;">
+        <img
+          src="https://readdy.ai/api/search-image?query=east%20asian%20cultural%20exchange%20map%20showing%20tang%20dynasty%20connections%20with%20korea%20japan%20vietnam%20through%20diplomatic%20missions%20trade%20routes%20and%20cultural%20transmission%2C%20historical%20cartography%20style%2C%20warm%20educational%20colors%2C%20clear%20route%20markings%20and%20labels&width=1200&height=600&seq=tanghistory010&orientation=landscape"
+          alt="East Asian Cultural Exchange"
+        />
+        <div class="img-caption img-caption--white">
+          동아시아 문화권 교류도 (견당사, 신라방, 무역로 등)
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer class="site-footer">
-    <div class="container">Tangshi Prototype · History Page Skeleton (Image Placeholder Mode)</div>
+    <div class="footer-nav">
+      <a href="/">메인</a>
+      <a href="/poets/">시인</a>
+      <a href="/poem/">시</a>
+      <a href="/history/">역사</a>
+      <a href="/tang300/">당시삼백수</a>
+      <a href="/timeline/">타임라인</a>
+    </div>
+    <p class="footer-copy">唐詩三百首 &copy; 2025</p>
   </footer>
+
+  <script>
+    // Scroll-based nav background
+    const nav = document.getElementById('topNav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('is-scrolled', window.scrollY > 60);
+    }, { passive: true });
+
+    // Fade-in on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) e.target.classList.add('visible');
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -10% 0px' });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+
 </body>
 </html>
