@@ -44,8 +44,10 @@
   <nav class="tab-nav">
     <button class="tab-btn active" data-tab="author">시인관리</button>
     <button class="tab-btn" data-tab="poem">시관리</button>
+    <button class="tab-btn" data-tab="writing">집필관리</button>
     <button class="tab-btn" data-tab="history">역사관리</button>
     <button class="tab-btn" data-tab="validator">데이터검증</button>
+    <button class="tab-btn" data-tab="ui">UI관리</button>
   </nav>
 
   <!-- 탭 패널들 -->
@@ -325,8 +327,9 @@
           </select>
           <select id="poem-sort" class="poem-sort-select">
             <option value="no-asc">번호순</option>
-            <option value="title-asc">제목순</option>
+            <option value="era-asc">시대순</option>
             <option value="poet-asc">시인순</option>
+            <option value="title-asc">제목순</option>
           </select>
         </div>
       </div>
@@ -620,8 +623,270 @@
       </div>
     </section>
     <section class="tab-panel" id="panel-history">
-      <div class="panel-placeholder">역사 관리 (6단계에서 구현)</div>
+      <!-- 검색바 -->
+      <div class="history-toolbar">
+        <input type="text" id="history-search" placeholder="사건 검색 (한글/한자)..." class="history-search-input">
+      </div>
+
+      <!-- 서브탭: 분기점 / 단일항목 -->
+      <div class="history-subtabs">
+        <button class="history-subtab active" data-htab="milestone">분기점</button>
+        <button class="history-subtab" data-htab="single">단일항목</button>
+      </div>
+
+      <!-- 좌=목록, 우=편집 -->
+      <div class="history-split">
+        <!-- 좌측: 역사 목록 -->
+        <div class="history-list-pane">
+          <div class="history-list-scroll">
+            <table class="data-table" id="history-table">
+              <thead>
+                <tr>
+                  <th style="width:60px">ID</th>
+                  <th style="width:60px">연도</th>
+                  <th>제목</th>
+                  <th style="width:60px">시대</th>
+                </tr>
+              </thead>
+              <tbody id="history-tbody"></tbody>
+            </table>
+          </div>
+          <div class="history-list-footer">
+            <span id="history-list-count">0건 표시</span>
+            <button class="btn btn-secondary" id="btn-add-history">+ 항목 추가</button>
+          </div>
+        </div>
+
+        <!-- 우측: 역사 편집 -->
+        <div class="history-edit-pane" id="history-edit-pane">
+          <div class="edit-placeholder" id="history-edit-placeholder">
+            좌측 목록에서 항목을 선택하세요
+          </div>
+          <div class="edit-form-wrap" id="history-edit-form-wrap" hidden>
+            <div class="edit-header">
+              <h3 id="history-edit-title">항목 편집</h3>
+              <div class="edit-actions">
+                <button class="btn btn-secondary" id="btn-revert-history">되돌리기</button>
+                <button class="btn btn-discard" id="btn-delete-history">삭제</button>
+              </div>
+            </div>
+            <form id="history-form" autocomplete="off">
+              <!-- 기본정보 -->
+              <fieldset class="edit-section">
+                <legend>기본정보</legend>
+                <div class="form-row">
+                  <label>ID</label>
+                  <input type="text" id="hf-titleId" class="readonly-field" readonly>
+                </div>
+                <div class="form-row">
+                  <label>제목 (한글) <span class="req">*</span></label>
+                  <input type="text" id="hf-name-ko" class="required-field" data-hfield="name.ko">
+                </div>
+                <div class="form-row">
+                  <label>제목 (한자)</label>
+                  <input type="text" id="hf-name-zh" data-hfield="name.zh">
+                </div>
+                <div class="form-row form-row-inline">
+                  <div>
+                    <label>연도 <span class="req">*</span></label>
+                    <input type="number" id="hf-year" class="required-field" data-hfield="year">
+                  </div>
+                  <div id="hf-era-wrap">
+                    <label>시대</label>
+                    <select id="hf-era" data-hfield="tags.era">
+                      <option value="초당">초당</option>
+                      <option value="성당">성당</option>
+                      <option value="중당">중당</option>
+                      <option value="만당">만당</option>
+                    </select>
+                  </div>
+                </div>
+              </fieldset>
+
+              <!-- 내용 (분기점: detail / 단일항목: summary) -->
+              <fieldset class="edit-section">
+                <legend id="hf-content-legend">내용</legend>
+                <div class="form-row">
+                  <textarea id="hf-content" rows="10" data-hfield="content"></textarea>
+                </div>
+              </fieldset>
+
+              <!-- 태그 정보 (읽기전용 표시) -->
+              <fieldset class="edit-section">
+                <legend>태그</legend>
+                <div class="form-row">
+                  <label>황제</label>
+                  <input type="text" id="hf-tags-emperor" class="readonly-field" readonly>
+                </div>
+                <div class="form-row">
+                  <label>주제</label>
+                  <input type="text" id="hf-tags-theme" class="readonly-field" readonly>
+                </div>
+              </fieldset>
+
+              <!-- 주석 (읽기전용 표시) -->
+              <fieldset class="edit-section">
+                <legend>주석 (<span id="hf-ann-count">0</span>개)</legend>
+                <div id="hf-annotations" class="history-annotations-list"></div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
+
+    <section class="tab-panel" id="panel-writing">
+      <div class="writing-toolbar">
+        <input type="text" id="writing-search" placeholder="작품번호·제목·시인 검색..." class="writing-search-input">
+        <div class="writing-filters">
+          <select id="writing-sort" class="writing-sort-select">
+            <option value="no-asc">번호순</option>
+            <option value="status-asc">진행상태순</option>
+            <option value="updated-desc">최근수정순</option>
+          </select>
+          <label class="check-label writing-check"><input type="checkbox" id="writing-owned-only"> 집필본 있는 항목만</label>
+          <button class="btn btn-secondary" id="btn-writing-seed-samples">샘플 5건 생성</button>
+        </div>
+      </div>
+
+      <div class="writing-split">
+        <div class="writing-list-pane">
+          <div class="writing-list-scroll">
+            <table class="data-table" id="writing-table">
+              <thead>
+                <tr>
+                  <th style="width:56px">No</th>
+                  <th>제목</th>
+                  <th style="width:96px">상태</th>
+                  <th style="width:84px">편집자</th>
+                </tr>
+              </thead>
+              <tbody id="writing-tbody"></tbody>
+            </table>
+          </div>
+          <div class="writing-list-footer">
+            <span id="writing-list-count">0편 표시</span>
+          </div>
+        </div>
+
+        <div class="writing-editor-pane" id="writing-editor-pane">
+          <div class="edit-placeholder" id="writing-edit-placeholder">
+            좌측 목록에서 작품을 선택하세요
+          </div>
+
+          <div class="edit-form-wrap" id="writing-edit-form-wrap" hidden>
+            <div class="edit-header">
+              <h3 id="writing-edit-title">집필 편집</h3>
+              <div class="edit-actions">
+                <button class="btn btn-primary" id="btn-confirm-writing">이 작품 확정</button>
+                <button class="btn btn-secondary" id="btn-revert-writing">되돌리기</button>
+              </div>
+            </div>
+
+            <fieldset class="edit-section">
+              <legend>작업 메타</legend>
+              <div class="form-row form-row-inline">
+                <div>
+                  <label>No</label>
+                  <input type="text" id="wf-poemNoStr" class="readonly-field" readonly>
+                </div>
+                <div>
+                  <label>titleId</label>
+                  <input type="text" id="wf-titleId" class="readonly-field" readonly>
+                </div>
+                <div>
+                  <label>상태</label>
+                  <select id="wf-status">
+                    <option value="drafted">drafted</option>
+                    <option value="editing">editing</option>
+                    <option value="reviewed">reviewed</option>
+                    <option value="approved">approved</option>
+                    <option value="published">published</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row form-row-inline">
+                <div>
+                  <label>편집자</label>
+                  <input type="text" id="wf-editedBy" placeholder="예: JIN">
+                </div>
+                <div>
+                  <label>검수자</label>
+                  <input type="text" id="wf-reviewedBy" placeholder="예: JIN">
+                </div>
+                <div>
+                  <label>수정시각</label>
+                  <input type="text" id="wf-updatedAt" class="readonly-field" readonly>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="edit-section">
+              <legend>시 본문 원문/집필본 (동시 편집)</legend>
+              <div class="writing-dual-grid">
+                <div>
+                  <label class="dual-label">원문 (poemZh)</label>
+                  <textarea id="wf-poemZh" class="poem-text-zh writing-source" rows="12" readonly></textarea>
+                </div>
+                <div>
+                  <label class="dual-label">신규 번역 (translationKoOwned)</label>
+                  <textarea id="wf-translationKoOwned" class="writing-target" rows="12" placeholder="원문 느낌을 살려 신규 번역을 작성하세요."></textarea>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="edit-section">
+              <legend>집평 원문/집필본 (동시 편집)</legend>
+              <div class="writing-dual-grid">
+                <div>
+                  <label class="dual-label">집평 원문 (jipyeongZh)</label>
+                  <textarea id="wf-jipyeongZh" class="poem-text-zh writing-source" rows="9" readonly></textarea>
+                </div>
+                <div>
+                  <label class="dual-label">신규 집평 번역 (jipyeongKoOwned)</label>
+                  <textarea id="wf-jipyeongKoOwned" class="writing-target" rows="9" placeholder="집평 핵심 논지를 평서문으로 번역하세요."></textarea>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="edit-section" id="wf-owned-notes-fieldset">
+              <legend>집필 주석 (notesOwned) (<span id="wf-owned-note-count">0</span>개)</legend>
+              <div id="wf-owned-notes-list" class="notes-edit-list"></div>
+              <div style="margin-top:8px">
+                <button type="button" class="btn btn-secondary" id="btn-writing-add-note">+ 주석 추가</button>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+
+        <div class="writing-compare-pane">
+          <div class="writing-compare-header">
+            <h3>레거시 번역 비교 (읽기 전용)</h3>
+            <p>표절/어색함 대조용 패널입니다. 이 내용은 모델 입력으로 사용하지 않습니다.</p>
+          </div>
+
+          <fieldset class="edit-section">
+            <legend>기존 시 번역 (translationKo)</legend>
+            <div class="form-row">
+              <textarea id="wf-legacy-translationKo" rows="11" class="readonly-field" readonly></textarea>
+            </div>
+          </fieldset>
+
+          <fieldset class="edit-section">
+            <legend>기존 집평 번역 (jipyeongKo)</legend>
+            <div class="form-row">
+              <textarea id="wf-legacy-jipyeongKo" rows="11" class="readonly-field" readonly></textarea>
+            </div>
+          </fieldset>
+
+          <fieldset class="edit-section">
+            <legend>기존 주석 비교 (notes) (<span id="wf-legacy-note-count">0</span>개)</legend>
+            <div id="wf-legacy-notes-list" class="writing-legacy-notes"></div>
+          </fieldset>
+        </div>
+      </div>
+    </section>
+
     <section class="tab-panel" id="panel-validator">
       <div class="validator-header">
         <h2>데이터 검증</h2>
@@ -638,6 +903,49 @@
         <div id="v-warnings"></div>
         <div id="v-infos"></div>
       </div>
+    </section>
+
+    <!-- ── UI 관리 탭 ── -->
+    <section class="tab-panel" id="panel-ui">
+      <div class="ui-mgr-header">
+        <h2>UI 스타일 관리</h2>
+        <div class="ui-mgr-actions">
+          <button class="btn btn-secondary" id="btn-ui-reset">기본값 복원</button>
+        </div>
+      </div>
+
+      <!-- ── 1. 시대별 타임라인 배경색 (4컬럼) ── -->
+      <fieldset class="ui-fieldset">
+        <legend>시대별 타임라인 배경색 / 글자색</legend>
+        <div class="era-color-grid" id="era-color-grid">
+          <!-- JS가 4컬럼 렌더링 -->
+        </div>
+      </fieldset>
+
+      <!-- ── 2. 시 모달 섹션별 배경색 ── -->
+      <fieldset class="ui-fieldset">
+        <legend>시 모달 섹션별 배경색</legend>
+        <div class="section-color-grid" id="section-color-grid">
+          <!-- JS가 렌더링 -->
+        </div>
+      </fieldset>
+
+      <!-- ── 3. 폰트(캐릭터셋) 관리 ── -->
+      <fieldset class="ui-fieldset">
+        <legend>폰트(캐릭터셋) 관리</legend>
+        <p class="ui-hint">각 폰트셋의 폰트, 크기, 굵기, 색상을 설정합니다.</p>
+        <div class="font-settings-list" id="font-settings-list">
+          <!-- JS가 렌더링 -->
+        </div>
+      </fieldset>
+
+      <!-- ── 4. 미리보기 영역 ── -->
+      <fieldset class="ui-fieldset">
+        <legend>미리보기</legend>
+        <div class="ui-preview-wrap" id="ui-preview-wrap">
+          <div class="ui-preview-placeholder">위에서 설정을 변경하면 여기에 미리보기가 표시됩니다.</div>
+        </div>
+      </fieldset>
     </section>
   </main>
 
@@ -667,9 +975,12 @@
   <script src="admin.js"></script>
   <script src="author-manager.js"></script>
   <script src="poem-manager.js"></script>
+  <script src="writing-manager.js"></script>
   <script src="birthplace-editor.js"></script>
   <script src="relation-editor.js"></script>
   <script src="avatar-editor.js"></script>
+  <script src="history-manager.js"></script>
   <script src="validator.js"></script>
+  <script src="ui-manager.js"></script>
 </body>
 </html>

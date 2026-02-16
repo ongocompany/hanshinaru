@@ -178,19 +178,47 @@ function normalizePoetNameForPoem(s) {
   return String(s || "").replace(/\[\d+\]/g, "").trim();
 }
 
+// 시인 한자이름 → 작가 데이터 매핑 (시대순 소팅용)
+function getPoetAuthorMap() {
+  if (!DATA.author?.authors) return new Map();
+  const map = new Map();
+  for (const [, author] of Object.entries(DATA.author.authors)) {
+    const nameZh = (author.name?.zh || "").replace(/\[\d+\]/g, "").trim();
+    if (nameZh) map.set(nameZh, author);
+  }
+  return map;
+}
+
 function sortPoemList(list, key) {
   switch (key) {
     case "no-asc":
       return list.sort(([, a], [, b]) => (a.poemNo || 0) - (b.poemNo || 0));
+    case "era-asc": {
+      const ERA_ORDER = { early: 0, high: 1, mid: 2, late: 3 };
+      const poetMap = getPoetAuthorMap();
+      return list.sort(([, a], [, b]) => {
+        const authorA = poetMap.get(normalizePoetNameForPoem(a.poet?.zh));
+        const authorB = poetMap.get(normalizePoetNameForPoem(b.poet?.zh));
+        const eraA = ERA_ORDER[authorA?.era?.period] ?? 99;
+        const eraB = ERA_ORDER[authorB?.era?.period] ?? 99;
+        if (eraA !== eraB) return eraA - eraB;
+        // 같은 시대 내: 출생연도 빠른 순
+        const birthA = authorA?.life?.birth ?? 9999;
+        const birthB = authorB?.life?.birth ?? 9999;
+        if (birthA !== birthB) return birthA - birthB;
+        // 같은 시인: 번호순
+        return (a.poemNo || 0) - (b.poemNo || 0);
+      });
+    }
     case "title-asc":
       return list.sort(([, a], [, b]) =>
-        (a.title?.zh || "").localeCompare(b.title?.zh || "", "zh")
+        (a.title?.ko || "").localeCompare(b.title?.ko || "", "ko")
       );
     case "poet-asc":
       return list.sort(([, a], [, b]) => {
-        const pa = normalizePoetNameForPoem(a.poet?.zh);
-        const pb = normalizePoetNameForPoem(b.poet?.zh);
-        const diff = pa.localeCompare(pb, "zh");
+        const pa = (a.poet?.ko || "").trim();
+        const pb = (b.poet?.ko || "").trim();
+        const diff = pa.localeCompare(pb, "ko");
         if (diff !== 0) return diff;
         return (a.poemNo || 0) - (b.poemNo || 0);
       });
@@ -987,6 +1015,53 @@ function parseTextWithNotesAdmin(text, notes, titleId) {
   return result;
 }
 
+function stripInlineNoteMarkersAdmin(text) {
+  return String(text || "").replace(/\[\d+\]/g, "");
+}
+
+function injectNoteMarkersByHeadAdmin(text, notes) {
+  let base = stripInlineNoteMarkersAdmin(text);
+  if (!base) return "";
+  if (!Array.isArray(notes) || notes.length === 0) return base;
+
+  const ordered = notes
+    .map((n) => ({
+      no: String(n?.no ?? "").trim(),
+      head: String(n?.head ?? "").trim(),
+    }))
+    .filter((n) => n.no && n.head)
+    .sort((a, b) => b.head.length - a.head.length);
+
+  const usedNo = new Set();
+  for (const n of ordered) {
+    if (usedNo.has(n.no)) continue;
+    const marker = `[${n.no}]`;
+    if (base.includes(marker)) {
+      usedNo.add(n.no);
+      continue;
+    }
+    const idx = base.indexOf(n.head);
+    if (idx < 0) continue;
+    const insertAt = idx + n.head.length;
+    base = `${base.slice(0, insertAt)}${marker}${base.slice(insertAt)}`;
+    usedNo.add(n.no);
+  }
+
+  return base;
+}
+
+function cleanLegacyKoReferencesAdmin(text) {
+  return String(text || "")
+    .replace(/\[역주\s*\d*\]/g, "")
+    .replace(/\(역주\s*\d*\)/g, "")
+    .replace(/역주\s*\d*/g, "")
+    .replace(/\[\d+\]/g, "")
+    .replace(/[ \t]+\n/g, "\n")
+    .replace(/\n[ \t]+/g, "\n")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
+}
+
 // YouTube ID 추출
 function extractYoutubeId(url) {
   const m = url.match(/(?:youtu\.be\/|youtube\.com\/watch\?v=|youtube\.com\/embed\/)([^&?#\s]+)/);
@@ -1014,20 +1089,33 @@ function getBgImageUrl(poem) {
 function renderPoemPreview(poem) {
   const esc = escapeHTMLAdmin;
   const poemNoStr = poem.poemNoStr || String(poem.poemNo ?? "").padStart(3, "0");
-  const notes = Array.isArray(poem.notes) ? poem.notes : [];
+  const ownedNotes = Array.isArray(poem.notesOwned) ? poem.notesOwned : [];
+  const legacyNotes = Array.isArray(poem.notes) ? poem.notes : [];
+  const useOwnedNotes = ownedNotes.length > 0;
+  const notes = useOwnedNotes ? ownedNotes : legacyNotes;
   const titleId = poem.titleId || "";
 
   // 주석 파싱 적용
   const titleFullRaw = poem?.title?.zh ?? "";
-  const titleParsed = parseTextWithNotesAdmin(normalizeZhNameAdmin(titleFullRaw), notes, titleId);
+  const titleSource = useOwnedNotes
+    ? injectNoteMarkersByHeadAdmin(normalizeZhNameAdmin(titleFullRaw), notes)
+    : normalizeZhNameAdmin(titleFullRaw);
+  const titleParsed = parseTextWithNotesAdmin(titleSource, notes, titleId);
   const poetZh = poem?.poet?.zh ?? "";
+  const poetZhSource = useOwnedNotes ? injectNoteMarkersByHeadAdmin(poetZh, notes) : poetZh;
   const meta = [poem.category, poem.juan, poem.meter ? `${poem.meter}언` : ""].filter(Boolean).join(" · ");
 
   // 본문 + 집평 주석 파싱
-  let poemZh = parseTextWithNotesAdmin(poem.poemZh || "", notes, titleId);
-  const jipZh = parseTextWithNotesAdmin(poem.jipyeongZh || "", notes, titleId);
-  const trKo = esc(poem.translationKo || "");
-  const jipKo = esc(poem.jipyeongKo || "");
+  const poemZhSource = useOwnedNotes
+    ? injectNoteMarkersByHeadAdmin(poem.poemZh || "", notes)
+    : (poem.poemZh || "");
+  const jipZhSource = useOwnedNotes
+    ? injectNoteMarkersByHeadAdmin(poem.jipyeongZh || "", notes)
+    : (poem.jipyeongZh || "");
+  let poemZh = parseTextWithNotesAdmin(poemZhSource, notes, titleId);
+  const jipZh = parseTextWithNotesAdmin(jipZhSource, notes, titleId);
+  const trKo = esc(poem.translationKoOwned || poem.translationKo || "");
+  const jipKo = esc(cleanLegacyKoReferencesAdmin(poem.jipyeongKoOwned || poem.jipyeongKo || ""));
 
   // 주석 리스트
   const notesHTML = notes.length
@@ -1070,7 +1158,7 @@ function renderPoemPreview(poem) {
 
   // 제목+시인 (본문 상단)
   const titleDisplay = `<div class="poem-body-title">${titleParsed}</div>`;
-  const poetDisplay = `<div class="poem-body-poet">${esc(poetZh)}</div>`;
+  const poetDisplay = `<div class="poem-body-poet">${parseTextWithNotesAdmin(poetZhSource, notes, titleId)}</div>`;
 
   // 본문 HTML (배경 그림 모드)
   const bgUrl = getBgImageUrl(poem);
@@ -1230,7 +1318,7 @@ function renderPoemPreview(poem) {
       </div>` : ''}
 
       <div class="poem-section-block poem-sec-notes">
-        <div class="poem-sec-label">주석</div>
+        <div class="poem-sec-label">${useOwnedNotes ? "주석 (집필)" : "주석"}</div>
         <div class="poem-sec-text">${notesHTML}</div>
       </div>
 

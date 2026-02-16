@@ -1498,6 +1498,462 @@ textarea {
   text-decoration: underline;
 }
 
+/* --- 역사관리 --- */
+.history-toolbar {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.history-search-input {
+  width: 240px !important;
+  flex-shrink: 0;
+}
+.history-subtabs {
+  display: flex;
+  gap: 0;
+  margin-bottom: 12px;
+}
+.history-subtab {
+  padding: 8px 20px;
+  border: 1px solid #ccc;
+  background: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.history-subtab:first-child { border-radius: 6px 0 0 6px; }
+.history-subtab:last-child { border-radius: 0 6px 6px 0; border-left: none; }
+.history-subtab.active {
+  background: #3498db;
+  color: #fff;
+  border-color: #3498db;
+}
+.history-subtab:hover:not(.active) {
+  background: #ecf0f1;
+}
+.history-split {
+  display: flex;
+  gap: 16px;
+  height: calc(100vh - 300px);
+  min-height: 400px;
+}
+.history-list-pane {
+  flex: 0 0 420px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.history-list-scroll {
+  flex: 1;
+  overflow-y: auto;
+}
+.history-list-pane .data-table {
+  table-layout: fixed;
+}
+.history-list-pane thead {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.history-list-pane .data-table td {
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.history-list-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  border-top: 1px solid #eee;
+  font-size: 13px;
+  color: #666;
+}
+.history-edit-pane {
+  flex: 1;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow-y: auto;
+  padding: 16px;
+}
+.history-annotations-list {
+  max-height: 200px;
+  overflow-y: auto;
+}
+.history-ann-item {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 4px 0;
+  border-bottom: 1px solid #f5f5f5;
+  font-size: 13px;
+}
+.history-ann-item .ann-key {
+  font-weight: 600;
+  min-width: 60px;
+}
+.history-ann-item .ann-type {
+  font-size: 10px;
+  padding: 1px 6px;
+  background: #ecf0f1;
+  border-radius: 3px;
+  color: #666;
+}
+.history-ann-item .ann-summary {
+  color: #555;
+  flex: 1;
+}
+
+/* --- 집필관리 --- */
+.writing-toolbar {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+.writing-search-input {
+  width: 260px !important;
+  flex-shrink: 0;
+}
+.writing-filters {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.writing-sort-select {
+  width: 140px !important;
+  flex-shrink: 0;
+}
+.writing-check {
+  font-size: 13px;
+}
+
+.writing-split {
+  display: grid;
+  grid-template-columns: 360px minmax(520px, 1fr) 420px;
+  gap: 12px;
+  height: calc(100vh - 260px);
+  min-height: 480px;
+}
+.writing-list-pane,
+.writing-editor-pane,
+.writing-compare-pane {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.writing-list-pane {
+  display: flex;
+  flex-direction: column;
+}
+.writing-list-scroll {
+  flex: 1;
+  overflow-y: auto;
+}
+.writing-list-pane .data-table {
+  table-layout: fixed;
+}
+.writing-list-pane thead {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.writing-list-pane .data-table td {
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.writing-list-footer {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-top: 1px solid #eee;
+  font-size: 13px;
+  color: #666;
+}
+
+.writing-editor-pane {
+  overflow-y: auto;
+  padding: 16px;
+}
+.writing-dual-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.writing-dual-grid textarea {
+  min-height: 220px;
+  resize: vertical;
+}
+.writing-source {
+  background: #fcfcfc;
+}
+.writing-target {
+  background: #fffdf5;
+}
+.dual-label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 12px;
+  color: #666;
+  font-weight: 600;
+}
+
+.writing-compare-pane {
+  overflow-y: auto;
+  padding: 16px;
+}
+.writing-compare-header {
+  margin-bottom: 10px;
+}
+.writing-compare-header h3 {
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+.writing-compare-header p {
+  font-size: 12px;
+  color: #777;
+}
+
+#wf-owned-notes-fieldset.writing-notes-modified {
+  border-left: 3px solid #f39c12;
+  background: #fffaf0;
+}
+.writing-empty-note {
+  font-style: italic;
+  color: #999;
+  font-size: 13px;
+}
+.writing-legacy-notes {
+  max-height: 280px;
+  overflow-y: auto;
+}
+.writing-legacy-note-item {
+  border: 1px solid #eee;
+  border-radius: 4px;
+  background: #fafafa;
+  padding: 8px;
+  margin-bottom: 6px;
+}
+.writing-legacy-note-head {
+  font-size: 12px;
+  font-weight: 700;
+  color: #555;
+  margin-bottom: 4px;
+}
+.writing-legacy-note-text {
+  font-size: 12px;
+  color: #666;
+  white-space: pre-wrap;
+  line-height: 1.6;
+}
+
+/* =============================================
+   UI 관리 탭
+   ============================================= */
+.ui-mgr-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.ui-mgr-header h2 { margin: 0; }
+
+.ui-fieldset {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  background: #fff;
+}
+.ui-fieldset legend {
+  font-weight: 700;
+  font-size: 15px;
+  padding: 0 8px;
+  color: #333;
+}
+.ui-hint {
+  font-size: 13px;
+  color: #888;
+  margin: 0 0 12px;
+}
+
+/* 시대별 4컬럼 */
+.era-color-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+.era-color-col {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  background: #fafafa;
+}
+.era-color-header {
+  font-weight: 700;
+  font-size: 15px;
+  text-align: center;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.era-color-preview {
+  margin-top: 4px;
+  padding: 12px;
+  border-radius: 4px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+/* 공용 라벨 + 컬러피커 */
+.ui-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #555;
+}
+.ui-color-input {
+  width: 32px;
+  height: 28px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0;
+  cursor: pointer;
+  background: none;
+}
+.ui-color-text {
+  width: 72px;
+  font-size: 12px;
+  padding: 3px 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+/* 섹션별 색상 */
+.section-color-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.section-color-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  background: #fafafa;
+}
+.section-color-swatch {
+  width: 36px;
+  height: 36px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  flex-shrink: 0;
+}
+
+/* 폰트 설정 카드 */
+.font-setting-card {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  background: #fafafa;
+}
+.font-setting-header {
+  padding: 10px 16px;
+  background: #f0f0f0;
+  font-weight: 700;
+  font-size: 14px;
+  color: #333;
+  border-bottom: 1px solid #e0e0e0;
+}
+.font-setting-body {
+  display: flex;
+  gap: 16px;
+  padding: 12px 16px;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+.font-setting-body .ui-label {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+.font-select, .font-weight-select {
+  padding: 4px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 13px;
+  min-width: 160px;
+}
+.font-size-input {
+  width: 72px;
+  padding: 4px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 13px;
+}
+.font-preview {
+  padding: 12px 16px;
+  border-top: 1px dashed #e0e0e0;
+  background: #fff;
+  line-height: 1.6;
+}
+
+/* 종합 미리보기 */
+.ui-preview-wrap {
+  min-height: 200px;
+}
+.ui-preview-placeholder {
+  color: #999;
+  font-style: italic;
+  text-align: center;
+  padding: 40px;
+}
+.ui-preview-section {
+  margin-bottom: 16px;
+}
+.ui-preview-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #888;
+  margin-bottom: 6px;
+}
+.ui-preview-timeline {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+.ui-prev-era {
+  padding: 16px 12px;
+  border-radius: 6px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+.ui-preview-poem {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
 /* --- 스크롤바 --- */
 ::-webkit-scrollbar { width: 8px; }
 ::-webkit-scrollbar-track { background: #f1f1f1; }

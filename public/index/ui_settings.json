@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "timeline": {
+    "early": { "bg": "#ffffff", "textColor": "#222222" },
+    "high":  { "bg": "#f4f9ff", "textColor": "#222222" },
+    "mid":   { "bg": "#fffcf6", "textColor": "#222222" },
+    "late":  { "bg": "#f6fff9", "textColor": "#222222" }
+  },
+  "poemSections": {
+    "poemText":      { "bg": "#faf8f5" },
+    "commentary":    { "bg": "#f0ede7" },
+    "commentaryTr":  { "bg": "#ece8e1" },
+    "notes":         { "bg": "#e8e4dd" },
+    "advanced":      { "bg": "#e4e0d9" },
+    "workList":      { "bg": "#ffffff" }
+  },
+  "fonts": {
+    "zhTitle": {
+      "label": "한자 제목 (시제목, 병음제목)",
+      "family": "adobe-fangsong-std",
+      "fallback": "'LXGW WenKai Mono TC', 'Noto Serif TC', serif",
+      "size": 22,
+      "weight": 700,
+      "color": "#222222"
+    },
+    "zhBody": {
+      "label": "한자 본문 (시 본문, 집평 한자)",
+      "family": "adobe-fangsong-std",
+      "fallback": "'LXGW WenKai Mono TC', 'Noto Serif TC', serif",
+      "size": 18,
+      "weight": 400,
+      "color": "#222222"
+    },
+    "zhPoet": {
+      "label": "한자 시인명 (시인명, 시인카드)",
+      "family": "adobe-fangsong-std",
+      "fallback": "'LXGW WenKai Mono TC', 'Noto Serif TC', serif",
+      "size": 16,
+      "weight": 400,
+      "color": "#3a2a18"
+    },
+    "koBody": {
+      "label": "한글 본문 (번역, 해설)",
+      "family": "Noto Serif KR",
+      "fallback": "'Noto Serif TC', Georgia, serif",
+      "size": 17,
+      "weight": 400,
+      "color": "#555555"
+    },
+    "koMeta": {
+      "label": "한글 보조 (메타정보, 라벨)",
+      "family": "Noto Serif KR",
+      "fallback": "Georgia, serif",
+      "size": 13,
+      "weight": 400,
+      "color": "#777777"
+    }
+  }
+}

@@ -357,6 +357,55 @@ function parseTextWithNotes(text, notes, titleId = "") {
   return result;
 }
 
+function stripInlineNoteMarkers(text) {
+  return String(text || "").replace(/\[\d+\]/g, "");
+}
+
+function injectNoteMarkersByHead(text, notes) {
+  let base = stripInlineNoteMarkers(text);
+  if (!base) return "";
+  if (!Array.isArray(notes) || notes.length === 0) return base;
+
+  const ordered = notes
+    .map((n) => ({
+      no: String(n?.no ?? "").trim(),
+      head: String(n?.head ?? "").trim(),
+    }))
+    .filter((n) => n.no && n.head)
+    .sort((a, b) => b.head.length - a.head.length);
+
+  const usedNo = new Set();
+  for (const n of ordered) {
+    if (usedNo.has(n.no)) continue;
+    const marker = `[${n.no}]`;
+    if (base.includes(marker)) {
+      usedNo.add(n.no);
+      continue;
+    }
+
+    const idx = base.indexOf(n.head);
+    if (idx < 0) continue;
+
+    const insertAt = idx + n.head.length;
+    base = `${base.slice(0, insertAt)}${marker}${base.slice(insertAt)}`;
+    usedNo.add(n.no);
+  }
+
+  return base;
+}
+
+function cleanLegacyKoReferences(text) {
+  return String(text || "")
+    .replace(/\[역주\s*\d*\]/g, "")
+    .replace(/\(역주\s*\d*\)/g, "")
+    .replace(/역주\s*\d*/g, "")
+    .replace(/\[\d+\]/g, "")
+    .replace(/[ \t]+\n/g, "\n")
+    .replace(/\n[ \t]+/g, "\n")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
+}
+
 /**
  * 툴팁 요소 가져오기 (없으면 생성)
  */
@@ -1064,16 +1113,23 @@ function bindModalUI() {
 // ===== 5) 모달 내부: 작품 섹션 =====
 function renderPoemSection(p) {
   const poemNoStr = p.poemNoStr || String(p.poemNo ?? "").padStart(3, "0");
-  const notes  = Array.isArray(p.notes) ? p.notes : [];
-  const titleId = p.titleId || "";  // 고유 ID (예: "C8", "C9")
+  const ownedNotes = Array.isArray(p.notesOwned) ? p.notesOwned : [];
+  const legacyNotes = Array.isArray(p.notes) ? p.notes : [];
+  const useOwnedNotes = ownedNotes.length > 0;
+  const notes = useOwnedNotes ? ownedNotes : legacyNotes;
+  const titleId = p.titleId || poemNoStr || "";  // 고유 ID (예: "C8", "C9")
 
   // 제목 주석 파싱
   const titleFullRaw = p?.title?.zh ?? "";
-  const titleFull = parseTextWithNotes(titleFullRaw, notes, titleId);
+  const titleFullSource = useOwnedNotes ? injectNoteMarkersByHead(titleFullRaw, notes) : titleFullRaw;
+  const titleFull = parseTextWithNotes(titleFullSource, notes, titleId);
 
   const meta = [p.category, p.juan, p.meter ? `${p.meter}언` : ""].filter(Boolean).join(" · ");
 
-  const jipZh  = parseTextWithNotes(p.jipyeongZh || "", notes, titleId);  // 집평도 주석 파싱
+  const jipZhSource = useOwnedNotes
+    ? injectNoteMarkersByHead(p.jipyeongZh || "", notes)
+    : (p.jipyeongZh || "");
+  const jipZh = parseTextWithNotes(jipZhSource, notes, titleId);  // 집평도 주석 파싱
 
   const notesHTML = notes.length
     ? `<ul class="note-list">${notes.map(n => `
@@ -1085,7 +1141,8 @@ function renderPoemSection(p) {
       `).join("")}</ul>`
     : `<div class="muted">주석 없음</div>`;
 
-  const jipKo = escapeHTML(p.jipyeongKo || "");
+  const jipKoRaw = p.jipyeongKoOwned || p.jipyeongKo || "";
+  const jipKo = escapeHTML(cleanLegacyKoReferences(jipKoRaw));
 
   // 심화자료 데이터
   const pinyinRaw = p.pinyin || "";
@@ -1117,6 +1174,7 @@ function renderPoemSection(p) {
   const titleKo = p?.title?.ko ?? "";
   const poetZhRaw = p?.poet?.zh ?? "";
   const poetZhClean = poetZhRaw.replace(/\[\d+\]/g, "").trim();  // 주석번호 제거
+  const poetZhSource = useOwnedNotes ? injectNoteMarkersByHead(poetZhRaw, notes) : poetZhRaw;
 
   // 병음 칸: 간체자 + 병음 루비문자
   let pinyinHTML = "";
@@ -1180,7 +1238,7 @@ function renderPoemSection(p) {
   }
 
   // 번역문 (2컬럼용)
-  const trKoRaw = p.translationKo || "";
+  const trKoRaw = p.translationKoOwned || p.translationKo || "";
 
   // YouTube 임베드 플레이어
   function extractYoutubeId(url) {
@@ -1254,7 +1312,10 @@ function renderPoemSection(p) {
 
   // 시 본문 2컬럼 (한자 | 한글) 구성
   // 전체 텍스트를 먼저 주석 파싱 → 줄 분리 (줄 경계에 걸친 head도 처리 가능)
-  const parsedPoemZh = parseTextWithNotes(p.poemZh || "", notes, titleId);
+  const poemZhSource = useOwnedNotes
+    ? injectNoteMarkersByHead(p.poemZh || "", notes)
+    : (p.poemZh || "");
+  const parsedPoemZh = parseTextWithNotes(poemZhSource, notes, titleId);
   const poemZhLines = parsedPoemZh.split("\n");
   const allTrKoLines = trKoRaw.split("\n");
   // 번역 데이터 앞 2줄은 제목+시인 이름 → 상단에 이미 표시하므로 본문에서 제외
@@ -1279,9 +1340,9 @@ function renderPoemSection(p) {
 
       <div class="poem-body" hidden>
         <div class="poem-text-box">
-          <div class="poem-title-zh">${parseTextWithNotes(titleFullRaw, notes, titleId)}</div>
+          <div class="poem-title-zh">${parseTextWithNotes(titleFullSource, notes, titleId)}</div>
           ${titleKo ? `<div class="poem-title-ko">${escapeHTML(titleKo)}</div>` : ''}
-          <div class="poem-poet-zh">${parseTextWithNotes(poetZhRaw, notes, titleId)}</div>
+          <div class="poem-poet-zh">${parseTextWithNotes(poetZhSource, notes, titleId)}</div>
           <div class="poem-bilingual">${bilingualRows}</div>
         </div>
 
@@ -1298,7 +1359,7 @@ function renderPoemSection(p) {
         </div>` : ''}
 
         <div class="poem-section-block poem-sec-notes">
-          <div class="poem-sec-label">주석</div>
+          <div class="poem-sec-label">${useOwnedNotes ? "주석 (집필)" : "주석"}</div>
           <div class="poem-sec-text">${notesHTML}</div>
         </div>
 
@@ -1922,17 +1983,69 @@ const STATE = {
   historyById: new Map(),
 };
 
+// ===== 10.5) UI 설정 → CSS 변수 주입 =====
+function applyUISettings(s) {
+  if (!s) return;
+  const r = document.documentElement.style;
+
+  // 시대별 타임라인 배경색/글자색
+  if (s.timeline) {
+    for (const [era, v] of Object.entries(s.timeline)) {
+      r.setProperty(`--era-${era}-bg`, v.bg);
+      r.setProperty(`--era-${era}-text`, v.textColor);
+    }
+  }
+
+  // 시 모달 섹션별 배경색
+  if (s.poemSections) {
+    const map = {
+      poemText: "--poem-text-bg",
+      commentary: "--poem-commentary-bg",
+      commentaryTr: "--poem-commentary-tr-bg",
+      notes: "--poem-notes-bg",
+      advanced: "--poem-advanced-bg",
+      workList: "--poem-worklist-bg",
+    };
+    for (const [key, varName] of Object.entries(map)) {
+      if (s.poemSections[key]) r.setProperty(varName, s.poemSections[key].bg);
+    }
+  }
+
+  // 폰트 설정
+  if (s.fonts) {
+    for (const [key, f] of Object.entries(s.fonts)) {
+      const fullFamily = f.family + (f.fallback ? `, ${f.fallback}` : "");
+      r.setProperty(`--font-${key}-family`, fullFamily);
+      r.setProperty(`--font-${key}-size`, `${f.size}px`);
+      r.setProperty(`--font-${key}-weight`, String(f.weight));
+      r.setProperty(`--font-${key}-color`, f.color);
+    }
+  }
+}
+
 // ===== 11) main =====
 async function main() {
   const root = document.getElementById("timeline");
   if (!root) throw new Error("Missing #timeline");
 
+  const poemsFullPromise = loadJSON("public/index/poems.full.owned.json")
+    .catch(() => loadJSON("public/index/poems.full.json"))
+    .catch(() => loadJSON("public/index/poems.compact.json"));
+
   const [authorsDB, poemsCompact, poemsFull, historyCards] = await Promise.all([
     loadJSON("public/index/db_author.with_ko.json"),
     loadJSON("public/index/poems.compact.json"),
-    loadJSON("public/index/poems.full.json").catch(() => poemsCompact),
+    poemsFullPromise,
     loadJSON("public/index/history_cards.json"),
   ]);
+
+  // UI 설정 로드 → CSS 변수 주입
+  try {
+    const uiSettings = await loadJSON("public/index/ui_settings.json");
+    applyUISettings(uiSettings);
+  } catch (e) {
+    console.warn("ui_settings.json 로드 실패, CSS 기본값 사용:", e);
+  }
 
   const idx = buildAuthorPoemIndex(authorsDB, poemsFull);
   STATE.poemById = idx.poemById;

@@ -8,12 +8,14 @@ const DATA = {
   author: null,     // db_author.with_ko.json 원본
   poem: null,       // poems.full.json 원본
   history: null,    // history_cards.json 원본
+  uiSettings: null, // ui_settings.json 원본
 };
 
 const ORIGINAL = {
   author: null,     // 변경 감지용 원본 복사본
   poem: null,
   history: null,
+  uiSettings: null,
 };
 
 // File System Access API 핸들 (직접 저장용)
@@ -21,18 +23,21 @@ const FILE_HANDLES = {
   author: null,
   poem: null,
   history: null,
+  uiSettings: null,
 };
 
 const DATA_PATHS = {
   author: "../public/index/db_author.with_ko.json",
-  poem: "../public/index/poems.full.json",
+  poem: "../public/index/poems.full.owned.json",
   history: "../public/index/history_cards.json",
+  uiSettings: "../public/index/ui_settings.json",
 };
 
 const DATA_LABELS = {
   author: "시인 데이터",
   poem: "시 데이터",
   history: "역사 데이터",
+  uiSettings: "UI 설정",
 };
 
 // ─── 초기화 ────────────────────────────────
@@ -91,6 +96,20 @@ async function loadAllData() {
     }
   });
 
+  // UI 설정 로드 (별도 — 없으면 기본값 사용)
+  try {
+    const uiRes = await fetch(DATA_PATHS.uiSettings);
+    if (uiRes.ok) {
+      DATA.uiSettings = await uiRes.json();
+    }
+  } catch (e) {
+    console.warn("ui_settings.json 로드 실패, 기본값 사용:", e);
+  }
+  if (!DATA.uiSettings && typeof UI_DEFAULTS !== "undefined") {
+    DATA.uiSettings = structuredClone(UI_DEFAULTS);
+  }
+  ORIGINAL.uiSettings = structuredClone(DATA.uiSettings);
+
   // 전체 상태 업데이트
   const allLoaded = keys.every(k => DATA[k] !== null);
   document.getElementById("load-status").textContent =
@@ -106,12 +125,34 @@ async function loadAllData() {
   if (allLoaded && typeof initPoemManager === "function") {
     initPoemManager();
   }
+
+  // 집필관리 초기화
+  if (allLoaded && typeof initWritingManager === "function") {
+    initWritingManager();
+  }
+
+  // 역사관리 초기화
+  if (allLoaded && typeof initHistoryManager === "function") {
+    initHistoryManager();
+  }
+
+  // UI관리 초기화
+  if (typeof initUIManager === "function") {
+    initUIManager();
+  }
 }
 
 async function loadJSON(key) {
   const res = await fetch(DATA_PATHS[key]);
-  if (!res.ok) throw new Error(`HTTP ${res.status}`);
-  return await res.json();
+  if (res.ok) return await res.json();
+
+  // owned 복사본이 없을 때는 원본으로 폴백
+  if (key === "poem") {
+    const fallback = await fetch("../public/index/poems.full.json");
+    if (fallback.ok) return await fallback.json();
+  }
+
+  throw new Error(`HTTP ${res.status}`);
 }
 
 function setLoadState(key, state) {
@@ -144,8 +185,18 @@ function checkChanges() {
     if (tabBtn) {
       tabBtn.classList.toggle("modified", changed);
     }
+    if (key === "poem") {
+      const writingTabBtn = document.querySelector('.tab-btn[data-tab="writing"]');
+      if (writingTabBtn) writingTabBtn.classList.toggle("modified", changed);
+    }
     if (changed) totalChanges++;
   });
+
+  // UI 설정 변경 감지
+  const uiChanged = typeof isUISettingsModified === "function" && isUISettingsModified();
+  const uiTabBtn = document.querySelector('.tab-btn[data-tab="ui"]');
+  if (uiTabBtn) uiTabBtn.classList.toggle("modified", uiChanged);
+  if (uiChanged) totalChanges++;
 
   const changeBar = document.getElementById("change-bar");
   const changeCount = document.getElementById("change-count");
@@ -170,21 +221,26 @@ function initSaveButtons() {
 async function saveAll() {
   const hasChanges = checkChanges();
 
-  const keys = ["author", "poem", "history"];
+  const keys = ["author", "poem", "history", "uiSettings"];
   const fileNames = {
     author: "db_author.with_ko.json",
-    poem: "poems.full.json",
+    poem: "poems.full.owned.json",
     history: "history_cards.json",
+    uiSettings: "ui_settings.json",
   };
 
   let savedCount = 0;
 
   for (const key of keys) {
+    if (!DATA[key]) continue;
     const jsonStr = JSON.stringify(DATA[key], null, 2);
     const saved = await saveFile(key, jsonStr, fileNames[key]);
 
     if (saved) {
       ORIGINAL[key] = structuredClone(DATA[key]);
+      if (key === "uiSettings" && typeof initUIManager !== "undefined") {
+        uiSettingsOriginal = structuredClone(DATA[key]);
+      }
       savedCount++;
     }
   }
@@ -243,9 +299,9 @@ async function saveFile(key, jsonStr, fileName) {
 function discardAll() {
   if (!confirm("모든 변경사항을 되돌리시겠습니까?")) return;
 
-  const keys = ["author", "poem", "history"];
+  const keys = ["author", "poem", "history", "uiSettings"];
   keys.forEach(key => {
-    DATA[key] = structuredClone(ORIGINAL[key]);
+    if (ORIGINAL[key]) DATA[key] = structuredClone(ORIGINAL[key]);
   });
 
   checkChanges();
@@ -265,6 +321,16 @@ function discardAll() {
     if (PoemManager.selectedIndex !== null) {
       selectPoem(PoemManager.selectedIndex);
     }
+  }
+
+  // 집필관리 화면 갱신
+  if (typeof initWritingManager === "function") {
+    initWritingManager();
+  }
+
+  // UI관리 화면 갱신
+  if (typeof initUIManager === "function") {
+    initUIManager();
   }
 }
 
