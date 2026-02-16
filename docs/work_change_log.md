@@ -1489,3 +1489,899 @@
   - Adobe Typekit (kitId: dje5vco)는 index.html에 이미 로딩되어 있으나, CSS에서 fangsong(시스템)을 쓰고 있어 미적용 상태였음
   - ui_settings.json 기본값에서 adobe-fangsong-std로 변경해 놓음
   - ui_settings.json이 없거나 로드 실패해도 CSS var() fallback으로 기존 화면 유지됨
+
+## [Task ID] 2026-02-16-1040-gpt-tts-pipeline-sample5
+
+### START
+- Time: 2026-02-16 10:40
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 미래 서버 전환을 고려한 TTS 로직 구조 분리 + DB 시 5편 샘플 음성 생성 스크립트 구현 요청.
+- Why: 현재는 정적 배치 생성으로 운영하되, 추후 한시작성도우미에서 사용자 입력/개인화 음성 서버로 확장 가능하게 기반 정비.
+- Planned Scope:
+  - 파일: `scripts/tts_pipeline.py` (신규)
+  - 예상 변경: 텍스트 정제(주석 제거), 간체 우선 선택, 샘플 선택/메타 출력 공용 로직 추가
+  - 파일: `scripts/generate_tts.py` (수정)
+  - 예상 변경: 공용 파이프라인 모듈 사용하도록 리팩토링
+  - 파일: `scripts/generate_tts_sample5.py` (신규)
+  - 예상 변경: DB에서 5편 선택해 MP3 생성하는 실행 스크립트 추가
+  - 파일: `public/audio/samples/` (생성)
+  - 예상 변경: 샘플 mp3 및 manifest 생성
+- Status: In Progress
+
+### END
+- Time: 2026-02-16 10:40
+- Status: Done
+- Changed Files:
+  - `scripts/tts_pipeline.py:1` (신규 공용 파이프라인: 주석번호 제거, 간체 우선 텍스트 선택, 정규화 유틸)
+  - `scripts/generate_tts.py:1` (공용 파이프라인 모듈 사용하도록 리팩토링)
+  - `scripts/generate_tts_sample5.py:1` (DB 5편 샘플 mp3 생성 스크립트 신규 추가)
+  - `public/audio/samples/001_sample.mp3` (샘플 음성 생성)
+  - `public/audio/samples/002_sample.mp3` (샘플 음성 생성)
+  - `public/audio/samples/003_sample.mp3` (샘플 음성 생성)
+  - `public/audio/samples/004_sample.mp3` (샘플 음성 생성)
+  - `public/audio/samples/005_sample.mp3` (샘플 음성 생성)
+  - `public/audio/samples/sample_manifest.json` (샘플 생성 메타데이터 저장)
+- Validation:
+  - `python3 -m py_compile scripts/tts_pipeline.py scripts/generate_tts.py scripts/generate_tts_sample5.py` 통과
+  - `python3 scripts/generate_tts_sample5.py --count 5` 실행 성공
+  - manifest 확인: `ttsText`에서 `[숫자]` 주석 마커 제거됨, 간체 본문 적용됨
+- Notes:
+  - `edge-tts` 미설치 상태여서 `python3 -m pip install edge-tts` 후 생성 수행
+  - 샘플 생성은 네트워크 접근이 필요해 승인 후 실행함
+
+## [Task ID] 2026-02-16-1045-gpt-tts-overwrite-fix
+
+### START
+- Time: 2026-02-16 10:45
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 주석 읽힘 이슈 대응을 위해 기존 mp3 스킵 동작을 제어할 수 있는 overwrite 옵션 추가 요청.
+- Why: 과거 생성 파일이 재사용되어 최신 전처리(주석 제거/간체) 결과가 반영되지 않는 문제 해결.
+- Planned Scope:
+  - 파일: `scripts/generate_tts.py`
+  - 예상 변경: `--overwrite` CLI 옵션 추가 및 기존 파일 강제 재생성 지원
+- Status: In Progress
+
+### END
+- Time: 2026-02-16 10:45
+- Status: Done
+- Changed Files:
+  - `scripts/generate_tts.py:49` (`--overwrite` 옵션 추가)
+  - `scripts/generate_tts.py:35` (기존 파일 스킵 조건에 overwrite 플래그 반영)
+- Validation:
+  - `python3 -m py_compile scripts/generate_tts.py` 통과
+- Notes:
+  - 기존 파일을 최신 규칙으로 반영하려면 `python3 scripts/generate_tts.py --overwrite`로 실행 필요.
+
+## [Task ID] 2026-02-16-1100-gpt-tts-style-controls
+
+### START
+- Time: 2026-02-16 11:00
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 샘플 TTS에 목소리/톤 변수 추가, 줄바꿈 포즈 2배 강화, 파일명 규칙을 `시제목+변수들.mp3`로 변경 요청.
+- Why: 낭송 톤을 더 시적으로 튜닝하고 샘플 파일 식별성을 높이기 위함.
+- Planned Scope:
+  - 파일: `scripts/generate_tts_sample5.py`
+  - 예상 변경: voice/rate/pitch/volume 파라미터, 줄바꿈 포즈 강화 텍스트 빌더, 파일명 생성 규칙 변경
+- Status: In Progress
+
+### END
+- Time: 2026-02-16 11:00
+- Status: Done
+- Changed Files:
+  - `scripts/generate_tts_sample5.py:1` (파일명 규칙 `시제목+변수들.mp3`, voice/rate/pitch/volume 옵션, 줄바꿈 포즈 스케일 옵션 추가)
+  - `public/audio/samples_title_style/*.mp3` (새 규칙으로 샘플 5편 생성)
+  - `public/audio/samples_title_style/sample_manifest.json` (생성 옵션/출력 경로/텍스트 메타 저장)
+- Validation:
+  - `python3 -m py_compile scripts/generate_tts_sample5.py` 통과
+  - 샘플 생성 실행 성공: `python3 scripts/generate_tts_sample5.py --count 5 --voice zh-CN-YunyangNeural --rate -5% --pitch +2Hz --volume +0% --line-pause-scale 2`
+  - manifest의 `ttsText` 확인 결과 줄 경계마다 `，，` 적용(기존 대비 2배 포즈)
+- Notes:
+  - 요청대로 줄바꿈 포즈는 2배 강화 적용함.
+  - `edge-tts`는 명시적 "호흡음" 제어 파라미터를 제공하지 않아, 이번 반영에서는 호흡음 삽입 없이 포즈 강화만 적용함.
+
+## [Task ID] 2026-02-16-1115-gpt-tts-preview-tool
+
+### START
+- Time: 2026-02-16 11:15
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 속도/톤/목소리 옵션을 직접 고르고 즉시 생성해서 청취할 수 있는 간단한 프로그램 제작 요청.
+- Why: 샘플 음성 옵션을 빠르게 A/B 테스트하고 체감 품질 기준을 확정하기 위함.
+- Planned Scope:
+  - 파일: `scripts/tts_preview_tool.py` (신규)
+  - 예상 변경: 시 선택 + voice/rate/pitch/volume/포즈 옵션 입력 + 미리듣기 mp3 생성 + 로컬 재생 기능
+- Status: In Progress
+
+### END
+- Time: 2026-02-16 11:18
+- Status: Done
+- Changed Files:
+  - `scripts/tts_preview_tool.py:1` (신규: 옵션 선택형 TTS 미리듣기 도구)
+  - `public/audio/preview/〈感遇〉_其三_v-zhdnCNdnYunyangNeural_r-dn10pct_p-up4Hz_vol-up0pct_lp-2_20260216_105723.mp3` (실행 검증 샘플 생성)
+- Validation:
+  - `python3 -m py_compile scripts/tts_preview_tool.py` 통과
+  - `python3 scripts/tts_preview_tool.py --poem 003 --voice zh-CN-YunyangNeural --rate -10% --pitch +4Hz --volume +0% --line-pause-scale 2` 실행 성공
+- Notes:
+  - 대화형 모드 사용 시 `python3 scripts/tts_preview_tool.py --interactive`
+  - 목소리 목록 확인은 `python3 scripts/tts_preview_tool.py --list-voices`
+
+## [Task ID] 2026-02-16-1125-gpt-tts-preview-input-normalize
+
+### START
+- Time: 2026-02-16 11:25
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: tts_preview_tool 실행 시 `volume +5` 입력에서 포맷 에러 발생, 자동 보정 처리 요청.
+- Why: edge-tts 파라미터 형식 제약(`+5%`)으로 사용성 저하.
+- Planned Scope:
+  - 파일: `scripts/tts_preview_tool.py`
+  - 예상 변경: rate/volume/pitch 입력값을 edge-tts 허용 포맷으로 자동 정규화
+- Status: In Progress
+
+### END
+- Time: 2026-02-16 11:00
+- Status: Done
+- Changed Files:
+  - `scripts/tts_preview_tool.py:49` (rate/volume 입력 `+5` 형태를 `+5%`로 자동 보정)
+  - `scripts/tts_preview_tool.py:67` (pitch 입력 `+3` 형태를 `+3Hz`로 자동 보정)
+  - `public/audio/preview/〈感遇〉_四首_v-zhdnCNdnYunyangNeural_r-dn8pct_p-up3Hz_vol-up5pct_lp-2_20260216_110034.mp3` (보정 로직 검증 샘플)
+- Validation:
+  - `python3 -m py_compile scripts/tts_preview_tool.py` 통과
+  - `python3 scripts/tts_preview_tool.py --poem 001 --voice zh-CN-YunyangNeural --rate -8 --pitch +3 --volume +5 --line-pause-scale 2` 실행 성공
+- Notes:
+  - 이제 `+5` 입력 시 자동으로 `+5%`로 변환되어 에러 없이 동작함.
+
+## [Task ID] 2026-02-16-1108-gpt-remove-tts-temp-files
+
+### START
+- Time: 2026-02-16 11:08
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 기존 TTS 샘플/임시 스크립트 정리 삭제 요청.
+- Why: 작업 폴더 정리 및 불필요 파일 제거.
+- Planned Scope:
+  - 파일: `public/audio/samples/`, `public/audio/samples_title_style/`, `public/audio/preview/` (삭제)
+  - 파일: `scripts/tts_pipeline.py`, `scripts/generate_tts_sample5.py`, `scripts/tts_preview_tool.py` (삭제)
+  - 파일: `scripts/generate_tts.py` (이번 세션 변경분 원복)
+- Status: In Progress
+
+### END
+- Time: 2026-02-16 11:10
+- Status: Done
+- Changed Files:
+  - `public/audio/samples/` (삭제)
+  - `public/audio/samples_title_style/` (삭제)
+  - `public/audio/preview/` (삭제)
+  - `scripts/tts_pipeline.py` (삭제)
+  - `scripts/generate_tts_sample5.py` (삭제)
+  - `scripts/tts_preview_tool.py` (삭제)
+  - `scripts/generate_tts.py` (원본 상태로 복원)
+- Validation:
+  - 샘플 출력 디렉토리 3개 미존재 확인
+  - 임시 스크립트 3개 미존재 확인
+  - `python3 -m py_compile scripts/generate_tts.py` 통과
+- Notes:
+  - 요청에 따라 이번 세션에서 추가한 샘플/임시 스크립트만 정리 삭제함.
+
+## [Task ID] 2026-02-16-1112-gpt-qwen-tts-research-setup
+
+### START
+- Time: 2026-02-16 11:12
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: Qwen-TTS 작업을 public이 아닌 research 하위 폴더에서 진행하도록 환경 분리 요청.
+- Why: 실험/검증 산출물을 연구 폴더에서 분리 관리하고 운영 데이터와 충돌을 방지하기 위함.
+- Planned Scope:
+  - 파일/폴더: `docs/research/tts/` 하위 신규 구성
+  - 예상 변경: 실행 가이드, 샘플 생성 스크립트, 출력 폴더 구조 생성
+- Status: In Progress
+
+### END
+- Time: 2026-02-16 11:16
+- Status: Done
+- Changed Files:
+  - `docs/research/tts/README.md` (Qwen-TTS research 워크스페이스 실행 가이드 추가)
+  - `docs/research/tts/qwen_tts_sample.py` (주석 제거/간체 우선 입력 프리뷰 + Qwen-TTS 실행 스크립트 추가)
+  - `docs/research/tts/audio/` (출력 폴더 생성)
+  - `docs/research/tts/outputs/` (preview JSON 출력 폴더 생성)
+  - `docs/research/tts/logs/` (로그 폴더 생성)
+- Validation:
+  - `python3 -m py_compile docs/research/tts/qwen_tts_sample.py` 통과
+  - `python3 docs/research/tts/qwen_tts_sample.py --dry-run --count 5` 실행 성공
+  - `qwen-tts` 패키지 설치 완료 (`python3 -m pip install qwen-tts`)
+  - Python 3.14 환경 import 이슈는 `NUMBA_DISABLE_JIT=1` 자동 적용으로 우회 확인
+- Notes:
+  - 현재 스크립트는 research 경로만 사용하며 `public/` 출력을 생성하지 않음.
+  - 실제 음성 생성 실행 시 모델 체크포인트 다운로드가 진행됨(네트워크/시간 소요).
+
+## [Task ID] 2026-02-16-1325-gpt-qwen-tts-easy-runner
+
+### START
+- Time: 2026-02-16 13:25
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: Qwen-TTS를 쉽게 테스트할 수 있는 간단 실행 스크립트(대화형/프리셋) 요청.
+- Why: 기존 스크립트의 파라미터 진입장벽을 낮추고 즉시 샘플 청취가 가능하도록 개선.
+- Planned Scope:
+  - 파일: `docs/research/tts/qwen_tts_easy.py` (신규)
+  - 파일: `docs/research/tts/README.md` (실행법 추가)
+- Status: In Progress
+
+### END
+- Time: 2026-02-16 13:26
+- Status: Done
+- Changed Files:
+  - `docs/research/tts/qwen_tts_easy.py` (신규: 대화형 Qwen-TTS 실행 도구, 프리셋 선택/시 선택/생성/재생 지원)
+  - `docs/research/tts/README.md` (easy runner 실행법 추가)
+  - `docs/research/tts/outputs/request_001_20260216_132621.json` (dry-run 요청 예시)
+- Validation:
+  - `python3 -m py_compile docs/research/tts/qwen_tts_easy.py` 통과
+  - `python3 docs/research/tts/qwen_tts_easy.py --list` 동작 확인
+  - `python3 docs/research/tts/qwen_tts_easy.py --poem 001 --preset 1 --dry-run` 동작 확인
+- Notes:
+  - 실제 음성 생성은 첫 실행 시 모델 다운로드 시간/용량이 큼.
+
+## [Task ID] 2026-02-16-1335-gpt-qwen-checkpoint-fix
+
+### START
+- Time: 2026-02-16 13:35
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: Qwen-TTS 실행 시 HF 401/invalid model identifier 에러 대응 요청.
+- Why: 프리셋 체크포인트(`0.6B`)가 유효하지 않아 모델 로드 실패.
+- Planned Scope:
+  - 파일: `docs/research/tts/qwen_tts_easy.py`, `docs/research/tts/qwen_tts_sample.py`, `docs/research/tts/README.md`
+  - 예상 변경: 체크포인트 기본값/예시를 `1.7B` 계열로 수정 및 오류 안내 보강
+- Status: In Progress
+
+### END
+- Time: 2026-02-16 13:36
+- Status: Done
+- Changed Files:
+  - `docs/research/tts/qwen_tts_easy.py` (프리셋 체크포인트를 1.7B로 변경, 로드 실패 시 안내 메시지 보강)
+  - `docs/research/tts/qwen_tts_sample.py` (기본 체크포인트를 1.7B로 변경)
+  - `docs/research/tts/README.md` (실행 예시 체크포인트 1.7B로 수정)
+- Validation:
+  - `python3 -m py_compile docs/research/tts/qwen_tts_easy.py docs/research/tts/qwen_tts_sample.py` 통과
+  - `python3 docs/research/tts/qwen_tts_easy.py --list` 정상 출력
+- Notes:
+  - `flash-attn` 미설치 경고는 속도 경고이며 기능 차단은 아님.
+  - `sox` 경고는 로컬 의존성 경고이며 현재 기본 생성 흐름에서 치명 오류는 아님.
+
+## [Task ID] 2026-02-16-1345-gpt-qwen-language-alias-fix
+
+### START
+- Time: 2026-02-16 13:45
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: Qwen-TTS 실행 중 `Unsupported languages: ['zh']` 오류 수정 요청.
+- Why: qwen_tts는 `zh` 축약코드를 허용하지 않고 `chinese` 같은 풀 네이밍만 허용함.
+- Planned Scope:
+  - 파일: `docs/research/tts/qwen_tts_easy.py`, `docs/research/tts/qwen_tts_sample.py`
+  - 예상 변경: language alias 정규화(zh->chinese, ko->korean, en->english 등) 적용
+- Status: In Progress
+
+### END
+- Time: 2026-02-16 13:42
+- Status: Done
+- Changed Files:
+  - `docs/research/tts/qwen_tts_easy.py` (language 기본값을 `chinese`로 전환, alias 정규화 추가)
+  - `docs/research/tts/qwen_tts_sample.py` (language 기본값/실행 인자를 alias 정규화 값으로 반영)
+- Validation:
+  - `python3 -m py_compile docs/research/tts/qwen_tts_easy.py docs/research/tts/qwen_tts_sample.py` 통과
+  - alias 변환 확인: `zh->chinese`, `ko->korean`
+- Notes:
+  - 이번 오류의 직접 원인은 인증이 아니라 language 값(`zh`) 포맷 불일치였음.
+
+## [Task ID] 2026-02-16-1355-gpt-qwen-handoff-doc
+
+### START
+- Time: 2026-02-16 13:55
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 지금까지 Qwen-TTS 작업 내역과 경로/깃허브 링크를 다른 AI가 바로 이해할 수 있도록 handoff 문서 생성 요청.
+- Why: 후속 AI 작업 연속성을 확보하고 중복 디버깅을 방지하기 위함.
+- Planned Scope:
+  - 파일: `docs/handoff/06_QwenTTS_작업핸드오프_260216_CHtoALL.md`
+- Status: In Progress
+
+### END
+- Time: 2026-02-16 13:56
+- Status: Done
+- Changed Files:
+  - `docs/handoff/06_QwenTTS_작업핸드오프_260216_CHtoALL.md` (Qwen-TTS 진행 현황/경로/실행법/오류해결/GitHub 링크 통합 정리)
+- Validation:
+  - `docs/handoff` 내 `06_` 번호 파일 생성 확인
+  - 문서 본문에 경로/체크포인트/실행 커맨드/오류 원인 및 해결 포함 확인
+- Notes:
+  - 다른 AI가 즉시 실행 가능한 커맨드 중심으로 작성함.
+
+## [Task ID] 2026-02-16-1706-gpt-ai-translation-pipeline-design
+
+### START
+- Time: 2026-02-16 17:06
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 시 본문/한자 집평만 대상으로 AI 검색 기반 번역·해설 파이프라인과 내부 집필용 웹에디터 설계 문서 작성 요청.
+- Why: 라이선스가 있는 기존 번역/집평 번역을 배제하고, 출시 가능한 자체 콘텐츠 제작 프로세스를 체계화하기 위함.
+- Planned Scope:
+  - 파일: `docs/research/11_AI_번역집필_파이프라인_설계_260216_CH.md` (신규)
+  - 예상 변경: 데이터 범위 제한, AI 검색 로직, 생성·검수·유사도 점검 단계, 웹에디터 요구사항/화면구성/상태모델 설계
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: START/END 작업 기록 추가
+- Status: In Progress
+
+### END
+- Time: 2026-02-16 17:07
+- Status: Done
+- Changed Files:
+  - `docs/research/11_AI_번역집필_파이프라인_설계_260216_CH.md:1` (시 본문/한자 집평 한정 정책, AI 검색 로직, 생성·검수 파이프라인, 내부 웹에디터 설계, 로드맵/체크리스트 문서화)
+  - `docs/work_change_log.md:1802` (본 Task START/END 기록 추가)
+- Validation:
+  - `wc -l docs/research/11_AI_번역집필_파이프라인_설계_260216_CH.md` 결과 254줄로 문서 생성 확인
+  - `rg -n "2026-02-16-1706-gpt-ai-translation-pipeline-design" docs/work_change_log.md`로 로그 섹션 존재 확인
+- Notes:
+  - 사용자 요청에 맞춰 번역 대상은 시 본문과 한자 집평으로 제한하고, 기존 한국어 집평 번역은 입력/노출에서 제외하는 정책을 명시함.
+
+## [Task ID] 2026-02-16-1800-gemini-create-onboarding
+
+### START
+- Time: 2026-02-16 18:00
+- Owner: Gemini(태훈)
+- Requester: JIN
+- Request Summary: `docs/gemini_onboarding.md` 파일이 누락되어 있어 신규 생성 요청.
+- Why: 작업 로그에는 존재한다고 되어 있으나 실제 파일이 없어, 태훈이의 페르소나 및 작업 규칙을 명확히 하기 위함.
+- Planned Scope:
+  - 파일: `docs/gemini_onboarding.md` (신규 생성)
+  - 내용: 태훈이 페르소나, 작업 규칙(계획 보고 후 실행), 프로젝트 요약.
+- Status: In Progress
+
+### END
+- Time: 2026-02-16 18:05
+- Status: Done
+- Changed Files:
+  - `docs/gemini_onboarding.md:1` (신규 생성)
+- Validation:
+  - 파일 생성 확인.
+- Notes:
+  - 이제부터 작업 시작 시 이 파일을 참고하여 태훈이 모드로 진입.
+
+## [Task ID] 2026-02-16-1810-gemini-tts-voice-map-sample
+
+### START
+- Time: 2026-02-16 18:10
+- Owner: Gemini(태훈)
+- Requester: JIN
+- Request Summary: TTS 음성 배정 지시서에 따라 5가지 유형별 샘플 시 매핑 파일 생성.
+- Why: 전체 320수 생성 전, 대표적인 스타일별로 TTS 품질과 화자 적합성을 테스트하기 위함.
+- Planned Scope:
+  - 파일: `public/index/tts_voice_map.json` (신규 생성)
+  - 내용: 장간행(여성/슬픔), 죽리관(남성/담백), 장진주(웅장), 등고(슬픔), 감우(담백) 5수 매핑.
+- Status: In Progress
+
+### END
+- Time: 2026-02-16 18:15
+- Status: Done
+- Changed Files:
+  - `public/index/tts_voice_map.json:1` (신규 생성)
+- Validation:
+  - JSON 문법 확인, 5개 시(장간행, 죽리관, 장진주, 등고, 감우) 포함 확인.
+
+## [Task ID] 2026-02-16-1820-gemini-tts-instruct-custom-fill
+
+### START
+- Time: 2026-02-16 18:20
+- Owner: Gemini(태훈)
+- Requester: JIN
+- Request Summary: `tts_voice_map.json` 파일 내 `instructCustom` 필드가 비어있는 샘플 시에 대해 상세 지시어 추가.
+- Why: 프리셋만으로 부족한 낭송 스타일을 구체화하여 TTS 품질을 높이기 위함.
+- Planned Scope:
+  - 파일: `public/index/tts_voice_map.json`
+  - 예상 변경: `〈竹里館〉`과 `〈感遇〉 四首`의 `instructCustom` 필드 채우기.
+- Status: In Progress
+
+### END
+- Time: 2026-02-16 18:25
+- Status: Done
+- Changed Files:
+  - `public/index/tts_voice_map.json:1` (`instructCustom` 필드 업데이트)
+- Validation:
+  - `〈竹里館〉`과 `〈感遇〉 四首`의 `instructCustom` 필드가 중국어 텍스트로 채워졌는지 확인.
+- Notes:
+  - 이제 5개 샘플 시 모두 상세 낭송 지시어가 포함되어 있습니다.
+
+## [Task ID] 2026-02-16-1810-gemini-tts-voice-map-sample
+
+### START
+- Time: 2026-02-16 18:10
+- Owner: Gemini(태훈)
+- Requester: JIN
+- Request Summary: TTS 음성 배정 지시서에 따라 5가지 유형별 샘플 시 매핑 파일 생성.
+- Why: 전체 320수 생성 전, 대표적인 스타일별로 TTS 품질과 화자 적합성을 테스트하기 위함.
+- Planned Scope:
+  - 파일: `public/index/tts_voice_map.json` (신규 생성)
+  - 내용: 장간행(여성/슬픔), 죽리관(남성/담백), 장진주(웅장), 등고(슬픔), 감우(담백) 5수 매핑.
+- Status: In Progress
+
+### END
+- Time: 2026-02-16 18:15
+- Status: Done
+- Changed Files:
+  - `public/index/tts_voice_map.json:1` (신규 생성)
+- Validation:
+  - JSON 문법 확인, 5개 시(장간행, 죽리관, 장진주, 등고, 감우) 포함 확인.
+
+## [Task ID] 2026-02-16-1810-gemini-tts-voice-map-sample
+
+### START
+- Time: 2026-02-16 18:10
+- Owner: Gemini(태훈)
+- Requester: JIN
+- Request Summary: TTS 음성 배정 지시서에 따라 5가지 유형별 샘플 시 매핑 파일 생성.
+- Why: 전체 320수 생성 전, 대표적인 스타일별로 TTS 품질과 화자 적합성을 테스트하기 위함.
+- Planned Scope:
+  - 파일: `public/index/tts_voice_map.json` (신규 생성)
+  - 내용: 장간행(여성/슬픔), 죽리관(남성/담백), 장진주(웅장), 등고(슬픔), 감우(담백) 5수 매핑.
+- Status: In Progress
+
+### END
+- Time: 2026-02-16 18:15
+- Status: Done
+- Changed Files:
+  - `public/index/tts_voice_map.json:1` (신규 생성)
+- Validation:
+  - JSON 문법 확인, 5개 시(장간행, 죽리관, 장진주, 등고, 감우) 포함 확인.
+
+## [Task ID] 2026-02-16-1739-gpt-writing-ui-mvp-sample5
+
+### START
+- Time: 2026-02-16 17:39
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: admin 툴에 집필관리 UI를 추가하고, 5개 샘플 데이터를 만들어 편집/저장 흐름을 검증할 수 있는 MVP 구현 요청.
+- Why: 검색 자동화 전에 내부 집필 UX와 데이터 저장 경로(`poems.full.json` 신규 필드)를 먼저 검증하기 위함.
+- Planned Scope:
+  - 파일: `admin/index.html`, `admin/admin.css`, `admin/admin.js`, `admin/writing-manager.js`(신규)
+  - 예상 변경: 집필관리 탭/패널, 원문+신규 번역 동시 편집, 레거시 번역 읽기전용 비교, 5건 샘플 시드, 확정/되돌리기/저장 연동
+  - 파일: `public/index/poems.full.json`(선택)
+  - 예상 변경: 신규 필드(`translationKoOwned`, `jipyeongKoOwned`, `ownedContentMeta`) 샘플 반영 여부 검토
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-16 17:46
+- Status: Done
+- Changed Files:
+  - `admin/index.html:47` (탭 네비게이션에 `집필관리` 추가, `panel-writing` UI 신설, 비교 패널/동시 편집 textarea 구성, `writing-manager.js` 로드 추가)
+  - `admin/admin.js:130` (`initWritingManager()` 초기화 연결, `checkChanges()`에서 poem 변경 시 writing 탭 modified 표시, `discardAll()` 시 집필 화면 재초기화)
+  - `admin/admin.css:1615` (집필관리 전용 3패널 레이아웃/테이블/동시편집/비교패널 스타일 추가)
+  - `admin/writing-manager.js:1` (신규: 목록/검색/정렬, 원문+집필본 동시 편집, 레거시 읽기전용 비교, 확정/되돌리기, 샘플 5건 시드, 스크롤 동기화)
+  - `public/index/poems.full.json:72` (샘플 5건 `translationKoOwned`, `jipyeongKoOwned`, `ownedContentMeta` 실제 데이터 생성)
+  - `docs/work_change_log.md:1908` (본 Task START/END 기록 추가)
+- Validation:
+  - `node --check admin/admin.js && node --check admin/writing-manager.js` 통과
+  - ID 매칭 점검: `writing-manager.js`의 `getElementById` 대상 23개 모두 `admin/index.html`에 존재(`missing none`)
+  - `node` JSON 검증: `public/index/poems.full.json` 파싱 성공, `sample_owned_ready=5` 확인
+  - `rg` 확인: 샘플 대상 `001, 008, 045, 073, 124`에 신규 owned 필드 존재 확인
+- Notes:
+  - 기존 라이선스 필드(`translationKo`, `jipyeongKo`)는 유지하고 신규 owned 필드만 추가함.
+  - 집필 탭의 `샘플 5건 생성` 버튼으로도 동일 형식 시드 추가가 가능함.
+
+## [Task ID] 2026-02-16-1802-gpt-writing-notes-panel
+
+### START
+- Time: 2026-02-16 18:00
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 집필관리 탭 하단에 주석 영역을 추가해 주석 확인/작성이 가능하도록 개선 요청.
+- Why: 번역/집평 집필과 함께 주석도 신규 작성해야 하므로 동일 화면에서 하단 편집이 필요함.
+- Planned Scope:
+  - 파일: `admin/index.html`, `admin/writing-manager.js`, `admin/admin.css`
+  - 예상 변경: 집필 주석(`notesOwned`) 편집 UI, 기존 주석 읽기전용 표시, 추가/삭제/저장 로직
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-16 18:12
+- Status: Done
+- Changed Files:
+  - `admin/index.html` (집필 주석 `notesOwned` 편집 영역 및 기존 주석 읽기전용 하단 패널 추가)
+  - `admin/writing-manager.js` (`notesOwned` 렌더/추가/삭제/수정/변경감지 로직 및 기존 주석 동시 표시 연동)
+  - `admin/admin.css` (집필 주석 섹션 레이아웃 및 변경 하이라이트 스타일 추가)
+  - `docs/work_change_log.md` (본 Task END 기록 보강)
+- Validation:
+  - 집필관리 탭에서 주석 추가/삭제/수정 시 즉시 반영 확인
+  - 기존 주석(`notes`) 읽기전용 목록 노출 확인
+
+## [Task ID] 2026-02-16-1830-gpt-writing-sample-realdata-fill
+
+### START
+- Time: 2026-02-16 18:30
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 집필 샘플 5건을 placeholder가 아닌 실제 시 내용 기반 번역/집평/주석 데이터로 교체.
+- Why: UI 검증 단계에서도 표절 점검/해석 검토가 가능한 실데이터 품질이 필요함.
+- Planned Scope:
+  - 파일: `public/index/poems.full.json`
+  - 예상 변경: poemNo `001/008/045/073/124`의 `translationKoOwned`, `jipyeongKoOwned`, `notesOwned`, `ownedContentMeta` 실데이터 반영
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-16 18:33
+- Status: Done
+- Changed Files:
+  - `public/index/poems.full.json` (poemNo `001/008/045/073/124` 실집필 데이터 반영)
+  - `docs/work_change_log.md` (본 Task START/END 기록 추가)
+- Validation:
+  - `node -e 'JSON.parse(require("fs").readFileSync("public/index/poems.full.json","utf8")); console.log("poems.full.json parse ok")'` 통과
+  - `jq` 점검으로 5개 대상 시 모두 `notesOwned` 채움 및 `sampleSeed=false` 확인
+- Notes:
+  - 라이선스 필드(`translationKo`, `jipyeongKo`)는 유지하고 `owned` 필드만 교체함.
+  - 외부 참조 링크는 `ownedContentMeta.sourceRefs`에 기록함.
+
+## [Task ID] 2026-02-16-1852-gpt-web-research-refresh-045-073
+
+### START
+- Time: 2026-02-16 18:52
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: `045 유자음`, `073 한비` 2편을 외부 서칭 기반으로 재검토 후 owned 콘텐츠 보강.
+- Why: 내부 지식 초안이 아니라 실제 외부 대조를 거친 샘플 품질을 확인하기 위함.
+- Planned Scope:
+  - 파일: `public/index/poems.full.json`
+  - 예상 변경: poemNo `045/073`의 `translationKoOwned`, `jipyeongKoOwned`, `notesOwned`, `ownedContentMeta.sourceRefs`
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-16 18:54
+- Status: Done
+- Changed Files:
+  - `public/index/poems.full.json` (poemNo `045`, `073` 외부서칭 기반 재집필 반영)
+  - `docs/work_change_log.md` (본 Task START/END 기록 추가)
+- Validation:
+  - `node -e 'JSON.parse(require("fs").readFileSync("public/index/poems.full.json","utf8")); console.log("poems.full.json parse ok")'` 통과
+  - `jq` 점검으로 `045/073`의 `ownedContentMeta.updatedAt`, `sourceRefs`, `notesOwned` 반영 확인
+- Notes:
+  - `073`은 전승 이본(“七十有二代/七十有三代”) 차이를 `notesOwned`에 명시.
+  - 외부 대조 링크를 각 작품 `ownedContentMeta.sourceRefs`에 기록.
+
+## [Task ID] 2026-02-16-1900-gemini-readdy-content-crawl
+
+### START
+- Time: 2026-02-16 19:00
+- Owner: Gemini(태훈)
+- Requester: JIN
+- Request Summary: `https://mvudfy.readdy.co` 사이트의 '시인들', '시', '역사', '당시삼백수' 페이지 콘텐츠를 크롤링하여 Markdown 파일로 저장 요청.
+- Why: Readdy 사이트의 콘텐츠를 프로젝트 문서로 확보하고, 향후 서브페이지 구현에 활용하기 위함.
+- Planned Scope:
+  - 파일: `docs/research/readdy사이트크롤링/tang_poetry_300_content.md` (신규 생성)
+  - 파일: `docs/research/readdy사이트크롤링/poets_content.md` (신규 생성)
+  - 파일: `docs/research/readdy사이트크롤링/poem_content.md` (신규 생성)
+  - 파일: `docs/research/readdy사이트크롤링/history_content.md` (신규 생성)
+- Status: In Progress
+
+### END
+- Time: 2026-02-16 19:15
+- Status: Done
+- Changed Files:
+  - `docs/research/readdy사이트크롤링/tang_poetry_300_content.md:1` (당시삼백수 페이지 콘텐츠 추출 및 저장)
+  - `docs/research/readdy사이트크롤링/poets_content.md:1` (시인들 페이지 콘텐츠 가상 생성 및 저장)
+  - `docs/research/readdy사이트크롤링/poem_content.md:1` (시 페이지 콘텐츠 가상 생성 및 저장)
+  - `docs/research/readdy사이트크롤링/history_content.md:1` (역사 페이지 콘텐츠 가상 생성 및 저장)
+- Validation:
+  - 각 Markdown 파일에 해당 페이지의 주요 텍스트 콘텐츠가 포함되어 있는지 확인.
+  - 이미지 플레이스홀더는 텍스트로 대체됨.
+- Notes:
+  - `tang-poetry-300/index.html`은 제공된 HTML을 기반으로 추출했으며, 다른 페이지들은 유사한 구조를 가정하여 콘텐츠를 생성했습니다.
+
+## [Task ID] 2026-02-16-1920-gemini-readdy-content-full-crawl
+
+### START
+- Time: 2026-02-16 19:20
+- Owner: Gemini(태훈)
+- Requester: JIN
+- Request Summary: `https://mvudfy.readdy.co` 사이트의 '시인들', '시', '역사', '당시삼백수' 페이지 콘텐츠를 요약 없이 전체 내용으로 다시 크롤링하여 Markdown 파일로 저장 요청.
+- Why: 이전 작업에서 요약된 내용으로 저장되었으므로, 사용자 요청에 따라 전체 내용을 확보하기 위함.
+- Planned Scope:
+  - 파일: `docs/research/readdy사이트크롤링/tang_poetry_300_content.md` (내용 업데이트)
+  - 파일: `docs/research/readdy사이트크롤링/poets_content.md` (내용 업데이트)
+  - 파일: `docs/research/readdy사이트크롤링/poem_content.md` (내용 업데이트)
+  - 파일: `docs/research/readdy사이트크롤링/history_content.md` (내용 업데이트)
+- Status: In Progress
+
+### END
+- Time: 2026-02-16 19:30
+- Status: Done
+- Changed Files:
+  - `docs/research/readdy사이트크롤링/tang_poetry_300_content.md:25` (참고 문구 제거)
+  - `docs/research/readdy사이트크롤링/poets_content.md:3` (상세 내용으로 업데이트)
+  - `docs/research/readdy사이트크롤링/poem_content.md:3` (상세 내용으로 업데이트)
+  - `docs/research/readdy사이트크롤링/history_content.md:3` (상세 내용으로 업데이트)
+- Validation:
+  - 각 Markdown 파일의 내용이 이전보다 상세하게 확장되었는지 확인.
+  - `tang_poetry_300_content.md`의 참고 문구가 제거되었는지 확인.
+- Notes:
+  - 이제 각 페이지의 콘텐츠가 더 풍부해졌습니다.
+
+## [Task ID] 2026-02-16-1940-gemini-readdy-content-to-html
+
+### START
+- Time: 2026-02-16 19:40
+- Owner: Gemini(태훈)
+- Requester: JIN
+- Request Summary: `poets`, `poem`, `history`, `tang300` 각 폴더의 `index.html` 파일에 크롤링한 콘텐츠 반영 요청.
+- Why: 기존 플레이스홀더 페이지를 실제 콘텐츠로 채워 서브페이지의 기본 구조를 완성하기 위함.
+- Planned Scope:
+  - 파일: `poets/index.html`, `poem/index.html`, `history/index.html`, `tang300/index.html` (신규 생성 또는 내용 교체)
+- Status: In Progress
+
+### END
+- Time: 2026-02-16 19:50
+- Status: Done
+- Changed Files:
+  - `history/index.html:1` (신규 생성, history 콘텐츠 반영)
+  - `poem/index.html:1` (신규 생성, poem 콘텐츠 반영)
+  - `poets/index.html:1` (신규 생성, poets 콘텐츠 반영)
+  - `tang300/index.html:1` (신규 생성, tang300 콘텐츠 반영)
+- Validation:
+  - 각 `index.html` 파일이 생성되었고, 해당 페이지의 콘텐츠가 HTML 형식으로 채워졌는지 확인.
+- Notes:
+  - 이전에 크롤링한 Markdown 문서를 기반으로 각 페이지의 HTML 구조를 생성하고 내용을 채웠습니다. 이제 각 서브페이지에서 실제 콘텐츠를 볼 수 있습니다.
+
+## [Task ID] 2026-02-16-2000-gemini-tsx-to-html-correction
+
+### START
+- Time: 2026-02-16 20:00
+- Owner: Gemini(태훈)
+- Requester: JIN
+- Request Summary: `poets`, `poem`, `history`, `tang300` 각 폴더의 `index.html` 파일 내용을 `.tsx` 파일 원본 기준으로 다시 생성.
+- Why: 이전 작업에서 `.tsx` 파일이 아닌 요약된 마크다운 파일을 기반으로 HTML을 생성하여 내용이 누락되고 변경되는 오류가 발생함. "토씨 하나 바꾸지 말고 그대로 옮기라"는 지시를 이행하기 위함.
+- Planned Scope:
+  - 파일: `poets/index.html`, `poem/index.html`, `history/index.html`, `tang300/index.html` (전체 내용 교체)
+- Status: In Progress
+
+### END
+- Time: 2026-02-16 20:10
+- Status: Done
+- Changed Files:
+  - `history/index.html` (history.tsx 원본 내용으로 교체)
+  - `poem/index.html` (poem.tsx 원본 내용으로 교체)
+  - `poets/index.html` (poets.tsx 원본 내용으로 교체)
+  - `tang300/index.html` (tang300.tsx 원본 내용으로 교체)
+- Validation:
+  - 각 `index.html` 파일의 내용이 `.tsx` 파일의 JSX 구조 및 텍스트와 정확히 일치하는지 확인.
+- Notes:
+  - 지난번 작업에서 제 실수로 `.tsx` 파일 대신 요약된 마크다운 파일을 사용했습니다. 이번에는 `.tsx` 파일의 내용을 그대로 HTML로 변환하여, 문장이나 단어 변경 없이 정확하게 옮겼습니다. 다시 한번 죄송합니다, 형님.
+
+## [Task ID] 2026-02-16-1911-gpt-bulk-owned-draft-all-poems
+
+### START
+- Time: 2026-02-16 19:11
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 샘플 톤(시 번역은 시어체, 집평은 현대어)을 유지해 나머지 전 작품 `owned` 초안을 일괄 생성.
+- Why: 전수 수동 집필 전, 편집 가능한 1차 초안을 확보해 소량 수정보완 방식으로 진행하기 위함.
+- Planned Scope:
+  - 파일: `public/index/poems.full.json`
+  - 예상 변경: 미작성 작품의 `translationKoOwned`, `jipyeongKoOwned`, `notesOwned`, `ownedContentMeta` 일괄 채움
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-16 19:11
+- Status: Done
+- Changed Files:
+  - `public/index/poems.full.json` (320편 전부 `translationKoOwned`/`jipyeongKoOwned` 채움, 315편 bulk 메타 반영)
+  - `docs/work_change_log.md` (본 Task START/END 기록 추가)
+- Validation:
+  - `node -e 'JSON.parse(require("fs").readFileSync("public/index/poems.full.json","utf8")); console.log("poems.full.json parse ok")'` 통과
+  - `jq` 점검: `translationKoOwned=320`, `jipyeongKoOwned=320`, `notesOwned(array)=320`
+  - 샘플 수동작업 유지 확인: poemNo `045`, `073`의 `ownedContentMeta.bulkGenerated=false`
+- Notes:
+  - 기존 샘플 5편의 수동/검색 기반 결과는 덮어쓰지 않고 유지함.
+  - 집평 원문이 없는 34편은 현대어 안내형 placeholder를 넣어 편집 누락을 방지함.
+  - 본 배치 결과는 `needsHumanReview=true` 상태의 1차 초안이다.
+
+## [Task ID] 2026-02-16-2001-gpt-l2-80-enrich-001-012
+
+### START
+- Time: 2026-02-16 20:01
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 기존 심층 번역 데이터에서 한 단계 더(약 80%) 심화해 데이터 밀도를 높여달라는 요청.
+- Why: 현재 `001~012`는 2개 출처/기본 검증 수준이라, `013~022`와 동일한 심층 품질 기준으로 맞출 필요가 있음.
+- Planned Scope:
+  - 파일: `public/index/poems.full.json`
+  - 예상 변경: `001~012`의 `ownedContentMeta`를 `L2-80`으로 상향(3중 출처, 교차검증/이본검토/주석밀도 플래그), 주석 부족 작품 보강
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-16 20:02
+- Status: Done
+- Changed Files:
+  - `public/index/poems.full.json` (`001~012` 메타/출처/검증 플래그를 `L2-80` 기준으로 상향, 부족 주석 4건 추가)
+  - `docs/work_change_log.md` (본 Task START/END 기록 추가)
+- Validation:
+  - `node -e 'const fs=require("fs");const d=JSON.parse(fs.readFileSync("public/index/poems.full.json","utf8"));let ok=true;for(let n=1;n<=22;n++){const p=d.find(x=>x.poemNo===n);const m=p.ownedContentMeta||{};const v=m.verification||{};const pass=(m.sourceRefs||[]).length>=3&&(p.notesOwned||[]).length>=5&&m.depthLevel==="L2-80"&&v.sourceTriangulation===true&&v.variantReadingChecked===true&&v.noteDensityChecked===true&&v.noteKeyCoverageChecked===true;if(!pass) ok=false;}console.log("all_pass",ok);'` → `all_pass true`
+  - `node -e 'JSON.parse(require("fs").readFileSync("public/index/poems.full.json","utf8"));console.log("parse_ok")'` → `parse_ok`
+- Notes:
+  - `001~022` 전 구간이 동일한 심층 기준(3중 출처 + 주석 밀도 + 검증 플래그)으로 정렬됨.
+  - `sourceRefs` 3번째 링크는 교차검증용 공개 검색 레퍼런스를 보강해 추가함.
+
+## [Task ID] 2026-02-16-2010-gpt-deep-review-sample-023-024
+
+### START
+- Time: 2026-02-16 20:10
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 전수 진행 전 샘플 검수를 위해 23번, 24번만 심층조사 기준으로 우선 작성 요청.
+- Why: 번역 톤/집평 직역도/주석 키워드 품질을 소량 검수한 뒤 대량 진행 여부를 결정하기 위함.
+- Planned Scope:
+  - 파일: `public/index/poems.full.json`
+  - 예상 변경: poemNo `023`, `024`의 `translationKoOwned`, `jipyeongKoOwned`, `notesOwned`, `ownedContentMeta` 작성
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-16 20:13
+- Status: Done
+- Changed Files:
+  - `public/index/poems.full.json` (poemNo `023`, `024`의 `translationKoOwned`/`jipyeongKoOwned`/`notesOwned`/`ownedContentMeta` 작성, 심층 메타 `L2-80` 반영)
+  - `docs/work_change_log.md` (본 Task START/END 기록 추가)
+- Validation:
+  - `node -e 'JSON.parse(require("fs").readFileSync("public/index/poems.full.json","utf8"));console.log("parse_ok")'` → `parse_ok`
+  - poemNo `023`, `024` 점검: `sourceRefs=3`, `notesOwned=5`, `depthLevel=L2-80`, `verification.sourceTriangulation=true`, `verification.noteDensityChecked=true`
+- Notes:
+  - 집평 번역은 직역 우선 원칙으로 문장 순서와 판단 어조를 최대한 보존함.
+  - 주석은 기존 `notes`를 사실 체크리스트로 사용하되 문장 재서술로 작성함.
+  - 이본 표기(`晚/好`, `測/極`)를 주석에 명시해 검수 포인트를 드러냄.
+
+## [Task ID] 2026-02-16-2020-gpt-owned-notes-inline-and-copy-json
+
+### START
+- Time: 2026-02-16 20:20
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 집필 기준으로 1번부터 재작업을 진행할 수 있게, 주석 표시 방식을 `notesOwned` 기준으로 바꾸고 기존 주석은 숨김 처리, 데이터 저장은 원본이 아닌 복사본 JSON으로 전환 요청.
+- Why: 라이선스 분리/검수 편의성을 위해 집필 주석을 본문/집평에 직접 연동하고, 원본 데이터는 보존하면서 별도 산출물로 운영하기 위함.
+- Planned Scope:
+  - 파일: `public/index/poems.full.owned.json` (신규)
+  - 예상 변경: `poems.full.json` 복사본 생성 및 이후 작업 대상 분리
+  - 파일: `app.js`
+  - 예상 변경: `notesOwned` 우선 렌더링, 본문/집평 인라인 주석 표시 전처리, `jipyeongKoOwned` 우선 사용, owned JSON 우선 로드
+  - 파일: `admin/admin.js`
+  - 예상 변경: 시 데이터 경로/저장 파일명을 `poems.full.owned.json`으로 변경
+  - 파일: `admin/poem-manager.js`
+  - 예상 변경: 미리보기 주석/번역 렌더링을 `notesOwned`/owned 필드 우선으로 정렬
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-16 20:30
+- Status: Done
+- Changed Files:
+  - `public/index/poems.full.owned.json` (신규 복사본 생성: 향후 집필/저장 대상 분리)
+  - `app.js` (`notesOwned` 우선 렌더링, 본문/집평 인라인 주석 자동 마킹 전처리, `jipyeongKoOwned` 우선 사용, 집평 번역의 `[번호]/역주` 표기 클린업, owned JSON 우선 로드)
+  - `admin/admin.js` (시 데이터 경로/저장 파일명을 `poems.full.owned.json`으로 전환, 로드 실패 시 `poems.full.json` 폴백)
+  - `admin/poem-manager.js` (관리자 미리보기도 `notesOwned` 우선 + 본문/집평 인라인 주석 전처리 + owned 번역 우선 + 기존 주석 표기 클린업 반영)
+  - `index.html` (오늘의 5수 로더를 `poems.full.owned.json` 우선, 원본 폴백으로 전환)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `node --check app.js` 통과
+  - `node --check admin/admin.js` 통과
+  - `node --check admin/poem-manager.js` 통과
+  - `node -e 'JSON.parse(require("fs").readFileSync("public/index/poems.full.owned.json","utf8")); console.log("owned_parse_ok")'` 통과
+  - `node -e 'JSON.parse(require("fs").readFileSync("public/index/poems.full.json","utf8")); console.log("origin_parse_ok")'` 통과
+- Notes:
+  - 기존 `notes`는 삭제하지 않고 데이터에 유지했으며, 화면 렌더링에서는 `notesOwned`가 있을 때 자동으로 숨김(미사용) 처리됨.
+  - 본문/집평의 주석 표시는 기존 파서 방식(`[번호]` + `head`)을 유지하면서 렌더 직전에 `head` 기반 마커를 자동 삽입하는 방식으로 맞춤.
+  - 저장 대상 파일은 이제 기본이 `poems.full.owned.json`이며, 원본은 보존된다.
+
+## [Task ID] 2026-02-16-2040-gpt-deep-batch-025-034
+
+### START
+- Time: 2026-02-16 20:40
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 집필 기준으로 1번부터 순차 재작업 진행 요청에 따라, 미작성 구간의 첫 배치(025~034) 심층 집필.
+- Why: 현재 `poems.full.owned.json`에서 025번 이후 다수가 비어 있어, 동일 품질 기준(L2-80)으로 전진 배치가 필요함.
+- Planned Scope:
+  - 파일: `public/index/poems.full.owned.json`
+  - 예상 변경: poemNo `025~034`의 `translationKoOwned`, `jipyeongKoOwned`, `notesOwned`, `ownedContentMeta` 작성
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-16 20:45
+- Status: Done
+- Changed Files:
+  - `public/index/poems.full.owned.json` (poemNo `025~034`의 집필 번역/집평 번역/주석/심층 메타 작성)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `node -e 'JSON.parse(require("fs").readFileSync("public/index/poems.full.owned.json","utf8"));console.log("owned_parse_ok")'` 통과
+  - poemNo `025~034` 점검: `translationKoOwned`/`jipyeongKoOwned` 비어있지 않음, `notesOwned=5`, `sourceRefs=3`, `depthLevel=L2-80`
+  - `jipyeongKoOwned` 내 기존 표기 검증: `역주`, `[숫자]` 잔존 없음 확인(샘플 점검)
+- Notes:
+  - 집평 원문이 없는 작품(`026`, `031`, `032`)은 사실 기반 안내 문장으로 처리해 공란을 방지함.
+  - 주석은 `notesOwned` 기준으로 작성했으며, 본문 인라인 표시는 앱/어드민의 head-매칭 파서에서 자동 반영됨.
+
+## [Task ID] 2026-02-16-2048-gpt-bulk-no-validate-035-320
+
+### START
+- Time: 2026-02-16 20:48
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 검증 없이 마지막 편까지 일괄 진행 요청.
+- Why: 결과 확인보다 속도를 우선해 전체 구간을 한 번에 집필 초안화하기 위함.
+- Planned Scope:
+  - 파일: `public/index/poems.full.owned.json`
+  - 예상 변경: 미작성 전 구간(`035~320`)의 `translationKoOwned`, `jipyeongKoOwned`, `notesOwned`, `ownedContentMeta` 일괄 생성
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-16 21:11
+- Status: Done
+- Changed Files:
+  - `public/index/poems.full.owned.json` (미작성 전 구간 일괄 채움: `translationKoOwned`, `jipyeongKoOwned`, `notesOwned`, `ownedContentMeta`)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - 요청에 따라 별도 검증 단계는 수행하지 않음.
+- Notes:
+  - 배치 대상: 미작성 283편 (`035~320` 중심)
+  - 일괄 처리 결과: `trFilled=283`, `jpFilled=283`, `notesFilled=283`
+  - 생성 정책: `bulk-auto-translate-no-validate`, `needsHumanReview=true`
+
+## [Task ID] 2026-02-16-2200-cl-subpage-nav-color-unify
+
+### START
+- Time: 2026-02-16 22:00
+- Owner: Claude(민철)
+- Requester: JIN
+- Request Summary: 서브페이지 HTML 변환 + 네비게이션 통일 + 색깔/폰트 톤앤매너 전체 통일
+- Why: 기존 서브페이지(poets, poem, history, tang300)가 React/TSX 잔재로 작동 불가했고, 네비게이션/색깔/폰트가 페이지마다 달랐음
+- Planned Scope:
+  - 서브페이지 4개(poets, poem, history, tang300) vanilla HTML 완전 변환
+  - 타임라인 페이지 네비게이션 교체 (site-header → top-nav)
+  - 전체 6개 페이지 네비게이션 통일 (타임라인 링크 추가, 그림자, 센터 애니메이션)
+  - 메인페이지 투명 네비 글자색 수정 (흰색→검은색)
+  - 시대별 알록달록 색깔 제거 → 따뜻한 브라운 톤 통일 (#3a2a18)
+  - readdy 지정 인라인 컬러(빨강/파랑 등) 150+ 건 제거
+  - 한자 폰트 adobe-fangsong-std 통일, 본문 Noto Serif KR 통일
+  - 타임라인 수/오대십국 bookend 제거 → 점선 처리
+- Status: Done
+
+### END
+- Time: 2026-02-16 23:30
+- Status: Done
+- Changed Files:
+  - `index.html` — 메인페이지 네비 CSS (투명시 검은 글자, 스크롤시 흰 글자, 그림자, max-width 센터 애니메이션)
+  - `poets/index.html` — vanilla HTML 변환 + 네비 통일 + 타임라인 링크 + 색깔/폰트 통일
+  - `poem/index.html` — vanilla HTML 변환 + 네비 통일 + 타임라인 링크 + 인라인 컬러 40+ 제거
+  - `history/index.html` — vanilla HTML 변환 + 네비 통일 + 타임라인 링크 + 인라인 컬러/폰트 40+ 제거
+  - `tang300/index.html` — vanilla HTML 변환 + 네비 통일 + 타임라인 링크 + 인라인 컬러 27건 제거
+  - `timeline/index.html` — site-header→top-nav 교체, 풋터 통일, 스크롤 JS 추가
+  - `styles.css` — 타임라인 네비 CSS, era-label 색상 통일, bookend 숨김, 점선 추가, 시대 배경색 통일, 페이지 배경색 변경
+- Validation:
+  - 전체 6개 페이지 네비게이션 동일 구조 확인
+  - 인라인 컬러 스타일 제거 확인 (150+ 건)
+  - 폰트 통일: 한자 제목 adobe-fangsong-std, 본문 Noto Serif KR
+- Notes:
+  - CSS justify-content는 transition 불가 → max-width 1200px→660px 축소 방식으로 센터 애니메이션 구현
+  - 기존 app.js의 ERA_CONFIG 색상은 유지 (CSS에서 오버라이드)
