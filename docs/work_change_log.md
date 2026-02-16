@@ -2659,6 +2659,105 @@
   - `updatedAt/enrichedAt`를 `2026-02-17 03:47`로 보정해 메타 키 누락 없이 저장.
   - 다음 진행 대기 구간: `138~147` (사용자 확인 후 진행).
 
+## [Task ID] 2026-02-17-0414-gpt-admin-owned-visibility
+
+### START
+- Time: 2026-02-17 04:14
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 저장된 집필 데이터가 `admin/index.html`에서 바로 확인되도록 표시 개선 요청.
+- Why: owned 데이터가 파일에는 반영되어도 관리자 화면에서는 확인 동선이 불명확해 검수 흐름이 끊기기 때문.
+- Planned Scope:
+  - 파일: `admin/index.html`
+  - 예상 변경: 시관리 탭에 owned 읽기 전용 확인 섹션 추가
+  - 파일: `admin/poem-manager.js`
+  - 예상 변경: 시 선택 시 owned 번역/주석/메타를 읽기 전용 섹션에 렌더링
+  - 파일: `admin/admin.js`
+  - 예상 변경: JSON 로딩에 no-cache 적용
+  - 파일: `admin/admin.css`
+  - 예상 변경: owned 읽기 전용 패널 스타일 추가
+- Status: In Progress
+
+### END
+- Time: 2026-02-17 04:14
+- Status: Done
+- Changed Files:
+  - `admin/index.html` (시관리 폼에 `집필본 확인(Owned)` 섹션 추가: 상태/최근수정/메타요약/집필 번역/집필 집평/집필 주석 표시)
+  - `admin/poem-manager.js` (`renderOwnedReadonlySection()` 추가 및 `selectPoem()` 연동)
+  - `admin/admin.js` (`loadJSON()`/UI settings 로드에 `cache: no-store` + cache-busting query 적용)
+  - `admin/admin.css` (owned 읽기 전용 주석 목록 스타일 추가)
+- Validation:
+  - `node --check admin/admin.js` 통과
+  - `node --check admin/poem-manager.js` 통과
+  - ID/함수 매칭 확인: `rg`로 신규 DOM ID 및 함수 참조 연결 확인
+- Notes:
+  - 이제 시관리 탭에서도 선택한 작품의 `translationKoOwned`, `jipyeongKoOwned`, `notesOwned`, `ownedContentMeta`를 즉시 확인 가능.
+
+## [Task ID] 2026-02-17-0427-gpt-writing-note-review-ux
+
+### START
+- Time: 2026-02-17 04:27
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 집필관리 탭에서 신규 주석 검수 가시성을 높이고, 검수 확정 시 기존 주석을 히든 처리하는 흐름 추가 요청.
+- Why: 기존/신규 주석 비교가 어려워 검수 효율이 떨어지므로 신규/수정/유지 상태를 시각화하고 확정 시 히든 플래그를 남기기 위함.
+- Planned Scope:
+  - 파일: `admin/index.html`
+  - 예상 변경: 집필관리 툴바에 `신규 주석만 보기` 토글, 집필 주석 섹션에 상태 요약 라인 추가
+  - 파일: `admin/writing-manager.js`
+  - 예상 변경: `notesOwned` vs `notes` 비교 상태 분류(신규/수정/유지), 필터링 렌더링, 검수 확정 시 `ownedContentMeta.legacyNotesHidden=true` 기록
+  - 파일: `admin/admin.css`
+  - 예상 변경: 주석 상태 배지/하이라이트 스타일 추가
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-17 04:27
+- Status: Done
+- Changed Files:
+  - `admin/index.html` (집필관리 툴바에 `신규 주석만 보기` 체크박스 추가, 집필 주석 섹션에 상태 요약 영역 추가)
+  - `admin/writing-manager.js` (`buildOwnedNoteAnalysis()`/`normalizeNoteCompareValue()` 추가, `notesOwned` 상태 배지 렌더링, 신규만 보기 필터, 검수 확정 시 `legacyNotesHidden=true` 기록)
+  - `admin/admin.css` (신규/수정/유지 상태 배지 및 카드 하이라이트, 요약 라인 스타일 추가)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `node --check admin/writing-manager.js` 통과
+  - `node --check admin/admin.js` 통과
+  - `rg`로 신규 DOM/함수/플래그 참조 연결 확인 (`writing-new-notes-only`, `wf-owned-note-summary`, `legacyNotesHidden`)
+- Notes:
+  - 기존 `notes` 데이터는 삭제하지 않고 유지하며, 검수 확정 후에는 비교 패널에서 히든 메시지로 처리됨.
+  - 본문/집평 렌더링은 기존처럼 `notesOwned` 우선이므로 실노출은 집필 주석 기준으로 유지됨.
+
+## [Task ID] 2026-02-17-0432-gpt-owned-deep-batch-138-140
+
+### START
+- Time: 2026-02-17 04:32
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 138~140번을 기존 심층번역 기준으로 재집필하고 주석 작업까지 함께 반영 요청.
+- Why: 136~137 방식과 동일하게 bulk 초안을 제거하고, 번역/집평/주석/메타를 검수 가능한 심층 기준으로 맞추기 위함.
+- Planned Scope:
+  - 파일: `public/index/poems.full.owned.json`
+  - 예상 변경: poemNo `138~140`의 `translationKoOwned`, `jipyeongKoOwned`, `notesOwned`, `ownedContentMeta` 갱신
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-17 04:35
+- Status: Done
+- Changed Files:
+  - `public/index/poems.full.owned.json` (poemNo `138~140`의 집필 번역/집평 번역/주석/메타를 심층 기준으로 갱신)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `node -e 'JSON.parse(require("fs").readFileSync("public/index/poems.full.owned.json","utf8")); console.log("owned_parse_ok")'` 통과
+  - poemNo `138~140` 점검: `bulkGenerated=false`, `generationPolicy=deep-research-cross-validated`, `sourceRefs=3`, `notesOwned=6`, `depthLevel=L2-80`, `legacyNotesHidden=false` 확인
+- Notes:
+  - 139는 집평 원문 공란이므로 프로토콜 고정 문장(`해당 수록본에는 별도의 집평 원문이 실려 있지 않다.`)을 유지.
+  - 138 원문 행구성이 원데이터에서 병합되어 있어 번역도 데이터 원문 줄 구조를 기준으로 정렬함.
+  - `updatedAt/enrichedAt`를 `2026-02-17 04:35`로 기록해 메타 키 누락 없이 저장.
+  - 다음 진행 대기 구간: `141~150`.
+
 ## [Task ID] 2026-02-17-1430-cl-server-infra-plan
 
 ### START
@@ -2689,3 +2788,167 @@
   - VPS 직접 운영은 관리 부담으로 기각, Firebase는 과금 예측성 문제로 기각
   - 예상 월 비용: 초기 무료~$5, 성장기 $25~50, 활성화 $50~100
   - Qwen3-TTS CustomVoice 모델로 3초 음성 클로닝 → "내 목소리로 읽어주는 한시" 서비스 가능
+
+## [Task ID] 2026-02-17-0449-gpt-note-marker-normalization
+
+### START
+- Time: 2026-02-17 04:49
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 본문/집평 렌더링에서 원본 주석번호와 집필 주석번호가 어긋나는 문제 수정 요청 (`예: 江漢[3]` vs 집필 `no=1`).
+- Why: 화면에서 주석 키워드-번호 매칭이 깨지면 검수 정확도가 떨어지므로, 집필 주석 기준으로 번호를 재매핑하고 본문에서 출처별 색 구분을 명확히 하기 위함.
+- Planned Scope:
+  - 파일: `app.js`
+  - 예상 변경: 집필 주석 사용 시 본문/제목/집평/시인 텍스트의 인라인 번호를 제거 후 `notesOwned` 기준으로 재주입, 주석 span 클래스에 source(`legacy|owned`) 전달
+  - 파일: `admin/poem-manager.js`
+  - 예상 변경: 관리자 미리보기 렌더러도 동일한 source 클래스/번호 재주입 흐름 적용
+  - 파일: `styles.css`
+  - 예상 변경: 본문 내 주석 키워드 색상을 legacy/owned로 분리
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-17 04:49
+- Status: Done
+- Changed Files:
+  - `app.js` (`parseTextWithNotes(..., noteSource)` 확장, `renderPoemSection()`에서 `useOwnedNotes`일 때 marker 재주입 + source class 전달)
+  - `admin/poem-manager.js` (`parseTextWithNotesAdmin(..., noteSource)` 확장, `renderPoemPreview()`에 동일 로직 반영)
+  - `styles.css` (`.note-word-legacy`/`.note-word-owned` 및 배경/오버레이 컨텍스트 색상 분리)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `node --check app.js` 통과
+  - `node --check admin/poem-manager.js` 통과
+  - poemNo `140` 확인: 원문 1행 `江漢[3]曾爲客` → 렌더링 주입 소스 1행 `江漢[1]曾爲客`
+- Notes:
+  - 주석 입력 카드 색이 아니라, 실제 시/집평 본문에서 출처별 색이 보이도록 수정됨.
+  - 집필 주석이 존재하면 원본 `[n]` 표시는 렌더링 시 제거되고 `notesOwned.no` 기준으로 다시 매칭됨.
+
+## [Task ID] 2026-02-17-0459-gpt-writing-dual-note-marker-preview
+
+### START
+- Time: 2026-02-17 04:59
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 집필관리 검수 시 본문에서 기존 주석번호와 집필 주석번호를 동시에 표시하고, 집필 번호는 파란색으로 별도 표기 요청.
+- Why: `poemZh` 원본 번호(예: `[3]`)와 `notesOwned.no`(예: `[1]`)가 달라도 본문에서 즉시 대응 관계를 확인해야 검수 정확도가 올라가기 때문.
+- Planned Scope:
+  - 파일: `admin/index.html`
+  - 예상 변경: 원문/집평 원문 textarea 아래 주석번호 이중표시 미리보기 영역 추가
+  - 파일: `admin/writing-manager.js`
+  - 예상 변경: 원문 텍스트에 기존 `[n]` + 집필 `[n]`(head 매칭) 동시 렌더링 함수 추가 및 notesOwned 변경 시 실시간 갱신
+  - 파일: `admin/admin.css`
+  - 예상 변경: legacy/owned 번호 시각 구분 스타일(owned 파란색) 추가
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-17 04:59
+- Status: Done
+- Changed Files:
+  - `admin/index.html` (`wf-poemZh-preview`, `wf-jipyeongZh-preview` 미리보기 영역 및 범례 추가)
+  - `admin/writing-manager.js` (`renderWritingSourcePreviews()`, `buildDualNotePreviewHTML()`, `injectOwnedPreviewMarkers()` 추가; notesOwned 수정/추가/삭제 시 미리보기 동기화)
+  - `admin/admin.css` (`.writing-source-preview*`, `.writing-note-inline-legacy`, `.writing-note-inline-owned` 스타일 추가)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `node --check admin/writing-manager.js` 통과
+  - `node --check admin/admin.js` 통과
+  - poemNo `140` 기준 미리보기 문자열 검증: `江漢[3][1]曾爲客` 형태(기존 `[3]` + 집필 `[1]`)로 출력 확인
+- Notes:
+  - 원본 textarea 데이터(`poemZh`, `jipyeongZh`)는 그대로 보존하고, 바로 아래 미리보기에서만 이중 번호를 표시함.
+  - 집필 번호는 파란 pill 스타일로 렌더링되어 기존 번호와 시각적으로 즉시 구분됨.
+
+## [Task ID] 2026-02-17-0509-gpt-owned-deep-batch-141-150
+
+### START
+- Time: 2026-02-17 05:09
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 심층번역 운영프로토콜 기준으로 10편 배치(141~150) 집필 데이터 재작성 요청.
+- Why: 해당 구간이 `bulk-auto-translate-no-validate` 상태라서, 검수 가능한 수준의 번역/집평/주석/메타 정규화가 필요함.
+- Planned Scope:
+  - 파일: `public/index/poems.full.owned.json`
+  - 예상 변경: poemNo `141~150`의 `translationKoOwned`, `jipyeongKoOwned`, `notesOwned`, `ownedContentMeta` 갱신
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-17 05:09
+- Status: Done
+- Changed Files:
+  - `public/index/poems.full.owned.json` (poemNo `141~150`의 집필 번역/집평 번역/주석/메타를 심층 기준으로 전면 갱신)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `node -e 'JSON.parse(require("fs").readFileSync("public/index/poems.full.owned.json","utf8")); console.log("owned_parse_ok")'` 통과
+  - poemNo `141~150` 점검: `bulkGenerated=false`, `generationPolicy=deep-research-cross-validated`, `sourceRefs=3`, `notesOwned=6`, `depthLevel=L2-80`, `legacyNotesHidden=false` 확인
+  - 샘플 확인(`141`, `144`, `150`): `translationKoOwned` 8행 구성, `jipyeongKoOwned` 반영, 메타 키 누락 없음
+- Notes:
+  - `144`, `145`는 원문 데이터에 집평이 비어 있어 프로토콜 고정 문장(`해당 수록본에는 별도의 집평 원문이 실려 있지 않다.`)으로 처리.
+  - `updatedAt/enrichedAt`를 `2026-02-17 05:09`로 동기화.
+  - 다음 배치 시작 권장 구간: `151~160`.
+
+## [Task ID] 2026-02-17-0517-gpt-owned-note-head-match-fix
+
+### START
+- Time: 2026-02-17 05:17
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 141번 본문의 신규 주석번호와 하단 주석번호 불일치 점검 및 수정 요청.
+- Why: `notesOwned.head`가 본문 원문과 정확 매칭되지 않으면 번호 재주입이 누락되어, 본문 인라인 번호와 주석 리스트가 어긋남.
+- Planned Scope:
+  - 파일: `public/index/poems.full.owned.json`
+  - 예상 변경: poemNo `141`의 `notesOwned.head` 매칭 오류 보정, 동일 유형 잠재 이슈(150) 동시 보정
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-17 05:17
+- Status: Done
+- Changed Files:
+  - `public/index/poems.full.owned.json`
+    - poemNo `141`: `notesOwned[5].head`를 `漠漠`로 교정(기존 `漠漠 冥冥`), 설명문 정리
+    - poemNo `150`: `notesOwned[5].head`를 `得相能開國`, `notesOwned[6].head`를 `蜀故伎`로 교정
+    - `141`, `150`의 `ownedContentMeta.updatedAt/enrichedAt`를 `2026-02-17 05:17`로 갱신
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `node -e 'JSON.parse(require("fs").readFileSync("public/index/poems.full.owned.json","utf8")); console.log("owned_parse_ok")'` 통과
+  - 렌더 주입 검증: poemNo `141`, `150` 모두 `used markers = 1,2,3,4,5,6` 확인
+  - `141~150` 전체 `notesOwned.head` 본문/제목/집평 매칭 점검 시 unmatched 0건
+- Notes:
+  - 불일치 원인은 본문에 없는 결합형 head(공백/개행 포함) 사용이었다.
+  - 현재는 head를 원문 실재 문자열 기준으로 맞춰 본문-하단 번호 매칭이 유지된다.
+
+## [Task ID] 2026-02-17-1600-cl-news-crawling-design
+
+### START
+- Time: 2026-02-17 16:00
+- Owner: Claude(민철)
+- Requester: JIN
+- Request Summary: 메인페이지 "한시관련 소식" 섹션의 자동 크롤링 시스템 설계 — 키워드 확장 포함.
+- Why: 현재 하드코딩된 플레이스홀더를 자동화된 뉴스 수집 시스템으로 교체하기 위한 설계 작업.
+- Planned Scope:
+  - 파일: `docs/FromJin/12_남은사항들_작업계획서_CL.md`
+  - 예상 변경: 8번 항목 (한시 소식 자동 크롤링 시스템) 추가, 요약표/작업순서/담당자 업데이트
+- Status: In Progress
+
+### END
+- Time: 2026-02-17 16:30
+- Status: Done
+- Changed Files:
+  - `docs/FromJin/12_남은사항들_작업계획서_CL.md`
+    - 요약표 8번 행 추가
+    - 형 결정사항 테이블에 한시소식 키워드/UI 결정 추가
+    - 8번 상세 설계 섹션 신규 추가 (~150줄): 키워드 설계(6카테고리), 아키텍처, 데이터소스, AI 기사 재작성 규칙, JSON 구조, 프론트엔드 UI, GitHub Actions, 구현 단계(Phase 1~5), 비용, 볼륨 근거
+    - 권장 작업 순서에 8번 Phase1~4 추가
+    - 민철 담당에 한시소식 크롤링 항목 추가
+    - 최종 수정일 → 2026-02-17
+- Validation:
+  - 확장 키워드 6개 카테고리 볼륨 조사 완료 (월 ~8~12건 추정)
+  - 아코디언 UI 결정 (별도 게시판 불필요)
+- Notes:
+  - 이전 세션에서 기본 한시 키워드로 월 3~5건 추정 → 확장 후 월 8~12건
+  - 형 요청으로 한자/유명시인/한국시문학/전통행사 키워드 추가
+  - AI 기사 재작성 방식 채택 (요약 아닌 기사 형식, 300~500자)
