@@ -3824,3 +3824,142 @@
   - `131~139`의 `notesOwned.head` 본문/제목/집평 매칭 검사에서 unmatched 0건
 - Notes:
   - `updatedAt/enrichedAt`를 `2026-02-17 05:40`로 동기화.
+
+## [Task ID] 202602171000-gpt-tts-batch-pause-handoff
+
+### START
+- Time: 2026-02-17 10:00
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: PC 과부하 이슈로 진행 중인 TTS 대량 변환을 중단하고, 다른 AI가 즉시 재개 가능한 수준으로 상태/재개 절차를 기록.
+- Why: 시스템 응답성 회복 + 생성 진척 손실 없이 추후 재시작 가능하도록 체크포인트 고정.
+- Planned Scope:
+  - 실행 중 TTS 변환 프로세스 중단
+  - 진행률 스냅샷 산출(완료/잔여)
+  - `docs/work_change_log.md`에 상세 재개 가이드 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-17 10:01
+- Status: Paused (사용자 요청으로 중단 완료, 재개 가능)
+- Changed Files:
+  - `docs/work_change_log.md` (본 중단/재개 핸드오프 기록 추가)
+- Runtime Actions:
+  - 실행 세션 직접 `Ctrl+C` 시도했으나 세션 stdin closed 상태라 신호 전달 불가.
+  - 승인받은 권한으로 `pkill -f "scripts/generate_tts_from_voice_map.py"` 실행하여 전체 배치 프로세스 종료.
+  - 종료 후 파일 수 고정 여부를 30초 + 20초 관찰해 추가 생성이 없는 것 확인.
+- Progress Snapshot:
+  - 대상 총량: 320편
+  - 출력 규칙: `public/audio/{poemNoStr}_normal.mp3`
+  - 완료: 89편
+  - 잔여: 231편
+  - 완료 번호 요약: 연속 `001~087` + 단건 `186`, `225`
+  - 다음 잔여 시작 번호: `088`
+  - 현재 매핑 파일 상태: `public/index/tts_voice_map.json`은 5건(001, 043, 085, 186, 225)만 수동 배정됨.
+  - 중단 전 실행 옵션: `--include-unmapped` (미매핑 315건은 fallback `speaker=Uncle_Fu`, `instruct=calm` 자동 적용)
+- Resume Guide (다른 AI/새 세션 공통):
+  - 1) 재개 실행(포그라운드):
+    - `tools/tts-studio/.venv/bin/python -u scripts/generate_tts_from_voice_map.py --include-unmapped`
+  - 2) 사용자 터미널 백그라운드 권장(PC 사용 병행 시):
+    - `nohup tools/tts-studio/.venv/bin/python -u scripts/generate_tts_from_voice_map.py --include-unmapped > public/audio/tts_full.log 2>&1 &`
+    - `disown`
+  - 3) 진행 확인:
+    - `tools/tts-studio/.venv/bin/python - <<'PY'\nfrom pathlib import Path\nprint(len(list(Path('public/audio').glob('*_normal.mp3'))))\nPY`
+    - `tail -f public/audio/tts_full.log`
+  - 4) 중단 필요 시:
+    - `pkill -f "scripts/generate_tts_from_voice_map.py"`
+- Validation:
+  - 종료 검증: `count_now=89`, `count_after_30s=89`
+  - 안정성 재검증: `c1=89`, `c2=89`, `stable=True`
+- Notes:
+  - 배치 스크립트는 idempotent하게 동작하며 기존 MP3는 자동 `SKIP` 처리됨. 같은 명령으로 재시작해도 이어서 진행 가능.
+  - 추후 `tts_voice_map.json`이 320건으로 완성되면 `--include-unmapped` 없이 실행해 fallback 음색 적용을 막을 수 있음.
+
+---
+
+## [Task ID] 2026-02-17-1400-claude-writing-helper-design-review
+
+### START
+- Time: 2026-02-17 14:00
+- Owner: Claude(민철)
+- Requester: JIN
+- Request Summary: 시작성도우미 설계검토 2차 업데이트 — 14번 문서(UI아이디어) 반영, 형의 3가지 결정사항 반영, A-3 한자입력 UX 해결안 확정.
+- Why: 새 UI 아이디어 문서(14번)와 형의 결정(신호등 3색, 독음IME+힌트버튼, PC우선)을 설계검토 보고서에 통합.
+- Planned Scope:
+  - 파일: `docs/writing-helper/01_설계검토보고서_260217_CL.md`
+  - 예상 변경: G절(A-3 해결), H절(14번 문서 리뷰), I절(전체 결정 요약) 추가/수정
+- Status: In Progress
+
+### END
+- Time: 2026-02-17 14:30
+- Status: Done
+- Changed Files:
+  - `docs/writing-helper/01_설계검토보고서_260217_CL.md` (G·H·I절 추가, 결정사항 #8~#10 반영)
+- Validation:
+  - 문서 구조 확인, 기존 결정사항과 충돌 없음
+- Notes:
+  - 결정 #8: 신호등 3색(초록/빨강/노랑) — 원고지 배경색 or 글자색
+  - 결정 #9: 한글독음 → 한자후보(시어빈도순) + 힌트버튼(회원레벨 연동)
+  - 결정 #10: MVP는 PC전용, 모바일은 추후(앱 가능성)
+
+---
+
+## [Task ID] 2026-02-17-1500-claude-writing-helper-tech-review
+
+### START
+- Time: 2026-02-17 15:00
+- Owner: Claude(민철)
+- Requester: JIN
+- Request Summary: 시작성도우미 기술검토 보고서 신규 작성 — 엔진/AI 역할 분류, AI 모델 비교, IME 구현 가능성, 현토+TTS 기술 분석.
+- Why: 설계 문서 기반으로 구현 기술 선택지를 정리하고 난이도/비용을 사전 평가.
+- Planned Scope:
+  - 파일: `docs/writing-helper/02_기술검토보고서_260217_CL.md` (신규)
+  - 예상 변경: 11개 섹션 — 엔진vs AI분류, 모델비교, IME, 운목UI, 원고지, 데이터파이프라인, 현토+TTS
+- Status: In Progress
+
+### END
+- Time: 2026-02-17 16:30
+- Status: Done
+- Changed Files:
+  - `docs/writing-helper/02_기술검토보고서_260217_CL.md` (신규 생성, 11개 섹션)
+- Validation:
+  - 설계검토 보고서와 기술 범위 일치 확인
+  - AI 모델 가격/성능 데이터 웹 조사로 검증
+- Notes:
+  - 엔진 15개 함수(브라우저, 비용 0) vs AI 6개 태스크(API 호출)
+  - 추천 모델: Qwen 3.5-Plus(한시 전문) + GPT-4o-mini(한국어 코칭) 하이브리드
+  - IME: Composition Events API 기반, 시어 빈도순 정렬
+  - 세션당 예상 비용: ~$0.001~0.003
+  - 10절 추가: 현토(AI) + TTS 3종(보통화/현토낭송/한국어번역) + Voice Cloning + 수익화 티어
+
+---
+
+## [Task ID] 2026-02-17-1700-claude-writing-helper-dev-roadmap
+
+### START
+- Time: 2026-02-17 17:00
+- Owner: Claude(민철)
+- Requester: JIN
+- Request Summary: 시작성도우미 개발 로드맵 작성 — 7개 Phase, 48개 태스크, 병렬작업 그룹, 마일스톤 정리.
+- Why: 설계+기술검토 완료 후 구현 순서와 병렬화 가능 범위를 사전 정리하여 효율적 개발 착수 준비.
+- Planned Scope:
+  - 파일: `docs/writing-helper/03_개발로드맵_260217_CL.md` (신규)
+  - 예상 변경: Phase 0~6, 48 태스크, 13 병렬그룹, 6 마일스톤
+- Status: In Progress
+
+### END
+- Time: 2026-02-17 17:30
+- Status: Done
+- Changed Files:
+  - `docs/writing-helper/03_개발로드맵_260217_CL.md` (신규 생성)
+- Validation:
+  - 기술검토 보고서의 난이도 평가와 로드맵 일정 정합성 확인
+  - 병렬그룹 의존성 검증 완료
+- Notes:
+  - Phase 0: 선결 결정 4건 (AI모델, 서버, 수익화, 사전)
+  - Phase 1~3: Phase 0 없이도 착수 가능 (데이터/엔진/UI)
+  - Phase 4: AI 연동 (Supabase Edge Functions)
+  - Phase 5: 5단계 플로우 통합
+  - Phase 6: 현토+TTS (독립 진행 가능)
+  - 13개 병렬작업 그룹(A~O), 6개 마일스톤(M1~M6)
+  - 업무분장: 민철 48태스크 / 형 7개 리뷰포인트
