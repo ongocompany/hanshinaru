@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>커뮤니티 — 漢詩의 모든 것</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/daj3vwq.css">
+  <link rel="stylesheet" href="/shared/styles.css">
+  <style>
+    .comm-hero {
+      padding: 120px 32px 48px;
+      text-align: center;
+      background: linear-gradient(to bottom, #6e8387, #a4b8c4);
+      color: #fff;
+    }
+    .comm-hero h1 {
+      font-family: 'adobe-fangsong-std', fangsong, 'LXGW WenKai Mono TC', serif;
+      font-size: clamp(36px, 6vw, 52px);
+      margin-bottom: 8px;
+    }
+    .comm-hero p { font-size: 17px; color: rgba(255,255,255,0.7); }
+    .comm-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 48px 32px 64px;
+    }
+    .comm-card {
+      background: #fcfafa;
+      border: 1px solid #c8d3d5;
+      border-radius: 12px;
+      padding: 28px 20px;
+      text-align: center;
+      text-decoration: none;
+      color: #333;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .comm-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+    }
+    .comm-card.disabled {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+    .comm-card-icon { font-size: 36px; margin-bottom: 10px; }
+    .comm-card h3 { font-size: 16px; color: #6e8387; margin-bottom: 6px; }
+    .comm-card p { font-size: 13px; color: #888; line-height: 1.7; }
+    .comm-card .badge {
+      display: inline-block;
+      font-size: 11px; color: #856404;
+      background: #fff3cd; border-radius: 4px;
+      padding: 2px 8px; margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+
+  <section class="comm-hero fade-in">
+    <h1>커뮤니티</h1>
+    <p>한시를 사랑하는 사람들이 모이는 공간</p>
+  </section>
+
+  <section class="comm-cards">
+    <a href="/community/forum/" class="comm-card fade-in">
+      <div class="comm-card-icon">💬</div>
+      <h3>토론방</h3>
+      <p>한시에 대한 자유로운 이야기를 나눠보세요</p>
+    </a>
+    <a href="/community/showcase/" class="comm-card fade-in">
+      <div class="comm-card-icon">🏆</div>
+      <h3>한시자랑</h3>
+      <p>직접 지은 한시를 공유하고 피드백을 받아보세요</p>
+    </a>
+    <a href="/community/news/" class="comm-card fade-in">
+      <div class="comm-card-icon">📰</div>
+      <h3>관련 뉴스</h3>
+      <p>한시와 한문 관련 최신 소식을 모아봅니다</p>
+    </a>
+    <a href="/community/notice/" class="comm-card fade-in">
+      <div class="comm-card-icon">📢</div>
+      <h3>공지사항</h3>
+      <p>사이트 업데이트와 공지를 확인하세요</p>
+    </a>
+  </section>
+
+  <div id="footer-placeholder"></div>
+  <script src="/shared/auth-state.js"></script>
+  <script src="/shared/components.js"></script>
+</body>
+</html>

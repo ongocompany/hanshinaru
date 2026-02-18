@@ -1,0 +1,45 @@
+{
+  "generatedAt": "20260218_080902",
+  "mode": "live",
+  "model": "gemini-2.5-pro",
+  "poemsPath": "public/index/poems.full.owned.json",
+  "queuePath": "docs/research/13_심층번역_작업큐_260216_CH.csv",
+  "countRequested": 5,
+  "samples": [
+    {
+      "poemNoStr": "023",
+      "titleKo": "〈봄날 약야계에 배를 띄우다〉",
+      "poetKo": "기무잠",
+      "prompt": "아래 정보를 바탕으로 번역 산출물을 JSON으로 생성하라.\n\n- poemNoStr: 023\n- titleKo: 〈봄날 약야계에 배를 띄우다〉\n- poetKo: 기무잠\n- poemZh line count: 10\n- poemZh:\n幽意[3]無斷絶\n此去隨所偶[4]\n晩風吹行舟\n花路入溪口\n際夜[5]轉西壑\n隔山望南斗[6]\n潭煙飛溶溶[7]\n林月低向後\n生事[8]且瀰漫[9]\n願爲持竿叟[10]\n\n- jipyeongZh:\n[集評] ○ 有氣力 靜中看出 - 明 鍾惺, 《唐詩歸》 卷14\n○ 好境 妙語浮出 如不經心手者 - 明 潭元春, 《唐詩歸》 卷14\n\n- jipyeongZh가 비어 있으면 jipyeongKoLiteral은 반드시 \"해당 수록본에는 별도의 집평 원문이 실려 있지 않다.\" 사용.\n- notesOwned는 한국 학생이 헷갈리는 고유명사/전고/고어를 우선 선정.\n- notesOwned.head는 가능하면 원문 표기를 그대로 사용.\n- 시 번역은 과장하지 말고 원의미 충실 + 한국어 시어체 리듬 유지.\n- 반드시 아래 JSON 스키마 키 이름을 그대로 사용.\n\nJSON_SCHEMA_EXAMPLE:\n{\n  \"poemNoStr\": \"string\",\n  \"titleKo\": \"string\",\n  \"poetKo\": \"string\",\n  \"translationKoPoetic\": \"string (원문 행 수와 동일한 줄 수, 줄바꿈 유지)\",\n  \"jipyeongKoLiteral\": \"string (집평 원문 직역. 집평 원문이 비어 있으면 고정문장 사용)\",\n  \"notesOwned\": [\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    },\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    },\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    },\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    },\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    }\n  ],\n  \"commentaryKo\": \"string (3~6문장, 작품 정서/구도/핵심 이미지 해설)\"\n}",
+      "error": "Gemini API network error: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>"
+    },
+    {
+      "poemNoStr": "024",
+      "titleKo": "〈왕창령이 은거하던 곳에 머물다〉",
+      "poetKo": "상건",
+      "prompt": "아래 정보를 바탕으로 번역 산출물을 JSON으로 생성하라.\n\n- poemNoStr: 024\n- titleKo: 〈왕창령이 은거하던 곳에 머물다〉\n- poetKo: 상건\n- poemZh line count: 8\n- poemZh:\n淸溪深不測\n隱處唯孤雲\n松際露微月[2]\n淸光猶爲君\n茅亭宿花影\n藥院滋苔紋\n余亦謝時[3]去\n西山鸞鶴群[4]\n\n- jipyeongZh:\n[集評] ○ 建詩 似初發通莊 却尋野徑百里之外 方歸大道\n所以其旨遠 其興僻 佳句輒來 唯論意表\n至如松際露微月 淸光猶爲君 又山光悅鳥性 潭影空人心 此例十數句 竝可稱警策 - 唐 殷璠, 《河嶽英靈集》 卷上\n○ 情景沈冥 不類着色 - 宋 劉會孟, 《唐詩廣選》 卷1\n\n- jipyeongZh가 비어 있으면 jipyeongKoLiteral은 반드시 \"해당 수록본에는 별도의 집평 원문이 실려 있지 않다.\" 사용.\n- notesOwned는 한국 학생이 헷갈리는 고유명사/전고/고어를 우선 선정.\n- notesOwned.head는 가능하면 원문 표기를 그대로 사용.\n- 시 번역은 과장하지 말고 원의미 충실 + 한국어 시어체 리듬 유지.\n- 반드시 아래 JSON 스키마 키 이름을 그대로 사용.\n\nJSON_SCHEMA_EXAMPLE:\n{\n  \"poemNoStr\": \"string\",\n  \"titleKo\": \"string\",\n  \"poetKo\": \"string\",\n  \"translationKoPoetic\": \"string (원문 행 수와 동일한 줄 수, 줄바꿈 유지)\",\n  \"jipyeongKoLiteral\": \"string (집평 원문 직역. 집평 원문이 비어 있으면 고정문장 사용)\",\n  \"notesOwned\": [\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    },\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    },\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    },\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    },\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    }\n  ],\n  \"commentaryKo\": \"string (3~6문장, 작품 정서/구도/핵심 이미지 해설)\"\n}",
+      "error": "Gemini API network error: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>"
+    },
+    {
+      "poemNoStr": "025",
+      "titleKo": "〈고적, 설거와 함께 자은사 부도에 오르다〉",
+      "poetKo": "잠삼",
+      "prompt": "아래 정보를 바탕으로 번역 산출물을 JSON으로 생성하라.\n\n- poemNoStr: 025\n- titleKo: 〈고적, 설거와 함께 자은사 부도에 오르다〉\n- poetKo: 잠삼\n- poemZh line count: 22\n- poemZh:\n塔勢如湧出\n孤高聳天宮[3]\n登臨出世界[4]\n磴道盤虛空\n突兀[5]壓神州[6]\n崢嶸[7]如鬼工\n四角礙白日[8]\n七層摩蒼穹\n下窺指高鳥\n俯聽聞驚風\n連山若波濤\n奔湊如朝東[9]\n靑槐夾馳道[10]\n宮館何玲瓏[11]\n秋色從西來\n蒼然滿關中[12]\n五陵北原[13]上\n萬古靑濛濛[14]\n淨理[15]了可悟\n勝因[16]夙所宗\n誓將掛冠[17]去\n覺道資無窮\n\n- jipyeongZh:\n[集評] ○ 岑嘉州 五言古源出鮑照 而魄力已大\n至慈恩塔詩 秋色從西來 蒼然滿關中 五陵北原上 萬古靑濛濛 雄勁之槪 直與少陵匹敵 - 淸 施補華, 《峴傭說詩》\n\n- jipyeongZh가 비어 있으면 jipyeongKoLiteral은 반드시 \"해당 수록본에는 별도의 집평 원문이 실려 있지 않다.\" 사용.\n- notesOwned는 한국 학생이 헷갈리는 고유명사/전고/고어를 우선 선정.\n- notesOwned.head는 가능하면 원문 표기를 그대로 사용.\n- 시 번역은 과장하지 말고 원의미 충실 + 한국어 시어체 리듬 유지.\n- 반드시 아래 JSON 스키마 키 이름을 그대로 사용.\n\nJSON_SCHEMA_EXAMPLE:\n{\n  \"poemNoStr\": \"string\",\n  \"titleKo\": \"string\",\n  \"poetKo\": \"string\",\n  \"translationKoPoetic\": \"string (원문 행 수와 동일한 줄 수, 줄바꿈 유지)\",\n  \"jipyeongKoLiteral\": \"string (집평 원문 직역. 집평 원문이 비어 있으면 고정문장 사용)\",\n  \"notesOwned\": [\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    },\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    },\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    },\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    },\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    }\n  ],\n  \"commentaryKo\": \"string (3~6문장, 작품 정서/구도/핵심 이미지 해설)\"\n}",
+      "error": "Gemini API network error: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>"
+    },
+    {
+      "poemNoStr": "026",
+      "titleKo": "〈적이 물러간 뒤 관리에게 보인다〉병서",
+      "poetKo": "원결",
+      "prompt": "아래 정보를 바탕으로 번역 산출물을 JSON으로 생성하라.\n\n- poemNoStr: 026\n- titleKo: 〈적이 물러간 뒤 관리에게 보인다〉병서\n- poetKo: 원결\n- poemZh line count: 32\n- poemZh:\n癸卯歲[2] 西原[3]\n賊入道州 焚燒殺掠 幾盡而去\n明年 賊又攻永州[4]\n破邵[5] 不犯此州邊鄙[6]\n而退 豈力能制敵歟\n蓋蒙其傷憐而已\n諸使何爲忍苦徵歛\n故作詩一篇以示官吏\n\n\n昔歲逢太平\n山林二十年\n泉源[7]在庭戶\n洞壑[8]當門前\n井稅[9]有常期\n日晏猶得眠\n忽然遭世變\n數歲親戎旃[10]\n今來典斯郡[11]\n山夷[12]又紛然\n城小賊不屠\n人貧傷可憐\n是以陷鄰境\n此州獨見全\n使臣將王命[13]\n豈不如賊焉\n今彼徵歛者[14]\n迫之如火煎\n誰能絶人命\n以作時世賢[15]\n思欲委符節[16]\n引竿自刺船[17]\n將家就魚麥[18]\n歸老[19]江湖邊\n\n- jipyeongZh:\n(없음)\n\n- jipyeongZh가 비어 있으면 jipyeongKoLiteral은 반드시 \"해당 수록본에는 별도의 집평 원문이 실려 있지 않다.\" 사용.\n- notesOwned는 한국 학생이 헷갈리는 고유명사/전고/고어를 우선 선정.\n- notesOwned.head는 가능하면 원문 표기를 그대로 사용.\n- 시 번역은 과장하지 말고 원의미 충실 + 한국어 시어체 리듬 유지.\n- 반드시 아래 JSON 스키마 키 이름을 그대로 사용.\n\nJSON_SCHEMA_EXAMPLE:\n{\n  \"poemNoStr\": \"string\",\n  \"titleKo\": \"string\",\n  \"poetKo\": \"string\",\n  \"translationKoPoetic\": \"string (원문 행 수와 동일한 줄 수, 줄바꿈 유지)\",\n  \"jipyeongKoLiteral\": \"string (집평 원문 직역. 집평 원문이 비어 있으면 고정문장 사용)\",\n  \"notesOwned\": [\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    },\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    },\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    },\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    },\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    }\n  ],\n  \"commentaryKo\": \"string (3~6문장, 작품 정서/구도/핵심 이미지 해설)\"\n}",
+      "error": "Gemini API network error: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>"
+    },
+    {
+      "poemNoStr": "027",
+      "titleKo": "〈군의 관사에서 비가 오는 가운데 여러 문사들과 연회를 열며〉",
+      "poetKo": "위응물",
+      "prompt": "아래 정보를 바탕으로 번역 산출물을 JSON으로 생성하라.\n\n- poemNoStr: 027\n- titleKo: 〈군의 관사에서 비가 오는 가운데 여러 문사들과 연회를 열며〉\n- poetKo: 위응물\n- poemZh line count: 20\n- poemZh:\n兵衛森畫戟[3]\n宴寢凝淸香\n海上風雨至\n逍遙池閣涼\n煩疴[4]近消散\n嘉賓復滿堂\n自慙居處崇[5]\n未覩斯民康\n理會是非遣[6]\n性達形跡忘\n鮮肥屬時禁\n蔬果幸見嘗\n俯飮一杯酒\n仰聆金玉章[7]\n神歡體自輕\n意欲凌風翔\n吳中盛文史[8]\n群彦[9]今汪洋[10]\n方知大藩[11]地\n豈曰財賦强\n\n- jipyeongZh:\n[集評] ○ 詩話稱韋蘇州郡齋燕集首句 兵衛森畫戟 燕寢凝淸香 海上風雨至 逍遙池閣凉 爲一代絶唱\n余讀其全篇 每恨其結句 云吳中盛文史 羣彦今汪洋 方知大藩地 豈曰財賦强 深爲未稱\n後見宋人麗澤編 無後四句 三十年之疑 一旦釋之 - 明 楊愼, 《升菴集》 卷54, 〈韋應物蘇州郡齋燕集詩〉\n\n- jipyeongZh가 비어 있으면 jipyeongKoLiteral은 반드시 \"해당 수록본에는 별도의 집평 원문이 실려 있지 않다.\" 사용.\n- notesOwned는 한국 학생이 헷갈리는 고유명사/전고/고어를 우선 선정.\n- notesOwned.head는 가능하면 원문 표기를 그대로 사용.\n- 시 번역은 과장하지 말고 원의미 충실 + 한국어 시어체 리듬 유지.\n- 반드시 아래 JSON 스키마 키 이름을 그대로 사용.\n\nJSON_SCHEMA_EXAMPLE:\n{\n  \"poemNoStr\": \"string\",\n  \"titleKo\": \"string\",\n  \"poetKo\": \"string\",\n  \"translationKoPoetic\": \"string (원문 행 수와 동일한 줄 수, 줄바꿈 유지)\",\n  \"jipyeongKoLiteral\": \"string (집평 원문 직역. 집평 원문이 비어 있으면 고정문장 사용)\",\n  \"notesOwned\": [\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    },\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    },\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    },\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    },\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    }\n  ],\n  \"commentaryKo\": \"string (3~6문장, 작품 정서/구도/핵심 이미지 해설)\"\n}",
+      "error": "Gemini API network error: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>"
+    }
+  ]
+}

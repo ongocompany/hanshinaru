@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>한시의 변천사 — 漢詩의 모든 것</title>
+
+  <!-- 웹폰트: Adobe Fonts -->
+  <link rel="stylesheet" href="https://use.typekit.net/dje5vco.css">
+  <!-- 웹폰트: Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&family=Noto+Serif+KR:wght@200..900&family=Noto+Serif+TC:wght@200..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/shared/styles.css">
+  <style>
+    /* ===== Layout 5-b: 한시의 변천사 전용 ===== */
+    body {
+      overflow: hidden;
+      background: #fff;
+      color: #000;
+      padding-top: 73px; /* 고정 네비바 높이만큼 밀어내기 */
+    }
+
+    /* ===== 시대 탭바 컨테이너 (투명, 중앙 정렬용) ===== */
+    .era-bar-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    /* 시대 탭바 (1300px 제한, 은색 배경, 양쪽 그림자) */
+    .era-bar {
+      position: relative;
+      width: 100%;
+      max-width: 1300px;
+      background: var(--c-silver, #c8d3d5);
+      box-shadow: 5px 0 15px rgba(0,0,0,0.06), -5px 0 15px rgba(0,0,0,0.06);
+    }
+
+    /* 탭 목록: 1줄, 가운데 정렬, 가로 스크롤 */
+    .era-tab-bar {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      gap: 0;
+      padding: 0;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      background: transparent;
+      border-bottom: none;
+    }
+    .era-tab-bar::-webkit-scrollbar { display: none; }
+
+    /* 개별 탭 */
+    .era-tab {
+      padding: 14px 18px;
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.4);
+      cursor: pointer;
+      border-bottom: 3px solid transparent;
+      transition: color 0.25s, border-color 0.25s;
+      white-space: nowrap;
+      flex-shrink: 0;
+      user-select: none;
+      text-decoration: none;
+    }
+    .era-tab:hover {
+      color: rgba(0, 0, 0, 0.65);
+    }
+    .era-tab.active {
+      color: #000;
+      font-weight: 700;
+      border-bottom-color: #000;
+    }
+
+    /* 시대 구분자 | */
+    .era-sep {
+      color: rgba(0, 0, 0, 0.2);
+      font-size: 14px;
+      padding: 14px 0;
+      flex-shrink: 0;
+      user-select: none;
+      pointer-events: none;
+    }
+
+    /* 좌우 그라데이션 페이드 (40px) */
+    .era-fade {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 40px;
+      z-index: 5;
+      pointer-events: none;
+      transition: opacity 0.3s;
+      opacity: 0;
+    }
+    .era-fade-left {
+      left: 0;
+      background: linear-gradient(to right, var(--c-silver, #c8d3d5), transparent);
+    }
+    .era-fade-right {
+      right: 0;
+      background: linear-gradient(to left, var(--c-silver, #c8d3d5), transparent);
+    }
+
+    /* ===== 콘텐츠 영역 ===== */
+    .content-5b {
+      height: calc(100vh - 64px - 51px); /* nav(64px) + tab-bar(~51px) */
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      background: #fff;
+    }
+
+    .content-5b-wrapper {
+      width: 100%;
+      max-width: 1300px;
+      height: 100%;
+      background: #fff;
+      box-shadow: 5px 0 15px rgba(0,0,0,0.06), -5px 0 15px rgba(0,0,0,0.06);
+    }
+
+    .content-5b iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* 준비중 플레이스홀더 */
+    .content-5b-placeholder {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      text-align: center;
+      padding: 32px;
+    }
+
+    .content-5b-placeholder .placeholder-icon {
+      font-size: 64px;
+      margin-bottom: 16px;
+      opacity: 0.3;
+    }
+
+    .content-5b-placeholder h2 {
+      font-size: 20px;
+      color: #000;
+      margin-bottom: 8px;
+    }
+
+    .content-5b-placeholder p {
+      font-size: 14px;
+      line-height: 1.8;
+      color: #999;
+      max-width: 400px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="nav-placeholder"></div>
+
+  <!-- ===== 시대 탭바 ===== -->
+  <div class="era-bar-container">
+    <div class="era-bar">
+      <div class="era-tab-bar" id="eraTabBar">
+        <span class="era-tab" data-era="chunqiu">춘추전국</span>
+        <span class="era-sep">|</span>
+        <span class="era-tab" data-era="han">한</span>
+        <span class="era-sep">|</span>
+        <span class="era-tab" data-era="weijin">위진남북조</span>
+        <span class="era-sep">|</span>
+        <span class="era-tab active" data-era="tang">당</span>
+        <span class="era-sep">|</span>
+        <span class="era-tab" data-era="wudai">오대십국</span>
+        <span class="era-sep">|</span>
+        <span class="era-tab" data-era="song">송</span>
+        <span class="era-sep">|</span>
+        <span class="era-tab" data-era="yuan">원</span>
+        <span class="era-sep">|</span>
+        <span class="era-tab" data-era="ming">명</span>
+        <span class="era-sep">|</span>
+        <span class="era-tab" data-era="qing">청</span>
+      </div>
+      <div class="era-fade era-fade-left"></div>
+      <div class="era-fade era-fade-right"></div>
+    </div>
+  </div>
+
+  <!-- ===== 콘텐츠 영역 ===== -->
+  <div class="content-5b" id="content5b">
+    <div class="content-5b-wrapper">
+      <iframe id="timelineFrame" src="/timeline/?embed=true" title="당나라 타임라인"></iframe>
+    </div>
+  </div>
+
+  <!-- 푸터 없음: 풀스크린 레이아웃 -->
+
+  <script src="/shared/auth-state.js"></script>
+  <script src="/shared/components.js"></script>
+
+  <script>
+  // ===== 시대 탭바 인터랙션 =====
+  (function () {
+    'use strict';
+
+    var tabBar = document.getElementById('eraTabBar');
+    var content = document.getElementById('content5b');
+    var fadeL = document.querySelector('.era-fade-left');
+    var fadeR = document.querySelector('.era-fade-right');
+    if (!tabBar || !content) return;
+
+    // 콘텐츠가 준비된 시대
+    var readyEras = new Set(['tang']);
+
+    // 시대 한자 이름 매핑
+    var eraNames = {
+      chunqiu: '춘추전국(春秋戰國)', han: '한(漢)', weijin: '위진남북조(魏晉南北朝)',
+      tang: '당(唐)', wudai: '오대십국(五代十國)', song: '송(宋)',
+      yuan: '원(元)', ming: '명(明)', qing: '청(清)'
+    };
+
+    // ── 그라데이션 페이드 업데이트 ──
+    function updateFades() {
+      if (!fadeL || !fadeR) return;
+      fadeL.style.opacity = tabBar.scrollLeft > 5 ? '1' : '0';
+      fadeR.style.opacity =
+        (tabBar.scrollLeft + tabBar.offsetWidth < tabBar.scrollWidth - 5) ? '1' : '0';
+    }
+
+    tabBar.addEventListener('scroll', updateFades, { passive: true });
+    updateFades();
+
+    // ── 초기 활성 탭 중앙 정렬 ──
+    setTimeout(function () {
+      var active = tabBar.querySelector('.era-tab.active');
+      if (active) centerTab(active, false);
+    }, 150);
+
+    // ── 탭 클릭 ──
+    tabBar.addEventListener('click', function (e) {
+      var tab = e.target.closest('.era-tab');
+      if (!tab || tab.classList.contains('active')) return;
+
+      // 활성 탭 전환
+      tabBar.querySelectorAll('.era-tab').forEach(function (t) {
+        t.classList.remove('active');
+      });
+      tab.classList.add('active');
+
+      // 선택 탭을 중앙으로 스크롤 애니메이션
+      centerTab(tab, true);
+
+      // 콘텐츠 전환
+      switchContent(tab.dataset.era);
+    });
+
+    // ── 탭 중앙 정렬 ──
+    function centerTab(tab, smooth) {
+      var scrollTarget = tab.offsetLeft - (tabBar.offsetWidth / 2) + (tab.offsetWidth / 2);
+      tabBar.scrollTo({
+        left: scrollTarget,
+        behavior: smooth ? 'smooth' : 'auto'
+      });
+    }
+
+    // ── 콘텐츠 전환 ──
+    function switchContent(era) {
+      if (readyEras.has(era)) {
+        content.innerHTML =
+          '<div class="content-5b-wrapper">' +
+          '<iframe id="timelineFrame" src="/timeline/?embed=true" title="당나라 타임라인"></iframe>' +
+          '</div>';
+      } else {
+        content.innerHTML =
+          '<div class="content-5b-wrapper">' +
+          '<div class="content-5b-placeholder">' +
+          '<div class="placeholder-icon">&#128218;</div>' +
+          '<h2>' + (eraNames[era] || era) + '</h2>' +
+          '<p>준비중입니다</p>' +
+          '</div>' +
+          '</div>';
+      }
+    }
+
+  })();
+  </script>
+
+</body>
+</html>

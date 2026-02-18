@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>관련 뉴스 — 漢詩의 모든 것</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/daj3vwq.css">
+  <link rel="stylesheet" href="/shared/styles.css">
+  <style>
+    .news-hero {
+      padding: 120px 32px 48px;
+      text-align: center;
+      background: linear-gradient(to bottom, #6e8387, #a4b8c4);
+      color: #fff;
+    }
+    .news-hero h1 {
+      font-family: 'adobe-fangsong-std', fangsong, 'LXGW WenKai Mono TC', serif;
+      font-size: clamp(32px, 5vw, 48px);
+      margin-bottom: 8px;
+    }
+    .news-hero p { font-size: 16px; color: rgba(255,255,255,0.7); }
+    .news-body {
+      max-width: 800px; margin: 0 auto;
+      padding: 32px;
+    }
+    .news-list { list-style: none; }
+    .news-item {
+      padding: 20px 0;
+      border-bottom: 1px solid #eee;
+    }
+    .news-item:last-child { border-bottom: none; }
+    .news-item h3 {
+      font-size: 17px; color: #6e8387; margin-bottom: 4px;
+    }
+    .news-item h3 a {
+      color: #6e8387; text-decoration: none;
+    }
+    .news-item h3 a:hover { text-decoration: underline; }
+    .news-meta {
+      font-size: 12px; color: #999; margin-bottom: 6px;
+    }
+    .news-summary {
+      font-size: 14px; color: #666; line-height: 1.7;
+    }
+    .news-loading {
+      text-align: center; padding: 48px; color: #999;
+    }
+  </style>
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+
+  <section class="news-hero fade-in">
+    <h1>관련 뉴스</h1>
+    <p>한시와 한문 관련 최신 소식</p>
+  </section>
+
+  <section class="news-body">
+    <div class="news-loading" id="newsLoading">뉴스를 불러오는 중...</div>
+    <ul class="news-list" id="newsList" style="display:none;"></ul>
+    <div id="newsEmpty" style="display:none; text-align:center; padding:48px; color:#999;">
+      <p>등록된 뉴스가 없습니다.</p>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+  <script src="/shared/auth-state.js"></script>
+  <script src="/shared/components.js"></script>
+  <script>
+    // 뉴스 데이터 로드 (news_articles.json이 있으면 표시)
+    (async function() {
+      const loading = document.getElementById('newsLoading');
+      const list = document.getElementById('newsList');
+      const empty = document.getElementById('newsEmpty');
+      try {
+        const res = await fetch('/public/index/news_articles.json');
+        if (!res.ok) throw new Error('no data');
+        const articles = await res.json();
+        if (!articles || articles.length === 0) {
+          loading.style.display = 'none';
+          empty.style.display = 'block';
+          return;
+        }
+        list.innerHTML = articles.slice(0, 20).map(a => `
+          <li class="news-item fade-in">
+            <h3><a href="${a.url || '#'}" target="_blank" rel="noopener">${escapeHTML(a.title || '제목 없음')}</a></h3>
+            <div class="news-meta">${escapeHTML(a.source || '')} · ${a.date || ''}</div>
+            <p class="news-summary">${escapeHTML(a.summary || '')}</p>
+          </li>
+        `).join('');
+        loading.style.display = 'none';
+        list.style.display = 'block';
+      } catch (e) {
+        loading.style.display = 'none';
+        empty.style.display = 'block';
+      }
+
+      function escapeHTML(str) {
+        const d = document.createElement('div');
+        d.textContent = str;
+        return d.innerHTML;
+      }
+    })();
+  </script>
+</body>
+</html>

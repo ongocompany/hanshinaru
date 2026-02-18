@@ -1,0 +1,795 @@
+/* =============================================================
+   한시의모든것 — 게시판 공용 스타일시트
+   피드 스타일 커뮤니티 게시판 (Reddit/X 스타일)
+   shared/styles.css 의 CSS 변수를 참조
+   ============================================================= */
+
+/* ===== Hero ===== */
+.board-hero {
+  padding: 120px 32px 60px;
+  text-align: center;
+  background: linear-gradient(to bottom, var(--c-slate-grey), var(--c-powder-blue));
+  color: #fff;
+}
+
+.board-hero-title {
+  font-family: var(--font-zh);
+  font-size: clamp(var(--fs-h1), 6vw, 56px);
+  margin-bottom: 8px;
+}
+
+.board-hero-subtitle {
+  font-size: var(--fs-body);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* ===== Feed Container ===== */
+.board-body {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+
+.board-loading {
+  text-align: center;
+  padding: 64px 16px;
+  font-size: var(--fs-body);
+  color: var(--c-faint);
+}
+
+.board-empty {
+  text-align: center;
+  padding: 64px 16px;
+  font-size: var(--fs-body);
+  color: var(--c-faint);
+}
+
+/* ===== Toolbar ===== */
+.board-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.board-write-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--c-slate-grey);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-family: var(--font-ko);
+  font-size: var(--fs-small);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.board-write-btn:hover {
+  background: var(--c-powder-blue);
+}
+
+.board-count {
+  font-size: var(--fs-small);
+  color: var(--c-faint);
+}
+
+/* ===== Feed Card ===== */
+.board-feed-card {
+  background: #fff;
+  border: 1px solid var(--c-silver);
+  border-radius: 12px;
+  margin-bottom: 16px;
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+.board-feed-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+/* --- Card Header --- */
+.board-card-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 20px 0;
+}
+
+.board-card-author {
+  font-size: var(--fs-small);
+  font-weight: 700;
+  color: var(--c-muted);
+}
+
+.board-card-time {
+  font-size: var(--fs-small);
+  color: var(--c-faint);
+  margin-left: auto;
+}
+
+.board-card-more {
+  position: relative;
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: var(--c-faint);
+  cursor: pointer;
+  padding: 4px 8px;
+  line-height: 1;
+  border-radius: 4px;
+  transition: background 0.15s;
+}
+.board-card-more:hover {
+  background: var(--c-bright-snow);
+}
+
+.board-card-more-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  min-width: 120px;
+  background: #fff;
+  border: 1px solid var(--c-silver);
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  z-index: 50;
+  overflow: hidden;
+}
+.board-card-more-menu.show {
+  display: block;
+}
+.board-card-more-menu button {
+  display: block;
+  width: 100%;
+  padding: 10px 16px;
+  background: none;
+  border: none;
+  font-family: var(--font-ko);
+  font-size: var(--fs-small);
+  color: var(--c-ink);
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.board-card-more-menu button:hover {
+  background: var(--c-bright-snow);
+}
+
+/* --- Card Title --- */
+.board-card-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--c-heading);
+  padding: 8px 20px 0;
+  line-height: 1.5;
+}
+
+/* --- Card Body --- */
+.board-card-body {
+  font-size: var(--fs-body);
+  color: var(--c-ink);
+  line-height: 1.8;
+  padding: 8px 20px;
+  max-height: 7.5em;
+  overflow: hidden;
+  position: relative;
+}
+.board-card-body.expanded {
+  max-height: none;
+}
+
+/* --- Expand Link --- */
+.board-card-expand {
+  display: block;
+  padding: 0 20px 8px;
+  font-size: var(--fs-small);
+  color: var(--c-powder-blue);
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.board-card-expand:hover {
+  color: var(--c-slate-grey);
+}
+
+/* --- Card Footer --- */
+.board-card-footer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 20px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.board-card-like-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: none;
+  border: none;
+  font-family: var(--font-ko);
+  font-size: var(--fs-small);
+  color: var(--c-faint);
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: color 0.2s, background 0.15s;
+}
+.board-card-like-btn:hover {
+  background: #fff0f0;
+  color: #e74c3c;
+}
+.board-card-like-btn.liked {
+  color: #e74c3c;
+}
+
+.board-card-comment-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: none;
+  border: none;
+  font-family: var(--font-ko);
+  font-size: var(--fs-small);
+  color: var(--c-faint);
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: color 0.2s, background 0.15s;
+}
+.board-card-comment-toggle:hover {
+  background: var(--c-bright-snow);
+  color: var(--c-slate-grey);
+}
+
+.board-pin-badge {
+  display: inline-block;
+  background: #fff3cd;
+  color: #856404;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 4px;
+  line-height: 1.6;
+}
+
+/* ===== Comments Section ===== */
+.board-comments {
+  display: none;
+  border-top: 1px solid #f0f0f0;
+}
+.board-comments.open {
+  display: block;
+}
+
+/* --- Comment Form --- */
+.board-comment-form {
+  padding: 16px 20px;
+}
+
+.board-comment-input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid var(--c-silver);
+  border-radius: 8px;
+  font-family: var(--font-ko);
+  font-size: var(--fs-small);
+  line-height: 1.6;
+  resize: vertical;
+  min-height: 60px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.board-comment-input:focus {
+  border-color: var(--c-powder-blue);
+  box-shadow: 0 0 0 3px rgba(164, 184, 196, 0.2);
+}
+
+.board-comment-submit {
+  margin-top: 8px;
+  padding: 6px 16px;
+  background: var(--c-slate-grey);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-family: var(--font-ko);
+  font-size: var(--fs-small);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.board-comment-submit:hover {
+  background: var(--c-powder-blue);
+}
+
+.board-comment-login-hint {
+  padding: 20px;
+  text-align: center;
+  font-size: var(--fs-small);
+  color: var(--c-faint);
+  border: 1px dashed var(--c-silver);
+  border-radius: 8px;
+  margin: 16px 20px;
+}
+
+/* ===== Comment Items ===== */
+.board-comment-item {
+  padding: 12px 20px;
+  border-bottom: 1px solid #f5f5f5;
+}
+.board-comment-item:last-child {
+  border-bottom: none;
+}
+.board-comment-item.reply {
+  margin-left: 32px;
+}
+
+.board-comment-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.board-comment-author {
+  font-size: var(--fs-small);
+  font-weight: 700;
+  color: var(--c-muted);
+}
+
+.board-comment-date {
+  font-size: var(--fs-small);
+  color: var(--c-faint);
+}
+
+.board-comment-reply-btn {
+  background: none;
+  border: none;
+  font-family: var(--font-ko);
+  font-size: 12px;
+  color: var(--c-powder-blue);
+  cursor: pointer;
+  padding: 0;
+  margin-left: auto;
+  transition: color 0.2s;
+}
+.board-comment-reply-btn:hover {
+  color: var(--c-slate-grey);
+}
+
+.board-comment-delete {
+  background: none;
+  border: none;
+  font-family: var(--font-ko);
+  font-size: 12px;
+  color: var(--c-faint);
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.2s;
+}
+.board-comment-delete:hover {
+  color: #e74c3c;
+}
+
+.board-comment-body {
+  font-size: var(--fs-small);
+  color: var(--c-ink);
+  line-height: 1.7;
+}
+
+/* --- Reply Form (inline) --- */
+.board-reply-form {
+  display: none;
+  margin-left: 32px;
+  padding: 12px 20px;
+}
+.board-reply-form.open {
+  display: block;
+}
+
+/* ===== Write Form ===== */
+.board-write-overlay {
+  padding: 0;
+}
+
+.board-write-heading {
+  font-family: var(--font-ko);
+  font-size: var(--fs-h2);
+  color: var(--c-heading);
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.board-form-group {
+  margin-bottom: 20px;
+}
+.board-form-group label {
+  display: block;
+  font-size: var(--fs-small);
+  font-weight: 600;
+  color: var(--c-muted);
+  margin-bottom: 6px;
+}
+
+.board-form-input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid var(--c-silver);
+  border-radius: 8px;
+  font-family: var(--font-ko);
+  font-size: var(--fs-body);
+  color: var(--c-ink);
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.board-form-input:focus {
+  border-color: var(--c-powder-blue);
+  box-shadow: 0 0 0 3px rgba(164, 184, 196, 0.2);
+}
+
+.board-form-textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid var(--c-silver);
+  border-radius: 8px;
+  font-family: var(--font-ko);
+  font-size: var(--fs-body);
+  color: var(--c-ink);
+  line-height: 1.8;
+  resize: vertical;
+  min-height: 160px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.board-form-textarea:focus {
+  border-color: var(--c-powder-blue);
+  box-shadow: 0 0 0 3px rgba(164, 184, 196, 0.2);
+}
+
+/* zh 폰트 변형 */
+.board-form-input.zh,
+.board-form-textarea.zh {
+  font-family: var(--font-zh);
+}
+
+.board-form-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.board-submit-btn {
+  padding: 10px 24px;
+  background: var(--c-slate-grey);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-family: var(--font-ko);
+  font-size: var(--fs-small);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.board-submit-btn:hover {
+  background: var(--c-powder-blue);
+}
+
+.board-cancel-btn {
+  padding: 10px 24px;
+  background: #fff;
+  color: var(--c-muted);
+  border: 1px solid var(--c-silver);
+  border-radius: 8px;
+  font-family: var(--font-ko);
+  font-size: var(--fs-small);
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+}
+.board-cancel-btn:hover {
+  border-color: var(--c-powder-blue);
+  color: var(--c-slate-grey);
+}
+
+/* ===== Showcase Poem Card ===== */
+.board-poem-display {
+  background: var(--c-bright-snow);
+  border: 1px solid var(--c-silver);
+  border-radius: 12px;
+  text-align: center;
+  padding: 32px;
+  margin: 8px 20px;
+}
+
+.board-poem-title {
+  font-family: var(--font-zh);
+  font-size: var(--fs-h2);
+  color: var(--c-heading);
+  letter-spacing: 0.08em;
+  margin-bottom: 16px;
+}
+
+.board-poem-body {
+  font-family: var(--font-zh);
+  font-size: var(--fs-lead);
+  color: var(--c-ink);
+  line-height: 2.2;
+  margin-bottom: 16px;
+}
+
+.board-poem-translation {
+  font-size: var(--fs-body);
+  color: var(--c-muted);
+  line-height: 1.8;
+  border-top: 1px dashed var(--c-silver);
+  padding-top: 16px;
+  margin-top: 16px;
+}
+
+.board-poem-notes {
+  font-size: var(--fs-small);
+  color: var(--c-faint);
+  text-align: left;
+  background: #fff;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-top: 16px;
+  line-height: 1.7;
+}
+
+/* ===== Board.js Render.feed() 전용 ===== */
+.board-toolbar-title {
+  font-family: var(--font-ko);
+  font-size: var(--fs-h2);
+  color: var(--c-heading);
+  font-weight: 700;
+  margin: 0;
+}
+
+.board-feed { /* #boardFeed 래퍼 */ }
+
+.board-detail-nav {
+  padding: 16px 0 8px;
+}
+
+.board-back-btn {
+  background: none;
+  border: none;
+  font-family: var(--font-ko);
+  font-size: var(--fs-body);
+  color: var(--c-powder-blue);
+  cursor: pointer;
+  padding: 4px 0;
+  transition: color 0.2s;
+}
+.board-back-btn:hover {
+  color: var(--c-slate-grey);
+}
+
+.board-pinned-badge {
+  display: inline;
+  color: #856404;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.board-error {
+  text-align: center;
+  padding: 64px 16px;
+  font-size: var(--fs-body);
+  color: #e74c3c;
+}
+
+.board-comments-header {
+  padding: 12px 20px;
+  font-size: var(--fs-small);
+  font-weight: 700;
+  color: var(--c-muted);
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.board-comments-loading {
+  padding: 16px 20px;
+  text-align: center;
+  font-size: var(--fs-small);
+  color: var(--c-faint);
+}
+
+.board-comment-list { /* 댓글 목록 래퍼 */ }
+
+.board-comment-delete-btn {
+  background: none;
+  border: none;
+  font-family: var(--font-ko);
+  font-size: 12px;
+  color: var(--c-faint);
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.2s;
+}
+.board-comment-delete-btn:hover {
+  color: #e74c3c;
+}
+
+.board-card-more-btn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: var(--c-faint);
+  cursor: pointer;
+  padding: 4px 8px;
+  line-height: 1;
+  border-radius: 4px;
+  transition: background 0.15s;
+}
+.board-card-more-btn:hover {
+  background: var(--c-bright-snow);
+}
+
+/* 답글 인라인 폼 */
+.board-reply-form {
+  margin-left: 32px;
+  padding: 12px 20px;
+}
+
+.board-reply-input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid var(--c-silver);
+  border-radius: 8px;
+  font-family: var(--font-ko);
+  font-size: var(--fs-small);
+  line-height: 1.6;
+  resize: vertical;
+  min-height: 48px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.board-reply-input:focus {
+  border-color: var(--c-powder-blue);
+}
+
+.board-reply-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.board-reply-submit {
+  padding: 4px 14px;
+  background: var(--c-slate-grey);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-family: var(--font-ko);
+  font-size: var(--fs-small);
+  cursor: pointer;
+}
+.board-reply-submit:hover {
+  background: var(--c-powder-blue);
+}
+
+.board-reply-cancel {
+  padding: 4px 14px;
+  background: none;
+  color: var(--c-faint);
+  border: 1px solid var(--c-silver);
+  border-radius: 6px;
+  font-family: var(--font-ko);
+  font-size: var(--fs-small);
+  cursor: pointer;
+}
+
+.board-comment-login-hint a {
+  color: var(--c-powder-blue);
+  text-decoration: none;
+}
+.board-comment-login-hint a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Load More ===== */
+.board-load-more-wrap {
+  text-align: center;
+  padding: 24px 0;
+}
+
+.board-load-more-btn {
+  display: inline-block;
+  padding: 12px 32px;
+  background: #fff;
+  color: var(--c-slate-grey);
+  border: 1px solid var(--c-silver);
+  border-radius: 8px;
+  font-family: var(--font-ko);
+  font-size: var(--fs-small);
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s, color 0.2s;
+}
+.board-load-more-btn:hover {
+  border-color: var(--c-powder-blue);
+  background: var(--c-bright-snow);
+  color: var(--c-powder-blue);
+}
+.board-load-more-btn:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.board-load-more {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  margin: 24px auto 0;
+  padding: 12px 24px;
+  background: #fff;
+  color: var(--c-slate-grey);
+  border: 1px solid var(--c-silver);
+  border-radius: 8px;
+  font-family: var(--font-ko);
+  font-size: var(--fs-small);
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s, color 0.2s;
+}
+.board-load-more:hover {
+  border-color: var(--c-powder-blue);
+  background: var(--c-bright-snow);
+  color: var(--c-powder-blue);
+}
+
+/* ===== Responsive (max-width: 640px) ===== */
+@media (max-width: 640px) {
+  .board-body {
+    padding: 20px 12px 48px;
+  }
+
+  .board-hero {
+    padding: 80px 20px 40px;
+  }
+
+  .board-card-header {
+    padding: 12px 16px 0;
+  }
+
+  .board-card-title {
+    padding: 6px 16px 0;
+  }
+
+  .board-card-body {
+    padding: 6px 16px;
+  }
+
+  .board-card-expand {
+    padding: 0 16px 6px;
+  }
+
+  .board-card-footer {
+    padding: 10px 16px;
+  }
+
+  .board-comment-item.reply {
+    margin-left: 20px;
+  }
+
+  .board-reply-form {
+    margin-left: 20px;
+  }
+
+  .board-poem-display {
+    margin: 8px 16px;
+    padding: 24px 16px;
+  }
+
+  .board-comment-form {
+    padding: 12px 16px;
+  }
+
+  .board-comment-item {
+    padding: 10px 16px;
+  }
+
+  .board-comment-login-hint {
+    margin: 12px 16px;
+  }
+}

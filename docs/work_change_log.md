@@ -4187,3 +4187,80 @@
 - Notes:
   - 네비 하단 그림자는 0.06 불투명도로는 어두운 히어로 배경 위에서 안 보여 0.3으로 올림
   - 1030px = poem-card 5개(190px) + gap 4개(20px) 통일 폭
+
+---
+
+## [Task ID] 202602182000-claude-site-restructure
+
+### START
+- Time: 2026-02-18 20:00
+- Owner: Claude
+- Requester: JIN
+- Request Summary: 사이트 전체 구조 개편 — shared 공용 시스템 구축, 커뮤니티 게시판 Supabase 연동, 인증 시스템 구축, Google OAuth 연동
+- Why: (1) 각 서브페이지마다 중복되던 네비/푸터를 shared 공용 시스템으로 통합 (2) 커뮤니티 3개 게시판(토론방/한시자랑/공지사항)을 Supabase DB 연동 피드형으로 구현 (3) 이메일+소셜 로그인 시스템 구축
+- Planned Scope:
+  - shared 공용 시스템 (nav.html, footer.html, styles.css, components.js)
+  - 인증 시스템 (auth/, supabase.js, auth-state.js)
+  - 커뮤니티 게시판 (board.js, board.css, forum/showcase/notice)
+  - 서브페이지 6개 shared 전환
+  - Google OAuth 연동
+- Status: In Progress
+
+### END
+- Time: 2026-02-18 23:50
+- Status: Done
+- Changed Files:
+
+  **[A] shared 공용 시스템 구축**
+  - `shared/nav.html` (신규) — 전체 사이트 공용 네비게이션 바, 드롭다운 메뉴 5개 (중국한시/한국한시/커뮤니티/한자한문/작성도우미), 검색 버튼, 햄버거 메뉴
+  - `shared/footer.html` (신규) — 공용 푸터, 사이트 링크 3열 구성
+  - `shared/styles.css` (대폭 수정) — 공용 CSS 변수, 네비/푸터 스타일, 반응형, top-nav--dark 테마
+  - `shared/components.js` (대폭 수정) — nav.html/footer.html fetch 삽입, NavAuth 로그인/로그아웃 UI(아바타+드롭다운), AuthState 연동, 검색 말풍선 동적 생성
+
+  **[B] 인증(Auth) 시스템**
+  - `auth/index.html` (신규) — 이메일 로그인/회원가입/비밀번호 찾기 + Google/카카오/네이버 OAuth 버튼, 탭 전환 UI, Supabase Auth SDK 연동
+  - `shared/supabase.js` (신규) — `window.sb = supabase.createClient(URL, KEY)` 전역 클라이언트
+  - `shared/auth-state.js` (신규) — localStorage에서 Supabase 세션 읽기 (SDK 없이 동작), `AuthState.getUser()` / `.isLoggedIn()` API 제공
+
+  **[C] 커뮤니티 게시판 시스템**
+  - `shared/board.js` (신규, ~1358줄) — 피드형 게시판 공용 엔진. CRUD API(Supabase 직접 호출), 피드 카드 렌더링, 글쓰기/수정 폼, 댓글+대댓글(1단계) 트리, 좋아요 토글, 본문 접기/펼치기, 페이지네이션, 이벤트 위임(data-action), showcase 전용 시 입력/표시 UI
+  - `shared/board.css` (신규) — 피드형 게시판 전체 스타일. 카드 레이아웃, 시 전용 박스, 댓글/대댓글 들여쓰기, 작성폼, 반응형
+  - `community/forum/index.html` (전면 재작성) — 토론방 게시판. Board.init({ board:'forum', canWrite: user=>!!user })
+  - `community/showcase/index.html` (전면 재작성) — 한시자랑 게시판. Board.init({ board:'showcase', canWrite: user=>!!user })
+  - `community/notice/index.html` (전면 재작성) — 공지사항 게시판. Board.init({ board:'notice', canWrite: user=>user&&user.role==='admin' })
+  - `community/index.html` (수정) — 허브 페이지에서 forum/showcase/notice 카드 disabled 제거, "서버 준비 후 오픈" 배지 제거
+
+  **[D] 서브페이지 shared 전환 (6개 페이지)**
+  - `index.html` — 인라인 네비/푸터 → `<div id="nav-placeholder">` + shared/components.js fetch 방식으로 전환
+  - `history/index.html` — 동일 전환
+  - `poem/index.html` — 동일 전환
+  - `poets/index.html` — 동일 전환
+  - `tang300/index.html` — 동일 전환
+  - `timeline/index.html` — 동일 전환
+  - 모든 페이지에 `auth-state.js` script 태그 추가
+
+  **[E] 네비게이션 활성화**
+  - `shared/nav.html` — 커뮤니티 드롭다운 `<span class="disabled">` → `<a href="/community/">` 활성화, 하위 링크 disabled 제거
+
+  **[F] Google OAuth 연동**
+  - Supabase 대시보드 → Authentication → Providers → Google 활성화 + Client ID/Secret 등록
+  - `auth/index.html`의 `oauthLogin('google')` 함수가 `sb.auth.signInWithOAuth()` 호출
+
+  **[G] Supabase DB (형이 대시보드에서 직접 실행)**
+  - 테이블 4개: `profiles`, `posts`, `comments`, `likes`
+  - RLS 정책: 누구나 읽기, 로그인 유저 글쓰기, 본인만 수정/삭제
+  - DB 함수: `toggle_like`, `add_comment`, `delete_comment`, `increment_view_count`
+  - 트리거: `on_auth_user_created` → profiles 자동 생성
+
+- Validation:
+  - 공용 네비/푸터 전 페이지 삽입 확인
+  - 로그인 페이지(auth/) 이메일+Google OAuth UI 확인
+  - 커뮤니티 3개 게시판 페이지 로드 확인
+  - board.js ↔ DB 스키마 컬럼명 동기화 확인 (author_id, likes 테이블)
+- Notes:
+  - board.js에서 에이전트가 생성한 코드의 컬럼명 불일치(user_id→author_id, post_likes→likes) 수정 완료
+  - board.css에서 JS가 참조하는 미싱 클래스 ~20개 추가 완료
+  - 카카오 OAuth 미연동 (다음 작업)
+  - 네이버 OAuth는 Supabase 미지원으로 보류
+  - 게시판 실제 CRUD 테스트 미완 (다음 세션에서 진행)
+  - 모바일 반응형 테스트 미완

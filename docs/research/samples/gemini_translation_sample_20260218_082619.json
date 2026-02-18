@@ -1,0 +1,17 @@
+{
+  "generatedAt": "20260218_082619",
+  "mode": "live",
+  "model": "gemini-2.5-pro",
+  "poemsPath": "public/index/poems.full.owned.json",
+  "queuePath": "docs/research/13_심층번역_작업큐_260216_CH.csv",
+  "countRequested": 1,
+  "samples": [
+    {
+      "poemNoStr": "023",
+      "titleKo": "〈봄날 약야계에 배를 띄우다〉",
+      "poetKo": "기무잠",
+      "prompt": "아래 정보를 바탕으로 번역 산출물을 JSON으로 생성하라.\n\n- poemNoStr: 023\n- titleKo: 〈봄날 약야계에 배를 띄우다〉\n- poetKo: 기무잠\n- poemZh line count: 10\n- poemZh:\n幽意[3]無斷絶\n此去隨所偶[4]\n晩風吹行舟\n花路入溪口\n際夜[5]轉西壑\n隔山望南斗[6]\n潭煙飛溶溶[7]\n林月低向後\n生事[8]且瀰漫[9]\n願爲持竿叟[10]\n\n- jipyeongZh:\n[集評] ○ 有氣力 靜中看出 - 明 鍾惺, 《唐詩歸》 卷14\n○ 好境 妙語浮出 如不經心手者 - 明 潭元春, 《唐詩歸》 卷14\n\n- jipyeongZh가 비어 있으면 jipyeongKoLiteral은 반드시 \"해당 수록본에는 별도의 집평 원문이 실려 있지 않다.\" 사용.\n- notesOwned는 한국 학생이 헷갈리는 고유명사/전고/고어를 우선 선정.\n- notesOwned.head는 가능하면 원문 표기를 그대로 사용.\n- 시 번역은 과장하지 말고 원의미 충실 + 한국어 시어체 리듬 유지.\n- 반드시 아래 JSON 스키마 키 이름을 그대로 사용.\n\nJSON_SCHEMA_EXAMPLE:\n{\n  \"poemNoStr\": \"string\",\n  \"titleKo\": \"string\",\n  \"poetKo\": \"string\",\n  \"translationKoPoetic\": \"string (원문 행 수와 동일한 줄 수, 줄바꿈 유지)\",\n  \"jipyeongKoLiteral\": \"string (집평 원문 직역. 집평 원문이 비어 있으면 고정문장 사용)\",\n  \"notesOwned\": [\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    },\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    },\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    },\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    },\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    }\n  ],\n  \"commentaryKo\": \"string (3~6문장, 작품 정서/구도/핵심 이미지 해설)\"\n}",
+      "error": "Gemini API network error: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    }
+  ]
+}

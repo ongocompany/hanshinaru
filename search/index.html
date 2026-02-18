@@ -1,0 +1,1510 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>검색 — 한시의모든것</title>
+  <link rel="stylesheet" href="https://use.typekit.net/dje5vco.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&family=Noto+Serif+KR:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/shared/styles.css">
+  <style>
+    /* ===== 검색 페이지 전용 스타일 ===== */
+    body { padding-top: 64px; background: #fff; }
+
+    /* 검색 페이지 컨테이너 */
+    .search-page {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* ===== 검색 헤더 (sticky) ===== */
+    .search-header {
+      position: sticky;
+      top: 64px;
+      background: #fff;
+      z-index: 50;
+      padding: 24px 0 0;
+    }
+
+    /* 검색 바 */
+    .search-bar {
+      position: relative;
+      margin-bottom: 16px;
+    }
+    .search-bar svg {
+      position: absolute; left: 14px; top: 50%; transform: translateY(-50%);
+      color: #999; pointer-events: none;
+    }
+    .search-bar input {
+      width: 100%;
+      padding: 12px 16px 12px 42px;
+      border: 1px solid #c8d3d5;
+      border-radius: 24px;
+      font-size: 16px;
+      font-family: var(--font-ko);
+      background: #fcfafa;
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .search-bar input:focus {
+      border-color: #a4b8c4;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      background: #fff;
+    }
+    .search-bar input::placeholder { color: #aaa; }
+
+    /* 탭 바 */
+    .search-tabs {
+      display: flex;
+      gap: 0;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    .search-tab {
+      background: none;
+      border: none;
+      padding: 10px 20px;
+      font-size: 14px;
+      font-family: var(--font-ko);
+      color: #777;
+      cursor: pointer;
+      position: relative;
+      transition: color 0.2s;
+    }
+    .search-tab:hover { color: #333; }
+    .search-tab.active {
+      color: #333;
+      font-weight: 600;
+    }
+    .search-tab.active::after {
+      content: '';
+      position: absolute;
+      bottom: -1px; left: 0; right: 0;
+      height: 2px;
+      background: #6e8387;
+      border-radius: 2px 2px 0 0;
+    }
+    .search-tab .tab-count {
+      font-size: 11px;
+      color: #aaa;
+      margin-left: 4px;
+      font-weight: 400;
+    }
+    .search-tab.active .tab-count { color: #999; }
+
+    /* ===== 검색 결과 영역 ===== */
+    .search-body {
+      padding: 20px 0 60px;
+    }
+
+    /* 결과 헤더 */
+    .results-summary {
+      font-size: 13px;
+      color: #999;
+      margin-bottom: 16px;
+    }
+    .results-summary strong { color: #333; }
+
+    /* 초기 상태 (검색 전) */
+    .search-empty {
+      text-align: center;
+      padding: 80px 20px;
+      color: #aaa;
+    }
+    .search-empty .empty-icon {
+      font-size: 48px;
+      margin-bottom: 16px;
+      opacity: 0.4;
+    }
+    .search-empty p { font-size: 15px; line-height: 1.8; }
+    .search-empty .hint {
+      font-size: 13px; color: #bbb; margin-top: 12px;
+    }
+
+    /* ===== 섹션 구분 (전체 탭) ===== */
+    .result-section {
+      margin-bottom: 24px;
+    }
+    .result-section-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      padding-bottom: 6px;
+    }
+    .result-section-label {
+      font-size: 13px;
+      font-weight: 700;
+      color: #6e8387;
+    }
+    .result-section-more {
+      font-size: 12px;
+      color: #a4b8c4;
+      cursor: pointer;
+      background: none;
+      border: none;
+      font-family: var(--font-ko);
+      padding: 4px 8px;
+      border-radius: 4px;
+      transition: background 0.15s;
+    }
+    .result-section-more:hover {
+      background: #f0f0f0;
+      color: #6e8387;
+    }
+    .result-section-divider {
+      border: none;
+      border-top: 1px solid #e8e8e8;
+      margin: 24px 0;
+    }
+
+    /* ===== 시 카드 ===== */
+    .poem-card {
+      border: 1px solid #e8e8e8;
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      transition: border-color 0.15s, box-shadow 0.15s;
+      background: #fff;
+    }
+    .poem-card:hover {
+      border-color: #c8d3d5;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    .poem-card-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: #222;
+      margin-bottom: 4px;
+    }
+    .poem-card-title .poem-no {
+      color: #999;
+      font-weight: 400;
+      font-size: 13px;
+      margin-right: 6px;
+    }
+    .poem-card-meta {
+      font-size: 13px;
+      color: #888;
+      margin-bottom: 4px;
+    }
+    .poem-card-preview {
+      font-size: 13px;
+      color: #666;
+      font-family: 'adobe-fangsong-std', fangsong, 'LXGW WenKai Mono TC', 'Noto Serif TC', serif;
+      line-height: 1.6;
+    }
+
+    /* 시 아코디언 펼침 */
+    .poem-card.expanded {
+      border-color: #a4b8c4;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    }
+    .poem-card-body {
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid #e8e8e8;
+    }
+
+    /* ===== 시인 카드 ===== */
+    .poet-card {
+      border: 1px solid #e8e8e8;
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      transition: border-color 0.15s, box-shadow 0.15s;
+      background: #fff;
+    }
+    .poet-card:hover {
+      border-color: #c8d3d5;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    .poet-card-header {
+      display: flex; gap: 14px; align-items: center;
+    }
+    .poet-card-avatar {
+      width: 40px; height: 40px; border-radius: 50%;
+      background: #c8d3d5;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'adobe-fangsong-std', fangsong, serif;
+      font-size: 16px; color: #6e8387; flex-shrink: 0;
+    }
+    .poet-card-info { flex: 1; min-width: 0; }
+    .poet-card-name {
+      font-size: 15px; font-weight: 600; color: #222;
+    }
+    .poet-card-name .zh {
+      font-family: 'adobe-fangsong-std', fangsong, 'LXGW WenKai Mono TC', serif;
+      margin-right: 6px;
+    }
+    .poet-card-detail {
+      font-size: 13px; color: #888; margin-top: 2px;
+    }
+    .poet-card-tag {
+      display: inline-block;
+      padding: 1px 6px;
+      border-radius: 3px;
+      font-size: 11px;
+      background: #f0f4f5;
+      color: #6e8387;
+      margin-right: 4px;
+    }
+    .poet-card-bio {
+      font-size: 13px; color: #666; margin-top: 8px; line-height: 1.6;
+    }
+
+    /* 시인 카드 펼침 */
+    .poet-card.expanded { border-color: #a4b8c4; box-shadow: 0 4px 16px rgba(0,0,0,0.1); }
+    .poet-card-body {
+      width: 100%;
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid #e8e8e8;
+    }
+    .poet-card-body .poet-full-bio {
+      font-size: 13px; color: #555; line-height: 1.8; margin-bottom: 12px;
+    }
+    .poet-card-body .poet-poems-label {
+      font-size: 12px; font-weight: 600; color: #8a7e6e;
+      margin-bottom: 8px; letter-spacing: 0.5px;
+    }
+    .poet-card-body .poet-poem-item {
+      display: flex; gap: 6px; align-items: baseline;
+      padding: 4px 0;
+      font-size: 13px; color: #555;
+      cursor: pointer;
+    }
+    .poet-card-body .poet-poem-item:hover { color: #333; background: #f8f6f2; }
+    .poet-card-body .poet-poem-item.active {
+      color: #2a5934; font-weight: 600; background: #f0ede6;
+      border-radius: 4px;
+    }
+    .poet-card-body .poet-poem-no {
+      flex-shrink: 0; width: 28px; font-size: 11px; color: #999; text-align: right;
+    }
+    .poet-card-body .poet-poem-title { flex: 1; }
+    .poet-card-body .poet-poem-cat { font-size: 11px; color: #aaa; }
+
+    /* 시인 카드 내부 시 상세 펼침 */
+    .poet-poem-detail {
+      margin: 0 0 8px;
+      padding: 16px;
+      background: #faf9f6;
+      border: none;
+      border-radius: 0;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+    .poet-poem-detail .poem-body-section { margin-bottom: 16px; }
+    .poet-poem-detail .poem-body-section:last-child { margin-bottom: 0; }
+
+    /* ===== 뉴스 카드 ===== */
+    .news-card {
+      border: 1px solid #e8e8e8;
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      transition: border-color 0.15s, box-shadow 0.15s;
+      background: #fff;
+    }
+    .news-card:hover {
+      border-color: #c8d3d5;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    .news-card-title {
+      font-size: 15px; font-weight: 600; color: #222; margin-bottom: 4px;
+      line-height: 1.4;
+    }
+    .news-card-source {
+      font-size: 12px; color: #aaa; margin-bottom: 4px;
+    }
+    .news-card-summary {
+      font-size: 13px; color: #666; line-height: 1.6;
+    }
+    .news-card-tag {
+      display: inline-block;
+      padding: 1px 6px;
+      border-radius: 3px;
+      font-size: 11px;
+      background: #fdf6ec;
+      color: #c9a96e;
+      margin-right: 4px;
+    }
+
+    /* ===== 역사 카드 ===== */
+    .history-card {
+      border: 1px solid #e8e8e8;
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin-bottom: 10px;
+      background: #fff;
+      border-left: 3px solid #c9a96e;
+    }
+    .history-card-title {
+      font-size: 15px; font-weight: 600; color: #222; margin-bottom: 4px;
+    }
+    .history-card-year {
+      font-size: 13px; color: #c9a96e; font-weight: 600;
+      margin-right: 8px;
+    }
+    .history-card-tags { margin-bottom: 4px; }
+    .history-card-tag {
+      display: inline-block;
+      padding: 1px 6px;
+      border-radius: 3px;
+      font-size: 11px;
+      background: #f7f3ed;
+      color: #8a7e6e;
+      margin-right: 4px;
+    }
+    .history-card-summary {
+      font-size: 13px; color: #666; line-height: 1.6;
+    }
+
+    /* ===== 시 상세 (아코디언 내부) ===== */
+    .poem-text-box {
+      padding: 16px 0;
+    }
+    .poem-title-zh {
+      text-align: center;
+      font-family: 'adobe-fangsong-std', fangsong, 'LXGW WenKai Mono TC', 'Noto Serif TC', serif;
+      font-size: 22px; font-weight: 700;
+      letter-spacing: 2px; margin-bottom: 2px;
+    }
+    .poem-title-ko {
+      text-align: center; font-size: 16px; color: #666; margin-bottom: 6px;
+    }
+    .poem-poet-zh {
+      text-align: right;
+      font-family: 'adobe-fangsong-std', fangsong, 'LXGW WenKai Mono TC', 'Noto Serif TC', serif;
+      font-size: 15px; color: #555; margin-bottom: 16px;
+    }
+    .poem-bilingual { display: flex; flex-direction: column; gap: 2px; }
+    .bl-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; line-height: 1.9; }
+    .bl-zh {
+      font-family: 'adobe-fangsong-std', fangsong, 'LXGW WenKai Mono TC', 'Noto Serif TC', serif;
+      font-size: 18px; color: #222;
+    }
+    .bl-ko { font-size: 17px; color: #555; line-height: 1.9; }
+
+    .poem-section-block { padding: 12px 0; }
+    .poem-sec-label {
+      font-size: 12px; font-weight: 600;
+      color: #8a7e6e; margin-bottom: 8px; letter-spacing: 0.5px;
+    }
+    .poem-sec-text { line-height: 1.7; font-size: 14px; color: #444; }
+    .poem-sec-text.pre { white-space: pre-wrap; }
+
+    .note-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px; }
+    .note-item { display: grid; grid-template-columns: 40px 100px 1fr; gap: 8px; align-items: start; font-size: 13px; line-height: 1.5; }
+    .note-no { color: #111; font-weight: 700; cursor: pointer; }
+    .note-head { color: #333; cursor: pointer; }
+    .note-text { color: #444; }
+
+    .note-word { cursor: pointer; border-bottom: 1px dotted; }
+    .note-word-legacy { color: #d35400; border-color: #d35400; }
+    .note-word-owned { color: #1f7a43; border-color: #1f7a43; }
+    .note-ref { font-size: 10px; vertical-align: super; color: #999; }
+    .highlight-flash { background: #fff3cd !important; transition: background 0.3s; }
+
+    .deep-two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .poem-block { margin-bottom: 8px; }
+    .block-title { font-size: 12px; font-weight: 600; color: #8a7e6e; margin-bottom: 6px; }
+    .block-box { border: 1px solid #eee; border-radius: 10px; padding: 10px; background: #fafafa; line-height: 1.7; }
+    .muted { color: #777; }
+
+    .ruby-grid { display: flex; flex-direction: column; gap: 6px; }
+    .ruby-line {
+      font-family: 'adobe-fangsong-std', fangsong, 'LXGW WenKai Mono TC', serif;
+      font-size: 20px; letter-spacing: 3px;
+    }
+    .ruby-line rt { font-size: 11px; color: #888; }
+    .tone-ping rt { color: #2196F3; }
+    .tone-ze rt { color: #E91E63; }
+
+    .yt-embed-wrap {
+      position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;
+      border-radius: 8px; margin-top: 8px;
+    }
+    .yt-embed-wrap iframe {
+      position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    }
+
+    /* 주석 툴팁 */
+    .annotation-tooltip {
+      position: fixed; z-index: 10000;
+      background: #333; color: #fff;
+      padding: 8px 12px; border-radius: 6px;
+      font-size: 13px; line-height: 1.5;
+      max-width: 320px;
+      pointer-events: none;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    /* 검색 결과 없음 */
+    .search-no-result {
+      text-align: center; padding: 40px 20px;
+      color: #aaa; font-size: 14px;
+    }
+
+    /* ===== 시대 필터 (시 탭 전용) ===== */
+    .era-filter {
+      display: inline-flex;
+      margin-bottom: 12px;
+    }
+    .era-filter select {
+      padding: 6px 10px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 13px;
+      font-family: var(--font-ko);
+      background: #fff;
+      color: #555;
+      outline: none;
+      cursor: pointer;
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 640px) {
+      body { padding-top: 56px; }
+      .search-header { top: 56px; padding-top: 16px; }
+      .search-page { padding: 0 12px; }
+      .search-bar input { font-size: 15px; padding: 10px 14px 10px 38px; }
+      .search-tabs { overflow-x: auto; flex-wrap: nowrap; }
+      .search-tab { flex-shrink: 0; padding: 10px 14px; font-size: 13px; }
+      .bl-row { grid-template-columns: 1fr; gap: 4px; }
+      .deep-two-col { grid-template-columns: 1fr; }
+      .note-item { grid-template-columns: 32px 80px 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="nav-placeholder"></div>
+
+  <div class="search-page">
+
+    <!-- 검색 헤더 -->
+    <div class="search-header">
+      <div class="search-bar">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        <input type="text" id="searchInput" placeholder="시, 시인, 키워드 검색..." autocomplete="off">
+      </div>
+      <div class="search-tabs" id="searchTabs">
+        <button class="search-tab active" data-tab="all">전체</button>
+        <button class="search-tab" data-tab="poem">시</button>
+        <button class="search-tab" data-tab="poet">시인</button>
+        <button class="search-tab" data-tab="article">기사·소식</button>
+      </div>
+    </div>
+
+    <!-- 검색 결과 -->
+    <div class="search-body" id="searchBody">
+      <div id="searchResults">
+        <div class="search-empty">
+          <div class="empty-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="opacity:0.3">
+              <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+          </div>
+          <p>시 제목, 시인 이름, 키워드를 입력하세요</p>
+          <p class="hint">Cmd+K 로 빠르게 검색할 수 있습니다</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="footer-placeholder"></div>
+
+  <script>
+  // ================================================================
+  //  검색 페이지 — 사이트 전체 통합 검색
+  // ================================================================
+
+  // ===== 0) 유틸리티 =====
+  function escapeHTML(s) {
+    return String(s ?? "")
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;");
+  }
+
+  function normalizeZhName(s) {
+    return String(s || "").replace(/\[\d+\]/g, "");
+  }
+
+  function normalizePoetName(s) {
+    return normalizeZhName(s).replace(/^僧\s+/u, "").replace(/\s+/g, " ").trim();
+  }
+
+  function formatLife(life) {
+    if (!life) return "";
+    const b = life.birth ?? "";
+    const d = life.death ?? "";
+    if (b && d) return b + "\u2013" + d;
+    if (life.raw) return life.raw;
+    return "";
+  }
+
+  function stripInlineNoteMarkers(text) {
+    return String(text || "").replace(/\[\d+\]/g, "");
+  }
+
+  function stripDaggers(text) {
+    return String(text || "").replace(/\u2020/g, "");
+  }
+
+  function injectNoteMarkersByHead(text, notes) {
+    let base = stripInlineNoteMarkers(text);
+    if (!base) return "";
+    if (!Array.isArray(notes) || notes.length === 0) return base;
+    const ordered = notes
+      .map(n => ({ no: String(n?.no ?? "").trim(), head: String(n?.head ?? "").trim() }))
+      .filter(n => n.no && n.head)
+      .sort((a, b) => b.head.length - a.head.length);
+    const usedNo = new Set();
+    for (const n of ordered) {
+      if (usedNo.has(n.no)) continue;
+      const marker = "[" + n.no + "]";
+      if (base.includes(marker)) { usedNo.add(n.no); continue; }
+      const idx = base.indexOf(n.head);
+      if (idx < 0) continue;
+      const insertAt = idx + n.head.length;
+      base = base.slice(0, insertAt) + marker + base.slice(insertAt);
+      usedNo.add(n.no);
+    }
+    return base;
+  }
+
+  function cleanLegacyKoReferences(text) {
+    return String(text || "")
+      .replace(/\[역주\s*\d*\]/g, "")
+      .replace(/\(역주\s*\d*\)/g, "")
+      .replace(/역주\s*\d*/g, "")
+      .replace(/\[\d+\]/g, "")
+      .replace(/[ \t]+\n/g, "\n")
+      .replace(/\n[ \t]+/g, "\n")
+      .replace(/\n{3,}/g, "\n\n")
+      .trim();
+  }
+
+  // ===== 주석 파싱 =====
+  function parseTextWithNotes(text, notes, titleId, noteSource) {
+    if (!text) return "";
+    if (!Array.isArray(notes) || notes.length === 0) return escapeHTML(text);
+    const sourceKey = noteSource === "owned" ? "owned" : "legacy";
+    const noteWordClass = "note-word note-word-" + sourceKey;
+    const noteRefClass = "note-ref note-ref-" + sourceKey;
+    const notesByNo = new Map(notes.map(n => [String(n.no), n]));
+    const pattern = /\[(\d+)\]/g;
+    const matches = [];
+    let match;
+    while ((match = pattern.exec(text)) !== null) {
+      matches.push({ index: match.index, length: match[0].length, noteNo: match[1] });
+    }
+    if (matches.length === 0) return escapeHTML(text);
+    const cleanText = text.replace(/\[\d+\]/g, "").replace(/\n/g, " ");
+    const origToClean = [];
+    let ci = 0;
+    const markerPattern = /\[\d+\]/g;
+    const markerSet = new Set();
+    let mm;
+    while ((mm = markerPattern.exec(text)) !== null) {
+      for (let k = mm.index; k < mm.index + mm[0].length; k++) markerSet.add(k);
+    }
+    for (let oi = 0; oi < text.length; oi++) {
+      origToClean[oi] = ci;
+      if (!markerSet.has(oi)) ci++;
+    }
+    origToClean[text.length] = ci;
+    const cleanToOrig = [];
+    for (let oi = 0; oi < text.length; oi++) {
+      if (!markerSet.has(oi)) cleanToOrig.push(oi);
+    }
+    for (const m of matches) {
+      const note = notesByNo.get(m.noteNo);
+      if (!note || !note.head) continue;
+      const head = note.head;
+      const headStart = m.index - head.length;
+      if (headStart >= 0 && text.substring(headStart, m.index) === head) {
+        m.headStart = headStart; m.headLength = head.length; m.noteText = note.text;
+      } else {
+        const cleanIdx = origToClean[m.index];
+        const cleanHeadStart = cleanIdx - head.length;
+        if (cleanHeadStart >= 0 && cleanText.substring(cleanHeadStart, cleanIdx) === head) {
+          m.headStart = cleanToOrig[cleanHeadStart];
+          m.headLength = m.index - m.headStart;
+          m.noteText = note.text;
+        }
+      }
+    }
+    let result = "";
+    let lastIndex = text.length;
+    for (let i = matches.length - 1; i >= 0; i--) {
+      const m = matches[i];
+      result = escapeHTML(text.substring(m.index + m.length, lastIndex)) + result;
+      const uniqueId = titleId ? titleId + "-" + m.noteNo : m.noteNo;
+      if (m.headStart !== undefined) {
+        const rawKeyword = text.substring(m.headStart, m.index);
+        const displayParts = rawKeyword.replace(/\[\d+\]/g, "").split("\n");
+        const noteAttr = 'data-note-no="' + m.noteNo + '" data-note-text="' + escapeHTML(m.noteText) + '"';
+        if (displayParts.length <= 1) {
+          result = '<span class="' + noteWordClass + '" id="note-ref-' + uniqueId + '" ' + noteAttr + '>' + escapeHTML(displayParts[0]) + '</span><sup class="' + noteRefClass + '">' + m.noteNo + '</sup>' + result;
+        } else {
+          let spans = "";
+          for (let pi = 0; pi < displayParts.length; pi++) {
+            if (displayParts[pi]) {
+              const idAttr = pi === 0 ? ' id="note-ref-' + uniqueId + '"' : "";
+              spans += '<span class="' + noteWordClass + '"' + idAttr + ' ' + noteAttr + '>' + escapeHTML(displayParts[pi]) + '</span>';
+            }
+            if (pi < displayParts.length - 1) spans += "\n";
+          }
+          result = spans + '<sup class="' + noteRefClass + '">' + m.noteNo + '</sup>' + result;
+        }
+        lastIndex = m.headStart;
+      } else {
+        const note = notesByNo.get(m.noteNo);
+        if (note && note.text) {
+          result = '<span class="' + noteWordClass + '" id="note-ref-' + uniqueId + '" data-note-no="' + m.noteNo + '" data-note-text="' + escapeHTML(note.text) + '">[' + m.noteNo + ']</span>' + result;
+        } else {
+          result = '<sup class="' + noteRefClass + '" id="note-ref-' + uniqueId + '">' + m.noteNo + '</sup>' + result;
+        }
+        lastIndex = m.index;
+      }
+    }
+    result = escapeHTML(text.substring(0, lastIndex)) + result;
+    return result;
+  }
+
+  // ===== 1) 데이터 =====
+  let poemsCompact = [];
+  let authorsData = {};
+  let authorsList = [];
+  let poemsFull = null;
+  let poetEraMap = {};
+  let newsArticles = [];
+  let historyCards = [];
+
+  async function loadAllData() {
+    const [pRes, aRes, nRes, hRes] = await Promise.all([
+      fetch("/public/index/poems.compact.json"),
+      fetch("/public/index/db_author.with_ko.json"),
+      fetch("/public/index/news_articles.json"),
+      fetch("/public/index/history_cards.json"),
+    ]);
+    poemsCompact = await pRes.json();
+    const authorsRaw = await aRes.json();
+    authorsData = authorsRaw.authors || authorsRaw;
+    authorsList = Object.values(authorsData);
+
+    const newsRaw = await nRes.json();
+    newsArticles = newsRaw.articles || newsRaw;
+
+    historyCards = await hRes.json();
+
+    for (const a of authorsList) {
+      const nameZh = normalizeZhName(a.name?.zh || "");
+      if (nameZh && a.era?.period) poetEraMap[nameZh] = a.era.period;
+    }
+  }
+
+  async function loadFullData() {
+    if (poemsFull) return poemsFull;
+    const res = await fetch("/public/index/poems.full.json");
+    poemsFull = await res.json();
+    return poemsFull;
+  }
+
+  // ===== 2) 검색 엔진 =====
+
+  // 한자 → 한글 독음 매핑 (시 제목·카테고리 검색용, 585자)
+  const HANJA_KO = {
+    一:'일',丁:'정',七:'칠',三:'삼',上:'상',下:'하',不:'불',丘:'구',丞:'승',中:'중',
+    丹:'단',主:'주',之:'지',九:'구',乾:'건',亂:'란',事:'사',二:'이',五:'오',京:'경',
+    亭:'정',人:'인',仙:'선',令:'령',任:'임',何:'하',作:'작',佳:'가',使:'사',侍:'시',
+    信:'신',偶:'우',僧:'승',儋:'담',元:'원',兄:'형',先:'선',光:'광',兒:'아',入:'입',
+    內:'내',全:'전',八:'팔',公:'공',六:'육',兵:'병',其:'기',兼:'겸',冑:'주',冬:'동',
+    凰:'황',出:'출',初:'초',判:'판',別:'별',利:'리',制:'제',刺:'자',劉:'유',劍:'검',
+    功:'공',北:'북',十:'십',南:'남',卽:'즉',原:'원',又:'우',及:'급',友:'우',叔:'숙',
+    受:'수',口:'구',古:'고',史:'사',各:'각',同:'동',吏:'이',向:'향',君:'군',吟:'음',
+    吳:'오',吹:'취',呈:'정',和:'화',哀:'애',員:'원',哥:'가',問:'문',善:'선',喜:'희',
+    喬:'교',嘆:'탄',器:'기',嚴:'엄',四:'사',回:'회',因:'인',固:'고',園:'원',圖:'도',
+    在:'재',坡:'파',城:'성',塞:'새',墓:'묘',壁:'벽',士:'사',夏:'하',夕:'석',外:'외',
+    夜:'야',夢:'몽',大:'대',天:'천',太:'태',夫:'부',奉:'봉',女:'녀',妹:'매',姥:'모',
+    娘:'낭',娥:'아',嫁:'가',嫦:'항',子:'자',孔:'공',孟:'맹',孤:'고',孫:'손',宅:'택',
+    安:'안',官:'관',客:'객',宣:'선',宮:'궁',宴:'연',家:'가',容:'용',宿:'숙',寄:'기',
+    寒:'한',寺:'사',封:'봉',將:'장',尉:'위',尋:'심',少:'소',居:'거',山:'산',岳:'악',
+    峴:'현',峽:'협',崔:'최',嵩:'숭',嵬:'외',嶺:'령',嶽:'악',川:'천',州:'주',左:'좌',
+    已:'이',巴:'파',巷:'항',帝:'제',師:'사',常:'상',干:'간',平:'평',年:'년',幷:'병',
+    幽:'유',序:'서',府:'부',庭:'정',庾:'유',廟:'묘',廣:'광',廬:'려',延:'연',建:'건',
+    弄:'농',引:'인',弟:'제',張:'장',彈:'탄',往:'왕',征:'정',待:'대',後:'후',得:'득',
+    從:'종',御:'어',德:'덕',思:'사',怨:'원',恨:'한',恩:'은',悲:'비',情:'정',意:'의',
+    感:'감',慈:'자',慶:'경',憶:'억',應:'응',懷:'회',房:'방',所:'소',才:'재',拾:'습',
+    掾:'연',揚:'양',操:'조',據:'거',收:'수',故:'고',散:'산',文:'문',斛:'곡',斯:'사',
+    新:'신',於:'어',施:'시',旅:'려',日:'일',早:'조',昌:'창',明:'명',春:'춘',時:'시',
+    晉:'진',晨:'신',晩:'만',暝:'명',暮:'모',曉:'효',曲:'곡',書:'서',曹:'조',會:'회',
+    月:'월',有:'유',朓:'조',望:'망',朝:'조',末:'말',本:'본',李:'리',杜:'두',東:'동',
+    柏:'백',柳:'류',柴:'시',校:'교',桃:'도',桐:'동',梁:'량',梅:'매',梓:'자',椒:'초',
+    楊:'양',楓:'풍',楚:'초',業:'업',樂:'락',樓:'루',橋:'교',橫:'횡',次:'차',歌:'가',
+    此:'차',武:'무',歲:'세',歸:'귀',毋:'무',氏:'씨',水:'수',汀:'정',汎:'범',江:'강',
+    池:'지',沒:'몰',沙:'사',河:'하',泊:'박',泛:'범',洛:'락',洞:'동',洲:'주',浩:'호',
+    浮:'부',涼:'량',淮:'회',淸:'청',渚:'저',渡:'도',渭:'위',游:'유',湖:'호',源:'원',
+    溪:'계',滁:'저',滿:'만',漁:'어',漢:'한',漳:'장',漸:'점',潛:'잠',潼:'동',澈:'철',
+    澗:'간',濟:'제',濬:'준',灞:'파',烈:'렬',烏:'오',無:'무',然:'연',燕:'연',爲:'위',
+    牛:'우',狐:'호',獄:'옥',獨:'독',玉:'옥',王:'왕',琴:'금',琵:'비',琶:'파',瑟:'슬',
+    瑤:'요',生:'생',甫:'보',田:'전',留:'류',畫:'화',登:'등',發:'발',白:'백',盧:'노',
+    盱:'우',相:'상',省:'성',眙:'이',眺:'조',知:'지',石:'석',破:'파',碑:'비',示:'시',
+    祭:'제',禪:'선',秀:'수',秋:'추',秦:'진',移:'이',程:'정',積:'적',章:'장',端:'단',
+    竹:'죽',笛:'적',符:'부',第:'제',笳:'가',筆:'필',箏:'쟁',篥:'률',籌:'주',紳:'신',
+    終:'종',給:'급',經:'경',綦:'기',維:'유',綸:'륜',綽:'촉',縣:'현',縷:'루',置:'치',
+    翁:'옹',翔:'상',翫:'완',老:'노',者:'자',而:'이',耶:'야',聊:'료',聖:'성',聞:'문',
+    聽:'청',肆:'사',胡:'호',臨:'림',自:'자',至:'지',臺:'대',與:'여',興:'흥',舊:'구',
+    舍:'사',舒:'서',舞:'무',舟:'주',芙:'부',花:'화',若:'약',草:'초',荊:'형',莊:'장',
+    華:'화',萊:'래',萬:'만',落:'락',著:'저',董:'동',蓉:'용',蓬:'봉',蕃:'번',薊:'계',
+    薛:'설',蘇:'소',蘭:'란',蘿:'라',處:'처',虛:'허',蜀:'촉',蟬:'선',行:'행',衛:'위',
+    衡:'형',衣:'의',補:'보',裴:'배',製:'제',西:'서',見:'견',親:'친',觀:'관',角:'각',
+    觱:'필',言:'언',詞:'사',詠:'영',詣:'예',試:'시',詩:'시',語:'어',誼:'의',調:'조',
+    諫:'간',諷:'풍',諸:'제',謁:'알',謝:'사',謠:'요',議:'의',讀:'독',谷:'곡',谿:'계',
+    貧:'빈',貶:'폄',賈:'가',賊:'적',賦:'부',贈:'증',赤:'적',走:'주',赴:'부',超:'초',
+    跡:'적',路:'로',車:'거',軍:'군',載:'재',輞:'망',輪:'륜',辛:'신',近:'근',迪:'적',
+    迹:'적',退:'퇴',送:'송',逢:'봉',連:'련',進:'진',遂:'수',遇:'우',遊:'유',過:'과',
+    道:'도',遠:'원',遣:'견',適:'적',遺:'유',還:'환',邊:'변',邽:'규',郊:'교',郎:'랑',
+    郡:'군',部:'부',郭:'곽',鄂:'악',鄒:'추',鄕:'향',酌:'작',酒:'주',酬:'수',醉:'취',
+    里:'리',重:'중',野:'야',金:'금',錄:'록',錦:'금',錫:'석',長:'장',門:'문',閑:'한',
+    間:'간',閣:'각',閨:'규',闕:'궐',關:'관',阻:'조',降:'강',院:'원',陣:'진',除:'제',
+    陰:'음',陳:'진',陵:'릉',陸:'육',陽:'양',隋:'수',階:'계',隱:'은',隴:'롱',雀:'작',
+    雁:'안',集:'집',雜:'잡',離:'리',難:'난',雨:'우',雪:'설',雲:'운',霸:'패',靈:'영',
+    靑:'청',韋:'위',韓:'한',韻:'운',頭:'두',題:'제',風:'풍',食:'식',飢:'기',餘:'여',
+    餞:'전',館:'관',首:'수',香:'향',馬:'마',馮:'풍',驛:'역',體:'체',高:'고',魏:'위',
+    魚:'어',魯:'노',鳳:'봉',鴻:'홍',鵡:'무',鶴:'학',鸚:'앵',鸛:'관',鹿:'록',麗:'려',
+    黃:'황',鼓:'고',齋:'재',齡:'령',龜:'귀'
+  };
+
+  /** 한자 문자열 → 한글 독음 변환 (〈〉·공백 등 비한자는 건너뜀) */
+  function hanjaReading(text) {
+    if (!text) return "";
+    let r = "";
+    for (const ch of text) { r += HANJA_KO[ch] || ""; }
+    return r;
+  }
+
+  let searchIndex = null;
+
+  function buildSearchIndex() {
+    if (searchIndex) return;
+    searchIndex = {
+      poems: poemsCompact.map(p => ({
+        ...p,
+        _titleReading: hanjaReading(p.title?.zh || ""),
+        _text: [
+          p.title?.zh, p.title?.ko,
+          hanjaReading(p.title?.zh || ""),
+          normalizeZhName(p.poet?.zh), p.poet?.ko,
+          p.category, hanjaReading(p.category || ""),
+          p.preview, p.juan
+        ].join(" ").toLowerCase(),
+      })),
+      authors: authorsList.map(a => {
+        const nameZh = normalizeZhName(a.name?.zh || "");
+        return {
+          ...a,
+          poemCount: poemsCompact.filter(p => normalizePoetName(p.poet?.zh) === nameZh).length,
+          _text: [a.name?.zh, a.name?.ko, a.bioKo || "", a.birthplace?.name || "", a.era?.period || ""].join(" ").toLowerCase(),
+        };
+      }),
+      news: newsArticles.map(n => ({
+        ...n,
+        _type: "news",
+        _text: [n.title, n.summary, n.category].join(" ").toLowerCase(),
+      })),
+      history: historyCards.map(h => ({
+        ...h,
+        _type: "history",
+        _text: [
+          h.name?.ko, h.name?.zh, stripDaggers(h.summary),
+          ...(h.tags?.era || []), ...(h.tags?.theme || [])
+        ].join(" ").toLowerCase(),
+      })),
+    };
+  }
+
+  function searchAll(query, eraFilter) {
+    if (!query || query.length < 2) return { poems: [], authors: [], news: [], history: [] };
+    buildSearchIndex();
+    const q = query.toLowerCase().trim();
+
+    // 시 점수
+    let poems = searchIndex.poems
+      .map(p => {
+        if (!p._text.includes(q)) return null;
+        let s = 1;
+        if ((p.title?.zh || "").toLowerCase().includes(q) || (p.title?.ko || "").toLowerCase().includes(q) || (p._titleReading || "").includes(q)) s += 100;
+        if (normalizeZhName(p.poet?.zh || "").toLowerCase().includes(q) || (p.poet?.ko || "").toLowerCase().includes(q)) s += 80;
+        if ((p.category || "").toLowerCase().includes(q)) s += 50;
+        if ((p.preview || "").toLowerCase().includes(q)) s += 30;
+        return { ...p, _score: s };
+      })
+      .filter(Boolean);
+
+    // 시인 점수
+    let authors = searchIndex.authors
+      .map(a => {
+        if (!a._text.includes(q)) return null;
+        let s = 1;
+        const nameZh = normalizeZhName(a.name?.zh || "").toLowerCase();
+        const nameKo = (a.name?.ko || "").toLowerCase();
+        if (nameZh === q || nameKo === q) s += 200;
+        else if (nameZh.includes(q) || nameKo.includes(q)) s += 100;
+        if ((a.bioKo || "").toLowerCase().includes(q)) s += 20;
+        return { ...a, _score: s };
+      })
+      .filter(Boolean);
+
+    // 뉴스 점수
+    let news = searchIndex.news
+      .map(n => {
+        if (!n._text.includes(q)) return null;
+        let s = 1;
+        if ((n.title || "").toLowerCase().includes(q)) s += 100;
+        if ((n.summary || "").toLowerCase().includes(q)) s += 30;
+        return { ...n, _score: s };
+      })
+      .filter(Boolean);
+
+    // 역사 점수
+    let history = searchIndex.history
+      .map(h => {
+        if (!h._text.includes(q)) return null;
+        let s = 1;
+        if ((h.name?.ko || "").toLowerCase().includes(q) || (h.name?.zh || "").toLowerCase().includes(q)) s += 100;
+        if (stripDaggers(h.summary || "").toLowerCase().includes(q)) s += 30;
+        return { ...h, _score: s };
+      })
+      .filter(Boolean);
+
+    // 시대 필터 (시 + 시인)
+    if (eraFilter) {
+      poems = poems.filter(p => poetEraMap[normalizePoetName(p.poet?.zh || "")] === eraFilter);
+      authors = authors.filter(a => a.era?.period === eraFilter);
+    }
+
+    poems.sort((a, b) => b._score - a._score);
+    authors.sort((a, b) => b._score - a._score);
+    news.sort((a, b) => b._score - a._score);
+    history.sort((a, b) => b._score - a._score);
+
+    return { poems, authors, news, history };
+  }
+
+  // ===== 3) 카드 렌더링 =====
+  const eraLabels = { early: "초당", high: "성당", mid: "중당", late: "만당" };
+
+  function renderPoemCard(p) {
+    const titleZh = stripInlineNoteMarkers(p.title?.zh || "");
+    const meta = [p.poet?.ko, p.category, p.juan].filter(Boolean).join(" \u00b7 ");
+    return '<div class="poem-card" data-poem-id="' + escapeHTML(p.titleId) + '">' +
+      '<div class="poem-card-title"><span class="poem-no">' + escapeHTML(p.poemNoStr) + '</span>' + escapeHTML(titleZh) + '</div>' +
+      '<div class="poem-card-meta">' + escapeHTML(meta) + '</div>' +
+      (p.preview ? '<div class="poem-card-preview">' + escapeHTML(p.preview) + '</div>' : '') +
+      '<div class="poem-card-body" hidden></div>' +
+      '</div>';
+  }
+
+  function renderPoetCard(a) {
+    const nameZh = normalizeZhName(a.name?.zh || "");
+    const life = formatLife(a.life);
+    const eraLabel = eraLabels[a.era?.period] || "";
+    const bio = (a.bioKo || "").substring(0, 100) + ((a.bioKo || "").length > 100 ? "..." : "");
+    return '<div class="poet-card" data-poet-name="' + escapeHTML(nameZh) + '">' +
+      '<div class="poet-card-header">' +
+        '<div class="poet-card-avatar">' + escapeHTML(nameZh.charAt(0)) + '</div>' +
+        '<div class="poet-card-info">' +
+          '<div class="poet-card-name"><span class="zh">' + escapeHTML(nameZh) + '</span>' + escapeHTML(a.name?.ko || "") + '</div>' +
+          '<div class="poet-card-detail">' +
+            (life ? escapeHTML(life) + ' \u00b7 ' : '') +
+            (eraLabel ? '<span class="poet-card-tag">' + escapeHTML(eraLabel) + '</span>' : '') +
+            '\uc218\ub85d ' + (a.poemCount || 0) + '\uc218' +
+          '</div>' +
+        '</div>' +
+      '</div>' +
+      (bio ? '<div class="poet-card-bio">' + escapeHTML(bio) + '</div>' : '') +
+      '<div class="poet-card-body" hidden></div>' +
+      '</div>';
+  }
+
+  function renderPoetBodyHTML(nameZh) {
+    const author = authorsList.find(a => normalizeZhName(a.name?.zh || "") === nameZh);
+    if (!author) return '<div class="muted">\uc2dc\uc778 \uc815\ubcf4\ub97c \ucc3e\uc744 \uc218 \uc5c6\uc2b5\ub2c8\ub2e4</div>';
+    const fullBio = author.bioKo || "";
+    const poems = poemsCompact.filter(p => normalizePoetName(p.poet?.zh) === nameZh);
+    let html = '';
+    if (fullBio) html += '<div class="poet-full-bio">' + escapeHTML(fullBio) + '</div>';
+    if (poems.length > 0) {
+      html += '<div class="poet-poems-label">\uc218\ub85d \uc791\ud488 (' + poems.length + '\uc218)</div>';
+      html += poems.map(p =>
+        '<div class="poet-poem-item" data-poem-id="' + escapeHTML(p.titleId) + '">' +
+          '<span class="poet-poem-no">' + escapeHTML(p.poemNoStr) + '</span>' +
+          '<span class="poet-poem-title">' + escapeHTML(stripInlineNoteMarkers(p.title?.zh || "")) + '</span>' +
+          '<span class="poet-poem-cat">' + escapeHTML(p.category || "") + '</span>' +
+        '</div>'
+      ).join('');
+    }
+    return html;
+  }
+
+  function renderNewsCard(n) {
+    const date = n.publishedAt || "";
+    const source = (n.source || "").replace(/^n\.news\./, "");
+    return '<div class="news-card" data-url="' + escapeHTML(n.sourceUrl || "") + '">' +
+      '<div class="news-card-title">' + escapeHTML(n.title) + '</div>' +
+      '<div class="news-card-source">' + escapeHTML(source) + ' \u00b7 ' + escapeHTML(date) +
+        (n.category ? ' <span class="news-card-tag">' + escapeHTML(n.category) + '</span>' : '') +
+      '</div>' +
+      '<div class="news-card-summary">' + escapeHTML((n.summary || "").substring(0, 120)) + (n.summary && n.summary.length > 120 ? '...' : '') + '</div>' +
+      '</div>';
+  }
+
+  function renderHistoryCard(h) {
+    const tags = [...(h.tags?.era || []), ...(h.tags?.theme || [])];
+    return '<div class="history-card">' +
+      '<div class="history-card-title">' +
+        '<span class="history-card-year">' + escapeHTML(h.year || "") + '\ub144</span>' +
+        escapeHTML(h.name?.ko || "") +
+        (h.name?.zh ? ' <span style="color:#999;font-size:13px">' + escapeHTML(h.name.zh) + '</span>' : '') +
+      '</div>' +
+      (tags.length ? '<div class="history-card-tags">' + tags.map(t => '<span class="history-card-tag">' + escapeHTML(t) + '</span>').join('') + '</div>' : '') +
+      '<div class="history-card-summary">' + escapeHTML(stripDaggers((h.summary || "").substring(0, 150))) + (h.summary && h.summary.length > 150 ? '...' : '') + '</div>' +
+      '</div>';
+  }
+
+  // ===== 4) 탭 렌더링 =====
+  let currentTab = "all";
+  let currentResults = null;
+
+  function renderResults(results, tab) {
+    const container = document.getElementById("searchResults");
+    const total = results.poems.length + results.authors.length + results.news.length + results.history.length;
+
+    if (total === 0) {
+      const q = document.getElementById("searchInput").value.trim();
+      container.innerHTML = '<div class="search-no-result">"' + escapeHTML(q) + '" \uac80\uc0c9 \uacb0\uacfc\uac00 \uc5c6\uc2b5\ub2c8\ub2e4</div>';
+      return;
+    }
+
+    let html = "";
+
+    if (tab === "all") {
+      html = renderAllTab(results);
+    } else if (tab === "poem") {
+      html = renderPoemTab(results);
+    } else if (tab === "poet") {
+      html = renderPoetTab(results);
+    } else if (tab === "article") {
+      html = renderArticleTab(results);
+    }
+
+    container.innerHTML = html;
+    window.scrollTo({ top: 0 });
+  }
+
+  function renderAllTab(r) {
+    let html = "";
+
+    // 시인 섹션
+    if (r.authors.length > 0) {
+      const show = r.authors.slice(0, 3);
+      html += '<div class="result-section">';
+      html += '<div class="result-section-header"><span class="result-section-label">\uc2dc\uc778 (' + r.authors.length + '\uba85)</span>';
+      if (r.authors.length > 3) html += '<button class="result-section-more" data-switch-tab="poet">\uc2dc\uc778 ' + r.authors.length + '\uba85 \ub354\ubcf4\uae30 \u203a</button>';
+      html += '</div>';
+      html += show.map(renderPoetCard).join('');
+      html += '</div>';
+    }
+
+    // 구분선
+    if (r.authors.length > 0 && r.poems.length > 0) {
+      html += '<hr class="result-section-divider">';
+    }
+
+    // 시 섹션
+    if (r.poems.length > 0) {
+      const show = r.poems.slice(0, 5);
+      html += '<div class="result-section">';
+      html += '<div class="result-section-header"><span class="result-section-label">\uc2dc (' + r.poems.length + '\ud3b8)</span>';
+      if (r.poems.length > 5) html += '<button class="result-section-more" data-switch-tab="poem">\uc2dc ' + r.poems.length + '\ud3b8 \ub354\ubcf4\uae30 \u203a</button>';
+      html += '</div>';
+      html += show.map(renderPoemCard).join('');
+      html += '</div>';
+    }
+
+    // 구분선
+    if ((r.authors.length > 0 || r.poems.length > 0) && (r.news.length > 0 || r.history.length > 0)) {
+      html += '<hr class="result-section-divider">';
+    }
+
+    // 기사·소식 섹션
+    const articleCount = r.news.length + r.history.length;
+    if (articleCount > 0) {
+      const showNews = r.news.slice(0, 2);
+      const showHistory = r.history.slice(0, 2);
+      html += '<div class="result-section">';
+      html += '<div class="result-section-header"><span class="result-section-label">\uae30\uc0ac\u00b7\uc18c\uc2dd (' + articleCount + '\uac74)</span>';
+      if (articleCount > 4) html += '<button class="result-section-more" data-switch-tab="article">\uae30\uc0ac ' + articleCount + '\uac74 \ub354\ubcf4\uae30 \u203a</button>';
+      html += '</div>';
+      html += showNews.map(renderNewsCard).join('');
+      html += showHistory.map(renderHistoryCard).join('');
+      html += '</div>';
+    }
+
+    return html;
+  }
+
+  function renderPoemTab(r) {
+    if (r.poems.length === 0) return '<div class="search-no-result">\uc2dc \uac80\uc0c9 \uacb0\uacfc\uac00 \uc5c6\uc2b5\ub2c8\ub2e4</div>';
+    return r.poems.map(renderPoemCard).join('');
+  }
+
+  function renderPoetTab(r) {
+    if (r.authors.length === 0) return '<div class="search-no-result">\uc2dc\uc778 \uac80\uc0c9 \uacb0\uacfc\uac00 \uc5c6\uc2b5\ub2c8\ub2e4</div>';
+    return r.authors.map(renderPoetCard).join('');
+  }
+
+  function renderArticleTab(r) {
+    const items = [
+      ...r.news.map(n => ({ ...n, _sort: new Date(n.publishedAt || 0).getTime(), _render: "news" })),
+      ...r.history.map(h => ({ ...h, _sort: h.year || 0, _render: "history" })),
+    ];
+    if (items.length === 0) return '<div class="search-no-result">\uae30\uc0ac\u00b7\uc18c\uc2dd \uac80\uc0c9 \uacb0\uacfc\uac00 \uc5c6\uc2b5\ub2c8\ub2e4</div>';
+
+    let html = '';
+    // 뉴스 먼저
+    if (r.news.length > 0) {
+      html += '<div class="result-section-header"><span class="result-section-label">\ub274\uc2a4 (' + r.news.length + ')</span></div>';
+      html += r.news.map(renderNewsCard).join('');
+    }
+    if (r.news.length > 0 && r.history.length > 0) {
+      html += '<hr class="result-section-divider">';
+    }
+    if (r.history.length > 0) {
+      html += '<div class="result-section-header"><span class="result-section-label">\uc5ed\uc0ac (' + r.history.length + ')</span></div>';
+      html += r.history.map(renderHistoryCard).join('');
+    }
+    return html;
+  }
+
+  // ===== 5) 탭 카운트 업데이트 =====
+  function updateTabCounts(results) {
+    const tabs = document.querySelectorAll('.search-tab');
+    const total = results.poems.length + results.authors.length + results.news.length + results.history.length;
+    const counts = {
+      all: total,
+      poem: results.poems.length,
+      poet: results.authors.length,
+      article: results.news.length + results.history.length,
+    };
+    tabs.forEach(tab => {
+      const key = tab.dataset.tab;
+      const existing = tab.querySelector('.tab-count');
+      if (existing) existing.remove();
+      if (counts[key] > 0) {
+        const span = document.createElement('span');
+        span.className = 'tab-count';
+        span.textContent = counts[key];
+        tab.appendChild(span);
+      }
+    });
+  }
+
+  // ===== 6) 시 아코디언 펼침 =====
+  function renderPoemBodyHTML(p) {
+    const poemNoStr = p.poemNoStr || String(p.poemNo ?? "").padStart(3, "0");
+    const ownedNotes = Array.isArray(p.notesOwned) ? p.notesOwned : [];
+    const legacyNotes = Array.isArray(p.notes) ? p.notes : [];
+    const useOwnedNotes = ownedNotes.length > 0;
+    const notes = useOwnedNotes ? ownedNotes : legacyNotes;
+    const noteSource = useOwnedNotes ? "owned" : "legacy";
+    const titleId = p.titleId || poemNoStr;
+
+    const titleFullRaw = p?.title?.zh ?? "";
+    const titleFullSource = useOwnedNotes ? injectNoteMarkersByHead(titleFullRaw, notes) : titleFullRaw;
+    const titleFull = parseTextWithNotes(titleFullSource, notes, titleId, noteSource);
+    const titleKo = p?.title?.ko ?? "";
+    const poetZhRaw = p?.poet?.zh ?? "";
+    const poetZhSource = useOwnedNotes ? injectNoteMarkersByHead(poetZhRaw, notes) : poetZhRaw;
+
+    const jipZhSource = useOwnedNotes ? injectNoteMarkersByHead(p.jipyeongZh || "", notes) : (p.jipyeongZh || "");
+    const jipZh = parseTextWithNotes(jipZhSource, notes, titleId, noteSource);
+    const jipKoRaw = p.jipyeongKoOwned || p.jipyeongKo || "";
+    const jipKo = escapeHTML(cleanLegacyKoReferences(jipKoRaw));
+
+    const notesHTML = notes.length
+      ? '<ul class="note-list">' + notes.map(n =>
+          '<li class="note-item" id="note-item-' + titleId + '-' + n.no + '">' +
+          '<span class="note-no" data-target-ref="' + titleId + '-' + n.no + '">[' + escapeHTML(n.no) + ']</span>' +
+          '<span class="note-head">' + escapeHTML(n.head || "") + '</span>' +
+          '<span class="note-text">' + escapeHTML(n.text || "") + '</span>' +
+          '</li>').join('') + '</ul>'
+      : '<div class="muted">\uc8fc\uc11d \uc5c6\uc74c</div>';
+
+    const trKoRaw = p.translationKoOwned || p.translationKo || "";
+    const poemZhSource = useOwnedNotes ? injectNoteMarkersByHead(p.poemZh || "", notes) : (p.poemZh || "");
+    const parsedPoemZh = parseTextWithNotes(poemZhSource, notes, titleId, noteSource);
+    const poemZhLines = parsedPoemZh.split("\n");
+    const allTrKoLines = trKoRaw.split("\n");
+    const trKoLines = allTrKoLines.length > 2 ? allTrKoLines.slice(2) : allTrKoLines;
+    const maxLines = Math.max(poemZhLines.length, trKoLines.length);
+    let bilingualRows = "";
+    for (let i = 0; i < maxLines; i++) {
+      bilingualRows += '<div class="bl-row"><div class="bl-zh">' + (poemZhLines[i] || "") + '</div><div class="bl-ko">' + escapeHTML(trKoLines[i] || "") + '</div></div>';
+    }
+
+    // 심화자료 (간체 + 병음 + 평측)
+    let deepHTML = "";
+    const poemSimpRaw = p.poemSimp || "";
+    const pinyinRaw = p.pinyin || "";
+    const pingzeRaw = p.pingze || "";
+
+    if (poemSimpRaw && pinyinRaw) {
+      const simpLines = poemSimpRaw.split("\n");
+      const pinyinLines = pinyinRaw.split("\n");
+      let rubyRows = "";
+      for (let li = 0; li < simpLines.length; li++) {
+        const chars = Array.from(simpLines[li] || "").filter(ch => ch >= "\u4e00" && ch <= "\u9fff");
+        const syllables = (pinyinLines[li] || "").split(/\s+/).filter(Boolean);
+        let lineRuby = "";
+        for (let ci = 0; ci < chars.length; ci++) {
+          lineRuby += '<ruby>' + escapeHTML(chars[ci]) + '<rp>(</rp><rt>' + escapeHTML(syllables[ci] || "") + '</rt><rp>)</rp></ruby>';
+        }
+        rubyRows += '<div class="ruby-line">' + lineRuby + '</div>';
+      }
+      deepHTML += '<div class="poem-block"><div class="block-title">\uac04\uccb4\uc790 &amp; \ubcd1\uc74c</div><div class="block-box"><div class="ruby-grid">' + rubyRows + '</div></div></div>';
+    }
+
+    if (pingzeRaw && poemSimpRaw) {
+      const simpLines = poemSimpRaw.split("\n");
+      const pingzeLines = pingzeRaw.split("\n");
+      let pzRows = "";
+      for (let li = 0; li < simpLines.length; li++) {
+        const chars = Array.from(simpLines[li] || "").filter(ch => ch >= "\u4e00" && ch <= "\u9fff");
+        const tones = Array.from(pingzeLines[li] || "");
+        let lineRuby = "";
+        for (let ci = 0; ci < chars.length; ci++) {
+          const tone = tones[ci] || "";
+          const toneClass = tone === "\u5e73" ? "tone-ping" : tone === "\u4ec4" ? "tone-ze" : "";
+          lineRuby += '<ruby class="' + toneClass + '">' + escapeHTML(chars[ci]) + '<rp>(</rp><rt>' + escapeHTML(tone) + '</rt><rp>)</rp></ruby>';
+        }
+        pzRows += '<div class="ruby-line">' + lineRuby + '</div>';
+      }
+      deepHTML += '<div class="poem-block"><div class="block-title">\ud3c9\uce21</div><div class="block-box"><div class="ruby-grid pingze">' + pzRows + '</div></div></div>';
+    }
+
+    const ytLinks = (p.media && Array.isArray(p.media.youtube)) ? p.media.youtube : [];
+    if (ytLinks.length > 0) {
+      const ytHTML = ytLinks.map(url => {
+        const m = url.match(/(?:youtu\.be\/|youtube\.com\/watch\?v=|youtube\.com\/embed\/)([^&?#\s]+)/);
+        if (!m) return "";
+        return '<div class="yt-embed-wrap"><iframe src="https://www.youtube.com/embed/' + escapeHTML(m[1]) + '" frameborder="0" allowfullscreen loading="lazy"></iframe></div>';
+      }).filter(Boolean).join("");
+      deepHTML += '<div class="poem-block"><div class="block-title">YouTube \ub0ad\uc1a1</div><div class="block-box">' + ytHTML + '</div></div>';
+    }
+
+    return '<div class="poem-text-box">' +
+      '<div class="poem-title-zh">' + titleFull + '</div>' +
+      (titleKo ? '<div class="poem-title-ko">' + escapeHTML(titleKo) + '</div>' : '') +
+      '<div class="poem-poet-zh">' + parseTextWithNotes(poetZhSource, notes, titleId, noteSource) + '</div>' +
+      '<div class="poem-bilingual">' + bilingualRows + '</div>' +
+    '</div>' +
+    (jipZh ? '<div class="poem-section-block"><div class="poem-sec-label">\uc9d1\ud3c9</div><div class="poem-sec-text pre">' + jipZh + '</div></div>' : '') +
+    (jipKo ? '<div class="poem-section-block"><div class="poem-sec-label">\uc9d1\ud3c9 \ubc88\uc5ed</div><div class="poem-sec-text pre">' + jipKo + '</div></div>' : '') +
+    '<div class="poem-section-block"><div class="poem-sec-label">' + (useOwnedNotes ? '\uc8fc\uc11d (\uc9d1\ud544)' : '\uc8fc\uc11d') + '</div><div class="poem-sec-text">' + notesHTML + '</div></div>' +
+    (deepHTML ? '<div class="poem-section-block"><div class="poem-sec-label">\uc2ec\ud654\uc790\ub8cc</div>' + deepHTML + '</div>' : '');
+  }
+
+  // ===== 7) 주석 시스템 =====
+  function getOrCreateTooltip() {
+    let tooltip = document.getElementById("annotation-tooltip");
+    if (!tooltip) {
+      tooltip = document.createElement("div");
+      tooltip.id = "annotation-tooltip";
+      tooltip.className = "annotation-tooltip";
+      tooltip.hidden = true;
+      document.body.appendChild(tooltip);
+    }
+    return tooltip;
+  }
+
+  function showAnnotationTooltip(element, content, mouseX, mouseY) {
+    const tooltip = getOrCreateTooltip();
+    tooltip.textContent = content;
+    tooltip.hidden = false;
+    let top = mouseY + 10;
+    let left = mouseX + 10;
+    tooltip.style.position = "fixed";
+    tooltip.style.top = top + "px";
+    tooltip.style.left = left + "px";
+    requestAnimationFrame(() => {
+      const tr = tooltip.getBoundingClientRect();
+      if (left + tr.width > window.innerWidth - 10) left = mouseX - tr.width - 10;
+      if (top + tr.height > window.innerHeight - 10) top = mouseY - tr.height - 10;
+      if (left < 10) left = 10;
+      if (top < 10) top = 10;
+      tooltip.style.top = top + "px";
+      tooltip.style.left = left + "px";
+    });
+  }
+
+  function hideAnnotationTooltip() {
+    const tooltip = document.getElementById("annotation-tooltip");
+    if (tooltip) tooltip.hidden = true;
+  }
+
+  // ===== 8) 이벤트 핸들러 =====
+  let searchTimeout = null;
+
+  function handleSearch() {
+    const query = document.getElementById("searchInput").value.trim();
+    if (query.length < 2) {
+      if (query.length === 0) showEmptyState();
+      return;
+    }
+    currentResults = searchAll(query, null);
+    updateTabCounts(currentResults);
+    renderResults(currentResults, currentTab);
+  }
+
+  function showEmptyState() {
+    document.getElementById("searchResults").innerHTML =
+      '<div class="search-empty">' +
+        '<div class="empty-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="opacity:0.3"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>' +
+        '<p>\uc2dc \uc81c\ubaa9, \uc2dc\uc778 \uc774\ub984, \ud0a4\uc6cc\ub4dc\ub97c \uc785\ub825\ud558\uc138\uc694</p>' +
+        '<p class="hint">Cmd+K \ub85c \ube60\ub974\uac8c \uac80\uc0c9\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4</p>' +
+      '</div>';
+    // 탭 카운트 제거
+    document.querySelectorAll('.tab-count').forEach(el => el.remove());
+  }
+
+  function switchTab(tab) {
+    currentTab = tab;
+    document.querySelectorAll('.search-tab').forEach(t => {
+      t.classList.toggle('active', t.dataset.tab === tab);
+    });
+    if (currentResults) renderResults(currentResults, tab);
+  }
+
+  function init() {
+    const searchInput = document.getElementById("searchInput");
+    const searchResults = document.getElementById("searchResults");
+
+    // 검색 입력 (디바운스)
+    searchInput.addEventListener("input", () => {
+      clearTimeout(searchTimeout);
+      searchTimeout = setTimeout(handleSearch, 200);
+    });
+
+    // 탭 클릭
+    document.getElementById("searchTabs").addEventListener("click", (e) => {
+      const tab = e.target.closest(".search-tab");
+      if (!tab) return;
+      switchTab(tab.dataset.tab);
+    });
+
+    // 결과 영역 이벤트 위임
+    searchResults.addEventListener("click", async (e) => {
+      // 더보기 버튼 → 탭 전환
+      const moreBtn = e.target.closest(".result-section-more");
+      if (moreBtn) {
+        switchTab(moreBtn.dataset.switchTab);
+        return;
+      }
+
+      // 시 카드 → 아코디언 펼침
+      const poemCard = e.target.closest(".poem-card");
+      if (poemCard) {
+        const body = poemCard.querySelector(".poem-card-body");
+        if (!body) return;
+        const expanded = !body.hidden;
+        // 다른 카드 닫기
+        searchResults.querySelectorAll(".poem-card.expanded").forEach(c => {
+          if (c !== poemCard) {
+            c.classList.remove("expanded");
+            const b = c.querySelector(".poem-card-body");
+            if (b) b.hidden = true;
+          }
+        });
+        if (expanded) {
+          poemCard.classList.remove("expanded");
+          body.hidden = true;
+        } else {
+          // lazy load
+          if (!body.innerHTML.trim()) {
+            body.innerHTML = '<div style="padding:16px;text-align:center;color:#999;">\ub85c\ub529 \uc911...</div>';
+            body.hidden = false;
+            poemCard.classList.add("expanded");
+            const full = await loadFullData();
+            const p = full.find(x => x.titleId === poemCard.dataset.poemId);
+            if (p) {
+              body.innerHTML = renderPoemBodyHTML(p);
+            } else {
+              body.innerHTML = '<div style="padding:16px;color:#999;">\ub370\uc774\ud130\ub97c \ucc3e\uc744 \uc218 \uc5c6\uc2b5\ub2c8\ub2e4</div>';
+            }
+          } else {
+            body.hidden = false;
+            poemCard.classList.add("expanded");
+          }
+          // 스크롤 이동 없이 제자리에서 펼침
+        }
+        return;
+      }
+
+      // 시인 카드 내부의 시 항목 클릭 → 해당 시 상세 아코디언 펼침
+      const poetPoemItem = e.target.closest(".poet-poem-item");
+      if (poetPoemItem) {
+        e.stopPropagation();
+        const poemId = poetPoemItem.dataset.poemId;
+        const nextEl = poetPoemItem.nextElementSibling;
+        const isExpanded = nextEl && nextEl.classList.contains("poet-poem-detail");
+
+        // 같은 시인 카드 내 기존 펼침 모두 닫기
+        const poetCard = poetPoemItem.closest(".poet-card");
+        if (poetCard) {
+          poetCard.querySelectorAll(".poet-poem-detail").forEach(d => d.remove());
+          poetCard.querySelectorAll(".poet-poem-item.active").forEach(i => i.classList.remove("active"));
+        }
+
+        // 이미 펼쳐져 있었으면 닫기만 (토글)
+        if (isExpanded) return;
+
+        // 새 상세 영역 생성
+        const detailDiv = document.createElement("div");
+        detailDiv.className = "poet-poem-detail";
+        detailDiv.innerHTML = '<div style="padding:8px;text-align:center;color:#999;">로딩 중...</div>';
+        poetPoemItem.after(detailDiv);
+        poetPoemItem.classList.add("active");
+
+        // lazy load 후 렌더
+        const full = await loadFullData();
+        const p = full.find(x => x.titleId === poemId);
+        if (p) {
+          detailDiv.innerHTML = renderPoemBodyHTML(p);
+        } else {
+          detailDiv.innerHTML = '<div style="padding:8px;color:#999;">데이터를 찾을 수 없습니다</div>';
+        }
+        return;
+      }
+
+      // 시인 카드 → 아코디언 펼침 (전기 + 시 목록)
+      const poetCard = e.target.closest(".poet-card");
+      if (poetCard) {
+        const body = poetCard.querySelector(".poet-card-body");
+        if (!body) return;
+        const expanded = !body.hidden;
+        // 다른 시인 카드 닫기
+        searchResults.querySelectorAll(".poet-card.expanded").forEach(c => {
+          if (c !== poetCard) {
+            c.classList.remove("expanded");
+            const b = c.querySelector(".poet-card-body");
+            if (b) b.hidden = true;
+          }
+        });
+        if (expanded) {
+          poetCard.classList.remove("expanded");
+          body.hidden = true;
+        } else {
+          if (!body.innerHTML.trim()) {
+            body.innerHTML = renderPoetBodyHTML(poetCard.dataset.poetName);
+          }
+          body.hidden = false;
+          poetCard.classList.add("expanded");
+        }
+        return;
+      }
+
+      // 뉴스 카드 → 원문 링크
+      const newsCard = e.target.closest(".news-card");
+      if (newsCard) {
+        const url = newsCard.dataset.url;
+        if (url) window.open(url, "_blank");
+        return;
+      }
+    });
+
+    // 주석 호버
+    searchResults.addEventListener("mouseover", (e) => {
+      const noteWord = e.target.closest(".note-word");
+      if (!noteWord) return;
+      const noteText = noteWord.dataset.noteText;
+      if (noteText) showAnnotationTooltip(noteWord, noteText, e.clientX, e.clientY);
+    });
+    searchResults.addEventListener("mouseout", (e) => {
+      if (e.target.closest(".note-word")) hideAnnotationTooltip();
+    });
+
+    // 주석 크로스링크
+    searchResults.addEventListener("click", (e) => {
+      const noteWord = e.target.closest(".note-word");
+      if (noteWord) {
+        e.stopPropagation();
+        const fullId = noteWord.id.replace("note-ref-", "");
+        const targetItem = document.getElementById("note-item-" + fullId);
+        if (targetItem) {
+          targetItem.scrollIntoView({ behavior: "smooth", block: "center" });
+          targetItem.classList.add("highlight-flash");
+          setTimeout(() => targetItem.classList.remove("highlight-flash"), 2000);
+        }
+        return;
+      }
+      const noteNo = e.target.closest(".note-no");
+      if (noteNo) {
+        e.stopPropagation();
+        const ref = noteNo.dataset.targetRef;
+        if (ref) {
+          const target = document.getElementById("note-ref-" + ref);
+          if (target) {
+            target.scrollIntoView({ behavior: "smooth", block: "center" });
+            target.classList.add("highlight-flash");
+            setTimeout(() => target.classList.remove("highlight-flash"), 2000);
+          }
+        }
+      }
+    });
+
+    // Cmd+K → 검색 포커스
+    document.addEventListener("keydown", (e) => {
+      if ((e.metaKey || e.ctrlKey) && e.key === "k") {
+        e.preventDefault();
+        searchInput.focus();
+        searchInput.select();
+      }
+      if (e.key === "Escape") searchInput.blur();
+    });
+
+    // URL 파라미터 처리
+    const params = new URLSearchParams(window.location.search);
+    const q = params.get("q");
+    const tab = params.get("tab");
+
+    if (tab && ["all", "poem", "poet", "article"].includes(tab)) {
+      switchTab(tab);
+    }
+
+    loadAllData().then(() => {
+      if (q) {
+        searchInput.value = q;
+        handleSearch();
+      }
+    });
+  }
+
+  document.addEventListener("DOMContentLoaded", init);
+  </script>
+  <script src="/shared/auth-state.js"></script>
+  <script src="/shared/components.js"></script>
+</body>
+</html>

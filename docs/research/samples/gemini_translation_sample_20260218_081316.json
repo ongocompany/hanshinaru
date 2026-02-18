@@ -1,0 +1,105 @@
+{
+  "generatedAt": "20260218_081316",
+  "mode": "live",
+  "model": "gemini-2.5-pro",
+  "poemsPath": "public/index/poems.full.owned.json",
+  "queuePath": "docs/research/13_심층번역_작업큐_260216_CH.csv",
+  "countRequested": 5,
+  "samples": [
+    {
+      "poemNoStr": "023",
+      "titleKo": "〈봄날 약야계에 배를 띄우다〉",
+      "poetKo": "기무잠",
+      "translationKoPoetic": "그윽한 마음 끊일 줄 모르니\n이 길 가는 대로 발길을 맡기네\n저문 바람은 가는 배에 불어오고\n꽃길 따라 계곡 어귀로 들어서네\n밤 깊어 서쪽 골짜기로 접어드니\n산 너머 남두성이 바라보이네\n못의 안개는 몽실몽실 피어오르고\n숲의 달은 나직이 뒤를 따르네\n세상살이 아득하기만 하니\n낚싯대 드리운 늙은이 되고 싶어라",
+      "jipyeongKoLiteral": "○ 기력이 있으니, 고요함 속에서 보아낼 수 있다. - 명나라 종성, 《당시귀》 권14\n○ 좋은 경지에 묘한 말이 떠오르니, 마치 마음과 손을 거치지 않은 듯하다. - 명나라 담원춘, 《당시귀》 권14",
+      "notesOwned": [
+        {
+          "head": "幽意",
+          "body": "속세에서 벗어난 그윽하고 한가로운 마음을 뜻한다. 자연 속에서 느끼는 탈속적인 정서를 가리킨다."
+        },
+        {
+          "head": "隨所偶",
+          "body": "우연히 마주치는 바를 따른다는 뜻으로, 정해진 목적지 없이 발길 닿는 대로 간다는 의미다. 도가적인 무위자연의 태도를 엿볼 수 있다."
+        },
+        {
+          "head": "際夜",
+          "body": "밤과 만난다는 뜻으로, 밤이 깊어질 무렵을 가리킨다. 시간의 흐름과 함께 풍경이 변하는 모습을 보여준다."
+        },
+        {
+          "head": "南斗",
+          "body": "남두육성(南斗六星)을 가리키는 말로, 궁수자리에 있는 여섯 개의 별이다. 북두칠성과 함께 예로부터 방향을 가늠하는 길잡이 별로 여겨졌다."
+        },
+        {
+          "head": "溶溶",
+          "body": "물이 넓고 깊게 흐르는 모양, 또는 안개나 구름이 짙게 퍼지는 모양을 나타내는 의태어다. 시에서는 못에서 피어오르는 물안개의 자욱한 모습을 표현한다."
+        },
+        {
+          "head": "生事",
+          "body": "살아가는 일, 즉 세속적인 생업이나 살림살이를 의미한다. 시인은 자연의 한가로움 속에서 세속의 번잡함을 떠올리고 있다."
+        },
+        {
+          "head": "持竿叟",
+          "body": "낚싯대를 드리운 늙은이라는 뜻으로, 세속을 떠나 유유자적하는 은자의 삶을 상징하는 대표적인 이미지다."
+        }
+      ],
+      "commentaryKo": "이 시는 봄날 저녁 약야계에서 배를 타고 가며 마주하는 풍경과 내면의 소회를 노래한 작품이다. 시의 전반부는 저문 바람, 꽃길, 계곡 등 한가로운 봄날의 정경을 감각적으로 묘사하며 독자를 시적 공간으로 이끈다. 밤이 깊어지면서 시선은 산 너머 남두성과 자욱한 안개, 숲 사이의 달로 옮겨가며 공간은 더욱 깊고 아늑한 분위기를 띤다. 이러한 자연과의 교감 속에서 시인은 문득 번잡한 '세상살이(生事)'를 떠올리고, 모든 것을 내려놓고 낚시나 즐기는 '늙은이(持竿叟)'가 되고 싶다는 소망을 드러낸다. 이는 속세를 벗어나 자연에 귀의하고픈 당대 문인들의 보편적인 은일(隱逸) 사상을 아름다운 서정 속에 녹여낸 수작이다.",
+      "prompt": "아래 정보를 바탕으로 번역 산출물을 JSON으로 생성하라.\n\n- poemNoStr: 023\n- titleKo: 〈봄날 약야계에 배를 띄우다〉\n- poetKo: 기무잠\n- poemZh line count: 10\n- poemZh:\n幽意[3]無斷絶\n此去隨所偶[4]\n晩風吹行舟\n花路入溪口\n際夜[5]轉西壑\n隔山望南斗[6]\n潭煙飛溶溶[7]\n林月低向後\n生事[8]且瀰漫[9]\n願爲持竿叟[10]\n\n- jipyeongZh:\n[集評] ○ 有氣力 靜中看出 - 明 鍾惺, 《唐詩歸》 卷14\n○ 好境 妙語浮出 如不經心手者 - 明 潭元春, 《唐詩歸》 卷14\n\n- jipyeongZh가 비어 있으면 jipyeongKoLiteral은 반드시 \"해당 수록본에는 별도의 집평 원문이 실려 있지 않다.\" 사용.\n- notesOwned는 한국 학생이 헷갈리는 고유명사/전고/고어를 우선 선정.\n- notesOwned.head는 가능하면 원문 표기를 그대로 사용.\n- 시 번역은 과장하지 말고 원의미 충실 + 한국어 시어체 리듬 유지.\n- 반드시 아래 JSON 스키마 키 이름을 그대로 사용.\n\nJSON_SCHEMA_EXAMPLE:\n{\n  \"poemNoStr\": \"string\",\n  \"titleKo\": \"string\",\n  \"poetKo\": \"string\",\n  \"translationKoPoetic\": \"string (원문 행 수와 동일한 줄 수, 줄바꿈 유지)\",\n  \"jipyeongKoLiteral\": \"string (집평 원문 직역. 집평 원문이 비어 있으면 고정문장 사용)\",\n  \"notesOwned\": [\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    },\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    },\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    },\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    },\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    }\n  ],\n  \"commentaryKo\": \"string (3~6문장, 작품 정서/구도/핵심 이미지 해설)\"\n}"
+    },
+    {
+      "poemNoStr": "024",
+      "titleKo": "〈왕창령이 은거하던 곳에 머물다〉",
+      "poetKo": "상건",
+      "translationKoPoetic": "맑은 계곡 그 깊이를 헤아릴 수 없고\n숨어 사는 곳엔 오직 외로운 구름뿐.\n소나무 끝에 희미한 달 떠오르니\n저 맑은 빛은 그대를 위함이리라.\n띠풀 정자엔 꽃 그림자 잠들어 있고\n약초밭 뜰엔 이끼 무늬 자라나네.\n나 또한 세상 사양하고 떠나가서\n서산의 난새와 학의 무리에 끼고 싶어라.",
+      "jipyeongKoLiteral": "○ 상건의 시는 마치 처음 큰길로 나서려다 문득 백 리 밖의 들길을 찾고 나서야 비로소 큰길로 돌아오는 것과 같다. 그러므로 그 뜻이 멀고 그 흥취가 외지며, 아름다운 구절이 문득 나타나는데 오직 뜻밖의 것만을 논한다. \"소나무 끝에 희미한 달 드러나니, 맑은 빛은 오히려 그대를 위함일세(松際露微月 淸光猶爲君)\"나 \"산 빛은 새의 본성을 기쁘게 하고, 못 속 그림자는 사람 마음을 비우게 하네(山光悅鳥性 潭影空人心)\"와 같은 경우에 이르러서는, 이런 예의 십수 구는 모두 경책(警策)이라 일컬을 만하다. - 당나라 은번, 《하악영령집》 권상\n○ 정과 경치가 깊고 그윽하여, 색을 칠한 부류가 아니다. - 송나라 유회맹, 《당시광선》 권1",
+      "notesOwned": [
+        {
+          "head": "淸溪",
+          "body": "맑은 시내. 시인이 방문한 왕창령의 은거지가 속세와 떨어진 깊은 자연 속에 있음을 암시하는 첫 구절의 핵심 시어입니다."
+        },
+        {
+          "head": "唯孤雲",
+          "body": "'오직 외로운 구름뿐'이라는 뜻으로, 왕창령의 은거 생활이 속세와 단절된 채 고고하게 이루어졌음을 상징적으로 보여줍니다."
+        },
+        {
+          "head": "爲君",
+          "body": "'그대를 위하다'라는 뜻으로, 여기서 '君(군)'은 시의 배경이 되는 인물인 왕창령(王昌齡)을 가리킵니다. 자연의 맑은 빛조차 은거하는 그를 위해 비춘다고 표현하여 존경심을 드러냅니다."
+        },
+        {
+          "head": "藥院",
+          "body": "약초를 심은 뜰. 도가적 은자들이 불로장생을 위해 약초를 가꾸던 것과 관련이 깊으며, 왕창령의 은거 생활이 신선과 같은 풍모를 지녔음을 암시합니다."
+        },
+        {
+          "head": "謝時",
+          "body": "'시절을 사양하다' 즉, 세속의 공명이나 벼슬길을 버리고 은거하는 것을 의미합니다. 시인 자신도 왕창령의 삶을 본받아 속세를 떠나고 싶다는 소망을 표현한 구절입니다."
+        },
+        {
+          "head": "鸞鶴群",
+          "body": "난새와 학의 무리. 예로부터 신선이 타고 다니는 새로 여겨져 신선이나 고결한 은자를 상징합니다. 시인이 은거하여 어울리고자 하는 이상적인 벗들을 비유합니다."
+        }
+      ],
+      "commentaryKo": "이 시는 시인 왕창령이 은거하던 곳의 고요하고 탈속적인 분위기를 묘사하며, 그 삶을 동경하는 작자의 마음을 담아낸 작품입니다. 전반부에서는 깊이를 알 수 없는 맑은 계곡, 외로운 구름, 소나무 사이로 뜬 달 등 선경과 같은 자연을 그려내며 공간의 신비롭고 정결한 인상을 부각합니다. 특히 달빛마저 오직 왕창령을 위해 비춘다고 표현하여, 은자에 대한 깊은 흠모를 드러냅니다. 후반부에서는 띠풀 정자와 이끼 낀 약초밭을 통해 자연에 동화된 은자의 소박한 삶의 흔적을 보여주며, 시인은 이에 감화되어 자신 또한 세속을 떠나 신선처럼 고결한 삶을 살고 싶다는 소망을 노래하며 시를 마무리합니다.",
+      "prompt": "아래 정보를 바탕으로 번역 산출물을 JSON으로 생성하라.\n\n- poemNoStr: 024\n- titleKo: 〈왕창령이 은거하던 곳에 머물다〉\n- poetKo: 상건\n- poemZh line count: 8\n- poemZh:\n淸溪深不測\n隱處唯孤雲\n松際露微月[2]\n淸光猶爲君\n茅亭宿花影\n藥院滋苔紋\n余亦謝時[3]去\n西山鸞鶴群[4]\n\n- jipyeongZh:\n[集評] ○ 建詩 似初發通莊 却尋野徑百里之外 方歸大道\n所以其旨遠 其興僻 佳句輒來 唯論意表\n至如松際露微月 淸光猶爲君 又山光悅鳥性 潭影空人心 此例十數句 竝可稱警策 - 唐 殷璠, 《河嶽英靈集》 卷上\n○ 情景沈冥 不類着色 - 宋 劉會孟, 《唐詩廣選》 卷1\n\n- jipyeongZh가 비어 있으면 jipyeongKoLiteral은 반드시 \"해당 수록본에는 별도의 집평 원문이 실려 있지 않다.\" 사용.\n- notesOwned는 한국 학생이 헷갈리는 고유명사/전고/고어를 우선 선정.\n- notesOwned.head는 가능하면 원문 표기를 그대로 사용.\n- 시 번역은 과장하지 말고 원의미 충실 + 한국어 시어체 리듬 유지.\n- 반드시 아래 JSON 스키마 키 이름을 그대로 사용.\n\nJSON_SCHEMA_EXAMPLE:\n{\n  \"poemNoStr\": \"string\",\n  \"titleKo\": \"string\",\n  \"poetKo\": \"string\",\n  \"translationKoPoetic\": \"string (원문 행 수와 동일한 줄 수, 줄바꿈 유지)\",\n  \"jipyeongKoLiteral\": \"string (집평 원문 직역. 집평 원문이 비어 있으면 고정문장 사용)\",\n  \"notesOwned\": [\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    },\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    },\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    },\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    },\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    }\n  ],\n  \"commentaryKo\": \"string (3~6문장, 작품 정서/구도/핵심 이미지 해설)\"\n}"
+    },
+    {
+      "poemNoStr": "025",
+      "titleKo": "〈고적, 설거와 함께 자은사 부도에 오르다〉",
+      "poetKo": "잠삼",
+      "prompt": "아래 정보를 바탕으로 번역 산출물을 JSON으로 생성하라.\n\n- poemNoStr: 025\n- titleKo: 〈고적, 설거와 함께 자은사 부도에 오르다〉\n- poetKo: 잠삼\n- poemZh line count: 22\n- poemZh:\n塔勢如湧出\n孤高聳天宮[3]\n登臨出世界[4]\n磴道盤虛空\n突兀[5]壓神州[6]\n崢嶸[7]如鬼工\n四角礙白日[8]\n七層摩蒼穹\n下窺指高鳥\n俯聽聞驚風\n連山若波濤\n奔湊如朝東[9]\n靑槐夾馳道[10]\n宮館何玲瓏[11]\n秋色從西來\n蒼然滿關中[12]\n五陵北原[13]上\n萬古靑濛濛[14]\n淨理[15]了可悟\n勝因[16]夙所宗\n誓將掛冠[17]去\n覺道資無窮\n\n- jipyeongZh:\n[集評] ○ 岑嘉州 五言古源出鮑照 而魄力已大\n至慈恩塔詩 秋色從西來 蒼然滿關中 五陵北原上 萬古靑濛濛 雄勁之槪 直與少陵匹敵 - 淸 施補華, 《峴傭說詩》\n\n- jipyeongZh가 비어 있으면 jipyeongKoLiteral은 반드시 \"해당 수록본에는 별도의 집평 원문이 실려 있지 않다.\" 사용.\n- notesOwned는 한국 학생이 헷갈리는 고유명사/전고/고어를 우선 선정.\n- notesOwned.head는 가능하면 원문 표기를 그대로 사용.\n- 시 번역은 과장하지 말고 원의미 충실 + 한국어 시어체 리듬 유지.\n- 반드시 아래 JSON 스키마 키 이름을 그대로 사용.\n\nJSON_SCHEMA_EXAMPLE:\n{\n  \"poemNoStr\": \"string\",\n  \"titleKo\": \"string\",\n  \"poetKo\": \"string\",\n  \"translationKoPoetic\": \"string (원문 행 수와 동일한 줄 수, 줄바꿈 유지)\",\n  \"jipyeongKoLiteral\": \"string (집평 원문 직역. 집평 원문이 비어 있으면 고정문장 사용)\",\n  \"notesOwned\": [\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    },\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    },\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    },\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    },\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    }\n  ],\n  \"commentaryKo\": \"string (3~6문장, 작품 정서/구도/핵심 이미지 해설)\"\n}",
+      "error": "Expecting ',' delimiter: line 35 column 6 (char 1898)"
+    },
+    {
+      "poemNoStr": "026",
+      "titleKo": "〈적이 물러간 뒤 관리에게 보인다〉병서",
+      "poetKo": "원결",
+      "prompt": "아래 정보를 바탕으로 번역 산출물을 JSON으로 생성하라.\n\n- poemNoStr: 026\n- titleKo: 〈적이 물러간 뒤 관리에게 보인다〉병서\n- poetKo: 원결\n- poemZh line count: 32\n- poemZh:\n癸卯歲[2] 西原[3]\n賊入道州 焚燒殺掠 幾盡而去\n明年 賊又攻永州[4]\n破邵[5] 不犯此州邊鄙[6]\n而退 豈力能制敵歟\n蓋蒙其傷憐而已\n諸使何爲忍苦徵歛\n故作詩一篇以示官吏\n\n\n昔歲逢太平\n山林二十年\n泉源[7]在庭戶\n洞壑[8]當門前\n井稅[9]有常期\n日晏猶得眠\n忽然遭世變\n數歲親戎旃[10]\n今來典斯郡[11]\n山夷[12]又紛然\n城小賊不屠\n人貧傷可憐\n是以陷鄰境\n此州獨見全\n使臣將王命[13]\n豈不如賊焉\n今彼徵歛者[14]\n迫之如火煎\n誰能絶人命\n以作時世賢[15]\n思欲委符節[16]\n引竿自刺船[17]\n將家就魚麥[18]\n歸老[19]江湖邊\n\n- jipyeongZh:\n(없음)\n\n- jipyeongZh가 비어 있으면 jipyeongKoLiteral은 반드시 \"해당 수록본에는 별도의 집평 원문이 실려 있지 않다.\" 사용.\n- notesOwned는 한국 학생이 헷갈리는 고유명사/전고/고어를 우선 선정.\n- notesOwned.head는 가능하면 원문 표기를 그대로 사용.\n- 시 번역은 과장하지 말고 원의미 충실 + 한국어 시어체 리듬 유지.\n- 반드시 아래 JSON 스키마 키 이름을 그대로 사용.\n\nJSON_SCHEMA_EXAMPLE:\n{\n  \"poemNoStr\": \"string\",\n  \"titleKo\": \"string\",\n  \"poetKo\": \"string\",\n  \"translationKoPoetic\": \"string (원문 행 수와 동일한 줄 수, 줄바꿈 유지)\",\n  \"jipyeongKoLiteral\": \"string (집평 원문 직역. 집평 원문이 비어 있으면 고정문장 사용)\",\n  \"notesOwned\": [\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    },\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    },\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    },\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    },\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    }\n  ],\n  \"commentaryKo\": \"string (3~6문장, 작품 정서/구도/핵심 이미지 해설)\"\n}",
+      "error": "Expecting ',' delimiter: line 39 column 6 (char 1752)"
+    },
+    {
+      "poemNoStr": "027",
+      "titleKo": "〈군의 관사에서 비가 오는 가운데 여러 문사들과 연회를 열며〉",
+      "poetKo": "위응물",
+      "prompt": "아래 정보를 바탕으로 번역 산출물을 JSON으로 생성하라.\n\n- poemNoStr: 027\n- titleKo: 〈군의 관사에서 비가 오는 가운데 여러 문사들과 연회를 열며〉\n- poetKo: 위응물\n- poemZh line count: 20\n- poemZh:\n兵衛森畫戟[3]\n宴寢凝淸香\n海上風雨至\n逍遙池閣涼\n煩疴[4]近消散\n嘉賓復滿堂\n自慙居處崇[5]\n未覩斯民康\n理會是非遣[6]\n性達形跡忘\n鮮肥屬時禁\n蔬果幸見嘗\n俯飮一杯酒\n仰聆金玉章[7]\n神歡體自輕\n意欲凌風翔\n吳中盛文史[8]\n群彦[9]今汪洋[10]\n方知大藩[11]地\n豈曰財賦强\n\n- jipyeongZh:\n[集評] ○ 詩話稱韋蘇州郡齋燕集首句 兵衛森畫戟 燕寢凝淸香 海上風雨至 逍遙池閣凉 爲一代絶唱\n余讀其全篇 每恨其結句 云吳中盛文史 羣彦今汪洋 方知大藩地 豈曰財賦强 深爲未稱\n後見宋人麗澤編 無後四句 三十年之疑 一旦釋之 - 明 楊愼, 《升菴集》 卷54, 〈韋應物蘇州郡齋燕集詩〉\n\n- jipyeongZh가 비어 있으면 jipyeongKoLiteral은 반드시 \"해당 수록본에는 별도의 집평 원문이 실려 있지 않다.\" 사용.\n- notesOwned는 한국 학생이 헷갈리는 고유명사/전고/고어를 우선 선정.\n- notesOwned.head는 가능하면 원문 표기를 그대로 사용.\n- 시 번역은 과장하지 말고 원의미 충실 + 한국어 시어체 리듬 유지.\n- 반드시 아래 JSON 스키마 키 이름을 그대로 사용.\n\nJSON_SCHEMA_EXAMPLE:\n{\n  \"poemNoStr\": \"string\",\n  \"titleKo\": \"string\",\n  \"poetKo\": \"string\",\n  \"translationKoPoetic\": \"string (원문 행 수와 동일한 줄 수, 줄바꿈 유지)\",\n  \"jipyeongKoLiteral\": \"string (집평 원문 직역. 집평 원문이 비어 있으면 고정문장 사용)\",\n  \"notesOwned\": [\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    },\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    },\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    },\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    },\n    {\n      \"head\": \"string\",\n      \"body\": \"string\"\n    }\n  ],\n  \"commentaryKo\": \"string (3~6문장, 작품 정서/구도/핵심 이미지 해설)\"\n}",
+      "error": "Expecting ',' delimiter: line 31 column 6 (char 1638)"
+    }
+  ]
+}

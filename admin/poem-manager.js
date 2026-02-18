@@ -12,6 +12,9 @@ const PoemManager = {
   sortKey: "no-asc",
   categoryFilter: "all",
   searchText: "",
+  visibleIndices: [],    // 현재 좌측 목록(필터/정렬 적용) 인덱스
+  batchSelectedIndices: new Set(), // 멀티 선택 인덱스
+  lastBuiltOutput: "",
 };
 
 // 배경 그림 메모리 저장소: titleId → DataURL
@@ -27,6 +30,7 @@ function initPoemManager() {
   if (!Array.isArray(DATA.poem)) return;
 
   bindPoemEvents();
+  initPoemBatchPanel();
   renderPoemList();
 }
 
@@ -50,17 +54,37 @@ function bindPoemEvents() {
     renderPoemList();
   });
 
-  // 목록 행 클릭 (이벤트 위임)
-  document.getElementById("poem-tbody").addEventListener("click", (e) => {
+  // 목록 행 클릭 + 체크박스 선택 (이벤트 위임)
+  const poemTbody = document.getElementById("poem-tbody");
+  poemTbody.addEventListener("click", (e) => {
+    if (e.target.closest(".poem-multi-check")) return;
     const row = e.target.closest("tr");
     if (!row) return;
     const idx = Number(row.dataset.idx);
     if (!isNaN(idx)) selectPoem(idx);
   });
+  poemTbody.addEventListener("change", (e) => {
+    const check = e.target.closest(".poem-multi-check");
+    if (!check) return;
+    const idx = Number(check.dataset.idx);
+    if (isNaN(idx)) return;
+    setBatchSelection(idx, check.checked);
+  });
+  document.getElementById("poem-select-all").addEventListener("change", (e) => {
+    setBatchSelectionForVisible(e.target.checked);
+  });
 
   // 확정/되돌리기 버튼
   document.getElementById("btn-confirm-poem").addEventListener("click", confirmCurrentPoem);
   document.getElementById("btn-revert-poem").addEventListener("click", revertCurrentPoem);
+
+  // 웹 번역용 프롬프트 빌더
+  document.getElementById("btn-poem-batch-select-all").addEventListener("click", selectAllBatchPoems);
+  document.getElementById("btn-poem-batch-build").addEventListener("click", buildBatchTranslationPrompt);
+  document.getElementById("btn-poem-batch-copy").addEventListener("click", copyBatchPromptOutput);
+  document.getElementById("btn-poem-batch-save").addEventListener("click", saveBatchTitleOutputAsMarkdown);
+  document.getElementById("btn-poem-batch-clear").addEventListener("click", clearBatchSelection);
+  document.getElementById("poem-batch-output").addEventListener("input", updateBatchSelectionSummary);
 
   // 폼 값 변경 감지 (이벤트 위임)
   document.getElementById("poem-form").addEventListener("input", onPoemFormChange);
@@ -80,47 +104,18 @@ function bindPoemEvents() {
   document.getElementById("btn-add-youtube").addEventListener("click", addYoutubeLink);
   document.getElementById("btn-search-youtube").addEventListener("click", searchYoutube);
 
-  // 배경 그림 (우측 패널에 이동됨)
-  document.getElementById("btn-bg-upload").addEventListener("click", () => document.getElementById("pf-bg-file").click());
-  document.getElementById("pf-bg-file").addEventListener("change", handleBgFileSelect);
-  document.getElementById("btn-bg-paste").addEventListener("click", handleBgPaste);
-  document.getElementById("btn-bg-delete").addEventListener("click", deleteBgImage);
-
-  // 모달 미리보기 (최종 확인용)
-  document.getElementById("btn-bg-preview").addEventListener("click", openBgPreviewModal);
-  document.getElementById("btn-bg-modal-close").addEventListener("click", closeBgPreviewModal);
-  document.getElementById("bg-preview-overlay").addEventListener("click", (e) => {
-    if (e.target === e.currentTarget) closeBgPreviewModal();
-  });
-
-  // 우측 패널: 박스 컨트롤 실시간 반영
-  ["bg-ctrl-color","bg-ctrl-opacity","bg-ctrl-radius","bg-ctrl-padding"].forEach(id => {
-    document.getElementById(id).addEventListener("input", onBoxControlChange);
-  });
-  document.getElementById("bg-ctrl-width").addEventListener("input", onBoxControlChange);
-  document.querySelectorAll('input[name="bg-align-h"], input[name="bg-align-v"]').forEach(r => {
-    r.addEventListener("change", onBoxControlChange);
-  });
-
-  // 우측 패널: 에디터 툴바
-  document.getElementById("ed-font").addEventListener("change", onEditorChange);
-  document.getElementById("ed-size").addEventListener("input", onEditorChange);
-  ["ed-bold","ed-italic","ed-underline"].forEach(id => {
-    document.getElementById(id).addEventListener("click", () => toggleEditorBtn(id));
-  });
-  ["ed-align-left","ed-align-center","ed-align-right"].forEach(id => {
-    document.getElementById(id).addEventListener("click", () => setEditorAlign(id));
-  });
-
-  // 우측 패널: 액션 버튼
-  document.getElementById("btn-preview-confirm").addEventListener("click", confirmCurrentPoem);
-  document.getElementById("btn-preview-revert").addEventListener("click", revertCurrentPoem);
-
-  // 중간 컬럼 폼 변경 → 실시간 미리보기 갱신
-  document.getElementById("poem-form").addEventListener("input", updatePreviewLive);
+  // 현토 리뷰 패널 이벤트
+  const btnHySave = document.getElementById("btn-hyeonto-save");
+  if (btnHySave) btnHySave.addEventListener("click", saveHyeontoForCurrentPoem);
+  const btnHyRevert = document.getElementById("btn-hyeonto-revert");
+  if (btnHyRevert) btnHyRevert.addEventListener("click", revertHyeontoForCurrentPoem);
 
   // 리사이즈 핸들 초기화
   initResizeHandles();
+}
+
+function initPoemBatchPanel() {
+  updateBatchSelectionSummary();
 }
 
 // ─── 시 목록 렌더링 ─────────────────────────
@@ -150,16 +145,20 @@ function renderPoemList() {
 
   // 정렬
   list = sortPoemList(list, PoemManager.sortKey);
+  PoemManager.visibleIndices = list.map(([idx]) => idx);
 
   // 렌더
   const tbody = document.getElementById("poem-tbody");
 
   const rows = list.map(([idx, p]) => {
     const isSelected = idx === PoemManager.selectedIndex ? " selected" : "";
+    const isBatchSelected = PoemManager.batchSelectedIndices.has(idx) ? " multi-selected" : "";
     const isModified = isPoemModified(idx) ? " row-modified" : "";
     const poetName = normalizePoetNameForPoem(p.poet?.zh || "");
+    const checkedAttr = PoemManager.batchSelectedIndices.has(idx) ? " checked" : "";
 
-    return `<tr data-idx="${idx}" class="${isSelected}${isModified}">
+    return `<tr data-idx="${idx}" class="${isSelected}${isBatchSelected}${isModified}">
+      <td class="poem-check-cell"><input type="checkbox" class="poem-multi-check" data-idx="${idx}"${checkedAttr}></td>
       <td>${escapeHTMLAdmin(p.poemNoStr || "")}</td>
       <td title="${escapeHTMLAdmin(p.title?.ko || "")}">${escapeHTMLAdmin(p.title?.zh || "")}</td>
       <td>${escapeHTMLAdmin(poetName)}</td>
@@ -171,6 +170,221 @@ function renderPoemList() {
   // 표시 카운트
   document.getElementById("poem-list-count").textContent =
     `${list.length}편 표시 / 총 ${DATA.poem.length}편`;
+  document.getElementById("poem-selected-count").textContent =
+    `선택 ${PoemManager.batchSelectedIndices.size}편`;
+
+  updatePoemSelectAllState();
+  updateBatchSelectionSummary();
+}
+
+function getPoemNoStrForBatch(poem) {
+  if (poem?.poemNoStr) return poem.poemNoStr;
+  const no = Number(poem?.poemNo);
+  return Number.isFinite(no) ? String(no).padStart(3, "0") : "";
+}
+
+function getBatchSelectedPoems() {
+  if (!Array.isArray(DATA.poem)) return [];
+  return Array.from(PoemManager.batchSelectedIndices)
+    .filter((idx) => DATA.poem[idx])
+    .map((idx) => [idx, DATA.poem[idx]])
+    .sort(([, a], [, b]) => (a.poemNo || 0) - (b.poemNo || 0));
+}
+
+function setBatchSelection(index, checked) {
+  const before = PoemManager.batchSelectedIndices.has(index);
+  if (checked) PoemManager.batchSelectedIndices.add(index);
+  else PoemManager.batchSelectedIndices.delete(index);
+  if (before !== checked) invalidateBatchPromptOutput();
+  renderPoemList();
+}
+
+function setBatchSelectionForVisible(checked) {
+  const visible = PoemManager.visibleIndices || [];
+  let changed = false;
+  visible.forEach((idx) => {
+    const before = PoemManager.batchSelectedIndices.has(idx);
+    if (checked) PoemManager.batchSelectedIndices.add(idx);
+    else PoemManager.batchSelectedIndices.delete(idx);
+    if (before !== checked) changed = true;
+  });
+  if (changed) invalidateBatchPromptOutput();
+  renderPoemList();
+}
+
+function clearBatchSelection() {
+  if (PoemManager.batchSelectedIndices.size === 0) return;
+  PoemManager.batchSelectedIndices.clear();
+  invalidateBatchPromptOutput();
+  renderPoemList();
+  showToast("선택한 시를 모두 해제했습니다.");
+}
+
+function selectAllBatchPoems() {
+  const visible = PoemManager.visibleIndices || [];
+  if (visible.length === 0) {
+    showToast("선택할 시가 없습니다.");
+    return;
+  }
+  setBatchSelectionForVisible(true);
+  showToast(`전체선택 완료: ${visible.length}편`);
+}
+
+function updatePoemSelectAllState() {
+  const selectAll = document.getElementById("poem-select-all");
+  if (!selectAll) return;
+
+  const visible = PoemManager.visibleIndices || [];
+  if (visible.length === 0) {
+    selectAll.checked = false;
+    selectAll.indeterminate = false;
+    selectAll.disabled = true;
+    return;
+  }
+
+  const selectedVisible = visible.filter((idx) => PoemManager.batchSelectedIndices.has(idx)).length;
+  selectAll.disabled = false;
+  selectAll.checked = selectedVisible === visible.length;
+  selectAll.indeterminate = selectedVisible > 0 && selectedVisible < visible.length;
+}
+
+function updateBatchSelectionSummary() {
+  const selected = getBatchSelectedPoems();
+  const countEl = document.getElementById("poem-batch-count");
+  const summaryEl = document.getElementById("poem-batch-summary");
+  const copyBtn = document.getElementById("btn-poem-batch-copy");
+  const saveBtn = document.getElementById("btn-poem-batch-save");
+  const outputEl = document.getElementById("poem-batch-output");
+
+  if (countEl) countEl.textContent = `선택된 시 ${selected.length}편`;
+
+  if (summaryEl) {
+    if (selected.length === 0) {
+      summaryEl.textContent = "왼쪽 목록에서 시를 체크하세요.";
+    } else {
+      const labels = selected.map(([, poem]) => {
+        const no = getPoemNoStrForBatch(poem);
+        const title = stripInlineNoteMarkersAdmin(poem?.title?.zh || "").trim() || "(제목 없음)";
+        return `${no} ${title}`;
+      });
+      const previewLimit = 12;
+      const previewText = labels.slice(0, previewLimit).join(" | ");
+      const remain = labels.length - previewLimit;
+      summaryEl.textContent = remain > 0 ? `${previewText} | ... 외 ${remain}편` : previewText;
+    }
+  }
+
+  if (copyBtn && outputEl) {
+    const hasOutput = outputEl.value.trim().length > 0;
+    copyBtn.disabled = !hasOutput;
+    if (saveBtn) saveBtn.disabled = !hasOutput;
+  }
+}
+
+function buildBatchTranslationPrompt() {
+  const selected = getBatchSelectedPoems();
+  if (selected.length === 0) {
+    showToast("먼저 왼쪽 목록에서 시를 선택하세요.");
+    return;
+  }
+
+  const outputEl = document.getElementById("poem-batch-output");
+  if (!outputEl) return;
+
+  const poemBlocks = selected.map(([, poem]) => {
+    const no = getPoemNoStrForBatch(poem);
+    const title = stripInlineNoteMarkersAdmin(poem?.title?.zh || "").trim();
+    const poet = stripInlineNoteMarkersAdmin(poem?.poet?.zh || "").trim();
+
+    return [
+      `시 번호: ${no || "(번호 없음)"}`,
+      `시 제목: ${title || "(제목 없음)"}`,
+      `시인 이름: ${poet || "(시인 없음)"}`
+    ].join("\n");
+  }).join("\n\n");
+
+  outputEl.value = poemBlocks;
+  PoemManager.lastBuiltOutput = poemBlocks;
+  updateBatchSelectionSummary();
+  showToast(`목록 생성 완료: ${selected.length}편`);
+}
+
+function invalidateBatchPromptOutput() {
+  const outputEl = document.getElementById("poem-batch-output");
+  if (outputEl) outputEl.value = "";
+  PoemManager.lastBuiltOutput = "";
+}
+
+async function copyBatchPromptOutput() {
+  const outputEl = document.getElementById("poem-batch-output");
+  if (!outputEl) return;
+
+  const text = outputEl.value.trim();
+  if (!text) {
+    showToast("복사할 내용이 없습니다.");
+    return;
+  }
+
+  try {
+    await navigator.clipboard.writeText(text);
+    showToast("출력 텍스트를 클립보드에 복사했습니다.");
+    return;
+  } catch {
+    outputEl.focus();
+    outputEl.select();
+    outputEl.setSelectionRange(0, outputEl.value.length);
+    const copied = typeof document.execCommand === "function" && document.execCommand("copy");
+    if (copied) {
+      showToast("출력 텍스트를 클립보드에 복사했습니다.");
+    } else {
+      showToast("자동 복사 실패: 텍스트 선택 후 수동 복사하세요.");
+    }
+  }
+}
+
+async function saveBatchTitleOutputAsMarkdown() {
+  const outputEl = document.getElementById("poem-batch-output");
+  if (!outputEl) return;
+
+  const text = outputEl.value.trim();
+  if (!text) {
+    showToast("저장할 내용이 없습니다.");
+    return;
+  }
+
+  const filename = "translate_title.md";
+  const content = text.endsWith("\n") ? text : `${text}\n`;
+  const blob = new Blob([content], { type: "text/markdown;charset=utf-8" });
+
+  if (typeof window.showSaveFilePicker === "function") {
+    try {
+      const handle = await window.showSaveFilePicker({
+        suggestedName: filename,
+        types: [{
+          description: "Markdown",
+          accept: { "text/markdown": [".md"] },
+        }],
+      });
+      const writable = await handle.createWritable();
+      await writable.write(blob);
+      await writable.close();
+      showToast(`${filename} 저장 완료`);
+      return;
+    } catch (err) {
+      if (err?.name === "AbortError") return;
+      console.warn("showSaveFilePicker 저장 실패, 다운로드로 폴백:", err);
+    }
+  }
+
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1200);
+  showToast(`${filename} 다운로드 완료`);
 }
 
 // 시인 이름에서 주석번호 제거
@@ -304,11 +518,12 @@ function selectPoem(index) {
   // 변경 감지 표시
   updatePoemFieldHighlights(index);
 
-  // 우측 미리보기 패널 표시 + 갱신
-  document.getElementById("preview-placeholder").hidden = true;
-  document.getElementById("preview-content").hidden = false;
-  loadEditorToolbar(poem);
-  updatePreviewLive();
+  // 우측 현토 리뷰 패널 표시 + 갱신
+  const hyPlaceholder = document.getElementById("hyeonto-placeholder");
+  const hyPanel = document.getElementById("hyeonto-panel");
+  if (hyPlaceholder) hyPlaceholder.hidden = true;
+  if (hyPanel) hyPanel.hidden = false;
+  renderHyeonto(index);
 }
 
 function renderOwnedReadonlySection(poem) {
@@ -882,6 +1097,7 @@ function renderBgImage(index) {
   const thumb = document.getElementById("pf-bg-thumb");
   const emptyMsg = document.getElementById("pf-bg-empty");
   const delBtn = document.getElementById("btn-bg-delete");
+  if (!thumb || !emptyMsg || !delBtn) return; // 우측 패널이 현토 리뷰로 교체된 경우
 
   if (bgImage) {
     const bgUrl = getBgImageUrl(poem);
@@ -1557,6 +1773,7 @@ function loadEditorToolbar(poem) {
   // 폰트
   const font = style.fontFamily || "fangsong";
   const fontSel = document.getElementById("ed-font");
+  if (!fontSel) return; // 에디터 툴바가 없는 경우 (현토 리뷰 모드)
   for (const opt of fontSel.options) {
     if (font.includes(opt.value.replace(/'/g, ""))) { opt.selected = true; break; }
   }
@@ -1794,4 +2011,152 @@ function initPvTextDrag(containerId) {
       saveTextPositionFromPreview();
     }
   });
+}
+
+// ═══════════════════════════════════════════════
+//   현토 리뷰/편집 기능
+// ═══════════════════════════════════════════════
+
+/**
+ * 현재 선택된 시의 현토 데이터를 찾아서 반환
+ */
+function findHyeontoForPoem(index) {
+  const poem = DATA.poem[index];
+  if (!poem || !DATA.hyeonto?.poems) return null;
+  const poemNoStr = poem.poemNoStr || String(poem.poemNo).padStart(3, "0");
+  return DATA.hyeonto.poems.find(h => h.poemNoStr === poemNoStr) || null;
+}
+
+/**
+ * 현토 리뷰 패널 렌더링
+ */
+function renderHyeonto(index) {
+  const body = document.getElementById("hyeonto-body");
+  const statusBadge = document.getElementById("hyeonto-status");
+  const metaEl = document.getElementById("hyeonto-meta");
+  const reviewSelect = document.getElementById("hyeonto-review-status");
+  if (!body) return;
+
+  const hyData = findHyeontoForPoem(index);
+
+  if (!hyData || !hyData.lines || hyData.lines.length === 0) {
+    body.innerHTML = `<div class="hyeonto-empty">현토 데이터 없음<br><small>배치 생성 후 새로고침하세요</small></div>`;
+    if (statusBadge) { statusBadge.textContent = "없음"; statusBadge.className = "hyeonto-status-badge status-none"; }
+    if (metaEl) metaEl.textContent = "";
+    if (reviewSelect) reviewSelect.value = "";
+    return;
+  }
+
+  // 상태 배지
+  const status = hyData.status || "auto";
+  const statusMap = {
+    auto: { text: "AI 생성", cls: "status-auto" },
+    approved: { text: "승인됨", cls: "status-approved" },
+    needs_edit: { text: "수정 필요", cls: "status-needs-edit" },
+    rejected: { text: "재생성", cls: "status-rejected" },
+    edited: { text: "수정됨", cls: "status-edited" },
+  };
+  const st = statusMap[status] || statusMap.auto;
+  if (statusBadge) { statusBadge.textContent = st.text; statusBadge.className = "hyeonto-status-badge " + st.cls; }
+  if (reviewSelect) reviewSelect.value = status === "auto" ? "" : status;
+
+  // 행 렌더링
+  let html = "";
+  hyData.lines.forEach((line, i) => {
+    html += `
+      <div class="hyeonto-line-item" data-line="${i}">
+        <div class="hyeonto-line-num">${i + 1}</div>
+        <div class="hyeonto-line-content">
+          <div class="hyeonto-original">${escapeHTMLAdmin(line.original)}</div>
+          <div class="hyeonto-field">
+            <label>현토</label>
+            <input type="text" class="hyeonto-input" data-field="hyeonto" data-line="${i}"
+                   value="${escapeHTMLAdmin(line.hyeonto || "")}">
+          </div>
+          <div class="hyeonto-field">
+            <label>독음</label>
+            <input type="text" class="hyeonto-input reading-input" data-field="reading" data-line="${i}"
+                   value="${escapeHTMLAdmin(line.reading || "")}">
+          </div>
+        </div>
+      </div>`;
+  });
+  body.innerHTML = html;
+
+  // 메타 정보
+  if (metaEl) {
+    const gen = hyData.generatedAt ? new Date(hyData.generatedAt).toLocaleString("ko-KR") : "—";
+    const prov = hyData.provider || "—";
+    metaEl.textContent = `생성: ${gen} · 모델: ${prov}`;
+  }
+}
+
+/**
+ * 현재 시의 현토 저장 (편집 내용 반영)
+ */
+function saveHyeontoForCurrentPoem() {
+  const index = PoemManager.selectedIndex;
+  if (index == null) return;
+
+  const hyData = findHyeontoForPoem(index);
+  if (!hyData) {
+    showToast("저장할 현토 데이터가 없습니다.");
+    return;
+  }
+
+  // input에서 편집된 값 수집
+  const body = document.getElementById("hyeonto-body");
+  body.querySelectorAll(".hyeonto-input").forEach(input => {
+    const lineIdx = Number(input.dataset.line);
+    const field = input.dataset.field;
+    if (hyData.lines[lineIdx]) {
+      hyData.lines[lineIdx][field] = input.value;
+    }
+  });
+
+  // hyeontoFull / readingFull 갱신
+  hyData.hyeontoFull = hyData.lines.map(l => l.hyeonto).join("\n");
+  hyData.readingFull = hyData.lines.map(l => l.reading).join("\n");
+
+  // 리뷰 상태 반영
+  const reviewSelect = document.getElementById("hyeonto-review-status");
+  if (reviewSelect && reviewSelect.value) {
+    hyData.status = reviewSelect.value;
+  } else {
+    // 값이 변경됐으면 edited로
+    hyData.status = "edited";
+  }
+  hyData.reviewedAt = new Date().toISOString();
+
+  // 상태 배지 갱신
+  renderHyeonto(index);
+
+  showToast("현토 수정 반영 완료 (전체 저장 시 파일에 기록됩니다)");
+}
+
+/**
+ * 현재 시의 현토를 원래 값으로 되돌리기
+ */
+function revertHyeontoForCurrentPoem() {
+  const index = PoemManager.selectedIndex;
+  if (index == null) return;
+
+  const poem = DATA.poem[index];
+  const poemNoStr = poem.poemNoStr || String(poem.poemNo).padStart(3, "0");
+
+  // ORIGINAL에서 복원
+  const origPoem = ORIGINAL.hyeonto?.poems?.find(h => h.poemNoStr === poemNoStr);
+  if (!origPoem) {
+    showToast("원본 현토 데이터가 없습니다.");
+    return;
+  }
+
+  // DATA에서 해당 항목 찾아서 교체
+  const dataIdx = DATA.hyeonto.poems.findIndex(h => h.poemNoStr === poemNoStr);
+  if (dataIdx >= 0) {
+    DATA.hyeonto.poems[dataIdx] = structuredClone(origPoem);
+  }
+
+  renderHyeonto(index);
+  showToast("현토 원본으로 되돌림");
 }

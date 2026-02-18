@@ -1,0 +1,108 @@
+[INFO] map items: 5
+[INFO] include_unmapped enabled: total=320 (fallback=315)
+[INFO] output dir: public/audio
+[INFO] using local HF snapshot: /Users/jin/.cache/huggingface/hub/models--Qwen--Qwen3-TTS-12Hz-1.7B-CustomVoice/snapshots/0c0e3051f131929182e2c023b9537f8b1c68adfe
+[1/320] 001 SKIP: 001_normal.mp3 already exists
+[2/320] 002 SKIP: 002_normal.mp3 already exists
+[3/320] 003 SKIP: 003_normal.mp3 already exists
+[4/320] 004 SKIP: 004_normal.mp3 already exists
+[5/320] 005 SKIP: 005_normal.mp3 already exists
+[6/320] 006 SKIP: 006_normal.mp3 already exists
+[7/320] 007 SKIP: 007_normal.mp3 already exists
+[8/320] 008 SKIP: 008_normal.mp3 already exists
+[9/320] 009 SKIP: 009_normal.mp3 already exists
+[10/320] 010 SKIP: 010_normal.mp3 already exists
+[11/320] 011 SKIP: 011_normal.mp3 already exists
+[12/320] 012 SKIP: 012_normal.mp3 already exists
+[13/320] 013 SKIP: 013_normal.mp3 already exists
+[14/320] 014 SKIP: 014_normal.mp3 already exists
+[15/320] 015 SKIP: 015_normal.mp3 already exists
+[16/320] 016 SKIP: 016_normal.mp3 already exists
+[17/320] 017 SKIP: 017_normal.mp3 already exists
+[18/320] 018 SKIP: 018_normal.mp3 already exists
+[19/320] 019 SKIP: 019_normal.mp3 already exists
+[20/320] 020 SKIP: 020_normal.mp3 already exists
+[21/320] 021 SKIP: 021_normal.mp3 already exists
+[22/320] 022 SKIP: 022_normal.mp3 already exists
+[23/320] 023 SKIP: 023_normal.mp3 already exists
+[24/320] 024 SKIP: 024_normal.mp3 already exists
+[25/320] 025 SKIP: 025_normal.mp3 already exists
+[26/320] 026 SKIP: 026_normal.mp3 already exists
+[27/320] 027 SKIP: 027_normal.mp3 already exists
+[28/320] 028 SKIP: 028_normal.mp3 already exists
+[29/320] 029 SKIP: 029_normal.mp3 already exists
+[30/320] 030 SKIP: 030_normal.mp3 already exists
+[31/320] 031 SKIP: 031_normal.mp3 already exists
+[32/320] 032 SKIP: 032_normal.mp3 already exists
+[33/320] 033 SKIP: 033_normal.mp3 already exists
+[34/320] 034 SKIP: 034_normal.mp3 already exists
+[35/320] 035 SKIP: 035_normal.mp3 already exists
+[36/320] 036 SKIP: 036_normal.mp3 already exists
+[37/320] 037 SKIP: 037_normal.mp3 already exists
+[38/320] 038 SKIP: 038_normal.mp3 already exists
+[39/320] 039 SKIP: 039_normal.mp3 already exists
+[40/320] 040 SKIP: 040_normal.mp3 already exists
+[41/320] 041 SKIP: 041_normal.mp3 already exists
+[42/320] 042 SKIP: 042_normal.mp3 already exists
+[43/320] 043 SKIP: 043_normal.mp3 already exists
+[44/320] 044 SKIP: 044_normal.mp3 already exists
+[45/320] 045 SKIP: 045_normal.mp3 already exists
+[46/320] 046 SKIP: 046_normal.mp3 already exists
+[47/320] 047 SKIP: 047_normal.mp3 already exists
+[48/320] 048 SKIP: 048_normal.mp3 already exists
+[49/320] 049 SKIP: 049_normal.mp3 already exists
+[50/320] 050 SKIP: 050_normal.mp3 already exists
+[51/320] 051 SKIP: 051_normal.mp3 already exists
+[52/320] 052 SKIP: 052_normal.mp3 already exists
+[53/320] 053 SKIP: 053_normal.mp3 already exists
+[54/320] 054 SKIP: 054_normal.mp3 already exists
+[55/320] 055 SKIP: 055_normal.mp3 already exists
+[56/320] 056 SKIP: 056_normal.mp3 already exists
+[57/320] 057 SKIP: 057_normal.mp3 already exists
+[58/320] 058 SKIP: 058_normal.mp3 already exists
+[59/320] 059 SKIP: 059_normal.mp3 already exists
+[60/320] 060 SKIP: 060_normal.mp3 already exists
+[61/320] 061 SKIP: 061_normal.mp3 already exists
+[62/320] 062 SKIP: 062_normal.mp3 already exists
+[63/320] 063 SKIP: 063_normal.mp3 already exists
+[64/320] 064 SKIP: 064_normal.mp3 already exists
+[65/320] 065 SKIP: 065_normal.mp3 already exists
+[66/320] 066 SKIP: 066_normal.mp3 already exists
+[67/320] 067 SKIP: 067_normal.mp3 already exists
+[68/320] 068 SKIP: 068_normal.mp3 already exists
+[69/320] 069 SKIP: 069_normal.mp3 already exists
+[70/320] 070 SKIP: 070_normal.mp3 already exists
+[71/320] 071 SKIP: 071_normal.mp3 already exists
+[72/320] 072 SKIP: 072_normal.mp3 already exists
+[73/320] 073 SKIP: 073_normal.mp3 already exists
+[74/320] 074 SKIP: 074_normal.mp3 already exists
+[75/320] 075 SKIP: 075_normal.mp3 already exists
+[76/320] 076 SKIP: 076_normal.mp3 already exists
+[77/320] 077 SKIP: 077_normal.mp3 already exists
+[78/320] 078 SKIP: 078_normal.mp3 already exists
+[79/320] 079 SKIP: 079_normal.mp3 already exists
+[80/320] 080 SKIP: 080_normal.mp3 already exists
+[81/320] 081 SKIP: 081_normal.mp3 already exists
+[82/320] 082 SKIP: 082_normal.mp3 already exists
+[83/320] 083 SKIP: 083_normal.mp3 already exists
+[84/320] 084 SKIP: 084_normal.mp3 already exists
+[85/320] 085 SKIP: 085_normal.mp3 already exists
+[86/320] 086 SKIP: 086_normal.mp3 already exists
+[87/320] 087 SKIP: 087_normal.mp3 already exists
+
+********
+Warning: flash-attn is not installed. Will only run the manual PyTorch version. Please install flash-attn for faster inference.
+********
+ 
+/bin/sh: sox: command not found
+SoX could not be found!
+
+    If you do not have SoX, proceed here:
+     - - - http://sox.sourceforge.net/ - - -
+
+    If you do (or think that you should) have SoX, double-check your
+    path variables.
+    
+[INFO] loading model: /Users/jin/.cache/huggingface/hub/models--Qwen--Qwen3-TTS-12Hz-1.7B-CustomVoice/snapshots/0c0e3051f131929182e2c023b9537f8b1c68adfe
+[INFO] model loaded
+Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.

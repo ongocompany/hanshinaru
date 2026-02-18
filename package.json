@@ -4,7 +4,8 @@
   "description": "Tangshi Timeline Project",
   "scripts": {
     "build:db": "node scripts/build_pingshui_db.js",
-    "merge:poets": "node scripts/merge_poet_data.js"
+    "merge:poets": "node scripts/merge_poet_data.js",
+    "crawl:news": "node scripts/crawl_news.js"
   },
   "dependencies": {
     "pinyin-pro": "^3.26.0"

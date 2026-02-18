@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>공지사항 — 漢詩의 모든 것</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/daj3vwq.css">
+  <link rel="stylesheet" href="/shared/styles.css">
+  <link rel="stylesheet" href="/shared/board.css">
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+
+  <section class="board-hero fade-in">
+    <h1 class="board-hero-title">공지사항</h1>
+    <p class="board-hero-subtitle">사이트 업데이트와 소식을 확인하세요</p>
+  </section>
+
+  <section class="board-body">
+    <div id="boardContainer"></div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="/shared/supabase.js"></script>
+  <script src="/shared/auth-state.js"></script>
+  <script src="/shared/board.js"></script>
+  <script src="/shared/components.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      Board.init({
+        board: 'notice',
+        containerId: 'boardContainer',
+        pageSize: 20,
+        canWrite: function (user) {
+          return user && user.role === 'admin';
+        }
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+{
+  "generatedAt": "20260217_062503",
+  "mapPath": "public/index/tts_voice_map.json",
+  "poemsPath": "public/index/poems.full.json",
+  "outputDir": "public/audio",
+  "checkpointRequested": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+  "checkpointResolved": "/Users/jin/.cache/huggingface/hub/models--Qwen--Qwen3-TTS-12Hz-1.7B-CustomVoice/snapshots/0c0e3051f131929182e2c023b9537f8b1c68adfe",
+  "language": "Chinese",
+  "totalRequested": 5,
+  "generated": 5,
+  "skipped": 0,
+  "failed": 0,
+  "items": [
+    {
+      "poemNoStr": "043",
+      "status": "generated",
+      "speaker": "Serena",
+      "instruct": "sad",
+      "mp3": "public/audio/043_normal.mp3",
+      "elapsedSec": 140.82,
+      "sampleRate": 24000
+    },
+    {
+      "poemNoStr": "225",
+      "status": "generated",
+      "speaker": "Dylan",
+      "instruct": "calm",
+      "mp3": "public/audio/225_normal.mp3",
+      "elapsedSec": 26.89,
+      "sampleRate": 24000
+    },
+    {
+      "poemNoStr": "085",
+      "status": "generated",
+      "speaker": "Eric",
+      "instruct": "majestic",
+      "mp3": "public/audio/085_normal.mp3",
+      "elapsedSec": 133.59,
+      "sampleRate": 24000
+    },
+    {
+      "poemNoStr": "186",
+      "status": "generated",
+      "speaker": "Uncle_Fu",
+      "instruct": "sad",
+      "mp3": "public/audio/186_normal.mp3",
+      "elapsedSec": 68.23,
+      "sampleRate": 24000
+    },
+    {
+      "poemNoStr": "001",
+      "status": "generated",
+      "speaker": "Uncle_Fu",
+      "instruct": "calm",
+      "mp3": "public/audio/001_normal.mp3",
+      "elapsedSec": 51.8,
+      "sampleRate": 24000
+    }
+  ]
+}

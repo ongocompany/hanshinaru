@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "lastUpdated": "2026-02-16T07:46:40.313Z",
+  "lastUpdated": "2026-02-18T14:05:32.200Z",
   "activeFeatures": [
     "tangshi",
     "admin",
@@ -19,9 +19,9 @@
       "documents": {},
       "timestamps": {
         "started": "2026-02-11T09:07:29.028Z",
-        "lastUpdated": "2026-02-15T23:36:08.533Z"
+        "lastUpdated": "2026-02-18T14:05:32.200Z"
       },
-      "lastFile": "/Users/jin/Documents/tangshi/app.js"
+      "lastFile": "/Users/jin/Documents/tangshi/shared/board.js"
     },
     "admin": {
       "phase": "do",
@@ -32,9 +32,9 @@
       "documents": {},
       "timestamps": {
         "started": "2026-02-14T12:13:35.149Z",
-        "lastUpdated": "2026-02-15T23:35:08.383Z"
+        "lastUpdated": "2026-02-17T09:16:32.249Z"
       },
-      "lastFile": "/Users/jin/Documents/tangshi/admin/admin.js"
+      "lastFile": "/Users/jin/Documents/tangshi/admin/poem-manager.js"
     },
     "tools": {
       "phase": "do",
@@ -58,9 +58,9 @@
       "documents": {},
       "timestamps": {
         "started": "2026-02-15T00:48:16.892Z",
-        "lastUpdated": "2026-02-15T13:45:24.599Z"
+        "lastUpdated": "2026-02-17T08:59:37.235Z"
       },
-      "lastFile": "/Users/jin/Documents/tangshi/scripts/notion-sync.js"
+      "lastFile": "/Users/jin/Documents/tangshi/scripts/generate_hyeonto.js"
     },
     "tts-studio": {
       "phase": "do",
@@ -71,7 +71,7 @@
       "documents": {},
       "timestamps": {
         "started": "2026-02-16T07:46:40.313Z",
-        "lastUpdated": "2026-02-16T07:46:40.313Z"
+        "lastUpdated": "2026-02-17T11:16:28.619Z"
       },
       "lastFile": "/Users/jin/Documents/tangshi/tools/tts-studio/server.py"
     }
@@ -84,7 +84,7 @@
   "session": {
     "startedAt": "2026-02-11T08:15:59.695Z",
     "onboardingCompleted": false,
-    "lastActivity": "2026-02-16T07:46:40.313Z"
+    "lastActivity": "2026-02-18T14:05:32.200Z"
   },
   "history": [
     {
@@ -1356,6 +1356,510 @@
     {
       "timestamp": "2026-02-16T07:46:40.313Z",
       "feature": "tts-studio",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T06:58:09.584Z",
+      "feature": "scripts",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T06:58:56.630Z",
+      "feature": "scripts",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T07:04:38.927Z",
+      "feature": "admin",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T07:26:21.156Z",
+      "feature": "admin",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T07:26:28.810Z",
+      "feature": "admin",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T07:26:37.546Z",
+      "feature": "admin",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T07:27:06.388Z",
+      "feature": "admin",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T07:40:18.878Z",
+      "feature": "scripts",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T07:42:11.170Z",
+      "feature": "scripts",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T07:42:29.550Z",
+      "feature": "scripts",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T07:45:27.427Z",
+      "feature": "scripts",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T07:49:38.274Z",
+      "feature": "scripts",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T08:06:06.310Z",
+      "feature": "scripts",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T08:06:27.626Z",
+      "feature": "scripts",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T08:06:49.973Z",
+      "feature": "scripts",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T08:16:42.381Z",
+      "feature": "scripts",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T08:17:00.988Z",
+      "feature": "scripts",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T08:17:14.723Z",
+      "feature": "scripts",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T08:28:56.779Z",
+      "feature": "scripts",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T08:34:36.717Z",
+      "feature": "scripts",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T08:38:40.530Z",
+      "feature": "scripts",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T08:38:48.315Z",
+      "feature": "scripts",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T08:38:57.088Z",
+      "feature": "scripts",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T08:39:04.561Z",
+      "feature": "scripts",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T08:39:12.099Z",
+      "feature": "scripts",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T08:46:27.083Z",
+      "feature": "scripts",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T08:48:13.013Z",
+      "feature": "scripts",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T08:52:40.381Z",
+      "feature": "scripts",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T08:53:20.085Z",
+      "feature": "scripts",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T08:54:32.227Z",
+      "feature": "scripts",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T08:59:37.235Z",
+      "feature": "scripts",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T09:08:42.082Z",
+      "feature": "admin",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T09:08:53.771Z",
+      "feature": "admin",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T09:09:32.778Z",
+      "feature": "admin",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T09:10:06.058Z",
+      "feature": "admin",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T09:10:45.205Z",
+      "feature": "admin",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T09:10:55.591Z",
+      "feature": "admin",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T09:11:37.709Z",
+      "feature": "admin",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T09:15:08.684Z",
+      "feature": "admin",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T09:16:13.966Z",
+      "feature": "admin",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T09:16:32.249Z",
+      "feature": "admin",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T10:14:20.093Z",
+      "feature": "tts-studio",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T10:14:37.875Z",
+      "feature": "tts-studio",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T10:41:59.536Z",
+      "feature": "tts-studio",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T11:01:11.347Z",
+      "feature": "tts-studio",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T11:06:17.565Z",
+      "feature": "tts-studio",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T11:06:25.263Z",
+      "feature": "tts-studio",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T11:09:20.538Z",
+      "feature": "tts-studio",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T11:10:27.713Z",
+      "feature": "tts-studio",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T11:10:52.176Z",
+      "feature": "tts-studio",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T11:13:08.045Z",
+      "feature": "tts-studio",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T11:14:26.360Z",
+      "feature": "tts-studio",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T11:14:38.854Z",
+      "feature": "tts-studio",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T11:16:28.619Z",
+      "feature": "tts-studio",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T21:57:33.810Z",
+      "feature": "tangshi",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-17T22:14:18.251Z",
+      "feature": "tangshi",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-18T11:32:47.167Z",
+      "feature": "tangshi",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-18T11:56:50.268Z",
+      "feature": "tangshi",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-18T11:56:55.757Z",
+      "feature": "tangshi",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-18T11:59:53.714Z",
+      "feature": "tangshi",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-18T12:01:40.844Z",
+      "feature": "tangshi",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-18T12:04:15.354Z",
+      "feature": "tangshi",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-18T12:06:27.876Z",
+      "feature": "tangshi",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-18T12:10:15.000Z",
+      "feature": "tangshi",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-18T12:11:14.064Z",
+      "feature": "tangshi",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-18T13:08:07.206Z",
+      "feature": "tangshi",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-18T13:18:55.084Z",
+      "feature": "tangshi",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-18T13:26:13.105Z",
+      "feature": "tangshi",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-18T13:26:35.335Z",
+      "feature": "tangshi",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-18T13:52:42.179Z",
+      "feature": "tangshi",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-18T13:53:08.422Z",
+      "feature": "tangshi",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-18T13:53:19.086Z",
+      "feature": "tangshi",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-18T13:53:27.553Z",
+      "feature": "tangshi",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-18T14:01:32.048Z",
+      "feature": "tangshi",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-18T14:04:31.284Z",
+      "feature": "tangshi",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-18T14:04:36.356Z",
+      "feature": "tangshi",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-18T14:04:41.502Z",
+      "feature": "tangshi",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-18T14:04:46.281Z",
+      "feature": "tangshi",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-18T14:04:51.592Z",
+      "feature": "tangshi",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-18T14:04:57.759Z",
+      "feature": "tangshi",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-18T14:05:02.997Z",
+      "feature": "tangshi",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-18T14:05:07.849Z",
+      "feature": "tangshi",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-18T14:05:15.283Z",
+      "feature": "tangshi",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-18T14:05:32.200Z",
+      "feature": "tangshi",
       "phase": "do",
       "action": "updated"
     }

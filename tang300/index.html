@@ -7,88 +7,8 @@
   <link rel="stylesheet" href="https://use.typekit.net/dje5vco.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&family=Noto+Serif+KR:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/shared/styles.css">
   <style>
-    /* ===== Reset & Base ===== */
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-
-    body {
-      font-family: 'Noto Serif KR', serif;
-      background: #fff;
-      color: #333;
-      line-height: 1.8;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    /* ===== Navigation ===== */
-    .top-nav {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-      padding: 16px 0;
-      box-shadow: 0 1px 8px rgba(0,0,0,0.08);
-      transition: background 0.4s, box-shadow 0.4s, padding 0.4s;
-    }
-    .top-nav.is-scrolled {
-      background: rgba(44, 24, 16, 0.95);
-      box-shadow: 0 2px 12px rgba(0,0,0,0.18);
-      padding: 10px 0;
-    }
-    .nav-inner {
-      max-width: 1200px; margin: 0 auto; padding: 0 32px;
-      display: flex; justify-content: space-between; align-items: center;
-      transition: max-width 0.4s ease;
-    }
-    .top-nav.is-scrolled .nav-inner {
-      max-width: 660px;
-    }
-    .nav-brand {
-      font-family: 'adobe-fangsong-std', fangsong, 'LXGW WenKai Mono TC', 'Noto Serif TC', serif;
-      font-size: 24px; color: #fff; text-decoration: none;
-      opacity: 0.9; transition: opacity 0.3s, color 0.4s;
-    }
-    .nav-brand:hover { opacity: 1; }
-    .nav-links { display: flex; gap: 28px; }
-    .nav-links a {
-      color: rgba(255,255,255,0.75); text-decoration: none;
-      font-size: 15px; transition: color 0.4s;
-    }
-    .nav-links a:hover, .nav-links a.active { color: #fff; }
-
-    /* ===== Hero ===== */
-    .hero {
-      position: relative; height: 100vh; display: flex;
-      align-items: center; justify-content: center; overflow: hidden;
-    }
-    .hero-bg {
-      position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-      object-fit: cover; object-position: center;
-    }
-    .hero-overlay {
-      position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-      background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.3), rgba(0,0,0,0.5));
-    }
-    .hero-content {
-      position: relative; z-index: 10;
-      text-align: center; color: #fff; padding: 0 32px;
-    }
-    .hero-title {
-      font-family: 'adobe-fangsong-std', fangsong, 'LXGW WenKai Mono TC', 'Noto Serif TC', serif;
-      font-size: clamp(64px, 10vw, 120px);
-      font-weight: bold; margin-bottom: 24px;
-      text-shadow: 0 4px 30px rgba(0,0,0,0.4);
-    }
-    .hero-subtitle-ko {
-      font-family: 'Noto Serif KR', serif;
-      font-size: clamp(36px, 6vw, 64px);
-      margin-bottom: 16px;
-    }
-    .hero-subtitle-en {
-      font-size: clamp(20px, 3vw, 32px);
-      font-weight: 300; letter-spacing: 0.1em;
-    }
-    .hero-editor {
-      font-family: 'Noto Serif KR', serif;
-      font-size: 20px; margin-top: 32px;
-    }
-
     /* ===== Sections ===== */
     .section {
       padding: 80px 32px;
@@ -109,7 +29,7 @@
     .sidebar-title {
       font-family: 'adobe-fangsong-std', fangsong, 'LXGW WenKai Mono TC', 'Noto Serif TC', serif;
       font-size: 56px; font-weight: bold; margin-bottom: 8px;
-      color: #3a2a18;
+      color: #6e8387;
     }
     .sidebar-sub {
       font-family: 'Noto Serif KR', serif;
@@ -124,7 +44,7 @@
     .section-header-title {
       font-family: 'adobe-fangsong-std', fangsong, 'LXGW WenKai Mono TC', 'Noto Serif TC', serif;
       font-size: 56px; font-weight: bold; margin-bottom: 8px;
-      color: #3a2a18;
+      color: #6e8387;
     }
     .section-header-sub {
       font-family: 'Noto Serif KR', serif;
@@ -156,7 +76,7 @@
     .info-grid-label {
       font-family: 'adobe-fangsong-std', fangsong, 'LXGW WenKai Mono TC', 'Noto Serif TC', serif;
       font-size: 28px; font-weight: bold; margin-bottom: 12px;
-      color: #3a2a18;
+      color: #6e8387;
     }
     .info-grid-value {
       font-family: 'Noto Serif KR', serif;
@@ -173,12 +93,12 @@
       font-size: 28px; font-weight: bold;
       margin-bottom: 24px;
       display: flex; align-items: center; gap: 12px;
-      color: #3a2a18;
+      color: #6e8387;
     }
     .sub-heading-dot {
       width: 8px; height: 8px; border-radius: 50%;
       display: inline-block;
-      background: #3a2a18;
+      background: #6e8387;
     }
 
     /* ===== Image with Caption ===== */
@@ -202,7 +122,7 @@
       width: 80px; flex-shrink: 0;
       font-family: 'Noto Serif KR', serif;
       font-size: 18px; font-weight: bold;
-      color: #3a2a18;
+      color: #6e8387;
     }
     .timeline-desc {
       font-family: 'Noto Serif KR', serif;
@@ -227,7 +147,7 @@
     .type-card-count {
       font-family: 'Noto Serif KR', serif;
       font-size: 24px; font-weight: bold;
-      color: #3a2a18;
+      color: #6e8387;
     }
     .type-card-ko {
       font-family: 'Noto Serif KR', serif;
@@ -266,7 +186,7 @@
     .author-count {
       font-family: 'Noto Serif KR', serif;
       font-weight: bold;
-      color: #3a2a18;
+      color: #6e8387;
       font-size: 28px;
     }
     .author-name-zh--top { font-size: 28px; }
@@ -299,7 +219,7 @@
       font-family: 'Noto Serif KR', serif;
       font-size: 28px; font-weight: bold;
       margin-bottom: 24px; display: flex; align-items: center; gap: 12px;
-      color: #3a2a18;
+      color: #6e8387;
     }
 
     /* ===== Quote Cards (Famous Quotes) ===== */
@@ -315,7 +235,7 @@
     .quote-poet-zh {
       font-family: 'adobe-fangsong-std', fangsong, 'LXGW WenKai Mono TC', 'Noto Serif TC', serif;
       font-size: 28px; font-weight: bold;
-      color: #3a2a18;
+      color: #6e8387;
     }
     .quote-poet-ko {
       font-family: 'Noto Serif KR', serif;
@@ -344,7 +264,7 @@
     .card-title-zh {
       font-family: 'adobe-fangsong-std', fangsong, 'LXGW WenKai Mono TC', 'Noto Serif TC', serif;
       font-size: 28px; font-weight: bold;
-      color: #3a2a18;
+      color: #6e8387;
       margin-bottom: 24px;
     }
 
@@ -361,7 +281,7 @@
       padding: 8px 0;
     }
     .ref-bullet {
-      font-size: 18px; color: #3a2a18;
+      font-size: 18px; color: #6e8387;
       margin-top: 2px; flex-shrink: 0;
     }
     .ref-text {
@@ -374,80 +294,27 @@
       font-size: 18px; color: #666;
     }
 
-    /* ===== Footer ===== */
-    .site-footer {
-      background: #2c1810; color: rgba(255,255,255,0.7);
-      padding: 48px 32px; text-align: center;
-    }
-    .footer-nav { display: flex; justify-content: center; gap: 32px; margin-bottom: 20px; }
-    .footer-nav a {
-      color: rgba(255,255,255,0.7); text-decoration: none;
-      font-size: 15px; transition: color 0.3s;
-    }
-    .footer-nav a:hover { color: #fff; }
-    .footer-copy { font-size: 14px; opacity: 0.5; }
-
-    /* ===== Fade animation ===== */
-    .fade-in {
-      opacity: 0; transform: translateY(30px);
-      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-    }
-    .fade-in.visible { opacity: 1; transform: translateY(0); }
-
     /* ===== Responsive ===== */
     @media (max-width: 768px) {
       .two-col { grid-template-columns: 1fr; gap: 24px; }
       .sidebar { position: static; }
       .sidebar-title { font-size: 36px; }
       .section-header-title { font-size: 36px; }
-      .hero-title { font-size: 60px; }
-      .hero-subtitle-ko { font-size: 36px; }
-      .hero-subtitle-en { font-size: 20px; }
       .section { padding: 48px 16px; }
       .info-grid { grid-template-columns: 1fr; gap: 20px; }
       .type-grid { grid-template-columns: 1fr; }
       .author-grid { grid-template-columns: 1fr; }
       .card, .value-box, .quote-card { padding: 24px; }
       .quote-zh { font-size: 24px; }
-      .nav-links { gap: 16px; }
-      .nav-links a { font-size: 13px; }
     }
   </style>
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav class="top-nav" id="topNav">
-    <div class="nav-inner">
-      <a href="/" class="nav-brand">當時三百首</a>
-      <div class="nav-links">
-        <a href="/poets/">시인</a>
-        <a href="/poem/">시</a>
-        <a href="/history/">역사</a>
-        <a href="/tang300/" class="active">당시삼백수</a>
-        <a href="/timeline/">타임라인</a>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero -->
-  <section class="hero">
-    <img
-      src="https://readdy.ai/api/search-image?query=ancient%20chinese%20poetry%20book%20with%20elegant%20calligraphy%20and%20traditional%20binding%2C%20classical%20scholarly%20atmosphere%20with%20ink%20brush%20and%20scrolls%2C%20warm%20golden%20lighting%2C%20traditional%20chinese%20painting%20aesthetic%20with%20soft%20colors%2C%20cultural%20heritage%20theme&width=1920&height=1080&seq=tangpoetry001&orientation=landscape"
-      alt="Tang Poetry 300"
-      class="hero-bg"
-    />
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <h1 class="hero-title">唐詩三百首</h1>
-      <p class="hero-subtitle-ko">당시삼백수</p>
-      <p class="hero-subtitle-en">Three Hundred Tang Poems</p>
-      <div class="hero-editor">清 · 孫洙 編</div>
-    </div>
-  </section>
+  <div id="nav-placeholder"></div>
 
   <!-- ===== 1. 概要 Overview ===== -->
-  <section class="section section--white fade-in">
+  <section class="section section--white fade-in" style="padding-top: 80px;">
     <div class="section-inner">
       <div class="two-col">
         <div class="sidebar">
@@ -914,35 +781,9 @@
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="footer-nav">
-      <a href="/">메인</a>
-      <a href="/poets/">시인</a>
-      <a href="/poem/">시</a>
-      <a href="/history/">역사</a>
-      <a href="/tang300/">당시삼백수</a>
-      <a href="/timeline/">타임라인</a>
-    </div>
-    <p class="footer-copy">唐詩三百首 &copy; 2025</p>
-  </footer>
-
-  <script>
-    // Scroll-based nav background
-    const nav = document.getElementById('topNav');
-    window.addEventListener('scroll', () => {
-      nav.classList.toggle('is-scrolled', window.scrollY > 60);
-    }, { passive: true });
-
-    // Fade-in on scroll
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) e.target.classList.add('visible');
-      });
-    }, { threshold: 0.1, rootMargin: '0px 0px -10% 0px' });
-
-    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-  </script>
+  <div id="footer-placeholder"></div>
+  <script src="/shared/auth-state.js"></script>
+  <script src="/shared/components.js"></script>
 
 </body>
 </html>

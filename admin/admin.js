@@ -9,6 +9,7 @@ const DATA = {
   poem: null,       // poems.full.json 원본
   history: null,    // history_cards.json 원본
   uiSettings: null, // ui_settings.json 원본
+  hyeonto: null,    // hyeonto_data.json 현토 데이터
 };
 
 const ORIGINAL = {
@@ -16,6 +17,7 @@ const ORIGINAL = {
   poem: null,
   history: null,
   uiSettings: null,
+  hyeonto: null,
 };
 
 // File System Access API 핸들 (직접 저장용)
@@ -24,6 +26,7 @@ const FILE_HANDLES = {
   poem: null,
   history: null,
   uiSettings: null,
+  hyeonto: null,
 };
 
 const DATA_PATHS = {
@@ -31,6 +34,7 @@ const DATA_PATHS = {
   poem: "../public/index/poems.full.owned.json",
   history: "../public/index/history_cards.json",
   uiSettings: "../public/index/ui_settings.json",
+  hyeonto: "../public/index/hyeonto_data.json",
 };
 
 const DATA_LABELS = {
@@ -38,6 +42,7 @@ const DATA_LABELS = {
   poem: "시 데이터",
   history: "역사 데이터",
   uiSettings: "UI 설정",
+  hyeonto: "현토 데이터",
 };
 
 // ─── 초기화 ────────────────────────────────
@@ -109,6 +114,20 @@ async function loadAllData() {
     DATA.uiSettings = structuredClone(UI_DEFAULTS);
   }
   ORIGINAL.uiSettings = structuredClone(DATA.uiSettings);
+
+  // 현토 데이터 로드 (별도 — 없어도 정상 동작)
+  try {
+    const hyRes = await fetch(withNoCacheQuery(DATA_PATHS.hyeonto), { cache: "no-store" });
+    if (hyRes.ok) {
+      DATA.hyeonto = await hyRes.json();
+      ORIGINAL.hyeonto = structuredClone(DATA.hyeonto);
+      console.log(`현토 데이터 로드: ${Object.keys(DATA.hyeonto).length}편`);
+    }
+  } catch (e) {
+    console.warn("hyeonto_data.json 로드 실패:", e);
+  }
+  if (!DATA.hyeonto) DATA.hyeonto = {};
+  if (!ORIGINAL.hyeonto) ORIGINAL.hyeonto = {};
 
   // 전체 상태 업데이트
   const allLoaded = keys.every(k => DATA[k] !== null);
@@ -226,12 +245,13 @@ function initSaveButtons() {
 async function saveAll() {
   const hasChanges = checkChanges();
 
-  const keys = ["author", "poem", "history", "uiSettings"];
+  const keys = ["author", "poem", "history", "uiSettings", "hyeonto"];
   const fileNames = {
     author: "db_author.with_ko.json",
     poem: "poems.full.owned.json",
     history: "history_cards.json",
     uiSettings: "ui_settings.json",
+    hyeonto: "hyeonto_data.json",
   };
 
   let savedCount = 0;

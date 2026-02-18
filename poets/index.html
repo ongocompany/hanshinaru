@@ -7,73 +7,8 @@
   <link rel="stylesheet" href="https://use.typekit.net/dje5vco.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&family=Noto+Serif+KR:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/shared/styles.css">
   <style>
-    /* ===== Reset & Base ===== */
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-
-    body {
-      font-family: 'Noto Serif KR', serif;
-      background: #fff;
-      color: #333;
-      line-height: 1.8;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    /* ===== Navigation ===== */
-    .top-nav {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-      padding: 16px 0;
-      box-shadow: 0 1px 8px rgba(0,0,0,0.08);
-      transition: background 0.4s, box-shadow 0.4s, padding 0.4s;
-    }
-    .top-nav.is-scrolled {
-      background: rgba(44, 24, 16, 0.95);
-      box-shadow: 0 2px 12px rgba(0,0,0,0.18);
-      padding: 10px 0;
-    }
-    .nav-inner {
-      max-width: 1200px; margin: 0 auto; padding: 0 32px;
-      display: flex; justify-content: space-between; align-items: center;
-      transition: max-width 0.4s ease;
-    }
-    .top-nav.is-scrolled .nav-inner {
-      max-width: 660px;
-    }
-    .nav-brand {
-      font-family: 'adobe-fangsong-std', fangsong, 'LXGW WenKai Mono TC', 'Noto Serif TC', serif;
-      font-size: 24px; color: #fff; text-decoration: none;
-      opacity: 0.9; transition: opacity 0.3s, color 0.4s;
-    }
-    .nav-brand:hover { opacity: 1; }
-    .nav-links { display: flex; gap: 28px; }
-    .nav-links a {
-      color: rgba(255,255,255,0.75); text-decoration: none;
-      font-size: 15px; transition: color 0.4s;
-    }
-    .nav-links a:hover, .nav-links a.active { color: #fff; }
-
-    /* ===== Hero ===== */
-    .hero {
-      position: relative; height: 100vh; display: flex;
-      align-items: center; justify-content: center; overflow: hidden;
-      background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.5)),
-                  #3a2218;
-    }
-    .hero-title {
-      font-family: 'adobe-fangsong-std', fangsong, 'LXGW WenKai Mono TC', 'Noto Serif TC', serif;
-      font-size: clamp(80px, 12vw, 140px);
-      color: #fff; font-weight: bold;
-      text-shadow: 0 4px 30px rgba(0,0,0,0.4);
-      margin-bottom: 24px;
-    }
-    .hero-subtitle {
-      font-size: 20px; color: rgba(255,255,255,0.9);
-      max-width: 700px; margin: 0 auto; line-height: 1.9;
-    }
-    .hero-subtitle .zh {
-      font-family: 'adobe-fangsong-std', fangsong, serif;
-    }
-
     /* ===== Sections ===== */
     .section {
       padding: 80px 32px;
@@ -103,12 +38,12 @@
     .era-number {
       font-family: 'adobe-fangsong-std', fangsong, 'LXGW WenKai Mono TC', 'Noto Serif TC', serif;
       font-size: 64px; font-weight: bold; line-height: 1;
-      color: #3a2a18;
+      color: #6e8387;
     }
     .era-title-zh {
       font-family: 'adobe-fangsong-std', fangsong, 'LXGW WenKai Mono TC', 'Noto Serif TC', serif;
       font-size: 56px; font-weight: bold; margin: 8px 0;
-      color: #3a2a18;
+      color: #6e8387;
     }
     .era-title-ko { font-size: 22px; color: #666; margin-bottom: 4px; }
     .era-tagline { font-size: 18px; color: #888; }
@@ -134,7 +69,7 @@
       flex-shrink: 0;
       font-family: 'adobe-fangsong-std', fangsong, serif;
       font-size: 32px;
-      color: #3a2a18;
+      color: #6e8387;
       background: var(--era-bg);
     }
     .poet-avatar--lg {
@@ -149,20 +84,20 @@
     .poet-name-zh {
       font-family: 'adobe-fangsong-std', fangsong, serif;
       font-size: 28px; font-weight: bold;
-      color: #3a2a18;
+      color: #6e8387;
     }
     .poet-name-ko { font-size: 18px; color: #666; }
     .poet-badge {
       padding: 3px 12px; border-radius: 20px;
       color: #fff; font-size: 14px;
-      background: #3a2a18;
+      background: #6e8387;
     }
     .poet-bio { font-size: 18px; color: #333; line-height: 1.8; margin-bottom: 12px; }
 
     /* Representative work box */
     .work-box {
       border-radius: 10px; padding: 16px;
-      border-left: 4px solid #3a2a18;
+      border-left: 4px solid #6e8387;
       background: var(--era-bg2);
     }
     .work-label { font-size: 13px; color: #777; margin-bottom: 4px; }
@@ -176,13 +111,13 @@
     /* ===== Info Box (relationships, events) ===== */
     .info-box {
       border-radius: 16px; padding: 24px;
-      border-left: 4px solid #3a2a18;
+      border-left: 4px solid #6e8387;
       background: var(--era-bg2);
     }
     .info-box-title {
       font-size: 22px; font-weight: bold;
       margin-bottom: 12px; display: flex; align-items: center; gap: 8px;
-      color: #3a2a18;
+      color: #6e8387;
     }
     .info-box-title .zh { font-family: 'adobe-fangsong-std', fangsong, serif; }
     .info-box p, .info-box li {
@@ -198,7 +133,7 @@
     .info-sub-title {
       font-family: 'adobe-fangsong-std', fangsong, serif;
       font-size: 20px; font-weight: bold; margin-bottom: 8px;
-      color: #3a2a18;
+      color: #6e8387;
     }
     .info-sub-group { margin-bottom: 16px; }
     .info-sub-group:last-child { margin-bottom: 0; }
@@ -212,39 +147,19 @@
     .conclusion-title {
       font-size: 22px; font-weight: bold; margin-bottom: 16px;
       display: flex; align-items: center; gap: 8px;
-      color: #3a2a18;
+      color: #6e8387;
     }
     .conclusion-closing {
       border-radius: 16px; padding: 28px;
-      border-left: 4px solid #3a2a18;
+      border-left: 4px solid #6e8387;
       background: rgba(58,42,24,0.04);
       text-align: center; font-size: 20px; line-height: 1.8;
     }
     .conclusion-closing .zh { font-family: 'adobe-fangsong-std', fangsong, serif; }
 
-    /* ===== Footer ===== */
-    .site-footer {
-      background: #2c1810; color: rgba(255,255,255,0.7);
-      padding: 48px 32px; text-align: center;
-    }
-    .footer-nav { display: flex; justify-content: center; gap: 32px; margin-bottom: 20px; }
-    .footer-nav a {
-      color: rgba(255,255,255,0.7); text-decoration: none;
-      font-size: 15px; transition: color 0.3s;
-    }
-    .footer-nav a:hover { color: #fff; }
-    .footer-copy { font-size: 14px; opacity: 0.5; }
-
-    /* ===== Fade animation ===== */
-    .fade-in {
-      opacity: 0; transform: translateY(30px);
-      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-    }
-    .fade-in.visible { opacity: 1; transform: translateY(0); }
-
-    /* ===== Color Themes per Era (통일: #3a2a18) ===== */
+    /* ===== Color Themes per Era (통일: #6e8387) ===== */
     .era-early, .era-high, .era-mid, .era-late, .era-legacy {
-      --era: #3a2a18;
+      --era: #6e8387;
       --era-bg: #f5f0e8;
       --era-bg2: rgba(58,42,24,0.06);
     }
@@ -257,44 +172,16 @@
       .era-title-zh { font-size: 36px; }
       .poet-card { flex-direction: column; align-items: center; text-align: center; }
       .poet-avatar { margin-bottom: 8px; }
-      .hero-title { font-size: 60px; }
-      .hero-subtitle { font-size: 17px; padding: 0 16px; }
       .section { padding: 48px 16px; }
-      .nav-links { gap: 16px; }
-      .nav-links a { font-size: 13px; }
     }
   </style>
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav class="top-nav" id="topNav">
-    <div class="nav-inner">
-      <a href="/" class="nav-brand">當時三百首</a>
-      <div class="nav-links">
-        <a href="/poets/" class="active">시인</a>
-        <a href="/poem/">시</a>
-        <a href="/history/">역사</a>
-        <a href="/tang300/">당시삼백수</a>
-        <a href="/timeline/">타임라인</a>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero -->
-  <section class="hero">
-    <div style="text-align:center; color:#fff; padding:0 32px;">
-      <h1 class="hero-title">當詩人</h1>
-      <p class="hero-subtitle">
-        중국 역사상 가장 화려하고 국제적인 문화를 꽃 피웠던 <span class="zh">唐</span>,
-        하지만 그에 못지 않게 잦은 변란과 역사적 변고 속에서 당대의 시인들은
-        정신적 도피처이자 현실에 대한 처절한 절규로 <span class="zh">詩</span>를 선택했다.
-      </p>
-    </div>
-  </section>
+  <div id="nav-placeholder"></div>
 
   <!-- Introduction -->
-  <section class="section section--white fade-in">
+  <section class="section section--white fade-in" style="padding-top: 80px;">
     <div class="section-inner">
       <p class="intro-text">
         명나라 고병<span class="zh">(高棅)</span>의 분류법에 따라 당나라 시의 역사를 <strong>초당, 성당, 중당, 만당</strong>의 네 시기로 나누어,<br>
@@ -679,35 +566,9 @@
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="footer-nav">
-      <a href="/">메인</a>
-      <a href="/poets/">시인</a>
-      <a href="/poem/">시</a>
-      <a href="/history/">역사</a>
-      <a href="/tang300/">당시삼백수</a>
-      <a href="/timeline/">타임라인</a>
-    </div>
-    <p class="footer-copy">唐詩三百首 &copy; 2025</p>
-  </footer>
-
-  <script>
-    // Scroll-based nav background
-    const nav = document.getElementById('topNav');
-    window.addEventListener('scroll', () => {
-      nav.classList.toggle('is-scrolled', window.scrollY > 60);
-    }, { passive: true });
-
-    // Fade-in on scroll
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) e.target.classList.add('visible');
-      });
-    }, { threshold: 0.1, rootMargin: '0px 0px -10% 0px' });
-
-    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-  </script>
+  <div id="footer-placeholder"></div>
+  <script src="/shared/auth-state.js"></script>
+  <script src="/shared/components.js"></script>
 
 </body>
 </html>

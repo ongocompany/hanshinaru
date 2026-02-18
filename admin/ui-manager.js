@@ -49,11 +49,11 @@ const UI_DEFAULTS = {
     late:  { bg: "#f6fff9", textColor: "#222222" },
   },
   poemSections: {
-    poemText:      { bg: "#faf8f5" },
-    commentary:    { bg: "#f0ede7" },
-    commentaryTr:  { bg: "#ece8e1" },
-    notes:         { bg: "#e8e4dd" },
-    advanced:      { bg: "#e4e0d9" },
+    poemText:      { bg: "#fcfafa" },
+    commentary:    { bg: "#fcfafa" },
+    commentaryTr:  { bg: "#c8d3d5" },
+    notes:         { bg: "#c8d3d5" },
+    advanced:      { bg: "#c8d3d5" },
     workList:      { bg: "#ffffff" },
   },
   fonts: {
@@ -73,7 +73,7 @@ const UI_DEFAULTS = {
       label: "한자 시인명 (시인명, 시인카드)",
       family: "adobe-fangsong-std",
       fallback: "'LXGW WenKai Mono TC', 'Noto Serif TC', serif",
-      size: 16, weight: 400, color: "#3a2a18",
+      size: 16, weight: 400, color: "#6e8387",
     },
     koBody: {
       label: "한글 본문 (번역, 해설)",

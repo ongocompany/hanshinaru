@@ -1,0 +1,29 @@
+{
+  "generatedAt": "20260217_221345",
+  "mapPath": "public/index/tts_voice_map.json",
+  "poemsPath": "public/index/poems.full.json",
+  "outputDir": "public/audio",
+  "checkpointRequested": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+  "checkpointResolved": "/Users/jin/.cache/huggingface/hub/models--Qwen--Qwen3-TTS-12Hz-1.7B-CustomVoice/snapshots/0c0e3051f131929182e2c023b9537f8b1c68adfe",
+  "language": "Chinese",
+  "totalRequested": 1,
+  "includeUnmapped": true,
+  "fallbackSpeaker": "Uncle_Fu",
+  "fallbackInstruct": "calm",
+  "fallbackItems": 315,
+  "generated": 1,
+  "skipped": 0,
+  "failed": 0,
+  "items": [
+    {
+      "poemNoStr": "001",
+      "status": "generated",
+      "speaker": "Uncle_Fu",
+      "instruct": "calm",
+      "mp3": "public/audio/001_normal.mp3",
+      "elapsedSec": 68.09,
+      "sampleRate": 24000,
+      "autoFallback": false
+    }
+  ]
+}

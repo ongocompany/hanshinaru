@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Qwen3-TTS 테스트 스튜디오</title>
+<title>Qwen3-TTS 테스트 스튜디오 v2</title>
 <style>
   :root {
     --bg: #1a1a2e;
@@ -34,10 +34,7 @@
     align-items: center;
     gap: 16px;
   }
-  .header h1 {
-    font-size: 18px;
-    font-weight: 600;
-  }
+  .header h1 { font-size: 18px; font-weight: 600; }
   .header .badge {
     background: var(--accent);
     color: white;
@@ -45,18 +42,18 @@
     padding: 2px 8px;
     border-radius: 10px;
   }
+  .header .badge.v2 { background: var(--accent2); }
   .header .status {
     margin-left: auto;
     font-size: 12px;
     color: var(--text2);
   }
   .header .status.ready { color: var(--success); }
-  .header .status.loading { color: var(--warn); }
 
   /* ── 메인 레이아웃 ── */
   .main {
     display: grid;
-    grid-template-columns: 320px 1fr;
+    grid-template-columns: 340px 1fr;
     height: calc(100vh - 49px);
   }
 
@@ -102,142 +99,244 @@
     background: var(--surface2);
     border-left-color: var(--accent);
   }
-  .poem-item .no {
-    font-size: 11px;
-    color: var(--text2);
-    min-width: 28px;
-  }
+  .poem-item .no { font-size: 11px; color: var(--text2); min-width: 28px; }
   .poem-item .title {
-    font-size: 13px;
-    flex: 1;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    font-size: 13px; flex: 1;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
   }
-  .poem-item .poet {
-    font-size: 11px;
-    color: var(--text2);
+  .poem-item .poet { font-size: 11px; color: var(--text2); }
+  .poem-item .hy-badge {
+    font-size: 9px; padding: 1px 4px; border-radius: 6px;
+    background: rgba(83,52,131,0.3); color: #c9a0ff;
   }
 
   /* 시 본문 미리보기 */
-  .poem-preview {
+  .poem-preview-wrap {
     border-top: 1px solid var(--border);
-    padding: 12px;
-    max-height: 200px;
-    overflow-y: auto;
-    font-size: 15px;
-    line-height: 1.8;
-    font-family: 'LXGW WenKai Mono TC', 'Noto Serif SC', serif;
+    display: flex;
+    flex-direction: column;
+    max-height: 260px;
+  }
+  .text-type-tabs {
+    display: flex;
+    border-bottom: 1px solid var(--border);
+    padding: 0 8px;
+  }
+  .text-type-tab {
+    padding: 6px 10px;
+    font-size: 11px;
     color: var(--text2);
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all 0.15s;
+  }
+  .text-type-tab:hover { color: var(--text); }
+  .text-type-tab.active {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+    font-weight: 600;
+  }
+  .text-type-tab.hint-mismatch {
+    animation: hint-pulse 1.5s ease-in-out 2;
+  }
+  @keyframes hint-pulse {
+    0%, 100% { color: var(--text2); }
+    50% { color: var(--warn); border-bottom-color: var(--warn); }
+  }
+  .poem-preview {
+    padding: 10px 12px;
+    flex: 1;
+    overflow-y: auto;
+    font-size: 14px;
+    line-height: 1.8;
+    font-family: 'LXGW WenKai Mono TC', 'Noto Serif SC', 'Noto Serif KR', serif;
+    color: var(--text);
     white-space: pre-line;
+    width: 100%;
+    background: var(--bg);
+    border: none;
+    resize: none;
+    outline: none;
   }
 
-  /* ── 우측: 파라미터 + 결과 ── */
+  /* ── 우측: 컨트롤 패널 ── */
   .control-panel {
     display: flex;
     flex-direction: column;
     overflow-y: auto;
-    padding: 24px;
-    gap: 20px;
+    padding: 20px 24px;
+    gap: 16px;
   }
 
   .section {
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 8px;
-    padding: 16px;
+    padding: 14px 16px;
   }
   .section-title {
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 600;
     color: var(--text2);
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
   }
 
   /* 모드 선택 */
-  .mode-group {
-    display: flex;
-    gap: 8px;
-  }
+  .mode-group { display: flex; gap: 6px; }
   .mode-btn {
-    flex: 1;
-    padding: 10px;
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    background: var(--bg);
-    color: var(--text2);
-    cursor: pointer;
-    font-size: 13px;
-    text-align: center;
+    flex: 1; padding: 10px 8px;
+    border: 1px solid var(--border); border-radius: 6px;
+    background: var(--bg); color: var(--text2);
+    cursor: pointer; font-size: 12px; text-align: center;
     transition: all 0.2s;
   }
   .mode-btn.active {
     border-color: var(--accent);
-    background: rgba(233, 69, 96, 0.1);
-    color: var(--accent);
-    font-weight: 600;
+    background: rgba(233,69,96,0.1);
+    color: var(--accent); font-weight: 600;
+  }
+
+  /* 언어 선택 */
+  .lang-group { display: flex; gap: 6px; margin-bottom: 10px; }
+  .lang-btn {
+    padding: 6px 14px;
+    border: 1px solid var(--border); border-radius: 14px;
+    background: var(--bg); color: var(--text2);
+    cursor: pointer; font-size: 12px;
+    transition: all 0.2s;
+  }
+  .lang-btn.active {
+    border-color: var(--success);
+    background: rgba(76,175,80,0.1);
+    color: var(--success); font-weight: 600;
   }
 
   /* 화자 선택 */
   .speaker-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-    gap: 8px;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 6px;
   }
   .speaker-card {
-    padding: 10px;
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    background: var(--bg);
-    cursor: pointer;
+    padding: 8px 10px;
+    border: 1px solid var(--border); border-radius: 6px;
+    background: var(--bg); cursor: pointer;
     transition: all 0.2s;
   }
   .speaker-card.active {
     border-color: var(--accent);
-    background: rgba(233, 69, 96, 0.1);
+    background: rgba(233,69,96,0.1);
   }
-  .speaker-card .name {
-    font-size: 14px;
-    font-weight: 600;
-    margin-bottom: 2px;
-  }
-  .speaker-card .desc {
-    font-size: 11px;
-    color: var(--text2);
-  }
+  .speaker-card .name { font-size: 13px; font-weight: 600; margin-bottom: 2px; }
+  .speaker-card .desc { font-size: 10px; color: var(--text2); }
 
-  /* Instruct */
-  .instruct-area {
+  /* ── Voice Clone 섹션 ── */
+  .clone-section { display: none; }
+  .clone-section.visible { display: block; }
+
+  .recorder-box {
+    background: var(--bg);
+    border: 1px dashed var(--border);
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .btn-record {
+    width: 56px; height: 56px;
+    border-radius: 50%;
+    border: 3px solid var(--accent);
+    background: transparent;
+    color: var(--accent);
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .btn-record:hover { background: rgba(233,69,96,0.1); }
+  .btn-record.recording {
+    background: var(--accent);
+    color: white;
+    animation: pulse 1s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(233,69,96,0.4); }
+    50% { box-shadow: 0 0 0 12px rgba(233,69,96,0); }
+  }
+  .recorder-status {
+    font-size: 12px;
+    color: var(--text2);
+    margin-top: 8px;
+  }
+  .recorder-timer {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--accent);
+    font-variant-numeric: tabular-nums;
+    margin-top: 4px;
+    display: none;
+  }
+  .recorder-timer.visible { display: block; }
+
+  .ref-audio-list {
     display: flex;
     flex-direction: column;
-    gap: 8px;
-  }
-  .preset-row {
-    display: flex;
     gap: 6px;
-    flex-wrap: wrap;
+    margin-top: 8px;
   }
-  .preset-chip {
-    padding: 4px 10px;
+  .ref-audio-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 10px;
+    background: var(--bg);
     border: 1px solid var(--border);
-    border-radius: 12px;
+    border-radius: 6px;
     font-size: 12px;
     cursor: pointer;
-    background: var(--bg);
-    color: var(--text2);
-    transition: all 0.2s;
+    transition: all 0.15s;
   }
-  .preset-chip.active {
+  .ref-audio-item:hover { border-color: #555; }
+  .ref-audio-item.active {
     border-color: var(--accent2);
-    background: rgba(83, 52, 131, 0.2);
-    color: #c9a0ff;
+    background: rgba(83,52,131,0.15);
   }
+  .ref-audio-item .label { flex: 1; }
+  .ref-audio-item .date { color: var(--text2); font-size: 10px; }
+  .btn-play-sm, .btn-del-sm {
+    padding: 2px 8px;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: transparent;
+    color: var(--text2);
+    cursor: pointer;
+    font-size: 10px;
+  }
+  .btn-del-sm { border-color: #633; color: #e66; }
+  .btn-del-sm:hover { background: rgba(200,50,50,0.15); }
+
+  .ref-text-input {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 13px;
+    margin-top: 8px;
+    outline: none;
+  }
+  .ref-text-input:focus { border-color: var(--accent); }
+
+  /* Instruct */
   textarea.instruct-input {
     width: 100%;
-    min-height: 60px;
-    padding: 10px;
+    min-height: 50px;
+    padding: 8px 10px;
     border: 1px solid var(--border);
     border-radius: 6px;
     background: var(--bg);
@@ -249,168 +348,113 @@
   }
   textarea.instruct-input:focus { border-color: var(--accent); }
 
-  /* 생성 버튼 */
-  .generate-row {
-    display: flex;
-    gap: 12px;
-    align-items: center;
-  }
-  .btn-generate {
-    padding: 12px 32px;
-    border: none;
-    border-radius: 8px;
-    background: var(--accent);
-    color: white;
-    font-size: 15px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.2s;
-  }
-  .btn-generate:hover { background: #d63651; }
-  .btn-generate:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-  }
-  .generate-status {
-    font-size: 13px;
-    color: var(--text2);
-  }
-
-  /* 오디오 플레이어 */
-  .player-section {
-    display: none;
-  }
-  .player-section.visible { display: block; }
-  .audio-player {
-    width: 100%;
-    margin-top: 8px;
-    border-radius: 8px;
-    outline: none;
-  }
-  .player-meta {
-    display: flex;
-    gap: 12px;
-    font-size: 12px;
-    color: var(--text2);
-    margin-top: 6px;
-  }
-
-  /* 생성 이력 */
-  .history-list {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    max-height: 300px;
-    overflow-y: auto;
-  }
-  .history-item {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 8px 10px;
-    background: var(--bg);
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    font-size: 12px;
-  }
-  .history-item .idx {
-    color: var(--accent);
-    font-weight: 700;
-    min-width: 20px;
-  }
-  .history-item .info {
-    flex: 1;
-    color: var(--text2);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  .history-item .time {
-    color: var(--text2);
-    font-size: 11px;
-  }
-  .btn-play-history {
-    padding: 4px 10px;
-    border: 1px solid var(--accent);
-    border-radius: 4px;
-    background: transparent;
-    color: var(--accent);
-    cursor: pointer;
-    font-size: 11px;
-  }
-  .btn-play-history:hover { background: rgba(233, 69, 96, 0.1); }
-
-  /* 파라미터 그룹 */
-  .param-group {
-    margin-bottom: 12px;
-  }
+  /* 파라미터 칩 */
+  .param-group { margin-bottom: 10px; }
   .param-group:last-child { margin-bottom: 0; }
   .param-label {
-    display: block;
-    font-size: 12px;
-    font-weight: 600;
-    color: var(--text2);
-    margin-bottom: 6px;
+    display: block; font-size: 11px; font-weight: 600;
+    color: var(--text2); margin-bottom: 5px;
   }
-  .param-options {
-    display: flex;
-    gap: 6px;
-    flex-wrap: wrap;
-  }
+  .param-options { display: flex; gap: 5px; flex-wrap: wrap; }
   .param-chip {
-    padding: 5px 12px;
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    font-size: 12px;
-    cursor: pointer;
-    background: var(--bg);
-    color: var(--text2);
+    padding: 4px 10px;
+    border: 1px solid var(--border); border-radius: 12px;
+    font-size: 11px; cursor: pointer;
+    background: var(--bg); color: var(--text2);
     transition: all 0.2s;
   }
-  .param-chip:hover {
-    border-color: #666;
-    color: var(--text);
-  }
+  .param-chip:hover { border-color: #666; color: var(--text); }
   .param-chip.active {
     border-color: var(--accent);
-    background: rgba(233, 69, 96, 0.15);
-    color: var(--accent);
-    font-weight: 600;
+    background: rgba(233,69,96,0.15);
+    color: var(--accent); font-weight: 600;
   }
 
-  /* 선택한 시 없음 */
+  .preset-row { display: flex; gap: 5px; flex-wrap: wrap; }
+  .preset-chip {
+    padding: 4px 10px;
+    border: 1px solid var(--border); border-radius: 12px;
+    font-size: 11px; cursor: pointer;
+    background: var(--bg); color: var(--text2);
+    transition: all 0.2s;
+  }
+  .preset-chip.active {
+    border-color: var(--accent2);
+    background: rgba(83,52,131,0.2);
+    color: #c9a0ff;
+  }
+
+  /* 생성 버튼 */
+  .generate-row { display: flex; gap: 12px; align-items: center; }
+  .btn-generate {
+    padding: 10px 28px; border: none; border-radius: 8px;
+    background: var(--accent); color: white;
+    font-size: 14px; font-weight: 600;
+    cursor: pointer; transition: all 0.2s;
+  }
+  .btn-generate:hover { background: #d63651; }
+  .btn-generate:disabled { opacity: 0.5; cursor: not-allowed; }
+  .generate-status { font-size: 12px; color: var(--text2); }
+
+  /* 플레이어 */
+  .player-section { display: none; }
+  .player-section.visible { display: block; }
+  .audio-player { width: 100%; margin-top: 8px; border-radius: 8px; outline: none; }
+  .player-meta {
+    display: flex; gap: 12px;
+    font-size: 11px; color: var(--text2); margin-top: 4px;
+  }
+
+  /* 이력 */
+  .history-list {
+    display: flex; flex-direction: column; gap: 5px;
+    max-height: 250px; overflow-y: auto;
+  }
+  .history-item {
+    display: flex; align-items: center; gap: 8px;
+    padding: 6px 10px; background: var(--bg);
+    border: 1px solid var(--border); border-radius: 6px;
+    font-size: 11px;
+  }
+  .history-item .idx { color: var(--accent); font-weight: 700; min-width: 20px; }
+  .history-item .info {
+    flex: 1; color: var(--text2);
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .history-item .time { color: var(--text2); font-size: 10px; }
+  .btn-play-history {
+    padding: 3px 8px; border: 1px solid var(--accent);
+    border-radius: 4px; background: transparent;
+    color: var(--accent); cursor: pointer; font-size: 10px;
+  }
+  .btn-play-history:hover { background: rgba(233,69,96,0.1); }
+
   .no-poem {
-    text-align: center;
-    padding: 40px;
-    color: var(--text2);
-    font-size: 14px;
+    text-align: center; padding: 40px;
+    color: var(--text2); font-size: 14px;
   }
 
-  /* 스크롤바 */
   ::-webkit-scrollbar { width: 6px; }
   ::-webkit-scrollbar-track { background: transparent; }
   ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
 
-  /* 로딩 스피너 */
   .spinner {
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    border: 2px solid var(--text2);
-    border-top-color: var(--accent);
-    border-radius: 50%;
-    animation: spin 0.8s linear infinite;
-    vertical-align: middle;
-    margin-right: 6px;
+    display: inline-block; width: 14px; height: 14px;
+    border: 2px solid var(--text2); border-top-color: var(--accent);
+    border-radius: 50%; animation: spin 0.8s linear infinite;
+    vertical-align: middle; margin-right: 4px;
   }
   @keyframes spin { to { transform: rotate(360deg); } }
+
+  .hint { font-size: 11px; color: var(--text2); margin-top: 4px; }
 </style>
 </head>
 <body>
 
 <div class="header">
-  <h1>Qwen3-TTS 테스트 스튜디오</h1>
+  <h1>Qwen3-TTS 스튜디오</h1>
   <span class="badge">당시삼백수</span>
+  <span class="badge v2">v2 한국어+Clone</span>
   <span class="status" id="serverStatus">서버 연결 확인 중...</span>
 </div>
 
@@ -423,39 +467,82 @@
     <div class="poem-list" id="poemList">
       <div class="no-poem">시 목록 로딩 중...</div>
     </div>
-    <div class="poem-preview" id="poemPreview">
-      시를 선택하면 본문이 여기에 표시됩니다
+    <div class="poem-preview-wrap">
+      <div class="text-type-tabs">
+        <div class="text-type-tab active" data-type="chinese" onclick="selectTextType('chinese')">원문 (중국어)</div>
+        <div class="text-type-tab" data-type="hyeonto" onclick="selectTextType('hyeonto')">현토</div>
+        <div class="text-type-tab" data-type="reading" onclick="selectTextType('reading')">독음</div>
+        <div class="text-type-tab" data-type="translation" onclick="selectTextType('translation')">번역</div>
+      </div>
+      <textarea class="poem-preview" id="poemPreview" placeholder="시를 선택하거나 직접 텍스트를 입력하세요" oninput="onPreviewInput()"></textarea>
     </div>
   </div>
 
   <!-- 우측: 파라미터 + 결과 -->
   <div class="control-panel">
-    <!-- 모드 선택 -->
+    <!-- 언어 + 모드 -->
     <div class="section">
-      <div class="section-title">모드</div>
+      <div class="section-title">언어</div>
+      <div class="lang-group" id="langGroup"></div>
+      <div class="section-title" style="margin-top:10px">모드</div>
       <div class="mode-group">
         <div class="mode-btn active" data-mode="custom_voice" onclick="selectMode('custom_voice')">
-          <strong>CustomVoice</strong><br>
-          <small>화자 선택 + 스타일 지시</small>
+          <strong>CustomVoice</strong><br><small>프리셋 화자</small>
         </div>
         <div class="mode-btn" data-mode="voice_design" onclick="selectMode('voice_design')">
-          <strong>VoiceDesign</strong><br>
-          <small>자유 음성 설계</small>
+          <strong>VoiceDesign</strong><br><small>자유 음성 설계</small>
+        </div>
+        <div class="mode-btn" data-mode="voice_clone" onclick="selectMode('voice_clone')">
+          <strong>Voice Clone</strong><br><small>내 목소리로</small>
         </div>
       </div>
     </div>
 
-    <!-- 화자 선택 -->
+    <!-- 화자 선택 (CustomVoice) -->
     <div class="section" id="speakerSection">
       <div class="section-title">화자 선택 (CustomVoice)</div>
       <div class="speaker-grid" id="speakerGrid"></div>
     </div>
 
-    <!-- 세부 파라미터 -->
-    <div class="section">
-      <div class="section-title">낭송 스타일 조절</div>
+    <!-- Voice Clone 섹션 -->
+    <div class="section clone-section" id="cloneSection">
+      <div class="section-title">Voice Clone - 내 목소리</div>
 
-      <!-- 속도 -->
+      <!-- 마이크 녹음 -->
+      <div class="recorder-box">
+        <button class="btn-record" id="btnRecord" onclick="toggleRecording()">
+          <span id="recordIcon">&#9679;</span>
+        </button>
+        <div class="recorder-status" id="recorderStatus">마이크 버튼을 눌러 녹음하세요 (5~15초 권장)</div>
+        <div class="recorder-timer" id="recorderTimer">00:00</div>
+        <div style="margin-top:8px">
+          <input type="text" class="ref-text-input" id="recordRefText"
+            placeholder="녹음한 내용 텍스트 입력 (선택, 있으면 품질 UP)">
+        </div>
+        <div style="margin-top:6px">
+          <input type="text" class="ref-text-input" id="recordLabel"
+            placeholder="녹음 라벨 (예: 내목소리_조용, 형_장중)">
+        </div>
+      </div>
+
+      <!-- 파일 업로드 -->
+      <div style="margin-bottom:10px">
+        <input type="file" id="refAudioFile" accept="audio/*" hidden>
+        <button class="btn-play-sm" onclick="document.getElementById('refAudioFile').click()"
+          style="padding:5px 12px">파일 업로드 (.wav, .mp3)</button>
+        <span class="hint" style="margin-left:6px">또는 위 마이크로 녹음</span>
+      </div>
+
+      <!-- 저장된 레퍼런스 목록 -->
+      <div class="section-title" style="margin-top:6px">저장된 레퍼런스 오디오</div>
+      <div class="ref-audio-list" id="refAudioList">
+        <div class="hint">아직 녹음된 오디오가 없습니다</div>
+      </div>
+    </div>
+
+    <!-- 낭송 스타일 -->
+    <div class="section">
+      <div class="section-title">낭송 스타일</div>
       <div class="param-group">
         <label class="param-label">속도</label>
         <div class="param-options" data-param="speed">
@@ -463,316 +550,559 @@
           <button class="param-chip" data-value="缓慢">느림</button>
           <button class="param-chip active" data-value="适中">보통</button>
           <button class="param-chip" data-value="稍快">빠름</button>
-          <button class="param-chip" data-value="快速">매우 빠름</button>
         </div>
       </div>
-
-      <!-- 감정/분위기 -->
       <div class="param-group">
         <label class="param-label">감정</label>
         <div class="param-options" data-param="emotion">
-          <button class="param-chip active" data-value="庄重肃穆">장중</button>
-          <button class="param-chip" data-value="平和淡然">담담</button>
-          <button class="param-chip" data-value="深沉悲伤">슬픔</button>
-          <button class="param-chip" data-value="轻快喜悦">기쁨</button>
-          <button class="param-chip" data-value="豪放激昂">호방</button>
-          <button class="param-chip" data-value="温柔细腻">부드러움</button>
+          <button class="param-chip active" data-value="声音洪亮有力">장중</button>
+          <button class="param-chip" data-value="声音平静清晰">담담</button>
+          <button class="param-chip" data-value="声音柔和低沉">슬픔</button>
+          <button class="param-chip" data-value="声音明亮愉快">기쁨</button>
+          <button class="param-chip" data-value="声音高亢激昂">호방</button>
         </div>
       </div>
-
-      <!-- 음색 -->
-      <div class="param-group">
-        <label class="param-label">음색</label>
-        <div class="param-options" data-param="tone">
-          <button class="param-chip active" data-value="低沉浑厚">저음/웅장</button>
-          <button class="param-chip" data-value="清晰明亮">맑은/밝은</button>
-          <button class="param-chip" data-value="温暖柔和">따뜻한</button>
-          <button class="param-chip" data-value="沙哑磁性">허스키</button>
-        </div>
-      </div>
-
-      <!-- 호흡/끊어읽기 -->
       <div class="param-group">
         <label class="param-label">끊어읽기</label>
         <div class="param-options" data-param="pause">
-          <button class="param-chip" data-value="一气呵成，几乎不停顿">거의 안 끊음</button>
+          <button class="param-chip" data-value="一气呵成">거의 안 끊음</button>
           <button class="param-chip active" data-value="在逗号和句号处自然停顿">자연스럽게</button>
           <button class="param-chip" data-value="每句之间有明显停顿，带有呼吸感">길게 끊음</button>
-          <button class="param-chip" data-value="每个字都清晰饱满，字与字之间有明显停顿">자(字) 단위</button>
         </div>
       </div>
-
-      <!-- 스타일 프리셋 (빠른 선택) -->
       <div class="param-group">
-        <label class="param-label">프리셋 (한번에 설정)</label>
+        <label class="param-label">프리셋</label>
         <div class="preset-row" id="presetRow"></div>
       </div>
-
-      <!-- instruct 결과 (자동 생성 + 직접 편집 가능) -->
       <div class="param-group">
-        <label class="param-label">Instruct 텍스트 <small style="color:var(--text2)">(위 선택이 자동 반영됨, 직접 수정도 가능)</small></label>
-        <textarea class="instruct-input" id="instructInput"
-          placeholder="위 옵션을 선택하면 자동 생성됩니다"></textarea>
+        <label class="param-label">Instruct <small style="color:var(--text2)">(자동 생성 / 직접 수정 가능)</small></label>
+        <textarea class="instruct-input" id="instructInput"></textarea>
       </div>
     </div>
 
     <!-- 생성 -->
     <div class="section">
       <div class="generate-row">
-        <button class="btn-generate" id="btnGenerate" onclick="generate()" disabled>
-          생성하기
-        </button>
+        <button class="btn-generate" id="btnGenerate" onclick="generate()" disabled>생성하기</button>
         <span class="generate-status" id="generateStatus"></span>
       </div>
-
-      <!-- 플레이어 -->
       <div class="player-section" id="playerSection">
         <audio class="audio-player" id="audioPlayer" controls></audio>
         <div class="player-meta" id="playerMeta"></div>
       </div>
     </div>
 
-    <!-- 생성 이력 -->
+    <!-- 이력 -->
     <div class="section">
       <div class="section-title">생성 이력</div>
       <div class="history-list" id="historyList">
-        <div style="color: var(--text2); font-size: 13px;">아직 생성된 오디오가 없습니다</div>
+        <div class="hint">아직 생성된 오디오가 없습니다</div>
       </div>
     </div>
   </div>
 </div>
 
 <script>
-// ── 기본 데이터 (서버 없이도 UI 표시) ──
-const DEFAULT_SPEAKERS = [
-  {id: "Vivian", name: "Vivian", desc: "밝고 예리한 젊은 여성", lang: "zh"},
-  {id: "Serena", name: "Serena", desc: "따뜻하고 부드러운 젊은 여성", lang: "zh"},
-  {id: "Uncle_Fu", name: "Uncle_Fu", desc: "나이든 남성, 낮고 부드러운", lang: "zh"},
-  {id: "Dylan", name: "Dylan", desc: "북경 청년, 맑고 자연스러운", lang: "zh"},
-  {id: "Eric", name: "Eric", desc: "성도 남성, 밝고 허스키한", lang: "zh"},
-];
-
-const DEFAULT_PRESETS = [
-  {id: "majestic", label: "웅장 낭송", text: "庄重缓慢地朗诵，低沉浑厚的声音，带有古典诗歌的韵律感，在逗号和句号处自然停顿"},
-  {id: "calm", label: "담백 낭송", text: "平和淡然地朗诵，语速适中，声音清晰自然，不带过多感情色彩"},
-  {id: "sad", label: "슬픈 감성", text: "深沉悲伤地朗诵，声音低沉缓慢，带有叹息和怀念之感"},
-  {id: "bright", label: "경쾌한", text: "轻快明亮地朗诵，声音清脆，语速稍快，充满活力和喜悦"},
-  {id: "slow", label: "매우 느린 낭송", text: "极其缓慢地朗诵，每个字都清晰饱满，字与字之间有明显停顿，适合初学者跟读"},
-];
-
-// ── 전역 상태 ──
+// ═══════════════════════════════════════════
+//  전역 상태
+// ═══════════════════════════════════════════
 let allPoems = [];
 let selectedPoem = null;
 let currentMode = "custom_voice";
+let currentLang = "Chinese";
 let currentSpeaker = "Uncle_Fu";
-let speakers = DEFAULT_SPEAKERS;
-let presets = DEFAULT_PRESETS;
+let currentTextType = "chinese"; // chinese | hyeonto | reading | translation
+let selectedRefAudioId = null;
+let speakers = [];
+let presets = [];
+let languages = [];
+let refAudios = [];
 let history = [];
 let historyCounter = 0;
-let serverConnected = false;
 
-// ── 초기화 ──
+// 마이크 녹음 상태
+let mediaRecorder = null;
+let recordedChunks = [];
+let recordingStartTime = null;
+let timerInterval = null;
+
+const paramState = {
+  speed: "适中",
+  emotion: "声音洪亮有力",
+  pause: "在逗号和句号处自然停顿",
+};
+
+// ═══════════════════════════════════════════
+//  초기화
+// ═══════════════════════════════════════════
 async function init() {
-  // 서버 없이도 화자/프리셋/instruct는 바로 표시
-  renderSpeakers();
-  renderPresets();
   buildInstruct();
-
   try {
-    const [poemsRes, speakersRes, presetsRes] = await Promise.all([
+    const [poemsRes, speakersRes, presetsRes, langsRes, refsRes] = await Promise.all([
       fetch("/api/poems"),
       fetch("/api/speakers"),
       fetch("/api/presets"),
+      fetch("/api/languages"),
+      fetch("/api/ref-audios"),
     ]);
     allPoems = await poemsRes.json();
     speakers = await speakersRes.json();
     presets = await presetsRes.json();
+    languages = await langsRes.json();
+    refAudios = await refsRes.json();
 
     renderPoemList(allPoems);
     renderSpeakers();
     renderPresets();
+    renderLanguages();
+    renderRefAudios();
 
-    serverConnected = true;
     document.getElementById("serverStatus").textContent = "서버 연결됨";
     document.getElementById("serverStatus").className = "status ready";
   } catch (e) {
-    document.getElementById("serverStatus").textContent = "서버 미연결 — 생성은 server.py 실행 후 가능";
-    document.getElementById("serverStatus").className = "status";
+    document.getElementById("serverStatus").textContent = "서버 미연결 — python tools/tts-studio/server.py";
     document.getElementById("poemList").innerHTML =
-      '<div class="no-poem">서버에 연결되면 시 목록이 표시됩니다.<br><br><small>python tools/tts-studio/server.py</small></div>';
+      '<div class="no-poem">서버 연결 후 시 목록 표시<br><br><small>python tools/tts-studio/server.py</small></div>';
+    // 기본 언어 표시
+    languages = [
+      {id: "Chinese", label: "중국어"}, {id: "Korean", label: "한국어"},
+      {id: "English", label: "영어"}, {id: "Japanese", label: "일본어"},
+    ];
+    renderLanguages();
   }
+
+  // 파일 업로드 이벤트
+  document.getElementById("refAudioFile").addEventListener("change", handleRefFileUpload);
 }
 
-// ── 시 목록 렌더링 ──
+// ═══════════════════════════════════════════
+//  시 목록
+// ═══════════════════════════════════════════
 function renderPoemList(poems) {
-  const container = document.getElementById("poemList");
-  if (!poems.length) {
-    container.innerHTML = '<div class="no-poem">검색 결과 없음</div>';
-    return;
-  }
-  container.innerHTML = poems
-    .map(
-      (p) => `
+  const c = document.getElementById("poemList");
+  if (!poems.length) { c.innerHTML = '<div class="no-poem">검색 결과 없음</div>'; return; }
+  c.innerHTML = poems.map(p => `
     <div class="poem-item" data-no="${esc(p.poemNoStr)}" onclick="selectPoem('${esc(p.poemNoStr)}')">
       <span class="no">${esc(p.poemNoStr)}</span>
       <span class="title">${esc(p.titleZh)}</span>
+      ${p.hyeontoFull ? '<span class="hy-badge">현토</span>' : ''}
       <span class="poet">${esc(p.poetZh)}</span>
-    </div>`
-    )
-    .join("");
+    </div>`).join("");
 }
 
-// ── 검색 ──
 document.getElementById("searchInput").addEventListener("input", (e) => {
   const q = e.target.value.trim().toLowerCase();
-  if (!q) {
-    renderPoemList(allPoems);
-    return;
-  }
-  const filtered = allPoems.filter(
-    (p) =>
-      p.poemNoStr.includes(q) ||
-      (p.titleZh || "").toLowerCase().includes(q) ||
-      (p.titleKo || "").toLowerCase().includes(q) ||
-      (p.poetZh || "").toLowerCase().includes(q) ||
-      (p.poetKo || "").toLowerCase().includes(q)
-  );
-  renderPoemList(filtered);
+  if (!q) { renderPoemList(allPoems); return; }
+  renderPoemList(allPoems.filter(p =>
+    p.poemNoStr.includes(q) ||
+    (p.titleZh||"").toLowerCase().includes(q) ||
+    (p.titleKo||"").toLowerCase().includes(q) ||
+    (p.poetZh||"").toLowerCase().includes(q) ||
+    (p.poetKo||"").toLowerCase().includes(q)
+  ));
 });
 
-// ── 시 선택 ──
 function selectPoem(noStr) {
-  selectedPoem = allPoems.find((p) => p.poemNoStr === noStr);
+  selectedPoem = allPoems.find(p => p.poemNoStr === noStr);
   if (!selectedPoem) return;
-
-  // 활성 표시
-  document.querySelectorAll(".poem-item").forEach((el) => {
-    el.classList.toggle("active", el.dataset.no === noStr);
-  });
-
-  // 미리보기
-  document.getElementById("poemPreview").textContent = selectedPoem.textForTTS;
-
-  // 생성 버튼 활성화
-  document.getElementById("btnGenerate").disabled = false;
+  document.querySelectorAll(".poem-item").forEach(el =>
+    el.classList.toggle("active", el.dataset.no === noStr));
+  updatePreviewText();
 }
 
-// ── 모드 선택 ──
+// ═══════════════════════════════════════════
+//  텍스트 유형 선택 (원문/현토/독음/번역)
+// ═══════════════════════════════════════════
+function selectTextType(type) {
+  currentTextType = type;
+  document.querySelectorAll(".text-type-tab").forEach(el =>
+    el.classList.toggle("active", el.dataset.type === type));
+  updatePreviewText();
+}
+
+function updatePreviewText() {
+  if (!selectedPoem) return;
+  const preview = document.getElementById("poemPreview");
+  let text = "";
+  switch (currentTextType) {
+    case "chinese": text = selectedPoem.textForTTS; break;
+    case "hyeonto": text = selectedPoem.hyeontoFull || "(현토 없음)"; break;
+    case "reading": text = selectedPoem.readingFull || "(독음 없음)"; break;
+    case "translation": text = selectedPoem.translationKo || "(번역 없음)"; break;
+  }
+  preview.value = text;
+  updateGenerateBtn();
+}
+
+function getTextForGeneration() {
+  return document.getElementById("poemPreview").value.trim();
+}
+
+function onPreviewInput() {
+  updateGenerateBtn();
+}
+
+function updateGenerateBtn() {
+  const text = document.getElementById("poemPreview").value.trim();
+  document.getElementById("btnGenerate").disabled = !text;
+}
+
+// ═══════════════════════════════════════════
+//  언어 선택
+// ═══════════════════════════════════════════
+function renderLanguages() {
+  const g = document.getElementById("langGroup");
+  g.innerHTML = languages.map(l => `
+    <button class="lang-btn ${l.id === currentLang ? 'active' : ''}"
+            data-lang="${esc(l.id)}" onclick="selectLang('${esc(l.id)}')">${esc(l.label)}</button>
+  `).join("");
+}
+
+function selectLang(lang) {
+  currentLang = lang;
+  document.querySelectorAll(".lang-btn").forEach(el =>
+    el.classList.toggle("active", el.dataset.lang === lang));
+  // 언어에 맞는 화자 필터링 + 자동 선택
+  renderSpeakers();
+  updateTextTypeHints();
+}
+
+function updateTextTypeHints() {
+  document.querySelectorAll(".text-type-tab").forEach(tab => {
+    tab.classList.remove("hint-mismatch");
+  });
+  // 한국어인데 원문 탭이면, 독음/번역 탭에 힌트 표시
+  if (currentLang === "Korean" && currentTextType === "chinese") {
+    document.querySelectorAll('.text-type-tab[data-type="reading"], .text-type-tab[data-type="translation"]')
+      .forEach(t => t.classList.add("hint-mismatch"));
+  }
+  // 중국어인데 독음/번역 탭이면, 원문 탭에 힌트 표시
+  if (currentLang === "Chinese" && (currentTextType === "reading" || currentTextType === "translation")) {
+    document.querySelector('.text-type-tab[data-type="chinese"]')?.classList.add("hint-mismatch");
+  }
+}
+
+// ═══════════════════════════════════════════
+//  모드 선택
+// ═══════════════════════════════════════════
 function selectMode(mode) {
   currentMode = mode;
-  document.querySelectorAll(".mode-btn").forEach((el) => {
-    el.classList.toggle("active", el.dataset.mode === mode);
-  });
-  // CustomVoice일 때만 화자 패널 표시
+  document.querySelectorAll(".mode-btn").forEach(el =>
+    el.classList.toggle("active", el.dataset.mode === mode));
   document.getElementById("speakerSection").style.display =
     mode === "custom_voice" ? "block" : "none";
+  document.getElementById("cloneSection").classList.toggle("visible", mode === "voice_clone");
 }
 
-// ── 화자 렌더링 ──
+// ═══════════════════════════════════════════
+//  화자/프리셋
+// ═══════════════════════════════════════════
 function renderSpeakers() {
-  const grid = document.getElementById("speakerGrid");
-  grid.innerHTML = speakers
-    .map(
-      (s) => `
-    <div class="speaker-card ${s.id === currentSpeaker ? "active" : ""}"
+  const g = document.getElementById("speakerGrid");
+  // 언어 코드 매핑 (API lang → speaker lang)
+  const langMap = { Chinese: "zh", Korean: "ko", English: "en", Japanese: "ja" };
+  const langCode = langMap[currentLang] || "zh";
+  const filtered = speakers.filter(s => s.lang === langCode);
+  const list = filtered.length ? filtered : speakers; // 필터 결과 없으면 전체
+
+  // 현재 화자가 필터에 없으면 첫 번째로 자동 전환
+  if (!list.find(s => s.id === currentSpeaker)) {
+    currentSpeaker = list[0]?.id || "Sohee";
+  }
+
+  g.innerHTML = list.map(s => `
+    <div class="speaker-card ${s.id === currentSpeaker ? 'active' : ''}"
          data-id="${esc(s.id)}" onclick="selectSpeaker('${esc(s.id)}')">
-      <div class="name">${esc(s.name)}</div>
+      <div class="name">${esc(s.name)} <small style="color:var(--text2)">${esc(s.lang)}</small></div>
       <div class="desc">${esc(s.desc)}</div>
-    </div>`
-    )
-    .join("");
+    </div>`).join("");
 }
 
 function selectSpeaker(id) {
   currentSpeaker = id;
-  document.querySelectorAll(".speaker-card").forEach((el) => {
-    el.classList.toggle("active", el.dataset.id === id);
-  });
+  document.querySelectorAll(".speaker-card").forEach(el =>
+    el.classList.toggle("active", el.dataset.id === id));
 }
 
-// ── 파라미터 칩 선택 (속도/감정/음색/끊어읽기) ──
-const paramState = {
-  speed: "适中",
-  emotion: "庄重肃穆",
-  tone: "低沉浑厚",
-  pause: "在逗号和句号处自然停顿",
-};
+function renderPresets() {
+  document.getElementById("presetRow").innerHTML = presets.map(p => `
+    <span class="preset-chip" data-id="${esc(p.id)}" onclick="selectPreset('${esc(p.id)}')">${esc(p.label)}</span>
+  `).join("");
+}
 
-document.querySelectorAll(".param-options").forEach((group) => {
-  group.addEventListener("click", (e) => {
+function selectPreset(id) {
+  const p = presets.find(x => x.id === id);
+  if (!p) return;
+  document.getElementById("instructInput").value = p.text;
+  document.querySelectorAll(".preset-chip").forEach(el =>
+    el.classList.toggle("active", el.dataset.id === id));
+  document.querySelectorAll(".param-options .param-chip").forEach(c => c.classList.remove("active"));
+}
+
+// 파라미터 칩
+document.querySelectorAll(".param-options").forEach(group => {
+  group.addEventListener("click", e => {
     const chip = e.target.closest(".param-chip");
     if (!chip) return;
-    const param = group.dataset.param;
-    const value = chip.dataset.value;
-
-    // 같은 그룹 내 active 토글
-    group.querySelectorAll(".param-chip").forEach((c) => c.classList.remove("active"));
+    group.querySelectorAll(".param-chip").forEach(c => c.classList.remove("active"));
     chip.classList.add("active");
-
-    paramState[param] = value;
+    paramState[group.dataset.param] = chip.dataset.value;
     buildInstruct();
-
-    // 프리셋 선택 해제 (개별 파라미터를 바꿨으니)
-    document.querySelectorAll("#presetRow .preset-chip").forEach((c) => c.classList.remove("active"));
+    document.querySelectorAll(".preset-chip").forEach(c => c.classList.remove("active"));
   });
 });
 
 function buildInstruct() {
-  const parts = [];
-  // 속도
-  if (paramState.speed !== "适中") parts.push(paramState.speed + "地");
-  // 감정
-  parts.push(paramState.emotion + "地朗诵");
-  // 음색
-  parts.push(paramState.tone + "的声音");
-  // 끊어읽기
+  const parts = ["用朗诵古诗的方式"];
+  parts.push(paramState.emotion);
+  if (paramState.speed !== "适中") parts.push("语速" + paramState.speed);
   parts.push(paramState.pause);
-  // 한시 공통
-  parts.push("带有古典诗歌的韵律感");
-
   document.getElementById("instructInput").value = parts.join("，");
 }
 
-// ── 프리셋 렌더링 (빠른 전체 설정) ──
-function renderPresets() {
-  const row = document.getElementById("presetRow");
-  row.innerHTML = presets
-    .map(
-      (p) => `
-    <span class="preset-chip" data-id="${esc(p.id)}" onclick="selectPreset('${esc(p.id)}')">
-      ${esc(p.label)}
-    </span>`
-    )
-    .join("");
+// ═══════════════════════════════════════════
+//  마이크 녹음
+// ═══════════════════════════════════════════
+async function toggleRecording() {
+  const btn = document.getElementById("btnRecord");
+  const status = document.getElementById("recorderStatus");
+  const timer = document.getElementById("recorderTimer");
+
+  if (mediaRecorder && mediaRecorder.state === "recording") {
+    // 녹음 중지
+    mediaRecorder.stop();
+    btn.classList.remove("recording");
+    btn.innerHTML = "&#9679;";
+    status.textContent = "녹음 완료! 저장 중...";
+    clearInterval(timerInterval);
+    return;
+  }
+
+  // 녹음 시작
+  try {
+    const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+    recordedChunks = [];
+    mediaRecorder = new MediaRecorder(stream, { mimeType: "audio/webm" });
+
+    mediaRecorder.ondataavailable = (e) => {
+      if (e.data.size > 0) recordedChunks.push(e.data);
+    };
+
+    mediaRecorder.onstop = async () => {
+      stream.getTracks().forEach(t => t.stop());
+      const blob = new Blob(recordedChunks, { type: "audio/webm" });
+      console.log("[녹음] webm blob:", blob.size, "bytes");
+
+      // WAV로 변환 시도, 실패하면 webm 그대로 업로드
+      let uploadBlob;
+      try {
+        uploadBlob = await convertToWav(blob);
+        console.log("[녹음] WAV 변환 성공:", uploadBlob.size, "bytes");
+      } catch (e) {
+        console.warn("[녹음] WAV 변환 실패, webm 그대로 업로드:", e);
+        uploadBlob = blob;
+      }
+      await uploadRefAudio(uploadBlob);
+      timer.classList.remove("visible");
+    };
+
+    mediaRecorder.start(100);
+    recordingStartTime = Date.now();
+    btn.classList.add("recording");
+    btn.innerHTML = "&#9632;";
+    status.textContent = "녹음 중... (다시 누르면 중지)";
+    timer.classList.add("visible");
+    timerInterval = setInterval(() => {
+      const elapsed = Math.floor((Date.now() - recordingStartTime) / 1000);
+      const m = String(Math.floor(elapsed / 60)).padStart(2, "0");
+      const s = String(elapsed % 60).padStart(2, "0");
+      timer.textContent = `${m}:${s}`;
+    }, 200);
+  } catch (e) {
+    status.textContent = "마이크 접근 실패: " + e.message;
+  }
 }
 
-function selectPreset(id) {
-  const preset = presets.find((p) => p.id === id);
-  if (!preset) return;
-  document.getElementById("instructInput").value = preset.text;
-  document.querySelectorAll("#presetRow .preset-chip").forEach((el) => {
-    el.classList.toggle("active", el.dataset.id === id);
-  });
-  // 개별 파라미터 칩 선택 해제 (프리셋이 덮어쓰니까)
-  document.querySelectorAll(".param-options .param-chip").forEach((c) => c.classList.remove("active"));
+async function convertToWav(webmBlob) {
+  // AudioContext로 webm → PCM → WAV
+  const arrayBuffer = await webmBlob.arrayBuffer();
+  const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  const audioBuffer = await audioCtx.decodeAudioData(arrayBuffer);
+  audioCtx.close();
+
+  const numChannels = 1; // 모노
+  const sampleRate = audioBuffer.sampleRate;
+  const samples = audioBuffer.getChannelData(0);
+  const buffer = new ArrayBuffer(44 + samples.length * 2);
+  const view = new DataView(buffer);
+
+  // WAV 헤더
+  const writeStr = (offset, str) => { for (let i = 0; i < str.length; i++) view.setUint8(offset + i, str.charCodeAt(i)); };
+  writeStr(0, "RIFF");
+  view.setUint32(4, 36 + samples.length * 2, true);
+  writeStr(8, "WAVE");
+  writeStr(12, "fmt ");
+  view.setUint32(16, 16, true);
+  view.setUint16(20, 1, true); // PCM
+  view.setUint16(22, numChannels, true);
+  view.setUint32(24, sampleRate, true);
+  view.setUint32(28, sampleRate * numChannels * 2, true);
+  view.setUint16(32, numChannels * 2, true);
+  view.setUint16(34, 16, true);
+  writeStr(36, "data");
+  view.setUint32(40, samples.length * 2, true);
+
+  // PCM 데이터
+  let offset = 44;
+  for (let i = 0; i < samples.length; i++) {
+    const s = Math.max(-1, Math.min(1, samples[i]));
+    view.setInt16(offset, s < 0 ? s * 0x8000 : s * 0x7FFF, true);
+    offset += 2;
+  }
+
+  return new Blob([buffer], { type: "audio/wav" });
 }
 
-// ── 생성 ──
+async function uploadRefAudio(wavBlob) {
+  const status = document.getElementById("recorderStatus");
+  const label = document.getElementById("recordLabel").value.trim() || "녹음_" + new Date().toLocaleTimeString("ko-KR");
+  const refText = document.getElementById("recordRefText").value.trim();
+
+  console.log("[업로드] wavBlob:", wavBlob.size, "bytes, type:", wavBlob.type);
+  if (!wavBlob.size || wavBlob.size < 50) {
+    status.textContent = "녹음 데이터가 비어있습니다. 다시 시도해주세요.";
+    return;
+  }
+
+  const formData = new FormData();
+  formData.append("file", wavBlob, "recording.wav");
+  formData.append("label", label);
+  formData.append("refText", refText);
+
+  try {
+    const res = await fetch("/api/upload-ref-audio", { method: "POST", body: formData });
+    const text = await res.text();
+    console.log("[업로드] 서버 응답:", res.status, text);
+    if (!res.ok) {
+      status.textContent = `업로드 실패 (${res.status}): ${text}`;
+      return;
+    }
+    const data = JSON.parse(text);
+    refAudios.unshift(data);
+    renderRefAudios();
+    selectedRefAudioId = data.id;
+    highlightRefAudio(data.id);
+    status.textContent = `"${data.label}" 저장 완료!`;
+    document.getElementById("recordLabel").value = "";
+    document.getElementById("recordRefText").value = "";
+  } catch (e) {
+    console.error("[업로드] 에러:", e);
+    status.textContent = "업로드 실패: " + e.message;
+  }
+}
+
+async function handleRefFileUpload(e) {
+  const file = e.target.files?.[0];
+  if (!file) return;
+  const label = file.name.replace(/\.[^.]+$/, "");
+  const formData = new FormData();
+  formData.append("file", file);
+  formData.append("label", label);
+  formData.append("refText", "");
+
+  try {
+    const res = await fetch("/api/upload-ref-audio", { method: "POST", body: formData });
+    const text = await res.text();
+    if (!res.ok) { alert(`업로드 실패 (${res.status}): ${text}`); return; }
+    const data = JSON.parse(text);
+    refAudios.unshift(data);
+    renderRefAudios();
+    selectedRefAudioId = data.id;
+    highlightRefAudio(data.id);
+  } catch (err) {
+    alert("파일 업로드 실패: " + err.message);
+  }
+  e.target.value = "";
+}
+
+// ═══════════════════════════════════════════
+//  레퍼런스 오디오 목록
+// ═══════════════════════════════════════════
+function renderRefAudios() {
+  const c = document.getElementById("refAudioList");
+  if (!refAudios.length) {
+    c.innerHTML = '<div class="hint">아직 녹음된 오디오가 없습니다</div>';
+    return;
+  }
+  c.innerHTML = refAudios.map(a => `
+    <div class="ref-audio-item ${a.id === selectedRefAudioId ? 'active' : ''}"
+         data-id="${esc(a.id)}" onclick="selectRefAudio('${esc(a.id)}')">
+      <span class="label">${esc(a.label)}</span>
+      <span class="date">${esc(a.createdAt || '')}</span>
+      <button class="btn-play-sm" onclick="event.stopPropagation();playRefAudio('${esc(a.url)}')">&#9654;</button>
+      <button class="btn-del-sm" onclick="event.stopPropagation();deleteRefAudio('${esc(a.id)}')">&#10005;</button>
+    </div>`).join("");
+}
+
+function selectRefAudio(id) {
+  selectedRefAudioId = id;
+  highlightRefAudio(id);
+}
+
+function highlightRefAudio(id) {
+  document.querySelectorAll(".ref-audio-item").forEach(el =>
+    el.classList.toggle("active", el.dataset.id === id));
+}
+
+function playRefAudio(url) {
+  const player = document.getElementById("audioPlayer");
+  const section = document.getElementById("playerSection");
+  section.classList.add("visible");
+  player.src = url;
+  player.play();
+}
+
+async function deleteRefAudio(id) {
+  if (!confirm("이 레퍼런스 오디오를 삭제할까요?")) return;
+  await fetch(`/api/ref-audios/${id}`, { method: "DELETE" });
+  refAudios = refAudios.filter(a => a.id !== id);
+  if (selectedRefAudioId === id) selectedRefAudioId = null;
+  renderRefAudios();
+}
+
+// ═══════════════════════════════════════════
+//  TTS 생성
+// ═══════════════════════════════════════════
 async function generate() {
-  if (!selectedPoem) return;
+  const text = getTextForGeneration();
+  if (!text) return;
 
   const btn = document.getElementById("btnGenerate");
   const status = document.getElementById("generateStatus");
   btn.disabled = true;
-  status.innerHTML = '<span class="spinner"></span>TTS 생성 중... (첫 실행 시 모델 로딩으로 1-2분 소요)';
+
+  const modeLabel = { custom_voice: "CustomVoice", voice_design: "VoiceDesign", voice_clone: "Voice Clone" };
+  status.innerHTML = `<span class="spinner"></span>${modeLabel[currentMode]} 생성 중...`;
 
   const body = {
-    text: selectedPoem.textForTTS,
+    text,
     mode: currentMode,
     speaker: currentSpeaker,
     instruct: document.getElementById("instructInput").value.trim(),
-    language: "Chinese",
+    language: currentLang,
   };
+
+  // Voice Clone 추가 파라미터
+  if (currentMode === "voice_clone") {
+    if (!selectedRefAudioId) {
+      status.textContent = "레퍼런스 오디오를 먼저 선택하세요!";
+      btn.disabled = false;
+      return;
+    }
+    body.refAudioId = selectedRefAudioId;
+    const ref = refAudios.find(a => a.id === selectedRefAudioId);
+    if (ref?.refText) body.refText = ref.refText;
+  }
 
   try {
     const res = await fetch("/api/generate", {
@@ -780,15 +1110,12 @@ async function generate() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(body),
     });
-
     if (!res.ok) {
       const err = await res.json();
       throw new Error(err.detail || "생성 실패");
     }
-
     const data = await res.json();
 
-    // 플레이어 표시
     const playerSection = document.getElementById("playerSection");
     const audioPlayer = document.getElementById("audioPlayer");
     const playerMeta = document.getElementById("playerMeta");
@@ -796,19 +1123,15 @@ async function generate() {
     audioPlayer.src = data.url;
     audioPlayer.play();
     playerMeta.textContent =
-      `${data.mode} | ${data.speaker || "VoiceDesign"} | ${data.elapsed}초 소요`;
-
+      `${data.mode} | ${data.language} | ${data.speaker || "Clone"} | ${data.elapsed}초`;
     status.textContent = `생성 완료 (${data.elapsed}초)`;
 
-    // 이력 추가
     historyCounter++;
     history.unshift({
-      idx: historyCounter,
-      url: data.url,
+      idx: historyCounter, url: data.url,
       poem: selectedPoem.poemNoStr + " " + selectedPoem.titleZh,
-      mode: data.mode,
-      speaker: data.speaker || "VoiceDesign",
-      instruct: body.instruct.slice(0, 30) + (body.instruct.length > 30 ? "..." : ""),
+      mode: data.mode, lang: data.language,
+      speaker: data.speaker || "Clone",
       elapsed: data.elapsed,
     });
     renderHistory();
@@ -819,41 +1142,35 @@ async function generate() {
   }
 }
 
-// ── 이력 렌더링 ──
+// ═══════════════════════════════════════════
+//  이력
+// ═══════════════════════════════════════════
 function renderHistory() {
-  const container = document.getElementById("historyList");
-  if (!history.length) {
-    container.innerHTML = '<div style="color:var(--text2);font-size:13px">아직 없음</div>';
-    return;
-  }
-  container.innerHTML = history
-    .map(
-      (h) => `
+  const c = document.getElementById("historyList");
+  if (!history.length) { c.innerHTML = '<div class="hint">아직 없음</div>'; return; }
+  c.innerHTML = history.map(h => `
     <div class="history-item">
       <span class="idx">#${h.idx}</span>
-      <span class="info">${esc(h.poem)} — ${esc(h.speaker)} — ${esc(h.instruct)}</span>
+      <span class="info">${esc(h.poem)} [${esc(h.lang)}] ${esc(h.speaker)}</span>
       <span class="time">${h.elapsed}s</span>
       <button class="btn-play-history" onclick="playHistory('${esc(h.url)}')">재생</button>
-    </div>`
-    )
-    .join("");
+    </div>`).join("");
 }
 
 function playHistory(url) {
   const player = document.getElementById("audioPlayer");
-  const section = document.getElementById("playerSection");
-  section.classList.add("visible");
+  document.getElementById("playerSection").classList.add("visible");
   player.src = url;
   player.play();
 }
 
-// ── 유틸 ──
+// ═══════════════════════════════════════════
+//  유틸
+// ═══════════════════════════════════════════
 function esc(s) {
   return String(s ?? "")
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
+    .replace(/&/g, "&amp;").replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;").replace(/"/g, "&quot;")
     .replace(/'/g, "&#39;");
 }
 

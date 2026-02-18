@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>서적 — 漢詩의 모든 것</title>
+
+  <!-- 웹폰트: Adobe Fonts -->
+  <link rel="stylesheet" href="https://use.typekit.net/dje5vco.css">
+  <!-- 웹폰트: Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&family=Noto+Serif+KR:wght@200..900&family=Noto+Serif+TC:wght@200..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/shared/styles.css">
+  <style>
+    /* ===== Global Body ===== */
+    body {
+      background: #fff;
+      color: #000;
+      padding-top: 73px;
+    }
+
+    /* ===== Layout 5-a: 좌측 고정 300px + 우측 스크롤 ===== */
+    .layout-5a {
+      display: flex;
+      max-width: 1300px;
+      margin: 0 auto;
+      padding-top: 0;
+      background: #FBFAFA;
+      box-shadow: 5px 0 15px rgba(0,0,0,0.06), -5px 0 15px rgba(0,0,0,0.06);
+    }
+
+    /* ===== Sidebar 300px (sticky) ===== */
+    aside.sidebar {
+      width: 300px;
+      min-width: 300px;
+      display: flex;
+      flex-direction: column;
+      background: #FBFAFA;
+      position: sticky;
+      top: 73px;
+      height: calc(100vh - 73px);
+      overflow-y: auto;
+    }
+
+    .layout-5a .sidebar-header {
+      padding: 40px 30px 24px;
+      text-align: right;
+      flex-shrink: 0;
+      border-bottom: 1px dashed var(--c-silver, #c8d3d5);
+    }
+    .sidebar-header h2 {
+      font-family: var(--font-ko);
+      font-size: var(--fs-lead, 20px);
+      font-weight: bold;
+      color: #1C2122;
+      margin-bottom: 8px;
+    }
+    .sidebar-header p {
+      font-size: var(--fs-small, 14px);
+      color: var(--c-powder-blue, #a4b8c4);
+    }
+
+    /* Era tree navigation */
+    .era-tree {
+      list-style: none;
+      flex: 1;
+      padding: 8px 0;
+    }
+    .era-tree-item {
+      margin-bottom: 0;
+      padding: 0;
+      font-size: inherit;
+      color: #000;
+      cursor: default;
+      opacity: 1;
+      display: block;
+    }
+    .era-tree-item:hover {
+      background: transparent;
+      color: inherit;
+    }
+    .era-tree-link {
+      display: block;
+      padding: 5px 30px;
+      font-family: var(--font-ko);
+      font-size: var(--fs-body, 16px);
+      color: #000;
+      text-align: right;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+    }
+    .era-tree-link:hover:not(.disabled):not(.active) {
+      background: #A4B8C4;
+      color: #1C2122;
+    }
+    .era-tree-link.active,
+    .era-tree-link.expanded {
+      background: #8FA8B2;
+      color: #FBFAFA;
+      font-weight: bold;
+    }
+    .era-tree-link.disabled {
+      color: #282828;
+      cursor: not-allowed;
+    }
+
+    /* Sub-items (아코디언) — 당보다 2px 작게 */
+    .era-sub-tree {
+      list-style: none;
+      display: none;
+      background: rgba(143, 168, 178, 0.15);
+    }
+    .era-sub-tree.show {
+      display: block;
+    }
+    .era-sub-link {
+      display: block;
+      padding: 5px 30px;
+      font-family: var(--font-ko);
+      font-size: calc(var(--fs-body, 16px) - 2px);
+      color: #000;
+      text-align: right;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+      text-decoration: none;
+    }
+    .era-sub-link:hover {
+      background: #A4B8C4;
+      color: #1C2122;
+    }
+    .era-sub-link.active {
+      background: rgba(143, 168, 178, 0.4);
+      color: #1C2122;
+      font-weight: 600;
+    }
+
+    /* ===== Content Area: 우측 스크롤 ===== */
+    main.content-area {
+      flex: 1;
+      min-width: 0;
+    }
+
+    /* 콘텐츠 섹션 표시/숨김 */
+    .era-content-section {
+      display: none;
+    }
+    .era-content-section.active {
+      display: block;
+    }
+
+    .content-inner {
+      padding: 40px 32px 80px;
+    }
+
+    /* ===== Typography ===== */
+    .content-inner h2 {
+      font-family: var(--font-zh);
+      font-size: var(--fs-h2, 28px);
+      color: #1C2122;
+      margin-bottom: 8px;
+    }
+    .content-inner .subtitle {
+      font-family: var(--font-ko);
+      font-size: var(--fs-small, 14px);
+      color: var(--c-powder-blue, #a4b8c4);
+      margin-bottom: 32px;
+    }
+    .content-inner h3 {
+      font-family: var(--font-ko);
+      font-size: var(--fs-lead, 20px);
+      font-weight: bold;
+      color: #1C2122;
+      margin: 40px 0 24px 0;
+    }
+
+    /* 섹션 구분선 */
+    .section-divider {
+      border: none;
+      border-top: 1px solid var(--c-silver, #c8d3d5);
+      margin: 48px 0;
+    }
+
+    /* Body Text */
+    .body-text {
+      font-family: var(--font-ko);
+      font-size: var(--fs-body, 18px);
+      line-height: 1.9;
+      color: #000;
+    }
+    .body-text p {
+      margin-bottom: 16px;
+    }
+    .body-text p:last-child {
+      margin-bottom: 0;
+    }
+    .body-text .zh {
+      font-family: var(--font-zh);
+    }
+
+    /* ===== Card ===== */
+    .card {
+      background: transparent;
+      padding: 0;
+      margin-bottom: 24px;
+    }
+    .card--bg {
+      background: transparent;
+      padding: 0;
+      margin-bottom: 24px;
+    }
+
+    /* ===== 2x2 Info Grid ===== */
+    .info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+    }
+    .info-grid-label {
+      font-family: var(--font-zh);
+      font-size: var(--fs-h2, 28px);
+      font-weight: bold;
+      margin-bottom: 12px;
+      color: #1C2122;
+    }
+    .info-grid-value {
+      font-family: var(--font-ko);
+      font-size: var(--fs-body, 18px);
+      color: #000;
+    }
+    .info-grid-sub {
+      font-family: var(--font-ko);
+      font-size: var(--fs-small, 14px);
+      color: #000;
+      margin-top: 4px;
+    }
+
+    /* ===== Sub Heading ===== */
+    .sub-heading {
+      font-family: var(--font-ko);
+      font-size: var(--fs-lead, 20px);
+      font-weight: bold;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: #1C2122;
+    }
+    .sub-heading-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      display: inline-block;
+      background: #1C2122;
+    }
+
+    /* ===== Timeline ===== */
+    .timeline-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 12px 0;
+    }
+    .timeline-year {
+      width: 80px;
+      flex-shrink: 0;
+      font-family: var(--font-ko);
+      font-size: var(--fs-body, 18px);
+      font-weight: bold;
+      color: #1C2122;
+    }
+    .timeline-desc {
+      font-family: var(--font-ko);
+      font-size: var(--fs-body, 18px);
+      color: #000;
+      flex: 1;
+    }
+
+    /* ===== Poetry Type Grid ===== */
+    .type-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .type-card {
+      padding: 12px 0;
+      border-bottom: 1px solid var(--c-silver, #c8d3d5);
+    }
+    .type-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+    .type-card-name {
+      font-family: var(--font-zh);
+      font-size: var(--fs-lead, 20px);
+    }
+    .type-card-count {
+      font-family: var(--font-ko);
+      font-size: var(--fs-h3, 22px);
+      font-weight: bold;
+      color: #1C2122;
+    }
+    .type-card-ko {
+      font-family: var(--font-ko);
+      font-size: var(--fs-small, 14px);
+      color: #000;
+    }
+
+    /* ===== Author Stats ===== */
+    .author-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .author-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--c-silver, #c8d3d5);
+    }
+    .author-card--gold {
+      border-left: 3px solid var(--c-powder-blue, #a4b8c4);
+      padding-left: 12px;
+    }
+    .author-card--silver {
+      border-left: 3px solid var(--c-silver, #c8d3d5);
+      padding-left: 12px;
+    }
+    .author-name-zh {
+      font-family: var(--font-zh);
+      font-weight: bold;
+      font-size: var(--fs-h3, 22px);
+    }
+    .author-name-ko {
+      font-family: var(--font-ko);
+      color: #000;
+      margin-left: 12px;
+      font-size: var(--fs-body, 18px);
+    }
+    .author-count {
+      font-family: var(--font-ko);
+      font-weight: bold;
+      color: #1C2122;
+      font-size: var(--fs-h2, 28px);
+    }
+    .author-name-zh--top { font-size: var(--fs-h2, 28px); }
+    .author-name-ko--top { font-size: var(--fs-body, 18px); }
+    .author-count--top { font-size: 32px; }
+
+    /* ===== Added Works ===== */
+    .added-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--c-silver, #c8d3d5);
+    }
+    .added-author {
+      font-family: var(--font-zh);
+      font-size: var(--fs-h3, 22px);
+      flex-shrink: 0;
+    }
+    .added-works {
+      font-family: var(--font-ko);
+      font-size: var(--fs-body, 18px);
+      color: #000;
+      flex: 1;
+    }
+
+    /* ===== Value Box ===== */
+    .value-box {
+      padding: 0;
+      margin-bottom: 32px;
+    }
+    .value-box:last-child { margin-bottom: 0; }
+    .value-box-title {
+      font-family: var(--font-ko);
+      font-size: var(--fs-lead, 20px);
+      font-weight: bold;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: #1C2122;
+    }
+
+    /* ===== Quote Cards ===== */
+    .quote-card {
+      margin-bottom: 32px;
+    }
+    .quote-card:last-child { margin-bottom: 0; }
+    .quote-meta { margin-bottom: 12px; }
+    .quote-poet-zh {
+      font-family: var(--font-zh);
+      font-size: var(--fs-lead, 20px);
+      font-weight: bold;
+      color: #1C2122;
+    }
+    .quote-poet-ko {
+      font-family: var(--font-ko);
+      font-size: var(--fs-body, 18px);
+      color: #000;
+      margin-left: 12px;
+    }
+    .quote-source {
+      font-family: var(--font-ko);
+      font-size: var(--fs-small, 14px);
+      color: var(--c-powder-blue, #a4b8c4);
+      margin-left: 12px;
+    }
+    .quote-body {
+      border-left: 4px solid var(--c-powder-blue, #a4b8c4);
+      padding: 16px 24px;
+    }
+    .quote-zh {
+      font-family: var(--font-zh);
+      font-size: 32px;
+      line-height: 1.8;
+      margin-bottom: 12px;
+    }
+    .quote-ko {
+      font-family: var(--font-ko);
+      font-size: var(--fs-body, 18px);
+      color: #000;
+    }
+
+    /* ===== Inline Chinese title ===== */
+    .zh-title {
+      font-family: var(--font-zh);
+      font-size: var(--fs-h3, 22px);
+    }
+    .card-title-zh {
+      font-family: var(--font-zh);
+      font-size: var(--fs-h2, 28px);
+      font-weight: bold;
+      color: #1C2122;
+      margin-bottom: 24px;
+    }
+
+    /* ===== References ===== */
+    .ref-list { list-style: none; }
+    .ref-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 8px 0;
+    }
+    .ref-bullet {
+      font-size: var(--fs-body, 18px);
+      color: #1C2122;
+      margin-top: 2px;
+      flex-shrink: 0;
+    }
+    .ref-text {
+      font-family: var(--font-ko);
+      font-size: var(--fs-body, 18px);
+      color: #000;
+    }
+    .ref-author {
+      text-align: center;
+      margin-top: 48px;
+      font-family: var(--font-ko);
+      font-size: var(--fs-body, 18px);
+      color: #000;
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 1024px) {
+      body { overflow: auto; }
+      .layout-5a {
+        flex-direction: column;
+        height: auto;
+      }
+      aside.sidebar {
+        width: 100%;
+        min-width: 100%;
+      }
+      main.content-area {
+        overflow-y: visible;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .content-inner {
+        padding: 24px 16px 48px;
+      }
+      .info-grid,
+      .type-grid,
+      .author-grid {
+        grid-template-columns: 1fr;
+      }
+      .quote-zh {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="nav-placeholder"></div>
+
+  <!-- ===== Layout 5-a: 사이드바 트리 + 콘텐츠 ===== -->
+  <div class="layout-5a">
+
+    <!-- 좌측 사이드바 -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>시대별 著書</h2>
+        <p>시대별 주요 시선집</p>
+      </div>
+
+      <ul class="era-tree">
+        <li class="era-tree-item">
+          <div class="era-tree-link disabled"><span>춘추전국(春秋戰國)</span></div>
+        </li>
+        <li class="era-tree-item">
+          <div class="era-tree-link disabled"><span>한(漢)</span></div>
+        </li>
+        <li class="era-tree-item">
+          <div class="era-tree-link disabled"><span>위진남북조(魏晉南北朝)</span></div>
+        </li>
+        <li class="era-tree-item">
+          <div class="era-tree-link active expanded" data-era="tang"><span>당(唐)</span></div>
+          <ul class="era-sub-tree show">
+            <li><a class="era-sub-link active" data-sub="tang300">당시삼백수 (唐詩三百首)</a></li>
+          </ul>
+        </li>
+        <li class="era-tree-item">
+          <div class="era-tree-link disabled"><span>오대십국(五代十國)</span></div>
+        </li>
+        <li class="era-tree-item">
+          <div class="era-tree-link disabled"><span>송(宋)</span></div>
+        </li>
+        <li class="era-tree-item">
+          <div class="era-tree-link disabled"><span>원(元)</span></div>
+        </li>
+        <li class="era-tree-item">
+          <div class="era-tree-link disabled"><span>명(明)</span></div>
+        </li>
+        <li class="era-tree-item">
+          <div class="era-tree-link disabled"><span>청(清)</span></div>
+        </li>
+      </ul>
+    </aside>
+
+    <!-- 우측 콘텐츠 -->
+    <main class="content-area" id="contentArea">
+
+      <!-- 당시삼백수 콘텐츠 -->
+      <div class="era-content-section active" data-sub="tang300">
+        <div class="content-inner">
+
+          <!-- 제목 -->
+          <h2>당시삼백수</h2>
+          <p class="subtitle">唐詩三百首 — 清 · 孫洙 編</p>
+
+          <!-- 1. 概要 Overview -->
+          <div class="body-text">
+            <p>
+              <strong class="zh-title">《唐詩三百首(당시삼백수)》</strong>는 중국 <span class="zh">唐(당)</span>나라에서 널리 읽혔던 한시(漢詩) 가운데 300수(首)를 가려 뽑은 것으로, <span class="zh">淸(청)</span>나라 <span class="zh">孫洙(손수)</span>가 편찬하였다.
+            </p>
+            <p>
+              이 책은 시가(詩家)의 전문적인 시선집(詩選集)이라기 보다는 <strong>아동들의 시가학습(詩歌學習)을 위해</strong> 만든 것인데, 총 <strong>77명 작가의 310수</strong>가 수록되어 있으며, 작가들은 당나라의 중요 시인들은 물론이고, 제왕(帝王)·사대부·승려·가녀(歌女)·무명씨(無名氏) 등이 광범위하게 포함되어 있다.
+            </p>
+            <p>
+              <span class="zh">《唐詩三百首》</span>가 나오기 이전 아동들의 시 학습 교본은 <span class="zh">《千家詩(천가시)》</span>였는데, 이 책이 아동들의 학습 교본으로 적합지 않다고 판단하여 새롭게 편찬된 것이다. 하지만 당시(唐詩) 가운데 인구에 회자되는 작품만을 뽑았기 때문에 아동뿐만 아니라 일반인에게도 널리 읽히게 되어 <strong>당시선집(唐詩選集) 중에서 가장 많이 읽히고</strong> 후대에 미친 영향력도 크다.
+            </p>
+          </div>
+
+          <hr class="section-divider">
+
+          <!-- 2. 편자 — 孫洙 -->
+          <h3>편자 — 孫洙</h3>
+
+          <div class="card">
+            <div class="info-grid">
+              <div>
+                <h4 class="info-grid-label">姓名</h4>
+                <p class="info-grid-value"><span class="zh">孫洙(손수)</span></p>
+                <p class="info-grid-sub">1711~1778</p>
+              </div>
+              <div>
+                <h4 class="info-grid-label">字·別號</h4>
+                <p class="info-grid-value">자는 <span class="zh">臨西(임서)</span></p>
+                <p class="info-grid-value">호는 <span class="zh">蘅堂(형당)</span>·<span class="zh">退士(퇴사)</span></p>
+              </div>
+              <div>
+                <h4 class="info-grid-label">出生地域</h4>
+                <p class="info-grid-value"><span class="zh">江蘇省(강소성) 無錫(무석)</span></p>
+              </div>
+              <div>
+                <h4 class="info-grid-label">主要著作</h4>
+                <p class="info-grid-value"><span class="zh">《蘅塘漫稿(현당만고)》</span></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="sub-heading">
+            <span class="sub-heading-dot"></span>
+            주요 활동 및 생애
+          </div>
+          <div class="body-text">
+            <p>
+              손수는 <span class="zh">乾隆(건륭)</span> 9년(1744)에 <span class="zh">擧人(거인)</span>이 되어 <span class="zh">景山官學敎習(경산관학교습)</span>과 <span class="zh">上元縣敎諭(상원현교유)</span>를 역임했고, 1751년에 <span class="zh">進士(진사)</span>가 되어 <span class="zh">大城(대성)</span>·<span class="zh">盧龍(노룡)</span>·<span class="zh">鄒平(추평)</span>의 <span class="zh">縣令(현령)</span>을 지냈다.
+            </p>
+            <p>
+              부임하는 곳에서는 반드시 백성의 질고를 살피고 평시에 고을 사람들과 부자(父子)처럼 생활했으며, 혹 곤장을 칠 일이 있으면 그가 먼저 눈물을 흘렸기 때문에 백성들이 <span class="zh">感泣(감읍)</span>하여 스스로 잘못을 뉘우쳤다고 한다.
+            </p>
+            <p>
+              공무(公務)의 여가에는 독서를 그치지 않아서 마치 일개 서생(書生)과 같았으며 관직에서 물러난 후에도 여전히 청빈(淸貧)하게 살았다고 한다.
+            </p>
+          </div>
+
+          <hr class="section-divider">
+
+          <!-- 3. 서지사항 -->
+          <h3>서지사항</h3>
+
+          <div class="body-text">
+            <p>
+              서명 그대로 당나라 때 유행한 시 300수를 뽑았다는 의미인데, 실제로는 <strong>310수</strong>가 실려 있다. 손수가 직접 지은 <span class="zh">〈唐詩三百首題辭(당시삼백수제사)〉</span>에 의하면, 그때 당시에 아동들의 시 학습 교본은 <span class="zh">《千家詩(천가시)》</span>였는데 이 책이 아동들의 학습 교본으로 적합지 않다고 판단하여 새롭게 편찬하였다고 하였다.
+            </p>
+            <p>
+              <span class="zh">《唐詩三百首》</span>는 <span class="zh">乾隆(건륭)</span> 29년(1764)년 처음 편찬되었고, 이후 1831년 <span class="zh">陳婉俊(진완준)</span>의 <span class="zh">《唐詩三百首補註(당시삼백수보주)》</span>가 나왔으며, 1835년에는 <span class="zh">章燮(장섭)</span>의 <span class="zh">《唐詩三百首註疏(당시삼백수주소)》</span>가 나왔다.
+            </p>
+            <p>
+              장섭의 주소본(註疏本)은 원래에 310수에 11수를 더하여 <strong>321수</strong>로 만들고 상세한 주석을 붙였는데, 손수가 편찬한 원본은 없어지고 우리가 지금 보는 것은 장섭의 주소본이다.
+            </p>
+          </div>
+
+          <div class="card--bg">
+            <h4 class="card-title-zh">版本 變遷</h4>
+            <div class="timeline-item">
+              <span class="timeline-year">1764년</span>
+              <p class="timeline-desc"><span class="zh">孫洙(손수)</span> 원본 편찬 (310수)</p>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-year">1831년</span>
+              <p class="timeline-desc"><span class="zh">陳婉俊(진완준)</span> <span class="zh">《唐詩三百首補註》</span> 간행</p>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-year">1835년</span>
+              <p class="timeline-desc"><span class="zh">章燮(장섭)</span> <span class="zh">《唐詩三百首註疏》</span> 간행 (321수)</p>
+            </div>
+          </div>
+
+          <hr class="section-divider">
+
+          <!-- 4. 내용 -->
+          <h3>내용</h3>
+
+          <div class="body-text" style="margin-bottom: 32px;">
+            <p>
+              310수의 시를 각 <span class="zh">詩體(시체)</span>별로 구분하여 수록하였는데, <span class="zh">古體詩(고체시)</span>와 <span class="zh">近體詩(근체시)</span>, <span class="zh">樂府詩(악부시)</span>를 포괄하였으며, 또한 당나라 전 시기의 시를 골고루 안배하였다. 시의 내용면에서도 당대(唐代)의 사회생활과 시가(詩歌)의 풍모를 어느 정도 반영했다고 말할 수 있다.
+            </p>
+          </div>
+
+          <div class="sub-heading">
+            <span class="sub-heading-dot"></span>
+            詩體別 收錄 現況
+          </div>
+
+          <div class="type-grid" style="margin-bottom: 40px;">
+            <div class="type-card">
+              <div class="type-card-header">
+                <span class="type-card-name">五言古詩</span>
+                <span class="type-card-count">35수</span>
+              </div>
+              <p class="type-card-ko">오언고시</p>
+            </div>
+            <div class="type-card">
+              <div class="type-card-header">
+                <span class="type-card-name">五言古樂府</span>
+                <span class="type-card-count">11수</span>
+              </div>
+              <p class="type-card-ko">오언고악부</p>
+            </div>
+            <div class="type-card">
+              <div class="type-card-header">
+                <span class="type-card-name">七言古詩</span>
+                <span class="type-card-count">28수</span>
+              </div>
+              <p class="type-card-ko">칠언고시</p>
+            </div>
+            <div class="type-card">
+              <div class="type-card-header">
+                <span class="type-card-name">七言古樂府</span>
+                <span class="type-card-count">16수</span>
+              </div>
+              <p class="type-card-ko">칠언고악부</p>
+            </div>
+            <div class="type-card">
+              <div class="type-card-header">
+                <span class="type-card-name">五言律詩</span>
+                <span class="type-card-count">80수</span>
+              </div>
+              <p class="type-card-ko">오언율시</p>
+            </div>
+            <div class="type-card">
+              <div class="type-card-header">
+                <span class="type-card-name">七言律詩</span>
+                <span class="type-card-count">53수</span>
+              </div>
+              <p class="type-card-ko">칠언율시</p>
+            </div>
+            <div class="type-card">
+              <div class="type-card-header">
+                <span class="type-card-name">七言律詩樂府</span>
+                <span class="type-card-count">1수</span>
+              </div>
+              <p class="type-card-ko">칠언율시악부</p>
+            </div>
+            <div class="type-card">
+              <div class="type-card-header">
+                <span class="type-card-name">五言絶句</span>
+                <span class="type-card-count">29수</span>
+              </div>
+              <p class="type-card-ko">오언절구</p>
+            </div>
+            <div class="type-card">
+              <div class="type-card-header">
+                <span class="type-card-name">五言絶句樂府</span>
+                <span class="type-card-count">8수</span>
+              </div>
+              <p class="type-card-ko">오언절구악부</p>
+            </div>
+            <div class="type-card">
+              <div class="type-card-header">
+                <span class="type-card-name">七言絶句</span>
+                <span class="type-card-count">51수</span>
+              </div>
+              <p class="type-card-ko">칠언절구</p>
+            </div>
+            <div class="type-card">
+              <div class="type-card-header">
+                <span class="type-card-name">七言絶句樂府</span>
+                <span class="type-card-count">9수</span>
+              </div>
+              <p class="type-card-ko">칠언절구악부</p>
+            </div>
+          </div>
+
+          <div class="sub-heading">
+            <span class="sub-heading-dot"></span>
+            主要 作家別 收錄 現況
+          </div>
+
+          <div class="body-text" style="margin-bottom: 24px;">
+            <p>작가별로 10수 이상 실려 있는 시인을 살펴보면 다음과 같다:</p>
+          </div>
+
+          <div class="author-grid" style="margin-bottom: 40px;">
+            <div class="author-card author-card--gold">
+              <div>
+                <span class="author-name-zh author-name-zh--top">杜甫</span>
+                <span class="author-name-ko author-name-ko--top">두보</span>
+              </div>
+              <span class="author-count author-count--top">39수</span>
+            </div>
+            <div class="author-card author-card--gold">
+              <div>
+                <span class="author-name-zh author-name-zh--top">李白</span>
+                <span class="author-name-ko author-name-ko--top">이백</span>
+              </div>
+              <span class="author-count author-count--top">34수</span>
+            </div>
+            <div class="author-card author-card--silver">
+              <div>
+                <span class="author-name-zh author-name-zh--top">王維</span>
+                <span class="author-name-ko author-name-ko--top">왕유</span>
+              </div>
+              <span class="author-count author-count--top">29수</span>
+            </div>
+            <div class="author-card author-card--silver">
+              <div>
+                <span class="author-name-zh author-name-zh--top">李商隱</span>
+                <span class="author-name-ko author-name-ko--top">이상은</span>
+              </div>
+              <span class="author-count author-count--top">24수</span>
+            </div>
+            <div class="author-card">
+              <div>
+                <span class="author-name-zh">孟浩然</span>
+                <span class="author-name-ko">맹호연</span>
+              </div>
+              <span class="author-count">15수</span>
+            </div>
+            <div class="author-card">
+              <div>
+                <span class="author-name-zh">韋應物</span>
+                <span class="author-name-ko">위응물</span>
+              </div>
+              <span class="author-count">12수</span>
+            </div>
+            <div class="author-card">
+              <div>
+                <span class="author-name-zh">劉長卿</span>
+                <span class="author-name-ko">유장경</span>
+              </div>
+              <span class="author-count">11수</span>
+            </div>
+            <div class="author-card">
+              <div>
+                <span class="author-name-zh">杜牧</span>
+                <span class="author-name-ko">두목</span>
+              </div>
+              <span class="author-count">10수</span>
+            </div>
+          </div>
+
+          <div class="sub-heading">
+            <span class="sub-heading-dot"></span>
+            章燮 添加 作品
+          </div>
+
+          <div class="body-text" style="margin-bottom: 24px;">
+            <p>
+              이 숫자는 <span class="zh">章燮(장섭)</span>이 편찬한 주소본(註疏本)의 숫자인데, 장섭이 첨가한 시는 다음과 같다:
+            </p>
+          </div>
+
+          <div class="added-item">
+            <span class="added-author">張九齡</span>
+            <p class="added-works"><span class="zh">〈感遇(감우)〉</span> 2수</p>
+          </div>
+          <div class="added-item">
+            <span class="added-author">李白</span>
+            <p class="added-works"><span class="zh">〈子夜四時歌(자야사시가)〉</span> 3수, <span class="zh">〈長干行(장간행)〉</span> 1수, <span class="zh">〈行路難(행로난)〉</span> 2수</p>
+          </div>
+          <div class="added-item">
+            <span class="added-author">杜甫</span>
+            <p class="added-works"><span class="zh">〈詠懷古跡(영회고적)〉</span> 3수</p>
+          </div>
+
+          <hr class="section-divider">
+
+          <!-- 5. 가치와 영향 -->
+          <h3>가치와 영향</h3>
+
+          <div class="value-box">
+            <h4 class="value-box-title">편찬 목적과 성과</h4>
+            <div class="body-text">
+              <p>
+                이 책은 시가(詩家)의 전문적인 시선집이 아니고 <strong>아동들의 시가학습(詩歌學習)을 위하여</strong> 만든 것이다. 당시 아동들의 학습 교본은 <span class="zh">《千家詩》</span>였던 듯한데, 이 책이 동몽교본(童蒙敎本)으로 적합지 않다고 판단하여 자신이 새롭게 편찬한 것이다.
+              </p>
+              <p>
+                그러나 당시(唐詩) 가운데 인구에 회자되는 작품만을 뽑았기 때문에 아동들뿐만 아니라 일반인에게도 널리 읽히게 되어 <strong>당시선집(唐詩選集) 중에서 가장 많이 읽히고</strong> 후대에 미친 영향력도 큰 책이 되었다.
+              </p>
+            </div>
+          </div>
+
+          <div class="value-box">
+            <h4 class="value-box-title">한국에서의 영향</h4>
+            <div class="body-text">
+              <p>
+                우리나라에서는 조선 중기 이후 당시에 대한 관심이 증가했고, 이에 따라 중국 당시 선집(選集)들이 활발하게 유입되었다. 하지만 청나라 때 간행된 <span class="zh">《唐詩三百首》</span>의 유입과 그 영향을 확인할 수 있는 자료는 없다.
+              </p>
+              <p>
+                오히려 <strong>현대에 들어와</strong> 당시 학습을 위해 <span class="zh">《唐詩三百首》</span>를 활용하는 빈도가 높아졌다.
+              </p>
+            </div>
+          </div>
+
+          <hr class="section-divider">
+
+          <!-- 6. 명언 -->
+          <h3>명언</h3>
+
+          <div class="quote-card">
+            <div class="quote-meta">
+              <span class="quote-poet-zh">李白</span>
+              <span class="quote-poet-ko">이백</span>
+              <span class="quote-source"><span class="zh">〈月下獨酌(월하독작)〉</span></span>
+            </div>
+            <div class="quote-body">
+              <p class="quote-zh">擧杯邀明月 對影成三人</p>
+              <p class="quote-ko">잔 들어 밝은 달을 부르고, 그림자 마주하니 세 사람이 되었네.</p>
+            </div>
+          </div>
+
+          <div class="quote-card">
+            <div class="quote-meta">
+              <span class="quote-poet-zh">杜甫</span>
+              <span class="quote-poet-ko">두보</span>
+              <span class="quote-source"><span class="zh">〈夢李白(몽이백)〉</span></span>
+            </div>
+            <div class="quote-body">
+              <p class="quote-zh">死別已呑聲 生別長惻惻</p>
+              <p class="quote-ko">사별은 소리 삼켜 울면 그만이지만 생이별은 길이길이 슬프다네.</p>
+            </div>
+          </div>
+
+          <div class="quote-card">
+            <div class="quote-meta">
+              <span class="quote-poet-zh">孟浩然</span>
+              <span class="quote-poet-ko">맹호연</span>
+              <span class="quote-source"><span class="zh">〈春曉(춘효)〉</span></span>
+            </div>
+            <div class="quote-body">
+              <p class="quote-zh">春眠不覺曉 處處聞啼鳥</p>
+              <p class="quote-ko">봄잠에 취하여 새벽인 줄 몰랐는데, 여기저기서 새소리 들려온다.</p>
+            </div>
+          </div>
+
+          <hr class="section-divider">
+
+          <!-- 7. 참고문헌 -->
+          <h3>참고문헌</h3>
+
+          <div class="card--bg">
+            <ul class="ref-list">
+              <li class="ref-item">
+                <span class="ref-bullet">&#8226;</span>
+                <span class="ref-text">譯註 唐詩三百首 (송재소 외 역주, 전통문화연구회)</span>
+              </li>
+              <li class="ref-item">
+                <span class="ref-bullet">&#8226;</span>
+                <span class="ref-text">韓譯唐詩三百首 (邱燮友 편저, 安秉烈 역, 계명대학교 출판부)</span>
+              </li>
+              <li class="ref-item">
+                <span class="ref-bullet">&#8226;</span>
+                <span class="ref-text">唐詩三百首 (신동준, 인간사랑)</span>
+              </li>
+              <li class="ref-item">
+                <span class="ref-bullet">&#8226;</span>
+                <span class="ref-text">〈《唐詩三百首》 選本的流變〉 (王莉娜, 長沙理工大學)</span>
+              </li>
+              <li class="ref-item">
+                <span class="ref-bullet">&#8226;</span>
+                <span class="ref-text">〈《唐詩三百首》 硏究〉 (鄒坤峰, 上海師範大學 碩士學位論文)</span>
+              </li>
+              <li class="ref-item">
+                <span class="ref-bullet">&#8226;</span>
+                <span class="ref-text">〈《唐詩三百首》의 連作詩 選錄 양상 연구〉 (김준연, 《중국어문논총》46)</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="ref-author">【이성민】</div>
+
+        </div>
+      </div>
+
+    </main>
+
+  </div>
+
+  <div id="footer-placeholder"></div>
+  <script src="/shared/auth-state.js"></script>
+  <script src="/shared/components.js"></script>
+
+  <script>
+  // ===== Layout 5-a: 사이드바 트리 인터랙션 =====
+  (function () {
+    'use strict';
+
+    const tree = document.querySelector('.era-tree');
+    if (!tree) return;
+
+    tree.addEventListener('click', function (e) {
+      // 1) 시대 아이템 클릭
+      const treeLink = e.target.closest('.era-tree-link');
+      if (treeLink) {
+        if (treeLink.classList.contains('disabled')) return;
+
+        const wasExpanded = treeLink.classList.contains('expanded');
+
+        // 모든 시대 접기
+        tree.querySelectorAll('.era-tree-link').forEach(link => {
+          link.classList.remove('active', 'expanded');
+        });
+        tree.querySelectorAll('.era-sub-tree').forEach(sub => {
+          sub.classList.remove('show');
+        });
+
+        // 클릭한 시대 펼치기/접기 토글
+        if (!wasExpanded) {
+          treeLink.classList.add('active', 'expanded');
+
+          const parent = treeLink.parentElement;
+          const subTree = parent.querySelector('.era-sub-tree');
+          if (subTree) {
+            subTree.classList.add('show');
+
+            // 첫 번째 서브아이템 자동 선택
+            const firstSub = subTree.querySelector('.era-sub-link');
+            if (firstSub) {
+              tree.querySelectorAll('.era-sub-link').forEach(s => s.classList.remove('active'));
+              firstSub.classList.add('active');
+              updateContent(firstSub.dataset.sub);
+            }
+          }
+        }
+        return;
+      }
+
+      // 2) 서브아이템 클릭
+      const subLink = e.target.closest('.era-sub-link');
+      if (subLink) {
+        e.preventDefault();
+        tree.querySelectorAll('.era-sub-link').forEach(s => s.classList.remove('active'));
+        subLink.classList.add('active');
+        updateContent(subLink.dataset.sub);
+      }
+    });
+
+    function updateContent(subKey) {
+      const allSections = document.querySelectorAll('.era-content-section');
+      allSections.forEach(section => section.classList.remove('active'));
+
+      const targetSection = document.querySelector('.era-content-section[data-sub="' + subKey + '"]');
+      if (targetSection) {
+        targetSection.classList.add('active');
+      }
+
+      const contentArea = document.getElementById('contentArea');
+      if (contentArea) contentArea.scrollTop = 0;
+    }
+
+  })();
+  </script>
+
+</body>
+</html>

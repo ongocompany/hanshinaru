@@ -1,18 +1,42 @@
 {
   "version": 1,
   "timeline": {
-    "early": { "bg": "#ffffff", "textColor": "#222222" },
-    "high":  { "bg": "#f4f9ff", "textColor": "#222222" },
-    "mid":   { "bg": "#fffcf6", "textColor": "#222222" },
-    "late":  { "bg": "#f6fff9", "textColor": "#222222" }
+    "early": {
+      "bg": "#ffffff",
+      "textColor": "#222222"
+    },
+    "high": {
+      "bg": "#f4f9ff",
+      "textColor": "#222222"
+    },
+    "mid": {
+      "bg": "#fffcf6",
+      "textColor": "#222222"
+    },
+    "late": {
+      "bg": "#f6fff9",
+      "textColor": "#222222"
+    }
   },
   "poemSections": {
-    "poemText":      { "bg": "#faf8f5" },
-    "commentary":    { "bg": "#f0ede7" },
-    "commentaryTr":  { "bg": "#ece8e1" },
-    "notes":         { "bg": "#e8e4dd" },
-    "advanced":      { "bg": "#e4e0d9" },
-    "workList":      { "bg": "#ffffff" }
+    "poemText": {
+      "bg": "#faf8f5"
+    },
+    "commentary": {
+      "bg": "#f0ede7"
+    },
+    "commentaryTr": {
+      "bg": "#ece8e1"
+    },
+    "notes": {
+      "bg": "#e8e4dd"
+    },
+    "advanced": {
+      "bg": "#e4e0d9"
+    },
+    "workList": {
+      "bg": "#ffffff"
+    }
   },
   "fonts": {
     "zhTitle": {

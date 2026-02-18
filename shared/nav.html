@@ -34,12 +34,12 @@
 
       <!-- 3. 커뮤니티 -->
       <div class="nav-dropdown">
-        <span class="nav-link has-dropdown disabled">커뮤니티 <span class="dropdown-arrow">&#9662;</span></span>
+        <a href="/community/" class="nav-link has-dropdown">커뮤니티 <span class="dropdown-arrow">&#9662;</span></a>
         <div class="dropdown-panel">
-          <a href="/community/forum/" class="disabled">토론방</a>
-          <a href="/community/showcase/" class="disabled">한시자랑</a>
-          <a href="/community/news/" class="disabled">관련 뉴스</a>
-          <a href="/community/notice/" class="disabled">공지사항</a>
+          <a href="/community/forum/">토론방</a>
+          <a href="/community/showcase/">한시자랑</a>
+          <a href="/community/news/">관련 뉴스</a>
+          <a href="/community/notice/">공지사항</a>
         </div>
       </div>
 
@@ -49,13 +49,18 @@
       <!-- 5. 한시작성도우미 -->
       <a href="/writing-helper/" class="disabled">작성도우미</a>
 
-      <!-- 6. 검색 -->
-      <a href="/search/" class="nav-search-link" aria-label="검색" title="검색">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
-        </svg>
-      </a>
+      <!-- 6. 검색 (말풍선은 components.js에서 동적 생성) -->
+      <div class="nav-search-wrap" id="navSearchWrap">
+        <button class="nav-search-link" aria-label="검색" title="검색" type="button">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+        </button>
+      </div>
 
     </div>
+
+    <!-- 로그인/사용자는 components.js에서 동적 생성 (innerHTML 파싱 이슈 우회) -->
+
   </div>
 </nav>

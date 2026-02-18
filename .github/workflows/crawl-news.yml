@@ -1,0 +1,37 @@
+name: Crawl Poetry News
+
+on:
+  schedule:
+    - cron: '0 0 * * 1'  # 매주 월요일 오전 9시 (KST = UTC+9)
+  workflow_dispatch:       # 수동 실행 가능
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: jin-practice-01
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run news crawler
+        run: node scripts/crawl_news.js
+        env:
+          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
+          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
+          AI_API_KEY: ${{ secrets.AI_API_KEY }}
+          AI_PROVIDER: ${{ secrets.AI_PROVIDER }}
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add public/index/news_articles.json
+          git diff --cached --quiet || git commit -m "[Auto] 한시 소식 업데이트 $(date +%Y-%m-%d)"
+          git push
