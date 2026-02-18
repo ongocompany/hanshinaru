@@ -21,100 +21,70 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&family=Noto+Serif+KR:wght@200..900&family=Noto+Serif+TC:wght@200..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/shared/styles.css">
 
   <style>
-    /* ===== 네비게이션 ===== */
-    .top-nav {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-      padding: 16px 0;
-      box-shadow: 0 1px 8px rgba(0,0,0,0.08);
-      transition: background 0.4s, box-shadow 0.4s, padding 0.4s;
-    }
-    .top-nav.is-scrolled {
-      background: rgba(44, 24, 16, 0.95);
-      box-shadow: 0 2px 12px rgba(0,0,0,0.18);
-      padding: 10px 0;
-    }
-    .nav-inner {
-      max-width: 1200px; margin: 0 auto; padding: 0 32px;
-      display: flex; justify-content: space-between; align-items: center;
-      transition: max-width 0.4s ease;
-    }
-    .top-nav.is-scrolled .nav-inner {
-      max-width: 660px;
-    }
-    .nav-brand {
-      font-family: 'adobe-fangsong-std', serif;
-      font-size: 24px; color: #2c1810; text-decoration: none;
-      opacity: 0.9; transition: opacity 0.3s, color 0.4s;
-    }
-    .nav-brand:hover { opacity: 1; }
-    .top-nav.is-scrolled .nav-brand { color: #fff; }
-    .nav-links { display: flex; gap: 28px; }
-    .nav-links a {
-      color: rgba(44, 24, 16, 0.65); text-decoration: none;
-      font-size: 15px; transition: color 0.4s;
-    }
-    .nav-links a:hover { color: #2c1810; }
-    .top-nav.is-scrolled .nav-links a { color: rgba(255,255,255,0.75); }
-    .top-nav.is-scrolled .nav-links a:hover { color: #fff; }
-
-    @media (max-width: 768px) {
-      .nav-links { gap: 16px; }
-      .nav-links a { font-size: 13px; }
-    }
-
-    /* ===== 기본 리셋 ===== */
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-
+    /* ===== 메인페이지 전용 스타일 ===== */
     body {
       font-family: 'Noto Serif KR', 'adobe-fangsong-std', serif;
-      background: #f5f2e8;
-      color: #2c1810;
+      background: #fff;
+      color: #000;
     }
 
-    /* ===== A. 히어로 섹션 ===== */
-    .hero-section {
+    /* 섹션 공통: 배경 통일 + 점선 구분 */
+    .daily-five-section,
+    .poet-today-section,
+    .news-section,
+    .video-section,
+    .explore-section {
+      background: #fff;
+      border-bottom: 1px dashed var(--c-silver, #c8d3d5);
+    }
+    .explore-section { border-bottom: none; }
+
+    /* ===== A. Hero Section — 스크롤 애니메이션 ===== */
+    .main-hero {
       position: relative;
       width: 100%;
-      height: 100vh;
+      max-width: 1300px;
+      margin: 0 auto;
+      height: 536px;
       overflow: hidden;
-      background: #e8e4d8;
+      background: #1a1a1a;
+      box-shadow: 5px 0 15px rgba(0,0,0,0.06), -5px 0 15px rgba(0,0,0,0.06);
     }
 
     .hero-scene {
       position: absolute;
-      top: 50%;
+      top: 0;
       left: 0;
       width: 100%;
-      height: 1408px;
-      transform: translateY(-50%);
+      height: 536px;
     }
 
     .hero-bg {
       position: absolute;
-      top: 0;
-      left: 0;
-      width: 10514px;
-      height: 1408px;
-      background-image: url('public/assets/hero/river_scroll.jpg');
-      background-size: 5257px 1408px;
+      top: 0; left: 0;
+      width: 4000px; /* 2000px × 2 */
+      height: 536px;
+      background-image: url('/public/assets/hero/river_scroll.jpg');
+      background-size: 2000px 536px;
       background-repeat: repeat-x;
-      animation: scroll-bg 72s linear infinite;
+      animation: scroll-bg 30s linear infinite;
       will-change: transform;
     }
 
     @keyframes scroll-bg {
       0%   { transform: translateX(0); }
-      100% { transform: translateX(-5257px); }
+      100% { transform: translateX(-2000px); }
     }
 
     .hero-video {
       position: absolute;
-      top: 840px;
-      left: 50%;
-      transform: translateX(calc(-50% - 240px));
-      width: 220px;
+      top: 384px;
+      left: 30%;
+      transform: translateX(-50%);
+      width: 84px;
       height: auto;
       object-fit: contain;
       pointer-events: none;
@@ -123,11 +93,11 @@
 
     .hero-canvas {
       position: absolute;
-      top: 840px;
-      left: 50%;
-      transform: translateX(calc(-50% - 240px));
-      width: 220px;
-      height: 124px;
+      top: 384px;
+      left: 30%;
+      transform: translateX(-50%);
+      width: 84px;
+      height: 47px;
       z-index: 2;
       pointer-events: none;
       display: none;
@@ -135,8 +105,7 @@
 
     .hero-mist-canvas {
       position: absolute;
-      bottom: 0;
-      left: 0;
+      bottom: 0; left: 0;
       width: 100%;
       height: 100%;
       z-index: 3;
@@ -148,65 +117,39 @@
       top: 35%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 600px;
+      width: 690px;
       height: auto;
       z-index: 4;
       pointer-events: none;
     }
 
-    /* 히어로 하단 스크롤 힌트 */
-    .hero-scroll-hint {
-      position: absolute;
-      bottom: 30px;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: 5;
-      color: rgba(44, 24, 16, 0.5);
-      font-size: 14px;
-      text-align: center;
-      animation: bounce 2s ease-in-out infinite;
-    }
-
-    .hero-scroll-hint::after {
-      content: '▼';
-      display: block;
-      margin-top: 4px;
-      font-size: 12px;
-    }
-
-    @keyframes bounce {
-      0%, 100% { transform: translateX(-50%) translateY(0); }
-      50% { transform: translateX(-50%) translateY(8px); }
-    }
-
     /* ===== B. 日日五首 ===== */
     .daily-five-section {
-      padding: 80px 40px;
-      background: #f5f2e8;
+      padding: 30px 40px;
       text-align: center;
     }
 
     .section-title {
-      font-family: 'Noto Serif KR', serif;
-      font-size: 28px;
-      font-weight: 600;
-      color: #2c1810;
-      margin-bottom: 12px;
+      font-family: var(--font-ko, 'Noto Serif KR', serif);
+      font-size: var(--fs-h2, 28px);
+      font-weight: 300;
+      color: #000;
+      margin-bottom: 8px;
     }
 
     .section-title-zh {
-      font-family: 'LXGW WenKai Mono TC', 'adobe-fangsong-std', serif;
-      font-size: 36px;
-      font-weight: 400;
-      color: #2c1810;
+      font-family: var(--font-zh, 'adobe-fangsong-std', fangsong, serif);
+      font-size: var(--fs-h2, 28px);
+      font-weight: 600;
+      color: #000;
       letter-spacing: 0.15em;
       margin-bottom: 8px;
     }
 
     .section-subtitle {
       font-size: 15px;
-      color: #8b7355;
-      margin-bottom: 48px;
+      color: #333;
+      margin-bottom: 20px;
     }
 
     .poem-cards {
@@ -231,7 +174,7 @@
 
     .poem-card:hover {
       transform: translateY(-6px);
-      box-shadow: 0 16px 40px rgba(44, 24, 16, 0.2);
+      box-shadow: 0 16px 40px rgba(110, 131, 135, 0.2);
     }
 
     /* 이미지 없을 때 플레이스홀더 */
@@ -249,7 +192,7 @@
       writing-mode: vertical-rl;
       font-size: 16px;
       line-height: 2;
-      color: rgba(44, 24, 16, 0.5);
+      color: rgba(110, 131, 135, 0.5);
       letter-spacing: 0.1em;
       max-height: 200px;
       overflow: hidden;
@@ -262,8 +205,8 @@
       left: 0;
       right: 0;
       padding: 20px 14px 14px;
-      background: linear-gradient(to top, rgba(44,24,16,0.75), rgba(44,24,16,0.3) 60%, transparent);
-      color: #f5f2e8;
+      background: linear-gradient(to top, rgba(110,131,135,0.75), rgba(110,131,135,0.3) 60%, transparent);
+      color: #fcfafa;
     }
 
     .poem-card-poet {
@@ -306,120 +249,210 @@
       .poem-card-verse { font-size: 14px; }
     }
 
-    /* ===== C. 이달의 시인 ===== */
-    .poet-month-section {
-      padding: 80px 40px;
-      background: #ece8dc;
+    /* ===== 시 이미지 라이트박스 ===== */
+    .poem-lightbox {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      z-index: 200;
+      background: rgba(0, 0, 0, 0.90);
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 20px;
+      padding: 40px 20px;
+    }
+    .poem-lightbox.active {
+      display: flex;
+    }
+    .poem-lightbox-close {
+      position: absolute;
+      top: 16px;
+      right: 24px;
+      background: none;
+      border: none;
+      color: rgba(255,255,255,0.6);
+      font-size: 36px;
+      cursor: pointer;
+      z-index: 201;
+      transition: color 0.2s;
+      line-height: 1;
+    }
+    .poem-lightbox-close:hover {
+      color: #fff;
+    }
+    .poem-lightbox-img {
+      max-height: 75vh;
+      max-width: 90vw;
+      border-radius: 8px;
+      object-fit: contain;
+    }
+    .poem-lightbox-link {
+      color: rgba(252, 250, 250, 0.75);
+      text-decoration: none;
+      font-size: 15px;
+      padding: 10px 28px;
+      border: 1px solid rgba(252, 250, 250, 0.25);
+      border-radius: 8px;
+      transition: all 0.2s;
+    }
+    .poem-lightbox-link:hover {
+      color: #fcfafa;
+      border-color: rgba(252, 250, 250, 0.5);
+      background: rgba(252, 250, 250, 0.08);
+    }
+    .poem-lightbox-row {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .poem-lightbox-nav {
+      flex-shrink: 0;
+      background: none;
+      border: none;
+      color: rgba(255,255,255,0.4);
+      font-size: 48px;
+      cursor: pointer;
+      padding: 12px 4px;
+      transition: color 0.2s;
+      line-height: 1;
+      user-select: none;
+    }
+    .poem-lightbox-nav:hover { color: rgba(255,255,255,0.85); }
+
+    @media (max-width: 480px) {
+      .poem-lightbox { padding: 20px 10px; }
+      .poem-lightbox-img { max-height: 70vh; max-width: 95vw; }
+      .poem-lightbox-row { gap: 10px; }
+      .poem-lightbox-nav { font-size: 28px; padding: 8px 2px; }
     }
 
-    .poet-month-inner {
-      max-width: 900px;
+    /* ===== C. 오늘의 시인 ===== */
+    .poet-today-section {
+      padding: 30px 40px;
+      text-align: center;
+    }
+
+    .poet-today-inner {
+      max-width: 1030px;
       margin: 0 auto;
       display: flex;
       gap: 48px;
-      align-items: center;
+      align-items: flex-start;
+      text-align: left;
     }
 
-    .poet-month-portrait {
+    .poet-today-portrait {
       flex: 0 0 240px;
       height: 320px;
       border-radius: 12px;
-      background: linear-gradient(160deg, #c8b898 0%, #b8a888 50%, #a89878 100%);
+      background: linear-gradient(160deg, #c8d3d5 0%, #a4b8c4 50%, #6e8387 100%);
       display: flex;
       align-items: center;
       justify-content: center;
       overflow: hidden;
       position: relative;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
     }
 
-    .poet-month-portrait img {
+    .poet-today-portrait:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 40px rgba(110, 131, 135, 0.2);
+    }
+
+    .poet-today-portrait img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
 
-    .poet-month-portrait-placeholder {
+    .poet-today-portrait-placeholder {
       font-family: 'LXGW WenKai Mono TC', 'adobe-fangsong-std', serif;
       font-size: 72px;
-      color: rgba(44, 24, 16, 0.15);
+      color: rgba(110, 131, 135, 0.15);
       writing-mode: vertical-rl;
       letter-spacing: 0.2em;
     }
 
-    .poet-month-text {
+    .poet-today-text {
       flex: 1;
       min-width: 0;
+      align-self: stretch;
+      display: flex;
+      flex-direction: column;
     }
 
-    .poet-month-label {
-      font-size: 13px;
-      color: #8b7355;
-      letter-spacing: 0.1em;
-      margin-bottom: 12px;
-    }
-
-    .poet-month-name {
+    .poet-today-name {
       font-family: 'LXGW WenKai Mono TC', 'adobe-fangsong-std', serif;
-      font-size: 42px;
+      font-size: 20px;
       font-weight: 400;
-      color: #2c1810;
+      color: #000;
       margin-bottom: 4px;
       line-height: 1.2;
     }
 
-    .poet-month-name-ko {
+    .poet-today-name-ko {
       font-size: 18px;
-      color: #8b7355;
+      color: #333;
       margin-bottom: 20px;
     }
 
-    .poet-month-bio {
+    .poet-today-bio {
       font-size: 15px;
       line-height: 1.9;
-      color: #4a3728;
+      color: #000;
       margin-bottom: 24px;
     }
 
-    .poet-month-quote {
-      font-family: 'LXGW WenKai Mono TC', 'adobe-fangsong-std', serif;
-      font-size: 20px;
-      color: #2c1810;
-      line-height: 2;
+    .poet-today-verse {
+      font-family: 'Noto Serif KR', Georgia, serif;
+      font-size: 16px;
+      font-style: italic;
+      color: #000;
+      line-height: 1.9;
       padding-left: 16px;
-      border-left: 3px solid rgba(139, 115, 85, 0.3);
+      border-left: 3px solid rgba(164, 184, 196, 0.3);
       margin-bottom: 24px;
     }
+    .poet-today-verse-source {
+      display: block;
+      margin-top: 6px;
+      font-style: normal;
+      font-size: 13px;
+      color: #333;
+    }
 
-    .poet-month-link {
+    .poet-today-link {
       display: inline-block;
       font-size: 14px;
-      color: #8b7355;
+      color: #fcfafa;
+      background: #1C2122;
       text-decoration: none;
-      border-bottom: 1px solid rgba(139, 115, 85, 0.3);
-      padding-bottom: 2px;
-      transition: color 0.2s, border-color 0.2s;
+      padding: 6px;
+      border-radius: 0;
+      transition: background 0.2s;
+      margin-top: auto;
+      align-self: flex-end;
     }
-
-    .poet-month-link:hover {
-      color: #2c1810;
-      border-color: #2c1810;
+    .poet-today-link:hover {
+      background: #6e8387;
     }
 
     @media (max-width: 768px) {
-      .poet-month-inner {
+      .poet-today-inner {
         flex-direction: column;
         gap: 32px;
         text-align: center;
       }
-      .poet-month-portrait { flex: 0 0 auto; width: 180px; height: 240px; margin: 0 auto; }
-      .poet-month-quote { border-left: none; padding-left: 0; text-align: center; }
-      .poet-month-name { font-size: 36px; }
+      .poet-today-portrait { flex: 0 0 auto; width: 180px; height: 240px; margin: 0 auto; }
+      .poet-today-verse { border-left: none; padding-left: 0; text-align: center; }
+      .poet-today-name { font-size: 36px; }
     }
 
     /* ===== D. 소식 ===== */
     .news-section {
-      padding: 80px 40px;
-      background: #f5f2e8;
+      padding: 30px 40px;
     }
 
     .video-grid {
@@ -427,7 +460,7 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 24px;
       max-width: 1000px;
-      margin: 48px auto 0;
+      margin: 20px auto 0;
     }
 
     .video-card {
@@ -435,9 +468,9 @@
       overflow: hidden;
       background: #fff;
       text-decoration: none;
-      color: #2c1810;
+      color: #000;
       transition: transform 0.3s, box-shadow 0.3s;
-      border: 1px solid rgba(139, 115, 85, 0.1);
+      border: 1px solid rgba(164, 184, 196, 0.1);
     }
 
     .video-card:hover {
@@ -448,7 +481,7 @@
     .video-thumb {
       width: 100%;
       aspect-ratio: 16/9;
-      background: linear-gradient(160deg, #d4c4a8, #b8a88c);
+      background: linear-gradient(160deg, #c8d3d5, #a4b8c4);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -465,7 +498,7 @@
       position: absolute;
       width: 48px;
       height: 48px;
-      background: rgba(44, 24, 16, 0.7);
+      background: rgba(110, 131, 135, 0.7);
       border-radius: 50%;
       display: flex;
       align-items: center;
@@ -479,7 +512,7 @@
       height: 0;
       border-style: solid;
       border-width: 8px 0 8px 14px;
-      border-color: transparent transparent transparent #f5f2e8;
+      border-color: transparent transparent transparent #fcfafa;
       margin-left: 3px;
     }
 
@@ -496,7 +529,7 @@
 
     .video-channel {
       font-size: 12px;
-      color: #8b7355;
+      color: #333;
     }
 
     @media (max-width: 768px) {
@@ -505,57 +538,60 @@
 
     /* ===== E. 영상 ===== */
     .video-section {
-      padding: 80px 40px;
-      background: #ece8dc;
+      padding: 30px 40px;
     }
 
     .news-list {
-      max-width: 800px;
-      margin: 48px auto 0;
+      max-width: 1030px;
+      margin: 20px auto 0;
       display: flex;
       flex-direction: column;
       gap: 16px;
     }
 
     .news-item {
-      display: flex;
-      gap: 20px;
-      padding: 24px;
-      background: #fff;
       border-radius: 12px;
-      text-decoration: none;
-      color: #2c1810;
-      transition: transform 0.2s, box-shadow 0.2s;
-      border: 1px solid rgba(139, 115, 85, 0.1);
-      align-items: flex-start;
+      border: 1px solid #84969A;
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
     }
 
     .news-item:hover {
-      transform: translateX(4px);
-      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+      transform: translateY(-6px);
+      box-shadow: 0 16px 40px rgba(110, 131, 135, 0.2);
+      background: rgb(200,211,213) !important;
+    }
+
+    .news-item-header {
+      display: flex;
+      gap: 20px;
+      padding: 10px 24px;
+      cursor: pointer;
+      align-items: flex-start;
+      user-select: none;
     }
 
     .news-date {
       flex: 0 0 auto;
       text-align: center;
       padding: 8px 12px;
-      background: rgba(139, 115, 85, 0.08);
+      background: #FCFAFA;
       border-radius: 8px;
       line-height: 1.2;
     }
 
     .news-date-month {
       font-size: 12px;
-      color: #8b7355;
+      color: #333;
     }
 
     .news-date-day {
       font-size: 24px;
       font-weight: 600;
-      color: #2c1810;
+      color: #000;
     }
 
-    .news-body {
+    .news-header-body {
       flex: 1;
       min-width: 0;
     }
@@ -563,8 +599,8 @@
     .news-tag {
       display: inline-block;
       font-size: 11px;
-      color: #8b7355;
-      background: rgba(139, 115, 85, 0.1);
+      color: #FCFAFA;
+      background: #49575A;
       padding: 2px 8px;
       border-radius: 4px;
       margin-bottom: 6px;
@@ -574,24 +610,72 @@
       font-size: 17px;
       font-weight: 600;
       line-height: 1.4;
-      margin-bottom: 6px;
+      margin-bottom: 4px;
     }
 
     .news-summary {
       font-size: 14px;
-      color: #6b5b4b;
+      color: #333;
       line-height: 1.6;
     }
 
+    .news-toggle {
+      flex-shrink: 0;
+      align-self: center;
+      font-size: 18px;
+      color: #333;
+      transition: transform 0.3s;
+    }
+
+    .news-item.open .news-toggle {
+      transform: rotate(180deg);
+    }
+
+    .news-accordion {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease;
+    }
+
+    .news-accordion-inner {
+      padding: 0 24px 20px 24px;
+      border-top: 1px solid #84969A;
+      padding-top: 16px;
+      margin-left: 0;
+    }
+
+    .news-body-text {
+      font-size: 15px;
+      color: #000;
+      line-height: 1.8;
+      margin-bottom: 12px;
+    }
+
+    .news-source-link {
+      font-size: 13px;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .news-source-link:hover {
+      text-decoration: underline;
+    }
+
+    .news-empty {
+      text-align: center;
+      color: #999;
+      padding: 40px 0;
+      font-size: 15px;
+    }
+
     @media (max-width: 480px) {
-      .news-item { flex-direction: column; gap: 12px; }
+      .news-item-header { flex-direction: column; gap: 12px; }
       .news-date { flex-direction: row; display: flex; gap: 6px; align-items: baseline; }
     }
 
     /* ===== F. 서브페이지 소개 ===== */
     .explore-section {
-      padding: 80px 40px;
-      background: #f5f2e8;
+      padding: 30px 40px;
     }
 
     .explore-grid {
@@ -599,7 +683,7 @@
       grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
       gap: 20px;
       max-width: 1000px;
-      margin: 48px auto 0;
+      margin: 20px auto 0;
     }
 
     .explore-card {
@@ -608,9 +692,9 @@
       padding: 28px 20px;
       text-align: center;
       text-decoration: none;
-      color: #2c1810;
+      color: #000;
       transition: transform 0.3s, box-shadow 0.3s;
-      border: 1px solid rgba(139, 115, 85, 0.12);
+      border: 1px solid rgba(164, 184, 196, 0.12);
     }
 
     .explore-card:hover {
@@ -631,64 +715,30 @@
 
     .explore-card-desc {
       font-size: 13px;
-      color: #8b7355;
+      color: #333;
       line-height: 1.6;
     }
 
-    /* ===== G. 푸터 ===== */
-    .site-footer {
-      padding: 40px;
-      background: #2c1810;
-      color: rgba(245, 242, 232, 0.6);
-      text-align: center;
-      font-size: 13px;
-      line-height: 1.8;
-    }
-
-    .site-footer a {
-      color: rgba(245, 242, 232, 0.8);
-      text-decoration: none;
-    }
-
-    .site-footer a:hover {
-      color: #f5f2e8;
-    }
   </style>
 </head>
 <body>
 
-  <!-- ===== 네비게이션 ===== -->
-  <nav class="top-nav" id="topNav">
-    <div class="nav-inner">
-      <a href="/" class="nav-brand">當時三百首</a>
-      <div class="nav-links">
-        <a href="/poets/">시인</a>
-        <a href="/poem/">시</a>
-        <a href="/history/">역사</a>
-        <a href="/tang300/">당시삼백수</a>
-        <a href="/timeline/">타임라인</a>
-      </div>
-    </div>
-  </nav>
+  <div id="nav-placeholder"></div>
 
-  <!-- ===== A. 히어로 섹션 ===== -->
-  <section class="hero-section">
+  <!-- ===== A. Hero Section — 스크롤 애니메이션 ===== -->
+  <section class="main-hero">
     <div class="hero-scene">
       <div class="hero-bg"></div>
-
       <video class="hero-video" autoplay loop muted playsinline>
-        <source src="public/assets/hero/rawingboat_1.webm" type="video/webm">
+        <source src="/public/assets/hero/rawingboat_1.webm" type="video/webm">
       </video>
-      <canvas id="heroCanvas" class="hero-canvas" width="442" height="249"></canvas>
-
+      <canvas id="heroCanvas" class="hero-canvas" width="168" height="95"></canvas>
       <canvas class="hero-mist-canvas" id="mistCanvas"></canvas>
-
-      <img class="hero-copy" src="public/assets/hero/samusa.png" alt="思無邪">
+      <img class="hero-copy" src="/public/assets/hero/samusa.png" alt="思無邪">
     </div>
-
-    <div class="hero-scroll-hint">아래로 스크롤</div>
   </section>
 
+  <div class="page-container">
   <!-- ===== B. 日日五首 ===== -->
   <section class="daily-five-section">
     <h2 class="section-title-zh">日日五首</h2>
@@ -698,25 +748,36 @@
     </div>
   </section>
 
-  <!-- ===== C. 이달의 시인 ===== -->
-  <section class="poet-month-section">
-    <div class="poet-month-inner">
-      <div class="poet-month-portrait">
-        <div class="poet-month-portrait-placeholder">詩仙</div>
+  <!-- ===== 시 이미지 라이트박스 ===== -->
+  <div class="poem-lightbox" id="poemLightbox" onclick="if(event.target===this)closePoemLightbox()">
+    <button class="poem-lightbox-close" onclick="closePoemLightbox()">&times;</button>
+    <div class="poem-lightbox-row">
+      <button class="poem-lightbox-nav" onclick="navPoemLightbox(-1)">&#9664;</button>
+      <img class="poem-lightbox-img" id="poemLightboxImg" src="" alt="">
+      <button class="poem-lightbox-nav" onclick="navPoemLightbox(1)">&#9654;</button>
+    </div>
+    <a class="poem-lightbox-link" id="poemLightboxLink" href="#">
+      상세페이지로 가기 &rarr;
+    </a>
+  </div>
+
+  <!-- ===== C. 오늘의 시인 ===== -->
+  <section class="poet-today-section">
+    <h2 class="section-title">오늘의 시인</h2>
+    <p class="section-subtitle">하루에 한 명이면 72일이면 당시삼백수의 시인을 모두 만날 수 있습니다</p>
+    <div class="poet-today-inner" id="poetTodayInner">
+      <div class="poet-today-portrait" id="poetTodayPortrait">
+        <img id="poetTodayImg" src="/public/assets/avatars/noface.jpg" alt="시인 초상화">
       </div>
-      <div class="poet-month-text">
-        <div class="poet-month-label">이달의 시인 — 2月</div>
-        <h2 class="poet-month-name">李白</h2>
-        <div class="poet-month-name-ko">이백 (701 - 762)</div>
-        <p class="poet-month-bio">
-          시선(詩仙)이라 불리는 당나라 최고의 낭만 시인. 촉(蜀) 땅에서 태어나 천하를 유랑하며
-          술과 달과 자연을 노래했다. 호방하고 거침없는 상상력으로 중국 시가사에 전무후무한 경지를 열었으며,
-          두보와 함께 '이두(李杜)'로 병칭된다. 당시삼백수에 29수가 수록되어 가장 많은 작품을 남겼다.
-        </p>
-        <div class="poet-month-quote">
-          舉頭望明月<br>低頭思故鄉
+      <div class="poet-today-text">
+        <p class="poet-today-name" id="poetTodayName">—</p>
+        <div class="poet-today-name-ko" id="poetTodayNameKo">로딩 중...</div>
+        <p class="poet-today-bio" id="poetTodayBio"></p>
+        <div class="poet-today-verse" id="poetTodayVerse" hidden>
+          <span id="poetTodayVerseText"></span>
+          <span class="poet-today-verse-source" id="poetTodayVerseSource"></span>
         </div>
-        <a class="poet-month-link" href="timeline/#poet-李白">이백의 작품 보러 가기 &rarr;</a>
+        <a class="poet-today-link" id="poetTodayLink" href="#">더보기 &rarr;</a>
       </div>
     </div>
   </section>
@@ -725,40 +786,8 @@
   <section class="news-section">
     <h2 class="section-title" style="text-align:center;">소식</h2>
     <p class="section-subtitle" style="text-align:center;">한시와 고전의 오늘</p>
-    <div class="news-list">
-      <a class="news-item" href="#">
-        <div class="news-date">
-          <div class="news-date-month">2월</div>
-          <div class="news-date-day">16</div>
-        </div>
-        <div class="news-body">
-          <span class="news-tag">사이트</span>
-          <div class="news-title">당시삼백수 TTS 낭송 기능 준비 중</div>
-          <div class="news-summary">Qwen3-TTS를 활용해 320수 전체의 중국어 낭송 오디오를 제작하고 있습니다. 5명의 화자가 시의 분위기에 맞춰 낭송합니다.</div>
-        </div>
-      </a>
-      <a class="news-item" href="#">
-        <div class="news-date">
-          <div class="news-date-month">2월</div>
-          <div class="news-date-day">10</div>
-        </div>
-        <div class="news-body">
-          <span class="news-tag">행사</span>
-          <div class="news-title">제42회 전국 한시 백일장 개최 안내</div>
-          <div class="news-summary">한국한시협회 주최, 3월 서울 남산에서 개최 예정. 대학생부와 일반부로 나뉘며, 한시 짓기와 한시 짝짓기 부문 진행.</div>
-        </div>
-      </a>
-      <a class="news-item" href="#">
-        <div class="news-date">
-          <div class="news-date-month">1월</div>
-          <div class="news-date-day">25</div>
-        </div>
-        <div class="news-body">
-          <span class="news-tag">교양</span>
-          <div class="news-title">AI가 한시를 읽는 시대 — 고전 문학과 기술의 만남</div>
-          <div class="news-summary">평측 분석, 병음 생성, TTS 낭송까지. 인공지능이 당시삼백수를 어떻게 새롭게 해석하고 있는지 살펴봅니다.</div>
-        </div>
-      </a>
+    <div class="news-list" id="newsList">
+      <div class="news-empty">소식을 불러오는 중...</div>
     </div>
   </section>
 
@@ -802,282 +831,438 @@
     <h2 class="section-title" style="text-align:center;">둘러보기</h2>
     <p class="section-subtitle" style="text-align:center;">당시삼백수의 세계를 탐험하세요</p>
     <div class="explore-grid">
-      <a class="explore-card" href="timeline/">
+      <a class="explore-card" href="/chinese-poetry/history/">
         <div class="explore-card-icon">📜</div>
         <div class="explore-card-name">타임라인</div>
         <div class="explore-card-desc">시와 역사를 시간축 위에서 나란히 읽는 인터랙티브 뷰</div>
       </a>
-      <a class="explore-card" href="poets/">
+      <a class="explore-card" href="/chinese-poetry/poets/">
         <div class="explore-card-icon">🖌</div>
         <div class="explore-card-name">시인 72명</div>
         <div class="explore-card-desc">이백, 두보, 왕유 등 시인의 생애와 작품 세계</div>
       </a>
-      <a class="explore-card" href="poem/">
+      <a class="explore-card" href="/chinese-poetry/books/">
         <div class="explore-card-icon">🏮</div>
         <div class="explore-card-name">시 320수</div>
         <div class="explore-card-desc">주석, 병음, 평측 분석과 함께 읽는 시</div>
       </a>
-      <a class="explore-card" href="history/">
-        <div class="explore-card-icon">⛩</div>
-        <div class="explore-card-name">당나라 역사</div>
-        <div class="explore-card-desc">290년 흥망성쇠를 한눈에 보는 연표</div>
-      </a>
     </div>
   </section>
+  </div>
 
-  <!-- ===== G. 푸터 ===== -->
-  <footer class="site-footer">
-    <p>당시삼백수 — 시와 역사를 시간축 위에서 나란히 읽다</p>
-    <p>자료 출처: 동양고전종합DB · 비상업적 연구용</p>
-    <p style="margin-top: 12px;">
-      <a href="timeline/">타임라인</a> ·
-      <a href="poets/">시인</a> ·
-      <a href="poem/">시</a> ·
-      <a href="history/">역사</a> ·
-      <a href="admin/">관리</a>
-    </p>
-  </footer>
+  <div id="footer-placeholder"></div>
+  <script src="/shared/components.js"></script>
+
+  <!-- ===== 히어로 애니메이션 (안개 파티클 + WebM 폴백) ===== -->
+  <script>
+    (function() {
+      const videoEl = document.querySelector('.hero-video');
+      const canvasEl = document.getElementById('heroCanvas');
+
+      // ===== 안개 파티클 시스템 =====
+      const mistCanvas = document.getElementById('mistCanvas');
+      if (mistCanvas) {
+        const mistCtx = mistCanvas.getContext('2d');
+        const particles = [];
+        const PARTICLE_COUNT = 50;
+
+        function resizeMistCanvas() {
+          mistCanvas.width = Math.min(window.innerWidth, 1300);
+          mistCanvas.height = 536;
+        }
+        resizeMistCanvas();
+        window.addEventListener('resize', resizeMistCanvas);
+
+        function createParticle(init) {
+          const w = mistCanvas.width;
+          const h = mistCanvas.height;
+          const spawnZoneTop = h * 0.5;
+          return {
+            x: Math.random() * w,
+            y: init
+              ? spawnZoneTop + Math.random() * (h - spawnZoneTop)
+              : h + Math.random() * 100,
+            radius: 60 + Math.random() * 120,
+            vy: -(0.1 + Math.random() * 0.2),
+            vx: (Math.random() - 0.5) * 0.4,
+            swayOffset: Math.random() * Math.PI * 2,
+            swaySpeed: 0.005 + Math.random() * 0.01,
+            swayAmount: 5 + Math.random() * 12,
+            baseAlpha: 0.15 + Math.random() * 0.2,
+            life: 0,
+            maxLife: 400 + Math.random() * 350,
+          };
+        }
+
+        for (let i = 0; i < PARTICLE_COUNT; i++) {
+          particles.push(createParticle(true));
+        }
+
+        function drawMist() {
+          const w = mistCanvas.width;
+          const h = mistCanvas.height;
+          mistCtx.clearRect(0, 0, w, h);
+          mistCtx.globalCompositeOperation = 'source-over';
+
+          for (let i = 0; i < particles.length; i++) {
+            const p = particles[i];
+            p.y += p.vy;
+            p.x += p.vx + Math.sin(p.swayOffset + p.life * p.swaySpeed) * 0.3;
+            p.life++;
+
+            const fadeStart = h * 0.35;
+            let fadeByHeight;
+            if (p.y > h * 0.6) {
+              fadeByHeight = 1.0;
+            } else if (p.y > fadeStart) {
+              fadeByHeight = (p.y - fadeStart) / (h * 0.6 - fadeStart);
+              fadeByHeight = fadeByHeight * fadeByHeight;
+            } else {
+              fadeByHeight = 0;
+            }
+
+            let lifeFade = 1;
+            if (p.life < 50) lifeFade = p.life / 50;
+            else if (p.life > p.maxLife - 80) lifeFade = Math.max(0, (p.maxLife - p.life) / 80);
+
+            const alpha = p.baseAlpha * fadeByHeight * lifeFade;
+
+            if (alpha > 0.005) {
+              const grad = mistCtx.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.radius);
+              grad.addColorStop(0,   'rgba(240, 240, 245, ' + alpha + ')');
+              grad.addColorStop(0.3, 'rgba(235, 235, 240, ' + (alpha * 0.7) + ')');
+              grad.addColorStop(0.6, 'rgba(230, 230, 238, ' + (alpha * 0.3) + ')');
+              grad.addColorStop(1,   'rgba(225, 225, 235, 0)');
+
+              mistCtx.beginPath();
+              mistCtx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+              mistCtx.fillStyle = grad;
+              mistCtx.fill();
+            }
+
+            if (p.y + p.radius < h * 0.2 || p.life >= p.maxLife) {
+              particles[i] = createParticle(false);
+            }
+
+            if (p.x < -p.radius) p.x = w + p.radius;
+            if (p.x > w + p.radius) p.x = -p.radius;
+          }
+
+          requestAnimationFrame(drawMist);
+        }
+
+        drawMist();
+      }
+
+      // ===== WebM 알파 채널 지원 감지 =====
+      if (videoEl) {
+        videoEl.addEventListener('canplay', function onCanPlay() {
+          videoEl.removeEventListener('canplay', onCanPlay);
+          try {
+            const c = document.createElement('canvas');
+            c.width = videoEl.videoWidth || 100;
+            c.height = videoEl.videoHeight || 100;
+            const ctx = c.getContext('2d');
+            ctx.drawImage(videoEl, 0, 0);
+
+            const corners = [[0, 0], [c.width - 1, 0], [0, c.height - 1], [c.width - 1, c.height - 1]];
+            let transparentCount = 0;
+            for (const [x, y] of corners) {
+              const px = ctx.getImageData(x, y, 1, 1).data;
+              if (px[3] < 250) transparentCount++;
+            }
+
+            if (transparentCount === 0) {
+              console.log('WebM 알파 미지원 → PNG 폴백');
+              videoEl.style.display = 'none';
+              startFrameFallback();
+            }
+          } catch (e) {
+            console.warn('Alpha 감지 실패:', e);
+          }
+        });
+
+        setTimeout(function() {
+          if (!videoEl.videoWidth) {
+            console.warn('Video 로딩 실패 → PNG 폴백');
+            videoEl.style.display = 'none';
+            startFrameFallback();
+          }
+        }, 3000);
+      }
+
+      // ===== PNG 시퀀스 폴백 =====
+      function startFrameFallback() {
+        if (!canvasEl) return;
+        const ctx = canvasEl.getContext('2d');
+        canvasEl.style.display = 'block';
+
+        const frameCount = 47;
+        const fps = 12;
+        const imgs = [];
+        let loaded = 0;
+
+        for (let i = 1; i <= frameCount; i++) {
+          const idx = String(i).padStart(4, '0');
+          const img = new Image();
+          img.src = '/public/assets/hero/frames_alpha/frame_' + idx + '.png';
+          img.onload = function() { loaded++; };
+          imgs.push(img);
+        }
+
+        let current = 0;
+        function play() {
+          if (imgs[current] && imgs[current].complete) {
+            ctx.clearRect(0, 0, canvasEl.width, canvasEl.height);
+            ctx.drawImage(imgs[current], 0, 0, canvasEl.width, canvasEl.height);
+          }
+          current = (current + 1) % frameCount;
+        }
+
+        const waitForLoad = setInterval(function() {
+          if (loaded >= 1) {
+            clearInterval(waitForLoad);
+            setInterval(play, 1000 / fps);
+            play();
+          }
+        }, 100);
+      }
+    })();
+  </script>
 
   <script>
-    // ===== 네비게이션 스크롤 =====
-    const topNav = document.getElementById('topNav');
-    window.addEventListener('scroll', () => {
-      topNav.classList.toggle('is-scrolled', window.scrollY > 60);
-    }, { passive: true });
-
-    // ===== 안개 파티클 시스템 =====
-    const mistCanvas = document.getElementById('mistCanvas');
-    const mistCtx = mistCanvas.getContext('2d');
-    const particles = [];
-    const PARTICLE_COUNT = 80;
-
-    function resizeMistCanvas() {
-      mistCanvas.width = window.innerWidth;
-      mistCanvas.height = 1408;
-    }
-    resizeMistCanvas();
-    window.addEventListener('resize', resizeMistCanvas);
-
-    function createParticle(init) {
-      const w = mistCanvas.width;
-      const h = mistCanvas.height;
-      const spawnZoneTop = h * 0.5;
-      return {
-        x: Math.random() * w,
-        y: init
-          ? spawnZoneTop + Math.random() * (h - spawnZoneTop)
-          : h + Math.random() * 100,
-        radius: 150 + Math.random() * 250,
-        vy: -(0.2 + Math.random() * 0.4),
-        vx: (Math.random() - 0.5) * 0.5,
-        swayOffset: Math.random() * Math.PI * 2,
-        swaySpeed: 0.005 + Math.random() * 0.01,
-        baseAlpha: 0.15 + Math.random() * 0.2,
-        life: 0,
-        maxLife: 500 + Math.random() * 400,
-      };
-    }
-
-    for (let i = 0; i < PARTICLE_COUNT; i++) {
-      particles.push(createParticle(true));
-    }
-
-    function drawMist() {
-      const w = mistCanvas.width;
-      const h = mistCanvas.height;
-      mistCtx.clearRect(0, 0, w, h);
-
-      for (let i = 0; i < particles.length; i++) {
-        const p = particles[i];
-        p.y += p.vy;
-        p.x += p.vx + Math.sin(p.swayOffset + p.life * p.swaySpeed) * 0.3;
-        p.life++;
-
-        const fadeStart = h * 0.35;
-        let fadeByHeight;
-        if (p.y > h * 0.6) fadeByHeight = 1.0;
-        else if (p.y > fadeStart) {
-          fadeByHeight = (p.y - fadeStart) / (h * 0.6 - fadeStart);
-          fadeByHeight *= fadeByHeight;
-        } else fadeByHeight = 0;
-
-        let lifeFade = 1;
-        if (p.life < 50) lifeFade = p.life / 50;
-        else if (p.life > p.maxLife - 80) lifeFade = Math.max(0, (p.maxLife - p.life) / 80);
-
-        const alpha = p.baseAlpha * fadeByHeight * lifeFade;
-
-        if (alpha > 0.005) {
-          const grad = mistCtx.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.radius);
-          grad.addColorStop(0,   `rgba(240, 240, 245, ${alpha})`);
-          grad.addColorStop(0.3, `rgba(235, 235, 240, ${alpha * 0.7})`);
-          grad.addColorStop(0.6, `rgba(230, 230, 238, ${alpha * 0.3})`);
-          grad.addColorStop(1,   `rgba(225, 225, 235, 0)`);
-          mistCtx.beginPath();
-          mistCtx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-          mistCtx.fillStyle = grad;
-          mistCtx.fill();
-        }
-
-        if (p.y + p.radius < h * 0.2 || p.life >= p.maxLife) {
-          particles[i] = createParticle(false);
-        }
-        if (p.x < -p.radius) p.x = w + p.radius;
-        if (p.x > w + p.radius) p.x = -p.radius;
-      }
-      requestAnimationFrame(drawMist);
-    }
-    drawMist();
-
-    // ===== WebM 알파 감지 + PNG 폴백 =====
-    const videoEl = document.querySelector('.hero-video');
-    const canvasEl = document.getElementById('heroCanvas');
-
-    (function detectAlpha() {
-      if (!videoEl) return;
-      videoEl.addEventListener('canplay', function onCanPlay() {
-        videoEl.removeEventListener('canplay', onCanPlay);
-        try {
-          const c = document.createElement('canvas');
-          c.width = videoEl.videoWidth || 100;
-          c.height = videoEl.videoHeight || 100;
-          const ctx = c.getContext('2d');
-          ctx.drawImage(videoEl, 0, 0);
-          const corners = [[0,0],[c.width-1,0],[0,c.height-1],[c.width-1,c.height-1]];
-          let ok = 0;
-          for (const [x,y] of corners) {
-            if (ctx.getImageData(x,y,1,1).data[3] < 250) ok++;
-          }
-          if (ok === 0) { videoEl.style.display = 'none'; startFrameFallback(); }
-        } catch(e) {}
-      });
-      setTimeout(() => {
-        if (!videoEl.videoWidth) { videoEl.style.display = 'none'; startFrameFallback(); }
-      }, 3000);
-    })();
-
-    function startFrameFallback() {
-      const canvas = canvasEl;
-      const ctx = canvas.getContext('2d');
-      canvas.style.display = 'block';
-      const frameCount = 47, fps = 12, imgs = [];
-      let loaded = 0;
-      for (let i = 1; i <= frameCount; i++) {
-        const img = new Image();
-        img.src = `public/assets/hero/frames_alpha/frame_${String(i).padStart(4,'0')}.png`;
-        img.onload = () => loaded++;
-        imgs.push(img);
-      }
-      let current = 0;
-      function play() {
-        if (imgs[current]?.complete) {
-          ctx.clearRect(0, 0, canvas.width, canvas.height);
-          ctx.drawImage(imgs[current], 0, 0, canvas.width, canvas.height);
-        }
-        current = (current + 1) % frameCount;
-      }
-      const wait = setInterval(() => {
-        if (loaded >= 1) { clearInterval(wait); setInterval(play, 1000/fps); play(); }
-      }, 100);
-    }
-
-    // ===== 日日五首 =====
-    // 플레이스홀더 배경 (이미지 없을 때 카드별 색상)
-    const CARD_COLORS = [
-      'linear-gradient(160deg, #d4c4a8 0%, #c4b498 50%, #b8a88c 100%)',
-      'linear-gradient(160deg, #c8bfa8 0%, #b8af98 50%, #a89f88 100%)',
-      'linear-gradient(160deg, #d0c8b0 0%, #c0b8a0 50%, #b0a890 100%)',
-      'linear-gradient(160deg, #ccc0a0 0%, #bcb090 50%, #aca080 100%)',
-      'linear-gradient(160deg, #d8d0b8 0%, #c8c0a8 50%, #b8b098 100%)',
-    ];
-
-    function stripNotes(text) {
-      return (text || '').replace(/[\[\［]\s*\d+\s*[\]\］]/g, '');
-    }
-
-    function getPoetName(poet) {
-      if (!poet) return { zh: '', ko: '' };
-      if (typeof poet === 'object') return { zh: stripNotes(poet.zh || ''), ko: poet.ko || '' };
-      return { zh: stripNotes(String(poet)), ko: '' };
-    }
-
-    function getPoemTitle(title) {
-      if (!title) return '';
-      if (typeof title === 'object') return stripNotes(title.zh || title.ko || '');
-      return stripNotes(String(title));
-    }
-
-    function getFirstLines(poem, count) {
-      const raw = (poem.poemSimp || poem.poemZh || '').replace(/[\[\［]\s*\d+\s*[\]\］]/g, '');
-      const lines = raw.split(/[\n\r]+/).filter(l => l.trim());
-      return lines.slice(0, count).map(l => l.trim());
-    }
+    // ===== 日日五首 (manifest.json에서 자동 로딩) =====
+    // 이미지 추가/삭제는 관리자툴 > 도구 탭에서 관리
+    let dailyPicked = [];    // 오늘 표시할 시 목록
+    let lightboxIndex = 0;   // 라이트박스에서 현재 보고 있는 인덱스
 
     (async function loadDailyFive() {
       try {
-        let poems = [];
-        try {
-          const ownedRes = await fetch('public/index/poems.full.owned.json');
-          if (!ownedRes.ok) throw new Error(`owned HTTP ${ownedRes.status}`);
-          poems = await ownedRes.json();
-        } catch (_) {
-          const res = await fetch('public/index/poems.full.json');
-          poems = await res.json();
-        }
+        const res = await fetch('public/assets/main_page_poem/manifest.json');
+        const allPoems = await res.json();
+        if (!allPoems.length) return;
 
-        // 날짜 기반 시드로 5수 선택 (매일 바뀜, 모든 방문자 동일)
+        // 날짜 기반으로 매일 다른 5수 표시
         const today = new Date();
-        const seed = today.getFullYear() * 10000 + (today.getMonth()+1) * 100 + today.getDate();
-        const indices = [];
-        for (let i = 0; i < poems.length; i++) indices.push(i);
-        // Fisher-Yates with seeded random
-        let s = seed;
-        function seededRand() { s = (s * 16807 + 0) % 2147483647; return s / 2147483647; }
-        for (let i = indices.length - 1; i > 0; i--) {
-          const j = Math.floor(seededRand() * (i + 1));
-          [indices[i], indices[j]] = [indices[j], indices[i]];
+        const seed = today.getFullYear() * 10000 + (today.getMonth() + 1) * 100 + today.getDate();
+
+        if (allPoems.length <= 5) {
+          dailyPicked = allPoems;
+        } else {
+          // Fisher-Yates 셔플 후 5개 선택
+          const indices = allPoems.map((_, i) => i);
+          let s = seed;
+          function seededRand() { s = (s * 16807) % 2147483647; return s / 2147483647; }
+          for (let i = indices.length - 1; i > 0; i--) {
+            const j = Math.floor(seededRand() * (i + 1));
+            [indices[i], indices[j]] = [indices[j], indices[i]];
+          }
+          dailyPicked = indices.slice(0, 5).map(i => allPoems[i]);
         }
-        const picked = indices.slice(0, 5).map(i => poems[i]);
 
         const container = document.getElementById('dailyFivePoems');
-        container.innerHTML = picked.map((p, idx) => {
-          const poet = getPoetName(p.poet);
-          const title = getPoemTitle(p.title);
-          const lines = getFirstLines(p, 4);
-          const noStr = p.poemNoStr || String(p.poemNo || '').padStart(3, '0');
-          // 이미지 경로 (나중에 형이 만들면 자동 적용)
-          const imgPath = `public/assets/daily/${noStr}.jpg`;
-
-          return `
-            <div class="poem-card"
-                 data-img="${imgPath}"
-                 style="background: ${CARD_COLORS[idx % 5]}"
-                 onclick="location.href='timeline/#poem-${p.poemNo || ''}'">
-              <div class="poem-card-placeholder">
-                <div class="poem-card-verse">${lines.join('')}</div>
-              </div>
-              <div class="poem-card-caption">
-                <div class="poem-card-poet">${poet.zh}${poet.ko ? ' · ' + poet.ko : ''}</div>
-                <div class="poem-card-title">${title}</div>
-              </div>
-            </div>`;
-        }).join('');
-
-        // 이미지 존재하면 배경으로 교체 (점진적 적용)
-        container.querySelectorAll('.poem-card[data-img]').forEach(card => {
-          const img = new Image();
-          img.src = card.dataset.img;
-          img.onload = () => {
-            card.style.background = `url(${card.dataset.img}) center/cover`;
-            const placeholder = card.querySelector('.poem-card-placeholder');
-            if (placeholder) placeholder.style.display = 'none';
-          };
-        });
-
-      } catch(e) {
+        container.innerHTML = dailyPicked.map((p, idx) => `
+          <div class="poem-card"
+               style="background-image: url('public/assets/main_page_poem/${p.file}')"
+               onclick="openPoemLightbox(${idx})">
+            <div class="poem-card-caption">
+              <div class="poem-card-poet">${p.poet} · ${p.poetKo}</div>
+              <div class="poem-card-title">${p.title}</div>
+            </div>
+          </div>
+        `).join('');
+      } catch (e) {
         console.warn('日日五首 로딩 실패:', e);
       }
     })();
+
+    // ===== 라이트박스 =====
+    function openPoemLightbox(idx) {
+      lightboxIndex = idx;
+      updateLightboxContent();
+      document.getElementById('poemLightbox').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function updateLightboxContent() {
+      const p = dailyPicked[lightboxIndex];
+      document.getElementById('poemLightboxImg').src = 'public/assets/main_page_poem/' + p.file;
+      document.getElementById('poemLightboxLink').href = '/search/?poem=' + p.no;
+    }
+
+    function navPoemLightbox(dir) {
+      lightboxIndex = (lightboxIndex + dir + dailyPicked.length) % dailyPicked.length;
+      updateLightboxContent();
+    }
+
+    function closePoemLightbox() {
+      document.getElementById('poemLightbox').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    // ESC 닫기, 좌우 화살표 네비게이션
+    document.addEventListener('keydown', function(e) {
+      if (!document.getElementById('poemLightbox').classList.contains('active')) return;
+      if (e.key === 'Escape') closePoemLightbox();
+      if (e.key === 'ArrowLeft') navPoemLightbox(-1);
+      if (e.key === 'ArrowRight') navPoemLightbox(1);
+    });
+
+    // ===== 오늘의 시인 =====
+    (async function loadTodayPoet() {
+      try {
+        const [authRes, verseRes] = await Promise.all([
+          fetch('public/index/db_author.with_ko.json'),
+          fetch('public/index/poet_verses.json'),
+        ]);
+        const authData = await authRes.json();
+        const verses = verseRes.ok ? await verseRes.json() : [];
+
+        const authors = authData.authors;
+        const poetKeys = Object.keys(authors);
+        if (!poetKeys.length) return;
+
+        // 날짜 기반 시인 선택
+        const today = new Date();
+        const daySeed = today.getFullYear() * 10000 + (today.getMonth() + 1) * 100 + today.getDate();
+        const todayIdx = daySeed % poetKeys.length;
+        const poetZh = poetKeys[todayIdx];
+        const poet = authors[poetZh];
+
+        // 이름
+        document.getElementById('poetTodayName').textContent = poet.name?.zh || poetZh;
+        const lifeStr = poet.life?.raw || ((poet.life?.birth || '?') + ' - ' + (poet.life?.death || '?'));
+        document.getElementById('poetTodayNameKo').textContent =
+          (poet.name?.ko || '') + ' (' + lifeStr + ')';
+
+        // 약전
+        const bio = poet.bioKo || '';
+        document.getElementById('poetTodayBio').textContent =
+          bio.length > 300 ? bio.substring(0, 300) + '…' : bio;
+
+        // 초상화 (없으면 noface.jpg 유지)
+        if (poet.avatar) {
+          const img = document.getElementById('poetTodayImg');
+          img.src = 'public/assets/avatars/' + (poet.avatar.file || poet.titleId + '.jpg');
+          img.alt = poet.name?.ko || poetZh;
+          img.onerror = function() { this.src = '/public/assets/avatars/noface.jpg'; };
+        }
+
+        // 대표구절 (poet_verses.json)
+        const verse = verses.find(v => v.poet === poetZh);
+        if (verse) {
+          document.getElementById('poetTodayVerse').hidden = false;
+          document.getElementById('poetTodayVerseText').textContent = verse.verse;
+          document.getElementById('poetTodayVerseSource').textContent =
+            '— 〈' + verse.source + '〉 중에서';
+        }
+
+        // 더보기 링크
+        const poetUrl = '/search/?q=' + encodeURIComponent(poetZh);
+        document.getElementById('poetTodayLink').href = poetUrl;
+        document.getElementById('poetTodayPortrait').onclick = function() { location.href = poetUrl; };
+
+      } catch (e) {
+        console.warn('오늘의 시인 로딩 실패:', e);
+      }
+    })();
+
+    // ── 소식 동적 로딩 + 아코디언 ──
+    (async function loadNews() {
+      const list = document.getElementById('newsList');
+      if (!list) return;
+
+      try {
+        const res = await fetch('public/index/news_articles.json?_ts=' + Date.now(), { cache: 'no-store' });
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        const data = await res.json();
+
+        // 2개월 이내 기사만 표시
+        const twoMonthsAgo = new Date();
+        twoMonthsAgo.setMonth(twoMonthsAgo.getMonth() - 2);
+        const recent = (data.articles || [])
+          .filter(a => new Date(a.publishedAt) >= twoMonthsAgo)
+          .sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt))
+          .slice(0, 8);
+
+        if (recent.length === 0) {
+          list.innerHTML = '<div class="news-empty">최근 소식이 없습니다.</div>';
+          return;
+        }
+
+        // XSS 방지용 이스케이프
+        function esc(s) {
+          return (s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+        }
+
+        list.innerHTML = recent.map((a, idx) => {
+          const d = new Date(a.publishedAt);
+          const month = (d.getMonth() + 1) + '월';
+          const day = d.getDate();
+          // 그라데이션 배경: 최상단 #C8D3D5 → 아래로 갈수록 밝아짐
+          const blend = recent.length > 1 ? idx / (recent.length - 1) : 0;
+          const bgR = Math.round(211 + (255 - 211) * blend);
+          const bgG = Math.round(220 + (255 - 220) * blend);
+          const bgB = Math.round(221 + (255 - 221) * blend);
+          const itemBg = 'rgb(' + bgR + ',' + bgG + ',' + bgB + ')';
+          const cleanBody = esc(a.body || '').trim();
+          const cleanTitle = esc(a.title || '').trim();
+          // 본문이 제목과 다르고 충분히 길 때만 아코디언 표시
+          const hasRealBody = cleanBody.length > 0 && cleanBody !== cleanTitle && cleanBody.length > cleanTitle.length + 5;
+          // AI 요약이 본문과 다를 때만 헤더에 요약 표시 (크롤링 요약은 body 앞부분이라 중복)
+          const hasSummary = a.summary && a.body && a.summary !== a.body && !a.body.startsWith(a.summary.replace('…', ''));
+          const sourceHtml = a.sourceUrl
+            ? '<a class="news-source-link" href="' + esc(a.sourceUrl) + '" target="_blank" rel="noopener">출처: ' + esc(a.source || '원문') + ' &rarr;</a>'
+            : (a.source ? '<span class="news-source-link">출처: ' + esc(a.source) + '</span>' : '');
+
+          return '<div class="news-item" style="background:' + itemBg + '">' +
+            '<div class="news-item-header" onclick="toggleNews(this)">' +
+              '<div class="news-date">' +
+                '<div class="news-date-month">' + month + '</div>' +
+                '<div class="news-date-day">' + day + '</div>' +
+              '</div>' +
+              '<div class="news-header-body">' +
+                '<span class="news-tag">' + esc(a.category) + '</span>' +
+                '<div class="news-title">' + esc(a.title) + '</div>' +
+                (hasSummary ? '<div class="news-summary">' + esc(a.summary) + '</div>' : '') +
+              '</div>' +
+              (hasRealBody ? '<span class="news-toggle">&#9660;</span>' : '') +
+            '</div>' +
+            (hasRealBody ? '<div class="news-accordion"><div class="news-accordion-inner">' +
+              '<div class="news-body-text">' + cleanBody + '</div>' +
+              sourceHtml +
+            '</div></div>' : (a.sourceUrl ? '<div class="news-accordion"><div class="news-accordion-inner" style="padding:6px 12px">' + sourceHtml + '</div></div>' : '')) +
+          '</div>';
+        }).join('');
+
+      } catch (e) {
+        console.warn('소식 로딩 실패:', e);
+        list.innerHTML = '<div class="news-empty">소식을 불러올 수 없습니다.</div>';
+      }
+    })();
+
+    function toggleNews(header) {
+      const item = header.closest('.news-item');
+      const accordion = item.querySelector('.news-accordion');
+      if (!accordion) return;
+
+      const isOpen = item.classList.contains('open');
+      // 다른 열린 아코디언 닫기
+      document.querySelectorAll('.news-item.open').forEach(other => {
+        if (other !== item) {
+          other.classList.remove('open');
+          other.querySelector('.news-accordion').style.maxHeight = '0';
+        }
+      });
+
+      if (isOpen) {
+        item.classList.remove('open');
+        accordion.style.maxHeight = '0';
+      } else {
+        item.classList.add('open');
+        accordion.style.maxHeight = accordion.scrollHeight + 'px';
+      }
+    }
   </script>
 
 </body>

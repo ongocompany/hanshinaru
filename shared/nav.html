@@ -1,0 +1,61 @@
+<!-- 한시의모든것 — 공용 네비게이션 (shared/nav.html) -->
+<nav class="top-nav top-nav--dark" id="topNav">
+  <div class="nav-inner">
+    <a href="/" class="nav-brand zh">漢詩의 모든 것</a>
+
+    <button class="nav-hamburger" id="navHamburger" aria-label="메뉴">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+
+    <div class="nav-links" id="navLinks">
+
+      <!-- 1. 중국의 한시 -->
+      <div class="nav-dropdown">
+        <a href="/chinese-poetry/general/" class="nav-link has-dropdown">중국의 한시 <span class="dropdown-arrow">&#9662;</span></a>
+        <div class="dropdown-panel">
+          <a href="/chinese-poetry/general/">한시(漢詩)</a>
+          <a href="/chinese-poetry/books/">시대별 著書</a>
+          <a href="/chinese-poetry/poets/">역사속의 詩人들</a>
+          <a href="/chinese-poetry/history/">역사와 함께 읽는 漢詩</a>
+        </div>
+      </div>
+
+      <!-- 2. 한국의 한시 -->
+      <div class="nav-dropdown">
+        <span class="nav-link has-dropdown disabled">한국의 한시 <span class="dropdown-arrow">&#9662;</span></span>
+        <div class="dropdown-panel">
+          <a href="/korean-poetry/general/" class="disabled">한국 한시의 역사</a>
+          <a href="/korean-poetry/poets/" class="disabled">시대별 시인들</a>
+          <a href="/korean-poetry/great-poets/" class="disabled">위대한 시인들</a>
+        </div>
+      </div>
+
+      <!-- 3. 커뮤니티 -->
+      <div class="nav-dropdown">
+        <span class="nav-link has-dropdown disabled">커뮤니티 <span class="dropdown-arrow">&#9662;</span></span>
+        <div class="dropdown-panel">
+          <a href="/community/forum/" class="disabled">토론방</a>
+          <a href="/community/showcase/" class="disabled">한시자랑</a>
+          <a href="/community/news/" class="disabled">관련 뉴스</a>
+          <a href="/community/notice/" class="disabled">공지사항</a>
+        </div>
+      </div>
+
+      <!-- 4. 한자와 한문 -->
+      <a href="/hanja/" class="disabled">한자와 한문</a>
+
+      <!-- 5. 한시작성도우미 -->
+      <a href="/writing-helper/" class="disabled">작성도우미</a>
+
+      <!-- 6. 검색 -->
+      <a href="/search/" class="nav-search-link" aria-label="검색" title="검색">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+      </a>
+
+    </div>
+  </div>
+</nav>

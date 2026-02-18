@@ -3963,3 +3963,227 @@
   - Phase 6: 현토+TTS (독립 진행 가능)
   - 13개 병렬작업 그룹(A~O), 6개 마일스톤(M1~M6)
   - 업무분장: 민철 48태스크 / 형 7개 리뷰포인트
+
+---
+
+## [Task ID] 202602172206-gpt-tts-batch-resume-run
+
+### START
+- Time: 2026-02-17 22:06
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: `tools/tts-studio` 및 `docs/work_change_log.md` 확인 후 중단된 TTS 대량 변환 재개 요청.
+- Why: 2026-02-17 10:01에 중단된 배치를 이어서 진행해 320수 음성 생성 완료 목표를 재가동.
+- Planned Scope:
+  - 실행: `tools/tts-studio/.venv/bin/python -u scripts/generate_tts_from_voice_map.py --include-unmapped`
+  - 검증: 재시작 후 `088`부터 신규 생성 재개 여부 확인
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-17 22:27
+- Status: Running (재개 완료, 배치 진행 중)
+- Changed Files:
+  - `docs/work_change_log.md` (본 재개 작업 START/END 기록 추가)
+- Runtime Actions:
+  - 기존 핸드오프 지침과 동일한 명령으로 재개 시도.
+  - 로그/프로세스 상태를 점검해 실제 실행 세션에서 배치가 유지되도록 재실행.
+  - `001~087` 자동 SKIP 이후 모델 로딩 완료 및 `088` 생성 성공까지 확인.
+- Progress Snapshot:
+  - 대상 총량: 320편
+  - 출력 규칙: `public/audio/{poemNoStr}_normal.mp3`
+  - 재개 시점 완료: 89편
+  - 현재 완료: 92편
+  - 신규 완료 확인: `088_normal.mp3`, `089_normal.mp3`, `090_normal.mp3`
+  - 현재 진행 위치: `091` 이후 순차 생성 중
+- Validation:
+  - 실행 출력 확인: `[88/320] 088 DONE: 088_normal.mp3`
+  - 실행 출력 확인: `[89/320] 089 DONE`, `[90/320] 090 DONE`
+  - 파일 수 확인: `public/audio/*_normal.mp3` = `92`
+  - 파일 존재 확인: `public/audio/088_normal.mp3`, `public/audio/089_normal.mp3`, `public/audio/090_normal.mp3` exists
+- Notes:
+  - 배치는 기존 파일을 `SKIP`하는 idempotent 동작을 유지하므로 동일 명령 재실행 시 이어서 진행 가능.
+
+---
+
+## [Task ID] 202602180527-gpt-tts-settings-doc-export
+
+### START
+- Time: 2026-02-18 05:27
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 320편 완료 기준으로 시번호/선택 보이스/지시프롬프트를 한눈에 보는 MD 문서 생성 요청.
+- Why: 전체 생성 결과의 음성 태그 설정을 빠르게 검수/공유하기 위함.
+- Planned Scope:
+  - 파일: `public/audio/tts_settings_by_poem.md` (신규)
+  - 예상 변경: 320편 설정 테이블(시번호, 커스텀 보이스, 지시프롬프트) 작성
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-18 05:28
+- Status: Done
+- Changed Files:
+  - `public/audio/tts_settings_by_poem.md` (320편 전체 설정 표 신규 생성: 시번호/선택 보이스/지시프롬프트)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `public/audio/*_normal.mp3` 개수 `320` 확인
+  - `public/audio/tts_settings_by_poem.md` 표 행수 `320` 확인
+  - 매핑 반영 확인: 수동 매핑 5건(`001`,`043`,`085`,`186`,`225`) + fallback 315건 반영
+- Notes:
+  - 기준 데이터: `public/index/tts_voice_map.json` + `public/audio/tts_batch_manifest_20260218_002231.json`의 fallback(`Uncle_Fu`, `calm`)
+
+---
+
+## [Task ID] 202602180804-gpt-gemini-translation-sample5-pipeline
+
+### START
+- Time: 2026-02-18 08:04
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 시 본문 문학역 + 집평 직역 + 주석 + 해설을 1차 생성하는 방식으로 5편 샘플 실행 가능 여부 확인 및 실행 준비 요청.
+- Why: 웹 Gemini 수준의 결과를 배치 파이프라인으로 재현 가능한지 검증하기 위함.
+- Planned Scope:
+  - 파일: `scripts/generate_gemini_translation_sample.py` (신규)
+  - 예상 변경: 5편 샘플 생성 스크립트(큐 선택, Gemini API 호출, JSON/MD 산출)
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-18 08:06
+- Status: Partial (샘플 실행 경로 구축 완료, API 키 미설정으로 실호출 미실행)
+- Changed Files:
+  - `scripts/generate_gemini_translation_sample.py` (신규: 시 문학역 + 집평 직역 + 주석 + 해설 샘플 생성 스크립트)
+  - `docs/research/samples/gemini_translation_sample_20260218_080545.json` (샘플 5편 prompt 패키지 생성, dry-run)
+  - `docs/research/samples/gemini_translation_sample_20260218_080545.md` (샘플 5편 요약 문서 생성, dry-run)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `python3 -m py_compile scripts/generate_gemini_translation_sample.py` 통과
+  - `python3 scripts/generate_gemini_translation_sample.py --count 5 --dry-run` 실행 성공
+  - 선택된 샘플 확인: `023,024,025,026,027`
+- Notes:
+  - 현재 세션 기준 `AI_API_KEY`, `GEMINI_API_KEY`, `GOOGLE_API_KEY` 미설정 상태.
+  - 키 설정 후 동일 스크립트에서 `--dry-run` 제거하면 즉시 실호출 가능.
+
+---
+
+## [Task ID] 202602180810-gpt-gemini-ssl-cert-fix
+
+### START
+- Time: 2026-02-18 08:10
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: Gemini 샘플 실행 시 `CERTIFICATE_VERIFY_FAILED` SSL 오류 해결 요청.
+- Why: API 키는 정상이나 로컬 Python TLS 인증서 체인 문제로 실호출이 전부 실패함.
+- Planned Scope:
+  - 파일: `scripts/generate_gemini_translation_sample.py`
+  - 예상 변경: certifi CA 번들 자동 적용 + 사용자 지정 CA/임시 우회 옵션 추가
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-18 08:12
+- Status: Done
+- Changed Files:
+  - `scripts/generate_gemini_translation_sample.py` (SSL 컨텍스트 구성 보강: certifi 자동 적용, `--ca-bundle`, `--insecure` 옵션 추가, 인증서 실패 힌트 메시지 추가)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `python3 -m py_compile scripts/generate_gemini_translation_sample.py` 통과
+  - `python3 scripts/generate_gemini_translation_sample.py --count 1 --poem-nos 023 --dry-run` 실행 시 `ssl trust: certifi:.../cacert.pem` 출력 확인
+  - `AI_API_KEY=dummy ... --live` 실행 시 인증서 에러가 아닌 네트워크 DNS 에러로 전환됨(`nodename nor servname`), 즉 SSL 체인 문제는 스크립트 레벨에서 우회됨
+- Notes:
+  - 사용자 로컬 터미널에서는 동일 스크립트를 API 키와 함께 재실행하면 SSL 인증서 에러 없이 호출되어야 함.
+
+---
+
+## [Task ID] 202602180825-gpt-gemini-sample-md-error-visibility-fix
+
+### START
+- Time: 2026-02-18 08:25
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 샘플 MD 파일에 제목만 보이고 본문이 비어 보이는 문제 수정 요청.
+- Why: API 실패 시 에러가 MD에 표시되지 않아 실제 실패 원인을 사용자 입장에서 확인하기 어려움.
+- Planned Scope:
+  - 파일: `scripts/generate_gemini_translation_sample.py`
+  - 예상 변경: live 모드 실패 케이스를 MD에 상태/에러 메시지로 표시
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-18 08:26
+- Status: Done
+- Changed Files:
+  - `scripts/generate_gemini_translation_sample.py` (MD 렌더러 개선: live 실패 항목에 `상태: 실패` 및 오류 문자열 표시, 성공/실패 요약 카운트 추가)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `python3 -m py_compile scripts/generate_gemini_translation_sample.py` 통과
+  - `AI_API_KEY=dummy python3 scripts/generate_gemini_translation_sample.py --poem-nos 023 --count 1 --max-output-tokens 512` 실행 후 실패 MD 생성 확인
+  - `docs/research/samples/gemini_translation_sample_20260218_082619.md`에서 오류 문구 표시 확인
+- Notes:
+  - 기존처럼 제목만 보이는 현상은 API 실패 시 에러가 숨겨졌기 때문이며, 현재는 실패 원인이 MD에 직접 표시됨.
+
+---
+
+## [Task ID] 202602180838-gpt-gemini-sample-latest-alias-fix
+
+### START
+- Time: 2026-02-18 08:38
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 샘플 결과 파일을 여러 번 실행할 때 어떤 파일이 최신인지 헷갈리는 문제 개선 요청.
+- Why: `082619`(1편 디버그)과 `082905`(5편 실실행)처럼 타임스탬프 파일이 혼재되어 최신 결과 확인이 어려움.
+- Planned Scope:
+  - 파일: `scripts/generate_gemini_translation_sample.py`
+  - 예상 변경: 최신 결과 고정 파일(`..._latest.json/.md`) 동시 저장 + selected poem 목록 메타 추가
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-18 08:39
+- Status: Done
+- Changed Files:
+  - `scripts/generate_gemini_translation_sample.py` (타임스탬프 파일 + 고정 최신 파일 `gemini_translation_sample_latest.json/.md` 동시 저장, `selectedPoemNos` 메타 추가)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `python3 -m py_compile scripts/generate_gemini_translation_sample.py` 통과
+  - `python3 scripts/generate_gemini_translation_sample.py --dry-run --poem-nos 023,024 --count 2` 실행 성공
+  - 생성 확인: `docs/research/samples/gemini_translation_sample_latest.json`, `docs/research/samples/gemini_translation_sample_latest.md`
+- Notes:
+  - 이후에는 타임스탬프 파일 대신 `..._latest.*`를 열면 가장 최근 실행 결과를 바로 확인 가능.
+
+---
+
+## [Task ID] 202602181530-claude-mainpage-ui-polish
+
+### START
+- Time: 2026-02-18 15:30
+- Owner: Claude
+- Requester: JIN
+- Request Summary: 메인페이지(index.html) UI 디테일 다수 수정 + 네비/공용 스타일 개선
+- Why: 홈페이지 시각 완성도 향상 및 미개발 메뉴 비활성화 처리
+- Planned Scope:
+  - 파일: `index.html`, `shared/styles.css`, `shared/nav.html`
+  - 예상 변경: 오늘의 시인 섹션, 뉴스 섹션, 탐색 카드, 네비 그림자, 히어로 이미지 크기 등 전반적 UI 개선
+- Status: In Progress
+
+### END
+- Time: 2026-02-18 15:30
+- Status: Done
+- Changed Files:
+  - `index.html` (오늘의 시인: max-width 1030px 정렬, noface.jpg 기본 초상화, 이름 h2→p 20px, 텍스트 flex-column stretch, 더보기 링크 우하단 배치, 초상화 호버효과+클릭링크, 바이오 300자 / 뉴스: max-width 1030px, 패딩 10px 24px, 배경 20% 밝게, 호버 애니메이션, 날짜 #FCFAFA, 태그 #49575A, 테두리 #84969A / 탐색카드: chinese-poetry 하위 경로 링크, history 통합 / 히어로: main-hero 하단 그림자 제거, samusa.png 230→690px)
+  - `shared/styles.css:77,83` (top-nav--dark, is-scrolled 하단 그림자 추가 rgba(0,0,0,0.3))
+  - `shared/nav.html:37-42` (커뮤니티 메뉴 전체 disabled 처리)
+- Validation:
+  - 브라우저에서 메인페이지 렌더링 확인
+  - 네비 하단 그림자 표시 확인
+  - 커뮤니티 메뉴 흐림 처리 확인
+- Notes:
+  - 네비 하단 그림자는 0.06 불투명도로는 어두운 히어로 배경 위에서 안 보여 0.3으로 올림
+  - 1030px = poem-card 5개(190px) + gap 4개(20px) 통일 폭
