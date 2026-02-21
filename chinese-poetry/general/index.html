@@ -85,11 +85,11 @@
       text-align: right;
       cursor: pointer;
       text-decoration: none;
-      transition: background 0.2s, color 0.2s;
+      transition: transform 0.4s ease, background 0.4s ease, color 0.4s ease;
+      transform-origin: right center;
     }
     .era-tree-link:hover:not(.disabled):not(.active) {
-      background: #A4B8C4;
-      color: #1C2122;
+      transform: scale(1.08);
     }
     .era-tree-link.active {
       background: #8FA8B2;
