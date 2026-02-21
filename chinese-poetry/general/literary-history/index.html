@@ -97,6 +97,24 @@
       font-weight: bold;
     }
 
+    /* 하위 목차 링크 스타일 */
+    .era-tree .era-tree .era-tree-link {
+      font-size: var(--fs-small, 14px);
+      padding: 3px 30px;
+      transition: transform 0.15s, font-weight 0.15s;
+    }
+    .era-tree .era-tree .era-tree-link:hover {
+      background: transparent;
+      color: #1C2122;
+      transform: scale(1.1);
+      transform-origin: right center;
+    }
+    .era-tree .era-tree .era-tree-link.active {
+      background: transparent;
+      color: #000;
+      font-weight: bold;
+    }
+
     /* Divider */
     .sidebar-divider {
       border: none;
