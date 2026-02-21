@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>대표작가와 작품 해설 — 한시나루</title>
+  <link rel="stylesheet" href="https://use.typekit.net/dje5vco.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&family=Noto+Serif+KR:wght@200..900&family=Noto+Serif+TC:wght@200..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/shared/styles.css">
+  <style>
+    /* ===== Global Body ===== */
+    body {
+      background: #fff;
+      color: #000;
+      padding-top: 73px;
+    }
+
+    /* ===== Layout 5-a: 좌측 고정 300px + 우측 스크롤 ===== */
+    .layout-5a {
+      display: flex;
+      max-width: 1300px;
+      margin: 0 auto;
+      padding-top: 0;
+      background: #FBFAFA;
+      box-shadow: 5px 0 15px rgba(0,0,0,0.06), -5px 0 15px rgba(0,0,0,0.06);
+    }
+
+    /* ===== Sidebar 300px (sticky) ===== */
+    aside.sidebar {
+      width: 300px;
+      min-width: 300px;
+      display: flex;
+      flex-direction: column;
+      background: #FBFAFA;
+      position: sticky;
+      top: 73px;
+      height: calc(100vh - 73px);
+      overflow-y: auto;
+    }
+
+    .layout-5a .sidebar-header {
+      padding: 40px 30px 24px;
+      text-align: right;
+      flex-shrink: 0;
+      border-bottom: 1px dashed var(--c-silver, #c8d3d5);
+    }
+    .sidebar-header h2 {
+      font-family: var(--font-ko);
+      font-size: var(--fs-lead, 20px);
+      font-weight: bold;
+      color: #1C2122;
+      margin-bottom: 8px;
+    }
+    .sidebar-header p {
+      font-size: var(--fs-small, 14px);
+      color: var(--c-powder-blue, #a4b8c4);
+    }
+
+    /* Era tree navigation */
+    .era-tree {
+      list-style: none;
+      flex: 1;
+      padding: 8px 0;
+    }
+    .era-tree-item {
+      margin-bottom: 0;
+      padding: 0;
+      font-size: inherit;
+      color: #000;
+      cursor: default;
+      opacity: 1;
+      display: block;
+    }
+    .era-tree-item:hover {
+      background: transparent;
+      color: inherit;
+    }
+    .era-tree-link {
+      display: block;
+      padding: 5px 30px;
+      font-family: var(--font-ko);
+      font-size: var(--fs-body, 16px);
+      color: #000;
+      text-align: right;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+    }
+    .era-tree-link:hover:not(.active) {
+      background: #A4B8C4;
+      color: #1C2122;
+    }
+    .era-tree-link.active {
+      background: #8FA8B2;
+      color: #FBFAFA;
+      font-weight: bold;
+    }
+
+    /* Divider */
+    .sidebar-divider {
+      border: none;
+      border-top: 1px dashed var(--c-silver, #c8d3d5);
+      margin: 8px 0;
+    }
+
+    /* ===== Content Area: 우측 스크롤 ===== */
+    main.content-area {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .section-inner {
+      padding: 40px 32px 80px;
+    }
+
+    /* ===== Section divider ===== */
+    .section-divider {
+      border: none;
+      border-top: 1px solid var(--c-silver, #c8d3d5);
+      margin: 48px 0;
+    }
+
+    /* ===== Typography ===== */
+    .chapter-title {
+      font-family: var(--font-ko);
+      font-size: var(--fs-lead, 20px);
+      font-weight: bold;
+      margin-bottom: 24px;
+      margin-top: 48px;
+      color: #1C2122;
+      scroll-margin-top: 100px;
+    }
+    .chapter-title:first-child {
+      margin-top: 0;
+    }
+
+    .mid-title {
+      font-family: var(--font-ko);
+      font-size: var(--fs-body, 18px);
+      font-weight: bold;
+      margin-top: 32px;
+      margin-bottom: 16px;
+      color: #1C2122;
+    }
+
+    /* Body text */
+    .era-desc {
+      font-family: var(--font-ko);
+      font-size: var(--fs-body, 18px);
+      color: #000;
+      line-height: 1.9;
+      margin-bottom: 24px;
+    }
+    .era-desc .zh {
+      font-family: var(--font-zh);
+    }
+
+    /* Lists */
+    .era-desc ul, .era-desc ol {
+      margin-left: 1.5em;
+      margin-bottom: 24px;
+    }
+    .era-desc li {
+      margin-bottom: 12px;
+      line-height: 1.9;
+    }
+
+    /* Scroll behavior */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 1024px) {
+      body { overflow: auto; }
+      .layout-5a {
+        flex-direction: column;
+        height: auto;
+      }
+      aside.sidebar {
+        width: 100%;
+        min-width: 100%;
+        position: relative;
+        top: auto;
+        height: auto;
+      }
+      main.content-area {
+        overflow-y: visible;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .section-inner {
+        padding: 24px 16px 48px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+
+  <div class="layout-5a">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2><span class="zh">漢詩</span> 일반론</h2>
+        <p>한시의 세계를 여는 문</p>
+      </div>
+
+      <ul class="era-tree">
+        <li class="era-tree-item">
+          <a href="/chinese-poetry/general/" class="era-tree-link">
+            <span>한시 일반론</span>
+          </a>
+        </li>
+        <li class="era-tree-item">
+          <a href="/chinese-poetry/general/literary-history/" class="era-tree-link">
+            <span>중국시문학통사</span>
+          </a>
+        </li>
+        <li class="era-tree-item">
+          <a href="/chinese-poetry/general/masterworks/" class="era-tree-link active">
+            <span>대표작가와 작품 해설</span>
+          </a>
+        </li>
+      </ul>
+
+      <hr class="sidebar-divider">
+
+      <!-- 시대별 목차 -->
+      <ul class="era-tree">
+        <li class="era-tree-item"><a class="era-tree-link" data-section="sec-xianqin"><span>선진(先秦)</span></a></li>
+        <li class="era-tree-item"><a class="era-tree-link" data-section="sec-han"><span>한(漢)</span></a></li>
+        <li class="era-tree-item"><a class="era-tree-link" data-section="sec-weijin"><span>위진남북조</span></a></li>
+        <li class="era-tree-item"><a class="era-tree-link" data-section="sec-tang"><span>당(唐)</span></a></li>
+        <li class="era-tree-item"><a class="era-tree-link" data-section="sec-wudai"><span>오대십국</span></a></li>
+        <li class="era-tree-item"><a class="era-tree-link" data-section="sec-song"><span>송(宋)</span></a></li>
+        <li class="era-tree-item"><a class="era-tree-link" data-section="sec-yuan"><span>원(元)</span></a></li>
+        <li class="era-tree-item"><a class="era-tree-link" data-section="sec-ming"><span>명(明)</span></a></li>
+        <li class="era-tree-item"><a class="era-tree-link" data-section="sec-qing"><span>청(淸)</span></a></li>
+      </ul>
+    </aside>
+
+    <!-- Content Area -->
+    <main class="content-area">
+      <div class="section-inner">
+
+<!-- ===================== 선진(先秦) ===================== -->
+<h2 class="chapter-title" id="sec-xianqin">선진(<span class="zh">先秦</span>)</h2>
+
+<h3 class="mid-title"><span class="zh">『詩經』</span> (익명 집성)</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈關雎〉, 〈蒹葭〉, 〈采薇〉, 〈碩鼠〉, 〈黍離〉</span></p>
+<ul class="era-desc">
+  <li><span class="zh">『詩經』</span>은 공동체 노래가 경전으로 고정되며 "시=권위 있는 언어"가 되는 출발점이다.</li>
+  <li><span class="zh">〈關雎〉·〈蒹葭〉</span>는 사랑을 직접 선언하기보다 정경·사물로 감정을 일으키는 <strong>비흥(<span class="zh">比興</span>)</strong> 문법의 교본이다.</li>
+  <li><span class="zh">〈采薇〉</span>는 전쟁/귀향의 체험을 반복 리듬으로 압축해 "서사+서정"이 동시에 성립하는 방식을 보여준다.</li>
+  <li><span class="zh">〈碩鼠〉</span>는 풍자시의 전형으로, 사회적 불만을 도덕 언어로 조직하는 방법을 드러낸다.</li>
+  <li><span class="zh">〈黍離〉</span>는 상실의 정서를 "옛 도읍의 폐허" 이미지로 고정해 이후 역사 서정의 원형이 된다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">屈原</span> 굴원</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈離騷〉, 〈九歌〉</span>(연작), <span class="zh">〈天問〉, 〈九章〉</span>(연작), <span class="zh">〈漁父〉</span>(전승)</p>
+<ul class="era-desc">
+  <li><span class="zh">〈離騷〉</span>는 정치적 추방의 경험을 우주적·윤리적 자아 서사로 확장한 "장편 서정"의 정점이다.</li>
+  <li><span class="zh">〈九歌〉</span>는 제의/신화의 장면을 빌려 만남·이별·열망을 노래하며, 감정을 직접 말하지 않고 "의례적 거리감"으로 강화한다.</li>
+  <li><span class="zh">〈天問〉</span>은 신화·역사·우주에 대한 질문 연쇄로, 시가 사유의 공간이 될 수 있음을 보여준다.</li>
+  <li><span class="zh">〈九章〉</span>은 추방자의 심리 변주(분노–좌절–자기정당화)를 연작 구조로 밀도 있게 전개한다.</li>
+  <li><span class="zh">〈漁父〉</span>는 후대 전승 성격이 강하더라도 "은일/초탈"이라는 굴원 이미지의 형성에 결정적으로 기여한다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">宋玉</span> 송옥</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈九辯〉, 〈高唐賦〉, 〈神女賦〉, 〈登徒子好色賦〉</span>(전승), <span class="zh">〈對楚王問〉</span>(전승)</p>
+<ul class="era-desc">
+  <li>송옥은 '초사'의 정념을 유지하면서도 감각 묘사와 수사(<span class="zh">修辭</span>)의 세련을 강화한 인물로 읽힌다.</li>
+  <li><span class="zh">〈九辯〉</span>은 가을(<span class="zh">秋</span>)의 정조를 통해 상실·유랑의 감각을 장기적으로 정전화한 대표 텍스트다.</li>
+  <li><span class="zh">〈高唐賦〉·〈神女賦〉</span>는 욕망과 신화적 만남을 "장면 연출"로 조직하여 한대 부(<span class="zh">賦</span>)의 문법으로 연결된다.</li>
+  <li><span class="zh">〈登徒子好色賦〉</span>는 풍자·논변적 구성으로 욕망을 '논리'로 다루는 장치를 보여준다(전승성은 감안).</li>
+  <li>총체적으로 송옥은 후대 문학이 "감각의 문장화"를 수행하는 방식의 중요한 전사(<span class="zh">前史</span>)다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">『楚辭』</span> (전승 총체)</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈離騷〉, 〈九歌〉, 〈天問〉, 〈九辯〉, 〈招魂〉</span>(귀속 논쟁 포함)</p>
+<ul class="era-desc">
+  <li><span class="zh">『楚辭』</span>는 단일 작가집이 아니라 남방 초 문화의 제의·신화·주술 언어가 문학 텍스트로 정전화된 결과다.</li>
+  <li><span class="zh">〈招魂〉</span>은 '혼을 부른다'는 제의적 발화를 통해, 상실·불안·욕망을 응축하는 독특한 장르 감각을 제공한다.</li>
+  <li><span class="zh">『詩經』</span>이 공동체적 압축이라면 <span class="zh">『楚辭』</span>는 화자의 내면과 상상력을 전면화하여 "자아 중심 서정"을 만든다.</li>
+  <li>작품들의 장문 호흡과 이미지 과잉은 후대에 "장편 서정/부/상징 서정"의 영양분이 된다.</li>
+  <li>무엇보다 <span class="zh">『楚辭』</span>는 "윤리적 자아"와 "상상적 세계"가 충돌하면서도 공존하는 구조를 남긴다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">『左傳』</span> (시 인용/문체 전범)</h3>
+<p class="era-desc"><strong>대표작:</strong> 시 인용(<span class="zh">賦詩</span>) 장면들, <span class="zh">'鄭伯克段於鄢', '晉文公'</span> 대목, <span class="zh">'崤之戰', '齊桓公'</span> 관련</p>
+<ul class="era-desc">
+  <li><span class="zh">『左傳』</span>에서 중요한 것은 작품 자체보다 <strong>시가 정치적 언어로 사용되는 장면</strong>이다.</li>
+  <li>인용은 "감상"이 아니라 설득·정당화의 기술이며, 시는 권위의 근거로 작동한다.</li>
+  <li>이야기(서사)와 논변(발화)이 교차하는 문체는 후대 산문과 시의 상호 침투를 이해하는 핵심 자료다.</li>
+  <li>시를 "상황 속에서" 읽는 독법—누가 왜 어떤 시구를 꺼내는가—을 훈련하기에 가장 좋은 텍스트다.</li>
+  <li>결과적으로 <span class="zh">『左傳』</span>은 시의 사회적 기능(공적 소통)을 제도적으로 보여주는 증거다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">『國語』</span> (정치 담론과 시 인용)</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">周語·晉語·楚語</span> 인용 대목, 간언/유세 장면, 예악 논변, 인물 발화 문체</p>
+<ul class="era-desc">
+  <li><span class="zh">『國語』</span> 역시 "작품집"이라기보다 발화의 기록이며, 시는 그 발화의 권위를 강화하는 장치로 나타난다.</li>
+  <li><span class="zh">『左傳』</span>보다 더 직접적으로 "담론의 설계"가 보이는 경우가 많아, 시와 정치 언어의 결합을 추적하기 좋다.</li>
+  <li>예악(<span class="zh">禮樂</span>)과 관련된 논변은 후대 경학적 시 해석(시경의 윤리 교과서화)의 토대를 이해하게 한다.</li>
+  <li>인물의 발화가 곧 문체의 모델이 되며, 후대 산문·시의 설득 구조에 영향을 준다.</li>
+  <li>"시를 외워 말한다"는 행위 자체가 교양/권력의 표지였음을 드러낸다.</li>
+</ul>
+
+<hr class="section-divider">
+
+<!-- ===================== 한(漢) ===================== -->
+<h2 class="chapter-title" id="sec-han">한(<span class="zh">漢</span>)</h2>
+
+<h3 class="mid-title"><span class="zh">司馬相如</span> 사마상여</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈子虛賦〉, 〈上林賦〉, 〈長門賦〉</span>(전승), <span class="zh">〈美人賦〉</span>(전승), <span class="zh">〈大人賦〉</span>(전승)</p>
+<ul class="era-desc">
+  <li>사마상여의 핵심은 공간·사물·권력의 '연출'을 문장으로 총체화하는 능력이다.</li>
+  <li><span class="zh">〈子虛賦〉·〈上林賦〉</span>는 열거와 과장을 통해 제국의 풍요를 "보게 만드는" 텍스트로, 한부의 전형을 세운다.</li>
+  <li><span class="zh">〈長門賦〉</span>는 감정(실의·원망)을 궁정 정치의 구조 속에서 문장화해, 부가 개인 정서를 담을 수 있음을 보여준다.</li>
+  <li>전고·명물·지명 묘사가 많아, 읽을 때는 "정보"보다 "장면 조직 방식"에 집중하는 편이 생산적이다.</li>
+  <li>후대의 부(<span class="zh">賦</span>) 문학 전체가 사마상여의 스케일과 리듬을 기준으로 자신을 조정하게 된다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">揚雄</span> 양웅</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈甘泉賦〉, 〈羽獵賦〉, 〈長楊賦〉, 《太玄》, 《法言》</span></p>
+<ul class="era-desc">
+  <li>양웅은 한부의 화려함 속에 규범의식과 사유를 더 강하게 밀어 넣은 인물이다.</li>
+  <li><span class="zh">〈甘泉賦〉</span> 등은 제국의 장면을 그리면서도, 문장 표면의 향락이 곧바로 "비판/경계"로 전환되는 긴장을 만든다.</li>
+  <li><span class="zh">《太玄》·《法言》</span>은 시문학 자체라기보다, 한대 지식인이 문장과 사유를 결합하는 방식의 배경 자료다.</li>
+  <li>양웅을 읽으면 "부는 찬양인가 비판인가"라는 양가성이 왜 한대 이후 계속되는지 선명해진다.</li>
+  <li>후대가 한부를 단순 장식문이 아니라 사상·윤리 담론의 장으로 읽게 되는 근거가 된다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">班固</span> 반고</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈兩都賦〉, 《漢書·藝文志》, 〈幽通賦〉</span>(전승), <span class="zh">〈答賓戲〉</span>(전승), <span class="zh">《漢書》</span> 문장 대목</p>
+<ul class="era-desc">
+  <li>반고는 문학가이면서 제도 설계자(역사 편찬자)로서 "문학의 사회적 위치"를 강하게 규정한다.</li>
+  <li><span class="zh">〈兩都賦〉</span>는 도성(장안/낙양)의 공간을 통해 제국의 질서를 문학적으로 정식화한 대표작이다.</li>
+  <li><span class="zh">《漢書·藝文志》</span>는 장르·서적 분류를 통해 "문학이 무엇인지"를 국가적 시야에서 재편한 문헌이다.</li>
+  <li>반고를 읽을 때는 작품 감상보다 "문학-제도-지식의 결합"이 어떻게 발생하는지에 주목해야 한다.</li>
+  <li>후대 문학사가 '장르 분류'로 움직이는 큰 틀은 반고의 시야를 계승한다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">張衡</span> 장형</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈歸田賦〉, 〈四愁詩〉, 〈同聲歌〉</span>, (전승) <span class="zh">〈二京賦〉</span> 관련, 부/시 혼합 전통</p>
+<ul class="era-desc">
+  <li>장형은 한대 지식인의 스펙트럼(문학·천문·기술 사유)을 보여주는 상징적 인물이다.</li>
+  <li><span class="zh">〈歸田賦〉</span>는 '귀거/은거' 정서를 부의 문체로 구현해, 화려한 장르 안에서 내면을 드러낸다.</li>
+  <li><span class="zh">〈四愁詩〉</span>는 정서의 반복과 간결한 리듬으로, 한대 시의 서정 가능성을 보여주는 텍스트로 읽힌다.</li>
+  <li>장형의 작품군은 부와 시가 분리되기보다 서로의 기법을 빌려 성장했음을 확인하게 한다.</li>
+  <li>후대 전원·유배·은일 서정의 한 계보를 한대에서 미리 보여주는 사례다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">漢樂府</span> 한악부 (전승 노래군)</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈上邪〉, 〈陌上桑〉, 〈十五從軍征〉, 〈戰城南〉, 〈孔雀東南飛〉</span></p>
+<ul class="era-desc">
+  <li>한악부는 민간 노래·궁정 편제가 섞인 전승층으로, 직설·서사·현장감이 강하다.</li>
+  <li><span class="zh">〈上邪〉</span>는 맹렬한 서약의 언어로 감정을 "폭발적 리듬"으로 고정한 대표작이다.</li>
+  <li><span class="zh">〈陌上桑〉</span>은 이야기 구조(등장–대화–거절)를 통해 악부가 서사시로 확장될 수 있음을 보여준다.</li>
+  <li><span class="zh">〈十五從軍征〉·〈戰城南〉</span>은 전쟁의 참혹함을 미화 없이 직진시켜, 후대 사회시의 원형을 제공한다.</li>
+  <li><span class="zh">〈孔雀東南飛〉</span>는 장편 서사악부로, '가정/제도/비극'이 한꺼번에 시로 들어오는 가능성을 보여준다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">『古詩十九首』</span> (익명 오언고시 집성)</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈行行重行行〉, 〈青青河畔草〉, 〈涉江采芙蓉〉, 〈西北有高樓〉, 〈明月何皎皎〉</span></p>
+<ul class="era-desc">
+  <li><span class="zh">『古詩十九首』</span>는 오언 고시의 <strong>정조(<span class="zh">情調</span>) 표준</strong>을 만든 텍스트군이다.</li>
+  <li>이별과 시간, 덧없음은 과장 없이 담담하게 말해 오히려 보편성을 획득한다.</li>
+  <li>구조는 단순하지만 이미지 전환이 촘촘해 "짧은 구절의 누적"으로 감정의 깊이를 만든다.</li>
+  <li>익명성/집성성은 개인의 감정보다 '공유 가능한 정서'를 정전화하는 장치로 작동한다.</li>
+  <li>당·송 문인들이 끊임없이 모의(<span class="zh">模擬</span>)하고 재인용한 이유가 바로 이 보편성이다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">蘇武</span> 소무 (전승 시편군 중심)</h3>
+<p class="era-desc"><strong>대표작:</strong> (전승) '소무 시' 계열, 유배/절의 서정, 송별 전승, 후대 모의 작품군, '북해 목양' 이미지</p>
+<ul class="era-desc">
+  <li>소무는 역사 인물의 전기적 서사가 시적 상징이 된 대표 사례다.</li>
+  <li>전승 시편의 진위 논쟁이 있더라도, "절의(<span class="zh">節義</span>)·유배·인내"의 상징이 시문학에 정착하는 과정이 중요하다.</li>
+  <li>'북해 목양' 이미지는 후대 절의 서정(남송·명말·청초 유민 문학)에서 반복적으로 호출된다.</li>
+  <li>독해 포인트는 텍스트 자체보다 "이 인물이 어떤 윤리적 문법을 제공했는가"다.</li>
+  <li>시문학에서 '충절'이 하나의 미학으로 승격되는 출발점 중 하나다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">李陵</span> 이릉 (전승 시편군 중심)</h3>
+<p class="era-desc"><strong>대표작:</strong> (전승) '이릉 시' 계열, 소무와의 송별 전승, 변방/투항/명예의 갈등, 후대 인용 전통</p>
+<ul class="era-desc">
+  <li>이릉 역시 전승의 층위가 두껍고 귀속 논쟁이 있지만, 문학사적으로는 "명예/패배/역사의 심판"을 시로 저장하는 상징이다.</li>
+  <li>소무와 대비될 때 절의의 단선적 윤리가 아니라, 현실 정치의 복잡성이 드러난다.</li>
+  <li>후대 문인들은 이릉을 통해 "패배자의 윤리" 혹은 "명예의 회복 불가능성"을 말해왔다.</li>
+  <li>따라서 읽을 때는 작품의 서정만 보지 말고, '윤리적 난제'가 어떻게 시적 정조로 바뀌는지 봐야 한다.</li>
+  <li>이 전통은 두보 이후의 역사 서정, 남송·청초 유민 시학에도 공명한다.</li>
+</ul>
+
+<hr class="section-divider">
+
+<!-- ===================== 위진남북조(魏晉南北朝) ===================== -->
+<h2 class="chapter-title" id="sec-weijin">위진남북조(<span class="zh">魏晉南北朝</span>)</h2>
+
+<h3 class="mid-title"><span class="zh">曹操</span> 조조</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈短歌行〉, 〈觀滄海〉, 〈龜雖壽〉, 〈蒿里行〉, 〈步出夏門行〉</span></p>
+<ul class="era-desc">
+  <li>조조의 시는 건안풍골의 핵심인 "기개+현실감"을 가장 직접적으로 보여준다.</li>
+  <li><span class="zh">〈短歌行〉</span>은 인재·시간·정치적 열망이 음률 속에서 동시에 움직여, 시가 공적 욕망을 담는 방식을 드러낸다.</li>
+  <li><span class="zh">〈觀滄海〉</span>는 풍경 묘사가 곧 정치적 세계관(대해의 스케일)을 구성하는 대표 사례다.</li>
+  <li><span class="zh">〈蒿里行〉</span>은 전란의 비극을 절제된 문장으로 드러내어 '역사 서정'의 원형이 된다.</li>
+  <li>조조는 당대 이전에 이미 "시로 시대를 말하는 법"을 표준화했다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">曹丕</span> 조비</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈燕歌行〉, 〈雜詩〉</span>(연작), <span class="zh">《典論·論文》</span>, (전승) 관련 시편, 송별/유락 계열</p>
+<ul class="era-desc">
+  <li><span class="zh">〈燕歌行〉</span>은 칠언 고체의 조기 성취로, 서정의 흐름을 긴 호흡으로 밀어붙인다.</li>
+  <li><span class="zh">〈雜詩〉</span> 연작은 개인의 고독과 제국 정치의 긴장을 은근히 포개며, 문인적 자의식을 강화한다.</li>
+  <li><span class="zh">《典論·論文》</span>은 문학관 텍스트로, 위진 문학이 "문학을 논의하는 시대"로 들어갔음을 상징한다.</li>
+  <li>조비의 세계는 조조의 기개보다 더 '문장성/감정의 미세화'로 기울며, 이후 귀족 문학 취향과 연결된다.</li>
+  <li>즉 조비는 건안풍골을 '문인 문체'로 전환하는 다리 역할을 한다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">曹植</span> 조식</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈洛神賦〉, 〈白馬篇〉, 〈七哀詩〉, 〈贈白馬王彪〉, 〈野田黃雀行〉</span></p>
+<ul class="era-desc">
+  <li>조식은 이미지 전환과 정서 밀도를 극대화해 "문인시의 상승"을 보여준다.</li>
+  <li><span class="zh">〈洛神賦〉</span>는 사랑의 서사로 읽히면서도, 정치적 상실과 불가능한 욕망이 겹쳐지는 알레고리 구조가 강하다.</li>
+  <li><span class="zh">〈白馬篇〉</span>은 영웅주의가 아니라 전란 시대의 윤리(충·결단)를 강한 리듬으로 밀어 넣는다.</li>
+  <li><span class="zh">〈七哀詩〉·〈贈白馬王彪〉</span>는 좌절과 자기정당화가 시적 장치(대조·전환)로 설계되는 방식을 보여준다.</li>
+  <li>후대가 조식을 "재능의 비극"으로 기억하는 이유는 작품이 전기적 서사와 맞물려 정조를 강화하기 때문이다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">王粲</span> 왕찬</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈登樓賦〉, 〈七哀詩〉</span>(왕찬), <span class="zh">〈從軍詩〉, 〈雜詩〉, 〈贈蔡子篤〉</span></p>
+<ul class="era-desc">
+  <li>왕찬은 난세 유랑의 체험을 '개인의 슬픔'으로만 두지 않고, 사회적 불안의 감정으로 확장한다.</li>
+  <li><span class="zh">〈登樓賦〉</span>는 부(<span class="zh">賦</span>)의 장르 안에서 유배·망향의 정서를 구성해, 장르 혼종의 능력을 보여준다.</li>
+  <li><span class="zh">〈七哀詩〉</span> 계열은 전란의 비극을 반복 변주로 누적하며, 감정의 힘을 구조로 만든다.</li>
+  <li><span class="zh">〈從軍詩〉</span>는 군영·변방 경험을 통해 현실 장면을 시의 중심으로 끌어올린다.</li>
+  <li>왕찬은 건안 문단이 "시로 시대를 견디는 법"을 확립했음을 보여주는 핵심 증거다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">阮籍</span> 완적</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈詠懷詩〉</span>(연작) 중심</p>
+<ul class="era-desc">
+  <li>완적은 직접 발화가 위험한 시대에, 우회·상징·정서의 진동으로 내면을 기록하는 방식을 확립한다.</li>
+  <li><span class="zh">〈詠懷〉</span> 연작은 동일한 불안이 반복되면서도 매번 다른 이미지·어조로 변주되어 심리적 깊이가 생긴다.</li>
+  <li>핵심은 "무엇을 말하는가"보다 "말할 수 없는 것을 어떻게 말로 남기는가"다.</li>
+  <li>전고와 은유는 장식이 아니라, 현실과 거리를 만들면서도 현실을 암시하는 안전장치다.</li>
+  <li>이 전통은 후대의 난해 서정(만당·명말 경릉파·청말 상징)으로 장기적으로 이어진다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">嵇康</span> 혜강</h3>
+<p class="era-desc"><strong>대표작:</strong> (전승) 시편 + <span class="zh">〈與山巨源絕交書〉</span>(산문), <span class="zh">〈琴賦〉, 〈幽憤詩〉</span>(전승), 관련 작품군</p>
+<ul class="era-desc">
+  <li>혜강은 문학이 '인격'의 표명이 되는 위진 명사 문화를 대표한다.</li>
+  <li>절교서(<span class="zh">〈與山巨源絕交書〉</span>)는 산문이지만 시적 자의식(자기정의·독립성)을 가장 선명하게 드러낸다.</li>
+  <li><span class="zh">〈琴賦〉</span>는 음악·문장·철학이 결합하는 지점에서, 문학이 감각을 사유로 전환하는 방법을 보여준다.</li>
+  <li>전승 시편에서는 '울분/초탈'이 공존하며, 정치 현실과 거리를 두는 윤리적 선택이 미학이 된다.</li>
+  <li>후대의 은일 서정은 도연명뿐 아니라 혜강의 '인격 모델'도 함께 계승한다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">左思</span> 좌사</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈詠史詩〉</span>(연작), <span class="zh">〈三都賦〉, 〈雜詩〉</span> 등</p>
+<ul class="era-desc">
+  <li>좌사의 <span class="zh">〈詠史〉</span>는 역사를 빌려 현재를 말하는 "역사시의 정전"을 만든다.</li>
+  <li>전고는 단순 인용이 아니라, 역사 평가를 통해 현실을 비판하는 논리 장치로 쓰인다.</li>
+  <li><span class="zh">〈三都賦〉</span>는 부의 스케일로 도시·문화 경쟁을 그려, 문학이 지리·정치·문화사를 압축할 수 있음을 보여준다.</li>
+  <li>좌사는 문학이 교양의 과시를 넘어 '판단'의 언어가 되는 순간을 대표한다.</li>
+  <li>이 계열은 두보의 시사(<span class="zh">詩史</span>), 송대 의론시, 청대 고증학적 시학과도 공명한다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">陶淵明</span> 도연명</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈歸園田居〉, 〈飲酒〉, 〈歸去來兮辭〉, 〈桃花源記〉, 〈雜詩〉</span></p>
+<ul class="era-desc">
+  <li>도연명은 전원·가난·일상을 '패배'가 아니라 '선택'의 윤리로 만들며, 담담한 문장으로 깊이를 확보한다.</li>
+  <li><span class="zh">〈歸園田居〉</span>는 노동과 자연을 결합해 "살아내는 방식" 자체가 서정이 될 수 있음을 보여준다.</li>
+  <li><span class="zh">〈飲酒〉</span> 연작은 사유와 감응이 섞이는 전원 철학의 교본으로 읽힌다.</li>
+  <li><span class="zh">〈歸去來兮辭〉</span>는 결단의 문체가 어떻게 아름다움이 되는지 보여주는 명문이다.</li>
+  <li>도연명은 당·송 이후 동아시아 은일 서정의 가장 강한 기준점이 된다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">謝靈運</span> 사령운</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈登池上樓〉, 〈石壁精舍還湖中作〉, 〈過始寧墅〉</span> 등</p>
+<ul class="era-desc">
+  <li>사령운은 산수가 배경이 아니라 "시의 주제"가 되는 전환을 완성한 인물이다.</li>
+  <li>그의 산수시는 걷는 시선(이동)과 장면 전환이 문장 구조를 결정한다: 풍경이 곧 구성이다.</li>
+  <li>묘사는 객관적 설명이 아니라 관조의 과정이며, 자연은 내면의 작동을 드러내는 장치가 된다.</li>
+  <li>이 전통은 왕유의 산수시와 연결되고, 이후 '정경합일' 미학의 기반이 된다.</li>
+  <li>읽을 때는 "무슨 산을 묘사했나"보다 "시선이 어떻게 움직이나"를 추적하는 게 핵심이다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">鮑照</span> 포조</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈擬行路難〉</span>(연작), <span class="zh">〈代出自薊北門行〉, 〈詠史〉</span>, (산문) <span class="zh">〈登大雷岸與妹書〉</span> 등</p>
+<ul class="era-desc">
+  <li>포조는 귀족 미학의 세련 속에서 "현실의 비감"을 강하게 밀어 넣어, 육조 문학의 다른 얼굴을 보여준다.</li>
+  <li><span class="zh">〈擬行路難〉</span>은 좌절과 분노를 반복 변주하며, 서정이 현실과 충돌하는 순간을 가장 날카롭게 만든다.</li>
+  <li>'대행'(<span class="zh">代…</span>) 악부는 변방·군영의 현실을 끌어와, 전쟁 서정의 계보를 당 변새시로 연결한다.</li>
+  <li>포조의 언어는 화려함보다 강한 동력(밀어붙임)이 특징이며, '현실 서정'의 전형이 된다.</li>
+  <li>후대가 포조를 "두보 이전의 현실감"으로 읽는 이유가 여기에 있다.</li>
+</ul>
+
+<hr class="section-divider">
+
+<!-- ===================== 당(唐) ===================== -->
+<h2 class="chapter-title" id="sec-tang">당(<span class="zh">唐</span>)</h2>
+
+<h3 class="mid-title"><span class="zh">王勃</span> 왕발</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈送杜少府之任蜀州〉, 〈滕王閣序〉, 〈山中〉, 〈采蓮曲〉</span></p>
+<ul class="era-desc">
+  <li>왕발은 초당 문학이 "육조의 장식"에서 "성당의 기상"으로 넘어가는 전환을 보여준다.</li>
+  <li><span class="zh">〈送杜少府〉</span>는 송별시가 감상적 눈물 대신 '기개/우정'을 핵으로 삼는 방향을 세운다.</li>
+  <li><span class="zh">〈滕王閣序〉</span>는 산문이지만 당시 문장성·대구 감각을 최고도로 보여 주며, 시와 산문이 공유한 미학을 드러낸다.</li>
+  <li>작품들은 문장 표면의 화려함 속에 세계 확장의 기운이 있으며, 성당의 낭만으로 연결된다.</li>
+  <li>초당의 역할은 "규범 완성"보다 "기세의 시동"이라는 점에서 중요하다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">陳子昂</span> 진자앙</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈登幽州臺歌〉, 〈感遇〉</span>(연작)</p>
+<ul class="era-desc">
+  <li>진자앙은 '고풍(<span class="zh">古風</span>)'을 표방하며 육조적 장식성에 반발, 시를 다시 기개와 진정성의 언어로 돌려놓는다.</li>
+  <li><span class="zh">〈登幽州臺歌〉</span>는 공간·시간의 압도("전후의 영웅")를 단숨에 세워 성당 정신의 전야를 만든다.</li>
+  <li><span class="zh">〈感遇〉</span> 연작은 현실 비판과 자의식을 풍유와 상징으로 조직해, "의견을 시로 말하는 법"을 보여준다.</li>
+  <li>당대 시학에서 진자앙은 '반복 호출되는 출발점'이다: 성당이 그를 통해 정당화되기 때문이다.</li>
+  <li>읽을 때는 수사보다 '자기 위치 선언'의 톤을 잡는 게 핵심이다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">王維</span> 왕유</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈鹿柴〉, 〈山居秋暝〉, 〈送元二使安西〉, 〈鳥鳴澗〉, 〈終南別業〉</span></p>
+<ul class="era-desc">
+  <li>왕유는 산수시를 "관조의 언어"로 정교화해, 적은 말로 공간·빛·소리를 구성한다.</li>
+  <li><span class="zh">〈鹿柴〉</span>는 거의 무(<span class="zh">無</span>)의 공간에서 소리·빛이 생겨나는 순간을 포착해 '여백' 미학의 정전이 된다.</li>
+  <li><span class="zh">〈山居秋暝〉</span>은 정경이 곧 마음의 맑음을 만드는 구조로, 정경합일의 대표작이다.</li>
+  <li>송별시(<span class="zh">〈送元二使安西〉</span>)에서는 절제된 문장으로 우정과 거리감을 동시에 압축한다.</li>
+  <li>후대가 왕유를 "시중유화(<span class="zh">詩中有畫</span>)"로 읽는 이유는, 묘사가 곧 구성이고 구성 자체가 정서이기 때문이다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">孟浩然</span> 맹호연</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈春曉〉, 〈過故人莊〉, 〈宿建德江〉, 〈望洞庭湖贈張丞相〉</span></p>
+<ul class="era-desc">
+  <li>맹호연은 '소박함의 완성'에 가깝다. 작은 장면에 정조를 깔끔하게 얹어 여운을 만든다.</li>
+  <li><span class="zh">〈宿建德江〉</span>은 짧은 구절로 밤·물·거리감을 구성해 담담한 고독을 만든 전형이다.</li>
+  <li><span class="zh">〈過故人莊〉</span>은 전원 생활의 평온을 사교적 온기로 엮어, 은일이 고립이 아님을 보여준다.</li>
+  <li><span class="zh">〈望洞庭湖…〉</span>는 자연의 스케일을 통해 정치적 욕망(등용의 기대)을 간접적으로 드러낸다.</li>
+  <li>왕유가 관조의 절정이라면 맹호연은 생활적 담담함의 표준이다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">李白</span> 이백</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈將進酒〉, 〈蜀道難〉, 〈行路難〉</span>(연작), <span class="zh">〈早發白帝城〉, 〈月下獨酌〉</span>(연작)</p>
+<ul class="era-desc">
+  <li>이백은 고체시의 호흡을 극한까지 밀어붙여 "비약(<span class="zh">飛躍</span>)하는 서정"을 정전화했다.</li>
+  <li><span class="zh">〈將進酒〉</span>는 시간의 유한성과 순간의 찬란함을 격렬한 리듬으로 밀어붙이며 낭만의 엔진을 만든다.</li>
+  <li><span class="zh">〈蜀道難〉</span>은 지리적 험준함을 과장·반복으로 '체감'하게 만들며, 시가 공간을 재구성하는 힘을 보여준다.</li>
+  <li><span class="zh">〈行路難〉</span>은 좌절을 '결단의 에너지'로 바꾸는 방식에서, 낭만이 단순 도피가 아님을 증명한다.</li>
+  <li>이백의 영향은 후대 고체시뿐 아니라 "시적 자아의 자유"라는 관념 자체를 강화했다는 데 있다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">杜甫</span> 두보</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈春望〉, 〈兵車行〉, 〈登高〉, 〈茅屋爲秋風所破歌〉, 〈三吏〉/〈三別〉</span></p>
+<ul class="era-desc">
+  <li>두보는 근체시의 형식적 완성도를 최고점으로 올리면서, 전란과 민생을 "윤리적 증언"으로 기록했다.</li>
+  <li><span class="zh">〈春望〉</span>은 봄 경치와 국난을 충돌시켜 감정의 역설을 만든 대표적 압축이다.</li>
+  <li><span class="zh">〈兵車行〉·〈三吏/三別〉</span>은 제도 폭력이 개인 삶을 파괴하는 장면을 서사적으로 조직한다.</li>
+  <li><span class="zh">〈登高〉</span>는 오언율시의 구조·대구·정조가 결합한 정전으로, 형식이 곧 비탄의 설계가 된다.</li>
+  <li>두보가 후대에 "시성/시사"로 읽히는 이유는 감정이 아니라 <strong>구성의 윤리성</strong> 때문이다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">高適</span> 고적</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈燕歌行〉, 〈別董大〉</span>, 변새·군영 대표작군</p>
+<ul class="era-desc">
+  <li>고적의 변새시는 화려한 이국풍보다 "현실의 체감"이 강하며, 군영·전쟁의 정서를 직진한다.</li>
+  <li><span class="zh">〈燕歌行〉</span>은 장편 구성으로 전쟁의 허무와 인간의 비참을 확장해, 변새시의 서사성을 보여준다.</li>
+  <li><span class="zh">〈別董大〉</span>는 송별시를 '눈물'이 아니라 '기개'로 만드는 성당 풍격의 표준이다.</li>
+  <li>고적은 두보처럼 제도 비판을 정교하게 설계하기보다, 현장의 체온으로 설득하는 타입이다.</li>
+  <li>후대 현실 서정과 애국 서정은 고적의 '직선 톤'에서 많은 모델을 얻는다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">岑參</span> 잠삼</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈白雪歌送武判官歸京〉, 〈走馬川行…〉</span>, 변새 대표작군</p>
+<ul class="era-desc">
+  <li>잠삼은 변방의 공간(설산·사막·바람·빙설)을 강한 색채와 리듬으로 구축한다.</li>
+  <li><span class="zh">〈白雪歌…〉</span>는 눈의 광휘와 추위를 역동적으로 그려, 감각적 이미지가 정서(송별)로 급전환되는 구조가 탁월하다.</li>
+  <li><span class="zh">〈走馬川行…〉</span>은 전장의 속도감과 군사적 긴장을 장편 고체의 호흡으로 밀어붙인다.</li>
+  <li>고적이 현실의 무게라면 잠삼은 '공간의 충격'으로 설득한다.</li>
+  <li>후대 변방/이국 서정이 풍경을 단순 배경이 아니라 감정 엔진으로 쓰는 방식은 잠삼 계열의 유산이다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">王昌齡</span> 왕창령</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈出塞〉</span>(연작), <span class="zh">〈芙蓉樓送辛漸〉, 〈閨怨〉</span></p>
+<ul class="era-desc">
+  <li>왕창령은 절구의 결구를 '칼날처럼' 세우는 능력으로 유명하다.</li>
+  <li><span class="zh">〈出塞〉</span> 연작은 변방의 기상과 전쟁의 허무를 극도로 압축해, "짧은 형식의 서사"를 만든다.</li>
+  <li><span class="zh">〈芙蓉樓送辛漸〉</span>은 담담한 구절로 인격의 결백(<span class="zh">一片冰心</span>)을 세워 송별시의 윤리적 이상을 만든다.</li>
+  <li><span class="zh">〈閨怨〉</span>류는 여성 화자의 정조를 통해 전쟁·이별의 사회적 조건을 우회적으로 드러낸다.</li>
+  <li>이후 절구가 "작은 공간에서 최대 의미"를 낼 때 왕창령은 거의 필수 비교점이 된다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">韓愈</span> 한유</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈左遷至藍關示侄孫湘〉, 〈山石〉</span>, (산문) <span class="zh">〈祭十二郎文〉</span> 등</p>
+<ul class="era-desc">
+  <li>한유는 고문운동의 핵심이며, 시에서도 논변성과 윤리적 긴장을 강화한다.</li>
+  <li><span class="zh">〈左遷至藍關…〉</span>은 유배·좌절을 직설과 결연한 톤으로 말해 "자기정의의 시"가 된다.</li>
+  <li><span class="zh">〈山石〉</span>는 산수 묘사에 사유를 얹는 방식으로, 단순 감상에서 벗어난 '사유의 경관'을 만든다.</li>
+  <li><span class="zh">〈祭十二郎文〉</span>은 산문이지만 감정과 문장 설계의 결합을 보여줘, 한유 문학의 정서를 이해하는 핵심 텍스트다.</li>
+  <li>후대 송대 의론시와 문장성 강화는 한유의 자장(<span class="zh">磁場</span>) 안에서 설명된다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">柳宗元</span> 유종원</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈江雪〉, 〈漁翁〉, 〈登柳州城樓寄漳汀封連四州〉</span></p>
+<ul class="era-desc">
+  <li>유종원은 유배의 경험을 "냉정한 관조"로 전환해, 고요함 속의 긴장감을 만든다.</li>
+  <li><span class="zh">〈江雪〉</span>는 극단적 단순화(눈/강/배/한 사람)로 고독을 추상화한 정전급 작품이다.</li>
+  <li><span class="zh">〈漁翁〉</span>은 자연 속 인물의 행위를 통해 '현실의 거리두기'를 시각화한다.</li>
+  <li><span class="zh">〈登柳州城樓…〉</span>는 유배지에서의 정치적 고립과 세계 인식을 장편 구조로 설계한다.</li>
+  <li>후대 산수/유배 서정이 "감정의 과장"이 아니라 "거리의 미학"으로 갈 수 있었던 근거가 유종원이다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">白居易</span> 백거이</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈長恨歌〉, 〈琵琶行〉, 〈賣炭翁〉, 〈新樂府〉</span>(작품군), <span class="zh">〈錢塘湖春行〉</span></p>
+<ul class="era-desc">
+  <li>백거이는 서사·교훈·일상 감상을 모두 장악한 "공공성과 대중성"의 거장이다.</li>
+  <li><span class="zh">〈長恨歌〉·〈琵琶行〉</span>은 장편 서사시로, 역사/전기/음악이 결합해 감정을 장면으로 조직한다.</li>
+  <li><span class="zh">〈賣炭翁〉</span> 및 신악부는 사회 현실을 풍유/비판으로 정면화해, 시가 공적 담론이 될 수 있음을 증명한다.</li>
+  <li>동시에 <span class="zh">〈錢塘湖春行〉</span> 같은 작품은 한적(<span class="zh">閑適</span>)의 미학을 구축해 "생활의 시"도 정전화한다.</li>
+  <li>후대 사회시/풍유시의 정당화는 백거이를 반드시 경유한다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">元稹</span> 원진</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈遣悲懷〉</span>(연작), <span class="zh">〈離思〉</span> 등</p>
+<ul class="era-desc">
+  <li>원진은 정조의 미세한 결을 정련해, 중당 서정의 감각을 한 단계 섬세하게 만든다.</li>
+  <li><span class="zh">〈遣悲懷〉</span> 연작은 사랑과 상실을 연속 장면처럼 엮어 '기억의 서사'를 만든다.</li>
+  <li><span class="zh">〈離思〉</span>는 단 몇 구절로 절대적 애정을 선언하는데, 과장 없이도 강한 확신이 성립하는 구조가 탁월하다.</li>
+  <li>백거이와의 교유는 중당 문단이 시를 "소통 언어"로 운용했음을 보여주는 문화사적 배경이다.</li>
+  <li>후대 애정시·회억시가 정서를 세밀하게 조율하는 방식은 원진 계열의 영향을 강하게 받는다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">李商隱</span> 이상은</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈錦瑟〉, 〈無題〉</span>(연작), <span class="zh">〈夜雨寄北〉</span>, 정전급 만당 작품군</p>
+<ul class="era-desc">
+  <li>이상은의 시는 상징·전고·파편 이미지가 겹쳐져 단일 해석을 거부한다.</li>
+  <li><span class="zh">〈錦瑟〉</span>는 '기억/상실/시간'이 음악적 이미지로 전환되며, 의미가 고정되지 않는 여운을 만든다.</li>
+  <li><span class="zh">〈無題〉</span> 연작은 애정/정치/자기처지의 층위를 의도적으로 혼합해 "읽는 행위 자체를 사건"으로 만든다.</li>
+  <li><span class="zh">〈夜雨寄北〉</span>는 비교적 명료하지만, 기다림과 시간의 비대칭이 응축되어 만당 감각을 대표한다.</li>
+  <li>이후 상징 서정(청말~근대)에서 이상은은 "난해함의 정전"으로 반복적으로 호출된다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">杜牧</span> 두목</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈泊秦淮〉, 〈秋夕〉, 〈江南春〉</span>, (산문) <span class="zh">〈阿房宮賦〉</span></p>
+<ul class="era-desc">
+  <li>두목은 절구와 율시에서 역사적 감각을 날카롭게 압축하는 능력이 뛰어나다.</li>
+  <li><span class="zh">〈泊秦淮〉</span>는 현재의 풍경에 역사적 타락의 기억을 겹쳐 '짧은 형식의 역사비판'을 만든다.</li>
+  <li><span class="zh">〈秋夕〉</span>는 감각적 디테일로 정조를 구축해 만당의 세련을 대표한다.</li>
+  <li><span class="zh">〈江南春〉</span>은 경쾌한 표면 아래 역사/종교/도시 감각이 중첩되는 복합성을 지닌다.</li>
+  <li><span class="zh">〈阿房宮賦〉</span>는 산문이지만, 만당 문체가 "역사적 교훈"을 어떻게 장면화하는지 보여준다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">溫庭筠</span> 온정균</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈菩薩蠻〉, 〈更漏子〉, 〈夢江南〉</span>(전승), 만당 감각 작품군</p>
+<ul class="era-desc">
+  <li>온정균은 만당의 감각과 전고를 '사(<span class="zh">詞</span>)'의 언어로 정교화해 화간사의 직접 전사가 된다.</li>
+  <li><span class="zh">〈菩薩蠻〉·〈更漏子〉</span> 계열은 향·빛·비단 같은 감각 매개로 정서를 우회 전달하는 기술이 탁월하다.</li>
+  <li>이미지가 파편처럼 배열되며, 독자는 장면 사이의 빈틈을 스스로 메우게 된다(이것이 여운을 만든다).</li>
+  <li>당말의 불안과 궁정적 세련이 공존해, 이후 오대 화간풍의 미학을 사실상 설계한다.</li>
+  <li>송사의 완약 전통은 온정균에서 "감각의 공예"를 큰 자산으로 받는다.</li>
+</ul>
+
+<hr class="section-divider">
+
+<!-- ===================== 오대십국(五代十國) ===================== -->
+<h2 class="chapter-title" id="sec-wudai">오대십국(<span class="zh">五代十國</span>)</h2>
+
+<h3 class="mid-title"><span class="zh">『花間集』</span> (조숭조 편)</h3>
+<p class="era-desc"><strong>대표작:</strong> 화간풍 대표 곡조(<span class="zh">菩薩蠻/更漏子/浣溪沙/謁金門/相見歡</span> 등)</p>
+<ul class="era-desc">
+  <li><span class="zh">『花間集』</span>은 "최초의 문인사 선집"으로서, 사(<span class="zh">詞</span>)를 정전 장르로 고정하는 역할을 한다.</li>
+  <li>핵심 미학은 염려(<span class="zh">艶麗</span>)·완약(<span class="zh">婉約</span>)·규방 정조이지만, 단순 소재가 아니라 <strong>정서 미세 조율의 기술</strong>이 중요하다.</li>
+  <li>상·하편 구조에서 장면이 끊기는 듯 이어지며, 감정이 직접 고백되지 않고 감각 디테일로 우회된다.</li>
+  <li>이 선집은 후대 사학에서 '화간풍'이라는 계보를 만들고, 송대 완약사의 기준점이 된다.</li>
+  <li>읽을 때는 내용보다 "곡조 형식 속에서 정서가 어떻게 구성되는가"를 훈련하는 게 좋다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">韋莊</span> 위장</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈菩薩蠻〉, 〈浣溪沙〉, 〈女冠子〉</span>, 기타 화간풍 대표작군</p>
+<ul class="era-desc">
+  <li>위장은 화간 미학의 틀을 지키면서도, 당말 난세의 불안이 정조 저류로 흘러 감정의 밀도를 높인다.</li>
+  <li><span class="zh">〈菩薩蠻〉</span> 계열은 감각 묘사가 중심이지만, 이별·부재의 정서가 장면의 틈새에서 증폭된다.</li>
+  <li>그의 장점은 "곡조의 리듬"에 맞춰 정서를 자연스럽게 올리는 구성 감각이다.</li>
+  <li>화간풍이 단순 장식이 아니라 '정서 기술'임을 위장 작품에서 가장 잘 확인할 수 있다.</li>
+  <li>송대 완약사로 넘어갈 때 위장의 '구성감'이 중요한 전거가 된다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">馮延巳</span> 풍연사</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈鵲踏枝〉, 〈採桑子〉, 〈謁金門〉</span> 등</p>
+<ul class="era-desc">
+  <li>풍연사는 남당사의 핵심으로, 화간풍 위에 더 정교한 '심리의 흐름'을 얹는다.</li>
+  <li>상·하편이 단절된 듯 이어지며, 감정이 한 번에 폭발하지 않고 단계적으로 굴절된다.</li>
+  <li><span class="zh">〈鵲踏枝〉·〈採桑子〉</span> 등에서는 '회억—현재—부재'가 교차하며 내면의 시간감각이 생긴다.</li>
+  <li>궁정적 세련이 있지만, 그 세련이 곧 정서 억제 장치가 되어 슬픔을 더 깊게 만든다.</li>
+  <li>이 흐름은 송대의 진관·이청조 같은 완약 서정으로 이어지는 길을 넓힌다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">李璟</span> 이경</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈浣溪沙〉, 〈菩薩蠻〉</span> 등</p>
+<ul class="era-desc">
+  <li>이경의 사는 남당 궁정의 정조를 비교적 맑고 단정한 톤으로 구현한다.</li>
+  <li><span class="zh">〈浣溪沙〉</span> 계열은 시간의 흐름과 회억을 "평온한 표면" 아래에 깔아 여운을 만든다.</li>
+  <li>화간풍의 감각을 갖지만 과잉 장식보다 '정조의 균형'이 강점이다.</li>
+  <li>남당사가 단순 연정이 아니라 '시간 의식'으로 확장되는 지점을 보여준다.</li>
+  <li>이후 송대 사가 회억·계절감으로 정서를 세우는 방식의 중요한 전사다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">李煜</span> 이욱</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈虞美人〉, 〈浪淘沙〉, 〈相見歡〉</span> 등</p>
+<ul class="era-desc">
+  <li>이욱의 핵심은 '망국/상실'이 사의 정조를 어떻게 변조시키는가에 있다.</li>
+  <li><span class="zh">〈虞美人〉</span>은 화려했던 과거와 현재의 비참이 충돌하며, 개인 감정이 역사적 감각으로 상승한다.</li>
+  <li><span class="zh">〈浪淘沙〉</span>는 비·밤·커튼 같은 감각 요소가 기억의 폭발을 촉발하는 구조로, 내면화의 강도가 높다.</li>
+  <li><span class="zh">〈相見歡〉</span>은 짧은 형식 안에서 회억과 절망을 압축해 "완약의 비극성"을 정전화한다.</li>
+  <li>이욱 이후 사는 '사적인 연정'만이 아니라 '역사의 상처'를 담는 그릇이 될 수 있음을 증명한다.</li>
+</ul>
+
+<h3 class="mid-title">오대 사조(<span class="zh">詞調</span>) 전통 (곡조 비교 항목)</h3>
+<p class="era-desc"><strong>대표 곡조:</strong> <span class="zh">菩薩蠻 / 浣溪沙 / 更漏子 / 謁金門 / 相見歡</span></p>
+<ul class="era-desc">
+  <li>이 항목은 '작가'라기보다 "형식 훈련용"이다: 곡조가 정서 구성에 미치는 영향을 체감한다.</li>
+  <li>같은 정서를 담아도 곡조가 달라지면 호흡·전환·종결이 달라져 의미가 바뀐다.</li>
+  <li>예컨대 <span class="zh">菩薩蠻</span>은 장면적·감각적 전환이 용이하고, <span class="zh">浣溪沙</span>는 회억과 시간감에 잘 맞는다.</li>
+  <li><span class="zh">更漏子</span>는 밤/기다림/미세한 흔들림을 담는 데 강하고, <span class="zh">相見歡</span>은 단숨에 정조를 압축하기 좋다.</li>
+  <li>곡조 비교는 송사 독해의 가장 빠른 기초 체력이다.</li>
+</ul>
+
+<hr class="section-divider">
+
+<!-- ===================== 송(宋) ===================== -->
+<h2 class="chapter-title" id="sec-song">송(<span class="zh">宋</span>)</h2>
+
+<h3 class="mid-title"><span class="zh">歐陽修</span> 구양수</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈蝶戀花〉</span>(사), <span class="zh">〈醉翁亭記〉, 〈秋聲賦〉, 〈生查子〉</span>(사), 시편 대표작군</p>
+<ul class="era-desc">
+  <li>구양수는 송대 문학의 기준을 "자연스러운 문장성"으로 세운 인물이다.</li>
+  <li>사(<span class="zh">詞</span>)에서는 완약 정조를 문인적 품격으로 끌어올려, 노래말이 교양 장르가 되는 토대를 마련한다.</li>
+  <li><span class="zh">〈醉翁亭記〉·〈秋聲賦〉</span>는 산문이지만, 송대가 '문장' 자체를 미학의 핵으로 삼았음을 보여준다.</li>
+  <li>구양수의 핵심은 화려함보다 균형감: 감정·풍경·사유가 과잉 없이 조율된다.</li>
+  <li>이후 소식의 전방위 확장은 구양수의 문장 기반 위에서 가능해진다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">王安石</span> 왕안석</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈登飛來峰〉, 〈泊船瓜洲〉, 〈桂枝香·金陵懷古〉</span>(사), 시편 대표작군</p>
+<ul class="era-desc">
+  <li>왕안석의 시는 '정치적 실천'과 '윤리적 확신'이 문장 속으로 들어오는 전형이다.</li>
+  <li><span class="zh">〈登飛來峰〉</span>은 시가 곧 세계관 선언이 될 수 있음을 보여주며, 송시의 의론적 성격을 대표한다.</li>
+  <li><span class="zh">〈泊船瓜洲〉</span>는 개인의 감정(귀향/그리움)이 공적 삶의 맥락과 결합하는 송대적 감각을 가진다.</li>
+  <li><span class="zh">〈桂枝香·金陵懷古〉</span>는 역사 장소를 현재의 판단으로 재구성하는 방식에서 송대 '회고의 정치성'을 보여준다.</li>
+  <li>당의 정경미보다 "판단과 사유의 톤"이 중요해지는 전환점이다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">蘇軾</span> 소식</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈念奴嬌·赤壁懷古〉, 〈水調歌頭〉, 〈定風波〉, 〈前赤壁賦〉, 〈後赤壁賦〉</span></p>
+<ul class="era-desc">
+  <li>소식은 송대 문학의 중심축으로, 시·사·부·산문을 한 세계관 아래 변주한다.</li>
+  <li><span class="zh">〈念奴嬌〉</span>는 역사(적벽)와 개인 처지, 우주의 시간감을 한 호흡에 결합해 호방사의 정전을 만든다.</li>
+  <li><span class="zh">〈水調歌頭〉</span>는 사적 그리움이 우주적 사유로 확장되는 대표작으로, 송사 '사유 서정'의 모델이다.</li>
+  <li><span class="zh">〈定風波〉</span>는 역경을 해학과 평정으로 전환해, 송대 사대부 인격미학을 체감시키는 작품이다.</li>
+  <li>적벽부(전·후)는 산문이지만, 송대 문학이 '사유의 구성'을 어떻게 설계하는지 가장 잘 보여준다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">黃庭堅</span> 황정견</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈寄黃幾復〉, 〈登快閣〉</span>, 시편 대표작군(강서시파), (전승) 사 몇 편</p>
+<ul class="era-desc">
+  <li>황정견은 강서시파의 핵심으로, 전고·어법·구성의 난도를 끌어올려 "작법(<span class="zh">詩法</span>)"의 시대를 연다.</li>
+  <li><span class="zh">〈登快閣〉</span> 같은 작품은 장면 묘사보다 결구와 구조적 반전이 중심이어서, 읽는 쾌감이 '구조 해독'에서 온다.</li>
+  <li>전고는 지식 과시가 아니라, 새로운 의미를 만드는 조립 재료로 쓰인다(단, 과잉 시 피로도도 큼).</li>
+  <li>송대 이후 문인들이 "잘 쓰는 법"을 논할 때 황정견 계열은 교본이 된다.</li>
+  <li>결과적으로 송시는 당의 정경미학을 넘어 "문장 기술" 자체가 미학이 되는 시대임을 증명한다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">秦觀</span> 진관</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈鵲橋仙〉, 〈滿庭芳〉, 〈踏莎行〉</span> 등</p>
+<ul class="era-desc">
+  <li>진관은 완약사의 정련된 중심으로, 감정의 떨림을 과장 없이 미세하게 직조한다.</li>
+  <li><span class="zh">〈鵲橋仙〉</span>은 전설(견우직녀)을 빌려 사랑의 시간감을 압축하는데, 결구가 윤리적 확신으로 전환된다.</li>
+  <li><span class="zh">〈滿庭芳〉</span> 등 장편 사에서는 장면이 연속적으로 흐르며, 정조가 점층적으로 깊어진다.</li>
+  <li>그의 완약은 '연정의 장식'이 아니라, 감정의 정확한 측정(정조의 정밀도)에 가깝다.</li>
+  <li>이 계열은 이청조로 이어져 "완약의 심리화"를 완성한다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">柳永</span> 유영</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈雨霖鈴〉, 〈八聲甘州〉, 〈望海潮〉, 〈鳳棲梧〉</span> 등</p>
+<ul class="era-desc">
+  <li>유영은 도시·연회·상업 문화의 감각을 문인사에 강하게 도입해, 사의 대중성과 장편 호흡을 확장했다.</li>
+  <li><span class="zh">〈雨霖鈴〉</span>은 이별의 정조를 긴 리듬과 장면 전환으로 밀어올려 '장편 완약'의 교본이 된다.</li>
+  <li><span class="zh">〈八聲甘州〉</span>는 공간(강호·관문)과 감정(유랑)을 결합해 사가 지리적 감각을 가질 수 있음을 보여준다.</li>
+  <li>유영의 가치 논쟁(통속 vs 문인)은 송사 전체가 가진 사회적 기반을 이해하는 데 핵심이다.</li>
+  <li>이후 사는 더 이상 '궁정 취향'만이 아니라 도시 생활의 감정 언어가 된다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">周邦彦</span> 주방언</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈蘭陵王〉, 〈六醜〉, 〈少年遊〉</span> 등</p>
+<ul class="era-desc">
+  <li>주방언은 '사인의 공예'로 불릴 만큼 구조·음률·전환이 정교하다.</li>
+  <li><span class="zh">〈蘭陵王〉</span> 같은 작품은 상·하편의 구성 설계가 강해, 정조가 장면 이동과 함께 유기적으로 변한다.</li>
+  <li>어휘·전고·음률이 동시에 조율되며, 사가 단순 감정 토로가 아니라 "구성 예술"임을 보여준다.</li>
+  <li>읽을 때는 내용보다 리듬(호흡)과 전환(어디서 감정이 꺾이는가)을 따라가야 한다.</li>
+  <li>주방언 이후 '정교한 사'는 하나의 정전 기준이 된다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">姜夔</span> 강기</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈揚州慢〉, 〈暗香〉, 〈疏影〉</span></p>
+<ul class="era-desc">
+  <li>강기는 감정의 과장 대신 차가운 절제와 음률미로 송사 후반의 미학을 대표한다.</li>
+  <li><span class="zh">〈揚州慢〉</span>은 폐허의 도시를 통해 역사 상실과 개인 정조를 결합해, '상실의 공간화'를 보여준다.</li>
+  <li><span class="zh">〈暗香〉·〈疏影〉</span>은 사물(매화)의 이미지로 감정을 우회하며, 여백과 침묵의 미학을 극대화한다.</li>
+  <li>그의 시어는 맑고 차갑지만, 그 차가움이 곧 비통의 다른 표현 방식이다.</li>
+  <li>청대 사학에서 강기는 '정교함의 극치'로 자주 호출된다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">李清照</span> 이청조</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈聲聲慢〉, 〈如夢令〉, 〈武陵春〉</span>, (산문) <span class="zh">〈金石錄後序〉</span></p>
+<ul class="era-desc">
+  <li>이청조는 완약사의 정점이자, 생애의 변곡(전란/남도)이 작품 정조를 근본적으로 변조시키는 대표 사례다.</li>
+  <li><span class="zh">〈聲聲慢〉</span>은 정조의 파편화(반복·단절)를 통해 상실의 심리를 직접 체감하게 만든다.</li>
+  <li><span class="zh">〈如夢令〉</span>은 짧은 호흡 안에 일상의 순간과 감정의 파문을 극도로 압축한다.</li>
+  <li><span class="zh">〈武陵春〉</span>은 '말할 수 없음' 자체를 시의 감정으로 만드는 장치가 탁월하다.</li>
+  <li>이청조 이후 완약은 단순 연정이 아니라 "역사의 상처를 담는 내면 서정"이 된다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">辛棄疾</span> 신기질</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈破陣子〉, 〈永遇樂·京口北固亭懷古〉, 〈青玉案·元夕〉, 〈水龍吟〉</span> 등</p>
+<ul class="era-desc">
+  <li>신기질은 호방사의 최정점으로, 영웅적 호흡 안에 좌절·분노·자기성찰을 겹쳐 넣는다.</li>
+  <li><span class="zh">〈永遇樂〉</span>은 역사 장소(북고정)에서 회복 불가능한 현실을 직면하며, '역사 회고의 정치성'을 극대화한다.</li>
+  <li><span class="zh">〈破陣子〉</span>는 군사적 리듬과 꿈/좌절의 대비로, 호방이 단순 승리감이 아니라 비장미임을 보여준다.</li>
+  <li><span class="zh">〈青玉案〉</span>은 화려한 도시 야경 속에서 고독을 드러내며, 호방과 섬세함이 공존할 수 있음을 증명한다.</li>
+  <li>이후 애국·유민 서정은 신기질의 '큰 호흡'과 '깊은 좌절'을 함께 상속한다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">陸游</span> 육유</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈示兒〉, 〈釵頭鳳〉, 〈秋夜將曉出籬門迎涼有感〉</span>, 기타 애국시 편군</p>
+<ul class="era-desc">
+  <li>육유는 방대한 창작량 속에 회복 염원과 좌절을 끈질기게 반복해 남송 정서를 대표한다.</li>
+  <li><span class="zh">〈示兒〉</span>는 후대에 가장 널리 인용되는 절의/애국 결구로, 개인 죽음과 국가 회복을 연결한다.</li>
+  <li><span class="zh">〈釵頭鳳〉</span>은 사랑의 비극이 개인 감정에 머물지 않고 시대의 상실감과 겹치는 방식이 강하다.</li>
+  <li><span class="zh">〈秋夜將曉…〉</span>는 일상 장면에서 정치적 분노가 치솟는 구조로, 남송 현실감이 응축되어 있다.</li>
+  <li>육유는 "지속되는 정념"이 어떻게 문학적 권위를 얻는지 보여주는 사례다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">文天祥</span> 문천상</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈過零丁洋〉, 〈正氣歌〉</span>, 유배/절의 시편군</p>
+<ul class="era-desc">
+  <li>문천상은 남송 멸망의 윤리를 '문체'로 고정한 인물이다.</li>
+  <li><span class="zh">〈過零丁洋〉</span>은 절망적 현실 속에서 인격의 결단을 결구로 세우며, 절의 서정의 정전이 된다.</li>
+  <li><span class="zh">〈正氣歌〉</span>는 산문적 논변과 시적 고양이 결합해 "도덕의 문장"을 만드는 대표 텍스트다.</li>
+  <li>그의 작품은 감정의 아름다움보다 "윤리적 서정"이 무엇인지 보여주며, 후대 유민 문학의 기준이 된다.</li>
+  <li>명말·청초 유민들이 절의를 말할 때 문천상은 거의 필수 전거다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">楊萬里</span> 양만리</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈小池〉, 〈曉出淨慈寺送林子方〉</span>, 생활/자연 시편군</p>
+<ul class="era-desc">
+  <li>양만리는 남송의 또 다른 얼굴인 "생활 세계의 미세한 관찰"을 정전화한다.</li>
+  <li><span class="zh">〈小池〉</span>는 작은 자연 장면(샘·그늘·잠자리)을 통해 순간의 생동을 포착해, 경쾌한 서정을 만든다.</li>
+  <li><span class="zh">〈曉出淨慈寺…〉</span>는 강렬한 색채(연잎/연꽃)로 여름의 감각을 압축해 '감각의 명료함'을 보여준다.</li>
+  <li>거대한 역사 서정과 대비될 때, 송시가 얼마나 넓은 스펙트럼을 가졌는지 드러난다.</li>
+  <li>이후 동아시아 한시의 생활 서정은 양만리 계열의 감각을 널리 흡수한다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">范成大</span> 범성대</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈四時田園雜興〉</span>(연작), 농촌/생활 시편군</p>
+<ul class="era-desc">
+  <li>범성대는 '농촌의 사계'를 연작으로 조직해 생활 세계를 시의 정전 주제로 만든다.</li>
+  <li><span class="zh">〈四時田園雜興〉</span>은 노동·계절·생업이 미학적 장면으로 전환되는 대표 사례다.</li>
+  <li>송시의 특징인 구체성(사소한 사물/일상 행동)이 여기서 극대화된다.</li>
+  <li>농촌 현실을 미화하기보다 관찰과 정조의 균형으로 설득한다.</li>
+  <li>후대가 "생활을 시로 쓰는 법"을 논할 때 범성대는 중요한 전거다.</li>
+</ul>
+
+<hr class="section-divider">
+
+<!-- ===================== 원(元) ===================== -->
+<h2 class="chapter-title" id="sec-yuan">원(<span class="zh">元</span>)</h2>
+
+<h3 class="mid-title"><span class="zh">元好問</span> 원호문</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈摸魚兒〉</span>(전승 사), <span class="zh">〈論詩三十首〉</span>, 시편 대표작군</p>
+<ul class="era-desc">
+  <li>원호문은 금말·원초의 격변 속에서 당·송 전통을 집대성하며 "정전의 계승자"로 평가된다.</li>
+  <li><span class="zh">〈論詩三十首〉</span>는 시학 텍스트로, 무엇이 좋은 시인지에 대한 기준과 취향이 직접 드러난다.</li>
+  <li>서정시에서도 역사 상실과 현실 감각이 강하며, 전고 활용이 단순 장식이 아니라 현실의 언어가 된다.</li>
+  <li>이 인물은 원대가 '시를 포기한 시대'가 아님을 가장 확실히 보여준다.</li>
+  <li>명대 복고/청대 시학 논쟁에서도 원호문은 자주 참조되는 교량 인물이다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">虞集</span> 우집</h3>
+<p class="era-desc"><strong>대표작:</strong> 원시사대가 대표 시편군(율시/오언 중심)</p>
+<ul class="era-desc">
+  <li>우집은 원대 시단의 표준을 세운 인물로, 당·송 정전 작법을 안정적으로 흡수한다.</li>
+  <li>그의 시는 혁신보다 품격·균형·문장성에 강점이 있어 "정전 유지"의 가치가 크다.</li>
+  <li>정치·학술 네트워크 속에서 시가 어떤 방식으로 교양이 되었는지 확인할 수 있다.</li>
+  <li>작품은 전고 밀도가 높을 수 있으므로, 주석을 활용해 '구조' 중심으로 읽는 편이 좋다.</li>
+  <li>우집 계열은 명대 복고가 '가능'해진 문화적 기반과 연결된다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">楊載</span> 양재</h3>
+<p class="era-desc"><strong>대표작:</strong> 원시사대가 대표 시편군</p>
+<ul class="era-desc">
+  <li>양재는 문장 설계가 단정하며, 오언·율시의 규범 감각이 안정적이다.</li>
+  <li>원대가 곡(<span class="zh">曲</span>)으로 치우친 것처럼 보일 때, 양재는 시(<span class="zh">詩</span>)의 전통이 계속 살아 있었음을 보여준다.</li>
+  <li>핵심은 '새로움'보다 '표준의 지속'이며, 이 지속이 후대 복고 담론의 실제 근거가 된다.</li>
+  <li>작품은 특정 명편보다 시집 전반의 톤(균형·단정)을 체감하는 방식이 적합하다.</li>
+  <li>강의에서는 "원대 시단의 중심 문풍"을 설명하는 표본으로 쓰기 좋다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">范梈</span> 범팽</h3>
+<p class="era-desc"><strong>대표작:</strong> 원시사대가 대표 시편군</p>
+<ul class="era-desc">
+  <li>범팽은 문장성·품격을 유지하면서도 원말의 불안과 현실감이 배어 있는 편이다.</li>
+  <li>시편들은 사유가 과잉으로 드러나기보다, 장면과 정조의 균형 속에서 긴장을 만든다.</li>
+  <li>원대의 정치·사회적 조건(문인 지위의 변화)이 시의 톤을 어떻게 바꾸는지 읽기 좋다.</li>
+  <li>전고는 당·송 계승의 증거이자, 전통을 통해 현재를 말하려는 전략이다.</li>
+  <li>원말–명초의 이행기 정서를 이해하는 데 유용하다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">揭傒斯</span> 게혜사</h3>
+<p class="era-desc"><strong>대표작:</strong> 원시사대가 대표 시편군</p>
+<ul class="era-desc">
+  <li>게혜사는 원말 정서(불안, 변화, 역사 감각)가 더 직접적으로 드러나는 축에 가깝다.</li>
+  <li>문장은 여전히 정전적이지만, 내면의 흔들림이 구조 속에 배치되어 '조용한 긴장'을 만든다.</li>
+  <li>원대 시가 단순 보존이 아니라 '전통+시대감각'의 조합으로 움직였음을 보여준다.</li>
+  <li>특정 작품보다 연작·동일 주제군을 묶어 읽으면 정조 변화가 잘 보인다.</li>
+  <li>후대 유민 시학으로 넘어가는 감정의 경로를 확인할 수 있다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">馬致遠</span> 마치원</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈天淨沙·秋思〉</span>(산곡), <span class="zh">〈漢宮秋〉</span>(잡극), 산곡 소령 대표편군</p>
+<ul class="era-desc">
+  <li>마치원은 원곡 문학의 상징이며, 산곡의 압축미와 잡극의 서사성을 동시에 대표한다.</li>
+  <li><span class="zh">〈天淨沙·秋思〉</span>는 이미지 나열만으로 유랑·황량의 정조를 '즉시' 만들어내는 기교가 압도적이다.</li>
+  <li><span class="zh">〈漢宮秋〉</span>는 역사 소재를 감정의 드라마로 재구성해, 원잡극이 역사 서사를 어떻게 감정화하는지 보여준다.</li>
+  <li>산곡의 구어성과 잡극의 창(<span class="zh">唱</span>)은 "시의 매체"가 종이에서 무대로 확장된 증거다.</li>
+  <li>이후 명·청 연극과 가창문학의 정전화는 마치원 계열을 필수로 경유한다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">關漢卿</span> 관한경</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈竇娥冤〉</span>, (선집 기준) 대표 잡극 2~4편</p>
+<ul class="era-desc">
+  <li>관한경은 원잡극을 "사회 윤리의 드라마"로 만든 대표 작가다.</li>
+  <li><span class="zh">〈竇娥冤〉</span>은 억울한 판결과 처형, 초자연적 징험이 결합해 제도의 폭력을 감정적으로 체험시키는 구조를 가진다.</li>
+  <li>핵심은 사건의 잔혹함이 아니라, 노래(<span class="zh">唱</span>)가 감정과 정의감을 어떻게 조직하는가다.</li>
+  <li>작품을 읽을 때는 플롯보다 "창(운문)이 언제 폭발하는지"를 체크하면 시문학적 독해가 쉬워진다.</li>
+  <li>이후 비극 서사, 억울함의 서정은 원곡 전통에서 강한 모델을 얻는다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">王實甫</span> 왕실보</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈西廂記〉</span>(전편), 핵심 절목(장면)</p>
+<ul class="era-desc">
+  <li><span class="zh">〈西廂記〉</span>는 재자가인 서사의 정전으로, 사랑을 '사회적 사건'으로 만드는 기술이 정교하다.</li>
+  <li>장면 전환과 노래(<span class="zh">唱</span>)가 감정의 고조를 설계하며, 단순 연애담을 넘어 '욕망과 규범의 갈등'을 드라마로 만든다.</li>
+  <li>언어는 감각적이면서도 세련되어, 원대가 왜 곡의 시대인지 납득하게 된다.</li>
+  <li>후대 명·청 희곡·소설의 연애 서사 문법이 상당 부분 <span class="zh">〈西廂記〉</span>를 참조한다.</li>
+  <li>시문학 통사에서 <span class="zh">〈西廂記〉</span>는 "서정의 무대화"를 보여주는 핵심 텍스트다.</li>
+</ul>
+
+<hr class="section-divider">
+
+<!-- ===================== 명(明) ===================== -->
+<h2 class="chapter-title" id="sec-ming">명(<span class="zh">明</span>)</h2>
+
+<h3 class="mid-title"><span class="zh">高啓</span> 고계</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈登金陵雨花臺望大江〉</span>, 시집 대표편군</p>
+<ul class="era-desc">
+  <li>고계는 원말의 격변과 명초의 제도화가 교차하는 지점의 정서를 시로 고정한다.</li>
+  <li>금릉(<span class="zh">南京</span>)·대강 같은 역사 공간을 통해 '새 왕조의 출현'과 '옛 질서의 상실'이 중첩된다.</li>
+  <li>문장은 정전적이면서도 현실감이 강해, 명초 시가 단순 복고가 아니라 시대 감각을 가진다는 증거다.</li>
+  <li>이후 명대 문단이 "정전으로 돌아가자"는 방향을 강화할 때도, 고계는 중요한 전거가 된다.</li>
+  <li>읽을 때는 지명/역사 전고를 주석으로 확인하고, 장면 구성의 긴장을 잡는 게 핵심이다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">李夢陽</span> 이몽양</h3>
+<p class="era-desc"><strong>대표작:</strong> 복고파 대표 시편군(성당 모범 지향)</p>
+<ul class="era-desc">
+  <li>이몽양은 복고주의를 문단의 강한 규범으로 세운 핵심 인물 중 하나다.</li>
+  <li>작품은 성당의 격조·기풍을 모범으로 삼아, 문체의 품질을 '관리'하려는 의도가 뚜렷하다.</li>
+  <li>독해 포인트는 감정의 새로움보다 "규범을 어떻게 구현하는가"다: 대구·결구·전고 배치가 중심이다.</li>
+  <li>복고는 창작을 억압하기도 하지만, 동시에 정전 독서와 작법 훈련을 고도화한다.</li>
+  <li>명대 시를 '시학 담론'으로 읽을 때 이몽양은 출발점이 된다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">李攀龍</span> 이반룡</h3>
+<p class="era-desc"><strong>대표작:</strong> 복고파 대표 시편군</p>
+<ul class="era-desc">
+  <li>이반룡은 전칠자 계열의 상징으로, "시필성당"의 규범을 강하게 실천한 인물이다.</li>
+  <li>그의 작품은 전고 밀도와 격조의 안정성이 강점이지만, 때로는 생동감이 희생되는 지점도 보인다.</li>
+  <li>따라서 읽을 때는 '좋다/지루하다' 판단보다, 복고가 왜 설득력 있었는지 구조적으로 파악하는 것이 중요하다.</li>
+  <li>특히 성당의 특정 시풍(기상, 변새 톤 등)을 어떻게 모의했는지 비교 독해가 좋다.</li>
+  <li>후대가 복고를 비판할 때도, 비판의 목표가 되는 만큼 영향력이 크다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">王世貞</span> 왕세정</h3>
+<p class="era-desc"><strong>대표작:</strong> 시편 대표작군 + 문단 비평/편찬 활동의 맥락</p>
+<ul class="era-desc">
+  <li>왕세정은 창작뿐 아니라 문단 운영·비평·정전화에 큰 영향을 준 인물이다.</li>
+  <li>작품은 복고의 틀을 공유하면서도, 명대 후기의 문화적 번영과 학술적 교양이 배어 있다.</li>
+  <li>읽을 때는 시편 자체와 함께, 그가 만든 취향(평점/선집/비평)이 어떻게 '고전'의 목록을 굳혔는지 함께 보아야 한다.</li>
+  <li>왕세정 계열의 작업은 "문학사가 작품만으로 쓰이지 않는다"는 사실을 보여준다.</li>
+  <li>조선 후기 한시권에서도 영향이 컸기 때문에 동아시아 시문학 교류의 핵심 인물로도 중요하다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">袁宏道</span> 원굉도</h3>
+<p class="era-desc"><strong>대표작:</strong> 성령파 대표 시편군(일상/여행/소품 서정)</p>
+<ul class="era-desc">
+  <li>원굉도는 성령론(독서 문체 비판, 개별 감응 강조)을 작품으로 실천한 대표 시인이다.</li>
+  <li>소재는 작고 사적이지만, 그 '작음'이 곧 문체 권위에 대한 반란이 된다.</li>
+  <li>감정은 과장되지 않고 순간의 감응으로 제시되며, 독자가 "살아 있는 말"을 듣게 만드는 것이 핵심이다.</li>
+  <li>이 흐름은 청대 원매 성령론과도 연결되고, 조선 후기 소품문/시학 담론에 강하게 영향을 준다.</li>
+  <li>명말을 이해할 때 원굉도는 "개인 목소리의 복권"이라는 변화를 가장 선명하게 보여준다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">鍾惺</span> 종성</h3>
+<p class="era-desc"><strong>대표작:</strong> 경릉파 대표 시편군(유심/굴절/난해 전략)</p>
+<ul class="era-desc">
+  <li>종성은 공안파의 평명함을 비판하며 '유심(<span class="zh">幽深</span>)'과 굴절된 감정의 깊이를 추구한다.</li>
+  <li>언어는 즉시 이해되기보다, 전고·비유·구문 비틀기로 독자를 '해독'의 자리로 밀어넣는다.</li>
+  <li>이는 난해함이 곧 시대의 불안과 감정의 복잡성을 담는 전략이 될 수 있음을 보여준다.</li>
+  <li>결과적으로 명말 문단은 복고/성령을 넘어 "정서의 깊이를 어떻게 만들 것인가"를 실험한다.</li>
+  <li>후대 청대 시학 논쟁에서 '성령의 위험(부박) vs 깊이' 논의는 종성 계열을 배경으로 한다.</li>
+</ul>
+
+<hr class="section-divider">
+
+<!-- ===================== 청(淸) ===================== -->
+<h2 class="chapter-title" id="sec-qing">청(<span class="zh">淸</span>)</h2>
+
+<h3 class="mid-title"><span class="zh">王士禎</span> 왕사정</h3>
+<p class="era-desc"><strong>대표작:</strong> 신운(<span class="zh">神韻</span>) 계열 대표 시편군</p>
+<ul class="era-desc">
+  <li>왕사정은 '신운'을 통해 청초 이후의 취향을 강하게 규범화한다.</li>
+  <li>신운은 직접 진술보다 여백·울림·잔향을 중시하여, 시를 "말로 다 말하지 않는 품격"의 장르로 만든다.</li>
+  <li>작품은 담담해 보이지만, 정조의 미세한 균형과 결구의 절제가 핵심이다.</li>
+  <li>이 기준은 청대 내내 영향력이 크며, 격조·성령 논쟁도 결국 신운의 권위에 대한 대응으로 움직인다.</li>
+  <li>읽을 때는 '뜻'보다 '울림'—어조의 절제와 이미지의 여백—을 따라가야 한다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">沈德潛</span> 심덕잠</h3>
+<p class="era-desc"><strong>대표작:</strong> 격조(<span class="zh">格調</span>) 지향 대표 시편군 + 시평 활동 맥락</p>
+<ul class="era-desc">
+  <li>심덕잠은 격조론으로 시를 교정하고 "바른 격"의 기준을 세우려는 인물로 이해된다.</li>
+  <li>그의 작품은 도덕적 품격과 정전적 규범을 중시하며, 감정의 방종을 경계한다.</li>
+  <li>중요한 것은 창작 자체뿐 아니라, 시를 평가·선정·주해하는 활동이 취향을 제도화했다는 점이다.</li>
+  <li>성령파(원매)와의 대립 구도에서 심덕잠은 '규범의 편'에 서는 상징이 된다.</li>
+  <li>청대 시학이 왜 "작품+비평"의 시스템으로 움직였는지 보여주는 핵심 사례다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">袁枚</span> 원매</h3>
+<p class="era-desc"><strong>대표작:</strong> 대표 시편군(유람/생활) + <span class="zh">《隨園詩話》</span></p>
+<ul class="era-desc">
+  <li>원매는 성령론으로 개별 감응과 자연스러운 말의 힘을 복권시키며 청 중기의 판을 흔든다.</li>
+  <li>그의 시는 일상·여행·사소한 사물에서 정서를 뽑아내며, '진짜 말'의 생동을 강조한다.</li>
+  <li><span class="zh">《隨園詩話》</span>는 단순 감상집이 아니라, "좋은 시"의 기준을 여백/격조에서 '생기·개성'으로 이동시키는 선언이다.</li>
+  <li>이 흐름은 명말 성령과 연결되면서도, 청대의 학술·출판 환경 속에서 더 제도적으로 확산된다.</li>
+  <li>이후 근대 전환기에도 "고전시는 무엇을 지킬 것인가" 논쟁에서 원매는 중요한 참조점이 된다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">納蘭性德</span> 납란성덕</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">〈木蘭花令〉</span> 계열, <span class="zh">〈浣溪沙〉</span> 계열, <span class="zh">〈長相思〉</span> 등(사 중심)</p>
+<ul class="era-desc">
+  <li>납란성덕은 청초 사(<span class="zh">詞</span>)의 정점으로, 귀족적 세련과 개인적 상실을 결합해 정조 밀도를 극대화한다.</li>
+  <li>그의 사는 송사 완약 전통을 계승하면서도, 청초의 정서(회억·허무·내면화)를 더 차갑게 정련한다.</li>
+  <li><span class="zh">〈長相思〉</span> 같은 작품은 반복 구조와 단순한 어휘로 깊은 그리움을 만들며 "단순함의 고급화"를 보여준다.</li>
+  <li>납란은 청대가 시(<span class="zh">詩</span>)만이 아니라 사(<span class="zh">詞</span>)에서도 정전 경쟁을 벌였음을 증명한다.</li>
+  <li>후대의 사학(<span class="zh">詞學</span>)은 납란을 '청초의 표준'으로 반복 호출한다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">龔自珍</span> 공자진</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">《己亥雜詩》</span> 대표 5편(연작)</p>
+<ul class="era-desc">
+  <li>공자진은 청말 변혁기의 긴장을 고전시의 언어로 압축해, 근대 전환의 문턱을 보여준다.</li>
+  <li><span class="zh">《己亥雜詩》</span>는 연작 형식으로 시대 비판, 자기 성찰, 새로운 상상력을 빠르게 교차시킨다.</li>
+  <li>유명한 결구들은 자연 비유처럼 보이지만 실제로는 '개혁/재생'의 윤리적 상상력을 담는다.</li>
+  <li>문장은 고전 규범을 유지하면서도 어조가 급하고 절박해, "전통이 흔들리는 순간의 언어"가 된다.</li>
+  <li>이후 근대 시문학이 고전시를 비판/계승할 때 공자진은 항상 경계선의 인물로 등장한다.</li>
+</ul>
+
+<h3 class="mid-title"><span class="zh">黃遵憲</span> 황준헌</h3>
+<p class="era-desc"><strong>대표작:</strong> <span class="zh">《人境廬詩草》</span> 대표 5편(시사/해외 경험 중심)</p>
+<ul class="era-desc">
+  <li>황준헌은 외교관 경험과 세계 인식을 시의 소재로 적극 흡수해, 고전시의 외연을 근대 세계로 확장한다.</li>
+  <li>그의 시는 국제정세·제도 개혁·문명 충돌을 다루며, "시가 다룰 세계의 크기"가 달라졌음을 보여준다.</li>
+  <li>중요한 것은 소재의 현대성만이 아니라, 고전 규범(율격/전고)로 근대를 담으려는 긴장 자체다.</li>
+  <li>이 긴장은 곧 신시(백화신시)의 등장 조건—고전 형식이 세계를 다 담기 어렵다는 체감—을 강화한다.</li>
+  <li>따라서 황준헌은 '고전시의 마지막 확장'이자 '근대시의 전조'로 읽힌다.</li>
+</ul>
+
+      </div>
+    </main>
+  </div>
+
+  <div id="footer-placeholder"></div>
+  <script src="/shared/auth-state.js"></script>
+  <script src="/shared/components.js"></script>
+  <script>
+    // 사이드바 페이지 링크 active 처리
+    document.addEventListener('DOMContentLoaded', () => {
+      const currentPath = location.pathname.replace(/\/+$/, '') || '/';
+      document.querySelectorAll('.era-tree-link[href]').forEach(link => {
+        const href = (link.getAttribute('href') || '').replace(/\/+$/, '');
+        if (href === currentPath) {
+          link.classList.add('active');
+        } else {
+          link.classList.remove('active');
+        }
+      });
+
+      // 시대 목차 클릭 시 smooth scroll
+      document.querySelectorAll('.era-tree-link[data-section]').forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          const sectionId = link.getAttribute('data-section');
+          const target = document.getElementById(sectionId);
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      });
+
+      // IntersectionObserver로 현재 섹션 추적
+      const sections = document.querySelectorAll('[id^="sec-"]');
+      const navLinks = document.querySelectorAll('.era-tree-link[data-section]');
+
+      const observerOptions = {
+        root: null,
+        rootMargin: '-100px 0px -70% 0px',
+        threshold: 0
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const id = entry.target.getAttribute('id');
+            navLinks.forEach(link => {
+              if (link.getAttribute('data-section') === id) {
+                navLinks.forEach(l => l.classList.remove('active'));
+                link.classList.add('active');
+              }
+            });
+          }
+        });
+      }, observerOptions);
+
+      sections.forEach(section => observer.observe(section));
+    });
+  </script>
+</body>
+</html>
