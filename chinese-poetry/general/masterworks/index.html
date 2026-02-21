@@ -216,7 +216,7 @@
         </li>
         <li class="era-tree-item">
           <a href="/chinese-poetry/general/literary-history/" class="era-tree-link">
-            <span>중국시문학통사</span>
+            <span>중국시문학을 읽는 지도</span>
           </a>
         </li>
         <li class="era-tree-item">
@@ -224,21 +224,6 @@
             <span>대표작가와 작품 해설</span>
           </a>
         </li>
-      </ul>
-
-      <hr class="sidebar-divider">
-
-      <!-- 시대별 목차 -->
-      <ul class="era-tree">
-        <li class="era-tree-item"><a class="era-tree-link" data-section="sec-xianqin"><span>선진(先秦)</span></a></li>
-        <li class="era-tree-item"><a class="era-tree-link" data-section="sec-han"><span>한(漢)</span></a></li>
-        <li class="era-tree-item"><a class="era-tree-link" data-section="sec-weijin"><span>위진남북조</span></a></li>
-        <li class="era-tree-item"><a class="era-tree-link" data-section="sec-tang"><span>당(唐)</span></a></li>
-        <li class="era-tree-item"><a class="era-tree-link" data-section="sec-wudai"><span>오대십국</span></a></li>
-        <li class="era-tree-item"><a class="era-tree-link" data-section="sec-song"><span>송(宋)</span></a></li>
-        <li class="era-tree-item"><a class="era-tree-link" data-section="sec-yuan"><span>원(元)</span></a></li>
-        <li class="era-tree-item"><a class="era-tree-link" data-section="sec-ming"><span>명(明)</span></a></li>
-        <li class="era-tree-item"><a class="era-tree-link" data-section="sec-qing"><span>청(淸)</span></a></li>
       </ul>
     </aside>
 
@@ -1108,44 +1093,6 @@
           link.classList.remove('active');
         }
       });
-
-      // 시대 목차 클릭 시 smooth scroll
-      document.querySelectorAll('.era-tree-link[data-section]').forEach(link => {
-        link.addEventListener('click', (e) => {
-          e.preventDefault();
-          const sectionId = link.getAttribute('data-section');
-          const target = document.getElementById(sectionId);
-          if (target) {
-            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          }
-        });
-      });
-
-      // IntersectionObserver로 현재 섹션 추적
-      const sections = document.querySelectorAll('[id^="sec-"]');
-      const navLinks = document.querySelectorAll('.era-tree-link[data-section]');
-
-      const observerOptions = {
-        root: null,
-        rootMargin: '-100px 0px -70% 0px',
-        threshold: 0
-      };
-
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            const id = entry.target.getAttribute('id');
-            navLinks.forEach(link => {
-              if (link.getAttribute('data-section') === id) {
-                navLinks.forEach(l => l.classList.remove('active'));
-                link.classList.add('active');
-              }
-            });
-          }
-        });
-      }, observerOptions);
-
-      sections.forEach(section => observer.observe(section));
     });
   </script>
 </body>
