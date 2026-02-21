@@ -10,8 +10,12 @@
 
 ## 2) 이 문서를 AI에게 어떻게 적용하나
 - 세션 시작 시 아래처럼 한 줄로 지시:
-  - `이 프로젝트는 docs/collaboration_rules.md 기준으로 작업해줘.`
-- 네, 이렇게 하면 Claude에게 읽으라고 지시하는 방식이 맞다.
+  - `이 프로젝트는 docs/project_context.md, docs/collaboration_rules.md, docs/work_change_log.md, docs/github_multi_environment_guide.md 기준으로 작업해줘.`
+- 모델별 전용 문서는 분리 적용:
+  - Codex: `AGENTS.md`
+  - Claude: `CLAUDE.md`
+  - Gemini: `docs/gemini_onboarding.md`
+- 공용 규칙은 모든 모델에 동일 적용하고, 전용 규칙은 해당 모델에만 적용한다.
 
 ## 2.5) AI 아바타/호칭 규칙
 - 사용자 호칭: 모든 AI는 사용자를 `형님`으로 부르고 존댓말 사용.
@@ -136,11 +140,15 @@ git push
 1. `main`: 항상 배포 가능한 안정 상태 유지.
 2. 작업 단위가 크면 `exp-*` 브랜치에서 먼저 실험.
 3. 기능 완료 후 `docs/`에 변경 이유를 3~5줄 기록.
-4. 세션 시작 시 AI에게 프로젝트 컨텍스트도 함께 지시:
-  - `docs/reference/02_프로젝트_컨텍스트_250212_CL.md`
+4. 세션 시작 시 공용 문서를 우선 지시:
+  - `docs/project_context.md`
   - `docs/collaboration_rules.md`
-  - `docs/reference/03_GitHub_멀티환경_가이드_250212_CL.md`
   - `docs/work_change_log.md`
+  - `docs/github_multi_environment_guide.md`
+5. 모델별 전용 규칙은 해당 모델에만 추가 지시:
+  - Codex: `AGENTS.md`
+  - Claude: `CLAUDE.md`
+  - Gemini: `docs/gemini_onboarding.md`
 
 ## 12) 문서 폴더 구조 및 네이밍 규칙
 
