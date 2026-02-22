@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한자 능력 검정 시험 안내 — 한시나루</title>
+    <link rel="stylesheet" href="https://use.typekit.net/dje5vco.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&family=Noto+Serif+KR:wght@200..900&family=Noto+Serif+TC:wght@200..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/shared/styles.css">
+    <style>
+        /* ===== Global Body ===== */
+        body {
+            background: #fff;
+            color: #000;
+            padding-top: 73px;
+        }
+
+        /* ===== Layout 5-a: 좌측 고정 300px + 우측 스크롤 ===== */
+        .layout-5a {
+            display: flex;
+            max-width: 1300px;
+            margin: 0 auto;
+            padding-top: 0;
+            background: #FBFAFA;
+            box-shadow: 5px 0 15px rgba(0, 0, 0, 0.06), -5px 0 15px rgba(0, 0, 0, 0.06);
+        }
+
+        /* ===== Sidebar 300px (sticky) ===== */
+        aside.sidebar {
+            width: 300px;
+            min-width: 300px;
+            display: flex;
+            flex-direction: column;
+            background: #FBFAFA;
+            position: sticky;
+            top: 73px;
+            height: calc(100vh - 73px);
+            overflow-y: auto;
+        }
+        /* Era tree navigation */
+        .era-tree {
+            list-style: none;
+            flex-shrink: 0;
+            padding: 8px 0;
+        }
+
+        .era-tree-item {
+            margin-bottom: 0;
+            padding: 0;
+            font-size: inherit;
+            color: #000;
+            cursor: default;
+            opacity: 1;
+            display: block;
+        }
+
+        .era-tree-item:hover {
+            background: transparent;
+            color: inherit;
+        }
+
+        .era-tree-link {
+            display: block;
+            padding: 5px 30px;
+            font-family: var(--font-ko);
+            font-size: var(--fs-body, 16px);
+            color: #000;
+            text-align: right;
+            cursor: pointer;
+            text-decoration: none;
+            transition: transform 0.4s ease, background 0.4s ease, color 0.4s ease;
+            transform-origin: right center;
+        }
+
+        .era-tree-link:hover:not(.disabled):not(.active) {
+            transform: scale(1.08);
+        }
+
+        .era-tree-link.active {
+            background: #8FA8B2;
+            color: #FBFAFA;
+            font-weight: bold;
+        }
+
+        .era-tree-link.disabled {
+            color: #282828;
+            cursor: not-allowed;
+        }
+
+        /* ===== Content Area: 우측 스크롤 ===== */
+        main.content-area {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .section-inner {
+            padding: 40px 32px 80px;
+        }
+
+        /* ===== Section divider ===== */
+        .section-divider {
+            border: none;
+            border-top: 1px solid var(--c-silver, #c8d3d5);
+            margin: 48px 0;
+        }
+
+        /* ===== Typography ===== */
+        .chapter-title {
+            font-family: var(--font-ko);
+            font-size: var(--fs-lead, 20px);
+            font-weight: bold;
+            margin-bottom: 24px;
+            margin-top: 48px;
+            color: #1C2122;
+            scroll-margin-top: 100px;
+        }
+
+        .chapter-title:first-child {
+            margin-top: 0;
+        }
+
+        .mid-title {
+            font-family: var(--font-zh);
+            font-size: var(--fs-lead, 20px);
+            font-weight: bold;
+            margin-top: 32px;
+            margin-bottom: 16px;
+            color: #1C2122;
+        }
+
+        /* Body text */
+        .era-desc {
+            font-family: var(--font-ko);
+            font-size: var(--fs-body, 18px);
+            color: #000;
+            line-height: 1.9;
+            margin-bottom: 24px;
+        }
+
+        .era-desc .zh {
+            font-family: var(--font-zh);
+        }
+
+        /* Agency section specifically */
+        .agency-wrap {
+            background: #fdfdfd;
+            border: 1px solid var(--c-silver, #c8d3d5);
+            border-radius: 12px;
+            padding: 24px 28px;
+            margin-bottom: 24px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+        }
+
+        .agency-wrap h4 {
+            font-family: var(--font-ko);
+            font-size: 18px;
+            margin-top: 0;
+            margin-bottom: 12px;
+            color: #1C2122;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .agency-wrap .agency-logo {
+            width: 40px;
+            height: 40px;
+            background: #eef2f4;
+            border-radius: 6px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            color: #8FA8B2;
+            font-weight: bold;
+            /* placeholder for logo images */
+        }
+
+        .agency-ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .agency-ul li {
+            margin-bottom: 8px;
+            font-family: var(--font-ko);
+            font-size: 16px;
+            color: #444;
+            line-height: 1.6;
+            padding-left: 14px;
+            position: relative;
+        }
+
+        .agency-ul li::before {
+            content: "-";
+            position: absolute;
+            left: 0;
+            color: #8FA8B2;
+        }
+
+        .agency-link-btn {
+            display: inline-block;
+            margin-top: 16px;
+            padding: 8px 16px;
+            background: #8FA8B2;
+            color: #fff;
+            font-size: 14px;
+            font-family: var(--font-ko);
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background 0.3s;
+        }
+
+        .agency-link-btn:hover {
+            background: #738b95;
+        }
+
+        /* Scroll behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 1024px) {
+            body {
+                overflow: auto;
+            }
+
+            .layout-5a {
+                flex-direction: column;
+                height: auto;
+            }
+
+            aside.sidebar {
+                width: 100%;
+                min-width: 100%;
+                position: relative;
+                top: auto;
+                height: auto;
+            }
+
+            main.content-area {
+                overflow-y: visible;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .section-inner {
+                padding: 24px 16px 48px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav-placeholder"></div>
+
+    <div class="layout-5a">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <ul class="era-tree">
+                <li class="era-tree-item">
+                    <a href="/hanja/" class="era-tree-link">
+                        <span>한자(漢字) 일반</span>
+                    </a>
+                </li>
+                <li class="era-tree-item">
+                    <a href="/hanja/exam/" class="era-tree-link active">
+                        <span>한자능력검정시험</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Content Area -->
+        <main class="content-area">
+            <div class="section-inner">
+
+                <!-- ===================== 시작 ===================== -->
+                <h2 class="chapter-title" id="sec-def" style="margin-top:0;">한자 능력 검정 시험 안내</h2>
+                <p class="era-desc">
+                    대한민국에서 실시되는 한자 능력 검정 시험은 한자어와 한문의 이해 능력을 객관적으로 평가하기 위해 마련된 제도입니다. 유아 및 초등학생의 기초 어휘력 증진부터, 중·고등학생의 학업
+                    성취도 향상, 그리고 대학생 및 일반인의 취업 및 자기계발에 이르기까지 폭넓은 계층이 응시하고 있습니다. 일정 급수 이상의 자격을 취득할 경우, 국가공인 자격으로 인정받아 대학
+                    입수나 기업 채용 과정에서 가산점 등의 혜택을 받을 수 있습니다.
+                </p>
+                <p class="era-desc">
+                    시험은 하나의 국가 기관에서 일괄적으로 주관하는 것이 아니라, 여러 사단법인 및 공인 협회에서 각각의 출제 기준과 배정 한자를 바탕으로 독자적인 시험을 시행하고 있습니다. 따라서
+                    응시자는 자신의 목적과 수준에 가장 적합한 주관 기관과 급수를 선택하여 준비하는 것이 중요합니다.
+                </p>
+
+                <hr class="section-divider">
+
+                <h2 class="chapter-title" id="sec-agencies">주요 주관 기관 및 시험 종류</h2>
+                <p class="era-desc">
+                    현재 국가공인 자격을 부여할 수 있는 대표적인 한자 검정 시험 주관 기관은 다음과 같습니다. 각 기관마다 중시하는 평가 영역(읽기, 쓰기, 실용 한자, 고전 한문 등)이 다소
+                    상이합니다.
+                </p>
+
+                <!-- Agency 1 -->
+                <div class="agency-wrap">
+                    <h4>
+                        <span class="agency-logo">어문회</span>한국어문회 (사단법인 한국어문회)
+                    </h4>
+                    <ul class="agency-ul">
+                        <li><strong>시험명:</strong> 전국한자능력검정시험</li>
+                        <li><strong>특징:</strong> 국내에서 가장 긴 역사와 높은 인지도를 자랑하는 시험입니다. 정통 한문학적 지식을 중시하며, 주관식 문항의 비중이 높아 다른
+                            기관의 시험에 비해 난이도가 상대적으로 높다고 평가받습니다.</li>
+                        <li><strong>급수 체계:</strong> 8급부터 특급까지 총 15개 급수(준급수 포함)로 세분화되어 있습니다.</li>
+                        <li><strong>국가공인:</strong> <strong>준3급 이상</strong> 취득 시 국가공인 자격으로 인정됩니다.</li>
+                    </ul>
+                    <a href="https://www.hanja.re.kr/" target="_blank" class="agency-link-btn">공식 홈페이지 가기 ↗</a>
+                </div>
+
+                <!-- Agency 2 -->
+                <div class="agency-wrap">
+                    <h4>
+                        <span class="agency-logo">검정회</span>대한검정회 (사단법인 대한민국한자교육연구회)
+                    </h4>
+                    <ul class="agency-ul">
+                        <li><strong>시험명:</strong> 한자급수자격검정 (한자급수자격시험)</li>
+                        <li><strong>특징:</strong> 한자와 한자어뿐만 아니라 실생활에서의 활용 및 한자 성어의 이해를 고루 평가합니다. 객관식과 주관식이 혼합된 형태로 출제되며
+                            한국어문회와 함께 가장 많은 응시생을 보유한 기관 중 하나입니다.</li>
+                        <li><strong>급수 체계:</strong> 8급부터 대사범까지 분류됩니다.</li>
+                        <li><strong>국가공인:</strong> <strong>준2급 이상</strong> 취득 시 국가공인으로 인정됩니다.</li>
+                    </ul>
+                    <a href="https://www.hanja.ne.kr/" target="_blank" class="agency-link-btn">공식 홈페이지 가기 ↗</a>
+                </div>
+
+                <!-- Agency 3 -->
+                <div class="agency-wrap">
+                    <h4>
+                        <span class="agency-logo">진흥회</span>한국한자실력평가원 (사단법인 한자교육진흥회)
+                    </h4>
+                    <ul class="agency-ul">
+                        <li><strong>시험명:</strong> 한자실력급수</li>
+                        <li><strong>특징:</strong> 교과서 한자어와 실용 한자어의 비중이 높아 학생들의 어휘력 향상에 초점을 맞추고 있습니다. 문제은행 방식이 일부 적용되며, 쓰기
+                            영역의 부담이 다소 적어 초중고 학생들에게 인기가 많습니다.</li>
+                        <li><strong>급수 체계:</strong> 8급부터 사범까지 있습니다.</li>
+                        <li><strong>국가공인:</strong> <strong>3급 이상</strong> 취득 시 국가공인으로 인정됩니다.</li>
+                    </ul>
+                    <a href="https://www.hanja114.org/" target="_blank" class="agency-link-btn">공식 홈페이지 가기 ↗</a>
+                </div>
+
+                <!-- Agency 4 -->
+                <div class="agency-wrap">
+                    <h4>
+                        <span class="agency-logo">상의</span>대한상공회의소
+                    </h4>
+                    <ul class="agency-ul">
+                        <li><strong>시험명:</strong> 상공회의소한자</li>
+                        <li><strong>특징:</strong> 기업 직무 수행에 필요한 실용한자와 비즈니스 어휘 능력을 평가하는 데 특화되어 있습니다. 100% 객관식(CBT 방식)으로
+                            진행되며 시험 일정이 상시로 있어 응시가 편리하다는 장점이 있습니다.</li>
+                        <li><strong>급수 체계:</strong> 9급부터 1급까지 있습니다 (고급/중급/초급으로 분류 응시).</li>
+                        <li><strong>국가공인:</strong> <strong>3급 이상</strong> 취득 시 국가공인으로 인정됩니다.</li>
+                    </ul>
+                    <a href="https://license.korcham.net/" target="_blank" class="agency-link-btn">상공회의소 자격평가사업단 ↗</a>
+                </div>
+
+                <hr class="section-divider">
+
+                <h2 class="chapter-title" id="sec-levels">급수 체계 및 응시 가이드</h2>
+                <p class="era-desc">
+                    대부분의 시험은 8급(초급)에서 시작하여 1급 또는 사범(고급)으로 올라가는 구조를 가집니다. 일반적으로 초등학생은 8급~4급, 중·고등학생은 3급 내외, 대학생 및 취업 준비생은
+                    2급 이상의 국가공인 급수 취득을 목표로 합니다.
+                </p>
+                <ul
+                    style="padding-left: 20px; font-family: var(--font-ko); font-size: var(--fs-body, 18px); line-height: 1.9; margin-bottom: 24px;">
+                    <li><strong>초급 (8급~6급)</strong>: 기초적인 한자의 음과 훈(뜻)을 익히고, 간단한 단어를 읽을 수 있는 수준입니다. 주로 한문을 처음 접하는 아동이나
+                        초등학교 저학년이 응시합니다.</li>
+                    <li><strong>중급 (5급~4급)</strong>: 일상생활에서 자주 쓰이는 한자어를 이해하고, 기본적인 문장 속에서 한자의 의미를 파악하는 능력을 기릅니다. 초등학교
+                        고학년이나 중학생에게 적합합니다.</li>
+                    <li><strong>고급 (3급~1급 및 사범)</strong>: 신문, 전공 서적 등 전문적인 글을 읽고 이해할 수 있는 수준이며, 복잡한 사자성어와 고전 문헌의 해독 능력이
+                        요구됩니다. 대부분의 기관에서 이 단계부터 <strong>국가공인 자격</strong>을 부여하며 각종 취업 및 승진 심사 시 우대조건이 됩니다.</li>
+                </ul>
+
+            </div>
+        </main>
+    </div>
+
+    <div id="footer-placeholder"></div>
+    <script src="/shared/auth-state.js"></script>
+    <script src="/shared/components.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const currentPath = location.pathname.replace(/\/+$/, '') || '/';
+            document.querySelectorAll('.era-tree-link').forEach(link => {
+                const href = (link.getAttribute('href') || '').replace(/\/+$/, '');
+                if (href === currentPath) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

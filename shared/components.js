@@ -348,6 +348,19 @@
           email: user.email,
           avatar: user.avatar,
         });
+
+        // 프로필 미완성 체크 → /auth/setup/으로 리다이렉트
+        // (auth, privacy, terms 페이지에서는 리다이렉트 안 함)
+        var path = location.pathname;
+        var skipPaths = ['/auth/', '/privacy/', '/terms/'];
+        var shouldCheck = !skipPaths.some(function (p) { return path.startsWith(p); });
+        if (shouldCheck && window.sb) {
+          window.sb.from('profiles').select('profile_completed').eq('id', user.id).single().then(function (res) {
+            if (res.data && res.data.profile_completed !== true) {
+              location.href = '/auth/setup/';
+            }
+          }).catch(function () { /* 컬럼 없으면 무시 */ });
+        }
       }
     }
 

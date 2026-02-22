@@ -1,0 +1,111 @@
+/* =============================================
+   community-layout.css
+   커뮤니티 전체 공용 — 2컬럼 레이아웃 + 사이드바
+   ============================================= */
+
+body {
+  background: #fff;
+  color: #000;
+  padding-top: 73px;
+}
+
+/* ===== Layout (사이드바 + 콘텐츠) ===== */
+.layout-comm {
+  display: flex;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-top: 0;
+  background: #FBFAFA;
+  box-shadow: 5px 0 15px rgba(0,0,0,0.06), -5px 0 15px rgba(0,0,0,0.06);
+}
+
+/* ===== 사이드바 ===== */
+.comm-sidebar {
+  width: 300px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  background: #FBFAFA;
+  position: sticky;
+  top: 73px;
+  height: calc(100vh - 73px);
+  overflow-y: auto;
+}
+
+/* 메뉴 */
+.comm-menu {
+  list-style: none;
+  padding: 32px 0 8px;
+}
+
+.comm-menu-link {
+  display: block;
+  padding: 10px 30px;
+  font-family: var(--font-ko);
+  font-size: var(--fs-body, 16px);
+  color: #000;
+  text-align: right;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.4s ease, background 0.4s ease, color 0.4s ease;
+  transform-origin: right center;
+}
+
+.comm-menu-link:hover {
+  transform: scale(1.08);
+}
+
+.comm-menu-link.active {
+  font-weight: bold;
+}
+
+/* ===== 콘텐츠 영역 ===== */
+.comm-content {
+  flex: 1;
+  min-width: 0;
+  background: #FBFAFA;
+  border-left: 1px solid var(--c-silver, #c8d3d5);
+}
+
+/* 커뮤니티 안에서는 board-body 기본 흰배경·그림자 제거 → 카드만 흰색 */
+.layout-comm .board-body {
+  max-width: none;
+  background: transparent;
+  box-shadow: none;
+}
+
+.layout-comm .news-body {
+  max-width: none;
+}
+
+.layout-comm .comm-inner {
+  background: #fff;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1024px) {
+  .layout-comm {
+    flex-direction: column;
+  }
+  .comm-sidebar {
+    width: 100%;
+    min-width: 100%;
+    position: relative;
+    top: auto;
+    height: auto;
+  }
+  .comm-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 8px 16px;
+  }
+  .comm-menu-link {
+    padding: 8px 16px;
+    text-align: center;
+  }
+  .comm-content {
+    border-left: none;
+    border-top: 1px solid var(--c-silver, #c8d3d5);
+  }
+}

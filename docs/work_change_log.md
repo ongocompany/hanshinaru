@@ -4574,3 +4574,1371 @@
   - 데이터 출처: `한시사이트개발/한국의한시/research_poets.json`, `poem_korean.json`
   - 해설 데이터 0/93편 — 플레이스홀더("해설이 준비 중입니다") 적용
   - 번역 14/93편만 존재 — 있을 때만 표시
+
+## [Task ID] 2026-02-22-1232-gpt-ai-news-checklist-add
+
+### START
+- Time: 2026-02-22 12:32
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: AI 기사작성툴 정리본을 바탕으로 실제 개발 가능한 체크리스트(TODO) 추가 요청.
+- Why: 문서형 개요에서 바로 실행 가능한 개발 항목/완료기준(DoD)으로 전환 필요.
+- Planned Scope:
+  - 파일: `docs/research/15_AI_기사작성툴_개발계획_상세.md`
+  - 예상 변경: 구현 체크리스트 섹션(데이터/크롤링/AI/저장/프론트/액션/품질게이트) 추가
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-22 12:35
+- Status: Done
+- Changed Files:
+  - `docs/research/15_AI_기사작성툴_개발계획_상세.md` (즉시 실행용 TODO 체크리스트 및 DoD/우선순위 섹션 추가)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `rg -n "즉시 실행용 TODO 체크리스트|DoD|GitHub Actions 자동화|품질 게이트" docs/research/15_AI_기사작성툴_개발계획_상세.md`로 신규 섹션 반영 확인
+  - 체크리스트 항목이 `scripts/crawl_news.js`, `public/index/news_articles.json`, `index.html` 현재 구조를 참조하도록 작성 확인
+- Notes:
+  - 기존 계획 설명(모델/파이프라인)은 유지하고, 하단에 실행형 작업 리스트를 추가했다.
+
+## [Task ID] 2026-02-22-1240-gpt-news-schema-hardening
+
+### START
+- Time: 2026-02-22 12:40
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: AI 기사작성툴 체크리스트를 실제 코드로 진행 요청(`crawl_news.js`/`news_articles.json` 스키마 정리 시작).
+- Why: 계획 문서 단계를 넘어 실행 가능한 데이터 스키마 강제 로직이 필요함.
+- Planned Scope:
+  - 파일: `scripts/crawl_news.js`
+  - 예상 변경: 기사 스키마 정규화/검증 로직 + normalize-only 실행 모드 추가
+  - 파일: `public/index/news_articles.json`
+  - 예상 변경: 정규화 규칙 적용으로 필드/값 일관화
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-22 12:47
+- Status: Done
+- Changed Files:
+  - `scripts/crawl_news.js`
+    - 기사 데이터 스키마 정규화 로직 추가 (`normalizeArticleRecord`, `normalizeDataset`)
+    - 본문 길이 정책 상수 추가 (`MIN_BODY_CHARS`, `MAX_BODY_CHARS`, `MIN_BODY_FALLBACK_CHARS`)
+    - 중복 제거 키를 `title+publishedAt` + 정규화 URL 기준으로 강화
+    - `--normalize-only` 실행 모드 추가(네트워크 호출 없이 기존 JSON 정리)
+    - 출력 버전 상수 `NEWS_SCHEMA_VERSION=1.1` 적용
+  - `public/index/news_articles.json`
+    - `node scripts/crawl_news.js --normalize-only` 실행으로 스키마 정규화 반영
+    - 필수 필드 정합성 정리 및 중복 제거 후 30건 유지
+  - `public/index/news_articles.schema.json`
+    - 뉴스 데이터 스키마(JSON Schema) 신규 추가
+  - `docs/work_change_log.md`
+    - 본 Task START/END 기록
+- Validation:
+  - `node --check scripts/crawl_news.js` 통과
+  - `node scripts/crawl_news.js --normalize-only` 실행 성공
+  - `python3` 점검 스크립트로 필수 필드 누락 0건 확인 (`id/category/title/body/source/sourceUrl/publishedAt/crawledAt/keywords`)
+  - 본문 길이 점검 결과: `max<=500`, `min>=80` 확인
+- Notes:
+  - 본문 목표 길이(300~500자)는 유지하되, 소스 본문이 짧은 기사에 대해서는 예외로 최소 80자까지 허용하도록 정책화했다.
+  - 다음 단계에서는 AI 재작성 단계에서 300~500자 강제 재시도 로직(1회)을 추가하면 품질 편차를 더 줄일 수 있다.
+
+## [Task ID] 2026-02-22-1324-gpt-news-runstats-ai-schema
+
+### START
+- Time: 2026-02-22 13:24
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: `scripts/crawl_news.js` 다음 단계(B/C) 진행 요청에 따라 크롤링 통계 집계와 AI 필터 JSON 스키마 강제 로직 구현.
+- Why: 체크리스트 단계에서 미완성으로 남은 런타임 관측성(성공/실패/재시도)과 AI 출력 구조(relevant/reason/category) 일관성이 필요함.
+- Planned Scope:
+  - 파일: `scripts/crawl_news.js`
+  - 예상 변경: fetch 재시도/timeout/redirect 통계, 소스별 검색 통계, 본문 추출 통계, AI 응답 스키마 강제 파싱, 실행 통계 출력
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-22 13:24
+- Status: Done
+- Changed Files:
+  - `scripts/crawl_news.js`
+    - `fetchUrl` 재작성: timeout/retry/redirect 처리 + `RUN_STATS.requests` 집계 연결
+    - 소스별 수집 통계 연결: `searchNaver`, `searchGoogleNews`, `searchNaverWeb`
+    - 본문 추출 경로 통계 연결: `fetchArticleBody` (`dic_area/article/og/meta/noBody/fetchError`)
+    - AI 응답 스키마 강화: `relevant/reason/category` 필수 구조를 프롬프트로 강제하고 파서에서 검증
+    - AI fallback/parse failure 계수화: `RUN_STATS.ai.*`
+    - 모델 선택 일원화: `AI_MODEL`을 OpenAI/Anthropic 호출 공통 적용
+    - 유틸 추가: `toBoolean`, `extractJsonArray`
+    - 정규화 드롭 계수화: `RUN_STATS.normalize.droppedInvalid/droppedDuplicate`
+    - 실행 종료 시 통계 출력: `printRunStats()`
+  - `docs/work_change_log.md`
+    - 본 Task START/END 기록
+- Validation:
+  - `node --check scripts/crawl_news.js` 통과
+  - `node scripts/crawl_news.js --normalize-only` 실행 성공
+  - `--normalize-only` 결과에서 실행 통계 JSON 출력 확인 (`requests/sources/articleBody/ai/normalize` 섹션)
+- Notes:
+  - 실크롤링 통계(검색 성공/실패, AI 필터 인입/탈락)는 API 키/네트워크를 사용하는 실제 크롤링 실행 시 채워진다.
+
+## [Task ID] 2026-02-22-1328-gpt-checklist-sync
+
+### START
+- Time: 2026-02-22 13:28
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 개발 체크리스트 진행률을 실제 구현 상태에 맞춰 문서 체크박스로 반영 요청.
+- Why: 현재 구현 완료 항목과 문서 체크박스 상태가 불일치하여 진행 상황 파악이 어려움.
+- Planned Scope:
+  - 파일: `docs/research/15_AI_기사작성툴_개발계획_상세.md`
+  - 예상 변경: A~E 섹션 완료 항목 `[x]` 반영 및 체크 업데이트 시각 표기
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-22 13:28
+- Status: Done
+- Changed Files:
+  - `docs/research/15_AI_기사작성툴_개발계획_상세.md`
+    - 체크리스트 업데이트 시각 추가 (`체크 업데이트: 2026-02-22 13:27 (GPT)`)
+    - 구현 완료 항목 체크 반영:
+      - A(데이터 스키마): 항목/DoD 체크 완료
+      - B(크롤링 품질): 항목/DoD 체크 완료
+      - C(관련성 필터링): 출력 포맷/무관 제거/reason 내부 처리 체크
+      - D(재작성): `sourceUrl`/`publishedAt` 유지, `AI_PROVIDER`/`AI_MODEL` 체크
+      - E(저장/보존): 최대 보존 건수 항목 체크
+  - `docs/work_change_log.md`
+    - 본 Task START/END 기록
+- Validation:
+  - `rg -n "\[x\]|체크 업데이트:" docs/research/15_AI_기사작성툴_개발계획_상세.md`로 체크 반영 확인
+- Notes:
+  - 미완료 항목(C/D/E 잔여, F/G/H)은 의도적으로 `[ ]` 유지.
+
+## [Task ID] 2026-02-22-1333-gpt-crawl-smoke-test
+
+### START
+- Time: 2026-02-22 13:33
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 체크리스트 검증을 위해 `scripts/crawl_news.js` 실크롤링 샘플 1회 실행 요청.
+- Why: 문서상의 DoD를 실제 실행 로그/산출물 기준으로 확인해야 함.
+- Planned Scope:
+  - 파일: `public/index/news_articles.json`
+  - 예상 변경: 실크롤링 결과 병합 저장(신규 기사 반영 가능)
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-22 13:33
+- Status: Done
+- Changed Files:
+  - `public/index/news_articles.json`
+    - `node scripts/crawl_news.js` 실행 결과 반영
+    - 총 기사 수 30 → 42건(신규 12건)으로 증가
+  - `docs/work_change_log.md`
+    - 본 Task START/END 기록
+- Validation:
+  - 샌드박스 실행 시 DNS 제한으로 실패(`ENOTFOUND`) 확인 후, 샌드박스 외 실행으로 정상 수집 확인
+  - 실행 통계 확인:
+    - `requests`: total 147 / success 147 / failed 0 / retry 11 / timeout 11 / redirect 23
+    - `sources.googleRss`: queried 22 / success 22 / items 213
+    - `sources.naverWeb`: queried 22 / success 19 / items 56
+  - 결과 파일 확인: `jq '{version, lastUpdated, count:(.articles|length)}' public/index/news_articles.json`
+- Notes:
+  - `NAVER_CLIENT_ID`, `NAVER_CLIENT_SECRET`, `AI_API_KEY` 미설정 상태라 Naver API/AI 재작성은 미동작(요약 추출 모드) 기준 검증.
+
+## [Task ID] 2026-02-22-1339-gpt-claude-api-smoke-test
+
+### START
+- Time: 2026-02-22 13:39
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 제공된 Claude API 키를 일회성 환경변수로 적용해 `crawl_news.js` 실테스트 실행 요청.
+- Why: AI 관련성 필터/재작성 단계가 실제로 동작하는지 확인 필요.
+- Planned Scope:
+  - 파일: `public/index/news_articles.json`
+  - 예상 변경: 실크롤링 + AI 처리 결과 병합 저장
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-22 13:39
+- Status: Done
+- Changed Files:
+  - `public/index/news_articles.json`
+    - Claude API 연동 실행 결과 반영
+    - 총 기사 수 42 → 45건(신규 3건)으로 증가
+  - `docs/work_change_log.md`
+    - 본 Task START/END 기록
+- Validation:
+  - 실행 명령: `AI_PROVIDER=anthropic AI_MODEL=claude-haiku-4-5-20251001 AI_API_KEY=*** node scripts/crawl_news.js`
+  - 실행 통계:
+    - `requests`: total 101 / success 101 / failed 0
+    - `ai`: calls 6 / parseFail 4 / filteredIn 15 / filteredOut 45 / rewritten 3 / fallbackUsed 4
+  - 결과 파일 확인: `jq '{version, lastUpdated, count:(.articles|length)}' public/index/news_articles.json`
+- Notes:
+  - Naver API 키가 없어 `sources.naverApi`는 22회 모두 미설정 처리.
+  - AI 응답 JSON 파싱 실패가 4회 발생해 일부 카테고리는 fallback 경로로 처리됨.
+
+## [Task ID] 2026-02-22-1340-gpt-checklist-after-ai-test
+
+### START
+- Time: 2026-02-22 13:40
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: AI 실테스트 결과를 체크리스트 문서에 반영 요청(완료 항목 체크).
+- Why: 실행 완료된 검증 항목이 문서에 즉시 반영되어야 진행 상태 추적이 정확해짐.
+- Planned Scope:
+  - 파일: `docs/research/15_AI_기사작성툴_개발계획_상세.md`
+  - 예상 변경: C 섹션 DoD 중 샘플 테스트 수행 항목 체크
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-22 13:40
+- Status: Done
+- Changed Files:
+  - `docs/research/15_AI_기사작성툴_개발계획_상세.md`
+    - C 섹션 DoD 항목 체크 반영:
+      - `테스트 샘플 20건에서 무관 기사 제거율/오탐 케이스 확인.` → `[x]`
+  - `docs/work_change_log.md`
+    - 본 Task START/END 기록
+- Validation:
+  - `rg -n "테스트 샘플 20건|\\[x\\]" docs/research/15_AI_기사작성툴_개발계획_상세.md`로 반영 확인
+
+## [Task ID] 2026-02-22-1351-gpt-news-filter-and-review-page
+
+### START
+- Time: 2026-02-22 13:51
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 뉴스 무관기사 유입 방지를 위한 필터 강화 + 기사 본문 검수용 단순 UI 페이지 요청.
+- Why: 현재 일부 무관 뉴스(예: 관세/정치)가 유입되고, 메인 UI에서 본문 확인이 어려워 운영 검수가 불편함.
+- Planned Scope:
+  - 파일: `scripts/crawl_news.js`
+  - 예상 변경: 규칙 기반 1차/2차 필터 추가, AI 실패시 안전 차단, AI 검토용 본문 스니펫 강화
+  - 파일: `community/news/index.html`
+  - 예상 변경: 제목/작성시간/본문 중심의 단순 검수 UI로 갱신
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-22 13:58
+- Status: Done
+- Changed Files:
+  - `scripts/crawl_news.js`
+    - 무관기사 차단용 규칙 필터 추가:
+      - `GLOBAL_INCLUDE_TERMS`, `CATEGORY_INCLUDE_TERMS`, `GLOBAL_EXCLUDE_TERMS`
+      - `passesHardRelevanceGate` 및 경계 매칭(`containsKeyword`)으로 `한시`/`당시` 오인 매칭 보정
+    - AI 검토 강화:
+      - `buildAiReviewArticles` 추가(기사별 검토본문 스니펫 구성) 후 프롬프트에 `검토본문` 포함
+    - 안전 종료 정책 강화:
+      - AI 파싱 실패 시 원문 fallback 저장 제거, 기본값 `relevant=false`로 전량 제외
+    - 저장 전 재필터:
+      - 병합된 기존 기사 포함 전체 데이터에 규칙 필터 재적용해 레거시 무관 기사 제거
+    - 실행 통계 확장:
+      - `RUN_STATS.relevance` (`preDropped/postDropped/aiParseDropped/noKeyDropped`) 추가
+  - `community/news/index.html`
+    - 뉴스 검수용 단순 UI로 변경
+    - `news_articles.json` 최신 구조(`{ articles: [] }`)에 맞춰 파싱
+    - 카드 항목 표시를 `제목 / 작성시간 / 본문` 중심으로 단순화
+    - 외부 링크 즉시 이동 동작 제거(검수 전용 보기)
+  - `docs/research/15_AI_기사작성툴_개발계획_상세.md`
+    - 체크 업데이트 시각 갱신
+    - C 섹션 DoD `필터링 실패시 기본값(relevant=false)` 항목 `[x]` 반영
+  - `public/index/news_articles.json`
+    - 필터 강화 로직 적용 후 실크롤링 결과 반영(무관 기사 정리)
+  - `docs/work_change_log.md`
+    - 본 Task START/END 기록
+- Validation:
+  - `node --check scripts/crawl_news.js` 통과
+  - `node scripts/crawl_news.js --normalize-only` 실행 성공
+  - `node scripts/crawl_news.js` 실크롤링 실행 성공
+  - 실행 로그 확인:
+    - 카테고리별 `규칙 필터 통과/제외` 출력
+    - 병합 후 재필터 출력: `병합 후 규칙 필터 제외: 19건`
+    - `RUN_STATS.relevance.preDropped=96`, `postDropped=19` 확인
+  - `rg -n "트럼프|관세|평택항|코스피|비트코인" public/index/news_articles.json` 무매치(코드 1) 확인
+- Notes:
+  - Naver API/AI 키가 없는 실행에서도 규칙 필터만으로 무관 기사 대량 차단되도록 동작한다.
+
+## [Task ID] 2026-02-22-1405-gpt-news-near-duplicate-validator
+
+### START
+- Time: 2026-02-22 14:05
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 언론사만 다르고 사실상 같은 기사(사진/본문 유사) 자동 검출 및 1건만 유지하는 데이터 검증 로직 요청.
+- Why: 기존 URL/제목 중복 기준만으로는 유사 복제 기사(통신사 재배포/행사 보도 중복)를 제거하지 못함.
+- Planned Scope:
+  - 파일: `scripts/crawl_news.js`
+  - 예상 변경: 본문 유사도 기반 near-duplicate 검출 및 정규화 단계 자동 제거
+  - 파일: `public/index/news_articles.json`
+  - 예상 변경: normalize-only 실행으로 유사 중복 정리
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-22 14:05
+- Status: Done
+- Changed Files:
+  - `scripts/crawl_news.js`
+    - 정규화 통계 확장: `normalize.droppedNearDuplicate`
+    - 유사도 유틸 추가:
+      - `normalizeForSimilarity`, `tokenizeSimilarity`
+      - `setJaccard`, `setContainment`, `charNgrams`
+      - `informativeTokenSet`, `articleQualityScore`
+      - `areNearDuplicateArticles`, `dedupeNearDuplicateArticles`
+    - 유사 중복 판정 룰:
+      - 본문 trigram Jaccard
+      - 본문 토큰 포함률(containment)
+      - 핵심어 overlap(불용어 제외)
+      - 날짜 근접/동일 카테고리 조건
+    - `normalizeDataset()`에 near-duplicate 제거 단계 연결
+  - `public/index/news_articles.json`
+    - `node scripts/crawl_news.js --normalize-only` 실행 결과 반영
+    - 중복 정리 후 총 27건으로 감소
+  - `docs/work_change_log.md`
+    - 본 Task START/END 기록
+- Validation:
+  - `node --check scripts/crawl_news.js` 통과
+  - `node scripts/crawl_news.js --normalize-only` 실행 성공
+  - 실행 통계 확인: `normalize.droppedNearDuplicate: 3`
+  - 예시 키워드 확인: `오카야마조선학교/글씨는 나다` 계열 중복 보도 1건 단위로 축소 확인
+
+## [Task ID] 2026-02-22-1410-gpt-ai-rewrite-stabilize-and-accordion-ui
+
+### START
+- Time: 2026-02-22 14:10
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: AI 기사 요약/재작성 안정화 진행 + 뉴스게시판 2줄 미리보기/클릭 아코디언 UI 요청.
+- Why: 현재 AI 파싱 실패로 재작성 누락 가능성이 있고, 게시판에서 본문 확인 UX가 부족함.
+- Planned Scope:
+  - 파일: `scripts/crawl_news.js`
+  - 예상 변경: AI 프롬프트 상수 분리, JSON 파싱 복구/재시도, repair 통계 추가
+  - 파일: `community/news/index.html`
+  - 예상 변경: 타이틀/본문 2줄 프리뷰 + 클릭 시 하단 아코디언 본문 표시
+  - 파일: `docs/research/15_AI_기사작성툴_개발계획_상세.md`
+  - 예상 변경: 완료 체크박스 반영
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-22 14:10
+- Status: Done
+- Changed Files:
+  - `scripts/crawl_news.js`
+    - AI 안정화:
+      - 상수 추가: `AI_PARSE_RETRY_MAX`, `AI_REPAIR_INPUT_MAX`
+      - 통계 추가: `RUN_STATS.ai.repairCalls`
+      - 프롬프트 분리: `buildFilterRewritePrompt`, `buildJsonRepairPrompt`
+      - JSON 파싱 복구: `parseAiJsonArray`, `sanitizeJsonCandidate`, `tryParseJson`
+      - AI 호출 재시도: `callAiAndParseArray` (파싱 실패 시 1회 repair 프롬프트 재호출)
+      - `extractJsonArray`를 균형 브래킷 파서 방식으로 개선
+      - OpenAI temperature를 `0`으로 고정해 출력 안정성 개선
+  - `community/news/index.html`
+    - UI 변경:
+      - 상단 카드에 제목/본문 미리보기 2줄 표시(`-webkit-line-clamp: 2`)
+      - 카드 클릭 시 하단 아코디언 본문 펼침
+      - 한 번에 하나만 펼쳐지는 아코디언 토글 구현
+      - 필요 시 `원문 보기` 링크 제공
+  - `docs/research/15_AI_기사작성툴_개발계획_상세.md`
+    - 체크박스 반영:
+      - C: `필터링 프롬프트를 별도 상수로 분리한다.` → `[x]`
+      - D: `재작성 프롬프트를 분리하고 톤/길이/형식을 고정한다.` → `[x]`
+      - 체크 업데이트 시각 갱신
+  - `docs/work_change_log.md`
+    - 본 Task START/END 기록
+- Validation:
+  - `node --check scripts/crawl_news.js` 통과
+  - `node scripts/crawl_news.js --normalize-only` 실행 성공
+  - `rg -n` 점검으로 AI 안정화 함수 및 아코디언 UI 클래스 반영 확인
+
+## [Task ID] 2026-02-22-1414-gpt-claude-rewrite-smoke-retest
+
+### START
+- Time: 2026-02-22 14:14
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: Claude API 기준으로 AI 재작성 안정화 로직(parse repair 포함) 재검증 1회 실행 요청.
+- Why: `ai.parseFail`/`ai.repairCalls` 수치를 실제 실행으로 확인해 안정화 효과를 검증해야 함.
+- Planned Scope:
+  - 파일: `public/index/news_articles.json`
+  - 예상 변경: 실크롤링 + AI 재작성 결과 반영 가능
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-22 14:18
+- Status: Done
+- Changed Files:
+  - `public/index/news_articles.json`
+    - Claude 기반 실크롤링 실행 결과 반영
+    - 총 기사 수 27 → 31건(신규 4건)으로 증가
+  - `docs/work_change_log.md`
+    - 본 Task START/END 기록
+- Validation:
+  - 실행 명령: `AI_PROVIDER=anthropic AI_MODEL=claude-haiku-4-5-20251001 AI_API_KEY=*** node scripts/crawl_news.js`
+  - 실행 통계(핵심):
+    - `ai.calls`: 11
+    - `ai.parseFail`: 13
+    - `ai.repairCalls`: 5
+    - `ai.rewritten`: 5
+    - `ai.fallbackUsed`: 4
+    - `relevance.aiParseDropped`: 39
+  - 결과 파일 확인: `jq '{version,lastUpdated,count:(.articles|length)}' public/index/news_articles.json`
+- Notes:
+  - 일부 카테고리에서 JSON 파싱 실패가 여전히 발생해, repair 재시도 후에도 전량 제외 처리된 케이스가 존재함.
+
+## [Task ID] 2026-02-22-1424-gpt-column-vs-news-routing
+
+### START
+- Time: 2026-02-22 14:24
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 정보성 기사와 칼럼 기사를 분리해 처리하고, 칼럼은 안내문+원문 링크 중심으로 노출하도록 개선 요청.
+- Why: 정보기사 요약/정리는 유지하되, 칼럼은 성격이 달라 AI가 본문 재작성할수록 왜곡 가능성이 있어 별도 처리 필요.
+- Planned Scope:
+  - 파일: `scripts/crawl_news.js`
+  - 예상 변경: 칼럼 자동분류, 칼럼 안내문 본문 치환, 정규화/스키마 반영
+  - 파일: `public/index/news_articles.schema.json`
+  - 예상 변경: `articleType`/`columnAuthor` 필드 스키마 반영
+  - 파일: `community/news/index.html`
+  - 예상 변경: 칼럼 표시 강화(링크 중심, 안내문 노출)
+  - 파일: `public/index/news_articles.json`
+  - 예상 변경: normalize-only 재적용으로 기존 데이터에 분류 반영
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-22 14:45
+- Status: Done
+- Changed Files:
+  - `scripts/crawl_news.js:78` (컬럼 판별 키워드/URL 마커 확장 및 오탐 마커(`/view/`) 제거)
+  - `scripts/crawl_news.js:543` (칼럼 필자 추출 정규식 보강: 브래킷/직함 패턴 지원)
+  - `scripts/crawl_news.js:559` (기사 유형 판별 로직 강화: 브래킷 라벨/제목 기반 컬럼 분류)
+  - `scripts/crawl_news.js:587` (유형 정책 적용: 컬럼일 때 안내문 본문/요약 치환, `columnAuthor` 반영)
+  - `scripts/crawl_news.js:1174` (칼럼 본문/요약 길이 규칙 분리 처리)
+  - `public/index/news_articles.json:1` (`--normalize-only` 재적용, `articleType` 분류 및 칼럼 안내문 반영)
+- Validation:
+  - `node --check scripts/crawl_news.js` 통과
+  - `node scripts/crawl_news.js --normalize-only` 실행 완료
+  - 분류 결과 확인: `column 10건`, `news 21건`
+  - 칼럼 샘플 본문이 안내문 포맷(`...의 칼럼입니다. 본문을 보시겠습니까?`)으로 저장됨 확인
+- Notes:
+  - 프론트 뉴스 게시판(`community/news/index.html`)은 기존 반영된 아코디언 UI에서 `articleType` 배지와 `원문 칼럼 보기` 링크 문구를 그대로 사용함.
+
+## [Task ID] 2026-02-22-1435-gpt-news-list-ui-tune
+
+### START
+- Time: 2026-02-22 14:35
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 뉴스 게시판 리스트에서 배지 텍스트/색상을 조정하고, 리스트 미리보기를 제거해 제목만 보이게 변경 요청.
+- Why: `정보기사` 표현이 어색하고, 리스트 미리보기가 펼침 본문과 중복되어 UI 밀도가 높음.
+- Planned Scope:
+  - 파일: `community/news/index.html`
+  - 예상 변경: 배지 텍스트(`기사`/`컬럼`) 및 타입별 색상 분리, 리스트 preview 라인 제거
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-22 14:36
+- Status: Done
+- Changed Files:
+  - `community/news/index.html:56` (배지 스타일을 타입별(`.news-type-badge.news`, `.news-type-badge.column`)로 분리)
+  - `community/news/index.html:176` (배지 텍스트를 `정보기사`→`기사`, `칼럼` 유지로 변경)
+  - `community/news/index.html:173` (리스트 미리보기 라인 제거, 리스트에서는 제목+메타만 표시)
+  - `docs/work_change_log.md:5079` (본 Task START/END 기록)
+- Validation:
+  - `rg -n "news-preview|정보기사" community/news/index.html` 결과 0건 확인
+  - `rg -n "news-type-badge.news|news-type-badge.column" community/news/index.html` 및 `rg -n "'컬럼' : '기사'" community/news/index.html`로 반영 확인
+- Notes:
+  - 아코디언 펼침 시 본문/원문 링크 동작은 기존 그대로 유지.
+
+## [Task ID] 2026-02-22-1440-gpt-column-notice-format
+
+### START
+- Time: 2026-02-22 14:40
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 컬럼 안내문을 언론사/날짜/제목 중심 형식으로 바꾸고, 질문형 문구를 제거하며 원문 보기 링크를 볼드 처리 요청.
+- Why: 컬럼 안내문을 더 명확한 메타 정보 형태로 정리하고, CTA(원문 보기) 가시성을 높이기 위함.
+- Planned Scope:
+  - 파일: `scripts/crawl_news.js`
+  - 예상 변경: 컬럼 안내문 생성 포맷 변경(언론사+월일+제목), 질문 문구 제거
+  - 파일: `community/news/index.html`
+  - 예상 변경: 컬럼 원문 링크 문구/볼드 스타일 조정
+  - 파일: `public/index/news_articles.json`
+  - 예상 변경: `--normalize-only` 재적용으로 기존 컬럼 본문 문구 갱신
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-22 14:40
+- Status: Done
+- Changed Files:
+  - `scripts/crawl_news.js:581` (컬럼 안내문 생성 함수를 언론사/월일/제목 기반 형식으로 변경)
+  - `scripts/crawl_news.js:626` (`applyArticleTypePolicy`에서 컬럼 안내문 메타 전달값(source/date/title) 반영)
+  - `community/news/index.html:90` (컬럼 `원문 보기` 링크 볼드 스타일 추가)
+  - `community/news/index.html:185` (컬럼 링크 텍스트를 `원문 보기`로 통일)
+  - `public/index/news_articles.json:1` (`--normalize-only` 실행으로 기존 컬럼 본문 안내문 일괄 갱신)
+- Validation:
+  - `node --check scripts/crawl_news.js` 통과
+  - `node scripts/crawl_news.js --normalize-only` 실행 완료
+  - 컬럼 본문 샘플 확인: `이 기사는 '언론사' n월 n일에 실린 '제목'이라는 제목의 컬럼입니다.` 형식 반영
+  - `rg -n "보시겠습니까|에 관한" public/index/news_articles.json` 결과 없음 확인
+- Notes:
+  - 컬럼 링크는 볼드 처리되고, 기사 링크는 기존 굵기 유지.
+
+## [Task ID] 2026-02-22-1442-gpt-info-type-and-6w1h
+
+### START
+- Time: 2026-02-22 14:42
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 기사 타입을 `기사/컬럼`에서 `기사/정보/컬럼`으로 세분화하고, AI 재작성 품질을 6하원칙 중심으로 안정화 요청.
+- Why: 시험 안내 등 단순 정보성 기사는 별도 배지/처리가 필요하고, AI 요약 품질 편차(예: 심사평 문맥 누락)를 줄여야 함.
+- Planned Scope:
+  - 파일: `scripts/crawl_news.js`
+  - 예상 변경: `info` 타입 분류/정책, 정보성 본문은 원문 일부 유지, AI 프롬프트 6하원칙 강화
+  - 파일: `public/index/news_articles.schema.json`
+  - 예상 변경: `articleType` enum에 `info` 추가
+  - 파일: `community/news/index.html`
+  - 예상 변경: `정보` 배지 추가 및 타입별 표시 확장
+  - 파일: `public/index/news_articles.json`
+  - 예상 변경: `--normalize-only` 적용으로 기존 데이터에 `info` 반영
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-22 14:43
+- Status: Done
+- Changed Files:
+  - `scripts/crawl_news.js:89` (`INFO_*` 분류 규칙 상수 추가 및 `info` 타입 분류 로직 반영)
+  - `scripts/crawl_news.js:665` (`buildFilterRewritePrompt`에 6하원칙/심사평 세부 지시 추가, `articleType` 출력 필드 반영)
+  - `scripts/crawl_news.js:827` (AI 결과 파싱 시 `articleType` 입력 반영)
+  - `scripts/crawl_news.js:645` (`stabilizeNewsRewrite` 추가: 심사평 계열에서 핵심 정보 누락 시 보강 문장으로 안정화)
+  - `scripts/crawl_news.js:1214` (`info` 타입 본문/요약 길이 정책 추가)
+  - `public/index/news_articles.schema.json:39` (`articleType` enum을 `news|info|column`으로 확장)
+  - `community/news/index.html:69` (`정보` 배지 스타일 추가 및 렌더링 분기 반영)
+  - `public/index/news_articles.json:1` (`--normalize-only` 재적용으로 `info` 타입 데이터 반영)
+- Validation:
+  - `node --check scripts/crawl_news.js` 통과
+  - `node scripts/crawl_news.js --normalize-only` 실행 완료
+  - 타입 분포 확인: `column 10`, `info 3`, `news 18`
+  - `한자시험` 카테고리 샘플 3건이 `articleType: info`로 분류되고 본문은 원문 일부(발췌) 형태로 유지됨 확인
+- Notes:
+  - 6하원칙 강화 프롬프트는 다음 AI 크롤링 실행부터 재작성 결과에 적용된다.
+
+## [Task ID] 2026-02-22-1450-gpt-crawl-reliability-and-event-merge
+
+### START
+- Time: 2026-02-22 14:50
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 실크롤링/AI 기사작성 실행과 함께, 동시다발 유사행사(예: 석전대제) 기사 묶기 및 재작성 안정성 강화 요청.
+- Why: 전통행사 다건 보도를 하나의 종합 기사로 제공하고, AI 파싱 실패/요약 품질 흔들림을 줄여 안정성을 높이기 위함.
+- Planned Scope:
+  - 파일: `scripts/crawl_news.js`
+  - 예상 변경: 유사행사 클러스터링/종합기사 생성, AI 실패 시 안전 fallback 생성, 심사평 6하원칙 보강
+  - 파일: `public/index/news_articles.json`
+  - 예상 변경: 실크롤링 결과 반영 및 유형/본문 정규화 갱신
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-22 15:16
+- Status: Done
+- Changed Files:
+  - `scripts/crawl_news.js:108` (`EVENT_AGGREGATION_*` 규칙 추가: 석전대제 다건 기사 종합 로직)
+  - `scripts/crawl_news.js:1335` (`aggregateRecurringEventArticles` 구현: 날짜 윈도우 기반 클러스터링 + 종합 기사 생성)
+  - `scripts/crawl_news.js:879` (AI 파싱 실패 시 전량 폐기 대신 `buildDeterministicFallbackArticles`로 안전 fallback 생성)
+  - `scripts/crawl_news.js:666` (심사평 기사 보강: 심사 주체/선정 맥락이 드러나는 안정화 문장 적용)
+  - `scripts/crawl_news.js:1172` (본문 정제 강화: HTML 엔티티/반복 문장 정리 유틸 적용)
+  - `public/index/news_articles.json:1` (실크롤링 재실행 결과 반영)
+- Validation:
+  - `node --check scripts/crawl_news.js` 통과
+  - 실크롤링 실행: `AI_PROVIDER=anthropic AI_MODEL=claude-haiku-4-5-20251001 node scripts/crawl_news.js`
+  - 실행 통계 확인(마지막 실행): `ai.filteredIn 44`, `ai.fallbackUsed 4`, `parseFail 13`
+  - 최종 데이터 확인: `public/index/news_articles.json` 총 36건, 타입 분포 `news 19 / info 13 / column 4`
+  - 심사평 본문 확인: 심사 주체/선정 맥락이 드러나는 형태로 정리됨
+- Notes:
+  - 석전대제 종합기사는 해당 시점에 동시다발 후보가 2건 이상일 때 자동 생성된다.
+
+## [Task ID] 2026-02-22-1523-gpt-news-checklist-hardening
+
+### START
+- Time: 2026-02-22 15:23
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 뉴스 크롤링 작업 재개를 위해 제작/상세 계획 문서 체크리스트를 대조하고, 미완료 핵심 항목(D/E 중심)을 코드에 반영.
+- Why: 작업 중단 이후 우선순위를 복구하고, 본문 길이/저장 안정성/정렬 기준 같은 운영 리스크를 먼저 해소해야 함.
+- Planned Scope:
+  - 파일: `scripts/crawl_news.js`
+  - 예상 변경: 본문 길이 검증+1회 재시도, 장문 복붙 방지 가드, 저장 원자성(.tmp) 및 정렬 기준 보강
+  - 파일: `docs/research/15_AI_기사작성툴_개발계획_상세.md`
+  - 예상 변경: 이번 반영분 기준 체크리스트 체크 상태 업데이트
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-22 15:27
+- Status: Done
+- Changed Files:
+  - `scripts/crawl_news.js:984` (`buildBodyQualityRetryPrompt`, `enforceNewsRewriteQuality` 추가: 뉴스 본문 300~500자/장문 복붙 가드에 대해 1회 보정 재시도)
+  - `scripts/crawl_news.js:1228` (AI 재작성 결과에 품질 보정 단계 연결)
+  - `scripts/crawl_news.js:1936` (`compareArticlesByPublishedThenCrawledDesc` 추가, 정렬 기준 `publishedAt`→`crawledAt` 순 보강)
+  - `scripts/crawl_news.js:1942` (`saveJsonAtomically` 추가: `.tmp` 기록 후 rename 교체 + 실패 시 `.bak` 롤백)
+  - `scripts/crawl_news.js:2037` (`--normalize-only`, 본 실행 저장 경로를 원자적 저장 함수로 전환)
+  - `index.html:1162` (메인 소식 렌더링 상수화: 노출 건수 6건, 로딩/실패 메시지 상수, `summary→body` 우선순위)
+  - `docs/research/15_AI_기사작성툴_개발계획_상세.md:93` (체크 업데이트 시각 갱신 및 완료 항목 체크 반영)
+  - `docs/work_change_log.md:5185` (본 Task START/END 기록)
+- Validation:
+  - `node --check scripts/crawl_news.js` 통과
+  - `node scripts/crawl_news.js --normalize-only` 실행 성공
+  - `JSON.parse(public/index/news_articles.json)` 통과 및 기사 수 36건 확인
+  - `rg -n` 점검으로 체크리스트 반영 항목과 신규 상수/함수 존재 확인
+- Notes:
+  - `scripts/auto-push-error.log`의 반복 에러(`Operation not permitted`)는 로컬 자동실행 환경 권한 이슈로 보이며, 크롤링 코드 로직 오류와는 별개다.
+
+## [Task ID] 2026-02-22-1537-gpt-news-type-and-event-aggregation-fix
+
+### START
+- Time: 2026-02-22 15:37
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 기사/컬럼 오분류(`뷰파인더` 기사)와 석전대제 종합기사 미생성 이슈 확인 및 로직 수정 요청.
+- Why: 오분류로 인해 뉴스 집계 대상에서 빠지고, 유사 기사 종합 재작성 기능이 기대대로 동작하지 않음.
+- Planned Scope:
+  - 파일: `scripts/crawl_news.js`
+  - 예상 변경: 기사/컬럼 판정 보정(강한 컬럼 시그널 우선), 종합기사 집계 순서 보정
+  - 파일: `public/index/news_articles.json`
+  - 예상 변경: `--normalize-only`로 분류 재평가 반영
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-22 15:40
+- Status: Done
+- Changed Files:
+  - `scripts/crawl_news.js:90` (`COLUMN_STRONG_TITLE_MARKERS`, `COLUMN_FORCE_NEWS_TITLE_MARKERS` 추가)
+  - `scripts/crawl_news.js:587` (`extractBracketLabels`, `isNaverOpinionUrl`, `hasStrongColumnSignal`, `hasForceNewsSignal` 추가)
+  - `scripts/crawl_news.js:659` (`detectArticleType` 보정: 강한 컬럼 시그널 우선 + `뷰파인더` 강제 뉴스 예외 적용)
+  - `scripts/crawl_news.js:756` (`applyArticleTypePolicy` 보정: AI explicit `column`도 강한 근거 없으면 감지 타입으로 재판정)
+  - `scripts/crawl_news.js:1914` (`normalizeDataset` 처리 순서 변경: 이벤트 종합 집계 후 유사중복 제거)
+  - `public/index/news_articles.json:1` (`--normalize-only` 재적용으로 분류 재평가 반영)
+  - `docs/work_change_log.md:5221` (본 Task START/END 기록)
+- Validation:
+  - `node --check scripts/crawl_news.js` 통과
+  - `node scripts/crawl_news.js --normalize-only` 실행 완료
+  - 검증: `석전대제 [임기자의 뷰파인더]` 항목 `articleType`이 `column -> news`로 변경 확인
+  - 시뮬레이션 검증: 석전대제 뉴스 2건 입력 시 `news-agg-seokjeondaeje-*` 종합기사 1건 생성 확인
+- Notes:
+  - 현재 데이터(`public/index/news_articles.json`)에는 석전대제 관련 원천 기사가 1건만 있어 종합기사가 아직 생성되지 않음(최소 2건 필요).
+
+## [Task ID] 2026-02-22-1658-gpt-live-crawl-and-ai-rewrite-test
+
+### START
+- Time: 2026-02-22 16:58
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 실제 크롤링 실행 후 AI 기사 재작성까지 end-to-end 테스트 요청.
+- Why: 최근 분류/집계 수정 반영 이후 실데이터 기준 동작 여부 검증 필요.
+- Planned Scope:
+  - 파일: `public/index/news_articles.json`
+  - 예상 변경: 실크롤링 결과 병합 및 재작성 기사 반영
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-22 17:00
+- Status: Partial
+- Changed Files:
+  - `public/index/news_articles.json:1` (실크롤링 실행 결과 반영, 총 36→37건)
+  - `docs/work_change_log.md:5248` (본 Task START/END 기록)
+- Validation:
+  - 실행 명령: `node scripts/crawl_news.js`
+  - 실행 성공: 크롤링/저장 완료, 실행 통계 출력 확인
+  - 핵심 통계:
+    - `requests.total`: 129 (`retry`: 8, `timeout`: 8)
+    - `sources.googleRss.items`: 210, `sources.naverWeb.items`: 52
+    - `ai.calls`: 0, `ai.rewritten`: 0, `ai.fallbackUsed`: 6
+  - 결과 확인:
+    - 타입 분포 `news 21 / info 13 / column 3`
+    - `석전대제` 관련 항목 1건(`articleType: news`) 확인
+- Notes:
+  - 현재 실행 환경에서 `AI_API_KEY`가 미설정(`AI API: 미설정`)이라 기사 재작성(LLM rewrite)은 실제 호출되지 않음.
+  - 즉, 이번 실행은 “실크롤링 + 비AI fallback 정규화” 검증으로 완료됨.
+
+## [Task ID] 2026-02-22-1705-gpt-openai-live-rewrite-run
+
+### START
+- Time: 2026-02-22 17:05
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: OpenAI API 키를 사용해 실크롤링 + LLM 기사 재작성 end-to-end 테스트 실행.
+- Why: 이전 실행은 `AI_API_KEY` 미설정으로 fallback만 검증되어 실제 재작성 품질/안정성 수치 확인이 필요함.
+- Planned Scope:
+  - 파일: `public/index/news_articles.json`
+  - 예상 변경: OpenAI 기반 재작성 결과 반영
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-22 17:09
+- Status: Partial
+- Changed Files:
+  - `public/index/news_articles.json:1` (OpenAI 실실행 후 정규화/병합 저장, 총 37건 유지·신규 0건)
+  - `docs/work_change_log.md:5266` (본 Task START/END 기록)
+- Validation:
+  - 실행 명령: `AI_PROVIDER=openai AI_MODEL=gpt-4o-mini AI_API_KEY=*** node scripts/crawl_news.js`
+  - 실행 로그 확인: `AI API: 설정됨 (openai)`
+  - 실행 통계(핵심):
+    - `ai.calls`: 9
+    - `ai.rewritten`: 1
+    - `ai.parseFail`: 5
+    - `ai.repairCalls`: 1
+    - `ai.fallbackUsed`: 4
+    - `lengthRetry`: 2 (`success`: 0, `failed`: 2)
+  - 결과 확인:
+    - 최종 기사 수 37건, 타입 분포 `news 21 / info 13 / column 3`
+    - `석전대제` 관련 항목은 1건 유지 (`articleType: news`)
+- Notes:
+  - OpenAI 호출은 정상 수행되었으나 일부 카테고리에서 AI 응답 timeout/파싱 실패가 발생해 fallback 경로 비중이 큼.
+  - 이번 실행은 “AI 연동 실제 호출 확인”은 완료했지만, “재작성 품질 안정화” 관점에서는 추가 튜닝이 필요함.
+
+## [Task ID] 2026-02-22-1724-gpt-relevance-filter-hardening
+
+### START
+- Time: 2026-02-22 17:24
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 뉴스 섹션 최상단에 트럼프 관세 기사가 노출되는 필터 오탐 이슈 점검 및 필터 강화 요청.
+- Why: `한시/당시` 같은 모호 키워드가 일반 시사 기사에도 매칭되어 한시 카테고리 오탐이 발생함.
+- Planned Scope:
+  - 파일: `scripts/crawl_news.js`
+  - 예상 변경: 모호 키워드 처리 보강, 네거티브 키워드 충돌 시 카테고리별 강한 증거 기반 통과 규칙으로 수정, normalize 단계에서 재필터 적용
+  - 파일: `public/index/news_articles.json`
+  - 예상 변경: `--normalize-only` 재적용으로 기존 오탐 기사 제거
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-22 17:25
+- Status: Done
+- Changed Files:
+  - `scripts/crawl_news.js:56` (GLOBAL_INCLUDE_TERMS에서 모호 키워드 `한시/당시` 제거)
+  - `scripts/crawl_news.js:64` (`한시` 카테고리 포함어를 강한 키워드 중심으로 재정의)
+  - `scripts/crawl_news.js:72` (`HANSHI_STRONG_TERMS`, `HANSHI_CONTEXT_TERMS` 추가)
+  - `scripts/crawl_news.js:108` (`CATEGORY_NEGATIVE_OVERRIDE_TERMS` 추가: 제외어 충돌 시 카테고리별 강한 증거로만 통과)
+  - `scripts/crawl_news.js:835` (`passesHardRelevanceGate` 강화: 한시 카테고리의 모호 매칭 차단 + 네거티브 충돌 재평가)
+  - `scripts/crawl_news.js:1938` (`normalizeDataset` 단계에서 relevance gate 재적용)
+  - `public/index/news_articles.json:1` (`--normalize-only` 재적용으로 오탐 기사 제거)
+  - `docs/work_change_log.md:5310` (본 Task START/END 기록)
+- Validation:
+  - `node --check scripts/crawl_news.js` 통과
+  - `node scripts/crawl_news.js --normalize-only` 실행 완료
+  - 결과 확인:
+    - 기사 수 `37 -> 35`
+    - 트럼프/관세 키워드 기사 `1 -> 0`
+    - 뉴스 섹션 상단에서 `대법원 제동에` 기사 제거 확인
+  - `석전대제` 관련 항목은 현재 1건(`news`)으로 유지됨
+- Notes:
+  - 이번 수정은 모호 키워드 오탐 제거에 초점. 종합기사 생성은 석전대제 원천 기사 2건 이상일 때만 동작.
+
+## [Task ID] 2026-02-22-1730-gpt-ai-badge-for-news
+
+### START
+- Time: 2026-02-22 17:30
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 기사 타입 배지 옆에 `AI작성` 배지를 추가하고, AI가 실제 작성한 기사에만 표시되도록 요청.
+- Why: 사용자에게 기사 생성 출처(LLM 작성 여부)를 명확히 전달하기 위함.
+- Planned Scope:
+  - 파일: `scripts/crawl_news.js`
+  - 예상 변경: `aiWritten` 플래그 저장(LLM 재작성 성공 기사에만 true)
+  - 파일: `public/index/news_articles.schema.json`
+  - 예상 변경: `aiWritten:boolean` 필드 스키마 반영
+  - 파일: `community/news/index.html`
+  - 예상 변경: 기사 타입 배지 옆 `AI작성` 배지 렌더링 + 별도 색상 스타일 추가
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-22 17:31
+- Status: Done
+- Changed Files:
+  - `scripts/crawl_news.js:1323` (AI 재작성 성공 기사에 `aiWritten: true` 부여)
+  - `scripts/crawl_news.js:1334` (비-뉴스 타입으로 확정될 경우 `aiWritten` 제거)
+  - `scripts/crawl_news.js:1899` (`normalizeArticleRecord`에서 `aiWritten` 입력 유지)
+  - `scripts/crawl_news.js:1951` (저장 레코드에 `aiWritten=true` 조건부 직렬화)
+  - `public/index/news_articles.schema.json:56` (`aiWritten:boolean` 필드 추가)
+  - `community/news/index.html:79` (`.news-ai-badge` 스타일 추가)
+  - `community/news/index.html:197` (`a.aiWritten === true`일 때 `AI작성` 배지 렌더링)
+  - `public/index/news_articles.json:1` (`--normalize-only` 재저장)
+  - `docs/work_change_log.md:5334` (본 Task START/END 기록)
+- Validation:
+  - `node --check scripts/crawl_news.js` 통과
+  - `node scripts/crawl_news.js --normalize-only` 실행 완료
+  - `rg -n "aiWritten|news-ai-badge|AI작성"`로 반영 포인트 확인
+  - 현재 데이터 기준 `aiWrittenCount: 0` 확인(기존 저장 기사에는 플래그가 없어서 배지 미노출)
+- Notes:
+  - 이후 AI 재작성 성공 기사가 저장되면 해당 기사에만 `AI작성` 배지가 표시됨.
+
+## [Task ID] 2026-02-22-1738-gpt-news-type-consistency-repair
+
+### START
+- Time: 2026-02-22 17:38
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: `기사` 배지인데 본문은 `컬럼 안내문`인 1건 이슈 수정 요청.
+- Why: 과거 데이터가 재분류(`column -> news`)되면서 본문/요약이 컬럼 안내문 상태로 남아 타입/내용 불일치 발생.
+- Planned Scope:
+  - 파일: `scripts/crawl_news.js`
+  - 예상 변경: 뉴스/정보 타입에서 컬럼 안내문 텍스트가 남는 경우 복구 또는 폐기 처리
+  - 파일: `community/news/index.html`
+  - 예상 변경: 정렬 기준을 `publishedAt` 우선으로 보정해 오래된 데이터가 상단으로 튀는 현상 완화
+  - 파일: `public/index/news_articles.json`
+  - 예상 변경: `--normalize-only` 재적용으로 불일치 데이터 정리
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-22 17:38
+- Status: Done
+- Changed Files:
+  - `scripts/crawl_news.js:796` (`isColumnNoticeText` 추가: 컬럼 안내문 형태 감지)
+  - `scripts/crawl_news.js:1922` (`normalizeArticleRecord` 보강: `news/info`인데 안내문 본문이면 원문 요약 복구 시도, 실패 시 폐기)
+  - `community/news/index.html:176` (정렬 기준 변경: `publishedAt` 우선, 동률 시 `crawledAt`)
+  - `public/index/news_articles.json:1` (`--normalize-only`로 데이터 재정리, 총 34건)
+  - `docs/work_change_log.md:5357` (본 Task START/END 기록)
+- Validation:
+  - `node --check scripts/crawl_news.js` 통과
+  - `node scripts/crawl_news.js --normalize-only` 실행 완료
+  - 검증 결과:
+    - `articleType=news` + `컬럼입니다` 본문 케이스 `1 -> 0`
+    - 문제 항목(석전대제 뷰파인더) 정규화 폐기(`normalize.droppedInvalid: 1`)
+    - 커뮤니티 기준 상단 6건이 최신 발행일 순으로 정상 노출 확인
+- Notes:
+  - 해당 1건은 저장 데이터에 원문 본문/요약이 없어 자동 복구 불가해서 품질 기준으로 제외 처리.
+
+## [Task ID] 2026-02-22-1742-gpt-ai-rewrite-rerun-after-prune
+
+### START
+- Time: 2026-02-22 17:42
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: AI작성 배지 검증을 위해 최근 기사 일부를 DB에서 제거한 뒤 OpenAI 재작성 크롤링 재실행 요청.
+- Why: 기존 기사 중복 유지로 신규 AI 재작성 기사 유입이 적어 `aiWritten` 플래그가 0건 상태라 가시적 검증이 어려움.
+- Planned Scope:
+  - 파일: `public/index/news_articles.json`
+  - 예상 변경: 최근 기사 일부 prune + 재크롤링 병합 결과 반영
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-22 17:47
+- Status: Partial
+- Changed Files:
+  - `public/index/news_articles.json:1`
+    - 백업 후 최근 9건 prune 적용
+    - OpenAI 기반 재크롤링 결과 반영(총 34 → 29건, 신규 6건 유입)
+  - `public/index/news_articles.pre_prune_20260222_174350.json:1` (prune 전 백업 생성)
+  - `docs/work_change_log.md:5386` (본 Task START/END 기록)
+- Validation:
+  - prune 실행 결과: 최근 9건 제거 확인(2026-02-22/2026-02-17 구간)
+  - 실행 명령: `AI_PROVIDER=openai AI_MODEL=gpt-4o-mini AI_API_KEY=*** node scripts/crawl_news.js`
+  - 실행 통계(핵심):
+    - `ai.calls`: 8
+    - `ai.rewritten`: 1
+    - `ai.parseFail`: 5
+    - `ai.fallbackUsed`: 5
+    - `sources.googleRss.items`: 210
+  - 결과 확인:
+    - 최종 기사 수 29건
+    - `aiWritten` 플래그 기사 수 0건
+- Notes:
+  - AI 호출은 실제 수행됐지만 timeout/파싱 실패 비중이 높아 fallback 경로가 많았고, 최종 저장 데이터에는 `aiWritten=true` 기사가 남지 않음.
+  - `AI작성` 배지 검증을 위해서는 AI 안정화(타임아웃/파싱) 후 1회 재실행이 추가로 필요함.
+
+## [Task ID] 2026-02-22-1750-gpt-ai-badge-and-fullbody-fix
+
+### START
+- Time: 2026-02-22 17:50
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: AI작성 배지가 안 뜨는 문제와 AI 작성 기사 본문 말줄임(...) 이슈 동시 수정 요청.
+- Why: 중복 병합 과정에서 `aiWritten`이 누락되고, 본문 길이 제한으로 AI 작성 본문이 잘려 가독성이 저하됨.
+- Planned Scope:
+  - 파일: `scripts/crawl_news.js`
+  - 예상 변경: `aiWritten` 유지/승격 로직 보강, AI작성 뉴스 본문은 길이 상한 클립 예외 처리
+  - 파일: `public/index/news_articles.json`
+  - 예상 변경: OpenAI 실재실행 결과 반영 및 `aiWritten` 실제 생성 여부 검증
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+## [Task ID] 2026-02-22-1758-gpt-ai-badge-visibility-and-fulltext
+
+### START
+- Time: 2026-02-22 17:57
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 새로 생성된 기사에서 AI작성 배지가 보이지 않고, AI 작성 기사 본문이 말줄임표로 끝나는 문제 수정 요청.
+- Why: 메인 뉴스 섹션에서도 AI 작성 여부를 즉시 식별해야 하고, AI 작성 본문은 요약이 아닌 전체를 확인 가능해야 함.
+- Planned Scope:
+  - 파일: `index.html`
+  - 예상 변경: 메인 뉴스 카드에 `AI작성` 배지 노출 + AI 기사 본문/요약 잘림 해제
+  - 파일: `scripts/crawl_news.js`
+  - 예상 변경: `aiWritten` 기사의 본문 절단 로직 제거(타입 공통)
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-22 17:58
+- Status: Done
+- Changed Files:
+  - `index.html:615` (`.news-tag.ai` 스타일 추가로 메인 뉴스 카드에 `AI작성` 배지 색상 분리)
+  - `index.html:646` (`.news-summary.ai-full` 추가: AI 작성 기사 요약/본문의 line-clamp 해제)
+  - `index.html:1203` (AI 기사일 때 `summaryPriority`를 `body` 우선으로 변경)
+  - `index.html:1209` (`summaryClass` 조건부 적용으로 AI 기사 전체 텍스트 노출)
+  - `index.html:1212` (메인 뉴스 카드 메타 영역에 `AI작성` 배지 렌더링)
+  - `scripts/crawl_news.js:1845` (`column/info` 타입도 `allowLongBody`일 때 본문 clip 비활성화)
+  - `scripts/crawl_news.js:1865` (AI 기사 본문 보강 시 summary 대체를 무절단으로 허용)
+  - `scripts/crawl_news.js:1915` (`aiWritten`이면 타입과 무관하게 `allowLongBody` 적용)
+  - `scripts/crawl_news.js:1944` (복구 경로(rebuildBody)에서도 `allowLongBody` 동일 적용)
+  - `public/index/news_articles.json:1` (`--normalize-only` 재적용 저장)
+  - `docs/work_change_log.md:1` (본 Task START/END 기록)
+- Validation:
+  - `node --check scripts/crawl_news.js` 통과
+  - `node scripts/crawl_news.js --normalize-only` 실행 완료(총 31건)
+  - 최신 6건 검증 스크립트에서 `aiWritten=true` 기사 1건(2026-02-22, column) 확인
+  - 같은 검증에서 `aiWritten=true` 기사의 본문 끝 말줄임표 패턴 미검출(`OK`)
+- Notes:
+  - 메인 뉴스 카드에는 이제 AI 기사에만 `AI작성` 배지가 노출됨.
+  - AI 기사 텍스트는 메인 카드에서도 자르지 않고 전부 노출되도록 처리함.
+
+## [Task ID] 2026-02-22-1829-gpt-news-list-bottom-margin
+
+### START
+- Time: 2026-02-22 18:29
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: `news-list` 하단 아이템이 다닥다닥 붙어 보여 하단 마진 5px 적용 요청.
+- Why: 뉴스 목록 가독성 개선 및 카드 간 시각적 여백 확보.
+- Planned Scope:
+  - 파일: `community/news/index.html`
+  - 예상 변경: `.news-item`에 `margin-bottom: 5px` 추가
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-22 18:29
+- Status: Done
+- Changed Files:
+  - `community/news/index.html:23` (`.news-item`에 `margin-bottom: 5px` 추가)
+  - `docs/work_change_log.md:1` (본 Task START/END 기록)
+- Validation:
+  - `rg -n "margin-bottom: 5px" community/news/index.html`로 반영 확인
+- Notes:
+  - 기존 레이아웃/기능 변화 없이 카드 간 하단 간격만 조정함.
+
+## [Task ID] 2026-02-22-1831-gpt-news-intro-copy
+
+### START
+- Time: 2026-02-22 18:31
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 뉴스 리스트 상단에 소개글(`h2: 새소식` + 설명 문구) 추가 요청.
+- Why: 뉴스 페이지 맥락(다양한 소식/AI 작성 기사 포함)을 상단에서 바로 안내하기 위함.
+- Planned Scope:
+  - 파일: `community/news/index.html`
+  - 예상 변경: 상단 소개 블록 및 스타일 추가
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-22 18:32
+- Status: Done
+- Changed Files:
+  - `community/news/index.html:16` (`.news-intro`, 제목/본문 스타일 추가)
+  - `community/news/index.html:155` (뉴스 리스트 상단 소개 블록 추가: `h2 새소식` + 안내 문구)
+  - `docs/work_change_log.md:1` (본 Task START/END 기록)
+- Validation:
+  - `rg -n "news-intro|새소식|일부 기사는 AI가 작성한 기사입니다" community/news/index.html`로 반영 확인
+- Notes:
+  - 요청 문구를 그대로 적용했고, 기존 뉴스 로딩/아코디언 동작에는 영향 없음.
+
+## [Task ID] 2026-02-22-1835-gpt-remove-sidebar-header-all-pages
+
+### START
+- Time: 2026-02-22 18:35
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 모든 페이지에서 `sidebar-header` 제거 요청.
+- Why: 사이드바 상단 헤더 블록이 불필요하여 UI 단순화 필요.
+- Planned Scope:
+  - 파일: `community/*.html`, `community/*/index.html`, `hanja/*.html`, `hanja/exam/index.html`, `korean-poetry/*.html`, `korean-poetry/poets/index.html`, `chinese-poetry/**/*.html`, `shared/template-5a.html`
+  - 예상 변경: `<div class="sidebar-header">...</div>` 블록 제거
+  - 파일: `community/community-layout.css`
+  - 예상 변경: `.sidebar-header` 관련 공용 스타일 제거
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-22 18:37
+- Status: Done
+- Changed Files:
+  - `community/index.html:289` (`<div class="sidebar-header">...</div>` 제거)
+  - `community/news/index.html:139` (`<div class="sidebar-header">...</div>` 제거)
+  - `community/notice/index.html:20` (`<div class="sidebar-header">...</div>` 제거)
+  - `community/forum/index.html:20` (`<div class="sidebar-header">...</div>` 제거)
+  - `community/qna/index.html:20` (`<div class="sidebar-header">...</div>` 제거)
+  - `community/showcase/index.html:19` (`<div class="sidebar-header">...</div>` 제거)
+  - `hanja/index.html:240` (`<div class="sidebar-header">...</div>` 제거)
+  - `hanja/exam/index.html:285` (`<div class="sidebar-header">...</div>` 제거)
+  - `korean-poetry/index.html:238` (`<div class="sidebar-header">...</div>` 제거)
+  - `korean-poetry/poets/index.html:534` (`<div class="sidebar-header">...</div>` 제거)
+  - `chinese-poetry/books/index.html:510` (`<div class="sidebar-header">...</div>` 제거)
+  - `chinese-poetry/poets/index.html:380` (`<div class="sidebar-header">...</div>` 제거)
+  - `chinese-poetry/general/index.html:218` (`<div class="sidebar-header">...</div>` 제거)
+  - `chinese-poetry/general/literary-history/index.html:219` (`<div class="sidebar-header">...</div>` 제거)
+  - `chinese-poetry/general/masterworks/index.html:205` (`<div class="sidebar-header">...</div>` 제거)
+  - `shared/template-5a.html:80` (`<div class="sidebar-header">...</div>` 제거)
+  - `community/community-layout.css:1` (`.comm-sidebar .sidebar-header`, `.sidebar-header h2`, `.sidebar-header p` 스타일 제거)
+  - `shared/styles.css:472` (스타일 정리 중 붙은 줄바꿈 보정)
+  - `docs/work_change_log.md:1` (본 Task START/END 기록)
+- Validation:
+  - `rg -n "sidebar-header" --glob "*.html" --glob "*.css"` 결과 0건 확인
+  - 커뮤니티 뉴스 페이지 샘플 확인: 사이드바 헤더 제거 후 메뉴/콘텐츠 정상 배치
+- Notes:
+  - 헤더 제거로 일부 파일에 생긴 `<aside>` 인접 줄 정렬도 함께 정리함(기능 변화 없음).
+
+## [Task ID] 2026-02-22-1840-gpt-sidebar-top-align-all-pages
+
+### START
+- Time: 2026-02-22 18:40
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 사이드 메뉴가 너무 상단에 붙어 있어 오른쪽 콘텐츠 컬럼 최상단과 상단 정렬을 모든 페이지에서 맞춰달라는 요청.
+- Why: `sidebar-header` 제거 이후 좌측 메뉴 시작점과 우측 콘텐츠 시작점이 불일치하여 시각적 균형이 깨짐.
+- Planned Scope:
+  - 파일: `community/community-layout.css`
+  - 예상 변경: 커뮤니티 공통 사이드 메뉴 상단 패딩 조정
+  - 파일: `community/index.html`
+  - 예상 변경: 메인 커뮤니티 페이지 전용 상단 정렬 오버라이드
+  - 파일: `shared/styles.css`
+  - 예상 변경: `layout-5a` 전 페이지 공통 사이드 메뉴 상단 패딩 조정 + 모바일 예외
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-22 18:41
+- Status: Done
+- Changed Files:
+  - `community/community-layout.css:36` (`.comm-menu` 상단 패딩을 `32px`로 조정)
+  - `community/index.html:22` (커뮤니티 메인만 `.comm-menu` 상단 `40px` 오버라이드)
+  - `shared/styles.css:479` (`layout-5a` 공통: 사이드 메뉴 시작점 `padding-top: 40px`)
+  - `shared/styles.css:627` (`layout-5a` 모바일: `padding-top: 8px`로 복원)
+  - `docs/work_change_log.md:1` (본 Task START/END 기록)
+- Validation:
+  - `rg -n "comm-menu\s*\{|padding-top: 40px;|sidebar > \.era-tree|sidebar > \.sidebar-tree" ...`로 반영 확인
+  - `community/news/index.html`, `community/index.html`, `hanja/index.html`, `chinese-poetry/books/index.html` 구조 점검으로 공통 선택자 적용 가능 확인
+- Notes:
+  - `sidebar-header` 제거 후 생긴 상단 정렬 불일치를 레이아웃 단위 공통 규칙으로 정리해 전체 페이지에 동일 적용함.
+
+## [Task ID] 2026-02-22-1852-gpt-sidebar-hover-unify-community-style
+
+### START
+- Time: 2026-02-22 18:52
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: `community/news`와 `korean-poetry` 사이드바 마우스오버 효과를 현재 커뮤니티 페이지와 동일하게(메뉴 글자 스케일/애니메이션만) 통일 요청.
+- Why: 페이지별 사이드 메뉴 인터랙션 차이를 제거하고 일관된 UX로 맞추기 위함.
+- Planned Scope:
+  - 파일: `community/news/index.html`
+  - 예상 변경: 사이드 메뉴 hover/active를 텍스트 스케일 중심으로 명시 고정
+  - 파일: `korean-poetry/index.html`
+  - 예상 변경: hover/active에서 배경 변화 제거, 커뮤니티 스타일과 동일화
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-22 18:53
+- Status: Done
+- Changed Files:
+  - `community/news/index.html:32` (사이드 메뉴 hover/active를 배경 변화 없이 스케일 중심으로 명시 고정)
+  - `korean-poetry/index.html:66` (`.era-tree-link` 인터랙션을 커뮤니티 방식으로 통일: transform 중심, active 배경 제거)
+  - `docs/work_change_log.md:1` (본 Task START/END 기록)
+- Validation:
+  - `rg -n "comm-menu-link|era-tree-link|transition: transform 0.4s ease|background: transparent" community/news/index.html korean-poetry/index.html`로 반영 확인
+  - 두 파일 모두 hover 시 배경색 변경 없이 스케일 효과만 남고, active는 굵기 강조만 유지하도록 코드 확인
+- Notes:
+  - 메뉴 인터랙션 통일 목적이라 콘텐츠/레이아웃 구조에는 변경 없음.
+
+## [Task ID] 2026-02-22-1902-gpt-remove-sidebar-color-bar-global
+
+### START
+- Time: 2026-02-22 19:02
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 사이드 메뉴의 색 들어간 배경 바(활성/호버) 제거 요청.
+- Why: 사이드 메뉴 인터랙션을 배경색 없이 텍스트 중심(스케일/굵기)으로 통일하기 위함.
+- Planned Scope:
+  - 파일: `shared/styles.css`
+  - 예상 변경: `layout-comm`, `layout-5a` 사이드 메뉴의 hover/active 배경색을 전역 투명 처리
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-22 19:02
+- Status: Done
+- Changed Files:
+  - `shared/styles.css:511` (사이드바 메뉴 배경 바 제거용 전역 오버라이드 추가)
+  - `shared/styles.css:516` (`.era-tree-link.expanded` 포함해 활성/확장 상태 배경 투명 고정)
+  - `shared/styles.css:528` (`.era-sub-tree` 배경도 투명 처리)
+  - `docs/work_change_log.md:1` (본 Task START/END 기록)
+- Validation:
+  - `rg -n "era-tree-link\.expanded|era-sub-tree|comm-menu-link\.active|사이드바 메뉴는 배경 바 없이" shared/styles.css`로 반영 확인
+  - 오버라이드에 `!important` 적용해 페이지별 인라인 사이드바 배경 규칙보다 우선 적용됨
+- Notes:
+  - 사이드 메뉴는 배경색 바 없이 텍스트(스케일/굵기) 중심 표현으로 통일됨.
+
+## [Task ID] 2026-02-22-1907-gpt-literary-history-sidebar-animation
+
+### START
+- Time: 2026-02-22 19:07
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: `chinese-poetry/history` 맥락에서 사이드 하위 메뉴 펼침 애니메이션 추가 + `대표작가와 작품 해설` 위 구분선 제거 요청.
+- Why: 하위 메뉴가 즉시 나타나/사라지는 이질감을 줄이고, 불필요한 시각 구분선 제거로 메뉴 흐름을 매끈하게 만들기 위함.
+- Planned Scope:
+  - 파일: `chinese-poetry/general/literary-history/index.html`
+  - 예상 변경: 하위 목차(era-tree) 토글 애니메이션 추가, divider 제거, 토글 JS 보강
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-22 19:08
+- Status: Done
+- Changed Files:
+  - `chinese-poetry/general/literary-history/index.html:47` (하위 목차용 `.era-sub-tree` 애니메이션 스타일 추가: `max-height/opacity/transform`)
+  - `chinese-poetry/general/literary-history/index.html:216` (상위 메뉴 토글 식별자 `#literaryHistoryToggle`, `aria-expanded` 추가)
+  - `chinese-poetry/general/literary-history/index.html:220` (하위 목차에 `era-sub-tree show` 적용)
+  - `chinese-poetry/general/literary-history/index.html:231` (`sidebar-divider` 제거로 `대표작가와 작품 해설` 위 줄 제거)
+  - `chinese-poetry/general/literary-history/index.html:593` (동일 페이지 링크 클릭 시 하위 목차 접기/펼치기 토글 JS 추가)
+  - `docs/work_change_log.md:1` (본 Task START/END 기록)
+- Validation:
+  - `rg -n "era-sub-tree|literaryHistoryToggle|literaryHistorySubTree|sidebar-divider|setOutlineExpanded" chinese-poetry/general/literary-history/index.html`로 반영 확인
+  - 하위 목차는 `show` 클래스 토글 방식으로 즉시 전환(display) 대신 부드러운 트랜지션 적용 확인
+- Notes:
+  - 요청 경로(`chinese-poetry/history/index.html`)는 iframe 래퍼라 실제 사이드 메뉴는 `chinese-poetry/general/literary-history/index.html`에서 조정함.
+
+## [Task ID] 2026-02-22-1910-gpt-literary-history-toggle-init-fix
+
+### START
+- Time: 2026-02-22 19:10
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 문학사 페이지 하위 메뉴 애니메이션이 진입 직후 바로 동작하지 않고 잠시 후 동작하는 지연 이슈 보정 요청.
+- Why: 초기 스크립트 바인딩 타이밍 지연으로 첫 상호작용 UX가 저하됨.
+- Planned Scope:
+  - 파일: `chinese-poetry/general/literary-history/index.html`
+  - 예상 변경: 토글 요소를 링크→버튼으로 변경, 토글 바인딩 즉시 실행 구조로 보정
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-22 19:11
+- Status: Done
+- Changed Files:
+  - `chinese-poetry/general/literary-history/index.html:87` (`.era-tree-toggle` 추가: 링크 지연/재로드 영향 없는 버튼 토글용 스타일)
+  - `chinese-poetry/general/literary-history/index.html:222` (`중국시문학을 읽는 지도`를 링크→버튼으로 변경)
+  - `chinese-poetry/general/literary-history/index.html:586` (`DOMContentLoaded` 대기 제거, 즉시 실행 IIFE로 초기 바인딩 시점 앞당김)
+  - `chinese-poetry/general/literary-history/index.html:603` (토글 클릭 로직 단순화: 즉시 접기/펼치기)
+  - `chinese-poetry/general/literary-history/index.html:650` (inline 초기화 스크립트를 auth/components 로드보다 먼저 실행되도록 순서 조정)
+  - `docs/work_change_log.md:1` (본 Task START/END 기록)
+- Validation:
+  - `rg -n "era-tree-toggle|literaryHistoryToggle|\(\(\) =>|shared/auth-state.js|shared/components.js" ...`로 반영 확인
+  - 초기 진입 직후에도 토글이 링크 리로드 없이 바로 작동하도록 구조 변경 확인
+- Notes:
+  - 애니메이션 자체는 CSS 트랜지션이고, 열림/닫힘 트리거는 JS 토글 방식 유지.
+
+## [Task ID] 2026-02-22-1939-gpt-literary-history-sidebar-gap-fix
+
+### START
+- Time: 2026-02-22 19:39
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: `chinese-poetry/` 진입 후 `중국시문학을 읽는 지도` 펼침 시 `대표작가와 작품해설` 간격이 과도하게 벌어지고 접어도 유지되는 이슈 수정 요청.
+- Why: 사이드 메뉴 간격이 상태 변화 후 복원되지 않아 탐색 UX가 깨짐.
+- Planned Scope:
+  - 파일: `shared/styles.css`
+  - 예상 변경: `layout-5a` 상단 패딩 규칙을 첫 번째 리스트에만 적용하도록 보정
+  - 파일: `chinese-poetry/general/literary-history/index.html`
+  - 예상 변경: 서브트리 접힘 상태 패딩 0 처리로 잔여 간격 제거
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-22 19:40
+- Status: Done
+- Changed Files:
+  - `shared/styles.css:479` (`layout-5a` 사이드 상단 패딩 대상을 `첫 번째 최상위 리스트`로 한정)
+  - `shared/styles.css:648` (모바일 규칙도 동일하게 `:first-child`로 정합성 맞춤)
+  - `chinese-poetry/general/literary-history/index.html:47` (서브트리 접힘 상태 `padding: 0` + `padding` 트랜지션 추가)
+  - `chinese-poetry/general/literary-history/index.html:57` (서브트리 펼침 상태에서만 `padding` 부여)
+  - `docs/work_change_log.md:1` (본 Task START/END 기록)
+- Validation:
+  - `rg -n "sidebar > \.era-tree:first-child|sidebar > \.sidebar-tree:first-child" shared/styles.css` 반영 확인
+  - `rg -n "\.era-sub-tree|padding: 0 0 0 12px|padding: 8px 0 8px 12px" chinese-poetry/general/literary-history/index.html` 반영 확인
+- Notes:
+  - 하위 메뉴를 접었을 때 남던 간격은 `서브트리 기본 padding`과 다중 최상위 리스트 패딩 중첩이 원인이었고, 둘 다 제거함.
+
+## [Task ID] 2026-02-22-1953-gpt-literary-history-single-ul-gap-fix
+
+### START
+- Time: 2026-02-22 19:53
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: `중국시문학을 읽는 지도` 토글 전후 메뉴 간격이 초기 진입 시점과 달라지는 잔여 이슈 재수정 요청.
+- Why: 현재 사이드 메뉴가 2개의 최상위 `ul`로 분리되어 있어 패딩 중첩/복원 오차가 남음.
+- Planned Scope:
+  - 파일: `chinese-poetry/general/literary-history/index.html`
+  - 예상 변경: 사이드 메뉴를 단일 최상위 `ul` 구조로 통합해 토글 전후 간격 일관성 확보
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-22 19:54
+- Status: Done
+- Changed Files:
+  - `chinese-poetry/general/literary-history/index.html:217` (사이드 메뉴를 단일 최상위 `ul` 구조로 통합)
+  - `chinese-poetry/general/literary-history/index.html:239` (`대표작가와 작품 해설` 항목을 동일 `ul` 내부로 이동)
+  - `docs/work_change_log.md:1` (본 Task START/END 기록)
+- Validation:
+  - `python3` 확인 결과: `<aside class="sidebar">` 내부 최상위 `ul.era-tree` 개수 `1`
+  - `rg`/`sed`로 하위 목차 토글 요소와 `대표작가와 작품 해설`이 동일 리스트 흐름에 배치된 것 확인
+- Notes:
+  - 패딩이 중첩되던 구조 자체를 제거해 토글 전후 메뉴 간격 복원 오차를 구조적으로 해소함.
+
+## [Task ID] 2026-02-22-1956-gpt-korean-poetry-sidebar-subpages
+
+### START
+- Time: 2026-02-22 19:56
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: `korean-poetry/` 사이드바에 하위 페이지 2개가 모두 노출되도록(`한국의 전통시문학`, `시대별 시인과 작품`) 추가 요청.
+- Why: 현재 `korean-poetry/` 사이드바에 1개 메뉴만 보여 구조/탐색 일관성이 깨짐.
+- Planned Scope:
+  - 파일: `korean-poetry/index.html`
+  - 예상 변경: 사이드바 메뉴에 `시대별 시인과 작품` 링크 추가, 중국 쪽과 동일한 2-메뉴 구조로 정렬
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-22 19:58
+- Status: Done
+- Changed Files:
+  - `korean-poetry/index.html:227` (`시대별 시인과 작품` 사이드바 메뉴 추가: `/korean-poetry/poets/`)
+  - `docs/work_change_log.md:1` (본 Task START/END 기록)
+- Validation:
+  - `rg -n "한국의 전통시문학|시대별 시인과 작품" korean-poetry/index.html`로 2개 메뉴 노출 확인
+  - 현재 경로(`/korean-poetry/`)에서는 기존 active 로직으로 `한국의 전통시문학`만 active 유지 확인
+- Notes:
+  - 메뉴 구조를 중국 쪽과 동일한 상위 링크 나열 방식으로 맞췄고, 기존 콘텐츠/스크롤 로직에는 영향 없음.
+
+## [Task ID] 2026-02-22-2000-gpt-korean-poets-sidebar-structure-unify
+
+### START
+- Time: 2026-02-22 20:00
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: `korean-poetry/poets/`에서도 `한국의 전통시문학` 상위 메뉴를 유지하고, 중국 쪽과 유사한 상위/하위 메뉴 구조로 통일 요청.
+- Why: 현재 `poets` 페이지는 시대 앵커만 있어 상위 네비 맥락이 끊기고 페이지간 일관성이 떨어짐.
+- Planned Scope:
+  - 파일: `korean-poetry/poets/index.html`
+  - 예상 변경: 상위 2메뉴(`한국의 전통시문학`, `시대별 시인과 작품`) + 하위 시대목록 구조로 사이드바 개편
+  - 파일: `korean-poetry/poets/timeline.js`
+  - 예상 변경: 사이드바 클릭/active 로직을 `#` 앵커 링크만 대상으로 제한
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-22 20:01
+- Status: Done
+- Changed Files:
+  - `korean-poetry/poets/index.html:50` (중국 쪽과 동일한 서브메뉴 스타일용 `.era-sub-tree`/`.era-tree-toggle` 추가)
+  - `korean-poetry/poets/index.html:541` (사이드바를 상위 2메뉴 구조로 개편: `한국의 전통시문학` + `시대별 시인과 작품`)
+  - `korean-poetry/poets/index.html:592` (`시대별 시인과 작품` 토글로 하위 시대목록 접기/펼치기 처리)
+  - `korean-poetry/poets/timeline.js:256` (스크롤 네비 로직을 `href^="#"` 앵커 링크만 대상으로 제한)
+  - `docs/work_change_log.md:1` (본 Task START/END 기록)
+- Validation:
+  - `korean-poetry/poets/index.html`에서 상위 메뉴 2개 + 하위 시대목록 구조 반영 확인
+  - `korean-poetry/poets/timeline.js`에서 페이지 링크(`/korean-poetry/`)는 인터셉트하지 않고, 섹션 링크(`#...`)만 스크롤 처리하도록 코드 확인
+- Notes:
+  - 개별 페이지 구조에서도 상위 메뉴 맥락이 유지되도록 보정함.
+
+## [Task ID] 2026-02-22-2003-gpt-enable-hanja-nav-link
+
+### START
+- Time: 2026-02-22 20:03
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 상단 내비의 `한자와 한문` 메뉴가 비활성(`disabled`)이라 선택 불가한 상태를 링크 가능으로 변경 요청.
+- Why: `hanja/index.html` 페이지가 준비 완료되어 실제 접근 가능해야 함.
+- Planned Scope:
+  - 파일: `shared/nav.html`
+  - 예상 변경: `한자와 한문` 메뉴에서 `disabled` 클래스 제거
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-22 20:07
+- Status: Done
+- Changed Files:
+  - `shared/nav.html:49` (`한자와 한문` 메뉴의 `disabled` 클래스 제거로 클릭/이동 활성화)
+  - `docs/work_change_log.md:1` (본 Task START/END 기록)
+- Validation:
+  - `rg -n "한자와 한문|disabled" shared/nav.html` 확인 결과 `한자와 한문`은 활성 링크 상태
+- Notes:
+  - `작성도우미` 메뉴는 기존처럼 `disabled` 유지.

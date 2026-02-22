@@ -1,30 +1,608 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>시대별 시인들 — 漢詩의 모든 것</title>
+  <title>시대별 시인과 작품 — 한시나루</title>
+  <link rel="stylesheet" href="https://use.typekit.net/dje5vco.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.typekit.net/daj3vwq.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&family=Noto+Serif+KR:wght@200..900&family=Noto+Serif+TC:wght@200..900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="/shared/styles.css">
+  <style>
+    /* ===== Global Body ===== */
+    body {
+      background: #fff;
+      color: #000;
+      padding-top: 73px;
+    }
+
+    /* ===== Layout 5-a: 좌측 고정 300px + 우측 스크롤 ===== */
+    .layout-5a {
+      display: flex;
+      max-width: 1300px;
+      margin: 0 auto;
+      padding-top: 0;
+      background: #FBFAFA;
+      box-shadow: 5px 0 15px rgba(0, 0, 0, 0.06), -5px 0 15px rgba(0, 0, 0, 0.06);
+    }
+
+    /* ===== Sidebar 300px (sticky) ===== */
+    aside.sidebar {
+      width: 300px;
+      min-width: 300px;
+      display: flex;
+      flex-direction: column;
+      background: #FBFAFA;
+      position: sticky;
+      top: 73px;
+      height: calc(100vh - 73px);
+      overflow-y: auto;
+    }
+    /* Era tree navigation */
+    .era-tree {
+      list-style: none;
+      flex-shrink: 0;
+      padding: 8px 0;
+    }
+    .era-sub-tree {
+      padding: 0 0 0 12px !important;
+      margin: 0;
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      transform: translateY(-4px);
+      transition: max-height 0.28s ease, opacity 0.22s ease, transform 0.28s ease, padding 0.28s ease;
+      pointer-events: none;
+    }
+    .era-sub-tree.show {
+      padding: 8px 0 8px 12px !important;
+      max-height: 280px;
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+
+    .era-tree-item {
+      margin-bottom: 0;
+      padding: 0;
+      font-size: inherit;
+      color: #000;
+      cursor: default;
+      opacity: 1;
+      display: block;
+    }
+
+    .era-tree-item:hover {
+      background: transparent;
+      color: inherit;
+    }
+
+    .era-tree-link {
+      display: block;
+      padding: 5px 30px;
+      font-family: var(--font-ko);
+      font-size: var(--fs-body, 16px);
+      color: #000;
+      text-align: right;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform 0.4s ease, background 0.4s ease, color 0.4s ease;
+      transform-origin: right center;
+    }
+    .era-tree-toggle {
+      width: 100%;
+      border: 0;
+      background: transparent;
+      appearance: none;
+    }
+    .era-tree .era-sub-tree .era-tree-link {
+      font-size: var(--fs-small, 14px);
+      padding: 3px 30px;
+    }
+
+    .era-tree-link:hover:not(.disabled):not(.active) {
+      transform: scale(1.08);
+    }
+
+    .era-tree-link.active {
+      background: #8FA8B2;
+      color: #FBFAFA;
+      font-weight: bold;
+    }
+
+    .era-tree-link.disabled {
+      color: #282828;
+      cursor: not-allowed;
+    }
+
+    /* ===== Content Area: 우측 스크롤 ===== */
+    main.content-area {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .section-inner {
+      padding: 40px 32px 80px;
+    }
+
+    /* ===== Section divider ===== */
+    .section-divider {
+      border: none;
+      border-top: 1px solid var(--c-silver, #c8d3d5);
+      margin: 48px 0;
+    }
+
+    /* ===== Typography ===== */
+    .chapter-title {
+      font-family: var(--font-ko);
+      font-size: var(--fs-lead, 20px);
+      font-weight: bold;
+      margin-bottom: 24px;
+      margin-top: 48px;
+      color: #1C2122;
+      scroll-margin-top: 100px;
+    }
+
+    .chapter-title:first-child {
+      margin-top: 0;
+    }
+
+    /* ===== Poet Cards (Accordion) ===== */
+    .poet-card {
+      background: #fff;
+      border-radius: 12px;
+      margin-bottom: 16px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      transition: box-shadow 0.3s ease;
+    }
+
+    .poet-card[open] {
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+      margin-bottom: 28px;
+    }
+
+    /* Summary (접힘 상태 헤더) */
+    .poet-header {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      padding: 18px 28px;
+      cursor: pointer;
+      list-style: none;
+      user-select: none;
+    }
+
+    .poet-header::-webkit-details-marker {
+      display: none;
+    }
+
+    .poet-header::before {
+      content: '▸';
+      font-size: 14px;
+      color: var(--c-powder-blue, #a4b8c4);
+      transition: transform 0.3s ease;
+      flex-shrink: 0;
+    }
+
+    .poet-card[open] > .poet-header::before {
+      transform: rotate(90deg);
+    }
+
+    .poet-card[open] > .poet-header {
+      border-bottom: 2px solid var(--c-powder-blue, #a4b8c4);
+      padding-bottom: 16px;
+    }
+
+    .poet-name {
+      font-family: var(--font-ko);
+      font-size: 20px;
+      font-weight: bold;
+      color: #1C2122;
+    }
+
+    .poet-hanja {
+      font-family: var(--font-zh);
+      font-size: 17px;
+      color: #4a5a5f;
+    }
+
+    .poet-dates {
+      font-family: var(--font-ko);
+      font-size: 13px;
+      color: var(--c-powder-blue, #a4b8c4);
+      margin-left: auto;
+      flex-shrink: 0;
+    }
+
+    /* 펼침 상태 콘텐츠 */
+    .poet-detail {
+      padding: 24px 28px 28px;
+    }
+
+    .poet-bio {
+      font-family: var(--font-ko);
+      font-size: 14px;
+      line-height: 1.6;
+      color: #6a7a80;
+      margin-bottom: 8px;
+    }
+
+    .poet-bio-detail {
+      font-family: var(--font-ko);
+      font-size: 15px;
+      line-height: 1.8;
+      color: #3a4a50;
+      margin-bottom: 28px;
+      border-left: 3px solid var(--c-powder-blue, #a4b8c4);
+      padding-left: 16px;
+    }
+
+    /* ===== Poem Accordion (2수 이상일 때) ===== */
+    .poem-accordion {
+      margin-bottom: 8px;
+      border: 1px solid var(--c-silver, #c8d3d5);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .poem-accordion-header {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      padding: 12px 16px;
+      cursor: pointer;
+      list-style: none;
+      background: #fafbfc;
+    }
+
+    .poem-accordion-header::-webkit-details-marker {
+      display: none;
+    }
+
+    .poem-accordion-header::before {
+      content: '▸';
+      font-size: 12px;
+      color: var(--c-powder-blue, #a4b8c4);
+      transition: transform 0.3s ease;
+      flex-shrink: 0;
+    }
+
+    .poem-accordion[open] > .poem-accordion-header::before {
+      transform: rotate(90deg);
+    }
+
+    .poem-accordion[open] > .poem-accordion-header {
+      border-bottom: 1px solid var(--c-silver, #c8d3d5);
+    }
+
+    .poem-accordion > .poem-item {
+      padding: 16px;
+      margin-bottom: 0;
+    }
+
+    /* ===== Poem styles ===== */
+    .poem-item {
+      margin-bottom: 28px;
+    }
+
+    .poem-title {
+      font-family: var(--font-ko);
+      font-size: 16px;
+      font-weight: bold;
+      color: #1C2122;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px dashed var(--c-silver, #c8d3d5);
+    }
+
+    .poem-title-hanja {
+      font-family: var(--font-zh);
+      font-size: 16px;
+      font-weight: bold;
+      color: #1C2122;
+      margin-right: 8px;
+    }
+
+    .poem-title-hangul {
+      font-size: 14px;
+      color: #4a5a5f;
+    }
+
+    /* 본문+독음 2컬럼 그리드 */
+    .poem-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 12px;
+    }
+
+    .poem-content {
+      font-family: var(--font-zh);
+      font-size: 18px;
+      line-height: 2;
+      color: #1C2122;
+      white-space: pre-line;
+      margin: 0;
+      padding: 16px;
+      background: linear-gradient(135deg, #fafbfc, #f5f7f8);
+    }
+
+    .poem-pronunciation {
+      font-family: var(--font-ko);
+      font-size: 15px;
+      line-height: 2;
+      color: #4a5a5f;
+      white-space: pre-line;
+      background: #f0f4f5;
+      padding: 16px;
+      margin: 0;
+    }
+
+    /* 번역 */
+    .poem-translation {
+      font-family: var(--font-ko);
+      font-size: 15px;
+      line-height: 1.9;
+      color: #3a4a50;
+      background: linear-gradient(135deg, #e8f4f8, #f0f7fa);
+      padding: 12px 16px;
+      border-radius: 6px;
+      white-space: pre-line;
+      margin-bottom: 8px;
+    }
+
+    .poem-translation-label,
+    .poem-commentary-label {
+      font-family: var(--font-ko);
+      font-size: 12px;
+      font-weight: bold;
+      color: var(--c-powder-blue, #a4b8c4);
+      margin-bottom: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* 해설 (플레이스홀더) */
+    .poem-commentary {
+      font-family: var(--font-ko);
+      font-size: 14px;
+      line-height: 1.8;
+      color: #999;
+      background: #f9f9f9;
+      padding: 12px 16px;
+      border-radius: 6px;
+      font-style: italic;
+    }
+
+    /* Other works section (details/summary) */
+    .other-works {
+      margin-top: 24px;
+      padding-top: 20px;
+      border-top: 1px solid var(--c-silver, #c8d3d5);
+    }
+
+    .other-works summary {
+      font-family: var(--font-ko);
+      font-size: 15px;
+      font-weight: bold;
+      color: #4a5a5f;
+      cursor: pointer;
+      user-select: none;
+      list-style: none;
+    }
+
+    .other-works summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .other-works summary::before {
+      content: '▸';
+      font-size: 12px;
+      display: inline-block;
+      margin-right: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .other-works[open] summary::before {
+      transform: rotate(90deg);
+    }
+
+    .other-works-list {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 12px;
+    }
+
+    .other-works-list li {
+      font-family: var(--font-ko);
+      font-size: 14px;
+      color: #4a5a5f;
+      margin-bottom: 6px;
+      line-height: 1.6;
+    }
+
+    .other-works-list li::before {
+      content: '•';
+      margin-right: 8px;
+      color: var(--c-powder-blue, #a4b8c4);
+    }
+
+    /* Orphan poems section */
+    .orphan-section {
+      margin-top: 40px;
+      padding-top: 24px;
+      padding-bottom: 48px;
+      border-top: 2px dashed var(--c-silver, #c8d3d5);
+      border-bottom: 2px dashed var(--c-silver, #c8d3d5);
+      margin-bottom: 16px;
+    }
+
+    .orphan-section-title {
+      font-family: var(--font-ko);
+      font-size: 18px;
+      font-weight: bold;
+      color: #4a5a5f;
+      margin-bottom: 24px;
+    }
+
+    .orphan-author-group {
+      background: #fff;
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 24px;
+      box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+    }
+
+    .orphan-author {
+      font-family: var(--font-ko);
+      font-size: 18px;
+      font-weight: bold;
+      color: #1C2122;
+      margin-bottom: 12px;
+    }
+
+    /* Loading state */
+    .loading-state {
+      text-align: center;
+      padding: 60px 20px;
+      font-family: var(--font-ko);
+      font-size: 16px;
+      color: var(--c-powder-blue, #a4b8c4);
+    }
+
+    /* Scroll behavior */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 1024px) {
+      body {
+        overflow: auto;
+      }
+
+      .layout-5a {
+        flex-direction: column;
+        height: auto;
+      }
+
+      aside.sidebar {
+        width: 100%;
+        min-width: 100%;
+        position: relative;
+        top: auto;
+        height: auto;
+      }
+
+      main.content-area {
+        overflow-y: visible;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .section-inner {
+        padding: 24px 16px 48px;
+      }
+
+      .poet-header {
+        padding: 14px 16px;
+        flex-wrap: wrap;
+      }
+
+      .poet-detail {
+        padding: 16px;
+      }
+
+      .poet-name {
+        font-size: 18px;
+      }
+
+      .poet-dates {
+        font-size: 12px;
+      }
+
+      .poem-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <div id="nav-placeholder"></div>
-  <section class="placeholder-hero fade-in">
-    <h1 class="placeholder-title">時代別 詩人들</h1>
-    <p class="placeholder-subtitle">한국의 시대별 한시 시인들</p>
-  </section>
-  <section class="placeholder-body">
-    <div class="placeholder-card fade-in">
-      <div class="placeholder-icon">👤</div>
-      <h2>콘텐츠 준비 중</h2>
-      <p>삼국시대부터 조선까지,<br>시대별 한시 시인들을 소개할 예정입니다.</p>
-      <a href="/korean-poetry/" class="placeholder-back">한국의 한시로 돌아가기</a>
-    </div>
-  </section>
+
+  <div class="layout-5a">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <ul class="era-tree">
+        <li class="era-tree-item">
+          <a href="/korean-poetry/" class="era-tree-link">
+            <span>한국의 전통시문학</span>
+          </a>
+        </li>
+        <li class="era-tree-item">
+          <button type="button" class="era-tree-link era-tree-toggle active" id="koreanPoetsToggle" aria-expanded="true">
+            <span>시대별 시인과 작품</span>
+          </button>
+          <ul class="era-tree era-sub-tree show" id="koreanPoetsSubTree">
+            <li class="era-tree-item">
+              <a href="#era-ancient" class="era-tree-link">
+                <span>고조선~통일신라</span>
+              </a>
+            </li>
+            <li class="era-tree-item">
+              <a href="#era-goryeo" class="era-tree-link">
+                <span>고려</span>
+              </a>
+            </li>
+            <li class="era-tree-item">
+              <a href="#era-joseon-early" class="era-tree-link">
+                <span>조선전기</span>
+              </a>
+            </li>
+            <li class="era-tree-item">
+              <a href="#era-joseon-late" class="era-tree-link">
+                <span>조선후기</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </aside>
+
+    <!-- Content Area -->
+    <main class="content-area">
+      <div class="section-inner">
+        <div id="timeline-content">
+          <div class="loading-state">불러오는 중...</div>
+        </div>
+      </div>
+    </main>
+  </div>
+
   <div id="footer-placeholder"></div>
   <script src="/shared/auth-state.js"></script>
   <script src="/shared/components.js"></script>
+  <script>
+    (() => {
+      const toggle = document.getElementById('koreanPoetsToggle');
+      const subTree = document.getElementById('koreanPoetsSubTree');
+      if (!toggle || !subTree) return;
+      const setExpanded = (expanded) => {
+        subTree.classList.toggle('show', expanded);
+        toggle.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+      };
+      setExpanded(subTree.classList.contains('show'));
+      toggle.addEventListener('click', () => {
+        setExpanded(!subTree.classList.contains('show'));
+      });
+    })();
+  </script>
+  <script src="timeline.js"></script>
 </body>
+
 </html>

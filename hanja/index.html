@@ -1,33 +1,387 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>한자와 한문 — 漢詩의 모든 것</title>
+  <title>한자(漢字)의 세계 — 한시나루</title>
+  <link rel="stylesheet" href="https://use.typekit.net/dje5vco.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.typekit.net/daj3vwq.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&family=Noto+Serif+KR:wght@200..900&family=Noto+Serif+TC:wght@200..900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="/shared/styles.css">
+  <style>
+    /* ===== Global Body ===== */
+    body {
+      background: #fff;
+      color: #000;
+      padding-top: 73px;
+    }
+
+    /* ===== Layout 5-a: 좌측 고정 300px + 우측 스크롤 ===== */
+    .layout-5a {
+      display: flex;
+      max-width: 1300px;
+      margin: 0 auto;
+      padding-top: 0;
+      background: #FBFAFA;
+      box-shadow: 5px 0 15px rgba(0, 0, 0, 0.06), -5px 0 15px rgba(0, 0, 0, 0.06);
+    }
+
+    /* ===== Sidebar 300px (sticky) ===== */
+    aside.sidebar {
+      width: 300px;
+      min-width: 300px;
+      display: flex;
+      flex-direction: column;
+      background: #FBFAFA;
+      position: sticky;
+      top: 73px;
+      height: calc(100vh - 73px);
+      overflow-y: auto;
+    }
+    /* Era tree navigation */
+    .era-tree {
+      list-style: none;
+      flex-shrink: 0;
+      padding: 8px 0;
+    }
+
+    .era-tree-item {
+      margin-bottom: 0;
+      padding: 0;
+      font-size: inherit;
+      color: #000;
+      cursor: default;
+      opacity: 1;
+      display: block;
+    }
+
+    .era-tree-item:hover {
+      background: transparent;
+      color: inherit;
+    }
+
+    .era-tree-link {
+      display: block;
+      padding: 5px 30px;
+      font-family: var(--font-ko);
+      font-size: var(--fs-body, 16px);
+      color: #000;
+      text-align: right;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform 0.4s ease, background 0.4s ease, color 0.4s ease;
+      transform-origin: right center;
+    }
+
+    .era-tree-link:hover:not(.disabled):not(.active) {
+      transform: scale(1.08);
+    }
+
+    .era-tree-link.active {
+      background: #8FA8B2;
+      color: #FBFAFA;
+      font-weight: bold;
+    }
+
+    .era-tree-link.disabled {
+      color: #282828;
+      cursor: not-allowed;
+    }
+
+    /* ===== Content Area: 우측 스크롤 ===== */
+    main.content-area {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .section-inner {
+      padding: 40px 32px 80px;
+    }
+
+    /* ===== Section divider ===== */
+    .section-divider {
+      border: none;
+      border-top: 1px solid var(--c-silver, #c8d3d5);
+      margin: 48px 0;
+    }
+
+    /* ===== Typography ===== */
+    .chapter-title {
+      font-family: var(--font-ko);
+      font-size: var(--fs-lead, 20px);
+      font-weight: bold;
+      margin-bottom: 24px;
+      margin-top: 48px;
+      color: #1C2122;
+      scroll-margin-top: 100px;
+    }
+
+    .chapter-title:first-child {
+      margin-top: 0;
+    }
+
+    .mid-title {
+      font-family: var(--font-zh);
+      font-size: var(--fs-lead, 20px);
+      font-weight: bold;
+      margin-top: 32px;
+      margin-bottom: 16px;
+      color: #1C2122;
+    }
+
+    /* Body text */
+    .era-desc {
+      font-family: var(--font-ko);
+      font-size: var(--fs-body, 18px);
+      color: #000;
+      line-height: 1.9;
+      margin-bottom: 24px;
+    }
+
+    .era-desc .zh {
+      font-family: var(--font-zh);
+    }
+
+    /* Image placeholder */
+    .img-placeholder {
+      background: linear-gradient(135deg, #FBFAFA, var(--c-silver, #c8d3d5));
+      border-radius: 16px;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--c-silver, #c8d3d5);
+      font-size: var(--fs-small, 14px);
+      margin: 24px 0;
+      box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+      border: 1px solid #e1e8eb;
+    }
+
+    /* Page purpose box */
+    .purpose-box {
+      background: linear-gradient(135deg, #f0f4f5, #e8eef0);
+      border-left: 3px solid #8FA8B2;
+      border-radius: 0 12px 12px 0;
+      padding: 24px 28px;
+      margin-top: 16px;
+    }
+
+    .purpose-box .era-desc {
+      margin-bottom: 0;
+      color: #3a4a50;
+    }
+
+    /* Scroll behavior */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 1024px) {
+      body {
+        overflow: auto;
+      }
+
+      .layout-5a {
+        flex-direction: column;
+        height: auto;
+      }
+
+      aside.sidebar {
+        width: 100%;
+        min-width: 100%;
+        position: relative;
+        top: auto;
+        height: auto;
+      }
+
+      main.content-area {
+        overflow-y: visible;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .section-inner {
+        padding: 24px 16px 48px;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <div id="nav-placeholder"></div>
 
-  <section class="placeholder-hero fade-in">
-    <h1 class="placeholder-title">漢字와 漢文</h1>
-    <p class="placeholder-subtitle">한자 공부와 한문 콘텐츠</p>
-  </section>
+  <div class="layout-5a">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <ul class="era-tree">
+        <li class="era-tree-item">
+          <a href="/hanja/" class="era-tree-link active">
+            <span>한자(漢字) 일반</span>
+          </a>
+        </li>
+        <li class="era-tree-item">
+          <a href="/hanja/exam/" class="era-tree-link">
+            <span>한자능력검정시험</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
 
-  <section class="placeholder-body">
-    <div class="placeholder-card fade-in">
-      <div class="placeholder-icon">漢</div>
-      <h2>콘텐츠 준비 중</h2>
-      <p>한자 학습 콘텐츠와 한문 자료를<br>준비하고 있습니다.</p>
-      <a href="/" class="placeholder-back">메인으로 돌아가기</a>
-    </div>
-  </section>
+    <!-- Content Area -->
+    <main class="content-area">
+      <div class="section-inner">
+
+        <!-- ===================== 시작 ===================== -->
+        <h2 class="chapter-title" id="sec-def" style="margin-top:0;">한자의 정의와 기원</h2>
+        <p class="era-desc">
+          한자(<span class="zh">漢字</span>)는 중국에서 기원하여 동아시아 여러 국가에서 사용되어 온 표어문자(<span class="zh">表語文字</span>)입니다. 글자 하나하나가
+          형태(形), 소리(音), 뜻(義)의 세 가지 요소를 모두 갖추고 있어, 하나의 개념석 형태소 단위로 대응되는 것이 특징입니다.
+        </p>
+        <p class="era-desc">
+          기원전 13세기경 상(<span class="zh">商</span>)나라 후기의 뛰어난 점복(<span class="zh">占卜</span>) 기록인 <strong>갑골문(<span
+              class="zh">甲骨文</span>)</strong>에서 그 가장 오래된 원형을 찾을 수 있으며, 이는 현대까지도 일상적으로 통용되는 거의 유일한 고대 문자 체계입니다. 한자는 단일한
+          언어의 기록 수단을 넘어, 수천 년간 동아시아의 철학, 역사, 문학, 제도를 발전시키고 전승하게 한 핵심적인 문화적 인프라였습니다.
+        </p>
+
+        <hr class="section-divider">
+
+        <h2 class="chapter-title" id="sec-hist">한자의 역사와 서체의 변천</h2>
+        <p class="era-desc">
+          한자는 오랜 시간 동안 형태적 단순화와 추상화를 거치며 발전해왔습니다.
+        </p>
+        <ul
+          style="padding-left: 20px; font-family: var(--font-ko); font-size: var(--fs-body, 18px); line-height: 1.9; margin-bottom: 24px;">
+          <li><strong>갑골문(<span class="zh">甲骨文</span>, B.C. 13세기)</strong>: 귀갑(거북의 껍질)이나 수골(짐승의 뼈)에 새긴 문자로, 사물의 형태를 본뜬
+            상형성(<span class="zh">象形性</span>)이 매우 강했습니다.</li>
+          <li><strong>금문(<span class="zh">金文</span>, B.C. 11세기 ~ B.C. 3세기)</strong>: 청동기 표면에 주조된 고풍스러운 서체로 갑골문보다 선이 굵고
+            정형화되기 시작했습니다.</li>
+          <li><strong>전서(<span class="zh">篆書</span>, B.C. 3세기 경)</strong>: 진시황(<span class="zh">秦始皇</span>)이 천하를 통일하며
+            이사(<span class="zh">李斯</span>)에게 명하여 정비한 소전(<span class="zh">小篆</span>)이 대표적입니다. 획의 굵기가 일정해지고 곡선이 많았습니다.
+          </li>
+          <li><strong>예서(<span class="zh">隸書</span>, 한대~)</strong>: 둥근 전서를 쓰기 쉽고 빠른 직선과 꺾임으로 변형시키며 문자로서의 추상화가 본궤도에
+            올랐습니다.</li>
+          <li><strong>해서(<span class="zh">楷書</span>, 위진남북조~현대)</strong>: 오늘날 우리가 아는 사각형(방괴형·<span
+              class="zh">方塊型</span>)의 정자체입니다. 점과 획이 규격화되고 완벽히 안정화되었습니다.</li>
+        </ul>
+
+        <div class="img-placeholder" id="img-hanja-evolution">
+          [이미지 삽입 예정: 갑골문부터 해서체까지 한자 서체의 변천 과정 비교도]
+        </div>
+
+        <h3 class="mid-title">현대의 자형 분화 (번체와 간체)</h3>
+        <p class="era-desc">
+          현대에 들어 한자의 복잡한 획수는 실용성에 제약을 주었습니다. 이에 중국 대륙(중화인민공화국)은 1950년대부터 획수를 대폭 줄인 <strong>간체자(<span
+              class="zh">簡體字</span>)</strong>를 제정해 사용 중이며, 대만, 홍콩 등에서는 전통적인 자형인 <strong>정체자(<span class="zh">正體字</span>,
+            번체자)</strong>를 고수하고 있습니다. 한국 또한 정체자를 기본으로 사용하고, 일본은 자체적으로 약화시킨 신자체(<span class="zh">新字體</span>)를 쓰고 있습니다.
+        </p>
+
+        <hr class="section-divider">
+
+        <h2 class="chapter-title" id="sec-char">한자의 조자 원리와 특성</h2>
+        <p class="era-desc">
+          한자가 만들어지고 활용되는 원리는 전통적으로 후한(<span class="zh">後漢</span>)의 학자 허신이 『설문해자(<span class="zh">說文解字</span>)』에서 정리한
+          <strong>육서(<span class="zh">六書</span>)</strong>의 원칙으로 설명됩니다.
+        </p>
+
+        <h3 class="mid-title">육서 (글자를 만드는 4가지 원리, 쓰는 2가지 원리)</h3>
+        <ul
+          style="padding-left: 20px; font-family: var(--font-ko); font-size: var(--fs-body, 18px); line-height: 1.9; margin-bottom: 24px;">
+          <li><strong>상형(<span class="zh">象形</span>)</strong>: 시각적인 사물의 모양을 본따 만든 기초 글자 (예: 日, 月, 木, 水)</li>
+          <li><strong>지사(<span class="zh">指事</span>)</strong>: 숫자나 위치 같은 추상적 개념을 기호로 나타낸 글자 (예: 一, 二, 上, 下)</li>
+          <li><strong>회의(<span class="zh">會意</span>)</strong>: 두 개 이상의 뜻(글자)을 합쳐 새로운 뜻을 만든 글자 (예: 日 + 月 = 明 밝을 명 / 人 + 木
+            = 休 쉴 휴)</li>
+          <li><strong>형성(<span class="zh">形聲</span>)</strong>: 뜻을 나타내는 한쪽과 음을 나타내는 한쪽을 합친 글자로, 한자의 80% 이상이 이 원리로
+            만들어졌습니다. (예: 水(뜻) + 靑(음/청) = 淸 맑을 청)</li>
+          <li><strong>전주(<span class="zh">轉注</span>)</strong>: 본래 뜻에서 연관된 다른 뜻으로 파생시키며 소리가 달라지기도 하는 원리 (예: 음악 악 / 즐길 낙
+            樂)</li>
+          <li><strong>가차(<span class="zh">假借</span>)</strong>: 외국어 고유명사나 특정 뜻에 맞는 글자가 없을 때, 소리가 같은 다른 글자를 빌려 쓰는 원리 (예: 弗
+            (달러), 亞細亞 (아시아))</li>
+        </ul>
+
+        <h3 class="mid-title">한자의 표의성(表意性)과 확장성</h3>
+        <p class="era-desc">
+          단어당 하나의 글자가 배열되는 특성 덕분에 한자는 뜻이 매우 응축되어 있으며, 새로운 사물과 개념이 등장할 때마다 새로운 글자(주로 형성자)를 손쉽게 만들어 개념을 구조적으로 담아낼 수 있는 무한한
+          확장성을 가집니다.
+        </p>
+
+        <hr class="section-divider">
+
+        <h2 class="chapter-title" id="sec-culture">한자 문화권의 형성과 의미</h2>
+        <p class="era-desc">
+          한자 문화권은 중국 본토를 중심으로 한자, 유교, 불교, 율령 체계 등 중국의 고대 문명을 공유하며 발전한 동아시아 지역(한국, 일본, 베트남 등)을 통칭합니다.
+        </p>
+        <p class="era-desc">
+          한자는 이들 국가 사이에서 <strong>시대와 언어를 초월한 공용어</strong> 역할을 했습니다. 한국어, 일본어, 베트남어, 중국어는 음운 구조가 완전히 다른 이질적인 언어들이지만, 한자라는
+          공통된 문자 덕분에 한 곳에서 쓰인 역사서나 시집이 다른 국가 산골짜기의 선비에게까지 곧바로 읽힐 수 있었습니다.
+        </p>
+        <p class="era-desc">
+          한자 문화권에 속한 국가의 언어는 대체로 고유어에 한자어가 깊이 결합된 이중 어휘 체계를 갖게 되었으며, 현재 한국어 표준국어대사전 표제어의 절반 이상이 한자어로 이루어져 있습니다.
+        </p>
+
+        <div class="img-placeholder" id="img-hanja-cultural-sphere">
+          [이미지 삽입 예정: 한자 문화권역을 나타내는 맵 또는 유사한 공통 간판/단어 비교 사진]
+        </div>
+
+        <hr class="section-divider">
+
+        <h2 class="chapter-title" id="sec-edu">한국 한자 교육의 역사와 논쟁</h2>
+        <p class="era-desc">
+          한국에서의 한자 교육은 광복 이후 '한글 전용 정책'과 맞물려 오랫동안 뜨거운 논쟁의 중심에 있었습니다.
+        </p>
+        <p class="era-desc">
+          1968년 박정희 정부 들어 강력한 한글 전용화 정책이 시행되며 교과서에서 한자가 사라지기도 했으나, 여론 반발로 중고교 과목으로 다시 편입되었습니다. 이후 지속적인 교육과정 개정을 겪으며 점차
+          공교육에서 한문 교과의 시수와 필연성은 축소되었고, 수능에서도 필수 요소에서 밀려났습니다. 2010년대에는 초등학교 교과서의 '한자 병기' 안에 대한 찬반 논란이 강하게 일기도 했습니다.
+        </p>
+
+        <h3 class="mid-title">주요 논쟁: 찬성과 반대</h3>
+        <div style="background: #f8f9fa; border-radius: 8px; padding: 24px; margin-bottom: 24px;">
+          <h4 style="font-family: var(--font-ko); font-size: 16px; margin-top: 0; margin-bottom: 12px; color: #1c2122;">
+            [찬성 및 필수화 논리]</h4>
+          <ul
+            style="font-family: var(--font-ko); font-size: 15px; color: #444; padding-left: 20px; line-height: 1.6; margin-bottom: 24px;">
+            <li><strong>어휘력 및 문해력 향상</strong>: 고급·전문 어휘 다수가 한자어이며, 글자의 뜻을 알면 처음 보는 단어의 의미도 정확히 유추할 수 있다.</li>
+            <li><strong>전문 학술 용어의 이해</strong>: 법학, 의학, 과학 등 고등 학술 용어는 압도적으로 한자어에 의존하고 있어 조기 교육이 필수적이다.</li>
+            <li><strong>동음이의어 구별</strong>: 사기(詐欺), 사기(士氣), 사기(史記) 등 우리말의 많은 동음이의어를 정확히 변별할 수 있다.</li>
+          </ul>
+
+          <h4 style="font-family: var(--font-ko); font-size: 16px; margin-top: 0; margin-bottom: 12px; color: #1c2122;">
+            [반대 및 한글 전용 논리]</h4>
+          <ul
+            style="font-family: var(--font-ko); font-size: 15px; color: #444; padding-left: 20px; line-height: 1.6; margin-bottom: 0;">
+            <li><strong>한글의 자족성과 효율성</strong>: 한글만으로도 일상 생활과 지식 전달에 무리가 없으며, 정보 접근성을 높여 문맹을 퇴치했다.</li>
+            <li><strong>학생들의 학습 부담 가중</strong>: 복잡한 한자 암기는 학생들에게 불필요한 학업 스트레스만 줄 뿐, 근본적인 국어 능력 향상과 무관하다.</li>
+            <li><strong>고유어 교육 약화 우려</strong>: 한자 교육에 치중하기보다 우리말 고유의 조어법과 아름다움을 살리는 국어 교육이 우선되어야 한다.</li>
+          </ul>
+        </div>
+
+        <p class="era-desc">
+          이처럼 한자 교육은 지식의 정확한 전달이라는 시대적 실용성과, 정보의 민주화 및 한글의 주체성 계승 사이에서 현재까지도 조정이 이루어지고 있는 중대한 언어 정책 과제입니다.
+        </p>
+
+      </div>
+    </main>
+  </div>
 
   <div id="footer-placeholder"></div>
   <script src="/shared/auth-state.js"></script>
   <script src="/shared/components.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const currentPath = location.pathname.replace(/\/+$/, '') || '/';
+      document.querySelectorAll('.era-tree-link').forEach(link => {
+        const href = (link.getAttribute('href') || '').replace(/\/+$/, '');
+        if (href === currentPath) {
+          link.classList.add('active');
+        } else {
+          link.classList.remove('active');
+        }
+      });
+    });
+  </script>
 </body>
+
 </html>

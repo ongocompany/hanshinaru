@@ -1,0 +1,71 @@
+{
+  "generatedAt": "20260222_081217",
+  "mode": "dry-run",
+  "model": "qwen-plus-latest",
+  "totalInputTokens": 0,
+  "totalOutputTokens": 0,
+  "count": 10,
+  "failCount": 0,
+  "results": [
+    {
+      "poemNoStr": "004",
+      "title": "〈感遇〉 其四",
+      "type": "translate_jipyeong",
+      "dry_run": true
+    },
+    {
+      "poemNoStr": "006",
+      "title": "〈月下獨酌〉",
+      "type": "translate_jipyeong",
+      "dry_run": true
+    },
+    {
+      "poemNoStr": "009",
+      "title": "〈贈衛八處士[1]〉",
+      "type": "translate_jipyeong",
+      "dry_run": true
+    },
+    {
+      "poemNoStr": "010",
+      "title": "〈佳人〉",
+      "type": "translate_jipyeong",
+      "dry_run": true
+    },
+    {
+      "poemNoStr": "012",
+      "title": "〈夢李白〉 二首之二",
+      "type": "translate_jipyeong",
+      "dry_run": true
+    },
+    {
+      "poemNoStr": "013",
+      "title": "〈送別〉",
+      "type": "translate_jipyeong",
+      "dry_run": true
+    },
+    {
+      "poemNoStr": "014",
+      "title": "〈送綦毋潛[1]落第還鄕〉",
+      "type": "translate_jipyeong",
+      "dry_run": true
+    },
+    {
+      "poemNoStr": "020",
+      "title": "〈宿業師山房 待丁大 不至[1]〉",
+      "type": "translate_jipyeong",
+      "dry_run": true
+    },
+    {
+      "poemNoStr": "022",
+      "title": "〈尋西山隱者不遇〉",
+      "type": "translate_jipyeong",
+      "dry_run": true
+    },
+    {
+      "poemNoStr": "025",
+      "title": "〈與高適薛據登慈恩寺浮圖[1]〉",
+      "type": "translate_jipyeong",
+      "dry_run": true
+    }
+  ]
+}

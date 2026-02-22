@@ -1,0 +1,24 @@
+{
+  "generatedAt": "20260221_091431",
+  "mode": "live",
+  "model": "qwen-max",
+  "count": 2,
+  "results": [
+    {
+      "poemNoStr": "001",
+      "_titleKo": "〈感遇〉 네 수 중 첫 번째 시",
+      "_poetKo": "장구령",
+      "_poemZh": "孤鴻海上來\n池潢[2]不敢顧\n側見雙翠鳥[3]\n巢在三珠樹[4]\n矯矯[5]珍木巓\n得無金丸[6]懼\n美服患人指[7]\n高明逼神惡\n今我遊冥冥\n弋者何所慕[8]",
+      "_model": "qwen-max",
+      "error": "Qwen API network error: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>"
+    },
+    {
+      "poemNoStr": "006",
+      "_titleKo": "〈달 아래 홀로 술을 마시며〉",
+      "_poetKo": "이백",
+      "_poemZh": "花間[1]一壺酒\n獨酌無相親\n擧杯邀明月\n對影成三人[2]\n月旣不解飮\n影徒隨我身\n暫伴月將影[3]\n行樂須及春[4]\n我歌月徘徊[5]\n我舞影零亂[6]\n醒時[7]同交歡\n醉後各分散\n永結無情遊[8]\n相期邈雲漢[9]",
+      "_model": "qwen-max",
+      "error": "Qwen API network error: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>"
+    }
+  ]
+}

@@ -4,10 +4,12 @@
   "description": "Tangshi Timeline Project",
   "scripts": {
     "build:db": "node scripts/build_pingshui_db.js",
+    "build:korean": "node scripts/build_korean_timeline.js",
     "merge:poets": "node scripts/merge_poet_data.js",
     "crawl:news": "node scripts/crawl_news.js"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.97.0",
     "pinyin-pro": "^3.26.0"
   }
 }

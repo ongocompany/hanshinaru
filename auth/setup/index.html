@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>프로필 설정 — 한시의모든것</title>
+  <link rel="stylesheet" href="https://use.typekit.net/dje5vco.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&family=Noto+Serif+KR:wght@200..900&family=Noto+Serif+TC:wght@200..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/shared/styles.css">
+  <style>
+    body {
+      background: var(--c-bright-snow);
+      margin: 0;
+      min-height: 100vh;
+    }
+
+    /* ===== Auth Container ===== */
+    .auth-wrapper {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .auth-card {
+      width: 100%;
+      max-width: 840px;
+      background: #fff;
+      border: 1px solid var(--c-silver);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+      display: flex;
+    }
+
+    /* ===== 2-Column: 왼쪽 폼 / 오른쪽 비주얼 ===== */
+    .auth-form-side {
+      flex: 1;
+      padding: 48px 40px;
+    }
+    .auth-visual-side {
+      flex: 1;
+      background: linear-gradient(135deg, var(--c-slate-grey) 0%, var(--c-powder-blue) 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 48px 32px;
+      position: relative;
+      overflow: hidden;
+    }
+    .auth-visual-side::before {
+      content: '';
+      position: absolute;
+      top: -40px; right: -40px;
+      width: 200px; height: 200px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.06);
+    }
+    .auth-visual-side::after {
+      content: '';
+      position: absolute;
+      bottom: -60px; left: -30px;
+      width: 250px; height: 250px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.04);
+    }
+    .visual-poem {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      color: rgba(255,255,255,0.85);
+    }
+    .visual-poem .poem-zh {
+      font-family: var(--font-zh);
+      font-size: var(--fs-h2);
+      line-height: 1.9;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+    .visual-poem .poem-author {
+      font-size: var(--fs-small);
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 24px;
+    }
+    .visual-poem .poem-ko {
+      font-size: var(--fs-small);
+      line-height: 2;
+      color: rgba(255,255,255,0.5);
+    }
+
+    /* ===== Header ===== */
+    .auth-header {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    .auth-brand {
+      font-family: var(--font-zh);
+      font-size: var(--fs-h2);
+      color: var(--c-heading);
+      margin-bottom: 4px;
+    }
+    .auth-subtitle {
+      font-size: var(--fs-small);
+      color: var(--c-faint);
+    }
+
+    /* ===== Avatar Preview ===== */
+    .avatar-preview {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 24px;
+    }
+    .avatar-circle {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      overflow: hidden;
+      background: var(--c-powder-blue);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 3px solid var(--c-bright-snow);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+    }
+    .avatar-circle img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .avatar-circle .avatar-initial {
+      font-size: 36px;
+      font-weight: 600;
+      color: #fff;
+      font-family: var(--font-ko);
+    }
+
+    /* ===== Form ===== */
+    .auth-form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .form-group label {
+      font-size: var(--fs-small);
+      color: var(--c-muted);
+      font-weight: 500;
+    }
+    .form-group input {
+      padding: 12px 14px;
+      border: 1px solid var(--c-silver);
+      border-radius: 8px;
+      font-size: var(--fs-body);
+      font-family: var(--font-ko);
+      color: var(--c-ink);
+      background: #fff;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      outline: none;
+    }
+    .form-group input:focus {
+      border-color: var(--c-powder-blue);
+      box-shadow: 0 0 0 3px rgba(164, 184, 196, 0.2);
+    }
+    .form-group input::placeholder {
+      color: var(--c-faint);
+    }
+
+    .form-hint {
+      font-size: 14px;
+      color: var(--c-faint);
+      margin-top: 2px;
+    }
+
+    /* ===== Checkbox Group ===== */
+    .checkbox-group {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 8px;
+    }
+    .checkbox-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .checkbox-item input[type="checkbox"] {
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+      accent-color: var(--c-slate-grey);
+      flex-shrink: 0;
+    }
+    .checkbox-item label {
+      font-size: var(--fs-small);
+      color: var(--c-muted);
+      cursor: pointer;
+      user-select: none;
+      flex: 1;
+    }
+    .checkbox-item label a {
+      color: var(--c-powder-blue);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .checkbox-item label a:hover {
+      color: var(--c-slate-grey);
+      text-decoration: underline;
+    }
+
+    /* ===== Submit Button ===== */
+    .auth-submit {
+      padding: 14px;
+      background: var(--c-slate-grey);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: var(--fs-body);
+      font-family: var(--font-ko);
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.1s;
+      margin-top: 4px;
+    }
+    .auth-submit:hover {
+      background: var(--c-powder-blue);
+    }
+    .auth-submit:active {
+      transform: scale(0.98);
+    }
+    .auth-submit:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    /* ===== Message ===== */
+    .auth-message {
+      padding: 12px 14px;
+      border-radius: 8px;
+      font-size: var(--fs-small);
+      text-align: center;
+      display: none;
+      margin-bottom: 16px;
+    }
+    .auth-message.error {
+      display: block;
+      background: #fef2f2;
+      color: #dc2626;
+      border: 1px solid #fecaca;
+    }
+    .auth-message.success {
+      display: block;
+      background: #f0fdf4;
+      color: #16a34a;
+      border: 1px solid #bbf7d0;
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 860px) {
+      .auth-card {
+        flex-direction: column;
+        max-width: 420px;
+      }
+      .auth-visual-side {
+        display: none;
+      }
+    }
+    @media (max-width: 480px) {
+      .auth-form-side {
+        padding: 36px 24px;
+      }
+      .auth-wrapper {
+        padding: 20px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Auth Wrapper -->
+  <div class="auth-wrapper">
+    <div class="auth-card">
+
+      <!-- 왼쪽: 폼 영역 -->
+      <div class="auth-form-side">
+
+        <!-- Header -->
+        <div class="auth-header">
+          <div class="auth-brand">漢詩의 모든 것</div>
+          <div class="auth-subtitle">프로필 설정</div>
+        </div>
+
+        <!-- Avatar Preview -->
+        <div class="avatar-preview">
+          <div class="avatar-circle" id="avatarPreview">
+            <span class="avatar-initial" id="avatarInitial">?</span>
+          </div>
+        </div>
+
+        <!-- Message -->
+        <div class="auth-message" id="authMessage"></div>
+
+        <!-- Setup Form -->
+        <form class="auth-form" id="setupForm" autocomplete="on">
+          <div class="form-group">
+            <label for="nickname">닉네임</label>
+            <input type="text" id="nickname" name="nickname" placeholder="커뮤니티에서 사용할 이름" required autocomplete="nickname" minlength="2" maxlength="20">
+            <span class="form-hint">2~20자, 한글/한자/영문/숫자</span>
+          </div>
+
+          <!-- 약관 동의 -->
+          <div class="checkbox-group">
+            <div class="checkbox-item">
+              <input type="checkbox" id="agreePrivacy" required>
+              <label for="agreePrivacy">
+                개인정보 수집·이용에 동의합니다 (필수) <a href="/privacy/" target="_blank">[전문 보기]</a>
+              </label>
+            </div>
+            <div class="checkbox-item">
+              <input type="checkbox" id="agreeTerms" required>
+              <label for="agreeTerms">
+                이용약관에 동의합니다 (필수) <a href="/terms/" target="_blank">[전문 보기]</a>
+              </label>
+            </div>
+          </div>
+
+          <button type="submit" class="auth-submit" id="submitBtn">시작하기</button>
+        </form>
+
+      </div>
+
+      <!-- 오른쪽: 비주얼 영역 -->
+      <div class="auth-visual-side">
+        <div class="visual-poem">
+          <div class="poem-zh">
+            海內存知己<br>
+            天涯若比鄰
+          </div>
+          <div class="poem-author">— 王勃 「送杜少府之任蜀州」</div>
+          <div class="poem-ko">
+            천하에 알아주는 벗이 있으면<br>
+            하늘 끝에서도 이웃처럼 가깝다네
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="/shared/supabase.js"></script>
+  <script>
+    (function () {
+      'use strict';
+
+      // ===== DOM =====
+      const form = document.getElementById('setupForm');
+      const msgEl = document.getElementById('authMessage');
+      const nicknameInput = document.getElementById('nickname');
+      const agreePrivacy = document.getElementById('agreePrivacy');
+      const agreeTerms = document.getElementById('agreeTerms');
+      const submitBtn = document.getElementById('submitBtn');
+      const avatarPreview = document.getElementById('avatarPreview');
+      const avatarInitial = document.getElementById('avatarInitial');
+
+      let currentUser = null;
+
+      // ===== Message =====
+      function showMessage(text, type) {
+        msgEl.textContent = text;
+        msgEl.className = 'auth-message ' + type;
+      }
+      function hideMessage() {
+        msgEl.className = 'auth-message';
+        msgEl.textContent = '';
+      }
+
+      // ===== Supabase 체크 =====
+      function getSB() {
+        if (!window.sb) {
+          showMessage('Supabase 연결에 실패했습니다. 페이지를 새로고침해주세요.', 'error');
+          return null;
+        }
+        return window.sb;
+      }
+
+      // ===== 세션 확인 및 프리필 =====
+      async function checkSessionAndPrefill() {
+        const sb = getSB();
+        if (!sb) return;
+
+        const { data } = await sb.auth.getSession();
+        if (!data?.session) {
+          // 세션 없으면 로그인 페이지로 리다이렉트
+          location.href = '/auth/';
+          return;
+        }
+
+        currentUser = data.session.user;
+
+        // 아바타 설정
+        const avatarUrl = currentUser.user_metadata?.avatar_url;
+        if (avatarUrl) {
+          const img = document.createElement('img');
+          img.src = avatarUrl;
+          img.alt = 'Avatar';
+          avatarPreview.innerHTML = '';
+          avatarPreview.appendChild(img);
+        } else {
+          // 닉네임 첫 글자 또는 이메일 첫 글자
+          const nickname = currentUser.user_metadata?.nickname || currentUser.email || '?';
+          avatarInitial.textContent = nickname.charAt(0).toUpperCase();
+        }
+
+        // 닉네임 프리필
+        if (currentUser.user_metadata?.nickname) {
+          nicknameInput.value = currentUser.user_metadata.nickname;
+        }
+      }
+
+      // ===== 폼 제출 =====
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const sb = getSB();
+        if (!sb) return;
+
+        const nickname = nicknameInput.value.trim();
+
+        // 유효성 검사
+        if (nickname.length < 2 || nickname.length > 20) {
+          showMessage('닉네임은 2~20자로 입력해주세요.', 'error');
+          return;
+        }
+        if (!agreePrivacy.checked || !agreeTerms.checked) {
+          showMessage('필수 약관에 모두 동의해주세요.', 'error');
+          return;
+        }
+
+        submitBtn.disabled = true;
+        submitBtn.textContent = '설정 중...';
+        hideMessage();
+
+        try {
+          // profiles 테이블 업데이트
+          const { error: profileError } = await sb
+            .from('profiles')
+            .update({
+              nickname: nickname,
+              agreed_privacy: true,
+              agreed_terms: true,
+              agreed_at: new Date().toISOString(),
+              profile_completed: true
+            })
+            .eq('id', currentUser.id);
+
+          if (profileError) {
+            throw profileError;
+          }
+
+          // user_metadata도 업데이트 (선택사항)
+          const { error: metaError } = await sb.auth.updateUser({
+            data: { nickname: nickname }
+          });
+
+          if (metaError) {
+            console.warn('user_metadata 업데이트 실패:', metaError);
+          }
+
+          showMessage('프로필 설정 완료! 홈으로 이동합니다...', 'success');
+          setTimeout(() => { location.href = '/'; }, 1500);
+
+        } catch (error) {
+          console.error('프로필 설정 오류:', error);
+          showMessage('프로필 설정 중 오류가 발생했습니다: ' + error.message, 'error');
+          submitBtn.disabled = false;
+          submitBtn.textContent = '시작하기';
+        }
+      });
+
+      // ===== 초기화 =====
+      checkSessionAndPrefill();
+
+    })();
+  </script>
+</body>
+</html>

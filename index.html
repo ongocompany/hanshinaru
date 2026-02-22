@@ -544,56 +544,64 @@
     .news-list {
       max-width: 1030px;
       margin: 20px auto 0;
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
     }
 
     .news-item {
       border-radius: 12px;
       border: 1px solid #84969A;
       overflow: hidden;
-      transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+      background: rgb(230, 235, 236);
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
     }
 
     .news-item:hover {
       transform: translateY(-6px);
       box-shadow: 0 16px 40px rgba(110, 131, 135, 0.2);
-      background: rgb(200,211,213) !important;
+      background: rgb(215, 224, 226);
     }
 
-    .news-item-header {
+    .news-thumb {
+      width: 100%;
+      height: 160px;
+      overflow: hidden;
+      background: #C8D3D5;
       display: flex;
-      gap: 20px;
-      padding: 10px 24px;
-      cursor: pointer;
-      align-items: flex-start;
-      user-select: none;
+      align-items: center;
+      justify-content: center;
     }
 
-    .news-date {
-      flex: 0 0 auto;
-      text-align: center;
-      padding: 8px 12px;
-      background: #FCFAFA;
-      border-radius: 8px;
-      line-height: 1.2;
+    .news-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
-    .news-date-month {
-      font-size: 12px;
-      color: #333;
+    .news-thumb-placeholder {
+      font-size: 36px;
+      color: #A4B8C4;
+      opacity: 0.5;
     }
 
-    .news-date-day {
-      font-size: 24px;
-      font-weight: 600;
-      color: #000;
-    }
-
-    .news-header-body {
+    .news-card-body {
+      padding: 16px 20px 20px;
       flex: 1;
-      min-width: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .news-card-meta {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
     }
 
     .news-tag {
@@ -603,62 +611,49 @@
       background: #49575A;
       padding: 2px 8px;
       border-radius: 4px;
-      margin-bottom: 6px;
+    }
+    .news-tag.ai {
+      color: #0f4f66;
+      background: #dff0f8;
+    }
+
+    .news-date {
+      font-size: 12px;
+      color: #666;
     }
 
     .news-title {
-      font-size: 17px;
+      font-size: 16px;
       font-weight: 600;
-      line-height: 1.4;
-      margin-bottom: 4px;
+      line-height: 1.5;
+      margin-bottom: 8px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
     }
 
     .news-summary {
-      font-size: 14px;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    .news-toggle {
-      flex-shrink: 0;
-      align-self: center;
-      font-size: 18px;
-      color: #333;
-      transition: transform 0.3s;
-    }
-
-    .news-item.open .news-toggle {
-      transform: rotate(180deg);
-    }
-
-    .news-accordion {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.35s ease;
-    }
-
-    .news-accordion-inner {
-      padding: 0 24px 20px 24px;
-      border-top: 1px solid #84969A;
-      padding-top: 16px;
-      margin-left: 0;
-    }
-
-    .news-body-text {
-      font-size: 15px;
-      color: #000;
-      line-height: 1.8;
-      margin-bottom: 12px;
-    }
-
-    .news-source-link {
       font-size: 13px;
-      color: #333;
-      text-decoration: none;
+      color: #555;
+      line-height: 1.6;
+      flex: 1;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .news-summary.ai-full {
+      display: block;
+      -webkit-line-clamp: unset;
+      -webkit-box-orient: initial;
+      overflow: visible;
     }
 
-    .news-source-link:hover {
-      text-decoration: underline;
+    .news-source {
+      font-size: 12px;
+      color: #888;
+      margin-top: 10px;
     }
 
     .news-empty {
@@ -666,11 +661,12 @@
       color: #999;
       padding: 40px 0;
       font-size: 15px;
+      grid-column: 1 / -1;
     }
 
-    @media (max-width: 480px) {
-      .news-item-header { flex-direction: column; gap: 12px; }
-      .news-date { flex-direction: row; display: flex; gap: 6px; align-items: baseline; }
+    @media (max-width: 640px) {
+      .news-list { grid-template-columns: 1fr; }
+      .news-thumb { height: 140px; }
     }
 
     /* ===== F. 서브페이지 소개 ===== */
@@ -1172,6 +1168,11 @@
     (async function loadNews() {
       const list = document.getElementById('newsList');
       if (!list) return;
+      const NEWS_MAX_AGE_MONTHS = 2;
+      const NEWS_RENDER_LIMIT = 6; // 체크리스트 기준: 최신 5~8건 중 6건 노출
+      const NEWS_EMPTY_MESSAGE = '최근 소식이 없습니다.';
+      const NEWS_LOAD_FAIL_MESSAGE = '소식을 불러올 수 없습니다.';
+      const NEWS_SUMMARY_PRIORITY = ['summary', 'body'];
 
       try {
         const res = await fetch('public/index/news_articles.json?_ts=' + Date.now(), { cache: 'no-store' });
@@ -1180,14 +1181,14 @@
 
         // 2개월 이내 기사만 표시
         const twoMonthsAgo = new Date();
-        twoMonthsAgo.setMonth(twoMonthsAgo.getMonth() - 2);
+        twoMonthsAgo.setMonth(twoMonthsAgo.getMonth() - NEWS_MAX_AGE_MONTHS);
         const recent = (data.articles || [])
           .filter(a => new Date(a.publishedAt) >= twoMonthsAgo)
           .sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt))
-          .slice(0, 8);
+          .slice(0, NEWS_RENDER_LIMIT);
 
         if (recent.length === 0) {
-          list.innerHTML = '<div class="news-empty">최근 소식이 없습니다.</div>';
+          list.innerHTML = '<div class="news-empty">' + NEWS_EMPTY_MESSAGE + '</div>';
           return;
         }
 
@@ -1196,74 +1197,44 @@
           return (s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
         }
 
-        list.innerHTML = recent.map((a, idx) => {
+        list.innerHTML = recent.map((a) => {
           const d = new Date(a.publishedAt);
-          const month = (d.getMonth() + 1) + '월';
-          const day = d.getDate();
-          // 그라데이션 배경: 최상단 #C8D3D5 → 아래로 갈수록 밝아짐
-          const blend = recent.length > 1 ? idx / (recent.length - 1) : 0;
-          const bgR = Math.round(211 + (255 - 211) * blend);
-          const bgG = Math.round(220 + (255 - 220) * blend);
-          const bgB = Math.round(221 + (255 - 221) * blend);
-          const itemBg = 'rgb(' + bgR + ',' + bgG + ',' + bgB + ')';
-          const cleanBody = esc(a.body || '').trim();
-          const cleanTitle = esc(a.title || '').trim();
-          // 본문이 제목과 다르고 충분히 길 때만 아코디언 표시
-          const hasRealBody = cleanBody.length > 0 && cleanBody !== cleanTitle && cleanBody.length > cleanTitle.length + 5;
-          // AI 요약이 본문과 다를 때만 헤더에 요약 표시 (크롤링 요약은 body 앞부분이라 중복)
-          const hasSummary = a.summary && a.body && a.summary !== a.body && !a.body.startsWith(a.summary.replace('…', ''));
-          const sourceHtml = a.sourceUrl
-            ? '<a class="news-source-link" href="' + esc(a.sourceUrl) + '" target="_blank" rel="noopener">출처: ' + esc(a.source || '원문') + ' &rarr;</a>'
-            : (a.source ? '<span class="news-source-link">출처: ' + esc(a.source) + '</span>' : '');
+          const dateStr = (d.getMonth() + 1) + '월 ' + d.getDate() + '일';
+          const summaryPriority = a.aiWritten === true ? ['body', 'summary'] : NEWS_SUMMARY_PRIORITY;
+          const summarySource = summaryPriority
+            .map((field) => a[field])
+            .find((v) => typeof v === 'string' && v.trim());
+          const summaryText = esc(summarySource || '');
+          const summary = a.aiWritten === true ? summaryText : summaryText.slice(0, 80);
+          const summaryClass = 'news-summary' + (a.aiWritten === true ? ' ai-full' : '');
+          const linkUrl = a.sourceUrl ? esc(a.sourceUrl) : '#';
+          const imgUrl = a.imageUrl || '';
+          const aiBadge = a.aiWritten === true ? '<span class="news-tag ai">AI작성</span>' : '';
 
-          return '<div class="news-item" style="background:' + itemBg + '">' +
-            '<div class="news-item-header" onclick="toggleNews(this)">' +
-              '<div class="news-date">' +
-                '<div class="news-date-month">' + month + '</div>' +
-                '<div class="news-date-day">' + day + '</div>' +
-              '</div>' +
-              '<div class="news-header-body">' +
+          const thumbHtml = imgUrl
+            ? '<div class="news-thumb"><img src="' + esc(imgUrl) + '" alt="" loading="lazy" onerror="this.parentElement.innerHTML=\'<span class=news-thumb-placeholder>&#9776;</span>\'"></div>'
+            : '<div class="news-thumb"><span class="news-thumb-placeholder">&#9776;</span></div>';
+
+          return '<a class="news-item" href="' + linkUrl + '" target="_blank" rel="noopener">' +
+            thumbHtml +
+            '<div class="news-card-body">' +
+              '<div class="news-card-meta">' +
                 '<span class="news-tag">' + esc(a.category) + '</span>' +
-                '<div class="news-title">' + esc(a.title) + '</div>' +
-                (hasSummary ? '<div class="news-summary">' + esc(a.summary) + '</div>' : '') +
+                aiBadge +
+                '<span class="news-date">' + dateStr + '</span>' +
               '</div>' +
-              (hasRealBody ? '<span class="news-toggle">&#9660;</span>' : '') +
+              '<div class="news-title">' + esc(a.title) + '</div>' +
+              '<div class="' + summaryClass + '">' + summary + '</div>' +
+              '<div class="news-source">' + esc(a.source || '') + '</div>' +
             '</div>' +
-            (hasRealBody ? '<div class="news-accordion"><div class="news-accordion-inner">' +
-              '<div class="news-body-text">' + cleanBody + '</div>' +
-              sourceHtml +
-            '</div></div>' : (a.sourceUrl ? '<div class="news-accordion"><div class="news-accordion-inner" style="padding:6px 12px">' + sourceHtml + '</div></div>' : '')) +
-          '</div>';
+          '</a>';
         }).join('');
 
       } catch (e) {
         console.warn('소식 로딩 실패:', e);
-        list.innerHTML = '<div class="news-empty">소식을 불러올 수 없습니다.</div>';
+        list.innerHTML = '<div class="news-empty">' + NEWS_LOAD_FAIL_MESSAGE + '</div>';
       }
     })();
-
-    function toggleNews(header) {
-      const item = header.closest('.news-item');
-      const accordion = item.querySelector('.news-accordion');
-      if (!accordion) return;
-
-      const isOpen = item.classList.contains('open');
-      // 다른 열린 아코디언 닫기
-      document.querySelectorAll('.news-item.open').forEach(other => {
-        if (other !== item) {
-          other.classList.remove('open');
-          other.querySelector('.news-accordion').style.maxHeight = '0';
-        }
-      });
-
-      if (isOpen) {
-        item.classList.remove('open');
-        accordion.style.maxHeight = '0';
-      } else {
-        item.classList.add('open');
-        accordion.style.maxHeight = accordion.scrollHeight + 'px';
-      }
-    }
   </script>
 
 </body>

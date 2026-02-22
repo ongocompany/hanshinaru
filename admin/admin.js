@@ -29,9 +29,12 @@ const FILE_HANDLES = {
   hyeonto: null,
 };
 
+const urlParams = new URLSearchParams(window.location.search);
+const isTestMode = urlParams.get('test') === 'qwen';
+
 const DATA_PATHS = {
   author: "../public/index/db_author.with_ko.json",
-  poem: "../public/index/poems.full.owned.json",
+  poem: isTestMode ? "../public/index/poems.qwen_test.json" : "../public/index/poems.full.owned.json",
   history: "../public/index/history_cards.json",
   uiSettings: "../public/index/ui_settings.json",
   hyeonto: "../public/index/hyeonto_data.json",

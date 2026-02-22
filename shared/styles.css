@@ -470,14 +470,15 @@ body {
   flex-direction: column;
   overflow: hidden;
 }
-.layout-5a .sidebar-header {
-  padding: 16px; border-bottom: 1px solid var(--c-silver); flex-shrink: 0;
-}
 .layout-5a .sidebar-tree {
   flex: 1; overflow-y: auto; padding: 8px 0;
 }
 .layout-5a .content-area {
   flex: 1; overflow-y: auto; background: #fff;
+}
+.layout-5a .sidebar > .era-tree:first-child,
+.layout-5a .sidebar > .sidebar-tree:first-child {
+  padding-top: 40px;
 }
 
 /* 시대 트리 */
@@ -506,6 +507,27 @@ body {
 }
 .era-tree-sub-item:hover { background: var(--c-silver); color: #fff; }
 .era-tree-sub-item.active { color: var(--c-slate-grey); font-weight: 600; }
+
+/* 사이드바 메뉴는 배경 바 없이 텍스트 중심 인터랙션만 유지 */
+.layout-comm .comm-menu-link:hover,
+.layout-comm .comm-menu-link.active,
+.layout-5a .sidebar .era-tree-link:hover:not(.disabled),
+.layout-5a .sidebar .era-tree-link.active,
+.layout-5a .sidebar .era-tree-link.expanded,
+.layout-5a .sidebar .era-sub-link:hover,
+.layout-5a .sidebar .era-sub-link.active {
+  background: transparent !important;
+  color: #000 !important;
+}
+
+.layout-5a .sidebar .era-tree-item.active {
+  background: transparent !important;
+  color: #000 !important;
+}
+
+.layout-5a .sidebar .era-sub-tree {
+  background: transparent !important;
+}
 
 /* ===== Layout 5-b: 상단 시대 탭 + 콘텐츠 (기본값, 페이지에서 오버라이드) ===== */
 .era-tab-bar {
@@ -622,6 +644,10 @@ body {
     width: 100%; min-width: 100%;
     height: auto; max-height: 40vh;
     border-right: none; border-bottom: 1px solid var(--c-silver);
+  }
+  .layout-5a .sidebar > .era-tree:first-child,
+  .layout-5a .sidebar > .sidebar-tree:first-child {
+    padding-top: 8px;
   }
   .section { padding: 48px 20px; }
   .era-tab { padding: 10px 12px; font-size: 12px; }

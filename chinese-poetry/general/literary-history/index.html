@@ -38,30 +38,28 @@
       height: calc(100vh - 73px);
       overflow-y: auto;
     }
-
-    .layout-5a .sidebar-header {
-      padding: 40px 30px 24px;
-      text-align: right;
-      flex-shrink: 0;
-      border-bottom: 1px dashed var(--c-silver, #c8d3d5);
-    }
-    .sidebar-header h2 {
-      font-family: var(--font-ko);
-      font-size: var(--fs-lead, 20px);
-      font-weight: bold;
-      color: #1C2122;
-      margin-bottom: 8px;
-    }
-    .sidebar-header p {
-      font-size: var(--fs-small, 14px);
-      color: var(--c-powder-blue, #a4b8c4);
-    }
-
     /* Era tree navigation */
     .era-tree {
       list-style: none;
       flex-shrink: 0;
       padding: 8px 0;
+    }
+    .era-sub-tree {
+      padding: 0 0 0 12px !important;
+      margin: 0;
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      transform: translateY(-4px);
+      transition: max-height 0.28s ease, opacity 0.22s ease, transform 0.28s ease, padding 0.28s ease;
+      pointer-events: none;
+    }
+    .era-sub-tree.show {
+      padding: 8px 0 8px 12px !important;
+      max-height: 420px;
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
     }
     .era-tree-item {
       margin-bottom: 0;
@@ -88,6 +86,12 @@
       transition: transform 0.4s ease, background 0.4s ease, color 0.4s ease;
       transform-origin: right center;
     }
+    .era-tree-toggle {
+      width: 100%;
+      border: 0;
+      background: transparent;
+      appearance: none;
+    }
     .era-tree-link:hover:not(.active) {
       transform: scale(1.08);
     }
@@ -109,13 +113,6 @@
       background: transparent;
       color: #000;
       font-weight: bold;
-    }
-
-    /* Divider */
-    .sidebar-divider {
-      border: none;
-      border-top: 1px dashed var(--c-silver, #c8d3d5);
-      margin: 8px 0;
     }
 
     /* ===== Content Area: 우측 스크롤 ===== */
@@ -217,11 +214,6 @@
   <div class="layout-5a">
     <!-- Sidebar -->
     <aside class="sidebar">
-      <div class="sidebar-header">
-        <h2><span class="zh">漢詩</span> 일반론</h2>
-        <p>한시의 세계를 여는 문</p>
-      </div>
-
       <ul class="era-tree">
         <li class="era-tree-item">
           <a href="/chinese-poetry/general/" class="era-tree-link">
@@ -229,11 +221,11 @@
           </a>
         </li>
         <li class="era-tree-item">
-          <a href="/chinese-poetry/general/literary-history/" class="era-tree-link active">
+          <button type="button" class="era-tree-link era-tree-toggle active" id="literaryHistoryToggle" aria-expanded="true">
             <span>중국시문학을 읽는 지도</span>
-          </a>
+          </button>
           <!-- 하위 시대별 목차 -->
-          <ul class="era-tree" style="padding-left: 12px;">
+          <ul class="era-tree era-sub-tree show" id="literaryHistorySubTree">
             <li class="era-tree-item"><a class="era-tree-link" data-section="sec-xianqin"><span>선진 춘추전국</span></a></li>
             <li class="era-tree-item"><a class="era-tree-link" data-section="sec-han"><span>한 제국</span></a></li>
             <li class="era-tree-item"><a class="era-tree-link" data-section="sec-weijin"><span>위진남북조</span></a></li>
@@ -245,11 +237,6 @@
             <li class="era-tree-item"><a class="era-tree-link" data-section="sec-qing"><span>청</span></a></li>
           </ul>
         </li>
-      </ul>
-
-      <hr class="sidebar-divider">
-
-      <ul class="era-tree">
         <li class="era-tree-item">
           <a href="/chinese-poetry/general/masterworks/" class="era-tree-link">
             <span>대표작가와 작품 해설</span>
@@ -593,11 +580,9 @@
   </div>
 
   <div id="footer-placeholder"></div>
-  <script src="/shared/auth-state.js"></script>
-  <script src="/shared/components.js"></script>
   <script>
     // 사이드바 페이지 링크 active 처리
-    document.addEventListener('DOMContentLoaded', () => {
+    (() => {
       const currentPath = location.pathname.replace(/\/+$/, '') || '/';
       document.querySelectorAll('.era-tree-link[href]').forEach(link => {
         const href = (link.getAttribute('href') || '').replace(/\/+$/, '');
@@ -607,6 +592,20 @@
           link.classList.remove('active');
         }
       });
+
+      const outlineToggle = document.getElementById('literaryHistoryToggle');
+      const outlineSubTree = document.getElementById('literaryHistorySubTree');
+      const setOutlineExpanded = (expanded) => {
+        if (!outlineSubTree || !outlineToggle) return;
+        outlineSubTree.classList.toggle('show', expanded);
+        outlineToggle.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+      };
+      if (outlineToggle && outlineSubTree) {
+        setOutlineExpanded(outlineSubTree.classList.contains('show'));
+        outlineToggle.addEventListener('click', () => {
+          setOutlineExpanded(!outlineSubTree.classList.contains('show'));
+        });
+      }
 
       // 시대 목차 클릭 시 smooth scroll
       document.querySelectorAll('.era-tree-link[data-section]').forEach(link => {
@@ -645,7 +644,9 @@
       }, observerOptions);
 
       sections.forEach(section => observer.observe(section));
-    });
+    })();
   </script>
+  <script src="/shared/auth-state.js"></script>
+  <script src="/shared/components.js"></script>
 </body>
 </html>

@@ -59,8 +59,12 @@ function bindWritingEvents() {
     if (!isNaN(idx)) selectWritingPoem(idx);
   });
 
+  document.getElementById("wf-titleZhOwned").addEventListener("input", onWritingFormChange);
+  document.getElementById("wf-titleKoOwned").addEventListener("input", onWritingFormChange);
+  document.getElementById("wf-poemZhOwned").addEventListener("input", onWritingFormChange);
   document.getElementById("wf-translationKoOwned").addEventListener("input", onWritingFormChange);
   document.getElementById("wf-jipyeongKoOwned").addEventListener("input", onWritingFormChange);
+  document.getElementById("wf-commentaryKoOwned").addEventListener("input", onWritingFormChange);
   document.getElementById("wf-status").addEventListener("change", onWritingFormChange);
   document.getElementById("wf-editedBy").addEventListener("input", onWritingFormChange);
   document.getElementById("wf-reviewedBy").addEventListener("input", onWritingFormChange);
@@ -189,8 +193,12 @@ function selectWritingPoem(index) {
   document.getElementById("wf-poemZh").value = poem.poemZh || "";
   document.getElementById("wf-jipyeongZh").value = poem.jipyeongZh || "";
 
+  document.getElementById("wf-titleZhOwned").value = poem.titleZhOwned || "";
+  document.getElementById("wf-titleKoOwned").value = poem.titleKoOwned || "";
+  document.getElementById("wf-poemZhOwned").value = poem.poemZhOwned || "";
   document.getElementById("wf-translationKoOwned").value = poem.translationKoOwned || "";
   document.getElementById("wf-jipyeongKoOwned").value = poem.jipyeongKoOwned || "";
+  document.getElementById("wf-commentaryKoOwned").value = poem.commentaryKoOwned || "";
 
   document.getElementById("wf-legacy-translationKo").value = poem.translationKo || "";
   document.getElementById("wf-legacy-jipyeongKo").value = poem.jipyeongKo || "";
@@ -210,8 +218,12 @@ function onWritingFormChange(e) {
   ensureOwnedFields(poem);
 
   const id = e.target.id;
+  if (id === "wf-titleZhOwned") poem.titleZhOwned = e.target.value;
+  if (id === "wf-titleKoOwned") poem.titleKoOwned = e.target.value;
+  if (id === "wf-poemZhOwned") poem.poemZhOwned = e.target.value;
   if (id === "wf-translationKoOwned") poem.translationKoOwned = e.target.value;
   if (id === "wf-jipyeongKoOwned") poem.jipyeongKoOwned = e.target.value;
+  if (id === "wf-commentaryKoOwned") poem.commentaryKoOwned = e.target.value;
   if (id === "wf-status") poem.ownedContentMeta.status = e.target.value;
   if (id === "wf-editedBy") poem.ownedContentMeta.editedBy = e.target.value;
   if (id === "wf-reviewedBy") poem.ownedContentMeta.reviewedBy = e.target.value;
@@ -316,8 +328,12 @@ function buildSampleJipyeong(poem) {
 }
 
 function ensureOwnedFields(poem) {
+  if (typeof poem.titleZhOwned !== "string") poem.titleZhOwned = "";
+  if (typeof poem.titleKoOwned !== "string") poem.titleKoOwned = "";
+  if (typeof poem.poemZhOwned !== "string") poem.poemZhOwned = "";
   if (typeof poem.translationKoOwned !== "string") poem.translationKoOwned = "";
   if (typeof poem.jipyeongKoOwned !== "string") poem.jipyeongKoOwned = "";
+  if (typeof poem.commentaryKoOwned !== "string") poem.commentaryKoOwned = "";
   if (!Array.isArray(poem.notesOwned)) poem.notesOwned = [];
   if (!poem.ownedContentMeta || typeof poem.ownedContentMeta !== "object") {
     poem.ownedContentMeta = {
@@ -336,8 +352,12 @@ function ensureOwnedFields(poem) {
 
 function hasOwnedContent(poem) {
   return !!(
+    String(poem.titleZhOwned || "").trim() ||
+    String(poem.titleKoOwned || "").trim() ||
+    String(poem.poemZhOwned || "").trim() ||
     String(poem.translationKoOwned || "").trim() ||
     String(poem.jipyeongKoOwned || "").trim() ||
+    String(poem.commentaryKoOwned || "").trim() ||
     (Array.isArray(poem.notesOwned) && poem.notesOwned.length > 0)
   );
 }
@@ -353,8 +373,12 @@ function updateWritingFieldHighlights(index) {
   if (!curr || !orig) return;
 
   const pairs = [
+    ["wf-titleZhOwned", curr.titleZhOwned, orig.titleZhOwned],
+    ["wf-titleKoOwned", curr.titleKoOwned, orig.titleKoOwned],
+    ["wf-poemZhOwned", curr.poemZhOwned, orig.poemZhOwned],
     ["wf-translationKoOwned", curr.translationKoOwned, orig.translationKoOwned],
     ["wf-jipyeongKoOwned", curr.jipyeongKoOwned, orig.jipyeongKoOwned],
+    ["wf-commentaryKoOwned", curr.commentaryKoOwned, orig.commentaryKoOwned],
     ["wf-status", curr.ownedContentMeta?.status, orig.ownedContentMeta?.status],
     ["wf-editedBy", curr.ownedContentMeta?.editedBy, orig.ownedContentMeta?.editedBy],
     ["wf-reviewedBy", curr.ownedContentMeta?.reviewedBy, orig.ownedContentMeta?.reviewedBy],

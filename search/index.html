@@ -566,7 +566,7 @@
     if (!base) return "";
     if (!Array.isArray(notes) || notes.length === 0) return base;
     const ordered = notes
-      .map(n => ({ no: String(n?.no ?? "").trim(), head: String(n?.head ?? "").trim() }))
+      .map(n => ({ no: String(n?.no ?? "").trim(), head: String(n?.headZh ?? n?.head ?? "").trim() }))
       .filter(n => n.no && n.head)
       .sort((a, b) => b.head.length - a.head.length);
     const usedNo = new Set();
@@ -596,10 +596,10 @@
   }
 
   // ===== 주석 파싱 =====
-  function parseTextWithNotes(text, notes, titleId, noteSource) {
+  function parseTextWithNotes(text, notes, titleId) {
     if (!text) return "";
     if (!Array.isArray(notes) || notes.length === 0) return escapeHTML(text);
-    const sourceKey = noteSource === "owned" ? "owned" : "legacy";
+    const sourceKey = "legacy";
     const noteWordClass = "note-word note-word-" + sourceKey;
     const noteRefClass = "note-ref note-ref-" + sourceKey;
     const notesByNo = new Map(notes.map(n => [String(n.no), n]));
@@ -630,8 +630,8 @@
     }
     for (const m of matches) {
       const note = notesByNo.get(m.noteNo);
-      if (!note || !note.head) continue;
-      const head = note.head;
+      if (!note || !(note.headZh || note.head)) continue;
+      const head = note.headZh || note.head;
       const headStart = m.index - head.length;
       if (headStart >= 0 && text.substring(headStart, m.index) === head) {
         m.headStart = headStart; m.headLength = head.length; m.noteText = note.text;
@@ -717,7 +717,7 @@
 
   async function loadFullData() {
     if (poemsFull) return poemsFull;
-    const res = await fetch("/public/index/poems.full.json");
+    const res = await fetch("/public/index/poems.v3.json");
     poemsFull = await res.json();
     return poemsFull;
   }
@@ -909,7 +909,7 @@
   function renderPoemCard(p) {
     const titleZh = stripInlineNoteMarkers(p.title?.zh || "");
     const meta = [p.poet?.ko, p.category, p.juan].filter(Boolean).join(" \u00b7 ");
-    return '<div class="poem-card" data-poem-id="' + escapeHTML(p.titleId) + '">' +
+    return '<div class="poem-card" data-poem-id="' + escapeHTML(p.poemNoStr) + '">' +
       '<div class="poem-card-title"><span class="poem-no">' + escapeHTML(p.poemNoStr) + '</span>' + escapeHTML(titleZh) + '</div>' +
       '<div class="poem-card-meta">' + escapeHTML(meta) + '</div>' +
       (p.preview ? '<div class="poem-card-preview">' + escapeHTML(p.preview) + '</div>' : '') +
@@ -949,7 +949,7 @@
     if (poems.length > 0) {
       html += '<div class="poet-poems-label">\uc218\ub85d \uc791\ud488 (' + poems.length + '\uc218)</div>';
       html += poems.map(p =>
-        '<div class="poet-poem-item" data-poem-id="' + escapeHTML(p.titleId) + '">' +
+        '<div class="poet-poem-item" data-poem-id="' + escapeHTML(p.poemNoStr) + '">' +
           '<span class="poet-poem-no">' + escapeHTML(p.poemNoStr) + '</span>' +
           '<span class="poet-poem-title">' + escapeHTML(stripInlineNoteMarkers(p.title?.zh || "")) + '</span>' +
           '<span class="poet-poem-cat">' + escapeHTML(p.category || "") + '</span>' +
@@ -1125,37 +1125,33 @@
   // ===== 6) 시 아코디언 펼침 =====
   function renderPoemBodyHTML(p) {
     const poemNoStr = p.poemNoStr || String(p.poemNo ?? "").padStart(3, "0");
-    const ownedNotes = Array.isArray(p.notesOwned) ? p.notesOwned : [];
-    const legacyNotes = Array.isArray(p.notes) ? p.notes : [];
-    const useOwnedNotes = ownedNotes.length > 0;
-    const notes = useOwnedNotes ? ownedNotes : legacyNotes;
-    const noteSource = useOwnedNotes ? "owned" : "legacy";
-    const titleId = p.titleId || poemNoStr;
+    const notes = Array.isArray(p.notes) ? p.notes : [];
+    const titleId = poemNoStr;
 
     const titleFullRaw = p?.title?.zh ?? "";
-    const titleFullSource = useOwnedNotes ? injectNoteMarkersByHead(titleFullRaw, notes) : titleFullRaw;
-    const titleFull = parseTextWithNotes(titleFullSource, notes, titleId, noteSource);
+    const titleFullSource = injectNoteMarkersByHead(titleFullRaw, notes);
+    const titleFull = parseTextWithNotes(titleFullSource, notes, titleId);
     const titleKo = p?.title?.ko ?? "";
     const poetZhRaw = p?.poet?.zh ?? "";
-    const poetZhSource = useOwnedNotes ? injectNoteMarkersByHead(poetZhRaw, notes) : poetZhRaw;
+    const poetZhSource = injectNoteMarkersByHead(poetZhRaw, notes);
 
-    const jipZhSource = useOwnedNotes ? injectNoteMarkersByHead(p.jipyeongZh || "", notes) : (p.jipyeongZh || "");
-    const jipZh = parseTextWithNotes(jipZhSource, notes, titleId, noteSource);
-    const jipKoRaw = p.jipyeongKoOwned || p.jipyeongKo || "";
+    const jipZhSource = injectNoteMarkersByHead(p.jipyeongZh || "", notes);
+    const jipZh = parseTextWithNotes(jipZhSource, notes, titleId);
+    const jipKoRaw = p.jipyeongKo || "";
     const jipKo = escapeHTML(cleanLegacyKoReferences(jipKoRaw));
 
     const notesHTML = notes.length
       ? '<ul class="note-list">' + notes.map(n =>
           '<li class="note-item" id="note-item-' + titleId + '-' + n.no + '">' +
           '<span class="note-no" data-target-ref="' + titleId + '-' + n.no + '">[' + escapeHTML(n.no) + ']</span>' +
-          '<span class="note-head">' + escapeHTML(n.head || "") + '</span>' +
+          '<span class="note-head">' + escapeHTML(n.headZh || n.head || "") + '</span>' +
           '<span class="note-text">' + escapeHTML(n.text || "") + '</span>' +
           '</li>').join('') + '</ul>'
       : '<div class="muted">\uc8fc\uc11d \uc5c6\uc74c</div>';
 
-    const trKoRaw = p.translationKoOwned || p.translationKo || "";
-    const poemZhSource = useOwnedNotes ? injectNoteMarkersByHead(p.poemZh || "", notes) : (p.poemZh || "");
-    const parsedPoemZh = parseTextWithNotes(poemZhSource, notes, titleId, noteSource);
+    const trKoRaw = p.translationKo || "";
+    const poemZhSource = injectNoteMarkersByHead(p.poemZh || "", notes);
+    const parsedPoemZh = parseTextWithNotes(poemZhSource, notes, titleId);
     const poemZhLines = parsedPoemZh.split("\n");
     const allTrKoLines = trKoRaw.split("\n");
     const trKoLines = allTrKoLines.length > 2 ? allTrKoLines.slice(2) : allTrKoLines;
@@ -1167,7 +1163,7 @@
 
     // 심화자료 (간체 + 병음 + 평측)
     let deepHTML = "";
-    const poemSimpRaw = p.poemSimp || "";
+    const poemSimpRaw = (p.poemZh || "").replace(/\[\d+\]/g, "");
     const pinyinRaw = p.pinyin || "";
     const pingzeRaw = p.pingze || "";
 
@@ -1218,12 +1214,12 @@
     return '<div class="poem-text-box">' +
       '<div class="poem-title-zh">' + titleFull + '</div>' +
       (titleKo ? '<div class="poem-title-ko">' + escapeHTML(titleKo) + '</div>' : '') +
-      '<div class="poem-poet-zh">' + parseTextWithNotes(poetZhSource, notes, titleId, noteSource) + '</div>' +
+      '<div class="poem-poet-zh">' + parseTextWithNotes(poetZhSource, notes, titleId) + '</div>' +
       '<div class="poem-bilingual">' + bilingualRows + '</div>' +
     '</div>' +
     (jipZh ? '<div class="poem-section-block"><div class="poem-sec-label">\uc9d1\ud3c9</div><div class="poem-sec-text pre">' + jipZh + '</div></div>' : '') +
     (jipKo ? '<div class="poem-section-block"><div class="poem-sec-label">\uc9d1\ud3c9 \ubc88\uc5ed</div><div class="poem-sec-text pre">' + jipKo + '</div></div>' : '') +
-    '<div class="poem-section-block"><div class="poem-sec-label">' + (useOwnedNotes ? '\uc8fc\uc11d (\uc9d1\ud544)' : '\uc8fc\uc11d') + '</div><div class="poem-sec-text">' + notesHTML + '</div></div>' +
+    '<div class="poem-section-block"><div class="poem-sec-label">\uc8fc\uc11d</div><div class="poem-sec-text">' + notesHTML + '</div></div>' +
     (deepHTML ? '<div class="poem-section-block"><div class="poem-sec-label">\uc2ec\ud654\uc790\ub8cc</div>' + deepHTML + '</div>' : '');
   }
 
@@ -1348,7 +1344,7 @@
             body.hidden = false;
             poemCard.classList.add("expanded");
             const full = await loadFullData();
-            const p = full.find(x => x.titleId === poemCard.dataset.poemId);
+            const p = full.find(x => x.poemNoStr === poemCard.dataset.poemId);
             if (p) {
               body.innerHTML = renderPoemBodyHTML(p);
             } else {
@@ -1390,7 +1386,7 @@
 
         // lazy load 후 렌더
         const full = await loadFullData();
-        const p = full.find(x => x.titleId === poemId);
+        const p = full.find(x => x.poemNoStr === poemId);
         if (p) {
           detailDiv.innerHTML = renderPoemBodyHTML(p);
         } else {

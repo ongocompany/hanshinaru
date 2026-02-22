@@ -1,33 +1,478 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>한국의 한시 — 漢詩의 모든 것</title>
+  <title>한국의 전통시문학 — 한시나루</title>
+  <link rel="stylesheet" href="https://use.typekit.net/dje5vco.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.typekit.net/daj3vwq.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&family=Noto+Serif+KR:wght@200..900&family=Noto+Serif+TC:wght@200..900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="/shared/styles.css">
+  <style>
+    /* ===== Global Body ===== */
+    body {
+      background: #fff;
+      color: #000;
+      padding-top: 73px;
+    }
+
+    /* ===== Layout 5-a: 좌측 고정 300px + 우측 스크롤 ===== */
+    .layout-5a {
+      display: flex;
+      max-width: 1300px;
+      margin: 0 auto;
+      padding-top: 0;
+      background: #FBFAFA;
+      box-shadow: 5px 0 15px rgba(0, 0, 0, 0.06), -5px 0 15px rgba(0, 0, 0, 0.06);
+    }
+
+    /* ===== Sidebar 300px (sticky) ===== */
+    aside.sidebar {
+      width: 300px;
+      min-width: 300px;
+      display: flex;
+      flex-direction: column;
+      background: #FBFAFA;
+      position: sticky;
+      top: 73px;
+      height: calc(100vh - 73px);
+      overflow-y: auto;
+    }
+    /* Era tree navigation */
+    .era-tree {
+      list-style: none;
+      flex-shrink: 0;
+      padding: 8px 0;
+    }
+
+    .era-tree-item {
+      margin-bottom: 0;
+      padding: 0;
+      font-size: inherit;
+      color: #000;
+      cursor: default;
+      opacity: 1;
+      display: block;
+    }
+
+    .era-tree-item:hover {
+      background: transparent;
+      color: inherit;
+    }
+
+    .era-tree-link {
+      display: block;
+      padding: 5px 30px;
+      font-family: var(--font-ko);
+      font-size: var(--fs-body, 16px);
+      color: #000;
+      text-align: right;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform 0.4s ease;
+      transform-origin: right center;
+      background: transparent;
+    }
+
+    .era-tree-link:hover:not(.disabled):not(.active) {
+      transform: scale(1.08);
+      background: transparent;
+      color: #000;
+    }
+
+    .era-tree-link.active {
+      background: transparent;
+      color: #000;
+      font-weight: bold;
+    }
+
+    .era-tree-link.disabled {
+      color: #282828;
+      cursor: not-allowed;
+    }
+
+    /* ===== Content Area: 우측 스크롤 ===== */
+    main.content-area {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .section-inner {
+      padding: 40px 32px 80px;
+    }
+
+    /* ===== Section divider ===== */
+    .section-divider {
+      border: none;
+      border-top: 1px solid var(--c-silver, #c8d3d5);
+      margin: 48px 0;
+    }
+
+    /* ===== Typography ===== */
+    .chapter-title {
+      font-family: var(--font-ko);
+      font-size: var(--fs-lead, 20px);
+      font-weight: bold;
+      margin-bottom: 24px;
+      margin-top: 48px;
+      color: #1C2122;
+      scroll-margin-top: 100px;
+    }
+
+    .chapter-title:first-child {
+      margin-top: 0;
+    }
+
+    .mid-title {
+      font-family: var(--font-zh);
+      font-size: var(--fs-lead, 20px);
+      font-weight: bold;
+      margin-top: 32px;
+      margin-bottom: 16px;
+      color: #1C2122;
+    }
+
+    /* Body text */
+    .era-desc {
+      font-family: var(--font-ko);
+      font-size: var(--fs-body, 18px);
+      color: #000;
+      line-height: 1.9;
+      margin-bottom: 24px;
+    }
+
+    .era-desc .zh {
+      font-family: var(--font-zh);
+    }
+
+    /* Image placeholder */
+    .img-placeholder {
+      background: linear-gradient(135deg, #FBFAFA, var(--c-silver, #c8d3d5));
+      border-radius: 16px;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--c-silver, #c8d3d5);
+      font-size: var(--fs-small, 14px);
+      margin: 24px 0;
+    }
+
+    /* Page purpose box */
+    .purpose-box {
+      background: linear-gradient(135deg, #f0f4f5, #e8eef0);
+      border-left: 3px solid #8FA8B2;
+      border-radius: 0 12px 12px 0;
+      padding: 24px 28px;
+      margin-top: 16px;
+    }
+
+    .purpose-box .era-desc {
+      margin-bottom: 0;
+      color: #3a4a50;
+    }
+
+    /* Scroll behavior */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 1024px) {
+      body {
+        overflow: auto;
+      }
+
+      .layout-5a {
+        flex-direction: column;
+        height: auto;
+      }
+
+      aside.sidebar {
+        width: 100%;
+        min-width: 100%;
+        position: relative;
+        top: auto;
+        height: auto;
+      }
+
+      main.content-area {
+        overflow-y: visible;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .section-inner {
+        padding: 24px 16px 48px;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <div id="nav-placeholder"></div>
 
-  <section class="placeholder-hero fade-in">
-    <h1 class="placeholder-title">韓國의 漢詩</h1>
-    <p class="placeholder-subtitle">한국 한시의 역사와 위대한 시인들</p>
-  </section>
+  <div class="layout-5a">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <ul class="era-tree">
+        <li class="era-tree-item">
+          <a href="/korean-poetry/" class="era-tree-link active">
+            <span>한국의 전통시문학</span>
+          </a>
+        </li>
+        <li class="era-tree-item">
+          <a href="/korean-poetry/poets/" class="era-tree-link">
+            <span>시대별 시인과 작품</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
 
-  <section class="placeholder-body">
-    <div class="placeholder-card fade-in">
-      <div class="placeholder-icon">🇰🇷</div>
-      <h2>콘텐츠 준비 중</h2>
-      <p>한국 한시의 역사, 시대별 시인들, 위대한 시인들에 대한<br>콘텐츠를 준비하고 있습니다.</p>
-      <a href="/" class="placeholder-back">메인으로 돌아가기</a>
-    </div>
-  </section>
+    <!-- Content Area -->
+    <main class="content-area">
+      <div class="section-inner">
+
+        <!-- ===================== 시작 ===================== -->
+        <h2 class="chapter-title" id="sec-intro" style="margin-top:0;">한국의 전통시문학</h2>
+        <p class="era-desc">
+          한국의 시가 문학은 한민족의 삶과 호흡을 함께하며 시대의 철학과 미의식을 담아낸 훌륭한 예술적 성취입니다. 고대 부여의 영고(<span class="zh">迎鼓</span>), 고구려의
+          동맹(<span class="zh">東盟</span>) 등 제천행사(<span class="zh">祭天行事</span>)에서 이루어진 집단 가무(<span class="zh">歌舞</span>)에서
+          발원한 우리의 시가는, 시대의 변천과 함께 서정성을 획득하며 독자적인 양식으로 발전해 왔습니다. 특히 고유어 노래와 더불어 동아시아 보편 문어인 한자(<span
+            class="zh">漢字</span>)를 수용한 한시(<span class="zh">漢詩</span>)가 병행 발전하며 풍성한 문학적 지형을 형성했습니다.
+        </p>
+
+        <hr class="section-divider">
+
+        <h2 class="chapter-title" id="sec-1">1. 고대 시가: 집단적 주술에서 개인적 서정으로의 이행</h2>
+        <p class="era-desc">
+          고대 초기 사회의 시가는 종교적 의식과 결부된 집단적이고 주술적인 성격이 강했습니다. 대표적인 작품인 가락국의 「구지가(<span class="zh">龜旨歌</span>)」는 새로운 군주(수로왕)의
+          강림을 기원하는 노동요이자 주술요로, 원시 집단 서사(<span class="zh">敍事</span>)의 흔적을 엿볼 수 있습니다. 그러나 사회가 점차 분화되고 고대 국가의 기틀이 마련되면서,
+          시가의 무게 중심은 집단의 염원에서 개인의 절절한 서정으로 이동하게 됩니다.
+        </p>
+        <p class="era-desc">
+          고구려 유리왕이 지었다고 전해지는 「황조가(<span class="zh">黃鳥歌</span>)」는 이러한 서정적 자아의 각성을 보여주는 기념비적인 작품입니다. 펄펄 나는 꾀꼬리의 암수 정다움과
+          화자의 고독한 내면을 대비시킨 이 시는, 고대인들이 지녔던 보편적인 사랑과 이별의 아픔을 탁월하게 형상화했습니다. 또한 고조선의 「공무도하가(<span class="zh">公無渡河歌</span>)」
+          역시 물을 건너다 죽은 남편을 애도하는 아내의 비극적 서정을 담고 있습니다. 이 시기의 작품들은 우리말 노래가 구전되다가 후대에 한역(<span class="zh">漢譯</span>)되어 문헌에
+          정착된 한역 시가(<span class="zh">漢譯詩歌</span>)의 형태로 전해진다는 특징이 있습니다.
+        </p>
+
+        <hr class="section-divider">
+
+        <h2 class="chapter-title" id="sec-2">2. 삼국 및 통일신라 시대: 향가(鄕歌)의 융성과 한시(漢詩)의 도입</h2>
+        <p class="era-desc">
+          삼국이 정립하고 통일신라로 이어지는 시기에는 불교와 유교 등 고등 종교와 사상이 유입되며 시가 문학도 비약적인 철학적 깊이를 획득합니다. 이 시기 고유 시가 문학의 정수는 단연
+          <strong>향가(<span class="zh">鄕歌</span>)</strong>입니다. 향가는 한자의 음과 뜻을 빌려 우리말의 통사 구조를 전면적으로 표기한 '향찰(<span
+            class="zh">鄕札</span>)'로 창작되었습니다. 이는 외래 문자를 주체적으로 수용하여 모국어의 음악성과 의미를 고스란히 담아낸 위대한 문화적 성취입니다.
+        </p>
+        <p class="era-desc">
+          향가는 4구체, 8구체, 10구체로 발전했는데, 그중 가장 완성된 형태인 10구체(사뇌가)는 3단 구성의 논리적 전개와 마지막 낙구(<span class="zh">落句</span>)의 감탄사를 통해
+          시상을 집약하는 탁월한 미학을 보여줍니다. 월명사의 「제망매가(<span class="zh">祭亡妹歌</span>)」는 죽은 누이를 향한 애절한 슬픔을 불교적 윤회관을 통해 숭고하게 승화시킨
+          절조이며, 충담사의 「찬기파랑가(<span class="zh">讚耆婆郞歌</span>)」는 화랑의 고결한 인품을 잣나무에 비유하여 신라 귀족 사회의 드높은 정신세계를 표출했습니다.
+        </p>
+        <p class="era-desc">
+          한편, 통일신라 후기에는 당나라와의 활발한 교류를 통해 한시(<span class="zh">漢詩</span>)가 본격적으로 수용되고 창작되었습니다. 특히 빈공과(<span
+            class="zh">賓貢科</span>)에 급제하여 당나라에서도 문명을 떨친 최치원(<span class="zh">崔致遠</span>)은 한국 한문학의 비조(<span
+            class="zh">鼻祖</span>)로 불립니다. 그의 「추야우중(<span class="zh">秋夜雨中</span>)」은 가을밤의 빗소리를 매개로 타국에서 느끼는 지식인의 고독과 우수를
+          오언절구(<span class="zh">五言絶句</span>)의 엄격한 형식 속에 완벽하게 담아냈으며, 이는 훗날 한국 시문학이 동아시아 보편의 미학적 기준(평측과 압운 등)을 완전히 내면화했음을
+          보여주는 지표가 됩니다.
+        </p>
+
+        <hr class="section-divider">
+
+        <h2 class="chapter-title" id="sec-3">3. 고려 시대: 귀족 문학과 평민 문학의 공존, 그리고 한시의 황금기</h2>
+        <p class="era-desc">
+          고려 시대는 다원적인 사상이 공존했던 사회적 배경을 바탕으로 시가 문학 역시 층위가 나뉘어 다채롭게 전개되었습니다. 귀족 계층이 향유했던 한시와 경기체가, 그리고 평민들의 삶과 진솔한 감정을 담은
+          고려 가요(속요)가 공존했습니다.
+        </p>
+
+        <h3 class="mid-title">고려 가요(속요)</h3>
+        <p class="era-desc">
+          <strong>고려 가요(속요)</strong>는 향가의 쇠퇴 이후 민중들 사이에서 구전되던 노래들로, 후렴구와 분연체(<span class="zh">分聯體</span>) 형식을 지니며 강렬한
+          음악성을 띠는 것이 특징입니다. 인간의 원초적인 애욕, 이별의 한(<span class="zh">恨</span>), 세속적 삶의 고뇌가 여과 없이 표현되어 있습니다. 「가시리」와 「동동(<span
+            class="zh">動動</span>)」, 「서경별곡」 등은 이별의 정한을 읊은 대표작이며, 「청산별곡(<span class="zh">靑山別曲</span>)」은 난세의 고단함 속에서
+          이상향(청산)을 갈망하는 유랑민의 비애를 얄리얄리 얄라성이라는 경쾌한 후렴구와 대비시켜 문학적 긴장감을 극대화했습니다. 이 노래들은 훗날 조선 시대 궁중 악곡으로 수용되면서 궁중의 연회에서 불렸고,
+          훈민정음 창제 이후에야 비로소 문헌으로 정착되었습니다.
+        </p>
+
+        <h3 class="mid-title">한시의 황금기</h3>
+        <p class="era-desc">
+          반면, 고려 시대의 한시는 신라 시대의 이식기를 지나 완벽한 독자성과 높은 격조를 성취한 황금기였습니다. 특히 당시(<span class="zh">唐詩</span>)의 낭만적 서정성과
+          송시(<span class="zh">宋詩</span>)의 철학적 사유를 주체적으로 용해하여 한국적인 한시 미학을 완성했습니다. 정지상(<span class="zh">鄭知常</span>)의
+          「송인(<span class="zh">送人</span>)」은 대동강 물을 이별의 눈물에 비유한 칠언절구(<span class="zh">七言絶句</span>)로, 동아시아 한시사(<span
+            class="zh">漢詩史</span>)에서도 손꼽히는 절창입니다. 무신정권기의 문장가 이규보(<span class="zh">李奎報</span>)는 도학적 규범에 얽매이지 않고 일상적인 사물과
+          자연의 이치를 웅혼하고 호방한 필치로 그려내어 고려 한시의 폭과 깊이를 비약적으로 확장했습니다. 이처럼 고려의 지식인들은 복잡한 운서(<span class="zh">韻書</span>)의 규칙과
+          평측(<span class="zh">平仄</span>)의 조화를 완벽히 통제하면서도, 한반도의 자연과 정서를 능수능란하게 담아내는 경지에 이르렀습니다.
+        </p>
+        <p class="era-desc">
+          고려 후기에 이르면 신흥 사대부들이 등장하면서, 이들의 새로운 세계관을 담아내기 위한 정형시 형태인 시조(<span class="zh">時調</span>)가 태동하게 되며, 이는 다음 시대인 조선조
+          시가 문학의 가장 핵심적인 갈래로 자리 잡게 됩니다.
+        </p>
+
+        <hr class="section-divider">
+
+        <h2 class="chapter-title" id="sec-4">4. 고려 말 ~ 조선 전기: 이념의 내면화와 정형시의 완성</h2>
+        <p class="era-desc">
+          고려 무신정권 이후 등장한 신흥 사대부(<span class="zh">新興士大夫</span>)들은 성리학을 새로운 통치 이념이자 삶의 철학으로 채택했습니다. 이들의 엄격한 도학적 세계관과 정제된
+          미의식은 <strong>시조(<span class="zh">時調</span>)</strong>라는 고도의 정형시를 탄생시켰습니다.
+        </p>
+
+        <h3 class="mid-title">시조의 태동과 성리학적 규범의 양식화</h3>
+        <p class="era-desc">
+          시조는 초장, 중장, 종장의 3장 6구 45자 내외라는 매우 규칙적이고 안정적인 구조를 지닙니다. 이는 우주와 인간의 이치를 논리적으로 파악하려는 사대부들의 이성적 사유 방식이 문학적 틀로 구현된
+          결과입니다. 고려 말 우탁(<span class="zh">禹倬</span>)의 「탄로가(<span class="zh">嘆老歌</span>)」나 정몽주(<span
+            class="zh">鄭夢周</span>)의 「단심가(<span class="zh">丹心歌</span>)」 등은 시조의 초기 형태를 보여주며, 조선 개국 이후 강호가도(<span
+            class="zh">江湖歌道</span>)를 확립한 맹사성(<span class="zh">孟思誠</span>)의 「강호사시가(<span class="zh">江湖四時歌</span>)」에 이르러
+          자연과 정치적 이상을 조화시키는 사대부 시조의 전형이 완성됩니다.
+        </p>
+
+        <h3 class="mid-title">가사(歌辭)의 등장: 산문적 사유와 운문적 리듬의 결합</h3>
+        <p class="era-desc">
+          시조가 지닌 짧은 형식만으로는 사대부들의 복잡한 철학적 사유나 다채로운 서정을 모두 담아내기 어려웠습니다. 이에 3·4조 또는 4·4조의 연속체 리듬을 띠면서도 길이에 제한이 없는
+          <strong>가사(<span class="zh">歌辭</span>)</strong>가 등장합니다. 정극인(<span class="zh">丁克仁</span>)의 「상춘곡(<span
+            class="zh">賞春曲</span>)」을 효시로 하는 가사는, 조선 중기 정철(<span class="zh">鄭澈</span>)에 이르러 절정을 맞이합니다. 정철의 「관동별곡(<span
+            class="zh">關東別曲</span>)」과 「사미인곡(<span class="zh">思美人曲</span>)」 등은 풍부한 우리말의 묘미를 살리면서도, 고도의 한문학적 소양과 중국 고전의
+          고사성어를 자유자재로 융합하여 조선 가사 문학의 최고봉을 이뤘습니다.
+        </p>
+
+        <hr class="section-divider">
+
+        <h2 class="chapter-title" id="sec-5">5. 조선 전기 (15세기): 국가 기틀의 확립과 훈민정음, 그리고 관인 문학의 융성</h2>
+        <p class="era-desc">
+          조선 전기는 유교적 이상 국가를 건설하려는 신흥 사대부들의 의지가 문학을 통해 강렬하게 발현된 시기입니다. 훈민정음의 창제는 우리말 시가가 문헌으로 정착하고 비약적으로 발전할 수 있는 획기적인
+          전환점이 되었습니다.
+        </p>
+
+        <h3 class="mid-title">악장(樂章)의 제정과 한글 시가의 출발</h3>
+        <p class="era-desc">
+          조선 건국의 정당성을 천명하고 왕조의 무궁한 발전을 기원하기 위해 궁중 연향과 제례에서 불렸던 특수한 시가 양식이 바로 악장입니다. 대표작인 「용비어천가(<span
+            class="zh">龍飛御天歌</span>)」는 한글로 기록된 최초의 장편 영웅 서사시로, 국어학적 가치뿐만 아니라 대구법과 은유를 고도로 활용한 문학적 성취를 보여줍니다. 이 시기 악장은
+          훈민정음이라는 새로운 표기 수단을 통해 조선의 건국 이념을 최상층의 언어로 형상화하는 데 기여했습니다.
+        </p>
+
+        <h3 class="mid-title">관각(館閣) 한문학의 융성과 사대부 시조의 정립</h3>
+        <p class="era-desc">
+          15세기 중앙 정계를 주도했던 훈구파(<span class="zh">勳舊派</span>) 학자들은 국가의 위엄과 태평성대를 구가하는 웅혼하고 장려한 한시를 주로 창작했습니다. 서거정(<span
+            class="zh">徐居正</span>)이 주도하여 편찬한 『동문선(<span class="zh">東文選</span>)』은 신라 이래의 우수한 한문학 작품을 집대성한 것으로, 조선의 문화적
+          자부심과 주체성을 천명한 일대 사건이었습니다.
+        </p>
+        <p class="era-desc">
+          이와 함께, 고려 말의 절의가(<span class="zh">節義歌</span>)에서 출발한 시조는 맹사성(<span class="zh">孟思誠</span>)의 「강호사시가(<span
+            class="zh">江湖四時歌</span>)」 등에 이르러 <strong>강호가도(<span class="zh">江湖歌道</span>)</strong>라는 새로운 지평을 엽니다. 이는 자연 속의
+          한가로운 삶을 즐기면서도 그것이 모두 임금의 은혜(역군은·<span class="zh">亦君恩</span>)라고 노래함으로써, 자연 귀의와 유교적 충의를 갈등 없이 조화시킨 조선 전기 사대부의
+          전형적인 세계관을 보여줍니다.
+        </p>
+
+        <hr class="section-divider">
+
+        <h2 class="chapter-title" id="sec-6">6. 조선 중기 (16세기 ~ 17세기 초): 사림(士林)의 대두와 도학(道學)적 미의식의 심화</h2>
+        <p class="era-desc">
+          16세기에 접어들며 향촌을 기반으로 성장한 사림파가 정계를 장악하게 됩니다. 거듭된 사화(<span class="zh">士禍</span>)와 당쟁, 그리고 임진왜란이라는 참혹한 전란을 겪으며, 이
+          시기의 시가 문학은 내면적 수양과 우국충정, 그리고 인간 본연의 감정을 노래하는 방향으로 깊이를 더하게 됩니다.
+        </p>
+
+        <h3 class="mid-title">가사(歌辭) 문학의 만개와 연군지정(戀君之情)</h3>
+        <p class="era-desc">
+          조선 중기는 국문학사상 가사 문학의 황금기입니다. 산문적 연속성과 운문적 율격을 겸비한 가사는 사림의 복잡한 내면을 담아내는 최적의 그릇이었습니다. 그 정점에는 송강 정철(<span
+            class="zh">鄭澈</span>)이 있습니다. 그의 「관동별곡(<span class="zh">關東別曲</span>)」은 뛰어난 우리말 구사와 역동적인 자연 묘사로 기행 가사의 백미로
+          꼽히며, 유배지에서 임금(선조)을 향한 그리움을 여인의 절절한 목소리에 의탁해 부른 「사미인곡(<span class="zh">思美人曲</span>)」과 「속미인곡(<span
+            class="zh">續美人曲</span>)」은 충신연주지사(<span class="zh">忠臣戀主之詞</span>)의 절대적 전범이 되었습니다.
+        </p>
+
+        <h3 class="mid-title">도학(道學)의 문학적 실천과 시조의 철학화</h3>
+        <p class="era-desc">
+          사림파 학자들에게 문학은 단순한 예술을 넘어 성도를 담는 그릇(재도론·<span class="zh">載道論</span>)이었습니다. 퇴계 이황(<span class="zh">李滉</span>)의
+          「도산십이곡(<span class="zh">陶山十二曲</span>)」과 율곡 이이(<span class="zh">李珥</span>)의 「고산구곡가(<span
+            class="zh">高山九曲歌</span>)」는 시조를 통해 성리학적 수양의 과정과 학문적 희열을 노래한 대표작입니다. 이들은 엄격한 도학적 사유를 우리말의 정형적 리듬 속에 녹여냄으로써,
+          시조를 최고 수준의 철학적 시가로 격상시켰습니다.
+        </p>
+
+        <h3 class="mid-title">기녀(妓女) 시조의 등장: 서정성의 해방과 우리말의 발견</h3>
+        <p class="era-desc">
+          사대부들의 시조가 이념적이고 관념적인 경향을 띠었던 반면, 황진이(<span class="zh">黃眞伊</span>)로 대표되는 기녀층의 시조는 조선 중기 문학사에 신선한 충격을 던졌습니다.
+          「동짓달 기나긴 밤을」과 같은 작품에서 황진이는 추상적인 시간(밤)을 시각적으로 잘라내어 이불 아래 넣는다는 기발한 발상과, 우리말의 아름다운 호흡을 통해 남녀 간의 애틋한 사랑을 절묘하게 표현해
+          냈습니다. 이는 이념에 억눌려 있던 인간 본연의 진솔한 감정이 우리말의 미학을 통해 폭발한 쾌거로 평가받습니다.
+        </p>
+
+        <h3 class="mid-title">한시(漢詩)의 내면화와 여성 문학의 성취</h3>
+        <p class="era-desc">
+          조선 중기의 한시 역시 사림의 처사(<span class="zh">處士</span>)적 삶을 반영하여, 화려한 수사보다는 일상의 소박함과 내면의 성찰을 중시하는 당송(<span
+            class="zh">唐宋</span>) 시대의 시풍을 주체적으로 수용했습니다. 한편, 이 시기에는 규방에 갇힌 여성들의 한(<span class="zh">恨</span>)과 탁월한 예술적 재능이
+          한시를 통해 피어나기도 했습니다. 난설헌 허초희(<span class="zh">許楚姬</span>)는 「빈녀음(<span class="zh">貧女吟</span>)」 등에서 억압된 여성의 비애와
+          도교적 우화세계(<span class="zh">羽化世界</span>)에 대한 동경을 청초하고 애상적인 시어로 그려내며, 조선을 넘어 명나라와 일본에까지 그 문명을 떨쳤습니다.
+        </p>
+
+        <hr class="section-divider">
+
+        <h2 class="chapter-title" id="sec-7">7. 조선 후기: 창작층의 확대와 미의식의 전환</h2>
+        <p class="era-desc">
+          임진왜란과 병자호란의 양란(<span class="zh">兩亂</span>)을 겪으며 조선 사회의 신분 질서는 크게 흔들렸고, 이는 문학사에도 지대한 영향을 미쳤습니다. 평민 계층이 새로운 문학
+          향유층으로 부상하며, 규범과 이념을 벗어난 진솔하고 파격적인 시가들이 쏟아져 나왔습니다.
+        </p>
+
+        <h3 class="mid-title">사설시조(辭說時調): 정형의 파괴와 해학의 분출</h3>
+        <p class="era-desc">
+          평민 문학의 역동성을 가장 잘 보여주는 갈래는 사설시조입니다. 초장과 중장이 제한 없이 길어지는 산문화 경향을 보이며, 사대부 시조의 관념적 주제(충효, 은일 등)에서 벗어나 남녀 간의 노골적인
+          애욕, 가렴주구에 대한 날카로운 풍자, 고단한 일상의 페환을 해학과 기지로 풀어냈습니다. 이는 엄숙주의에 대한 민중의 문학적 저항이자 생명력의 발현이었습니다.
+        </p>
+
+        <h3 class="mid-title">조선 한시(漢詩)의 르네상스와 진경(眞景)의 발견</h3>
+        <p class="era-desc">
+          조선 시대의 한시는 중국의 형식적 규범을 완벽히 체화한 위에서, 조선만의 고유한 정서를 노래하는 이른바 '조선풍(<span class="zh">朝鮮風</span>)'을 확립했습니다. 특히
+          당송(<span class="zh">唐宋</span>) 교체기의 시학을 깊이 연구하며 평수운(<span class="zh">平水韻</span>)의 엄격한 압운과 평측(<span
+            class="zh">平仄</span>)의 규칙을 정교하게 구사했습니다.
+        </p>
+        <p class="era-desc">
+          조선 후기에는 다산 정약용(<span class="zh">丁若鏞</span>) 등으로 대표되는 실학자들을 중심으로, 관념적인 자연이 아닌 조선 민중의 비참한 현실과 사회적 모순을 사실적으로 묘사하는
+          한시들이 대거 창작되었습니다. 또한, 허난설헌(<span class="zh">許蘭雪軒</span>)은 섬세하고 애수 띤 시어로 동아시아 전체에 문명을 떨치며 여성 한시의 독보적인 영역을
+          개척했습니다.
+        </p>
+
+        <hr class="section-divider">
+
+        <h2 class="chapter-title" id="sec-8">8. 대한제국기 (개화기): 근대적 주체의 각성과 시가의 해체 및 재구성</h2>
+        <p class="era-desc">
+          19세기 말 서구 문물의 유입과 함께 시작된 개화기는, 전통적인 세계관이 붕괴하고 근대 국민 국가로의 이행을 모색하던 격동기였습니다. 시가 문학 역시 전통적인 율격과 결별하고 새로운 사상을 담을
+          그릇을 찾아 나섭니다.
+        </p>
+
+        <h3 class="mid-title">개화 가사와 창가(唱歌)의 보급</h3>
+        <p class="era-desc">
+          초기에는 전통적인 가사의 4·4조 율격을 유지하면서도, 자주독립, 문명개화, 신교육 등 근대적인 계몽 의식을 담은 개화 가사가 등장했습니다. 이후 서양의 악보와 찬송가의 영향을 받은 창가가 유행하게
+          되는데, 이는 정형화된 음보율에서 벗어나 다장조 등의 서양 음계에 맞추어 불리며 대중들의 계몽과 애국심 고취에 큰 역할을 했습니다.
+        </p>
+
+        <h3 class="mid-title">신체시(新體詩)의 출현과 자유시를 향한 이행</h3>
+        <p class="era-desc">
+          1908년 최남선(<span class="zh">崔南善</span>)이 발표한 「해(<span class="zh">海</span>)에게서 소년(<span
+            class="zh">少年</span>)에게」는 한국 근대시의 출발점인 신체시의 효시로 평가받습니다. 이 작품은 서구의 파도 소리를 모방한 의성어(처얼썩, 처얼썩, 척, 쏴아)를 과감히 도입하고,
+          연(<span class="zh">聯</span>)과 행(<span class="zh">行</span>)의 구분을 명확히 하며 전통 율격의 파격을 시도했습니다. 비록 완전한 자유시에는 이르지 못한
+          과도기적 양식이었으나, 제국주의의 야욕 앞에서도 굴하지 않는 소년(새로운 세대)의 원대한 포부를 노래하며 한국 시가가 근대적 서정시로 도약하는 결정적인 징검다리가 되었습니다.
+        </p>
+
+      </div>
+    </main>
+  </div>
 
   <div id="footer-placeholder"></div>
   <script src="/shared/auth-state.js"></script>
   <script src="/shared/components.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const currentPath = location.pathname.replace(/\/+$/, '') || '/';
+      document.querySelectorAll('.era-tree-link').forEach(link => {
+        const href = (link.getAttribute('href') || '').replace(/\/+$/, '');
+        if (href === currentPath) {
+          link.classList.add('active');
+        } else {
+          link.classList.remove('active');
+        }
+      });
+    });
+  </script>
 </body>
+
 </html>

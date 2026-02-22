@@ -546,7 +546,10 @@
         }
 
         showMessage('로그인 성공! 잠시 후 이동합니다...', 'success');
-        setTimeout(() => { location.href = '/'; }, 1000);
+        const completed = await checkProfileCompleted(data.user.id);
+        setTimeout(() => {
+          location.href = completed ? '/' : '/auth/setup/';
+        }, 1000);
       });
 
       // ===== 회원가입 =====
@@ -660,6 +663,18 @@
         return map[msg] || msg;
       }
 
+      // ===== 프로필 완성 여부 체크 → 미완성이면 /auth/setup/ =====
+      async function checkProfileCompleted(userId) {
+        const sb = getSB();
+        if (!sb) return true; // 체크 실패 시 통과
+        try {
+          const { data } = await sb.from('profiles').select('profile_completed').eq('id', userId).single();
+          return data && data.profile_completed === true;
+        } catch (e) {
+          return true; // 에러 시 통과 (컬럼 없을 수도 있음)
+        }
+      }
+
       // ===== OAuth 콜백 처리 (리다이렉트 후 해시 토큰) =====
       async function handleAuthCallback() {
         const sb = getSB();
@@ -670,19 +685,23 @@
           const { data, error } = await sb.auth.getSession();
           if (data?.session) {
             showMessage('로그인 성공! 잠시 후 이동합니다...', 'success');
-            setTimeout(() => { location.href = '/'; }, 1000);
+            const completed = await checkProfileCompleted(data.session.user.id);
+            setTimeout(() => {
+              location.href = completed ? '/' : '/auth/setup/';
+            }, 1000);
           }
         }
       }
 
-      // ===== 이미 로그인 상태면 홈으로 =====
+      // ===== 이미 로그인 상태면 홈으로 (프로필 미완성이면 setup으로) =====
       async function checkSession() {
         const sb = getSB();
         if (!sb) return;
 
         const { data } = await sb.auth.getSession();
         if (data?.session) {
-          location.href = '/';
+          const completed = await checkProfileCompleted(data.session.user.id);
+          location.href = completed ? '/' : '/auth/setup/';
         }
       }
 

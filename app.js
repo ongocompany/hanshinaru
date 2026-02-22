@@ -37,6 +37,83 @@ async function loadJSON(url) {
   return res.json();
 }
 
+// ── Supabase DB → 기존 JSON 형식 변환 ──
+function dbPoetsToJSON(rows) {
+  const authors = {};
+  for (const r of rows) {
+    authors[r.id] = {
+      titleId: r.id,
+      sourceUrl: r.source_url,
+      name: { zh: r.name_zh, ko: r.name_ko },
+      life: {
+        birth: r.birth_year, death: r.death_year, raw: r.life_raw,
+        birthApprox: r.birth_approx, deathApprox: r.death_approx,
+      },
+      bioKo: r.bio_ko,
+      era: { period: r.era_period, confidence: r.era_confidence, source: r.era_source },
+      birthplace: {
+        name: r.birthplace_name, nameZh: r.birthplace_name_zh,
+        lat: r.birthplace_lat, lng: r.birthplace_lng,
+      },
+      relations: r.relations || [],
+    };
+  }
+  return { authors, count: rows.length };
+}
+
+function dbPoemsToJSON(rows) {
+  return rows.map(r => ({
+    poemNoStr: r.poem_no_str,
+    poemNo: r.poem_no,
+    title: { zh: r.title_zh, ko: r.title_ko },
+    poet: { zh: r.poet_zh, ko: r.poet_ko },
+    category: r.category,
+    juan: r.juan,
+    meter: r.meter,
+    poemZh: r.body_zh,
+    translationKo: r.translation_ko,
+    commentaryKo: r.commentary_ko,
+    jipyeongZh: r.jipyeong_zh,
+    pinyin: r.pinyin,
+    pingze: r.pingze,
+    notes: r.notes || [],
+    media: r.media || null,
+  }));
+}
+
+function dbHistoryToJSON(rows) {
+  return rows.map(r => ({
+    type: "card",
+    titleId: r.id,
+    year: r.year,
+    name: { ko: r.name_ko, zh: r.name_zh },
+    life: { birth: r.birth_year, death: r.death_year },
+    summary: r.summary,
+    detail: r.detail,
+    tags: r.tags || {},
+    annotations: r.annotations || [],
+  }));
+}
+
+async function loadFromSupabase() {
+  // supabase-js 클라이언트 대신 REST API 직접 호출 (더 안정적)
+  const SB_URL = "https://dhbrgmkrqvuftkjskmof.supabase.co/rest/v1";
+  const SB_KEY = "sb_publishable_3841oamd20AXIpCsiqgkFQ_CX0V6yJB";
+  const headers = { apikey: SB_KEY, Authorization: "Bearer " + SB_KEY };
+
+  const [poets, poems, history] = await Promise.all([
+    fetch(SB_URL + "/poets?select=*", { headers }).then(r => { if (!r.ok) throw new Error("poets " + r.status); return r.json(); }),
+    fetch(SB_URL + "/poems?select=*", { headers }).then(r => { if (!r.ok) throw new Error("poems " + r.status); return r.json(); }),
+    fetch(SB_URL + "/history_cards?select=*", { headers }).then(r => { if (!r.ok) throw new Error("history " + r.status); return r.json(); }),
+  ]);
+  console.log("[DB] poets " + poets.length + ", poems " + poems.length + ", history " + history.length);
+  return {
+    authorsDB: dbPoetsToJSON(poets),
+    poemsFull: dbPoemsToJSON(poems),
+    historyCards: dbHistoryToJSON(history),
+  };
+}
+
 function el(html) {
   const t = document.createElement("template");
   t.innerHTML = html.trim();
@@ -226,13 +303,12 @@ function calcPoetFontSize(poemCount) {
  * @param {string} text - 원본 텍스트
  * @param {Array} notes - 주석 배열 [{ no, head, text }, ...]
  * @param {string} titleId - 작품 ID (ID 고유성 보장용)
- * @param {"legacy"|"owned"} noteSource - 주석 출처 구분 (색상/스타일용)
  * @returns {string} HTML 문자열
  */
-function parseTextWithNotes(text, notes, titleId = "", noteSource = "legacy") {
+function parseTextWithNotes(text, notes, titleId = "") {
   if (!text) return "";
   if (!Array.isArray(notes) || notes.length === 0) return escapeHTML(text);
-  const sourceKey = noteSource === "owned" ? "owned" : "legacy";
+  const sourceKey = "legacy";
   const noteWordClass = `note-word note-word-${sourceKey}`;
   const noteRefClass = `note-ref note-ref-${sourceKey}`;
 
@@ -281,9 +357,9 @@ function parseTextWithNotes(text, notes, titleId = "", noteSource = "legacy") {
   // 2단계: 각 [번호] 앞에 head 키워드가 있는지 확인
   for (const m of matches) {
     const note = notesByNo.get(m.noteNo);
-    if (!note || !note.head) continue;
+    if (!note || !(note.headZh || note.head)) continue;
 
-    const head = note.head;
+    const head = note.headZh || note.head;
     const headStart = m.index - head.length;
 
     // 1차: 정확 매칭 (줄바꿈 없는 경우 — 대부분)
@@ -373,7 +449,7 @@ function injectNoteMarkersByHead(text, notes) {
   const ordered = notes
     .map((n) => ({
       no: String(n?.no ?? "").trim(),
-      head: String(n?.head ?? "").trim(),
+      head: String(n?.headZh ?? n?.head ?? "").trim(),
     }))
     .filter((n) => n.no && n.head)
     .sort((a, b) => b.head.length - a.head.length);
@@ -1117,42 +1193,40 @@ function bindModalUI() {
 // ===== 5) 모달 내부: 작품 섹션 =====
 function renderPoemSection(p) {
   const poemNoStr = p.poemNoStr || String(p.poemNo ?? "").padStart(3, "0");
-  const ownedNotes = Array.isArray(p.notesOwned) ? p.notesOwned : [];
-  const legacyNotes = Array.isArray(p.notes) ? p.notes : [];
-  const useOwnedNotes = ownedNotes.length > 0;
-  const notes = useOwnedNotes ? ownedNotes : legacyNotes;
-  const noteSource = useOwnedNotes ? "owned" : "legacy";
-  const titleId = p.titleId || poemNoStr || "";  // 고유 ID (예: "C8", "C9")
+  const notes = Array.isArray(p.notes) ? p.notes : [];
+  const titleId = poemNoStr;
 
   // 제목 주석 파싱
   const titleFullRaw = p?.title?.zh ?? "";
-  const titleFullSource = useOwnedNotes ? injectNoteMarkersByHead(titleFullRaw, notes) : titleFullRaw;
-  const titleFull = parseTextWithNotes(titleFullSource, notes, titleId, noteSource);
+  const titleFullSource = injectNoteMarkersByHead(titleFullRaw, notes);
+  const titleFull = parseTextWithNotes(titleFullSource, notes, titleId);
 
   const meta = [p.category, p.juan, p.meter ? `${p.meter}언` : ""].filter(Boolean).join(" · ");
 
-  const jipZhSource = useOwnedNotes
-    ? injectNoteMarkersByHead(p.jipyeongZh || "", notes)
-    : (p.jipyeongZh || "");
-  const jipZh = parseTextWithNotes(jipZhSource, notes, titleId, noteSource);  // 집평도 주석 파싱
+  const jipZhSource = injectNoteMarkersByHead(p.jipyeongZh || "", notes);
+  const jipZh = parseTextWithNotes(jipZhSource, notes, titleId);
 
   const notesHTML = notes.length
     ? `<ul class="note-list">${notes.map(n => `
         <li class="note-item" id="note-item-${titleId}-${n.no}">
           <span class="note-no" data-target-ref="${titleId}-${n.no}">[${escapeHTML(n.no)}]</span>
-          <span class="note-head">${escapeHTML(n.head || "")}</span>
+          <span class="note-head">${escapeHTML(n.headZh || n.head || "")}</span>
           <span class="note-text">${escapeHTML(n.text || "")}</span>
         </li>
       `).join("")}</ul>`
     : `<div class="muted">주석 없음</div>`;
 
-  const jipKoRaw = p.jipyeongKoOwned || p.jipyeongKo || "";
+  const jipKoRaw = p.jipyeongKo || "";
   const jipKo = escapeHTML(cleanLegacyKoReferences(jipKoRaw));
+
+  // 해설 (commentaryKo)
+  const commentaryKoRaw = p.commentaryKo || "";
+  const commentaryKo = escapeHTML(commentaryKoRaw);
 
   // 심화자료 데이터
   const pinyinRaw = p.pinyin || "";
   const pingzeRaw = p.pingze || "";
-  const poemSimpRaw = p.poemSimp || "";
+  const poemCharsRaw = (p.poemZh || "").replace(/\[\d+\]/g, "");
   const ytLinks = (p.media && Array.isArray(p.media.youtube)) ? p.media.youtube : [];
 
   // 제목/시인 병음 데이터
@@ -1179,18 +1253,18 @@ function renderPoemSection(p) {
   const titleKo = p?.title?.ko ?? "";
   const poetZhRaw = p?.poet?.zh ?? "";
   const poetZhClean = poetZhRaw.replace(/\[\d+\]/g, "").trim();  // 주석번호 제거
-  const poetZhSource = useOwnedNotes ? injectNoteMarkersByHead(poetZhRaw, notes) : poetZhRaw;
+  const poetZhSource = injectNoteMarkersByHead(poetZhRaw, notes);
 
   // 병음 칸: 간체자 + 병음 루비문자
   let pinyinHTML = "";
-  if (poemSimpRaw || pinyinRaw) {
+  if (poemCharsRaw || pinyinRaw) {
     // 제목/시인 병음 루비
     const titleRuby = buildTitlePinyinRuby(titleSimp, titlePinyin);
     const poetRuby = buildTitlePinyinRuby(poetSimp, poetPinyin);
     const titlePinyinLine = titleRuby ? `<div class="ruby-title">${titleRuby}</div>` : "";
     const poetPinyinLine = poetRuby ? `<div class="ruby-poet">${poetRuby}</div>` : "";
 
-    const simpLines = poemSimpRaw.split("\n");
+    const simpLines = poemCharsRaw.split("\n");
     const pinyinLines = pinyinRaw.split("\n");
     const maxLen = Math.max(simpLines.length, pinyinLines.length);
     let rubyRows = "";
@@ -1222,8 +1296,8 @@ function renderPoemSection(p) {
 
   // 평측 칸: 간체자 + 평측 루비문자 (절구/율시만)
   let pingzeHTML = "";
-  if (pingzeRaw && poemSimpRaw) {
-    const simpLines = poemSimpRaw.split("\n");
+  if (pingzeRaw && poemCharsRaw) {
+    const simpLines = poemCharsRaw.split("\n");
     const pingzeLines = pingzeRaw.split("\n");
     const maxLen = Math.max(simpLines.length, pingzeLines.length);
     let pzRows = "";
@@ -1243,7 +1317,7 @@ function renderPoemSection(p) {
   }
 
   // 번역문 (2컬럼용)
-  const trKoRaw = p.translationKoOwned || p.translationKo || "";
+  const trKoRaw = p.translationKo || "";
 
   // YouTube 임베드 플레이어
   function extractYoutubeId(url) {
@@ -1317,14 +1391,14 @@ function renderPoemSection(p) {
 
   // 시 본문 2컬럼 (한자 | 한글) 구성
   // 전체 텍스트를 먼저 주석 파싱 → 줄 분리 (줄 경계에 걸친 head도 처리 가능)
-  const poemZhSource = useOwnedNotes
-    ? injectNoteMarkersByHead(p.poemZh || "", notes)
-    : (p.poemZh || "");
-  const parsedPoemZh = parseTextWithNotes(poemZhSource, notes, titleId, noteSource);
+  const poemZhSource = injectNoteMarkersByHead(p.poemZh || "", notes);
+  const parsedPoemZh = parseTextWithNotes(poemZhSource, notes, titleId);
   const poemZhLines = parsedPoemZh.split("\n");
   const allTrKoLines = trKoRaw.split("\n");
-  // 번역 데이터 앞 2줄은 제목+시인 이름 → 상단에 이미 표시하므로 본문에서 제외
-  const trKoLines = allTrKoLines.length > 2 ? allTrKoLines.slice(2) : allTrKoLines;
+  // 번역 앞 2줄이 제목+시인인 경우에만 제거 (ko줄 = zh줄+2 이면 prefix 있음)
+  const trKoLines = (allTrKoLines.length === poemZhLines.length + 2)
+    ? allTrKoLines.slice(2)
+    : allTrKoLines;
   const maxLines = Math.max(poemZhLines.length, trKoLines.length);
   let bilingualRows = "";
   for (let i = 0; i < maxLines; i++) {
@@ -1334,7 +1408,7 @@ function renderPoemSection(p) {
   }
 
   return `
-    <section class="poem-sec" data-poem-sec="${escapeHTML(p.titleId)}">
+    <section class="poem-sec" data-poem-sec="${escapeHTML(poemNoStr)}">
       <button class="poem-head" type="button" aria-expanded="false">
         <div class="poem-head-line">
           <span class="poem-no">${escapeHTML(poemNoStr)}</span>
@@ -1345,9 +1419,9 @@ function renderPoemSection(p) {
 
       <div class="poem-body" hidden>
         <div class="poem-text-box">
-          <div class="poem-title-zh">${parseTextWithNotes(titleFullSource, notes, titleId, noteSource)}</div>
+          <div class="poem-title-zh">${parseTextWithNotes(titleFullSource, notes, titleId)}</div>
           ${titleKo ? `<div class="poem-title-ko">${escapeHTML(titleKo)}</div>` : ''}
-          <div class="poem-poet-zh">${parseTextWithNotes(poetZhSource, notes, titleId, noteSource)}</div>
+          <div class="poem-poet-zh">${parseTextWithNotes(poetZhSource, notes, titleId)}</div>
           <div class="poem-bilingual">${bilingualRows}</div>
         </div>
 
@@ -1363,8 +1437,14 @@ function renderPoemSection(p) {
           <div class="poem-sec-text pre">${jipKo}</div>
         </div>` : ''}
 
+        ${commentaryKo ? `
+        <div class="poem-section-block poem-sec-commentary-ko">
+          <div class="poem-sec-label">해설</div>
+          <div class="poem-sec-text pre">${commentaryKo}</div>
+        </div>` : ''}
+
         <div class="poem-section-block poem-sec-notes">
-          <div class="poem-sec-label">${useOwnedNotes ? "주석 (집필)" : "주석"}</div>
+          <div class="poem-sec-label">주석</div>
           <div class="poem-sec-text">${notesHTML}</div>
         </div>
 
@@ -1921,7 +2001,7 @@ function buildAuthorEvents(authorsDB, poemsCompact) {
 
     // ✅ works는 "poemId"로 통일
     const works = worksRaw.map(p => ({
-      poemId: p.titleId,
+      poemId: p.poemNoStr || p.titleId,
       poemNoStr: p.poemNoStr || String(p.poemNo ?? "").padStart(3, "0"),
       titleCompact: normalizeZhName(p?.title?.zh || ""),
       meta: [p.category, p.juan].filter(Boolean).join(" · "),
@@ -1949,7 +2029,7 @@ function buildAuthorEvents(authorsDB, poemsCompact) {
 
 function buildAuthorPoemIndex(authorsDB, poemsCompact) {
   const poems = Array.isArray(poemsCompact) ? poemsCompact : (poemsCompact.items || []);
-  const poemById = new Map(poems.map(p => [p.titleId, p]));
+  const poemById = new Map(poems.map(p => [p.poemNoStr || p.titleId, p]));
 
   const authors = Object.values(authorsDB.authors || {});
   const authorById = new Map(authors.map(a => [a.titleId, a]));
@@ -2033,18 +2113,27 @@ async function main() {
   const root = document.getElementById("timeline");
   if (!root) throw new Error("Missing #timeline");
 
-  const poemsFullPromise = loadJSON("public/index/poems.full.owned.json")
-    .catch(() => loadJSON("public/index/poems.full.json"))
-    .catch(() => loadJSON("public/index/poems.compact.json"));
+  // ── 데이터 로딩: Supabase 우선, 실패 시 JSON fallback ──
+  let authorsDB, poemsFull, historyCards;
+  try {
+    const db = await loadFromSupabase();
+    authorsDB = db.authorsDB;
+    poemsFull = db.poemsFull;
+    historyCards = db.historyCards;
+    console.log("[main] Supabase DB에서 로드 완료");
+  } catch (e) {
+    console.warn("[main] Supabase 실패 → JSON fallback:", e.message);
+    const poemsFullPromise = loadJSON("public/index/poems.v3.json")
+      .catch(() => loadJSON("public/index/poems.v2.json"))
+      .catch(() => loadJSON("public/index/poems.compact.json"));
+    [authorsDB, poemsFull, historyCards] = await Promise.all([
+      loadJSON("public/index/db_author.with_ko.json"),
+      poemsFullPromise,
+      loadJSON("public/index/history_cards.json"),
+    ]);
+  }
 
-  const [authorsDB, poemsCompact, poemsFull, historyCards] = await Promise.all([
-    loadJSON("public/index/db_author.with_ko.json"),
-    loadJSON("public/index/poems.compact.json"),
-    poemsFullPromise,
-    loadJSON("public/index/history_cards.json"),
-  ]);
-
-  // UI 설정 로드 → CSS 변수 주입
+  // UI 설정 로드 → CSS 변수 주입 (항상 JSON에서)
   try {
     const uiSettings = await loadJSON("public/index/ui_settings.json");
     applyUISettings(uiSettings);
@@ -2059,12 +2148,10 @@ async function main() {
   STATE.authorIdByPoetZh = idx.authorIdByPoetZh;
 
   const hcArr = Array.isArray(historyCards) ? historyCards : (historyCards.items || []);
-
-  // ✅ 중요: history 카드 클릭에서 넘어오는 값은 data-history-id(= titleId, 예: H001)입니다.
-  // 그래서 historyById 맵도 'titleId'를 키로 만들어 두면 클릭 → 모달 조회가 바로 됩니다.
   STATE.historyById = new Map(hcArr.map(h => [h.titleId || h.id, h]));
 
-  const authorEvents = buildAuthorEvents(authorsDB, poemsCompact);
+  // Supabase에서는 poemsFull로 통합 (compact 별도 로드 불필요)
+  const authorEvents = buildAuthorEvents(authorsDB, poemsFull);
 
   const historyEvents = hcArr
     .filter(h => h && h.year != null)

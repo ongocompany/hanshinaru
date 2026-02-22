@@ -1,0 +1,84 @@
+{
+  "version": "1.0",
+  "description": "창작마당 배경 템플릿 — CSS 기반 + 이미지 기반",
+  "templates": [
+    {
+      "id": "none",
+      "name": "없음",
+      "category": "기본",
+      "css": ""
+    },
+    {
+      "id": "ivory",
+      "name": "상아색",
+      "category": "단색",
+      "css": "background-color: #FFFFF0;"
+    },
+    {
+      "id": "warm_beige",
+      "name": "따뜻한 베이지",
+      "category": "단색",
+      "css": "background-color: #F5EDDD;"
+    },
+    {
+      "id": "ink_dark",
+      "name": "먹빛",
+      "category": "단색",
+      "css": "background-color: #1E1E1E; color: #E8DCC8;"
+    },
+    {
+      "id": "misty_jade",
+      "name": "비취색 안개",
+      "category": "단색",
+      "css": "background: linear-gradient(180deg, #D4E4D9 0%, #A8C8B0 100%); color: #2C3E2F;"
+    },
+    {
+      "id": "paper_classic",
+      "name": "고전 한지",
+      "category": "종이질감",
+      "css": "background: linear-gradient(135deg, #F5E6C8 0%, #EDD9A8 50%, #F0DEB8 100%);"
+    },
+    {
+      "id": "paper_aged",
+      "name": "세월의 종이",
+      "category": "종이질감",
+      "css": "background: linear-gradient(180deg, #E8D5B0 0%, #D4BA88 30%, #C8AE78 70%, #E0CCAA 100%);"
+    },
+    {
+      "id": "paper_white",
+      "name": "화선지",
+      "category": "종이질감",
+      "css": "background: linear-gradient(160deg, #FAF8F0 0%, #F0ECE0 40%, #F5F0E6 100%);"
+    },
+    {
+      "id": "paper_blue",
+      "name": "청화 종이",
+      "category": "종이질감",
+      "css": "background: linear-gradient(135deg, #D8E4EE 0%, #C0D0E0 50%, #D4E0EC 100%); color: #2A3B50;"
+    },
+    {
+      "id": "sunset_gradient",
+      "name": "석양",
+      "category": "자연",
+      "css": "background: linear-gradient(180deg, #2C1654 0%, #7B3F61 30%, #D4776B 60%, #F4C87A 100%); color: #F5E6C8;"
+    },
+    {
+      "id": "moonlight",
+      "name": "월광",
+      "category": "자연",
+      "css": "background: linear-gradient(180deg, #0D1B2A 0%, #1B2D45 40%, #2C4466 70%, #1B2D45 100%); color: #C8D8E8;"
+    },
+    {
+      "id": "spring_mist",
+      "name": "봄 안개",
+      "category": "자연",
+      "css": "background: linear-gradient(180deg, #E8F0E0 0%, #D0E0C8 40%, #C8D8C0 70%, #E0ECD8 100%);"
+    },
+    {
+      "id": "autumn_mountain",
+      "name": "단풍 산",
+      "category": "자연",
+      "css": "background: linear-gradient(180deg, #F0E4D0 0%, #D4A060 30%, #C07830 60%, #8B5E3C 100%); color: #FFF8F0;"
+    }
+  ]
+}
