@@ -4264,3 +4264,313 @@
   - 네이버 OAuth는 Supabase 미지원으로 보류
   - 게시판 실제 CRUD 테스트 미완 (다음 세션에서 진행)
   - 모바일 반응형 테스트 미완
+
+## [Task ID] 2026-02-21-1747-gpt-korean-hansi-deep-rewrite
+
+### START
+- Time: 2026-02-21 17:47
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: `한시사이트개발/한국의한시/1-1 한국한시문학통사와대표시인.md`를 요약형에서 심화형으로 재작성 요청. 시인별 생애/성장/창작배경과 대표작 원문 포함 요구.
+- Why: 사이트 게시용 원고의 밀도와 문학적 완성도 향상.
+- Planned Scope:
+  - 파일: `한시사이트개발/한국의한시/1-1 한국한시문학통사와대표시인.md`
+  - 예상 변경: 8장 전면 개편(심화 해설), 작가별 맥락 서술 강화, 대표작 원문 블록 추가, 참고 링크 보강
+- Status: In Progress
+
+### END
+- Time: 2026-02-21 17:47
+- Status: Done
+- Changed Files:
+  - `한시사이트개발/한국의한시/1-1 한국한시문학통사와대표시인.md` (8장 전면 심화 개편: 작가별 생애·성장·창작배경 중심 서술로 교체)
+  - `한시사이트개발/한국의한시/1-1 한국한시문학통사와대표시인.md` (대표작 원문 추가: 을지문덕, 최치원, 정지상, 허난설헌, 박지원, 황현)
+  - `한시사이트개발/한국의한시/1-1 한국한시문학통사와대표시인.md` (참고 링크에 인물/작품 항목 보강)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `nl -ba 한시사이트개발/한국의한시/1-1 한국한시문학통사와대표시인.md | sed -n '140,430p'`로 심화 섹션과 원문 블록 반영 확인
+  - `nl -ba 한시사이트개발/한국의한시/1-1 한국한시문학통사와대표시인.md | sed -n '367,398p'`로 참고 링크 보강 확인
+- Notes:
+  - 고전 원문은 통용본 기준으로 수록했고, 이본 차이 가능성은 본문에 명시함.
+
+## [Task ID] 2026-02-21-1803-gpt-korean-poetry-scope-expand
+
+### START
+- Time: 2026-02-21 18:03
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 한시 중심 원고를 한국 시문학 전체(고대가요·향가·고려가요·시조·가사 포함) 관점으로 재작성 요청.
+- Why: 사이트 독자층 수준에 맞춰 통사 깊이와 장르 균형을 강화하고, 전란이 시의 어조에 미친 영향까지 연구사 기반으로 보강하기 위함.
+- Planned Scope:
+  - 파일: `한시사이트개발/한국의한시/1-1 한국한시문학통사와대표시인.md`
+  - 예상 변경: 주제 확장(한국 시문학 통사), 고대 시가 추가, 장르사 균형 보강, 대표 작가 맥락 심화, 연구 논문 근거 섹션 강화
+- Status: In Progress
+
+### END
+- Time: 2026-02-21 18:03
+- Status: Done
+- Changed Files:
+  - `한시사이트개발/한국의한시/1-1 한국한시문학통사와대표시인.md` (제목/구조를 한시 중심에서 한국 시문학 통사로 전환)
+  - `한시사이트개발/한국의한시/1-1 한국한시문학통사와대표시인.md` (`공무도하가`·`구지가`·`황조가` 원형층과 향가·고려가요·시조·가사 장르 축 보강)
+  - `한시사이트개발/한국의한시/1-1 한국한시문학통사와대표시인.md` (임진왜란·병자호란 관련 연구사 기반 어조 변화 분석 섹션 심화)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `sed -n '1,320p' 한시사이트개발/한국의한시/1-1 한국한시문학통사와대표시인.md`로 장르 확장 및 심화 섹션 반영 확인
+  - `rg -n "공무도하가|향가|시조|임진왜란|병자호란|참고 자료" 한시사이트개발/한국의한시/1-1 한국한시문학통사와대표시인.md`로 핵심 요구 항목 반영 확인
+- Notes:
+  - 논문·백과 링크는 본문 하단 `참고 자료`에 명시했고, 필요 시 다음 단계에서 각 항목별 주석(각주) 포맷으로 재정렬 가능.
+
+## [Task ID] 2026-02-22-0703-gpt-korean-poetry-master-list-research
+
+### START
+- Time: 2026-02-22 07:03
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: 한국사에서 언급되는 시대별 시문학 연관 인물(시인 외 왕족·승려·기생·사대부가 여성 포함)의 작품 목록을 웹 조사 기반으로 `research.md`에 정리 요청. 중국 문헌(전당시 등) 수록 작품과 제목만 전하는 작품도 포함 요구.
+- Why: 기존 프로젝트 데이터가 중국 시인 중심이라 한국 시문학 DB 초안이 필요함.
+- Planned Scope:
+  - 파일: `한시사이트개발/한국의한시/research.md`
+  - 예상 변경: 시대별 인물-작품 대형 표 작성(생몰연도·간단 이력·작품명·수록 문헌 포함)
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-22 07:12
+- Status: Done
+- Changed Files:
+  - `한시사이트개발/한국의한시/research.md` (상고~대한제국까지 시대별 인물·작품 표 신규 작성)
+  - `한시사이트개발/한국의한시/research.md` (향가/고려가요 작자 미상 항목과 실전·제목 전승 항목 반영)
+  - `한시사이트개발/한국의한시/research.md` (중국 문헌 수록 항목: `全唐詩`·`全唐文`·`樂府詩集` 등 별도 섹션 추가)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `wc -l 한시사이트개발/한국의한시/research.md`로 문서 생성 확인(141 lines)
+  - `sed -n '1,220p' 한시사이트개발/한국의한시/research.md`로 표 구조/요구 컬럼 반영 확인
+- Notes:
+  - 웹 리서치 기반 1차 통합표이며, 다음 라운드에서 인물별 개별 원문(한시 전문)까지 확장 가능.
+
+## [Task ID] 2026-02-22-0719-gpt-korean-poet-json-deep-research
+
+### START
+- Time: 2026-02-22 07:19
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: `research.md` 기반 인물 중 시인 중심으로 상세 웹 조사 후 JSON 파일 생성 요청.
+- Why: 후속 집필/데이터 구축을 위한 기계가공 가능한 시인 메타데이터가 필요함.
+- Planned Scope:
+  - 파일: `한시사이트개발/한국의한시/research_poets.json`
+  - 예상 변경: 시대·이름(한글/한자)·생몰·이력·작품목록 구조의 JSON 신규 작성
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-22 07:28
+- Status: Done
+- Changed Files:
+  - `한시사이트개발/한국의한시/research_poets.json` (`research.md` 인물 중 시인 중심 87명 JSON 정리)
+  - `한시사이트개발/한국의한시/research_poets.json` (이름 한글/한자, 생몰연도, 이력, 작품 목록(한글/한자/출처) 구조화)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `jq 'length' 한시사이트개발/한국의한시/research_poets.json` 결과 87 확인
+  - `jq '[.[] | select(.name.hanja==\"미상\")] | length' 한시사이트개발/한국의한시/research_poets.json` 결과 0 확인
+  - `sed -n '1,140p' 한시사이트개발/한국의한시/research_poets.json`로 필드 구조/샘플 데이터 확인
+- Notes:
+  - 작품 한자는 사료 표기가 불명확한 항목(예: `한시 다수`, `시문 일부 전함`)은 `미상`으로 남김.
+
+## [Task ID] 2026-02-22-0735-gpt-korean-poet-bio-detail-enrich
+
+### START
+- Time: 2026-02-22 07:35
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: `research_poets.json`에 `bio_detail` 필드를 추가하고, 인물별로 1000~2500자 수준의 상세 서술을 웹 리서치 기반으로 보강 요청.
+- Why: 한국 시문학 DB를 집필/서비스용으로 풍성화하고, 인물 설명 깊이를 확장하기 위함.
+- Planned Scope:
+  - 파일: `한시사이트개발/한국의한시/research_poets.json`
+  - 예상 변경: 기존 `bio` 외 `bio_detail` 필드 추가 및 인물별 상세 서술 반영
+  - 파일: `scripts/enrich_korean_poet_bio_detail.py`
+  - 예상 변경: 초기 보강 스크립트 작성
+  - 파일: `scripts/fetch_korean_poet_wiki_extract_cache.sh`
+  - 예상 변경: 위키 원문 캐시 수집 스크립트 작성
+  - 파일: `scripts/apply_korean_poet_bio_detail_from_cache.py`
+  - 예상 변경: 캐시 기반 `bio_detail` 생성/주입 스크립트 작성
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-22 07:54
+- Status: Done
+- Changed Files:
+  - `한시사이트개발/한국의한시/research_poets.json` (`bio_detail` 필드 추가 및 87명 상세 서술 주입)
+  - `scripts/enrich_korean_poet_bio_detail.py` (초기 시도용 보강 스크립트)
+  - `scripts/fetch_korean_poet_wiki_extract_cache.sh` (위키 extract 캐시 수집 스크립트)
+  - `scripts/apply_korean_poet_bio_detail_from_cache.py` (캐시 기반 `bio_detail` 생성/주입 스크립트)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `jq 'length' 한시사이트개발/한국의한시/research_poets.json` 결과 87 확인
+  - `jq -r 'map((.bio_detail|length)) | {min:min, max:max, avg:(add/length|floor)}' ...` 결과 `min=999`, `max=2396`, `avg=1239` 확인
+  - `jq '.[] | select(.name.ko==\"정몽주\") | {len:(.bio_detail|length)}' ...` 등 샘플 확인으로 본문형 장문 서술 반영 점검
+- Notes:
+  - 위키 표제어 부재/불일치 인물은 fallback 서술 템플릿으로 보강했으며, 상세 사료 확장은 다음 라운드에서 민족문화대백과/개별 문집 중심으로 추가 가능.
+
+## [Task ID] 2026-02-22-0800-gpt-korean-poet-missing-report
+
+### START
+- Time: 2026-02-22 08:00
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: `research_poets.json`에서 데이터 누락(한자명 매치 실패, 생애 정보 미상, 검색 실패/데이터 부족 추정) 인물 목록을 추출해 같은 폴더에 MD 문서로 정리 요청.
+- Why: 후속 수동 보완 대상 우선순위를 빠르게 식별하기 위함.
+- Planned Scope:
+  - 파일: `한시사이트개발/한국의한시/research_poets_missing_report.md`
+  - 예상 변경: 누락 유형별 목록/통계/통합 테이블 리포트 작성
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-22 08:01
+- Status: Done
+- Changed Files:
+  - `한시사이트개발/한국의한시/research_poets_missing_report.md` (한자명/생몰/검색실패 추정 누락 리포트 신규 작성)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `jq '[.[] | select(.name.hanja==\"미상\")] | length' 한시사이트개발/한국의한시/research_poets.json` 결과 12 반영 확인
+  - `jq '[.[] | select(.birth_death|test(\"미상\"))] | length' 한시사이트개발/한국의한시/research_poets.json` 결과 16 반영 확인
+  - `sed -n '1,260p' 한시사이트개발/한국의한시/research_poets_missing_report.md`로 리포트 섹션/표 출력 확인
+- Notes:
+  - `검색 실패/데이터 부족 추정`은 `bio_detail` fallback 문구 기준 자동 판정이라, 후속 수동 검증 시 일부 조정 가능.
+
+## [Task ID] 2026-02-22-0809-gpt-korean-poem-json-build
+
+### START
+- Time: 2026-02-22 08:09
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: `research.md`에 언급된 작품을 대상으로 원문/번역/해설 필드를 갖는 `poem_korean.json` 생성 및 누락 확인용 MD 리포트 작성 요청.
+- Why: 한국 시문학 작품 DB의 본문 중심 정비를 시작하고, 번역/해설 누락분을 후속 작업(Qwen/수작업) 대상으로 분리하기 위함.
+- Planned Scope:
+  - 파일: `한시사이트개발/한국의한시/poem_korean.json`
+  - 예상 변경: 작품번호/작가/제목/본문/번역문/해설 구조로 작품 데이터 신규 생성
+  - 파일: `한시사이트개발/한국의한시/poem_korean_build_report.md`
+  - 예상 변경: 본문·번역·해설 누락 현황 리포트 작성
+  - 파일: `scripts/build_korean_poem_json.py`
+  - 예상 변경: `research.md` 파싱 + 웹 탐색 + JSON/MD 생성 자동화 스크립트 작성
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-22 08:47
+- Status: Done
+- Changed Files:
+  - `scripts/build_korean_poem_json.py` (`research.md` 파싱 기반 작품 JSON 빌드 스크립트 구현/개선)
+  - `scripts/build_korean_poem_json.py` (위키문헌 `parse` 기반 추출 + 제목 별칭 매핑 + 안전 필터 추가)
+  - `scripts/build_korean_poem_json.py` (검색 범위 확장: DuckDuckGo 질의 후 블로그/일반 웹 페이지에서 원문 후보 추출 로직 추가)
+  - `한시사이트개발/한국의한시/poem_korean.json` (최종 93건 생성, 본문/번역 반영 및 오탐 정리)
+  - `한시사이트개발/한국의한시/poem_korean_build_report.md` (누락 확인 리포트 갱신)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `jq 'length' 한시사이트개발/한국의한시/poem_korean.json` 결과 `93` 확인
+  - `sed -n '1,40p' 한시사이트개발/한국의한시/poem_korean_build_report.md`로 집계 확인: 본문 `55/93`, 번역문 `14/93`, 해설 `0/93`
+  - `jq -r '.[] | select((."본문"|length)>0 and ((."본문"|test("각주|참고|같이 보기|라이선스|유튜브|분류|외부 링크|가족 관계|역대 선거|소속 정당|글로벌 세계 대백과사전"))))' 한시사이트개발/한국의한시/poem_korean.json` 결과 없음 확인
+- Notes:
+  - 위키 단일 소스 한계를 보완하기 위해 블로그/일반 웹 페이지 검색을 스크립트에 포함했다.
+  - 정확도 우선으로 오탐(목차/설명문)으로 판단되는 본문은 자동 비움 처리했고, 누락 목록은 `poem_korean_build_report.md`에서 바로 수동 보완 가능하다.
+
+## [Task ID] 2026-02-22-0850-gpt-korean-poem-dokeum-field
+
+### START
+- Time: 2026-02-22 08:50
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: `poem_korean.json`의 각 작품에 `본문` 아래 `독음` 필드 추가 및 한국어 발음 일괄 반영 요청.
+- Why: 한자 원문을 바로 읽을 수 있도록 작품 데이터 구조 보강 필요.
+- Planned Scope:
+  - 파일: `한시사이트개발/한국의한시/poem_korean.json`
+  - 예상 변경: `독음` 필드 추가(본문 기반 자동 변환)
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-22 08:53
+- Status: Done
+- Changed Files:
+  - `한시사이트개발/한국의한시/poem_korean.json` (`본문` 아래 `독음` 필드 추가 및 93건 일괄 채움)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `jq '.[0]' 한시사이트개발/한국의한시/poem_korean.json`로 `본문` 다음 `독음` 필드 생성 확인
+  - `jq -r '.[] | select(."시제목"."한글"=="공무도하가") | ."독음"' 한시사이트개발/한국의한시/poem_korean.json`로 `공무도하` 형태 독음 확인
+  - `jq -r '.[] | select((."본문"|length)>0 and (."독음"|length)==0)' 한시사이트개발/한국의한시/poem_korean.json` 결과 없음 확인
+- Notes:
+  - 독음 생성은 `search/index.html`의 기존 한자→한글 매핑(우선) + Unihan `kKorean` 보조 매핑으로 처리.
+  - 극히 일부 희귀 향찰/이체자(9자)는 자동 매핑이 없어 원문 한자를 유지했다(후속 수동 보정 가능).
+
+## [Task ID] 2026-02-22-1226-gpt-ai-article-plan-redoc
+
+### START
+- Time: 2026-02-22 12:26
+- Owner: GPT(지훈)
+- Requester: JIN
+- Request Summary: AI 기사 크롤링/재작성 내용이 빠진 문서를 `docs` 및 `docs/FromJin` 근거까지 포함해 다시 정리 요청.
+- Why: 기존 `docs/research/14_AI_기사작성툴_제작계획_260222_GPT.md`가 `work_change_log` 발췌 중심이라 상세 설계 맥락이 부족함.
+- Planned Scope:
+  - 파일: `docs/research/14_AI_기사작성툴_제작계획_260222_GPT.md`
+  - 예상 변경: `work_change_log` + `FromJin` 상세 설계 기반 재정리본으로 갱신
+  - 파일: `docs/work_change_log.md`
+  - 예상 변경: 본 Task START/END 기록
+- Status: In Progress
+
+### END
+- Time: 2026-02-22 12:29
+- Status: Done
+- Changed Files:
+  - `docs/research/14_AI_기사작성툴_제작계획_260222_GPT.md` (AI 기사 크롤링/재작성 계획 정리본으로 전면 갱신)
+  - `docs/work_change_log.md` (본 Task START/END 기록)
+- Validation:
+  - `rg -n "AI 기사 재작성|GitHub Actions|crawl_news.js|news_articles.json|300~500자" docs/research/14_AI_기사작성툴_제작계획_260222_GPT.md`로 핵심 항목 반영 확인
+  - 근거 출처 섹션에 `work_change_log` 및 `FromJin` 라인 범위 명시 확인
+- Notes:
+  - 상세 원문 설계는 `docs/FromJin/12_남은사항들_작업계획서_CL.md` 8번 섹션(한시 소식 자동 크롤링 시스템)에 있음.
+
+## [Task] 2026-02-22-1300-Claude-korean-poetry-timeline
+
+### START
+- Time: 2026-02-22 13:00
+- Owner: Claude
+- Requester: JIN
+- Request Summary: 한국 한시 시대별 시인과 작품 타임라인 페이지 신규 구축
+- Why: research_poets.json(87명) + poem_korean.json(93편) 데이터를 합쳐 중국시 타임라인처럼 열람 가능한 페이지 필요
+- Planned Scope:
+  - 파일: `scripts/build_korean_timeline.js` (신규 — 데이터 병합 빌드 스크립트)
+  - 파일: `public/index/korean_timeline.json` (빌드 산출물)
+  - 파일: `korean-poetry/poets/index.html` (기존 stub 대체 — 타임라인 페이지)
+  - 파일: `korean-poetry/poets/timeline.js` (신규 — 렌더링 로직)
+  - 파일: `shared/nav.html` (한국의 한시 메뉴 활성화)
+- Status: In Progress
+
+### END
+- Time: 2026-02-22 15:30
+- Status: Done
+- Changed Files:
+  - `scripts/build_korean_timeline.js` (신규) — 2개 JSON 병합, 중복제거(공무도하가x4→x1), 4시대 그룹핑, 시인-작품 매칭, orphan 처리, bio_detail+해설 포함
+  - `public/index/korean_timeline.json` (빌드 산출물 127KB) — 87시인, 51작품(본문有), 4시대, orphan 14편
+  - `korean-poetry/poets/index.html` (stub→풀페이지) — Layout-5a, 시인 아코디언 카드, 시 아코디언(2수+), 2컬럼 그리드(본문/독음), 번역+해설 플레이스홀더, 반응형
+  - `korean-poetry/poets/timeline.js` (신규) — 데이터 fetch, 시인카드 렌더, 시 접이식, scrollspy 네비게이션, XSS 방지
+  - `shared/nav.html` — "한국의 한시" 메뉴 활성화, 3개→2개 항목(한국의 전통시문학, 시대별 시인과 작품)
+- Key Decisions:
+  - 시대 4구분: 고조선~통일신라 / 고려 / 조선전기 / 조선후기
+  - 시인 카드: details/summary 아코디언, 기본 접힘, 클릭시 bio_detail+작품 펼침
+  - 작품 1수: 바로 펼침 / 2수 이상: 제목만 보이는 접이식
+  - 본문+독음: 2컬럼 그리드 (모바일 1컬럼)
+  - otherWorks 라벨: "저서 혹은 참여문집"
+  - orphan 섹션: "작자미상 및 기타 작품", 상하 점선 구분
+- Validation:
+  - `node scripts/build_korean_timeline.js` 빌드 성공 (87시인, 51작품, 4중복제거)
+  - `python3 -m http.server 8000` → localhost:8000/korean-poetry/poets/ 정상 렌더 확인
+- Notes:
+  - 데이터 출처: `한시사이트개발/한국의한시/research_poets.json`, `poem_korean.json`
+  - 해설 데이터 0/93편 — 플레이스홀더("해설이 준비 중입니다") 적용
+  - 번역 14/93편만 존재 — 있을 때만 표시
