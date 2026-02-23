@@ -73,6 +73,7 @@ function dbPoemsToAdmin(rows) {
     translationKo: r.translation_ko,
     commentaryKo: r.commentary_ko,
     jipyeongZh: r.jipyeong_zh,
+    jipyeongKo: r.jipyeong_ko,
     pinyin: r.pinyin,
     pingze: r.pingze,
     notes: r.notes || [],
@@ -122,6 +123,7 @@ function adminPoemToRow(p) {
     translation_ko: p.translationKo,
     commentary_ko: p.commentaryKo,
     jipyeong_zh: p.jipyeongZh,
+    jipyeong_ko: p.jipyeongKo,
     pinyin: p.pinyin, pingze: p.pingze,
     notes: p.notes || [],
     media: p.media || null,
@@ -267,7 +269,6 @@ async function loadAllData() {
 
   if (allLoaded && typeof initAuthorManager === "function") initAuthorManager();
   if (allLoaded && typeof initPoemManager === "function") initPoemManager();
-  if (allLoaded && typeof initWritingManager === "function") initWritingManager();
   if (allLoaded && typeof initHistoryManager === "function") initHistoryManager();
   if (typeof initUIManager === "function") initUIManager();
 }
@@ -276,9 +277,9 @@ async function loadJSON(key) {
   const res = await fetch(withNoCacheQuery(DATA_PATHS[key]), { cache: "no-store" });
   if (res.ok) return await res.json();
 
-  // owned 복사본이 없을 때는 원본으로 폴백
+  // poems.v3.json 폴백
   if (key === "poem") {
-    const fallback = await fetch(withNoCacheQuery("../public/index/poems.full.json"), { cache: "no-store" });
+    const fallback = await fetch(withNoCacheQuery("../public/index/poems.v3.json"), { cache: "no-store" });
     if (fallback.ok) return await fallback.json();
   }
 
@@ -319,10 +320,6 @@ function checkChanges() {
     const tabBtn = document.querySelector(`.tab-btn[data-tab="${key}"]`);
     if (tabBtn) {
       tabBtn.classList.toggle("modified", changed);
-    }
-    if (key === "poem") {
-      const writingTabBtn = document.querySelector('.tab-btn[data-tab="writing"]');
-      if (writingTabBtn) writingTabBtn.classList.toggle("modified", changed);
     }
     if (changed) totalChanges++;
   });
@@ -501,11 +498,6 @@ function discardAll() {
     if (PoemManager.selectedIndex !== null) {
       selectPoem(PoemManager.selectedIndex);
     }
-  }
-
-  // 집필관리 화면 갱신
-  if (typeof initWritingManager === "function") {
-    initWritingManager();
   }
 
   // UI관리 화면 갱신

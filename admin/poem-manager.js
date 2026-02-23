@@ -485,6 +485,9 @@ function selectPoem(index) {
   document.getElementById("pf-jipyeongZh").value = poem.jipyeongZh || "";
   document.getElementById("pf-jipyeongKo").value = poem.jipyeongKo || "";
 
+  // 해설
+  document.getElementById("pf-commentaryKo").value = poem.commentaryKo || "";
+
   // 집필본(Owned) 확인 패널
   renderOwnedReadonlySection(poem);
 

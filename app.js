@@ -2125,7 +2125,6 @@ async function main() {
   } catch (e) {
     console.warn("[main] Supabase 실패 → JSON fallback:", e.message);
     const poemsFullPromise = loadJSON("public/index/poems.v3.json")
-      .catch(() => loadJSON("public/index/poems.v2.json"))
       .catch(() => loadJSON("public/index/poems.compact.json"));
     [authorsDB, poemsFull, historyCards] = await Promise.all([
       loadJSON("public/index/db_author.with_ko.json"),

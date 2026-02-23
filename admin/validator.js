@@ -9,11 +9,26 @@
 // ─── 초기화 ─────────────────────────────────
 function initValidator() {
   document.getElementById("btn-run-validate").addEventListener("click", runValidation);
+
+  // 모달 열기/닫기
+  const overlay = document.getElementById("validator-overlay");
+  const btnOpen = document.getElementById("btn-open-validator");
+  const btnClose = document.getElementById("btn-validator-close");
+
+  if (btnOpen) btnOpen.addEventListener("click", () => {
+    overlay.hidden = false;
+  });
+  if (btnClose) btnClose.addEventListener("click", () => {
+    overlay.hidden = true;
+  });
+  // 배경 클릭으로 닫기
+  if (overlay) overlay.addEventListener("click", (e) => {
+    if (e.target === overlay) overlay.hidden = true;
+  });
 }
 
 // admin.js loadAllData 완료 후 호출
 document.addEventListener("DOMContentLoaded", () => {
-  // initTabs보다 늦게 실행되도록 setTimeout
   setTimeout(() => {
     if (typeof initValidator === "function") initValidator();
   }, 0);
