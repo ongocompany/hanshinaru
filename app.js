@@ -74,6 +74,7 @@ function dbPoemsToJSON(rows) {
     translationKo: r.translation_ko,
     commentaryKo: r.commentary_ko,
     jipyeongZh: r.jipyeong_zh,
+    jipyeongKo: r.jipyeong_ko,
     pinyin: r.pinyin,
     pingze: r.pingze,
     notes: r.notes || [],
@@ -101,7 +102,7 @@ async function loadFromSupabase() {
   const SB_KEY = "sb_publishable_3841oamd20AXIpCsiqgkFQ_CX0V6yJB";
   const headers = { apikey: SB_KEY, Authorization: "Bearer " + SB_KEY };
 
-  const opts = { headers, cache: "no-store" };
+  const opts = { headers };
   const [poets, poems, history] = await Promise.all([
     fetch(SB_URL + "/poets?select=*", opts).then(r => { if (!r.ok) throw new Error("poets " + r.status); return r.json(); }),
     fetch(SB_URL + "/poems?select=*", opts).then(r => { if (!r.ok) throw new Error("poems " + r.status); return r.json(); }),
@@ -807,7 +808,7 @@ function bindNoteCrossLinks(container) {
 
 // ===== 1) 더미 UI =====
 const DUMMY_UI = {
-  defaultAvatar: "public/assets/avatars/default-author.jpg",
+  defaultAvatar: "/public/assets/avatars/default-author.jpg",
   authorTags: ["성당", "시성", "대표"],
   historyTags: ["사건"],
 };
@@ -815,7 +816,7 @@ const DUMMY_UI = {
 // 시인 초상화 경로 반환 (없으면 기본 이미지 fallback)
 function getAuthorAvatar(authorId) {
   if (!authorId) return DUMMY_UI.defaultAvatar;
-  return `public/assets/avatars/${authorId}.jpg`;
+  return `/public/assets/avatars/${authorId}.jpg`;
 }
 // img onerror용 fallback 속성 문자열
 const AVATAR_ONERROR = `onerror="this.onerror=null;this.src='${DUMMY_UI.defaultAvatar}'"`;
@@ -1420,7 +1421,7 @@ function renderPoemSection(p) {
 
       <div class="poem-body" hidden>
         <div class="poem-text-box">
-          <div class="poem-title-zh">${parseTextWithNotes(titleFullSource, notes, titleId)}</div>
+          <div class="poem-title-zh">${titleFull}</div>
           ${titleKo ? `<div class="poem-title-ko">${escapeHTML(titleKo)}</div>` : ''}
           <div class="poem-poet-zh">${parseTextWithNotes(poetZhSource, notes, titleId)}</div>
           <div class="poem-bilingual">${bilingualRows}</div>
@@ -2216,5 +2217,6 @@ async function main() {
 
 main().catch(err => {
   console.error(err);
-  alert(err.message);
+  const el = document.getElementById("timeline");
+  if (el) el.innerHTML = '<p style="text-align:center;padding:40px;color:#999;">데이터를 불러오지 못했습니다. 새로고침 해주세요.</p>';
 });

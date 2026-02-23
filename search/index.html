@@ -695,7 +695,7 @@
   // ── Supabase REST API ──
   const SB_URL = "https://dhbrgmkrqvuftkjskmof.supabase.co/rest/v1";
   const SB_KEY = "sb_publishable_3841oamd20AXIpCsiqgkFQ_CX0V6yJB";
-  const SB_OPTS = { headers: { apikey: SB_KEY, Authorization: "Bearer " + SB_KEY }, cache: "no-store" };
+  const SB_OPTS = { headers: { apikey: SB_KEY, Authorization: "Bearer " + SB_KEY } };
 
   async function loadAllData() {
     try {
@@ -797,6 +797,7 @@
         translationKo: r.translation_ko,
         commentaryKo: r.commentary_ko,
         jipyeongZh: r.jipyeong_zh,
+        jipyeongKo: r.jipyeong_ko,
         pinyin: r.pinyin,
         pingze: r.pingze,
         notes: r.notes || [],
@@ -1243,7 +1244,7 @@
     const parsedPoemZh = parseTextWithNotes(poemZhSource, notes, titleId);
     const poemZhLines = parsedPoemZh.split("\n");
     const allTrKoLines = trKoRaw.split("\n");
-    const trKoLines = allTrKoLines.length > 2 ? allTrKoLines.slice(2) : allTrKoLines;
+    const trKoLines = (allTrKoLines.length === poemZhLines.length + 2) ? allTrKoLines.slice(2) : allTrKoLines;
     const maxLines = Math.max(poemZhLines.length, trKoLines.length);
     let bilingualRows = "";
     for (let i = 0; i < maxLines; i++) {
