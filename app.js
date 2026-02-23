@@ -101,10 +101,11 @@ async function loadFromSupabase() {
   const SB_KEY = "sb_publishable_3841oamd20AXIpCsiqgkFQ_CX0V6yJB";
   const headers = { apikey: SB_KEY, Authorization: "Bearer " + SB_KEY };
 
+  const opts = { headers, cache: "no-store" };
   const [poets, poems, history] = await Promise.all([
-    fetch(SB_URL + "/poets?select=*", { headers }).then(r => { if (!r.ok) throw new Error("poets " + r.status); return r.json(); }),
-    fetch(SB_URL + "/poems?select=*", { headers }).then(r => { if (!r.ok) throw new Error("poems " + r.status); return r.json(); }),
-    fetch(SB_URL + "/history_cards?select=*", { headers }).then(r => { if (!r.ok) throw new Error("history " + r.status); return r.json(); }),
+    fetch(SB_URL + "/poets?select=*", opts).then(r => { if (!r.ok) throw new Error("poets " + r.status); return r.json(); }),
+    fetch(SB_URL + "/poems?select=*", opts).then(r => { if (!r.ok) throw new Error("poems " + r.status); return r.json(); }),
+    fetch(SB_URL + "/history_cards?select=*", opts).then(r => { if (!r.ok) throw new Error("history " + r.status); return r.json(); }),
   ]);
   console.log("[DB] poets " + poets.length + ", poems " + poems.length + ", history " + history.length);
   return {

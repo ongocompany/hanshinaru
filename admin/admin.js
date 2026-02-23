@@ -29,16 +29,117 @@ const FILE_HANDLES = {
   hyeonto: null,
 };
 
-const urlParams = new URLSearchParams(window.location.search);
-const isTestMode = urlParams.get('test') === 'qwen';
-
 const DATA_PATHS = {
   author: "../public/index/db_author.with_ko.json",
-  poem: isTestMode ? "../public/index/poems.qwen_test.json" : "../public/index/poems.full.owned.json",
+  poem: "../public/index/poems.v3.json",
   history: "../public/index/history_cards.json",
   uiSettings: "../public/index/ui_settings.json",
   hyeonto: "../public/index/hyeonto_data.json",
 };
+
+// ── Supabase REST API (읽기용) ──
+const SB_REST = "https://dhbrgmkrqvuftkjskmof.supabase.co/rest/v1";
+const SB_KEY = "sb_publishable_3841oamd20AXIpCsiqgkFQ_CX0V6yJB";
+const SB_HEADERS = { apikey: SB_KEY, Authorization: "Bearer " + SB_KEY };
+
+// ── DB → JSON 변환 (로드용) ──
+function dbPoetsToAdmin(rows) {
+  const authors = {};
+  for (const r of rows) {
+    authors[r.id] = {
+      titleId: r.id,
+      sourceUrl: r.source_url,
+      name: { zh: r.name_zh, ko: r.name_ko },
+      life: { birth: r.birth_year, death: r.death_year, raw: r.life_raw, birthApprox: r.birth_approx, deathApprox: r.death_approx },
+      bioKo: r.bio_ko,
+      era: { period: r.era_period, confidence: r.era_confidence, source: r.era_source },
+      birthplace: { name: r.birthplace_name, nameZh: r.birthplace_name_zh, lat: r.birthplace_lat, lng: r.birthplace_lng },
+      relations: r.relations || [],
+    };
+  }
+  return { authors, count: rows.length };
+}
+
+function dbPoemsToAdmin(rows) {
+  return rows.map(r => ({
+    poemNoStr: r.poem_no_str,
+    poemNo: r.poem_no,
+    title: { zh: r.title_zh, ko: r.title_ko },
+    poet: { zh: r.poet_zh, ko: r.poet_ko },
+    category: r.category,
+    juan: r.juan,
+    meter: r.meter,
+    poemZh: r.body_zh,
+    translationKo: r.translation_ko,
+    commentaryKo: r.commentary_ko,
+    jipyeongZh: r.jipyeong_zh,
+    pinyin: r.pinyin,
+    pingze: r.pingze,
+    notes: r.notes || [],
+    media: r.media || null,
+  })).sort((a, b) => a.poemNo - b.poemNo);
+}
+
+function dbHistoryToAdmin(rows) {
+  return rows.map(r => ({
+    type: "card",
+    titleId: r.id,
+    year: r.year,
+    name: { ko: r.name_ko, zh: r.name_zh },
+    life: { birth: r.birth_year, death: r.death_year },
+    summary: r.summary,
+    detail: r.detail,
+    tags: r.tags || {},
+    annotations: r.annotations || [],
+  }));
+}
+
+// ── JSON → DB 변환 (저장용) ──
+function adminPoetToRow(a) {
+  return {
+    id: a.titleId,
+    name_zh: a.name?.zh, name_ko: a.name?.ko,
+    bio_ko: a.bioKo || null,
+    birth_year: a.life?.birth ?? null, death_year: a.life?.death ?? null,
+    birth_approx: a.life?.birthApprox ?? false, death_approx: a.life?.deathApprox ?? false,
+    life_raw: a.life?.raw || null,
+    era_period: a.era?.period || null, era_confidence: a.era?.confidence || null, era_source: a.era?.source || null,
+    birthplace_name: a.birthplace?.name || null, birthplace_name_zh: a.birthplace?.nameZh || null,
+    birthplace_lat: a.birthplace?.lat ?? null, birthplace_lng: a.birthplace?.lng ?? null,
+    relations: a.relations || [],
+    source_url: a.sourceUrl || null,
+  };
+}
+
+function adminPoemToRow(p) {
+  return {
+    poem_no_str: p.poemNoStr,
+    poem_no: p.poemNo,
+    title_zh: p.title?.zh, title_ko: p.title?.ko,
+    poet_zh: p.poet?.zh, poet_ko: p.poet?.ko,
+    category: p.category, juan: p.juan, meter: p.meter,
+    body_zh: p.poemZh,
+    translation_ko: p.translationKo,
+    commentary_ko: p.commentaryKo,
+    jipyeong_zh: p.jipyeongZh,
+    pinyin: p.pinyin, pingze: p.pingze,
+    notes: p.notes || [],
+    media: p.media || null,
+  };
+}
+
+function adminHistoryToRow(c) {
+  return {
+    id: c.titleId,
+    year: c.year,
+    name_ko: c.name?.ko || null, name_zh: c.name?.zh || null,
+    birth_year: c.life?.birth ?? null, death_year: c.life?.death ?? null,
+    summary: c.summary || null,
+    detail: c.detail || null,
+    tags: c.tags || {},
+    annotations: c.annotations || [],
+  };
+}
 
 const DATA_LABELS = {
   author: "시인 데이터",
@@ -82,29 +183,55 @@ function initTabs() {
 
 // ─── 데이터 로드 ───────────────────────────
 async function loadAllData() {
-  const keys = ["author", "poem", "history"];
+  const dbKeys = ["author", "poem", "history"];
 
   // 로딩 상태 표시
-  keys.forEach(key => setLoadState(key, "loading"));
+  dbKeys.forEach(key => setLoadState(key, "loading"));
 
-  const results = await Promise.allSettled(
-    keys.map(key => loadJSON(key))
-  );
+  // ── 1) Supabase REST API에서 로드 (JSON 폴백 포함) ──
+  try {
+    const fetchOpts = { headers: SB_HEADERS, cache: "no-store" };
+    const [poetsRes, poemsRes, histRes] = await Promise.all([
+      fetch(SB_REST + "/poets?select=*", fetchOpts),
+      fetch(SB_REST + "/poems?select=*&order=poem_no.asc", fetchOpts),
+      fetch(SB_REST + "/history_cards?select=*&order=year.asc", fetchOpts),
+    ]);
 
-  results.forEach((result, i) => {
-    const key = keys[i];
-    if (result.status === "fulfilled") {
-      DATA[key] = result.value;
-      ORIGINAL[key] = structuredClone(result.value);
+    if (!poetsRes.ok) throw new Error("poets " + poetsRes.status);
+    if (!poemsRes.ok) throw new Error("poems " + poemsRes.status);
+    if (!histRes.ok) throw new Error("history " + histRes.status);
+
+    DATA.author = dbPoetsToAdmin(await poetsRes.json());
+    DATA.poem = dbPoemsToAdmin(await poemsRes.json());
+    DATA.history = dbHistoryToAdmin(await histRes.json());
+
+    dbKeys.forEach(key => {
+      ORIGINAL[key] = structuredClone(DATA[key]);
       setLoadState(key, "success");
       updateCount(key);
-    } else {
-      setLoadState(key, "error");
-      console.error(`${DATA_LABELS[key]} 로드 실패:`, result.reason);
-    }
-  });
+    });
 
-  // UI 설정 로드 (별도 — 없으면 기본값 사용)
+    console.log("[admin] Supabase DB에서 로드 완료");
+  } catch (e) {
+    console.warn("[admin] Supabase 실패 → JSON fallback:", e.message);
+    const results = await Promise.allSettled(
+      dbKeys.map(key => loadJSON(key))
+    );
+    results.forEach((result, i) => {
+      const key = dbKeys[i];
+      if (result.status === "fulfilled") {
+        DATA[key] = result.value;
+        ORIGINAL[key] = structuredClone(result.value);
+        setLoadState(key, "success");
+        updateCount(key);
+      } else {
+        setLoadState(key, "error");
+        console.error(`${DATA_LABELS[key]} 로드 실패:`, result.reason);
+      }
+    });
+  }
+
+  // ── 2) UI 설정 로드 (JSON — DB에 없음) ──
   try {
     const uiRes = await fetch(withNoCacheQuery(DATA_PATHS.uiSettings), { cache: "no-store" });
     if (uiRes.ok) {
@@ -118,7 +245,7 @@ async function loadAllData() {
   }
   ORIGINAL.uiSettings = structuredClone(DATA.uiSettings);
 
-  // 현토 데이터 로드 (별도 — 없어도 정상 동작)
+  // ── 3) 현토 데이터 로드 (JSON — DB에 없음) ──
   try {
     const hyRes = await fetch(withNoCacheQuery(DATA_PATHS.hyeonto), { cache: "no-store" });
     if (hyRes.ok) {
@@ -132,36 +259,17 @@ async function loadAllData() {
   if (!DATA.hyeonto) DATA.hyeonto = {};
   if (!ORIGINAL.hyeonto) ORIGINAL.hyeonto = {};
 
-  // 전체 상태 업데이트
-  const allLoaded = keys.every(k => DATA[k] !== null);
+  // ── 4) 전체 상태 업데이트 + 각 매니저 초기화 ──
+  const allLoaded = dbKeys.every(k => DATA[k] !== null);
   document.getElementById("load-status").textContent =
     allLoaded ? "데이터 로드 완료" : "일부 데이터 로드 실패";
   document.getElementById("btn-save").disabled = !allLoaded;
 
-  // 2단계: 시인관리 초기화
-  if (allLoaded && typeof initAuthorManager === "function") {
-    initAuthorManager();
-  }
-
-  // 5단계: 시관리 초기화
-  if (allLoaded && typeof initPoemManager === "function") {
-    initPoemManager();
-  }
-
-  // 집필관리 초기화
-  if (allLoaded && typeof initWritingManager === "function") {
-    initWritingManager();
-  }
-
-  // 역사관리 초기화
-  if (allLoaded && typeof initHistoryManager === "function") {
-    initHistoryManager();
-  }
-
-  // UI관리 초기화
-  if (typeof initUIManager === "function") {
-    initUIManager();
-  }
+  if (allLoaded && typeof initAuthorManager === "function") initAuthorManager();
+  if (allLoaded && typeof initPoemManager === "function") initPoemManager();
+  if (allLoaded && typeof initWritingManager === "function") initWritingManager();
+  if (allLoaded && typeof initHistoryManager === "function") initHistoryManager();
+  if (typeof initUIManager === "function") initUIManager();
 }
 
 async function loadJSON(key) {
@@ -230,7 +338,7 @@ function checkChanges() {
 
   if (totalChanges > 0) {
     changeBar.hidden = false;
-    changeCount.textContent = `${totalChanges}개 파일 수정됨`;
+    changeCount.textContent = `${totalChanges}개 항목 수정됨`;
   } else {
     changeBar.hidden = true;
   }
@@ -248,25 +356,41 @@ function initSaveButtons() {
 async function saveAll() {
   const hasChanges = checkChanges();
 
-  const keys = ["author", "poem", "history", "uiSettings", "hyeonto"];
+  const DB_KEYS = ["author", "poem", "history"];
+  const FILE_KEYS = ["uiSettings", "hyeonto"];
   const fileNames = {
-    author: "db_author.with_ko.json",
-    poem: "poems.full.owned.json",
-    history: "history_cards.json",
     uiSettings: "ui_settings.json",
     hyeonto: "hyeonto_data.json",
   };
 
   let savedCount = 0;
+  const errors = [];
 
-  for (const key of keys) {
+  // 1) DB 키: Supabase에 저장
+  for (const key of DB_KEYS) {
     if (!DATA[key]) continue;
+    if (JSON.stringify(DATA[key]) === JSON.stringify(ORIGINAL[key])) continue;
+
+    try {
+      await saveToSupabase(key);
+      ORIGINAL[key] = structuredClone(DATA[key]);
+      savedCount++;
+    } catch (err) {
+      console.error(`[saveAll] ${key} DB 저장 실패:`, err);
+      errors.push(`${DATA_LABELS[key]}: ${err.message}`);
+    }
+  }
+
+  // 2) 파일 키: 기존 방식 유지 (UI설정, 현토)
+  for (const key of FILE_KEYS) {
+    if (!DATA[key]) continue;
+    if (JSON.stringify(DATA[key]) === JSON.stringify(ORIGINAL[key])) continue;
+
     const jsonStr = JSON.stringify(DATA[key], null, 2);
     const saved = await saveFile(key, jsonStr, fileNames[key]);
-
     if (saved) {
       ORIGINAL[key] = structuredClone(DATA[key]);
-      if (key === "uiSettings" && typeof initUIManager !== "undefined") {
+      if (key === "uiSettings" && typeof uiSettingsOriginal !== "undefined") {
         uiSettingsOriginal = structuredClone(DATA[key]);
       }
       savedCount++;
@@ -275,8 +399,36 @@ async function saveAll() {
 
   checkChanges();
 
-  if (savedCount > 0) {
+  if (errors.length > 0) {
+    showToast("DB 저장 오류: " + errors.join(", "), 5000);
+  } else if (savedCount > 0) {
     showToast(hasChanges ? "변경사항 저장 완료!" : "현재 상태 저장 완료!");
+  } else if (!hasChanges) {
+    showToast("변경된 내용이 없습니다.");
+  }
+}
+
+// ── Supabase DB 저장 ──
+async function saveToSupabase(key) {
+  if (!window.sb) throw new Error("Supabase 클라이언트를 찾을 수 없습니다 (supabase.js 로드 확인)");
+
+  if (key === "author") {
+    const rows = Object.values(DATA.author.authors).map(adminPoetToRow);
+    const { error } = await window.sb.from("poets").upsert(rows, { onConflict: "id" });
+    if (error) throw error;
+    showToast(`시인 ${rows.length}명 DB 저장 완료`);
+
+  } else if (key === "poem") {
+    const rows = DATA.poem.map(adminPoemToRow);
+    const { error } = await window.sb.from("poems").upsert(rows, { onConflict: "poem_no_str" });
+    if (error) throw error;
+    showToast(`시 ${rows.length}편 DB 저장 완료`);
+
+  } else if (key === "history") {
+    const rows = DATA.history.map(adminHistoryToRow);
+    const { error } = await window.sb.from("history_cards").upsert(rows, { onConflict: "id" });
+    if (error) throw error;
+    showToast(`역사 ${rows.length}건 DB 저장 완료`);
   }
 }
 

@@ -692,22 +692,86 @@
   let newsArticles = [];
   let historyCards = [];
 
+  // ── Supabase REST API ──
+  const SB_URL = "https://dhbrgmkrqvuftkjskmof.supabase.co/rest/v1";
+  const SB_KEY = "sb_publishable_3841oamd20AXIpCsiqgkFQ_CX0V6yJB";
+  const SB_OPTS = { headers: { apikey: SB_KEY, Authorization: "Bearer " + SB_KEY }, cache: "no-store" };
+
   async function loadAllData() {
-    const [pRes, aRes, nRes, hRes] = await Promise.all([
-      fetch("/public/index/poems.compact.json"),
-      fetch("/public/index/db_author.with_ko.json"),
-      fetch("/public/index/news_articles.json"),
-      fetch("/public/index/history_cards.json"),
-    ]);
-    poemsCompact = await pRes.json();
-    const authorsRaw = await aRes.json();
-    authorsData = authorsRaw.authors || authorsRaw;
-    authorsList = Object.values(authorsData);
+    try {
+      const [pRes, aRes, nRes, hRes] = await Promise.all([
+        fetch(SB_URL + "/poems?select=poem_no_str,poem_no,title_zh,title_ko,poet_zh,poet_ko,juan,category,meter,body_zh&order=poem_no.asc", SB_OPTS),
+        fetch(SB_URL + "/poets?select=*", SB_OPTS),
+        fetch("/public/index/news_articles.json"),
+        fetch(SB_URL + "/history_cards?select=*&order=year.asc", SB_OPTS),
+      ]);
 
-    const newsRaw = await nRes.json();
-    newsArticles = newsRaw.articles || newsRaw;
+      if (!pRes.ok || !aRes.ok || !hRes.ok) throw new Error("DB " + [pRes.status, aRes.status, hRes.status].join("/"));
 
-    historyCards = await hRes.json();
+      // 시 compact 변환
+      const poemsRaw = await pRes.json();
+      poemsCompact = poemsRaw.map(r => ({
+        poemNoStr: r.poem_no_str,
+        poemNo: r.poem_no,
+        title: { zh: r.title_zh, ko: r.title_ko },
+        poet: { zh: r.poet_zh, ko: r.poet_ko },
+        juan: r.juan,
+        category: r.category,
+        meter: r.meter,
+        preview: (r.body_zh || "").split("\n").slice(0, 2).join(" / "),
+      }));
+
+      // 시인 변환
+      const poetsRaw = await aRes.json();
+      authorsData = {};
+      for (const r of poetsRaw) {
+        authorsData[r.id] = {
+          titleId: r.id,
+          name: { zh: r.name_zh, ko: r.name_ko },
+          life: { birth: r.birth_year, death: r.death_year, raw: r.life_raw, birthApprox: r.birth_approx, deathApprox: r.death_approx },
+          bioKo: r.bio_ko,
+          era: { period: r.era_period, confidence: r.era_confidence, source: r.era_source },
+          birthplace: { name: r.birthplace_name, nameZh: r.birthplace_name_zh },
+          relations: r.relations || [],
+        };
+      }
+      authorsList = Object.values(authorsData);
+
+      // 뉴스 (DB에 없음 — JSON 유지)
+      const newsRaw = await nRes.json();
+      newsArticles = newsRaw.articles || newsRaw;
+
+      // 역사 변환
+      const histRaw = await hRes.json();
+      historyCards = histRaw.map(r => ({
+        type: "card",
+        titleId: r.id,
+        year: r.year,
+        name: { ko: r.name_ko, zh: r.name_zh },
+        life: { birth: r.birth_year, death: r.death_year },
+        summary: r.summary,
+        detail: r.detail,
+        tags: r.tags || {},
+        annotations: r.annotations || [],
+      }));
+
+      console.log("[search] Supabase DB에서 로드 완료");
+    } catch (e) {
+      console.warn("[search] Supabase 실패 → JSON fallback:", e.message);
+      const [pRes, aRes, nRes, hRes] = await Promise.all([
+        fetch("/public/index/poems.compact.json"),
+        fetch("/public/index/db_author.with_ko.json"),
+        fetch("/public/index/news_articles.json"),
+        fetch("/public/index/history_cards.json"),
+      ]);
+      poemsCompact = await pRes.json();
+      const authorsRaw = await aRes.json();
+      authorsData = authorsRaw.authors || authorsRaw;
+      authorsList = Object.values(authorsData);
+      const newsRaw = await nRes.json();
+      newsArticles = newsRaw.articles || newsRaw;
+      historyCards = await hRes.json();
+    }
 
     for (const a of authorsList) {
       const nameZh = normalizeZhName(a.name?.zh || "");
@@ -717,9 +781,34 @@
 
   async function loadFullData() {
     if (poemsFull) return poemsFull;
-    const res = await fetch("/public/index/poems.v3.json");
-    poemsFull = await res.json();
-    return poemsFull;
+    try {
+      const res = await fetch(SB_URL + "/poems?select=*&order=poem_no.asc", SB_OPTS);
+      if (!res.ok) throw new Error(res.status);
+      const rows = await res.json();
+      poemsFull = rows.map(r => ({
+        poemNoStr: r.poem_no_str,
+        poemNo: r.poem_no,
+        title: { zh: r.title_zh, ko: r.title_ko },
+        poet: { zh: r.poet_zh, ko: r.poet_ko },
+        category: r.category,
+        juan: r.juan,
+        meter: r.meter,
+        poemZh: r.body_zh,
+        translationKo: r.translation_ko,
+        commentaryKo: r.commentary_ko,
+        jipyeongZh: r.jipyeong_zh,
+        pinyin: r.pinyin,
+        pingze: r.pingze,
+        notes: r.notes || [],
+        media: r.media || null,
+      }));
+      return poemsFull;
+    } catch (e) {
+      console.warn("[search] full data Supabase 실패 → JSON fallback:", e.message);
+      const res = await fetch("/public/index/poems.v3.json");
+      poemsFull = await res.json();
+      return poemsFull;
+    }
   }
 
   // ===== 2) 검색 엔진 =====
