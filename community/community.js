@@ -198,7 +198,7 @@ function renderShowcasePreview(posts, containerId) {
 // ========================================
 async function fetchNewsPreview(limit) {
   try {
-    const res = await fetch('/public/index/news_articles.json?_ts=' + Date.now(), { cache: 'no-store' });
+    const res = await fetch('/public/index/news_articles.json');
     if (!res.ok) return [];
     const payload = await res.json();
     const articles = Array.isArray(payload?.articles) ? payload.articles : (Array.isArray(payload) ? payload : []);

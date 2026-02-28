@@ -11,7 +11,7 @@
     const el = document.getElementById(id);
     if (!el) return null;
     try {
-      const res = await fetch('/shared/' + file + '?v=' + Date.now());
+      const res = await fetch('/shared/' + file + '?v=20260228');
       if (!res.ok) throw new Error(res.status);
       el.innerHTML = await res.text();
       return el;

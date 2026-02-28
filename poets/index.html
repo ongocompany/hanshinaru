@@ -4,9 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>當詩人 — 당나라 시인들</title>
-  <link rel="stylesheet" href="https://use.typekit.net/dje5vco.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&family=Noto+Serif+KR:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/shared/styles.css">
   <style>
     /* ===== Sections ===== */
@@ -24,7 +21,7 @@
       text-align: center; font-size: 18px;
       color: #444; line-height: 1.9;
     }
-    .intro-text .zh { font-family: 'adobe-fangsong-std', fangsong, serif; }
+    .intro-text .zh { font-family: 'SimSun', 'PMingLiU', serif; }
 
     /* ===== Era Grid (2-column: sidebar + content) ===== */
     .era-grid {
@@ -36,12 +33,12 @@
     /* Sidebar */
     .era-sidebar { position: sticky; top: 100px; align-self: start; }
     .era-number {
-      font-family: 'adobe-fangsong-std', fangsong, 'LXGW WenKai Mono TC', 'Noto Serif TC', serif;
+      font-family: 'SimSun', 'PMingLiU', serif;
       font-size: 64px; font-weight: bold; line-height: 1;
       color: #6e8387;
     }
     .era-title-zh {
-      font-family: 'adobe-fangsong-std', fangsong, 'LXGW WenKai Mono TC', 'Noto Serif TC', serif;
+      font-family: 'SimSun', 'PMingLiU', serif;
       font-size: 56px; font-weight: bold; margin: 8px 0;
       color: #6e8387;
     }
@@ -51,7 +48,7 @@
     /* Content column */
     .era-content { display: flex; flex-direction: column; gap: 24px; }
     .era-desc { font-size: 18px; color: #333; line-height: 1.9; }
-    .era-desc .zh { font-family: 'adobe-fangsong-std', fangsong, serif; }
+    .era-desc .zh { font-family: 'SimSun', 'PMingLiU', serif; }
 
     /* ===== Poet Card ===== */
     .poet-card {
@@ -67,7 +64,7 @@
       width: 96px; height: 96px; border-radius: 50%;
       display: flex; align-items: center; justify-content: center;
       flex-shrink: 0;
-      font-family: 'adobe-fangsong-std', fangsong, serif;
+      font-family: 'SimSun', 'PMingLiU', serif;
       font-size: 32px;
       color: #6e8387;
       background: var(--era-bg);
@@ -82,7 +79,7 @@
     .poet-info { flex: 1; }
     .poet-name-row { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
     .poet-name-zh {
-      font-family: 'adobe-fangsong-std', fangsong, serif;
+      font-family: 'SimSun', 'PMingLiU', serif;
       font-size: 28px; font-weight: bold;
       color: #6e8387;
     }
@@ -102,11 +99,11 @@
     }
     .work-label { font-size: 13px; color: #777; margin-bottom: 4px; }
     .work-title {
-      font-family: 'adobe-fangsong-std', fangsong, serif;
+      font-family: 'SimSun', 'PMingLiU', serif;
       font-size: 20px; margin-bottom: 4px;
     }
     .work-desc { font-size: 16px; color: #555; }
-    .work-desc .zh { font-family: 'adobe-fangsong-std', fangsong, serif; }
+    .work-desc .zh { font-family: 'SimSun', 'PMingLiU', serif; }
 
     /* ===== Info Box (relationships, events) ===== */
     .info-box {
@@ -119,11 +116,11 @@
       margin-bottom: 12px; display: flex; align-items: center; gap: 8px;
       color: #6e8387;
     }
-    .info-box-title .zh { font-family: 'adobe-fangsong-std', fangsong, serif; }
+    .info-box-title .zh { font-family: 'SimSun', 'PMingLiU', serif; }
     .info-box p, .info-box li {
       font-size: 18px; color: #333; line-height: 1.8;
     }
-    .info-box .zh { font-family: 'adobe-fangsong-std', fangsong, serif; }
+    .info-box .zh { font-family: 'SimSun', 'PMingLiU', serif; }
     .info-box ul { list-style: none; }
     .info-box ul li { padding-left: 16px; position: relative; margin-bottom: 8px; }
     .info-box ul li::before {
@@ -131,7 +128,7 @@
     }
 
     .info-sub-title {
-      font-family: 'adobe-fangsong-std', fangsong, serif;
+      font-family: 'SimSun', 'PMingLiU', serif;
       font-size: 20px; font-weight: bold; margin-bottom: 8px;
       color: #6e8387;
     }
@@ -155,7 +152,7 @@
       background: rgba(58,42,24,0.04);
       text-align: center; font-size: 20px; line-height: 1.8;
     }
-    .conclusion-closing .zh { font-family: 'adobe-fangsong-std', fangsong, serif; }
+    .conclusion-closing .zh { font-family: 'SimSun', 'PMingLiU', serif; }
 
     /* ===== Color Themes per Era (통일: #6e8387) ===== */
     .era-early, .era-high, .era-mid, .era-late, .era-legacy {

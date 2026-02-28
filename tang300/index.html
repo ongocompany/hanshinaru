@@ -4,9 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>唐詩三百首 — 당시삼백수</title>
-  <link rel="stylesheet" href="https://use.typekit.net/dje5vco.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&family=Noto+Serif+KR:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/shared/styles.css">
   <style>
     /* ===== Sections ===== */
@@ -27,12 +24,12 @@
     }
     .sidebar { position: sticky; top: 100px; align-self: start; }
     .sidebar-title {
-      font-family: 'adobe-fangsong-std', fangsong, 'LXGW WenKai Mono TC', 'Noto Serif TC', serif;
+      font-family: 'SimSun', 'PMingLiU', serif;
       font-size: 56px; font-weight: bold; margin-bottom: 8px;
       color: #6e8387;
     }
     .sidebar-sub {
-      font-family: 'Noto Serif KR', serif;
+      font-family: 'Batang', 'BatangChe', '바탕', 'Georgia', serif;
       font-size: 22px; color: #666;
     }
     .content-col { display: flex; flex-direction: column; gap: 24px; }
@@ -42,23 +39,23 @@
       text-align: center; margin-bottom: 48px;
     }
     .section-header-title {
-      font-family: 'adobe-fangsong-std', fangsong, 'LXGW WenKai Mono TC', 'Noto Serif TC', serif;
+      font-family: 'SimSun', 'PMingLiU', serif;
       font-size: 56px; font-weight: bold; margin-bottom: 8px;
       color: #6e8387;
     }
     .section-header-sub {
-      font-family: 'Noto Serif KR', serif;
+      font-family: 'Batang', 'BatangChe', '바탕', 'Georgia', serif;
       font-size: 22px; color: #666;
     }
 
     /* ===== Body Text ===== */
     .body-text {
-      font-family: 'Noto Serif KR', serif;
+      font-family: 'Batang', 'BatangChe', '바탕', 'Georgia', serif;
       font-size: 16px; line-height: 1.9; color: #333;
     }
     .body-text p { margin-bottom: 16px; }
     .body-text p:last-child { margin-bottom: 0; }
-    .zh { font-family: 'adobe-fangsong-std', fangsong, serif; }
+    .zh { font-family: 'SimSun', 'PMingLiU', serif; }
 
     /* ===== Card ===== */
     .card {
@@ -74,22 +71,22 @@
       display: grid; grid-template-columns: 1fr 1fr; gap: 32px;
     }
     .info-grid-label {
-      font-family: 'adobe-fangsong-std', fangsong, 'LXGW WenKai Mono TC', 'Noto Serif TC', serif;
+      font-family: 'SimSun', 'PMingLiU', serif;
       font-size: 28px; font-weight: bold; margin-bottom: 12px;
       color: #6e8387;
     }
     .info-grid-value {
-      font-family: 'Noto Serif KR', serif;
+      font-family: 'Batang', 'BatangChe', '바탕', 'Georgia', serif;
       font-size: 16px; color: #333;
     }
     .info-grid-sub {
-      font-family: 'Noto Serif KR', serif;
+      font-family: 'Batang', 'BatangChe', '바탕', 'Georgia', serif;
       font-size: 14px; color: #666; margin-top: 4px;
     }
 
     /* ===== Section Subtitle with dot ===== */
     .sub-heading {
-      font-family: 'Noto Serif KR', serif;
+      font-family: 'Batang', 'BatangChe', '바탕', 'Georgia', serif;
       font-size: 28px; font-weight: bold;
       margin-bottom: 24px;
       display: flex; align-items: center; gap: 12px;
@@ -110,7 +107,7 @@
     .img-caption {
       background: #f9fafb; padding: 12px 24px;
       text-align: center; font-size: 14px; color: #666;
-      font-family: 'Noto Serif KR', serif;
+      font-family: 'Batang', 'BatangChe', '바탕', 'Georgia', serif;
     }
 
     /* ===== Timeline (Bibliography) ===== */
@@ -120,12 +117,12 @@
     }
     .timeline-year {
       width: 80px; flex-shrink: 0;
-      font-family: 'Noto Serif KR', serif;
+      font-family: 'Batang', 'BatangChe', '바탕', 'Georgia', serif;
       font-size: 18px; font-weight: bold;
       color: #6e8387;
     }
     .timeline-desc {
-      font-family: 'Noto Serif KR', serif;
+      font-family: 'Batang', 'BatangChe', '바탕', 'Georgia', serif;
       font-size: 16px; color: #333; flex: 1;
     }
 
@@ -141,16 +138,16 @@
       align-items: center; margin-bottom: 8px;
     }
     .type-card-name {
-      font-family: 'adobe-fangsong-std', fangsong, serif;
+      font-family: 'SimSun', 'PMingLiU', serif;
       font-size: 20px;
     }
     .type-card-count {
-      font-family: 'Noto Serif KR', serif;
+      font-family: 'Batang', 'BatangChe', '바탕', 'Georgia', serif;
       font-size: 24px; font-weight: bold;
       color: #6e8387;
     }
     .type-card-ko {
-      font-family: 'Noto Serif KR', serif;
+      font-family: 'Batang', 'BatangChe', '바탕', 'Georgia', serif;
       font-size: 14px; color: #666;
     }
 
@@ -174,17 +171,17 @@
       background: #f9fafb; border-radius: 12px;
     }
     .author-name-zh {
-      font-family: 'adobe-fangsong-std', fangsong, serif;
+      font-family: 'SimSun', 'PMingLiU', serif;
       font-weight: bold;
       font-size: 22px;
     }
     .author-name-ko {
-      font-family: 'Noto Serif KR', serif;
+      font-family: 'Batang', 'BatangChe', '바탕', 'Georgia', serif;
       color: #666; margin-left: 12px;
       font-size: 16px;
     }
     .author-count {
-      font-family: 'Noto Serif KR', serif;
+      font-family: 'Batang', 'BatangChe', '바탕', 'Georgia', serif;
       font-weight: bold;
       color: #6e8387;
       font-size: 28px;
@@ -201,11 +198,11 @@
     }
     .added-item:last-child { margin-bottom: 0; }
     .added-author {
-      font-family: 'adobe-fangsong-std', fangsong, serif;
+      font-family: 'SimSun', 'PMingLiU', serif;
       font-size: 24px; flex-shrink: 0;
     }
     .added-works {
-      font-family: 'Noto Serif KR', serif;
+      font-family: 'Batang', 'BatangChe', '바탕', 'Georgia', serif;
       font-size: 16px; color: #333; flex: 1;
     }
 
@@ -216,7 +213,7 @@
     }
     .value-box:last-child { margin-bottom: 0; }
     .value-box-title {
-      font-family: 'Noto Serif KR', serif;
+      font-family: 'Batang', 'BatangChe', '바탕', 'Georgia', serif;
       font-size: 28px; font-weight: bold;
       margin-bottom: 24px; display: flex; align-items: center; gap: 12px;
       color: #6e8387;
@@ -233,16 +230,16 @@
       margin-bottom: 20px;
     }
     .quote-poet-zh {
-      font-family: 'adobe-fangsong-std', fangsong, 'LXGW WenKai Mono TC', 'Noto Serif TC', serif;
+      font-family: 'SimSun', 'PMingLiU', serif;
       font-size: 28px; font-weight: bold;
       color: #6e8387;
     }
     .quote-poet-ko {
-      font-family: 'Noto Serif KR', serif;
+      font-family: 'Batang', 'BatangChe', '바탕', 'Georgia', serif;
       font-size: 20px; color: #666; margin-left: 12px;
     }
     .quote-source {
-      font-family: 'Noto Serif KR', serif;
+      font-family: 'Batang', 'BatangChe', '바탕', 'Georgia', serif;
       font-size: 16px; color: #888; margin-left: 12px;
     }
     .quote-body {
@@ -252,17 +249,17 @@
       border-radius: 0 12px 12px 0;
     }
     .quote-zh {
-      font-family: 'adobe-fangsong-std', fangsong, serif;
+      font-family: 'SimSun', 'PMingLiU', serif;
       font-size: 32px; line-height: 1.8; margin-bottom: 12px;
     }
     .quote-ko {
-      font-family: 'Noto Serif KR', serif;
+      font-family: 'Batang', 'BatangChe', '바탕', 'Georgia', serif;
       font-size: 18px; color: #555;
     }
 
     /* ===== Card Sub-Title (Chinese heading inside cards) ===== */
     .card-title-zh {
-      font-family: 'adobe-fangsong-std', fangsong, 'LXGW WenKai Mono TC', 'Noto Serif TC', serif;
+      font-family: 'SimSun', 'PMingLiU', serif;
       font-size: 28px; font-weight: bold;
       color: #6e8387;
       margin-bottom: 24px;
@@ -270,7 +267,7 @@
 
     /* ===== Inline Chinese title (large, in body text) ===== */
     .zh-title {
-      font-family: 'adobe-fangsong-std', fangsong, 'LXGW WenKai Mono TC', 'Noto Serif TC', serif;
+      font-family: 'SimSun', 'PMingLiU', serif;
       font-size: 24px;
     }
 
@@ -285,12 +282,12 @@
       margin-top: 2px; flex-shrink: 0;
     }
     .ref-text {
-      font-family: 'Noto Serif KR', serif;
+      font-family: 'Batang', 'BatangChe', '바탕', 'Georgia', serif;
       font-size: 16px; color: #333;
     }
     .ref-author {
       text-align: center; margin-top: 48px;
-      font-family: 'Noto Serif KR', serif;
+      font-family: 'Batang', 'BatangChe', '바탕', 'Georgia', serif;
       font-size: 18px; color: #666;
     }
 

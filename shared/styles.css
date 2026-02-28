@@ -7,8 +7,8 @@
 /* ===== Typography System ===== */
 :root {
   /* --- Font Families (2종) --- */
-  --font-ko: 'Noto Serif KR', serif;
-  --font-zh: 'adobe-fangsong-std', fangsong, 'LXGW WenKai Mono TC', 'Noto Serif TC', serif;
+  --font-ko: 'Batang', 'BatangChe', '바탕', 'Georgia', serif;
+  --font-zh: 'SimSun', 'PMingLiU', serif;
 
   /* --- Font Scale (8단계, Major Third 1.25 기반) --- */
   --fs-number: 64px;   /* 장식 넘버링: 01, 02 등 */
