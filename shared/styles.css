@@ -7,8 +7,8 @@
 /* ===== Typography System ===== */
 :root {
   /* --- Font Families (2종) --- */
-  --font-ko: 'Batang', 'BatangChe', '바탕', 'Georgia', serif;
-  --font-zh: 'SimSun', 'PMingLiU', serif;
+  --font-ko: system-ui, -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', '맑은 고딕', sans-serif;
+  --font-zh: 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans GB', system-ui, sans-serif;
 
   /* --- Font Scale (8단계, Major Third 1.25 기반) --- */
   --fs-number: 64px;   /* 장식 넘버링: 01, 02 등 */
