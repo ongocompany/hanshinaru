@@ -37,10 +37,10 @@ const DATA_PATHS = {
   hyeonto: "../public/index/hyeonto_data.json",
 };
 
-// ── Supabase REST API (읽기용) ──
-const SB_REST = "https://dhbrgmkrqvuftkjskmof.supabase.co/rest/v1";
-const SB_KEY = "sb_publishable_3841oamd20AXIpCsiqgkFQ_CX0V6yJB";
-const SB_HEADERS = { apikey: SB_KEY, Authorization: "Bearer " + SB_KEY };
+// ── Supabase REST API (shared/supabase.js에서 제공) ──
+const SB_REST = window.SB_REST_URL;
+const SB_KEY = window.SB_API_KEY;
+const SB_HEADERS = window.SB_HEADERS;
 
 // ── DB → JSON 변환 (로드용) ──
 function dbPoetsToAdmin(rows) {

@@ -97,10 +97,10 @@ function dbHistoryToJSON(rows) {
 }
 
 async function loadFromSupabase() {
-  // supabase-js 클라이언트 대신 REST API 직접 호출 (더 안정적)
-  const SB_URL = "https://dhbrgmkrqvuftkjskmof.supabase.co/rest/v1";
-  const SB_KEY = "sb_publishable_3841oamd20AXIpCsiqgkFQ_CX0V6yJB";
-  const headers = { apikey: SB_KEY, Authorization: "Bearer " + SB_KEY };
+  // shared/supabase.js에서 제공하는 공용 상수 사용
+  const SB_URL = window.SB_REST_URL;
+  const SB_KEY = window.SB_API_KEY;
+  const headers = window.SB_HEADERS;
 
   const opts = { headers };
   const [poets, poems, history] = await Promise.all([

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>검색 — 한시의모든것</title>
+  <title>한시나루</title>
   <link rel="stylesheet" href="/shared/styles.css">
   <style>
     /* ===== 검색 페이지 전용 스타일 ===== */
@@ -520,6 +520,7 @@
 
   <div id="footer-placeholder"></div>
 
+  <script src="/shared/supabase.js"></script>
   <script>
   // ================================================================
   //  검색 페이지 — 사이트 전체 통합 검색
@@ -689,10 +690,10 @@
   let newsArticles = [];
   let historyCards = [];
 
-  // ── Supabase REST API ──
-  const SB_URL = "https://dhbrgmkrqvuftkjskmof.supabase.co/rest/v1";
-  const SB_KEY = "sb_publishable_3841oamd20AXIpCsiqgkFQ_CX0V6yJB";
-  const SB_OPTS = { headers: { apikey: SB_KEY, Authorization: "Bearer " + SB_KEY } };
+  // ── Supabase REST API (shared/supabase.js에서 제공) ──
+  const SB_URL = window.SB_REST_URL;
+  const SB_KEY = window.SB_API_KEY;
+  const SB_OPTS = { headers: window.SB_HEADERS };
 
   async function loadAllData() {
     try {

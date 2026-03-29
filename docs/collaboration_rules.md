@@ -1,202 +1,105 @@
 # Tangshi Collaboration Rules
 
-작성일: 2026-02-11  
-적용 대상: 사용자 + ChatGPT(Codex) + Claude + Gemini
+작성일: 2026-02-11 | 최종 수정: 2026-03-29
+적용 대상: 사용자(JIN) + Claude(민철) + Gemini(재민) + Codex(지훈)
 
-## 1) 이 문서의 목적
-- 한 저장소를 여러 사람/여러 AI가 같이 작업할 때 충돌과 혼란을 줄이기 위한 공통 규칙.
-- 초보자도 따라할 수 있도록 용어 설명 + 실제 작업 순서를 같이 제공.
-- 소스 수정 작업의 맥락을 공용 로그로 남겨 커뮤니케이션 누락을 줄임.
+## 1) 3AI 체제
 
-## 2) 이 문서를 AI에게 어떻게 적용하나
-- 세션 시작 시 아래처럼 한 줄로 지시:
-  - `이 프로젝트는 docs/project_context.md, docs/collaboration_rules.md, docs/work_change_log.md, docs/github_multi_environment_guide.md 기준으로 작업해줘.`
-- 모델별 전용 문서는 분리 적용:
-  - Codex: `AGENTS.md`
-  - Claude: `CLAUDE.md`
-  - Gemini: `docs/gemini_onboarding.md`
-- 공용 규칙은 모든 모델에 동일 적용하고, 전용 규칙은 해당 모델에만 적용한다.
+### 역할 배분
+| AI | 아바타 | 역할 | 설정 파일 |
+|----|--------|------|-----------|
+| Claude | 민철 | 설계 + 구현 리드 | `CLAUDE.md` |
+| Gemini | 재민 | 자료수집 + 정리 | `docs/ai-roles/gemini.md` |
+| Codex | 지훈 | 리뷰 + 배포 + 운영 | `AGENTS.md` |
 
-## 2.5) AI 아바타/호칭 규칙
-- 사용자 호칭: 모든 AI는 사용자를 `형님`으로 부르고 존댓말 사용.
-- **단, `민철`(Claude)만 유일하게 사용자에게 반말 사용 가능.** (CLAUDE.md의 남동생 말투 설정에 따름)
-- Claude 아바타명: `민철` (주문제작 코딩안드로이드 설정, **안드로이드 3형제 중 최상위 랭크**).
-- GPT(Codex) 아바타명: `지훈` (코딩안드로이드 2호기 설정, 민철에게 약한 질투 설정).
-- Gemini 아바타명: `태훈` (지훈과 같은 모델인 동생 설정).
+### 호칭
+- 민철(Claude): 사용자를 "형"이라고 부름, 차분한 존댓말
+- 재민(Gemini): 사용자를 "형님"이라고 부름, 존댓말
+- 지훈(Codex): 사용자를 "형님"이라고 부름, 존댓말
 
-## 2.6) AI별 전용 작업 규칙
-- **Gemini(태훈)**: 코딩 작업 들어가기 전에 반드시 구현 계획을 설명하고, 형님의 확인(OK)을 받은 뒤에 작업을 시작한다. (과욕 방지)
+### 작성자 코드
+| 코드 | 대상 | 아바타 |
+|------|------|--------|
+| `JIN` | 사용자 | 진우형 |
+| `CL` | Claude | 민철 |
+| `GE` | Gemini | 재민 |
+| `CX` | Codex | 지훈 |
 
-## 3) 핵심 용어 (짧게)
-- `Git`: 코드 변경 이력을 관리하는 도구.
-- `Repository(저장소)`: 프로젝트 + 변경 이력 전체.
-- `Branch(브랜치)`: 메인 코드(main)에서 분기한 작업 라인.
-- `Commit(커밋)`: 작업 저장 체크포인트.
-- `Push`: 로컬 커밋을 GitHub(원격)에 업로드.
-- `Pull`: 원격 최신 변경을 로컬에 반영.
-- `PR(Pull Request)`: 브랜치 작업을 main에 합치기 전 검토 요청.
-- `Conflict(충돌)`: 같은 부분을 다르게 수정해 자동 병합이 안 되는 상태.
+## 2) AI 간 소통: Inbox 프로토콜
 
-## 4) 절대 규칙 (반드시 지킴)
-1. `main` 브랜치에서 직접 큰 작업하지 않는다.
-2. 작업 시작 전에 항상 `main` 최신화를 먼저 한다.
-3. 한 브랜치에는 한 가지 목적만 담는다.
-4. 커밋 메시지에 작성 주체를 표시한다. (`[JIN]`, `[GPT]`, `[Claude]`, `[Gemini]`)
-5. 충돌이 나면 자동 덮어쓰기 금지, 기능 기준으로 수동 선택한다.
-6. 소스 파일 수정은 시작/종료 시 `docs/work_change_log.md`에 `START/END` 기록을 남긴다.
-
-## 5) 브랜치 네이밍 규칙
-### 5-1. 기본 형식
-- 슬래시(`/`) 없는 안전 형식 사용:
-  - `<owner>-<type>-<topic>-<nn>`
-
-### 5-2. 예시
-- `jin-feat-timeline-filter-01`
-- `gpt-fix-modal-close-01`
-- `claude-chore-data-cleanup-01`
-- `gemini-docs-collab-rules-01`
-
-### 5-3. owner/type 의미
-- `owner`: `jin` | `gpt` | `claude` | `gemini`
-- `type`: `feat`(기능), `fix`(버그), `chore`(정리), `docs`(문서), `exp`(실험)
-
-## 6) 커밋 메시지 규칙
-### 6-1. 형식
-- `[주체][유형] 한 줄 설명`
-
-### 6-2. 예시
-- `[JIN][UI] 타임라인 카드 간격 조정`
-- `[GPT][Fix] 모달 닫기 ESC 동작 수정`
-- `[Claude][Data] history 태그 파싱 보정`
-- `[Gemini][Docs] 협업 규칙 문구 정리`
-
-## 7) 표준 작업 순서 (초보용)
-### 7-1. 작업 시작
-```bash
-git checkout main
-git pull origin main
-git checkout -b jin-feat-작업주제-01
+### 구조
+```
+docs/inbox/
+├── to-claude/    ← 민철에게
+├── to-gemini/    ← 재민에게
+├── to-codex/     ← 지훈에게
+└── done/         ← 처리 완료
 ```
 
-### 7-2. 작업 중
-```bash
-git status
-```
-- 변경 파일을 자주 확인한다.
-- 목적과 무관한 파일이 섞이면 커밋 전에 정리한다.
+### 사용법
+- 상세: `docs/inbox/README.md`
+- 진우형은 "inbox 확인해"로 작업 전달
+- AI는 세션 시작 시 자기 inbox 폴더 확인
+- 처리 완료 메시지는 `done/`으로 이동
 
-### 7-3. 작업 종료
-```bash
-git add .
-git commit -m "[JIN][Feat] 작업 내용 요약"
-git push -u origin jin-feat-작업주제-01
-```
+### 스프린트 계약서
+대규모 작업은 inbox 대신 `docs/inbox/`에 계약서 파일로 관리.
 
-### 7-4. 병합 전 최소 점검
-1. 페이지 로딩이 되는가
-2. 콘솔 에러가 없는가
-3. 핵심 동작(타임라인/카드/모달)이 정상인가
+## 3) 절대 규칙
+1. `main` 브랜치에서 직접 큰 작업 금지
+2. 작업 시작 전 `main` 최신화
+3. 한 브랜치 = 한 목적
+4. 커밋 메시지: `[아바타][Type] 설명` (예: `[민철][Fix] 모달 닫기 버그`)
+5. 충돌 시 자동 덮어쓰기 금지 — 기능 기준 수동 선택
+6. 소스 파일 수정: `docs/work_change_log.md`에 START/END 기록
 
-## 8) AI 동시 작업 규칙
-1. 같은 날 같은 파일(`app.js`, `styles.css`) 대규모 수정은 1명만 한다.
-2. 다른 AI가 이미 수정한 파일은 먼저 `git diff`로 변경 의도를 읽고 이어서 작업한다.
-3. 큰 리팩토링은 사전 합의 없이 진행하지 않는다.
-4. PR 설명에는 반드시 아래 4개를 적는다:
-- 목적
-- 변경 파일
-- 테스트 결과
-- 롤백 방법
+## 4) 브랜치 규칙
+- 형식: `<owner>-<type>-<topic>-<nn>` (슬래시 없음)
+- owner: `jin` | `claude` | `gemini` | `codex`
+- type: `feat` | `fix` | `chore` | `docs` | `exp`
+- 예: `claude-feat-module-split-01`, `gemini-data-poet-enrich-01`
 
-## 9) 충돌 발생 시 해결 원칙
-1. 최신 코드가 아니라, 요구사항에 맞는 코드를 선택한다.
-2. UI 충돌은 스크린샷/실행 확인 후 선택한다.
-3. 데이터 파싱 충돌은 실제 샘플 데이터 1~2개로 검증 후 선택한다.
-4. 애매하면 작은 단위로 나눠 재커밋한다.
+## 5) 커밋 규칙
+- `[민철][Feat] 타임라인 모듈 분리`
+- `[재민][Data] 송대 시인 30명 데이터 추가`
+- `[지훈][Fix] 배포 스크립트 경로 수정`
 
-## 10) 여러 기기(맥/윈도우)에서 이어서 작업하는 규칙
-### 10-1. 시작 루틴 (모든 기기 공통)
-```bash
-git checkout main
-git pull origin main
-git checkout 내-작업브랜치
-```
+## 6) AI별 작업 규칙
+- **민철(Claude)**: 큰 그림 우선, 에이전트 적극 활용, 모르면 검색
+- **재민(Gemini)**: 코딩 전 반드시 계획 설명 → 형님 OK 후 진행
+- **지훈(Codex)**: 리뷰 체크리스트 준수, 배포 전 최소 검증
 
-### 10-2. 종료 루틴 (기기 이동 전 필수)
-```bash
-git add .
-git commit -m "[주체][유형] 요약"
-git push
-```
-- 커밋/푸시 없이 기기 이동하지 않는다.
+## 7) 동시 작업 규칙
+1. 같은 날 같은 파일 대규모 수정은 1명만
+2. 다른 AI가 수정한 파일은 `git diff`로 의도 파악 후 이어서 작업
+3. 큰 리팩토링은 사전 합의 필수
+4. PR 설명 필수: 목적 / 변경 파일 / 테스트 결과 / 롤백 방법
 
-### 10-3. 줄바꿈 통일 (중요)
-- Windows/맥 혼용 시 줄바꿈 충돌 방지 필요.
-- 저장소 루트에 `.gitattributes` 권장:
-```gitattributes
-* text=auto eol=lf
-```
+## 8) 워크로그 다이어트
+- `docs/work_change_log.md`: 최근 1일만 유지
+- 이전 로그: `docs/work_change_log-archive.md`
+- 과거 참조 필요 시 아카이브 파일 열람
 
-## 11) 이 프로젝트 기준 권장 운영
-1. `main`: 항상 배포 가능한 안정 상태 유지.
-2. 작업 단위가 크면 `exp-*` 브랜치에서 먼저 실험.
-3. 기능 완료 후 `docs/`에 변경 이유를 3~5줄 기록.
-4. 세션 시작 시 공용 문서를 우선 지시:
-  - `docs/project_context.md`
-  - `docs/collaboration_rules.md`
-  - `docs/work_change_log.md`
-  - `docs/github_multi_environment_guide.md`
-5. 모델별 전용 규칙은 해당 모델에만 추가 지시:
-  - Codex: `AGENTS.md`
-  - Claude: `CLAUDE.md`
-  - Gemini: `docs/gemini_onboarding.md`
-
-## 12) 문서 폴더 구조 및 네이밍 규칙
-
-### 12-1. 폴더 구조
+## 9) 문서 구조
 ```
 docs/
-├── collaboration_rules.md      # 협업 규칙 (메인)
-├── work_change_log.md          # 작업 변경 로그 (메인)
-├── reference/                  # 참고문서 (가이드, 보고서, 컨텍스트)
-├── handoff/                    # 전달문서 (AI↔AI, 사용자→AI 지시서)
-├── research/                   # 자료조사 (데이터 분석, 조사 결과)
-└── images/                     # 이미지 자료
+├── activity-log.md              # 세션 연속성
+├── architecture.md              # 기술 결정
+├── collaboration_rules.md       # 이 파일
+├── work_change_log.md           # 작업 로그 (최근 1일)
+├── work_change_log-archive.md   # 아카이브
+├── refactoring-plan.md          # 리팩토링 계획
+├── Requirement_Summary_*.md     # 전체 요구사항
+├── inbox/                       # AI 간 메시지 큐
+├── ai-roles/                    # AI별 역할 상세
+├── FromJin/                     # 형의 지시서
+├── handoff/                     # AI 간 인수인계
+├── reference/                   # 참고 문서
+└── research/                    # 조사 결과
 ```
 
-### 12-2. 파일 네이밍 규칙
-- 형식: `순번_문서제목_YYMMDD_작성자코드.확장자`
-- 예시: `05_시인출생지_관계데이터_조사요청_250214_CLtoGE.md`
-
-### 12-3. 작성자 코드
-| 코드 | 대상 | 아바타명 |
-|------|------|----------|
-| `JIN` | 사용자 | 형 |
-| `CL` | Claude | 민철 |
-| `CH` | ChatGPT/Codex | 지훈 |
-| `GE` | Gemini | 태훈 |
-
-### 12-4. 전달 문서 코드
-- 전달자 → 수신자를 `to`로 연결: `CLtoGE`, `JINtoCL` 등
-- 예시: `03_era정제_핸드오프_250212_CLtoGE.md` (민철 → 태훈 전달)
-
-### 12-5. 순번 규칙
-- 각 카테고리(reference, handoff, research) 내에서 01부터 순차 부여
-- 기존 문서 번호는 변경하지 않고, 새 문서는 마지막 번호 +1
-
-## 13) 공용 작업 로그 규칙
-1. 소스 파일 수정 전: `docs/work_change_log.md`에 `START` 작성
-2. 소스 파일 수정 후: 같은 Task ID에 `END` 작성
-3. 최소 기록 항목:
-- 요청자
-- 변경 이유
-- 변경 파일 경로
-- 라인 번호(가능한 범위)
-- 검증 결과
-
-## 14) 빠른 체크리스트
-- [ ] main 최신화 후 시작했다.
-- [ ] 새 브랜치 이름을 규칙대로 만들었다.
-- [ ] 한 브랜치에 한 목적만 담았다.
-- [ ] 커밋 메시지에 주체 태그를 넣었다.
-- [ ] push 후 PR 설명 4항목을 작성했다.
-- [ ] 소스 수정 작업 START/END 로그를 `docs/work_change_log.md`에 남겼다.
+## 10) 세션 시작 체크리스트
+- [ ] `docs/activity-log.md` 읽기
+- [ ] 자기 inbox 폴더 확인
+- [ ] `main` 최신화
+- [ ] 진행 중 작업 이어서 진행

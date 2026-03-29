@@ -10,8 +10,13 @@
   const SUPABASE_URL = 'https://dhbrgmkrqvuftkjskmof.supabase.co';
   const SUPABASE_KEY = 'sb_publishable_3841oamd20AXIpCsiqgkFQ_CX0V6yJB';
 
+  // REST API 직접 호출용 공용 상수
+  window.SB_REST_URL = SUPABASE_URL + '/rest/v1';
+  window.SB_API_KEY = SUPABASE_KEY;
+  window.SB_HEADERS = { apikey: SUPABASE_KEY, Authorization: 'Bearer ' + SUPABASE_KEY };
+
   if (typeof supabase === 'undefined' || !supabase.createClient) {
-    console.error('[supabase.js] supabase-js CDN이 먼저 로드되어야 합니다.');
+    console.warn('[supabase.js] supabase-js CDN 미로드 — REST API만 사용 가능');
     return;
   }
 
