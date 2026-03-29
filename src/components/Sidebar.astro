@@ -1,0 +1,102 @@
+---
+import navData from '../data/navigation.json';
+import SidebarTree from './SidebarTree.astro';
+
+interface Props {
+  section: string;
+  currentPath?: string;
+}
+
+const { section, currentPath = '' } = Astro.props;
+const items = navData.sidebar[section] || [];
+---
+
+{items.length > 0 && (
+  <aside class="sidebar" id="sidebar">
+    <button class="sidebar-toggle" id="sidebarToggle" aria-expanded="false">
+      <span class="sidebar-toggle-label">메뉴</span>
+      <svg class="sidebar-toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="6 9 12 15 18 9" />
+      </svg>
+    </button>
+
+    <nav class="sidebar-nav" id="sidebarNav" aria-label="섹션 메뉴">
+      <SidebarTree items={items} currentPath={currentPath} depth={0} />
+    </nav>
+  </aside>
+)}
+
+<style>
+  .sidebar {
+    width: var(--sidebar-width);
+    height: 100%;
+    overflow-y: auto;
+    padding: 16px 0 16px 16px;
+    flex-shrink: 0;
+    border-right: 1px solid var(--c-border);
+  }
+
+  .sidebar-toggle { display: none; }
+
+  /* Mobile */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+      position: static;
+      min-height: auto;
+      padding: 0 16px;
+      border-bottom: 1px solid var(--c-border);
+      border-right: none;
+    }
+
+    .sidebar-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 14px 0;
+      background: none;
+      border: none;
+      font-size: var(--fs-small);
+      color: var(--c-muted);
+      cursor: pointer;
+    }
+
+    .sidebar-toggle-icon {
+      transition: transform 0.2s;
+    }
+    .sidebar-toggle[aria-expanded="true"] .sidebar-toggle-icon {
+      transform: rotate(180deg);
+    }
+
+    .sidebar-nav {
+      display: none;
+      padding-bottom: 12px;
+    }
+    .sidebar-nav.open { display: block; }
+  }
+</style>
+
+<script>
+  // Mobile sidebar toggle
+  const toggle = document.getElementById('sidebarToggle');
+  const nav = document.getElementById('sidebarNav');
+
+  toggle?.addEventListener('click', () => {
+    const open = nav?.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', String(!!open));
+  });
+
+  // Desktop: click to expand/collapse tree items (모든 depth)
+  document.querySelectorAll('.stree-item').forEach(item => {
+    const link = item.querySelector(':scope > .stree-link');
+    const subtree = item.querySelector(':scope > .stree');
+    if (!subtree) return;
+
+    link?.addEventListener('click', () => {
+      if (window.innerWidth > 768) {
+        item.classList.toggle('open');
+      }
+    });
+  });
+</script>

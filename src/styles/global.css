@@ -1,0 +1,65 @@
+/* =============================================================
+   한시나루 — 글로벌 디자인 토큰
+   Astro 전환 후에도 기존 디자인 시스템 유지
+   기존: shared/styles.css의 :root 변수 계승
+   ============================================================= */
+
+:root {
+  /* --- Font Families --- */
+  --font-ko: system-ui, -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+  --font-zh: 'Noto Serif CJK SC', 'Noto Serif SC', 'Source Han Serif SC', 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans GB', serif;
+  --font-zh-sans: 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans GB', system-ui, sans-serif;
+
+  /* --- Font Scale (Major Third 1.25) --- */
+  --fs-display: 48px;
+  --fs-h1: 36px;
+  --fs-h2: 28px;
+  --fs-h3: 22px;
+  --fs-lead: 21px;
+  --fs-body: 17px;
+  --fs-small: 15px;
+  --fs-xs: 14px;
+
+  /* --- Site Palette (4색) --- */
+  --c-bright-snow: #fcfafa;
+  --c-silver: #c8d3d5;
+  --c-powder-blue: #a4b8c4;
+  --c-slate-grey: #6e8387;
+
+  /* --- Semantic Tokens --- */
+  --c-ink: #000;
+  --c-heading: #000;
+  --c-muted: #333;
+  --c-faint: #999;
+  --c-warm-bg: var(--c-bright-snow);
+  --c-border: var(--c-silver);
+
+  /* --- Layout --- */
+  --nav-height: 73px;
+  --sidebar-width: 280px;
+  --content-max: 960px;
+}
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: var(--font-ko);
+  background: #fff;
+  color: var(--c-ink);
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 한자 전용: 세리프(명조) — 시 원문, 고전 텍스트 */
+.zh { font-family: var(--font-zh); }
+/* 한자 산세리프 — UI 라벨, 네비게이션 등 */
+.zh-sans { font-family: var(--font-zh-sans); }
+
+/* 스크롤바 숨김 */
+::-webkit-scrollbar { width: 0; height: 0; display: none; }
+* { scrollbar-width: none; -ms-overflow-style: none; }
+
+a { color: inherit; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+img { max-width: 100%; height: auto; }

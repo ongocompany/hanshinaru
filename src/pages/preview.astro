@@ -1,0 +1,45 @@
+---
+import SidebarLayout from '../layouts/SidebarLayout.astro';
+---
+
+<SidebarLayout title="레이아웃 프리뷰" section="chinese-poetry">
+  <h1 style="font-size: var(--fs-h1); margin-bottom: 8px;">한시(漢詩) 일반론</h1>
+  <p style="color: var(--c-faint); font-size: var(--fs-small); margin-bottom: 32px;">중국 시문학의 기초</p>
+
+  <section style="margin-bottom: 40px;">
+    <h2 style="font-size: var(--fs-h2); margin-bottom: 12px;">한시란 무엇인가</h2>
+    <p style="line-height: 1.8; color: var(--c-muted);">
+      한시(漢詩)는 한자로 쓰인 시를 총칭한다. 좁은 의미로는 중국에서 발생하여 발전한 고전시가(古典詩歌)를 가리키며, 넓은 의미로는 한국·일본·베트남 등 한자문화권에서 한자로 창작된 시가 전체를 포함한다.
+    </p>
+    <p style="line-height: 1.8; color: var(--c-muted); margin-top: 16px;">
+      한시는 형식에 따라 고체시(古體詩)와 근체시(近體詩)로 나뉜다. 고체시는 글자 수, 구수, 평측 등에 제한이 없는 자유로운 형식이며, 근체시는 당나라 때 정립된 엄격한 형식의 시다.
+    </p>
+  </section>
+
+  <section style="margin-bottom: 40px;">
+    <h2 style="font-size: var(--fs-h2); margin-bottom: 12px;">근체시의 분류</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 16px;">
+      <div style="padding: 20px; background: var(--c-bright-snow); border-radius: 10px;">
+        <h3 style="font-size: var(--fs-h3); margin-bottom: 8px;" class="zh">絶句</h3>
+        <p style="font-size: var(--fs-small); color: var(--c-muted);">4구로 이루어진 짧은 시. 오언절구와 칠언절구가 있다.</p>
+      </div>
+      <div style="padding: 20px; background: var(--c-bright-snow); border-radius: 10px;">
+        <h3 style="font-size: var(--fs-h3); margin-bottom: 8px;" class="zh">律詩</h3>
+        <p style="font-size: var(--fs-small); color: var(--c-muted);">8구로 이루어진 정형시. 대구(對句)와 평측 규칙이 엄격하다.</p>
+      </div>
+      <div style="padding: 20px; background: var(--c-bright-snow); border-radius: 10px;">
+        <h3 style="font-size: var(--fs-h3); margin-bottom: 8px;" class="zh">排律</h3>
+        <p style="font-size: var(--fs-small); color: var(--c-muted);">10구 이상의 긴 율시. 과거 시험에서 주로 요구되었다.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 style="font-size: var(--fs-h2); margin-bottom: 12px;">이 페이지는 프리뷰입니다</h2>
+    <p style="line-height: 1.8; color: var(--c-faint);">
+      Astro 전환 후 레이아웃 확인용 테스트 페이지입니다.
+      Nav, Sidebar, Footer, 반응형이 모두 적용되어 있습니다.
+      브라우저 폭을 줄여서 모바일 레이아웃도 확인해보세요.
+    </p>
+  </section>
+</SidebarLayout>

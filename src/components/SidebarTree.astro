@@ -1,0 +1,113 @@
+---
+/**
+ * 재귀 사이드바 트리 컴포넌트
+ * depth 제한 없이 children을 따라감 (실용적 max: 3단계)
+ */
+
+interface TreeItem {
+  label: string;
+  path: string;
+  children?: TreeItem[];
+}
+
+interface Props {
+  items: TreeItem[];
+  currentPath: string;
+  depth?: number;
+}
+
+const { items, currentPath, depth = 0 } = Astro.props;
+---
+
+<ul class:list={['stree', `stree--d${depth}`]}>
+  {items.map((item) => {
+    const hasChildren = item.children && item.children.length > 0;
+    const isActive = currentPath === item.path;
+    const isOpen = hasChildren && (
+      isActive ||
+      item.children!.some(c =>
+        currentPath === c.path ||
+        currentPath.startsWith(c.path) ||
+        (c.children && c.children.some(gc => currentPath === gc.path || currentPath.startsWith(gc.path)))
+      )
+    );
+
+    return (
+      <li class:list={['stree-item', { open: isOpen }]}>
+        <a
+          href={item.path}
+          class:list={['stree-link', `stree-link--d${depth}`, { active: isActive }]}
+        >
+          {hasChildren && <span class="stree-arrow">&#9656;</span>}
+          {item.label}
+        </a>
+        {hasChildren && (
+          <Astro.self items={item.children!} currentPath={currentPath} depth={depth + 1} />
+        )}
+      </li>
+    );
+  })}
+</ul>
+
+<style>
+  .stree {
+    list-style: none;
+    padding: 0;
+  }
+
+  .stree-item { margin-bottom: 0; }
+
+  /* 공통 링크 */
+  .stree-link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 6px 12px;
+    color: var(--c-muted);
+    font-size: var(--fs-small);
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.12s, color 0.12s;
+    cursor: pointer;
+  }
+  .stree-link:hover {
+    background: rgba(0,0,0,0.04);
+    color: var(--c-ink);
+    text-decoration: none;
+  }
+  .stree-link.active {
+    background: var(--c-bright-snow);
+    color: var(--c-ink);
+    font-weight: 600;
+  }
+
+  /* depth별 들여쓰기 + 폰트 크기 */
+  .stree-link--d1 { padding-left: 28px; font-size: var(--fs-xs); }
+  .stree-link--d2 { padding-left: 42px; font-size: var(--fs-xs); }
+
+  /* 화살표 */
+  .stree-arrow {
+    font-size: 10px;
+    transition: transform 0.2s;
+    color: var(--c-faint);
+  }
+  .stree-item.open > .stree-link > .stree-arrow {
+    transform: rotate(90deg);
+  }
+
+  /* 하위 트리 접기/펼치기 */
+  .stree--d1, .stree--d2 {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s ease;
+  }
+  .stree-item.open > .stree--d1,
+  .stree-item.open > .stree--d2 {
+    max-height: 500px;
+  }
+
+  /* Mobile */
+  @media (max-width: 768px) {
+    .stree--d1, .stree--d2 { max-height: none; }
+  }
+</style>

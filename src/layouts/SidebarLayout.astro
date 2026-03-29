@@ -1,0 +1,57 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Nav from '../components/Nav.astro';
+import Sidebar from '../components/Sidebar.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+  title?: string;
+  description?: string;
+  section: string;
+}
+
+const { title = '한시나루', description = '한시의 모든 것', section } = Astro.props;
+const currentPath = Astro.url.pathname;
+---
+
+<BaseLayout title={title} description={description}>
+  <Nav slot="nav" currentPath={currentPath} />
+
+  <div class="page-body">
+    <Sidebar section={section} currentPath={currentPath} />
+    <main class="content">
+      <slot />
+    </main>
+  </div>
+
+  <Footer slot="footer" />
+</BaseLayout>
+
+<style>
+  .page-body {
+    display: flex;
+    padding-top: var(--nav-height);
+    height: calc(100vh - var(--nav-height));
+    overflow: hidden;
+  }
+
+  .content {
+    flex: 1;
+    min-width: 0;
+    max-width: var(--content-max);
+    padding: 32px 40px;
+    overflow-y: auto;
+  }
+
+  @media (max-width: 768px) {
+    .page-body {
+      flex-direction: column;
+      height: auto;
+      overflow: visible;
+    }
+    .content {
+      padding: 24px 16px;
+      overflow-y: visible;
+    }
+  }
+</style>
