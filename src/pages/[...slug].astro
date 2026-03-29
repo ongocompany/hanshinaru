@@ -1,0 +1,104 @@
+---
+import SidebarLayout from '../layouts/SidebarLayout.astro';
+import { sbFetch } from '../lib/supabase';
+
+export async function getStaticPaths() {
+  const articles = await sbFetch('articles', 'select=slug,section,status&status=eq.published');
+  return articles.map((a: any) => ({
+    params: { slug: a.slug },
+    props: { section: a.section },
+  }));
+}
+
+const { slug } = Astro.params;
+const { section } = Astro.props;
+
+const articles = await sbFetch(
+  'articles',
+  `select=title,subtitle,body,cover_image,updated_at&slug=eq.${slug}&limit=1`,
+);
+const article = articles[0];
+
+if (!article) {
+  return Astro.redirect('/404');
+}
+---
+
+<SidebarLayout title={article.title} section={section}>
+  {article.cover_image && (
+    <img
+      src={article.cover_image}
+      alt={article.title}
+      class="article-cover"
+    />
+  )}
+
+  <h1 class="article-title">{article.title}</h1>
+  {article.subtitle && <p class="article-subtitle">{article.subtitle}</p>}
+
+  <div class="article-body" set:html={article.body} />
+
+  <p class="article-updated">
+    최종 수정: {new Date(article.updated_at).toLocaleDateString('ko-KR')}
+  </p>
+</SidebarLayout>
+
+<style>
+  .article-cover {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 24px;
+  }
+
+  .article-title {
+    font-size: var(--fs-h1);
+    margin-bottom: 8px;
+  }
+
+  .article-subtitle {
+    color: var(--c-faint);
+    font-size: var(--fs-small);
+    margin-bottom: 32px;
+  }
+
+  .article-body {
+    line-height: 1.9;
+    color: var(--c-muted);
+  }
+
+  .article-body :global(h2) {
+    font-size: var(--fs-h2);
+    margin: 40px 0 12px;
+  }
+
+  .article-body :global(h3) {
+    font-size: var(--fs-h3);
+    margin: 32px 0 8px;
+  }
+
+  .article-body :global(p) {
+    margin-bottom: 16px;
+  }
+
+  .article-body :global(img) {
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 16px 0;
+  }
+
+  .article-body :global(iframe) {
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 16px 0;
+  }
+
+  .article-updated {
+    margin-top: 48px;
+    padding-top: 16px;
+    border-top: 1px solid var(--c-border);
+    font-size: var(--fs-xs);
+    color: var(--c-faint);
+  }
+</style>

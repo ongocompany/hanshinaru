@@ -7,8 +7,8 @@
 // =============================================================
 
 (function () {
-  const SUPABASE_URL = 'https://dhbrgmkrqvuftkjskmof.supabase.co';
-  const SUPABASE_KEY = 'sb_publishable_3841oamd20AXIpCsiqgkFQ_CX0V6yJB';
+  const SUPABASE_URL = 'https://iplxexvmrnzlqglfqrpg.supabase.co';
+  const SUPABASE_KEY = 'sb_publishable_SBqquD4OkM6a93H3dMPNRQ_X5JChwWI';
 
   // REST API 직접 호출용 공용 상수
   window.SB_REST_URL = SUPABASE_URL + '/rest/v1';

@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>아티클 에디터 — 한시나루</title>
+  <link href="https://cdn.quilljs.com/1.3.7/quill.snow.css" rel="stylesheet">
+  <style>
+    :root {
+      --c-bg: #fafafa;
+      --c-surface: #fff;
+      --c-border: #e0e0e0;
+      --c-ink: #1a1a1a;
+      --c-muted: #666;
+      --c-accent: #2563eb;
+      --c-accent-hover: #1d4ed8;
+      --c-danger: #dc2626;
+      --radius: 8px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: var(--c-bg);
+      color: var(--c-ink);
+      line-height: 1.5;
+    }
+
+    /* Header */
+    .header {
+      background: var(--c-ink);
+      color: #fff;
+      padding: 0 24px;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .header h1 { font-size: 15px; font-weight: 600; }
+    .header-actions { display: flex; gap: 8px; }
+    .header a { color: #aaa; font-size: 13px; text-decoration: none; }
+    .header a:hover { color: #fff; }
+
+    /* Layout */
+    .layout {
+      display: flex;
+      height: calc(100vh - 52px);
+    }
+
+    /* Article List Panel */
+    .list-panel {
+      width: 320px;
+      border-right: 1px solid var(--c-border);
+      background: var(--c-surface);
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+    }
+    .list-toolbar {
+      padding: 12px;
+      border-bottom: 1px solid var(--c-border);
+      display: flex;
+      gap: 8px;
+    }
+    .list-toolbar select, .list-toolbar input {
+      font-size: 13px;
+      padding: 6px 10px;
+      border: 1px solid var(--c-border);
+      border-radius: var(--radius);
+      background: #fff;
+    }
+    .list-toolbar select { width: 120px; }
+    .list-toolbar input { flex: 1; min-width: 0; }
+
+    .article-list {
+      flex: 1;
+      overflow-y: auto;
+      padding: 8px;
+    }
+    .article-item {
+      padding: 10px 12px;
+      border-radius: var(--radius);
+      cursor: pointer;
+      border: 1px solid transparent;
+      margin-bottom: 4px;
+    }
+    .article-item:hover { background: #f5f5f5; }
+    .article-item.active { background: #eff6ff; border-color: var(--c-accent); }
+    .article-item .title { font-size: 14px; font-weight: 500; }
+    .article-item .meta {
+      font-size: 12px;
+      color: var(--c-muted);
+      margin-top: 2px;
+      display: flex;
+      gap: 8px;
+    }
+    .article-item .status-dot {
+      display: inline-block;
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      margin-right: 4px;
+      vertical-align: middle;
+    }
+    .status-dot.published { background: #16a34a; }
+    .status-dot.draft { background: #d97706; }
+
+    .btn-new {
+      margin: 8px 12px 12px;
+      padding: 8px;
+      background: var(--c-accent);
+      color: #fff;
+      border: none;
+      border-radius: var(--radius);
+      font-size: 13px;
+      cursor: pointer;
+    }
+    .btn-new:hover { background: var(--c-accent-hover); }
+
+    /* Editor Panel */
+    .editor-panel {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .editor-empty {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--c-muted);
+      font-size: 14px;
+    }
+
+    .editor-fields {
+      padding: 20px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      border-bottom: 1px solid var(--c-border);
+      background: var(--c-surface);
+    }
+    .field-row {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+    .field-row label {
+      font-size: 13px;
+      font-weight: 500;
+      width: 80px;
+      flex-shrink: 0;
+      color: var(--c-muted);
+    }
+    .field-row input, .field-row select {
+      flex: 1;
+      padding: 8px 12px;
+      border: 1px solid var(--c-border);
+      border-radius: var(--radius);
+      font-size: 14px;
+    }
+
+    .editor-body {
+      flex: 1;
+      background: var(--c-surface);
+      overflow: hidden;
+    }
+    .ql-toolbar.ql-snow { border-left: none; border-right: none; }
+    .ql-container.ql-snow { border: none; font-size: 15px; line-height: 1.8; }
+    .ql-editor { padding: 20px 24px; }
+    .ql-editor img { max-width: 100%; border-radius: 8px; }
+
+    .editor-footer {
+      padding: 12px 24px;
+      border-top: 1px solid var(--c-border);
+      background: var(--c-surface);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .btn {
+      padding: 8px 16px;
+      border: none;
+      border-radius: var(--radius);
+      font-size: 13px;
+      cursor: pointer;
+    }
+    .btn-primary { background: var(--c-accent); color: #fff; }
+    .btn-primary:hover { background: var(--c-accent-hover); }
+    .btn-secondary { background: #f3f4f6; color: var(--c-ink); }
+    .btn-secondary:hover { background: #e5e7eb; }
+    .btn-danger { background: #fee2e2; color: var(--c-danger); }
+    .btn-danger:hover { background: #fecaca; }
+    .footer-actions { display: flex; gap: 8px; }
+
+    .toast {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 12px 20px;
+      background: var(--c-ink);
+      color: #fff;
+      border-radius: var(--radius);
+      font-size: 13px;
+      opacity: 0;
+      transition: opacity 0.3s;
+      z-index: 200;
+    }
+    .toast.show { opacity: 1; }
+
+    /* Modal */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 300;
+    }
+    .modal {
+      background: var(--c-surface);
+      border-radius: 12px;
+      width: 560px;
+      max-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    }
+    .modal-sm { width: 420px; }
+    .modal-header {
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--c-border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .modal-header h2 { font-size: 16px; font-weight: 600; }
+    .modal-close {
+      background: none; border: none; font-size: 20px;
+      cursor: pointer; color: var(--c-muted); padding: 4px 8px;
+    }
+    .modal-toolbar {
+      padding: 12px 20px;
+      border-bottom: 1px solid var(--c-border);
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+    .modal-toolbar select {
+      padding: 6px 10px; border: 1px solid var(--c-border);
+      border-radius: var(--radius); font-size: 13px;
+    }
+    .modal-body { padding: 16px 20px; display: flex; flex-direction: column; gap: 12px; }
+    .modal-footer {
+      padding: 12px 20px;
+      border-top: 1px solid var(--c-border);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .modal-hint { font-size: 12px; color: var(--c-muted); }
+
+    /* Menu Tree */
+    .menu-tree {
+      flex: 1;
+      overflow-y: auto;
+      padding: 8px 20px;
+    }
+    .mtree-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 10px;
+      border-radius: var(--radius);
+      font-size: 13px;
+      border: 1px solid transparent;
+    }
+    .mtree-item:hover { background: #f5f5f5; }
+    .mtree-item .mtree-label {
+      flex: 1;
+      cursor: pointer;
+    }
+    .mtree-item .mtree-path {
+      font-size: 11px;
+      color: var(--c-muted);
+      max-width: 160px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .mtree-item .mtree-actions {
+      display: flex;
+      gap: 2px;
+      opacity: 0;
+      transition: opacity 0.15s;
+    }
+    .mtree-item:hover .mtree-actions { opacity: 1; }
+    .mtree-btn {
+      background: none; border: none;
+      cursor: pointer; padding: 2px 6px;
+      font-size: 14px; color: var(--c-muted);
+      border-radius: 4px;
+    }
+    .mtree-btn:hover { background: #e5e7eb; color: var(--c-ink); }
+    .mtree-btn.danger:hover { background: #fee2e2; color: var(--c-danger); }
+    .mtree-d1 { padding-left: 28px; }
+    .mtree-d2 { padding-left: 48px; }
+    .mtree-top-badge {
+      font-size: 10px;
+      background: #dbeafe;
+      color: var(--c-accent);
+      padding: 1px 6px;
+      border-radius: 4px;
+    }
+
+    /* Image upload overlay */
+    .img-uploading {
+      position: relative;
+      opacity: 0.5;
+    }
+
+    @media (max-width: 768px) {
+      .layout { flex-direction: column; }
+      .list-panel { width: 100%; height: 40vh; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <h1>아티클 에디터</h1>
+  <div class="header-actions">
+    <button class="btn btn-secondary" id="btnMenuMgr" style="font-size:12px;padding:4px 12px;">메뉴 관리</button>
+    <a href="/admin/">데이터 관리</a>
+    <a href="/">사이트 홈</a>
+  </div>
+</div>
+
+<div class="layout">
+  <!-- Left: Article List -->
+  <div class="list-panel">
+    <div class="list-toolbar">
+      <select id="filterSection">
+        <option value="">전체 섹션</option>
+        <option value="chinese-poetry">중국 시문학</option>
+        <option value="korean-poetry">한국의 한시</option>
+        <option value="community">커뮤니티</option>
+        <option value="hanja">한자와 한문</option>
+        <option value="writing-helper">작성도우미</option>
+      </select>
+      <input type="text" id="filterSearch" placeholder="검색...">
+    </div>
+    <div class="article-list" id="articleList"></div>
+    <button class="btn-new" id="btnNew">+ 새 아티클</button>
+  </div>
+
+  <!-- Right: Editor -->
+  <div class="editor-panel" id="editorPanel">
+    <div class="editor-empty" id="editorEmpty">왼쪽에서 아티클을 선택하거나 새로 만드세요</div>
+
+    <div id="editorWrap" style="display:none; flex:1; display:none; flex-direction:column;">
+      <div class="editor-fields">
+        <div class="field-row">
+          <label>제목</label>
+          <input type="text" id="fieldTitle" placeholder="아티클 제목">
+        </div>
+        <div class="field-row">
+          <label>부제</label>
+          <input type="text" id="fieldSubtitle" placeholder="부제 (선택)">
+        </div>
+        <div class="field-row">
+          <label>메뉴 위치</label>
+          <select id="fieldMenuPath" style="flex:2;">
+            <option value="">-- 메뉴에서 선택 --</option>
+          </select>
+          <input type="text" id="fieldSlug" placeholder="직접 입력도 가능" style="flex:1;">
+        </div>
+        <div class="field-row">
+          <label>섹션</label>
+          <select id="fieldSection">
+            <option value="chinese-poetry">중국 시문학</option>
+            <option value="korean-poetry">한국의 한시</option>
+            <option value="community">커뮤니티</option>
+            <option value="hanja">한자와 한문</option>
+            <option value="writing-helper">작성도우미</option>
+          </select>
+        </div>
+        <div class="field-row">
+          <label>상태</label>
+          <select id="fieldStatus">
+            <option value="draft">초안</option>
+            <option value="published">발행</option>
+          </select>
+        </div>
+        <div class="field-row">
+          <label>커버 이미지</label>
+          <input type="text" id="fieldCover" placeholder="이미지 URL (선택)">
+          <button class="btn btn-secondary" id="btnUploadCover" style="flex:none;">업로드</button>
+        </div>
+      </div>
+
+      <div class="editor-body">
+        <div id="quill-editor"></div>
+      </div>
+
+      <div class="editor-footer">
+        <button class="btn btn-danger" id="btnDelete">삭제</button>
+        <div class="footer-actions">
+          <button class="btn btn-secondary" id="btnDraft">초안 저장</button>
+          <button class="btn btn-secondary" id="btnPreview" style="background:#f0fdf4;color:#16a34a;">미리보기</button>
+          <button class="btn btn-primary" id="btnPublish">발행</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Menu Manager Modal -->
+<div class="modal-overlay" id="menuModal" style="display:none;">
+  <div class="modal">
+    <div class="modal-header">
+      <h2>메뉴 관리</h2>
+      <button class="modal-close" id="menuModalClose">&times;</button>
+    </div>
+    <div class="modal-toolbar">
+      <select id="menuSection">
+        <option value="chinese-poetry">중국 시문학</option>
+        <option value="korean-poetry">한국의 한시</option>
+        <option value="community">커뮤니티</option>
+        <option value="hanja">한자와 한문</option>
+        <option value="writing-helper">작성도우미</option>
+      </select>
+      <button class="btn btn-primary" id="btnAddMenu">+ 메뉴 추가</button>
+    </div>
+    <div class="menu-tree" id="menuTree"></div>
+    <div class="modal-footer">
+      <span class="modal-hint">화살표로 순서 변경 · 클릭하여 편집</span>
+    </div>
+  </div>
+</div>
+
+<!-- Menu Edit Mini-Modal -->
+<div class="modal-overlay" id="menuEditModal" style="display:none;">
+  <div class="modal modal-sm">
+    <div class="modal-header">
+      <h2 id="menuEditTitle">메뉴 추가</h2>
+      <button class="modal-close" id="menuEditClose">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="field-row">
+        <label>이름</label>
+        <input type="text" id="menuEditLabel" placeholder="메뉴 이름">
+      </div>
+      <div class="field-row">
+        <label>경로</label>
+        <input type="text" id="menuEditPath" placeholder="/chinese-poetry/new-page/">
+      </div>
+      <div class="field-row">
+        <label>상위 메뉴</label>
+        <select id="menuEditParent">
+          <option value="">최상위</option>
+        </select>
+      </div>
+      <div class="field-row">
+        <label>탑메뉴 표시</label>
+        <input type="checkbox" id="menuEditTopMenu" style="width:auto;">
+      </div>
+    </div>
+    <div class="modal-footer" style="justify-content:flex-end;">
+      <button class="btn btn-secondary" id="menuEditCancel">취소</button>
+      <button class="btn btn-primary" id="menuEditSave">저장</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="https://cdn.quilljs.com/1.3.7/quill.min.js"></script>
+<script src="articles.js"></script>
+</body>
+</html>

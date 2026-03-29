@@ -291,7 +291,7 @@
         try { await window.sb.auth.signOut(); } catch (e) { /* ignore */ }
       }
       // localStorage 세션 삭제
-      try { localStorage.removeItem('sb-dhbrgmkrqvuftkjskmof-auth-token'); } catch (e) { /* ignore */ }
+      try { localStorage.removeItem('sb-iplxexvmrnzlqglfqrpg-auth-token'); } catch (e) { /* ignore */ }
 
       const wrap = document.getElementById('navUserWrap');
       if (!wrap) return;

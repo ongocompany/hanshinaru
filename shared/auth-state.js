@@ -8,7 +8,7 @@
 (function () {
   'use strict';
 
-  var STORAGE_KEY = 'sb-dhbrgmkrqvuftkjskmof-auth-token';
+  var STORAGE_KEY = 'sb-iplxexvmrnzlqglfqrpg-auth-token';
 
   function getUser() {
     try {

@@ -1,5 +1,5 @@
 ---
-import navData from '../data/navigation.json';
+import { getSidebar } from '../lib/menu';
 import SidebarTree from './SidebarTree.astro';
 
 interface Props {
@@ -8,7 +8,8 @@ interface Props {
 }
 
 const { section, currentPath = '' } = Astro.props;
-const items = navData.sidebar[section] || [];
+const sidebar = await getSidebar();
+const items = sidebar[section] || [];
 ---
 
 {items.length > 0 && (
