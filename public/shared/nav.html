@@ -1,0 +1,70 @@
+<!-- 한시의모든것 — 공용 네비게이션 (shared/nav.html) -->
+<nav class="top-nav top-nav--dark" id="topNav">
+  <div class="nav-inner">
+    <a href="/" class="nav-brand zh">한시나루</a>
+
+    <button class="nav-hamburger" id="navHamburger" aria-label="메뉴">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="3" y1="6" x2="21" y2="6" />
+        <line x1="3" y1="12" x2="21" y2="12" />
+        <line x1="3" y1="18" x2="21" y2="18" />
+      </svg>
+    </button>
+
+    <div class="nav-links" id="navLinks">
+
+      <!-- 1. 중국 시문학 -->
+      <div class="nav-dropdown">
+        <a href="/chinese-poetry/general/" class="nav-link has-dropdown">중국 시문학 <span
+            class="dropdown-arrow">&#9662;</span></a>
+        <div class="dropdown-panel">
+          <a href="/chinese-poetry/general/">한시(漢詩) 일반론</a>
+          <a href="/chinese-poetry/poets/">대표 시인과 작품들</a>
+          <a href="/chinese-poetry/history/">한시(漢詩) 변천사</a>
+        </div>
+      </div>
+
+      <!-- 2. 한국의 한시 -->
+      <div class="nav-dropdown">
+        <a href="/korean-poetry/" class="nav-link has-dropdown">한국의 한시 <span class="dropdown-arrow">&#9662;</span></a>
+        <div class="dropdown-panel">
+          <a href="/korean-poetry/">한국의 전통시문학</a>
+          <a href="/korean-poetry/poets/">시대별 시인과 작품</a>
+        </div>
+      </div>
+
+      <!-- 3. 커뮤니티 -->
+      <div class="nav-dropdown">
+        <a href="/community/" class="nav-link has-dropdown">커뮤니티 <span class="dropdown-arrow">&#9662;</span></a>
+        <div class="dropdown-panel">
+          <a href="/community/notice/">공지사항</a>
+          <a href="/community/forum/">자유게시판</a>
+          <a href="/community/news/">뉴스</a>
+          <a href="/community/qna/">묻고 답하기</a>
+          <a href="/community/showcase/">창작마당</a>
+        </div>
+      </div>
+
+      <!-- 4. 한자와 한문 -->
+      <a href="/hanja/">한자와 한문</a>
+
+      <!-- 5. 한시작성도우미 -->
+      <a href="/writing-helper/" class="disabled">작성도우미</a>
+
+      <!-- 6. 검색 (말풍선은 components.js에서 동적 생성) -->
+      <div class="nav-search-wrap" id="navSearchWrap">
+        <button class="nav-search-link" aria-label="검색" title="검색" type="button">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8" />
+            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+          </svg>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- 로그인/사용자는 components.js에서 동적 생성 (innerHTML 파싱 이슈 우회) -->
+
+  </div>
+</nav>

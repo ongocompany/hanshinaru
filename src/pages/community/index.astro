@@ -1,0 +1,148 @@
+---
+import SidebarLayout from '../../layouts/SidebarLayout.astro';
+---
+<SidebarLayout title="커뮤니티" section="community">
+  <div class="comm-inner">
+    <div class="comm-grid-2col">
+      <section id="section-notice" class="comm-panel">
+        <div class="comm-panel-header">
+          <h3>공지사항</h3>
+          <a href="/community/notice/" class="comm-more-link">더보기 &rarr;</a>
+        </div>
+        <div id="preview-notice" class="comm-preview-area">
+          <div class="comm-loading">불러오는 중...</div>
+        </div>
+        <div class="comm-ad-slot">광고 영역</div>
+      </section>
+      <section id="section-forum" class="comm-panel">
+        <div class="comm-panel-header">
+          <h3>자유게시판</h3>
+          <span class="comm-header-links">
+            <a href="/community/forum/?write=1" class="comm-write-link">새글쓰기 +</a>
+            <span class="comm-link-sep">|</span>
+            <a href="/community/forum/" class="comm-more-link">더보기 &rarr;</a>
+          </span>
+        </div>
+        <div id="preview-forum" class="comm-preview-area">
+          <div class="comm-loading">불러오는 중...</div>
+        </div>
+      </section>
+    </div>
+
+    <hr class="comm-divider">
+
+    <div class="comm-grid-2col">
+      <section id="section-news" class="comm-panel">
+        <div class="comm-panel-header">
+          <h3>뉴스</h3>
+          <a href="/community/news/" class="comm-more-link">더보기 &rarr;</a>
+        </div>
+        <div id="preview-news" class="comm-preview-area">
+          <div class="comm-loading">불러오는 중...</div>
+        </div>
+      </section>
+      <section id="section-qna" class="comm-panel">
+        <div class="comm-panel-header">
+          <h3>묻고 답하기</h3>
+          <span class="comm-header-links">
+            <a href="/community/qna/?write=1" class="comm-write-link">새글쓰기 +</a>
+            <span class="comm-link-sep">|</span>
+            <a href="/community/qna/" class="comm-more-link">더보기 &rarr;</a>
+          </span>
+        </div>
+        <div id="preview-qna" class="comm-preview-area">
+          <div class="comm-loading">불러오는 중...</div>
+        </div>
+      </section>
+    </div>
+
+    <div class="comm-ad-banner">광고 영역</div>
+    <hr class="comm-divider">
+
+    <section id="section-showcase" class="comm-panel comm-panel-full">
+      <div class="comm-panel-header">
+        <h3>창작마당</h3>
+        <a href="/community/showcase/" class="comm-more-link">더보기 &rarr;</a>
+      </div>
+      <div id="preview-showcase" class="comm-preview-area comm-showcase-grid">
+        <div class="comm-loading">불러오는 중...</div>
+      </div>
+    </section>
+  </div>
+
+  <script is:inline src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script is:inline src="/shared/supabase.js"></script>
+  <script is:inline src="/shared/auth-state.js"></script>
+  <script is:inline src="/community/community.js"></script>
+</SidebarLayout>
+
+<style>
+  .comm-inner { padding: 0 0 40px; }
+  .comm-grid-2col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .comm-panel {
+    background: #fff; border-radius: 12px;
+    min-height: 380px; display: flex; flex-direction: column; overflow: hidden;
+  }
+  .comm-panel-full { min-height: 380px; }
+  .comm-panel-header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 15px 24px 11px; background: #f5f7f8; border-bottom: 1px solid #eef2f3;
+  }
+  .comm-panel-header h3 { font-size: 18px; font-weight: bold; color: #1C2122; margin: 0; }
+  .comm-header-links { display: flex; align-items: center; gap: 6px; }
+  .comm-write-link { font-size: 13px; color: #6e8387; text-decoration: none; }
+  .comm-write-link:hover { color: #1C2122; }
+  .comm-link-sep { color: #d0d8da; font-size: 12px; }
+  .comm-more-link { font-size: 13px; color: var(--c-powder-blue); text-decoration: none; }
+  .comm-more-link:hover { color: #6e8387; }
+  .comm-preview-area { flex: 1; padding: 0; }
+  .comm-loading, .comm-empty-msg {
+    padding: 40px 24px; text-align: center; font-size: 14px; color: var(--c-powder-blue);
+  }
+  .comm-ad-slot {
+    margin-top: auto; padding: 24px; text-align: center;
+    font-size: 13px; color: #bbb; background: #f5f7f8; border-top: 1px dashed #e0e5e7;
+  }
+  .comm-ad-banner {
+    margin: 24px 0; padding: 32px; text-align: center;
+    font-size: 14px; color: #bbb; background: #f5f7f8; border-radius: 8px; border: 1px dashed #e0e5e7;
+  }
+  .comm-divider { border: none; border-top: 1px solid var(--c-silver); margin: 32px 0; }
+
+  @media (max-width: 768px) {
+    .comm-inner { padding: 24px 16px 48px; }
+    .comm-grid-2col { grid-template-columns: 1fr; }
+  }
+</style>
+
+<style is:global>
+  .preview-table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+  .preview-table tr { border-bottom: 1px solid #f0f2f3; cursor: pointer; transition: background 0.15s; }
+  .preview-table tr:hover { background: #f8fafb; }
+  .preview-table tr:last-child { border-bottom: none; }
+  .preview-table td { padding: 10px 12px; font-size: 14px; color: #3a4a50; vertical-align: middle; }
+  .preview-table td:first-child { padding-left: 24px; }
+  .preview-table td:last-child { padding-right: 24px; }
+  .preview-td-title { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 0; width: 100%; }
+  .preview-comment-count { font-size: 11px; color: #e04040; margin-left: 4px; }
+  .preview-td-stats { color: var(--c-powder-blue); font-size: 12px; white-space: nowrap; width: 60px; text-align: right; }
+  .comm-showcase-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; padding: 16px 24px 24px; }
+  .showcase-card {
+    background: linear-gradient(135deg, #fafbfc, #f0f4f5); border-radius: 10px;
+    padding: 20px 16px; text-align: center; cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s; border: 1px solid #e8eef0;
+  }
+  .showcase-card:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0,0,0,0.08); }
+  .showcase-card-title {
+    font-family: var(--font-zh); font-size: 18px; color: #1C2122;
+    margin-bottom: 8px; line-height: 1.5; min-height: 54px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .showcase-card-author { font-size: 13px; color: #6a7a80; margin-bottom: 8px; }
+  .showcase-card-likes { font-size: 12px; color: var(--c-powder-blue); }
+
+  @media (max-width: 768px) {
+    .comm-showcase-grid { grid-template-columns: repeat(2, 1fr); }
+    .preview-td-stats { display: none; }
+  }
+</style>

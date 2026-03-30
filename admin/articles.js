@@ -688,11 +688,10 @@
 
   function sectionLabel(s) {
     const map = {
-      'chinese-poetry': '중국 시문학',
-      'korean-poetry': '한국의 한시',
+      hansi: '한시',
       community: '커뮤니티',
       hanja: '한자와 한문',
-      'writing-helper': '작성도우미',
+      'writing-helper': '한시 도우미',
     };
     return map[s] || s;
   }

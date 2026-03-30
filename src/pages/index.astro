@@ -1,18 +1,575 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
 ---
 
-<BaseLayout title="홈" description="한시의 모든 것 — 한시나루">
-  <main style="padding-top: var(--nav-height); min-height: 100vh; display: flex; align-items: center; justify-content: center;">
-    <div style="text-align: center; max-width: 600px; padding: 40px;">
-      <h1 style="font-size: var(--fs-display); font-family: var(--font-zh); margin-bottom: 16px;">漢詩나루</h1>
-      <p style="font-size: var(--fs-lead); color: var(--c-muted); line-height: 1.6;">
-        Astro 전환 진행 중입니다.<br />
-        기존 사이트는 정상 운영됩니다.
-      </p>
-      <p style="margin-top: 24px; font-size: var(--fs-small); color: var(--c-faint);">
-        Phase 1 — 프로젝트 초기화 완료
-      </p>
+<BaseLayout title="한시나루" description="한시의 아름다움을 함께 읽고, 배우고, 나누는 공간">
+  <Nav slot="nav" currentPath="/" />
+
+  <main class="main-page">
+
+    <!-- ===== A. Hero Section ===== -->
+    <section class="main-hero">
+      <div class="hero-scene">
+        <div class="hero-bg"></div>
+        <canvas id="heroCanvas" class="hero-canvas" width="168" height="95"></canvas>
+        <canvas class="hero-mist-canvas" id="mistCanvas"></canvas>
+        <img class="hero-copy" src="/assets/hero/samusa.png" alt="思無邪">
+      </div>
+    </section>
+
+    <div class="page-container">
+
+      <!-- ===== B. 日日五首 ===== -->
+      <section class="daily-five-section">
+        <h2 class="section-title-zh">日日五首</h2>
+        <p class="section-subtitle">하루 다섯 수, 두 달이면 당시삼백수</p>
+        <div class="poem-cards" id="dailyFivePoems"></div>
+      </section>
+
+      <!-- 시 이미지 라이트박스 -->
+      <div class="poem-lightbox" id="poemLightbox">
+        <button class="poem-lightbox-close" id="lbClose">&times;</button>
+        <div class="poem-lightbox-row">
+          <button class="poem-lightbox-nav" id="lbPrev">&#9664;</button>
+          <img class="poem-lightbox-img" id="poemLightboxImg" src="" alt="">
+          <button class="poem-lightbox-nav" id="lbNext">&#9654;</button>
+        </div>
+        <a class="poem-lightbox-link" id="poemLightboxLink" href="#">상세페이지로 가기 &rarr;</a>
+      </div>
+
+      <!-- ===== C. 오늘의 시인 ===== -->
+      <section class="poet-today-section">
+        <h2 class="section-title">오늘의 시인</h2>
+        <p class="section-subtitle">하루에 한 명이면 72일이면 당시삼백수의 시인을 모두 만날 수 있습니다</p>
+        <div class="poet-today-inner" id="poetTodayInner">
+          <div class="poet-today-portrait" id="poetTodayPortrait">
+            <img id="poetTodayImg" src="/assets/avatars/noface.jpg" alt="시인 초상화">
+          </div>
+          <div class="poet-today-text">
+            <p class="poet-today-name" id="poetTodayName">—</p>
+            <div class="poet-today-name-ko" id="poetTodayNameKo">로딩 중...</div>
+            <p class="poet-today-bio" id="poetTodayBio"></p>
+            <div class="poet-today-verse" id="poetTodayVerse" hidden>
+              <span id="poetTodayVerseText"></span>
+              <span class="poet-today-verse-source" id="poetTodayVerseSource"></span>
+            </div>
+            <a class="poet-today-link" id="poetTodayLink" href="#">더보기 &rarr;</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== D. 소식 ===== -->
+      <section class="news-section">
+        <h2 class="section-title" style="text-align:center;">소식</h2>
+        <p class="section-subtitle" style="text-align:center;">한시와 고전의 오늘</p>
+        <div class="news-list" id="newsList">
+          <div class="news-empty">소식을 불러오는 중...</div>
+        </div>
+      </section>
+
     </div>
   </main>
+
+  <Footer slot="footer" />
 </BaseLayout>
+
+<style>
+  .main-page {
+    padding-top: var(--nav-height);
+  }
+
+  .page-container {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  /* 섹션 공통 */
+  .daily-five-section,
+  .poet-today-section,
+  .news-section {
+    background: #fff;
+    border-bottom: 1px dashed var(--c-silver);
+  }
+  .news-section { border-bottom: none; }
+
+  /* ===== A. Hero ===== */
+  .main-hero {
+    position: relative;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    height: 536px;
+    overflow: hidden;
+    background: #1a1a1a;
+    box-shadow: 5px 0 15px rgba(0,0,0,0.06), -5px 0 15px rgba(0,0,0,0.06);
+  }
+  .hero-scene { position: absolute; top: 0; left: 0; width: 100%; height: 536px; }
+  .hero-bg {
+    position: absolute; top: 0; left: 0;
+    width: 4000px; height: 536px;
+    background-image: url('/assets/hero/river_scroll.jpg');
+    background-size: 2000px 536px;
+    background-repeat: repeat-x;
+    animation: scroll-bg 30s linear infinite;
+    will-change: transform;
+  }
+  @keyframes scroll-bg {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-2000px); }
+  }
+  .hero-video {
+    position: absolute; top: 384px; left: 30%;
+    transform: translateX(-50%);
+    width: 84px; height: auto;
+    object-fit: contain; pointer-events: none; z-index: 2;
+  }
+  .hero-canvas {
+    position: absolute; top: 384px; left: 30%;
+    transform: translateX(-50%);
+    width: 84px; height: 47px; z-index: 2;
+    pointer-events: none; display: none;
+  }
+  .hero-mist-canvas {
+    position: absolute; bottom: 0; left: 0;
+    width: 100%; height: 100%; z-index: 3; pointer-events: none;
+  }
+  .hero-copy {
+    position: absolute; top: 35%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 690px; height: auto; z-index: 4; pointer-events: none;
+  }
+
+  /* ===== B. 日日五首 ===== */
+  .daily-five-section { padding: 30px 40px; text-align: center; }
+  .section-title {
+    font-size: var(--fs-h2); font-weight: 300; color: #000; margin-bottom: 8px;
+  }
+  .section-title-zh {
+    font-family: var(--font-zh); font-size: var(--fs-h2);
+    font-weight: 600; color: #000; letter-spacing: 0.15em; margin-bottom: 8px;
+  }
+  .section-subtitle { font-size: 15px; color: #333; margin-bottom: 20px; }
+  .poem-cards {
+    display: flex; justify-content: center; gap: 20px;
+    max-width: 1100px; margin: 0 auto;
+  }
+
+  /* 라이트박스 */
+  .poem-lightbox {
+    display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 200; background: rgba(0,0,0,0.90);
+    justify-content: center; align-items: center;
+    flex-direction: column; gap: 20px; padding: 40px 20px;
+  }
+  .poem-lightbox.active { display: flex; }
+  .poem-lightbox-close {
+    position: absolute; top: 16px; right: 24px;
+    background: none; border: none; color: rgba(255,255,255,0.6);
+    font-size: 36px; cursor: pointer; z-index: 201;
+  }
+  .poem-lightbox-close:hover { color: #fff; }
+  .poem-lightbox-img {
+    max-height: 75vh; max-width: 90vw; border-radius: 8px; object-fit: contain;
+  }
+  .poem-lightbox-link {
+    color: rgba(252,250,250,0.75); text-decoration: none; font-size: 15px;
+    padding: 10px 28px; border: 1px solid rgba(252,250,250,0.25); border-radius: 8px;
+  }
+  .poem-lightbox-link:hover {
+    color: #fcfafa; border-color: rgba(252,250,250,0.5); background: rgba(252,250,250,0.08);
+  }
+  .poem-lightbox-row { display: flex; align-items: center; gap: 20px; }
+  .poem-lightbox-nav {
+    background: none; border: none; color: rgba(255,255,255,0.4);
+    font-size: 48px; cursor: pointer; padding: 12px 4px;
+  }
+  .poem-lightbox-nav:hover { color: rgba(255,255,255,0.85); }
+
+  /* ===== C. 오늘의 시인 ===== */
+  .poet-today-section { padding: 30px 40px; text-align: center; }
+  .poet-today-inner {
+    max-width: 1030px; margin: 0 auto;
+    display: flex; gap: 48px; align-items: flex-start; text-align: left;
+  }
+  .poet-today-portrait {
+    flex: 0 0 240px; height: 320px; border-radius: 12px;
+    background: linear-gradient(160deg, #c8d3d5 0%, #a4b8c4 50%, #6e8387 100%);
+    overflow: hidden; cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .poet-today-portrait:hover {
+    transform: translateY(-6px); box-shadow: 0 16px 40px rgba(110,131,135,0.2);
+  }
+  .poet-today-portrait img { width: 100%; height: 100%; object-fit: cover; }
+  .poet-today-text {
+    flex: 1; min-width: 0; align-self: stretch;
+    display: flex; flex-direction: column;
+  }
+  .poet-today-name {
+    font-family: var(--font-zh-sans); font-size: 20px;
+    font-weight: 400; color: #000; margin-bottom: 4px;
+  }
+  .poet-today-name-ko { font-size: 18px; color: #333; margin-bottom: 20px; }
+  .poet-today-bio { font-size: 15px; line-height: 1.9; color: #000; margin-bottom: 24px; }
+  .poet-today-verse {
+    font-size: 16px; font-style: italic; color: #000; line-height: 1.9;
+    padding-left: 16px; border-left: 3px solid rgba(164,184,196,0.3); margin-bottom: 24px;
+  }
+  .poet-today-verse-source {
+    display: block; margin-top: 6px; font-style: normal; font-size: 13px; color: #333;
+  }
+  .poet-today-link {
+    display: inline-block; font-size: 14px; color: #fcfafa;
+    background: #1C2122; text-decoration: none; padding: 6px;
+    transition: background 0.2s; margin-top: auto; align-self: flex-end;
+  }
+  .poet-today-link:hover { background: #6e8387; }
+
+  /* ===== D. 소식 ===== */
+  .news-section { padding: 30px 40px; }
+  .news-list {
+    max-width: 1030px; margin: 20px auto 0;
+    display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;
+  }
+
+  /* ===== 반응형 ===== */
+  @media (max-width: 768px) {
+    .main-hero { height: 300px; }
+    .hero-scene { height: 300px; }
+    .hero-bg { height: 300px; background-size: 1200px 300px; }
+    .hero-copy { width: 400px; }
+    .hero-video { top: 220px; }
+    .hero-canvas { top: 220px; }
+    .daily-five-section { padding: 30px 20px; }
+    .poet-today-section { padding: 30px 20px; }
+    .news-section { padding: 30px 20px; }
+    .poet-today-inner { flex-direction: column; gap: 32px; text-align: center; }
+    .poet-today-portrait { flex: 0 0 auto; width: 180px; height: 240px; margin: 0 auto; }
+    .poet-today-verse { border-left: none; padding-left: 0; text-align: center; }
+    .news-list { grid-template-columns: 1fr; }
+  }
+
+  @media (max-width: 480px) {
+    .main-hero { height: 240px; }
+    .hero-scene { height: 240px; }
+    .hero-bg { height: 240px; background-size: 960px 240px; }
+    .hero-copy { width: 280px; }
+    .hero-video { top: 170px; width: 60px; }
+    .hero-canvas { top: 170px; width: 60px; }
+  }
+</style>
+
+<style is:global>
+  /* 동적으로 생성되는 요소 스타일 */
+  .poem-card {
+    flex: 0 0 190px; height: 253px; border-radius: 8px;
+    overflow: hidden; position: relative; cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-size: cover; background-position: center;
+  }
+  .poem-card:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(110,131,135,0.2); }
+  .poem-card-caption {
+    position: absolute; bottom: 0; left: 0; right: 0;
+    padding: 20px 14px 14px;
+    background: linear-gradient(to top, rgba(110,131,135,0.75), rgba(110,131,135,0.3) 60%, transparent);
+    color: #fcfafa;
+  }
+  .poem-card-poet { font-size: 11px; opacity: 0.75; margin-bottom: 3px; }
+  .poem-card-title { font-family: var(--font-zh-sans); font-size: 15px; line-height: 1.3; }
+
+  .news-item {
+    border-radius: 12px; border: 1px solid #84969A; overflow: hidden;
+    background: rgb(230,235,236); transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer; text-decoration: none; color: inherit;
+    display: flex; flex-direction: column;
+  }
+  .news-item:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(110,131,135,0.2); background: rgb(215,224,226); }
+  .news-thumb {
+    width: 100%; height: 160px; overflow: hidden; background: #C8D3D5;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .news-thumb img { width: 100%; height: 100%; object-fit: cover; }
+  .news-thumb-placeholder { font-size: 36px; color: #A4B8C4; opacity: 0.5; }
+  .news-card-body { padding: 16px 20px 20px; flex: 1; display: flex; flex-direction: column; }
+  .news-card-meta { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+  .news-tag {
+    display: inline-block; font-size: 11px; color: #FCFAFA;
+    background: #49575A; padding: 2px 8px; border-radius: 4px;
+  }
+  .news-tag.ai { color: #0f4f66; background: #dff0f8; }
+  .news-date { font-size: 12px; color: #666; }
+  .news-title {
+    font-size: 16px; font-weight: 600; line-height: 1.5; margin-bottom: 8px;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .news-summary {
+    font-size: 13px; color: #555; line-height: 1.6; flex: 1;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .news-summary.ai-full { display: block; -webkit-line-clamp: unset; overflow: visible; }
+  .news-source { font-size: 12px; color: #888; margin-top: 10px; }
+  .news-empty { text-align: center; color: #999; padding: 40px 0; font-size: 15px; grid-column: 1 / -1; }
+
+  @media (max-width: 1024px) {
+    .poem-card { flex: 0 0 160px; height: 213px; }
+  }
+  @media (max-width: 768px) {
+    .poem-cards { flex-wrap: wrap; gap: 12px; }
+    .poem-card { flex: 0 0 calc(33.33% - 10px); height: 200px; }
+  }
+  @media (max-width: 480px) {
+    .poem-cards { gap: 10px; }
+    .poem-card { flex: 0 0 calc(50% - 8px); height: 180px; }
+  }
+</style>
+
+<script>
+  // ===== 히어로 안개 파티클 =====
+  (function() {
+    const mistCanvas = document.getElementById('mistCanvas');
+    if (!mistCanvas) return;
+    const mistCtx = mistCanvas.getContext('2d');
+    const particles = [];
+    const PARTICLE_COUNT = 50;
+
+    function resizeMistCanvas() {
+      mistCanvas.width = Math.min(window.innerWidth, 1300);
+      mistCanvas.height = mistCanvas.closest('.main-hero')?.offsetHeight || 536;
+    }
+    resizeMistCanvas();
+    window.addEventListener('resize', resizeMistCanvas);
+
+    function createParticle(init) {
+      const w = mistCanvas.width, h = mistCanvas.height;
+      const spawnZoneTop = h * 0.5;
+      return {
+        x: Math.random() * w,
+        y: init ? spawnZoneTop + Math.random() * (h - spawnZoneTop) : h + Math.random() * 100,
+        radius: 60 + Math.random() * 120,
+        vy: -(0.1 + Math.random() * 0.2),
+        vx: (Math.random() - 0.5) * 0.4,
+        swayOffset: Math.random() * Math.PI * 2,
+        swaySpeed: 0.005 + Math.random() * 0.01,
+        swayAmount: 5 + Math.random() * 12,
+        baseAlpha: 0.15 + Math.random() * 0.2,
+        life: 0,
+        maxLife: 400 + Math.random() * 350,
+      };
+    }
+
+    for (let i = 0; i < PARTICLE_COUNT; i++) particles.push(createParticle(true));
+
+    function drawMist() {
+      const w = mistCanvas.width, h = mistCanvas.height;
+      mistCtx.clearRect(0, 0, w, h);
+      for (let i = 0; i < particles.length; i++) {
+        const p = particles[i];
+        p.y += p.vy;
+        p.x += p.vx + Math.sin(p.swayOffset + p.life * p.swaySpeed) * 0.3;
+        p.life++;
+        const fadeStart = h * 0.35;
+        let fadeByHeight = p.y > h * 0.6 ? 1.0 : p.y > fadeStart ? Math.pow((p.y - fadeStart) / (h * 0.6 - fadeStart), 2) : 0;
+        let lifeFade = p.life < 50 ? p.life / 50 : p.life > p.maxLife - 80 ? Math.max(0, (p.maxLife - p.life) / 80) : 1;
+        const alpha = p.baseAlpha * fadeByHeight * lifeFade;
+        if (alpha > 0.005) {
+          const grad = mistCtx.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.radius);
+          grad.addColorStop(0, `rgba(240,240,245,${alpha})`);
+          grad.addColorStop(0.3, `rgba(235,235,240,${alpha * 0.7})`);
+          grad.addColorStop(0.6, `rgba(230,230,238,${alpha * 0.3})`);
+          grad.addColorStop(1, 'rgba(225,225,235,0)');
+          mistCtx.beginPath();
+          mistCtx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+          mistCtx.fillStyle = grad;
+          mistCtx.fill();
+        }
+        if (p.y + p.radius < h * 0.2 || p.life >= p.maxLife) particles[i] = createParticle(false);
+        if (p.x < -p.radius) p.x = w + p.radius;
+        if (p.x > w + p.radius) p.x = -p.radius;
+      }
+      requestAnimationFrame(drawMist);
+    }
+    drawMist();
+  })();
+
+    // PNG 시퀀스 애니메이션 (배)
+    const canvasEl = document.getElementById('heroCanvas');
+    (function startFrameFallback() {
+      if (!canvasEl) return;
+      canvasEl.style.display = 'block';
+      const ctx = canvasEl.getContext('2d');
+      canvasEl.style.display = 'block';
+      const frameCount = 47, fps = 12, imgs = [];
+      let loaded = 0;
+      for (let i = 1; i <= frameCount; i++) {
+        const img = new Image();
+        img.src = `/assets/hero/frames_alpha/frame_${String(i).padStart(4,'0')}.png`;
+        img.onload = () => loaded++;
+        imgs.push(img);
+      }
+      let current = 0;
+      const waitForLoad = setInterval(() => {
+        if (loaded >= 1) { clearInterval(waitForLoad); setInterval(() => {
+          if (imgs[current]?.complete) { ctx.clearRect(0,0,canvasEl.width,canvasEl.height); ctx.drawImage(imgs[current],0,0,canvasEl.width,canvasEl.height); }
+          current = (current + 1) % frameCount;
+        }, 1000/fps); }
+      }, 100);
+    })();
+
+  // ===== 日日五首 =====
+  let dailyPicked = [];
+  let lightboxIndex = 0;
+
+  (async function() {
+    try {
+      const res = await fetch('/index/main_page_poem/manifest.json');
+      if (!res.ok) { const res2 = await fetch('/assets/main_page_poem/manifest.json'); if (!res2.ok) return; const d = await res2.json(); return render(d); }
+      render(await res.json());
+    } catch(e) { console.warn('日日五首 로딩 실패:', e); }
+
+    function render(allPoems) {
+      if (!allPoems.length) return;
+      const today = new Date();
+      const seed = today.getFullYear() * 10000 + (today.getMonth()+1) * 100 + today.getDate();
+      if (allPoems.length <= 5) { dailyPicked = allPoems; }
+      else {
+        const idx = allPoems.map((_,i) => i);
+        let s = seed;
+        const r = () => { s = (s * 16807) % 2147483647; return s / 2147483647; };
+        for (let i = idx.length-1; i > 0; i--) { const j = Math.floor(r()*(i+1)); [idx[i],idx[j]] = [idx[j],idx[i]]; }
+        dailyPicked = idx.slice(0,5).map(i => allPoems[i]);
+      }
+      const basePath = '/assets/main_page_poem/';
+      document.getElementById('dailyFivePoems').innerHTML = dailyPicked.map((p,i) =>
+        `<div class="poem-card" style="background-image:url('${basePath}${p.file}')" data-idx="${i}">
+          <div class="poem-card-caption">
+            <div class="poem-card-poet">${p.poet} · ${p.poetKo}</div>
+            <div class="poem-card-title">${p.title}</div>
+          </div>
+        </div>`
+      ).join('');
+    }
+  })();
+
+  // 라이트박스
+  document.getElementById('dailyFivePoems')?.addEventListener('click', e => {
+    const card = e.target.closest('.poem-card');
+    if (!card) return;
+    lightboxIndex = Number(card.dataset.idx);
+    updateLb();
+    document.getElementById('poemLightbox').classList.add('active');
+    document.body.style.overflow = 'hidden';
+  });
+
+  function updateLb() {
+    const p = dailyPicked[lightboxIndex];
+    if (!p) return;
+    document.getElementById('poemLightboxImg').src = '/assets/main_page_poem/' + p.file;
+    document.getElementById('poemLightboxLink').href = '/search/?poem=' + p.no;
+  }
+
+  function closeLb() {
+    document.getElementById('poemLightbox').classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  document.getElementById('lbClose')?.addEventListener('click', closeLb);
+  document.getElementById('poemLightbox')?.addEventListener('click', e => { if (e.target.id === 'poemLightbox') closeLb(); });
+  document.getElementById('lbPrev')?.addEventListener('click', () => { lightboxIndex = (lightboxIndex - 1 + dailyPicked.length) % dailyPicked.length; updateLb(); });
+  document.getElementById('lbNext')?.addEventListener('click', () => { lightboxIndex = (lightboxIndex + 1) % dailyPicked.length; updateLb(); });
+  document.addEventListener('keydown', e => {
+    if (!document.getElementById('poemLightbox')?.classList.contains('active')) return;
+    if (e.key === 'Escape') closeLb();
+    if (e.key === 'ArrowLeft') { lightboxIndex = (lightboxIndex - 1 + dailyPicked.length) % dailyPicked.length; updateLb(); }
+    if (e.key === 'ArrowRight') { lightboxIndex = (lightboxIndex + 1) % dailyPicked.length; updateLb(); }
+  });
+
+  // ===== 오늘의 시인 =====
+  (async function() {
+    try {
+      const [authRes, verseRes] = await Promise.all([
+        fetch('/index/db_author.with_ko.json'),
+        fetch('/index/poet_verses.json'),
+      ]);
+      const authData = await authRes.json();
+      const verses = verseRes.ok ? await verseRes.json() : [];
+      const authors = authData.authors;
+      const poetKeys = Object.keys(authors);
+      if (!poetKeys.length) return;
+
+      const today = new Date();
+      const daySeed = today.getFullYear() * 10000 + (today.getMonth()+1) * 100 + today.getDate();
+      const poet = authors[poetKeys[daySeed % poetKeys.length]];
+      const poetZh = poetKeys[daySeed % poetKeys.length];
+
+      document.getElementById('poetTodayName').textContent = poet.name?.zh || poetZh;
+      const lifeStr = poet.life?.raw || ((poet.life?.birth || '?') + ' - ' + (poet.life?.death || '?'));
+      document.getElementById('poetTodayNameKo').textContent = (poet.name?.ko || '') + ' (' + lifeStr + ')';
+
+      const bio = poet.bioKo || '';
+      document.getElementById('poetTodayBio').textContent = bio.length > 300 ? bio.substring(0,300) + '…' : bio;
+
+      if (poet.avatar) {
+        const img = document.getElementById('poetTodayImg');
+        img.src = '/assets/avatars/' + (poet.avatar.file || poet.titleId + '.jpg');
+        img.alt = poet.name?.ko || poetZh;
+        img.onerror = function() { this.src = '/assets/avatars/noface.jpg'; };
+      }
+
+      const verse = verses.find(v => v.poet === poetZh);
+      if (verse) {
+        document.getElementById('poetTodayVerse').hidden = false;
+        document.getElementById('poetTodayVerseText').textContent = verse.verse;
+        document.getElementById('poetTodayVerseSource').textContent = '— 〈' + verse.source + '〉 중에서';
+      }
+
+      const poetUrl = '/search/?q=' + encodeURIComponent(poetZh);
+      document.getElementById('poetTodayLink').href = poetUrl;
+      document.getElementById('poetTodayPortrait').onclick = () => location.href = poetUrl;
+    } catch(e) { console.warn('오늘의 시인 로딩 실패:', e); }
+  })();
+
+  // ===== 소식 =====
+  (async function() {
+    const list = document.getElementById('newsList');
+    if (!list) return;
+    try {
+      const res = await fetch('/index/news_articles.json?_ts=' + Date.now(), { cache: 'no-store' });
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      const data = await res.json();
+      const twoMonthsAgo = new Date();
+      twoMonthsAgo.setMonth(twoMonthsAgo.getMonth() - 2);
+      const recent = (data.articles || [])
+        .filter(a => new Date(a.publishedAt) >= twoMonthsAgo)
+        .sort((a,b) => new Date(b.publishedAt) - new Date(a.publishedAt))
+        .slice(0, 6);
+
+      if (!recent.length) { list.innerHTML = '<div class="news-empty">최근 소식이 없습니다.</div>'; return; }
+
+      const esc = s => (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+      list.innerHTML = recent.map(a => {
+        const d = new Date(a.publishedAt);
+        const dateStr = (d.getMonth()+1) + '월 ' + d.getDate() + '일';
+        const src = (a.aiWritten ? ['body','summary'] : ['summary','body']).map(f => a[f]).find(v => typeof v === 'string' && v.trim());
+        const summary = esc(src || '');
+        const thumbHtml = a.imageUrl
+          ? `<div class="news-thumb"><img src="${esc(a.imageUrl)}" alt="" loading="lazy" onerror="this.parentElement.innerHTML='<span class=news-thumb-placeholder>&#9776;</span>'"></div>`
+          : '<div class="news-thumb"><span class="news-thumb-placeholder">&#9776;</span></div>';
+        return `<a class="news-item" href="${a.sourceUrl ? esc(a.sourceUrl) : '#'}" target="_blank" rel="noopener">
+          ${thumbHtml}
+          <div class="news-card-body">
+            <div class="news-card-meta">
+              <span class="news-tag">${esc(a.category)}</span>
+              ${a.aiWritten ? '<span class="news-tag ai">AI작성</span>' : ''}
+              <span class="news-date">${dateStr}</span>
+            </div>
+            <div class="news-title">${esc(a.title)}</div>
+            <div class="news-summary${a.aiWritten ? ' ai-full' : ''}">${a.aiWritten ? summary : summary.slice(0,80)}</div>
+            <div class="news-source">${esc(a.source || '')}</div>
+          </div>
+        </a>`;
+      }).join('');
+    } catch(e) { list.innerHTML = '<div class="news-empty">소식을 불러올 수 없습니다.</div>'; }
+  })();
+</script>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>한시나루</title>
+  <link rel="stylesheet" href="/shared/styles.css">
+  <style>
+    .test-content {
+      padding: 80px 32px 48px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .test-content h1 { font-size: 28px; color: #6e8387; margin-bottom: 16px; }
+    .test-content h2 { font-size: 20px; color: #555; margin: 32px 0 12px; }
+    .test-content p { font-size: 14px; color: #777; margin-bottom: 8px; }
+    .test-box {
+      padding: 16px; margin: 12px 0;
+      background: #fcfafa; border: 1px solid #c8d3d5; border-radius: 8px;
+    }
+    .check { color: #2d8a4e; }
+    .warn { color: #d97706; }
+  </style>
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+
+  <div class="test-content">
+    <h1>공유 컴포넌트 테스트 페이지</h1>
+    <p>이 페이지는 shared/ 인프라가 정상 동작하는지 확인합니다.</p>
+
+    <h2>1. 네비게이션 체크</h2>
+    <div class="test-box" id="navCheck">로딩 중...</div>
+
+    <h2>2. 드롭다운 체크</h2>
+    <div class="test-box">
+      <p>위 네비에서 "중국의 한시"에 마우스를 올려보세요.</p>
+      <p>4개 하위 메뉴(한시 일반, 한시의 변천사, 위대한 시인들, 서적)가 보여야 합니다.</p>
+    </div>
+
+    <h2>3. 비활성 메뉴 체크</h2>
+    <div class="test-box">
+      <p>"한국의 한시", "한자와 한문", "작성도우미" → 반투명 + 클릭 불가</p>
+      <p>드롭다운 내 "준비 중" 표시 확인</p>
+    </div>
+
+    <h2>4. Fade-in 애니메이션</h2>
+    <div style="height: 300px; display:flex; align-items:center; justify-content:center; color:#bbb;">
+      ↓ 아래로 스크롤하세요 ↓
+    </div>
+    <div class="fade-in test-box">
+      <p class="check">이 박스가 스크롤 시 부드럽게 나타나면 성공!</p>
+    </div>
+    <div class="fade-in test-box" style="transition-delay: 0.15s;">
+      <p class="check">두 번째 fade-in 박스</p>
+    </div>
+    <div class="fade-in test-box" style="transition-delay: 0.3s;">
+      <p class="check">세 번째 fade-in 박스</p>
+    </div>
+
+    <h2>5. 반응형 테스트</h2>
+    <div class="test-box">
+      <p>브라우저 폭을 640px 이하로 줄이면:</p>
+      <p>→ 햄버거 메뉴 아이콘이 나타나야 합니다</p>
+      <p>→ 네비 링크들이 숨겨지고, 햄버거 클릭 시 세로로 펼쳐져야 합니다</p>
+    </div>
+
+    <h2>6. 푸터 체크</h2>
+    <div class="test-box" id="footerCheck">로딩 중...</div>
+  </div>
+
+  <div id="footer-placeholder"></div>
+  <script src="/shared/components.js"></script>
+  <script>
+    // 로딩 후 자동 검증
+    document.addEventListener('DOMContentLoaded', () => {
+      setTimeout(() => {
+        // 네비 체크
+        const nav = document.getElementById('topNav');
+        const navCheck = document.getElementById('navCheck');
+        if (nav) {
+          const links = nav.querySelectorAll('.nav-links a[href], .nav-dropdown > .nav-link');
+          const dropdowns = nav.querySelectorAll('.dropdown-panel');
+          const disabled = nav.querySelectorAll('.disabled');
+          navCheck.innerHTML = `
+            <p class="check">✓ 네비게이션 로드 성공</p>
+            <p>메뉴 항목: ${links.length}개</p>
+            <p>드롭다운: ${dropdowns.length}개</p>
+            <p>비활성 항목: ${disabled.length}개</p>
+          `;
+        } else {
+          navCheck.innerHTML = '<p class="warn">✗ 네비게이션 로드 실패</p>';
+        }
+
+        // 푸터 체크
+        const footer = document.querySelector('.site-footer');
+        const footerCheck = document.getElementById('footerCheck');
+        if (footer) {
+          footerCheck.innerHTML = '<p class="check">✓ 푸터 로드 성공</p>';
+        } else {
+          footerCheck.innerHTML = '<p class="warn">✗ 푸터 로드 실패</p>';
+        }
+      }, 500);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>한시나루</title>
+
+  <link rel="stylesheet" href="/shared/styles.css">
+  <style>
+    /* ===== 5-a 템플릿 전용 보완 스타일 ===== */
+    /* 콘텐츠 영역 기본 패딩 */
+    .content-area .content-inner {
+      padding: 40px 48px;
+      max-width: 900px;
+    }
+    .content-area .content-inner h2 {
+      font-family: 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans GB', system-ui, sans-serif;
+      font-size: 28px;
+      color: #6e8387;
+      margin-bottom: 8px;
+    }
+    .content-area .content-inner .subtitle {
+      font-size: 15px;
+      color: #999;
+      margin-bottom: 32px;
+    }
+    .content-area .content-inner p {
+      font-size: 15px;
+      color: #444;
+      line-height: 1.9;
+      margin-bottom: 16px;
+    }
+
+    /* 플레이스홀더 카드 (데모용) */
+    .placeholder-content-card {
+      background: #fcfafa;
+      border: 1px solid #c8d3d5;
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 16px;
+    }
+    .placeholder-content-card h3 {
+      font-size: 16px;
+      color: #6e8387;
+      margin-bottom: 8px;
+    }
+    .placeholder-content-card p {
+      font-size: 14px;
+      color: #777;
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="nav-placeholder"></div>
+
+  <!-- ===== Layout 5-a: 사이드바 트리 + 콘텐츠 ===== -->
+  <div class="layout-5a">
+
+    <!-- 좌측 사이드바 -->
+    <aside class="sidebar">
+      <div class="sidebar-tree" id="eraTree">
+
+        <div class="era-tree-item disabled" data-era="chunqiu">
+          <span class="tree-arrow">&#9654;</span> 춘추전국
+        </div>
+
+        <div class="era-tree-item disabled" data-era="han">
+          <span class="tree-arrow">&#9654;</span> 한
+        </div>
+
+        <div class="era-tree-item disabled" data-era="weijin">
+          <span class="tree-arrow">&#9654;</span> 위진남북조
+        </div>
+
+        <div class="era-tree-item expanded" data-era="tang">
+          <span class="tree-arrow">&#9660;</span> 당
+        </div>
+        <div class="era-tree-sub" id="sub-tang">
+          <div class="era-tree-sub-item active" data-sub="early">초당 (618~712)</div>
+          <div class="era-tree-sub-item" data-sub="high">성당 (713~765)</div>
+          <div class="era-tree-sub-item" data-sub="mid">중당 (766~835)</div>
+          <div class="era-tree-sub-item" data-sub="late">만당 (836~907)</div>
+        </div>
+
+        <div class="era-tree-item disabled" data-era="wudai">
+          <span class="tree-arrow">&#9654;</span> 오대십국
+        </div>
+
+        <div class="era-tree-item disabled" data-era="song">
+          <span class="tree-arrow">&#9654;</span> 송
+        </div>
+
+        <div class="era-tree-item disabled" data-era="yuan">
+          <span class="tree-arrow">&#9654;</span> 원
+        </div>
+
+        <div class="era-tree-item disabled" data-era="ming">
+          <span class="tree-arrow">&#9654;</span> 명
+        </div>
+
+        <div class="era-tree-item disabled" data-era="qing">
+          <span class="tree-arrow">&#9654;</span> 청
+        </div>
+
+      </div>
+    </aside>
+
+    <!-- 우측 콘텐츠 -->
+    <main class="content-area" id="contentArea">
+      <div class="content-inner" id="contentInner">
+        <!-- 기본: 초당 시인들 플레이스홀더 -->
+        <h2 id="contentTitle">초당의 시인들</h2>
+        <p class="subtitle" id="contentSubtitle">初唐 (618~712) — 당나라 초기의 시인들</p>
+
+        <div class="placeholder-content-card">
+          <h3>왕발 (王勃, 650~676)</h3>
+          <p>초당사걸의 한 사람. 「등왕각서」로 유명하다.</p>
+        </div>
+        <div class="placeholder-content-card">
+          <h3>양형 (楊炯, 650~692)</h3>
+          <p>초당사걸의 한 사람. 변새시로 이름을 떨쳤다.</p>
+        </div>
+        <div class="placeholder-content-card">
+          <h3>노조린 (盧照鄰, 636~695)</h3>
+          <p>초당사걸의 한 사람. 「장안고의」 등을 남겼다.</p>
+        </div>
+        <div class="placeholder-content-card">
+          <h3>낙빈왕 (駱賓王, 619~687)</h3>
+          <p>초당사걸의 한 사람. 「영아」시로 유명하다.</p>
+        </div>
+
+        <p style="color: #999; font-size: 13px; margin-top: 32px; text-align: center;">
+          좌측 트리에서 시대를 선택하면 해당 시대의 콘텐츠가 여기에 표시됩니다.
+        </p>
+      </div>
+    </main>
+
+  </div>
+
+  <div id="footer-placeholder"></div>
+  <script src="/shared/components.js"></script>
+
+  <script>
+  // ===== Layout 5-a: 사이드바 트리 인터랙션 =====
+  (function () {
+    'use strict';
+
+    const tree = document.getElementById('eraTree');
+    if (!tree) return;
+
+    // 시대별 플레이스홀더 콘텐츠
+    const eraContent = {
+      early: {
+        title: '초당의 시인들',
+        subtitle: '初唐 (618~712) — 당나라 초기의 시인들',
+        html: `
+          <div class="placeholder-content-card"><h3>왕발 (王勃, 650~676)</h3><p>초당사걸의 한 사람. 「등왕각서」로 유명하다.</p></div>
+          <div class="placeholder-content-card"><h3>양형 (楊炯, 650~692)</h3><p>초당사걸의 한 사람. 변새시로 이름을 떨쳤다.</p></div>
+          <div class="placeholder-content-card"><h3>노조린 (盧照鄰, 636~695)</h3><p>초당사걸의 한 사람. 「장안고의」 등을 남겼다.</p></div>
+          <div class="placeholder-content-card"><h3>낙빈왕 (駱賓王, 619~687)</h3><p>초당사걸의 한 사람. 「영아」시로 유명하다.</p></div>`
+      },
+      high: {
+        title: '성당의 시인들',
+        subtitle: '盛唐 (713~765) — 당나라 시의 황금시대',
+        html: `
+          <div class="placeholder-content-card"><h3>이백 (李白, 701~762)</h3><p>시선(詩仙). 낭만적이고 호방한 시풍으로 유명하다.</p></div>
+          <div class="placeholder-content-card"><h3>두보 (杜甫, 712~770)</h3><p>시성(詩聖). 사실적이고 우국적인 시풍의 대가.</p></div>
+          <div class="placeholder-content-card"><h3>왕유 (王維, 701~761)</h3><p>시불(詩佛). 자연을 노래한 산수시의 대표 시인.</p></div>
+          <div class="placeholder-content-card"><h3>맹호연 (孟浩然, 689~740)</h3><p>왕유와 함께 산수전원시의 대표 시인.</p></div>`
+      },
+      mid: {
+        title: '중당의 시인들',
+        subtitle: '中唐 (766~835) — 새로운 시풍의 모색',
+        html: `
+          <div class="placeholder-content-card"><h3>백거이 (白居易, 772~846)</h3><p>「장한가」「비파행」 등 서사시의 대가.</p></div>
+          <div class="placeholder-content-card"><h3>한유 (韓愈, 768~824)</h3><p>고문운동의 선구자이자 뛰어난 시인.</p></div>
+          <div class="placeholder-content-card"><h3>유종원 (柳宗元, 773~819)</h3><p>산수시와 고문으로 유명한 당송팔대가의 한 사람.</p></div>
+          <div class="placeholder-content-card"><h3>원진 (元稹, 779~831)</h3><p>백거이와 함께 원백이라 불린 시인.</p></div>`
+      },
+      late: {
+        title: '만당의 시인들',
+        subtitle: '晩唐 (836~907) — 당나라 시의 마지막 빛',
+        html: `
+          <div class="placeholder-content-card"><h3>이상은 (李商隱, 813~858)</h3><p>은유와 전고가 풍부한 유미시의 대표 시인.</p></div>
+          <div class="placeholder-content-card"><h3>두목 (杜牧, 803~852)</h3><p>호방하면서도 섬세한 절구의 명수.</p></div>
+          <div class="placeholder-content-card"><h3>온정균 (溫庭筠, 812~870)</h3><p>사(詞)의 선구자. 화려한 시풍으로 유명하다.</p></div>
+          <div class="placeholder-content-card"><h3>위장 (韋莊, 836~910)</h3><p>만당오대의 시인이자 사인.</p></div>`
+      }
+    };
+
+    // 이벤트 위임: 트리 전체에 한 번만
+    tree.addEventListener('click', function (e) {
+      // 1) 시대 아이템 클릭
+      const treeItem = e.target.closest('.era-tree-item');
+      if (treeItem) {
+        if (treeItem.classList.contains('disabled')) return;
+
+        const wasExpanded = treeItem.classList.contains('expanded');
+
+        // 모든 시대 접기
+        tree.querySelectorAll('.era-tree-item').forEach(item => {
+          item.classList.remove('active', 'expanded');
+          const arrow = item.querySelector('.tree-arrow');
+          if (arrow) arrow.innerHTML = '&#9654;'; // ▶
+        });
+
+        // 클릭한 시대 펼치기/접기 토글
+        if (!wasExpanded) {
+          treeItem.classList.add('active', 'expanded');
+          const arrow = treeItem.querySelector('.tree-arrow');
+          if (arrow) arrow.innerHTML = '&#9660;'; // ▼
+
+          // 첫 번째 서브아이템 자동 선택
+          const nextSub = treeItem.nextElementSibling;
+          if (nextSub && nextSub.classList.contains('era-tree-sub')) {
+            const firstSub = nextSub.querySelector('.era-tree-sub-item');
+            if (firstSub) {
+              tree.querySelectorAll('.era-tree-sub-item').forEach(s => s.classList.remove('active'));
+              firstSub.classList.add('active');
+              updateContent(firstSub.dataset.sub);
+            }
+          }
+        }
+        return;
+      }
+
+      // 2) 서브아이템 클릭
+      const subItem = e.target.closest('.era-tree-sub-item');
+      if (subItem) {
+        tree.querySelectorAll('.era-tree-sub-item').forEach(s => s.classList.remove('active'));
+        subItem.classList.add('active');
+        updateContent(subItem.dataset.sub);
+      }
+    });
+
+    function updateContent(subKey) {
+      const data = eraContent[subKey];
+      if (!data) return;
+
+      const titleEl = document.getElementById('contentTitle');
+      const subtitleEl = document.getElementById('contentSubtitle');
+      const inner = document.getElementById('contentInner');
+
+      if (titleEl) titleEl.textContent = data.title;
+      if (subtitleEl) subtitleEl.textContent = data.subtitle;
+
+      // 카드 영역만 교체 (제목/부제 아래)
+      const existingCards = inner.querySelectorAll('.placeholder-content-card');
+      existingCards.forEach(c => c.remove());
+      // 안내 문구도 제거
+      const hint = inner.querySelector('p[style]');
+      if (hint) hint.remove();
+
+      // 새 카드 삽입
+      subtitleEl.insertAdjacentHTML('afterend', data.html);
+
+      // 콘텐츠 영역 스크롤 맨 위로
+      document.getElementById('contentArea').scrollTop = 0;
+    }
+
+  })();
+  </script>
+
+</body>
+</html>
