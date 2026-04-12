@@ -1,4 +1,4 @@
-name: Deploy Astro to jinserver
+name: Deploy Astro to jinas
 
 on:
   push:
@@ -26,23 +26,17 @@ jobs:
       - name: Copy admin to dist
         run: cp -r admin dist/admin
 
-      - name: Connect Tailscale
-        uses: tailscale/github-action@v2
-        with:
-          oauth-client-id: ""
-          oauth-secret: ""
-          authkey: ${{ secrets.TAILSCALE_AUTHKEY }}
-
       - name: Setup SSH
         run: |
           mkdir -p ~/.ssh
           echo "${{ secrets.DEPLOY_SSH_KEY }}" > ~/.ssh/deploy_key
           chmod 600 ~/.ssh/deploy_key
-          ssh-keyscan -t ed25519 ${{ secrets.DEPLOY_HOST }} >> ~/.ssh/known_hosts 2>/dev/null
+          ssh-keyscan -t ed25519 -p ${{ secrets.DEPLOY_PORT }} ${{ secrets.DEPLOY_HOST }} >> ~/.ssh/known_hosts 2>/dev/null
 
-      - name: Deploy via rsync
+      - name: Deploy via tar+ssh
         run: |
-          rsync -avz --delete --chmod=D755,F644 \
-            -e "ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=yes" \
-            dist/ \
-            ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:/var/www/hanshinaru.kr/
+          SSH_CMD="ssh -i ~/.ssh/deploy_key -p ${{ secrets.DEPLOY_PORT }} -o StrictHostKeyChecking=yes"
+          REMOTE="${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}"
+          DEPLOY_PATH="/var/www/hanshinaru.kr"
+          # Clean remote directory and extract new build
+          tar -czf - -C dist . | $SSH_CMD $REMOTE "rm -rf ${DEPLOY_PATH}/* && tar -xzf - -C ${DEPLOY_PATH} && chmod -R 755 ${DEPLOY_PATH}"
