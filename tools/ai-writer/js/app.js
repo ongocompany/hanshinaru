@@ -189,7 +189,21 @@ var App = (() => {
     updateStructureOptions(currentMode);
     updateSaveMeta(currentMode);
     bindEvents();
-    updateAuthUI();
+
+    // 쿠키에서 세션 자동 복원
+    if (typeof DB !== 'undefined' && typeof DB.restoreSession === 'function') {
+      DB.restoreSession().then(restored => {
+        updateAuthUI();
+        if (restored) {
+          console.log('[App] 세션 자동 복원 완료');
+          if (typeof SiteTree !== 'undefined' && typeof SiteTree.load === 'function') {
+            SiteTree.load();
+          }
+        }
+      }).catch(() => { updateAuthUI(); });
+    } else {
+      updateAuthUI();
+    }
 
     console.log('[App] 초기화 완료 — 모드:', currentMode);
   }

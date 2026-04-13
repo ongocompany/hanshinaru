@@ -72,15 +72,22 @@ var DB = (() => {
     }
     const data = await res.json();
     authToken = data.access_token;
+    // 쿠키에 세션 저장 (7일 유효)
+    _saveSession({
+      access_token: data.access_token,
+      refresh_token: data.refresh_token,
+      expires_at: Date.now() + (data.expires_in || 3600) * 1000,
+    });
     return true;
   }
 
   /**
    * logout()
-   * Clears the stored auth token.
+   * Clears the stored auth token and cookie.
    */
   function logout() {
     authToken = null;
+    document.cookie = 'aiwriter_session=; max-age=0; path=/';
   }
 
   /**
@@ -89,6 +96,71 @@ var DB = (() => {
    */
   function isLoggedIn() {
     return !!authToken;
+  }
+
+  /**
+   * restoreSession()
+   * 쿠키에서 세션 복원. 만료된 경우 refresh_token으로 갱신 시도.
+   * @returns {Promise<boolean>}
+   */
+  async function restoreSession() {
+    const session = _loadSession();
+    if (!session) return false;
+
+    // 토큰이 아직 유효하면 바로 사용
+    if (session.expires_at > Date.now() + 60000) {
+      authToken = session.access_token;
+      return true;
+    }
+
+    // 만료됐으면 refresh_token으로 갱신
+    if (session.refresh_token) {
+      try {
+        const config = getConfig();
+        const res = await fetch(
+          `${config.url}/auth/v1/token?grant_type=refresh_token`,
+          {
+            method: 'POST',
+            headers: {
+              'apikey':       config.key,
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ refresh_token: session.refresh_token }),
+          }
+        );
+        if (res.ok) {
+          const data = await res.json();
+          authToken = data.access_token;
+          _saveSession({
+            access_token: data.access_token,
+            refresh_token: data.refresh_token,
+            expires_at: Date.now() + (data.expires_in || 3600) * 1000,
+          });
+          return true;
+        }
+      } catch (e) {
+        // refresh 실패 — 쿠키 제거
+      }
+    }
+
+    // 복원 실패
+    document.cookie = 'aiwriter_session=; max-age=0; path=/';
+    return false;
+  }
+
+  function _saveSession(session) {
+    try {
+      const encoded = btoa(JSON.stringify(session));
+      document.cookie = `aiwriter_session=${encoded}; max-age=${7 * 86400}; path=/; SameSite=Strict`;
+    } catch (e) { /* ignore */ }
+  }
+
+  function _loadSession() {
+    try {
+      const match = document.cookie.match(/aiwriter_session=([^;]+)/);
+      if (!match) return null;
+      return JSON.parse(atob(match[1]));
+    } catch (e) { return null; }
   }
 
   // ─── Site Menu ────────────────────────────────────────────────────────────
@@ -243,7 +315,7 @@ var DB = (() => {
   // ─── Exports ──────────────────────────────────────────────────────────────
   return {
     save, load, list,
-    login, logout, isLoggedIn,
+    login, logout, isLoggedIn, restoreSession,
     fetchMenuTree, fetchArticlesBySection,
   };
 })();
