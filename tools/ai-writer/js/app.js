@@ -305,9 +305,9 @@ const App = (() => {
         mode: currentMode,
         contentType: getActiveContentType(),
         topic: topicInput?.value?.trim() || '',
-        style: styleSelect?.value === 'custom'
-          ? styleCustom?.value?.trim()
-          : styleSelect?.value,
+        stylePreset: styleSelect?.value || '',
+        styleCustom: styleSelect?.value === 'custom' ? styleCustom?.value?.trim() || '' : '',
+        structureCustom: document.getElementById('structure-custom')?.value || '',
         length: lengthChip?.dataset.length || 'medium',
         structure: structureSelect?.value || 'standard',
         extra: extraInstructions?.value?.trim() || '',

@@ -67,13 +67,13 @@ const PromptBuilder = (() => {
    * @param {string} [opts.extra]       - additional instructions
    * @returns {{ system: string, user: string }}
    */
-  function build({ mode, contentType, topic, stylePreset, styleCustom, length, structure, extra }) {
-    const system = _buildSystem({ mode, stylePreset, styleCustom, length, structure });
+  function build({ mode, contentType, topic, stylePreset, styleCustom, structureCustom, length, structure, extra }) {
+    const system = _buildSystem({ mode, stylePreset, styleCustom, structure, structureCustom, length });
     const user   = _buildUser({ mode, contentType, topic, extra });
     return { system, user };
   }
 
-  function _buildSystem({ mode, stylePreset, styleCustom, length, structure }) {
+  function _buildSystem({ mode, stylePreset, styleCustom, length, structure, structureCustom }) {
     const parts = [];
 
     // 1. Role definition
@@ -92,7 +92,7 @@ const PromptBuilder = (() => {
     }
 
     // 4. Structure
-    const structureLabel = _resolveStructure(mode, structure, styleCustom);
+    const structureLabel = _resolveStructure(mode, structure, structureCustom);
     if (structureLabel) {
       parts.push(`[글 구조]\n${structureLabel}`);
     }
@@ -121,9 +121,9 @@ const PromptBuilder = (() => {
     }
   }
 
-  function _resolveStructure(mode, structure, styleCustom) {
+  function _resolveStructure(mode, structure, structureCustom) {
     if (!structure) return null;
-    if (structure === 'custom') return styleCustom || null;
+    if (structure === 'custom') return structureCustom || null;
 
     const list = STRUCTURES[mode] || STRUCTURES.article;
     const found = list.find(s => s.id === structure);

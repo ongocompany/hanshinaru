@@ -23,6 +23,7 @@ const AIClient = (() => {
 
   function getBaseUrl(config) {
     if (config.baseUrl) return config.baseUrl;
+    if (typeof Settings === 'undefined') return '';
     const provider = Settings.DEFAULT_PROVIDERS.find(p => p.id === config.provider);
     return provider ? provider.baseUrl : '';
   }

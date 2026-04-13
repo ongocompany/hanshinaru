@@ -24,6 +24,9 @@ const DB = (() => {
   // ─── Private helpers ──────────────────────────────────────────────────────
 
   function getConfig() {
+    if (typeof Settings === 'undefined') {
+      throw new Error('Settings 모듈이 로드되지 않았습니다.');
+    }
     const config = Settings.getSupabaseConfig();
     if (!config.url || !config.key) {
       throw new Error('Supabase URL과 Key를 설정하세요.');
@@ -63,6 +66,7 @@ const DB = (() => {
         `${config.url}/rest/v1/${table}?${key}=eq.${encodeURIComponent(keyValue)}&select=${key}`,
         { headers: headers(config) }
       );
+      if (!checkRes.ok) throw new Error(`존재 확인 실패: ${checkRes.status}`);
       const checkData = await checkRes.json();
 
       if (Array.isArray(checkData) && checkData.length > 0) {

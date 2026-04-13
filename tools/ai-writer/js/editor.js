@@ -11,6 +11,15 @@
 const Editor = (() => {
   'use strict';
 
+  // ─── HTML escape helper ───────────────────────────────────────────────────
+  function _escHtml(str) {
+    return String(str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
   // ─── Module State ─────────────────────────────────────────────────────────
   let currentMode = 'poem';
   let sections = [];       // Array of { key, name, content, color }
@@ -356,7 +365,7 @@ const Editor = (() => {
       const block = container.children[i];
       if (block) {
         const contentEl = block.querySelector('.section-block__content');
-        if (contentEl) contentEl.innerHTML = p.content.replace(/\n/g, '<br>');
+        if (contentEl) contentEl.textContent = p.content;
       }
     });
   }
@@ -407,7 +416,7 @@ const Editor = (() => {
       case 'article': {
         const subtitle = document.getElementById('editor-subtitle')?.value || '';
         const body = sections.map(s =>
-          `<h2>${s.name}</h2>\n${s.content}`
+          `<h2>${_escHtml(s.name)}</h2>\n${s.content}`
         ).join('\n\n');
         return { title, subtitle, body };
       }
