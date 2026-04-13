@@ -73,6 +73,104 @@ var App = (() => {
   }
 
   // =====================================================
+  // AUTH UI
+  // =====================================================
+
+  function updateAuthUI() {
+    const isLoggedIn = typeof DB !== 'undefined' && typeof DB.isLoggedIn === 'function' && DB.isLoggedIn();
+    const badge = document.getElementById('auth-badge');
+    const loginBtn = document.getElementById('btn-login');
+
+    if (badge) {
+      if (isLoggedIn) {
+        badge.textContent = '관리자';
+        badge.className = 'auth-badge';
+      } else {
+        badge.textContent = '비로그인';
+        badge.className = 'auth-badge auth-badge--anon';
+      }
+    }
+
+    if (loginBtn) {
+      if (isLoggedIn) {
+        loginBtn.textContent = '로그아웃';
+        loginBtn.classList.add('btn-auth--logout');
+      } else {
+        loginBtn.textContent = '로그인';
+        loginBtn.classList.remove('btn-auth--logout');
+      }
+    }
+  }
+
+  function showLoginModal() {
+    const modal = document.getElementById('login-modal');
+    if (!modal) return;
+    modal.classList.add('visible');
+    // Reset fields
+    const emailEl = document.getElementById('login-email');
+    const pwEl = document.getElementById('login-password');
+    if (emailEl) emailEl.value = '';
+    if (pwEl) pwEl.value = '';
+    if (emailEl) emailEl.focus();
+  }
+
+  function hideLoginModal() {
+    const modal = document.getElementById('login-modal');
+    if (modal) modal.classList.remove('visible');
+  }
+
+  async function handleLoginSubmit() {
+    const emailEl = document.getElementById('login-email');
+    const pwEl = document.getElementById('login-password');
+    const email = emailEl ? emailEl.value.trim() : '';
+    const password = pwEl ? pwEl.value : '';
+
+    if (!email || !password) {
+      toast('이메일과 비밀번호를 입력하세요.', 'error');
+      return;
+    }
+
+    const submitBtn = document.getElementById('login-modal-submit');
+    if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = '로그인 중...'; }
+
+    try {
+      if (typeof DB === 'undefined' || typeof DB.login !== 'function') {
+        throw new Error('DB 모듈이 로드되지 않았습니다.');
+      }
+      await DB.login(email, password);
+      hideLoginModal();
+      updateAuthUI();
+      toast('로그인 완료!', 'success');
+
+      // Load site tree after login
+      if (typeof SiteTree !== 'undefined' && typeof SiteTree.load === 'function') {
+        SiteTree.load();
+      }
+    } catch (err) {
+      toast(`로그인 실패: ${err.message || err}`, 'error');
+    } finally {
+      if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = '로그인'; }
+    }
+  }
+
+  function handleLogout() {
+    if (typeof DB !== 'undefined' && typeof DB.logout === 'function') {
+      DB.logout();
+    }
+    updateAuthUI();
+    // Reset tree
+    const siteTree = document.getElementById('site-tree');
+    if (siteTree) {
+      siteTree.innerHTML = '<div class="tree-hint">로그인 후 메뉴를 불러옵니다</div>';
+    }
+    const articlesPanel = document.getElementById('tree-articles-panel');
+    if (articlesPanel) articlesPanel.style.display = 'none';
+    const selectedInfo = document.getElementById('tree-selected-info');
+    if (selectedInfo) selectedInfo.classList.remove('visible');
+    toast('로그아웃되었습니다.', 'success');
+  }
+
+  // =====================================================
   // INIT
   // =====================================================
 
@@ -90,6 +188,7 @@ var App = (() => {
     updateStructureOptions(currentMode);
     updateSaveMeta(currentMode);
     bindEvents();
+    updateAuthUI();
 
     console.log('[App] 초기화 완료 — 모드:', currentMode);
   }
@@ -198,6 +297,26 @@ var App = (() => {
           rows="3"
           placeholder="AI에게 전달할 추가 지시사항 (선택)"
         ></textarea>
+      </div>
+
+      <!-- 저장 위치 (사이트 트리) -->
+      <div class="input-panel__section" id="save-location-section">
+        <div class="tree-container">
+          <div class="tree-header">
+            <span class="tree-header__label">저장 위치</span>
+            <button class="tree-refresh-btn" id="btn-tree-refresh" title="새로고침">↺</button>
+          </div>
+          <div id="site-tree">
+            <div class="tree-hint">로그인 후 메뉴를 불러옵니다</div>
+          </div>
+          <div class="tree-selected-info" id="tree-selected-info">
+            <span id="tree-selected-location">—</span>
+          </div>
+          <div id="tree-articles-panel" style="display:none">
+            <div class="tree-articles-header">기존 아티클</div>
+            <div id="tree-articles-list"></div>
+          </div>
+        </div>
       </div>
 
       <!-- 생성 버튼 -->
@@ -361,11 +480,29 @@ var App = (() => {
       const data = safeCall('Editor', 'getData', currentMode) || {};
 
       if (currentMode === 'article') {
-        const sectionSelect = document.getElementById('article-section-select');
+        // Try to get location from site tree first, fall back to save bar meta
+        const treePath = typeof SiteTree !== 'undefined' && typeof SiteTree.getSelectedPath === 'function'
+          ? SiteTree.getSelectedPath()
+          : null;
+
+        if (treePath && treePath.section) {
+          data.section = treePath.section;
+        } else {
+          const sectionSelect = document.getElementById('article-section-select');
+          data.section = sectionSelect?.value || '';
+        }
+
         const slugInput = document.getElementById('article-slug-input');
-        data.section = sectionSelect?.value || '';
-        data.slug = slugInput?.value?.trim() || '';
+        if (slugInput?.value?.trim()) {
+          data.slug = slugInput.value.trim();
+        }
+
         data.status = status;
+
+        if (!data.section) {
+          toast('저장 위치(섹션)를 선택하세요.', 'error');
+          return;
+        }
       } else {
         data.status = status;
       }
@@ -380,6 +517,37 @@ var App = (() => {
     } catch (err) {
       console.error('[App] 저장 실패:', err);
       toast(`저장 실패: ${err.message || err}`, 'error');
+    }
+  }
+
+  // =====================================================
+  // LOAD ARTICLE BY SLUG (called from SiteTree)
+  // =====================================================
+
+  async function loadArticleBySlug(slug) {
+    try {
+      // Switch to article mode first
+      if (currentMode !== 'article') switchMode('article');
+
+      const data = window.DB && typeof DB.load === 'function'
+        ? await DB.load('article', slug)
+        : null;
+
+      if (!data) {
+        toast('아티클을 찾을 수 없습니다.', 'error');
+        return;
+      }
+
+      safeCall('Editor', 'loadData', 'article', data);
+
+      // Set slug in save bar
+      const slugInput = document.getElementById('article-slug-input');
+      if (slugInput) slugInput.value = data.slug || '';
+
+      toast(`'${data.title || slug}' 불러오기 완료!`, 'success');
+    } catch (err) {
+      console.error('[App] 아티클 불러오기 실패:', err);
+      toast(`불러오기 실패: ${err.message || err}`, 'error');
     }
   }
 
@@ -540,6 +708,57 @@ var App = (() => {
     const btnPublish = document.getElementById('btn-save-publish');
     if (btnPublish) btnPublish.addEventListener('click', () => handleSave('published'));
 
+    // Login / Logout
+    const btnLogin = document.getElementById('btn-login');
+    if (btnLogin) {
+      btnLogin.addEventListener('click', () => {
+        const isLoggedIn = typeof DB !== 'undefined' && typeof DB.isLoggedIn === 'function' && DB.isLoggedIn();
+        if (isLoggedIn) {
+          handleLogout();
+        } else {
+          showLoginModal();
+        }
+      });
+    }
+
+    // Login modal
+    const loginSubmit = document.getElementById('login-modal-submit');
+    if (loginSubmit) loginSubmit.addEventListener('click', handleLoginSubmit);
+
+    const loginCancel = document.getElementById('login-modal-cancel');
+    if (loginCancel) loginCancel.addEventListener('click', hideLoginModal);
+
+    const loginModal = document.getElementById('login-modal');
+    if (loginModal) {
+      loginModal.addEventListener('click', e => {
+        if (e.target === loginModal) hideLoginModal();
+      });
+    }
+
+    // Login modal — submit on Enter in password field
+    const loginPwEl = document.getElementById('login-password');
+    if (loginPwEl) {
+      loginPwEl.addEventListener('keydown', e => {
+        if (e.key === 'Enter') handleLoginSubmit();
+      });
+    }
+
+    // Tree refresh
+    const btnTreeRefresh = document.getElementById('btn-tree-refresh');
+    if (btnTreeRefresh) {
+      btnTreeRefresh.addEventListener('click', () => {
+        const isLoggedIn = typeof DB !== 'undefined' && typeof DB.isLoggedIn === 'function' && DB.isLoggedIn();
+        if (!isLoggedIn) {
+          toast('로그인 후 메뉴를 불러올 수 있습니다.', 'warn');
+          return;
+        }
+        if (typeof SiteTree !== 'undefined' && typeof SiteTree.load === 'function') {
+          SiteTree.load();
+          toast('메뉴 새로고침 중...', 'success');
+        }
+      });
+    }
+
     // Settings
     const btnSettings = document.getElementById('btn-settings');
     if (btnSettings) {
@@ -597,6 +816,7 @@ var App = (() => {
           sm.classList.remove('visible');
           sm.innerHTML = '';
         }
+        hideLoginModal();
         document.getElementById('ai-bubble')?.classList.remove('visible');
         document.getElementById('floating-toolbar')?.classList.remove('visible');
         document.getElementById('slash-palette')?.classList.remove('visible');
@@ -612,6 +832,8 @@ var App = (() => {
     init,
     toast,
     switchMode,
+    loadArticleBySlug,
+    updateAuthUI,
     get currentMode() { return currentMode; },
   };
 })();

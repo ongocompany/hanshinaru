@@ -1009,6 +1009,290 @@
     .mt-8  { margin-top: 8px; }
     .mt-12 { margin-top: 12px; }
     .mt-16 { margin-top: 16px; }
+
+    /* =====================================================
+       AUTH — login button + status in top bar
+    ===================================================== */
+    .auth-status {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .auth-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 3px 8px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 600;
+      background: rgba(0, 184, 148, 0.15);
+      border: 1px solid var(--c-success);
+      color: var(--c-success);
+    }
+
+    .auth-badge--anon {
+      background: rgba(85, 85, 85, 0.15);
+      border-color: var(--c-text-faint);
+      color: var(--c-text-faint);
+    }
+
+    .btn-auth {
+      height: 32px;
+      padding: 0 12px;
+      border-radius: 6px;
+      border: 1px solid var(--c-border);
+      background: var(--c-surface);
+      color: var(--c-text-dim);
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .btn-auth:hover {
+      border-color: var(--c-primary);
+      color: var(--c-primary-light);
+    }
+
+    .btn-auth--logout:hover {
+      border-color: var(--c-danger);
+      color: var(--c-danger);
+    }
+
+    /* =====================================================
+       LOGIN MODAL
+    ===================================================== */
+    .login-modal {
+      width: 360px;
+    }
+
+    .login-modal__desc {
+      font-size: 12px;
+      color: var(--c-text-faint);
+      margin-bottom: 16px;
+    }
+
+    /* =====================================================
+       SITE TREE
+    ===================================================== */
+    .tree-container {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .tree-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+
+    .tree-header__label {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--c-text-faint);
+    }
+
+    .tree-refresh-btn {
+      background: transparent;
+      border: none;
+      color: var(--c-text-faint);
+      font-size: 12px;
+      cursor: pointer;
+      padding: 2px 4px;
+      border-radius: 4px;
+      transition: all 0.15s ease;
+    }
+
+    .tree-refresh-btn:hover {
+      color: var(--c-primary-light);
+      background: rgba(108, 92, 231, 0.1);
+    }
+
+    #site-tree {
+      background: var(--c-bg);
+      border: 1px solid var(--c-border);
+      border-radius: 6px;
+      overflow: hidden;
+      max-height: 200px;
+      overflow-y: auto;
+    }
+
+    #site-tree::-webkit-scrollbar {
+      width: 3px;
+    }
+
+    #site-tree::-webkit-scrollbar-thumb {
+      background: var(--c-border);
+      border-radius: 2px;
+    }
+
+    .tree-node {
+      display: block;
+    }
+
+    .tree-node__row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 10px;
+      cursor: pointer;
+      transition: background 0.1s ease;
+      font-size: 12px;
+      color: var(--c-text-dim);
+      border-radius: 0;
+    }
+
+    .tree-node__row:hover {
+      background: rgba(108, 92, 231, 0.1);
+      color: var(--c-text);
+    }
+
+    .tree-node__row.selected {
+      background: rgba(108, 92, 231, 0.2);
+      color: var(--c-primary-light);
+    }
+
+    .tree-toggle {
+      font-size: 10px;
+      width: 10px;
+      flex-shrink: 0;
+      color: var(--c-text-faint);
+      transition: transform 0.15s ease;
+    }
+
+    .tree-label {
+      flex: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .tree-children {
+      /* shown/hidden by JS */
+    }
+
+    .tree-empty,
+    .tree-error,
+    .tree-articles-msg {
+      padding: 10px 12px;
+      font-size: 12px;
+      color: var(--c-text-faint);
+    }
+
+    .tree-error {
+      color: var(--c-danger);
+    }
+
+    /* Selected location display */
+    .tree-selected-info {
+      margin-top: 6px;
+      padding: 5px 8px;
+      background: rgba(108, 92, 231, 0.1);
+      border: 1px solid rgba(108, 92, 231, 0.3);
+      border-radius: 5px;
+      font-size: 11px;
+      color: var(--c-primary-light);
+      display: none;
+    }
+
+    .tree-selected-info.visible {
+      display: block;
+    }
+
+    /* Articles sub-panel */
+    #tree-articles-panel {
+      margin-top: 8px;
+      border: 1px solid var(--c-border);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    .tree-articles-header {
+      padding: 5px 10px;
+      background: var(--c-surface);
+      border-bottom: 1px solid var(--c-border);
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--c-text-faint);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    #tree-articles-list {
+      max-height: 150px;
+      overflow-y: auto;
+      background: var(--c-bg);
+    }
+
+    #tree-articles-list::-webkit-scrollbar {
+      width: 3px;
+    }
+
+    #tree-articles-list::-webkit-scrollbar-thumb {
+      background: var(--c-border);
+      border-radius: 2px;
+    }
+
+    .tree-article-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 10px;
+      cursor: pointer;
+      border-bottom: 1px solid rgba(45, 45, 78, 0.5);
+      transition: background 0.1s ease;
+    }
+
+    .tree-article-item:last-child {
+      border-bottom: none;
+    }
+
+    .tree-article-item:hover {
+      background: rgba(108, 92, 231, 0.1);
+    }
+
+    .tree-article-status {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .tree-article-status--published {
+      background: var(--c-success);
+    }
+
+    .tree-article-status--draft {
+      background: var(--c-text-faint);
+    }
+
+    .tree-article-title {
+      flex: 1;
+      font-size: 12px;
+      color: var(--c-text-dim);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .tree-article-date {
+      font-size: 10px;
+      color: var(--c-text-faint);
+      flex-shrink: 0;
+    }
+
+    /* Tree not loaded hint */
+    .tree-hint {
+      padding: 10px 12px;
+      font-size: 11px;
+      color: var(--c-text-faint);
+      text-align: center;
+    }
   </style>
 </head>
 <body>
@@ -1019,6 +1303,10 @@
   <header class="top-bar">
     <div class="top-bar__title">한시나루 AI 저작툴</div>
     <div class="top-bar__actions">
+      <div class="auth-status" id="auth-status">
+        <span class="auth-badge auth-badge--anon" id="auth-badge">비로그인</span>
+        <button class="btn-auth" id="btn-login">로그인</button>
+      </div>
       <button id="btn-load">불러오기</button>
       <button id="btn-reset">초기화</button>
       <button id="btn-settings">⚙</button>
@@ -1099,6 +1387,31 @@
   </div>
 
   <!-- ===================================================
+       LOGIN MODAL
+  =================================================== -->
+  <div class="modal-overlay" id="login-modal">
+    <div class="modal login-modal" role="dialog" aria-modal="true" aria-labelledby="login-modal-title">
+      <h2 class="modal__title" id="login-modal-title">관리자 로그인</h2>
+      <p class="login-modal__desc">Supabase 계정으로 로그인하면 아티클을 저장할 수 있습니다.</p>
+
+      <div class="field modal__field">
+        <label for="login-email">이메일</label>
+        <input id="login-email" type="email" class="field" placeholder="admin@example.com" autocomplete="email" />
+      </div>
+
+      <div class="field modal__field">
+        <label for="login-password">비밀번호</label>
+        <input id="login-password" type="password" class="field" placeholder="••••••••" autocomplete="current-password" />
+      </div>
+
+      <div class="modal__actions">
+        <button class="modal__btn-cancel" id="login-modal-cancel" type="button">취소</button>
+        <button class="modal__btn-ok" id="login-modal-submit" type="button">로그인</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================
        SETTINGS MODAL
        내부 HTML은 Settings.showModal()이 완전히 교체합니다.
   =================================================== -->
@@ -1128,6 +1441,7 @@
   <script src="js/api.js"></script>
   <script src="js/prompt.js"></script>
   <script src="js/db.js"></script>
+  <script src="js/tree.js"></script>
   <script src="js/editor.js"></script>
   <script src="js/toolbar.js"></script>
   <script src="js/app.js"></script>
