@@ -215,11 +215,21 @@ var Editor = (() => {
   }
 
   // ─── smartAIAction ────────────────────────────────────────────────────────
+  // AI popup state
+  var _aiPopup = {
+    sectionIndex: -1,
+    hasSelection: false,
+    savedRange: null,
+    selectedText: '',
+    result: '',
+    timer: null,
+    startTime: 0,
+  };
+
   /**
-   * Smart AI action: rewrite selected text or insert at cursor.
-   * @param {number} index
+   * Open the AI popup for a section. Detects selection vs cursor.
    */
-  async function smartAIAction(index) {
+  function smartAIAction(index) {
     var section = sections[index];
     var contentEls = document.querySelectorAll('.section-block__content');
     var contentEl = contentEls[index];
@@ -227,14 +237,57 @@ var Editor = (() => {
 
     var sel = window.getSelection();
     var hasSelection = sel && !sel.isCollapsed && contentEl.contains(sel.anchorNode);
-    var savedRange = hasSelection ? sel.getRangeAt(0) : null;
 
-    var instruction;
+    _aiPopup.sectionIndex = index;
+    _aiPopup.hasSelection = hasSelection;
+    _aiPopup.savedRange = hasSelection ? sel.getRangeAt(0).cloneRange() : null;
+    _aiPopup.selectedText = hasSelection ? sel.toString() : '';
+    _aiPopup.result = '';
+
+    syncContentFromDOM();
+
+    // Update popup UI
+    var overlay = document.getElementById('ai-popup-overlay');
+    var titleEl = document.getElementById('ai-popup-title');
+    var contextEl = document.getElementById('ai-popup-context');
+    var inputEl = document.getElementById('ai-popup-input');
+    var resultEl = document.getElementById('ai-popup-result');
+    var placeholderEl = document.getElementById('ai-popup-placeholder');
+    var progressEl = document.getElementById('ai-popup-progress');
+    var retryBtn = document.getElementById('ai-popup-retry');
+    var insertBtn = document.getElementById('ai-popup-insert');
+
+    if (!overlay) return;
+
+    // Set title and context
     if (hasSelection) {
-      instruction = window.prompt('선택한 텍스트를 어떻게 수정할까요?');
+      titleEl.textContent = '선택 텍스트 재작성';
+      contextEl.textContent = '섹션: ' + (section ? section.name : '') + ' · 선택: ' + _aiPopup.selectedText.substring(0, 50) + (_aiPopup.selectedText.length > 50 ? '...' : '');
     } else {
-      instruction = window.prompt('이 위치에 무엇을 추가할까요?');
+      titleEl.textContent = '새 내용 삽입';
+      contextEl.textContent = '섹션: ' + (section ? section.name : '');
     }
+
+    // Reset UI
+    inputEl.value = '';
+    inputEl.placeholder = hasSelection ? '어떻게 수정할까요?' : '어떤 내용을 추가할까요?';
+    resultEl.textContent = '';
+    resultEl.style.display = 'none';
+    placeholderEl.style.display = '';
+    progressEl.classList.remove('visible');
+    retryBtn.style.display = 'none';
+    insertBtn.disabled = true;
+
+    overlay.classList.add('visible');
+    inputEl.focus();
+  }
+
+  /**
+   * Send AI request from the popup.
+   */
+  async function _aiPopupSend() {
+    var inputEl = document.getElementById('ai-popup-input');
+    var instruction = inputEl ? inputEl.value.trim() : '';
     if (!instruction) return;
 
     var apiConfig = typeof Settings !== 'undefined' ? Settings.getApiConfig() : null;
@@ -243,40 +296,137 @@ var Editor = (() => {
       return;
     }
 
-    syncContentFromDOM();
+    var section = sections[_aiPopup.sectionIndex];
+    var styleRules = (typeof PromptBuilder !== 'undefined' && PromptBuilder.BASE_STYLE_RULES)
+      ? PromptBuilder.BASE_STYLE_RULES : '';
+
+    // Show progress
+    var sendBtn = document.getElementById('ai-popup-send');
+    var progressEl = document.getElementById('ai-popup-progress');
+    var elapsedEl = document.getElementById('ai-popup-elapsed');
+    var resultEl = document.getElementById('ai-popup-result');
+    var placeholderEl = document.getElementById('ai-popup-placeholder');
+    var retryBtn = document.getElementById('ai-popup-retry');
+    var insertBtn = document.getElementById('ai-popup-insert');
+
+    sendBtn.disabled = true;
+    sendBtn.textContent = '요청 중...';
+    progressEl.classList.add('visible');
+    placeholderEl.style.display = 'none';
+    resultEl.style.display = 'none';
+    resultEl.textContent = '';
+    retryBtn.style.display = 'none';
+    insertBtn.disabled = true;
+
+    // Elapsed timer
+    _aiPopup.startTime = Date.now();
+    if (_aiPopup.timer) clearInterval(_aiPopup.timer);
+    _aiPopup.timer = setInterval(function() {
+      var elapsed = Math.floor((Date.now() - _aiPopup.startTime) / 1000);
+      if (elapsedEl) elapsedEl.textContent = elapsed + '초';
+    }, 1000);
 
     try {
-      var styleRules = (typeof PromptBuilder !== 'undefined' && PromptBuilder.BASE_STYLE_RULES)
-        ? PromptBuilder.BASE_STYLE_RULES : '';
-
-      var result;
-      if (hasSelection) {
-        var selectedText = sel.toString();
-        result = await AIClient.chat(apiConfig, {
+      var prompt;
+      if (_aiPopup.hasSelection) {
+        prompt = {
           system: '너는 한시 콘텐츠 작가다. 선택된 텍스트를 지시에 따라 다시 작성해라. 다시 작성한 내용만 출력해라.\n\n' + styleRules,
-          user: '선택된 텍스트:\n' + selectedText + '\n\n지시: ' + instruction,
-        });
-        // Restore selection and replace
-        if (savedRange) {
-          var restoreSel = window.getSelection();
-          restoreSel.removeAllRanges();
-          restoreSel.addRange(savedRange);
-        }
-        document.execCommand('insertHTML', false, result.replace(/\n/g, '<br>'));
+          user: '선택된 텍스트:\n' + _aiPopup.selectedText + '\n\n지시: ' + instruction,
+        };
       } else {
-        result = await AIClient.chat(apiConfig, {
+        prompt = {
           system: '너는 한시 콘텐츠 작가다. 지시에 따라 작성해라. 작성한 내용만 출력해라.\n\n' + styleRules,
           user: '현재 섹션 "' + (section ? section.name : '') + '"의 내용:\n' + (section ? section.content : '') + '\n\n지시: ' + instruction + '\n\n위 지시에 맞는 내용만 출력해라.',
-        });
-        document.execCommand('insertHTML', false, result.replace(/\n/g, '<br>'));
+        };
       }
 
-      syncContentFromDOM();
-      if (typeof App !== 'undefined') App.toast('완료!', 'success');
+      var result = await AIClient.chat(apiConfig, prompt);
+      _aiPopup.result = result;
+
+      // Show result
+      resultEl.textContent = result;
+      resultEl.style.display = '';
+      retryBtn.style.display = '';
+      insertBtn.disabled = false;
+
     } catch (err) {
-      if (typeof App !== 'undefined') App.toast('AI 요청 실패: ' + err.message, 'error');
+      resultEl.textContent = '오류: ' + (err.message || err);
+      resultEl.style.display = '';
+      resultEl.style.color = 'var(--c-danger)';
+      retryBtn.style.display = '';
+    } finally {
+      clearInterval(_aiPopup.timer);
+      _aiPopup.timer = null;
+      progressEl.classList.remove('visible');
+      sendBtn.disabled = false;
+      sendBtn.textContent = 'AI에게 요청';
     }
   }
+
+  /**
+   * Insert the AI result into the editor section.
+   */
+  function _aiPopupInsert() {
+    if (!_aiPopup.result) return;
+
+    var contentEls = document.querySelectorAll('.section-block__content');
+    var contentEl = contentEls[_aiPopup.sectionIndex];
+    if (!contentEl) return;
+
+    if (_aiPopup.hasSelection && _aiPopup.savedRange) {
+      // Restore selection and replace
+      contentEl.focus();
+      var sel = window.getSelection();
+      sel.removeAllRanges();
+      sel.addRange(_aiPopup.savedRange);
+      document.execCommand('insertHTML', false, _aiPopup.result.replace(/\n/g, '<br>'));
+    } else {
+      // Append to section content
+      contentEl.focus();
+      document.execCommand('insertHTML', false, _aiPopup.result.replace(/\n/g, '<br>'));
+    }
+
+    syncContentFromDOM();
+    _aiPopupClose();
+    if (typeof App !== 'undefined') App.toast('본문에 삽입 완료!', 'success');
+  }
+
+  /**
+   * Close the AI popup.
+   */
+  function _aiPopupClose() {
+    var overlay = document.getElementById('ai-popup-overlay');
+    if (overlay) overlay.classList.remove('visible');
+    if (_aiPopup.timer) { clearInterval(_aiPopup.timer); _aiPopup.timer = null; }
+    var resultEl = document.getElementById('ai-popup-result');
+    if (resultEl) resultEl.style.color = '';
+  }
+
+  // Bind AI popup events (runs once at module load)
+  document.addEventListener('DOMContentLoaded', function() {
+    var sendBtn = document.getElementById('ai-popup-send');
+    var cancelBtn = document.getElementById('ai-popup-cancel');
+    var retryBtn = document.getElementById('ai-popup-retry');
+    var insertBtn = document.getElementById('ai-popup-insert');
+    var overlay = document.getElementById('ai-popup-overlay');
+
+    if (sendBtn) sendBtn.addEventListener('click', _aiPopupSend);
+    if (cancelBtn) cancelBtn.addEventListener('click', _aiPopupClose);
+    if (retryBtn) retryBtn.addEventListener('click', _aiPopupSend);
+    if (insertBtn) insertBtn.addEventListener('click', _aiPopupInsert);
+
+    // Close on overlay click (outside popup)
+    if (overlay) overlay.addEventListener('click', function(e) {
+      if (e.target === overlay) _aiPopupClose();
+    });
+
+    // Escape closes popup
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && overlay && overlay.classList.contains('visible')) {
+        _aiPopupClose();
+      }
+    });
+  });
 
   // ─── init ─────────────────────────────────────────────────────────────────
   /**

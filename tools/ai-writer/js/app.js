@@ -523,6 +523,11 @@ var App = (() => {
       btn.textContent = '생성 중...';
     }
     if (indicator) indicator.classList.add('visible');
+    const genElapsed = document.getElementById('generate-elapsed');
+    const genStart = Date.now();
+    const genTimer = setInterval(() => {
+      if (genElapsed) genElapsed.textContent = Math.floor((Date.now() - genStart) / 1000) + '초';
+    }, 1000);
 
     try {
       // 파라미터 수집
@@ -579,6 +584,7 @@ var App = (() => {
       toast(`생성 실패: ${err.message || err}`, 'error');
       safeCall('Editor', 'finalizeStreaming');
     } finally {
+      clearInterval(genTimer);
       if (btn) {
         btn.disabled = false;
         btn.innerHTML = '✨ AI 생성';
