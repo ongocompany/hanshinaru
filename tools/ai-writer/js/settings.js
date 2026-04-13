@@ -266,8 +266,7 @@ const Settings = (() => {
       </div>
     `;
 
-    overlay.classList.add('modal-overlay--open');
-    overlay.style.display = 'flex';
+    overlay.classList.add('visible');
 
     // ── Provider change handler ──────────────────────────────────────────
     const providerSel = overlay.querySelector('#sm-provider');
@@ -345,8 +344,7 @@ const Settings = (() => {
   }
 
   function _closeModal(overlay) {
-    overlay.style.display = 'none';
-    overlay.classList.remove('modal-overlay--open');
+    overlay.classList.remove('visible');
     overlay.innerHTML = '';
   }
 

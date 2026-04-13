@@ -594,8 +594,7 @@ const App = (() => {
         // settings-modal is owned by Settings.showModal() — close via display:none
         const sm = document.getElementById('settings-modal');
         if (sm) {
-          sm.style.display = 'none';
-          sm.classList.remove('modal-overlay--open');
+          sm.classList.remove('visible');
           sm.innerHTML = '';
         }
         document.getElementById('ai-bubble')?.classList.remove('visible');
