@@ -26,6 +26,17 @@ jobs:
       - name: Copy admin to dist
         run: cp -r admin dist/admin
 
+      - name: Copy tools to dist (exclude tts-studio)
+        run: |
+          mkdir -p dist/tools
+          find tools -maxdepth 1 -name "*.html" -exec cp {} dist/tools/ \;
+          for dir in tools/*/; do
+            dirname=$(basename "$dir")
+            if [ "$dirname" != "tts-studio" ]; then
+              cp -r "$dir" "dist/tools/$dirname"
+            fi
+          done
+
       - name: Setup SSH
         run: |
           mkdir -p ~/.ssh
