@@ -8,7 +8,7 @@
  *   - history : fixed sections → history_cards table fields
  *   - article : free sections (add/delete/reorder), saved as HTML body
  */
-const Editor = (() => {
+var Editor = (() => {
   'use strict';
 
   // ─── HTML escape helper ───────────────────────────────────────────────────

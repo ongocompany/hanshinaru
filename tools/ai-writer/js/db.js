@@ -3,7 +3,7 @@
  * Supabase REST API CRUD for 4 tables.
  * Depends on: settings.js (Settings global)
  */
-const DB = (() => {
+var DB = (() => {
   'use strict';
 
   // ─── Table / key mappings ─────────────────────────────────────────────────

@@ -5,7 +5,7 @@
  * 의존: Settings, AIClient, PromptBuilder, DB, Editor, Toolbar (script 태그로 선 로드)
  */
 
-const App = (() => {
+var App = (() => {
   // =====================================================
   // CONSTANTS
   // =====================================================

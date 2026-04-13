@@ -3,7 +3,7 @@
  * Loaded after settings.js; exposes global `AIClient` object.
  * Supports OpenAI-compatible chat completions API (OpenRouter, DashScope, OpenAI, Google AI, Custom).
  */
-const AIClient = (() => {
+var AIClient = (() => {
   'use strict';
 
   // ─── Private helpers ──────────────────────────────────────────────────────

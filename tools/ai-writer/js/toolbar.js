@@ -9,7 +9,7 @@
  * Dependencies (guarded): Settings, AIClient, PromptBuilder, Editor, App
  */
 
-const Toolbar = (() => {
+var Toolbar = (() => {
   'use strict';
 
   // =====================================================

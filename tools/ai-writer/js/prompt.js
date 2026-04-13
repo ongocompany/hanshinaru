@@ -2,7 +2,7 @@
  * prompt.js — AI Writer Prompt Builder Module
  * Loaded after settings.js; exposes global `PromptBuilder` object.
  */
-const PromptBuilder = (() => {
+var PromptBuilder = (() => {
   'use strict';
 
   // ─── Style rules ──────────────────────────────────────────────────────────

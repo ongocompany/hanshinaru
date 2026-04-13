@@ -2,7 +2,7 @@
  * settings.js — AI Writer Settings Module
  * Loaded first; exposes global `Settings` object.
  */
-const Settings = (() => {
+var Settings = (() => {
   'use strict';
 
   // ─── Storage keys ────────────────────────────────────────────────────────
