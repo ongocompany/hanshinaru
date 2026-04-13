@@ -67,13 +67,13 @@ var PromptBuilder = (() => {
    * @param {string} [opts.extra]       - additional instructions
    * @returns {{ system: string, user: string }}
    */
-  function build({ mode, contentType, topic, stylePreset, styleCustom, structureCustom, length, structure, extra }) {
-    const system = _buildSystem({ mode, stylePreset, styleCustom, structure, structureCustom, length });
+  function build({ mode, contentType, topic, stylePreset, styleCustom, structureCustom, length, structure, extra, hanja }) {
+    const system = _buildSystem({ mode, stylePreset, styleCustom, structure, structureCustom, length, hanja });
     const user   = _buildUser({ mode, contentType, topic, extra });
     return { system, user };
   }
 
-  function _buildSystem({ mode, stylePreset, styleCustom, length, structure, structureCustom }) {
+  function _buildSystem({ mode, stylePreset, styleCustom, length, structure, structureCustom, hanja }) {
     const parts = [];
 
     // 1. Role definition
@@ -97,7 +97,14 @@ var PromptBuilder = (() => {
       parts.push(`[글 구조]\n${structureLabel}`);
     }
 
-    // 5. Length
+    // 5. Hanja mode
+    if (hanja === 'hanja-mixed') {
+      parts.push('[한자 병용 규칙]\n- 핵심 한자 용어는 한글 옆에 괄호로 한자를 병기한다. 예: 시선(詩仙), 성당(盛唐)\n- 시 제목, 인명, 지명은 반드시 한자를 병기한다.\n- 본문의 일반적인 서술은 한글로 쓰되, 전문 용어나 고유명사에 한자를 붙인다.');
+    } else {
+      parts.push('[한글 전용 규칙]\n- 한자를 사용하지 않는다. 모든 내용을 한글로만 작성한다.\n- 원문 인용 시에만 한자를 사용할 수 있다.');
+    }
+
+    // 6. Length
     const lengthLabel = LENGTH_MAP[length] || LENGTH_MAP.medium;
     parts.push(`[분량]\n${lengthLabel}`);
 

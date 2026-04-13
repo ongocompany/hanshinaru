@@ -1293,6 +1293,94 @@
       color: var(--c-text-faint);
       text-align: center;
     }
+
+    /* =====================================================
+       RICH TOOLBAR
+    ===================================================== */
+    .rich-toolbar {
+      display: flex;
+      align-items: center;
+      gap: 2px;
+      padding: 6px 12px;
+      background: var(--c-surface);
+      border-bottom: 1px solid var(--c-border);
+      flex-wrap: wrap;
+      flex-shrink: 0;
+    }
+
+    .rich-toolbar button {
+      background: transparent;
+      border: none;
+      color: var(--c-text-dim);
+      cursor: pointer;
+      padding: 4px 8px;
+      font-size: 13px;
+      border-radius: 4px;
+      font-family: inherit;
+    }
+
+    .rich-toolbar button:hover {
+      background: var(--c-border);
+      color: white;
+    }
+
+    .rich-sep {
+      width: 1px;
+      height: 20px;
+      background: var(--c-border);
+      margin: 0 4px;
+    }
+
+    /* =====================================================
+       FORMAT POPUP
+    ===================================================== */
+    .format-popup {
+      position: absolute;
+      background: var(--c-surface);
+      border: 1px solid var(--c-border);
+      border-radius: 6px;
+      padding: 4px 8px;
+      display: none;
+      gap: 4px;
+      z-index: 90;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+
+    .format-popup.visible {
+      display: flex;
+      align-items: center;
+    }
+
+    .format-popup button {
+      background: transparent;
+      border: none;
+      color: var(--c-text-dim);
+      cursor: pointer;
+      padding: 4px 8px;
+      font-size: 13px;
+      border-radius: 3px;
+    }
+
+    .format-popup button:hover {
+      background: var(--c-border);
+      color: white;
+    }
+
+    .format-popup select {
+      background: var(--c-bg);
+      border: 1px solid var(--c-border);
+      color: var(--c-text);
+      font-size: 11px;
+      padding: 2px 4px;
+      border-radius: 3px;
+    }
+
+    .format-sep {
+      width: 1px;
+      height: 16px;
+      background: var(--c-border);
+      margin: 0 4px;
+    }
   </style>
 </head>
 <body>
@@ -1333,6 +1421,9 @@
       <div class="mode-tabs" id="mode-tabs">
         <!-- Rendered by App.renderModeTabs() -->
       </div>
+
+      <!-- Rich Toolbar -->
+      <div class="rich-toolbar" id="rich-toolbar"></div>
 
       <!-- Editor Body -->
       <div class="editor-body" id="editor-body">

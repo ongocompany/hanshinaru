@@ -227,35 +227,9 @@ var Toolbar = (() => {
       `;
     }
 
-    // --- Input event: detect '/' on empty line ---
-    const editorBody = document.getElementById('editor-body');
-    if (editorBody) {
-      editorBody.addEventListener('input', () => {
-        const sel = window.getSelection();
-        if (!sel || !sel.anchorNode) return;
-
-        const node = sel.anchorNode;
-        const text = node.textContent || '';
-
-        if (text.trim() === '/') {
-          slashNode = node;
-          selectedCommandIndex = 0;
-
-          // Position palette below cursor
-          const range = sel.getRangeAt(0);
-          const rect  = range.getBoundingClientRect();
-          const pal   = document.getElementById('slash-palette');
-          if (pal) {
-            pal.style.left = rect.left + window.scrollX + 'px';
-            pal.style.top  = rect.bottom + window.scrollY + 4 + 'px';
-            pal.classList.add('visible');
-            updateSlashSelection();
-          }
-        } else if (!text.includes('/')) {
-          hideSlashPalette();
-        }
-      });
-    }
+    // Slash command trigger disabled — replaced by section AI buttons (Feature #2)
+    // Keep editorBody reference for potential future use
+    // const editorBody = document.getElementById('editor-body');
 
     // --- Keyboard navigation for palette ---
     document.addEventListener('keydown', (e) => {

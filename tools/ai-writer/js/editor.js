@@ -107,14 +107,16 @@ var Editor = (() => {
 
     if (removable) {
       actions.innerHTML = `
-        <button data-action="up"     title="위로">↑</button>
-        <button data-action="down"   title="아래로">↓</button>
-        <button data-action="ai"     title="AI 재생성">✨</button>
-        <button data-action="delete" title="삭제">🗑</button>
+        <button data-action="up"       title="위로">↑</button>
+        <button data-action="down"     title="아래로">↓</button>
+        <button data-action="ai-smart" title="AI 스마트">✨ AI</button>
+        <button data-action="format"   title="텍스트 서식">Aa</button>
+        <button data-action="delete"   title="삭제">🗑</button>
       `;
     } else {
       actions.innerHTML = `
-        <button data-action="ai" title="AI 재생성">✨</button>
+        <button data-action="ai-smart" title="AI 스마트">✨ AI</button>
+        <button data-action="format"   title="텍스트 서식">Aa</button>
       `;
     }
 
@@ -124,14 +126,49 @@ var Editor = (() => {
       if (!action) return;
       const idx = parseInt(block.dataset.index);
       switch (action) {
-        case 'up':     moveSection(idx, -1); break;
-        case 'down':   moveSection(idx,  1); break;
-        case 'delete': removeSection(idx);   break;
-        case 'ai':     regenerateSection(idx); break;
+        case 'up':       moveSection(idx, -1);  break;
+        case 'down':     moveSection(idx,  1);  break;
+        case 'delete':   removeSection(idx);    break;
+        case 'ai':       regenerateSection(idx); break;
+        case 'ai-smart': smartAIAction(idx);    break;
+        case 'format':   toggleFormatPopup(idx, e.target.closest('button')); break;
       }
     });
 
     header.appendChild(actions);
+
+    // Format popup (hidden by default)
+    const formatPopup = document.createElement('div');
+    formatPopup.className = 'format-popup';
+    formatPopup.id = 'format-popup-' + index;
+    formatPopup.innerHTML = `
+      <button data-exec="bold"><b>B</b></button>
+      <button data-exec="italic"><i>I</i></button>
+      <button data-exec="underline"><u>U</u></button>
+      <button data-exec="strikeThrough"><s>S</s></button>
+      <span class="format-sep"></span>
+      <select data-exec="fontSize">
+        <option value="2">작게</option>
+        <option value="3" selected>보통</option>
+        <option value="4">크게</option>
+        <option value="5">매우 크게</option>
+      </select>
+    `;
+    formatPopup.addEventListener('mousedown', e => { e.preventDefault(); });
+    formatPopup.addEventListener('click', e => {
+      const btn = e.target.closest('button[data-exec]');
+      if (!btn) return;
+      const exec = btn.dataset.exec;
+      document.execCommand(exec, false, null);
+    });
+    formatPopup.addEventListener('change', e => {
+      const sel = e.target;
+      if (sel.dataset.exec === 'fontSize') {
+        document.execCommand('fontSize', false, sel.value);
+      }
+    });
+    header.appendChild(formatPopup);
+
     block.appendChild(header);
 
     // ── Content area ─────────────────────────────────────────────────────────
@@ -146,11 +183,115 @@ var Editor = (() => {
     return block;
   }
 
+  // ─── toggleFormatPopup ────────────────────────────────────────────────────
+  /**
+   * Show/hide the format popup for a section, positioned near the trigger button.
+   * @param {number} index
+   * @param {HTMLElement} triggerBtn
+   */
+  function toggleFormatPopup(index, triggerBtn) {
+    // Hide all other format popups first
+    document.querySelectorAll('.format-popup').forEach(p => {
+      if (p.id !== 'format-popup-' + index) p.classList.remove('visible');
+    });
+
+    const popup = document.getElementById('format-popup-' + index);
+    if (!popup) return;
+
+    if (popup.classList.contains('visible')) {
+      popup.classList.remove('visible');
+      return;
+    }
+
+    // Position popup near the trigger button
+    if (triggerBtn) {
+      const rect = triggerBtn.getBoundingClientRect();
+      popup.style.position = 'fixed';
+      popup.style.top = (rect.bottom + 4) + 'px';
+      popup.style.left = rect.left + 'px';
+    }
+
+    popup.classList.add('visible');
+  }
+
+  // ─── smartAIAction ────────────────────────────────────────────────────────
+  /**
+   * Smart AI action: rewrite selected text or insert at cursor.
+   * @param {number} index
+   */
+  async function smartAIAction(index) {
+    var section = sections[index];
+    var contentEls = document.querySelectorAll('.section-block__content');
+    var contentEl = contentEls[index];
+    if (!contentEl) return;
+
+    var sel = window.getSelection();
+    var hasSelection = sel && !sel.isCollapsed && contentEl.contains(sel.anchorNode);
+    var savedRange = hasSelection ? sel.getRangeAt(0) : null;
+
+    var instruction;
+    if (hasSelection) {
+      instruction = window.prompt('선택한 텍스트를 어떻게 수정할까요?');
+    } else {
+      instruction = window.prompt('이 위치에 무엇을 추가할까요?');
+    }
+    if (!instruction) return;
+
+    var apiConfig = typeof Settings !== 'undefined' ? Settings.getApiConfig() : null;
+    if (!apiConfig || !apiConfig.apiKey) {
+      if (typeof App !== 'undefined') App.toast('API 키를 설정하세요.', 'error');
+      return;
+    }
+
+    syncContentFromDOM();
+
+    try {
+      var styleRules = (typeof PromptBuilder !== 'undefined' && PromptBuilder.BASE_STYLE_RULES)
+        ? PromptBuilder.BASE_STYLE_RULES : '';
+
+      var result;
+      if (hasSelection) {
+        var selectedText = sel.toString();
+        result = await AIClient.chat(apiConfig, {
+          system: '너는 한시 콘텐츠 작가다. 선택된 텍스트를 지시에 따라 다시 작성해라. 다시 작성한 내용만 출력해라.\n\n' + styleRules,
+          user: '선택된 텍스트:\n' + selectedText + '\n\n지시: ' + instruction,
+        });
+        // Restore selection and replace
+        if (savedRange) {
+          var restoreSel = window.getSelection();
+          restoreSel.removeAllRanges();
+          restoreSel.addRange(savedRange);
+        }
+        document.execCommand('insertHTML', false, result.replace(/\n/g, '<br>'));
+      } else {
+        result = await AIClient.chat(apiConfig, {
+          system: '너는 한시 콘텐츠 작가다. 지시에 따라 작성해라. 작성한 내용만 출력해라.\n\n' + styleRules,
+          user: '현재 섹션 "' + (section ? section.name : '') + '"의 내용:\n' + (section ? section.content : '') + '\n\n지시: ' + instruction + '\n\n위 지시에 맞는 내용만 출력해라.',
+        });
+        document.execCommand('insertHTML', false, result.replace(/\n/g, '<br>'));
+      }
+
+      syncContentFromDOM();
+      if (typeof App !== 'undefined') App.toast('완료!', 'success');
+    } catch (err) {
+      if (typeof App !== 'undefined') App.toast('AI 요청 실패: ' + err.message, 'error');
+    }
+  }
+
   // ─── init ─────────────────────────────────────────────────────────────────
   /**
    * Resets state and renders the editor for the given mode.
    * @param {string} mode - 'poem' | 'poet' | 'history' | 'article'
    */
+  // Close format popups when clicking outside
+  document.addEventListener('mousedown', function(e) {
+    if (!e.target.closest('.format-popup') && !e.target.closest('[data-action="format"]')) {
+      document.querySelectorAll('.format-popup.visible').forEach(function(p) {
+        p.classList.remove('visible');
+      });
+    }
+  });
+
   function init(mode) {
     currentMode = mode;
     sections = [];

@@ -184,6 +184,7 @@ var App = (() => {
     // Editor / Toolbar 초기화
     safeCall('Editor', 'init', currentMode);
     safeCall('Toolbar', 'init');
+    renderRichToolbar();
 
     updateStructureOptions(currentMode);
     updateSaveMeta(currentMode);
@@ -288,6 +289,25 @@ var App = (() => {
         </div>
       </div>
 
+      <!-- 한자 사용 -->
+      <div class="input-panel__section">
+        <label class="input-panel__label">한자 사용</label>
+        <div class="chips" id="hanja-chips">
+          <button class="chip active" data-hanja="korean-only">한글 전용</button>
+          <button class="chip" data-hanja="hanja-mixed">한자 병용 (한국식)</button>
+        </div>
+      </div>
+
+      <!-- 본문 글자 크기 -->
+      <div class="input-panel__section">
+        <label class="input-panel__label">본문 글자 크기</label>
+        <div class="chips" id="fontsize-chips">
+          <button class="chip" data-fontsize="15">작게</button>
+          <button class="chip active" data-fontsize="17">보통</button>
+          <button class="chip" data-fontsize="19">크게</button>
+        </div>
+      </div>
+
       <!-- 추가 지시 -->
       <div class="input-panel__section">
         <label class="input-panel__label" for="extra-instructions">추가 지시사항</label>
@@ -338,6 +358,99 @@ var App = (() => {
     safeCall('Editor', 'init', mode);
     updateStructureOptions(mode);
     updateSaveMeta(mode);
+  }
+
+  // =====================================================
+  // RICH TOOLBAR
+  // =====================================================
+
+  function _escHtmlApp(str) {
+    return String(str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  function renderRichToolbar() {
+    const tb = document.getElementById('rich-toolbar');
+    if (!tb) return;
+
+    tb.innerHTML = `
+      <button data-exec="bold" title="굵게"><b>B</b></button>
+      <button data-exec="italic" title="기울임"><i>I</i></button>
+      <button data-exec="underline" title="밑줄"><u>U</u></button>
+      <button data-exec="strikeThrough" title="취소선"><s>S</s></button>
+      <span class="rich-sep"></span>
+      <button data-exec="justifyLeft" title="왼쪽 정렬">&#8801;&#8592;</button>
+      <button data-exec="justifyCenter" title="가운데 정렬">&#8801;&#8596;</button>
+      <button data-exec="justifyRight" title="오른쪽 정렬">&#8801;&#8594;</button>
+      <span class="rich-sep"></span>
+      <button data-action="insertLink" title="링크 삽입">&#128279;</button>
+      <button data-action="insertImage" title="이미지 삽입">&#128444;</button>
+      <button data-action="insertYoutube" title="YouTube 삽입">&#9654;</button>
+      <button data-action="insertTable" title="표 삽입">&#8862;</button>
+      <span class="rich-sep"></span>
+      <button data-exec="insertUnorderedList" title="목록">&#8226;</button>
+      <button data-exec="insertOrderedList" title="번호 목록">1.</button>
+      <button data-exec="formatBlock" data-value="blockquote" title="인용">&#10077;</button>
+    `;
+
+    tb.addEventListener('click', e => {
+      const btn = e.target.closest('button');
+      if (!btn) return;
+
+      const exec   = btn.dataset.exec;
+      const action = btn.dataset.action;
+      const value  = btn.dataset.value || null;
+
+      if (exec) {
+        document.execCommand(exec, false, value);
+        return;
+      }
+
+      if (action === 'insertLink') {
+        const url = window.prompt('URL을 입력하세요:');
+        if (url) document.execCommand('createLink', false, url);
+
+      } else if (action === 'insertImage') {
+        const url = window.prompt('이미지 URL을 입력하세요:');
+        if (url) {
+          const safe = _escHtmlApp(url);
+          document.execCommand('insertHTML', false,
+            `<img src="${safe}" style="max-width:100%;border-radius:8px;margin:12px 0;" alt="">`);
+        }
+
+      } else if (action === 'insertYoutube') {
+        const url = window.prompt('YouTube URL을 입력하세요:');
+        if (url) {
+          const videoId = url.match(/(?:youtu\.be\/|v=|\/embed\/)([a-zA-Z0-9_-]+)/)?.[1];
+          if (videoId) {
+            document.execCommand('insertHTML', false,
+              `<div style="position:relative;padding-bottom:56.25%;height:0;margin:16px 0;"><iframe src="https://www.youtube.com/embed/${videoId}" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:8px;" allowfullscreen></iframe></div>`);
+          } else {
+            toast('올바른 YouTube URL이 아닙니다.', 'error');
+          }
+        }
+
+      } else if (action === 'insertTable') {
+        const rows = window.prompt('행 수:', '3');
+        const cols = window.prompt('열 수:', '3');
+        if (rows && cols) {
+          let html = '<table style="width:100%;border-collapse:collapse;margin:12px 0;">';
+          for (let r = 0; r < parseInt(rows, 10); r++) {
+            html += '<tr>';
+            for (let c = 0; c < parseInt(cols, 10); c++) {
+              const tag = r === 0 ? 'th' : 'td';
+              html += `<${tag} style="border:1px solid var(--c-border);padding:8px;" contenteditable="true">&nbsp;</${tag}>`;
+            }
+            html += '</tr>';
+          }
+          html += '</table>';
+          document.execCommand('insertHTML', false, html);
+        }
+      }
+    });
   }
 
   // =====================================================
@@ -420,6 +533,8 @@ var App = (() => {
       const structureSelect = document.getElementById('structure-select');
       const extraInstructions = document.getElementById('extra-instructions');
 
+      const hanjaMode = document.querySelector('[data-hanja].active')?.dataset.hanja || 'korean-only';
+
       const params = {
         mode: currentMode,
         contentType: getActiveContentType(),
@@ -430,6 +545,7 @@ var App = (() => {
         length: lengthChip?.dataset.length || 'medium',
         structure: structureSelect?.value || 'standard',
         extra: extraInstructions?.value?.trim() || '',
+        hanja: hanjaMode,
       };
 
       // 프롬프트 빌드
@@ -623,6 +739,26 @@ var App = (() => {
     if (lengthContainer) {
       lengthContainer.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
       chip.classList.add('active');
+      return;
+    }
+
+    // 한자 chips
+    const hanjaChip = e.target.closest('[data-hanja]');
+    if (hanjaChip) {
+      document.querySelectorAll('[data-hanja]').forEach(c => c.classList.remove('active'));
+      hanjaChip.classList.add('active');
+      return;
+    }
+
+    // 글자 크기 chips
+    const fontsizeChip = e.target.closest('[data-fontsize]');
+    if (fontsizeChip) {
+      document.querySelectorAll('[data-fontsize]').forEach(c => c.classList.remove('active'));
+      fontsizeChip.classList.add('active');
+      const size = fontsizeChip.dataset.fontsize;
+      document.querySelectorAll('.section-block__content').forEach(el => {
+        el.style.fontSize = size + 'px';
+      });
     }
   }
 
