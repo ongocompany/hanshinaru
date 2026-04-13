@@ -65,9 +65,14 @@ const Toolbar = (() => {
         <div class="ai-bubble__label">AI에게 지시</div>
         <input class="ai-bubble__input" id="ai-bubble-input" placeholder="예: 좀 더 구체적인 예시를 들어줘">
         <div class="ai-bubble__actions">
-          <button id="ai-bubble-apply">적용</button>
+          <button class="btn-cancel" id="ai-bubble-cancel">취소</button>
+          <button class="btn-submit" id="ai-bubble-apply">적용</button>
         </div>
       `;
+      // Cancel button handler (inline — avoids stale binding from app.js)
+      bubbleEl.querySelector('#ai-bubble-cancel').addEventListener('click', () => {
+        hideAiBubble();
+      });
     }
 
     // --- Text selection listener ---

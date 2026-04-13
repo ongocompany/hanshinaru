@@ -411,7 +411,7 @@ const App = (() => {
         return;
       }
 
-      safeCall('Editor', 'loadData', data);
+      safeCall('Editor', 'loadData', currentMode, data);
       toast('불러오기 완료!', 'success');
 
     } catch (err) {

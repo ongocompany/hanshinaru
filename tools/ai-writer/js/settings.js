@@ -297,7 +297,7 @@ const Settings = (() => {
       const testConfig = _readFormConfig(overlay, providers);
       try {
         if (typeof AIClient !== 'undefined') {
-          await AIClient.testConnection(testConfig);
+          await AIClient.testConnection(testConfig.apiCfg);
         } else {
           _toast('AIClient가 아직 로드되지 않았습니다.', 'warn');
         }

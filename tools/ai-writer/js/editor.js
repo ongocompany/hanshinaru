@@ -329,6 +329,18 @@ const Editor = (() => {
     }
   }
 
+  // ─── startStreaming ───────────────────────────────────────────────────────
+  /**
+   * Resets streaming state before a new generation begins.
+   * Clears stale buffer and removes any previously streamed sections.
+   */
+  function startStreaming() {
+    streamBuffer = '';
+    sections = [];
+    const container = document.getElementById('sections-container');
+    if (container) container.innerHTML = '';
+  }
+
   // ─── appendStreaming ──────────────────────────────────────────────────────
   /**
    * Called by app.js during streaming generation.
@@ -472,6 +484,7 @@ const Editor = (() => {
   return {
     init,
     addSection,
+    startStreaming,
     appendStreaming,
     finalizeStreaming,
     clear,
