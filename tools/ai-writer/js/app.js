@@ -277,7 +277,7 @@ const App = (() => {
   async function handleGenerate() {
     // API 설정 확인
     const apiConfig = safeCall('Settings', 'getApiConfig');
-    if (apiConfig && !apiConfig.apiKey) {
+    if (!apiConfig || !apiConfig.apiKey) {
       toast('API 키를 먼저 설정해 주세요. (⚙ 설정)', 'error');
       return;
     }
@@ -469,7 +469,13 @@ const App = (() => {
     chip.dataset.type = id;
     chip.setAttribute('role', 'button');
     chip.setAttribute('tabindex', '0');
-    chip.innerHTML = `${label} <span class="chip__remove" aria-label="삭제">×</span>`;
+    const textNode = document.createTextNode(label);
+    chip.appendChild(textNode);
+    const removeSpan = document.createElement('span');
+    removeSpan.className = 'chip__remove';
+    removeSpan.setAttribute('aria-label', '삭제');
+    removeSpan.textContent = '×';
+    chip.appendChild(removeSpan);
 
     // 기존 활성 해제
     container.querySelectorAll('.chip[data-type]').forEach(c => c.classList.remove('active'));
@@ -547,23 +553,6 @@ const App = (() => {
       });
     }
 
-    // Settings modal 닫기
-    const settingsCancel = document.getElementById('settings-cancel');
-    if (settingsCancel) {
-      settingsCancel.addEventListener('click', () => {
-        document.getElementById('settings-modal')?.classList.remove('visible');
-      });
-    }
-
-    const settingsOk = document.getElementById('settings-ok');
-    if (settingsOk) {
-      settingsOk.addEventListener('click', () => {
-        safeCall('Settings', 'save');
-        document.getElementById('settings-modal')?.classList.remove('visible');
-        toast('설정 저장됨', 'success');
-      });
-    }
-
     // Reset
     const btnReset = document.getElementById('btn-reset');
     if (btnReset) btnReset.addEventListener('click', handleReset);
@@ -591,16 +580,6 @@ const App = (() => {
       }
     });
 
-    // Modal overlay 바깥 클릭 닫기
-    const settingsModal = document.getElementById('settings-modal');
-    if (settingsModal) {
-      settingsModal.addEventListener('click', e => {
-        if (e.target === settingsModal) {
-          settingsModal.classList.remove('visible');
-        }
-      });
-    }
-
     // AI bubble cancel
     const aiBubbleCancel = document.getElementById('ai-bubble-cancel');
     if (aiBubbleCancel) {
@@ -612,7 +591,13 @@ const App = (() => {
     // Keyboard: Esc closes overlays
     document.addEventListener('keydown', e => {
       if (e.key === 'Escape') {
-        document.getElementById('settings-modal')?.classList.remove('visible');
+        // settings-modal is owned by Settings.showModal() — close via display:none
+        const sm = document.getElementById('settings-modal');
+        if (sm) {
+          sm.style.display = 'none';
+          sm.classList.remove('modal-overlay--open');
+          sm.innerHTML = '';
+        }
         document.getElementById('ai-bubble')?.classList.remove('visible');
         document.getElementById('floating-toolbar')?.classList.remove('visible');
         document.getElementById('slash-palette')?.classList.remove('visible');

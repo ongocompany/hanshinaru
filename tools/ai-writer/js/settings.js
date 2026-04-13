@@ -299,7 +299,7 @@ const Settings = (() => {
         if (typeof AIClient !== 'undefined') {
           await AIClient.testConnection(testConfig);
         } else {
-          _toast('AIClient가 아직 로드되지 않았습니다.', 'warning');
+          _toast('AIClient가 아직 로드되지 않았습니다.', 'warn');
         }
       } catch (err) {
         _toast('연결 테스트 실패: ' + (err.message || err), 'error');

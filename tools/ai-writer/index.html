@@ -891,6 +891,35 @@
       background: #7d6ff0;
     }
 
+    /* modal-overlay--open: JS로 설정하는 열림 상태 (display:flex는 JS가 직접 설정) */
+    .modal-overlay--open {
+      display: flex;
+    }
+
+    .modal__sep {
+      border: none;
+      border-top: 1px solid var(--c-border);
+      margin: 16px 0;
+    }
+
+    .modal__btn-test {
+      height: 36px;
+      padding: 0 16px;
+      background: transparent;
+      border: 1px solid var(--c-border);
+      border-radius: 6px;
+      color: var(--c-text-dim);
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      margin-right: auto;
+    }
+
+    .modal__btn-test:hover {
+      border-color: var(--c-info);
+      color: var(--c-info);
+    }
+
     /* =====================================================
        STREAMING INDICATOR
     ===================================================== */
@@ -1068,18 +1097,9 @@
 
   <!-- ===================================================
        SETTINGS MODAL
+       내부 HTML은 Settings.showModal()이 완전히 교체합니다.
   =================================================== -->
-  <div class="modal-overlay" id="settings-modal">
-    <div class="modal">
-      <div class="modal__title">⚙ 설정</div>
-      <!-- Rendered by Settings.renderModal() -->
-      <div id="settings-modal-body"></div>
-      <div class="modal__actions">
-        <button class="modal__btn-cancel" id="settings-cancel">취소</button>
-        <button class="modal__btn-ok" id="settings-ok">저장</button>
-      </div>
-    </div>
-  </div>
+  <div class="modal-overlay" id="settings-modal"></div>
 
   <!-- ===================================================
        STREAMING INDICATOR
