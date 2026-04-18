@@ -6,3 +6,10 @@ __pycache__/
 .DS_Store
 .env
 scripts/notion-config.json
+.gstack/
+
+# Foreman session data
+.foreman/
+
+# graphify 출력물
+graphify-out/
