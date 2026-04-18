@@ -36,3 +36,48 @@
 - inbox 프로토콜: `docs/inbox/README.md`
 - GitHub Actions: `.github/workflows/`
 - 배포: GitHub Pages (main 브랜치 자동)
+
+<!-- foreman:secrets-begin -->
+## 필독
+- `~/.claude/secrets/credentials.age` — 공용 API 키/SSH 자격증명 저장소 (필요 시 복호화하여 사용, 평문 저장/커밋 금지)
+<!-- foreman:secrets-end -->
+
+# Current Task
+
+작업: test
+Epic: 프로젝트 초기 셋업 및 기반 구축
+Stage: done
+Task ID: d2fcf245-b314-4881-827a-8e178167c643
+
+## 부트 루틴 (새 세션 시작 시)
+
+1. `docs/handoff/` 최신 파일 읽기 — 이전 세션 핸드오프 확인 (Foreman DB에도 세션 기록 있음)
+2. `.rules/` 디렉토리 확인 — 코딩규칙, 커밋규칙, 문서 생명주기 규칙 숙지
+3. `git log --oneline -20` — 최근 커밋 확인
+4. 타입체크(`npx tsc --noEmit`)와 필요한 검증 명령 확인
+5. 작업 시작
+
+## 종료 루틴 (세션 종료 시)
+
+`docs/handoff/YYYY-MM-DD-{주제}.md`에 핸드오프 문서를 작성한다.
+
+frontmatter 형식:
+```yaml
+---
+epic_id: d2fcf245-b314-4881-827a-8e178167c643
+doc_type: handoff
+status: active
+title: 세션 제목
+date: YYYY-MM-DD
+author: 작성자
+---
+```
+
+포함할 내용:
+- 이번 세션에서 완료한 작업
+- 어디서 멈췄는지
+- 핵심 판단과 이유
+- 생성/수정/참조한 문서
+- 원래 계획과 달라진 점 (있으면)
+- 다음 세션의 첫 행동
+- 다음 세션이 피해야 할 함정
