@@ -1,0 +1,22 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "Main Design UI Image",
+      "file_type": "image",
+      "source_file": "hanshinaru/docs/images/UI/main_design.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "main design ui image",
+      "id": "hanshinaru_images_ui_main_design"
+    }
+  ],
+  "links": [],
+  "hyperedges": []
+}

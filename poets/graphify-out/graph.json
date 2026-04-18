@@ -1,0 +1,40 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "poets.tsx",
+      "file_type": "code",
+      "source_file": "poets/poets.tsx",
+      "source_location": "L1",
+      "id": "poets_poets_tsx",
+      "community": 0,
+      "norm_label": "poets.tsx"
+    },
+    {
+      "label": "\ud55c\uc2dc\ub098\ub8e8",
+      "file_type": "document",
+      "source_file": "poets/index.html",
+      "source_location": null,
+      "id": "poets_index_html",
+      "community": 0,
+      "norm_label": "\u1112\u1161\u11ab\u1109\u1175\u1102\u1161\u1105\u116e"
+    }
+  ],
+  "links": [
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "source_file": "poets/index.html",
+      "source_location": null,
+      "weight": 0.7,
+      "confidence_score": 0.7,
+      "_src": "poets_index_html",
+      "_tgt": "poets_poets_tsx",
+      "source": "poets_poets_tsx",
+      "target": "poets_index_html"
+    }
+  ],
+  "hyperedges": []
+}

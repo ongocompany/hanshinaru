@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>graphify - docs/research/graphify-out/graph.html</title>
+<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #0f0f1a; color: #e0e0e0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; display: flex; height: 100vh; overflow: hidden; }
+  #graph { flex: 1; }
+  #sidebar { width: 280px; background: #1a1a2e; border-left: 1px solid #2a2a4e; display: flex; flex-direction: column; overflow: hidden; }
+  #search-wrap { padding: 12px; border-bottom: 1px solid #2a2a4e; }
+  #search { width: 100%; background: #0f0f1a; border: 1px solid #3a3a5e; color: #e0e0e0; padding: 7px 10px; border-radius: 6px; font-size: 13px; outline: none; }
+  #search:focus { border-color: #4E79A7; }
+  #search-results { max-height: 140px; overflow-y: auto; padding: 4px 12px; border-bottom: 1px solid #2a2a4e; display: none; }
+  .search-item { padding: 4px 6px; cursor: pointer; border-radius: 4px; font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .search-item:hover { background: #2a2a4e; }
+  #info-panel { padding: 14px; border-bottom: 1px solid #2a2a4e; min-height: 140px; }
+  #info-panel h3 { font-size: 13px; color: #aaa; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.05em; }
+  #info-content { font-size: 13px; color: #ccc; line-height: 1.6; }
+  #info-content .field { margin-bottom: 5px; }
+  #info-content .field b { color: #e0e0e0; }
+  #info-content .empty { color: #555; font-style: italic; }
+  .neighbor-link { display: block; padding: 2px 6px; margin: 2px 0; border-radius: 3px; cursor: pointer; font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; border-left: 3px solid #333; }
+  .neighbor-link:hover { background: #2a2a4e; }
+  #neighbors-list { max-height: 160px; overflow-y: auto; margin-top: 4px; }
+  #legend-wrap { flex: 1; overflow-y: auto; padding: 12px; }
+  #legend-wrap h3 { font-size: 13px; color: #aaa; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.05em; }
+  .legend-item { display: flex; align-items: center; gap: 8px; padding: 4px 0; cursor: pointer; border-radius: 4px; font-size: 12px; }
+  .legend-item:hover { background: #2a2a4e; padding-left: 4px; }
+  .legend-item.dimmed { opacity: 0.35; }
+  .legend-dot { width: 12px; height: 12px; border-radius: 50%; flex-shrink: 0; }
+  .legend-label { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .legend-count { color: #666; font-size: 11px; }
+  #stats { padding: 10px 14px; border-top: 1px solid #2a2a4e; font-size: 11px; color: #555; }
+</style>
+</head>
+<body>
+<div id="graph"></div>
+<div id="sidebar">
+  <div id="search-wrap">
+    <input id="search" type="text" placeholder="Search nodes..." autocomplete="off">
+    <div id="search-results"></div>
+  </div>
+  <div id="info-panel">
+    <h3>Node Info</h3>
+    <div id="info-content"><span class="empty">Click a node to inspect it</span></div>
+  </div>
+  <div id="legend-wrap">
+    <h3>Communities</h3>
+    <div id="legend"></div>
+  </div>
+  <div id="stats">29 nodes &middot; 39 edges &middot; 5 communities</div>
+</div>
+<script>
+const RAW_NODES = [{"id": "poet_survey_series", "label": "72 Poets Survey Series", "color": {"background": "#F28E2B", "border": "#F28E2B", "highlight": {"background": "#ffffff", "border": "#F28E2B"}}, "size": 18.6, "font": {"size": 12, "color": "#ffffff"}, "title": "72 Poets Survey Series", "community": 1, "community_name": "Community 1", "source_file": "", "file_type": "document", "degree": 2}, {"id": "unknown_author_memo", "label": "Unknown Author Era Investigation Memo", "color": {"background": "#F28E2B", "border": "#F28E2B", "highlight": {"background": "#ffffff", "border": "#F28E2B"}}, "size": 18.6, "font": {"size": 12, "color": "#ffffff"}, "title": "Unknown Author Era Investigation Memo", "community": 1, "community_name": "Community 1", "source_file": "", "file_type": "document", "degree": 2}, {"id": "era_cleanup_report", "label": "Era Cleanup Report", "color": {"background": "#F28E2B", "border": "#F28E2B", "highlight": {"background": "#ffffff", "border": "#F28E2B"}}, "size": 22.9, "font": {"size": 12, "color": "#ffffff"}, "title": "Era Cleanup Report", "community": 1, "community_name": "Community 1", "source_file": "", "file_type": "document", "degree": 3}, {"id": "decade_bucket_csv", "label": "Author Activity Buckets by Decade CSV", "color": {"background": "#F28E2B", "border": "#F28E2B", "highlight": {"background": "#ffffff", "border": "#F28E2B"}}, "size": 18.6, "font": {"size": 12, "color": "#ffffff"}, "title": "Author Activity Buckets by Decade CSV", "community": 1, "community_name": "Community 1", "source_file": "", "file_type": "document", "degree": 2}, {"id": "youtube_poem_list", "label": "Poems with YouTube Links", "color": {"background": "#F28E2B", "border": "#F28E2B", "highlight": {"background": "#ffffff", "border": "#F28E2B"}}, "size": 14.3, "font": {"size": 0, "color": "#ffffff"}, "title": "Poems with YouTube Links", "community": 1, "community_name": "Community 1", "source_file": "", "file_type": "document", "degree": 1}, {"id": "ext_figures_list", "label": "External Figure Relation List", "color": {"background": "#F28E2B", "border": "#F28E2B", "highlight": {"background": "#ffffff", "border": "#F28E2B"}}, "size": 14.3, "font": {"size": 0, "color": "#ffffff"}, "title": "External Figure Relation List", "community": 1, "community_name": "Community 1", "source_file": "", "file_type": "document", "degree": 1}, {"id": "hanshi_site_report", "label": "hanshi.kr Comprehensive Analysis Report", "color": {"background": "#E15759", "border": "#E15759", "highlight": {"background": "#ffffff", "border": "#E15759"}}, "size": 22.9, "font": {"size": 12, "color": "#ffffff"}, "title": "hanshi.kr Comprehensive Analysis Report", "community": 2, "community_name": "Community 2", "source_file": "", "file_type": "document", "degree": 3}, {"id": "poetry_editor_benchmark", "label": "Poetry Editor Benchmark and Feature Analysis", "color": {"background": "#E15759", "border": "#E15759", "highlight": {"background": "#ffffff", "border": "#E15759"}}, "size": 18.6, "font": {"size": 12, "color": "#ffffff"}, "title": "Poetry Editor Benchmark and Feature Analysis", "community": 2, "community_name": "Community 2", "source_file": "", "file_type": "document", "degree": 2}, {"id": "meter_algorithm_report", "label": "Meter Algorithm Feasibility Review", "color": {"background": "#E15759", "border": "#E15759", "highlight": {"background": "#ffffff", "border": "#E15759"}}, "size": 22.9, "font": {"size": 12, "color": "#ffffff"}, "title": "Meter Algorithm Feasibility Review", "community": 2, "community_name": "Community 2", "source_file": "", "file_type": "document", "degree": 3}, {"id": "eight_defects_ux", "label": "Eight Defects and Aojiu UX Ideas", "color": {"background": "#E15759", "border": "#E15759", "highlight": {"background": "#ffffff", "border": "#E15759"}}, "size": 18.6, "font": {"size": 12, "color": "#ffffff"}, "title": "Eight Defects and Aojiu UX Ideas", "community": 2, "community_name": "Community 2", "source_file": "", "file_type": "document", "degree": 2}, {"id": "ux_review_letter", "label": "Mincheol Review Letter on Meter UX", "color": {"background": "#E15759", "border": "#E15759", "highlight": {"background": "#ffffff", "border": "#E15759"}}, "size": 27.1, "font": {"size": 12, "color": "#ffffff"}, "title": "Mincheol Review Letter on Meter UX", "community": 2, "community_name": "Community 2", "source_file": "", "file_type": "document", "degree": 4}, {"id": "modal_ui_proposal", "label": "Poet Modal UI Improvement Proposal", "color": {"background": "#76B7B2", "border": "#76B7B2", "highlight": {"background": "#ffffff", "border": "#76B7B2"}}, "size": 18.6, "font": {"size": 12, "color": "#ffffff"}, "title": "Poet Modal UI Improvement Proposal", "community": 3, "community_name": "Community 3", "source_file": "", "file_type": "document", "degree": 2}, {"id": "modal_ui_answer", "label": "Poet Modal UI Brainstorming Answer", "color": {"background": "#76B7B2", "border": "#76B7B2", "highlight": {"background": "#ffffff", "border": "#76B7B2"}}, "size": 18.6, "font": {"size": 12, "color": "#ffffff"}, "title": "Poet Modal UI Brainstorming Answer", "community": 3, "community_name": "Community 3", "source_file": "", "file_type": "document", "degree": 2}, {"id": "translation_pipeline_design", "label": "AI Translation and Writing Pipeline Design", "color": {"background": "#4E79A7", "border": "#4E79A7", "highlight": {"background": "#ffffff", "border": "#4E79A7"}}, "size": 18.6, "font": {"size": 12, "color": "#ffffff"}, "title": "AI Translation and Writing Pipeline Design", "community": 0, "community_name": "Community 0", "source_file": "", "file_type": "document", "degree": 2}, {"id": "deep_translation_protocol", "label": "Deep Translation Operating Protocol", "color": {"background": "#4E79A7", "border": "#4E79A7", "highlight": {"background": "#ffffff", "border": "#4E79A7"}}, "size": 22.9, "font": {"size": 12, "color": "#ffffff"}, "title": "Deep Translation Operating Protocol", "community": 0, "community_name": "Community 0", "source_file": "", "file_type": "document", "degree": 3}, {"id": "deep_translation_queue", "label": "Deep Translation Work Queue", "color": {"background": "#4E79A7", "border": "#4E79A7", "highlight": {"background": "#ffffff", "border": "#4E79A7"}}, "size": 14.3, "font": {"size": 0, "color": "#ffffff"}, "title": "Deep Translation Work Queue", "community": 0, "community_name": "Community 0", "source_file": "", "file_type": "document", "degree": 1}, {"id": "gemini_translation_samples", "label": "Gemini Translation Sample Set", "color": {"background": "#4E79A7", "border": "#4E79A7", "highlight": {"background": "#ffffff", "border": "#4E79A7"}}, "size": 18.6, "font": {"size": 12, "color": "#ffffff"}, "title": "Gemini Translation Sample Set", "community": 0, "community_name": "Community 0", "source_file": "", "file_type": "document", "degree": 2}, {"id": "qwen_translation_corpus", "label": "Qwen Translation Corpus", "color": {"background": "#4E79A7", "border": "#4E79A7", "highlight": {"background": "#ffffff", "border": "#4E79A7"}}, "size": 27.1, "font": {"size": 12, "color": "#ffffff"}, "title": "Qwen Translation Corpus", "community": 0, "community_name": "Community 0", "source_file": "", "file_type": "document", "degree": 4}, {"id": "qwen_title_guide", "label": "Qwen Title Translation Guide", "color": {"background": "#4E79A7", "border": "#4E79A7", "highlight": {"background": "#ffffff", "border": "#4E79A7"}}, "size": 18.6, "font": {"size": 12, "color": "#ffffff"}, "title": "Qwen Title Translation Guide", "community": 0, "community_name": "Community 0", "source_file": "", "file_type": "document", "degree": 2}, {"id": "qwen_quality_report", "label": "Qwen Translation Quality Check Report", "color": {"background": "#4E79A7", "border": "#4E79A7", "highlight": {"background": "#ffffff", "border": "#4E79A7"}}, "size": 18.6, "font": {"size": 12, "color": "#ffffff"}, "title": "Qwen Translation Quality Check Report", "community": 0, "community_name": "Community 0", "source_file": "", "file_type": "document", "degree": 2}, {"id": "news_tool_summary", "label": "AI Newswriting Tool Plan Summary", "color": {"background": "#59A14F", "border": "#59A14F", "highlight": {"background": "#ffffff", "border": "#59A14F"}}, "size": 18.6, "font": {"size": 12, "color": "#ffffff"}, "title": "AI Newswriting Tool Plan Summary", "community": 4, "community_name": "Community 4", "source_file": "", "file_type": "document", "degree": 2}, {"id": "news_tool_detailed_plan", "label": "AI Newswriting Tool Detailed Plan", "color": {"background": "#59A14F", "border": "#59A14F", "highlight": {"background": "#ffffff", "border": "#59A14F"}}, "size": 18.6, "font": {"size": 12, "color": "#ffffff"}, "title": "AI Newswriting Tool Detailed Plan", "community": 4, "community_name": "Community 4", "source_file": "", "file_type": "document", "degree": 2}, {"id": "showcase_font_bg_plan", "label": "Showcase Background and Font Selection Plan", "color": {"background": "#76B7B2", "border": "#76B7B2", "highlight": {"background": "#ffffff", "border": "#76B7B2"}}, "size": 18.6, "font": {"size": 12, "color": "#ffffff"}, "title": "Showcase Background and Font Selection Plan", "community": 3, "community_name": "Community 3", "source_file": "", "file_type": "document", "degree": 2}, {"id": "poet_metadata_enrichment", "label": "Poet Metadata Enrichment", "color": {"background": "#F28E2B", "border": "#F28E2B", "highlight": {"background": "#ffffff", "border": "#F28E2B"}}, "size": 40.0, "font": {"size": 12, "color": "#ffffff"}, "title": "Poet Metadata Enrichment", "community": 1, "community_name": "Community 1", "source_file": "", "file_type": "document", "degree": 7}, {"id": "meter_checking_engine", "label": "Classical Chinese Poetry Meter Checking Engine", "color": {"background": "#E15759", "border": "#E15759", "highlight": {"background": "#ffffff", "border": "#E15759"}}, "size": 31.4, "font": {"size": 12, "color": "#ffffff"}, "title": "Classical Chinese Poetry Meter Checking Engine", "community": 2, "community_name": "Community 2", "source_file": "", "file_type": "document", "degree": 5}, {"id": "translation_content_pipeline", "label": "License-Safe Translation Content Pipeline", "color": {"background": "#4E79A7", "border": "#4E79A7", "highlight": {"background": "#ffffff", "border": "#4E79A7"}}, "size": 35.7, "font": {"size": 12, "color": "#ffffff"}, "title": "License-Safe Translation Content Pipeline", "community": 0, "community_name": "Community 0", "source_file": "", "file_type": "document", "degree": 6}, {"id": "news_rewrite_pipeline", "label": "Automated AI News Rewrite Pipeline", "color": {"background": "#59A14F", "border": "#59A14F", "highlight": {"background": "#ffffff", "border": "#59A14F"}}, "size": 22.9, "font": {"size": 12, "color": "#ffffff"}, "title": "Automated AI News Rewrite Pipeline", "community": 4, "community_name": "Community 4", "source_file": "", "file_type": "document", "degree": 3}, {"id": "modal_dual_mode_ui", "label": "Art Mode and Study Mode Modal UI", "color": {"background": "#76B7B2", "border": "#76B7B2", "highlight": {"background": "#ffffff", "border": "#76B7B2"}}, "size": 27.1, "font": {"size": 12, "color": "#ffffff"}, "title": "Art Mode and Study Mode Modal UI", "community": 3, "community_name": "Community 3", "source_file": "", "file_type": "document", "degree": 4}, {"id": "showcase_visual_customization", "label": "Showcase Visual Customization", "color": {"background": "#76B7B2", "border": "#76B7B2", "highlight": {"background": "#ffffff", "border": "#76B7B2"}}, "size": 18.6, "font": {"size": 12, "color": "#ffffff"}, "title": "Showcase Visual Customization", "community": 3, "community_name": "Community 3", "source_file": "", "file_type": "document", "degree": 2}];
+const RAW_EDGES = [{"from": "poet_survey_series", "to": "poet_metadata_enrichment", "label": "implements", "title": "implements [EXTRACTED]", "dashes": false, "width": 2, "color": {"opacity": 0.7}, "confidence": "EXTRACTED"}, {"from": "poet_survey_series", "to": "ext_figures_list", "label": "shares_data_with", "title": "shares_data_with [INFERRED]", "dashes": true, "width": 1, "color": {"opacity": 0.35}, "confidence": "INFERRED"}, {"from": "unknown_author_memo", "to": "poet_metadata_enrichment", "label": "implements", "title": "implements [EXTRACTED]", "dashes": false, "width": 2, "color": {"opacity": 0.7}, "confidence": "EXTRACTED"}, {"from": "unknown_author_memo", "to": "era_cleanup_report", "label": "conceptually_related_to", "title": "conceptually_related_to [INFERRED]", "dashes": true, "width": 1, "color": {"opacity": 0.35}, "confidence": "INFERRED"}, {"from": "era_cleanup_report", "to": "poet_metadata_enrichment", "label": "implements", "title": "implements [EXTRACTED]", "dashes": false, "width": 2, "color": {"opacity": 0.7}, "confidence": "EXTRACTED"}, {"from": "era_cleanup_report", "to": "decade_bucket_csv", "label": "rationale_for", "title": "rationale_for [INFERRED]", "dashes": true, "width": 1, "color": {"opacity": 0.35}, "confidence": "INFERRED"}, {"from": "decade_bucket_csv", "to": "poet_metadata_enrichment", "label": "shares_data_with", "title": "shares_data_with [EXTRACTED]", "dashes": false, "width": 2, "color": {"opacity": 0.7}, "confidence": "EXTRACTED"}, {"from": "youtube_poem_list", "to": "poet_metadata_enrichment", "label": "shares_data_with", "title": "shares_data_with [INFERRED]", "dashes": true, "width": 1, "color": {"opacity": 0.35}, "confidence": "INFERRED"}, {"from": "hanshi_site_report", "to": "poetry_editor_benchmark", "label": "conceptually_related_to", "title": "conceptually_related_to [INFERRED]", "dashes": true, "width": 1, "color": {"opacity": 0.35}, "confidence": "INFERRED"}, {"from": "hanshi_site_report", "to": "meter_algorithm_report", "label": "rationale_for", "title": "rationale_for [INFERRED]", "dashes": true, "width": 1, "color": {"opacity": 0.35}, "confidence": "INFERRED"}, {"from": "hanshi_site_report", "to": "ux_review_letter", "label": "references", "title": "references [EXTRACTED]", "dashes": false, "width": 2, "color": {"opacity": 0.7}, "confidence": "EXTRACTED"}, {"from": "poetry_editor_benchmark", "to": "meter_checking_engine", "label": "rationale_for", "title": "rationale_for [EXTRACTED]", "dashes": false, "width": 2, "color": {"opacity": 0.7}, "confidence": "EXTRACTED"}, {"from": "meter_algorithm_report", "to": "meter_checking_engine", "label": "implements", "title": "implements [EXTRACTED]", "dashes": false, "width": 2, "color": {"opacity": 0.7}, "confidence": "EXTRACTED"}, {"from": "meter_algorithm_report", "to": "ux_review_letter", "label": "references", "title": "references [EXTRACTED]", "dashes": false, "width": 2, "color": {"opacity": 0.7}, "confidence": "EXTRACTED"}, {"from": "eight_defects_ux", "to": "meter_checking_engine", "label": "conceptually_related_to", "title": "conceptually_related_to [EXTRACTED]", "dashes": false, "width": 2, "color": {"opacity": 0.7}, "confidence": "EXTRACTED"}, {"from": "eight_defects_ux", "to": "ux_review_letter", "label": "references", "title": "references [EXTRACTED]", "dashes": false, "width": 2, "color": {"opacity": 0.7}, "confidence": "EXTRACTED"}, {"from": "ux_review_letter", "to": "meter_checking_engine", "label": "rationale_for", "title": "rationale_for [INFERRED]", "dashes": true, "width": 1, "color": {"opacity": 0.35}, "confidence": "INFERRED"}, {"from": "modal_ui_proposal", "to": "modal_dual_mode_ui", "label": "rationale_for", "title": "rationale_for [EXTRACTED]", "dashes": false, "width": 2, "color": {"opacity": 0.7}, "confidence": "EXTRACTED"}, {"from": "modal_ui_proposal", "to": "modal_ui_answer", "label": "references", "title": "references [EXTRACTED]", "dashes": false, "width": 2, "color": {"opacity": 0.7}, "confidence": "EXTRACTED"}, {"from": "modal_ui_answer", "to": "modal_dual_mode_ui", "label": "implements", "title": "implements [EXTRACTED]", "dashes": false, "width": 2, "color": {"opacity": 0.7}, "confidence": "EXTRACTED"}, {"from": "translation_pipeline_design", "to": "translation_content_pipeline", "label": "implements", "title": "implements [EXTRACTED]", "dashes": false, "width": 2, "color": {"opacity": 0.7}, "confidence": "EXTRACTED"}, {"from": "translation_pipeline_design", "to": "deep_translation_protocol", "label": "references", "title": "references [INFERRED]", "dashes": true, "width": 1, "color": {"opacity": 0.35}, "confidence": "INFERRED"}, {"from": "deep_translation_protocol", "to": "translation_content_pipeline", "label": "implements", "title": "implements [EXTRACTED]", "dashes": false, "width": 2, "color": {"opacity": 0.7}, "confidence": "EXTRACTED"}, {"from": "deep_translation_protocol", "to": "deep_translation_queue", "label": "implements", "title": "implements [EXTRACTED]", "dashes": false, "width": 2, "color": {"opacity": 0.7}, "confidence": "EXTRACTED"}, {"from": "gemini_translation_samples", "to": "translation_content_pipeline", "label": "implements", "title": "implements [INFERRED]", "dashes": true, "width": 1, "color": {"opacity": 0.35}, "confidence": "INFERRED"}, {"from": "gemini_translation_samples", "to": "qwen_translation_corpus", "label": "semantically_similar_to", "title": "semantically_similar_to [INFERRED]", "dashes": true, "width": 1, "color": {"opacity": 0.35}, "confidence": "INFERRED"}, {"from": "qwen_translation_corpus", "to": "translation_content_pipeline", "label": "implements", "title": "implements [INFERRED]", "dashes": true, "width": 1, "color": {"opacity": 0.35}, "confidence": "INFERRED"}, {"from": "qwen_translation_corpus", "to": "qwen_title_guide", "label": "rationale_for", "title": "rationale_for [INFERRED]", "dashes": true, "width": 1, "color": {"opacity": 0.35}, "confidence": "INFERRED"}, {"from": "qwen_translation_corpus", "to": "qwen_quality_report", "label": "references", "title": "references [EXTRACTED]", "dashes": false, "width": 2, "color": {"opacity": 0.7}, "confidence": "EXTRACTED"}, {"from": "qwen_title_guide", "to": "qwen_quality_report", "label": "rationale_for", "title": "rationale_for [INFERRED]", "dashes": true, "width": 1, "color": {"opacity": 0.35}, "confidence": "INFERRED"}, {"from": "news_tool_summary", "to": "news_rewrite_pipeline", "label": "implements", "title": "implements [EXTRACTED]", "dashes": false, "width": 2, "color": {"opacity": 0.7}, "confidence": "EXTRACTED"}, {"from": "news_tool_summary", "to": "news_tool_detailed_plan", "label": "references", "title": "references [EXTRACTED]", "dashes": false, "width": 2, "color": {"opacity": 0.7}, "confidence": "EXTRACTED"}, {"from": "news_tool_detailed_plan", "to": "news_rewrite_pipeline", "label": "implements", "title": "implements [EXTRACTED]", "dashes": false, "width": 2, "color": {"opacity": 0.7}, "confidence": "EXTRACTED"}, {"from": "showcase_font_bg_plan", "to": "showcase_visual_customization", "label": "implements", "title": "implements [EXTRACTED]", "dashes": false, "width": 2, "color": {"opacity": 0.7}, "confidence": "EXTRACTED"}, {"from": "showcase_font_bg_plan", "to": "modal_dual_mode_ui", "label": "conceptually_related_to", "title": "conceptually_related_to [INFERRED]", "dashes": true, "width": 1, "color": {"opacity": 0.35}, "confidence": "INFERRED"}, {"from": "poet_metadata_enrichment", "to": "meter_checking_engine", "label": "conceptually_related_to", "title": "conceptually_related_to [INFERRED]", "dashes": true, "width": 1, "color": {"opacity": 0.35}, "confidence": "INFERRED"}, {"from": "poet_metadata_enrichment", "to": "translation_content_pipeline", "label": "conceptually_related_to", "title": "conceptually_related_to [INFERRED]", "dashes": true, "width": 1, "color": {"opacity": 0.35}, "confidence": "INFERRED"}, {"from": "translation_content_pipeline", "to": "news_rewrite_pipeline", "label": "conceptually_related_to", "title": "conceptually_related_to [INFERRED]", "dashes": true, "width": 1, "color": {"opacity": 0.35}, "confidence": "INFERRED"}, {"from": "modal_dual_mode_ui", "to": "showcase_visual_customization", "label": "conceptually_related_to", "title": "conceptually_related_to [INFERRED]", "dashes": true, "width": 1, "color": {"opacity": 0.35}, "confidence": "INFERRED"}];
+const LEGEND = [{"cid": 0, "color": "#4E79A7", "label": "Community 0", "count": 8}, {"cid": 1, "color": "#F28E2B", "label": "Community 1", "count": 7}, {"cid": 2, "color": "#E15759", "label": "Community 2", "count": 6}, {"cid": 3, "color": "#76B7B2", "label": "Community 3", "count": 5}, {"cid": 4, "color": "#59A14F", "label": "Community 4", "count": 3}];
+
+// HTML-escape helper — prevents XSS when injecting graph data into innerHTML
+function esc(s) {
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+}
+
+// Build vis datasets
+const nodesDS = new vis.DataSet(RAW_NODES.map(n => ({
+  id: n.id, label: n.label, color: n.color, size: n.size,
+  font: n.font, title: n.title,
+  _community: n.community, _community_name: n.community_name,
+  _source_file: n.source_file, _file_type: n.file_type, _degree: n.degree,
+})));
+
+const edgesDS = new vis.DataSet(RAW_EDGES.map((e, i) => ({
+  id: i, from: e.from, to: e.to,
+  label: '',
+  title: e.title,
+  dashes: e.dashes,
+  width: e.width,
+  color: e.color,
+  arrows: { to: { enabled: true, scaleFactor: 0.5 } },
+})));
+
+const container = document.getElementById('graph');
+const network = new vis.Network(container, { nodes: nodesDS, edges: edgesDS }, {
+  physics: {
+    enabled: true,
+    solver: 'forceAtlas2Based',
+    forceAtlas2Based: {
+      gravitationalConstant: -60,
+      centralGravity: 0.005,
+      springLength: 120,
+      springConstant: 0.08,
+      damping: 0.4,
+      avoidOverlap: 0.8,
+    },
+    stabilization: { iterations: 200, fit: true },
+  },
+  interaction: {
+    hover: true,
+    tooltipDelay: 100,
+    hideEdgesOnDrag: true,
+    navigationButtons: false,
+    keyboard: false,
+  },
+  nodes: { shape: 'dot', borderWidth: 1.5 },
+  edges: { smooth: { type: 'continuous', roundness: 0.2 }, selectionWidth: 3 },
+});
+
+network.once('stabilizationIterationsDone', () => {
+  network.setOptions({ physics: { enabled: false } });
+});
+
+function showInfo(nodeId) {
+  const n = nodesDS.get(nodeId);
+  if (!n) return;
+  const neighborIds = network.getConnectedNodes(nodeId);
+  const neighborItems = neighborIds.map(nid => {
+    const nb = nodesDS.get(nid);
+    const color = nb ? nb.color.background : '#555';
+    return `<span class="neighbor-link" style="border-left-color:${esc(color)}" onclick="focusNode(${JSON.stringify(nid)})">${esc(nb ? nb.label : nid)}</span>`;
+  }).join('');
+  document.getElementById('info-content').innerHTML = `
+    <div class="field"><b>${esc(n.label)}</b></div>
+    <div class="field">Type: ${esc(n._file_type || 'unknown')}</div>
+    <div class="field">Community: ${esc(n._community_name)}</div>
+    <div class="field">Source: ${esc(n._source_file || '-')}</div>
+    <div class="field">Degree: ${n._degree}</div>
+    ${neighborIds.length ? `<div class="field" style="margin-top:8px;color:#aaa;font-size:11px">Neighbors (${neighborIds.length})</div><div id="neighbors-list">${neighborItems}</div>` : ''}
+  `;
+}
+
+function focusNode(nodeId) {
+  network.focus(nodeId, { scale: 1.4, animation: true });
+  network.selectNodes([nodeId]);
+  showInfo(nodeId);
+}
+
+// Track hovered node — hover detection is more reliable than click params
+let hoveredNodeId = null;
+network.on('hoverNode', params => {
+  hoveredNodeId = params.node;
+  container.style.cursor = 'pointer';
+});
+network.on('blurNode', () => {
+  hoveredNodeId = null;
+  container.style.cursor = 'default';
+});
+container.addEventListener('click', () => {
+  if (hoveredNodeId !== null) {
+    showInfo(hoveredNodeId);
+    network.selectNodes([hoveredNodeId]);
+  }
+});
+network.on('click', params => {
+  if (params.nodes.length > 0) {
+    showInfo(params.nodes[0]);
+  } else if (hoveredNodeId === null) {
+    document.getElementById('info-content').innerHTML = '<span class="empty">Click a node to inspect it</span>';
+  }
+});
+
+const searchInput = document.getElementById('search');
+const searchResults = document.getElementById('search-results');
+searchInput.addEventListener('input', () => {
+  const q = searchInput.value.toLowerCase().trim();
+  searchResults.innerHTML = '';
+  if (!q) { searchResults.style.display = 'none'; return; }
+  const matches = RAW_NODES.filter(n => n.label.toLowerCase().includes(q)).slice(0, 20);
+  if (!matches.length) { searchResults.style.display = 'none'; return; }
+  searchResults.style.display = 'block';
+  matches.forEach(n => {
+    const el = document.createElement('div');
+    el.className = 'search-item';
+    el.textContent = n.label;
+    el.style.borderLeft = `3px solid ${n.color.background}`;
+    el.style.paddingLeft = '8px';
+    el.onclick = () => {
+      network.focus(n.id, { scale: 1.5, animation: true });
+      network.selectNodes([n.id]);
+      showInfo(n.id);
+      searchResults.style.display = 'none';
+      searchInput.value = '';
+    };
+    searchResults.appendChild(el);
+  });
+});
+document.addEventListener('click', e => {
+  if (!searchResults.contains(e.target) && e.target !== searchInput)
+    searchResults.style.display = 'none';
+});
+
+const hiddenCommunities = new Set();
+const legendEl = document.getElementById('legend');
+LEGEND.forEach(c => {
+  const item = document.createElement('div');
+  item.className = 'legend-item';
+  item.innerHTML = `<div class="legend-dot" style="background:${c.color}"></div>
+    <span class="legend-label">${c.label}</span>
+    <span class="legend-count">${c.count}</span>`;
+  item.onclick = () => {
+    if (hiddenCommunities.has(c.cid)) {
+      hiddenCommunities.delete(c.cid);
+      item.classList.remove('dimmed');
+    } else {
+      hiddenCommunities.add(c.cid);
+      item.classList.add('dimmed');
+    }
+    const updates = RAW_NODES
+      .filter(n => n.community === c.cid)
+      .map(n => ({ id: n.id, hidden: hiddenCommunities.has(c.cid) }));
+    nodesDS.update(updates);
+  };
+  legendEl.appendChild(item);
+});
+</script>
+<script>
+// Render hyperedges as shaded regions
+const hyperedges = [];
+// afterDrawing passes ctx already transformed to network coordinate space.
+// Draw node positions raw — no manual pan/zoom/DPR math needed.
+network.on('afterDrawing', function(ctx) {
+    hyperedges.forEach(h => {
+        const positions = h.nodes
+            .map(nid => network.getPositions([nid])[nid])
+            .filter(p => p !== undefined);
+        if (positions.length < 2) return;
+        ctx.save();
+        ctx.globalAlpha = 0.12;
+        ctx.fillStyle = '#6366f1';
+        ctx.strokeStyle = '#6366f1';
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        // Centroid and expanded hull in network coordinates
+        const cx = positions.reduce((s, p) => s + p.x, 0) / positions.length;
+        const cy = positions.reduce((s, p) => s + p.y, 0) / positions.length;
+        const expanded = positions.map(p => ({
+            x: cx + (p.x - cx) * 1.15,
+            y: cy + (p.y - cy) * 1.15
+        }));
+        ctx.moveTo(expanded[0].x, expanded[0].y);
+        expanded.slice(1).forEach(p => ctx.lineTo(p.x, p.y));
+        ctx.closePath();
+        ctx.fill();
+        ctx.globalAlpha = 0.4;
+        ctx.stroke();
+        // Label
+        ctx.globalAlpha = 0.8;
+        ctx.fillStyle = '#4f46e5';
+        ctx.font = 'bold 11px sans-serif';
+        ctx.textAlign = 'center';
+        ctx.fillText(h.label, cx, cy - 5);
+        ctx.restore();
+    });
+});
+</script>
+</body>
+</html>

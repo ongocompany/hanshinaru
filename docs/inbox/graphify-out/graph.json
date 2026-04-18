@@ -1,0 +1,85 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "\ud83d\udcec AI \uba54\uc2dc\uc9c0 \ud050 (Inbox Protocol)",
+      "file_type": "document",
+      "source_file": "hanshinaru/docs/inbox/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "\ud83d\udcec ai \u1106\u1166\u1109\u1175\u110c\u1175 \u110f\u1172 (inbox protocol)",
+      "id": "inbox_protocol"
+    },
+    {
+      "label": "Sprint Contract SC-001: app.js / board.js \ubaa8\ub4c8 \ubd84\ub9ac",
+      "file_type": "document",
+      "source_file": "hanshinaru/docs/inbox/to-claude/001-from-roy-module-split.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "sprint contract sc-001: app.js / board.js \u1106\u1169\u1103\u1172\u11af \u1107\u116e\u11ab\u1105\u1175",
+      "id": "inbox_msg_001"
+    },
+    {
+      "label": "Sprint Contract SC-002: \ud398\uc774\uc9c0 \uad6c\uc870 \ud1b5\uc77c + CMS\ud654",
+      "file_type": "document",
+      "source_file": "hanshinaru/docs/inbox/to-claude/002-from-roy-page-structure.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "sprint contract sc-002: \u1111\u1166\u110b\u1175\u110c\u1175 \u1100\u116e\u110c\u1169 \u1110\u1169\u11bc\u110b\u1175\u11af + cms\u1112\u116a",
+      "id": "inbox_msg_002"
+    }
+  ],
+  "links": [
+    {
+      "relation": "implements",
+      "confidence": "INFERRED",
+      "confidence_score": 0.88,
+      "source_file": "hanshinaru/docs/inbox/to-claude/001-from-roy-module-split.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "inbox_msg_001",
+      "_tgt": "inbox_protocol",
+      "source": "inbox_protocol",
+      "target": "inbox_msg_001"
+    },
+    {
+      "relation": "implements",
+      "confidence": "INFERRED",
+      "confidence_score": 0.88,
+      "source_file": "hanshinaru/docs/inbox/to-claude/002-from-roy-page-structure.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "inbox_msg_002",
+      "_tgt": "inbox_protocol",
+      "source": "inbox_protocol",
+      "target": "inbox_msg_002"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.99,
+      "source_file": "hanshinaru/docs/inbox/to-claude/002-from-roy-page-structure.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "inbox_msg_002",
+      "_tgt": "inbox_msg_001",
+      "source": "inbox_msg_001",
+      "target": "inbox_msg_002"
+    }
+  ],
+  "hyperedges": []
+}

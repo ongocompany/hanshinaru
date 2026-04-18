@@ -1,0 +1,22 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "\uc7ac\ubbfc \u2014 \ud55c\uc2dc\ub098\ub8e8 \uc790\ub8cc\uc218\uc9d1/\uc815\ub9ac \ub2f4\ub2f9",
+      "file_type": "document",
+      "source_file": "hanshinaru/docs/ai-roles/gemini.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "\u110c\u1162\u1106\u1175\u11ab \u2014 \u1112\u1161\u11ab\u1109\u1175\u1102\u1161\u1105\u116e \u110c\u1161\u1105\u116d\u1109\u116e\u110c\u1175\u11b8/\u110c\u1165\u11bc\u1105\u1175 \u1103\u1161\u11b7\u1103\u1161\u11bc",
+      "id": "gemini_role_profile"
+    }
+  ],
+  "links": [],
+  "hyperedges": []
+}

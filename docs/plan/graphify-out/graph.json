@@ -1,0 +1,22 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "AI \uc800\uc791\ud234 (AI Writer) \uad6c\ud604 \uacc4\ud68d",
+      "file_type": "document",
+      "source_file": "hanshinaru/docs/plan/2026-04-13-ai-writer.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "ai \u110c\u1165\u110c\u1161\u11a8\u1110\u116e\u11af (ai writer) \u1100\u116e\u1112\u1167\u11ab \u1100\u1168\u1112\u116c\u11a8",
+      "id": "ai_writer_plan"
+    }
+  ],
+  "links": [],
+  "hyperedges": []
+}

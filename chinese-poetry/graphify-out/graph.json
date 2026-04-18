@@ -1,0 +1,145 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "\ud55c\uc2dc\ub098\ub8e8",
+      "file_type": "document",
+      "source_file": "chinese-poetry/index.html",
+      "source_location": null,
+      "id": "chinese_poetry_index_html",
+      "community": 0,
+      "norm_label": "\u1112\u1161\u11ab\u1109\u1175\u1102\u1161\u1105\u116e"
+    },
+    {
+      "label": "\ud55c\uc2dc\ub098\ub8e8",
+      "file_type": "document",
+      "source_file": "chinese-poetry/poets/index.html",
+      "source_location": null,
+      "id": "chinese_poetry_poets_index_html",
+      "community": 0,
+      "norm_label": "\u1112\u1161\u11ab\u1109\u1175\u1102\u1161\u1105\u116e"
+    },
+    {
+      "label": "\ud55c\uc2dc\ub098\ub8e8",
+      "file_type": "document",
+      "source_file": "chinese-poetry/general/index.html",
+      "source_location": null,
+      "id": "chinese_poetry_general_index_html",
+      "community": 0,
+      "norm_label": "\u1112\u1161\u11ab\u1109\u1175\u1102\u1161\u1105\u116e"
+    },
+    {
+      "label": "\ud55c\uc2dc\ub098\ub8e8",
+      "file_type": "document",
+      "source_file": "chinese-poetry/general/masterworks/index.html",
+      "source_location": null,
+      "id": "chinese_poetry_general_masterworks_index_html",
+      "community": 0,
+      "norm_label": "\u1112\u1161\u11ab\u1109\u1175\u1102\u1161\u1105\u116e"
+    },
+    {
+      "label": "\ud55c\uc2dc\ub098\ub8e8",
+      "file_type": "document",
+      "source_file": "chinese-poetry/general/literary-history/index.html",
+      "source_location": null,
+      "id": "chinese_poetry_general_literary_history_index_html",
+      "community": 0,
+      "norm_label": "\u1112\u1161\u11ab\u1109\u1175\u1102\u1161\u1105\u116e"
+    },
+    {
+      "label": "\ud55c\uc2dc\ub098\ub8e8",
+      "file_type": "document",
+      "source_file": "chinese-poetry/books/index.html",
+      "source_location": null,
+      "id": "chinese_poetry_books_index_html",
+      "community": 0,
+      "norm_label": "\u1112\u1161\u11ab\u1109\u1175\u1102\u1161\u1105\u116e"
+    },
+    {
+      "label": "\ud55c\uc2dc\ub098\ub8e8",
+      "file_type": "document",
+      "source_file": "chinese-poetry/history/index.html",
+      "source_location": null,
+      "id": "chinese_poetry_history_index_html",
+      "community": 0,
+      "norm_label": "\u1112\u1161\u11ab\u1109\u1175\u1102\u1161\u1105\u116e"
+    }
+  ],
+  "links": [
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "source_file": "chinese-poetry/index.html",
+      "source_location": null,
+      "weight": 0.65,
+      "confidence_score": 0.65,
+      "_src": "chinese_poetry_index_html",
+      "_tgt": "chinese_poetry_poets_index_html",
+      "source": "chinese_poetry_index_html",
+      "target": "chinese_poetry_poets_index_html"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "source_file": "chinese-poetry/index.html",
+      "source_location": null,
+      "weight": 0.65,
+      "confidence_score": 0.65,
+      "_src": "chinese_poetry_index_html",
+      "_tgt": "chinese_poetry_general_index_html",
+      "source": "chinese_poetry_index_html",
+      "target": "chinese_poetry_general_index_html"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "source_file": "chinese-poetry/index.html",
+      "source_location": null,
+      "weight": 0.65,
+      "confidence_score": 0.65,
+      "_src": "chinese_poetry_index_html",
+      "_tgt": "chinese_poetry_general_masterworks_index_html",
+      "source": "chinese_poetry_index_html",
+      "target": "chinese_poetry_general_masterworks_index_html"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "source_file": "chinese-poetry/index.html",
+      "source_location": null,
+      "weight": 0.65,
+      "confidence_score": 0.65,
+      "_src": "chinese_poetry_index_html",
+      "_tgt": "chinese_poetry_general_literary_history_index_html",
+      "source": "chinese_poetry_index_html",
+      "target": "chinese_poetry_general_literary_history_index_html"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "source_file": "chinese-poetry/index.html",
+      "source_location": null,
+      "weight": 0.65,
+      "confidence_score": 0.65,
+      "_src": "chinese_poetry_index_html",
+      "_tgt": "chinese_poetry_books_index_html",
+      "source": "chinese_poetry_index_html",
+      "target": "chinese_poetry_books_index_html"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "source_file": "chinese-poetry/index.html",
+      "source_location": null,
+      "weight": 0.65,
+      "confidence_score": 0.65,
+      "_src": "chinese_poetry_index_html",
+      "_tgt": "chinese_poetry_history_index_html",
+      "source": "chinese_poetry_index_html",
+      "target": "chinese_poetry_history_index_html"
+    }
+  ],
+  "hyperedges": []
+}

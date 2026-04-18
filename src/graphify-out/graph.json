@@ -1,0 +1,169 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "menu.ts",
+      "file_type": "code",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/src/lib/menu.ts",
+      "source_location": "L1",
+      "id": "users_jinwoo_documents_development_hanshinaru_src_lib_menu_ts",
+      "community": 0,
+      "norm_label": "menu.ts"
+    },
+    {
+      "label": "fetchAllMenus()",
+      "file_type": "code",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/src/lib/menu.ts",
+      "source_location": "L30",
+      "id": "menu_fetchallmenus",
+      "community": 0,
+      "norm_label": "fetchallmenus()"
+    },
+    {
+      "label": "getTopMenu()",
+      "file_type": "code",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/src/lib/menu.ts",
+      "source_location": "L35",
+      "id": "menu_gettopmenu",
+      "community": 0,
+      "norm_label": "gettopmenu()"
+    },
+    {
+      "label": "getSidebar()",
+      "file_type": "code",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/src/lib/menu.ts",
+      "source_location": "L87",
+      "id": "menu_getsidebar",
+      "community": 0,
+      "norm_label": "getsidebar()"
+    },
+    {
+      "label": "buildTree()",
+      "file_type": "code",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/src/lib/menu.ts",
+      "source_location": "L119",
+      "id": "menu_buildtree",
+      "community": 0,
+      "norm_label": "buildtree()"
+    },
+    {
+      "label": "supabase.ts",
+      "file_type": "code",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/src/lib/supabase.ts",
+      "source_location": "L1",
+      "id": "users_jinwoo_documents_development_hanshinaru_src_lib_supabase_ts",
+      "community": 1,
+      "norm_label": "supabase.ts"
+    },
+    {
+      "label": "sbFetch()",
+      "file_type": "code",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/src/lib/supabase.ts",
+      "source_location": "L14",
+      "id": "supabase_sbfetch",
+      "community": 1,
+      "norm_label": "sbfetch()"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/src/lib/menu.ts",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_src": "users_jinwoo_documents_development_hanshinaru_src_lib_menu_ts",
+      "_tgt": "menu_fetchallmenus",
+      "source": "users_jinwoo_documents_development_hanshinaru_src_lib_menu_ts",
+      "target": "menu_fetchallmenus",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/src/lib/menu.ts",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_src": "users_jinwoo_documents_development_hanshinaru_src_lib_menu_ts",
+      "_tgt": "menu_gettopmenu",
+      "source": "users_jinwoo_documents_development_hanshinaru_src_lib_menu_ts",
+      "target": "menu_gettopmenu",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/src/lib/menu.ts",
+      "source_location": "L87",
+      "weight": 1.0,
+      "_src": "users_jinwoo_documents_development_hanshinaru_src_lib_menu_ts",
+      "_tgt": "menu_getsidebar",
+      "source": "users_jinwoo_documents_development_hanshinaru_src_lib_menu_ts",
+      "target": "menu_getsidebar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/src/lib/menu.ts",
+      "source_location": "L119",
+      "weight": 1.0,
+      "_src": "users_jinwoo_documents_development_hanshinaru_src_lib_menu_ts",
+      "_tgt": "menu_buildtree",
+      "source": "users_jinwoo_documents_development_hanshinaru_src_lib_menu_ts",
+      "target": "menu_buildtree",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/src/lib/menu.ts",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_src": "menu_gettopmenu",
+      "_tgt": "menu_fetchallmenus",
+      "source": "menu_fetchallmenus",
+      "target": "menu_gettopmenu",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/src/lib/menu.ts",
+      "source_location": "L88",
+      "weight": 1.0,
+      "_src": "menu_getsidebar",
+      "_tgt": "menu_fetchallmenus",
+      "source": "menu_fetchallmenus",
+      "target": "menu_getsidebar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/src/lib/menu.ts",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_src": "menu_fetchallmenus",
+      "_tgt": "supabase_sbfetch",
+      "source": "menu_fetchallmenus",
+      "target": "supabase_sbfetch"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/src/lib/supabase.ts",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_src": "users_jinwoo_documents_development_hanshinaru_src_lib_supabase_ts",
+      "_tgt": "supabase_sbfetch",
+      "source": "users_jinwoo_documents_development_hanshinaru_src_lib_supabase_ts",
+      "target": "supabase_sbfetch",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": []
+}

@@ -1,0 +1,301 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "community.js",
+      "file_type": "code",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/community/community.js",
+      "source_location": "L1",
+      "id": "users_jinwoo_documents_development_hanshinaru_community_community_js",
+      "community": 0,
+      "norm_label": "community.js"
+    },
+    {
+      "label": "escapeHTML()",
+      "file_type": "code",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/community/community.js",
+      "source_location": "L14",
+      "id": "community_escapehtml",
+      "community": 0,
+      "norm_label": "escapehtml()"
+    },
+    {
+      "label": "formatDate()",
+      "file_type": "code",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/community/community.js",
+      "source_location": "L24",
+      "id": "community_formatdate",
+      "community": 0,
+      "norm_label": "formatdate()"
+    },
+    {
+      "label": "fetchPreview()",
+      "file_type": "code",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/community/community.js",
+      "source_location": "L56",
+      "id": "community_fetchpreview",
+      "community": 1,
+      "norm_label": "fetchpreview()"
+    },
+    {
+      "label": "fetchShowcasePreview()",
+      "file_type": "code",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/community/community.js",
+      "source_location": "L98",
+      "id": "community_fetchshowcasepreview",
+      "community": 1,
+      "norm_label": "fetchshowcasepreview()"
+    },
+    {
+      "label": "renderPreviewTable()",
+      "file_type": "code",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/community/community.js",
+      "source_location": "L131",
+      "id": "community_renderpreviewtable",
+      "community": 1,
+      "norm_label": "renderpreviewtable()"
+    },
+    {
+      "label": "renderShowcasePreview()",
+      "file_type": "code",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/community/community.js",
+      "source_location": "L164",
+      "id": "community_rendershowcasepreview",
+      "community": 0,
+      "norm_label": "rendershowcasepreview()"
+    },
+    {
+      "label": "fetchNewsPreview()",
+      "file_type": "code",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/community/community.js",
+      "source_location": "L199",
+      "id": "community_fetchnewspreview",
+      "community": 1,
+      "norm_label": "fetchnewspreview()"
+    },
+    {
+      "label": "renderNewsPreview()",
+      "file_type": "code",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/community/community.js",
+      "source_location": "L214",
+      "id": "community_rendernewspreview",
+      "community": 0,
+      "norm_label": "rendernewspreview()"
+    },
+    {
+      "label": "initCommunity()",
+      "file_type": "code",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/community/community.js",
+      "source_location": "L241",
+      "id": "community_initcommunity",
+      "community": 1,
+      "norm_label": "initcommunity()"
+    },
+    {
+      "label": "initSidebarNav()",
+      "file_type": "code",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/community/community.js",
+      "source_location": "L266",
+      "id": "community_initsidebarnav",
+      "community": 0,
+      "norm_label": "initsidebarnav()"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/community/community.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_src": "users_jinwoo_documents_development_hanshinaru_community_community_js",
+      "_tgt": "community_escapehtml",
+      "source": "users_jinwoo_documents_development_hanshinaru_community_community_js",
+      "target": "community_escapehtml",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/community/community.js",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_src": "users_jinwoo_documents_development_hanshinaru_community_community_js",
+      "_tgt": "community_formatdate",
+      "source": "users_jinwoo_documents_development_hanshinaru_community_community_js",
+      "target": "community_formatdate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/community/community.js",
+      "source_location": "L56",
+      "weight": 1.0,
+      "_src": "users_jinwoo_documents_development_hanshinaru_community_community_js",
+      "_tgt": "community_fetchpreview",
+      "source": "users_jinwoo_documents_development_hanshinaru_community_community_js",
+      "target": "community_fetchpreview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/community/community.js",
+      "source_location": "L98",
+      "weight": 1.0,
+      "_src": "users_jinwoo_documents_development_hanshinaru_community_community_js",
+      "_tgt": "community_fetchshowcasepreview",
+      "source": "users_jinwoo_documents_development_hanshinaru_community_community_js",
+      "target": "community_fetchshowcasepreview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/community/community.js",
+      "source_location": "L131",
+      "weight": 1.0,
+      "_src": "users_jinwoo_documents_development_hanshinaru_community_community_js",
+      "_tgt": "community_renderpreviewtable",
+      "source": "users_jinwoo_documents_development_hanshinaru_community_community_js",
+      "target": "community_renderpreviewtable",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/community/community.js",
+      "source_location": "L164",
+      "weight": 1.0,
+      "_src": "users_jinwoo_documents_development_hanshinaru_community_community_js",
+      "_tgt": "community_rendershowcasepreview",
+      "source": "users_jinwoo_documents_development_hanshinaru_community_community_js",
+      "target": "community_rendershowcasepreview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/community/community.js",
+      "source_location": "L199",
+      "weight": 1.0,
+      "_src": "users_jinwoo_documents_development_hanshinaru_community_community_js",
+      "_tgt": "community_fetchnewspreview",
+      "source": "users_jinwoo_documents_development_hanshinaru_community_community_js",
+      "target": "community_fetchnewspreview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/community/community.js",
+      "source_location": "L214",
+      "weight": 1.0,
+      "_src": "users_jinwoo_documents_development_hanshinaru_community_community_js",
+      "_tgt": "community_rendernewspreview",
+      "source": "users_jinwoo_documents_development_hanshinaru_community_community_js",
+      "target": "community_rendernewspreview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/community/community.js",
+      "source_location": "L241",
+      "weight": 1.0,
+      "_src": "users_jinwoo_documents_development_hanshinaru_community_community_js",
+      "_tgt": "community_initcommunity",
+      "source": "users_jinwoo_documents_development_hanshinaru_community_community_js",
+      "target": "community_initcommunity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/community/community.js",
+      "source_location": "L266",
+      "weight": 1.0,
+      "_src": "users_jinwoo_documents_development_hanshinaru_community_community_js",
+      "_tgt": "community_initsidebarnav",
+      "source": "users_jinwoo_documents_development_hanshinaru_community_community_js",
+      "target": "community_initsidebarnav",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/community/community.js",
+      "source_location": "L245",
+      "weight": 1.0,
+      "_src": "community_initcommunity",
+      "_tgt": "community_fetchpreview",
+      "source": "community_fetchpreview",
+      "target": "community_initcommunity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/community/community.js",
+      "source_location": "L248",
+      "weight": 1.0,
+      "_src": "community_initcommunity",
+      "_tgt": "community_fetchshowcasepreview",
+      "source": "community_fetchshowcasepreview",
+      "target": "community_initcommunity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/community/community.js",
+      "source_location": "L252",
+      "weight": 1.0,
+      "_src": "community_initcommunity",
+      "_tgt": "community_renderpreviewtable",
+      "source": "community_renderpreviewtable",
+      "target": "community_initcommunity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/community/community.js",
+      "source_location": "L255",
+      "weight": 1.0,
+      "_src": "community_initcommunity",
+      "_tgt": "community_rendershowcasepreview",
+      "source": "community_rendershowcasepreview",
+      "target": "community_initcommunity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/community/community.js",
+      "source_location": "L249",
+      "weight": 1.0,
+      "_src": "community_initcommunity",
+      "_tgt": "community_fetchnewspreview",
+      "source": "community_fetchnewspreview",
+      "target": "community_initcommunity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/community/community.js",
+      "source_location": "L256",
+      "weight": 1.0,
+      "_src": "community_initcommunity",
+      "_tgt": "community_rendernewspreview",
+      "source": "community_rendernewspreview",
+      "target": "community_initcommunity",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": []
+}

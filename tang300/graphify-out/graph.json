@@ -1,0 +1,40 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "tang300.tsx",
+      "file_type": "code",
+      "source_file": "tang300/tang300.tsx",
+      "source_location": "L1",
+      "id": "tang300_tang300_tsx",
+      "community": 0,
+      "norm_label": "tang300.tsx"
+    },
+    {
+      "label": "\ud55c\uc2dc\ub098\ub8e8",
+      "file_type": "document",
+      "source_file": "tang300/index.html",
+      "source_location": null,
+      "id": "tang300_index_html",
+      "community": 0,
+      "norm_label": "\u1112\u1161\u11ab\u1109\u1175\u1102\u1161\u1105\u116e"
+    }
+  ],
+  "links": [
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "source_file": "tang300/index.html",
+      "source_location": null,
+      "weight": 0.7,
+      "confidence_score": 0.7,
+      "_src": "tang300_index_html",
+      "_tgt": "tang300_tang300_tsx",
+      "source": "tang300_tang300_tsx",
+      "target": "tang300_index_html"
+    }
+  ],
+  "hyperedges": []
+}

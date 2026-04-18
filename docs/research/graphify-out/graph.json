@@ -1,0 +1,661 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "72 Poets Survey Series",
+      "kind": "document_collection",
+      "source_path": "hanshinaru/docs/research/01_\uc2dc\uc77872\uba85_\ub370\uc774\ud130\uc870\uc0ac_250214_GE.md",
+      "file_type": "document",
+      "community": 1,
+      "norm_label": "72 poets survey series",
+      "id": "poet_survey_series"
+    },
+    {
+      "label": "Unknown Author Era Investigation Memo",
+      "kind": "document",
+      "source_path": "hanshinaru/docs/research/02_\ubbf8\uc0c1\uc791\uac00_\uc870\uc0ac_250211_CL.md",
+      "file_type": "document",
+      "community": 1,
+      "norm_label": "unknown author era investigation memo",
+      "id": "unknown_author_memo"
+    },
+    {
+      "label": "Era Cleanup Report",
+      "kind": "document",
+      "source_path": "hanshinaru/docs/research/01_era_\uc815\uc81c\uacb0\uacfc_250212_CL.md",
+      "file_type": "document",
+      "community": 1,
+      "norm_label": "era cleanup report",
+      "id": "era_cleanup_report"
+    },
+    {
+      "label": "Author Activity Buckets by Decade CSV",
+      "kind": "dataset",
+      "source_path": "hanshinaru/docs/research/03_\uc791\uac00\ubcc4_10\ub144\uc8fc\uae30_\ud65c\ub3d9\uad6c\ubd84_250212_GE.csv",
+      "file_type": "document",
+      "community": 1,
+      "norm_label": "author activity buckets by decade csv",
+      "id": "decade_bucket_csv"
+    },
+    {
+      "label": "Poems with YouTube Links",
+      "kind": "dataset",
+      "source_path": "hanshinaru/docs/research/07_\uc720\ud29c\ube0c\ub9c1\ud06c_\ud3ec\ud568_\uc2dc_\ubaa9\ub85d_260215_GE.md",
+      "file_type": "document",
+      "community": 1,
+      "norm_label": "poems with youtube links",
+      "id": "youtube_poem_list"
+    },
+    {
+      "label": "External Figure Relation List",
+      "kind": "dataset",
+      "source_path": "hanshinaru/docs/research/ext_figures_list.json",
+      "file_type": "document",
+      "community": 1,
+      "norm_label": "external figure relation list",
+      "id": "ext_figures_list"
+    },
+    {
+      "label": "hanshi.kr Comprehensive Analysis Report",
+      "kind": "document",
+      "source_path": "hanshinaru/docs/research/07_hanshi_kr_\uc885\ud569\ubcf4\uace0\uc11c_260221_GE.md",
+      "file_type": "document",
+      "community": 2,
+      "norm_label": "hanshi.kr comprehensive analysis report",
+      "id": "hanshi_site_report"
+    },
+    {
+      "label": "Poetry Editor Benchmark and Feature Analysis",
+      "kind": "document",
+      "source_path": "hanshinaru/docs/research/08_poetry_editor_benchmark_260215_GE.md",
+      "file_type": "document",
+      "community": 2,
+      "norm_label": "poetry editor benchmark and feature analysis",
+      "id": "poetry_editor_benchmark"
+    },
+    {
+      "label": "Meter Algorithm Feasibility Review",
+      "kind": "document",
+      "source_path": "hanshinaru/docs/research/08_\ud3c9\uce21\uc54c\uace0\ub9ac\uc998_\ud0c0\ub2f9\uc131\uac80\ud1a0_260221_GE.md",
+      "file_type": "document",
+      "community": 2,
+      "norm_label": "meter algorithm feasibility review",
+      "id": "meter_algorithm_report"
+    },
+    {
+      "label": "Eight Defects and Aojiu UX Ideas",
+      "kind": "document",
+      "source_path": "hanshinaru/docs/research/09_\ud314\ubcd1_\uc694\uad6c_UX_\uc544\uc774\ub514\uc5b4_260221_GE.md",
+      "file_type": "document",
+      "community": 2,
+      "norm_label": "eight defects and aojiu ux ideas",
+      "id": "eight_defects_ux"
+    },
+    {
+      "label": "Mincheol Review Letter on Meter UX",
+      "kind": "document",
+      "source_path": "hanshinaru/docs/research/10_\ubbfc\ucca0\uc758\uacac\uc11c_\ud314\ubcd1UX_\uc5c5\ubb34\ubd84\ub2f4_260221_CL.md",
+      "file_type": "document",
+      "community": 2,
+      "norm_label": "mincheol review letter on meter ux",
+      "id": "ux_review_letter"
+    },
+    {
+      "label": "Poet Modal UI Improvement Proposal",
+      "kind": "document",
+      "source_path": "hanshinaru/docs/research/09_UI_improvement_proposal_260215_GE.md",
+      "file_type": "document",
+      "community": 3,
+      "norm_label": "poet modal ui improvement proposal",
+      "id": "modal_ui_proposal"
+    },
+    {
+      "label": "Poet Modal UI Brainstorming Answer",
+      "kind": "document",
+      "source_path": "hanshinaru/docs/research/10_UI_developing_brainstorming_answer.md",
+      "file_type": "document",
+      "community": 3,
+      "norm_label": "poet modal ui brainstorming answer",
+      "id": "modal_ui_answer"
+    },
+    {
+      "label": "AI Translation and Writing Pipeline Design",
+      "kind": "document",
+      "source_path": "hanshinaru/docs/research/11_AI_\ubc88\uc5ed\uc9d1\ud544_\ud30c\uc774\ud504\ub77c\uc778_\uc124\uacc4_260216_CH.md",
+      "file_type": "document",
+      "community": 0,
+      "norm_label": "ai translation and writing pipeline design",
+      "id": "translation_pipeline_design"
+    },
+    {
+      "label": "Deep Translation Operating Protocol",
+      "kind": "document",
+      "source_path": "hanshinaru/docs/research/12_\uc2ec\uce35\ubc88\uc5ed_\uc6b4\uc601\ud504\ub85c\ud1a0\ucf5c_260216_CH.md",
+      "file_type": "document",
+      "community": 0,
+      "norm_label": "deep translation operating protocol",
+      "id": "deep_translation_protocol"
+    },
+    {
+      "label": "Deep Translation Work Queue",
+      "kind": "dataset",
+      "source_path": "hanshinaru/docs/research/13_\uc2ec\uce35\ubc88\uc5ed_\uc791\uc5c5\ud050_260216_CH.csv",
+      "file_type": "document",
+      "community": 0,
+      "norm_label": "deep translation work queue",
+      "id": "deep_translation_queue"
+    },
+    {
+      "label": "Gemini Translation Sample Set",
+      "kind": "artifact_collection",
+      "source_path": "hanshinaru/docs/research/samples/gemini_translation_sample_latest.md",
+      "file_type": "document",
+      "community": 0,
+      "norm_label": "gemini translation sample set",
+      "id": "gemini_translation_samples"
+    },
+    {
+      "label": "Qwen Translation Corpus",
+      "kind": "artifact_collection",
+      "source_path": "hanshinaru/docs/research/qwen_translations/qwen_translation_20260221_143125.md",
+      "file_type": "document",
+      "community": 0,
+      "norm_label": "qwen translation corpus",
+      "id": "qwen_translation_corpus"
+    },
+    {
+      "label": "Qwen Title Translation Guide",
+      "kind": "document",
+      "source_path": "hanshinaru/docs/research/qwen_translations/translate_title.md",
+      "file_type": "document",
+      "community": 0,
+      "norm_label": "qwen title translation guide",
+      "id": "qwen_title_guide"
+    },
+    {
+      "label": "Qwen Translation Quality Check Report",
+      "kind": "document",
+      "source_path": "hanshinaru/docs/research/qwen_translations/\ud488\uc9c8\uccb4\ud06c_\ub9ac\ud3ec\ud2b8.md",
+      "file_type": "document",
+      "community": 0,
+      "norm_label": "qwen translation quality check report",
+      "id": "qwen_quality_report"
+    },
+    {
+      "label": "AI Newswriting Tool Plan Summary",
+      "kind": "document",
+      "source_path": "hanshinaru/docs/research/14_AI_\uae30\uc0ac\uc791\uc131\ud234_\uc81c\uc791\uacc4\ud68d_260222_GPT.md",
+      "file_type": "document",
+      "community": 4,
+      "norm_label": "ai newswriting tool plan summary",
+      "id": "news_tool_summary"
+    },
+    {
+      "label": "AI Newswriting Tool Detailed Plan",
+      "kind": "document",
+      "source_path": "hanshinaru/docs/research/15_AI_\uae30\uc0ac\uc791\uc131\ud234_\uac1c\ubc1c\uacc4\ud68d_\uc0c1\uc138.md",
+      "file_type": "document",
+      "community": 4,
+      "norm_label": "ai newswriting tool detailed plan",
+      "id": "news_tool_detailed_plan"
+    },
+    {
+      "label": "Showcase Background and Font Selection Plan",
+      "kind": "document",
+      "source_path": "hanshinaru/docs/research/19_\ucc3d\uc791\ub9c8\ub2f9_\ubc30\uacbd\ud3f0\ud2b8\uc120\ud0dd_\uac1c\ubc1c\uacc4\ud68d\uc11c_260222_CL.md",
+      "file_type": "document",
+      "community": 3,
+      "norm_label": "showcase background and font selection plan",
+      "id": "showcase_font_bg_plan"
+    },
+    {
+      "label": "Poet Metadata Enrichment",
+      "kind": "concept",
+      "source_path": "hanshinaru/docs/research/01_\uc2dc\uc77872\uba85_\ub370\uc774\ud130\uc870\uc0ac_250214_GE.md",
+      "file_type": "document",
+      "community": 1,
+      "norm_label": "poet metadata enrichment",
+      "id": "poet_metadata_enrichment"
+    },
+    {
+      "label": "Classical Chinese Poetry Meter Checking Engine",
+      "kind": "concept",
+      "source_path": "hanshinaru/docs/research/08_\ud3c9\uce21\uc54c\uace0\ub9ac\uc998_\ud0c0\ub2f9\uc131\uac80\ud1a0_260221_GE.md",
+      "file_type": "document",
+      "community": 2,
+      "norm_label": "classical chinese poetry meter checking engine",
+      "id": "meter_checking_engine"
+    },
+    {
+      "label": "License-Safe Translation Content Pipeline",
+      "kind": "concept",
+      "source_path": "hanshinaru/docs/research/11_AI_\ubc88\uc5ed\uc9d1\ud544_\ud30c\uc774\ud504\ub77c\uc778_\uc124\uacc4_260216_CH.md",
+      "file_type": "document",
+      "community": 0,
+      "norm_label": "license-safe translation content pipeline",
+      "id": "translation_content_pipeline"
+    },
+    {
+      "label": "Automated AI News Rewrite Pipeline",
+      "kind": "concept",
+      "source_path": "hanshinaru/docs/research/15_AI_\uae30\uc0ac\uc791\uc131\ud234_\uac1c\ubc1c\uacc4\ud68d_\uc0c1\uc138.md",
+      "file_type": "document",
+      "community": 4,
+      "norm_label": "automated ai news rewrite pipeline",
+      "id": "news_rewrite_pipeline"
+    },
+    {
+      "label": "Art Mode and Study Mode Modal UI",
+      "kind": "concept",
+      "source_path": "hanshinaru/docs/research/10_UI_developing_brainstorming_answer.md",
+      "file_type": "document",
+      "community": 3,
+      "norm_label": "art mode and study mode modal ui",
+      "id": "modal_dual_mode_ui"
+    },
+    {
+      "label": "Showcase Visual Customization",
+      "kind": "concept",
+      "source_path": "hanshinaru/docs/research/19_\ucc3d\uc791\ub9c8\ub2f9_\ubc30\uacbd\ud3f0\ud2b8\uc120\ud0dd_\uac1c\ubc1c\uacc4\ud68d\uc11c_260222_CL.md",
+      "file_type": "document",
+      "community": 3,
+      "norm_label": "showcase visual customization",
+      "id": "showcase_visual_customization"
+    }
+  ],
+  "links": [
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "source_path": "hanshinaru/docs/research/01_\uc2dc\uc77872\uba85_\ub370\uc774\ud130\uc870\uc0ac_250214_GE.md",
+      "_src": "poet_survey_series",
+      "_tgt": "poet_metadata_enrichment",
+      "confidence_score": 1.0,
+      "source": "poet_survey_series",
+      "target": "poet_metadata_enrichment"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "source_path": "hanshinaru/docs/research/01_\uc2dc\uc77872\uba85_\ub370\uc774\ud130\uc870\uc0ac_250214_GE.md",
+      "_src": "poet_survey_series",
+      "_tgt": "ext_figures_list",
+      "confidence_score": 0.5,
+      "source": "poet_survey_series",
+      "target": "ext_figures_list"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "source_path": "hanshinaru/docs/research/02_\ubbf8\uc0c1\uc791\uac00_\uc870\uc0ac_250211_CL.md",
+      "_src": "unknown_author_memo",
+      "_tgt": "poet_metadata_enrichment",
+      "confidence_score": 1.0,
+      "source": "unknown_author_memo",
+      "target": "poet_metadata_enrichment"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "source_path": "hanshinaru/docs/research/02_\ubbf8\uc0c1\uc791\uac00_\uc870\uc0ac_250211_CL.md",
+      "_src": "unknown_author_memo",
+      "_tgt": "era_cleanup_report",
+      "confidence_score": 0.5,
+      "source": "unknown_author_memo",
+      "target": "era_cleanup_report"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "source_path": "hanshinaru/docs/research/01_era_\uc815\uc81c\uacb0\uacfc_250212_CL.md",
+      "_src": "era_cleanup_report",
+      "_tgt": "poet_metadata_enrichment",
+      "confidence_score": 1.0,
+      "source": "era_cleanup_report",
+      "target": "poet_metadata_enrichment"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "source_path": "hanshinaru/docs/research/01_era_\uc815\uc81c\uacb0\uacfc_250212_CL.md",
+      "_src": "era_cleanup_report",
+      "_tgt": "decade_bucket_csv",
+      "confidence_score": 0.5,
+      "source": "era_cleanup_report",
+      "target": "decade_bucket_csv"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "source_path": "hanshinaru/docs/research/03_\uc791\uac00\ubcc4_10\ub144\uc8fc\uae30_\ud65c\ub3d9\uad6c\ubd84_250212_GE.csv",
+      "_src": "decade_bucket_csv",
+      "_tgt": "poet_metadata_enrichment",
+      "confidence_score": 1.0,
+      "source": "decade_bucket_csv",
+      "target": "poet_metadata_enrichment"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "source_path": "hanshinaru/docs/research/07_\uc720\ud29c\ube0c\ub9c1\ud06c_\ud3ec\ud568_\uc2dc_\ubaa9\ub85d_260215_GE.md",
+      "_src": "youtube_poem_list",
+      "_tgt": "poet_metadata_enrichment",
+      "confidence_score": 0.5,
+      "source": "youtube_poem_list",
+      "target": "poet_metadata_enrichment"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "source_path": "hanshinaru/docs/research/07_hanshi_kr_\uc885\ud569\ubcf4\uace0\uc11c_260221_GE.md",
+      "_src": "hanshi_site_report",
+      "_tgt": "poetry_editor_benchmark",
+      "confidence_score": 0.5,
+      "source": "hanshi_site_report",
+      "target": "poetry_editor_benchmark"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "source_path": "hanshinaru/docs/research/08_\ud3c9\uce21\uc54c\uace0\ub9ac\uc998_\ud0c0\ub2f9\uc131\uac80\ud1a0_260221_GE.md",
+      "_src": "hanshi_site_report",
+      "_tgt": "meter_algorithm_report",
+      "confidence_score": 0.5,
+      "source": "hanshi_site_report",
+      "target": "meter_algorithm_report"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_path": "hanshinaru/docs/research/10_\ubbfc\ucca0\uc758\uacac\uc11c_\ud314\ubcd1UX_\uc5c5\ubb34\ubd84\ub2f4_260221_CL.md",
+      "_src": "ux_review_letter",
+      "_tgt": "hanshi_site_report",
+      "confidence_score": 1.0,
+      "source": "hanshi_site_report",
+      "target": "ux_review_letter"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_path": "hanshinaru/docs/research/08_poetry_editor_benchmark_260215_GE.md",
+      "_src": "poetry_editor_benchmark",
+      "_tgt": "meter_checking_engine",
+      "confidence_score": 1.0,
+      "source": "poetry_editor_benchmark",
+      "target": "meter_checking_engine"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "source_path": "hanshinaru/docs/research/08_\ud3c9\uce21\uc54c\uace0\ub9ac\uc998_\ud0c0\ub2f9\uc131\uac80\ud1a0_260221_GE.md",
+      "_src": "meter_algorithm_report",
+      "_tgt": "meter_checking_engine",
+      "confidence_score": 1.0,
+      "source": "meter_algorithm_report",
+      "target": "meter_checking_engine"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_path": "hanshinaru/docs/research/10_\ubbfc\ucca0\uc758\uacac\uc11c_\ud314\ubcd1UX_\uc5c5\ubb34\ubd84\ub2f4_260221_CL.md",
+      "_src": "ux_review_letter",
+      "_tgt": "meter_algorithm_report",
+      "confidence_score": 1.0,
+      "source": "meter_algorithm_report",
+      "target": "ux_review_letter"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "source_path": "hanshinaru/docs/research/09_\ud314\ubcd1_\uc694\uad6c_UX_\uc544\uc774\ub514\uc5b4_260221_GE.md",
+      "_src": "eight_defects_ux",
+      "_tgt": "meter_checking_engine",
+      "confidence_score": 1.0,
+      "source": "eight_defects_ux",
+      "target": "meter_checking_engine"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_path": "hanshinaru/docs/research/10_\ubbfc\ucca0\uc758\uacac\uc11c_\ud314\ubcd1UX_\uc5c5\ubb34\ubd84\ub2f4_260221_CL.md",
+      "_src": "ux_review_letter",
+      "_tgt": "eight_defects_ux",
+      "confidence_score": 1.0,
+      "source": "eight_defects_ux",
+      "target": "ux_review_letter"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "source_path": "hanshinaru/docs/research/10_\ubbfc\ucca0\uc758\uacac\uc11c_\ud314\ubcd1UX_\uc5c5\ubb34\ubd84\ub2f4_260221_CL.md",
+      "_src": "ux_review_letter",
+      "_tgt": "meter_checking_engine",
+      "confidence_score": 0.5,
+      "source": "ux_review_letter",
+      "target": "meter_checking_engine"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_path": "hanshinaru/docs/research/09_UI_improvement_proposal_260215_GE.md",
+      "_src": "modal_ui_proposal",
+      "_tgt": "modal_dual_mode_ui",
+      "confidence_score": 1.0,
+      "source": "modal_ui_proposal",
+      "target": "modal_dual_mode_ui"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_path": "hanshinaru/docs/research/10_UI_developing_brainstorming_answer.md",
+      "_src": "modal_ui_answer",
+      "_tgt": "modal_ui_proposal",
+      "confidence_score": 1.0,
+      "source": "modal_ui_proposal",
+      "target": "modal_ui_answer"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "source_path": "hanshinaru/docs/research/10_UI_developing_brainstorming_answer.md",
+      "_src": "modal_ui_answer",
+      "_tgt": "modal_dual_mode_ui",
+      "confidence_score": 1.0,
+      "source": "modal_ui_answer",
+      "target": "modal_dual_mode_ui"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "source_path": "hanshinaru/docs/research/11_AI_\ubc88\uc5ed\uc9d1\ud544_\ud30c\uc774\ud504\ub77c\uc778_\uc124\uacc4_260216_CH.md",
+      "_src": "translation_pipeline_design",
+      "_tgt": "translation_content_pipeline",
+      "confidence_score": 1.0,
+      "source": "translation_pipeline_design",
+      "target": "translation_content_pipeline"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "source_path": "hanshinaru/docs/research/12_\uc2ec\uce35\ubc88\uc5ed_\uc6b4\uc601\ud504\ub85c\ud1a0\ucf5c_260216_CH.md",
+      "_src": "deep_translation_protocol",
+      "_tgt": "translation_pipeline_design",
+      "confidence_score": 0.5,
+      "source": "translation_pipeline_design",
+      "target": "deep_translation_protocol"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "source_path": "hanshinaru/docs/research/12_\uc2ec\uce35\ubc88\uc5ed_\uc6b4\uc601\ud504\ub85c\ud1a0\ucf5c_260216_CH.md",
+      "_src": "deep_translation_protocol",
+      "_tgt": "translation_content_pipeline",
+      "confidence_score": 1.0,
+      "source": "deep_translation_protocol",
+      "target": "translation_content_pipeline"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "source_path": "hanshinaru/docs/research/13_\uc2ec\uce35\ubc88\uc5ed_\uc791\uc5c5\ud050_260216_CH.csv",
+      "_src": "deep_translation_queue",
+      "_tgt": "deep_translation_protocol",
+      "confidence_score": 1.0,
+      "source": "deep_translation_protocol",
+      "target": "deep_translation_queue"
+    },
+    {
+      "relation": "implements",
+      "confidence": "INFERRED",
+      "source_path": "hanshinaru/docs/research/samples/gemini_translation_sample_latest.md",
+      "_src": "gemini_translation_samples",
+      "_tgt": "translation_content_pipeline",
+      "confidence_score": 0.5,
+      "source": "gemini_translation_samples",
+      "target": "translation_content_pipeline"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "source_path": "hanshinaru/docs/research/qwen_translations/qwen_translation_20260221_143125.md",
+      "_src": "qwen_translation_corpus",
+      "_tgt": "gemini_translation_samples",
+      "confidence_score": 0.5,
+      "source": "gemini_translation_samples",
+      "target": "qwen_translation_corpus"
+    },
+    {
+      "relation": "implements",
+      "confidence": "INFERRED",
+      "source_path": "hanshinaru/docs/research/qwen_translations/qwen_translation_20260221_143125.md",
+      "_src": "qwen_translation_corpus",
+      "_tgt": "translation_content_pipeline",
+      "confidence_score": 0.5,
+      "source": "qwen_translation_corpus",
+      "target": "translation_content_pipeline"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "source_path": "hanshinaru/docs/research/qwen_translations/translate_title.md",
+      "_src": "qwen_title_guide",
+      "_tgt": "qwen_translation_corpus",
+      "confidence_score": 0.5,
+      "source": "qwen_translation_corpus",
+      "target": "qwen_title_guide"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_path": "hanshinaru/docs/research/qwen_translations/\ud488\uc9c8\uccb4\ud06c_\ub9ac\ud3ec\ud2b8.md",
+      "_src": "qwen_quality_report",
+      "_tgt": "qwen_translation_corpus",
+      "confidence_score": 1.0,
+      "source": "qwen_translation_corpus",
+      "target": "qwen_quality_report"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "source_path": "hanshinaru/docs/research/qwen_translations/\ud488\uc9c8\uccb4\ud06c_\ub9ac\ud3ec\ud2b8.md",
+      "_src": "qwen_quality_report",
+      "_tgt": "qwen_title_guide",
+      "confidence_score": 0.5,
+      "source": "qwen_title_guide",
+      "target": "qwen_quality_report"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "source_path": "hanshinaru/docs/research/14_AI_\uae30\uc0ac\uc791\uc131\ud234_\uc81c\uc791\uacc4\ud68d_260222_GPT.md",
+      "_src": "news_tool_summary",
+      "_tgt": "news_rewrite_pipeline",
+      "confidence_score": 1.0,
+      "source": "news_tool_summary",
+      "target": "news_rewrite_pipeline"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_path": "hanshinaru/docs/research/15_AI_\uae30\uc0ac\uc791\uc131\ud234_\uac1c\ubc1c\uacc4\ud68d_\uc0c1\uc138.md",
+      "_src": "news_tool_detailed_plan",
+      "_tgt": "news_tool_summary",
+      "confidence_score": 1.0,
+      "source": "news_tool_summary",
+      "target": "news_tool_detailed_plan"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "source_path": "hanshinaru/docs/research/15_AI_\uae30\uc0ac\uc791\uc131\ud234_\uac1c\ubc1c\uacc4\ud68d_\uc0c1\uc138.md",
+      "_src": "news_tool_detailed_plan",
+      "_tgt": "news_rewrite_pipeline",
+      "confidence_score": 1.0,
+      "source": "news_tool_detailed_plan",
+      "target": "news_rewrite_pipeline"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "source_path": "hanshinaru/docs/research/19_\ucc3d\uc791\ub9c8\ub2f9_\ubc30\uacbd\ud3f0\ud2b8\uc120\ud0dd_\uac1c\ubc1c\uacc4\ud68d\uc11c_260222_CL.md",
+      "_src": "showcase_font_bg_plan",
+      "_tgt": "showcase_visual_customization",
+      "confidence_score": 1.0,
+      "source": "showcase_font_bg_plan",
+      "target": "showcase_visual_customization"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "source_path": "hanshinaru/docs/research/19_\ucc3d\uc791\ub9c8\ub2f9_\ubc30\uacbd\ud3f0\ud2b8\uc120\ud0dd_\uac1c\ubc1c\uacc4\ud68d\uc11c_260222_CL.md",
+      "_src": "showcase_font_bg_plan",
+      "_tgt": "modal_dual_mode_ui",
+      "confidence_score": 0.5,
+      "source": "showcase_font_bg_plan",
+      "target": "modal_dual_mode_ui"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "source_path": "hanshinaru/docs/research/08_\ud3c9\uce21\uc54c\uace0\ub9ac\uc998_\ud0c0\ub2f9\uc131\uac80\ud1a0_260221_GE.md",
+      "_src": "meter_checking_engine",
+      "_tgt": "poet_metadata_enrichment",
+      "confidence_score": 0.5,
+      "source": "poet_metadata_enrichment",
+      "target": "meter_checking_engine"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "source_path": "hanshinaru/docs/research/11_AI_\ubc88\uc5ed\uc9d1\ud544_\ud30c\uc774\ud504\ub77c\uc778_\uc124\uacc4_260216_CH.md",
+      "_src": "translation_content_pipeline",
+      "_tgt": "poet_metadata_enrichment",
+      "confidence_score": 0.5,
+      "source": "poet_metadata_enrichment",
+      "target": "translation_content_pipeline"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "source_path": "hanshinaru/docs/research/15_AI_\uae30\uc0ac\uc791\uc131\ud234_\uac1c\ubc1c\uacc4\ud68d_\uc0c1\uc138.md",
+      "_src": "news_rewrite_pipeline",
+      "_tgt": "translation_content_pipeline",
+      "confidence_score": 0.5,
+      "source": "translation_content_pipeline",
+      "target": "news_rewrite_pipeline"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "source_path": "hanshinaru/docs/research/19_\ucc3d\uc791\ub9c8\ub2f9_\ubc30\uacbd\ud3f0\ud2b8\uc120\ud0dd_\uac1c\ubc1c\uacc4\ud68d\uc11c_260222_CL.md",
+      "_src": "modal_dual_mode_ui",
+      "_tgt": "showcase_visual_customization",
+      "confidence_score": 0.5,
+      "source": "modal_dual_mode_ui",
+      "target": "showcase_visual_customization"
+    }
+  ],
+  "hyperedges": []
+}

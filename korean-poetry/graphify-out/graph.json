@@ -1,0 +1,310 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "timeline.js",
+      "file_type": "code",
+      "source_file": "korean-poetry/poets/timeline.js",
+      "source_location": "L1",
+      "id": "korean_poetry_poets_timeline_js",
+      "community": 0,
+      "norm_label": "timeline.js"
+    },
+    {
+      "label": "escapeHTML()",
+      "file_type": "code",
+      "source_file": "korean-poetry/poets/timeline.js",
+      "source_location": "L8",
+      "id": "timeline_escapehtml",
+      "community": 2,
+      "norm_label": "escapehtml()"
+    },
+    {
+      "label": "loadTimeline()",
+      "file_type": "code",
+      "source_file": "korean-poetry/poets/timeline.js",
+      "source_location": "L18",
+      "id": "timeline_loadtimeline",
+      "community": 0,
+      "norm_label": "loadtimeline()"
+    },
+    {
+      "label": "renderTimeline()",
+      "file_type": "code",
+      "source_file": "korean-poetry/poets/timeline.js",
+      "source_location": "L44",
+      "id": "timeline_rendertimeline",
+      "community": 0,
+      "norm_label": "rendertimeline()"
+    },
+    {
+      "label": "renderPoetCard()",
+      "file_type": "code",
+      "source_file": "korean-poetry/poets/timeline.js",
+      "source_location": "L77",
+      "id": "timeline_renderpoetcard",
+      "community": 2,
+      "norm_label": "renderpoetcard()"
+    },
+    {
+      "label": "renderPoemFull()",
+      "file_type": "code",
+      "source_file": "korean-poetry/poets/timeline.js",
+      "source_location": "L153",
+      "id": "timeline_renderpoemfull",
+      "community": 2,
+      "norm_label": "renderpoemfull()"
+    },
+    {
+      "label": "renderOrphanSection()",
+      "file_type": "code",
+      "source_file": "korean-poetry/poets/timeline.js",
+      "source_location": "L200",
+      "id": "timeline_renderorphansection",
+      "community": 0,
+      "norm_label": "renderorphansection()"
+    },
+    {
+      "label": "initNavigation()",
+      "file_type": "code",
+      "source_file": "korean-poetry/poets/timeline.js",
+      "source_location": "L255",
+      "id": "timeline_initnavigation",
+      "community": 0,
+      "norm_label": "initnavigation()"
+    },
+    {
+      "label": "\ud55c\uc2dc\ub098\ub8e8",
+      "file_type": "document",
+      "source_file": "korean-poetry/index.html",
+      "source_location": null,
+      "id": "korean_poetry_index_html",
+      "community": 1,
+      "norm_label": "\u1112\u1161\u11ab\u1109\u1175\u1102\u1161\u1105\u116e"
+    },
+    {
+      "label": "\ud55c\uc2dc\ub098\ub8e8",
+      "file_type": "document",
+      "source_file": "korean-poetry/poets/index.html",
+      "source_location": null,
+      "id": "korean_poetry_poets_index_html",
+      "community": 1,
+      "norm_label": "\u1112\u1161\u11ab\u1109\u1175\u1102\u1161\u1105\u116e"
+    },
+    {
+      "label": "\ud55c\uc2dc\ub098\ub8e8",
+      "file_type": "document",
+      "source_file": "korean-poetry/general/index.html",
+      "source_location": null,
+      "id": "korean_poetry_general_index_html",
+      "community": 1,
+      "norm_label": "\u1112\u1161\u11ab\u1109\u1175\u1102\u1161\u1105\u116e"
+    },
+    {
+      "label": "\ud55c\uc2dc\ub098\ub8e8",
+      "file_type": "document",
+      "source_file": "korean-poetry/great-poets/index.html",
+      "source_location": null,
+      "id": "korean_poetry_great_poets_index_html",
+      "community": 1,
+      "norm_label": "\u1112\u1161\u11ab\u1109\u1175\u1102\u1161\u1105\u116e"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "korean-poetry/poets/timeline.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_src": "korean_poetry_poets_timeline_js",
+      "_tgt": "timeline_escapehtml",
+      "source": "korean_poetry_poets_timeline_js",
+      "target": "timeline_escapehtml",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "korean-poetry/poets/timeline.js",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_src": "korean_poetry_poets_timeline_js",
+      "_tgt": "timeline_loadtimeline",
+      "source": "korean_poetry_poets_timeline_js",
+      "target": "timeline_loadtimeline",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "korean-poetry/poets/timeline.js",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_src": "korean_poetry_poets_timeline_js",
+      "_tgt": "timeline_rendertimeline",
+      "source": "korean_poetry_poets_timeline_js",
+      "target": "timeline_rendertimeline",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "korean-poetry/poets/timeline.js",
+      "source_location": "L77",
+      "weight": 1.0,
+      "_src": "korean_poetry_poets_timeline_js",
+      "_tgt": "timeline_renderpoetcard",
+      "source": "korean_poetry_poets_timeline_js",
+      "target": "timeline_renderpoetcard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "korean-poetry/poets/timeline.js",
+      "source_location": "L153",
+      "weight": 1.0,
+      "_src": "korean_poetry_poets_timeline_js",
+      "_tgt": "timeline_renderpoemfull",
+      "source": "korean_poetry_poets_timeline_js",
+      "target": "timeline_renderpoemfull",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "korean-poetry/poets/timeline.js",
+      "source_location": "L200",
+      "weight": 1.0,
+      "_src": "korean_poetry_poets_timeline_js",
+      "_tgt": "timeline_renderorphansection",
+      "source": "korean_poetry_poets_timeline_js",
+      "target": "timeline_renderorphansection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "korean-poetry/poets/timeline.js",
+      "source_location": "L255",
+      "weight": 1.0,
+      "_src": "korean_poetry_poets_timeline_js",
+      "_tgt": "timeline_initnavigation",
+      "source": "korean_poetry_poets_timeline_js",
+      "target": "timeline_initnavigation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "source_file": "korean-poetry/poets/index.html",
+      "source_location": null,
+      "weight": 0.7,
+      "confidence_score": 0.7,
+      "_src": "korean_poetry_poets_index_html",
+      "_tgt": "korean_poetry_poets_timeline_js",
+      "source": "korean_poetry_poets_timeline_js",
+      "target": "korean_poetry_poets_index_html"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "korean-poetry/poets/timeline.js",
+      "source_location": "L82",
+      "weight": 1.0,
+      "_src": "timeline_renderpoetcard",
+      "_tgt": "timeline_escapehtml",
+      "source": "timeline_escapehtml",
+      "target": "timeline_renderpoetcard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "korean-poetry/poets/timeline.js",
+      "source_location": "L160",
+      "weight": 1.0,
+      "_src": "timeline_renderpoemfull",
+      "_tgt": "timeline_escapehtml",
+      "source": "timeline_escapehtml",
+      "target": "timeline_renderpoemfull",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "korean-poetry/poets/timeline.js",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_src": "timeline_loadtimeline",
+      "_tgt": "timeline_rendertimeline",
+      "source": "timeline_loadtimeline",
+      "target": "timeline_rendertimeline",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "korean-poetry/poets/timeline.js",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_src": "timeline_loadtimeline",
+      "_tgt": "timeline_initnavigation",
+      "source": "timeline_loadtimeline",
+      "target": "timeline_initnavigation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "korean-poetry/poets/timeline.js",
+      "source_location": "L107",
+      "weight": 1.0,
+      "_src": "timeline_renderpoetcard",
+      "_tgt": "timeline_renderpoemfull",
+      "source": "timeline_renderpoetcard",
+      "target": "timeline_renderpoemfull",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "source_file": "korean-poetry/index.html",
+      "source_location": null,
+      "weight": 0.65,
+      "confidence_score": 0.65,
+      "_src": "korean_poetry_index_html",
+      "_tgt": "korean_poetry_poets_index_html",
+      "source": "korean_poetry_index_html",
+      "target": "korean_poetry_poets_index_html"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "source_file": "korean-poetry/index.html",
+      "source_location": null,
+      "weight": 0.65,
+      "confidence_score": 0.65,
+      "_src": "korean_poetry_index_html",
+      "_tgt": "korean_poetry_general_index_html",
+      "source": "korean_poetry_index_html",
+      "target": "korean_poetry_general_index_html"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "source_file": "korean-poetry/index.html",
+      "source_location": null,
+      "weight": 0.65,
+      "confidence_score": 0.65,
+      "_src": "korean_poetry_index_html",
+      "_tgt": "korean_poetry_great_poets_index_html",
+      "source": "korean_poetry_index_html",
+      "target": "korean_poetry_great_poets_index_html"
+    }
+  ],
+  "hyperedges": []
+}

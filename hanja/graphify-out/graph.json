@@ -1,0 +1,40 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "\ud55c\uc2dc\ub098\ub8e8",
+      "file_type": "document",
+      "source_file": "hanja/index.html",
+      "source_location": null,
+      "id": "hanja_index_html",
+      "community": 0,
+      "norm_label": "\u1112\u1161\u11ab\u1109\u1175\u1102\u1161\u1105\u116e"
+    },
+    {
+      "label": "\ud55c\uc2dc\ub098\ub8e8",
+      "file_type": "document",
+      "source_file": "hanja/exam/index.html",
+      "source_location": null,
+      "id": "hanja_exam_index_html",
+      "community": 0,
+      "norm_label": "\u1112\u1161\u11ab\u1109\u1175\u1102\u1161\u1105\u116e"
+    }
+  ],
+  "links": [
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "source_file": "hanja/index.html",
+      "source_location": null,
+      "weight": 0.65,
+      "confidence_score": 0.65,
+      "_src": "hanja_index_html",
+      "_tgt": "hanja_exam_index_html",
+      "source": "hanja_index_html",
+      "target": "hanja_exam_index_html"
+    }
+  ],
+  "hyperedges": []
+}

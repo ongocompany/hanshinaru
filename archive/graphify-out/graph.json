@@ -1,0 +1,241 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "fill_author_ko.py",
+      "file_type": "code",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/archive/scripts/fill_author_ko.py",
+      "source_location": "L1",
+      "id": "users_jinwoo_documents_development_hanshinaru_archive_scripts_fill_author_ko_py",
+      "community": 2,
+      "norm_label": "fill_author_ko.py"
+    },
+    {
+      "label": "clean_zh()",
+      "file_type": "code",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/archive/scripts/fill_author_ko.py",
+      "source_location": "L9",
+      "id": "fill_author_ko_clean_zh",
+      "community": 2,
+      "norm_label": "clean_zh()"
+    },
+    {
+      "label": "generate_author_name_ko.js",
+      "file_type": "code",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/archive/scripts/generate_author_name_ko.js",
+      "source_location": "L1",
+      "id": "users_jinwoo_documents_development_hanshinaru_archive_scripts_generate_author_name_ko_js",
+      "community": 0,
+      "norm_label": "generate_author_name_ko.js"
+    },
+    {
+      "label": "readJson()",
+      "file_type": "code",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/archive/scripts/generate_author_name_ko.js",
+      "source_location": "L168",
+      "id": "generate_author_name_ko_readjson",
+      "community": 1,
+      "norm_label": "readjson()"
+    },
+    {
+      "label": "writeJson()",
+      "file_type": "code",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/archive/scripts/generate_author_name_ko.js",
+      "source_location": "L179",
+      "id": "generate_author_name_ko_writejson",
+      "community": 1,
+      "norm_label": "writejson()"
+    },
+    {
+      "label": "ensureCustomMap()",
+      "file_type": "code",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/archive/scripts/generate_author_name_ko.js",
+      "source_location": "L188",
+      "id": "generate_author_name_ko_ensurecustommap",
+      "community": 1,
+      "norm_label": "ensurecustommap()"
+    },
+    {
+      "label": "hanjaToKoreanReading()",
+      "file_type": "code",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/archive/scripts/generate_author_name_ko.js",
+      "source_location": "L201",
+      "id": "generate_author_name_ko_hanjatokoreanreading",
+      "community": 0,
+      "norm_label": "hanjatokoreanreading()"
+    },
+    {
+      "label": "extractZhName()",
+      "file_type": "code",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/archive/scripts/generate_author_name_ko.js",
+      "source_location": "L231",
+      "id": "generate_author_name_ko_extractzhname",
+      "community": 0,
+      "norm_label": "extractzhname()"
+    },
+    {
+      "label": "injectKoName()",
+      "file_type": "code",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/archive/scripts/generate_author_name_ko.js",
+      "source_location": "L245",
+      "id": "generate_author_name_ko_injectkoname",
+      "community": 0,
+      "norm_label": "injectkoname()"
+    },
+    {
+      "label": "readdy_like.js",
+      "file_type": "code",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/archive/pages/readdy_like.js",
+      "source_location": "L1",
+      "id": "users_jinwoo_documents_development_hanshinaru_archive_pages_readdy_like_js",
+      "community": 3,
+      "norm_label": "readdy_like.js"
+    },
+    {
+      "label": "updateNavState()",
+      "file_type": "code",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/archive/pages/readdy_like.js",
+      "source_location": "L6",
+      "id": "readdy_like_updatenavstate",
+      "community": 3,
+      "norm_label": "updatenavstate()"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/archive/scripts/fill_author_ko.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_src": "users_jinwoo_documents_development_hanshinaru_archive_scripts_fill_author_ko_py",
+      "_tgt": "fill_author_ko_clean_zh",
+      "source": "users_jinwoo_documents_development_hanshinaru_archive_scripts_fill_author_ko_py",
+      "target": "fill_author_ko_clean_zh",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/archive/scripts/generate_author_name_ko.js",
+      "source_location": "L168",
+      "weight": 1.0,
+      "_src": "users_jinwoo_documents_development_hanshinaru_archive_scripts_generate_author_name_ko_js",
+      "_tgt": "generate_author_name_ko_readjson",
+      "source": "users_jinwoo_documents_development_hanshinaru_archive_scripts_generate_author_name_ko_js",
+      "target": "generate_author_name_ko_readjson",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/archive/scripts/generate_author_name_ko.js",
+      "source_location": "L179",
+      "weight": 1.0,
+      "_src": "users_jinwoo_documents_development_hanshinaru_archive_scripts_generate_author_name_ko_js",
+      "_tgt": "generate_author_name_ko_writejson",
+      "source": "users_jinwoo_documents_development_hanshinaru_archive_scripts_generate_author_name_ko_js",
+      "target": "generate_author_name_ko_writejson",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/archive/scripts/generate_author_name_ko.js",
+      "source_location": "L188",
+      "weight": 1.0,
+      "_src": "users_jinwoo_documents_development_hanshinaru_archive_scripts_generate_author_name_ko_js",
+      "_tgt": "generate_author_name_ko_ensurecustommap",
+      "source": "users_jinwoo_documents_development_hanshinaru_archive_scripts_generate_author_name_ko_js",
+      "target": "generate_author_name_ko_ensurecustommap",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/archive/scripts/generate_author_name_ko.js",
+      "source_location": "L201",
+      "weight": 1.0,
+      "_src": "users_jinwoo_documents_development_hanshinaru_archive_scripts_generate_author_name_ko_js",
+      "_tgt": "generate_author_name_ko_hanjatokoreanreading",
+      "source": "users_jinwoo_documents_development_hanshinaru_archive_scripts_generate_author_name_ko_js",
+      "target": "generate_author_name_ko_hanjatokoreanreading",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/archive/scripts/generate_author_name_ko.js",
+      "source_location": "L231",
+      "weight": 1.0,
+      "_src": "users_jinwoo_documents_development_hanshinaru_archive_scripts_generate_author_name_ko_js",
+      "_tgt": "generate_author_name_ko_extractzhname",
+      "source": "users_jinwoo_documents_development_hanshinaru_archive_scripts_generate_author_name_ko_js",
+      "target": "generate_author_name_ko_extractzhname",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/archive/scripts/generate_author_name_ko.js",
+      "source_location": "L245",
+      "weight": 1.0,
+      "_src": "users_jinwoo_documents_development_hanshinaru_archive_scripts_generate_author_name_ko_js",
+      "_tgt": "generate_author_name_ko_injectkoname",
+      "source": "users_jinwoo_documents_development_hanshinaru_archive_scripts_generate_author_name_ko_js",
+      "target": "generate_author_name_ko_injectkoname",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/archive/scripts/generate_author_name_ko.js",
+      "source_location": "L192",
+      "weight": 1.0,
+      "_src": "generate_author_name_ko_ensurecustommap",
+      "_tgt": "generate_author_name_ko_readjson",
+      "source": "generate_author_name_ko_readjson",
+      "target": "generate_author_name_ko_ensurecustommap",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/archive/scripts/generate_author_name_ko.js",
+      "source_location": "L190",
+      "weight": 1.0,
+      "_src": "generate_author_name_ko_ensurecustommap",
+      "_tgt": "generate_author_name_ko_writejson",
+      "source": "generate_author_name_ko_writejson",
+      "target": "generate_author_name_ko_ensurecustommap",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/archive/scripts/generate_author_name_ko.js",
+      "source_location": "L261",
+      "weight": 1.0,
+      "_src": "generate_author_name_ko_injectkoname",
+      "_tgt": "generate_author_name_ko_extractzhname",
+      "source": "generate_author_name_ko_extractzhname",
+      "target": "generate_author_name_ko_injectkoname",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/jinwoo/Documents/development/hanshinaru/archive/pages/readdy_like.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_src": "users_jinwoo_documents_development_hanshinaru_archive_pages_readdy_like_js",
+      "_tgt": "readdy_like_updatenavstate",
+      "source": "users_jinwoo_documents_development_hanshinaru_archive_pages_readdy_like_js",
+      "target": "readdy_like_updatenavstate",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": []
+}

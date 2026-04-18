@@ -1,0 +1,110 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "New Epic Design Spec",
+      "file_type": "document",
+      "source_file": "hanshinaru/docs/specs/2026-04-16-\uc0c8-\uc5d0\ud53d.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "new epic design spec",
+      "id": "new_epic_design_spec"
+    },
+    {
+      "label": "New Epic Task Breakdown Scaffold",
+      "file_type": "document",
+      "source_file": "hanshinaru/docs/specs/2026-04-16-\uc0c8-\uc5d0\ud53d.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "new epic task breakdown scaffold",
+      "id": "new_epic_task_breakdown"
+    },
+    {
+      "label": "New Epic Tech Stack",
+      "file_type": "document",
+      "source_file": "hanshinaru/docs/specs/2026-04-16-\uc0c8-\uc5d0\ud53d.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "new epic tech stack",
+      "id": "new_epic_tech_stack"
+    },
+    {
+      "label": "Unlinked Plan Reference",
+      "file_type": "document",
+      "source_file": "hanshinaru/docs/specs/2026-04-16-\uc0c8-\uc5d0\ud53d.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "unlinked plan reference",
+      "id": "unlinked_plan_reference"
+    }
+  ],
+  "links": [
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.99,
+      "source_file": "hanshinaru/docs/specs/2026-04-16-\uc0c8-\uc5d0\ud53d.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "new_epic_design_spec",
+      "_tgt": "new_epic_tech_stack",
+      "source": "new_epic_design_spec",
+      "target": "new_epic_tech_stack"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.99,
+      "source_file": "hanshinaru/docs/specs/2026-04-16-\uc0c8-\uc5d0\ud53d.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "new_epic_design_spec",
+      "_tgt": "new_epic_task_breakdown",
+      "source": "new_epic_design_spec",
+      "target": "new_epic_task_breakdown"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.99,
+      "source_file": "hanshinaru/docs/specs/2026-04-16-\uc0c8-\uc5d0\ud53d.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "new_epic_design_spec",
+      "_tgt": "unlinked_plan_reference",
+      "source": "new_epic_design_spec",
+      "target": "unlinked_plan_reference"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.84,
+      "source_file": "hanshinaru/docs/specs/2026-04-16-\uc0c8-\uc5d0\ud53d.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "unlinked_plan_reference",
+      "_tgt": "new_epic_task_breakdown",
+      "source": "new_epic_task_breakdown",
+      "target": "unlinked_plan_reference"
+    }
+  ],
+  "hyperedges": []
+}

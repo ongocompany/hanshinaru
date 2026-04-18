@@ -1,0 +1,40 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "\ud55c\uc2dc\ub098\ub8e8",
+      "file_type": "document",
+      "source_file": "auth/index.html",
+      "source_location": null,
+      "id": "auth_index_html",
+      "community": 0,
+      "norm_label": "\u1112\u1161\u11ab\u1109\u1175\u1102\u1161\u1105\u116e"
+    },
+    {
+      "label": "\ud55c\uc2dc\ub098\ub8e8",
+      "file_type": "document",
+      "source_file": "auth/setup/index.html",
+      "source_location": null,
+      "id": "auth_setup_index_html",
+      "community": 0,
+      "norm_label": "\u1112\u1161\u11ab\u1109\u1175\u1102\u1161\u1105\u116e"
+    }
+  ],
+  "links": [
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "source_file": "auth/index.html",
+      "source_location": null,
+      "weight": 0.65,
+      "confidence_score": 0.65,
+      "_src": "auth_index_html",
+      "_tgt": "auth_setup_index_html",
+      "source": "auth_index_html",
+      "target": "auth_setup_index_html"
+    }
+  ],
+  "hyperedges": []
+}

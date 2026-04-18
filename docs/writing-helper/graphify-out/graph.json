@@ -1,0 +1,85 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "Design Review Report",
+      "file_type": "document",
+      "source_file": "hanshinaru/docs/writing-helper/01_\u1109\u1165\u11af\u1100\u1168\u1100\u1165\u11b7\u1110\u1169\u1107\u1169\u1100\u1169\u1109\u1165_260217_CL.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "design review report",
+      "id": "hanshinaru_writing_helper_design_review_report"
+    },
+    {
+      "label": "Technical Review Report",
+      "file_type": "document",
+      "source_file": "hanshinaru/docs/writing-helper/02_\u1100\u1175\u1109\u116e\u11af\u1100\u1165\u11b7\u1110\u1169\u1107\u1169\u1100\u1169\u1109\u1165_260217_CL.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "technical review report",
+      "id": "hanshinaru_writing_helper_technical_review_report"
+    },
+    {
+      "label": "Development Roadmap And Task Assignment",
+      "file_type": "document",
+      "source_file": "hanshinaru/docs/writing-helper/03_\u1100\u1162\u1107\u1161\u11af\u1105\u1169\u1103\u1173\u1106\u1162\u11b8_260217_CL.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "development roadmap and task assignment",
+      "id": "hanshinaru_writing_helper_development_roadmap"
+    }
+  ],
+  "links": [
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "hanshinaru/docs/writing-helper/02_\u1100\u1175\u1109\u116e\u11af\u1100\u1165\u11b7\u1110\u1169\u1107\u1169\u1100\u1169\u1109\u1165_260217_CL.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "hanshinaru_writing_helper_technical_review_report",
+      "_tgt": "hanshinaru_writing_helper_design_review_report",
+      "source": "hanshinaru_writing_helper_design_review_report",
+      "target": "hanshinaru_writing_helper_technical_review_report"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "hanshinaru/docs/writing-helper/03_\u1100\u1162\u1107\u1161\u11af\u1105\u1169\u1103\u1173\u1106\u1162\u11b8_260217_CL.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "hanshinaru_writing_helper_development_roadmap",
+      "_tgt": "hanshinaru_writing_helper_design_review_report",
+      "source": "hanshinaru_writing_helper_design_review_report",
+      "target": "hanshinaru_writing_helper_development_roadmap"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "hanshinaru/docs/writing-helper/03_\u1100\u1162\u1107\u1161\u11af\u1105\u1169\u1103\u1173\u1106\u1162\u11b8_260217_CL.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "hanshinaru_writing_helper_development_roadmap",
+      "_tgt": "hanshinaru_writing_helper_technical_review_report",
+      "source": "hanshinaru_writing_helper_technical_review_report",
+      "target": "hanshinaru_writing_helper_development_roadmap"
+    }
+  ],
+  "hyperedges": []
+}
