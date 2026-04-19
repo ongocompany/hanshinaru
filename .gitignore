@@ -13,3 +13,7 @@ scripts/notion-config.json
 
 # graphify 출력물
 graphify-out/
+.env.local
+
+# 아카이브 (로컬 참고용, git 미추적)
+docs/archive/

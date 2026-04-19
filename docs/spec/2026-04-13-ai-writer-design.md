@@ -24,7 +24,7 @@ date: 2026-04-13
 - 경로: `tools/ai-writer/index.html`
 - 형태: 단일 페이지 독립 도구 (Vanilla HTML/CSS/JS)
 - 향후: admin 페이지 정비 후 통합 예정
-
+x`
 ## 2. 콘텐츠 유형
 
 | 유형 | 대상 |
