@@ -1,0 +1,561 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hanshinaru.local/spec/korean-hansi.schema.v1.json",
+  "title": "Hanshinaru Korean Hansi Record v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "poemId",
+    "canonicalId",
+    "title",
+    "author",
+    "era",
+    "genre",
+    "sourceWork",
+    "text",
+    "legacyAssets",
+    "ownedAssets",
+    "rights",
+    "commercialTransition"
+  ],
+  "properties": {
+    "poemId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "canonicalId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "title": {
+      "$ref": "#/$defs/langText"
+    },
+    "author": {
+      "$ref": "#/$defs/authorRef"
+    },
+    "era": {
+      "$ref": "#/$defs/eraBlock"
+    },
+    "genre": {
+      "$ref": "#/$defs/genreBlock"
+    },
+    "sourceWork": {
+      "$ref": "#/$defs/sourceWork"
+    },
+    "text": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "poemZh"
+      ],
+      "properties": {
+        "poemZh": {
+          "type": "string",
+          "minLength": 1
+        },
+        "poemKoReading": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "poemKoGloss": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "legacyAssets": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "translationKo",
+        "notes",
+        "commentaryKo"
+      ],
+      "properties": {
+        "translationKo": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/noteItem"
+          }
+        },
+        "commentaryKo": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "ownedAssets": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "translationKoOwned",
+        "notesOwned",
+        "commentaryKoOwned",
+        "ownedContentMeta"
+      ],
+      "properties": {
+        "translationKoOwned": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "notesOwned": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/noteItem"
+          }
+        },
+        "commentaryKoOwned": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ownedContentMeta": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/ownedContentMeta"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "rights": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "originalText",
+        "legacyTranslation",
+        "legacyNotes",
+        "ownedTranslation",
+        "ownedNotes",
+        "images"
+      ],
+      "properties": {
+        "originalText": {
+          "$ref": "#/$defs/assetRights"
+        },
+        "legacyTranslation": {
+          "$ref": "#/$defs/assetRights"
+        },
+        "legacyNotes": {
+          "$ref": "#/$defs/assetRights"
+        },
+        "ownedTranslation": {
+          "$ref": "#/$defs/assetRights"
+        },
+        "ownedNotes": {
+          "$ref": "#/$defs/assetRights"
+        },
+        "images": {
+          "$ref": "#/$defs/assetRights"
+        }
+      }
+    },
+    "commercialTransition": {
+      "$ref": "#/$defs/commercialTransition"
+    }
+  },
+  "$defs": {
+    "langText": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "zh",
+        "ko"
+      ],
+      "properties": {
+        "zh": {
+          "type": "string"
+        },
+        "ko": {
+          "type": "string"
+        }
+      }
+    },
+    "authorRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "authorId",
+        "zh",
+        "ko"
+      ],
+      "properties": {
+        "authorId": {
+          "type": "string"
+        },
+        "zh": {
+          "type": "string"
+        },
+        "ko": {
+          "type": "string"
+        }
+      }
+    },
+    "eraBlock": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "label",
+        "startYear",
+        "endYear",
+        "confidence"
+      ],
+      "properties": {
+        "label": {
+          "type": "string"
+        },
+        "startYear": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "endYear": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "confidence": {
+          "type": "string",
+          "enum": [
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      }
+    },
+    "genreBlock": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "broad",
+        "form"
+      ],
+      "properties": {
+        "broad": {
+          "type": "string"
+        },
+        "form": {
+          "type": "string"
+        }
+      }
+    },
+    "sourceWork": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "collectionTitle",
+        "juan",
+        "entryTitle",
+        "sourceUrl",
+        "sourcePolicyId"
+      ],
+      "properties": {
+        "collectionTitle": {
+          "type": "string"
+        },
+        "juan": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "entryTitle": {
+          "type": "string"
+        },
+        "sourceUrl": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sourcePolicyId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "noteItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "head",
+        "body"
+      ],
+      "properties": {
+        "head": {
+          "type": "string"
+        },
+        "body": {
+          "type": "string"
+        }
+      }
+    },
+    "ownedContentMeta": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "editedBy",
+        "updatedAt",
+        "researchBacked",
+        "needsHumanReview",
+        "generationPolicy",
+        "sourceRefs",
+        "rightsReview"
+      ],
+      "properties": {
+        "status": {
+          "type": "string"
+        },
+        "editedBy": {
+          "type": "string"
+        },
+        "reviewedBy": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "approvedBy": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "updatedAt": {
+          "type": "string"
+        },
+        "researchBacked": {
+          "type": "boolean"
+        },
+        "needsHumanReview": {
+          "type": "boolean"
+        },
+        "generationPolicy": {
+          "type": "string"
+        },
+        "sourceRefs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "rightsReview": {
+          "$ref": "#/$defs/rightsReview"
+        }
+      }
+    },
+    "rightsReview": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "legacyTranslationInjectedToModel",
+        "legacyNotesInjectedToModel",
+        "similarityCheckPassed",
+        "copyrightRiskLevel",
+        "commercialSafe",
+        "commercialSafeReason"
+      ],
+      "properties": {
+        "legacyTranslationInjectedToModel": {
+          "type": "boolean"
+        },
+        "legacyNotesInjectedToModel": {
+          "type": "boolean"
+        },
+        "similarityCheckPassed": {
+          "type": "boolean"
+        },
+        "copyrightRiskLevel": {
+          "type": "string",
+          "enum": [
+            "low",
+            "medium",
+            "high",
+            "unknown"
+          ]
+        },
+        "commercialSafe": {
+          "type": "boolean"
+        },
+        "commercialSafeReason": {
+          "type": "string"
+        }
+      }
+    },
+    "assetRights": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "exists",
+        "sourcePolicyId",
+        "sourceUrl",
+        "copyrightStatus",
+        "usageClass",
+        "publicDisplayAllowedNow",
+        "commercialAllowedNow",
+        "requiresPermissionForCommercial",
+        "mustReplaceBeforeCommercial",
+        "replacementPriority",
+        "attributionRequired"
+      ],
+      "properties": {
+        "exists": {
+          "type": "boolean"
+        },
+        "sourcePolicyId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sourceUrl": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "copyrightStatus": {
+          "type": "string",
+          "enum": [
+            "public_domain",
+            "copyrighted",
+            "licensed",
+            "owned",
+            "unknown"
+          ]
+        },
+        "usageClass": {
+          "type": "string",
+          "enum": [
+            "internal_only",
+            "reference_only",
+            "noncommercial_only",
+            "commercial_with_permission",
+            "commercial_allowed",
+            "not_applicable",
+            "unknown"
+          ]
+        },
+        "publicDisplayAllowedNow": {
+          "type": "boolean"
+        },
+        "commercialAllowedNow": {
+          "type": "boolean"
+        },
+        "requiresPermissionForCommercial": {
+          "type": "boolean"
+        },
+        "mustReplaceBeforeCommercial": {
+          "type": "boolean"
+        },
+        "replacementPriority": {
+          "type": "string",
+          "enum": [
+            "low",
+            "medium",
+            "high",
+            "critical"
+          ]
+        },
+        "attributionRequired": {
+          "type": "boolean"
+        },
+        "checkedAt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "checkedBy": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "evidence": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "commercialTransition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "isCommercialReady",
+        "blockingAssets",
+        "replacementRequired"
+      ],
+      "properties": {
+        "isCommercialReady": {
+          "type": "boolean"
+        },
+        "blockingAssets": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "originalText",
+              "legacyTranslation",
+              "legacyNotes",
+              "ownedTranslation",
+              "ownedNotes",
+              "images"
+            ]
+          }
+        },
+        "replacementRequired": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "asset",
+              "reason"
+            ],
+            "properties": {
+              "asset": {
+                "type": "string"
+              },
+              "reason": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

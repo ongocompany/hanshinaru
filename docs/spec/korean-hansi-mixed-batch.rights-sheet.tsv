@@ -1,0 +1,61 @@
+poemId	authorKo	titleKo	asset	exists	sourcePolicyId	sourceUrl	copyrightStatus	usageClass	publicDisplayAllowedNow	commercialAllowedNow	requiresPermissionForCommercial	mustReplaceBeforeCommercial	replacementPriority	attributionRequired	recordCommercialReady	blockingAssets	replacementRequired
+KHS-MIXED-0001	최치원	추야우중	originalText	true	SRC-WIKISOURCE-TEXT	https://ko.wikisource.org/wiki/%EC%B6%94%EC%95%BC%EC%9A%B0%EC%A4%91	licensed	commercial_allowed	true	true	false	false	low	true	true		
+KHS-MIXED-0001	최치원	추야우중	legacyTranslation	true	SRC-WIKISOURCE-TEXT	https://ko.wikisource.org/wiki/%EC%B6%94%EC%95%BC%EC%9A%B0%EC%A4%91	licensed	commercial_allowed	true	true	false	false	low	true	true		
+KHS-MIXED-0001	최치원	추야우중	legacyNotes	false			unknown	not_applicable	false	false	false	false	low	false	true		
+KHS-MIXED-0001	최치원	추야우중	ownedTranslation	false			unknown	not_applicable	false	false	false	false	low	false	true		
+KHS-MIXED-0001	최치원	추야우중	ownedNotes	true			owned	commercial_allowed	true	true	false	false	low	false	true		
+KHS-MIXED-0001	최치원	추야우중	images	false			unknown	not_applicable	false	false	false	false	low	false	true		
+KHS-MIXED-0002	정지상	송인	originalText	true	SRC-WIKISOURCE-TEXT	https://ko.wikisource.org/wiki/%EC%86%A1%EC%9D%B8	licensed	commercial_allowed	true	true	false	false	low	true	true		
+KHS-MIXED-0002	정지상	송인	legacyTranslation	true	SRC-WIKISOURCE-TEXT	https://ko.wikisource.org/wiki/%EC%86%A1%EC%9D%B8	licensed	commercial_allowed	true	true	false	false	low	true	true		
+KHS-MIXED-0002	정지상	송인	legacyNotes	false			unknown	not_applicable	false	false	false	false	low	false	true		
+KHS-MIXED-0002	정지상	송인	ownedTranslation	false			unknown	not_applicable	false	false	false	false	low	false	true		
+KHS-MIXED-0002	정지상	송인	ownedNotes	true			owned	commercial_allowed	true	true	false	false	low	false	true		
+KHS-MIXED-0002	정지상	송인	images	false			unknown	not_applicable	false	false	false	false	low	false	true		
+KHS-MIXED-0003	이규보	강상효우	originalText	true	SRC-WIKISOURCE-TEXT	https://ko.wikisource.org/wiki/%EA%B0%95%EC%83%81%ED%9A%A8%EC%9A%B0	licensed	commercial_allowed	true	true	false	false	low	true	true		
+KHS-MIXED-0003	이규보	강상효우	legacyTranslation	false			unknown	not_applicable	false	false	false	false	low	false	true		
+KHS-MIXED-0003	이규보	강상효우	legacyNotes	false			unknown	not_applicable	false	false	false	false	low	false	true		
+KHS-MIXED-0003	이규보	강상효우	ownedTranslation	true			owned	commercial_allowed	true	true	false	false	low	false	true		
+KHS-MIXED-0003	이규보	강상효우	ownedNotes	true			owned	commercial_allowed	true	true	false	false	low	false	true		
+KHS-MIXED-0003	이규보	강상효우	images	false			unknown	not_applicable	false	false	false	false	low	false	true		
+KHS-MIXED-0004	박인량	주중야음	originalText	true	SRC-WIKISOURCE-TEXT	https://ko.wikisource.org/wiki/%EC%A3%BC%EC%A4%91%EC%95%BC%EC%9D%8C	licensed	commercial_allowed	true	true	false	false	low	true	true		
+KHS-MIXED-0004	박인량	주중야음	legacyTranslation	true	SRC-WIKISOURCE-TEXT	https://ko.wikisource.org/wiki/%EC%A3%BC%EC%A4%91%EC%95%BC%EC%9D%8C	licensed	commercial_allowed	true	true	false	false	low	true	true		
+KHS-MIXED-0004	박인량	주중야음	legacyNotes	false			unknown	not_applicable	false	false	false	false	low	false	true		
+KHS-MIXED-0004	박인량	주중야음	ownedTranslation	false			unknown	not_applicable	false	false	false	false	low	false	true		
+KHS-MIXED-0004	박인량	주중야음	ownedNotes	true			owned	commercial_allowed	true	true	false	false	low	false	true		
+KHS-MIXED-0004	박인량	주중야음	images	false			unknown	not_applicable	false	false	false	false	low	false	true		
+KHS-MIXED-0005	허난설헌	봄비	originalText	true	SRC-ITKC-ORIGINAL-TEXT	https://db.itkc.or.kr/	public_domain	internal_only	false	false	true	false	medium	true	false	originalText	originalText:commercial_permission_required
+KHS-MIXED-0005	허난설헌	봄비	legacyTranslation	false	SRC-ITKC-TRANSLATION-TEXT		unknown	not_applicable	false	false	false	false	low	false	false	originalText	originalText:commercial_permission_required
+KHS-MIXED-0005	허난설헌	봄비	legacyNotes	false	SRC-ITKC-TRANSLATION-TEXT		unknown	not_applicable	false	false	false	false	low	false	false	originalText	originalText:commercial_permission_required
+KHS-MIXED-0005	허난설헌	봄비	ownedTranslation	true			owned	commercial_allowed	true	true	false	false	low	false	false	originalText	originalText:commercial_permission_required
+KHS-MIXED-0005	허난설헌	봄비	ownedNotes	true			owned	commercial_allowed	true	true	false	false	low	false	false	originalText	originalText:commercial_permission_required
+KHS-MIXED-0005	허난설헌	봄비	images	false	SRC-ITKC-IMAGE		unknown	not_applicable	false	false	false	false	low	false	false	originalText	originalText:commercial_permission_required
+KHS-MIXED-0006	허난설헌	치운 밤에	originalText	true	SRC-ITKC-ORIGINAL-TEXT	https://db.itkc.or.kr/	public_domain	internal_only	false	false	true	false	medium	true	false	originalText	originalText:commercial_permission_required
+KHS-MIXED-0006	허난설헌	치운 밤에	legacyTranslation	false	SRC-ITKC-TRANSLATION-TEXT		unknown	not_applicable	false	false	false	false	low	false	false	originalText	originalText:commercial_permission_required
+KHS-MIXED-0006	허난설헌	치운 밤에	legacyNotes	false	SRC-ITKC-TRANSLATION-TEXT		unknown	not_applicable	false	false	false	false	low	false	false	originalText	originalText:commercial_permission_required
+KHS-MIXED-0006	허난설헌	치운 밤에	ownedTranslation	true			owned	commercial_allowed	true	true	false	false	low	false	false	originalText	originalText:commercial_permission_required
+KHS-MIXED-0006	허난설헌	치운 밤에	ownedNotes	true			owned	commercial_allowed	true	true	false	false	low	false	false	originalText	originalText:commercial_permission_required
+KHS-MIXED-0006	허난설헌	치운 밤에	images	false	SRC-ITKC-IMAGE		unknown	not_applicable	false	false	false	false	low	false	false	originalText	originalText:commercial_permission_required
+KHS-MIXED-0007	허난설헌	송별	originalText	true	SRC-ITKC-ORIGINAL-TEXT	https://db.itkc.or.kr/	public_domain	internal_only	false	false	true	false	medium	true	false	originalText	originalText:commercial_permission_required
+KHS-MIXED-0007	허난설헌	송별	legacyTranslation	false	SRC-ITKC-TRANSLATION-TEXT		unknown	not_applicable	false	false	false	false	low	false	false	originalText	originalText:commercial_permission_required
+KHS-MIXED-0007	허난설헌	송별	legacyNotes	false	SRC-ITKC-TRANSLATION-TEXT		unknown	not_applicable	false	false	false	false	low	false	false	originalText	originalText:commercial_permission_required
+KHS-MIXED-0007	허난설헌	송별	ownedTranslation	true			owned	commercial_allowed	true	true	false	false	low	false	false	originalText	originalText:commercial_permission_required
+KHS-MIXED-0007	허난설헌	송별	ownedNotes	true			owned	commercial_allowed	true	true	false	false	low	false	false	originalText	originalText:commercial_permission_required
+KHS-MIXED-0007	허난설헌	송별	images	false	SRC-ITKC-IMAGE		unknown	not_applicable	false	false	false	false	low	false	false	originalText	originalText:commercial_permission_required
+KHS-MIXED-0008	매창	배 띄우고	originalText	true	SRC-WIKISOURCE-TEXT	https://ko.wikisource.org/wiki/%EC%A1%B0%EC%84%A0%EC%97%AC%EB%A5%98%ED%95%9C%EC%8B%9C%EC%84%A0%EC%A7%91/%EB%B0%B0_%EB%9D%84%EC%9A%B0%EA%B3%A0	licensed	commercial_allowed	true	true	false	false	low	true	false	legacyTranslation	legacyTranslation:must_replace_before_commercial
+KHS-MIXED-0008	매창	배 띄우고	legacyTranslation	true	SRC-MANUAL-NONCOMM-TRANSLATION		copyrighted	noncommercial_only	true	false	false	true	critical	true	false	legacyTranslation	legacyTranslation:must_replace_before_commercial
+KHS-MIXED-0008	매창	배 띄우고	legacyNotes	false			unknown	not_applicable	false	false	false	false	low	false	false	legacyTranslation	legacyTranslation:must_replace_before_commercial
+KHS-MIXED-0008	매창	배 띄우고	ownedTranslation	false			unknown	not_applicable	false	false	false	false	low	false	false	legacyTranslation	legacyTranslation:must_replace_before_commercial
+KHS-MIXED-0008	매창	배 띄우고	ownedNotes	true			owned	commercial_allowed	true	true	false	false	low	false	false	legacyTranslation	legacyTranslation:must_replace_before_commercial
+KHS-MIXED-0008	매창	배 띄우고	images	false			unknown	not_applicable	false	false	false	false	low	false	false	legacyTranslation	legacyTranslation:must_replace_before_commercial
+KHS-MIXED-0009	매창	꿈을 깨니	originalText	true	SRC-WIKISOURCE-TEXT	https://ko.wikisource.org/wiki/%EC%A1%B0%EC%84%A0%EC%97%AC%EB%A5%98%ED%95%9C%EC%8B%9C%EC%84%A0%EC%A7%91/%EA%BF%88%EC%9D%84_%EA%B9%A8%EB%8B%88	licensed	commercial_allowed	true	true	false	false	low	true	false	legacyTranslation	legacyTranslation:must_replace_before_commercial
+KHS-MIXED-0009	매창	꿈을 깨니	legacyTranslation	true	SRC-MANUAL-NONCOMM-TRANSLATION		copyrighted	noncommercial_only	true	false	false	true	critical	true	false	legacyTranslation	legacyTranslation:must_replace_before_commercial
+KHS-MIXED-0009	매창	꿈을 깨니	legacyNotes	false			unknown	not_applicable	false	false	false	false	low	false	false	legacyTranslation	legacyTranslation:must_replace_before_commercial
+KHS-MIXED-0009	매창	꿈을 깨니	ownedTranslation	false			unknown	not_applicable	false	false	false	false	low	false	false	legacyTranslation	legacyTranslation:must_replace_before_commercial
+KHS-MIXED-0009	매창	꿈을 깨니	ownedNotes	true			owned	commercial_allowed	true	true	false	false	low	false	false	legacyTranslation	legacyTranslation:must_replace_before_commercial
+KHS-MIXED-0009	매창	꿈을 깨니	images	false			unknown	not_applicable	false	false	false	false	low	false	false	legacyTranslation	legacyTranslation:must_replace_before_commercial
+KHS-MIXED-0010	매창	가을밤	originalText	true	SRC-WIKISOURCE-TEXT	https://ko.wikisource.org/wiki/%EC%A1%B0%EC%84%A0%EC%97%AC%EB%A5%98%ED%95%9C%EC%8B%9C%EC%84%A0%EC%A7%91/%EA%B0%80%EC%9D%84%EB%B0%A4	licensed	commercial_allowed	true	true	false	false	low	true	false	legacyTranslation	legacyTranslation:commercial_permission_required
+KHS-MIXED-0010	매창	가을밤	legacyTranslation	true	SRC-MANUAL-COMMERCIAL-WITH-PERMISSION		copyrighted	commercial_with_permission	true	false	true	false	high	true	false	legacyTranslation	legacyTranslation:commercial_permission_required
+KHS-MIXED-0010	매창	가을밤	legacyNotes	false			unknown	not_applicable	false	false	false	false	low	false	false	legacyTranslation	legacyTranslation:commercial_permission_required
+KHS-MIXED-0010	매창	가을밤	ownedTranslation	false			unknown	not_applicable	false	false	false	false	low	false	false	legacyTranslation	legacyTranslation:commercial_permission_required
+KHS-MIXED-0010	매창	가을밤	ownedNotes	true			owned	commercial_allowed	true	true	false	false	low	false	false	legacyTranslation	legacyTranslation:commercial_permission_required
+KHS-MIXED-0010	매창	가을밤	images	false			unknown	not_applicable	false	false	false	false	low	false	false	legacyTranslation	legacyTranslation:commercial_permission_required

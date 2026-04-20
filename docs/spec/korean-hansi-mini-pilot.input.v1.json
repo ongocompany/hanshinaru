@@ -1,0 +1,428 @@
+[
+  {
+    "poemId": "KHS-PILOT-0001",
+    "canonicalId": "KHS-CANON-CHWON-CHUYAUJUNG",
+    "title": {
+      "zh": "秋夜雨中",
+      "ko": "추야우중"
+    },
+    "author": {
+      "authorId": "KAUTH-CHOE-CHIWON",
+      "zh": "崔致遠",
+      "ko": "최치원"
+    },
+    "era": {
+      "label": "신라 말",
+      "startYear": 857,
+      "endYear": null,
+      "confidence": "high"
+    },
+    "genre": {
+      "broad": "한시",
+      "form": "오언절구"
+    },
+    "sourceWork": {
+      "collectionTitle": "위키문헌 개별 작품",
+      "juan": null,
+      "entryTitle": "秋夜雨中",
+      "sourceUrl": "https://ko.wikisource.org/wiki/%EC%B6%94%EC%95%BC%EC%9A%B0%EC%A4%91",
+      "sourcePolicyId": "SRC-WIKISOURCE-TEXT"
+    },
+    "text": {
+      "poemZh": "秋風唯苦吟\n世路少知音\n窓外三更雨\n燈前萬里心",
+      "poemKoReading": "추풍유고음\n세로소지음\n창외삼경우\n등전만리심",
+      "poemKoGloss": null
+    },
+    "legacyAssets": {
+      "translationKo": "가을바람에 괴로이 읊으니\n세상에 나를 알 이 적구나.\n창밖에는 밤비 내리는데\n등 앞 외로운 맘 만 리를 달리네.",
+      "notes": [],
+      "commentaryKo": null
+    },
+    "ownedAssets": {
+      "translationKoOwned": null,
+      "notesOwned": [
+        {
+          "head": "萬里心",
+          "body": "몸은 타향에 있으나 마음은 만 리 밖 고국으로 향한다는 뜻으로 읽힌다."
+        }
+      ],
+      "commentaryKoOwned": "타향의 가을밤과 향수의 정조가 짧은 절구 안에 응축된 작품이다.",
+      "ownedContentMeta": {
+        "status": "pilot",
+        "editedBy": "태훈",
+        "reviewedBy": null,
+        "approvedBy": null,
+        "updatedAt": "2026-04-20 17:20",
+        "researchBacked": true,
+        "needsHumanReview": true,
+        "generationPolicy": "manual-pilot",
+        "sourceRefs": [
+          "https://ko.wikisource.org/wiki/%EC%B6%94%EC%95%BC%EC%9A%B0%EC%A4%91",
+          "https://ko.wikisource.org/wiki/%EC%A0%80%EC%9E%90:%EC%B5%9C%EC%B9%98%EC%9B%90"
+        ],
+        "rightsReview": {
+          "legacyTranslationInjectedToModel": false,
+          "legacyNotesInjectedToModel": false,
+          "similarityCheckPassed": true,
+          "copyrightRiskLevel": "low",
+          "commercialSafe": false,
+          "commercialSafeReason": "legacy translation retained for pilot"
+        }
+      }
+    },
+    "rights": {
+      "legacyTranslation": {
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "sourceUrl": "https://ko.wikisource.org/wiki/%EC%B6%94%EC%95%BC%EC%9A%B0%EC%A4%91",
+        "checkedAt": "2026-04-20T17:20:00+09:00",
+        "checkedBy": "태훈",
+        "evidence": "작품 페이지 하단 CC BY-SA 표기 확인",
+        "notes": "위키문헌 수록 현대어 번역"
+      }
+    },
+    "commercialTransition": {
+      "isCommercialReady": false,
+      "blockingAssets": [],
+      "replacementRequired": []
+    }
+  },
+  {
+    "poemId": "KHS-PILOT-0002",
+    "canonicalId": "KHS-CANON-JJS-SONGIN",
+    "title": {
+      "zh": "送人",
+      "ko": "송인"
+    },
+    "author": {
+      "authorId": "KAUTH-JEONG-JISANG",
+      "zh": "鄭知常",
+      "ko": "정지상"
+    },
+    "era": {
+      "label": "고려 중기",
+      "startYear": null,
+      "endYear": 1135,
+      "confidence": "medium"
+    },
+    "genre": {
+      "broad": "한시",
+      "form": "칠언절구"
+    },
+    "sourceWork": {
+      "collectionTitle": "위키문헌 개별 작품",
+      "juan": null,
+      "entryTitle": "送人-大同江",
+      "sourceUrl": "https://ko.wikisource.org/wiki/%EC%86%A1%EC%9D%B8",
+      "sourcePolicyId": "SRC-WIKISOURCE-TEXT"
+    },
+    "text": {
+      "poemZh": "雨歇長堤草色多\n送君南浦動悲歌\n大同江水何時盡\n別淚年年添綠波",
+      "poemKoReading": "우헐장제초색다\n송군남포동비가\n대동강수하시진\n별루년년첨록파",
+      "poemKoGloss": null
+    },
+    "legacyAssets": {
+      "translationKo": "비 갠 긴 둑에는 풀빛이 짙은데\n그대 보내는 남포엔 슬픈 노래 울리네\n대동강 물이야 어느 때 마를 건가\n해마다 이별 눈물 푸른 강물에 더하네",
+      "notes": [],
+      "commentaryKo": null
+    },
+    "ownedAssets": {
+      "translationKoOwned": null,
+      "notesOwned": [
+        {
+          "head": "南浦",
+          "body": "이별의 장소를 상징하는 고전적 시어로 자주 쓰인다."
+        }
+      ],
+      "commentaryKoOwned": "대동강의 푸른 물결 위에 이별의 감정을 겹쳐 놓은 고려 절구의 명편이다.",
+      "ownedContentMeta": {
+        "status": "pilot",
+        "editedBy": "태훈",
+        "reviewedBy": null,
+        "approvedBy": null,
+        "updatedAt": "2026-04-20 17:20",
+        "researchBacked": true,
+        "needsHumanReview": true,
+        "generationPolicy": "manual-pilot",
+        "sourceRefs": [
+          "https://ko.wikisource.org/wiki/%EC%86%A1%EC%9D%B8",
+          "https://ko.wikisource.org/wiki/%EC%A0%80%EC%9E%90:%EC%A0%95%EC%A7%80%EC%83%81"
+        ],
+        "rightsReview": {
+          "legacyTranslationInjectedToModel": false,
+          "legacyNotesInjectedToModel": false,
+          "similarityCheckPassed": true,
+          "copyrightRiskLevel": "low",
+          "commercialSafe": false,
+          "commercialSafeReason": "legacy translation retained for pilot"
+        }
+      }
+    },
+    "rights": {
+      "legacyTranslation": {
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "sourceUrl": "https://ko.wikisource.org/wiki/%EC%86%A1%EC%9D%B8",
+        "checkedAt": "2026-04-20T17:20:00+09:00",
+        "checkedBy": "태훈",
+        "evidence": "작품 페이지 하단 CC BY-SA 표기 확인",
+        "notes": "위키문헌 수록 현대어 번역"
+      }
+    },
+    "commercialTransition": {
+      "isCommercialReady": false,
+      "blockingAssets": [],
+      "replacementRequired": []
+    }
+  },
+  {
+    "poemId": "KHS-PILOT-0003",
+    "canonicalId": "KHS-CANON-HNSEOLHEON-CHUNU",
+    "title": {
+      "zh": "春雨",
+      "ko": "봄비"
+    },
+    "author": {
+      "authorId": "KAUTH-HEO-NANSEOLHEON",
+      "zh": "許蘭雪軒",
+      "ko": "허난설헌"
+    },
+    "era": {
+      "label": "조선 중기",
+      "startYear": 1563,
+      "endYear": 1589,
+      "confidence": "high"
+    },
+    "genre": {
+      "broad": "한시",
+      "form": "오언절구"
+    },
+    "sourceWork": {
+      "collectionTitle": "조선여류한시선집",
+      "juan": null,
+      "entryTitle": "봄비",
+      "sourceUrl": "https://ko.wikisource.org/wiki/%EC%A1%B0%EC%84%A0%EC%97%AC%EB%A5%98%ED%95%9C%EC%8B%9C%EC%84%A0%EC%A7%91/%EB%B4%84%EB%B9%84",
+      "sourcePolicyId": "SRC-WIKISOURCE-TEXT"
+    },
+    "text": {
+      "poemZh": "春雨暗西池\n輕寒襲羅衣\n愁依小屛風\n墻頭杏花落",
+      "poemKoReading": "춘우암서지\n경한습라의\n수의소병풍\n장두행화락",
+      "poemKoGloss": null
+    },
+    "legacyAssets": {
+      "translationKo": "보슬보슬 봄비는 못에 내리고\n찬바람이 장막속 숨여들을제\n뜬시름 못내이겨 병풍 기대니\n송이송이 살구꽃 담우에 지네.",
+      "notes": [],
+      "commentaryKo": null
+    },
+    "ownedAssets": {
+      "translationKoOwned": null,
+      "notesOwned": [
+        {
+          "head": "小屛風",
+          "body": "작은 병풍에 기대어 시름을 견디는 실내의 정경이 여성 화자의 고독을 선명하게 드러낸다."
+        }
+      ],
+      "commentaryKoOwned": "봄비, 살구꽃, 병풍이라는 실내외 이미지를 겹쳐 여성 한시 특유의 섬세한 우수를 보여준다.",
+      "ownedContentMeta": {
+        "status": "pilot",
+        "editedBy": "태훈",
+        "reviewedBy": null,
+        "approvedBy": null,
+        "updatedAt": "2026-04-20 17:20",
+        "researchBacked": true,
+        "needsHumanReview": true,
+        "generationPolicy": "manual-pilot",
+        "sourceRefs": [
+          "https://ko.wikisource.org/wiki/%EC%A1%B0%EC%84%A0%EC%97%AC%EB%A5%98%ED%95%9C%EC%8B%9C%EC%84%A0%EC%A7%91/%EB%B4%84%EB%B9%84",
+          "https://ko.wikisource.org/wiki/%EC%A0%80%EC%9E%90:%ED%97%88%EB%82%9C%EC%84%A4%ED%97%8C"
+        ],
+        "rightsReview": {
+          "legacyTranslationInjectedToModel": false,
+          "legacyNotesInjectedToModel": false,
+          "similarityCheckPassed": true,
+          "copyrightRiskLevel": "low",
+          "commercialSafe": false,
+          "commercialSafeReason": "legacy translation retained for pilot"
+        }
+      }
+    },
+    "rights": {
+      "legacyTranslation": {
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "sourceUrl": "https://ko.wikisource.org/wiki/%EC%A1%B0%EC%84%A0%EC%97%AC%EB%A5%98%ED%95%9C%EC%8B%9C%EC%84%A0%EC%A7%91/%EB%B4%84%EB%B9%84",
+        "checkedAt": "2026-04-20T17:20:00+09:00",
+        "checkedBy": "태훈",
+        "evidence": "페이지 하단 CC BY-SA 표기 및 본문의 역자 김억 명시 확인",
+        "notes": "김억 번역 수록 페이지"
+      }
+    },
+    "commercialTransition": {
+      "isCommercialReady": false,
+      "blockingAssets": [],
+      "replacementRequired": []
+    }
+  },
+  {
+    "poemId": "KHS-PILOT-0004",
+    "canonicalId": "KHS-CANON-IGYUBO-GANGSANGHYOUU",
+    "title": {
+      "zh": "江上曉雨",
+      "ko": "강상효우"
+    },
+    "author": {
+      "authorId": "KAUTH-LEE-GYUBO",
+      "zh": "李奎報",
+      "ko": "이규보"
+    },
+    "era": {
+      "label": "고려 중기",
+      "startYear": 1168,
+      "endYear": 1241,
+      "confidence": "high"
+    },
+    "genre": {
+      "broad": "한시",
+      "form": "칠언절구"
+    },
+    "sourceWork": {
+      "collectionTitle": "동국이상국집",
+      "juan": null,
+      "entryTitle": "江上曉雨",
+      "sourceUrl": "https://ko.wikisource.org/wiki/%EA%B0%95%EC%83%81%ED%9A%A8%EC%9A%B0",
+      "sourcePolicyId": "SRC-WIKISOURCE-TEXT"
+    },
+    "text": {
+      "poemZh": "江岸人歸白鷺飛\n漁翁日暮得魚歸\n輕雲薄薄那成雨\n海氣干天偶作霖",
+      "poemKoReading": "강안인귀백로비\n어옹일모득어귀\n경운박박나성우\n해기간천우작림",
+      "poemKoGloss": null
+    },
+    "legacyAssets": {
+      "translationKo": null,
+      "notes": [],
+      "commentaryKo": null
+    },
+    "ownedAssets": {
+      "translationKoOwned": "강가엔 사람 돌아가고 흰 해오라기 날아오르며\n늙은 어부는 날 저물어 잡은 고기 안고 돌아오네\n엷디엷은 가벼운 구름 어찌 비를 이루랴마는\n바다 기운 하늘에 가득 차 문득 큰비를 이루었네",
+      "notesOwned": [
+        {
+          "head": "海氣",
+          "body": "바다에서 올라오는 습한 기운으로, 마지막 구의 돌연한 비를 설명하는 핵심 시어다."
+        }
+      ],
+      "commentaryKoOwned": "강가의 귀로 풍경과 새벽비의 형성을 한 화면처럼 포착한 절구다.",
+      "ownedContentMeta": {
+        "status": "pilot",
+        "editedBy": "태훈",
+        "reviewedBy": null,
+        "approvedBy": null,
+        "updatedAt": "2026-04-20 17:20",
+        "researchBacked": true,
+        "needsHumanReview": true,
+        "generationPolicy": "manual-pilot",
+        "sourceRefs": [
+          "https://ko.wikisource.org/wiki/%EA%B0%95%EC%83%81%ED%9A%A8%EC%9A%B0",
+          "https://ko.wikisource.org/wiki/%EC%A0%80%EC%9E%90:%EC%9D%B4%EA%B7%9C%EB%B3%B4"
+        ],
+        "rightsReview": {
+          "legacyTranslationInjectedToModel": false,
+          "legacyNotesInjectedToModel": false,
+          "similarityCheckPassed": true,
+          "copyrightRiskLevel": "low",
+          "commercialSafe": true,
+          "commercialSafeReason": "owned translation and notes only"
+        }
+      }
+    },
+    "rights": {},
+    "commercialTransition": {
+      "isCommercialReady": false,
+      "blockingAssets": [],
+      "replacementRequired": []
+    }
+  },
+  {
+    "poemId": "KHS-PILOT-0005",
+    "canonicalId": "KHS-CANON-PARK-INRYANG-JUJUNGYAEUM",
+    "title": {
+      "zh": "舟中夜吟",
+      "ko": "주중야음"
+    },
+    "author": {
+      "authorId": "KAUTH-PARK-INRYANG",
+      "zh": "朴寅亮",
+      "ko": "박인량"
+    },
+    "era": {
+      "label": "고려 전기",
+      "startYear": null,
+      "endYear": 1096,
+      "confidence": "medium"
+    },
+    "genre": {
+      "broad": "한시",
+      "form": "오언절구"
+    },
+    "sourceWork": {
+      "collectionTitle": "위키문헌 개별 작품",
+      "juan": null,
+      "entryTitle": "舟中夜吟",
+      "sourceUrl": "https://ko.wikisource.org/wiki/%EC%A3%BC%EC%A4%91%EC%95%BC%EC%9D%8C",
+      "sourcePolicyId": "SRC-WIKISOURCE-TEXT"
+    },
+    "text": {
+      "poemZh": "故國三韓遠\n秋風客意多\n孤舟一夜夢\n月落洞庭波",
+      "poemKoReading": null,
+      "poemKoGloss": null
+    },
+    "legacyAssets": {
+      "translationKo": "내 고향 삼한은 멀기만 하여\n가을 바람에 나그네의 마음은 복잡하니\n외로운 배에서의 하룻밤 꿈 속에\n동정호 물결에는 달이 비치네.",
+      "notes": [],
+      "commentaryKo": null
+    },
+    "ownedAssets": {
+      "translationKoOwned": null,
+      "notesOwned": [
+        {
+          "head": "故國三韓",
+          "body": "삼한은 이 시에서 고국 전체를 가리키는 상징적 표현으로 읽힌다."
+        }
+      ],
+      "commentaryKoOwned": "먼 타국의 배 위에서 고향을 그리는 고려 전기 한시의 향수 정조가 드러난다.",
+      "ownedContentMeta": {
+        "status": "pilot",
+        "editedBy": "태훈",
+        "reviewedBy": null,
+        "approvedBy": null,
+        "updatedAt": "2026-04-20 17:20",
+        "researchBacked": true,
+        "needsHumanReview": true,
+        "generationPolicy": "manual-pilot",
+        "sourceRefs": [
+          "https://ko.wikisource.org/wiki/%EC%A3%BC%EC%A4%91%EC%95%BC%EC%9D%8C",
+          "https://ko.wikisource.org/wiki/%EC%A0%80%EC%9E%90:%EB%B0%95%EC%9D%B8%EB%9F%89"
+        ],
+        "rightsReview": {
+          "legacyTranslationInjectedToModel": false,
+          "legacyNotesInjectedToModel": false,
+          "similarityCheckPassed": true,
+          "copyrightRiskLevel": "low",
+          "commercialSafe": false,
+          "commercialSafeReason": "legacy translation retained for pilot"
+        }
+      }
+    },
+    "rights": {
+      "legacyTranslation": {
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "sourceUrl": "https://ko.wikisource.org/wiki/%EC%A3%BC%EC%A4%91%EC%95%BC%EC%9D%8C",
+        "checkedAt": "2026-04-20T17:20:00+09:00",
+        "checkedBy": "태훈",
+        "evidence": "페이지 라이선스 섹션에 번역 CC BY-SA 3.0 Unported 명시",
+        "notes": "역자 ygy2011 표기"
+      }
+    },
+    "commercialTransition": {
+      "isCommercialReady": false,
+      "blockingAssets": [],
+      "replacementRequired": []
+    }
+  }
+]

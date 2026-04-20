@@ -9,7 +9,15 @@
     "build:db": "node scripts/build_pingshui_db.js",
     "build:korean": "node scripts/build_korean_timeline.js",
     "merge:poets": "node scripts/merge_poet_data.js",
-    "crawl:news": "node scripts/crawl_news.js"
+    "crawl:news": "node scripts/crawl_news.js",
+    "hansi:apply-policy": "node scripts/apply_korean_hansi_source_policy.js",
+    "hansi:validate": "node scripts/validate_korean_hansi_records.js",
+    "hansi:rights-sheet": "node scripts/build_korean_hansi_rights_sheet.js",
+    "hansi:pilot-url-sheet": "node scripts/build_korean_hansi_pilot_url_sheet.js",
+    "hansi:priority-11": "node scripts/build_korean_hansi_priority_11_batch.js",
+    "hansi:priority-board": "node scripts/build_korean_hansi_priority_11_board.js",
+    "hansi:assess-readiness": "node scripts/assess_korean_hansi_pipeline_readiness.js",
+    "hansi:research-manifest": "node scripts/build_korean_hansi_research_manifest.js"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.97.0",

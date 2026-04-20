@@ -1,0 +1,65 @@
+{
+  "version": "2026-04-20.v1",
+  "basedOnBoard": "korean-hansi-priority-11-board.v1.json",
+  "summary": {
+    "totalAuthors": 11,
+    "seedReadyAuthors": [
+      "최치원",
+      "정지상",
+      "허난설헌"
+    ],
+    "collectionReadyAuthors": [
+      "최치원",
+      "허난설헌"
+    ],
+    "ingestReadyAuthors": [],
+    "seedReadyPoemCount": 15,
+    "collectionReadyPoemCount": 10,
+    "ingestReadyPoemCount": 0
+  },
+  "gates": {
+    "researchManifestDryRun": {
+      "condition": "seed-ready authors >= 3 and candidate poems >= 15",
+      "passed": true,
+      "current": {
+        "authors": 3,
+        "poems": 15
+      }
+    },
+    "collectionMetadataDryRun": {
+      "condition": "collection-ready authors >= 3 and candidate poems >= 15",
+      "passed": false,
+      "current": {
+        "authors": 2,
+        "poems": 10
+      }
+    },
+    "ingestPilotRun": {
+      "condition": "ingest-ready authors >= 3 and candidate poems >= 15",
+      "passed": false,
+      "current": {
+        "authors": 0,
+        "poems": 0
+      }
+    },
+    "ownedTranslationPilotRun": {
+      "condition": "ingest pilot run passed + 15 poem ingest completed and manually sampled",
+      "passed": false,
+      "current": {
+        "authors": 0,
+        "poems": 0
+      }
+    }
+  },
+  "recommendation": "조사 manifest dry-run은 지금 가능",
+  "recommendedNow": "research manifest dry-run",
+  "reason": "후보작 15수는 확보되었으므로 조사 번들/작업 큐를 생성할 수 있음",
+  "nextRequirements": [
+    "최치원, 정지상, 허난설헌 3명에 대해 KORCIS 확인(korcisChecked=true)",
+    "3명 모두 sourcePolicyAssigned=true",
+    "3명 모두 rightsRiskReviewed=true",
+    "3명 모두 candidateCount 5 유지",
+    "그 다음 15수 ingest pilot run",
+    "pilot 성공 후 owned translation pipeline 진입"
+  ]
+}

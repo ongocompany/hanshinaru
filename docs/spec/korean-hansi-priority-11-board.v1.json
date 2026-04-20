@@ -1,0 +1,681 @@
+{
+  "version": "2026-04-20.v1",
+  "boardId": "korean-hansi-priority-11-board",
+  "purpose": "한국 한시 우선 수집 11명 실행 보드",
+  "statusGuide": {
+    "values": [
+      "queued",
+      "researching",
+      "collecting",
+      "rights-review",
+      "done",
+      "blocked"
+    ],
+    "stageValues": [
+      "author-verification",
+      "collection-check",
+      "poem-candidate-list",
+      "rights-review",
+      "ready-for-ingest",
+      "complete"
+    ]
+  },
+  "entries": [
+    {
+      "batchOrder": 1,
+      "authorKo": "최치원",
+      "authorHanja": "崔致遠",
+      "timelineEra": "고조선~통일신라",
+      "birthDeath": "857~미상(908년 이후 생존)",
+      "sourceTrack": "local-seed-first",
+      "collectionPriority": "medium",
+      "status": "researching",
+      "stage": "rights-review",
+      "progressChecklist": {
+        "authorProfileVerified": true,
+        "primaryCollectionVerified": true,
+        "korcisChecked": true,
+        "encyChecked": true,
+        "sourcePolicyAssigned": false,
+        "firstFivePoemsListed": true,
+        "rightsRiskReviewed": false
+      },
+      "collectionWork": {
+        "primaryCollectionTitle": "《계원필경집》",
+        "collectionVerified": true,
+        "collectionSearchNotes": "한국민족문화대백과 최치원 항목에서 《계원필경집》을 현전하는 한국 최고 문집으로 확인. KORCIS OpenAPI author 검색에서 桂苑筆耕.1-4(REC_KEY 101180342, 국립중앙도서관, DOC_YN Y), 桂苑筆耕集(REC_KEY 101423104, 국립중앙도서관, ABS_YN Y), 桂苑筆耕集.卷6-20(REC_KEY 101630823, 계명대학교 동산도서관) 등을 확인.",
+        "korcisSearchUrl": "https://www.nl.go.kr/korcis/search/simpleResultList.do?searchCondition=all&searchKeyword=%EC%B5%9C%EC%B9%98%EC%9B%90%20%E5%B4%94%E8%87%B4%E9%81%A0",
+        "encyKeywordUrl": "https://encykorea.aks.ac.kr/Article/Keyword/%EC%B5%9C%EC%B9%98%EC%9B%90(%E5%B4%94%E8%87%B4%E9%81%A0)"
+      },
+      "poemCandidateWork": {
+        "representativeWorkKo": "추야우중",
+        "representativeWorkHanja": "秋夜雨中",
+        "firstFivePoemCandidates": [
+          {
+            "titleKo": "추야우중",
+            "titleHanja": "秋夜雨中",
+            "evidence": "한국민족문화대백과 작품 항목",
+            "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0057881"
+          },
+          {
+            "titleKo": "제가야산",
+            "titleHanja": "題伽倻山",
+            "evidence": "한국민족문화대백과 작품 항목",
+            "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0051220"
+          },
+          {
+            "titleKo": "등윤주자화사",
+            "titleHanja": "登潤州慈和寺",
+            "evidence": "한국민족문화대백과 작품 항목",
+            "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0017150"
+          },
+          {
+            "titleKo": "강남녀",
+            "titleHanja": "江南女",
+            "evidence": "한국민족문화대백과 작품 항목",
+            "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0001014"
+          },
+          {
+            "titleKo": "향악잡영",
+            "titleHanja": "鄕樂雜詠",
+            "evidence": "한국민족문화대백과 작품 항목",
+            "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0062945"
+          }
+        ],
+        "candidateCount": 5
+      },
+      "rightsWork": {
+        "sourcePolicyStatus": "identified",
+        "sourcePolicyId": "SRC-KORCIS-METADATA",
+        "commercialRiskStatus": "review-needed",
+        "replacementNeededBeforeCommercial": false,
+        "rightsNotes": "KORCIS는 메타데이터/소장처 확인용으로 확정. 실제 원문 텍스트와 이미지의 재사용 조건은 최종 소장처 또는 연계 원문 기준으로 추가 검토 필요."
+      },
+      "nextAction": "계원필경 계열 판본 중 표준 기준본을 하나 정하고, 5수의 실제 수록 위치를 권/책 기준으로 고정한 뒤 source policy와 rights review를 붙인다",
+      "blockers": [],
+      "targetOutputs": [
+        "author profile verified",
+        "primary collection identified",
+        "first 5 poems candidate list",
+        "source policy tag assigned",
+        "commercial transition risk noted"
+      ],
+      "notes": "EncyKorea와 KORCIS로 1차 확인 완료",
+      "updatedAt": "2026-04-20 18:20"
+    },
+    {
+      "batchOrder": 2,
+      "authorKo": "정지상",
+      "authorHanja": "鄭知常",
+      "timelineEra": "고려",
+      "birthDeath": "미상~1135",
+      "sourceTrack": "local-seed-first",
+      "collectionPriority": "medium",
+      "status": "researching",
+      "stage": "collection-check",
+      "progressChecklist": {
+        "authorProfileVerified": true,
+        "primaryCollectionVerified": true,
+        "korcisChecked": false,
+        "encyChecked": true,
+        "sourcePolicyAssigned": false,
+        "firstFivePoemsListed": true,
+        "rightsRiskReviewed": false
+      },
+      "collectionWork": {
+        "primaryCollectionTitle": "《정사간집》 계열",
+        "collectionVerified": true,
+        "collectionSearchNotes": "한국민족문화대백과 정지상 항목에서 『정사간집』, 『동문선』, 『동경잡기』에 전하는 작품군을 확인. KORCIS OpenAPI author 검색(정지상, 鄭之相)은 주로 진양정씨세보 계열만 반환했고, title 검색(送人, 長源亭)은 직접 매칭 0건, 백률사 검색은 栢栗寺石幢記(慶州) 1건만 확인되어 아직 직접 수록본을 확정하지 못함.",
+        "korcisSearchUrl": "https://www.nl.go.kr/korcis/search/simpleResultList.do?searchCondition=all&searchKeyword=%EC%A0%95%EC%A7%80%EC%83%81%20%E9%84%AD%E7%9F%A5%E5%B8%B8",
+        "encyKeywordUrl": "https://encykorea.aks.ac.kr/Article/Keyword/%EC%A0%95%EC%A7%80%EC%83%81(%E9%84%AD%E7%9F%A5%E5%B8%B8)"
+      },
+      "poemCandidateWork": {
+        "representativeWorkKo": "송인",
+        "representativeWorkHanja": "送人",
+        "firstFivePoemCandidates": [
+          {
+            "titleKo": "송인",
+            "titleHanja": "送人",
+            "evidence": "한국민족문화대백과 작품 항목",
+            "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0014214"
+          },
+          {
+            "titleKo": "신설",
+            "titleHanja": "新雪",
+            "evidence": "한국민족문화대백과 정지상 항목의 작품 언급",
+            "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0050946"
+          },
+          {
+            "titleKo": "향연치어",
+            "titleHanja": "鄕宴致語",
+            "evidence": "한국민족문화대백과 정지상 항목의 작품 언급",
+            "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0050946"
+          },
+          {
+            "titleKo": "백률사",
+            "titleHanja": "栢律寺",
+            "evidence": "한국민족문화대백과 정지상 항목의 작품 언급",
+            "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0050946"
+          },
+          {
+            "titleKo": "서루",
+            "titleHanja": "西樓",
+            "evidence": "한국민족문화대백과 정지상 항목의 작품 언급",
+            "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0050946"
+          }
+        ],
+        "candidateCount": 5
+      },
+      "rightsWork": {
+        "sourcePolicyStatus": "pending",
+        "sourcePolicyId": "",
+        "commercialRiskStatus": "pending",
+        "replacementNeededBeforeCommercial": false,
+        "rightsNotes": ""
+      },
+      "nextAction": "KORCIS 상세검색 또는 rec_key 직접 확보 방식으로 《정사간집》/『동문선』 수록본을 다시 추적하고, 작품 단위 표제 대신 문집 단위 접근으로 전환",
+      "blockers": [
+        "KORCIS direct author/title match unresolved"
+      ],
+      "targetOutputs": [
+        "author profile verified",
+        "primary collection identified",
+        "first 5 poems candidate list",
+        "source policy tag assigned",
+        "commercial transition risk noted"
+      ],
+      "notes": "EncyKorea로 5수 후보 1차 확정 완료, KORCIS는 재탐색 필요",
+      "updatedAt": "2026-04-20 18:20"
+    },
+    {
+      "batchOrder": 3,
+      "authorKo": "이규보",
+      "authorHanja": "李奎報",
+      "timelineEra": "고려",
+      "birthDeath": "1168~1241",
+      "sourceTrack": "collection-first",
+      "collectionPriority": "high",
+      "status": "queued",
+      "stage": "author-verification",
+      "progressChecklist": {
+        "authorProfileVerified": false,
+        "primaryCollectionVerified": false,
+        "korcisChecked": false,
+        "encyChecked": false,
+        "sourcePolicyAssigned": false,
+        "firstFivePoemsListed": false,
+        "rightsRiskReviewed": false
+      },
+      "collectionWork": {
+        "primaryCollectionTitle": "《동국이상국집》",
+        "collectionVerified": false,
+        "collectionSearchNotes": "",
+        "korcisSearchUrl": "https://www.nl.go.kr/korcis/search/simpleResultList.do?searchCondition=all&searchKeyword=%EC%9D%B4%EA%B7%9C%EB%B3%B4%20%E6%9D%8E%E5%A5%8E%E5%A0%B1",
+        "encyKeywordUrl": "https://encykorea.aks.ac.kr/Article/Keyword/%EC%9D%B4%EA%B7%9C%EB%B3%B4(%E6%9D%8E%E5%A5%8E%E5%A0%B1)"
+      },
+      "poemCandidateWork": {
+        "representativeWorkKo": "동명왕편",
+        "representativeWorkHanja": "미상",
+        "firstFivePoemCandidates": [],
+        "candidateCount": 0
+      },
+      "rightsWork": {
+        "sourcePolicyStatus": "pending",
+        "sourcePolicyId": "",
+        "commercialRiskStatus": "pending",
+        "replacementNeededBeforeCommercial": false,
+        "rightsNotes": ""
+      },
+      "nextAction": "대표 문집명을 기준으로 KORCIS 검색 -> 문집 판본/소장처 확인 -> EncyKorea에서 작가/작품 메타데이터 보강",
+      "blockers": [],
+      "targetOutputs": [
+        "author profile verified",
+        "primary collection identified",
+        "first 5 poems candidate list",
+        "source policy tag assigned",
+        "commercial transition risk noted"
+      ],
+      "notes": "《동국이상국집》",
+      "updatedAt": null
+    },
+    {
+      "batchOrder": 4,
+      "authorKo": "이색",
+      "authorHanja": "李穡",
+      "timelineEra": "고려",
+      "birthDeath": "1328~1396",
+      "sourceTrack": "collection-first",
+      "collectionPriority": "high",
+      "status": "queued",
+      "stage": "author-verification",
+      "progressChecklist": {
+        "authorProfileVerified": false,
+        "primaryCollectionVerified": false,
+        "korcisChecked": false,
+        "encyChecked": false,
+        "sourcePolicyAssigned": false,
+        "firstFivePoemsListed": false,
+        "rightsRiskReviewed": false
+      },
+      "collectionWork": {
+        "primaryCollectionTitle": "《목은집》/《목은시고》",
+        "collectionVerified": false,
+        "collectionSearchNotes": "",
+        "korcisSearchUrl": "https://www.nl.go.kr/korcis/search/simpleResultList.do?searchCondition=all&searchKeyword=%EC%9D%B4%EC%83%89%20%E6%9D%8E%E7%A9%A1",
+        "encyKeywordUrl": "https://encykorea.aks.ac.kr/Article/Keyword/%EC%9D%B4%EC%83%89(%E6%9D%8E%E7%A9%A1)"
+      },
+      "poemCandidateWork": {
+        "representativeWorkKo": "한시 다수",
+        "representativeWorkHanja": "미상",
+        "firstFivePoemCandidates": [],
+        "candidateCount": 0
+      },
+      "rightsWork": {
+        "sourcePolicyStatus": "pending",
+        "sourcePolicyId": "",
+        "commercialRiskStatus": "pending",
+        "replacementNeededBeforeCommercial": false,
+        "rightsNotes": ""
+      },
+      "nextAction": "대표 문집명을 기준으로 KORCIS 검색 -> 문집 판본/소장처 확인 -> EncyKorea에서 작가/작품 메타데이터 보강",
+      "blockers": [],
+      "targetOutputs": [
+        "author profile verified",
+        "primary collection identified",
+        "first 5 poems candidate list",
+        "source policy tag assigned",
+        "commercial transition risk noted"
+      ],
+      "notes": "《목은집》/《목은시고》",
+      "updatedAt": null
+    },
+    {
+      "batchOrder": 5,
+      "authorKo": "이제현",
+      "authorHanja": "李齊賢",
+      "timelineEra": "고려",
+      "birthDeath": "1287~1367",
+      "sourceTrack": "collection-first",
+      "collectionPriority": "high",
+      "status": "queued",
+      "stage": "author-verification",
+      "progressChecklist": {
+        "authorProfileVerified": false,
+        "primaryCollectionVerified": false,
+        "korcisChecked": false,
+        "encyChecked": false,
+        "sourcePolicyAssigned": false,
+        "firstFivePoemsListed": false,
+        "rightsRiskReviewed": false
+      },
+      "collectionWork": {
+        "primaryCollectionTitle": "《익재난고》",
+        "collectionVerified": false,
+        "collectionSearchNotes": "",
+        "korcisSearchUrl": "https://www.nl.go.kr/korcis/search/simpleResultList.do?searchCondition=all&searchKeyword=%EC%9D%B4%EC%A0%9C%ED%98%84%20%E6%9D%8E%E9%BD%8A%E8%B3%A2",
+        "encyKeywordUrl": "https://encykorea.aks.ac.kr/Article/Keyword/%EC%9D%B4%EC%A0%9C%ED%98%84(%E6%9D%8E%E9%BD%8A%E8%B3%A2)"
+      },
+      "poemCandidateWork": {
+        "representativeWorkKo": "소악부",
+        "representativeWorkHanja": "미상",
+        "firstFivePoemCandidates": [],
+        "candidateCount": 0
+      },
+      "rightsWork": {
+        "sourcePolicyStatus": "pending",
+        "sourcePolicyId": "",
+        "commercialRiskStatus": "pending",
+        "replacementNeededBeforeCommercial": false,
+        "rightsNotes": ""
+      },
+      "nextAction": "대표 문집명을 기준으로 KORCIS 검색 -> 문집 판본/소장처 확인 -> EncyKorea에서 작가/작품 메타데이터 보강",
+      "blockers": [],
+      "targetOutputs": [
+        "author profile verified",
+        "primary collection identified",
+        "first 5 poems candidate list",
+        "source policy tag assigned",
+        "commercial transition risk noted"
+      ],
+      "notes": "《익재난고》",
+      "updatedAt": null
+    },
+    {
+      "batchOrder": 6,
+      "authorKo": "정도전",
+      "authorHanja": "鄭道傳",
+      "timelineEra": "조선전기",
+      "birthDeath": "1342~1398",
+      "sourceTrack": "collection-first",
+      "collectionPriority": "high",
+      "status": "queued",
+      "stage": "author-verification",
+      "progressChecklist": {
+        "authorProfileVerified": false,
+        "primaryCollectionVerified": false,
+        "korcisChecked": false,
+        "encyChecked": false,
+        "sourcePolicyAssigned": false,
+        "firstFivePoemsListed": false,
+        "rightsRiskReviewed": false
+      },
+      "collectionWork": {
+        "primaryCollectionTitle": "《삼봉집》",
+        "collectionVerified": false,
+        "collectionSearchNotes": "",
+        "korcisSearchUrl": "https://www.nl.go.kr/korcis/search/simpleResultList.do?searchCondition=all&searchKeyword=%EC%A0%95%EB%8F%84%EC%A0%84%20%E9%84%AD%E9%81%93%E5%82%B3",
+        "encyKeywordUrl": "https://encykorea.aks.ac.kr/Article/Keyword/%EC%A0%95%EB%8F%84%EC%A0%84(%E9%84%AD%E9%81%93%E5%82%B3)"
+      },
+      "poemCandidateWork": {
+        "representativeWorkKo": "한시·산문 다수",
+        "representativeWorkHanja": "미상",
+        "firstFivePoemCandidates": [],
+        "candidateCount": 0
+      },
+      "rightsWork": {
+        "sourcePolicyStatus": "pending",
+        "sourcePolicyId": "",
+        "commercialRiskStatus": "pending",
+        "replacementNeededBeforeCommercial": false,
+        "rightsNotes": ""
+      },
+      "nextAction": "대표 문집명을 기준으로 KORCIS 검색 -> 문집 판본/소장처 확인 -> EncyKorea에서 작가/작품 메타데이터 보강",
+      "blockers": [],
+      "targetOutputs": [
+        "author profile verified",
+        "primary collection identified",
+        "first 5 poems candidate list",
+        "source policy tag assigned",
+        "commercial transition risk noted"
+      ],
+      "notes": "《삼봉집》",
+      "updatedAt": null
+    },
+    {
+      "batchOrder": 7,
+      "authorKo": "김종직",
+      "authorHanja": "金宗直",
+      "timelineEra": "조선전기",
+      "birthDeath": "1431~1492",
+      "sourceTrack": "collection-first",
+      "collectionPriority": "high",
+      "status": "queued",
+      "stage": "author-verification",
+      "progressChecklist": {
+        "authorProfileVerified": false,
+        "primaryCollectionVerified": false,
+        "korcisChecked": false,
+        "encyChecked": false,
+        "sourcePolicyAssigned": false,
+        "firstFivePoemsListed": false,
+        "rightsRiskReviewed": false
+      },
+      "collectionWork": {
+        "primaryCollectionTitle": "《점필재집》",
+        "collectionVerified": false,
+        "collectionSearchNotes": "",
+        "korcisSearchUrl": "https://www.nl.go.kr/korcis/search/simpleResultList.do?searchCondition=all&searchKeyword=%EA%B9%80%EC%A2%85%EC%A7%81%20%E9%87%91%E5%AE%97%E7%9B%B4",
+        "encyKeywordUrl": "https://encykorea.aks.ac.kr/Article/Keyword/%EA%B9%80%EC%A2%85%EC%A7%81(%E9%87%91%E5%AE%97%E7%9B%B4)"
+      },
+      "poemCandidateWork": {
+        "representativeWorkKo": "한시 다수",
+        "representativeWorkHanja": "미상",
+        "firstFivePoemCandidates": [],
+        "candidateCount": 0
+      },
+      "rightsWork": {
+        "sourcePolicyStatus": "pending",
+        "sourcePolicyId": "",
+        "commercialRiskStatus": "pending",
+        "replacementNeededBeforeCommercial": false,
+        "rightsNotes": ""
+      },
+      "nextAction": "대표 문집명을 기준으로 KORCIS 검색 -> 문집 판본/소장처 확인 -> EncyKorea에서 작가/작품 메타데이터 보강",
+      "blockers": [],
+      "targetOutputs": [
+        "author profile verified",
+        "primary collection identified",
+        "first 5 poems candidate list",
+        "source policy tag assigned",
+        "commercial transition risk noted"
+      ],
+      "notes": "《점필재집》",
+      "updatedAt": null
+    },
+    {
+      "batchOrder": 8,
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "timelineEra": "조선전기",
+      "birthDeath": "1347~1392",
+      "sourceTrack": "collection-first",
+      "collectionPriority": "high",
+      "status": "queued",
+      "stage": "author-verification",
+      "progressChecklist": {
+        "authorProfileVerified": false,
+        "primaryCollectionVerified": false,
+        "korcisChecked": false,
+        "encyChecked": false,
+        "sourcePolicyAssigned": false,
+        "firstFivePoemsListed": false,
+        "rightsRiskReviewed": false
+      },
+      "collectionWork": {
+        "primaryCollectionTitle": "《도은집》",
+        "collectionVerified": false,
+        "collectionSearchNotes": "",
+        "korcisSearchUrl": "https://www.nl.go.kr/korcis/search/simpleResultList.do?searchCondition=all&searchKeyword=%EC%9D%B4%EC%88%AD%EC%9D%B8%20%E6%9D%8E%E5%B4%87%E4%BB%81",
+        "encyKeywordUrl": "https://encykorea.aks.ac.kr/Article/Keyword/%EC%9D%B4%EC%88%AD%EC%9D%B8(%E6%9D%8E%E5%B4%87%E4%BB%81)"
+      },
+      "poemCandidateWork": {
+        "representativeWorkKo": "한시 다수",
+        "representativeWorkHanja": "미상",
+        "firstFivePoemCandidates": [],
+        "candidateCount": 0
+      },
+      "rightsWork": {
+        "sourcePolicyStatus": "pending",
+        "sourcePolicyId": "",
+        "commercialRiskStatus": "pending",
+        "replacementNeededBeforeCommercial": false,
+        "rightsNotes": ""
+      },
+      "nextAction": "대표 문집명을 기준으로 KORCIS 검색 -> 문집 판본/소장처 확인 -> EncyKorea에서 작가/작품 메타데이터 보강",
+      "blockers": [],
+      "targetOutputs": [
+        "author profile verified",
+        "primary collection identified",
+        "first 5 poems candidate list",
+        "source policy tag assigned",
+        "commercial transition risk noted"
+      ],
+      "notes": "《도은집》",
+      "updatedAt": null
+    },
+    {
+      "batchOrder": 9,
+      "authorKo": "허난설헌",
+      "authorHanja": "許蘭雪軒",
+      "timelineEra": "조선후기",
+      "birthDeath": "1563~1589",
+      "sourceTrack": "collection-first",
+      "collectionPriority": "high",
+      "status": "researching",
+      "stage": "rights-review",
+      "progressChecklist": {
+        "authorProfileVerified": true,
+        "primaryCollectionVerified": true,
+        "korcisChecked": true,
+        "encyChecked": true,
+        "sourcePolicyAssigned": false,
+        "firstFivePoemsListed": true,
+        "rightsRiskReviewed": false
+      },
+      "collectionWork": {
+        "primaryCollectionTitle": "《난설헌집》",
+        "collectionVerified": true,
+        "collectionSearchNotes": "한국민족문화대백과 허난설헌 항목과 난설헌집 항목에서 대표작과 시 수(210수)를 확인. KORCIS OpenAPI author 검색에서 난설헌집(REC_KEY 101467826, 국립중앙도서관, DOC_YN Y TOC_YN Y ABS_YN Y), 난설헌시(REC_KEY 101467815, 국립중앙도서관, DOC_YN Y TOC_YN Y ABS_YN Y), 난설헌집 필사본/규장각 소장본(REC_KEY 103435266 등)을 확인.",
+        "korcisSearchUrl": "https://www.nl.go.kr/korcis/search/simpleResultList.do?searchCondition=all&searchKeyword=%ED%97%88%EB%82%9C%EC%84%A4%ED%97%8C%20%E8%A8%B1%E8%98%AD%E9%9B%AA%E8%BB%92",
+        "encyKeywordUrl": "https://encykorea.aks.ac.kr/Article/Keyword/%ED%97%88%EB%82%9C%EC%84%A4%ED%97%8C(%E8%A8%B1%E8%98%AD%E9%9B%AA%E8%BB%92)"
+      },
+      "poemCandidateWork": {
+        "representativeWorkKo": "곡자",
+        "representativeWorkHanja": "미상",
+        "firstFivePoemCandidates": [
+          {
+            "titleKo": "송하곡적갑산",
+            "titleHanja": "送荷谷謫甲山",
+            "evidence": "한국민족문화대백과 허난설헌 항목의 작품세계",
+            "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0063034"
+          },
+          {
+            "titleKo": "기부독서강사",
+            "titleHanja": "寄夫讀書江舍",
+            "evidence": "한국민족문화대백과 허난설헌 항목의 작품세계",
+            "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0063034"
+          },
+          {
+            "titleKo": "곡자",
+            "titleHanja": "哭子",
+            "evidence": "한국민족문화대백과 허난설헌 항목 및 난설헌집 항목",
+            "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0063034"
+          },
+          {
+            "titleKo": "견흥",
+            "titleHanja": "遣興",
+            "evidence": "한국민족문화대백과 허난설헌 항목의 작품세계",
+            "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0063034"
+          },
+          {
+            "titleKo": "빈녀음",
+            "titleHanja": "貧女吟",
+            "evidence": "한국민족문화대백과 허난설헌 항목의 작품세계",
+            "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0063034"
+          }
+        ],
+        "candidateCount": 5
+      },
+      "rightsWork": {
+        "sourcePolicyStatus": "identified",
+        "sourcePolicyId": "SRC-KORCIS-METADATA",
+        "commercialRiskStatus": "review-needed",
+        "replacementNeededBeforeCommercial": false,
+        "rightsNotes": "KORCIS에서 국립중앙도서관/규장각 계열 수록본과 원문 여부를 확인. 실제 ingest 전에 원문 제공 주체별 재사용 조건을 추가 검토해야 함."
+      },
+      "nextAction": "난설헌집 계열 중 국립중앙도서관 원문/목차 제공본을 우선 기준본으로 잡고, 5수의 수록 위치를 판본별로 고정한 뒤 source policy와 rights review를 붙인다",
+      "blockers": [],
+      "targetOutputs": [
+        "author profile verified",
+        "primary collection identified",
+        "first 5 poems candidate list",
+        "source policy tag assigned",
+        "commercial transition risk noted"
+      ],
+      "notes": "EncyKorea와 KORCIS로 1차 확인 완료",
+      "updatedAt": "2026-04-20 18:20"
+    },
+    {
+      "batchOrder": 10,
+      "authorKo": "김정희",
+      "authorHanja": "金正喜",
+      "timelineEra": "조선후기",
+      "birthDeath": "1786~1856",
+      "sourceTrack": "collection-first",
+      "collectionPriority": "high",
+      "status": "queued",
+      "stage": "author-verification",
+      "progressChecklist": {
+        "authorProfileVerified": false,
+        "primaryCollectionVerified": false,
+        "korcisChecked": false,
+        "encyChecked": false,
+        "sourcePolicyAssigned": false,
+        "firstFivePoemsListed": false,
+        "rightsRiskReviewed": false
+      },
+      "collectionWork": {
+        "primaryCollectionTitle": "《완당전집》",
+        "collectionVerified": false,
+        "collectionSearchNotes": "",
+        "korcisSearchUrl": "https://www.nl.go.kr/korcis/search/simpleResultList.do?searchCondition=all&searchKeyword=%EA%B9%80%EC%A0%95%ED%9D%AC%20%E9%87%91%E6%AD%A3%E5%96%9C",
+        "encyKeywordUrl": "https://encykorea.aks.ac.kr/Article/Keyword/%EA%B9%80%EC%A0%95%ED%9D%AC(%E9%87%91%E6%AD%A3%E5%96%9C)"
+      },
+      "poemCandidateWork": {
+        "representativeWorkKo": "한시 다수",
+        "representativeWorkHanja": "미상",
+        "firstFivePoemCandidates": [],
+        "candidateCount": 0
+      },
+      "rightsWork": {
+        "sourcePolicyStatus": "pending",
+        "sourcePolicyId": "",
+        "commercialRiskStatus": "pending",
+        "replacementNeededBeforeCommercial": false,
+        "rightsNotes": ""
+      },
+      "nextAction": "대표 문집명을 기준으로 KORCIS 검색 -> 문집 판본/소장처 확인 -> EncyKorea에서 작가/작품 메타데이터 보강",
+      "blockers": [],
+      "targetOutputs": [
+        "author profile verified",
+        "primary collection identified",
+        "first 5 poems candidate list",
+        "source policy tag assigned",
+        "commercial transition risk noted"
+      ],
+      "notes": "《완당전집》",
+      "updatedAt": null
+    },
+    {
+      "batchOrder": 11,
+      "authorKo": "황현",
+      "authorHanja": "黃玹",
+      "timelineEra": "조선후기",
+      "birthDeath": "1855~1910",
+      "sourceTrack": "collection-first",
+      "collectionPriority": "high",
+      "status": "queued",
+      "stage": "author-verification",
+      "progressChecklist": {
+        "authorProfileVerified": false,
+        "primaryCollectionVerified": false,
+        "korcisChecked": false,
+        "encyChecked": false,
+        "sourcePolicyAssigned": false,
+        "firstFivePoemsListed": false,
+        "rightsRiskReviewed": false
+      },
+      "collectionWork": {
+        "primaryCollectionTitle": "《매천집》",
+        "collectionVerified": false,
+        "collectionSearchNotes": "",
+        "korcisSearchUrl": "https://www.nl.go.kr/korcis/search/simpleResultList.do?searchCondition=all&searchKeyword=%ED%99%A9%ED%98%84%20%E9%BB%83%E7%8E%B9",
+        "encyKeywordUrl": "https://encykorea.aks.ac.kr/Article/Keyword/%ED%99%A9%ED%98%84(%E9%BB%83%E7%8E%B9)"
+      },
+      "poemCandidateWork": {
+        "representativeWorkKo": "절명시",
+        "representativeWorkHanja": "미상",
+        "firstFivePoemCandidates": [],
+        "candidateCount": 0
+      },
+      "rightsWork": {
+        "sourcePolicyStatus": "pending",
+        "sourcePolicyId": "",
+        "commercialRiskStatus": "pending",
+        "replacementNeededBeforeCommercial": false,
+        "rightsNotes": ""
+      },
+      "nextAction": "대표 문집명을 기준으로 KORCIS 검색 -> 문집 판본/소장처 확인 -> EncyKorea에서 작가/작품 메타데이터 보강",
+      "blockers": [],
+      "targetOutputs": [
+        "author profile verified",
+        "primary collection identified",
+        "first 5 poems candidate list",
+        "source policy tag assigned",
+        "commercial transition risk noted"
+      ],
+      "notes": "《매천집》",
+      "updatedAt": null
+    }
+  ]
+}

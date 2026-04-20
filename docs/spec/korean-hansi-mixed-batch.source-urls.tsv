@@ -1,0 +1,24 @@
+poemId	authorKo	titleKo	assetSlot	sourcePolicyId	url	collectionTitle	entryTitle
+KHS-MIXED-0001	최치원	추야우중	sourceWork	SRC-WIKISOURCE-TEXT	https://ko.wikisource.org/wiki/%EC%B6%94%EC%95%BC%EC%9A%B0%EC%A4%91	위키문헌 개별 작품	秋夜雨中
+KHS-MIXED-0001	최치원	추야우중	legacyTranslation	SRC-WIKISOURCE-TEXT	https://ko.wikisource.org/wiki/%EC%B6%94%EC%95%BC%EC%9A%B0%EC%A4%91		
+KHS-MIXED-0001	최치원	추야우중	originalText	SRC-WIKISOURCE-TEXT	https://ko.wikisource.org/wiki/%EC%B6%94%EC%95%BC%EC%9A%B0%EC%A4%91		
+KHS-MIXED-0002	정지상	송인	sourceWork	SRC-WIKISOURCE-TEXT	https://ko.wikisource.org/wiki/%EC%86%A1%EC%9D%B8	위키문헌 개별 작품	送人-大同江
+KHS-MIXED-0002	정지상	송인	legacyTranslation	SRC-WIKISOURCE-TEXT	https://ko.wikisource.org/wiki/%EC%86%A1%EC%9D%B8		
+KHS-MIXED-0002	정지상	송인	originalText	SRC-WIKISOURCE-TEXT	https://ko.wikisource.org/wiki/%EC%86%A1%EC%9D%B8		
+KHS-MIXED-0003	이규보	강상효우	sourceWork	SRC-WIKISOURCE-TEXT	https://ko.wikisource.org/wiki/%EA%B0%95%EC%83%81%ED%9A%A8%EC%9A%B0	동국이상국집	江上曉雨
+KHS-MIXED-0003	이규보	강상효우	originalText	SRC-WIKISOURCE-TEXT	https://ko.wikisource.org/wiki/%EA%B0%95%EC%83%81%ED%9A%A8%EC%9A%B0		
+KHS-MIXED-0004	박인량	주중야음	sourceWork	SRC-WIKISOURCE-TEXT	https://ko.wikisource.org/wiki/%EC%A3%BC%EC%A4%91%EC%95%BC%EC%9D%8C	위키문헌 개별 작품	舟中夜吟
+KHS-MIXED-0004	박인량	주중야음	legacyTranslation	SRC-WIKISOURCE-TEXT	https://ko.wikisource.org/wiki/%EC%A3%BC%EC%A4%91%EC%95%BC%EC%9D%8C		
+KHS-MIXED-0004	박인량	주중야음	originalText	SRC-WIKISOURCE-TEXT	https://ko.wikisource.org/wiki/%EC%A3%BC%EC%A4%91%EC%95%BC%EC%9D%8C		
+KHS-MIXED-0005	허난설헌	봄비	sourceWork	SRC-ITKC-ORIGINAL-TEXT	https://db.itkc.or.kr/	난설헌집	春雨
+KHS-MIXED-0005	허난설헌	봄비	originalText	SRC-ITKC-ORIGINAL-TEXT	https://db.itkc.or.kr/		
+KHS-MIXED-0006	허난설헌	치운 밤에	sourceWork	SRC-ITKC-ORIGINAL-TEXT	https://db.itkc.or.kr/	난설헌집	치운 밤에
+KHS-MIXED-0006	허난설헌	치운 밤에	originalText	SRC-ITKC-ORIGINAL-TEXT	https://db.itkc.or.kr/		
+KHS-MIXED-0007	허난설헌	송별	sourceWork	SRC-ITKC-ORIGINAL-TEXT	https://db.itkc.or.kr/	난설헌집	送別
+KHS-MIXED-0007	허난설헌	송별	originalText	SRC-ITKC-ORIGINAL-TEXT	https://db.itkc.or.kr/		
+KHS-MIXED-0008	매창	배 띄우고	sourceWork	SRC-WIKISOURCE-TEXT	https://ko.wikisource.org/wiki/%EC%A1%B0%EC%84%A0%EC%97%AC%EB%A5%98%ED%95%9C%EC%8B%9C%EC%84%A0%EC%A7%91/%EB%B0%B0_%EB%9D%84%EC%9A%B0%EA%B3%A0	조선여류한시선집	배 띄우고
+KHS-MIXED-0008	매창	배 띄우고	originalText	SRC-WIKISOURCE-TEXT	https://ko.wikisource.org/wiki/%EC%A1%B0%EC%84%A0%EC%97%AC%EB%A5%98%ED%95%9C%EC%8B%9C%EC%84%A0%EC%A7%91/%EB%B0%B0_%EB%9D%84%EC%9A%B0%EA%B3%A0		
+KHS-MIXED-0009	매창	꿈을 깨니	sourceWork	SRC-WIKISOURCE-TEXT	https://ko.wikisource.org/wiki/%EC%A1%B0%EC%84%A0%EC%97%AC%EB%A5%98%ED%95%9C%EC%8B%9C%EC%84%A0%EC%A7%91/%EA%BF%88%EC%9D%84_%EA%B9%A8%EB%8B%88	조선여류한시선집	꿈을 깨니
+KHS-MIXED-0009	매창	꿈을 깨니	originalText	SRC-WIKISOURCE-TEXT	https://ko.wikisource.org/wiki/%EC%A1%B0%EC%84%A0%EC%97%AC%EB%A5%98%ED%95%9C%EC%8B%9C%EC%84%A0%EC%A7%91/%EA%BF%88%EC%9D%84_%EA%B9%A8%EB%8B%88		
+KHS-MIXED-0010	매창	가을밤	sourceWork	SRC-WIKISOURCE-TEXT	https://ko.wikisource.org/wiki/%EC%A1%B0%EC%84%A0%EC%97%AC%EB%A5%98%ED%95%9C%EC%8B%9C%EC%84%A0%EC%A7%91/%EA%B0%80%EC%9D%84%EB%B0%A4	조선여류한시선집	가을밤
+KHS-MIXED-0010	매창	가을밤	originalText	SRC-WIKISOURCE-TEXT	https://ko.wikisource.org/wiki/%EC%A1%B0%EC%84%A0%EC%97%AC%EB%A5%98%ED%95%9C%EC%8B%9C%EC%84%A0%EC%A7%91/%EA%B0%80%EC%9D%84%EB%B0%A4		

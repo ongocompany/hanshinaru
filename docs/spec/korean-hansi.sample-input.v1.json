@@ -1,0 +1,226 @@
+[
+  {
+    "poemId": "KHS-SAMPLE-0001",
+    "canonicalId": "KHS-CANON-0001",
+    "title": {
+      "zh": "秋夜雨中",
+      "ko": "가을밤 비 속에서"
+    },
+    "author": {
+      "authorId": "KAUTH-CHE-0001",
+      "zh": "崔致遠",
+      "ko": "최치원"
+    },
+    "era": {
+      "label": "통일신라 말",
+      "startYear": 857,
+      "endYear": 908,
+      "confidence": "high"
+    },
+    "genre": {
+      "broad": "한시",
+      "form": "오언절구"
+    },
+    "sourceWork": {
+      "collectionTitle": "위키문헌 수록본",
+      "juan": null,
+      "entryTitle": "秋夜雨中",
+      "sourceUrl": "https://ko.wikisource.org/wiki/%EC%B6%94%EC%95%BC%EC%9A%B0%EC%A4%91",
+      "sourcePolicyId": "SRC-WIKISOURCE-TEXT"
+    },
+    "text": {
+      "poemZh": "秋風吹夜長\n雨滴滿空廊\n燈火青窗冷\n孤吟到曉霜",
+      "poemKoReading": null,
+      "poemKoGloss": null
+    },
+    "legacyAssets": {
+      "translationKo": null,
+      "notes": [],
+      "commentaryKo": null
+    },
+    "ownedAssets": {
+      "translationKoOwned": "가을바람 밤길어지고\n빗방울 빈 회랑에 가득하네\n등불 아래 푸른 창은 차갑고\n외로운 읊조림 새벽 서리까지 이르네",
+      "notesOwned": [
+        {
+          "head": "空廊",
+          "body": "빈 복도이자 적막한 공간감을 강조하는 표현."
+        }
+      ],
+      "commentaryKoOwned": "비 내리는 밤의 청랭한 정조를 응축한 절구다.",
+      "ownedContentMeta": {
+        "status": "draft",
+        "editedBy": "태훈",
+        "reviewedBy": null,
+        "approvedBy": null,
+        "updatedAt": "2026-04-20 17:00",
+        "researchBacked": true,
+        "needsHumanReview": true,
+        "generationPolicy": "manual-sample",
+        "sourceRefs": [
+          "https://ko.wikisource.org/wiki/%EC%B6%94%EC%95%BC%EC%9A%B0%EC%A4%91"
+        ],
+        "rightsReview": {
+          "legacyTranslationInjectedToModel": false,
+          "legacyNotesInjectedToModel": false,
+          "similarityCheckPassed": true,
+          "copyrightRiskLevel": "low",
+          "commercialSafe": true,
+          "commercialSafeReason": "owned only"
+        }
+      }
+    },
+    "rights": {},
+    "commercialTransition": {
+      "isCommercialReady": false,
+      "blockingAssets": [],
+      "replacementRequired": []
+    }
+  },
+  {
+    "poemId": "KHS-SAMPLE-0002",
+    "canonicalId": "KHS-CANON-0002",
+    "title": {
+      "zh": "丹心歌",
+      "ko": "단심가"
+    },
+    "author": {
+      "authorId": "KAUTH-JEONG-0001",
+      "zh": "鄭夢周",
+      "ko": "정몽주"
+    },
+    "era": {
+      "label": "고려 말",
+      "startYear": 1337,
+      "endYear": 1392,
+      "confidence": "high"
+    },
+    "genre": {
+      "broad": "한시",
+      "form": "칠언절구"
+    },
+    "sourceWork": {
+      "collectionTitle": "위키문헌 수록본",
+      "juan": null,
+      "entryTitle": "丹心歌",
+      "sourceUrl": "https://ko.wikisource.org/wiki/%EB%8B%A8%EC%8B%AC%EA%B0%80",
+      "sourcePolicyId": "SRC-WIKISOURCE-TEXT"
+    },
+    "text": {
+      "poemZh": "此身死了死了\n一百番更死了\n白骨爲塵土\n魂魄有也無也\n向主一片丹心\n寧有改理也歟",
+      "poemKoReading": null,
+      "poemKoGloss": null
+    },
+    "legacyAssets": {
+      "translationKo": "이 몸이 죽고 죽어 일백 번 고쳐 죽어도 임 향한 붉은 마음이야 바뀔 리 있으랴.",
+      "notes": [],
+      "commentaryKo": "대표적 충절의 노래로 널리 알려져 있다."
+    },
+    "ownedAssets": {
+      "translationKoOwned": null,
+      "notesOwned": [],
+      "commentaryKoOwned": null,
+      "ownedContentMeta": null
+    },
+    "rights": {
+      "legacyTranslation": {
+        "sourcePolicyId": "SRC-MANUAL-NONCOMM-TRANSLATION",
+        "sourceUrl": "https://example.org/noncommercial-translation/dansimga",
+        "evidence": "사이트 약관에 비상업적 이용 허용 문구 확인",
+        "checkedBy": "태훈",
+        "checkedAt": "2026-04-20T17:00:00+09:00",
+        "notes": "상업 전환 전 반드시 자체 번역으로 교체"
+      }
+    },
+    "commercialTransition": {
+      "isCommercialReady": false,
+      "blockingAssets": [],
+      "replacementRequired": []
+    }
+  },
+  {
+    "poemId": "KHS-SAMPLE-0003",
+    "canonicalId": "KHS-CANON-0003",
+    "title": {
+      "zh": "別小宛",
+      "ko": "소완과 이별하며"
+    },
+    "author": {
+      "authorId": "KAUTH-HN-0001",
+      "zh": "許蘭雪軒",
+      "ko": "허난설헌"
+    },
+    "era": {
+      "label": "조선 후기",
+      "startYear": 1563,
+      "endYear": 1589,
+      "confidence": "high"
+    },
+    "genre": {
+      "broad": "한시",
+      "form": "칠언절구"
+    },
+    "sourceWork": {
+      "collectionTitle": "한국문집총간 계열 수록본",
+      "juan": "권3",
+      "entryTitle": "別小宛",
+      "sourceUrl": "https://db.itkc.or.kr/",
+      "sourcePolicyId": "SRC-ITKC-ORIGINAL-TEXT"
+    },
+    "text": {
+      "poemZh": "淚盡瑤琴語未終\n離亭斜日落花風\n人間若有重逢地\n應在孤雲遠水中",
+      "poemKoReading": null,
+      "poemKoGloss": null
+    },
+    "legacyAssets": {
+      "translationKo": null,
+      "notes": [
+        {
+          "head": "瑤琴",
+          "body": "기존 외부 해설집에서 옮겨온 주석"
+        }
+      ],
+      "commentaryKo": null
+    },
+    "ownedAssets": {
+      "translationKoOwned": "눈물 다하도록 옥 거문고 말은 아직 끝나지 않았는데\n이별의 정자엔 기운 해와 꽃잎 바람이 지누나\n인간 세상 어딘가 다시 만날 땅이 있다면\n외로운 구름 먼 물결 사이일 터이리",
+      "notesOwned": [],
+      "commentaryKoOwned": "이별의 장면을 섬세한 여성적 감각으로 압축한 작품이다.",
+      "ownedContentMeta": {
+        "status": "draft",
+        "editedBy": "태훈",
+        "reviewedBy": null,
+        "approvedBy": null,
+        "updatedAt": "2026-04-20 17:00",
+        "researchBacked": true,
+        "needsHumanReview": true,
+        "generationPolicy": "manual-sample",
+        "sourceRefs": [
+          "https://db.itkc.or.kr/"
+        ],
+        "rightsReview": {
+          "legacyTranslationInjectedToModel": false,
+          "legacyNotesInjectedToModel": false,
+          "similarityCheckPassed": true,
+          "copyrightRiskLevel": "medium",
+          "commercialSafe": true,
+          "commercialSafeReason": "owned translation only, but source original text policy unresolved"
+        }
+      }
+    },
+    "rights": {
+      "legacyNotes": {
+        "sourcePolicyId": "SRC-MANUAL-COMMERCIAL-WITH-PERMISSION",
+        "sourceUrl": "https://example.org/annotated-edition/byeol-sowan",
+        "evidence": "주석 페이지에 출처 표기 조건 및 상업 이용 별도 문의 명시",
+        "checkedBy": "태훈",
+        "checkedAt": "2026-04-20T17:00:00+09:00",
+        "notes": "기존 주석은 내부 참고용이며 상업 전환 전 교체 또는 제거 판단 필요"
+      }
+    },
+    "commercialTransition": {
+      "isCommercialReady": false,
+      "blockingAssets": [],
+      "replacementRequired": []
+    }
+  }
+]
