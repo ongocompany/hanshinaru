@@ -28,6 +28,24 @@ function hasChecklist(entry, keys) {
   return keys.every((key) => entry.progressChecklist?.[key] === true);
 }
 
+function missingAuthors(entries, keys) {
+  return entries
+    .filter((entry) => !hasChecklist(entry, keys))
+    .map((entry) => entry.authorKo);
+}
+
+function authorsWithCandidateGap(entries, expectedCount) {
+  return entries
+    .filter((entry) => (entry.poemCandidateWork?.candidateCount || 0) < expectedCount)
+    .map((entry) => entry.authorKo);
+}
+
+function summarizeOpenBlockers(entries) {
+  return entries
+    .filter((entry) => Array.isArray(entry.blockers) && entry.blockers.length > 0)
+    .map((entry) => `${entry.authorKo}: ${entry.blockers.join('; ')}`);
+}
+
 function main() {
   const board = readJson(BOARD_JSON);
   const entries = board.entries || [];
@@ -120,14 +138,32 @@ function main() {
     reason = '후보작 15수는 확보되었으므로 조사 번들/작업 큐를 생성할 수 있음';
   }
 
-  const nextRequirements = [
-    '최치원, 정지상, 허난설헌 3명에 대해 KORCIS 확인(korcisChecked=true)',
-    '3명 모두 sourcePolicyAssigned=true',
-    '3명 모두 rightsRiskReviewed=true',
-    '3명 모두 candidateCount 5 유지',
-    '그 다음 15수 ingest pilot run',
-    'pilot 성공 후 owned translation pipeline 진입'
-  ];
+  const pilotAuthors = seedReadyAuthors;
+  const missingKorcis = missingAuthors(pilotAuthors, ['korcisChecked']);
+  const missingSourcePolicy = missingAuthors(pilotAuthors, ['sourcePolicyAssigned']);
+  const missingRightsReview = missingAuthors(pilotAuthors, ['rightsRiskReviewed']);
+  const candidateGapAuthors = authorsWithCandidateGap(pilotAuthors, 5);
+  const openBlockers = summarizeOpenBlockers(pilotAuthors);
+
+  const nextRequirements = [];
+  if (missingKorcis.length > 0) {
+    nextRequirements.push(`${missingKorcis.join(', ')} KORCIS 확인(korcisChecked=true)`);
+  }
+  if (missingSourcePolicy.length > 0) {
+    nextRequirements.push(`${missingSourcePolicy.join(', ')} sourcePolicyAssigned=true`);
+  }
+  if (missingRightsReview.length > 0) {
+    nextRequirements.push(`${missingRightsReview.join(', ')} rightsRiskReviewed=true`);
+  }
+  if (candidateGapAuthors.length > 0) {
+    nextRequirements.push(`${candidateGapAuthors.join(', ')} candidateCount 5 확보`);
+  } else {
+    nextRequirements.push('최상위 3명 candidateCount 5 유지');
+  }
+  if (!gates.ingestPilotRun.passed) {
+    nextRequirements.push('그 다음 15수 ingest pilot run');
+  }
+  nextRequirements.push('pilot 성공 후 owned translation pipeline 진입');
 
   const out = {
     version: '2026-04-20.v1',
@@ -145,6 +181,7 @@ function main() {
     recommendation,
     recommendedNow,
     reason,
+    openBlockers,
     nextRequirements
   };
 

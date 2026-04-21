@@ -8,12 +8,38 @@ date: 2026-04-20
 
 # 한국 한시 파이프라인 실행 게이트
 
+> ⚠️ DIVERGED: 2026-04-21 기준 정지상의 KORCIS 판정이 collection-level hit(`동문선`, `동경잡기`)까지 완료되어 `collection-ready authors`가 3명으로 갱신되었다. 최신 상태는 `docs/spec/korean-hansi-pipeline-readiness.v1.json`을 기준으로 본다.
+
 ## 1. 목적
 
 한국 한시 수집/정제/번역 파이프라인을 언제 돌릴지 감으로 정하지 않고,  
 `priority-11 board`의 상태를 기준으로 단계별 실행 가능 여부를 판정한다.
 
 ## 2. 게이트 정의
+
+### Parallel Track. OCR Recovery Queue
+
+목적:
+- 직접 텍스트가 없는 후보를 이미지/PDF 기반 복원 트랙으로 분기
+- KORCIS/규장각/장서각/ITKC 원문 이미지 또는 PDF에서 OCR로 poemZh를 복원
+- 본문 수집 실패가 전체 파이프라인 정지를 일으키지 않게 함
+
+진입 조건:
+- 보드 후보이지만 직접 텍스트 수집 실패
+- 또는 직접 텍스트는 있으나 보드 후보와 실제 접근 가능한 작품 목록이 크게 어긋남
+
+운영 원칙:
+- OCR 트랙은 `poem source`가 아니라 `text recovery` 보조 트랙이다.
+- 학습/평가용 bootstrap 데이터는 AI Hub `고서 한자 인식 OCR 데이터(603)`를 우선 검토한다.
+- OCR 결과는 바로 ingest하지 않고:
+  - 원문 이미지 대조
+  - 권차/수록 위치 고정
+  - source policy 검토
+  를 거친 뒤 poem record로 승격한다.
+
+현재 실행 아티팩트:
+- `docs/spec/korean-hansi-ocr-queue.v1.json`
+- `docs/spec/korean-hansi-ocr-queue.v1.tsv`
 
 ### Gate A. Research Manifest Dry-Run
 
@@ -75,7 +101,7 @@ date: 2026-04-20
 
 ## 3. 현재 시점 판정
 
-현재 보드 기준:
+2026-04-20 작성 당시 보드 기준:
 
 - `seed-ready authors`: 3명
   - 최치원

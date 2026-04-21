@@ -81,20 +81,20 @@ const AUTHOR_OVERRIDES = {
   },
   '정지상': {
     status: 'researching',
-    stage: 'collection-check',
+    stage: 'rights-review',
     progressChecklist: {
       authorProfileVerified: true,
       primaryCollectionVerified: true,
-      korcisChecked: false,
+      korcisChecked: true,
       encyChecked: true,
       sourcePolicyAssigned: false,
       firstFivePoemsListed: true,
       rightsRiskReviewed: false
     },
     collectionWork: {
-      primaryCollectionTitle: '《정사간집》 계열',
+      primaryCollectionTitle: '《동문선》·《동경잡기》 계열',
       collectionVerified: true,
-      collectionSearchNotes: '한국민족문화대백과 정지상 항목에서 『정사간집』, 『동문선』, 『동경잡기』에 전하는 작품군을 확인. KORCIS OpenAPI author 검색(정지상, 鄭之相)은 주로 진양정씨세보 계열만 반환했고, title 검색(送人, 長源亭)은 직접 매칭 0건, 백률사 검색은 栢栗寺石幢記(慶州) 1건만 확인되어 아직 직접 수록본을 확정하지 못함.'
+      collectionSearchNotes: '한국민족문화대백과 정지상 항목에서 작품군이 『동문선』, 『동경잡기』, 『정사간집』에 전한다고 재확인. KORCIS 간략검색에서 author 검색(정지상)은 진양정씨세보 계열로 오염되지만, collection title 검색으로 東文選은 REC_KEY 101123898(국립중앙도서관), 101704573(동국대학교 중앙도서관), 302583837(고려대학교 도서관) 등을 확인했고, 東京雜記는 REC_KEY 303272456(University of Washington), 101466332(국립중앙도서관), 101784194(영남대학교 도서관) 등을 확인했다. 반면 鄭司諫集 direct title 검색은 결과 0건, 작품명 direct 검색(送人, 栢律寺)도 결과 0건이어서 현 단계에서는 collection-level KORCIS 확인까지만 완료한 것으로 본다.'
     },
     poemCandidateWork: {
       firstFivePoemCandidates: [
@@ -130,11 +130,20 @@ const AUTHOR_OVERRIDES = {
         }
       ]
     },
-    nextAction: 'KORCIS 상세검색 또는 rec_key 직접 확보 방식으로 《정사간집》/『동문선』 수록본을 다시 추적하고, 작품 단위 표제 대신 문집 단위 접근으로 전환',
+    rightsWork: {
+      sourcePolicyStatus: 'identified',
+      sourcePolicyId: 'SRC-KORCIS-METADATA',
+      commercialRiskStatus: 'review-needed',
+      replacementNeededBeforeCommercial: false,
+      rightsNotes: '정지상은 KORCIS에서 문집 단위 소재 확인까지 완료했다. 다만 현재 확보한 것은 metadata track이므로, 실제 ingest 전에는 동문선/동경잡기 기준본을 정하고 작품별 수록 위치와 원문 제공 주체의 재사용 조건을 추가 검토해야 한다.'
+    },
+    nextAction: '동문선/동경잡기 기준본 1~2종을 정하고 5수의 실제 수록 위치를 권·책 기준으로 고정한 뒤, metadata track source policy와 rights review를 붙인다. 정사간집 direct bib는 별도 탐색으로 남긴다',
     blockers: [
-      'KORCIS direct author/title match unresolved'
+      '정사간집 direct KORCIS bib unresolved',
+      '5수 poem-level locator not fixed'
     ],
-    notes: 'EncyKorea로 5수 후보 1차 확정 완료, KORCIS는 재탐색 필요'
+    notes: 'EncyKorea와 KORCIS collection title 검색으로 동문선/동경잡기 계열까지는 확인 완료',
+    updatedAt: '2026-04-21 05:34'
   },
   '허난설헌': {
     status: 'researching',
@@ -306,7 +315,7 @@ function makeBoardEntry(author) {
   if (override.nextAction) entry.nextAction = override.nextAction;
   if (override.blockers) entry.blockers = override.blockers;
   if (override.notes) entry.notes = override.notes;
-  entry.updatedAt = '2026-04-20 18:20';
+  entry.updatedAt = override.updatedAt || '2026-04-20 18:20';
 
   return entry;
 }

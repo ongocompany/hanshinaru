@@ -10,11 +10,12 @@
     ],
     "collectionReadyAuthors": [
       "최치원",
+      "정지상",
       "허난설헌"
     ],
     "ingestReadyAuthors": [],
     "seedReadyPoemCount": 15,
-    "collectionReadyPoemCount": 10,
+    "collectionReadyPoemCount": 15,
     "ingestReadyPoemCount": 0
   },
   "gates": {
@@ -28,10 +29,10 @@
     },
     "collectionMetadataDryRun": {
       "condition": "collection-ready authors >= 3 and candidate poems >= 15",
-      "passed": false,
+      "passed": true,
       "current": {
-        "authors": 2,
-        "poems": 10
+        "authors": 3,
+        "poems": 15
       }
     },
     "ingestPilotRun": {
@@ -51,14 +52,16 @@
       }
     }
   },
-  "recommendation": "조사 manifest dry-run은 지금 가능",
-  "recommendedNow": "research manifest dry-run",
-  "reason": "후보작 15수는 확보되었으므로 조사 번들/작업 큐를 생성할 수 있음",
+  "recommendation": "수집 메타데이터 dry-run 가능, full ingest는 아직 보류",
+  "recommendedNow": "collection metadata dry-run",
+  "reason": "KORCIS 확인까지 완료되어 문집/수록 위치 검증은 시작 가능하나, source policy 지정과 rights review가 아직 부족함",
+  "openBlockers": [
+    "정지상: 정사간집 direct KORCIS bib unresolved; 5수 poem-level locator not fixed"
+  ],
   "nextRequirements": [
-    "최치원, 정지상, 허난설헌 3명에 대해 KORCIS 확인(korcisChecked=true)",
-    "3명 모두 sourcePolicyAssigned=true",
-    "3명 모두 rightsRiskReviewed=true",
-    "3명 모두 candidateCount 5 유지",
+    "최치원, 정지상, 허난설헌 sourcePolicyAssigned=true",
+    "최치원, 정지상, 허난설헌 rightsRiskReviewed=true",
+    "최상위 3명 candidateCount 5 유지",
     "그 다음 15수 ingest pilot run",
     "pilot 성공 후 owned translation pipeline 진입"
   ]

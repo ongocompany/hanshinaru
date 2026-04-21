@@ -1,0 +1,19 @@
+{{header
+| title    = 潮浪
+| section  =
+| author   = 崔致遠
+| previous =
+| next     =
+| notes    = {{Textquality|75%}}
+}}
+<onlyinclude>
+<poem>
+驟雪翻霜千萬重，往來弦望躡前蹤。
+見君終更能懷信，慚我趨時盡放慵。
+石壁戰聲飛霹靂，雲峰倒影撼芙蓉。
+因思宗慤長風語，壯氣橫生憶臥龍。
+</poem>
+</onlyinclude>
+
+{{唐朝作品}}
+[[Category:唐詩]]

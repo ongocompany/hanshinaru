@@ -1,0 +1,18 @@
+{{header
+| title    = 楚州張尚書水郭相迎因以詩謝
+| section  =
+| author   = 崔致遠
+| previous = 
+| next     =
+| notes    = {{Textquality|75%}} 
+}}
+<onlyinclude>
+<poem>
+楚天蕭瑟碧雲秋，旟隼高飛訪葉舟。
+萬里乘槎從此去，預愁魂斷謝公樓。
+</poem>
+</onlyinclude>
+
+{{唐朝作品}}
+[[Category:唐詩]]
+[[Category:七言絕句]]
