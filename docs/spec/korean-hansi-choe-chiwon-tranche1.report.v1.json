@@ -1,0 +1,26 @@
+{
+  "version": "2026-04-21.v1",
+  "batchId": "korean-hansi-choe-chiwon-tranche1",
+  "purpose": "최치원 direct-text tranche 1 from 孤雲集 卷一",
+  "source": {
+    "collectionTitle": "孤雲集 卷一",
+    "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AD%A4%E9%9B%B2%E9%9B%86/%E5%8D%B7%E4%B8%80",
+    "sourcePolicyId": "SRC-WIKISOURCE-TEXT"
+  },
+  "totalCollected": 32,
+  "formCounts": {
+    "오언절구": 10,
+    "오언고시": 1,
+    "칠언절구": 16,
+    "미상": 2,
+    "칠언절구-절편": 3
+  },
+  "sourceValidationIssues": [
+    "개별 작품 페이지 `寓興`은 현재 위키문헌에서 權德輿로 연결되어 author mismatch가 있으므로 tranche 1 기준본에서 제외하고 `孤雲集/卷一`를 canonical source로 사용했다"
+  ],
+  "notes": [
+    "이번 tranche는 exact-title 정합성보다 공개 원문 direct-text 확보량을 우선했다",
+    "권1만으로 최치원 시 다발이 확보되므로 wave-1 첫 실제 수집본으로 적합하다",
+    "후속 tranche에서는 `孤雲集/卷二/卷三`, `桂苑筆耕集`, `東文選`, `三國史記`를 병행해 확장한다"
+  ]
+}

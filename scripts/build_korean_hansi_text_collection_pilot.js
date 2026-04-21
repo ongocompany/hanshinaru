@@ -73,18 +73,19 @@ const SOURCES = [
   },
   {
     poemId: 'KHS-COLLECT-0004',
-    canonicalId: 'KHS-CANON-CHOE-CHIWON-CHUZHOU',
+    canonicalId: 'KHS-CANON-CHOE-CHIWON-GANGNAMNYEO',
     author: { authorId: 'KAUTH-CHOE-CHIWON', ko: '최치원', zh: '崔致遠' },
     era: { label: '신라 말', startYear: 857, endYear: 940, confidence: 'medium' },
-    title: { ko: '초주 장상서를 시로 사례함', zh: '楚州張尚書水郭相迎因以詩謝' },
+    title: { ko: '강남녀', zh: '江南女' },
     page: {
-      lang: 'zh',
-      rawUrl: 'https://zh.wikisource.org/w/index.php?title=%E6%A5%9A%E5%B7%9E%E5%BC%B5%E5%B0%9A%E6%9B%B8%E6%B0%B4%E9%83%AD%E7%9B%B8%E8%BF%8E%E5%9B%A0%E4%BB%A5%E8%A9%A9%E8%AC%9D&action=raw',
-      sourceUrl: 'https://zh.wikisource.org/wiki/%E6%A5%9A%E5%B7%9E%E5%BC%B5%E5%B0%9A%E6%9B%B8%E6%B0%B4%E9%83%AD%E7%9B%B8%E8%BF%8E%E5%9B%A0%E4%BB%A5%E8%A9%A9%E8%AC%9D',
-      collectionTitle: '중국 위키문헌 개별 작품',
-      entryTitle: '楚州張尚書水郭相迎因以詩謝'
+      lang: 'inline',
+      rawUrl: null,
+      sourceUrl: 'https://zh.wikisource.org/wiki/%E6%9D%B1%E6%96%87%E9%81%B8/%E5%8D%B7%E5%9B%9B',
+      collectionTitle: '동문선 권4',
+      entryTitle: '江南女'
     },
-    boardTarget: null
+    inlinePoemZh: '江南蕩風俗\n養女嬌且憐\n冶性恥針線\n粧成調管絃\n所學非雅音\n多被春心牽\n自謂芳華色\n長占艷陽年\n却笑隣舍女\n終朝弄機杼\n機杼縱勞身\n羅衣不到汝',
+    boardTarget: '江南女'
   },
   {
     poemId: 'KHS-COLLECT-0005',
@@ -103,78 +104,83 @@ const SOURCES = [
   },
   {
     poemId: 'KHS-COLLECT-0006',
-    canonicalId: 'KHS-CANON-HEO-NANSEOLHEON-YANGLIUZHICI',
-    author: { authorId: 'KAUTH-HEO-NANSEOLHEON', ko: '허난설헌', zh: '許蘭雪軒' },
-    era: { label: '조선 중기', startYear: 1563, endYear: 1589, confidence: 'high' },
-    title: { ko: '양류지사', zh: '楊柳枝詞' },
+    canonicalId: 'KHS-CANON-CHOE-CHIWON-HYANGAKJAPYEONG',
+    author: { authorId: 'KAUTH-CHOE-CHIWON', ko: '최치원', zh: '崔致遠' },
+    era: { label: '신라 말', startYear: 857, endYear: 940, confidence: 'medium' },
+    title: { ko: '향악잡영', zh: '鄕樂雜詠' },
     page: {
-      lang: 'ko',
-      rawUrl: 'https://ko.wikisource.org/w/index.php?title=%EC%A1%B0%EC%84%A0%EC%97%AC%EB%A5%98%ED%95%9C%EC%8B%9C%EC%84%A0%EC%A7%91/%EC%96%91%EB%A5%98%EC%A7%80%EC%82%AC&action=raw',
-      sourceUrl: 'https://ko.wikisource.org/wiki/%EC%A1%B0%EC%84%A0%EC%97%AC%EB%A5%98%ED%95%9C%EC%8B%9C%EC%84%A0%EC%A7%91/%EC%96%91%EB%A5%98%EC%A7%80%EC%82%AC',
-      collectionTitle: '조선여류한시선집',
-      entryTitle: '楊柳枝詞'
+      lang: 'inline',
+      rawUrl: null,
+      sourceUrl: 'https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%8F%B2%E8%A8%98/%E5%8D%B732',
+      collectionTitle: '삼국사기 권32 악지 신라악',
+      entryTitle: '鄕樂雜詠五首'
     },
-    boardTarget: null
+    inlinePoemZh: '廻身掉臂弄金丸\n月轉星浮滿眼看\n縱有宜僚那勝此\n定知鯨海息波瀾\n肩高項縮髮崔嵬\n攘臂羣儒鬪酒盃\n聽得歌聲人盡笑\n夜頭旗幟曉頭催\n黃金面色是其人\n手抱珠鞭役鬼神\n疾步徐趍呈雅舞\n宛如丹鳳舞堯春\n蓮頭藍面異人間\n押隊來庭學舞鸞\n打鼓冬冬風瑟瑟\n南奔北躍也無端\n遠涉流沙萬里來\n毛衣破盡着塵埃\n搖頭掉尾馴仁德\n雄氣寧同百獸才',
+    boardTarget: '鄕樂雜詠'
   },
   {
     poemId: 'KHS-COLLECT-0007',
-    canonicalId: 'KHS-CANON-HEO-NANSEOLHEON-BOMCHEOLINJE',
-    author: { authorId: 'KAUTH-HEO-NANSEOLHEON', ko: '허난설헌', zh: '許蘭雪軒' },
-    era: { label: '조선 중기', startYear: 1563, endYear: 1589, confidence: 'high' },
-    title: { ko: '강남곡', zh: '江南曲' },
+    canonicalId: 'KHS-CANON-JEONG-JISANG-SINSEOL',
+    author: { authorId: 'KAUTH-JEONG-JISANG', ko: '정지상', zh: '鄭知常' },
+    era: { label: '고려 중기', startYear: null, endYear: 1135, confidence: 'medium' },
+    title: { ko: '신설', zh: '新雪' },
     page: {
-      lang: 'ko',
-      rawUrl: 'https://ko.wikisource.org/w/index.php?title=%EC%A1%B0%EC%84%A0%EC%97%AC%EB%A5%98%ED%95%9C%EC%8B%9C%EC%84%A0%EC%A7%91/%EA%B0%95%EB%82%A8%EA%B3%A1&action=raw',
-      sourceUrl: 'https://ko.wikisource.org/wiki/%EC%A1%B0%EC%84%A0%EC%97%AC%EB%A5%98%ED%95%9C%EC%8B%9C%EC%84%A0%EC%A7%91/%EA%B0%95%EB%82%A8%EA%B3%A1',
-      collectionTitle: '조선여류한시선집',
-      entryTitle: '江南曲'
+      lang: 'inline',
+      rawUrl: null,
+      sourceUrl: 'https://zh.wikisource.org/wiki/%E6%9D%B1%E6%96%87%E9%81%B8/%E5%8D%B7%E5%8D%81%E4%B9%9D',
+      collectionTitle: '동문선 권19',
+      entryTitle: '新雪'
     },
-    boardTarget: null
+    inlinePoemZh: '昨夜紛紛瑞雪新\n曉來鵷鷺賀中宸\n輕風不起陰雲捲\n白玉花開萬樹春',
+    boardTarget: '新雪'
   },
   {
     poemId: 'KHS-COLLECT-0008',
-    canonicalId: 'KHS-CANON-HEO-NANSEOLHEON-SONGBYEOL',
+    canonicalId: 'KHS-CANON-HEO-NANSEOLHEON-SONGHAKOK',
     author: { authorId: 'KAUTH-HEO-NANSEOLHEON', ko: '허난설헌', zh: '許蘭雪軒' },
     era: { label: '조선 중기', startYear: 1563, endYear: 1589, confidence: 'high' },
-    title: { ko: '송별', zh: '送別' },
+    title: { ko: '송하곡적갑산', zh: '送荷谷謫甲山' },
     page: {
-      lang: 'ko',
-      rawUrl: 'https://ko.wikisource.org/w/index.php?title=%EC%A1%B0%EC%84%A0%EC%97%AC%EB%A5%98%ED%95%9C%EC%8B%9C%EC%84%A0%EC%A7%91/%EC%86%A1%EB%B3%84_(%EB%82%9C%EC%84%A4%ED%97%8C)&action=raw',
-      sourceUrl: 'https://ko.wikisource.org/wiki/%EC%A1%B0%EC%84%A0%EC%97%AC%EB%A5%98%ED%95%9C%EC%8B%9C%EC%84%A0%EC%A7%91/%EC%86%A1%EB%B3%84_(%EB%82%9C%EC%84%A4%ED%97%8C)',
-      collectionTitle: '조선여류한시선집',
-      entryTitle: '送別'
+      lang: 'inline',
+      rawUrl: null,
+      sourceUrl: 'https://zh.wikisource.org/wiki/%E8%98%AD%E9%9B%AA%E8%BB%92%E8%A9%A9%E9%9B%86',
+      collectionTitle: '난설헌시집',
+      entryTitle: '送荷谷謫甲山'
     },
-    boardTarget: null
+    inlinePoemZh: '遠謫甲山客\n咸原行色忙\n臣同賈太傅\n主豈楚懷王\n河水平秋岸\n關雲欲夕陽\n霜風吹雁去\n中斷不成行',
+    boardTarget: '送荷谷謫甲山'
   },
   {
     poemId: 'KHS-COLLECT-0009',
-    canonicalId: 'KHS-CANON-HEO-NANSEOLHEON-CHUNU',
+    canonicalId: 'KHS-CANON-HEO-NANSEOLHEON-GOKJA',
     author: { authorId: 'KAUTH-HEO-NANSEOLHEON', ko: '허난설헌', zh: '許蘭雪軒' },
     era: { label: '조선 중기', startYear: 1563, endYear: 1589, confidence: 'high' },
-    title: { ko: '봄비', zh: '春雨' },
+    title: { ko: '곡자', zh: '哭子' },
     page: {
-      lang: 'ko',
-      rawUrl: 'https://ko.wikisource.org/w/index.php?title=%EC%A1%B0%EC%84%A0%EC%97%AC%EB%A5%98%ED%95%9C%EC%8B%9C%EC%84%A0%EC%A7%91/%EB%B4%84%EB%B9%84&action=raw',
-      sourceUrl: 'https://ko.wikisource.org/wiki/%EC%A1%B0%EC%84%A0%EC%97%AC%EB%A5%98%ED%95%9C%EC%8B%9C%EC%84%A0%EC%A7%91/%EB%B4%84%EB%B9%84',
-      collectionTitle: '조선여류한시선집',
-      entryTitle: '春雨'
+      lang: 'inline',
+      rawUrl: null,
+      sourceUrl: 'https://zh.wikisource.org/wiki/%E8%98%AD%E9%9B%AA%E8%BB%92%E8%A9%A9%E9%9B%86',
+      collectionTitle: '난설헌시집',
+      entryTitle: '哭子'
     },
-    boardTarget: null
+    inlinePoemZh: '去年喪愛女\n今年喪愛子\n哀哀廣陵土\n雙墳相對起\n蕭蕭白楊風\n鬼火明松楸\n紙錢招汝魄\n玄酒奠汝丘\n應知弟兄魂\n夜夜相追遊\n縱有腹中孩\n安可冀長成\n浪吟黃臺詞\n血泣悲呑聲',
+    boardTarget: '哭子'
   },
   {
     poemId: 'KHS-COLLECT-0010',
-    canonicalId: 'KHS-CANON-HEO-NANSEOLHEON-CHIUNBAME',
+    canonicalId: 'KHS-CANON-HEO-NANSEOLHEON-GYEONGHEUNG',
     author: { authorId: 'KAUTH-HEO-NANSEOLHEON', ko: '허난설헌', zh: '許蘭雪軒' },
     era: { label: '조선 중기', startYear: 1563, endYear: 1589, confidence: 'high' },
-    title: { ko: '치운 밤에', zh: '池頭楊柳疎' },
+    title: { ko: '견흥', zh: '遣興' },
     page: {
-      lang: 'ko',
-      rawUrl: 'https://ko.wikisource.org/w/index.php?title=%EC%A1%B0%EC%84%A0%EC%97%AC%EB%A5%98%ED%95%9C%EC%8B%9C%EC%84%A0%EC%A7%91/%EC%B9%98%EC%9A%B4_%EB%B0%A4%EC%97%90&action=raw',
-      sourceUrl: 'https://ko.wikisource.org/wiki/%EC%A1%B0%EC%84%A0%EC%97%AC%EB%A5%98%ED%95%9C%EC%8B%9C%EC%84%A0%EC%A7%91/%EC%B9%98%EC%9A%B4_%EB%B0%A4%EC%97%90',
-      collectionTitle: '조선여류한시선집',
-      entryTitle: '效崔國輔體 2'
+      lang: 'inline',
+      rawUrl: null,
+      sourceUrl: 'https://zh.wikisource.org/wiki/%E8%98%AD%E9%9B%AA%E8%BB%92%E8%A9%A9%E9%9B%86',
+      collectionTitle: '난설헌시집',
+      entryTitle: '遣興'
     },
-    boardTarget: null
+    inlinePoemZh: '梧桐生嶧陽\n幾年傲寒陰\n幸遇稀代工\n劚取爲鳴琴\n琴成彈一曲\n擧世無知音\n所以廣陵散\n終古聲堙沈',
+    boardTarget: '遣興'
   },
   {
     poemId: 'KHS-COLLECT-0011',
@@ -537,19 +543,28 @@ function summarize(records) {
     unresolvedBoardTargets[author] = targets.filter((target) => !matched.has(target));
   }
 
+  const issues = [];
+  const distribution = ['최치원', '정지상', '허난설헌']
+    .map((author) => `${author} ${authorCounts[author] || 0}`)
+    .join(', ');
+  issues.push(`상위 3명 15수는 확보했지만 저자별 분포는 아직 불균등함 (${distribution})`);
+
+  for (const author of ['최치원', '정지상', '허난설헌']) {
+    if (unresolvedBoardTargets[author].length > 0) {
+      issues.push(`${author} 미해결 보드 후보: ${unresolvedBoardTargets[author].join(', ')}`);
+    }
+  }
+
+  issues.push('동문선·삼국사기·난설헌시집처럼 다작이 한 페이지에 실린 공개 문헌을 재사용하므로, 실제 ingest 전에는 작품별 수록 위치(locator)와 시리즈 처리 기준을 계속 고정해야 함');
+
   return {
     version: '2026-04-21.v1',
-    purpose: '실제 텍스트가 열리는 위키문헌 페이지 기준 수집 파일럿',
+    purpose: '실제 텍스트가 열리는 공개 문헌 페이지 기준 수집 파일럿',
     totalCollected: records.length,
     authorCounts,
     boardCoverage,
     unresolvedBoardTargets,
-    issues: [
-      '상위 3명 15수는 확보했지만 저자별 균등 분포는 아님 (최치원 4, 정지상 1, 허난설헌 10)',
-      '정지상은 현재 실제 텍스트가 바로 열리는 위키문헌 작품이 송인 1수뿐이어서 보드 후보 5수 수집과 차이가 남',
-      '최치원은 위키문헌 한국어 쪽 수록이 1수에 그치고, 추가 확보분은 중국 위키문헌 제목 체계를 따라야 함',
-      '허난설헌은 실제 텍스트가 잘 열리지만, 보드 후보(送荷谷謫甲山, 寄夫讀書江舍, 哭子, 遣興, 貧女吟)와 즉시 수집 가능 작품 목록이 정확히 일치하지 않음'
-    ]
+    issues
   };
 }
 

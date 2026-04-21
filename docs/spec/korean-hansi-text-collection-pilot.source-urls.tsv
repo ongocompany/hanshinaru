@@ -7,26 +7,21 @@ KHS-COLLECT-0002	최치원	제가야산 독서당 폭포	originalText	SRC-WIKISO
 KHS-COLLECT-0003	최치원	등윤주자화사	sourceWork	SRC-ENCYKOREA-ARTICLE-TEXT	https://encykorea.aks.ac.kr/Article/E0017150	한국민족문화대백과사전 작품 항목	登潤州慈和寺
 KHS-COLLECT-0003	최치원	등윤주자화사	legacyTranslation	SRC-ENCYKOREA-ARTICLE-TEXT	https://encykorea.aks.ac.kr/Article/E0017150		
 KHS-COLLECT-0003	최치원	등윤주자화사	originalText	SRC-ENCYKOREA-ARTICLE-TEXT	https://encykorea.aks.ac.kr/Article/E0017150		
-KHS-COLLECT-0004	최치원	초주 장상서를 시로 사례함	sourceWork	SRC-WIKISOURCE-TEXT	https://zh.wikisource.org/wiki/%E6%A5%9A%E5%B7%9E%E5%BC%B5%E5%B0%9A%E6%9B%B8%E6%B0%B4%E9%83%AD%E7%9B%B8%E8%BF%8E%E5%9B%A0%E4%BB%A5%E8%A9%A9%E8%AC%9D	중국 위키문헌 개별 작품	楚州張尚書水郭相迎因以詩謝
-KHS-COLLECT-0004	최치원	초주 장상서를 시로 사례함	originalText	SRC-WIKISOURCE-TEXT	https://zh.wikisource.org/wiki/%E6%A5%9A%E5%B7%9E%E5%BC%B5%E5%B0%9A%E6%9B%B8%E6%B0%B4%E9%83%AD%E7%9B%B8%E8%BF%8E%E5%9B%A0%E4%BB%A5%E8%A9%A9%E8%AC%9D		
+KHS-COLLECT-0004	최치원	강남녀	sourceWork	SRC-WIKISOURCE-TEXT	https://zh.wikisource.org/wiki/%E6%9D%B1%E6%96%87%E9%81%B8/%E5%8D%B7%E5%9B%9B	동문선 권4	江南女
+KHS-COLLECT-0004	최치원	강남녀	originalText	SRC-WIKISOURCE-TEXT	https://zh.wikisource.org/wiki/%E6%9D%B1%E6%96%87%E9%81%B8/%E5%8D%B7%E5%9B%9B		
 KHS-COLLECT-0005	정지상	송인	sourceWork	SRC-WIKISOURCE-TEXT	https://ko.wikisource.org/wiki/%EC%86%A1%EC%9D%B8	위키문헌 개별 작품	送人-大同江
 KHS-COLLECT-0005	정지상	송인	legacyTranslation	SRC-WIKISOURCE-TEXT	https://ko.wikisource.org/wiki/%EC%86%A1%EC%9D%B8		
 KHS-COLLECT-0005	정지상	송인	originalText	SRC-WIKISOURCE-TEXT	https://ko.wikisource.org/wiki/%EC%86%A1%EC%9D%B8		
-KHS-COLLECT-0006	허난설헌	양류지사	sourceWork	SRC-WIKISOURCE-TEXT	https://ko.wikisource.org/wiki/%EC%A1%B0%EC%84%A0%EC%97%AC%EB%A5%98%ED%95%9C%EC%8B%9C%EC%84%A0%EC%A7%91/%EC%96%91%EB%A5%98%EC%A7%80%EC%82%AC	조선여류한시선집	楊柳枝詞
-KHS-COLLECT-0006	허난설헌	양류지사	legacyTranslation	SRC-WIKISOURCE-TEXT	https://ko.wikisource.org/wiki/%EC%A1%B0%EC%84%A0%EC%97%AC%EB%A5%98%ED%95%9C%EC%8B%9C%EC%84%A0%EC%A7%91/%EC%96%91%EB%A5%98%EC%A7%80%EC%82%AC		
-KHS-COLLECT-0006	허난설헌	양류지사	originalText	SRC-WIKISOURCE-TEXT	https://ko.wikisource.org/wiki/%EC%A1%B0%EC%84%A0%EC%97%AC%EB%A5%98%ED%95%9C%EC%8B%9C%EC%84%A0%EC%A7%91/%EC%96%91%EB%A5%98%EC%A7%80%EC%82%AC		
-KHS-COLLECT-0007	허난설헌	강남곡	sourceWork	SRC-WIKISOURCE-TEXT	https://ko.wikisource.org/wiki/%EC%A1%B0%EC%84%A0%EC%97%AC%EB%A5%98%ED%95%9C%EC%8B%9C%EC%84%A0%EC%A7%91/%EA%B0%95%EB%82%A8%EA%B3%A1	조선여류한시선집	江南曲
-KHS-COLLECT-0007	허난설헌	강남곡	legacyTranslation	SRC-WIKISOURCE-TEXT	https://ko.wikisource.org/wiki/%EC%A1%B0%EC%84%A0%EC%97%AC%EB%A5%98%ED%95%9C%EC%8B%9C%EC%84%A0%EC%A7%91/%EA%B0%95%EB%82%A8%EA%B3%A1		
-KHS-COLLECT-0007	허난설헌	강남곡	originalText	SRC-WIKISOURCE-TEXT	https://ko.wikisource.org/wiki/%EC%A1%B0%EC%84%A0%EC%97%AC%EB%A5%98%ED%95%9C%EC%8B%9C%EC%84%A0%EC%A7%91/%EA%B0%95%EB%82%A8%EA%B3%A1		
-KHS-COLLECT-0008	허난설헌	송별	sourceWork	SRC-WIKISOURCE-TEXT	https://ko.wikisource.org/wiki/%EC%A1%B0%EC%84%A0%EC%97%AC%EB%A5%98%ED%95%9C%EC%8B%9C%EC%84%A0%EC%A7%91/%EC%86%A1%EB%B3%84_(%EB%82%9C%EC%84%A4%ED%97%8C)	조선여류한시선집	送別
-KHS-COLLECT-0008	허난설헌	송별	legacyTranslation	SRC-WIKISOURCE-TEXT	https://ko.wikisource.org/wiki/%EC%A1%B0%EC%84%A0%EC%97%AC%EB%A5%98%ED%95%9C%EC%8B%9C%EC%84%A0%EC%A7%91/%EC%86%A1%EB%B3%84_(%EB%82%9C%EC%84%A4%ED%97%8C)		
-KHS-COLLECT-0008	허난설헌	송별	originalText	SRC-WIKISOURCE-TEXT	https://ko.wikisource.org/wiki/%EC%A1%B0%EC%84%A0%EC%97%AC%EB%A5%98%ED%95%9C%EC%8B%9C%EC%84%A0%EC%A7%91/%EC%86%A1%EB%B3%84_(%EB%82%9C%EC%84%A4%ED%97%8C)		
-KHS-COLLECT-0009	허난설헌	봄비	sourceWork	SRC-WIKISOURCE-TEXT	https://ko.wikisource.org/wiki/%EC%A1%B0%EC%84%A0%EC%97%AC%EB%A5%98%ED%95%9C%EC%8B%9C%EC%84%A0%EC%A7%91/%EB%B4%84%EB%B9%84	조선여류한시선집	春雨
-KHS-COLLECT-0009	허난설헌	봄비	legacyTranslation	SRC-WIKISOURCE-TEXT	https://ko.wikisource.org/wiki/%EC%A1%B0%EC%84%A0%EC%97%AC%EB%A5%98%ED%95%9C%EC%8B%9C%EC%84%A0%EC%A7%91/%EB%B4%84%EB%B9%84		
-KHS-COLLECT-0009	허난설헌	봄비	originalText	SRC-WIKISOURCE-TEXT	https://ko.wikisource.org/wiki/%EC%A1%B0%EC%84%A0%EC%97%AC%EB%A5%98%ED%95%9C%EC%8B%9C%EC%84%A0%EC%A7%91/%EB%B4%84%EB%B9%84		
-KHS-COLLECT-0010	허난설헌	치운 밤에	sourceWork	SRC-WIKISOURCE-TEXT	https://ko.wikisource.org/wiki/%EC%A1%B0%EC%84%A0%EC%97%AC%EB%A5%98%ED%95%9C%EC%8B%9C%EC%84%A0%EC%A7%91/%EC%B9%98%EC%9A%B4_%EB%B0%A4%EC%97%90	조선여류한시선집	效崔國輔體 2
-KHS-COLLECT-0010	허난설헌	치운 밤에	legacyTranslation	SRC-WIKISOURCE-TEXT	https://ko.wikisource.org/wiki/%EC%A1%B0%EC%84%A0%EC%97%AC%EB%A5%98%ED%95%9C%EC%8B%9C%EC%84%A0%EC%A7%91/%EC%B9%98%EC%9A%B4_%EB%B0%A4%EC%97%90		
-KHS-COLLECT-0010	허난설헌	치운 밤에	originalText	SRC-WIKISOURCE-TEXT	https://ko.wikisource.org/wiki/%EC%A1%B0%EC%84%A0%EC%97%AC%EB%A5%98%ED%95%9C%EC%8B%9C%EC%84%A0%EC%A7%91/%EC%B9%98%EC%9A%B4_%EB%B0%A4%EC%97%90		
+KHS-COLLECT-0006	최치원	향악잡영	sourceWork	SRC-WIKISOURCE-TEXT	https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%8F%B2%E8%A8%98/%E5%8D%B732	삼국사기 권32 악지 신라악	鄕樂雜詠五首
+KHS-COLLECT-0006	최치원	향악잡영	originalText	SRC-WIKISOURCE-TEXT	https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%8F%B2%E8%A8%98/%E5%8D%B732		
+KHS-COLLECT-0007	정지상	신설	sourceWork	SRC-WIKISOURCE-TEXT	https://zh.wikisource.org/wiki/%E6%9D%B1%E6%96%87%E9%81%B8/%E5%8D%B7%E5%8D%81%E4%B9%9D	동문선 권19	新雪
+KHS-COLLECT-0007	정지상	신설	originalText	SRC-WIKISOURCE-TEXT	https://zh.wikisource.org/wiki/%E6%9D%B1%E6%96%87%E9%81%B8/%E5%8D%B7%E5%8D%81%E4%B9%9D		
+KHS-COLLECT-0008	허난설헌	송하곡적갑산	sourceWork	SRC-WIKISOURCE-TEXT	https://zh.wikisource.org/wiki/%E8%98%AD%E9%9B%AA%E8%BB%92%E8%A9%A9%E9%9B%86	난설헌시집	送荷谷謫甲山
+KHS-COLLECT-0008	허난설헌	송하곡적갑산	originalText	SRC-WIKISOURCE-TEXT	https://zh.wikisource.org/wiki/%E8%98%AD%E9%9B%AA%E8%BB%92%E8%A9%A9%E9%9B%86		
+KHS-COLLECT-0009	허난설헌	곡자	sourceWork	SRC-WIKISOURCE-TEXT	https://zh.wikisource.org/wiki/%E8%98%AD%E9%9B%AA%E8%BB%92%E8%A9%A9%E9%9B%86	난설헌시집	哭子
+KHS-COLLECT-0009	허난설헌	곡자	originalText	SRC-WIKISOURCE-TEXT	https://zh.wikisource.org/wiki/%E8%98%AD%E9%9B%AA%E8%BB%92%E8%A9%A9%E9%9B%86		
+KHS-COLLECT-0010	허난설헌	견흥	sourceWork	SRC-WIKISOURCE-TEXT	https://zh.wikisource.org/wiki/%E8%98%AD%E9%9B%AA%E8%BB%92%E8%A9%A9%E9%9B%86	난설헌시집	遣興
+KHS-COLLECT-0010	허난설헌	견흥	originalText	SRC-WIKISOURCE-TEXT	https://zh.wikisource.org/wiki/%E8%98%AD%E9%9B%AA%E8%BB%92%E8%A9%A9%E9%9B%86		
 KHS-COLLECT-0011	허난설헌	이별이 잦아	sourceWork	SRC-WIKISOURCE-TEXT	https://ko.wikisource.org/wiki/%EC%A1%B0%EC%84%A0%EC%97%AC%EB%A5%98%ED%95%9C%EC%8B%9C%EC%84%A0%EC%A7%91/%EC%9D%B4%EB%B3%84%EC%9D%B4_%EC%9E%A6%EC%95%84	조선여류한시선집	江南曲 4
 KHS-COLLECT-0011	허난설헌	이별이 잦아	legacyTranslation	SRC-WIKISOURCE-TEXT	https://ko.wikisource.org/wiki/%EC%A1%B0%EC%84%A0%EC%97%AC%EB%A5%98%ED%95%9C%EC%8B%9C%EC%84%A0%EC%A7%91/%EC%9D%B4%EB%B3%84%EC%9D%B4_%EC%9E%A6%EC%95%84		
 KHS-COLLECT-0011	허난설헌	이별이 잦아	originalText	SRC-WIKISOURCE-TEXT	https://ko.wikisource.org/wiki/%EC%A1%B0%EC%84%A0%EC%97%AC%EB%A5%98%ED%95%9C%EC%8B%9C%EC%84%A0%EC%A7%91/%EC%9D%B4%EB%B3%84%EC%9D%B4_%EC%9E%A6%EC%95%84		
