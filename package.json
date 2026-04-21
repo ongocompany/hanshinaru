@@ -19,7 +19,8 @@
     "hansi:assess-readiness": "node scripts/assess_korean_hansi_pipeline_readiness.js",
     "hansi:research-manifest": "node scripts/build_korean_hansi_research_manifest.js",
     "hansi:ocr-queue": "node scripts/build_korean_hansi_ocr_queue.js",
-    "hansi:famous-wave1": "node scripts/build_korean_hansi_famous_authors_wave1_batch.js"
+    "hansi:famous-wave1": "node scripts/build_korean_hansi_famous_authors_wave1_batch.js",
+    "hansi:jeong-jisang-tranche1": "node scripts/build_korean_hansi_jeong_jisang_tranche1.js"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.97.0",

@@ -3,6 +3,10 @@
   "batchId": "korean-hansi-famous-authors-wave1",
   "basedOnBoard": "korean-hansi-priority-11-board.v1.json",
   "basedOnPilotReport": "korean-hansi-text-collection-pilot.report.v1.json",
+  "basedOnTrancheReports": [
+    "korean-hansi-choe-chiwon-tranche1.report.v1.json",
+    "korean-hansi-jeong-jisang-tranche1.report.v1.json"
+  ],
   "purpose": "유명 시인 중심 한국 한시 대량 수집 실전 배치",
   "operatingDecision": "exact-title 파일럿은 동결하고, 유명 시인 문집/공개 원문 기준 대량 수집을 먼저 진행한다",
   "executionPolicy": {
@@ -15,6 +19,7 @@
   "summary": {
     "authorCount": 8,
     "totalInitialTargetWorks": 170,
+    "totalDirectTextCollectedWorks": 45,
     "waveAuthors": [
       "최치원",
       "정지상",
@@ -39,6 +44,7 @@
       "currentStage": "rights-review",
       "currentStatus": "researching",
       "initialTargetWorks": 20,
+      "directTextCollectedWorks": 32,
       "currentMatchedSeedTitles": [
         "秋夜雨中",
         "題伽倻山",
@@ -47,6 +53,12 @@
         "鄕樂雜詠"
       ],
       "unresolvedSeedTitles": [],
+      "latestDirectTextBatchIds": [
+        "korean-hansi-choe-chiwon-tranche1"
+      ],
+      "latestDirectTextSources": [
+        "孤雲集 卷一"
+      ],
       "directTextFirstSources": [
         "Wikisource 개별 작품/문집 페이지",
         "東文選/三國史記 공개 원문 페이지",
@@ -81,6 +93,7 @@
       "currentStage": "rights-review",
       "currentStatus": "researching",
       "initialTargetWorks": 15,
+      "directTextCollectedWorks": 13,
       "currentMatchedSeedTitles": [
         "送人",
         "新雪"
@@ -89,6 +102,14 @@
         "鄕宴致語",
         "栢律寺",
         "西樓"
+      ],
+      "latestDirectTextBatchIds": [
+        "korean-hansi-jeong-jisang-tranche1"
+      ],
+      "latestDirectTextSources": [
+        "東文選 卷九",
+        "東文選 卷十二",
+        "東文選 卷十九"
       ],
       "directTextFirstSources": [
         "Wikisource 개별 작품 페이지",
@@ -127,8 +148,11 @@
       "currentStage": "author-verification",
       "currentStatus": "queued",
       "initialTargetWorks": 30,
+      "directTextCollectedWorks": 0,
       "currentMatchedSeedTitles": [],
       "unresolvedSeedTitles": [],
+      "latestDirectTextBatchIds": [],
+      "latestDirectTextSources": [],
       "directTextFirstSources": [
         "ITKC 원문 페이지",
         "공개 문집 TOC/원문 페이지",
@@ -163,8 +187,11 @@
       "currentStage": "author-verification",
       "currentStatus": "queued",
       "initialTargetWorks": 25,
+      "directTextCollectedWorks": 0,
       "currentMatchedSeedTitles": [],
       "unresolvedSeedTitles": [],
+      "latestDirectTextBatchIds": [],
+      "latestDirectTextSources": [],
       "directTextFirstSources": [
         "목은집/목은시고 공개 원문 페이지",
         "ITKC 원문 페이지",
@@ -199,8 +226,11 @@
       "currentStage": "author-verification",
       "currentStatus": "queued",
       "initialTargetWorks": 20,
+      "directTextCollectedWorks": 0,
       "currentMatchedSeedTitles": [],
       "unresolvedSeedTitles": [],
+      "latestDirectTextBatchIds": [],
+      "latestDirectTextSources": [],
       "directTextFirstSources": [
         "익재난고 공개 원문 페이지",
         "ITKC 원문 페이지",
@@ -235,8 +265,11 @@
       "currentStage": "author-verification",
       "currentStatus": "queued",
       "initialTargetWorks": 20,
+      "directTextCollectedWorks": 0,
       "currentMatchedSeedTitles": [],
       "unresolvedSeedTitles": [],
+      "latestDirectTextBatchIds": [],
+      "latestDirectTextSources": [],
       "directTextFirstSources": [
         "삼봉집 공개 원문 페이지",
         "ITKC 원문 페이지",
@@ -271,8 +304,11 @@
       "currentStage": "author-verification",
       "currentStatus": "queued",
       "initialTargetWorks": 20,
+      "directTextCollectedWorks": 0,
       "currentMatchedSeedTitles": [],
       "unresolvedSeedTitles": [],
+      "latestDirectTextBatchIds": [],
+      "latestDirectTextSources": [],
       "directTextFirstSources": [
         "점필재집 공개 원문 페이지",
         "ITKC 원문 페이지",
@@ -307,6 +343,7 @@
       "currentStage": "rights-review",
       "currentStatus": "researching",
       "initialTargetWorks": 20,
+      "directTextCollectedWorks": 0,
       "currentMatchedSeedTitles": [
         "送荷谷謫甲山",
         "哭子",
@@ -316,6 +353,8 @@
       "unresolvedSeedTitles": [
         "寄夫讀書江舍"
       ],
+      "latestDirectTextBatchIds": [],
+      "latestDirectTextSources": [],
       "directTextFirstSources": [
         "蘭雪軒詩集 공개 원문 페이지",
         "조선여류한시선집",

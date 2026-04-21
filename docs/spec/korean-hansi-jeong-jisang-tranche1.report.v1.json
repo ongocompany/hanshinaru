@@ -1,0 +1,54 @@
+{
+  "version": "2026-04-21.v1",
+  "batchId": "korean-hansi-jeong-jisang-tranche1",
+  "purpose": "정지상 direct-text tranche 1 from 東文選 卷九/卷十二/卷十九",
+  "sourceCollections": [
+    {
+      "collectionTitle": "東文選 卷九",
+      "juan": "卷九",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%9D%B1%E6%96%87%E9%81%B8/%E5%8D%B7%E4%B9%9D",
+      "sourcePolicyId": "SRC-WIKISOURCE-TEXT"
+    },
+    {
+      "collectionTitle": "東文選 卷十二",
+      "juan": "卷十二",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%9D%B1%E6%96%87%E9%81%B8/%E5%8D%B7%E5%8D%81%E4%BA%8C",
+      "sourcePolicyId": "SRC-WIKISOURCE-TEXT"
+    },
+    {
+      "collectionTitle": "東文選 卷十九",
+      "juan": "卷十九",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%9D%B1%E6%96%87%E9%81%B8/%E5%8D%B7%E5%8D%81%E4%B9%9D",
+      "sourcePolicyId": "SRC-WIKISOURCE-TEXT"
+    }
+  ],
+  "totalCollected": 13,
+  "formCounts": {
+    "오언율시": 1,
+    "칠언율시": 6,
+    "칠언절구": 6
+  },
+  "volumeCounts": {
+    "卷九": 1,
+    "卷十二": 6,
+    "卷十九": 6
+  },
+  "matchedSeedTitles": [
+    "送人",
+    "新雪"
+  ],
+  "unresolvedSeedTitles": [
+    "鄕宴致語",
+    "栢律寺",
+    "西樓"
+  ],
+  "sourceValidationIssues": [
+    "`東文選` 공개 권차본에서는 `送人`, `新雪`은 direct-text로 확인되지만 `鄕宴致語`, `栢律寺`, `西樓`는 이번 tranche 대상 권차에서 아직 직접 확보하지 못했다",
+    "`卷十九`의 `西樓觀雪`, `西樓晚望`는 현재 저자 블록상 정지상이 아니라 다른 저작자 묶음에 속하므로 board target `西樓`로 오인 수집하지 않았다"
+  ],
+  "notes": [
+    "이번 tranche는 exact-title 완전일치보다 공개 원문 direct-text 확보량을 우선했다",
+    "정지상은 작품 개별 페이지보다 `東文選` 권차본에서 연속 수집하는 쪽이 현재 더 안정적이다",
+    "후속 tranche에서는 `東文選` 추가 권차와 `東京雜記` 계열을 병행해 `鄕宴致語`, `栢律寺`, `西樓` locator를 보강한다"
+  ]
+}

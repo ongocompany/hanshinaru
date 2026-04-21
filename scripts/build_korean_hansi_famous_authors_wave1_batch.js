@@ -18,11 +18,16 @@ const BOARD_JSON = path.join(__dirname, '..', 'docs', 'spec', 'korean-hansi-prio
 const PILOT_REPORT_JSON = path.join(__dirname, '..', 'docs', 'spec', 'korean-hansi-text-collection-pilot.report.v1.json');
 const OUT_JSON = path.join(__dirname, '..', 'docs', 'spec', 'korean-hansi-famous-authors-wave1-batch.v1.json');
 const OUT_TSV = path.join(__dirname, '..', 'docs', 'spec', 'korean-hansi-famous-authors-wave1-batch.v1.tsv');
+const TRANCHE_REPORTS = [
+  path.join(__dirname, '..', 'docs', 'spec', 'korean-hansi-choe-chiwon-tranche1.report.v1.json'),
+  path.join(__dirname, '..', 'docs', 'spec', 'korean-hansi-jeong-jisang-tranche1.report.v1.json')
+];
 
 const WAVE_1 = [
   {
     authorKo: '최치원',
     authorTier: 'core-canon',
+    batchIdHints: ['choe-chiwon'],
     initialTargetWorks: 20,
     directTextFirstSources: [
       'Wikisource 개별 작품/문집 페이지',
@@ -46,6 +51,7 @@ const WAVE_1 = [
   {
     authorKo: '정지상',
     authorTier: 'core-canon',
+    batchIdHints: ['jeong-jisang'],
     initialTargetWorks: 15,
     directTextFirstSources: [
       'Wikisource 개별 작품 페이지',
@@ -69,6 +75,7 @@ const WAVE_1 = [
   {
     authorKo: '이규보',
     authorTier: 'core-canon',
+    batchIdHints: [],
     initialTargetWorks: 30,
     directTextFirstSources: [
       'ITKC 원문 페이지',
@@ -92,6 +99,7 @@ const WAVE_1 = [
   {
     authorKo: '이색',
     authorTier: 'core-canon',
+    batchIdHints: [],
     initialTargetWorks: 25,
     directTextFirstSources: [
       '목은집/목은시고 공개 원문 페이지',
@@ -115,6 +123,7 @@ const WAVE_1 = [
   {
     authorKo: '이제현',
     authorTier: 'core-canon',
+    batchIdHints: [],
     initialTargetWorks: 20,
     directTextFirstSources: [
       '익재난고 공개 원문 페이지',
@@ -138,6 +147,7 @@ const WAVE_1 = [
   {
     authorKo: '정도전',
     authorTier: 'core-canon',
+    batchIdHints: [],
     initialTargetWorks: 20,
     directTextFirstSources: [
       '삼봉집 공개 원문 페이지',
@@ -161,6 +171,7 @@ const WAVE_1 = [
   {
     authorKo: '김종직',
     authorTier: 'core-canon',
+    batchIdHints: [],
     initialTargetWorks: 20,
     directTextFirstSources: [
       '점필재집 공개 원문 페이지',
@@ -184,6 +195,7 @@ const WAVE_1 = [
   {
     authorKo: '허난설헌',
     authorTier: 'core-canon',
+    batchIdHints: [],
     initialTargetWorks: 20,
     directTextFirstSources: [
       '蘭雪軒詩集 공개 원문 페이지',
@@ -227,7 +239,28 @@ function unique(values) {
   return [...new Set(values)];
 }
 
-function buildRows(board, pilotReport) {
+function readExistingTrancheReports() {
+  const reports = [];
+  for (const filePath of TRANCHE_REPORTS) {
+    if (!fs.existsSync(filePath)) continue;
+    const report = readJson(filePath);
+    reports.push({
+      filePath,
+      report
+    });
+  }
+  return reports;
+}
+
+function findTrancheReportsForAuthor(config, trancheReports) {
+  const hints = config.batchIdHints || [];
+  return trancheReports.filter(({ report }) => {
+    const batchId = String(report.batchId || '');
+    return hints.some((hint) => batchId.includes(hint));
+  });
+}
+
+function buildRows(board, pilotReport, trancheReports) {
   const entries = board.entries || [];
   const unresolvedByAuthor = pilotReport.unresolvedBoardTargets || {};
   const coverageByAuthor = pilotReport.boardCoverage || {};
@@ -244,6 +277,18 @@ function buildRows(board, pilotReport) {
       unresolvedByAuthor[config.authorKo]
       || (entry.poemCandidateWork?.firstFivePoemCandidates || []).map((item) => item.titleHanja).filter(Boolean)
     );
+    const authorTranches = findTrancheReportsForAuthor(config, trancheReports);
+    const directTextCollectedWorks = authorTranches.reduce((sum, item) => sum + (item.report.totalCollected || 0), 0);
+    const latestDirectTextBatchIds = authorTranches.map((item) => item.report.batchId);
+    const latestDirectTextSources = unique(
+      authorTranches.flatMap((item) => {
+        if (Array.isArray(item.report.sourceCollections)) {
+          return item.report.sourceCollections.map((source) => source.collectionTitle).filter(Boolean);
+        }
+        if (item.report.source?.collectionTitle) return [item.report.source.collectionTitle];
+        return [];
+      })
+    );
 
     return {
       waveOrder: index + 1,
@@ -257,8 +302,11 @@ function buildRows(board, pilotReport) {
       currentStage: entry.stage || '',
       currentStatus: entry.status || '',
       initialTargetWorks: config.initialTargetWorks,
+      directTextCollectedWorks,
       currentMatchedSeedTitles: matchedTargets,
       unresolvedSeedTitles,
+      latestDirectTextBatchIds,
+      latestDirectTextSources,
       directTextFirstSources: config.directTextFirstSources,
       collectionMetadataSources: config.collectionMetadataSources,
       ocrFallbackSources: config.ocrFallbackSources,
@@ -285,8 +333,11 @@ function toTsv(rows) {
     'currentStage',
     'currentStatus',
     'initialTargetWorks',
+    'directTextCollectedWorks',
     'currentMatchedSeedTitles',
     'unresolvedSeedTitles',
+    'latestDirectTextBatchIds',
+    'latestDirectTextSources',
     'directTextFirstSources',
     'collectionMetadataSources',
     'ocrFallbackSources',
@@ -312,14 +363,17 @@ function toTsv(rows) {
 function main() {
   const board = readJson(BOARD_JSON);
   const pilotReport = readJson(PILOT_REPORT_JSON);
-  const rows = buildRows(board, pilotReport);
+  const trancheReports = readExistingTrancheReports();
+  const rows = buildRows(board, pilotReport, trancheReports);
   const totalInitialTargetWorks = rows.reduce((sum, row) => sum + row.initialTargetWorks, 0);
+  const totalDirectTextCollectedWorks = rows.reduce((sum, row) => sum + row.directTextCollectedWorks, 0);
 
   const out = {
     version: '2026-04-21.v1',
     batchId: 'korean-hansi-famous-authors-wave1',
     basedOnBoard: 'korean-hansi-priority-11-board.v1.json',
     basedOnPilotReport: 'korean-hansi-text-collection-pilot.report.v1.json',
+    basedOnTrancheReports: trancheReports.map((item) => path.basename(item.filePath)),
     purpose: '유명 시인 중심 한국 한시 대량 수집 실전 배치',
     operatingDecision: 'exact-title 파일럿은 동결하고, 유명 시인 문집/공개 원문 기준 대량 수집을 먼저 진행한다',
     executionPolicy: {
@@ -332,6 +386,7 @@ function main() {
     summary: {
       authorCount: rows.length,
       totalInitialTargetWorks,
+      totalDirectTextCollectedWorks,
       waveAuthors: rows.map((row) => row.authorKo)
     },
     rows
@@ -342,6 +397,7 @@ function main() {
 
   console.log(`Wave-1 authors: ${rows.length}`);
   console.log(`Wave-1 initial target works: ${totalInitialTargetWorks}`);
+  console.log(`Wave-1 direct-text collected works: ${totalDirectTextCollectedWorks}`);
   console.log(`Output JSON: ${OUT_JSON}`);
   console.log(`Output TSV: ${OUT_TSV}`);
 }
