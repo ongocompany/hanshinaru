@@ -333,7 +333,12 @@ function focusWorkBody(body) {
     focused = focused.slice(focused.indexOf(marker) + marker.length);
   }
 
-  focused = focused.replace(/新增(?![^○]{0,12}[詩歌])[\s\S]*$/, '');
+  const parentheticalTitle = focused.match(/^[（(]([^（）()]{1,12})[）)]/);
+  if (parentheticalTitle) {
+    focused = focused.slice(parentheticalTitle[0].length);
+  }
+
+  focused = focused.replace(/[\[（(]?新增[\]）)]?(?![^○]{0,12}[詩歌])[\s\S]*$/, '');
 
   const compact = focused.replace(/\s+/g, '');
   for (let index = 2; index < compact.length - 2; index += 1) {
@@ -342,6 +347,8 @@ function focusWorkBody(body) {
 
     const candidate = compact.slice(index).match(/^([一-龥]{2,4})(詩|歌)/);
     if (!candidate) continue;
+    if (candidate[2] === '歌') continue;
+    if (!looksLikeExplicitWorkHeader(candidate[1], candidate[2])) continue;
     if (index < 20) continue;
 
     focused = compact.slice(0, index);
@@ -349,6 +356,14 @@ function focusWorkBody(body) {
   }
 
   return focused.trim();
+}
+
+function looksLikeNarrativeSongBody(body) {
+  const compact = body.replace(/\s+/g, '');
+  return (
+    compact.length > 80 &&
+    /(?:呈舞名|唱歌云|者蓋言|故作舞|國人不悟|以至於亡)/.test(compact)
+  );
 }
 
 function inferForm(lines) {
@@ -420,7 +435,9 @@ function buildManifest(entries) {
     });
 
     if (explicitWork) {
-      const verseLines = splitVerseLines(focusWorkBody(explicitWork.body));
+      const focusedBody = focusWorkBody(explicitWork.body);
+      const verseLines = splitVerseLines(focusedBody);
+      const focusedCompactBody = focusedBody.replace(/\s+/g, '');
       const label = normalizeAuthorOrTitle(explicitWork.header);
       const inferredForm = explicitWork.marker === '詩' ? inferForm(verseLines) : '가요/기타';
       const confidence = verseLines.length === 1 || inferredForm === '미상' ? 'medium' : 'high';
@@ -431,8 +448,8 @@ function buildManifest(entries) {
 
       const looksNarrativeSong =
         explicitWork.marker === '歌' &&
-        verseLines.length === 1 &&
-        verseLines[0].length > 80;
+        (looksLikeNarrativeSongBody(focusedBody) ||
+          (verseLines.length === 1 && verseLines[0].length > 80));
 
       if (looksNarrativeSong) {
         attachedContexts.push({
@@ -442,7 +459,7 @@ function buildManifest(entries) {
           section: currentSection,
           sourceEntryTitle: entryContextTitle,
           headingZh: `${explicitWork.header}${explicitWork.marker}`,
-          prosePreview: verseLines[0].slice(0, 160),
+          prosePreview: focusedCompactBody.slice(0, 160),
           source: {
             collectionTitle: SOURCE.collectionTitle,
             juan: SOURCE.juan,

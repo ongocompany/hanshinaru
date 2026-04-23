@@ -4860,9 +4860,9 @@
       "authorZh": "金克己",
       "titleHintZh": null,
       "displayLabelZh": "金克己詩",
-      "textZh": "東皇一手恩萬彙\n均沾被花心驚惠\n風鳥聲感和氣朱\n朱上緋桃白白尋\n練",
-      "lineCount": 5,
-      "inferredForm": "미상",
+      "textZh": "東皇一手恩\n萬彙均沾被\n花心驚惠風\n鳥聲感和氣\n朱朱上緋桃\n白白尋練李\n鶯舌鬪歌童\n燕腰欺舞妓\n占斷艶陽天\n追攀幽勝地\n將升兎嶺巓\n却並蚊川涘\n仰空遙送目\n臨岸靜傾耳\n屛開簇簇山\n鏡轉溶溶水\n雲端帖黃鵠\n浪面跳紫鯉\n幽馨掬蕙蘭\n秀色飡荷芰\n美景苦難逢\n浮生寧久恃\n要成域外遊\n都遣人間累\n走筆縱狂吟\n飛觴誇爛醉\n是非兩忘筌\n榮悴俱脫屣\n綠醅猶未闌\n紅晷忽將墜\n今夕是何時\n此身誰氏子\n若非蓬島仙\n眞箇漆園吏\n浮休尙忘情\n去住寧介意\n擧頭謝煙霞\n扶腋回杖履\n但恐車馬場\n晨興趁聲利",
+      "lineCount": 40,
+      "inferredForm": "오언고시",
       "source": {
         "collectionTitle": "東京雜記 卷一",
         "juan": "卷一",
@@ -4870,8 +4870,8 @@
         "sourcePolicyId": "SRC-WIKISOURCE-TEXT"
       },
       "harvestPolicy": {
-        "confidence": "medium",
-        "rationale": "entry는 직접 열리지만 원문 손상/무구두점 때문에 행 분할은 보수적으로 유지함"
+        "confidence": "high",
+        "rationale": "entry가 `○저자/표제+詩/歌` 형태로 직접 열리고 행 분할도 안정적으로 복원됨"
       }
     },
     {
@@ -5172,9 +5172,9 @@
       "authorZh": "李達衷",
       "titleHintZh": null,
       "displayLabelZh": "李達衷詩",
-      "textZh": "當時自謂小中華\n半月城空鎖晩霞\n里有苔碑金佛刹\n境連蓬島玉仙家\n北川水落灘聲咽\n西岳雲奔雨脚斜\n一瞬興亡多少事\n憑軒朗詠岸烏紗\n[",
-      "lineCount": 9,
-      "inferredForm": "미상",
+      "textZh": "當時自謂小中華\n半月城空鎖晩霞\n里有苔碑金佛刹\n境連蓬島玉仙家\n北川水落灘聲咽\n西岳雲奔雨脚斜\n一瞬興亡多少事\n憑軒朗詠岸烏紗",
+      "lineCount": 8,
+      "inferredForm": "칠언율시",
       "source": {
         "collectionTitle": "東京雜記 卷一",
         "juan": "卷一",
@@ -5182,8 +5182,8 @@
         "sourcePolicyId": "SRC-WIKISOURCE-TEXT"
       },
       "harvestPolicy": {
-        "confidence": "medium",
-        "rationale": "entry는 직접 열리지만 원문 손상/무구두점 때문에 행 분할은 보수적으로 유지함"
+        "confidence": "high",
+        "rationale": "entry가 `○저자/표제+詩/歌` 형태로 직접 열리고 행 분할도 안정적으로 복원됨"
       }
     },
     {

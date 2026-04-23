@@ -4,20 +4,28 @@
   "basedOn": "korean-classics-tokyo-zakki-collection-bundle.v1.json",
   "purpose": "東京雜記 전권 시문 후보를 정리된 시인 기준으로 재배열한다",
   "summary": {
-    "normalizedAuthorCount": 55,
-    "totalWorkCount": 91,
+    "normalizedAuthorCount": 48,
+    "totalWorkCount": 90,
     "topAuthors": [
       {
         "normalizedAuthorZh": "魚世謙",
         "workCount": 12
       },
       {
+        "normalizedAuthorZh": "金克己",
+        "workCount": 10
+      },
+      {
         "normalizedAuthorZh": "徐居正",
         "workCount": 10
       },
       {
-        "normalizedAuthorZh": "金克己",
-        "workCount": 9
+        "normalizedAuthorZh": "金宗直",
+        "workCount": 4
+      },
+      {
+        "normalizedAuthorZh": "崔致遠",
+        "workCount": 4
       },
       {
         "normalizedAuthorZh": "李安訥",
@@ -32,10 +40,6 @@
         "workCount": 2
       },
       {
-        "normalizedAuthorZh": "金宗直",
-        "workCount": 2
-      },
-      {
         "normalizedAuthorZh": "金時習",
         "workCount": 2
       },
@@ -44,19 +48,7 @@
         "workCount": 2
       },
       {
-        "normalizedAuthorZh": "又祓禊",
-        "workCount": 1
-      },
-      {
-        "normalizedAuthorZh": "大面",
-        "workCount": 1
-      },
-      {
         "normalizedAuthorZh": "尹子雲",
-        "workCount": 1
-      },
-      {
-        "normalizedAuthorZh": "月顚",
         "workCount": 1
       },
       {
@@ -65,6 +57,14 @@
       },
       {
         "normalizedAuthorZh": "全湜",
+        "workCount": 1
+      },
+      {
+        "normalizedAuthorZh": "安軸",
+        "workCount": 1
+      },
+      {
+        "normalizedAuthorZh": "成侃",
         "workCount": 1
       }
     ]
@@ -275,6 +275,230 @@
           "confidence": "high",
           "documentEntryId": "KHS-TZ3-D-0189",
           "previewZh": "將軍與國共安危 / 百戰場中每出奇"
+        }
+      ]
+    },
+    {
+      "normalizedAuthorZh": "金克己",
+      "workCount": 10,
+      "rawLabelSummary": [
+        {
+          "label": "金克己",
+          "count": 7
+        },
+        {
+          "label": "又祓禊",
+          "count": 1
+        },
+        {
+          "label": "朱巖寺持麥石金克己",
+          "count": 1
+        },
+        {
+          "label": "金克已",
+          "count": 1
+        }
+      ],
+      "volumeSummary": [
+        {
+          "label": "卷1",
+          "count": 5
+        },
+        {
+          "label": "卷2",
+          "count": 5
+        }
+      ],
+      "sectionSummary": [
+        {
+          "label": "2:古蹟",
+          "count": 4
+        },
+        {
+          "label": "1:驛院",
+          "count": 3
+        },
+        {
+          "label": "1:山川",
+          "count": 2
+        },
+        {
+          "label": "2:佛宇",
+          "count": 1
+        }
+      ],
+      "formSummary": [
+        {
+          "label": "오언율시",
+          "count": 3
+        },
+        {
+          "label": "칠언율시",
+          "count": 3
+        },
+        {
+          "label": "오언고시",
+          "count": 2
+        },
+        {
+          "label": "미상",
+          "count": 1
+        },
+        {
+          "label": "칠언고시",
+          "count": 1
+        }
+      ],
+      "confidenceSummary": [
+        {
+          "label": "high",
+          "count": 9
+        },
+        {
+          "label": "medium",
+          "count": 1
+        }
+      ],
+      "works": [
+        {
+          "harvestId": "KHS-TZ1-H-0007",
+          "volume": 1,
+          "section": "山川",
+          "sourceEntryTitle": "兄山浦",
+          "displayLabelZh": "又祓禊詩",
+          "rawAuthorZh": "又祓禊",
+          "titlePrefixZh": "祓禊",
+          "lineCount": 26,
+          "inferredForm": "칠언고시",
+          "confidence": "high",
+          "documentEntryId": "KHS-TZ1-D-0055",
+          "previewZh": "今年濕蟄少開霽 / 十日愁霖如倒河"
+        },
+        {
+          "harvestId": "KHS-TZ1-H-0006",
+          "volume": 1,
+          "section": "山川",
+          "sourceEntryTitle": "兄山浦",
+          "displayLabelZh": "金克己詩",
+          "rawAuthorZh": "金克己",
+          "titlePrefixZh": null,
+          "lineCount": 40,
+          "inferredForm": "오언고시",
+          "confidence": "high",
+          "documentEntryId": "KHS-TZ1-D-0054",
+          "previewZh": "東皇一手恩 / 萬彙均沾被"
+        },
+        {
+          "harvestId": "KHS-TZ1-H-0023",
+          "volume": 1,
+          "section": "驛院",
+          "sourceEntryTitle": null,
+          "displayLabelZh": "金克己詩",
+          "rawAuthorZh": "金克己",
+          "titlePrefixZh": null,
+          "lineCount": 8,
+          "inferredForm": "오언율시",
+          "confidence": "high",
+          "documentEntryId": "KHS-TZ1-D-0229",
+          "previewZh": "何處堪惆悵 / 晨興遠邁時"
+        },
+        {
+          "harvestId": "KHS-TZ1-H-0025",
+          "volume": 1,
+          "section": "驛院",
+          "sourceEntryTitle": null,
+          "displayLabelZh": "金克己詩",
+          "rawAuthorZh": "金克己",
+          "titlePrefixZh": null,
+          "lineCount": 8,
+          "inferredForm": "칠언율시",
+          "confidence": "high",
+          "documentEntryId": "KHS-TZ1-D-0237",
+          "previewZh": "鄕心萬里久搖旌 / 忽向家山振策行"
+        },
+        {
+          "harvestId": "KHS-TZ1-H-0024",
+          "volume": 1,
+          "section": "驛院",
+          "sourceEntryTitle": null,
+          "displayLabelZh": "金克已詩",
+          "rawAuthorZh": "金克已",
+          "titlePrefixZh": null,
+          "lineCount": 8,
+          "inferredForm": "오언율시",
+          "confidence": "high",
+          "documentEntryId": "KHS-TZ1-D-0233",
+          "previewZh": "悠悠山下路 / 信轡詠涼天"
+        },
+        {
+          "harvestId": "KHS-TZ2-H-0017",
+          "volume": 2,
+          "section": "古蹟",
+          "sourceEntryTitle": "月精橋",
+          "displayLabelZh": "金克己詩",
+          "rawAuthorZh": "金克己",
+          "titlePrefixZh": null,
+          "lineCount": 8,
+          "inferredForm": "칠언율시",
+          "confidence": "high",
+          "documentEntryId": "KHS-TZ2-D-0073",
+          "previewZh": "半月城南兎嶺邊 / 虹橋倒影照蚊川"
+        },
+        {
+          "harvestId": "KHS-TZ2-H-0020",
+          "volume": 2,
+          "section": "古蹟",
+          "sourceEntryTitle": "南山寺",
+          "displayLabelZh": "朱巖寺持麥石金克己詩",
+          "rawAuthorZh": "朱巖寺持麥石金克己",
+          "titlePrefixZh": "朱巖寺持麥石",
+          "lineCount": 8,
+          "inferredForm": "오언율시",
+          "confidence": "high",
+          "documentEntryId": "KHS-TZ2-D-0097",
+          "previewZh": "迢迢雲際寺 / 異境隔塵凡"
+        },
+        {
+          "harvestId": "KHS-TZ2-H-0019",
+          "volume": 2,
+          "section": "古蹟",
+          "sourceEntryTitle": "皇龍寺",
+          "displayLabelZh": "金克己詩",
+          "rawAuthorZh": "金克己",
+          "titlePrefixZh": null,
+          "lineCount": 32,
+          "inferredForm": "오언고시",
+          "confidence": "high",
+          "documentEntryId": "KHS-TZ2-D-0088",
+          "previewZh": "五侯耽耽宇 / 當夏不受暑"
+        },
+        {
+          "harvestId": "KHS-TZ2-H-0014",
+          "volume": 2,
+          "section": "古蹟",
+          "sourceEntryTitle": "悅朴嶺",
+          "displayLabelZh": "金克己詩",
+          "rawAuthorZh": "金克己",
+          "titlePrefixZh": null,
+          "lineCount": 10,
+          "inferredForm": "미상",
+          "confidence": "medium",
+          "documentEntryId": "KHS-TZ2-D-0062",
+          "previewZh": "玉貌催魂隔 / 世空端只見"
+        },
+        {
+          "harvestId": "KHS-TZ2-H-0001",
+          "volume": 2,
+          "section": "佛宇",
+          "sourceEntryTitle": "芬皇寺",
+          "displayLabelZh": "金克己詩",
+          "rawAuthorZh": "金克己",
+          "titlePrefixZh": null,
+          "lineCount": 8,
+          "inferredForm": "칠언율시",
+          "confidence": "high",
+          "documentEntryId": "KHS-TZ2-D-0002",
+          "previewZh": "苔繞空階竹拂簷 / 境淸不復受朱炎"
         }
       ]
     },
@@ -491,44 +715,40 @@
       ]
     },
     {
-      "normalizedAuthorZh": "金克己",
-      "workCount": 9,
+      "normalizedAuthorZh": "金宗直",
+      "workCount": 4,
       "rawLabelSummary": [
         {
-          "label": "金克己",
-          "count": 7
-        },
-        {
-          "label": "朱巖寺持麥石金克己",
+          "label": "七詠佔畢齋金宗直",
           "count": 1
         },
         {
-          "label": "金克已",
+          "label": "佔畢齋金宗直",
+          "count": 1
+        },
+        {
+          "label": "怛忉",
+          "count": 1
+        },
+        {
+          "label": "陽山",
           "count": 1
         }
       ],
       "volumeSummary": [
         {
-          "label": "卷2",
-          "count": 5
+          "label": "卷3",
+          "count": 3
         },
         {
-          "label": "卷1",
-          "count": 4
+          "label": "卷2",
+          "count": 1
         }
       ],
       "sectionSummary": [
         {
-          "label": "2:古蹟",
-          "count": 4
-        },
-        {
-          "label": "1:驛院",
+          "label": "3:題詠",
           "count": 3
-        },
-        {
-          "label": "1:山川",
-          "count": 1
         },
         {
           "label": "2:佛宇",
@@ -537,158 +757,188 @@
       ],
       "formSummary": [
         {
-          "label": "오언율시",
-          "count": 3
-        },
-        {
-          "label": "칠언율시",
-          "count": 3
-        },
-        {
-          "label": "미상",
+          "label": "가요/기타",
           "count": 2
         },
         {
-          "label": "오언고시",
+          "label": "미상",
+          "count": 1
+        },
+        {
+          "label": "오언율시",
           "count": 1
         }
       ],
       "confidenceSummary": [
         {
           "label": "high",
-          "count": 7
+          "count": 3
         },
         {
           "label": "medium",
-          "count": 2
+          "count": 1
         }
       ],
       "works": [
         {
-          "harvestId": "KHS-TZ1-H-0006",
-          "volume": 1,
-          "section": "山川",
-          "sourceEntryTitle": "兄山浦",
-          "displayLabelZh": "金克己詩",
-          "rawAuthorZh": "金克己",
-          "titlePrefixZh": null,
-          "lineCount": 5,
-          "inferredForm": "미상",
-          "confidence": "medium",
-          "documentEntryId": "KHS-TZ1-D-0054",
-          "previewZh": "東皇一手恩萬彙 / 均沾被花心驚惠"
-        },
-        {
-          "harvestId": "KHS-TZ1-H-0023",
-          "volume": 1,
-          "section": "驛院",
-          "sourceEntryTitle": null,
-          "displayLabelZh": "金克己詩",
-          "rawAuthorZh": "金克己",
-          "titlePrefixZh": null,
-          "lineCount": 8,
-          "inferredForm": "오언율시",
-          "confidence": "high",
-          "documentEntryId": "KHS-TZ1-D-0229",
-          "previewZh": "何處堪惆悵 / 晨興遠邁時"
-        },
-        {
-          "harvestId": "KHS-TZ1-H-0025",
-          "volume": 1,
-          "section": "驛院",
-          "sourceEntryTitle": null,
-          "displayLabelZh": "金克己詩",
-          "rawAuthorZh": "金克己",
-          "titlePrefixZh": null,
-          "lineCount": 8,
-          "inferredForm": "칠언율시",
-          "confidence": "high",
-          "documentEntryId": "KHS-TZ1-D-0237",
-          "previewZh": "鄕心萬里久搖旌 / 忽向家山振策行"
-        },
-        {
-          "harvestId": "KHS-TZ1-H-0024",
-          "volume": 1,
-          "section": "驛院",
-          "sourceEntryTitle": null,
-          "displayLabelZh": "金克已詩",
-          "rawAuthorZh": "金克已",
-          "titlePrefixZh": null,
-          "lineCount": 8,
-          "inferredForm": "오언율시",
-          "confidence": "high",
-          "documentEntryId": "KHS-TZ1-D-0233",
-          "previewZh": "悠悠山下路 / 信轡詠涼天"
-        },
-        {
-          "harvestId": "KHS-TZ2-H-0017",
-          "volume": 2,
-          "section": "古蹟",
-          "sourceEntryTitle": "月精橋",
-          "displayLabelZh": "金克己詩",
-          "rawAuthorZh": "金克己",
-          "titlePrefixZh": null,
-          "lineCount": 8,
-          "inferredForm": "칠언율시",
-          "confidence": "high",
-          "documentEntryId": "KHS-TZ2-D-0073",
-          "previewZh": "半月城南兎嶺邊 / 虹橋倒影照蚊川"
-        },
-        {
-          "harvestId": "KHS-TZ2-H-0020",
-          "volume": 2,
-          "section": "古蹟",
-          "sourceEntryTitle": "南山寺",
-          "displayLabelZh": "朱巖寺持麥石金克己詩",
-          "rawAuthorZh": "朱巖寺持麥石金克己",
-          "titlePrefixZh": "朱巖寺持麥石",
-          "lineCount": 8,
-          "inferredForm": "오언율시",
-          "confidence": "high",
-          "documentEntryId": "KHS-TZ2-D-0097",
-          "previewZh": "迢迢雲際寺 / 異境隔塵凡"
-        },
-        {
-          "harvestId": "KHS-TZ2-H-0019",
-          "volume": 2,
-          "section": "古蹟",
-          "sourceEntryTitle": "皇龍寺",
-          "displayLabelZh": "金克己詩",
-          "rawAuthorZh": "金克己",
-          "titlePrefixZh": null,
-          "lineCount": 32,
-          "inferredForm": "오언고시",
-          "confidence": "high",
-          "documentEntryId": "KHS-TZ2-D-0088",
-          "previewZh": "五侯耽耽宇 / 當夏不受暑"
-        },
-        {
-          "harvestId": "KHS-TZ2-H-0014",
-          "volume": 2,
-          "section": "古蹟",
-          "sourceEntryTitle": "悅朴嶺",
-          "displayLabelZh": "金克己詩",
-          "rawAuthorZh": "金克己",
-          "titlePrefixZh": null,
-          "lineCount": 10,
-          "inferredForm": "미상",
-          "confidence": "medium",
-          "documentEntryId": "KHS-TZ2-D-0062",
-          "previewZh": "玉貌催魂隔 / 世空端只見"
-        },
-        {
-          "harvestId": "KHS-TZ2-H-0001",
+          "harvestId": "KHS-TZ2-H-0002",
           "volume": 2,
           "section": "佛宇",
-          "sourceEntryTitle": "芬皇寺",
-          "displayLabelZh": "金克己詩",
-          "rawAuthorZh": "金克己",
+          "sourceEntryTitle": "佛國寺",
+          "displayLabelZh": "佔畢齋金宗直詩",
+          "rawAuthorZh": "佔畢齋金宗直",
           "titlePrefixZh": null,
           "lineCount": 8,
-          "inferredForm": "칠언율시",
+          "inferredForm": "오언율시",
           "confidence": "high",
-          "documentEntryId": "KHS-TZ2-D-0002",
-          "previewZh": "苔繞空階竹拂簷 / 境淸不復受朱炎"
+          "documentEntryId": "KHS-TZ2-D-0004",
+          "previewZh": "爲訪招提境 / 松間紫翠重"
+        },
+        {
+          "harvestId": "KHS-TZ3-H-0038",
+          "volume": 3,
+          "section": "題詠",
+          "sourceEntryTitle": null,
+          "displayLabelZh": "七詠佔畢齋金宗直詩",
+          "rawAuthorZh": "七詠佔畢齋金宗直",
+          "titlePrefixZh": "七詠",
+          "lineCount": 11,
+          "inferredForm": "미상",
+          "confidence": "medium",
+          "documentEntryId": "KHS-TZ3-D-0190",
+          "previewZh": "會蘇曲會蘇曲西 / 風吹廣庭明月滿"
+        },
+        {
+          "harvestId": "KHS-TZ3-H-0039",
+          "volume": 3,
+          "section": "題詠",
+          "sourceEntryTitle": null,
+          "displayLabelZh": "怛忉歌",
+          "rawAuthorZh": "怛忉",
+          "titlePrefixZh": "怛忉",
+          "lineCount": 6,
+          "inferredForm": "가요/기타",
+          "confidence": "high",
+          "documentEntryId": "KHS-TZ3-D-0193",
+          "previewZh": "怛怛復忉忉大家 / 幾不保流蘇悵裏"
+        },
+        {
+          "harvestId": "KHS-TZ3-H-0040",
+          "volume": 3,
+          "section": "題詠",
+          "sourceEntryTitle": null,
+          "displayLabelZh": "陽山歌",
+          "rawAuthorZh": "陽山",
+          "titlePrefixZh": "陽山",
+          "lineCount": 10,
+          "inferredForm": "가요/기타",
+          "confidence": "high",
+          "documentEntryId": "KHS-TZ3-D-0194",
+          "previewZh": "敵國爲封豕荐食 / 我邊疆赳赳花郞"
+        }
+      ]
+    },
+    {
+      "normalizedAuthorZh": "崔致遠",
+      "workCount": 4,
+      "rawLabelSummary": [
+        {
+          "label": "大面",
+          "count": 1
+        },
+        {
+          "label": "月顚",
+          "count": 1
+        },
+        {
+          "label": "束毒",
+          "count": 1
+        },
+        {
+          "label": "狻猊",
+          "count": 1
+        }
+      ],
+      "volumeSummary": [
+        {
+          "label": "卷1",
+          "count": 4
+        }
+      ],
+      "sectionSummary": [
+        {
+          "label": "1:風俗編髮蓋首君臣男女飮食居處之制自檀君爲始",
+          "count": 4
+        }
+      ],
+      "formSummary": [
+        {
+          "label": "칠언절구",
+          "count": 4
+        }
+      ],
+      "confidenceSummary": [
+        {
+          "label": "high",
+          "count": 4
+        }
+      ],
+      "works": [
+        {
+          "harvestId": "KHS-TZ1-H-0002",
+          "volume": 1,
+          "section": "風俗編髮蓋首君臣男女飮食居處之制自檀君爲始",
+          "sourceEntryTitle": null,
+          "displayLabelZh": "大面詩",
+          "rawAuthorZh": "大面",
+          "titlePrefixZh": "大面",
+          "lineCount": 4,
+          "inferredForm": "칠언절구",
+          "confidence": "high",
+          "documentEntryId": "KHS-TZ1-D-0009",
+          "previewZh": "黃金面色是其人 / 手抱珠鞭役鬼神"
+        },
+        {
+          "harvestId": "KHS-TZ1-H-0001",
+          "volume": 1,
+          "section": "風俗編髮蓋首君臣男女飮食居處之制自檀君爲始",
+          "sourceEntryTitle": null,
+          "displayLabelZh": "月顚詩",
+          "rawAuthorZh": "月顚",
+          "titlePrefixZh": "月顚",
+          "lineCount": 4,
+          "inferredForm": "칠언절구",
+          "confidence": "high",
+          "documentEntryId": "KHS-TZ1-D-0008",
+          "previewZh": "肩高項縮髮崔嵬 / 攘臂群儒鬪酒盃"
+        },
+        {
+          "harvestId": "KHS-TZ1-H-0003",
+          "volume": 1,
+          "section": "風俗編髮蓋首君臣男女飮食居處之制自檀君爲始",
+          "sourceEntryTitle": null,
+          "displayLabelZh": "束毒詩",
+          "rawAuthorZh": "束毒",
+          "titlePrefixZh": "束毒",
+          "lineCount": 4,
+          "inferredForm": "칠언절구",
+          "confidence": "high",
+          "documentEntryId": "KHS-TZ1-D-0010",
+          "previewZh": "蓬頭藍面異人間 / 押隊來庭學舞鸞"
+        },
+        {
+          "harvestId": "KHS-TZ1-H-0004",
+          "volume": 1,
+          "section": "風俗編髮蓋首君臣男女飮食居處之制自檀君爲始",
+          "sourceEntryTitle": null,
+          "displayLabelZh": "狻猊詩",
+          "rawAuthorZh": "狻猊",
+          "titlePrefixZh": "狻猊",
+          "lineCount": 4,
+          "inferredForm": "칠언절구",
+          "confidence": "high",
+          "documentEntryId": "KHS-TZ1-D-0011",
+          "previewZh": "遠涉流沙萬理來 / 毛衣破盡着塵埃"
         }
       ]
     },
@@ -953,90 +1203,6 @@
       ]
     },
     {
-      "normalizedAuthorZh": "金宗直",
-      "workCount": 2,
-      "rawLabelSummary": [
-        {
-          "label": "七詠佔畢齋金宗直",
-          "count": 1
-        },
-        {
-          "label": "佔畢齋金宗直",
-          "count": 1
-        }
-      ],
-      "volumeSummary": [
-        {
-          "label": "卷2",
-          "count": 1
-        },
-        {
-          "label": "卷3",
-          "count": 1
-        }
-      ],
-      "sectionSummary": [
-        {
-          "label": "2:佛宇",
-          "count": 1
-        },
-        {
-          "label": "3:題詠",
-          "count": 1
-        }
-      ],
-      "formSummary": [
-        {
-          "label": "미상",
-          "count": 1
-        },
-        {
-          "label": "오언율시",
-          "count": 1
-        }
-      ],
-      "confidenceSummary": [
-        {
-          "label": "high",
-          "count": 1
-        },
-        {
-          "label": "medium",
-          "count": 1
-        }
-      ],
-      "works": [
-        {
-          "harvestId": "KHS-TZ2-H-0002",
-          "volume": 2,
-          "section": "佛宇",
-          "sourceEntryTitle": "佛國寺",
-          "displayLabelZh": "佔畢齋金宗直詩",
-          "rawAuthorZh": "佔畢齋金宗直",
-          "titlePrefixZh": null,
-          "lineCount": 8,
-          "inferredForm": "오언율시",
-          "confidence": "high",
-          "documentEntryId": "KHS-TZ2-D-0004",
-          "previewZh": "爲訪招提境 / 松間紫翠重"
-        },
-        {
-          "harvestId": "KHS-TZ3-H-0038",
-          "volume": 3,
-          "section": "題詠",
-          "sourceEntryTitle": null,
-          "displayLabelZh": "七詠佔畢齋金宗直詩",
-          "rawAuthorZh": "七詠佔畢齋金宗直",
-          "titlePrefixZh": "七詠",
-          "lineCount": 1,
-          "inferredForm": "미상",
-          "confidence": "medium",
-          "documentEntryId": "KHS-TZ3-D-0190",
-          "previewZh": "會蘇曲會蘇曲會蘇曲西風吹廣庭明月滿華屋王姬厭坐理繅車六部女兒多如簇爾筥旣盈我筐空釃酒揶揄笑相譃一婦嘆千室歡坐令四方勤杼柚嘉俳縱失閨中儀猶勝跋河爭嗃嗃"
-        }
-      ]
-    },
-    {
       "normalizedAuthorZh": "金時習",
       "workCount": 2,
       "rawLabelSummary": [
@@ -1169,106 +1335,6 @@
       ]
     },
     {
-      "normalizedAuthorZh": "又祓禊",
-      "workCount": 1,
-      "rawLabelSummary": [
-        {
-          "label": "又祓禊",
-          "count": 1
-        }
-      ],
-      "volumeSummary": [
-        {
-          "label": "卷1",
-          "count": 1
-        }
-      ],
-      "sectionSummary": [
-        {
-          "label": "1:山川",
-          "count": 1
-        }
-      ],
-      "formSummary": [
-        {
-          "label": "칠언고시",
-          "count": 1
-        }
-      ],
-      "confidenceSummary": [
-        {
-          "label": "high",
-          "count": 1
-        }
-      ],
-      "works": [
-        {
-          "harvestId": "KHS-TZ1-H-0007",
-          "volume": 1,
-          "section": "山川",
-          "sourceEntryTitle": "兄山浦",
-          "displayLabelZh": "又祓禊詩",
-          "rawAuthorZh": "又祓禊",
-          "titlePrefixZh": null,
-          "lineCount": 26,
-          "inferredForm": "칠언고시",
-          "confidence": "high",
-          "documentEntryId": "KHS-TZ1-D-0055",
-          "previewZh": "今年濕蟄少開霽 / 十日愁霖如倒河"
-        }
-      ]
-    },
-    {
-      "normalizedAuthorZh": "大面",
-      "workCount": 1,
-      "rawLabelSummary": [
-        {
-          "label": "大面",
-          "count": 1
-        }
-      ],
-      "volumeSummary": [
-        {
-          "label": "卷1",
-          "count": 1
-        }
-      ],
-      "sectionSummary": [
-        {
-          "label": "1:風俗編髮蓋首君臣男女飮食居處之制自檀君爲始",
-          "count": 1
-        }
-      ],
-      "formSummary": [
-        {
-          "label": "칠언절구",
-          "count": 1
-        }
-      ],
-      "confidenceSummary": [
-        {
-          "label": "high",
-          "count": 1
-        }
-      ],
-      "works": [
-        {
-          "harvestId": "KHS-TZ1-H-0002",
-          "volume": 1,
-          "section": "風俗編髮蓋首君臣男女飮食居處之制自檀君爲始",
-          "sourceEntryTitle": null,
-          "displayLabelZh": "大面詩",
-          "rawAuthorZh": "大面",
-          "titlePrefixZh": null,
-          "lineCount": 4,
-          "inferredForm": "칠언절구",
-          "confidence": "high",
-          "documentEntryId": "KHS-TZ1-D-0009",
-          "previewZh": "黃金面色是其人 / 手抱珠鞭役鬼神"
-        }
-      ]
-    },
-    {
       "normalizedAuthorZh": "尹子雲",
       "workCount": 1,
       "rawLabelSummary": [
@@ -1315,56 +1381,6 @@
           "confidence": "high",
           "documentEntryId": "KHS-TZ3-D-0161",
           "previewZh": "羅代遺墟百姓家 / 五陵秋草夕陽多"
-        }
-      ]
-    },
-    {
-      "normalizedAuthorZh": "月顚",
-      "workCount": 1,
-      "rawLabelSummary": [
-        {
-          "label": "月顚",
-          "count": 1
-        }
-      ],
-      "volumeSummary": [
-        {
-          "label": "卷1",
-          "count": 1
-        }
-      ],
-      "sectionSummary": [
-        {
-          "label": "1:風俗編髮蓋首君臣男女飮食居處之制自檀君爲始",
-          "count": 1
-        }
-      ],
-      "formSummary": [
-        {
-          "label": "칠언절구",
-          "count": 1
-        }
-      ],
-      "confidenceSummary": [
-        {
-          "label": "high",
-          "count": 1
-        }
-      ],
-      "works": [
-        {
-          "harvestId": "KHS-TZ1-H-0001",
-          "volume": 1,
-          "section": "風俗編髮蓋首君臣男女飮食居處之制自檀君爲始",
-          "sourceEntryTitle": null,
-          "displayLabelZh": "月顚詩",
-          "rawAuthorZh": "月顚",
-          "titlePrefixZh": null,
-          "lineCount": 4,
-          "inferredForm": "칠언절구",
-          "confidence": "high",
-          "documentEntryId": "KHS-TZ1-D-0008",
-          "previewZh": "肩高項縮髮崔嵬 / 攘臂群儒鬪酒盃"
         }
       ]
     },
@@ -2141,13 +2157,13 @@
       ],
       "formSummary": [
         {
-          "label": "미상",
+          "label": "칠언율시",
           "count": 1
         }
       ],
       "confidenceSummary": [
         {
-          "label": "medium",
+          "label": "high",
           "count": 1
         }
       ],
@@ -2160,9 +2176,9 @@
           "displayLabelZh": "李達衷詩",
           "rawAuthorZh": "李達衷",
           "titlePrefixZh": null,
-          "lineCount": 9,
-          "inferredForm": "미상",
-          "confidence": "medium",
+          "lineCount": 8,
+          "inferredForm": "칠언율시",
+          "confidence": "high",
           "documentEntryId": "KHS-TZ1-D-0192",
           "previewZh": "當時自謂小中華 / 半月城空鎖晩霞"
         }
@@ -2265,106 +2281,6 @@
           "confidence": "high",
           "documentEntryId": "KHS-TZ1-D-0190",
           "previewZh": "東都文物尙繁華 / 更起高樓不紫霞"
-        }
-      ]
-    },
-    {
-      "normalizedAuthorZh": "束毒",
-      "workCount": 1,
-      "rawLabelSummary": [
-        {
-          "label": "束毒",
-          "count": 1
-        }
-      ],
-      "volumeSummary": [
-        {
-          "label": "卷1",
-          "count": 1
-        }
-      ],
-      "sectionSummary": [
-        {
-          "label": "1:風俗編髮蓋首君臣男女飮食居處之制自檀君爲始",
-          "count": 1
-        }
-      ],
-      "formSummary": [
-        {
-          "label": "칠언절구",
-          "count": 1
-        }
-      ],
-      "confidenceSummary": [
-        {
-          "label": "high",
-          "count": 1
-        }
-      ],
-      "works": [
-        {
-          "harvestId": "KHS-TZ1-H-0003",
-          "volume": 1,
-          "section": "風俗編髮蓋首君臣男女飮食居處之制自檀君爲始",
-          "sourceEntryTitle": null,
-          "displayLabelZh": "束毒詩",
-          "rawAuthorZh": "束毒",
-          "titlePrefixZh": null,
-          "lineCount": 4,
-          "inferredForm": "칠언절구",
-          "confidence": "high",
-          "documentEntryId": "KHS-TZ1-D-0010",
-          "previewZh": "蓬頭藍面異人間 / 押隊來庭學舞鸞"
-        }
-      ]
-    },
-    {
-      "normalizedAuthorZh": "怛忉",
-      "workCount": 1,
-      "rawLabelSummary": [
-        {
-          "label": "怛忉",
-          "count": 1
-        }
-      ],
-      "volumeSummary": [
-        {
-          "label": "卷3",
-          "count": 1
-        }
-      ],
-      "sectionSummary": [
-        {
-          "label": "3:題詠",
-          "count": 1
-        }
-      ],
-      "formSummary": [
-        {
-          "label": "가요/기타",
-          "count": 1
-        }
-      ],
-      "confidenceSummary": [
-        {
-          "label": "high",
-          "count": 1
-        }
-      ],
-      "works": [
-        {
-          "harvestId": "KHS-TZ3-H-0039",
-          "volume": 3,
-          "section": "題詠",
-          "sourceEntryTitle": null,
-          "displayLabelZh": "怛忉歌",
-          "rawAuthorZh": "怛忉",
-          "titlePrefixZh": null,
-          "lineCount": 6,
-          "inferredForm": "가요/기타",
-          "confidence": "high",
-          "documentEntryId": "KHS-TZ3-D-0193",
-          "previewZh": "怛怛復忉忉大家 / 幾不保流蘇悵裏"
         }
       ]
     },
@@ -2519,23 +2435,23 @@
       ]
     },
     {
-      "normalizedAuthorZh": "狻猊",
+      "normalizedAuthorZh": "兪好仁",
       "workCount": 1,
       "rawLabelSummary": [
         {
-          "label": "狻猊",
+          "label": "雜詠兪好仁",
           "count": 1
         }
       ],
       "volumeSummary": [
         {
-          "label": "卷1",
+          "label": "卷3",
           "count": 1
         }
       ],
       "sectionSummary": [
         {
-          "label": "1:風俗編髮蓋首君臣男女飮食居處之制自檀君爲始",
+          "label": "3:題詠",
           "count": 1
         }
       ],
@@ -2553,18 +2469,18 @@
       ],
       "works": [
         {
-          "harvestId": "KHS-TZ1-H-0004",
-          "volume": 1,
-          "section": "風俗編髮蓋首君臣男女飮食居處之制自檀君爲始",
+          "harvestId": "KHS-TZ3-H-0041",
+          "volume": 3,
+          "section": "題詠",
           "sourceEntryTitle": null,
-          "displayLabelZh": "狻猊詩",
-          "rawAuthorZh": "狻猊",
-          "titlePrefixZh": null,
+          "displayLabelZh": "雜詠兪好仁詩",
+          "rawAuthorZh": "雜詠兪好仁",
+          "titlePrefixZh": "雜詠",
           "lineCount": 4,
           "inferredForm": "칠언절구",
           "confidence": "high",
-          "documentEntryId": "KHS-TZ1-D-0011",
-          "previewZh": "遠涉流沙萬理來 / 毛衣破盡着塵埃"
+          "documentEntryId": "KHS-TZ3-D-0197",
+          "previewZh": "孤臣一死答君恩 / 萬里扶桑漢節尊"
         }
       ]
     },
@@ -2719,56 +2635,6 @@
       ]
     },
     {
-      "normalizedAuthorZh": "都波",
-      "workCount": 1,
-      "rawLabelSummary": [
-        {
-          "label": "都波",
-          "count": 1
-        }
-      ],
-      "volumeSummary": [
-        {
-          "label": "卷3",
-          "count": 1
-        }
-      ],
-      "sectionSummary": [
-        {
-          "label": "3:異聞",
-          "count": 1
-        }
-      ],
-      "formSummary": [
-        {
-          "label": "가요/기타",
-          "count": 1
-        }
-      ],
-      "confidenceSummary": [
-        {
-          "label": "high",
-          "count": 1
-        }
-      ],
-      "works": [
-        {
-          "harvestId": "KHS-TZ3-H-0042",
-          "volume": 3,
-          "section": "異聞",
-          "sourceEntryTitle": null,
-          "displayLabelZh": "都波歌",
-          "rawAuthorZh": "都波",
-          "titlePrefixZh": null,
-          "lineCount": 20,
-          "inferredForm": "가요/기타",
-          "confidence": "high",
-          "documentEntryId": "KHS-TZ3-D-0205",
-          "previewZh": "憲康王幸金 / 剛嶺北岳神"
-        }
-      ]
-    },
-    {
       "normalizedAuthorZh": "閔思平",
       "workCount": 1,
       "rawLabelSummary": [
@@ -2815,56 +2681,6 @@
           "confidence": "high",
           "documentEntryId": "KHS-TZ3-D-0152",
           "previewZh": "鷄林古與國 / 崔薛出賢材"
-        }
-      ]
-    },
-    {
-      "normalizedAuthorZh": "陽山",
-      "workCount": 1,
-      "rawLabelSummary": [
-        {
-          "label": "陽山",
-          "count": 1
-        }
-      ],
-      "volumeSummary": [
-        {
-          "label": "卷3",
-          "count": 1
-        }
-      ],
-      "sectionSummary": [
-        {
-          "label": "3:題詠",
-          "count": 1
-        }
-      ],
-      "formSummary": [
-        {
-          "label": "가요/기타",
-          "count": 1
-        }
-      ],
-      "confidenceSummary": [
-        {
-          "label": "high",
-          "count": 1
-        }
-      ],
-      "works": [
-        {
-          "harvestId": "KHS-TZ3-H-0040",
-          "volume": 3,
-          "section": "題詠",
-          "sourceEntryTitle": null,
-          "displayLabelZh": "陽山歌",
-          "rawAuthorZh": "陽山",
-          "titlePrefixZh": null,
-          "lineCount": 10,
-          "inferredForm": "가요/기타",
-          "confidence": "high",
-          "documentEntryId": "KHS-TZ3-D-0194",
-          "previewZh": "敵國爲封豕荐食 / 我邊疆赳赳花郞"
         }
       ]
     },
@@ -3315,56 +3131,6 @@
           "confidence": "high",
           "documentEntryId": "KHS-TZ3-D-0163",
           "previewZh": "舊時春燕入誰家 / □鶴歸來丘壠多"
-        }
-      ]
-    },
-    {
-      "normalizedAuthorZh": "雜詠兪好仁",
-      "workCount": 1,
-      "rawLabelSummary": [
-        {
-          "label": "雜詠兪好仁",
-          "count": 1
-        }
-      ],
-      "volumeSummary": [
-        {
-          "label": "卷3",
-          "count": 1
-        }
-      ],
-      "sectionSummary": [
-        {
-          "label": "3:題詠",
-          "count": 1
-        }
-      ],
-      "formSummary": [
-        {
-          "label": "칠언절구",
-          "count": 1
-        }
-      ],
-      "confidenceSummary": [
-        {
-          "label": "high",
-          "count": 1
-        }
-      ],
-      "works": [
-        {
-          "harvestId": "KHS-TZ3-H-0041",
-          "volume": 3,
-          "section": "題詠",
-          "sourceEntryTitle": null,
-          "displayLabelZh": "雜詠兪好仁詩",
-          "rawAuthorZh": "雜詠兪好仁",
-          "titlePrefixZh": null,
-          "lineCount": 4,
-          "inferredForm": "칠언절구",
-          "confidence": "high",
-          "documentEntryId": "KHS-TZ3-D-0197",
-          "previewZh": "孤臣一死答君恩 / 萬里扶桑漢節尊"
         }
       ]
     },

@@ -25,15 +25,13 @@
       "prose": 168,
       "poem-bearing": 43
     },
-    "poemBlockCount": 42,
-    "attachedContextCount": 1,
+    "poemBlockCount": 41,
+    "attachedContextCount": 2,
     "sectionsWithPoems": [
-      "異聞",
       "題詠"
     ],
     "poemBlocksBySection": {
-      "題詠": 41,
-      "異聞": 1
+      "題詠": 41
     }
   },
   "documentSections": [
@@ -3971,8 +3969,8 @@
       "authorZh": "七詠佔畢齋金宗直",
       "titleHintZh": null,
       "displayLabelZh": "七詠佔畢齋金宗直詩",
-      "textZh": "會蘇曲會蘇曲會蘇曲西風吹廣庭明月滿華屋王姬厭坐理繅車六部女兒多如簇爾筥旣盈我筐空釃酒揶揄笑相譃一婦嘆千室歡坐令四方勤杼柚嘉俳縱失閨中儀猶勝跋河爭嗃嗃",
-      "lineCount": 1,
+      "textZh": "會蘇曲會蘇曲西\n風吹廣庭明月滿\n華屋王姬厭坐理\n繅車六部女兒多\n如簇爾筥旣盈我\n筐空釃酒揶揄笑\n相譃一婦嘆千室\n歡坐令四方勤杼\n柚嘉俳縱失閨中\n儀猶勝跋河爭嗃\n嗃",
+      "lineCount": 11,
       "inferredForm": "미상",
       "source": {
         "collectionTitle": "東京雜記 卷三",
@@ -4056,30 +4054,6 @@
         "confidence": "high",
         "rationale": "entry가 `○저자/표제+詩/歌` 형태로 직접 열리고 행 분할도 안정적으로 복원됨"
       }
-    },
-    {
-      "harvestId": "KHS-TZ3-H-0042",
-      "documentEntryId": "KHS-TZ3-D-0205",
-      "documentSectionId": "KHS-TZ3-S-0013",
-      "section": "異聞",
-      "sourceEntryTitle": null,
-      "marker": "歌",
-      "authorZh": "都波",
-      "titleHintZh": null,
-      "displayLabelZh": "都波歌",
-      "textZh": "憲康王幸金\n剛嶺北岳神\n呈舞名玉刀\n鈴又曰同禮\n殿宴時地神\n出舞名地伯\n于時山神獻\n舞唱歌云智\n理多都波都\n波者蓋言以\n智理爲國者\n知而多逃都\n邑將破云也\n地神山神知\n國將亡故作\n舞以警之而\n國人不悟謂\n爲現□耽樂\n滋甚以至於\n亡",
-      "lineCount": 20,
-      "inferredForm": "가요/기타",
-      "source": {
-        "collectionTitle": "東京雜記 卷三",
-        "juan": "卷三",
-        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%89",
-        "sourcePolicyId": "SRC-WIKISOURCE-TEXT"
-      },
-      "harvestPolicy": {
-        "confidence": "high",
-        "rationale": "entry가 `○저자/표제+詩/歌` 형태로 직접 열리고 행 분할도 안정적으로 복원됨"
-      }
     }
   ],
   "attachedContexts": [
@@ -4091,6 +4065,20 @@
       "sourceEntryTitle": null,
       "headingZh": "處容歌",
       "prosePreview": "舞憲康王出遊鶴城忽雲霧冥曀迷失道怪問左右日官奏云此東海龍所變也宜行勝事以解之於是勅有司爲龍創佛寺施令已出雲開霧散因名開雲浦龍喜乃率七子現於駕前讚德歌舞其一子隨駕入京名曰處容王旣還乃卜□鷲山東麓勝地置寺曰望海寺爲龍而置也",
+      "source": {
+        "collectionTitle": "東京雜記 卷三",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%89"
+      }
+    },
+    {
+      "contextId": "KHS-TZ3-C-0002",
+      "documentEntryId": "KHS-TZ3-D-0205",
+      "documentSectionId": "KHS-TZ3-S-0013",
+      "section": "異聞",
+      "sourceEntryTitle": null,
+      "headingZh": "都波歌",
+      "prosePreview": "憲康王幸金剛嶺北岳神呈舞名玉刀鈴又曰同禮殿宴時地神出舞名地伯于時山神獻舞唱歌云智理多都波都波者蓋言以智理爲國者知而多逃都邑將破云也地神山神知國將亡故作舞以警之而國人不悟謂爲現□耽樂滋甚以至於亡",
       "source": {
         "collectionTitle": "東京雜記 卷三",
         "juan": "卷三",

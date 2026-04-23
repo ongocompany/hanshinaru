@@ -38,7 +38,20 @@ const EXACT_AUTHOR_NORMALIZATIONS = {
   '權近應制': { normalizedAuthorZh: '權近', titlePrefixZh: '應制' },
   '朴文佑慈仁縣': { normalizedAuthorZh: '朴文佑', titlePrefixZh: '慈仁縣' },
   '朱巖寺持麥石金克己': { normalizedAuthorZh: '金克己', titlePrefixZh: '朱巖寺持麥石' },
-  '唐顧雲贈崔文昌': { normalizedAuthorZh: '顧雲', titlePrefixZh: '贈崔文昌' }
+  '唐顧雲贈崔文昌': { normalizedAuthorZh: '顧雲', titlePrefixZh: '贈崔文昌' },
+  '月顚': { normalizedAuthorZh: '崔致遠', titlePrefixZh: '月顚', note: '鄕樂 五技 연작 표제 정리 규칙' },
+  '大面': { normalizedAuthorZh: '崔致遠', titlePrefixZh: '大面', note: '鄕樂 五技 연작 표제 정리 규칙' },
+  '束毒': { normalizedAuthorZh: '崔致遠', titlePrefixZh: '束毒', note: '鄕樂 五技 연작 표제 정리 규칙' },
+  '狻猊': { normalizedAuthorZh: '崔致遠', titlePrefixZh: '狻猊', note: '鄕樂 五技 연작 표제 정리 규칙' },
+  '又祓禊': {
+    normalizedAuthorZh: '金克己',
+    confidence: 'medium',
+    titlePrefixZh: '祓禊',
+    note: '兄山浦 金克己詩 뒤에 이어지는 又題 표제 정리 규칙'
+  },
+  '怛忉': { normalizedAuthorZh: '金宗直', titlePrefixZh: '怛忉', note: '七詠 연작 표제 정리 규칙' },
+  '陽山': { normalizedAuthorZh: '金宗直', titlePrefixZh: '陽山', note: '七詠 연작 표제 정리 규칙' },
+  '雜詠兪好仁': { normalizedAuthorZh: '兪好仁', titlePrefixZh: '雜詠', note: '표제+저자 결합 표기 정리 규칙' }
 };
 
 const SUFFIX_AUTHOR_NORMALIZATIONS = [
@@ -93,9 +106,9 @@ function normalizeAuthorLabel(rawLabel) {
     return {
       rawLabelZh: rawLabel,
       normalizedAuthorZh: exact.normalizedAuthorZh,
-      confidence: 'high',
+      confidence: exact.confidence || 'high',
       titlePrefixZh: exact.titlePrefixZh || null,
-      note: '명시적 표기 정리 규칙'
+      note: exact.note || '명시적 표기 정리 규칙'
     };
   }
 

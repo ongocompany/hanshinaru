@@ -4,33 +4,11 @@
   "basedOn": "korean-classics-tokyo-zakki-collection-bundle.v1.json",
   "purpose": "東京雜記 전권 수집 결과 중 본문 복원과 저자 정리가 필요한 항목만 별도 추린다",
   "summary": {
-    "mediumWorkCount": 5,
-    "lowAuthorLabelCount": 9,
-    "likelyNonPersonLabelCount": 8
+    "mediumWorkCount": 3,
+    "lowAuthorLabelCount": 0,
+    "likelyNonPersonLabelCount": 0
   },
   "mediumWorks": [
-    {
-      "harvestId": "KHS-TZ1-H-0006",
-      "volume": 1,
-      "section": "山川",
-      "sourceEntryTitle": "兄山浦",
-      "displayLabelZh": "金克己詩",
-      "normalizedAuthorZh": "金克己",
-      "issue": "본문 복원 추가 검수",
-      "note": "entry는 직접 열리지만 원문 손상/무구두점 때문에 행 분할은 보수적으로 유지함",
-      "previewZh": "東皇一手恩萬彙 / 均沾被花心驚惠 / 風鳥聲感和氣朱"
-    },
-    {
-      "harvestId": "KHS-TZ1-H-0019",
-      "volume": 1,
-      "section": "宮室",
-      "sourceEntryTitle": "賓賢樓",
-      "displayLabelZh": "李達衷詩",
-      "normalizedAuthorZh": "李達衷",
-      "issue": "본문 복원 추가 검수",
-      "note": "entry는 직접 열리지만 원문 손상/무구두점 때문에 행 분할은 보수적으로 유지함",
-      "previewZh": "當時自謂小中華 / 半月城空鎖晩霞 / 里有苔碑金佛刹"
-    },
     {
       "harvestId": "KHS-TZ2-H-0014",
       "volume": 2,
@@ -62,117 +40,8 @@
       "normalizedAuthorZh": "金宗直",
       "issue": "본문 복원 추가 검수",
       "note": "entry는 직접 열리지만 원문 손상/무구두점 때문에 행 분할은 보수적으로 유지함",
-      "previewZh": "會蘇曲會蘇曲會蘇曲西風吹廣庭明月滿華屋王姬厭坐理繅車六部女兒多如簇爾筥旣盈我筐空釃酒揶揄笑相譃一婦嘆千室歡坐令四方勤杼柚嘉俳縱失閨中儀猶勝跋河爭嗃嗃"
+      "previewZh": "會蘇曲會蘇曲西 / 風吹廣庭明月滿 / 華屋王姬厭坐理"
     }
   ],
-  "lowAuthorLabels": [
-    {
-      "harvestId": "KHS-TZ1-H-0001",
-      "volume": 1,
-      "section": "風俗編髮蓋首君臣男女飮食居處之制自檀君爲始",
-      "sourceEntryTitle": null,
-      "rawLabelZh": "月顚",
-      "normalizedAuthorZh": "月顚",
-      "displayLabelZh": "月顚詩",
-      "issue": "저자 표기 정리 필요",
-      "likelyNonPersonLabel": true,
-      "previewZh": "肩高項縮髮崔嵬 / 攘臂群儒鬪酒盃"
-    },
-    {
-      "harvestId": "KHS-TZ1-H-0002",
-      "volume": 1,
-      "section": "風俗編髮蓋首君臣男女飮食居處之制自檀君爲始",
-      "sourceEntryTitle": null,
-      "rawLabelZh": "大面",
-      "normalizedAuthorZh": "大面",
-      "displayLabelZh": "大面詩",
-      "issue": "저자 표기 정리 필요",
-      "likelyNonPersonLabel": true,
-      "previewZh": "黃金面色是其人 / 手抱珠鞭役鬼神"
-    },
-    {
-      "harvestId": "KHS-TZ1-H-0003",
-      "volume": 1,
-      "section": "風俗編髮蓋首君臣男女飮食居處之制自檀君爲始",
-      "sourceEntryTitle": null,
-      "rawLabelZh": "束毒",
-      "normalizedAuthorZh": "束毒",
-      "displayLabelZh": "束毒詩",
-      "issue": "저자 표기 정리 필요",
-      "likelyNonPersonLabel": true,
-      "previewZh": "蓬頭藍面異人間 / 押隊來庭學舞鸞"
-    },
-    {
-      "harvestId": "KHS-TZ1-H-0004",
-      "volume": 1,
-      "section": "風俗編髮蓋首君臣男女飮食居處之制自檀君爲始",
-      "sourceEntryTitle": null,
-      "rawLabelZh": "狻猊",
-      "normalizedAuthorZh": "狻猊",
-      "displayLabelZh": "狻猊詩",
-      "issue": "저자 표기 정리 필요",
-      "likelyNonPersonLabel": true,
-      "previewZh": "遠涉流沙萬理來 / 毛衣破盡着塵埃"
-    },
-    {
-      "harvestId": "KHS-TZ1-H-0007",
-      "volume": 1,
-      "section": "山川",
-      "sourceEntryTitle": "兄山浦",
-      "rawLabelZh": "又祓禊",
-      "normalizedAuthorZh": "又祓禊",
-      "displayLabelZh": "又祓禊詩",
-      "issue": "저자 표기 정리 필요",
-      "likelyNonPersonLabel": true,
-      "previewZh": "今年濕蟄少開霽 / 十日愁霖如倒河"
-    },
-    {
-      "harvestId": "KHS-TZ3-H-0039",
-      "volume": 3,
-      "section": "題詠",
-      "sourceEntryTitle": null,
-      "rawLabelZh": "怛忉",
-      "normalizedAuthorZh": "怛忉",
-      "displayLabelZh": "怛忉歌",
-      "issue": "저자 표기 정리 필요",
-      "likelyNonPersonLabel": true,
-      "previewZh": "怛怛復忉忉大家 / 幾不保流蘇悵裏"
-    },
-    {
-      "harvestId": "KHS-TZ3-H-0040",
-      "volume": 3,
-      "section": "題詠",
-      "sourceEntryTitle": null,
-      "rawLabelZh": "陽山",
-      "normalizedAuthorZh": "陽山",
-      "displayLabelZh": "陽山歌",
-      "issue": "저자 표기 정리 필요",
-      "likelyNonPersonLabel": true,
-      "previewZh": "敵國爲封豕荐食 / 我邊疆赳赳花郞"
-    },
-    {
-      "harvestId": "KHS-TZ3-H-0041",
-      "volume": 3,
-      "section": "題詠",
-      "sourceEntryTitle": null,
-      "rawLabelZh": "雜詠兪好仁",
-      "normalizedAuthorZh": "雜詠兪好仁",
-      "displayLabelZh": "雜詠兪好仁詩",
-      "issue": "저자 표기 정리 필요",
-      "likelyNonPersonLabel": false,
-      "previewZh": "孤臣一死答君恩 / 萬里扶桑漢節尊"
-    },
-    {
-      "harvestId": "KHS-TZ3-H-0042",
-      "volume": 3,
-      "section": "異聞",
-      "sourceEntryTitle": null,
-      "rawLabelZh": "都波",
-      "normalizedAuthorZh": "都波",
-      "displayLabelZh": "都波歌",
-      "issue": "저자 표기 정리 필요",
-      "likelyNonPersonLabel": true,
-      "previewZh": "憲康王幸金 / 剛嶺北岳神"
-    }
-  ]
+  "lowAuthorLabels": []
 }
