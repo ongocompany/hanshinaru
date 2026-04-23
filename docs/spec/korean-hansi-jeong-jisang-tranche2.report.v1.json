@@ -1,0 +1,41 @@
+{
+  "version": "2026-04-22.v1",
+  "batchId": "korean-hansi-jeong-jisang-tranche2",
+  "purpose": "정지상 direct-text tranche 2 from 東文選 卷一百四 / 新增東國輿地勝覽 卷021",
+  "sourceCollections": [
+    {
+      "collectionTitle": "東文選 卷一百四",
+      "juan": "卷一百四",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%9D%B1%E6%96%87%E9%81%B8/%E5%8D%B7%E4%B8%80%E7%99%BE%E5%9B%9B",
+      "sourcePolicyId": "SRC-WIKISOURCE-TEXT"
+    },
+    {
+      "collectionTitle": "新增東國輿地勝覽 卷021",
+      "juan": "卷021",
+      "sourceUrl": "https://zh.wikisource.org/zh/%E6%96%B0%E5%A2%9E%E6%9D%B1%E5%9C%8B%E8%BC%BF%E5%9C%B0%E5%8B%9D%E8%A6%BD/%E5%8D%B7021",
+      "sourcePolicyId": "SRC-WIKISOURCE-TEXT"
+    }
+  ],
+  "totalCollected": 2,
+  "formCounts": {
+    "致語": 1,
+    "오언고시": 1
+  },
+  "matchedSeedTitles": [
+    "鄕宴致語",
+    "栢律寺"
+  ],
+  "unresolvedSeedTitles": [
+    "西樓"
+  ],
+  "sourceValidationIssues": [
+    "`東文選 卷一百四`의 `冊王太子御宴致語`를 board seed `鄕宴致語`의 direct-text locator로 채택했다",
+    "`新增東國輿地勝覽 卷021`의 `柏栗寺`를 board seed `栢律寺`의 이체자 표기 direct-text locator로 채택했다",
+    "`東文選 卷十九`의 `西樓觀雪`, `西樓晚望`는 `金克己` 저작 블록에 있으므로 board seed `西樓`로 채택하지 않았다"
+  ],
+  "notes": [
+    "이번 tranche는 공개 원문에서 직접 열리는 seed title 보강에 집중했다",
+    "`鄕宴致語`는 시 본문이 아니라 `致語` 본문과 말미 `口號`를 함께 보존했다",
+    "정지상 wave-1 seed 5건 중 direct-text 확보는 이제 4건이며 `西樓`만 남았다"
+  ]
+}

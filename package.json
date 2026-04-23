@@ -20,7 +20,14 @@
     "hansi:research-manifest": "node scripts/build_korean_hansi_research_manifest.js",
     "hansi:ocr-queue": "node scripts/build_korean_hansi_ocr_queue.js",
     "hansi:famous-wave1": "node scripts/build_korean_hansi_famous_authors_wave1_batch.js",
-    "hansi:jeong-jisang-tranche1": "node scripts/build_korean_hansi_jeong_jisang_tranche1.js"
+    "hansi:jeong-jisang-tranche1": "node scripts/build_korean_hansi_jeong_jisang_tranche1.js",
+    "hansi:jeong-jisang-tranche2": "node scripts/build_korean_hansi_jeong_jisang_tranche2.js",
+    "hansi:tokyo-zakki-author-view": "node scripts/build_korean_classics_tokyo_zakki_author_view.js",
+    "hansi:tokyo-zakki-review-queue": "node scripts/build_korean_classics_tokyo_zakki_review_queue.js",
+    "hansi:tokyo-zakki-vol1-harvest": "TZ_VOLUME=1 node scripts/build_korean_hansi_tokyo_zakki_volume2_harvest.js",
+    "hansi:tokyo-zakki-vol2-harvest": "node scripts/build_korean_hansi_tokyo_zakki_volume2_harvest.js",
+    "hansi:tokyo-zakki-vol3-harvest": "TZ_VOLUME=3 node scripts/build_korean_hansi_tokyo_zakki_volume2_harvest.js",
+    "classics:tokyo-zakki-bundle": "node scripts/build_korean_classics_tokyo_zakki_collection_bundle.js"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.97.0",

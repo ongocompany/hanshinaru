@@ -1,0 +1,570 @@
+#!/usr/bin/env node
+/**
+ * build_korean_hansi_tokyo_zakki_volume2_harvest.js
+ *
+ * 목적:
+ * - `東京雜記 卷二` 공개 원문에서 시문 수록 블록을 collection-slice 단위로 harvest 한다.
+ * - exact-title 1건 추적이 아니라, 한 권차 안에서 직접 열리는 시문 후보를 최대한 많이 구조화한다.
+ * - 최종 canonical record 이전 단계의 harvest manifest를 만든다.
+ *
+ * 사용법:
+ *   node scripts/build_korean_hansi_tokyo_zakki_volume2_harvest.js
+ */
+
+const fs = require('fs');
+const path = require('path');
+const { execFileSync } = require('child_process');
+
+const VOLUME_CONFIG = {
+  1: {
+    collectionTitle: '東京雜記 卷一',
+    juan: '卷一',
+    sourceUrl: 'https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%80',
+    rawUrl: 'https://zh.wikisource.org/wiki/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%80?action=raw',
+    rawCacheDir: 'korean-hansi-tokyo-zakki-vol1-raw',
+    rawCacheName: 'tokyo-zakki-1.raw.txt',
+    outManifestName: 'korean-hansi-tokyo-zakki-vol1-poem-harvest.v1.json',
+    localFallbacks: [
+      '/private/tmp/tokyo-zakki-1.raw.txt'
+    ]
+  },
+  2: {
+    collectionTitle: '東京雜記 卷二',
+    juan: '卷二',
+    sourceUrl: 'https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%BA%8C',
+    rawUrl: 'https://zh.wikisource.org/wiki/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%BA%8C?action=raw',
+    rawCacheDir: 'korean-hansi-tokyo-zakki-vol2-raw',
+    rawCacheName: 'tokyo-zakki-2.raw.txt',
+    outManifestName: 'korean-hansi-tokyo-zakki-vol2-poem-harvest.v1.json',
+    localFallbacks: [
+      '/private/tmp/tokyo-zakki-2.raw.txt'
+    ]
+  },
+  3: {
+    collectionTitle: '東京雜記 卷三',
+    juan: '卷三',
+    sourceUrl: 'https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%89',
+    rawUrl: 'https://zh.wikisource.org/wiki/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%89?action=raw',
+    rawCacheDir: 'korean-hansi-tokyo-zakki-vol3-raw',
+    rawCacheName: 'tokyo-zakki-3.raw.txt',
+    outManifestName: 'korean-hansi-tokyo-zakki-vol3-poem-harvest.v1.json',
+    localFallbacks: [
+      path.join(__dirname, '..', 'docs', 'spec', 'korean-hansi-jeong-jisang-tranche2-raw', 'tokyo-zakki-3.raw.txt'),
+      '/private/tmp/tokyo-zakki-3.raw.txt'
+    ]
+  }
+};
+
+const ROOT = path.join(__dirname, '..');
+const VOLUME = Number(process.env.TZ_VOLUME || '2');
+const CONFIG = VOLUME_CONFIG[VOLUME];
+
+if (!CONFIG) {
+  throw new Error(`Unsupported TZ_VOLUME: ${VOLUME}`);
+}
+
+const SOURCE = {
+  collectionTitle: CONFIG.collectionTitle,
+  juan: CONFIG.juan,
+  sourceUrl: CONFIG.sourceUrl,
+  rawUrl: CONFIG.rawUrl,
+  sourcePolicyId: 'SRC-WIKISOURCE-TEXT'
+};
+
+const RAW_CACHE_DIR = path.join(ROOT, 'docs', 'spec', CONFIG.rawCacheDir);
+const RAW_CACHE_PATH = path.join(RAW_CACHE_DIR, CONFIG.rawCacheName);
+const OUT_MANIFEST = path.join(ROOT, 'docs', 'spec', CONFIG.outManifestName);
+
+const LOCAL_FALLBACKS = CONFIG.localFallbacks;
+
+const CONTEXT_SUFFIXES = [
+  '寺', '臺', '池', '井', '宮', '樓', '亭', '巷', '山', '巖', '浦',
+  '笛', '橋', '宅', '藪', '庵', '院', '城', '門', '嶺', '墓', '泉'
+];
+
+const HEADER_REJECT_CHARS = /[在有今其乃爲云曰傳作唱因得使來見聞與同及從卽故仍命幸]/;
+const HEADER_REJECT_PHRASES = ['之後', '九歲能', '登第能', '尤長於', '其爲文', '能詩', '有能詩'];
+const PERSONISH_SUFFIXES = ['先生', '居士', '齋', '翁', '叟', '君', '老', '隱'];
+const TRAILING_CONTEXT_START_RE = /^(?:兄山在|養直菴在|東京雜記卷之|[一-龥]{1,8}(?:在|今稱|前臨|手植|一名|又名|新羅稱|諺傳|世傳))/;
+const COMMON_SURNAMES = new Set([
+  '金', '李', '朴', '崔', '鄭', '尹', '徐', '柳', '成', '安', '張', '閔',
+  '趙', '權', '魚', '田', '盧', '全', '南', '黃', '韓', '吳', '蔡', '申',
+  '任', '沈', '姜', '蘇', '兪', '郭', '顧'
+]);
+
+function writeJson(filePath, value) {
+  fs.writeFileSync(filePath, JSON.stringify(value, null, 2) + '\n', 'utf8');
+}
+
+function ensureDir(dirPath) {
+  fs.mkdirSync(dirPath, { recursive: true });
+}
+
+function getRaw() {
+  ensureDir(RAW_CACHE_DIR);
+
+  if (fs.existsSync(RAW_CACHE_PATH)) {
+    return fs.readFileSync(RAW_CACHE_PATH, 'utf8');
+  }
+
+  for (const fallbackPath of LOCAL_FALLBACKS) {
+    if (!fs.existsSync(fallbackPath)) continue;
+    const raw = fs.readFileSync(fallbackPath, 'utf8');
+    if (!raw.trim()) continue;
+    fs.writeFileSync(RAW_CACHE_PATH, raw, 'utf8');
+    return raw;
+  }
+
+  const raw = execFileSync('curl', ['-sSL', '--connect-timeout', '5', '--max-time', '20', SOURCE.rawUrl], {
+    encoding: 'utf8',
+    maxBuffer: 20 * 1024 * 1024
+  });
+  if (!raw || !raw.trim()) {
+    throw new Error('東京雜記 卷二 raw fetch returned empty response');
+  }
+  fs.writeFileSync(RAW_CACHE_PATH, raw, 'utf8');
+  return raw;
+}
+
+function normalizeNewlines(text) {
+  return text.replace(/\r\n/g, '\n').replace(/\r/g, '\n');
+}
+
+function stripMarkup(raw) {
+  return normalizeNewlines(raw)
+    .replace(/{{Header[\s\S]*?}}\n?/g, '')
+    .replace(/{{right\|[^}]+}}\n?/g, '')
+    .replace(/{{ul\|([^}]+)}}/g, '$1')
+    .replace(/{{另\|([^|}]+)\|[^}]+}}/g, '$1')
+    .replace(/{{\*\|[^}]+}}/g, '')
+    .replace(/{{[^{}]*}}/g, '')
+    .replace(/<ref[^>]*>.*?<\/ref>/g, '')
+    .replace(/<[^>]+>/g, '')
+    .replace(/\[\[([^|\]]+)\|([^\]]+)]]/g, '$2')
+    .replace(/\[\[([^\]]+)]]/g, '$1')
+    .replace(/&nbsp;/g, ' ');
+}
+
+function normalizeForEntries(raw) {
+  return stripMarkup(raw)
+    .replace(/==\s*([^=\n]+?)\s*==/g, '\nSECTION:$1\n')
+    .replace(/新增([^\s○]{1,12})詩/g, '\n○$1詩')
+    .replace(/新增([^\s○]{1,12})歌/g, '\n○$1歌')
+    .replace(/○/g, '\n○');
+}
+
+function buildDocumentSections(raw) {
+  const lines = normalizeForEntries(raw)
+    .split('\n')
+    .map((line) => line.replace(/\s+/g, ' ').trim())
+    .filter(Boolean);
+
+  const sections = [];
+  let current = null;
+
+  const flushCurrent = () => {
+    if (!current) return;
+    current.textZh = current.lines.join('\n').trim();
+    current.characterCount = current.textZh.length;
+    delete current.lines;
+    sections.push(current);
+    current = null;
+  };
+
+  for (const line of lines) {
+    if (line.startsWith('SECTION:')) {
+      flushCurrent();
+      current = {
+        sectionId: `KHS-TZ${VOLUME}-S-${String(sections.length + 1).padStart(4, '0')}`,
+        headingZh: line.slice('SECTION:'.length),
+        lines: []
+      };
+      continue;
+    }
+
+    if (!current) continue;
+    current.lines.push(line.startsWith('○') ? line.slice(1) : line);
+  }
+
+  flushCurrent();
+  return sections;
+}
+
+function buildEntries(raw) {
+  const lines = normalizeForEntries(raw)
+    .split('\n')
+    .map((line) => line.replace(/\s+/g, '').trim())
+    .filter(Boolean);
+
+  const entries = [];
+  let current = null;
+
+  const flushCurrent = () => {
+    if (!current) return;
+    entries.push(current);
+    current = null;
+  };
+
+  for (const line of lines) {
+    if (line.startsWith('SECTION:')) {
+      flushCurrent();
+      entries.push({ type: 'section', section: line.slice('SECTION:'.length) });
+      continue;
+    }
+
+    if (line.startsWith('○')) {
+      flushCurrent();
+      current = { type: 'entry', text: line.slice(1) };
+      continue;
+    }
+
+    if (current) {
+      current.text += line;
+    }
+  }
+
+  flushCurrent();
+  return entries;
+}
+
+function looksLikePersonishLabel(header) {
+  if (header.length <= 4) return true;
+  return PERSONISH_SUFFIXES.some((suffix) => header.endsWith(suffix));
+}
+
+function looksLikeExplicitWorkHeader(header, marker) {
+  if (!header || header.length > 12) return false;
+  if (HEADER_REJECT_CHARS.test(header)) return false;
+  if (HEADER_REJECT_PHRASES.some((phrase) => header.includes(phrase))) return false;
+  if (marker === '詩') return true;
+  if (marker === '歌') return looksLikePersonishLabel(header) || header.endsWith('歌');
+  return false;
+}
+
+function parseExplicitWork(entryText) {
+  const match = entryText.match(/^(.{1,12}?)(詩|歌)(.+)$/);
+  if (!match) return null;
+
+  const [, header, marker, body] = match;
+  if (!looksLikeExplicitWorkHeader(header, marker)) return null;
+
+  return {
+    header,
+    marker,
+    body
+  };
+}
+
+function parseAttachedContext(entryText) {
+  const match = entryText.match(/^(.{1,16}?記)(.+)$/);
+  if (!match) return null;
+  if (HEADER_REJECT_CHARS.test(match[1])) return null;
+
+  return {
+    heading: match[1],
+    proseText: match[2]
+  };
+}
+
+function extractContextTitle(entryText) {
+  for (const suffix of CONTEXT_SUFFIXES) {
+    const match = entryText.match(new RegExp(`^([^○]{1,24}?${suffix})(?:在|卽|有|今|舊在|諺傳|世傳|未知|前有|火于|文武王|新羅|高麗|本朝)`));
+    if (match) return match[1];
+  }
+  return null;
+}
+
+function splitVerseLines(text) {
+  const clean = text
+    .replace(/[「」『』（）()]/g, '')
+    .replace(/\s+/g, '');
+
+  const punctuatedLines = clean
+    .split(/[，。？！]/)
+    .map((line) => line.trim())
+    .filter(Boolean);
+
+  if (punctuatedLines.length > 1) {
+    return punctuatedLines;
+  }
+
+  let normalized = clean.replace(/[◉]/g, '□');
+  for (const width of [7, 5]) {
+    for (let lineCount = Math.floor(normalized.length / width); lineCount >= 4; lineCount -= 1) {
+      const prefixLength = lineCount * width;
+      const suffix = normalized.slice(prefixLength);
+      if (!suffix) continue;
+      if (!TRAILING_CONTEXT_START_RE.test(suffix)) continue;
+      normalized = normalized.slice(0, prefixLength);
+      break;
+    }
+  }
+
+  let bestWidth = null;
+  let bestRemainder = Infinity;
+
+  for (const width of [7, 5]) {
+    const quotient = Math.floor(normalized.length / width);
+    const remainder = normalized.length % width;
+    if (quotient < 4) continue;
+    if (remainder < bestRemainder) {
+      bestWidth = width;
+      bestRemainder = remainder;
+    }
+  }
+
+  if (bestWidth !== null && bestRemainder <= 3) {
+    const lines = [];
+    for (let i = 0; i < normalized.length; i += bestWidth) {
+      lines.push(normalized.slice(i, i + bestWidth));
+    }
+    return lines.filter(Boolean);
+  }
+
+  return punctuatedLines;
+}
+
+function focusWorkBody(body) {
+  let focused = body.trim();
+
+  const quoteMarkers = ['其詩曰', '詩曰', '歌曰'];
+  const marker = quoteMarkers.find((candidate) => focused.includes(candidate));
+  if (marker) {
+    focused = focused.slice(focused.indexOf(marker) + marker.length);
+  }
+
+  focused = focused.replace(/新增(?![^○]{0,12}[詩歌])[\s\S]*$/, '');
+
+  const compact = focused.replace(/\s+/g, '');
+  for (let index = 2; index < compact.length - 2; index += 1) {
+    const maybeSurname = compact[index];
+    if (!COMMON_SURNAMES.has(maybeSurname)) continue;
+
+    const candidate = compact.slice(index).match(/^([一-龥]{2,4})(詩|歌)/);
+    if (!candidate) continue;
+    if (index < 20) continue;
+
+    focused = compact.slice(0, index);
+    break;
+  }
+
+  return focused.trim();
+}
+
+function inferForm(lines) {
+  if (!lines.length) return '미상';
+  const lengths = [...new Set(lines.map((line) => line.length))];
+  if (lengths.length !== 1) return '미상';
+
+  const lineCount = lines.length;
+  const width = lengths[0];
+  if (lineCount === 4 && width === 5) return '오언절구';
+  if (lineCount === 4 && width === 7) return '칠언절구';
+  if (lineCount === 8 && width === 5) return '오언율시';
+  if (lineCount === 8 && width === 7) return '칠언율시';
+  if (lineCount >= 5 && width === 5) return '오언고시';
+  if (lineCount >= 5 && width === 7) return '칠언고시';
+  return '미상';
+}
+
+function normalizeAuthorOrTitle(header) {
+  const clean = header.trim();
+  const titleish = CONTEXT_SUFFIXES.some((suffix) => clean.includes(suffix));
+  return {
+    authorZh: titleish ? null : clean,
+    titleHintZh: titleish ? clean : null
+  };
+}
+
+function buildManifest(entries) {
+  const documentSections = buildDocumentSections(getRaw());
+  const sectionIdMap = new Map(documentSections.map((section) => [section.headingZh, section.sectionId]));
+  const documentEntries = [];
+  const poemBlocks = [];
+  const attachedContexts = [];
+
+  let currentSection = null;
+  let currentContextTitle = null;
+
+  for (const entry of entries) {
+    if (entry.type === 'section') {
+      currentSection = entry.section;
+      currentContextTitle = null;
+      continue;
+    }
+
+    const derivedContextTitle = extractContextTitle(entry.text);
+    const entryContextTitle = derivedContextTitle || currentContextTitle;
+    const documentEntryId = `KHS-TZ${VOLUME}-D-${String(documentEntries.length + 1).padStart(4, '0')}`;
+    const explicitWork = parseExplicitWork(entry.text);
+    const attachedContext = parseAttachedContext(entry.text);
+    const entryKind = explicitWork
+      ? 'poem-bearing'
+      : attachedContext
+        ? 'context-bearing'
+        : 'prose';
+
+    documentEntries.push({
+      documentEntryId,
+      documentSectionId: sectionIdMap.get(currentSection) || null,
+      section: currentSection,
+      sourceEntryTitle: entryContextTitle,
+      entryKind,
+      textZh: entry.text,
+      source: {
+        collectionTitle: SOURCE.collectionTitle,
+        juan: SOURCE.juan,
+        sourceUrl: SOURCE.sourceUrl,
+        sourcePolicyId: SOURCE.sourcePolicyId
+      }
+    });
+
+    if (explicitWork) {
+      const verseLines = splitVerseLines(focusWorkBody(explicitWork.body));
+      const label = normalizeAuthorOrTitle(explicitWork.header);
+      const inferredForm = explicitWork.marker === '詩' ? inferForm(verseLines) : '가요/기타';
+      const confidence = verseLines.length === 1 || inferredForm === '미상' ? 'medium' : 'high';
+      const rationale =
+        confidence === 'high'
+          ? 'entry가 `○저자/표제+詩/歌` 형태로 직접 열리고 행 분할도 안정적으로 복원됨'
+          : 'entry는 직접 열리지만 원문 손상/무구두점 때문에 행 분할은 보수적으로 유지함';
+
+      const looksNarrativeSong =
+        explicitWork.marker === '歌' &&
+        verseLines.length === 1 &&
+        verseLines[0].length > 80;
+
+      if (looksNarrativeSong) {
+        attachedContexts.push({
+          contextId: `KHS-TZ${VOLUME}-C-${String(attachedContexts.length + 1).padStart(4, '0')}`,
+          documentEntryId,
+          documentSectionId: sectionIdMap.get(currentSection) || null,
+          section: currentSection,
+          sourceEntryTitle: entryContextTitle,
+          headingZh: `${explicitWork.header}${explicitWork.marker}`,
+          prosePreview: verseLines[0].slice(0, 160),
+          source: {
+            collectionTitle: SOURCE.collectionTitle,
+            juan: SOURCE.juan,
+            sourceUrl: SOURCE.sourceUrl
+          }
+        });
+      } else {
+        poemBlocks.push({
+        harvestId: `KHS-TZ${VOLUME}-H-${String(poemBlocks.length + 1).padStart(4, '0')}`,
+        documentEntryId,
+        documentSectionId: sectionIdMap.get(currentSection) || null,
+        section: currentSection,
+        sourceEntryTitle: entryContextTitle,
+        marker: explicitWork.marker,
+        authorZh: label.authorZh,
+        titleHintZh: label.titleHintZh,
+        displayLabelZh: `${explicitWork.header}${explicitWork.marker}`,
+        textZh: verseLines.join('\n'),
+        lineCount: verseLines.length,
+        inferredForm,
+        source: {
+          collectionTitle: SOURCE.collectionTitle,
+          juan: SOURCE.juan,
+          sourceUrl: SOURCE.sourceUrl,
+          sourcePolicyId: SOURCE.sourcePolicyId
+        },
+        harvestPolicy: {
+          confidence,
+          rationale
+        }
+        });
+      }
+    }
+
+    if (attachedContext) {
+      attachedContexts.push({
+        contextId: `KHS-TZ${VOLUME}-C-${String(attachedContexts.length + 1).padStart(4, '0')}`,
+        documentEntryId,
+        documentSectionId: sectionIdMap.get(currentSection) || null,
+        section: currentSection,
+        sourceEntryTitle: entryContextTitle,
+        headingZh: attachedContext.heading,
+        prosePreview: attachedContext.proseText.slice(0, 160),
+        source: {
+          collectionTitle: SOURCE.collectionTitle,
+          juan: SOURCE.juan,
+          sourceUrl: SOURCE.sourceUrl
+        }
+      });
+    }
+
+    if (derivedContextTitle) {
+      currentContextTitle = derivedContextTitle;
+    }
+  }
+
+  const bySection = {};
+  for (const block of poemBlocks) {
+    bySection[block.section] = (bySection[block.section] || 0) + 1;
+  }
+  const documentEntryKinds = documentEntries.reduce((acc, entry) => {
+    acc[entry.entryKind] = (acc[entry.entryKind] || 0) + 1;
+    return acc;
+  }, {});
+
+  return {
+    version: '2026-04-23.v1',
+    batchId: `korean-hansi-tokyo-zakki-vol${VOLUME}-poem-harvest`,
+    purpose: `${SOURCE.collectionTitle}에서 문헌 원문 보존층과 시문 파생층을 함께 구조화한다`,
+    collection: {
+      title: SOURCE.collectionTitle,
+      juan: SOURCE.juan,
+      sourceUrl: SOURCE.sourceUrl,
+      sourcePolicyId: SOURCE.sourcePolicyId,
+      rawCachePath: RAW_CACHE_PATH
+    },
+    preservationPolicy: {
+      documentLayer: '권차 원문은 section/항목 단위로 보존하고 연구·검수·재가공의 기준본으로 삼는다',
+      workLayer: '시문은 문헌 항목을 가리키는 파생 자산으로 분리해 시 보기·번역·주석에 사용한다'
+    },
+    executionPolicy: {
+      collectionUnit: 'collection slice -> document layer -> poem-bearing block',
+      extractionRule: 'exact-title 1건보다, 권차 원문을 먼저 보존하고 그 안에서 직접 열리는 시문 블록을 파생한다',
+      reviewRule: 'manifest는 후보 수집용이며 canonical record 승격은 별도 검토 단계에서 수행한다'
+    },
+    summary: {
+      documentSectionCount: documentSections.length,
+      documentEntryCount: documentEntries.length,
+      documentEntryKinds,
+      poemBlockCount: poemBlocks.length,
+      attachedContextCount: attachedContexts.length,
+      sectionsWithPoems: Object.keys(bySection).sort(),
+      poemBlocksBySection: bySection
+    },
+    documentSections,
+    documentEntries,
+    poemBlocks,
+    attachedContexts
+  };
+}
+
+function main() {
+  const raw = getRaw();
+  const entries = buildEntries(raw);
+  const manifest = buildManifest(entries);
+
+  writeJson(OUT_MANIFEST, manifest);
+
+  console.log(
+    JSON.stringify(
+      {
+        outManifest: OUT_MANIFEST,
+        documentSectionCount: manifest.summary.documentSectionCount,
+        documentEntryCount: manifest.summary.documentEntryCount,
+        poemBlockCount: manifest.summary.poemBlockCount,
+        attachedContextCount: manifest.summary.attachedContextCount,
+        sectionsWithPoems: manifest.summary.sectionsWithPoems
+      },
+      null,
+      2
+    )
+  );
+}
+
+main();

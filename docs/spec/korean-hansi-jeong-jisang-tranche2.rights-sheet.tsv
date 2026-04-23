@@ -1,0 +1,13 @@
+poemId	authorKo	titleKo	asset	exists	sourcePolicyId	sourceUrl	copyrightStatus	usageClass	publicDisplayAllowedNow	commercialAllowedNow	requiresPermissionForCommercial	mustReplaceBeforeCommercial	replacementPriority	attributionRequired	recordCommercialReady	blockingAssets	replacementRequired
+KHS-JEONG-W1-T2-0001	정지상	향연치어	originalText	true	SRC-WIKISOURCE-TEXT	https://zh.wikisource.org/wiki/%E6%9D%B1%E6%96%87%E9%81%B8/%E5%8D%B7%E4%B8%80%E7%99%BE%E5%9B%9B	licensed	commercial_allowed	true	true	false	false	low	true	true		
+KHS-JEONG-W1-T2-0001	정지상	향연치어	legacyTranslation	false			unknown	not_applicable	false	false	false	false	low	false	true		
+KHS-JEONG-W1-T2-0001	정지상	향연치어	legacyNotes	false			unknown	not_applicable	false	false	false	false	low	false	true		
+KHS-JEONG-W1-T2-0001	정지상	향연치어	ownedTranslation	false			unknown	not_applicable	false	false	false	false	low	false	true		
+KHS-JEONG-W1-T2-0001	정지상	향연치어	ownedNotes	false			unknown	not_applicable	false	false	false	false	low	false	true		
+KHS-JEONG-W1-T2-0001	정지상	향연치어	images	false			unknown	not_applicable	false	false	false	false	low	false	true		
+KHS-JEONG-W1-T2-0002	정지상	백률사	originalText	true	SRC-WIKISOURCE-TEXT	https://zh.wikisource.org/zh/%E6%96%B0%E5%A2%9E%E6%9D%B1%E5%9C%8B%E8%BC%BF%E5%9C%B0%E5%8B%9D%E8%A6%BD/%E5%8D%B7021	licensed	commercial_allowed	true	true	false	false	low	true	true		
+KHS-JEONG-W1-T2-0002	정지상	백률사	legacyTranslation	false			unknown	not_applicable	false	false	false	false	low	false	true		
+KHS-JEONG-W1-T2-0002	정지상	백률사	legacyNotes	false			unknown	not_applicable	false	false	false	false	low	false	true		
+KHS-JEONG-W1-T2-0002	정지상	백률사	ownedTranslation	false			unknown	not_applicable	false	false	false	false	low	false	true		
+KHS-JEONG-W1-T2-0002	정지상	백률사	ownedNotes	false			unknown	not_applicable	false	false	false	false	low	false	true		
+KHS-JEONG-W1-T2-0002	정지상	백률사	images	false			unknown	not_applicable	false	false	false	false	low	false	true		

@@ -30,12 +30,17 @@
 - main 브랜치 보호 — 리뷰 없이 직접 push 금지
 - 배포 전 최소 검증: 페이지 로딩 + 콘솔 에러 + 핵심 동작
 - 리뷰 완료 후 `docs/inbox/to-claude/`에 피드백 메시지 생성
+- 코드, 파일명, 디렉토리명, 명령어, 식별자처럼 영어가 사실상 필수인 부분은 영문을 유지한다.
+- 그 외 설명용 개념, 로직, 용어, 판단 근거, 진행 상황 보고는 한국어로 쓴다.
+- 한자는 작품명, 인명, 표제, 원문 맥락을 더 정확히 보여줄 때 적극 사용해도 된다.
+- 영어 표현이 익숙한 개념이라도 한국어로 먼저 설명하고, 필요할 때만 괄호로 영문을 덧붙인다.
 
 ## 주요 참조
 - 협업 규칙: `docs/collaboration_rules.md`
 - inbox 프로토콜: `docs/inbox/README.md`
 - GitHub Actions: `.github/workflows/`
 - 배포: GitHub Pages (main 브랜치 자동)
+
 
 <!-- foreman:secrets-begin -->
 ## 필독
@@ -44,10 +49,6 @@
 
 # Current Task
 
-작업: test
-Epic: 프로젝트 초기 셋업 및 기반 구축
-Stage: done
-Task ID: d2fcf245-b314-4881-827a-8e178167c643
 
 ## 부트 루틴 (새 세션 시작 시)
 
@@ -64,7 +65,7 @@ Task ID: d2fcf245-b314-4881-827a-8e178167c643
 frontmatter 형식:
 ```yaml
 ---
-epic_id: d2fcf245-b314-4881-827a-8e178167c643
+epic_id: 
 doc_type: handoff
 status: active
 title: 세션 제목

@@ -5,7 +5,8 @@
   "basedOnPilotReport": "korean-hansi-text-collection-pilot.report.v1.json",
   "basedOnTrancheReports": [
     "korean-hansi-choe-chiwon-tranche1.report.v1.json",
-    "korean-hansi-jeong-jisang-tranche1.report.v1.json"
+    "korean-hansi-jeong-jisang-tranche1.report.v1.json",
+    "korean-hansi-jeong-jisang-tranche2.report.v1.json"
   ],
   "purpose": "유명 시인 중심 한국 한시 대량 수집 실전 배치",
   "operatingDecision": "exact-title 파일럿은 동결하고, 유명 시인 문집/공개 원문 기준 대량 수집을 먼저 진행한다",
@@ -19,7 +20,7 @@
   "summary": {
     "authorCount": 8,
     "totalInitialTargetWorks": 170,
-    "totalDirectTextCollectedWorks": 45,
+    "totalDirectTextCollectedWorks": 47,
     "waveAuthors": [
       "최치원",
       "정지상",
@@ -93,23 +94,26 @@
       "currentStage": "rights-review",
       "currentStatus": "researching",
       "initialTargetWorks": 15,
-      "directTextCollectedWorks": 13,
+      "directTextCollectedWorks": 15,
       "currentMatchedSeedTitles": [
         "送人",
-        "新雪"
+        "新雪",
+        "鄕宴致語",
+        "栢律寺"
       ],
       "unresolvedSeedTitles": [
-        "鄕宴致語",
-        "栢律寺",
         "西樓"
       ],
       "latestDirectTextBatchIds": [
-        "korean-hansi-jeong-jisang-tranche1"
+        "korean-hansi-jeong-jisang-tranche1",
+        "korean-hansi-jeong-jisang-tranche2"
       ],
       "latestDirectTextSources": [
         "東文選 卷九",
         "東文選 卷十二",
-        "東文選 卷十九"
+        "東文選 卷十九",
+        "東文選 卷一百四",
+        "新增東國輿地勝覽 卷021"
       ],
       "directTextFirstSources": [
         "Wikisource 개별 작품 페이지",
@@ -129,12 +133,12 @@
       "recommendedStartPoint": "송인·신설처럼 바로 열린 공개 원문부터 넓히고, 이후 동문선/동경잡기 수록 위치를 따라 collection-first로 붙인다",
       "ocrEscalationTrigger": "동문선/동경잡기 기준으로 exact-title 후보 5건 중 3건 이상이 direct-text에서 계속 막히면 OCR lane 병행",
       "batchSuccessMetric": "최소 15건 확보 또는 동문선/동경잡기 한 축에서 연속 수집 가능한 작품 묶음 확보",
-      "nextActionFromBoard": "동문선/동경잡기 기준본 1~2종을 정하고 5수의 실제 수록 위치를 권·책 기준으로 고정한 뒤, metadata track source policy와 rights review를 붙인다. 정사간집 direct bib는 별도 탐색으로 남긴다",
+      "nextActionFromBoard": "남은 `西樓` direct-text locator를 우선 확정하고, 이미 확보한 `送人`·`新雪`·`鄕宴致語`·`栢律寺` 4건에 대해 source policy와 rights review를 author batch 단위로 마무리한다. 정사간집 direct bib는 별도 탐색으로 남긴다",
       "blockers": [
         "정사간집 direct KORCIS bib unresolved",
-        "5수 poem-level locator not fixed"
+        "西樓 poem-level locator not fixed"
       ],
-      "notes": "EncyKorea와 KORCIS collection title 검색으로 동문선/동경잡기 계열까지는 확인 완료"
+      "notes": "EncyKorea와 KORCIS collection title 검색으로 동문선/동경잡기 계열까지는 확인 완료. 현재 direct-text locator는 `送人`, `新雪`, `鄕宴致語(東文選 卷一百四)`, `栢律寺(新增東國輿地勝覽 卷021, 표기 柏栗寺)`까지 확보했다."
     },
     {
       "waveOrder": 3,

@@ -173,10 +173,10 @@
         "replacementNeededBeforeCommercial": false,
         "rightsNotes": "정지상은 KORCIS에서 문집 단위 소재 확인까지 완료했다. 다만 현재 확보한 것은 metadata track이므로, 실제 ingest 전에는 동문선/동경잡기 기준본을 정하고 작품별 수록 위치와 원문 제공 주체의 재사용 조건을 추가 검토해야 한다."
       },
-      "nextAction": "동문선/동경잡기 기준본 1~2종을 정하고 5수의 실제 수록 위치를 권·책 기준으로 고정한 뒤, metadata track source policy와 rights review를 붙인다. 정사간집 direct bib는 별도 탐색으로 남긴다",
+      "nextAction": "남은 `西樓` direct-text locator를 우선 확정하고, 이미 확보한 `送人`·`新雪`·`鄕宴致語`·`栢律寺` 4건에 대해 source policy와 rights review를 author batch 단위로 마무리한다. 정사간집 direct bib는 별도 탐색으로 남긴다",
       "blockers": [
         "정사간집 direct KORCIS bib unresolved",
-        "5수 poem-level locator not fixed"
+        "西樓 poem-level locator not fixed"
       ],
       "targetOutputs": [
         "author profile verified",
@@ -185,8 +185,8 @@
         "source policy tag assigned",
         "commercial transition risk noted"
       ],
-      "notes": "EncyKorea와 KORCIS collection title 검색으로 동문선/동경잡기 계열까지는 확인 완료",
-      "updatedAt": "2026-04-21 05:34"
+      "notes": "EncyKorea와 KORCIS collection title 검색으로 동문선/동경잡기 계열까지는 확인 완료. 현재 direct-text locator는 `送人`, `新雪`, `鄕宴致語(東文選 卷一百四)`, `栢律寺(新增東國輿地勝覽 卷021, 표기 柏栗寺)`까지 확보했다.",
+      "updatedAt": "2026-04-22 04:24"
     },
     {
       "batchOrder": 3,

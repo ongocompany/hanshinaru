@@ -12,6 +12,8 @@ date: 2026-04-20
 
 한국 한시 프로젝트에서 사용할 기본 데이터 구조와 권리 관리 방식을 고정한다.
 
+> ⚠️ DIVERGED: 2026-04-23부터 수집 목표가 `개별 한시 작품 확보`를 넘어 `한국 고전 문헌/시집 자체의 디지털 보존 + 작품 분리 서비스`로 확장됐다. 따라서 이 문서의 `작품 중심 단층 모델`만으로는 부족하며, 이후 문헌 층과 작품 층을 함께 다루는 이중 모델을 병행한다. 기준 문서는 [2026-04-23-korean-classical-document-work-model.md](/Users/jinwoo/Documents/development/hanshinaru/docs/spec/2026-04-23-korean-classical-document-work-model.md:1) 를 따른다.
+
 핵심 목표:
 
 - 원문과 번역문을 분리 저장

@@ -20,7 +20,8 @@ const OUT_JSON = path.join(__dirname, '..', 'docs', 'spec', 'korean-hansi-famous
 const OUT_TSV = path.join(__dirname, '..', 'docs', 'spec', 'korean-hansi-famous-authors-wave1-batch.v1.tsv');
 const TRANCHE_REPORTS = [
   path.join(__dirname, '..', 'docs', 'spec', 'korean-hansi-choe-chiwon-tranche1.report.v1.json'),
-  path.join(__dirname, '..', 'docs', 'spec', 'korean-hansi-jeong-jisang-tranche1.report.v1.json')
+  path.join(__dirname, '..', 'docs', 'spec', 'korean-hansi-jeong-jisang-tranche1.report.v1.json'),
+  path.join(__dirname, '..', 'docs', 'spec', 'korean-hansi-jeong-jisang-tranche2.report.v1.json')
 ];
 
 const WAVE_1 = [
@@ -272,12 +273,16 @@ function buildRows(board, pilotReport, trancheReports) {
     }
 
     const currentCoverage = coverageByAuthor[config.authorKo];
-    const matchedTargets = unique(currentCoverage?.matchedTargets || []);
-    const unresolvedSeedTitles = unique(
-      unresolvedByAuthor[config.authorKo]
-      || (entry.poemCandidateWork?.firstFivePoemCandidates || []).map((item) => item.titleHanja).filter(Boolean)
-    );
     const authorTranches = findTrancheReportsForAuthor(config, trancheReports);
+    const trancheMatchedTargets = unique(authorTranches.flatMap((item) => item.report.matchedSeedTitles || []));
+    const matchedTargets = unique([...(currentCoverage?.matchedTargets || []), ...trancheMatchedTargets]);
+    const seedTitles = unique(
+      (entry.poemCandidateWork?.firstFivePoemCandidates || []).map((item) => item.titleHanja).filter(Boolean)
+    );
+    const trancheUnresolved = unique(authorTranches.flatMap((item) => item.report.unresolvedSeedTitles || []));
+    const unresolvedSeedTitles = seedTitles.length > 0
+      ? seedTitles.filter((title) => !matchedTargets.includes(title))
+      : unique(unresolvedByAuthor[config.authorKo] || trancheUnresolved);
     const directTextCollectedWorks = authorTranches.reduce((sum, item) => sum + (item.report.totalCollected || 0), 0);
     const latestDirectTextBatchIds = authorTranches.map((item) => item.report.batchId);
     const latestDirectTextSources = unique(

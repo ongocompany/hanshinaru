@@ -1,0 +1,104 @@
+[
+  {
+    "poemId": "KHS-JEONG-W1-T2-0001",
+    "canonicalId": "KHS-CANON-JEONG-JISANG-W1-T2-0001",
+    "title": {
+      "zh": "鄕宴致語",
+      "ko": "향연치어"
+    },
+    "author": {
+      "authorId": "KAUTH-JEONG-JISANG",
+      "zh": "鄭知常",
+      "ko": "정지상"
+    },
+    "era": {
+      "label": "고려 중기",
+      "startYear": 1100,
+      "endYear": 1135,
+      "confidence": "medium"
+    },
+    "genre": {
+      "broad": "한시",
+      "form": "致語"
+    },
+    "sourceWork": {
+      "collectionTitle": "東文選 卷一百四",
+      "juan": "卷一百四",
+      "entryTitle": "冊王太子御宴致語",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%9D%B1%E6%96%87%E9%81%B8/%E5%8D%B7%E4%B8%80%E7%99%BE%E5%9B%9B",
+      "sourcePolicyId": "SRC-WIKISOURCE-TEXT"
+    },
+    "text": {
+      "poemZh": "乾萬物之資始。於是見聖人之興。震一索而得男。所以爲天下之本。禮載成於寶冊。恩普被於緜區。會如塗山。執玉帛者萬國。樂則韶夏。舞干羽于兩階。雲上天而謂之需。魚在藻而可以樂。恭惟聖上。得百姓之懽心。膺上帝之景命。仁如天覆。萬壽所以無疆。德乃日新。四海爲之咸仰。當斯干乃安之寢。有思齊得百之男。理民不敢康。旣已爲家於六合。主器莫若長。遂令正位於東宮。以其明且照也。謂之前星。以其淸且容也。謂之小海。膳饌必視。有如周世子之三朝。羽翼已成。須得漢商山之四皓。至於雞揭竿而東竪。鳳含詔以下飛。屬有衆人之心。實惟萬世福也。遠覃莫大之慶。樂與四方共之。召鹿鳴之忠嘉。同天保之戩糓。搢紳華止。若雲從龍。黼衮儼然。如月照物。上下一德。樂天地交泰之時。徵角二招。作君臣相悅之樂。北辰居所。湛露不晞。道惟蕩蕩乎無能名。人擧欣欣然有喜色。誰謂大平之無象。言觀協氣之橫流。臣等幸造玉墀。上聆金奏。雖慚愚拙。欲頌皇明。上瀆宸嚴。敢呈口號。\n白日東宮冊命新\n九天金殿讌嘉賓\n雲龍仰慶千齡旦\n雨露推恩四海春\n禮重獻酬同福祿\n樂和宮徵感神人\n欲知萬國朝宗意\n品藻生成屬大鈞",
+      "poemKoReading": null,
+      "poemKoGloss": null
+    },
+    "legacyAssets": {
+      "translationKo": null,
+      "notes": [],
+      "commentaryKo": null
+    },
+    "ownedAssets": {
+      "translationKoOwned": null,
+      "notesOwned": [],
+      "commentaryKoOwned": null
+    },
+    "rights": {},
+    "commercialTransition": {
+      "isCommercialReady": false,
+      "blockingAssets": [],
+      "replacementRequired": []
+    }
+  },
+  {
+    "poemId": "KHS-JEONG-W1-T2-0002",
+    "canonicalId": "KHS-CANON-JEONG-JISANG-W1-T2-0002",
+    "title": {
+      "zh": "栢律寺",
+      "ko": "백률사"
+    },
+    "author": {
+      "authorId": "KAUTH-JEONG-JISANG",
+      "zh": "鄭知常",
+      "ko": "정지상"
+    },
+    "era": {
+      "label": "고려 중기",
+      "startYear": 1100,
+      "endYear": 1135,
+      "confidence": "medium"
+    },
+    "genre": {
+      "broad": "한시",
+      "form": "오언고시"
+    },
+    "sourceWork": {
+      "collectionTitle": "新增東國輿地勝覽 卷021",
+      "juan": "卷021",
+      "entryTitle": "柏栗寺",
+      "sourceUrl": "https://zh.wikisource.org/zh/%E6%96%B0%E5%A2%9E%E6%9D%B1%E5%9C%8B%E8%BC%BF%E5%9C%B0%E5%8B%9D%E8%A6%BD/%E5%8D%B7021",
+      "sourcePolicyId": "SRC-WIKISOURCE-TEXT"
+    },
+    "text": {
+      "poemZh": "晨興小樓頭\n捲箔觀天宇\n樓下卽鷄林\n奇怪不可數\n老樹煙濛濛\n橫斜一萬戶\n白雲飛東山\n綠水走西浦\n突兀黃金刹\n相望朝欲煦\n有森月城中\n花竹今無主\n空餘古風流\n一曲高聲舞\n記憶崔儒仙\n文章動中土\n絲往錦還鄕\n年未二十九\n白玉點蒼蠅\n不爲時所取\n至今南山中\n唯有一遺圃\n邈哉九歲孫\n結髮混卒伍\n喚來峨其冠\n人識賢者後\n亦有薛先生\n蔚然龍與虎\n方言講五經\n學者比東魯\n俗呼二君子\n齊名同李杜\n嘯詠臨淸風\n宿疾猶可愈\n朅來謁金仙\n虛堂香一炷\n稽首祝吾君\n萬年受天祐\n想像妙明鏡\n知予此心否\n試茶閔子泉\n甌面發雲乳\n三復壽翁詩\n滿壁珠璣吐\n樂哉無所憂\n此樂何太古\n飛蓋下松門\n松門日卓午",
+      "poemKoReading": null,
+      "poemKoGloss": null
+    },
+    "legacyAssets": {
+      "translationKo": null,
+      "notes": [],
+      "commentaryKo": null
+    },
+    "ownedAssets": {
+      "translationKoOwned": null,
+      "notesOwned": [],
+      "commentaryKoOwned": null
+    },
+    "rights": {},
+    "commercialTransition": {
+      "isCommercialReady": false,
+      "blockingAssets": [],
+      "replacementRequired": []
+    }
+  }
+]
