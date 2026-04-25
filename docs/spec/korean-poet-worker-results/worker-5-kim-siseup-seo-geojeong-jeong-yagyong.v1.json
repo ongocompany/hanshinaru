@@ -1,0 +1,461 @@
+{
+  "workerId": "worker-5-kim-siseup-seo-geojeong-jeong-yagyong",
+  "modelRecommendation": "gpt-5.4",
+  "status": "completed",
+  "targetAuthors": [
+    "김시습",
+    "서거정",
+    "정약용"
+  ],
+  "summary": {
+    "candidateWorksChecked": 9,
+    "directTextWorksFound": 15,
+    "ocrCandidates": 0,
+    "blockedWorks": 0
+  },
+  "poems": [
+    {
+      "authorKo": "김시습",
+      "authorHanja": "金時習",
+      "candidateTitle": "방랑시",
+      "matchedTitle": "宿山村",
+      "sourceWork": {
+        "collectionTitle": "梅月堂集",
+        "juan": "卷一",
+        "entryTitle": "宿山村",
+        "sourceUrl": "https://zh.wikisource.org/wiki/梅月堂集/卷一",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=梅月堂集/卷一&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "雨歇千山暮。煙生碧樹間。溪橋雲冉冉。野逕草蔓蔓。世事渾無賴。人生且自寬。何如拂塵迹。高嘯臥林巒。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "梅月堂集 卷一 紀行 항목의 산촌 숙박시. 김시습의 방랑·산수시 seed에 우선 매핑한다."
+      }
+    },
+    {
+      "authorKo": "김시습",
+      "authorHanja": "金時習",
+      "candidateTitle": "방랑시",
+      "matchedTitle": "早行",
+      "sourceWork": {
+        "collectionTitle": "梅月堂集",
+        "juan": "卷一",
+        "entryTitle": "早行",
+        "sourceUrl": "https://zh.wikisource.org/wiki/梅月堂集/卷一",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=梅月堂集/卷一&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "曉鷄鳴喔咿。裝束向何之。黯淡千山曉。凄涼一首詩。殘星隨月落。宿鳥訝人移。客路身多病。無端詠楚辭。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "梅月堂集 卷一 紀行 항목에서 확인한 새벽 길 위의 작품."
+      }
+    },
+    {
+      "authorKo": "김시습",
+      "authorHanja": "金時習",
+      "candidateTitle": "산사시",
+      "matchedTitle": "淸平山",
+      "sourceWork": {
+        "collectionTitle": "梅月堂集",
+        "juan": "卷一",
+        "entryTitle": "淸平山",
+        "sourceUrl": "https://zh.wikisource.org/wiki/梅月堂集/卷一",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=梅月堂集/卷一&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "淸平山色映人衣。慘淡煙光送落暉。巖溜洒空輕作霧。春蘿拱木碧成幃。玉沙瑤草人間遠。琪樹瓊花世慮微。只好誅茅棲絶頂。從今嘉遯莫相違。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "梅月堂集 卷一 紀行 항목의 산수·은거 지향 작품."
+      }
+    },
+    {
+      "authorKo": "김시습",
+      "authorHanja": "金時習",
+      "candidateTitle": "방랑시",
+      "matchedTitle": "昭陽江",
+      "sourceWork": {
+        "collectionTitle": "梅月堂集",
+        "juan": "卷一",
+        "entryTitle": "昭陽江",
+        "sourceUrl": "https://zh.wikisource.org/wiki/梅月堂集/卷一",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=梅月堂集/卷一&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "渡頭煙暝夕陽波。一葉扁舟一棹歌。鷗鷺不管人世變。雙雙飛過上灣渦。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "梅月堂集 卷一 紀行 항목에서 확인한 소양강 제영시."
+      }
+    },
+    {
+      "authorKo": "김시습",
+      "authorHanja": "金時習",
+      "candidateTitle": "회고시",
+      "matchedTitle": "感懷",
+      "sourceWork": {
+        "collectionTitle": "梅月堂集",
+        "juan": "卷一",
+        "entryTitle": "感懷",
+        "sourceUrl": "https://zh.wikisource.org/wiki/梅月堂集/卷一",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=梅月堂集/卷一&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "四十三年事已非。此身全與壯心違。神魚九變騰千里。大鳥三年欲一蜚。洗耳更尋東澗水。療飢薄采北山薇。從今陟覺歸歟處。雪竹霜筠老可依。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "梅月堂集 卷一 述懷 항목의 자기 회고 성격 작품."
+      }
+    },
+    {
+      "authorKo": "서거정",
+      "authorHanja": "徐居正",
+      "candidateTitle": "회고시",
+      "matchedTitle": "松都懷古",
+      "sourceWork": {
+        "collectionTitle": "四佳集",
+        "juan": "詩集卷四",
+        "entryTitle": "松都懷古",
+        "sourceUrl": "https://zh.wikisource.org/wiki/四佳集/詩集卷四",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=四佳集/詩集卷四&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "碧瓦鱗鱗百萬家。當時歌舞鬪繁華。英雄一去風流盡。甓礫成塲薺有花。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "四佳集 詩集卷四에서 확인한 송도 회고시."
+      }
+    },
+    {
+      "authorKo": "서거정",
+      "authorHanja": "徐居正",
+      "candidateTitle": "전원시",
+      "matchedTitle": "田家書事",
+      "sourceWork": {
+        "collectionTitle": "四佳集",
+        "juan": "詩集卷四",
+        "entryTitle": "田家書事",
+        "sourceUrl": "https://zh.wikisource.org/wiki/四佳集/詩集卷四",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=四佳集/詩集卷四&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "刈盡荒畦稻穗香。一番懽笑一番傷。何時盡入官租了。白酒黃鷄喚客嘗。\n繰出新絲白雪香。辛勤當日禿千乘。終然不分田家有。輸與閏妹作嫁裳。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "四佳集 詩集卷四에서 확인한 전가 소재 2수. 제목 단위가 짧아 우선 한 카드에 보존한다."
+      }
+    },
+    {
+      "authorKo": "서거정",
+      "authorHanja": "徐居正",
+      "candidateTitle": "관각시",
+      "matchedTitle": "早朝",
+      "sourceWork": {
+        "collectionTitle": "四佳集",
+        "juan": "詩集卷四",
+        "entryTitle": "早朝",
+        "sourceUrl": "https://zh.wikisource.org/wiki/四佳集/詩集卷四",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=四佳集/詩集卷四&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "九天閶闔五更鍾。鵷鷺班齊劍佩瑢。酬唱詩聯慙賈杜。都兪制作見夔龍。春融瑞雪霑衣濕。朝退香烟滿袖濃。自顧鑾坡無寸効。扶歸日日醉黃封。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "四佳集 詩集卷四에서 확인한 조정·관각 맥락 작품."
+      }
+    },
+    {
+      "authorKo": "서거정",
+      "authorHanja": "徐居正",
+      "candidateTitle": "제영시",
+      "matchedTitle": "春日卽事",
+      "sourceWork": {
+        "collectionTitle": "四佳集",
+        "juan": "詩集卷四",
+        "entryTitle": "春日卽事",
+        "sourceUrl": "https://zh.wikisource.org/wiki/四佳集/詩集卷四",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=四佳集/詩集卷四&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "花落鸎啼春日遅。踈簾細草雨絲絲。畫樓南畔移時立。惹起閑愁入小詩。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "四佳集 詩集卷四에서 확인한 봄날 즉사."
+      }
+    },
+    {
+      "authorKo": "서거정",
+      "authorHanja": "徐居正",
+      "candidateTitle": "산수시",
+      "matchedTitle": "客從山中來",
+      "sourceWork": {
+        "collectionTitle": "四佳集",
+        "juan": "詩集卷四",
+        "entryTitle": "客從山中來",
+        "sourceUrl": "https://zh.wikisource.org/wiki/四佳集/詩集卷四",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=四佳集/詩集卷四&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "客從山中來。爲言山中樂。山中少輪鞅。長與友麋鹿。朝飮飮玄液。夕飡飡黃菊。冥筌久已排。况乃寵與辱。我生非縛縶。胡爲苦偪側。駕言欲從之。浩歌獨於立。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "四佳集 詩集卷四에서 확인한 산중 은거 지향 작품."
+      }
+    },
+    {
+      "authorKo": "정약용",
+      "authorHanja": "丁若鏞",
+      "candidateTitle": "유배시",
+      "matchedTitle": "過野人村居",
+      "sourceWork": {
+        "collectionTitle": "與猶堂全書",
+        "juan": "第一集 第五卷",
+        "entryTitle": "過野人村居",
+        "sourceUrl": "https://zh.wikisource.org/wiki/與猶堂全書/第一集/第五卷",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=與猶堂全書/第一集/第五卷&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "野彴平疇外，荒村一兩家。敗籬新綴竹，小圃未舒花。冷落餘書架，艱難有釣槎。狐丘幸遂願，生理不須嗟。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "與猶堂全書 第一集 第五卷의 강진기 작품. 유배지 생활 감각을 보여주는 단편이다."
+      }
+    },
+    {
+      "authorKo": "정약용",
+      "authorHanja": "丁若鏞",
+      "candidateTitle": "유배시",
+      "matchedTitle": "客中書懷",
+      "sourceWork": {
+        "collectionTitle": "與猶堂全書",
+        "juan": "第一集 第四卷",
+        "entryTitle": "客中書懷",
+        "sourceUrl": "https://zh.wikisource.org/wiki/與猶堂全書/第一集/第四卷",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=與猶堂全書/第一集/第四卷&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "北風吹我如飛雪，南抵康津賣飯家。幸有殘山遮海色，好將叢竹作年華。衣緣地瘴冬還減，酒爲愁多夜更加。一事纔能消客慮，山茶已吐臘前花。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "與猶堂全書 第一集 第四卷의 강진 유배 초기 정서 작품."
+      }
+    },
+    {
+      "authorKo": "정약용",
+      "authorHanja": "丁若鏞",
+      "candidateTitle": "유배시",
+      "matchedTitle": "打麥行",
+      "sourceWork": {
+        "collectionTitle": "與猶堂全書",
+        "juan": "第一集 第四卷",
+        "entryTitle": "打麥行",
+        "sourceUrl": "https://zh.wikisource.org/wiki/與猶堂全書/第一集/第四卷",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=與猶堂全書/第一集/第四卷&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "新篘濁酒如湩白，大碗麥飯高一尺。飯罷取耞登場立，雙肩漆澤翻日赤。呼邪作聲擧趾齊，須臾麥穗都狼藉。雜歌互答聲轉高，但見屋角紛飛麥。觀其氣色樂莫樂，了不以心爲形役。樂園樂郊不遠有，何苦去作風塵客？",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "與猶堂全書 第一集 第四卷에서 확인한 농촌 노동 소재 작품."
+      }
+    },
+    {
+      "authorKo": "정약용",
+      "authorHanja": "丁若鏞",
+      "candidateTitle": "유배시",
+      "matchedTitle": "快雨行",
+      "sourceWork": {
+        "collectionTitle": "與猶堂全書",
+        "juan": "第一集 第四卷",
+        "entryTitle": "快雨行",
+        "sourceUrl": "https://zh.wikisource.org/wiki/與猶堂全書/第一集/第四卷",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=與猶堂全書/第一集/第四卷&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "疾風吹飜山竹枝，雨色遠自黃楡陂。數點磊砢白瑪瑙，一庭浩淼靑玻璃。門扉埤闔書帙亂，衣帶墮落鬚髮披。科頭兀坐讀〈九辯〉，擧杯痛飮憶〈五噫〉。人生戚戚將何補？快雨快風聊展眉。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "與猶堂全書 第一集 第四卷에서 확인한 강진기 기상·독서 정서 작품."
+      }
+    },
+    {
+      "authorKo": "정약용",
+      "authorHanja": "丁若鏞",
+      "candidateTitle": "유배시",
+      "matchedTitle": "贈惠藏上人",
+      "sourceWork": {
+        "collectionTitle": "與猶堂全書",
+        "juan": "第一集 第五卷",
+        "entryTitle": "贈惠藏上人",
+        "sourceUrl": "https://zh.wikisource.org/wiki/與猶堂全書/第一集/第五卷",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=與猶堂全書/第一集/第五卷&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "窮居四五年，六根久已息。獨有湖海志，浩蕩無終極。藏也信壽童，眇小噪南國。盛名若雷霆，豪桀願顏色。楊枝旣晨持，柹子先秋熟。窮山小蘭若，直臨淸海北。妙解自機悟，談說匪由臆。性不嗜詩律，時復塞窘逼。文章美耳白，宰相夸頭黑。三十師千人，豈非戾天翼？崎嶇爲一顧，捫蘿又披棘。願汝流謙光，推移詎費力？",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "與猶堂全書 第一集 第五卷에서 확인한 혜장 관련 교유시. 강진 유배기 불교 인맥 설명과 연결 가능하다."
+      }
+    }
+  ],
+  "blockers": [],
+  "sourcesConsulted": [
+    {
+      "url": "https://zh.wikisource.org/wiki/梅月堂集/卷一",
+      "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+      "note": "raw view로 김시습 紀行·述懷 항목의 단편 5건을 확인했다."
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/四佳集/詩集卷四",
+      "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+      "note": "raw view로 서거정 詩集卷四의 회고·전원·관각·산수 작품 5건을 확인했다."
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/與猶堂全書/第一集/第四卷",
+      "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+      "note": "raw view로 정약용 강진 유배기 작품 중 客中書懷, 打麥行, 快雨行을 확인했다."
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/與猶堂全書/第一集/第五卷",
+      "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+      "note": "raw view로 정약용 過野人村居와 贈惠藏上人을 확인했다."
+    }
+  ]
+}
