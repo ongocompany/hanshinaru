@@ -9,18 +9,22 @@
     "docs/spec/korean-hansi-choe-chiwon-tranche1.records.v1.json",
     "docs/spec/korean-hansi-jeong-jisang-tranche1.records.v1.json",
     "docs/spec/korean-hansi-jeong-jisang-tranche2.records.v1.json",
-    "docs/spec/korean-poet-worker-results/*.json"
+    "docs/spec/korean-poet-worker-results/*.json",
+    "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
   ],
   "catalogId": "korean-poems-chronology",
   "targetDb": "poems",
   "summary": {
-    "directTextCollected": 115,
-    "sourceLocated": 8,
+    "directTextCollected": 146,
+    "sourceLocated": 6,
     "ocrCandidate": 0,
-    "blocked": 1,
+    "blocked": 0,
     "candidateOnly": 143,
-    "totalWorks": 267,
-    "workerResultWorks": 79
+    "totalWorks": 295,
+    "workerResultWorks": 79,
+    "donggyeongJapgiMatchedBlocks": 44,
+    "donggyeongJapgiImportedWorks": 28,
+    "donggyeongJapgiSourceVariants": 16
   },
   "poems": [
     {
@@ -7414,22 +7418,23 @@
       "genre": {
         "broad": "한시",
         "form": "미확정",
-        "track": "hansi-candidate"
+        "track": "hansi-direct-text"
       },
       "sourceWork": {
         "collectionTitle": "東國李相國集",
         "juan": null,
         "entryTitle": "江上曉雨",
-        "sourceUrl": null,
-        "rawUrl": null,
-        "sourcePolicyId": null,
-        "locatorConfidence": "low",
-        "verificationStatus": "blocked"
+        "sourceUrl": "https://ko.wikisource.org/wiki/%EA%B0%95%EC%83%81%ED%9A%A8%EC%9A%B0",
+        "rawUrl": "https://ko.wikisource.org/wiki/%EA%B0%95%EC%83%81%ED%9A%A8%EC%9A%B0?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
       },
       "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
+        "poemZh": "江岸人歸白鷺飛\n漁翁日暮得魚歸\n輕雲薄薄那成雨\n海氣干天偶作霖",
+        "poemKoReading": "강안인귀백로비\n어옹일모득어귀\n경운박박나성우\n해기간천우작림",
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -7438,9 +7443,9 @@
       },
       "rights": {
         "originalText": {
-          "status": "unknown",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
         },
         "translation": {
           "status": "owned-translation-needed",
@@ -7449,13 +7454,13 @@
         }
       },
       "ingest": {
-        "readiness": "blocked",
+        "readiness": "direct-text-collected",
         "targetDb": "poems",
         "sourceFile": "docs/spec/korean-poet-worker-results/worker-1-yi-gyubo.v1.json",
         "workerId": "worker-1-yi-gyubo",
         "candidateTitle": "江上曉雨",
-        "matchedTitle": null,
-        "notes": "Wikisource raw scan(全集 1~41권, 後集 1~12권)과 title search에서 exact title hit를 찾지 못해 공개 원문 권차를 확정하지 못함. 다음 단계는 ITKC/KORCIS 또는 선집 목차로 권차 locator를 먼저 고정하는 것.",
+        "matchedTitle": "江上曉雨",
+        "notes": "이전 mixed/mini pilot의 ko Wikisource 개별 작품 단서를 재확인했다. `강상효우` raw page가 원문과 독음을 직접 제공하므로 blocked에서 direct-text로 승격한다.",
         "ownedTranslationNeeded": true
       }
     },
@@ -7492,7 +7497,8 @@
       "text": {
         "poemZh": "簾幕深深樹影廻。幽人睡熟鼾成雷。日斜庭院無人到。唯有風扉自闔開。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -7555,7 +7561,8 @@
       "text": {
         "poemZh": "輕衫小簟臥風櫺。夢斷啼鸎三兩聲。密葉翳花春後在。薄雲漏日雨中明。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -7602,8 +7609,8 @@
       },
       "genre": {
         "broad": "한시",
-        "form": "미확정",
-        "track": "hansi-candidate"
+        "form": "장편 서사시",
+        "track": "hansi-direct-text"
       },
       "sourceWork": {
         "collectionTitle": "東國李相國全集",
@@ -7613,12 +7620,86 @@
         "rawUrl": "https://zh.wikisource.org/w/index.php?title=%E6%9D%B1%E5%9C%8B%E6%9D%8E%E7%9B%B8%E5%9C%8B%E5%85%A8%E9%9B%86/%E5%8D%B7%E4%B8%89&action=raw",
         "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
         "locatorConfidence": "high",
-        "verificationStatus": "source-located"
+        "verificationStatus": "verified-direct-text"
       },
       "text": {
-        "poemZh": null,
+        "poemZh": "世多說東明王神異之事。雖愚夫騃婦。亦頗能說其事。僕嘗聞之。笑曰。先師仲尼。不語怪力亂神。此實荒唐奇詭之事。非吾曹所說。及讀魏書通典。亦載其事。然略而未詳。豈詳內略外之意耶。越癸丑四月。得舊三國史。見東明王本紀。其神異之迹。踰世之所說者。然亦初不能信之。意以爲鬼幻。及三復耽味。漸涉其源。非幻也。乃聖也。非鬼也。乃神也。況國史直筆之書。豈妄傳之哉。金公富軾重撰國史。頗略其事。意者公以爲國史矯世之書。不可以大異之事爲示於後世而略之耶。按唐玄宗本紀。楊貴妃傳。並無方士升天入地之事。唯詩人白樂天恐其事淪沒。作歌以志之。彼實荒淫奇誕之事。猶且詠之。以示于後。矧東明之事。非以變化神異眩惑衆目。乃實創國之神迹。則此而不述。後將何觀。是用作詩以記之。欲使夫天下知我國本聖人之都耳。\n元氣判𣳎渾。天皇地皇氏。十三十一頭。體貌多奇異。其餘聖帝王。亦備載經史。女節感大星。乃生大昊摯。女樞生顓頊。亦感瑤光暐。伏羲制牲犧。燧人始鑽燧。生蓂高帝祥。雨粟神農瑞。靑天女媧補。洪水大禹理。黃帝將升天。胡髥龍自至。太古淳朴時。靈聖難備記。後世漸澆漓。風俗例汰侈。聖人間或生。神迹少所示。漢神雀三年。孟夏斗立巳。海東解慕漱。眞是天之子。初從空中下。身乘五龍軌。從者百餘人。騎鵠紛襂襹。淸樂動鏘洋。彩雲浮旖旎。自古受命君。何是非天賜。白日下靑冥。從昔所未視。朝居人世中。暮反天宮裡。吾聞於古人。蒼穹之去地二億萬八千七百八十里。梯棧躡難升。羽翮飛易瘁。朝夕恣升降。此理復何爾。城北有靑河。河伯三女美。擘出鴨頭波。往遊熊心涘。鏘琅佩玉鳴。綽約顔花媚。初疑漢皐濱。復想洛水沚。王因出獵見。目送頗留意。玆非悅紛華。誠急生繼嗣。三女見君來。入水尋相避。擬將作宮殿。潛候同來戱。馬撾一畫地。銅室欻然峙。錦席鋪絢明。金罇置淳旨。蹁躚果自入。對酌還徑醉。王時出橫遮。驚走僅顚躓。長女曰柳花。是爲王所止。河伯大怒嗔。遣使急且駛。告云渠何人。乃敢放輕肆。報云天帝子。高族請相累。指天降龍馭。徑到海宮邃。河伯乃謂王。婚姻是大事。媒贄有通法。胡奈得自恣。君是上帝胤。神變請可試。漣漪碧波中。河伯化作鯉。王尋變爲獺。立捕不待跬。又復生兩翼。翩然化爲雉。王又化神鷹。摶擊何大鷙。彼爲鹿而走。我爲豺而趡。河伯知有神。置酒相燕喜。伺醉載革輿。幷置女於輢。意令與其女。天上同騰轡。其車未出水。酒醒忽驚起。取女黃金釵。刺革從竅出。獨乘赤霄上。寂寞不廻騎。河伯責厥女。挽吻三尺弛。乃貶優渤中。唯與婢僕二。漁師觀波中。奇獸行𩣚騃。乃告王金蛙。鐵網投湀湀。引得坐石女。姿貌甚堪畏。唇長不能言。三截乃啓齒。王知慕漱妃。仍以別宮置。懷日生朱蒙。是歲歲在癸。骨表諒最奇。啼聲亦甚偉。初生卵如升。觀者皆驚悸。王以爲不祥。此豈人之類。置之馬牧中。群馬皆不履。棄之深山中。百獸皆擁衛。母姑擧而養。經月言語始。自言蠅噆目。臥不能安睡。母爲作弓矢。其弓不虛掎。年至漸長大。才能日漸備。扶余王太子。其心生妬忌。乃言朱蒙者。此必非常士。若不早自圖。其患誠未已。王令往牧馬。欲以試厥志。自思天之孫。廝牧良可恥。捫心常竊導。吾生不如死。意將往南土。立國立城市。爲緣慈母在。離別誠未易。其母聞此言。潸然抆淸淚。汝幸勿爲念。我亦常痛痞。士之涉長途。須必憑騄駬。相將往馬閑。卽以長鞭捶。群馬皆突走。一馬騂色斐。跳過二丈欄。始覺是駿驥。潛以針刺舌。酸痛不受飼。不日形甚癯。却與駑駘似。爾後王巡觀。予馬此卽是。得之始抽針。日夜屢加餧。暗結三賢友。其人共多智。南行至淹滯。欲渡無舟艤。秉策指彼蒼。慨然發長喟。天孫河伯甥。避難至於此。哀哀孤子心。天地其忍棄。操弓打河水。魚鼈騈首尾。屹然成橋梯。始乃得渡矣。俄爾追兵至。上橋橋旋圮。雙鳩含麥飛。來作神母使。形勝開王都。山川鬱㠑巋。自坐茀蕝上。略定君臣位。咄哉沸流王。何奈不自揆。苦矜仙人後。未識帝孫貴。徒欲爲附庸。出語不愼葸。未中畫鹿臍。驚我倒玉指。來觀鼓角變。不敢稱我器。來觀屋柱故。咋舌還自愧。東明西狩時。偶獲雪色麂。倒懸蟹原上。敢自呪而謂。天不雨沸流。漂沒其都鄙。我固不汝放。汝可助我懫。鹿鳴聲甚哀。上徹天之耳。霖雨注七日。霈若傾淮泗。松讓甚憂懼。沿流謾橫葦。士民競來攀。流汗相𥈭眙。東明卽以鞭。畫水水停沸。松讓擧國降。是後莫予訾。玄雲羃鶻嶺。不見山邐迤。有人數千許。斵木聲髣髴。王曰天爲我。築城於其趾。忽然雲霧散。宮闕高㠥嵬。在位十九年。升天不下莅。俶儻有奇節。元子曰類利。得劒繼父位。塞盆止人詈。我性本質木。性不喜奇詭。初看東明事。疑幻又疑鬼。徐徐漸相涉。變化難擬議。況是直筆文。一字無虛字。神哉又神哉。萬世之所韙。因思草創君。非聖卽何以。劉媼息大澤。遇神於夢寐。雷電塞晦暝。蛟龍盤怪傀。因之卽有娠。乃生聖劉季。是惟赤帝子。其興多殊祚。世祖始生時。滿室光炳煒。自應赤伏符。掃除黃巾僞。自古帝王興。徵瑞紛蔚蔚。未嗣多怠荒。共絶先王祀。乃知守成君。集蓼戒小毖。守位以寬仁。化民由禮義。永永傳子孫。御國多年紀。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": [
+          {
+            "partId": "preface",
+            "order": 1,
+            "titleKo": "서문",
+            "partType": "preface",
+            "textZh": "世多說東明王神異之事。雖愚夫騃婦。亦頗能說其事。僕嘗聞之。笑曰。先師仲尼。不語怪力亂神。此實荒唐奇詭之事。非吾曹所說。及讀魏書通典。亦載其事。然略而未詳。豈詳內略外之意耶。越癸丑四月。得舊三國史。見東明王本紀。其神異之迹。踰世之所說者。然亦初不能信之。意以爲鬼幻。及三復耽味。漸涉其源。非幻也。乃聖也。非鬼也。乃神也。況國史直筆之書。豈妄傳之哉。金公富軾重撰國史。頗略其事。意者公以爲國史矯世之書。不可以大異之事爲示於後世而略之耶。按唐玄宗本紀。楊貴妃傳。並無方士升天入地之事。唯詩人白樂天恐其事淪沒。作歌以志之。彼實荒淫奇誕之事。猶且詠之。以示于後。矧東明之事。非以變化神異眩惑衆目。乃實創國之神迹。則此而不述。後將何觀。是用作詩以記之。欲使夫天下知我國本聖人之都耳。",
+            "charCount": 335
+          },
+          {
+            "partId": "intro-sacred-kings",
+            "order": 2,
+            "titleKo": "서장: 성왕과 신이한 창업의 보편성",
+            "partType": "narrative-section",
+            "textZh": "元氣判𣳎渾。天皇地皇氏。十三十一頭。體貌多奇異。其餘聖帝王。亦備載經史。女節感大星。乃生大昊摯。女樞生顓頊。亦感瑤光暐。伏羲制牲犧。燧人始鑽燧。生蓂高帝祥。雨粟神農瑞。靑天女媧補。洪水大禹理。黃帝將升天。胡髥龍自至。太古淳朴時。靈聖難備記。後世漸澆漓。風俗例汰侈。聖人間或生。神迹少所示。",
+            "charCount": 145
+          },
+          {
+            "partId": "haemosu-descent",
+            "order": 3,
+            "titleKo": "해모수 강림",
+            "partType": "narrative-section",
+            "textZh": "漢神雀三年。孟夏斗立巳。海東解慕漱。眞是天之子。初從空中下。身乘五龍軌。從者百餘人。騎鵠紛襂襹。淸樂動鏘洋。彩雲浮旖旎。自古受命君。何是非天賜。白日下靑冥。從昔所未視。朝居人世中。暮反天宮裡。吾聞於古人。蒼穹之去地二億萬八千七百八十里。梯棧躡難升。羽翮飛易瘁。朝夕恣升降。此理復何爾。",
+            "charCount": 142
+          },
+          {
+            "partId": "yuhwa-habaek",
+            "order": 4,
+            "titleKo": "유화와 하백",
+            "partType": "narrative-section",
+            "textZh": "城北有靑河。河伯三女美。擘出鴨頭波。往遊熊心涘。鏘琅佩玉鳴。綽約顔花媚。初疑漢皐濱。復想洛水沚。王因出獵見。目送頗留意。玆非悅紛華。誠急生繼嗣。三女見君來。入水尋相避。擬將作宮殿。潛候同來戱。馬撾一畫地。銅室欻然峙。錦席鋪絢明。金罇置淳旨。蹁躚果自入。對酌還徑醉。王時出橫遮。驚走僅顚躓。長女曰柳花。是爲王所止。河伯大怒嗔。遣使急且駛。告云渠何人。乃敢放輕肆。報云天帝子。高族請相累。指天降龍馭。徑到海宮邃。河伯乃謂王。婚姻是大事。媒贄有通法。胡奈得自恣。君是上帝胤。神變請可試。漣漪碧波中。河伯化作鯉。王尋變爲獺。立捕不待跬。又復生兩翼。翩然化爲雉。王又化神鷹。摶擊何大鷙。彼爲鹿而走。我爲豺而趡。河伯知有神。置酒相燕喜。伺醉載革輿。幷置女於輢。意令與其女。天上同騰轡。其車未出水。酒醒忽驚起。取女黃金釵。刺革從竅出。獨乘赤霄上。寂寞不廻騎。河伯責厥女。挽吻三尺弛。乃貶優渤中。唯與婢僕二。漁師觀波中。奇獸行𩣚騃。乃告王金蛙。鐵網投湀湀。引得坐石女。姿貌甚堪畏。唇長不能言。三截乃啓齒。",
+            "charCount": 445
+          },
+          {
+            "partId": "jumong-birth-growth",
+            "order": 5,
+            "titleKo": "주몽 탄생과 성장",
+            "partType": "narrative-section",
+            "textZh": "王知慕漱妃。仍以別宮置。懷日生朱蒙。是歲歲在癸。骨表諒最奇。啼聲亦甚偉。初生卵如升。觀者皆驚悸。王以爲不祥。此豈人之類。置之馬牧中。群馬皆不履。棄之深山中。百獸皆擁衛。母姑擧而養。經月言語始。自言蠅噆目。臥不能安睡。母爲作弓矢。其弓不虛掎。年至漸長大。才能日漸備。扶余王太子。其心生妬忌。乃言朱蒙者。此必非常士。若不早自圖。其患誠未已。王令往牧馬。欲以試厥志。自思天之孫。廝牧良可恥。捫心常竊導。吾生不如死。意將往南土。立國立城市。爲緣慈母在。離別誠未易。其母聞此言。潸然抆淸淚。汝幸勿爲念。我亦常痛痞。士之涉長途。須必憑騄駬。相將往馬閑。卽以長鞭捶。群馬皆突走。一馬騂色斐。跳過二丈欄。始覺是駿驥。潛以針刺舌。酸痛不受飼。不日形甚癯。却與駑駘似。爾後王巡觀。予馬此卽是。得之始抽針。日夜屢加餧。",
+            "charCount": 348
+          },
+          {
+            "partId": "escape-and-river-crossing",
+            "order": 6,
+            "titleKo": "부여 탈출과 어별교 도하",
+            "partType": "narrative-section",
+            "textZh": "暗結三賢友。其人共多智。南行至淹滯。欲渡無舟艤。秉策指彼蒼。慨然發長喟。天孫河伯甥。避難至於此。哀哀孤子心。天地其忍棄。操弓打河水。魚鼈騈首尾。屹然成橋梯。始乃得渡矣。俄爾追兵至。上橋橋旋圮。雙鳩含麥飛。來作神母使。",
+            "charCount": 108
+          },
+          {
+            "partId": "founding-and-songyang",
+            "order": 7,
+            "titleKo": "건국과 송양 대결",
+            "partType": "narrative-section",
+            "textZh": "形勝開王都。山川鬱㠑巋。自坐茀蕝上。略定君臣位。咄哉沸流王。何奈不自揆。苦矜仙人後。未識帝孫貴。徒欲爲附庸。出語不愼葸。未中畫鹿臍。驚我倒玉指。來觀鼓角變。不敢稱我器。來觀屋柱故。咋舌還自愧。東明西狩時。偶獲雪色麂。倒懸蟹原上。敢自呪而謂。天不雨沸流。漂沒其都鄙。我固不汝放。汝可助我懫。鹿鳴聲甚哀。上徹天之耳。霖雨注七日。霈若傾淮泗。松讓甚憂懼。沿流謾橫葦。士民競來攀。流汗相𥈭眙。東明卽以鞭。畫水水停沸。松讓擧國降。是後莫予訾。玄雲羃鶻嶺。不見山邐迤。有人數千許。斵木聲髣髴。王曰天爲我。築城於其趾。忽然雲霧散。宮闕高㠥嵬。",
+            "charCount": 265
+          },
+          {
+            "partId": "ascension-and-yuri",
+            "order": 8,
+            "titleKo": "승천과 유리 계승",
+            "partType": "narrative-section",
+            "textZh": "在位十九年。升天不下莅。俶儻有奇節。元子曰類利。得劒繼父位。塞盆止人詈。",
+            "charCount": 36
+          },
+          {
+            "partId": "conclusion-author-reflection",
+            "order": 9,
+            "titleKo": "결사: 이규보의 역사 인식",
+            "partType": "conclusion",
+            "textZh": "我性本質木。性不喜奇詭。初看東明事。疑幻又疑鬼。徐徐漸相涉。變化難擬議。況是直筆文。一字無虛字。神哉又神哉。萬世之所韙。因思草創君。非聖卽何以。劉媼息大澤。遇神於夢寐。雷電塞晦暝。蛟龍盤怪傀。因之卽有娠。乃生聖劉季。是惟赤帝子。其興多殊祚。世祖始生時。滿室光炳煒。自應赤伏符。掃除黃巾僞。自古帝王興。徵瑞紛蔚蔚。未嗣多怠荒。共絶先王祀。乃知守成君。集蓼戒小毖。守位以寬仁。化民由禮義。永永傳子孫。御國多年紀。",
+            "charCount": 204
+          }
+        ]
       },
       "assets": {
         "translationKo": null,
@@ -7628,8 +7709,8 @@
       "rights": {
         "originalText": {
           "status": "commercial_allowed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
         },
         "translation": {
           "status": "owned-translation-needed",
@@ -7638,13 +7719,13 @@
         }
       },
       "ingest": {
-        "readiness": "source-located",
+        "readiness": "direct-text-collected",
         "targetDb": "poems",
         "sourceFile": "docs/spec/korean-poet-worker-results/worker-1-yi-gyubo.v1.json",
         "workerId": "worker-1-yi-gyubo",
         "candidateTitle": "東明王篇",
         "matchedTitle": "東明王篇 幷序",
-        "notes": "卷三 첫 항목에서 raw 전문 존재를 확인했다. 서문 포함 장편 서사시라 이번 worker에서는 전문 수집 대신 권차·제목·장문 여부만 고정한다.",
+        "notes": "zh Wikisource `東國李相國全集/卷三` raw에서 `東明王篇 幷序` 전체 경계를 확인했다. 작품 row는 하나로 유지하되, 서문과 본문을 9개 `textParts`로 나누어 장편 서사시 내부 구조를 보존한다.",
         "ownedTranslationNeeded": true
       }
     },
@@ -7681,7 +7762,8 @@
       "text": {
         "poemZh": "漣漪碧井碧嵓隈。新月娟娟正印來。汲去甁中猶半影。恐將金鏡半分廻。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -7744,7 +7826,8 @@
       "text": {
         "poemZh": "山僧貪月色。幷汲一甁中。到寺方應覺。甁傾月亦空。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -7807,7 +7890,8 @@
       "text": {
         "poemZh": "門上揷桃何詭誕。庭中爆竹奈支離。辟溫丹粒猶虛語。爲倒醇醅故不辭。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -7870,7 +7954,8 @@
       "text": {
         "poemZh": "昨過永明寺。暫登浮碧樓。城空月一片。石老雲千秋。麟馬去不返。天孫何處遊。長嘯倚風磴。山靑江水流。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -7933,7 +8018,8 @@
       "text": {
         "poemZh": "歲暮心彌壯。天陰骨更酸。丹田久蕪穢。白晝懶衣冠。詩酒三生樂。雲山四面寬。微吟抱眞素。深谷翳芝蘭。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -7996,7 +8082,8 @@
       "text": {
         "poemZh": "熏風吹客路。落日照鄕關。小雨波聲急。平波草色寒。北征通萬里。東去接三韓。駟馬今安在。吾生愧滿顏。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -8059,7 +8146,8 @@
       "text": {
         "poemZh": "飄風何發發。白雲亦茫茫。之子有遐想。超忽歸故鄕。新王方重士。臺閤集鸞凰。如何尙其事。白駒不食場。丹陽我鄕曲。雲物冠東方。功名苟云可。卜築及康彊。共上觀魚臺。一吸扶桑光。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -8122,7 +8210,8 @@
       "text": {
         "poemZh": "平莎綿綿乍收霧。村童牽牛向溪樹。牛行芳草坡。牛飮垂楊渡。村童亦睡牛亦飽。吹笛歸來日將暮。年▣新菑趁春扈。牛蹄欲脫汗如雨。辛勤耕穫不滿甔。猶向春風醉歌舞。吾生慣作行路難。長羡爾背如車安。何時林下讀周易。蓑笠不知風雨寒。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -8185,7 +8274,8 @@
       "text": {
         "poemZh": "草堂燈火絶煩囂。入夜都忘涉獵勞。忽得唐詩參李杜。更將秦史斬斯高。\n\n天下紛紛衆口囂。何人能息我民勞。臥看滄海風濤壯。擬掛雲帆萬丈高。\n\n丈夫志氣本囂囂。再造乾坤豈是勞。擊柱已萌烹狗禍。始知圯下素書高。\n\n車馬紛紛日夜囂。縱成功業亦云勞。世間萬事眞棋局。妙手無如不著高。\n\n森森綠樹鳥猿囂。欲試昌黎陟降勞。上了㝡尖還大笑。不如平地望嵩高。\n\n盪盡風騷更不囂。雕龍畫虎是徒勞。文非西漢未爲古。詩到建安方是高。\n\n却掃柴門誰敢囂。閑中尤覺昔年勞。夜來小雨風吹去。更喜春畦芽漸高。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -8248,7 +8338,8 @@
       "text": {
         "poemZh": null,
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -8311,7 +8402,8 @@
       "text": {
         "poemZh": null,
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -8374,7 +8466,8 @@
       "text": {
         "poemZh": null,
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -8437,7 +8530,8 @@
       "text": {
         "poemZh": null,
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -8500,7 +8594,8 @@
       "text": {
         "poemZh": null,
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -8563,7 +8658,8 @@
       "text": {
         "poemZh": null,
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -8626,7 +8722,8 @@
       "text": {
         "poemZh": "河邊靈匹度雲車\n世上穿針術已踈\n學士樓前月如練\n請君來曬腹中書",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -8689,7 +8786,8 @@
       "text": {
         "poemZh": "窮荒何幸遇斯人\n珠貝携來爛熳陳\n好去更尋韓吏部\n愧余衰朽未傾囷\n看君詩語玉生煙\n陳榻從今不要懸\n莫把殷盤窮詰屈\n須知方寸淡天淵",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -8752,7 +8850,8 @@
       "text": {
         "poemZh": "會蘇曲會蘇曲。西風吹廣庭，明月滿華屋。王姬壓坐理繅車，六部女兒多如簇。爾筥旣盈我筐空，釃酒揶揄笑相謔。一婦嘆千室勸，坐令四方勤杼柚。嘉俳縱失閨中儀，猶勝跋河爭嗃嗃。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -8779,8 +8878,49 @@
         "candidateTitle": "七詠",
         "matchedTitle": "會蘇曲",
         "notes": "Donggyeong Japgi 쪽 compound split과 같은 기준으로 七詠 7수 중 會蘇曲을 독립 작품으로 분리했다.",
-        "ownedTranslationNeeded": true
-      }
+        "ownedTranslationNeeded": true,
+        "sourceFiles": [
+          "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+        ],
+        "duplicateSourceCount": 1
+      },
+      "sourceVariants": [
+        {
+          "variantType": "collection-witness",
+          "collectionId": "korean-classics-donggyeong-japgi",
+          "collectionTitle": "東京雜記",
+          "collectionTitleKo": "동경잡기",
+          "collectionTitleRomanization": "Donggyeong Japgi",
+          "harvestId": "KHS-TZ3-H-0038",
+          "documentEntryId": "KHS-TZ3-D-0190",
+          "documentSectionId": "KHS-TZ3-S-0011",
+          "displayLabelZh": "會蘇曲",
+          "titleHintZh": null,
+          "authorNormalization": {
+            "rawLabelZh": "會蘇曲",
+            "normalizedAuthorZh": "金宗直",
+            "confidence": "high",
+            "titlePrefixZh": "會蘇曲",
+            "note": "七詠 연작 표제 정리 규칙"
+          },
+          "sourceWork": {
+            "collectionTitle": "東京雜記 卷三",
+            "juan": "卷三",
+            "entryTitle": "會蘇曲",
+            "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%89",
+            "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+            "verificationStatus": "verified-direct-text"
+          },
+          "text": {
+            "poemZh": "會蘇曲會蘇曲\n西風吹廣庭\n明月滿華屋\n王姬厭坐理繅車\n六部女兒多如簇\n爾筥旣盈我筐空\n釃酒揶揄笑相譃\n一婦嘆千室歡\n坐令四方勤杼柚\n嘉俳縱失閨中儀\n猶勝跋河爭嗃嗃"
+          },
+          "ingest": {
+            "readiness": "direct-text-collected",
+            "targetDb": "poems",
+            "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+          }
+        }
+      ]
     },
     {
       "poemId": "KPOEM-WORKER-KIM-JONGJIK-010",
@@ -8815,7 +8955,8 @@
       "text": {
         "poemZh": "常棣華隨風落扶桑。扶桑萬里鯨鯢浪，縱有音書誰得將？常棣花隨風返鷄林。鷄林春色擁雙闕，友于歡情如許深。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -8842,8 +8983,49 @@
         "candidateTitle": "七詠",
         "matchedTitle": "憂息曲",
         "notes": "七詠 7수 중 憂息曲을 독립 작품으로 분리했다.",
-        "ownedTranslationNeeded": true
-      }
+        "ownedTranslationNeeded": true,
+        "sourceFiles": [
+          "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+        ],
+        "duplicateSourceCount": 1
+      },
+      "sourceVariants": [
+        {
+          "variantType": "collection-witness",
+          "collectionId": "korean-classics-donggyeong-japgi",
+          "collectionTitle": "東京雜記",
+          "collectionTitleKo": "동경잡기",
+          "collectionTitleRomanization": "Donggyeong Japgi",
+          "harvestId": "KHS-TZ3-H-0039",
+          "documentEntryId": "KHS-TZ3-D-0191",
+          "documentSectionId": "KHS-TZ3-S-0011",
+          "displayLabelZh": "憂息曲",
+          "titleHintZh": null,
+          "authorNormalization": {
+            "rawLabelZh": "憂息曲",
+            "normalizedAuthorZh": "金宗直",
+            "confidence": "high",
+            "titlePrefixZh": "憂息曲",
+            "note": "七詠 연작 표제 정리 규칙"
+          },
+          "sourceWork": {
+            "collectionTitle": "東京雜記 卷三",
+            "juan": "卷三",
+            "entryTitle": "憂息曲",
+            "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%89",
+            "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+            "verificationStatus": "verified-direct-text"
+          },
+          "text": {
+            "poemZh": "常棣華隨風落扶桑\n扶桑萬里鯨鯢浪\n縱有音書誰得將\n常棣華隨風返鷄林\n鷄林春色擁雙闕\n友于歡倩如許深"
+          },
+          "ingest": {
+            "readiness": "direct-text-collected",
+            "targetDb": "poems",
+            "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+          }
+        }
+      ]
     },
     {
       "poemId": "KPOEM-WORKER-KIM-JONGJIK-011",
@@ -8878,7 +9060,8 @@
       "text": {
         "poemZh": "鴟述嶺頭望日本，粘天鯨海無涯岸。良人去時但搖手，生歟死歟音耗斷。長別離，死生寧有相見時？呼天便化武昌石，烈氣千載干空碧。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -8905,8 +9088,49 @@
         "candidateTitle": "七詠",
         "matchedTitle": "鴟述嶺",
         "notes": "七詠 7수 중 鴟述嶺을 독립 작품으로 분리했다.",
-        "ownedTranslationNeeded": true
-      }
+        "ownedTranslationNeeded": true,
+        "sourceFiles": [
+          "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+        ],
+        "duplicateSourceCount": 1
+      },
+      "sourceVariants": [
+        {
+          "variantType": "collection-witness",
+          "collectionId": "korean-classics-donggyeong-japgi",
+          "collectionTitle": "東京雜記",
+          "collectionTitleKo": "동경잡기",
+          "collectionTitleRomanization": "Donggyeong Japgi",
+          "harvestId": "KHS-TZ3-H-0040",
+          "documentEntryId": "KHS-TZ3-D-0192",
+          "documentSectionId": "KHS-TZ3-S-0011",
+          "displayLabelZh": "鵄述嶺",
+          "titleHintZh": "鵄述嶺",
+          "authorNormalization": {
+            "rawLabelZh": "鵄述嶺",
+            "normalizedAuthorZh": "金宗直",
+            "confidence": "high",
+            "titlePrefixZh": "鵄述嶺",
+            "note": "七詠 연작 표제 정리 규칙"
+          },
+          "sourceWork": {
+            "collectionTitle": "東京雜記 卷三",
+            "juan": "卷三",
+            "entryTitle": "鵄述嶺",
+            "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%89",
+            "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+            "verificationStatus": "verified-direct-text"
+          },
+          "text": {
+            "poemZh": "鵄述嶺頭望日本\n粘天鯨海無涯岸\n良人去時但搖手\n生歟死歟音耗斷\n長別離\n死生寧有相見時\n呼天便化武昌石\n烈氣千載干空碧"
+          },
+          "ingest": {
+            "readiness": "direct-text-collected",
+            "targetDb": "poems",
+            "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+          }
+        }
+      ]
     },
     {
       "poemId": "KPOEM-WORKER-KIM-JONGJIK-012",
@@ -8941,7 +9165,8 @@
       "text": {
         "poemZh": "怛怛復忉忉，大家幾不保。流蘇帳裏玄鶴倒，揚且之晳難偕老。忉怛忉怛，神物不告知奈何？神物告兮基圖大。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -8968,8 +9193,49 @@
         "candidateTitle": "七詠",
         "matchedTitle": "怛忉歌",
         "notes": "七詠 7수 중 怛忉歌를 독립 작품으로 분리했다.",
-        "ownedTranslationNeeded": true
-      }
+        "ownedTranslationNeeded": true,
+        "sourceFiles": [
+          "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+        ],
+        "duplicateSourceCount": 1
+      },
+      "sourceVariants": [
+        {
+          "variantType": "collection-witness",
+          "collectionId": "korean-classics-donggyeong-japgi",
+          "collectionTitle": "東京雜記",
+          "collectionTitleKo": "동경잡기",
+          "collectionTitleRomanization": "Donggyeong Japgi",
+          "harvestId": "KHS-TZ3-H-0041",
+          "documentEntryId": "KHS-TZ3-D-0193",
+          "documentSectionId": "KHS-TZ3-S-0011",
+          "displayLabelZh": "怛忉歌",
+          "titleHintZh": null,
+          "authorNormalization": {
+            "rawLabelZh": "怛忉",
+            "normalizedAuthorZh": "金宗直",
+            "confidence": "high",
+            "titlePrefixZh": "怛忉",
+            "note": "七詠 연작 표제 정리 규칙"
+          },
+          "sourceWork": {
+            "collectionTitle": "東京雜記 卷三",
+            "juan": "卷三",
+            "entryTitle": "怛忉歌",
+            "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%89",
+            "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+            "verificationStatus": "verified-direct-text"
+          },
+          "text": {
+            "poemZh": "怛怛復忉忉\n大家幾不保\n流蘇悵裏玄鶴到\n揚且之晢難偕老\n忉怛忉怛\n神物不告知奈何\n神物告兮基圖大"
+          },
+          "ingest": {
+            "readiness": "direct-text-collected",
+            "targetDb": "poems",
+            "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+          }
+        }
+      ]
     },
     {
       "poemId": "KPOEM-WORKER-KIM-JONGJIK-013",
@@ -9004,7 +9270,8 @@
       "text": {
         "poemZh": "敵國爲封豕，荐食我邊彊。赳赳花郞徒，報國心靡遑。荷戈訣妻子，嗽泉啖糗糧。賊人夜劘壘，毅魂飛劍鋩。回首陽山雲，矗矗虹蜺光。哀哉四丈夫，終是北方强。千秋爲鬼雄，相與歆椒漿。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -9031,8 +9298,49 @@
         "candidateTitle": "七詠",
         "matchedTitle": "陽山歌",
         "notes": "七詠 7수 중 陽山歌를 독립 작품으로 분리했다. Wikisource 교감 표기에서는 糧/粻 이형을 주석 처리하고 있어 본문 표기는 糧로 정규화했다.",
-        "ownedTranslationNeeded": true
-      }
+        "ownedTranslationNeeded": true,
+        "sourceFiles": [
+          "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+        ],
+        "duplicateSourceCount": 1
+      },
+      "sourceVariants": [
+        {
+          "variantType": "collection-witness",
+          "collectionId": "korean-classics-donggyeong-japgi",
+          "collectionTitle": "東京雜記",
+          "collectionTitleKo": "동경잡기",
+          "collectionTitleRomanization": "Donggyeong Japgi",
+          "harvestId": "KHS-TZ3-H-0042",
+          "documentEntryId": "KHS-TZ3-D-0194",
+          "documentSectionId": "KHS-TZ3-S-0011",
+          "displayLabelZh": "陽山歌",
+          "titleHintZh": "陽山",
+          "authorNormalization": {
+            "rawLabelZh": "陽山",
+            "normalizedAuthorZh": "金宗直",
+            "confidence": "high",
+            "titlePrefixZh": "陽山",
+            "note": "七詠 연작 표제 정리 규칙"
+          },
+          "sourceWork": {
+            "collectionTitle": "東京雜記 卷三",
+            "juan": "卷三",
+            "entryTitle": "陽山歌",
+            "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%89",
+            "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+            "verificationStatus": "verified-direct-text"
+          },
+          "text": {
+            "poemZh": "敵國爲封豕\n荐食我邊疆\n赳赳花郞徒\n報國心靡遑\n荷戈訣妻子\n欶泉啖糗糧\n賊人夜劘壘\n毅魂飛劍鋩\n回首陽山雲\n矗矗虹蜺光\n哀哉四丈夫\n終是北方强\n千秋爲鬼雄\n相與歆椒漿"
+          },
+          "ingest": {
+            "readiness": "direct-text-collected",
+            "targetDb": "poems",
+            "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+          }
+        }
+      ]
     },
     {
       "poemId": "KPOEM-WORKER-KIM-JONGJIK-014",
@@ -9067,7 +9375,8 @@
       "text": {
         "poemZh": "東家砧舂黍稻，西家杵擣寒襖。東家西家砧杵聲，卒歲之資贏復贏。儂家窖乏甔石，儂家箱無尺帛。懸鶉衣兮藜羹盌，榮期之樂足飽煖。糟妻糟妻莫謾憂，富貴在天那可求？曲肱而寢有至味，梁鴻孟光眞好逑。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -9094,8 +9403,49 @@
         "candidateTitle": "七詠",
         "matchedTitle": "碓樂",
         "notes": "七詠 7수 중 碓樂을 독립 작품으로 분리했다.",
-        "ownedTranslationNeeded": true
-      }
+        "ownedTranslationNeeded": true,
+        "sourceFiles": [
+          "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+        ],
+        "duplicateSourceCount": 1
+      },
+      "sourceVariants": [
+        {
+          "variantType": "collection-witness",
+          "collectionId": "korean-classics-donggyeong-japgi",
+          "collectionTitle": "東京雜記",
+          "collectionTitleKo": "동경잡기",
+          "collectionTitleRomanization": "Donggyeong Japgi",
+          "harvestId": "KHS-TZ3-H-0043",
+          "documentEntryId": "KHS-TZ3-D-0195",
+          "documentSectionId": "KHS-TZ3-S-0011",
+          "displayLabelZh": "碓樂",
+          "titleHintZh": null,
+          "authorNormalization": {
+            "rawLabelZh": "碓樂",
+            "normalizedAuthorZh": "金宗直",
+            "confidence": "high",
+            "titlePrefixZh": "碓樂",
+            "note": "七詠 연작 표제 정리 규칙"
+          },
+          "sourceWork": {
+            "collectionTitle": "東京雜記 卷三",
+            "juan": "卷三",
+            "entryTitle": "碓樂",
+            "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%89",
+            "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+            "verificationStatus": "verified-direct-text"
+          },
+          "text": {
+            "poemZh": "東家砧舂忝稻\n西家杵搗寒襖\n東家西家砧杵聲\n卒歲之質贏復贏\n儂家窖乏甔石\n儂家箱無尺帛\n懸鶉衣兮藜羹椀\n榮期之樂足飽燰\n糟妻糟妻莫謾憂\n富貴在天那可求\n曲肱而寢有至味\n梁鵠孟光眞好逑"
+          },
+          "ingest": {
+            "readiness": "direct-text-collected",
+            "targetDb": "poems",
+            "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+          }
+        }
+      ]
     },
     {
       "poemId": "KPOEM-WORKER-KIM-JONGJIK-015",
@@ -9130,7 +9480,8 @@
       "text": {
         "poemZh": "若有人兮纔離齠，身未三尺何雄驍？平生汪錡我所師，爲國雪恥心無憀。劍鐔擬頸股不戰，劍鍔指心目不搖。功成脫然罷舞去，挾山北海猶可超。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -9157,15 +9508,56 @@
         "candidateTitle": "七詠",
         "matchedTitle": "黃昌郞",
         "notes": "七詠 7수 중 黃昌郞을 독립 작품으로 분리했다.",
-        "ownedTranslationNeeded": true
-      }
+        "ownedTranslationNeeded": true,
+        "sourceFiles": [
+          "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+        ],
+        "duplicateSourceCount": 1
+      },
+      "sourceVariants": [
+        {
+          "variantType": "collection-witness",
+          "collectionId": "korean-classics-donggyeong-japgi",
+          "collectionTitle": "東京雜記",
+          "collectionTitleKo": "동경잡기",
+          "collectionTitleRomanization": "Donggyeong Japgi",
+          "harvestId": "KHS-TZ3-H-0044",
+          "documentEntryId": "KHS-TZ3-D-0196",
+          "documentSectionId": "KHS-TZ3-S-0011",
+          "displayLabelZh": "黃昌郞",
+          "titleHintZh": null,
+          "authorNormalization": {
+            "rawLabelZh": "黃昌郞",
+            "normalizedAuthorZh": "金宗直",
+            "confidence": "high",
+            "titlePrefixZh": "黃昌郞",
+            "note": "七詠 연작 표제 정리 규칙"
+          },
+          "sourceWork": {
+            "collectionTitle": "東京雜記 卷三",
+            "juan": "卷三",
+            "entryTitle": "黃昌郞",
+            "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%89",
+            "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+            "verificationStatus": "verified-direct-text"
+          },
+          "text": {
+            "poemZh": "若有人兮纔離齠\n身未三尺何雄驍\n平生汪錡我所師\n爲國雪恥心無憀\n劍鐔凝頸股不戰\n劍鍔指心目不搖\n功成脫然罷舞去\n挾山北海猶可超"
+          },
+          "ingest": {
+            "readiness": "direct-text-collected",
+            "targetDb": "poems",
+            "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+          }
+        }
+      ]
     },
     {
       "poemId": "KPOEM-WORKER-HEO-NANSEOLHEON-001",
       "canonicalId": "KPOEM-CANON-WORKER-HEO-NANSEOLHEON-001",
       "title": {
-        "zh": "效沈亞之體 又 / 效崔國輔體 又",
-        "ko": "效沈亞之體 又 / 效崔國輔體 又"
+        "zh": "春雨",
+        "ko": "春雨"
       },
       "author": {
         "authorId": "KAUTH-HEO-NANSEOLHEON",
@@ -9178,22 +9570,23 @@
       "genre": {
         "broad": "한시",
         "form": "미확정",
-        "track": "hansi-candidate"
+        "track": "hansi-direct-text"
       },
       "sourceWork": {
-        "collectionTitle": "蘭雪軒詩集",
+        "collectionTitle": "조선여류한시선집",
         "juan": null,
-        "entryTitle": "效沈亞之體 又 / 效崔國輔體 又",
-        "sourceUrl": "https://zh.wikisource.org/wiki/蘭雪軒詩集",
-        "rawUrl": "https://zh.wikisource.org/wiki/蘭雪軒詩集?action=raw",
+        "entryTitle": "봄비",
+        "sourceUrl": "https://ko.wikisource.org/wiki/%EC%A1%B0%EC%84%A0%EC%97%AC%EB%A5%98%ED%95%9C%EC%8B%9C%EC%84%A0%EC%A7%91/%EB%B4%84%EB%B9%84",
+        "rawUrl": "https://ko.wikisource.org/wiki/%EC%A1%B0%EC%84%A0%EC%97%AC%EB%A5%98%ED%95%9C%EC%8B%9C%EC%84%A0%EC%A7%91/%EB%B4%84%EB%B9%84?action=raw",
         "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
-        "locatorConfidence": "low",
-        "verificationStatus": "source-located"
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
       },
       "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
+        "poemZh": "春雨暗西池\n輕寒襲羅衣\n愁依小屛風\n墻頭杏花落",
+        "poemKoReading": "춘우암서지\n경한습라의\n수의소병풍\n장두행화락",
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -9203,8 +9596,8 @@
       "rights": {
         "originalText": {
           "status": "commercial_allowed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
         },
         "translation": {
           "status": "owned-translation-needed",
@@ -9213,13 +9606,13 @@
         }
       },
       "ingest": {
-        "readiness": "source-located",
+        "readiness": "direct-text-collected",
         "targetDb": "poems",
         "sourceFile": "docs/spec/korean-poet-worker-results/worker-4-heo-nanseolheon.v1.json",
         "workerId": "worker-4-heo-nanseolheon",
         "candidateTitle": "春雨",
-        "matchedTitle": "效沈亞之體 又 / 效崔國輔體 又",
-        "notes": "위키문헌 collection 안에서 standalone title `春雨`는 보이지 않고, `春雨梨花白...`와 `春雨暗西池...`처럼 첫 구가 `春雨`로 시작하는 무제/하위 연작 2건이 확인된다. seed title이 어느 쪽을 가리키는지 아직 못 고정했으므로 전문 수집은 보류한다.",
+        "matchedTitle": "春雨",
+        "notes": "이전 mini/mixed pilot의 `봄비` 단서를 재확인했다. ko Wikisource `조선여류한시선집/봄비` 개별 page가 `春雨暗西池` 본문을 제공하므로 seed title `春雨`의 direct-text로 승격한다. 번역문은 worker 산출물에 넣지 않고 원문과 독음만 보존한다.",
         "ownedTranslationNeeded": true
       }
     },
@@ -9256,7 +9649,8 @@
       "text": {
         "poemZh": "豈是乏容色。工鍼復工織。少小長寒門。良媒不相識。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -9319,7 +9713,8 @@
       "text": {
         "poemZh": "夜久織未休。戛戛鳴寒機。機中一匹練。終作阿誰衣。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -9382,7 +9777,8 @@
       "text": {
         "poemZh": "手把金翦刀。夜寒十指直。爲人作嫁衣。年年還獨宿。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -9445,7 +9841,8 @@
       "text": {
         "poemZh": "去年喪愛女\n今年喪愛子\n哀哀廣陵土\n雙墳相對起\n蕭蕭白楊風\n鬼火明松楸\n紙錢招汝魄\n玄酒奠汝丘\n應知弟兄魂\n夜夜相追遊\n縱有腹中孩\n安可冀長成\n浪吟黃臺詞\n血泣悲呑聲",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -9508,7 +9905,8 @@
       "text": {
         "poemZh": "梧桐生嶧陽。幾年傲寒陰。幸遇稀代工。劚取爲鳴琴。琴成彈一曲。擧世無知音。所以廣陵散。終古聲堙沈。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -9571,7 +9969,8 @@
       "text": {
         "poemZh": "鳳凰出丹穴。九苞燦文章。覽德翔千仞。噦噦鳴朝陽。稻梁非所求。竹實乃其飡。奈何梧桐枝。反棲鴟與鳶。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -9634,7 +10033,8 @@
       "text": {
         "poemZh": "我有一端綺。拂拭光凌亂。對織雙鳳凰。文章何燦爛。幾年篋中藏。今朝持贈郞。不惜作君袴。莫作他人裳。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -9697,7 +10097,8 @@
       "text": {
         "poemZh": "精金凝寶氣。鏤作半月光。嫁時舅姑贈。繫在紅羅裳。今日贈君行。願君爲雜佩。不惜棄道上。莫結新人帶。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -9760,7 +10161,8 @@
       "text": {
         "poemZh": "近者崔白輩。攻詩軌盛唐。寥寥大雅音。得此復鏗鏘。下僚困光祿。邊郡愁積薪。年位共零落。始信詩窮人。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -9823,7 +10225,8 @@
       "text": {
         "poemZh": "仙人騎綵鳳。夜下朝元宮。絳幡拂海雲。霓衣鳴春風。邀我瑤池岑。飮我流霞鐘。借我綠玉杖。登我芙蓉峯。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -9886,7 +10289,8 @@
       "text": {
         "poemZh": "有客自遠方。遺我雙鯉魚。剖之何所見。中有尺素書。上言長相思。下問今何如。讀書知君意。零淚沾衣裾。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -9949,7 +10353,8 @@
       "text": {
         "poemZh": "芳樹藹初綠。蘼蕪葉已齊。春物自姸華。我獨多悲悽。壁上五岳圖。牀頭參同契。煉丹倘有成。歸謁蒼梧帝。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -10012,7 +10417,8 @@
       "text": {
         "poemZh": "遠謫甲山客\n咸原行色忙\n臣同賈太傅\n主豈楚懷王\n河水平秋岸\n關雲欲夕陽\n霜風吹雁去\n中斷不成行",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -10075,7 +10481,8 @@
       "text": {
         "poemZh": "雨歇千山暮。煙生碧樹間。溪橋雲冉冉。野逕草蔓蔓。世事渾無賴。人生且自寬。何如拂塵迹。高嘯臥林巒。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -10138,7 +10545,8 @@
       "text": {
         "poemZh": "曉鷄鳴喔咿。裝束向何之。黯淡千山曉。凄涼一首詩。殘星隨月落。宿鳥訝人移。客路身多病。無端詠楚辭。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -10201,7 +10609,8 @@
       "text": {
         "poemZh": "淸平山色映人衣。慘淡煙光送落暉。巖溜洒空輕作霧。春蘿拱木碧成幃。玉沙瑤草人間遠。琪樹瓊花世慮微。只好誅茅棲絶頂。從今嘉遯莫相違。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -10264,7 +10673,8 @@
       "text": {
         "poemZh": "渡頭煙暝夕陽波。一葉扁舟一棹歌。鷗鷺不管人世變。雙雙飛過上灣渦。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -10327,7 +10737,8 @@
       "text": {
         "poemZh": "四十三年事已非。此身全與壯心違。神魚九變騰千里。大鳥三年欲一蜚。洗耳更尋東澗水。療飢薄采北山薇。從今陟覺歸歟處。雪竹霜筠老可依。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -10390,7 +10801,8 @@
       "text": {
         "poemZh": "碧瓦鱗鱗百萬家。當時歌舞鬪繁華。英雄一去風流盡。甓礫成塲薺有花。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -10453,7 +10865,8 @@
       "text": {
         "poemZh": "刈盡荒畦稻穗香。一番懽笑一番傷。何時盡入官租了。白酒黃鷄喚客嘗。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -10516,7 +10929,8 @@
       "text": {
         "poemZh": "繰出新絲白雪香。辛勤當日禿千乘。終然不分田家有。輸與閏妹作嫁裳。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -10579,7 +10993,8 @@
       "text": {
         "poemZh": "九天閶闔五更鍾。鵷鷺班齊劍佩瑢。酬唱詩聯慙賈杜。都兪制作見夔龍。春融瑞雪霑衣濕。朝退香烟滿袖濃。自顧鑾坡無寸効。扶歸日日醉黃封。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -10642,7 +11057,8 @@
       "text": {
         "poemZh": "花落鸎啼春日遅。踈簾細草雨絲絲。畫樓南畔移時立。惹起閑愁入小詩。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -10705,7 +11121,8 @@
       "text": {
         "poemZh": "客從山中來。爲言山中樂。山中少輪鞅。長與友麋鹿。朝飮飮玄液。夕飡飡黃菊。冥筌久已排。况乃寵與辱。我生非縛縶。胡爲苦偪側。駕言欲從之。浩歌獨於立。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -10768,7 +11185,8 @@
       "text": {
         "poemZh": "野彴平疇外，荒村一兩家。敗籬新綴竹，小圃未舒花。冷落餘書架，艱難有釣槎。狐丘幸遂願，生理不須嗟。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -10831,7 +11249,8 @@
       "text": {
         "poemZh": "北風吹我如飛雪，南抵康津賣飯家。幸有殘山遮海色，好將叢竹作年華。衣緣地瘴冬還減，酒爲愁多夜更加。一事纔能消客慮，山茶已吐臘前花。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -10894,7 +11313,8 @@
       "text": {
         "poemZh": "新篘濁酒如湩白，大碗麥飯高一尺。飯罷取耞登場立，雙肩漆澤翻日赤。呼邪作聲擧趾齊，須臾麥穗都狼藉。雜歌互答聲轉高，但見屋角紛飛麥。觀其氣色樂莫樂，了不以心爲形役。樂園樂郊不遠有，何苦去作風塵客？",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -10957,7 +11377,8 @@
       "text": {
         "poemZh": "疾風吹飜山竹枝，雨色遠自黃楡陂。數點磊砢白瑪瑙，一庭浩淼靑玻璃。門扉埤闔書帙亂，衣帶墮落鬚髮披。科頭兀坐讀〈九辯〉，擧杯痛飮憶〈五噫〉。人生戚戚將何補？快雨快風聊展眉。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -11020,7 +11441,8 @@
       "text": {
         "poemZh": "窮居四五年，六根久已息。獨有湖海志，浩蕩無終極。藏也信壽童，眇小噪南國。盛名若雷霆，豪桀願顏色。楊枝旣晨持，柹子先秋熟。窮山小蘭若，直臨淸海北。妙解自機悟，談說匪由臆。性不嗜詩律，時復塞窘逼。文章美耳白，宰相夸頭黑。三十師千人，豈非戾天翼？崎嶇爲一顧，捫蘿又披棘。願汝流謙光，推移詎費力？",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -11083,7 +11505,8 @@
       "text": {
         "poemZh": "林亭秋已晚。騷客意無窮。遠水連天碧。霜楓向日紅。山吐孤輪月。江含萬里風。塞鴻何處去。聲斷暮雲中。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -11146,7 +11569,8 @@
       "text": {
         "poemZh": "步屧松林下。開樽空翠來。雨昏鴻外岫。溪漱石邊苔。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -11209,7 +11633,8 @@
       "text": {
         "poemZh": "地勢千山小。泉源萬壑分。高人獨昏曉。迎送只閒雲。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -11272,7 +11697,8 @@
       "text": {
         "poemZh": "寶蓋山容入望中。洞門應有白雲封。遙知隱者饒春睡。松下殘棊斂未終。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -11335,7 +11761,8 @@
       "text": {
         "poemZh": "採藥忽迷路。千峯秋葉裏。山僧汲水歸。林末茶煙起。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -11398,7 +11825,8 @@
       "text": {
         "poemZh": "山雨夜鳴竹。草虫秋近床。流年那可駐。白髮不禁長。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -11461,7 +11889,8 @@
       "text": {
         "poemZh": "宇宙殘生在。江湖白髮多。明時休痛哭。醉後一長歌。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -11524,7 +11953,8 @@
       "text": {
         "poemZh": "遠岫頻晴雨。漁村乍有無。孤舟一片月。萬里照平湖。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -11587,7 +12017,8 @@
       "text": {
         "poemZh": "追到廣陵上。仙舟已杳冥。秋風滿江思。斜日獨登亭。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -11650,7 +12081,8 @@
       "text": {
         "poemZh": "去國一千里。天涯又見秋。孤臣已白髮。獨上祝堯樓。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -11713,7 +12145,8 @@
       "text": {
         "poemZh": "魚躍鳶飛上下同。這般非色亦非空。等閒一笑看身世。獨立斜陽萬木中。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -11776,7 +12209,8 @@
       "text": {
         "poemZh": "石逕高低入洞門。洞中飛瀑怒雷奔。巖橫萬古難消雪。山聳千秋不散雲。獅子峯前披翠霧。火龍淵上坐黃昏。夜投普德禪菴宿。鶴唳猿啼攪夢魂。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -11839,7 +12273,8 @@
       "text": {
         "poemZh": "嵯峨雪峯幾千仞。鳥道人行白雲外。靑藜戛上犖确中。兩眼漸覺東丘隘。夜投禪室徹曉坐。時聽笙簫來上界。金鷄一鳴登絶頂。萬境熹微天尙昧。須臾火光漲天地。不辨滄波與曉靄。朱輪轉上數竿高。一朶彩雲如傘蓋。靑紅漸分水與天。極目始知東海大。扶桑暘谷渺何處。欲看出處知無奈。秦皇夸父等小兒。千載令人起一喟。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -11902,7 +12337,8 @@
       "text": {
         "poemZh": "何處人閒有廣居。百年身世是蘧廬。初回海外游山夢。一盞靑燈照古書。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -11965,7 +12401,8 @@
       "text": {
         "poemZh": "子半一陽動。天心妙難議。若識無中有。雷聲殷大地。中宵點新火。耿耿坐不寐。及此夜氣淸。默念玄機祕。向來剝牀膚。萬彙困凋瘁。春回九泉底。萌蘖含生意。一氣互動靜。闔闢誰汝使。感彼天運復。省心還惴惴。噫我參三極。精氣秀萬類。明德皎日月。斯皇天所畀。妄念蝕本明。始微終轉熾。山木困斧斤。天眞泪私僞。二十五年閒。沈迷夢中醉。追思昨者非。令人發驚悸。我今痛自誓。昊天應聽視。色爲伐性斧。胡爲留汝思。若使敬爲主。染心安所自。名乃實之賓。莫以文爲事。用功於實地。繡繪何暇嗜。家貧親已老。念之常不置。君子養以善。三牲不足比。苟能素其位。所居常坦易。外貌不莊肅。怠慢於斯萃。散坐與空談。畢竟非善戲。衣冠必整飭。言語愼勿費。中心不專一。邪思所窺覬。擾擾起復滅。火炎兼馬駛。截斷前後際。卓立恒勿貳。愼獨與不息。聖謨斯爲至。參前復倚衡。不可須臾離。處心廓如天。屋漏可無愧。任重且道遠。要以志爲帥。九仞今正始。莫使虧一簣。冥觀天地化。至健功乃施。爲人不法此。有身乃自棄。但使泥塵盡。水鏡元無累。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -12028,7 +12465,8 @@
       "text": {
         "poemZh": "今日忽不樂。杖策登北林。雪消遠山淨。日落浮雲陰。蕭蕭叢薄間。磔磔喧衆禽。衆禽各有侶。客子方獨吟。美人在天端。悵望傷我心。巾車欲有往。道路多嶇嶔。朅來理舟楫。滄海闊且深。坐看高飛鴻。涕下沾衣襟。夜歸寒檐臥。夢行湘水潯。臨水弔楚魂。碧水空沈沈。回首叫虞舜。但見雲外岑。古有遠別離。此恨寧獨今。去去勿復念。芳樽聊自斟。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -12091,7 +12529,8 @@
       "text": {
         "poemZh": "黃雀何翩翩。寄巢枯葦枝。江天喟然風。葦折巢仍欹。巢破不足惜。卵破良可悲。雄雌飛且鳴。日夕無所依。君看彼黃雀。物理因可推。結巢豈不固。所託非其宜。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -12154,7 +12593,8 @@
       "text": {
         "poemZh": "種蘭盈九畹。雨露日芳菲。坐冀枝葉茂。庶用充佩幃。嚴霜昨夜下。百草倏已腓。杉篁尙不免。況乃蕙茝微。仰視白日光。有淚霑我衣。豈徒感時節。君子有所思。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -12217,7 +12657,8 @@
       "text": {
         "poemZh": "朝日自何來。夕日向何去。一朝復一夕。白髮遽如許。少年志氣壯。長嘯望伊呂。方圓豈相謀。與世實鉏鋙。始也多毀譽。終焉寡儔侶。況逢干戈際。漂泊忍羈旅。溝壑幸而免。疾病固其所。皎皎平生心。壹鬱誰與語。手掇秋菊英。願貽高兵女。佳期未易得。歲暮徒延佇。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -12280,7 +12721,8 @@
       "text": {
         "poemZh": "切切何切切。有婦當道哭。問婦何哭爲。夫壻遠行役。謂言卽顧反。三載絶消息。一女未離乳。賤妾無筋力。高堂有舅姑。何以備饘粥。拾穗野田中。歲暮衣裳薄。北風吹郊墟。寒日慘將夕。獨歸茅簷底。哀怨豈終極。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -12343,7 +12785,8 @@
       "text": {
         "poemZh": "人無置錐地。而我本無錐。物量有定分。盜誇非所期。蓬蒿原憲宅。霖雨子來詩。去者雖已遠。淸風猶可追。",
         "poemKoReading": null,
-        "poemKoGloss": null
+        "poemKoGloss": null,
+        "textParts": null
       },
       "assets": {
         "translationKo": null,
@@ -12372,6 +12815,3111 @@
         "notes": "石洲集 卷一에서 확인한 빈궁 소재 단편. 사회시·자기 풍자 양쪽 설명에 활용할 수 있다.",
         "ownedTranslationNeeded": true
       }
+    },
+    {
+      "poemId": "KPOEM-DONGGYEONG-JAPGI-1-H-0001",
+      "canonicalId": "KPOEM-CANON-DONGGYEONG-JAPGI-1-H-0001",
+      "title": {
+        "zh": "月顚",
+        "ko": "月顚"
+      },
+      "author": {
+        "authorId": "KAUTH-CHOE-CHIWON",
+        "zh": "崔致遠",
+        "ko": "최치원"
+      },
+      "era": {
+        "label": "신라 말"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "칠언절구",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "東京雜記 卷一",
+        "juan": "卷一",
+        "entryTitle": "月顚詩",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%80",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "肩高項縮髮崔嵬\n攘臂群儒鬪酒盃\n聽得歌聲人盡笑\n夜頭旗幟曉頭催",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json",
+        "workerId": "donggyeong-japgi-bundle-import",
+        "candidateTitle": "月顚",
+        "matchedTitle": "月顚",
+        "harvestId": "KHS-TZ1-H-0001",
+        "ownedTranslationNeeded": true,
+        "notes": "동경잡기 전권 bundle에서 기존 seed 시인과 매칭된 작품을 1차 승격함"
+      },
+      "collectionWitnesses": [
+        {
+          "variantType": "collection-witness",
+          "collectionId": "korean-classics-donggyeong-japgi",
+          "collectionTitle": "東京雜記",
+          "collectionTitleKo": "동경잡기",
+          "collectionTitleRomanization": "Donggyeong Japgi",
+          "harvestId": "KHS-TZ1-H-0001",
+          "documentEntryId": "KHS-TZ1-D-0008",
+          "documentSectionId": "KHS-TZ1-S-0012",
+          "displayLabelZh": "月顚詩",
+          "titleHintZh": null,
+          "authorNormalization": {
+            "rawLabelZh": "月顚",
+            "normalizedAuthorZh": "崔致遠",
+            "confidence": "high",
+            "titlePrefixZh": "月顚",
+            "note": "鄕樂 五技 연작 표제 정리 규칙"
+          },
+          "sourceWork": {
+            "collectionTitle": "東京雜記 卷一",
+            "juan": "卷一",
+            "entryTitle": "月顚詩",
+            "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%80",
+            "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+            "verificationStatus": "verified-direct-text"
+          },
+          "text": {
+            "poemZh": "肩高項縮髮崔嵬\n攘臂群儒鬪酒盃\n聽得歌聲人盡笑\n夜頭旗幟曉頭催"
+          },
+          "ingest": {
+            "readiness": "direct-text-collected",
+            "targetDb": "poems",
+            "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+          }
+        }
+      ]
+    },
+    {
+      "poemId": "KPOEM-DONGGYEONG-JAPGI-1-H-0002",
+      "canonicalId": "KPOEM-CANON-DONGGYEONG-JAPGI-1-H-0002",
+      "title": {
+        "zh": "大面",
+        "ko": "大面"
+      },
+      "author": {
+        "authorId": "KAUTH-CHOE-CHIWON",
+        "zh": "崔致遠",
+        "ko": "최치원"
+      },
+      "era": {
+        "label": "신라 말"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "칠언절구",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "東京雜記 卷一",
+        "juan": "卷一",
+        "entryTitle": "大面詩",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%80",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "黃金面色是其人\n手抱珠鞭役鬼神\n疾步徐趍呈雅舞\n宛如丹鳳舞堯春",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json",
+        "workerId": "donggyeong-japgi-bundle-import",
+        "candidateTitle": "大面",
+        "matchedTitle": "大面",
+        "harvestId": "KHS-TZ1-H-0002",
+        "ownedTranslationNeeded": true,
+        "notes": "동경잡기 전권 bundle에서 기존 seed 시인과 매칭된 작품을 1차 승격함"
+      },
+      "collectionWitnesses": [
+        {
+          "variantType": "collection-witness",
+          "collectionId": "korean-classics-donggyeong-japgi",
+          "collectionTitle": "東京雜記",
+          "collectionTitleKo": "동경잡기",
+          "collectionTitleRomanization": "Donggyeong Japgi",
+          "harvestId": "KHS-TZ1-H-0002",
+          "documentEntryId": "KHS-TZ1-D-0009",
+          "documentSectionId": "KHS-TZ1-S-0012",
+          "displayLabelZh": "大面詩",
+          "titleHintZh": null,
+          "authorNormalization": {
+            "rawLabelZh": "大面",
+            "normalizedAuthorZh": "崔致遠",
+            "confidence": "high",
+            "titlePrefixZh": "大面",
+            "note": "鄕樂 五技 연작 표제 정리 규칙"
+          },
+          "sourceWork": {
+            "collectionTitle": "東京雜記 卷一",
+            "juan": "卷一",
+            "entryTitle": "大面詩",
+            "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%80",
+            "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+            "verificationStatus": "verified-direct-text"
+          },
+          "text": {
+            "poemZh": "黃金面色是其人\n手抱珠鞭役鬼神\n疾步徐趍呈雅舞\n宛如丹鳳舞堯春"
+          },
+          "ingest": {
+            "readiness": "direct-text-collected",
+            "targetDb": "poems",
+            "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+          }
+        }
+      ]
+    },
+    {
+      "poemId": "KPOEM-DONGGYEONG-JAPGI-1-H-0003",
+      "canonicalId": "KPOEM-CANON-DONGGYEONG-JAPGI-1-H-0003",
+      "title": {
+        "zh": "束毒",
+        "ko": "束毒"
+      },
+      "author": {
+        "authorId": "KAUTH-CHOE-CHIWON",
+        "zh": "崔致遠",
+        "ko": "최치원"
+      },
+      "era": {
+        "label": "신라 말"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "칠언절구",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "東京雜記 卷一",
+        "juan": "卷一",
+        "entryTitle": "束毒詩",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%80",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "蓬頭藍面異人間\n押隊來庭學舞鸞\n打鼓鼕鼕風瑟瑟\n南奔北躍也無端",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json",
+        "workerId": "donggyeong-japgi-bundle-import",
+        "candidateTitle": "束毒",
+        "matchedTitle": "束毒",
+        "harvestId": "KHS-TZ1-H-0003",
+        "ownedTranslationNeeded": true,
+        "notes": "동경잡기 전권 bundle에서 기존 seed 시인과 매칭된 작품을 1차 승격함"
+      },
+      "collectionWitnesses": [
+        {
+          "variantType": "collection-witness",
+          "collectionId": "korean-classics-donggyeong-japgi",
+          "collectionTitle": "東京雜記",
+          "collectionTitleKo": "동경잡기",
+          "collectionTitleRomanization": "Donggyeong Japgi",
+          "harvestId": "KHS-TZ1-H-0003",
+          "documentEntryId": "KHS-TZ1-D-0010",
+          "documentSectionId": "KHS-TZ1-S-0012",
+          "displayLabelZh": "束毒詩",
+          "titleHintZh": null,
+          "authorNormalization": {
+            "rawLabelZh": "束毒",
+            "normalizedAuthorZh": "崔致遠",
+            "confidence": "high",
+            "titlePrefixZh": "束毒",
+            "note": "鄕樂 五技 연작 표제 정리 규칙"
+          },
+          "sourceWork": {
+            "collectionTitle": "東京雜記 卷一",
+            "juan": "卷一",
+            "entryTitle": "束毒詩",
+            "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%80",
+            "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+            "verificationStatus": "verified-direct-text"
+          },
+          "text": {
+            "poemZh": "蓬頭藍面異人間\n押隊來庭學舞鸞\n打鼓鼕鼕風瑟瑟\n南奔北躍也無端"
+          },
+          "ingest": {
+            "readiness": "direct-text-collected",
+            "targetDb": "poems",
+            "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+          }
+        }
+      ]
+    },
+    {
+      "poemId": "KPOEM-DONGGYEONG-JAPGI-1-H-0004",
+      "canonicalId": "KPOEM-CANON-DONGGYEONG-JAPGI-1-H-0004",
+      "title": {
+        "zh": "狻猊",
+        "ko": "狻猊"
+      },
+      "author": {
+        "authorId": "KAUTH-CHOE-CHIWON",
+        "zh": "崔致遠",
+        "ko": "최치원"
+      },
+      "era": {
+        "label": "신라 말"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "칠언절구",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "東京雜記 卷一",
+        "juan": "卷一",
+        "entryTitle": "狻猊詩",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%80",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "遠涉流沙萬理來\n毛衣破盡着塵埃\n搖頭掉尾馴仁德\n雄氣寧同百戰才",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json",
+        "workerId": "donggyeong-japgi-bundle-import",
+        "candidateTitle": "狻猊",
+        "matchedTitle": "狻猊",
+        "harvestId": "KHS-TZ1-H-0004",
+        "ownedTranslationNeeded": true,
+        "notes": "동경잡기 전권 bundle에서 기존 seed 시인과 매칭된 작품을 1차 승격함"
+      },
+      "collectionWitnesses": [
+        {
+          "variantType": "collection-witness",
+          "collectionId": "korean-classics-donggyeong-japgi",
+          "collectionTitle": "東京雜記",
+          "collectionTitleKo": "동경잡기",
+          "collectionTitleRomanization": "Donggyeong Japgi",
+          "harvestId": "KHS-TZ1-H-0004",
+          "documentEntryId": "KHS-TZ1-D-0011",
+          "documentSectionId": "KHS-TZ1-S-0012",
+          "displayLabelZh": "狻猊詩",
+          "titleHintZh": null,
+          "authorNormalization": {
+            "rawLabelZh": "狻猊",
+            "normalizedAuthorZh": "崔致遠",
+            "confidence": "high",
+            "titlePrefixZh": "狻猊",
+            "note": "鄕樂 五技 연작 표제 정리 규칙"
+          },
+          "sourceWork": {
+            "collectionTitle": "東京雜記 卷一",
+            "juan": "卷一",
+            "entryTitle": "狻猊詩",
+            "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%80",
+            "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+            "verificationStatus": "verified-direct-text"
+          },
+          "text": {
+            "poemZh": "遠涉流沙萬理來\n毛衣破盡着塵埃\n搖頭掉尾馴仁德\n雄氣寧同百戰才"
+          },
+          "ingest": {
+            "readiness": "direct-text-collected",
+            "targetDb": "poems",
+            "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+          }
+        }
+      ]
+    },
+    {
+      "poemId": "KPOEM-DONGGYEONG-JAPGI-1-H-0006",
+      "canonicalId": "KPOEM-CANON-DONGGYEONG-JAPGI-1-H-0006",
+      "title": {
+        "zh": "金克己詩",
+        "ko": "金克己詩"
+      },
+      "author": {
+        "authorId": "KAUTH-KIM-GEUKGI",
+        "zh": "金克己",
+        "ko": "김극기"
+      },
+      "era": {
+        "label": "고려 중기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "오언고시",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "東京雜記 卷一",
+        "juan": "卷一",
+        "entryTitle": "金克己詩",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%80",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "東皇一手恩\n萬彙均沾被\n花心驚惠風\n鳥聲感和氣\n朱朱上緋桃\n白白尋練李\n鶯舌鬪歌童\n燕腰欺舞妓\n占斷艶陽天\n追攀幽勝地\n將升兎嶺巓\n却並蚊川涘\n仰空遙送目\n臨岸靜傾耳\n屛開簇簇山\n鏡轉溶溶水\n雲端帖黃鵠\n浪面跳紫鯉\n幽馨掬蕙蘭\n秀色飡荷芰\n美景苦難逢\n浮生寧久恃\n要成域外遊\n都遣人間累\n走筆縱狂吟\n飛觴誇爛醉\n是非兩忘筌\n榮悴俱脫屣\n綠醅猶未闌\n紅晷忽將墜\n今夕是何時\n此身誰氏子\n若非蓬島仙\n眞箇漆園吏\n浮休尙忘情\n去住寧介意\n擧頭謝煙霞\n扶腋回杖履\n但恐車馬場\n晨興趁聲利",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json",
+        "workerId": "donggyeong-japgi-bundle-import",
+        "candidateTitle": "金克己詩",
+        "matchedTitle": "金克己詩",
+        "harvestId": "KHS-TZ1-H-0006",
+        "ownedTranslationNeeded": true,
+        "notes": "동경잡기 전권 bundle에서 기존 seed 시인과 매칭된 작품을 1차 승격함",
+        "sourceFiles": [
+          "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+        ],
+        "duplicateSourceCount": 6
+      },
+      "collectionWitnesses": [
+        {
+          "variantType": "collection-witness",
+          "collectionId": "korean-classics-donggyeong-japgi",
+          "collectionTitle": "東京雜記",
+          "collectionTitleKo": "동경잡기",
+          "collectionTitleRomanization": "Donggyeong Japgi",
+          "harvestId": "KHS-TZ1-H-0006",
+          "documentEntryId": "KHS-TZ1-D-0054",
+          "documentSectionId": "KHS-TZ1-S-0013",
+          "displayLabelZh": "金克己詩",
+          "titleHintZh": null,
+          "authorNormalization": {
+            "rawLabelZh": "金克己",
+            "normalizedAuthorZh": "金克己",
+            "confidence": "high",
+            "titlePrefixZh": null,
+            "note": "일반적인 한자 인명 형태로 판단"
+          },
+          "sourceWork": {
+            "collectionTitle": "東京雜記 卷一",
+            "juan": "卷一",
+            "entryTitle": "金克己詩",
+            "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%80",
+            "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+            "verificationStatus": "verified-direct-text"
+          },
+          "text": {
+            "poemZh": "東皇一手恩\n萬彙均沾被\n花心驚惠風\n鳥聲感和氣\n朱朱上緋桃\n白白尋練李\n鶯舌鬪歌童\n燕腰欺舞妓\n占斷艶陽天\n追攀幽勝地\n將升兎嶺巓\n却並蚊川涘\n仰空遙送目\n臨岸靜傾耳\n屛開簇簇山\n鏡轉溶溶水\n雲端帖黃鵠\n浪面跳紫鯉\n幽馨掬蕙蘭\n秀色飡荷芰\n美景苦難逢\n浮生寧久恃\n要成域外遊\n都遣人間累\n走筆縱狂吟\n飛觴誇爛醉\n是非兩忘筌\n榮悴俱脫屣\n綠醅猶未闌\n紅晷忽將墜\n今夕是何時\n此身誰氏子\n若非蓬島仙\n眞箇漆園吏\n浮休尙忘情\n去住寧介意\n擧頭謝煙霞\n扶腋回杖履\n但恐車馬場\n晨興趁聲利"
+          },
+          "ingest": {
+            "readiness": "direct-text-collected",
+            "targetDb": "poems",
+            "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+          }
+        }
+      ],
+      "sourceVariants": [
+        {
+          "variantType": "collection-witness",
+          "collectionId": "korean-classics-donggyeong-japgi",
+          "collectionTitle": "東京雜記",
+          "collectionTitleKo": "동경잡기",
+          "collectionTitleRomanization": "Donggyeong Japgi",
+          "harvestId": "KHS-TZ1-H-0023",
+          "documentEntryId": "KHS-TZ1-D-0229",
+          "documentSectionId": "KHS-TZ1-S-0022",
+          "displayLabelZh": "金克己詩",
+          "titleHintZh": null,
+          "authorNormalization": {
+            "rawLabelZh": "金克己",
+            "normalizedAuthorZh": "金克己",
+            "confidence": "high",
+            "titlePrefixZh": null,
+            "note": "일반적인 한자 인명 형태로 판단"
+          },
+          "sourceWork": {
+            "collectionTitle": "東京雜記 卷一",
+            "juan": "卷一",
+            "entryTitle": "金克己詩",
+            "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%80",
+            "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+            "verificationStatus": "verified-direct-text"
+          },
+          "text": {
+            "poemZh": "何處堪惆悵\n晨興遠邁時\n登途雖促促\n去國尙遲遲\n嶺杪新曦湧\n林間宿霧披\n擧杯無與語\n庭樹綠猗猗"
+          },
+          "ingest": {
+            "readiness": "direct-text-collected",
+            "targetDb": "poems",
+            "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+          }
+        },
+        {
+          "variantType": "collection-witness",
+          "collectionId": "korean-classics-donggyeong-japgi",
+          "collectionTitle": "東京雜記",
+          "collectionTitleKo": "동경잡기",
+          "collectionTitleRomanization": "Donggyeong Japgi",
+          "harvestId": "KHS-TZ1-H-0025",
+          "documentEntryId": "KHS-TZ1-D-0237",
+          "documentSectionId": "KHS-TZ1-S-0022",
+          "displayLabelZh": "金克己詩",
+          "titleHintZh": null,
+          "authorNormalization": {
+            "rawLabelZh": "金克己",
+            "normalizedAuthorZh": "金克己",
+            "confidence": "high",
+            "titlePrefixZh": null,
+            "note": "일반적인 한자 인명 형태로 판단"
+          },
+          "sourceWork": {
+            "collectionTitle": "東京雜記 卷一",
+            "juan": "卷一",
+            "entryTitle": "金克己詩",
+            "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%80",
+            "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+            "verificationStatus": "verified-direct-text"
+          },
+          "text": {
+            "poemZh": "鄕心萬里久搖旌\n忽向家山振策行\n遙嶺漸沈他界色\n亂流初放故園聲\n會收斷梗隨風迹\n持慰浮雲戀岫情\n世上榮枯堪一笑\n何須櫌櫌苦馳名"
+          },
+          "ingest": {
+            "readiness": "direct-text-collected",
+            "targetDb": "poems",
+            "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+          }
+        },
+        {
+          "variantType": "collection-witness",
+          "collectionId": "korean-classics-donggyeong-japgi",
+          "collectionTitle": "東京雜記",
+          "collectionTitleKo": "동경잡기",
+          "collectionTitleRomanization": "Donggyeong Japgi",
+          "harvestId": "KHS-TZ2-H-0001",
+          "documentEntryId": "KHS-TZ2-D-0002",
+          "documentSectionId": "KHS-TZ2-S-0001",
+          "displayLabelZh": "金克己詩",
+          "titleHintZh": null,
+          "authorNormalization": {
+            "rawLabelZh": "金克己",
+            "normalizedAuthorZh": "金克己",
+            "confidence": "high",
+            "titlePrefixZh": null,
+            "note": "일반적인 한자 인명 형태로 판단"
+          },
+          "sourceWork": {
+            "collectionTitle": "東京雜記 卷二",
+            "juan": "卷二",
+            "entryTitle": "金克己詩",
+            "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%BA%8C",
+            "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+            "verificationStatus": "verified-direct-text"
+          },
+          "text": {
+            "poemZh": "苔繞空階竹拂簷\n境淸不復受朱炎\n僧閑雅笑廻黃眼\n客醉高談奮紫髥\n蓮沼我常尋慧遠\n柳門公亦引陶潛\n含杯傲兀忘歸路\n浙瀝殘陽下半簾"
+          },
+          "ingest": {
+            "readiness": "direct-text-collected",
+            "targetDb": "poems",
+            "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+          }
+        },
+        {
+          "variantType": "collection-witness",
+          "collectionId": "korean-classics-donggyeong-japgi",
+          "collectionTitle": "東京雜記",
+          "collectionTitleKo": "동경잡기",
+          "collectionTitleRomanization": "Donggyeong Japgi",
+          "harvestId": "KHS-TZ2-H-0014",
+          "documentEntryId": "KHS-TZ2-D-0062",
+          "documentSectionId": "KHS-TZ2-S-0002",
+          "displayLabelZh": "金克己詩",
+          "titleHintZh": null,
+          "authorNormalization": {
+            "rawLabelZh": "金克己",
+            "normalizedAuthorZh": "金克己",
+            "confidence": "high",
+            "titlePrefixZh": null,
+            "note": "일반적인 한자 인명 형태로 판단"
+          },
+          "sourceWork": {
+            "collectionTitle": "東京雜記 卷二",
+            "juan": "卷二",
+            "entryTitle": "金克己詩",
+            "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%BA%8C",
+            "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+            "verificationStatus": "verified-direct-text"
+          },
+          "text": {
+            "poemZh": "玉貌催魂隔世\n空端只見層巓\n神女雨收巫峽\n麗人風斷洛川\n雲學舞衫曳地\n月偸歌扇當天\n行客幾傷芳性\n滿巾紅淚泫然"
+          },
+          "ingest": {
+            "readiness": "direct-text-collected",
+            "targetDb": "poems",
+            "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+          }
+        },
+        {
+          "variantType": "collection-witness",
+          "collectionId": "korean-classics-donggyeong-japgi",
+          "collectionTitle": "東京雜記",
+          "collectionTitleKo": "동경잡기",
+          "collectionTitleRomanization": "Donggyeong Japgi",
+          "harvestId": "KHS-TZ2-H-0017",
+          "documentEntryId": "KHS-TZ2-D-0073",
+          "documentSectionId": "KHS-TZ2-S-0002",
+          "displayLabelZh": "金克己詩",
+          "titleHintZh": null,
+          "authorNormalization": {
+            "rawLabelZh": "金克己",
+            "normalizedAuthorZh": "金克己",
+            "confidence": "high",
+            "titlePrefixZh": null,
+            "note": "일반적인 한자 인명 형태로 판단"
+          },
+          "sourceWork": {
+            "collectionTitle": "東京雜記 卷二",
+            "juan": "卷二",
+            "entryTitle": "金克己詩",
+            "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%BA%8C",
+            "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+            "verificationStatus": "verified-direct-text"
+          },
+          "text": {
+            "poemZh": "半月城南兎嶺邊\n虹橋倒影照蚊川\n蜿蜒騰漢尾垂地\n螮蝀飮河腰跨天\n手斬蒼蛟周處勇\n身成白鶴令威仙\n昔賢逸跡皆驚俗\n慚愧區區數往還"
+          },
+          "ingest": {
+            "readiness": "direct-text-collected",
+            "targetDb": "poems",
+            "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+          }
+        },
+        {
+          "variantType": "collection-witness",
+          "collectionId": "korean-classics-donggyeong-japgi",
+          "collectionTitle": "東京雜記",
+          "collectionTitleKo": "동경잡기",
+          "collectionTitleRomanization": "Donggyeong Japgi",
+          "harvestId": "KHS-TZ2-H-0019",
+          "documentEntryId": "KHS-TZ2-D-0088",
+          "documentSectionId": "KHS-TZ2-S-0002",
+          "displayLabelZh": "金克己詩",
+          "titleHintZh": null,
+          "authorNormalization": {
+            "rawLabelZh": "金克己",
+            "normalizedAuthorZh": "金克己",
+            "confidence": "high",
+            "titlePrefixZh": null,
+            "note": "일반적인 한자 인명 형태로 판단"
+          },
+          "sourceWork": {
+            "collectionTitle": "東京雜記 卷二",
+            "juan": "卷二",
+            "entryTitle": "金克己詩",
+            "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%BA%8C",
+            "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+            "verificationStatus": "verified-direct-text"
+          },
+          "text": {
+            "poemZh": "五侯耽耽宇\n當夏不受暑\n炎官恥失威\n陋屋煩遷怒\n焦心愁似火\n爍體汗如雨\n願隨葉靜能\n飛入淸虛府\n身騎靑瑤蟾\n手弄白玉兎\n可惜凡骨腥\n雲霄失歸路\n不如叩幽人\n霑灑淸軟語\n曉起理枯藤\n來尋西社主\n蝸蜒繞砌苔\n鳥哢侵雲樹\n殿閣誇壯麗\n尋空欲飛去\n一室曼陁花\n繽紛落玉塵\n坐久黃金鴨\n沈煙橫篆縷\n活火試芳茶\n花甕浮白乳\n香甛味尤永\n一啜空百慮\n暮色入平林\n長廊鳴法鼓\n才微萬象驕\n把筆吟尤苦"
+          },
+          "ingest": {
+            "readiness": "direct-text-collected",
+            "targetDb": "poems",
+            "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+          }
+        }
+      ]
+    },
+    {
+      "poemId": "KPOEM-DONGGYEONG-JAPGI-1-H-0007",
+      "canonicalId": "KPOEM-CANON-DONGGYEONG-JAPGI-1-H-0007",
+      "title": {
+        "zh": "祓禊",
+        "ko": "祓禊"
+      },
+      "author": {
+        "authorId": "KAUTH-KIM-GEUKGI",
+        "zh": "金克己",
+        "ko": "김극기"
+      },
+      "era": {
+        "label": "고려 중기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "칠언고시",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "東京雜記 卷一",
+        "juan": "卷一",
+        "entryTitle": "又祓禊詩",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%80",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "今年濕蟄少開霽\n十日愁霖如倒河\n忽喜陰雲淨似掃\n南山萬朶開靑螺\n逸勢橫奔五百里\n中塗拗怒成坡陀\n下有蚊川一帶水\n千盤萬折流逶蛇\n走向月精橋口過\n驚瀾崩碎響鳴珂\n嚴莊樓下漸汗漫\n浪息沙平鋪蜀羅\n洛邑諸生十萬指\n臨流祓禊肩相磨\n良辰美景古難必\n盛集誰辭追永和\n而予況又少放狂\n擬拖紅船隨素波\n胡爲忿忿向學舍\n促席共倒金叵羅\n葡萄綠漲色可掇\n痛飮不省朱顔陀\n淸歡半酣客未散\n竹外紅日先蹉陀\n乘酣意氣忽橫出\n欲上靑天橫魯戈",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json",
+        "workerId": "donggyeong-japgi-bundle-import",
+        "candidateTitle": "祓禊",
+        "matchedTitle": "祓禊",
+        "harvestId": "KHS-TZ1-H-0007",
+        "ownedTranslationNeeded": true,
+        "notes": "동경잡기 전권 bundle에서 기존 seed 시인과 매칭된 작품을 1차 승격함"
+      },
+      "collectionWitnesses": [
+        {
+          "variantType": "collection-witness",
+          "collectionId": "korean-classics-donggyeong-japgi",
+          "collectionTitle": "東京雜記",
+          "collectionTitleKo": "동경잡기",
+          "collectionTitleRomanization": "Donggyeong Japgi",
+          "harvestId": "KHS-TZ1-H-0007",
+          "documentEntryId": "KHS-TZ1-D-0055",
+          "documentSectionId": "KHS-TZ1-S-0013",
+          "displayLabelZh": "又祓禊詩",
+          "titleHintZh": null,
+          "authorNormalization": {
+            "rawLabelZh": "又祓禊",
+            "normalizedAuthorZh": "金克己",
+            "confidence": "medium",
+            "titlePrefixZh": "祓禊",
+            "note": "兄山浦 金克己詩 뒤에 이어지는 又題 표제 정리 규칙"
+          },
+          "sourceWork": {
+            "collectionTitle": "東京雜記 卷一",
+            "juan": "卷一",
+            "entryTitle": "又祓禊詩",
+            "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%80",
+            "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+            "verificationStatus": "verified-direct-text"
+          },
+          "text": {
+            "poemZh": "今年濕蟄少開霽\n十日愁霖如倒河\n忽喜陰雲淨似掃\n南山萬朶開靑螺\n逸勢橫奔五百里\n中塗拗怒成坡陀\n下有蚊川一帶水\n千盤萬折流逶蛇\n走向月精橋口過\n驚瀾崩碎響鳴珂\n嚴莊樓下漸汗漫\n浪息沙平鋪蜀羅\n洛邑諸生十萬指\n臨流祓禊肩相磨\n良辰美景古難必\n盛集誰辭追永和\n而予況又少放狂\n擬拖紅船隨素波\n胡爲忿忿向學舍\n促席共倒金叵羅\n葡萄綠漲色可掇\n痛飮不省朱顔陀\n淸歡半酣客未散\n竹外紅日先蹉陀\n乘酣意氣忽橫出\n欲上靑天橫魯戈"
+          },
+          "ingest": {
+            "readiness": "direct-text-collected",
+            "targetDb": "poems",
+            "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+          }
+        }
+      ]
+    },
+    {
+      "poemId": "KPOEM-DONGGYEONG-JAPGI-1-H-0018",
+      "canonicalId": "KPOEM-CANON-DONGGYEONG-JAPGI-1-H-0018",
+      "title": {
+        "zh": "稼亭",
+        "ko": "稼亭"
+      },
+      "author": {
+        "authorId": "KAUTH-AUTHOR-EC9DB4EA",
+        "zh": "李穀",
+        "ko": "이곡"
+      },
+      "era": {
+        "label": "고려 후기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "칠언율시",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "東京雜記 卷一",
+        "juan": "卷一",
+        "entryTitle": "稼亭李穀詩",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%80",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "東都文物尙繁華\n更起高樓不紫霞\n城郭千年羅代樹\n閭閻一半梵王家\n珠簾捲盡山如畵\n玉笛吹殘日未斜\n倚柱吟詩還自笑\n重來不必要籠紗",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json",
+        "workerId": "donggyeong-japgi-bundle-import",
+        "candidateTitle": "稼亭",
+        "matchedTitle": "稼亭",
+        "harvestId": "KHS-TZ1-H-0018",
+        "ownedTranslationNeeded": true,
+        "notes": "동경잡기 전권 bundle에서 기존 seed 시인과 매칭된 작품을 1차 승격함"
+      },
+      "collectionWitnesses": [
+        {
+          "variantType": "collection-witness",
+          "collectionId": "korean-classics-donggyeong-japgi",
+          "collectionTitle": "東京雜記",
+          "collectionTitleKo": "동경잡기",
+          "collectionTitleRomanization": "Donggyeong Japgi",
+          "harvestId": "KHS-TZ1-H-0018",
+          "documentEntryId": "KHS-TZ1-D-0190",
+          "documentSectionId": "KHS-TZ1-S-0019",
+          "displayLabelZh": "稼亭李穀詩",
+          "titleHintZh": "稼亭李穀",
+          "authorNormalization": {
+            "rawLabelZh": "稼亭李穀",
+            "normalizedAuthorZh": "李穀",
+            "confidence": "high",
+            "titlePrefixZh": "稼亭",
+            "note": "명시적 표기 정리 규칙"
+          },
+          "sourceWork": {
+            "collectionTitle": "東京雜記 卷一",
+            "juan": "卷一",
+            "entryTitle": "稼亭李穀詩",
+            "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%80",
+            "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+            "verificationStatus": "verified-direct-text"
+          },
+          "text": {
+            "poemZh": "東都文物尙繁華\n更起高樓不紫霞\n城郭千年羅代樹\n閭閻一半梵王家\n珠簾捲盡山如畵\n玉笛吹殘日未斜\n倚柱吟詩還自笑\n重來不必要籠紗"
+          },
+          "ingest": {
+            "readiness": "direct-text-collected",
+            "targetDb": "poems",
+            "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+          }
+        }
+      ]
+    },
+    {
+      "poemId": "KPOEM-DONGGYEONG-JAPGI-1-H-0024",
+      "canonicalId": "KPOEM-CANON-DONGGYEONG-JAPGI-1-H-0024",
+      "title": {
+        "zh": "金克已詩",
+        "ko": "金克已詩"
+      },
+      "author": {
+        "authorId": "KAUTH-KIM-GEUKGI",
+        "zh": "金克己",
+        "ko": "김극기"
+      },
+      "era": {
+        "label": "고려 중기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "오언율시",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "東京雜記 卷一",
+        "juan": "卷一",
+        "entryTitle": "金克已詩",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%80",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "悠悠山下路\n信轡詠涼天\n水有含芒蟹\n林無翳葉蟬\n溪聲淸似雨\n野氣淡如煙\n入夜投孤店\n村夫尙未眠",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json",
+        "workerId": "donggyeong-japgi-bundle-import",
+        "candidateTitle": "金克已詩",
+        "matchedTitle": "金克已詩",
+        "harvestId": "KHS-TZ1-H-0024",
+        "ownedTranslationNeeded": true,
+        "notes": "동경잡기 전권 bundle에서 기존 seed 시인과 매칭된 작품을 1차 승격함"
+      },
+      "collectionWitnesses": [
+        {
+          "variantType": "collection-witness",
+          "collectionId": "korean-classics-donggyeong-japgi",
+          "collectionTitle": "東京雜記",
+          "collectionTitleKo": "동경잡기",
+          "collectionTitleRomanization": "Donggyeong Japgi",
+          "harvestId": "KHS-TZ1-H-0024",
+          "documentEntryId": "KHS-TZ1-D-0233",
+          "documentSectionId": "KHS-TZ1-S-0022",
+          "displayLabelZh": "金克已詩",
+          "titleHintZh": null,
+          "authorNormalization": {
+            "rawLabelZh": "金克已",
+            "normalizedAuthorZh": "金克己",
+            "confidence": "high",
+            "titlePrefixZh": null,
+            "note": "명시적 표기 정리 규칙"
+          },
+          "sourceWork": {
+            "collectionTitle": "東京雜記 卷一",
+            "juan": "卷一",
+            "entryTitle": "金克已詩",
+            "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%80",
+            "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+            "verificationStatus": "verified-direct-text"
+          },
+          "text": {
+            "poemZh": "悠悠山下路\n信轡詠涼天\n水有含芒蟹\n林無翳葉蟬\n溪聲淸似雨\n野氣淡如煙\n入夜投孤店\n村夫尙未眠"
+          },
+          "ingest": {
+            "readiness": "direct-text-collected",
+            "targetDb": "poems",
+            "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+          }
+        }
+      ]
+    },
+    {
+      "poemId": "KPOEM-DONGGYEONG-JAPGI-1-H-0028",
+      "canonicalId": "KPOEM-CANON-DONGGYEONG-JAPGI-1-H-0028",
+      "title": {
+        "zh": "梅溪曹偉詩",
+        "ko": "梅溪曹偉詩"
+      },
+      "author": {
+        "authorId": "KAUTH-AUTHOR-ECA1B0EC",
+        "zh": "曹偉",
+        "ko": "조위"
+      },
+      "era": {
+        "label": "조선 전기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "칠언고시",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "東京雜記 卷一",
+        "juan": "卷一",
+        "entryTitle": "梅溪曹偉詩",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%80",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "道傍墟落間靑靑\n麥已秀斗起數仞\n峯穹窿如伏獸斷\n碣臥荒草昻然見\n龜首莽蒼原陸長\n迤邐川原走云是\n武烈陵因山制非\n陋下馬髮蕭森拱\n立歛雙袖摩挲讀\n碑文缺落難實究\n茫茫歲月荒委棄\n無人守憶昔陰爲\n陽二曼非眞后强\n隣肆侵軼四境多\n兵鬪惟王入繼統\n卓焉功德茂爪牙\n委庚信武略殆天\n授幷濟開覇圖劃\n掃百年寇皇唐嘉\n乃勳厥篚堆錦繡\n疇庸錫鴻命闢土\n綿廣袤俊乂共登\n庸倉廥日殷富井\n水忽爲血大運嗟\n莫救劍履就窀穸\n英爽歸昴宿舊史\n粗可徵紀載恨疏\n漏人事如浮雲誰\n能了宇宙佳城萬\n古閉日暮嘯鼪鼬",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json",
+        "workerId": "donggyeong-japgi-bundle-import",
+        "candidateTitle": "梅溪曹偉詩",
+        "matchedTitle": "梅溪曹偉詩",
+        "harvestId": "KHS-TZ1-H-0028",
+        "ownedTranslationNeeded": true,
+        "notes": "동경잡기 전권 bundle에서 기존 seed 시인과 매칭된 작품을 1차 승격함",
+        "sourceFiles": [
+          "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+        ],
+        "duplicateSourceCount": 2
+      },
+      "collectionWitnesses": [
+        {
+          "variantType": "collection-witness",
+          "collectionId": "korean-classics-donggyeong-japgi",
+          "collectionTitle": "東京雜記",
+          "collectionTitleKo": "동경잡기",
+          "collectionTitleRomanization": "Donggyeong Japgi",
+          "harvestId": "KHS-TZ1-H-0028",
+          "documentEntryId": "KHS-TZ1-D-0288",
+          "documentSectionId": "KHS-TZ1-S-0025",
+          "displayLabelZh": "梅溪曹偉詩",
+          "titleHintZh": null,
+          "authorNormalization": {
+            "rawLabelZh": "梅溪曹偉",
+            "normalizedAuthorZh": "曹偉",
+            "confidence": "high",
+            "titlePrefixZh": null,
+            "note": "명시적 표기 정리 규칙"
+          },
+          "sourceWork": {
+            "collectionTitle": "東京雜記 卷一",
+            "juan": "卷一",
+            "entryTitle": "梅溪曹偉詩",
+            "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%80",
+            "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+            "verificationStatus": "verified-direct-text"
+          },
+          "text": {
+            "poemZh": "道傍墟落間靑靑\n麥已秀斗起數仞\n峯穹窿如伏獸斷\n碣臥荒草昻然見\n龜首莽蒼原陸長\n迤邐川原走云是\n武烈陵因山制非\n陋下馬髮蕭森拱\n立歛雙袖摩挲讀\n碑文缺落難實究\n茫茫歲月荒委棄\n無人守憶昔陰爲\n陽二曼非眞后强\n隣肆侵軼四境多\n兵鬪惟王入繼統\n卓焉功德茂爪牙\n委庚信武略殆天\n授幷濟開覇圖劃\n掃百年寇皇唐嘉\n乃勳厥篚堆錦繡\n疇庸錫鴻命闢土\n綿廣袤俊乂共登\n庸倉廥日殷富井\n水忽爲血大運嗟\n莫救劍履就窀穸\n英爽歸昴宿舊史\n粗可徵紀載恨疏\n漏人事如浮雲誰\n能了宇宙佳城萬\n古閉日暮嘯鼪鼬"
+          },
+          "ingest": {
+            "readiness": "direct-text-collected",
+            "targetDb": "poems",
+            "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+          }
+        }
+      ],
+      "sourceVariants": [
+        {
+          "variantType": "collection-witness",
+          "collectionId": "korean-classics-donggyeong-japgi",
+          "collectionTitle": "東京雜記",
+          "collectionTitleKo": "동경잡기",
+          "collectionTitleRomanization": "Donggyeong Japgi",
+          "harvestId": "KHS-TZ2-H-0008",
+          "documentEntryId": "KHS-TZ2-D-0045",
+          "documentSectionId": "KHS-TZ2-S-0002",
+          "displayLabelZh": "梅溪曹偉詩",
+          "titleHintZh": null,
+          "authorNormalization": {
+            "rawLabelZh": "梅溪曹偉",
+            "normalizedAuthorZh": "曹偉",
+            "confidence": "high",
+            "titlePrefixZh": null,
+            "note": "명시적 표기 정리 규칙"
+          },
+          "sourceWork": {
+            "collectionTitle": "東京雜記 卷二",
+            "juan": "卷二",
+            "entryTitle": "梅溪曹偉詩",
+            "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%BA%8C",
+            "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+            "verificationStatus": "verified-direct-text"
+          },
+          "text": {
+            "poemZh": "淸溪一派流\n縈回荒涼洞\n壑迤邐開鮑\n魚散落溪水\n側春殘石老\n生蒼苔羅王\n昔日厭萬機\n金輿玉輦長\n徘徊流連此\n地弄淸泚羽\n觴泛泛隨波\n來君臣酣歌\n入醉鄒簫鼓\n動地如春雷\n不悟敵兵入\n心腹白日鐵\n騎潛銜枚蹀\n血宮庭那忍\n說倉皇朝市\n飛塵埃宮娥\n宛轉啼軍前\n寶鈿零落委\n草萊蟹目嶺\n上愁雲凝松\n聲尙帶千年\n哀君不見臨\n春閣中醉醺\n醺不知門外\n韓將軍玉樹\n璧月歌未闋\n江南王業隨\n煙滅前車可\n爲後車戒後\n車相尋迷覆\n轍我願天公\n令鬼守留與\n後人鑑此石"
+          },
+          "ingest": {
+            "readiness": "direct-text-collected",
+            "targetDb": "poems",
+            "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+          }
+        },
+        {
+          "variantType": "collection-witness",
+          "collectionId": "korean-classics-donggyeong-japgi",
+          "collectionTitle": "東京雜記",
+          "collectionTitleKo": "동경잡기",
+          "collectionTitleRomanization": "Donggyeong Japgi",
+          "harvestId": "KHS-TZ2-H-0011",
+          "documentEntryId": "KHS-TZ2-D-0049",
+          "documentSectionId": "KHS-TZ2-S-0002",
+          "displayLabelZh": "梅溪曹偉詩",
+          "titleHintZh": null,
+          "authorNormalization": {
+            "rawLabelZh": "梅溪曹偉",
+            "normalizedAuthorZh": "曹偉",
+            "confidence": "high",
+            "titlePrefixZh": null,
+            "note": "명시적 표기 정리 규칙"
+          },
+          "sourceWork": {
+            "collectionTitle": "東京雜記 卷二",
+            "juan": "卷二",
+            "entryTitle": "梅溪曹偉詩",
+            "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%BA%8C",
+            "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+            "verificationStatus": "verified-direct-text"
+          },
+          "text": {
+            "poemZh": "離離禾黍暗阡陌\n中有崇臺高百尺\n根連黃媪地中深\n影對靑山雲外矗\n齒餠當年民物醇\n羲和曆象次第陳\n立圭測影觀日月\n登臺望雲占星辰\n乾文順度泰階平\n狼鬣不現天宇淸\n雨晹不愆民不瘥\n豐登四野謳謠聲\n乾坤萬古舟藏壑\n不見金甌終妥帖\n紛紛人世幾番塵\n金碧觚稜盡荊棘"
+          },
+          "ingest": {
+            "readiness": "direct-text-collected",
+            "targetDb": "poems",
+            "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+          }
+        }
+      ]
+    },
+    {
+      "poemId": "KPOEM-DONGGYEONG-JAPGI-2-H-0002",
+      "canonicalId": "KPOEM-CANON-DONGGYEONG-JAPGI-2-H-0002",
+      "title": {
+        "zh": "佔畢齋金宗直詩",
+        "ko": "佔畢齋金宗直詩"
+      },
+      "author": {
+        "authorId": "KAUTH-KIM-JONGJIK",
+        "zh": "金宗直",
+        "ko": "김종직"
+      },
+      "era": {
+        "label": "조선 전기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "오언율시",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "東京雜記 卷二",
+        "juan": "卷二",
+        "entryTitle": "佔畢齋金宗直詩",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%BA%8C",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "爲訪招提境\n松間紫翠重\n靑山半邊雨\n落日上方鐘\n語與居僧軟\n杯隨故意濃\n頹然一榻上\n相對鬢□鬆",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json",
+        "workerId": "donggyeong-japgi-bundle-import",
+        "candidateTitle": "佔畢齋金宗直詩",
+        "matchedTitle": "佔畢齋金宗直詩",
+        "harvestId": "KHS-TZ2-H-0002",
+        "ownedTranslationNeeded": true,
+        "notes": "동경잡기 전권 bundle에서 기존 seed 시인과 매칭된 작품을 1차 승격함"
+      },
+      "collectionWitnesses": [
+        {
+          "variantType": "collection-witness",
+          "collectionId": "korean-classics-donggyeong-japgi",
+          "collectionTitle": "東京雜記",
+          "collectionTitleKo": "동경잡기",
+          "collectionTitleRomanization": "Donggyeong Japgi",
+          "harvestId": "KHS-TZ2-H-0002",
+          "documentEntryId": "KHS-TZ2-D-0004",
+          "documentSectionId": "KHS-TZ2-S-0001",
+          "displayLabelZh": "佔畢齋金宗直詩",
+          "titleHintZh": null,
+          "authorNormalization": {
+            "rawLabelZh": "佔畢齋金宗直",
+            "normalizedAuthorZh": "金宗直",
+            "confidence": "high",
+            "titlePrefixZh": null,
+            "note": "명시적 표기 정리 규칙"
+          },
+          "sourceWork": {
+            "collectionTitle": "東京雜記 卷二",
+            "juan": "卷二",
+            "entryTitle": "佔畢齋金宗直詩",
+            "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%BA%8C",
+            "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+            "verificationStatus": "verified-direct-text"
+          },
+          "text": {
+            "poemZh": "爲訪招提境\n松間紫翠重\n靑山半邊雨\n落日上方鐘\n語與居僧軟\n杯隨故意濃\n頹然一榻上\n相對鬢□鬆"
+          },
+          "ingest": {
+            "readiness": "direct-text-collected",
+            "targetDb": "poems",
+            "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+          }
+        }
+      ]
+    },
+    {
+      "poemId": "KPOEM-DONGGYEONG-JAPGI-2-H-0003",
+      "canonicalId": "KPOEM-CANON-DONGGYEONG-JAPGI-2-H-0003",
+      "title": {
+        "zh": "金時習詩",
+        "ko": "金時習詩"
+      },
+      "author": {
+        "authorId": "KAUTH-KIM-SISEUP",
+        "zh": "金時習",
+        "ko": "김시습"
+      },
+      "era": {
+        "label": "조선 전기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "칠언율시",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "東京雜記 卷二",
+        "juan": "卷二",
+        "entryTitle": "金時習詩",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%BA%8C",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "斲石爲梯壓小池\n高低樓閣映漣漪\n昔人好事歸何處\n世上空留世上奇\n秦宮隋殿魏招提\n剩得當時俗眼迷\n人去代殊俱寂寞\n夕陽唯有老烏棲",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json",
+        "workerId": "donggyeong-japgi-bundle-import",
+        "candidateTitle": "金時習詩",
+        "matchedTitle": "金時習詩",
+        "harvestId": "KHS-TZ2-H-0003",
+        "ownedTranslationNeeded": true,
+        "notes": "동경잡기 전권 bundle에서 기존 seed 시인과 매칭된 작품을 1차 승격함",
+        "sourceFiles": [
+          "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+        ],
+        "duplicateSourceCount": 1
+      },
+      "collectionWitnesses": [
+        {
+          "variantType": "collection-witness",
+          "collectionId": "korean-classics-donggyeong-japgi",
+          "collectionTitle": "東京雜記",
+          "collectionTitleKo": "동경잡기",
+          "collectionTitleRomanization": "Donggyeong Japgi",
+          "harvestId": "KHS-TZ2-H-0003",
+          "documentEntryId": "KHS-TZ2-D-0005",
+          "documentSectionId": "KHS-TZ2-S-0001",
+          "displayLabelZh": "金時習詩",
+          "titleHintZh": null,
+          "authorNormalization": {
+            "rawLabelZh": "金時習",
+            "normalizedAuthorZh": "金時習",
+            "confidence": "high",
+            "titlePrefixZh": null,
+            "note": "일반적인 한자 인명 형태로 판단"
+          },
+          "sourceWork": {
+            "collectionTitle": "東京雜記 卷二",
+            "juan": "卷二",
+            "entryTitle": "金時習詩",
+            "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%BA%8C",
+            "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+            "verificationStatus": "verified-direct-text"
+          },
+          "text": {
+            "poemZh": "斲石爲梯壓小池\n高低樓閣映漣漪\n昔人好事歸何處\n世上空留世上奇\n秦宮隋殿魏招提\n剩得當時俗眼迷\n人去代殊俱寂寞\n夕陽唯有老烏棲"
+          },
+          "ingest": {
+            "readiness": "direct-text-collected",
+            "targetDb": "poems",
+            "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+          }
+        }
+      ],
+      "sourceVariants": [
+        {
+          "variantType": "collection-witness",
+          "collectionId": "korean-classics-donggyeong-japgi",
+          "collectionTitle": "東京雜記",
+          "collectionTitleKo": "동경잡기",
+          "collectionTitleRomanization": "Donggyeong Japgi",
+          "harvestId": "KHS-TZ2-H-0021",
+          "documentEntryId": "KHS-TZ2-D-0121",
+          "documentSectionId": "KHS-TZ2-S-0002",
+          "displayLabelZh": "金時習詩",
+          "titleHintZh": null,
+          "authorNormalization": {
+            "rawLabelZh": "金時習",
+            "normalizedAuthorZh": "金時習",
+            "confidence": "high",
+            "titlePrefixZh": null,
+            "note": "일반적인 한자 인명 형태로 판단"
+          },
+          "sourceWork": {
+            "collectionTitle": "東京雜記 卷二",
+            "juan": "卷二",
+            "entryTitle": "金時習詩",
+            "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%BA%8C",
+            "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+            "verificationStatus": "verified-direct-text"
+          },
+          "text": {
+            "poemZh": "矮屋靑氈暖有餘\n滿窓梅影月明初\n桃燈永夜焚香坐\n閑著人間不見書\n玉堂揮翰已無心\n端坐松窓夜正深\n香揷銅甁鳥兒靜\n風流奇話細搜尋"
+          },
+          "ingest": {
+            "readiness": "direct-text-collected",
+            "targetDb": "poems",
+            "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+          }
+        }
+      ]
+    },
+    {
+      "poemId": "KPOEM-DONGGYEONG-JAPGI-2-H-0005",
+      "canonicalId": "KPOEM-CANON-DONGGYEONG-JAPGI-2-H-0005",
+      "title": {
+        "zh": "鄭知常詩",
+        "ko": "鄭知常詩"
+      },
+      "author": {
+        "authorId": "KAUTH-JEONG-JISANG",
+        "zh": "鄭知常",
+        "ko": "정지상"
+      },
+      "era": {
+        "label": "고려 전기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "오언고시",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "東京雜記 卷二",
+        "juan": "卷二",
+        "entryTitle": "鄭知常詩",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%BA%8C",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "晨興小樓頭\n捲箔觀天宇\n樓下卽鷄林\n奇怪不可數\n老樹煙濛濛\n橫斜一萬戶\n白雲飛東山\n綠水走西浦\n突兀黃金刹\n相望朝欲煦\n有森月城中\n花竹今無主\n空餘古風流\n一曲高聲舞\n記憶崔儒仙\n文章動中土\n絲往錦還鄕\n年未二十九\n白玉點蒼蠅\n不爲時所取\n至今南山中\n唯有一遺圃\n邈哉九世孫\n結髮混卒伍\n喚來峨其冠\n人識賢者後\n亦有薛先生\n蔚然龍與虎\n方言講五經\n學者比東魯\n俗呼二君子\n齊名同李杜\n嘯詠臨淸風\n宿疾猶可愈\n朅來謁金仙\n虛堂香一炷\n稽首祝吾君\n萬年受天祐\n想像妙明鏡\n知予此心否\n試茶閔子泉\n甌面發雲乳\n三復壽翁詩\n蒲壁珠璣吐\n樂哉無所憂\n此樂何太古\n飛蓋下松門\n松門日卓午",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json",
+        "workerId": "donggyeong-japgi-bundle-import",
+        "candidateTitle": "鄭知常詩",
+        "matchedTitle": "鄭知常詩",
+        "harvestId": "KHS-TZ2-H-0005",
+        "ownedTranslationNeeded": true,
+        "notes": "동경잡기 전권 bundle에서 기존 seed 시인과 매칭된 작품을 1차 승격함"
+      },
+      "collectionWitnesses": [
+        {
+          "variantType": "collection-witness",
+          "collectionId": "korean-classics-donggyeong-japgi",
+          "collectionTitle": "東京雜記",
+          "collectionTitleKo": "동경잡기",
+          "collectionTitleRomanization": "Donggyeong Japgi",
+          "harvestId": "KHS-TZ2-H-0005",
+          "documentEntryId": "KHS-TZ2-D-0011",
+          "documentSectionId": "KHS-TZ2-S-0001",
+          "displayLabelZh": "鄭知常詩",
+          "titleHintZh": null,
+          "authorNormalization": {
+            "rawLabelZh": "鄭知常",
+            "normalizedAuthorZh": "鄭知常",
+            "confidence": "high",
+            "titlePrefixZh": null,
+            "note": "일반적인 한자 인명 형태로 판단"
+          },
+          "sourceWork": {
+            "collectionTitle": "東京雜記 卷二",
+            "juan": "卷二",
+            "entryTitle": "鄭知常詩",
+            "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%BA%8C",
+            "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+            "verificationStatus": "verified-direct-text"
+          },
+          "text": {
+            "poemZh": "晨興小樓頭\n捲箔觀天宇\n樓下卽鷄林\n奇怪不可數\n老樹煙濛濛\n橫斜一萬戶\n白雲飛東山\n綠水走西浦\n突兀黃金刹\n相望朝欲煦\n有森月城中\n花竹今無主\n空餘古風流\n一曲高聲舞\n記憶崔儒仙\n文章動中土\n絲往錦還鄕\n年未二十九\n白玉點蒼蠅\n不爲時所取\n至今南山中\n唯有一遺圃\n邈哉九世孫\n結髮混卒伍\n喚來峨其冠\n人識賢者後\n亦有薛先生\n蔚然龍與虎\n方言講五經\n學者比東魯\n俗呼二君子\n齊名同李杜\n嘯詠臨淸風\n宿疾猶可愈\n朅來謁金仙\n虛堂香一炷\n稽首祝吾君\n萬年受天祐\n想像妙明鏡\n知予此心否\n試茶閔子泉\n甌面發雲乳\n三復壽翁詩\n蒲壁珠璣吐\n樂哉無所憂\n此樂何太古\n飛蓋下松門\n松門日卓午"
+          },
+          "ingest": {
+            "readiness": "direct-text-collected",
+            "targetDb": "poems",
+            "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+          }
+        }
+      ]
+    },
+    {
+      "poemId": "KPOEM-DONGGYEONG-JAPGI-2-H-0007",
+      "canonicalId": "KPOEM-CANON-DONGGYEONG-JAPGI-2-H-0007",
+      "title": {
+        "zh": "李仁老詩",
+        "ko": "李仁老詩"
+      },
+      "author": {
+        "authorId": "KAUTH-YI-INRO",
+        "zh": "李仁老",
+        "ko": "이인로"
+      },
+      "era": {
+        "label": "고려 중기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "칠언율시",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "東京雜記 卷二",
+        "juan": "卷二",
+        "entryTitle": "李仁老詩",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%BA%8C",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "石虎宮中有棘生\n銅駞陌上無人行\n危亭琴松半零落\n殘月依依照古城\n當時絲管竟悽咽\n泛泛金觴隨曲折\n中流空惜魏山河\n醉鄕不管陳日月",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json",
+        "workerId": "donggyeong-japgi-bundle-import",
+        "candidateTitle": "李仁老詩",
+        "matchedTitle": "李仁老詩",
+        "harvestId": "KHS-TZ2-H-0007",
+        "ownedTranslationNeeded": true,
+        "notes": "동경잡기 전권 bundle에서 기존 seed 시인과 매칭된 작품을 1차 승격함"
+      },
+      "collectionWitnesses": [
+        {
+          "variantType": "collection-witness",
+          "collectionId": "korean-classics-donggyeong-japgi",
+          "collectionTitle": "東京雜記",
+          "collectionTitleKo": "동경잡기",
+          "collectionTitleRomanization": "Donggyeong Japgi",
+          "harvestId": "KHS-TZ2-H-0007",
+          "documentEntryId": "KHS-TZ2-D-0044",
+          "documentSectionId": "KHS-TZ2-S-0002",
+          "displayLabelZh": "李仁老詩",
+          "titleHintZh": null,
+          "authorNormalization": {
+            "rawLabelZh": "李仁老",
+            "normalizedAuthorZh": "李仁老",
+            "confidence": "high",
+            "titlePrefixZh": null,
+            "note": "일반적인 한자 인명 형태로 판단"
+          },
+          "sourceWork": {
+            "collectionTitle": "東京雜記 卷二",
+            "juan": "卷二",
+            "entryTitle": "李仁老詩",
+            "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%BA%8C",
+            "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+            "verificationStatus": "verified-direct-text"
+          },
+          "text": {
+            "poemZh": "石虎宮中有棘生\n銅駞陌上無人行\n危亭琴松半零落\n殘月依依照古城\n當時絲管竟悽咽\n泛泛金觴隨曲折\n中流空惜魏山河\n醉鄕不管陳日月"
+          },
+          "ingest": {
+            "readiness": "direct-text-collected",
+            "targetDb": "poems",
+            "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+          }
+        }
+      ]
+    },
+    {
+      "poemId": "KPOEM-DONGGYEONG-JAPGI-2-H-0009",
+      "canonicalId": "KPOEM-CANON-DONGGYEONG-JAPGI-2-H-0009",
+      "title": {
+        "zh": "安軸詩",
+        "ko": "安軸詩"
+      },
+      "author": {
+        "authorId": "KAUTH-AUTHOR-EC9588EC",
+        "zh": "安軸",
+        "ko": "안축"
+      },
+      "era": {
+        "label": "고려 후기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "칠언절구",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "東京雜記 卷二",
+        "juan": "卷二",
+        "entryTitle": "安軸詩",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%BA%8C",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "前代興亡歲月經\n石臺千尺聳靑冥\n何人今日觀天象\n一點文星作使星",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json",
+        "workerId": "donggyeong-japgi-bundle-import",
+        "candidateTitle": "安軸詩",
+        "matchedTitle": "安軸詩",
+        "harvestId": "KHS-TZ2-H-0009",
+        "ownedTranslationNeeded": true,
+        "notes": "동경잡기 전권 bundle에서 기존 seed 시인과 매칭된 작품을 1차 승격함"
+      },
+      "collectionWitnesses": [
+        {
+          "variantType": "collection-witness",
+          "collectionId": "korean-classics-donggyeong-japgi",
+          "collectionTitle": "東京雜記",
+          "collectionTitleKo": "동경잡기",
+          "collectionTitleRomanization": "Donggyeong Japgi",
+          "harvestId": "KHS-TZ2-H-0009",
+          "documentEntryId": "KHS-TZ2-D-0047",
+          "documentSectionId": "KHS-TZ2-S-0002",
+          "displayLabelZh": "安軸詩",
+          "titleHintZh": null,
+          "authorNormalization": {
+            "rawLabelZh": "安軸",
+            "normalizedAuthorZh": "安軸",
+            "confidence": "high",
+            "titlePrefixZh": null,
+            "note": "일반적인 한자 인명 형태로 판단"
+          },
+          "sourceWork": {
+            "collectionTitle": "東京雜記 卷二",
+            "juan": "卷二",
+            "entryTitle": "安軸詩",
+            "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%BA%8C",
+            "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+            "verificationStatus": "verified-direct-text"
+          },
+          "text": {
+            "poemZh": "前代興亡歲月經\n石臺千尺聳靑冥\n何人今日觀天象\n一點文星作使星"
+          },
+          "ingest": {
+            "readiness": "direct-text-collected",
+            "targetDb": "poems",
+            "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+          }
+        }
+      ]
+    },
+    {
+      "poemId": "KPOEM-DONGGYEONG-JAPGI-2-H-0010",
+      "canonicalId": "KPOEM-CANON-DONGGYEONG-JAPGI-2-H-0010",
+      "title": {
+        "zh": "圃隱鄭先生詩",
+        "ko": "圃隱鄭先生詩"
+      },
+      "author": {
+        "authorId": "KAUTH-JEONG-MONGJU",
+        "zh": "鄭夢周",
+        "ko": "정몽주"
+      },
+      "era": {
+        "label": "고려 말"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "칠언절구",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "東京雜記 卷二",
+        "juan": "卷二",
+        "entryTitle": "圃隱鄭先生詩",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%BA%8C",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "瞻星臺兀月城中\n玉笛聲含萬古風\n文物已隨羅代盡\n嗚呼山水古今同",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json",
+        "workerId": "donggyeong-japgi-bundle-import",
+        "candidateTitle": "圃隱鄭先生詩",
+        "matchedTitle": "圃隱鄭先生詩",
+        "harvestId": "KHS-TZ2-H-0010",
+        "ownedTranslationNeeded": true,
+        "notes": "동경잡기 전권 bundle에서 기존 seed 시인과 매칭된 작품을 1차 승격함"
+      },
+      "collectionWitnesses": [
+        {
+          "variantType": "collection-witness",
+          "collectionId": "korean-classics-donggyeong-japgi",
+          "collectionTitle": "東京雜記",
+          "collectionTitleKo": "동경잡기",
+          "collectionTitleRomanization": "Donggyeong Japgi",
+          "harvestId": "KHS-TZ2-H-0010",
+          "documentEntryId": "KHS-TZ2-D-0048",
+          "documentSectionId": "KHS-TZ2-S-0002",
+          "displayLabelZh": "圃隱鄭先生詩",
+          "titleHintZh": null,
+          "authorNormalization": {
+            "rawLabelZh": "圃隱鄭先生",
+            "normalizedAuthorZh": "鄭夢周",
+            "confidence": "high",
+            "titlePrefixZh": null,
+            "note": "명시적 표기 정리 규칙"
+          },
+          "sourceWork": {
+            "collectionTitle": "東京雜記 卷二",
+            "juan": "卷二",
+            "entryTitle": "圃隱鄭先生詩",
+            "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%BA%8C",
+            "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+            "verificationStatus": "verified-direct-text"
+          },
+          "text": {
+            "poemZh": "瞻星臺兀月城中\n玉笛聲含萬古風\n文物已隨羅代盡\n嗚呼山水古今同"
+          },
+          "ingest": {
+            "readiness": "direct-text-collected",
+            "targetDb": "poems",
+            "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+          }
+        }
+      ]
+    },
+    {
+      "poemId": "KPOEM-DONGGYEONG-JAPGI-2-H-0012",
+      "canonicalId": "KPOEM-CANON-DONGGYEONG-JAPGI-2-H-0012",
+      "title": {
+        "zh": "李益齋詩",
+        "ko": "李益齋詩"
+      },
+      "author": {
+        "authorId": "KAUTH-YI-JEHYEON",
+        "zh": "李齊賢",
+        "ko": "이제현"
+      },
+      "era": {
+        "label": "고려 후기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "칠언절구",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "東京雜記 卷二",
+        "juan": "卷二",
+        "entryTitle": "李益齋詩",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%BA%8C",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "新羅昔日處容翁\n見說來從碧海中\n貝齒赬唇歌月夕\n鳶肩紫袖舞春風",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json",
+        "workerId": "donggyeong-japgi-bundle-import",
+        "candidateTitle": "李益齋詩",
+        "matchedTitle": "李益齋詩",
+        "harvestId": "KHS-TZ2-H-0012",
+        "ownedTranslationNeeded": true,
+        "notes": "동경잡기 전권 bundle에서 기존 seed 시인과 매칭된 작품을 1차 승격함"
+      },
+      "collectionWitnesses": [
+        {
+          "variantType": "collection-witness",
+          "collectionId": "korean-classics-donggyeong-japgi",
+          "collectionTitle": "東京雜記",
+          "collectionTitleKo": "동경잡기",
+          "collectionTitleRomanization": "Donggyeong Japgi",
+          "harvestId": "KHS-TZ2-H-0012",
+          "documentEntryId": "KHS-TZ2-D-0059",
+          "documentSectionId": "KHS-TZ2-S-0002",
+          "displayLabelZh": "李益齋詩",
+          "titleHintZh": null,
+          "authorNormalization": {
+            "rawLabelZh": "李益齋",
+            "normalizedAuthorZh": "李齊賢",
+            "confidence": "high",
+            "titlePrefixZh": null,
+            "note": "명시적 표기 정리 규칙"
+          },
+          "sourceWork": {
+            "collectionTitle": "東京雜記 卷二",
+            "juan": "卷二",
+            "entryTitle": "李益齋詩",
+            "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%BA%8C",
+            "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+            "verificationStatus": "verified-direct-text"
+          },
+          "text": {
+            "poemZh": "新羅昔日處容翁\n見說來從碧海中\n貝齒赬唇歌月夕\n鳶肩紫袖舞春風"
+          },
+          "ingest": {
+            "readiness": "direct-text-collected",
+            "targetDb": "poems",
+            "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+          }
+        }
+      ]
+    },
+    {
+      "poemId": "KPOEM-DONGGYEONG-JAPGI-2-H-0020",
+      "canonicalId": "KPOEM-CANON-DONGGYEONG-JAPGI-2-H-0020",
+      "title": {
+        "zh": "朱巖寺持麥石",
+        "ko": "朱巖寺持麥石"
+      },
+      "author": {
+        "authorId": "KAUTH-KIM-GEUKGI",
+        "zh": "金克己",
+        "ko": "김극기"
+      },
+      "era": {
+        "label": "고려 중기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "오언율시",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "東京雜記 卷二",
+        "juan": "卷二",
+        "entryTitle": "朱巖寺持麥石金克己詩",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%BA%8C",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "迢迢雲際寺\n異境隔塵凡\n鳥道彎靑漢\n蜂臺駕碧巖\n地靈潛洞壑\n天籟颭筠杉\n縱望襟懷曠\n飄如馬脫御",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json",
+        "workerId": "donggyeong-japgi-bundle-import",
+        "candidateTitle": "朱巖寺持麥石",
+        "matchedTitle": "朱巖寺持麥石",
+        "harvestId": "KHS-TZ2-H-0020",
+        "ownedTranslationNeeded": true,
+        "notes": "동경잡기 전권 bundle에서 기존 seed 시인과 매칭된 작품을 1차 승격함"
+      },
+      "collectionWitnesses": [
+        {
+          "variantType": "collection-witness",
+          "collectionId": "korean-classics-donggyeong-japgi",
+          "collectionTitle": "東京雜記",
+          "collectionTitleKo": "동경잡기",
+          "collectionTitleRomanization": "Donggyeong Japgi",
+          "harvestId": "KHS-TZ2-H-0020",
+          "documentEntryId": "KHS-TZ2-D-0097",
+          "documentSectionId": "KHS-TZ2-S-0002",
+          "displayLabelZh": "朱巖寺持麥石金克己詩",
+          "titleHintZh": "朱巖寺持麥石金克己",
+          "authorNormalization": {
+            "rawLabelZh": "朱巖寺持麥石金克己",
+            "normalizedAuthorZh": "金克己",
+            "confidence": "high",
+            "titlePrefixZh": "朱巖寺持麥石",
+            "note": "명시적 표기 정리 규칙"
+          },
+          "sourceWork": {
+            "collectionTitle": "東京雜記 卷二",
+            "juan": "卷二",
+            "entryTitle": "朱巖寺持麥石金克己詩",
+            "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%BA%8C",
+            "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+            "verificationStatus": "verified-direct-text"
+          },
+          "text": {
+            "poemZh": "迢迢雲際寺\n異境隔塵凡\n鳥道彎靑漢\n蜂臺駕碧巖\n地靈潛洞壑\n天籟颭筠杉\n縱望襟懷曠\n飄如馬脫御"
+          },
+          "ingest": {
+            "readiness": "direct-text-collected",
+            "targetDb": "poems",
+            "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+          }
+        }
+      ]
+    },
+    {
+      "poemId": "KPOEM-DONGGYEONG-JAPGI-3-H-0006",
+      "canonicalId": "KPOEM-CANON-DONGGYEONG-JAPGI-3-H-0006",
+      "title": {
+        "zh": "應制",
+        "ko": "應制"
+      },
+      "author": {
+        "authorId": "KAUTH-GWON-GEUN",
+        "zh": "權近",
+        "ko": "권근"
+      },
+      "era": {
+        "label": "고려 말~조선 초"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "오언율시",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "東京雜記 卷三",
+        "juan": "卷三",
+        "entryTitle": "權近應制詩",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%89",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "伊昔赫居世\n開邦五鳳年\n相傳千歲久\n粗保一隅偏\n却獻鷄林土\n來朝鵠嶺天\n綿綿三姓祀\n永絶正堪憐",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json",
+        "workerId": "donggyeong-japgi-bundle-import",
+        "candidateTitle": "應制",
+        "matchedTitle": "應制",
+        "harvestId": "KHS-TZ3-H-0006",
+        "ownedTranslationNeeded": true,
+        "notes": "동경잡기 전권 bundle에서 기존 seed 시인과 매칭된 작품을 1차 승격함"
+      },
+      "collectionWitnesses": [
+        {
+          "variantType": "collection-witness",
+          "collectionId": "korean-classics-donggyeong-japgi",
+          "collectionTitle": "東京雜記",
+          "collectionTitleKo": "동경잡기",
+          "collectionTitleRomanization": "Donggyeong Japgi",
+          "harvestId": "KHS-TZ3-H-0006",
+          "documentEntryId": "KHS-TZ3-D-0156",
+          "documentSectionId": "KHS-TZ3-S-0011",
+          "displayLabelZh": "權近應制詩",
+          "titleHintZh": null,
+          "authorNormalization": {
+            "rawLabelZh": "權近應制",
+            "normalizedAuthorZh": "權近",
+            "confidence": "high",
+            "titlePrefixZh": "應制",
+            "note": "명시적 표기 정리 규칙"
+          },
+          "sourceWork": {
+            "collectionTitle": "東京雜記 卷三",
+            "juan": "卷三",
+            "entryTitle": "權近應制詩",
+            "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%89",
+            "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+            "verificationStatus": "verified-direct-text"
+          },
+          "text": {
+            "poemZh": "伊昔赫居世\n開邦五鳳年\n相傳千歲久\n粗保一隅偏\n却獻鷄林土\n來朝鵠嶺天\n綿綿三姓祀\n永絶正堪憐"
+          },
+          "ingest": {
+            "readiness": "direct-text-collected",
+            "targetDb": "poems",
+            "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+          }
+        }
+      ]
+    },
+    {
+      "poemId": "KPOEM-DONGGYEONG-JAPGI-3-H-0016",
+      "canonicalId": "KPOEM-CANON-DONGGYEONG-JAPGI-3-H-0016",
+      "title": {
+        "zh": "十二詠鷄林靈異",
+        "ko": "十二詠鷄林靈異"
+      },
+      "author": {
+        "authorId": "KAUTH-SEO-GEOJEONG",
+        "zh": "徐居正",
+        "ko": "서거정"
+      },
+      "era": {
+        "label": "조선 전기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "칠언율시",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "東京雜記 卷三",
+        "juan": "卷三",
+        "entryTitle": "十二詠鷄林靈異徐四佳詩",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%89",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "金鷄啁哳樹蒼蒼\n九百年來葉盡黃\n朴祖開邦傳鵲祖\n金王納土似錢王\n傷心三姓皆顚蹶\n滿目諸陵已廢荒\n千古英雄無限恨\n淡煙衰草更斜陽",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json",
+        "workerId": "donggyeong-japgi-bundle-import",
+        "candidateTitle": "十二詠鷄林靈異",
+        "matchedTitle": "十二詠鷄林靈異",
+        "harvestId": "KHS-TZ3-H-0016",
+        "ownedTranslationNeeded": true,
+        "notes": "동경잡기 전권 bundle에서 기존 seed 시인과 매칭된 작품을 1차 승격함"
+      },
+      "collectionWitnesses": [
+        {
+          "variantType": "collection-witness",
+          "collectionId": "korean-classics-donggyeong-japgi",
+          "collectionTitle": "東京雜記",
+          "collectionTitleKo": "동경잡기",
+          "collectionTitleRomanization": "Donggyeong Japgi",
+          "harvestId": "KHS-TZ3-H-0016",
+          "documentEntryId": "KHS-TZ3-D-0167",
+          "documentSectionId": "KHS-TZ3-S-0011",
+          "displayLabelZh": "十二詠鷄林靈異徐四佳詩",
+          "titleHintZh": null,
+          "authorNormalization": {
+            "rawLabelZh": "十二詠鷄林靈異徐四佳",
+            "normalizedAuthorZh": "徐居正",
+            "confidence": "medium",
+            "titlePrefixZh": "十二詠鷄林靈異",
+            "note": "저자명 뒤에 붙은 호/칭호 suffix 정리 규칙"
+          },
+          "sourceWork": {
+            "collectionTitle": "東京雜記 卷三",
+            "juan": "卷三",
+            "entryTitle": "十二詠鷄林靈異徐四佳詩",
+            "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%89",
+            "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+            "verificationStatus": "verified-direct-text"
+          },
+          "text": {
+            "poemZh": "金鷄啁哳樹蒼蒼\n九百年來葉盡黃\n朴祖開邦傳鵲祖\n金王納土似錢王\n傷心三姓皆顚蹶\n滿目諸陵已廢荒\n千古英雄無限恨\n淡煙衰草更斜陽"
+          },
+          "ingest": {
+            "readiness": "direct-text-collected",
+            "targetDb": "poems",
+            "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+          }
+        }
+      ]
+    },
+    {
+      "poemId": "KPOEM-DONGGYEONG-JAPGI-3-H-0018",
+      "canonicalId": "KPOEM-CANON-DONGGYEONG-JAPGI-3-H-0018",
+      "title": {
+        "zh": "鰲山奇勝",
+        "ko": "鰲山奇勝"
+      },
+      "author": {
+        "authorId": "KAUTH-SEO-GEOJEONG",
+        "zh": "徐居正",
+        "ko": "서거정"
+      },
+      "era": {
+        "label": "조선 전기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "칠언율시",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "東京雜記 卷三",
+        "juan": "卷三",
+        "entryTitle": "鰲山奇勝徐四佳詩",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%89",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "海上金鰲眺望宜\n風流文物異前時\n破碑或見金生字\n古寺曾留致遠詩\n甲第有基荒□合\n名園無主斷橋危\n春愁如許深於海\n鐵笛何人滿意吹",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json",
+        "workerId": "donggyeong-japgi-bundle-import",
+        "candidateTitle": "鰲山奇勝",
+        "matchedTitle": "鰲山奇勝",
+        "harvestId": "KHS-TZ3-H-0018",
+        "ownedTranslationNeeded": true,
+        "notes": "동경잡기 전권 bundle에서 기존 seed 시인과 매칭된 작품을 1차 승격함"
+      },
+      "collectionWitnesses": [
+        {
+          "variantType": "collection-witness",
+          "collectionId": "korean-classics-donggyeong-japgi",
+          "collectionTitle": "東京雜記",
+          "collectionTitleKo": "동경잡기",
+          "collectionTitleRomanization": "Donggyeong Japgi",
+          "harvestId": "KHS-TZ3-H-0018",
+          "documentEntryId": "KHS-TZ3-D-0169",
+          "documentSectionId": "KHS-TZ3-S-0011",
+          "displayLabelZh": "鰲山奇勝徐四佳詩",
+          "titleHintZh": "鰲山奇勝徐四佳",
+          "authorNormalization": {
+            "rawLabelZh": "鰲山奇勝徐四佳",
+            "normalizedAuthorZh": "徐居正",
+            "confidence": "medium",
+            "titlePrefixZh": "鰲山奇勝",
+            "note": "저자명 뒤에 붙은 호/칭호 suffix 정리 규칙"
+          },
+          "sourceWork": {
+            "collectionTitle": "東京雜記 卷三",
+            "juan": "卷三",
+            "entryTitle": "鰲山奇勝徐四佳詩",
+            "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%89",
+            "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+            "verificationStatus": "verified-direct-text"
+          },
+          "text": {
+            "poemZh": "海上金鰲眺望宜\n風流文物異前時\n破碑或見金生字\n古寺曾留致遠詩\n甲第有基荒□合\n名園無主斷橋危\n春愁如許深於海\n鐵笛何人滿意吹"
+          },
+          "ingest": {
+            "readiness": "direct-text-collected",
+            "targetDb": "poems",
+            "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+          }
+        }
+      ]
+    },
+    {
+      "poemId": "KPOEM-DONGGYEONG-JAPGI-3-H-0020",
+      "canonicalId": "KPOEM-CANON-DONGGYEONG-JAPGI-3-H-0020",
+      "title": {
+        "zh": "鮑亭感懷",
+        "ko": "鮑亭感懷"
+      },
+      "author": {
+        "authorId": "KAUTH-SEO-GEOJEONG",
+        "zh": "徐居正",
+        "ko": "서거정"
+      },
+      "era": {
+        "label": "조선 전기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "칠언율시",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "東京雜記 卷三",
+        "juan": "卷三",
+        "entryTitle": "鮑亭感懷徐四佳詩",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%89",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "鮑石亭前立馬時\n沈吟懷古思依依\n流觴曲水基猶在\n醉舞狂歌事已非\n未有荒淫不亡國\n那堪慷慨獨霑衣\n行行吟過五陵路\n石堡金城共落暉",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json",
+        "workerId": "donggyeong-japgi-bundle-import",
+        "candidateTitle": "鮑亭感懷",
+        "matchedTitle": "鮑亭感懷",
+        "harvestId": "KHS-TZ3-H-0020",
+        "ownedTranslationNeeded": true,
+        "notes": "동경잡기 전권 bundle에서 기존 seed 시인과 매칭된 작품을 1차 승격함"
+      },
+      "collectionWitnesses": [
+        {
+          "variantType": "collection-witness",
+          "collectionId": "korean-classics-donggyeong-japgi",
+          "collectionTitle": "東京雜記",
+          "collectionTitleKo": "동경잡기",
+          "collectionTitleRomanization": "Donggyeong Japgi",
+          "harvestId": "KHS-TZ3-H-0020",
+          "documentEntryId": "KHS-TZ3-D-0171",
+          "documentSectionId": "KHS-TZ3-S-0011",
+          "displayLabelZh": "鮑亭感懷徐四佳詩",
+          "titleHintZh": "鮑亭感懷徐四佳",
+          "authorNormalization": {
+            "rawLabelZh": "鮑亭感懷徐四佳",
+            "normalizedAuthorZh": "徐居正",
+            "confidence": "medium",
+            "titlePrefixZh": "鮑亭感懷",
+            "note": "저자명 뒤에 붙은 호/칭호 suffix 정리 규칙"
+          },
+          "sourceWork": {
+            "collectionTitle": "東京雜記 卷三",
+            "juan": "卷三",
+            "entryTitle": "鮑亭感懷徐四佳詩",
+            "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%89",
+            "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+            "verificationStatus": "verified-direct-text"
+          },
+          "text": {
+            "poemZh": "鮑石亭前立馬時\n沈吟懷古思依依\n流觴曲水基猶在\n醉舞狂歌事已非\n未有荒淫不亡國\n那堪慷慨獨霑衣\n行行吟過五陵路\n石堡金城共落暉"
+          },
+          "ingest": {
+            "readiness": "direct-text-collected",
+            "targetDb": "poems",
+            "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+          }
+        }
+      ]
+    },
+    {
+      "poemId": "KPOEM-DONGGYEONG-JAPGI-3-H-0022",
+      "canonicalId": "KPOEM-CANON-DONGGYEONG-JAPGI-3-H-0022",
+      "title": {
+        "zh": "蚊川騁望",
+        "ko": "蚊川騁望"
+      },
+      "author": {
+        "authorId": "KAUTH-SEO-GEOJEONG",
+        "zh": "徐居正",
+        "ko": "서거정"
+      },
+      "era": {
+        "label": "조선 전기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "칠언율시",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "東京雜記 卷三",
+        "juan": "卷三",
+        "entryTitle": "蚊川騁望徐四佳詩",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%89",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "行渡蚊川過別村\n故都遐想不勝繁\n烏啼深樹思金甲\n蛙吠寒塘憶玉門\n白乳荒唐崇潒敎\n黃童慷慨報君冤\n水流不洗前朝恨\n蕩滌須憑北海尊",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json",
+        "workerId": "donggyeong-japgi-bundle-import",
+        "candidateTitle": "蚊川騁望",
+        "matchedTitle": "蚊川騁望",
+        "harvestId": "KHS-TZ3-H-0022",
+        "ownedTranslationNeeded": true,
+        "notes": "동경잡기 전권 bundle에서 기존 seed 시인과 매칭된 작품을 1차 승격함"
+      },
+      "collectionWitnesses": [
+        {
+          "variantType": "collection-witness",
+          "collectionId": "korean-classics-donggyeong-japgi",
+          "collectionTitle": "東京雜記",
+          "collectionTitleKo": "동경잡기",
+          "collectionTitleRomanization": "Donggyeong Japgi",
+          "harvestId": "KHS-TZ3-H-0022",
+          "documentEntryId": "KHS-TZ3-D-0173",
+          "documentSectionId": "KHS-TZ3-S-0011",
+          "displayLabelZh": "蚊川騁望徐四佳詩",
+          "titleHintZh": null,
+          "authorNormalization": {
+            "rawLabelZh": "蚊川騁望徐四佳",
+            "normalizedAuthorZh": "徐居正",
+            "confidence": "medium",
+            "titlePrefixZh": "蚊川騁望",
+            "note": "저자명 뒤에 붙은 호/칭호 suffix 정리 규칙"
+          },
+          "sourceWork": {
+            "collectionTitle": "東京雜記 卷三",
+            "juan": "卷三",
+            "entryTitle": "蚊川騁望徐四佳詩",
+            "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%89",
+            "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+            "verificationStatus": "verified-direct-text"
+          },
+          "text": {
+            "poemZh": "行渡蚊川過別村\n故都遐想不勝繁\n烏啼深樹思金甲\n蛙吠寒塘憶玉門\n白乳荒唐崇潒敎\n黃童慷慨報君冤\n水流不洗前朝恨\n蕩滌須憑北海尊"
+          },
+          "ingest": {
+            "readiness": "direct-text-collected",
+            "targetDb": "poems",
+            "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+          }
+        }
+      ]
+    },
+    {
+      "poemId": "KPOEM-DONGGYEONG-JAPGI-3-H-0024",
+      "canonicalId": "KPOEM-CANON-DONGGYEONG-JAPGI-3-H-0024",
+      "title": {
+        "zh": "半月古城",
+        "ko": "半月古城"
+      },
+      "author": {
+        "authorId": "KAUTH-SEO-GEOJEONG",
+        "zh": "徐居正",
+        "ko": "서거정"
+      },
+      "era": {
+        "label": "조선 전기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "칠언율시",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "東京雜記 卷三",
+        "juan": "卷三",
+        "entryTitle": "半月古城徐四佳詩",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%89",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "半月城頭日欲西\n遠遊情思轉凄凄\n靑浮楊麓雲煙老\n黃落始林歲月迷\n明活村南雲渺渺\n興輪寺北草萋萋\n百年坎軻知何用\n贏得樽前醉似泥",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json",
+        "workerId": "donggyeong-japgi-bundle-import",
+        "candidateTitle": "半月古城",
+        "matchedTitle": "半月古城",
+        "harvestId": "KHS-TZ3-H-0024",
+        "ownedTranslationNeeded": true,
+        "notes": "동경잡기 전권 bundle에서 기존 seed 시인과 매칭된 작품을 1차 승격함"
+      },
+      "collectionWitnesses": [
+        {
+          "variantType": "collection-witness",
+          "collectionId": "korean-classics-donggyeong-japgi",
+          "collectionTitle": "東京雜記",
+          "collectionTitleKo": "동경잡기",
+          "collectionTitleRomanization": "Donggyeong Japgi",
+          "harvestId": "KHS-TZ3-H-0024",
+          "documentEntryId": "KHS-TZ3-D-0175",
+          "documentSectionId": "KHS-TZ3-S-0011",
+          "displayLabelZh": "半月古城徐四佳詩",
+          "titleHintZh": "半月古城徐四佳",
+          "authorNormalization": {
+            "rawLabelZh": "半月古城徐四佳",
+            "normalizedAuthorZh": "徐居正",
+            "confidence": "medium",
+            "titlePrefixZh": "半月古城",
+            "note": "저자명 뒤에 붙은 호/칭호 suffix 정리 규칙"
+          },
+          "sourceWork": {
+            "collectionTitle": "東京雜記 卷三",
+            "juan": "卷三",
+            "entryTitle": "半月古城徐四佳詩",
+            "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%89",
+            "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+            "verificationStatus": "verified-direct-text"
+          },
+          "text": {
+            "poemZh": "半月城頭日欲西\n遠遊情思轉凄凄\n靑浮楊麓雲煙老\n黃落始林歲月迷\n明活村南雲渺渺\n興輪寺北草萋萋\n百年坎軻知何用\n贏得樽前醉似泥"
+          },
+          "ingest": {
+            "readiness": "direct-text-collected",
+            "targetDb": "poems",
+            "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+          }
+        }
+      ]
+    },
+    {
+      "poemId": "KPOEM-DONGGYEONG-JAPGI-3-H-0026",
+      "canonicalId": "KPOEM-CANON-DONGGYEONG-JAPGI-3-H-0026",
+      "title": {
+        "zh": "瞻星老臺",
+        "ko": "瞻星老臺"
+      },
+      "author": {
+        "authorId": "KAUTH-SEO-GEOJEONG",
+        "zh": "徐居正",
+        "ko": "서거정"
+      },
+      "era": {
+        "label": "조선 전기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "칠언율시",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "東京雜記 卷三",
+        "juan": "卷三",
+        "entryTitle": "瞻星老臺徐四佳詩",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%89",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "古臺牢落號瞻星\n遺迹依然近月城\n地悴天荒年已久\n風摧雨剝勢曾傾\n孤山落日金仙影\n故壘悲秋玉笛聲\n三姓千年曾一瞥\n不堪登眺更傷情",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json",
+        "workerId": "donggyeong-japgi-bundle-import",
+        "candidateTitle": "瞻星老臺",
+        "matchedTitle": "瞻星老臺",
+        "harvestId": "KHS-TZ3-H-0026",
+        "ownedTranslationNeeded": true,
+        "notes": "동경잡기 전권 bundle에서 기존 seed 시인과 매칭된 작품을 1차 승격함"
+      },
+      "collectionWitnesses": [
+        {
+          "variantType": "collection-witness",
+          "collectionId": "korean-classics-donggyeong-japgi",
+          "collectionTitle": "東京雜記",
+          "collectionTitleKo": "동경잡기",
+          "collectionTitleRomanization": "Donggyeong Japgi",
+          "harvestId": "KHS-TZ3-H-0026",
+          "documentEntryId": "KHS-TZ3-D-0177",
+          "documentSectionId": "KHS-TZ3-S-0011",
+          "displayLabelZh": "瞻星老臺徐四佳詩",
+          "titleHintZh": "瞻星老臺徐四佳",
+          "authorNormalization": {
+            "rawLabelZh": "瞻星老臺徐四佳",
+            "normalizedAuthorZh": "徐居正",
+            "confidence": "medium",
+            "titlePrefixZh": "瞻星老臺",
+            "note": "저자명 뒤에 붙은 호/칭호 suffix 정리 규칙"
+          },
+          "sourceWork": {
+            "collectionTitle": "東京雜記 卷三",
+            "juan": "卷三",
+            "entryTitle": "瞻星老臺徐四佳詩",
+            "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%89",
+            "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+            "verificationStatus": "verified-direct-text"
+          },
+          "text": {
+            "poemZh": "古臺牢落號瞻星\n遺迹依然近月城\n地悴天荒年已久\n風摧雨剝勢曾傾\n孤山落日金仙影\n故壘悲秋玉笛聲\n三姓千年曾一瞥\n不堪登眺更傷情"
+          },
+          "ingest": {
+            "readiness": "direct-text-collected",
+            "targetDb": "poems",
+            "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+          }
+        }
+      ]
+    },
+    {
+      "poemId": "KPOEM-DONGGYEONG-JAPGI-3-H-0028",
+      "canonicalId": "KPOEM-CANON-DONGGYEONG-JAPGI-3-H-0028",
+      "title": {
+        "zh": "芬皇廢寺",
+        "ko": "芬皇廢寺"
+      },
+      "author": {
+        "authorId": "KAUTH-SEO-GEOJEONG",
+        "zh": "徐居正",
+        "ko": "서거정"
+      },
+      "era": {
+        "label": "조선 전기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "칠언율시",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "東京雜記 卷三",
+        "juan": "卷三",
+        "entryTitle": "芬皇廢寺徐四佳詩",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%89",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "芬皇寺對黃龍寺\n千載遺基草自新\n白塔亭亭如喚客\n靑山默默已愁人\n無僧能解前三語\n有物空餘丈六身\n始信閭閻半佛宇\n法與何代似姚秦",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json",
+        "workerId": "donggyeong-japgi-bundle-import",
+        "candidateTitle": "芬皇廢寺",
+        "matchedTitle": "芬皇廢寺",
+        "harvestId": "KHS-TZ3-H-0028",
+        "ownedTranslationNeeded": true,
+        "notes": "동경잡기 전권 bundle에서 기존 seed 시인과 매칭된 작품을 1차 승격함"
+      },
+      "collectionWitnesses": [
+        {
+          "variantType": "collection-witness",
+          "collectionId": "korean-classics-donggyeong-japgi",
+          "collectionTitle": "東京雜記",
+          "collectionTitleKo": "동경잡기",
+          "collectionTitleRomanization": "Donggyeong Japgi",
+          "harvestId": "KHS-TZ3-H-0028",
+          "documentEntryId": "KHS-TZ3-D-0179",
+          "documentSectionId": "KHS-TZ3-S-0011",
+          "displayLabelZh": "芬皇廢寺徐四佳詩",
+          "titleHintZh": "芬皇廢寺徐四佳",
+          "authorNormalization": {
+            "rawLabelZh": "芬皇廢寺徐四佳",
+            "normalizedAuthorZh": "徐居正",
+            "confidence": "medium",
+            "titlePrefixZh": "芬皇廢寺",
+            "note": "저자명 뒤에 붙은 호/칭호 suffix 정리 규칙"
+          },
+          "sourceWork": {
+            "collectionTitle": "東京雜記 卷三",
+            "juan": "卷三",
+            "entryTitle": "芬皇廢寺徐四佳詩",
+            "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%89",
+            "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+            "verificationStatus": "verified-direct-text"
+          },
+          "text": {
+            "poemZh": "芬皇寺對黃龍寺\n千載遺基草自新\n白塔亭亭如喚客\n靑山默默已愁人\n無僧能解前三語\n有物空餘丈六身\n始信閭閻半佛宇\n法與何代似姚秦"
+          },
+          "ingest": {
+            "readiness": "direct-text-collected",
+            "targetDb": "poems",
+            "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+          }
+        }
+      ]
+    },
+    {
+      "poemId": "KPOEM-DONGGYEONG-JAPGI-3-H-0031",
+      "canonicalId": "KPOEM-CANON-DONGGYEONG-JAPGI-3-H-0031",
+      "title": {
+        "zh": "五陵悲弔",
+        "ko": "五陵悲弔"
+      },
+      "author": {
+        "authorId": "KAUTH-SEO-GEOJEONG",
+        "zh": "徐居正",
+        "ko": "서거정"
+      },
+      "era": {
+        "label": "조선 전기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "칠언율시",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "東京雜記 卷三",
+        "juan": "卷三",
+        "entryTitle": "五陵悲弔徐四佳詩",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%89",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "徐伐千年王氣銷\n五陵深處弔前朝\n馬嘶龍誕曾荒怪\n鵲浦鷄林共寂寥\n玉帶寶隨金樻盡\n銅駝影接石羊搖\n更無齒餠能傳祚\n春樹年年語伯勞",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json",
+        "workerId": "donggyeong-japgi-bundle-import",
+        "candidateTitle": "五陵悲弔",
+        "matchedTitle": "五陵悲弔",
+        "harvestId": "KHS-TZ3-H-0031",
+        "ownedTranslationNeeded": true,
+        "notes": "동경잡기 전권 bundle에서 기존 seed 시인과 매칭된 작품을 1차 승격함"
+      },
+      "collectionWitnesses": [
+        {
+          "variantType": "collection-witness",
+          "collectionId": "korean-classics-donggyeong-japgi",
+          "collectionTitle": "東京雜記",
+          "collectionTitleKo": "동경잡기",
+          "collectionTitleRomanization": "Donggyeong Japgi",
+          "harvestId": "KHS-TZ3-H-0031",
+          "documentEntryId": "KHS-TZ3-D-0182",
+          "documentSectionId": "KHS-TZ3-S-0011",
+          "displayLabelZh": "五陵悲弔徐四佳詩",
+          "titleHintZh": null,
+          "authorNormalization": {
+            "rawLabelZh": "五陵悲弔徐四佳",
+            "normalizedAuthorZh": "徐居正",
+            "confidence": "medium",
+            "titlePrefixZh": "五陵悲弔",
+            "note": "저자명 뒤에 붙은 호/칭호 suffix 정리 규칙"
+          },
+          "sourceWork": {
+            "collectionTitle": "東京雜記 卷三",
+            "juan": "卷三",
+            "entryTitle": "五陵悲弔徐四佳詩",
+            "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%89",
+            "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+            "verificationStatus": "verified-direct-text"
+          },
+          "text": {
+            "poemZh": "徐伐千年王氣銷\n五陵深處弔前朝\n馬嘶龍誕曾荒怪\n鵲浦鷄林共寂寥\n玉帶寶隨金樻盡\n銅駝影接石羊搖\n更無齒餠能傳祚\n春樹年年語伯勞"
+          },
+          "ingest": {
+            "readiness": "direct-text-collected",
+            "targetDb": "poems",
+            "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+          }
+        }
+      ]
+    },
+    {
+      "poemId": "KPOEM-DONGGYEONG-JAPGI-3-H-0033",
+      "canonicalId": "KPOEM-CANON-DONGGYEONG-JAPGI-3-H-0033",
+      "title": {
+        "zh": "南亭淸賞",
+        "ko": "南亭淸賞"
+      },
+      "author": {
+        "authorId": "KAUTH-SEO-GEOJEONG",
+        "zh": "徐居正",
+        "ko": "서거정"
+      },
+      "era": {
+        "label": "조선 전기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "칠언율시",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "東京雜記 卷三",
+        "juan": "卷三",
+        "entryTitle": "南亭淸賞徐四佳詩",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%89",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "城郭人民是又非\n倚闌豪肅澹忘歸\n閼英殿裏龍應去\n脫解海邊鵲不依\n蘿井樹陰依舊暗\n竹陵笱籜至今肥\n可憐當日繁華地\n天地無情幾夕暉",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json",
+        "workerId": "donggyeong-japgi-bundle-import",
+        "candidateTitle": "南亭淸賞",
+        "matchedTitle": "南亭淸賞",
+        "harvestId": "KHS-TZ3-H-0033",
+        "ownedTranslationNeeded": true,
+        "notes": "동경잡기 전권 bundle에서 기존 seed 시인과 매칭된 작품을 1차 승격함"
+      },
+      "collectionWitnesses": [
+        {
+          "variantType": "collection-witness",
+          "collectionId": "korean-classics-donggyeong-japgi",
+          "collectionTitle": "東京雜記",
+          "collectionTitleKo": "동경잡기",
+          "collectionTitleRomanization": "Donggyeong Japgi",
+          "harvestId": "KHS-TZ3-H-0033",
+          "documentEntryId": "KHS-TZ3-D-0184",
+          "documentSectionId": "KHS-TZ3-S-0011",
+          "displayLabelZh": "南亭淸賞徐四佳詩",
+          "titleHintZh": "南亭淸賞徐四佳",
+          "authorNormalization": {
+            "rawLabelZh": "南亭淸賞徐四佳",
+            "normalizedAuthorZh": "徐居正",
+            "confidence": "medium",
+            "titlePrefixZh": "南亭淸賞",
+            "note": "저자명 뒤에 붙은 호/칭호 suffix 정리 규칙"
+          },
+          "sourceWork": {
+            "collectionTitle": "東京雜記 卷三",
+            "juan": "卷三",
+            "entryTitle": "南亭淸賞徐四佳詩",
+            "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%89",
+            "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+            "verificationStatus": "verified-direct-text"
+          },
+          "text": {
+            "poemZh": "城郭人民是又非\n倚闌豪肅澹忘歸\n閼英殿裏龍應去\n脫解海邊鵲不依\n蘿井樹陰依舊暗\n竹陵笱籜至今肥\n可憐當日繁華地\n天地無情幾夕暉"
+          },
+          "ingest": {
+            "readiness": "direct-text-collected",
+            "targetDb": "poems",
+            "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+          }
+        }
+      ]
+    },
+    {
+      "poemId": "KPOEM-DONGGYEONG-JAPGI-3-H-0036",
+      "canonicalId": "KPOEM-CANON-DONGGYEONG-JAPGI-3-H-0036",
+      "title": {
+        "zh": "過庾信墓",
+        "ko": "過庾信墓"
+      },
+      "author": {
+        "authorId": "KAUTH-SEO-GEOJEONG",
+        "zh": "徐居正",
+        "ko": "서거정"
+      },
+      "era": {
+        "label": "조선 전기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "칠언율시",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "東京雜記 卷三",
+        "juan": "卷三",
+        "entryTitle": "過庾信墓徐四佳詩",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%89",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "金老墳前石獸□\n千年劍氣尙奇奇\n綸巾白羽追前業\n丹荔黃蕉起後思\n有客題詩誇壯烈\n無人穿塜近要離\n天官寺古知何處\n萬古蛾眉姓字隨",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json",
+        "workerId": "donggyeong-japgi-bundle-import",
+        "candidateTitle": "過庾信墓",
+        "matchedTitle": "過庾信墓",
+        "harvestId": "KHS-TZ3-H-0036",
+        "ownedTranslationNeeded": true,
+        "notes": "동경잡기 전권 bundle에서 기존 seed 시인과 매칭된 작품을 1차 승격함"
+      },
+      "collectionWitnesses": [
+        {
+          "variantType": "collection-witness",
+          "collectionId": "korean-classics-donggyeong-japgi",
+          "collectionTitle": "東京雜記",
+          "collectionTitleKo": "동경잡기",
+          "collectionTitleRomanization": "Donggyeong Japgi",
+          "harvestId": "KHS-TZ3-H-0036",
+          "documentEntryId": "KHS-TZ3-D-0188",
+          "documentSectionId": "KHS-TZ3-S-0011",
+          "displayLabelZh": "過庾信墓徐四佳詩",
+          "titleHintZh": "過庾信墓徐四佳",
+          "authorNormalization": {
+            "rawLabelZh": "過庾信墓徐四佳",
+            "normalizedAuthorZh": "徐居正",
+            "confidence": "medium",
+            "titlePrefixZh": "過庾信墓",
+            "note": "저자명 뒤에 붙은 호/칭호 suffix 정리 규칙"
+          },
+          "sourceWork": {
+            "collectionTitle": "東京雜記 卷三",
+            "juan": "卷三",
+            "entryTitle": "過庾信墓徐四佳詩",
+            "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%89",
+            "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+            "verificationStatus": "verified-direct-text"
+          },
+          "text": {
+            "poemZh": "金老墳前石獸□\n千年劍氣尙奇奇\n綸巾白羽追前業\n丹荔黃蕉起後思\n有客題詩誇壯烈\n無人穿塜近要離\n天官寺古知何處\n萬古蛾眉姓字隨"
+          },
+          "ingest": {
+            "readiness": "direct-text-collected",
+            "targetDb": "poems",
+            "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+          }
+        }
+      ]
     },
     {
       "poemId": "KPOEM-CAND-AUTHOR-EC9D84EC-001",

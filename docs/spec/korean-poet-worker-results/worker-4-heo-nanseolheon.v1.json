@@ -7,7 +7,7 @@
   ],
   "summary": {
     "candidateWorksChecked": 5,
-    "directTextWorksFound": 13,
+    "directTextWorksFound": 14,
     "ocrCandidates": 0,
     "blockedWorks": 0
   },
@@ -16,19 +16,19 @@
       "authorKo": "허난설헌",
       "authorHanja": "許蘭雪軒",
       "candidateTitle": "春雨",
-      "matchedTitle": "效沈亞之體 又 / 效崔國輔體 又",
+      "matchedTitle": "春雨",
       "sourceWork": {
-        "collectionTitle": "蘭雪軒詩集",
+        "collectionTitle": "조선여류한시선집",
         "juan": null,
-        "entryTitle": "效沈亞之體 又 / 效崔國輔體 又",
-        "sourceUrl": "https://zh.wikisource.org/wiki/蘭雪軒詩集",
-        "rawUrl": "https://zh.wikisource.org/wiki/蘭雪軒詩集?action=raw",
+        "entryTitle": "봄비",
+        "sourceUrl": "https://ko.wikisource.org/wiki/%EC%A1%B0%EC%84%A0%EC%97%AC%EB%A5%98%ED%95%9C%EC%8B%9C%EC%84%A0%EC%A7%91/%EB%B4%84%EB%B9%84",
+        "rawUrl": "https://ko.wikisource.org/wiki/%EC%A1%B0%EC%84%A0%EC%97%AC%EB%A5%98%ED%95%9C%EC%8B%9C%EC%84%A0%EC%A7%91/%EB%B4%84%EB%B9%84?action=raw",
         "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
-        "locatorConfidence": "low"
+        "locatorConfidence": "high"
       },
       "text": {
-        "poemZh": null,
-        "poemKoReading": null,
+        "poemZh": "春雨暗西池\n輕寒襲羅衣\n愁依小屛風\n墻頭杏花落",
+        "poemKoReading": "춘우암서지\n경한습라의\n수의소병풍\n장두행화락",
         "poemKoGloss": null
       },
       "rights": {
@@ -36,8 +36,8 @@
         "translationUsage": "owned_translation_needed"
       },
       "ingest": {
-        "recommendedReadiness": "source-located",
-        "notes": "위키문헌 collection 안에서 standalone title `春雨`는 보이지 않고, `春雨梨花白...`와 `春雨暗西池...`처럼 첫 구가 `春雨`로 시작하는 무제/하위 연작 2건이 확인된다. seed title이 어느 쪽을 가리키는지 아직 못 고정했으므로 전문 수집은 보류한다."
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "이전 mini/mixed pilot의 `봄비` 단서를 재확인했다. ko Wikisource `조선여류한시선집/봄비` 개별 page가 `春雨暗西池` 본문을 제공하므로 seed title `春雨`의 direct-text로 승격한다. 번역문은 worker 산출물에 넣지 않고 원문과 독음만 보존한다."
       }
     },
     {
