@@ -1,13 +1,18 @@
 {
   "version": "2026-04-23.v1",
-  "batchId": "korean-hansi-tokyo-zakki-vol1-poem-harvest",
-  "purpose": "東京雜記 卷一에서 문헌 원문 보존층과 시문 파생층을 함께 구조화한다",
+  "batchId": "korean-hansi-donggyeong-japgi-vol1-poem-harvest",
+  "purpose": "동경잡기(東京雜記) 卷一에서 문헌 원문 보존층과 시문 파생층을 함께 구조화한다",
   "collection": {
+    "titleZh": "東京雜記",
+    "titleKo": "동경잡기",
+    "titleRomanization": "Donggyeong Japgi",
+    "historicalPlaceNote": "여기서 東京은 일본 東京/도쿄가 아니라 신라·고려 문맥의 경주를 가리키는 별칭이다.",
+    "canonicalSlug": "donggyeong-japgi",
     "title": "東京雜記 卷一",
     "juan": "卷一",
     "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%80",
     "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
-    "rawCachePath": "/Users/jinwoo/Documents/development/hanshinaru/docs/spec/korean-hansi-tokyo-zakki-vol1-raw/tokyo-zakki-1.raw.txt"
+    "rawCachePath": "/Users/jinwoo/Documents/development/hanshinaru/docs/spec/korean-hansi-donggyeong-japgi-vol1-raw/donggyeong-japgi-1.raw.txt"
   },
   "preservationPolicy": {
     "documentLayer": "권차 원문은 section/항목 단위로 보존하고 연구·검수·재가공의 기준본으로 삼는다",

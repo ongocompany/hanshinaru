@@ -2,19 +2,20 @@
 epic_id: d2fcf245-b314-4881-827a-8e178167c643
 doc_type: handoff
 status: active
-title: 東京雜記 전권 수집과 문헌-작품 이중 모델 전환
+title: 동경잡기(東京雜記) 전권 수집과 문헌-작품 이중 모델 전환
 date: 2026-04-24
 author: 태훈
 ---
 
 # 이번 세션에서 완료한 작업
 
-- `西樓` 단일 표제 추적에서 벗어나 `東京雜記`를 권차 단위 대량 수집 대상으로 전환했다.
-- `東京雜記 卷一`, `卷二`, `卷三` 공개 raw 원문을 기준으로 권차별 수확기를 만들고 실제 산출을 생성했다.
+- `西樓` 단일 표제 추적에서 벗어나 `동경잡기(東京雜記)`를 권차 단위 대량 수집 대상으로 전환했다.
+- 문헌명 표기는 `동경잡기(東京雜記) / Donggyeong Japgi`가 맞고, `donggyeong-japgi`는 내부 canonical slug로만 취급한다.
+- `동경잡기(東京雜記) 卷一`, `卷二`, `卷三` 공개 raw 원문을 기준으로 권차별 수확기를 만들고 실제 산출을 생성했다.
 - 수집 구조를 `시만 분리`하는 방식이 아니라 `문헌 층 + 작품 층` 이중 모델로 바꿨다.
   - 문헌 층: 권차, section, 항목 원문 보존
   - 작품 층: 시문/가요 후보를 문헌 항목을 가리키는 파생 자산으로 분리
-- `東京雜記` 1~3권 전권 묶음을 생성했다.
+- `동경잡기(東京雜記)` 1~3권 전권 묶음을 생성했다.
   - 문헌 section `50`
   - 문헌 항목 `913`
   - 시문 후보 `91`
@@ -32,7 +33,7 @@ author: 태훈
 
 # 어디서 멈췄는지
 
-- `東京雜記` 1~3권에 대해서는
+- `동경잡기(東京雜記)` 1~3권에 대해서는
   - 문헌 보존
   - 작품 후보 분리
   - 전권 묶음
@@ -48,12 +49,12 @@ author: 태훈
 
 - `작품 한 편 찾기` 방식은 너무 느리다.
   - 따라서 `문헌 한 권 통째로 수확`하는 방식으로 전환했다.
-- `東京雜記`는 권마다 성격이 다르다.
+- `동경잡기(東京雜記)`는 권마다 성격이 다르다.
   - `卷一`: 혼합형
   - `卷二`: 항목 밑 시문 부착형
   - `卷三`: `題詠` 집중형
   - 따라서 `권차별 수확 -> 전권 묶음`이 맞다.
-- `東京雜記` 같은 문집/잡기는 연구자료 가치가 크므로 시만 남기고 버리면 안 된다.
+- `동경잡기(東京雜記)` 같은 문집/잡기는 연구자료 가치가 크므로 시만 남기고 버리면 안 된다.
   - 문헌 층을 함께 보존해야 나중에
     - 작품 재분리
     - OCR 대조
@@ -68,27 +69,27 @@ author: 태훈
 
 ## 생성
 
-- `docs/handoff/2026-04-24-tokyo-zakki-document-work-pipeline.md`
+- `docs/handoff/2026-04-24-donggyeong-japgi-document-work-pipeline.md`
 - `docs/spec/2026-04-23-korean-classical-document-work-model.md`
-- `docs/spec/2026-04-23-korean-hansi-tokyo-zakki-vol1-poem-harvest.md`
-- `docs/spec/2026-04-23-korean-hansi-tokyo-zakki-vol2-poem-harvest.md`
-- `docs/spec/2026-04-23-korean-hansi-tokyo-zakki-vol3-poem-harvest.md`
-- `docs/spec/2026-04-23-korean-classics-tokyo-zakki-collection-bundle.md`
-- `docs/spec/2026-04-24-korean-classics-tokyo-zakki-author-view.md`
-- `docs/spec/2026-04-24-korean-classics-tokyo-zakki-review-queue.md`
-- `docs/spec/korean-hansi-tokyo-zakki-vol1-poem-harvest.v1.json`
-- `docs/spec/korean-hansi-tokyo-zakki-vol2-poem-harvest.v1.json`
-- `docs/spec/korean-hansi-tokyo-zakki-vol3-poem-harvest.v1.json`
-- `docs/spec/korean-classics-tokyo-zakki-collection-bundle.v1.json`
-- `docs/spec/korean-classics-tokyo-zakki-author-view.v1.json`
-- `docs/spec/korean-classics-tokyo-zakki-review-queue.v1.json`
-- `docs/spec/korean-hansi-tokyo-zakki-vol1-raw/`
-- `docs/spec/korean-hansi-tokyo-zakki-vol2-raw/`
-- `docs/spec/korean-hansi-tokyo-zakki-vol3-raw/`
-- `scripts/build_korean_hansi_tokyo_zakki_volume2_harvest.js`
-- `scripts/build_korean_classics_tokyo_zakki_collection_bundle.js`
-- `scripts/build_korean_classics_tokyo_zakki_author_view.js`
-- `scripts/build_korean_classics_tokyo_zakki_review_queue.js`
+- `docs/spec/2026-04-23-korean-hansi-donggyeong-japgi-vol1-poem-harvest.md`
+- `docs/spec/2026-04-23-korean-hansi-donggyeong-japgi-vol2-poem-harvest.md`
+- `docs/spec/2026-04-23-korean-hansi-donggyeong-japgi-vol3-poem-harvest.md`
+- `docs/spec/2026-04-23-korean-classics-donggyeong-japgi-collection-bundle.md`
+- `docs/spec/2026-04-24-korean-classics-donggyeong-japgi-author-view.md`
+- `docs/spec/2026-04-24-korean-classics-donggyeong-japgi-review-queue.md`
+- `docs/spec/korean-hansi-donggyeong-japgi-vol1-poem-harvest.v1.json`
+- `docs/spec/korean-hansi-donggyeong-japgi-vol2-poem-harvest.v1.json`
+- `docs/spec/korean-hansi-donggyeong-japgi-vol3-poem-harvest.v1.json`
+- `docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json`
+- `docs/spec/korean-classics-donggyeong-japgi-author-view.v1.json`
+- `docs/spec/korean-classics-donggyeong-japgi-review-queue.v1.json`
+- `docs/spec/korean-hansi-donggyeong-japgi-vol1-raw/`
+- `docs/spec/korean-hansi-donggyeong-japgi-vol2-raw/`
+- `docs/spec/korean-hansi-donggyeong-japgi-vol3-raw/`
+- `scripts/build_korean_hansi_donggyeong_japgi_volume_harvest.js`
+- `scripts/build_korean_classics_donggyeong_japgi_collection_bundle.js`
+- `scripts/build_korean_classics_donggyeong_japgi_author_view.js`
+- `scripts/build_korean_classics_donggyeong_japgi_review_queue.js`
 
 ## 수정
 
@@ -101,9 +102,9 @@ author: 태훈
 - `docs/handoff/2026-04-21-korean-hansi-text-collection-pilot.md`
 - `docs/handoff/2026-04-21-jeong-jisang-tranche1-and-wave1-progress.md`
 - `docs/research/2026-04-23-jeong-jisang-seoru-locator-check.md`
-- `docs/spec/korean-classics-tokyo-zakki-collection-bundle.v1.json`
-- `docs/spec/korean-classics-tokyo-zakki-author-view.v1.json`
-- `docs/spec/korean-classics-tokyo-zakki-review-queue.v1.json`
+- `docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json`
+- `docs/spec/korean-classics-donggyeong-japgi-author-view.v1.json`
+- `docs/spec/korean-classics-donggyeong-japgi-review-queue.v1.json`
 
 # 원래 계획과 달라진 점
 
@@ -117,13 +118,13 @@ author: 태훈
 
 # 다음 세션의 첫 행동
 
-1. `korean-classics-tokyo-zakki-review-queue.v1.json`의 `본문 복원 5건`부터 처리한다.
+1. `korean-classics-donggyeong-japgi-review-queue.v1.json`의 `본문 복원 5건`부터 처리한다.
 2. `저자 표기 낮은 신뢰 9건`을
    - 인명
    - 놀이/가요명
    - 부제/작품군명
    으로 분리 정리한다.
-3. 그다음 `東京雜記` 전권 후보를 `정식 작품 후보`와 `문맥 자산`으로 나눈다.
+3. 그다음 `동경잡기(東京雜記)` 전권 후보를 `정식 작품 후보`와 `문맥 자산`으로 나눈다.
 4. 이후 같은 방식으로 `東文選` 확장 여부를 판단한다.
 
 # 다음 세션이 피해야 할 함정

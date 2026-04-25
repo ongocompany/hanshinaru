@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * build_korean_classics_tokyo_zakki_collection_bundle.js
+ * build_korean_classics_donggyeong_japgi_collection_bundle.js
  *
  * 목적:
  * - `東京雜記` 권차별 수확 결과를 전권 단위 문헌 묶음으로 통합한다.
@@ -8,7 +8,7 @@
  *   연구 보존과 서비스 파생의 기준본으로 쓴다.
  *
  * 사용법:
- *   node scripts/build_korean_classics_tokyo_zakki_collection_bundle.js
+ *   node scripts/build_korean_classics_donggyeong_japgi_collection_bundle.js
  */
 
 const fs = require('fs');
@@ -16,7 +16,15 @@ const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
 const VOLUMES = [1, 2, 3];
-const OUT_BUNDLE = path.join(ROOT, 'docs', 'spec', 'korean-classics-tokyo-zakki-collection-bundle.v1.json');
+const OUT_BUNDLE = path.join(ROOT, 'docs', 'spec', 'korean-classics-donggyeong-japgi-collection-bundle.v1.json');
+
+const COLLECTION_IDENTITY = {
+  titleZh: '東京雜記',
+  titleKo: '동경잡기',
+  titleRomanization: 'Donggyeong Japgi',
+  historicalPlaceNote: '여기서 東京은 일본 東京/도쿄가 아니라 신라·고려 문맥의 경주를 가리키는 별칭이다.',
+  canonicalSlug: 'donggyeong-japgi'
+};
 
 const EXACT_AUTHOR_NORMALIZATIONS = {
   '佔畢齋金宗直': { normalizedAuthorZh: '金宗直' },
@@ -49,8 +57,13 @@ const EXACT_AUTHOR_NORMALIZATIONS = {
     titlePrefixZh: '祓禊',
     note: '兄山浦 金克己詩 뒤에 이어지는 又題 표제 정리 규칙'
   },
+  '會蘇曲': { normalizedAuthorZh: '金宗直', titlePrefixZh: '會蘇曲', note: '七詠 연작 표제 정리 규칙' },
+  '憂息曲': { normalizedAuthorZh: '金宗直', titlePrefixZh: '憂息曲', note: '七詠 연작 표제 정리 규칙' },
+  '鵄述嶺': { normalizedAuthorZh: '金宗直', titlePrefixZh: '鵄述嶺', note: '七詠 연작 표제 정리 규칙' },
   '怛忉': { normalizedAuthorZh: '金宗直', titlePrefixZh: '怛忉', note: '七詠 연작 표제 정리 규칙' },
   '陽山': { normalizedAuthorZh: '金宗直', titlePrefixZh: '陽山', note: '七詠 연작 표제 정리 규칙' },
+  '碓樂': { normalizedAuthorZh: '金宗直', titlePrefixZh: '碓樂', note: '七詠 연작 표제 정리 규칙' },
+  '黃昌郞': { normalizedAuthorZh: '金宗直', titlePrefixZh: '黃昌郞', note: '七詠 연작 표제 정리 규칙' },
   '雜詠兪好仁': { normalizedAuthorZh: '兪好仁', titlePrefixZh: '雜詠', note: '표제+저자 결합 표기 정리 규칙' }
 };
 
@@ -148,7 +161,7 @@ function normalizeAuthorLabel(rawLabel) {
 function main() {
   const manifests = VOLUMES.map((volume) => ({
     volume,
-    manifest: readJson(`docs/spec/korean-hansi-tokyo-zakki-vol${volume}-poem-harvest.v1.json`)
+    manifest: readJson(`docs/spec/korean-hansi-donggyeong-japgi-vol${volume}-poem-harvest.v1.json`)
   }));
 
   const documentSections = [];
@@ -220,11 +233,10 @@ function main() {
 
   const bundle = {
     version: '2026-04-23.v1',
-    collectionId: 'korean-classics-tokyo-zakki-collection-bundle',
-    purpose: '東京雜記 1~3권을 문헌 층과 작품 층이 함께 보존되는 전권 묶음으로 통합한다',
+    collectionId: 'korean-classics-donggyeong-japgi-collection-bundle',
+    purpose: '동경잡기(東京雜記) 1~3권을 문헌 층과 작품 층이 함께 보존되는 전권 묶음으로 통합한다',
     collection: {
-      titleZh: '東京雜記',
-      titleKo: '동경잡기',
+      ...COLLECTION_IDENTITY,
       volumeRange: '卷一~卷三',
       sourcePolicyId: 'SRC-WIKISOURCE-TEXT'
     },

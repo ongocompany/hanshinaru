@@ -1,21 +1,21 @@
 #!/usr/bin/env node
 /**
- * build_korean_classics_tokyo_zakki_review_queue.js
+ * build_korean_classics_donggyeong_japgi_review_queue.js
  *
  * 목적:
  * - `東京雜記` 전권 묶음에서 추가 검수가 필요한 항목만 따로 추린다.
  * - 작품 본문 복원과 저자 표기 정리를 다음 단계 작업 큐로 고정한다.
  *
  * 사용법:
- *   node scripts/build_korean_classics_tokyo_zakki_review_queue.js
+ *   node scripts/build_korean_classics_donggyeong_japgi_review_queue.js
  */
 
 const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
-const BUNDLE_PATH = path.join(ROOT, 'docs', 'spec', 'korean-classics-tokyo-zakki-collection-bundle.v1.json');
-const OUT_PATH = path.join(ROOT, 'docs', 'spec', 'korean-classics-tokyo-zakki-review-queue.v1.json');
+const BUNDLE_PATH = path.join(ROOT, 'docs', 'spec', 'korean-classics-donggyeong-japgi-collection-bundle.v1.json');
+const OUT_PATH = path.join(ROOT, 'docs', 'spec', 'korean-classics-donggyeong-japgi-review-queue.v1.json');
 
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -65,9 +65,10 @@ function main() {
 
   const queue = {
     version: '2026-04-24.v1',
-    queueId: 'korean-classics-tokyo-zakki-review-queue',
+    queueId: 'korean-classics-donggyeong-japgi-review-queue',
     basedOn: path.basename(BUNDLE_PATH),
-    purpose: '東京雜記 전권 수집 결과 중 본문 복원과 저자 정리가 필요한 항목만 별도 추린다',
+    purpose: '동경잡기(東京雜記) 전권 수집 결과 중 본문 복원과 저자 정리가 필요한 항목만 별도 추린다',
+    collection: bundle.collection,
     summary: {
       mediumWorkCount: mediumWorks.length,
       lowAuthorLabelCount: lowAuthorLabels.length,

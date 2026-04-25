@@ -1,0 +1,22 @@
+{
+  "version": "2026-04-24.v1",
+  "queueId": "korean-classics-donggyeong-japgi-review-queue",
+  "basedOn": "korean-classics-donggyeong-japgi-collection-bundle.v1.json",
+  "purpose": "동경잡기(東京雜記) 전권 수집 결과 중 본문 복원과 저자 정리가 필요한 항목만 별도 추린다",
+  "collection": {
+    "titleZh": "東京雜記",
+    "titleKo": "동경잡기",
+    "titleRomanization": "Donggyeong Japgi",
+    "historicalPlaceNote": "여기서 東京은 일본 東京/도쿄가 아니라 신라·고려 문맥의 경주를 가리키는 별칭이다.",
+    "canonicalSlug": "donggyeong-japgi",
+    "volumeRange": "卷一~卷三",
+    "sourcePolicyId": "SRC-WIKISOURCE-TEXT"
+  },
+  "summary": {
+    "mediumWorkCount": 0,
+    "lowAuthorLabelCount": 0,
+    "likelyNonPersonLabelCount": 0
+  },
+  "mediumWorks": [],
+  "lowAuthorLabels": []
+}

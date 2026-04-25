@@ -1,13 +1,18 @@
 {
   "version": "2026-04-23.v1",
-  "batchId": "korean-hansi-tokyo-zakki-vol3-poem-harvest",
-  "purpose": "東京雜記 卷三에서 문헌 원문 보존층과 시문 파생층을 함께 구조화한다",
+  "batchId": "korean-hansi-donggyeong-japgi-vol3-poem-harvest",
+  "purpose": "동경잡기(東京雜記) 卷三에서 문헌 원문 보존층과 시문 파생층을 함께 구조화한다",
   "collection": {
+    "titleZh": "東京雜記",
+    "titleKo": "동경잡기",
+    "titleRomanization": "Donggyeong Japgi",
+    "historicalPlaceNote": "여기서 東京은 일본 東京/도쿄가 아니라 신라·고려 문맥의 경주를 가리키는 별칭이다.",
+    "canonicalSlug": "donggyeong-japgi",
     "title": "東京雜記 卷三",
     "juan": "卷三",
     "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%89",
     "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
-    "rawCachePath": "/Users/jinwoo/Documents/development/hanshinaru/docs/spec/korean-hansi-tokyo-zakki-vol3-raw/tokyo-zakki-3.raw.txt"
+    "rawCachePath": "/Users/jinwoo/Documents/development/hanshinaru/docs/spec/korean-hansi-donggyeong-japgi-vol3-raw/donggyeong-japgi-3.raw.txt"
   },
   "preservationPolicy": {
     "documentLayer": "권차 원문은 section/항목 단위로 보존하고 연구·검수·재가공의 기준본으로 삼는다",
@@ -22,16 +27,16 @@
     "documentSectionCount": 13,
     "documentEntryCount": 211,
     "documentEntryKinds": {
-      "prose": 168,
-      "poem-bearing": 43
+      "prose": 164,
+      "poem-bearing": 47
     },
-    "poemBlockCount": 41,
+    "poemBlockCount": 45,
     "attachedContextCount": 2,
     "sectionsWithPoems": [
       "題詠"
     ],
     "poemBlocksBySection": {
-      "題詠": 41
+      "題詠": 45
     }
   },
   "documentSections": [
@@ -2780,7 +2785,7 @@
       "documentSectionId": "KHS-TZ3-S-0011",
       "section": "題詠",
       "sourceEntryTitle": null,
-      "entryKind": "prose",
+      "entryKind": "poem-bearing",
       "textZh": "憂息曲常棣華隨風落扶桑扶桑萬里鯨鯢浪縱有音書誰得將常棣華隨風返鷄林鷄林春色擁雙闕友于歡倩如許深",
       "source": {
         "collectionTitle": "東京雜記 卷三",
@@ -2794,7 +2799,7 @@
       "documentSectionId": "KHS-TZ3-S-0011",
       "section": "題詠",
       "sourceEntryTitle": null,
-      "entryKind": "prose",
+      "entryKind": "poem-bearing",
       "textZh": "鵄述嶺鵄述嶺頭望日本粘天鯨海無涯岸良人去時但搖手生歟死歟音耗斷長別離死生寧有相見時呼天便化武昌石烈氣千載干空碧",
       "source": {
         "collectionTitle": "東京雜記 卷三",
@@ -2836,7 +2841,7 @@
       "documentSectionId": "KHS-TZ3-S-0011",
       "section": "題詠",
       "sourceEntryTitle": null,
-      "entryKind": "prose",
+      "entryKind": "poem-bearing",
       "textZh": "碓樂東家砧舂忝稻西家杵搗寒襖東家西家砧杵聲卒歲之質贏復贏儂家窖乏甔石儂家箱無尺帛懸鶉衣兮藜羹椀榮期之樂足飽燰糟妻糟妻莫謾憂富貴在天那可求曲肱而寢有至味梁鵠孟光眞好逑",
       "source": {
         "collectionTitle": "東京雜記 卷三",
@@ -2850,7 +2855,7 @@
       "documentSectionId": "KHS-TZ3-S-0011",
       "section": "題詠",
       "sourceEntryTitle": null,
-      "entryKind": "prose",
+      "entryKind": "poem-bearing",
       "textZh": "黃昌郞若有人兮纔離齠身未三尺何雄驍平生汪錡我所師爲國雪恥心無憀劍鐔凝頸股不戰劍鍔指心目不搖功成脫然罷舞去挾山北海猶可超",
       "source": {
         "collectionTitle": "東京雜記 卷三",
@@ -3965,13 +3970,14 @@
       "documentSectionId": "KHS-TZ3-S-0011",
       "section": "題詠",
       "sourceEntryTitle": null,
-      "marker": "詩",
-      "authorZh": "七詠佔畢齋金宗直",
+      "marker": "曲",
+      "authorZh": "會蘇曲",
       "titleHintZh": null,
-      "displayLabelZh": "七詠佔畢齋金宗直詩",
-      "textZh": "會蘇曲會蘇曲西\n風吹廣庭明月滿\n華屋王姬厭坐理\n繅車六部女兒多\n如簇爾筥旣盈我\n筐空釃酒揶揄笑\n相譃一婦嘆千室\n歡坐令四方勤杼\n柚嘉俳縱失閨中\n儀猶勝跋河爭嗃\n嗃",
+      "displayLabelZh": "會蘇曲",
+      "seriesTitleZh": "七詠",
+      "textZh": "會蘇曲會蘇曲\n西風吹廣庭\n明月滿華屋\n王姬厭坐理繅車\n六部女兒多如簇\n爾筥旣盈我筐空\n釃酒揶揄笑相譃\n一婦嘆千室歡\n坐令四方勤杼柚\n嘉俳縱失閨中儀\n猶勝跋河爭嗃嗃",
       "lineCount": 11,
-      "inferredForm": "미상",
+      "inferredForm": "가요/기타",
       "source": {
         "collectionTitle": "東京雜記 卷三",
         "juan": "卷三",
@@ -3979,21 +3985,27 @@
         "sourcePolicyId": "SRC-WIKISOURCE-TEXT"
       },
       "harvestPolicy": {
-        "confidence": "medium",
-        "rationale": "entry는 직접 열리지만 원문 손상/무구두점 때문에 행 분할은 보수적으로 유지함"
+        "confidence": "high",
+        "rationale": "七詠 金宗直詩는 대조 문헌에서 하위 곡명이 확인되어 개별 작품 후보로 분리함",
+        "collationSource": {
+          "sourceTitle": "新增東國輿地勝覽 卷021",
+          "sourceUrl": "https://zh.wikisource.org/wiki/%E6%96%B0%E5%A2%9E%E6%9D%B1%E5%9C%8B%E8%BC%BF%E5%9C%B0%E5%8B%9D%E8%A6%BD/%E5%8D%B7021",
+          "note": "七詠 金宗直詩 하위 곡명과 구두점 대조"
+        }
       }
     },
     {
       "harvestId": "KHS-TZ3-H-0039",
-      "documentEntryId": "KHS-TZ3-D-0193",
+      "documentEntryId": "KHS-TZ3-D-0191",
       "documentSectionId": "KHS-TZ3-S-0011",
       "section": "題詠",
       "sourceEntryTitle": null,
-      "marker": "歌",
-      "authorZh": "怛忉",
+      "marker": "曲",
+      "authorZh": "憂息曲",
       "titleHintZh": null,
-      "displayLabelZh": "怛忉歌",
-      "textZh": "怛怛復忉忉大家\n幾不保流蘇悵裏\n玄鶴到揚且之晢\n難偕老忉怛忉怛\n神物不告知奈何\n神物告兮基圖大",
+      "displayLabelZh": "憂息曲",
+      "seriesTitleZh": "七詠",
+      "textZh": "常棣華隨風落扶桑\n扶桑萬里鯨鯢浪\n縱有音書誰得將\n常棣華隨風返鷄林\n鷄林春色擁雙闕\n友于歡倩如許深",
       "lineCount": 6,
       "inferredForm": "가요/기타",
       "source": {
@@ -4004,21 +4016,27 @@
       },
       "harvestPolicy": {
         "confidence": "high",
-        "rationale": "entry가 `○저자/표제+詩/歌` 형태로 직접 열리고 행 분할도 안정적으로 복원됨"
+        "rationale": "七詠 金宗直詩는 대조 문헌에서 하위 곡명이 확인되어 개별 작품 후보로 분리함",
+        "collationSource": {
+          "sourceTitle": "新增東國輿地勝覽 卷021",
+          "sourceUrl": "https://zh.wikisource.org/wiki/%E6%96%B0%E5%A2%9E%E6%9D%B1%E5%9C%8B%E8%BC%BF%E5%9C%B0%E5%8B%9D%E8%A6%BD/%E5%8D%B7021",
+          "note": "七詠 金宗直詩 하위 곡명과 구두점 대조"
+        }
       }
     },
     {
       "harvestId": "KHS-TZ3-H-0040",
-      "documentEntryId": "KHS-TZ3-D-0194",
+      "documentEntryId": "KHS-TZ3-D-0192",
       "documentSectionId": "KHS-TZ3-S-0011",
       "section": "題詠",
       "sourceEntryTitle": null,
-      "marker": "歌",
+      "marker": "嶺",
       "authorZh": null,
-      "titleHintZh": "陽山",
-      "displayLabelZh": "陽山歌",
-      "textZh": "敵國爲封豕荐食\n我邊疆赳赳花郞\n徒報國心靡遑荷\n戈訣妻子欶泉啖\n糗糧賊人夜劘壘\n毅魂飛劍鋩回首\n陽山雲矗矗虹蜺\n光哀哉四丈夫終\n是北方强千秋爲\n鬼雄相與歆椒漿",
-      "lineCount": 10,
+      "titleHintZh": "鵄述嶺",
+      "displayLabelZh": "鵄述嶺",
+      "seriesTitleZh": "七詠",
+      "textZh": "鵄述嶺頭望日本\n粘天鯨海無涯岸\n良人去時但搖手\n生歟死歟音耗斷\n長別離\n死生寧有相見時\n呼天便化武昌石\n烈氣千載干空碧",
+      "lineCount": 8,
       "inferredForm": "가요/기타",
       "source": {
         "collectionTitle": "東京雜記 卷三",
@@ -4028,11 +4046,136 @@
       },
       "harvestPolicy": {
         "confidence": "high",
-        "rationale": "entry가 `○저자/표제+詩/歌` 형태로 직접 열리고 행 분할도 안정적으로 복원됨"
+        "rationale": "七詠 金宗直詩는 대조 문헌에서 하위 곡명이 확인되어 개별 작품 후보로 분리함",
+        "collationSource": {
+          "sourceTitle": "新增東國輿地勝覽 卷021",
+          "sourceUrl": "https://zh.wikisource.org/wiki/%E6%96%B0%E5%A2%9E%E6%9D%B1%E5%9C%8B%E8%BC%BF%E5%9C%B0%E5%8B%9D%E8%A6%BD/%E5%8D%B7021",
+          "note": "七詠 金宗直詩 하위 곡명과 구두점 대조"
+        }
       }
     },
     {
       "harvestId": "KHS-TZ3-H-0041",
+      "documentEntryId": "KHS-TZ3-D-0193",
+      "documentSectionId": "KHS-TZ3-S-0011",
+      "section": "題詠",
+      "sourceEntryTitle": null,
+      "marker": "歌",
+      "authorZh": "怛忉",
+      "titleHintZh": null,
+      "displayLabelZh": "怛忉歌",
+      "seriesTitleZh": "七詠",
+      "textZh": "怛怛復忉忉\n大家幾不保\n流蘇悵裏玄鶴到\n揚且之晢難偕老\n忉怛忉怛\n神物不告知奈何\n神物告兮基圖大",
+      "lineCount": 7,
+      "inferredForm": "가요/기타",
+      "source": {
+        "collectionTitle": "東京雜記 卷三",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%89",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT"
+      },
+      "harvestPolicy": {
+        "confidence": "high",
+        "rationale": "七詠 金宗直詩는 대조 문헌에서 하위 곡명이 확인되어 개별 작품 후보로 분리함",
+        "collationSource": {
+          "sourceTitle": "新增東國輿地勝覽 卷021",
+          "sourceUrl": "https://zh.wikisource.org/wiki/%E6%96%B0%E5%A2%9E%E6%9D%B1%E5%9C%8B%E8%BC%BF%E5%9C%B0%E5%8B%9D%E8%A6%BD/%E5%8D%B7021",
+          "note": "七詠 金宗直詩 하위 곡명과 구두점 대조"
+        }
+      }
+    },
+    {
+      "harvestId": "KHS-TZ3-H-0042",
+      "documentEntryId": "KHS-TZ3-D-0194",
+      "documentSectionId": "KHS-TZ3-S-0011",
+      "section": "題詠",
+      "sourceEntryTitle": null,
+      "marker": "歌",
+      "authorZh": null,
+      "titleHintZh": "陽山",
+      "displayLabelZh": "陽山歌",
+      "seriesTitleZh": "七詠",
+      "textZh": "敵國爲封豕\n荐食我邊疆\n赳赳花郞徒\n報國心靡遑\n荷戈訣妻子\n欶泉啖糗糧\n賊人夜劘壘\n毅魂飛劍鋩\n回首陽山雲\n矗矗虹蜺光\n哀哉四丈夫\n終是北方强\n千秋爲鬼雄\n相與歆椒漿",
+      "lineCount": 14,
+      "inferredForm": "가요/기타",
+      "source": {
+        "collectionTitle": "東京雜記 卷三",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%89",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT"
+      },
+      "harvestPolicy": {
+        "confidence": "high",
+        "rationale": "七詠 金宗直詩는 대조 문헌에서 하위 곡명이 확인되어 개별 작품 후보로 분리함",
+        "collationSource": {
+          "sourceTitle": "新增東國輿地勝覽 卷021",
+          "sourceUrl": "https://zh.wikisource.org/wiki/%E6%96%B0%E5%A2%9E%E6%9D%B1%E5%9C%8B%E8%BC%BF%E5%9C%B0%E5%8B%9D%E8%A6%BD/%E5%8D%B7021",
+          "note": "七詠 金宗直詩 하위 곡명과 구두점 대조"
+        }
+      }
+    },
+    {
+      "harvestId": "KHS-TZ3-H-0043",
+      "documentEntryId": "KHS-TZ3-D-0195",
+      "documentSectionId": "KHS-TZ3-S-0011",
+      "section": "題詠",
+      "sourceEntryTitle": null,
+      "marker": "樂",
+      "authorZh": "碓樂",
+      "titleHintZh": null,
+      "displayLabelZh": "碓樂",
+      "seriesTitleZh": "七詠",
+      "textZh": "東家砧舂忝稻\n西家杵搗寒襖\n東家西家砧杵聲\n卒歲之質贏復贏\n儂家窖乏甔石\n儂家箱無尺帛\n懸鶉衣兮藜羹椀\n榮期之樂足飽燰\n糟妻糟妻莫謾憂\n富貴在天那可求\n曲肱而寢有至味\n梁鵠孟光眞好逑",
+      "lineCount": 12,
+      "inferredForm": "가요/기타",
+      "source": {
+        "collectionTitle": "東京雜記 卷三",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%89",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT"
+      },
+      "harvestPolicy": {
+        "confidence": "high",
+        "rationale": "七詠 金宗直詩는 대조 문헌에서 하위 곡명이 확인되어 개별 작품 후보로 분리함",
+        "collationSource": {
+          "sourceTitle": "新增東國輿地勝覽 卷021",
+          "sourceUrl": "https://zh.wikisource.org/wiki/%E6%96%B0%E5%A2%9E%E6%9D%B1%E5%9C%8B%E8%BC%BF%E5%9C%B0%E5%8B%9D%E8%A6%BD/%E5%8D%B7021",
+          "note": "七詠 金宗直詩 하위 곡명과 구두점 대조"
+        }
+      }
+    },
+    {
+      "harvestId": "KHS-TZ3-H-0044",
+      "documentEntryId": "KHS-TZ3-D-0196",
+      "documentSectionId": "KHS-TZ3-S-0011",
+      "section": "題詠",
+      "sourceEntryTitle": null,
+      "marker": "樂府",
+      "authorZh": "黃昌郞",
+      "titleHintZh": null,
+      "displayLabelZh": "黃昌郞",
+      "seriesTitleZh": "七詠",
+      "textZh": "若有人兮纔離齠\n身未三尺何雄驍\n平生汪錡我所師\n爲國雪恥心無憀\n劍鐔凝頸股不戰\n劍鍔指心目不搖\n功成脫然罷舞去\n挾山北海猶可超",
+      "lineCount": 8,
+      "inferredForm": "가요/기타",
+      "source": {
+        "collectionTitle": "東京雜記 卷三",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%89",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT"
+      },
+      "harvestPolicy": {
+        "confidence": "high",
+        "rationale": "七詠 金宗直詩는 대조 문헌에서 하위 곡명이 확인되어 개별 작품 후보로 분리함",
+        "collationSource": {
+          "sourceTitle": "新增東國輿地勝覽 卷021",
+          "sourceUrl": "https://zh.wikisource.org/wiki/%E6%96%B0%E5%A2%9E%E6%9D%B1%E5%9C%8B%E8%BC%BF%E5%9C%B0%E5%8B%9D%E8%A6%BD/%E5%8D%B7021",
+          "note": "七詠 金宗直詩 하위 곡명과 구두점 대조"
+        }
+      }
+    },
+    {
+      "harvestId": "KHS-TZ3-H-0045",
       "documentEntryId": "KHS-TZ3-D-0197",
       "documentSectionId": "KHS-TZ3-S-0011",
       "section": "題詠",

@@ -1,21 +1,21 @@
 #!/usr/bin/env node
 /**
- * build_korean_classics_tokyo_zakki_author_view.js
+ * build_korean_classics_donggyeong_japgi_author_view.js
  *
  * 목적:
  * - `東京雜記` 전권 묶음을 시인 중심 보기로 재구성한다.
  * - 보수 정리된 저자 기준으로 작품 수, 권차 분포, 원표기 분포를 빠르게 확인할 수 있게 한다.
  *
  * 사용법:
- *   node scripts/build_korean_classics_tokyo_zakki_author_view.js
+ *   node scripts/build_korean_classics_donggyeong_japgi_author_view.js
  */
 
 const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
-const BUNDLE_PATH = path.join(ROOT, 'docs', 'spec', 'korean-classics-tokyo-zakki-collection-bundle.v1.json');
-const OUT_PATH = path.join(ROOT, 'docs', 'spec', 'korean-classics-tokyo-zakki-author-view.v1.json');
+const BUNDLE_PATH = path.join(ROOT, 'docs', 'spec', 'korean-classics-donggyeong-japgi-collection-bundle.v1.json');
+const OUT_PATH = path.join(ROOT, 'docs', 'spec', 'korean-classics-donggyeong-japgi-author-view.v1.json');
 
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -101,9 +101,10 @@ function main() {
 
   const authorView = {
     version: '2026-04-24.v1',
-    collectionId: 'korean-classics-tokyo-zakki-author-view',
+    collectionId: 'korean-classics-donggyeong-japgi-author-view',
     basedOn: path.basename(BUNDLE_PATH),
-    purpose: '東京雜記 전권 시문 후보를 정리된 시인 기준으로 재배열한다',
+    purpose: '동경잡기(東京雜記) 전권 시문 후보를 정리된 시인 기준으로 재배열한다',
+    collection: bundle.collection,
     summary: {
       normalizedAuthorCount: authors.length,
       totalWorkCount: authors.reduce((sum, author) => sum + author.workCount, 0),

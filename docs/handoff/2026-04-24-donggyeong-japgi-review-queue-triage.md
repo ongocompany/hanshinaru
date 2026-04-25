@@ -2,15 +2,16 @@
 epic_id: d2fcf245-b314-4881-827a-8e178167c643
 doc_type: handoff
 status: active
-title: 東京雜記 검수 대기열 축소와 저자 표기 정리
+title: 동경잡기(東京雜記) 검수 대기열 축소와 저자 표기 정리
 date: 2026-04-24
 author: 태훈
 ---
 
 # 이번 세션에서 완료한 작업
 
-- 최신 커밋 `f53598f [지훈][Feat] Add Tokyo Zakki document-work pipeline`와 직전 핸드오프를 확인했다.
-- `korean-classics-tokyo-zakki-review-queue.v1.json` 기준 검수 대기열을 이어받았다.
+- 최신 커밋 `f53598f`와 직전 핸드오프를 확인했다.
+- 문헌명 표기는 `동경잡기(東京雜記) / Donggyeong Japgi`가 맞고, `donggyeong-japgi`는 내부 canonical slug로만 취급한다.
+- `korean-classics-donggyeong-japgi-review-queue.v1.json` 기준 검수 대기열을 이어받았다.
 - harvest 단계에서 두 가지 본문 복원 오류를 줄였다.
   - 본문 속 `...歌...`를 다음 작품 시작으로 오인하던 절단을 완화했다.
   - `[新增]` 뒤 설명문이 시 본문에 붙는 문제를 제거했다.
@@ -61,20 +62,20 @@ author: 태훈
 
 ## 생성
 
-- `docs/handoff/2026-04-24-tokyo-zakki-review-queue-triage.md`
+- `docs/handoff/2026-04-24-donggyeong-japgi-review-queue-triage.md`
 
 ## 수정
 
-- `scripts/build_korean_hansi_tokyo_zakki_volume2_harvest.js`
-- `scripts/build_korean_classics_tokyo_zakki_collection_bundle.js`
-- `docs/spec/2026-04-23-korean-classics-tokyo-zakki-collection-bundle.md`
-- `docs/spec/2026-04-24-korean-classics-tokyo-zakki-author-view.md`
-- `docs/spec/2026-04-24-korean-classics-tokyo-zakki-review-queue.md`
-- `docs/spec/korean-hansi-tokyo-zakki-vol1-poem-harvest.v1.json`
-- `docs/spec/korean-hansi-tokyo-zakki-vol3-poem-harvest.v1.json`
-- `docs/spec/korean-classics-tokyo-zakki-collection-bundle.v1.json`
-- `docs/spec/korean-classics-tokyo-zakki-author-view.v1.json`
-- `docs/spec/korean-classics-tokyo-zakki-review-queue.v1.json`
+- `scripts/build_korean_hansi_donggyeong_japgi_volume_harvest.js`
+- `scripts/build_korean_classics_donggyeong_japgi_collection_bundle.js`
+- `docs/spec/2026-04-23-korean-classics-donggyeong-japgi-collection-bundle.md`
+- `docs/spec/2026-04-24-korean-classics-donggyeong-japgi-author-view.md`
+- `docs/spec/2026-04-24-korean-classics-donggyeong-japgi-review-queue.md`
+- `docs/spec/korean-hansi-donggyeong-japgi-vol1-poem-harvest.v1.json`
+- `docs/spec/korean-hansi-donggyeong-japgi-vol3-poem-harvest.v1.json`
+- `docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json`
+- `docs/spec/korean-classics-donggyeong-japgi-author-view.v1.json`
+- `docs/spec/korean-classics-donggyeong-japgi-review-queue.v1.json`
 
 # 원래 계획과 달라진 점
 

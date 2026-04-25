@@ -1,11 +1,20 @@
 {
   "version": "2026-04-24.v1",
-  "collectionId": "korean-classics-tokyo-zakki-author-view",
-  "basedOn": "korean-classics-tokyo-zakki-collection-bundle.v1.json",
-  "purpose": "東京雜記 전권 시문 후보를 정리된 시인 기준으로 재배열한다",
+  "collectionId": "korean-classics-donggyeong-japgi-author-view",
+  "basedOn": "korean-classics-donggyeong-japgi-collection-bundle.v1.json",
+  "purpose": "동경잡기(東京雜記) 전권 시문 후보를 정리된 시인 기준으로 재배열한다",
+  "collection": {
+    "titleZh": "東京雜記",
+    "titleKo": "동경잡기",
+    "titleRomanization": "Donggyeong Japgi",
+    "historicalPlaceNote": "여기서 東京은 일본 東京/도쿄가 아니라 신라·고려 문맥의 경주를 가리키는 별칭이다.",
+    "canonicalSlug": "donggyeong-japgi",
+    "volumeRange": "卷一~卷三",
+    "sourcePolicyId": "SRC-WIKISOURCE-TEXT"
+  },
   "summary": {
     "normalizedAuthorCount": 48,
-    "totalWorkCount": 90,
+    "totalWorkCount": 94,
     "topAuthors": [
       {
         "normalizedAuthorZh": "魚世謙",
@@ -21,7 +30,7 @@
       },
       {
         "normalizedAuthorZh": "金宗直",
-        "workCount": 4
+        "workCount": 8
       },
       {
         "normalizedAuthorZh": "崔致遠",
@@ -341,7 +350,7 @@
           "count": 2
         },
         {
-          "label": "미상",
+          "label": "육언율시",
           "count": 1
         },
         {
@@ -352,11 +361,7 @@
       "confidenceSummary": [
         {
           "label": "high",
-          "count": 9
-        },
-        {
-          "label": "medium",
-          "count": 1
+          "count": 10
         }
       ],
       "works": [
@@ -480,11 +485,11 @@
           "displayLabelZh": "金克己詩",
           "rawAuthorZh": "金克己",
           "titlePrefixZh": null,
-          "lineCount": 10,
-          "inferredForm": "미상",
-          "confidence": "medium",
+          "lineCount": 8,
+          "inferredForm": "육언율시",
+          "confidence": "high",
           "documentEntryId": "KHS-TZ2-D-0062",
-          "previewZh": "玉貌催魂隔 / 世空端只見"
+          "previewZh": "玉貌催魂隔世 / 空端只見層巓"
         },
         {
           "harvestId": "KHS-TZ2-H-0001",
@@ -716,12 +721,8 @@
     },
     {
       "normalizedAuthorZh": "金宗直",
-      "workCount": 4,
+      "workCount": 8,
       "rawLabelSummary": [
-        {
-          "label": "七詠佔畢齋金宗直",
-          "count": 1
-        },
         {
           "label": "佔畢齋金宗直",
           "count": 1
@@ -733,12 +734,32 @@
         {
           "label": "陽山",
           "count": 1
+        },
+        {
+          "label": "黃昌郞",
+          "count": 1
+        },
+        {
+          "label": "會蘇曲",
+          "count": 1
+        },
+        {
+          "label": "碓樂",
+          "count": 1
+        },
+        {
+          "label": "憂息曲",
+          "count": 1
+        },
+        {
+          "label": "鵄述嶺",
+          "count": 1
         }
       ],
       "volumeSummary": [
         {
           "label": "卷3",
-          "count": 3
+          "count": 7
         },
         {
           "label": "卷2",
@@ -748,7 +769,7 @@
       "sectionSummary": [
         {
           "label": "3:題詠",
-          "count": 3
+          "count": 7
         },
         {
           "label": "2:佛宇",
@@ -758,11 +779,7 @@
       "formSummary": [
         {
           "label": "가요/기타",
-          "count": 2
-        },
-        {
-          "label": "미상",
-          "count": 1
+          "count": 7
         },
         {
           "label": "오언율시",
@@ -772,11 +789,7 @@
       "confidenceSummary": [
         {
           "label": "high",
-          "count": 3
-        },
-        {
-          "label": "medium",
-          "count": 1
+          "count": 8
         }
       ],
       "works": [
@@ -795,46 +808,102 @@
           "previewZh": "爲訪招提境 / 松間紫翠重"
         },
         {
-          "harvestId": "KHS-TZ3-H-0038",
-          "volume": 3,
-          "section": "題詠",
-          "sourceEntryTitle": null,
-          "displayLabelZh": "七詠佔畢齋金宗直詩",
-          "rawAuthorZh": "七詠佔畢齋金宗直",
-          "titlePrefixZh": "七詠",
-          "lineCount": 11,
-          "inferredForm": "미상",
-          "confidence": "medium",
-          "documentEntryId": "KHS-TZ3-D-0190",
-          "previewZh": "會蘇曲會蘇曲西 / 風吹廣庭明月滿"
-        },
-        {
-          "harvestId": "KHS-TZ3-H-0039",
+          "harvestId": "KHS-TZ3-H-0041",
           "volume": 3,
           "section": "題詠",
           "sourceEntryTitle": null,
           "displayLabelZh": "怛忉歌",
           "rawAuthorZh": "怛忉",
           "titlePrefixZh": "怛忉",
-          "lineCount": 6,
+          "lineCount": 7,
           "inferredForm": "가요/기타",
           "confidence": "high",
           "documentEntryId": "KHS-TZ3-D-0193",
-          "previewZh": "怛怛復忉忉大家 / 幾不保流蘇悵裏"
+          "previewZh": "怛怛復忉忉 / 大家幾不保"
         },
         {
-          "harvestId": "KHS-TZ3-H-0040",
+          "harvestId": "KHS-TZ3-H-0042",
           "volume": 3,
           "section": "題詠",
           "sourceEntryTitle": null,
           "displayLabelZh": "陽山歌",
           "rawAuthorZh": "陽山",
           "titlePrefixZh": "陽山",
-          "lineCount": 10,
+          "lineCount": 14,
           "inferredForm": "가요/기타",
           "confidence": "high",
           "documentEntryId": "KHS-TZ3-D-0194",
-          "previewZh": "敵國爲封豕荐食 / 我邊疆赳赳花郞"
+          "previewZh": "敵國爲封豕 / 荐食我邊疆"
+        },
+        {
+          "harvestId": "KHS-TZ3-H-0044",
+          "volume": 3,
+          "section": "題詠",
+          "sourceEntryTitle": null,
+          "displayLabelZh": "黃昌郞",
+          "rawAuthorZh": "黃昌郞",
+          "titlePrefixZh": "黃昌郞",
+          "lineCount": 8,
+          "inferredForm": "가요/기타",
+          "confidence": "high",
+          "documentEntryId": "KHS-TZ3-D-0196",
+          "previewZh": "若有人兮纔離齠 / 身未三尺何雄驍"
+        },
+        {
+          "harvestId": "KHS-TZ3-H-0038",
+          "volume": 3,
+          "section": "題詠",
+          "sourceEntryTitle": null,
+          "displayLabelZh": "會蘇曲",
+          "rawAuthorZh": "會蘇曲",
+          "titlePrefixZh": "會蘇曲",
+          "lineCount": 11,
+          "inferredForm": "가요/기타",
+          "confidence": "high",
+          "documentEntryId": "KHS-TZ3-D-0190",
+          "previewZh": "會蘇曲會蘇曲 / 西風吹廣庭"
+        },
+        {
+          "harvestId": "KHS-TZ3-H-0043",
+          "volume": 3,
+          "section": "題詠",
+          "sourceEntryTitle": null,
+          "displayLabelZh": "碓樂",
+          "rawAuthorZh": "碓樂",
+          "titlePrefixZh": "碓樂",
+          "lineCount": 12,
+          "inferredForm": "가요/기타",
+          "confidence": "high",
+          "documentEntryId": "KHS-TZ3-D-0195",
+          "previewZh": "東家砧舂忝稻 / 西家杵搗寒襖"
+        },
+        {
+          "harvestId": "KHS-TZ3-H-0039",
+          "volume": 3,
+          "section": "題詠",
+          "sourceEntryTitle": null,
+          "displayLabelZh": "憂息曲",
+          "rawAuthorZh": "憂息曲",
+          "titlePrefixZh": "憂息曲",
+          "lineCount": 6,
+          "inferredForm": "가요/기타",
+          "confidence": "high",
+          "documentEntryId": "KHS-TZ3-D-0191",
+          "previewZh": "常棣華隨風落扶桑 / 扶桑萬里鯨鯢浪"
+        },
+        {
+          "harvestId": "KHS-TZ3-H-0040",
+          "volume": 3,
+          "section": "題詠",
+          "sourceEntryTitle": null,
+          "displayLabelZh": "鵄述嶺",
+          "rawAuthorZh": "鵄述嶺",
+          "titlePrefixZh": "鵄述嶺",
+          "lineCount": 8,
+          "inferredForm": "가요/기타",
+          "confidence": "high",
+          "documentEntryId": "KHS-TZ3-D-0192",
+          "previewZh": "鵄述嶺頭望日本 / 粘天鯨海無涯岸"
         }
       ]
     },
@@ -1907,13 +1976,13 @@
       ],
       "formSummary": [
         {
-          "label": "미상",
+          "label": "잡언고시",
           "count": 1
         }
       ],
       "confidenceSummary": [
         {
-          "label": "medium",
+          "label": "high",
           "count": 1
         }
       ],
@@ -1926,9 +1995,9 @@
           "displayLabelZh": "李石亨詩",
           "rawAuthorZh": "李石亨",
           "titlePrefixZh": null,
-          "lineCount": 19,
-          "inferredForm": "미상",
-          "confidence": "medium",
+          "lineCount": 18,
+          "inferredForm": "잡언고시",
+          "confidence": "high",
           "documentEntryId": "KHS-TZ2-D-0066",
           "previewZh": "鷄林往事聞夙昔 / 借問王笛何代作"
         }
@@ -2469,7 +2538,7 @@
       ],
       "works": [
         {
-          "harvestId": "KHS-TZ3-H-0041",
+          "harvestId": "KHS-TZ3-H-0045",
           "volume": 3,
           "section": "題詠",
           "sourceEntryTitle": null,
