@@ -9,7 +9,7 @@
   ],
   "summary": {
     "candidateWorksChecked": 9,
-    "directTextWorksFound": 15,
+    "directTextWorksFound": 16,
     "ocrCandidates": 0,
     "blockedWorks": 0
   },
@@ -186,7 +186,7 @@
       "authorKo": "서거정",
       "authorHanja": "徐居正",
       "candidateTitle": "전원시",
-      "matchedTitle": "田家書事",
+      "matchedTitle": "田家書事 其一",
       "sourceWork": {
         "collectionTitle": "四佳集",
         "juan": "詩集卷四",
@@ -197,7 +197,7 @@
         "locatorConfidence": "high"
       },
       "text": {
-        "poemZh": "刈盡荒畦稻穗香。一番懽笑一番傷。何時盡入官租了。白酒黃鷄喚客嘗。\n繰出新絲白雪香。辛勤當日禿千乘。終然不分田家有。輸與閏妹作嫁裳。",
+        "poemZh": "刈盡荒畦稻穗香。一番懽笑一番傷。何時盡入官租了。白酒黃鷄喚客嘗。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -207,7 +207,35 @@
       },
       "ingest": {
         "recommendedReadiness": "direct-text-collected",
-        "notes": "四佳集 詩集卷四에서 확인한 전가 소재 2수. 제목 단위가 짧아 우선 한 카드에 보존한다."
+        "notes": "四佳集 詩集卷四의 `田家書事` 2수 중 첫째 수. 벼 베기와 관조 부담을 다룬 독립 절구로 보아 하위 작품 카드로 분리했다."
+      }
+    },
+    {
+      "authorKo": "서거정",
+      "authorHanja": "徐居正",
+      "candidateTitle": "전원시",
+      "matchedTitle": "田家書事 其二",
+      "sourceWork": {
+        "collectionTitle": "四佳集",
+        "juan": "詩集卷四",
+        "entryTitle": "田家書事",
+        "sourceUrl": "https://zh.wikisource.org/wiki/四佳集/詩集卷四",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=四佳集/詩集卷四&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "繰出新絲白雪香。辛勤當日禿千乘。終然不分田家有。輸與閏妹作嫁裳。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "四佳集 詩集卷四의 `田家書事` 2수 중 둘째 수. 누에고치와 비단 조세를 다룬 독립 절구로 보아 하위 작품 카드로 분리했다."
       }
     },
     {

@@ -1,0 +1,192 @@
+{
+  "workerId": "worker-7-gwon-pil",
+  "modelRecommendation": "gpt-5.4",
+  "status": "completed",
+  "targetAuthors": [
+    "권필"
+  ],
+  "summary": {
+    "candidateWorksChecked": 3,
+    "directTextWorksFound": 6,
+    "ocrCandidates": 0,
+    "blockedWorks": 0
+  },
+  "poems": [
+    {
+      "authorKo": "권필",
+      "authorHanja": "權韠",
+      "candidateTitle": "권필 한시",
+      "matchedTitle": "感懷 其一",
+      "sourceWork": {
+        "collectionTitle": "石洲集",
+        "juan": "卷一",
+        "entryTitle": "感懷",
+        "sourceUrl": "https://zh.wikisource.org/wiki/石洲集/卷一",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=石洲集/卷一&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "今日忽不樂。杖策登北林。雪消遠山淨。日落浮雲陰。蕭蕭叢薄間。磔磔喧衆禽。衆禽各有侶。客子方獨吟。美人在天端。悵望傷我心。巾車欲有往。道路多嶇嶔。朅來理舟楫。滄海闊且深。坐看高飛鴻。涕下沾衣襟。夜歸寒檐臥。夢行湘水潯。臨水弔楚魂。碧水空沈沈。回首叫虞舜。但見雲外岑。古有遠別離。此恨寧獨今。去去勿復念。芳樽聊自斟。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "石洲集 卷一 `感懷 三首` 중 첫째 수. 권필의 감시·회고 성격을 보여주는 장편 고시라 하위 작품으로 분리했다."
+      }
+    },
+    {
+      "authorKo": "권필",
+      "authorHanja": "權韠",
+      "candidateTitle": "풍자시",
+      "matchedTitle": "感懷 其二",
+      "sourceWork": {
+        "collectionTitle": "石洲集",
+        "juan": "卷一",
+        "entryTitle": "感懷",
+        "sourceUrl": "https://zh.wikisource.org/wiki/石洲集/卷一",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=石洲集/卷一&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "黃雀何翩翩。寄巢枯葦枝。江天喟然風。葦折巢仍欹。巢破不足惜。卵破良可悲。雄雌飛且鳴。日夕無所依。君看彼黃雀。物理因可推。結巢豈不固。所託非其宜。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "石洲集 卷一 `感懷 三首` 중 둘째 수. 황작 비유가 독립적이어서 별도 작품 카드로 분리했다."
+      }
+    },
+    {
+      "authorKo": "권필",
+      "authorHanja": "權韠",
+      "candidateTitle": "풍자시",
+      "matchedTitle": "感懷 其三",
+      "sourceWork": {
+        "collectionTitle": "石洲集",
+        "juan": "卷一",
+        "entryTitle": "感懷",
+        "sourceUrl": "https://zh.wikisource.org/wiki/石洲集/卷一",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=石洲集/卷一&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "種蘭盈九畹。雨露日芳菲。坐冀枝葉茂。庶用充佩幃。嚴霜昨夜下。百草倏已腓。杉篁尙不免。況乃蕙茝微。仰視白日光。有淚霑我衣。豈徒感時節。君子有所思。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "石洲集 卷一 `感懷 三首` 중 셋째 수. 난초와 서리 비유가 분명한 독립 수로 보아 분리했다."
+      }
+    },
+    {
+      "authorKo": "권필",
+      "authorHanja": "權韠",
+      "candidateTitle": "권필 한시",
+      "matchedTitle": "述懷",
+      "sourceWork": {
+        "collectionTitle": "石洲集",
+        "juan": "卷一",
+        "entryTitle": "述懷",
+        "sourceUrl": "https://zh.wikisource.org/wiki/石洲集/卷一",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=石洲集/卷一&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "朝日自何來。夕日向何去。一朝復一夕。白髮遽如許。少年志氣壯。長嘯望伊呂。方圓豈相謀。與世實鉏鋙。始也多毀譽。終焉寡儔侶。況逢干戈際。漂泊忍羈旅。溝壑幸而免。疾病固其所。皎皎平生心。壹鬱誰與語。手掇秋菊英。願貽高兵女。佳期未易得。歲暮徒延佇。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "石洲集 卷一에서 확인한 자술형 작품. 전란과 방랑의 자기 서술이 강해 권필 대표 정서와 연결된다."
+      }
+    },
+    {
+      "authorKo": "권필",
+      "authorHanja": "權韠",
+      "candidateTitle": "사회시",
+      "matchedTitle": "切切何切切",
+      "sourceWork": {
+        "collectionTitle": "石洲集",
+        "juan": "卷一",
+        "entryTitle": "切切何切切",
+        "sourceUrl": "https://zh.wikisource.org/wiki/石洲集/卷一",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=石洲集/卷一&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "切切何切切。有婦當道哭。問婦何哭爲。夫壻遠行役。謂言卽顧反。三載絶消息。一女未離乳。賤妾無筋力。高堂有舅姑。何以備饘粥。拾穗野田中。歲暮衣裳薄。北風吹郊墟。寒日慘將夕。獨歸茅簷底。哀怨豈終極。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "石洲集 卷一에서 확인한 사회 현실 소재 작품. 행역 간 남편과 남은 가족의 곤궁을 다뤄 사회시 seed에 매핑한다."
+      }
+    },
+    {
+      "authorKo": "권필",
+      "authorHanja": "權韠",
+      "candidateTitle": "사회시",
+      "matchedTitle": "貧",
+      "sourceWork": {
+        "collectionTitle": "石洲集",
+        "juan": "卷一",
+        "entryTitle": "貧",
+        "sourceUrl": "https://zh.wikisource.org/wiki/石洲集/卷一",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=石洲集/卷一&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "人無置錐地。而我本無錐。物量有定分。盜誇非所期。蓬蒿原憲宅。霖雨子來詩。去者雖已遠。淸風猶可追。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "石洲集 卷一에서 확인한 빈궁 소재 단편. 사회시·자기 풍자 양쪽 설명에 활용할 수 있다."
+      }
+    }
+  ],
+  "blockers": [],
+  "sourcesConsulted": [
+    {
+      "url": "https://zh.wikisource.org/wiki/石洲集/卷一",
+      "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+      "note": "raw view로 권필 卷一의 感懷 三首와 단편 3건을 확인했다."
+    }
+  ]
+}

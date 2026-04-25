@@ -14,13 +14,13 @@
   "catalogId": "korean-poems-chronology",
   "targetDb": "poems",
   "summary": {
-    "directTextCollected": 93,
+    "directTextCollected": 110,
     "sourceLocated": 8,
     "ocrCandidate": 0,
     "blocked": 1,
-    "candidateOnly": 148,
-    "totalWorks": 250,
-    "workerResultWorks": 57
+    "candidateOnly": 145,
+    "totalWorks": 264,
+    "workerResultWorks": 74
   },
   "poems": [
     {
@@ -10424,8 +10424,8 @@
       "poemId": "KPOEM-WORKER-SEO-GEOJEONG-007",
       "canonicalId": "KPOEM-CANON-WORKER-SEO-GEOJEONG-007",
       "title": {
-        "zh": "田家書事",
-        "ko": "田家書事"
+        "zh": "田家書事 其一",
+        "ko": "田家書事 其一"
       },
       "author": {
         "authorId": "KAUTH-SEO-GEOJEONG",
@@ -10451,7 +10451,7 @@
         "verificationStatus": "verified-direct-text"
       },
       "text": {
-        "poemZh": "刈盡荒畦稻穗香。一番懽笑一番傷。何時盡入官租了。白酒黃鷄喚客嘗。\n繰出新絲白雪香。辛勤當日禿千乘。終然不分田家有。輸與閏妹作嫁裳。",
+        "poemZh": "刈盡荒畦稻穗香。一番懽笑一番傷。何時盡入官租了。白酒黃鷄喚客嘗。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -10478,14 +10478,77 @@
         "sourceFile": "docs/spec/korean-poet-worker-results/worker-5-kim-siseup-seo-geojeong-jeong-yagyong.v1.json",
         "workerId": "worker-5-kim-siseup-seo-geojeong-jeong-yagyong",
         "candidateTitle": "전원시",
-        "matchedTitle": "田家書事",
-        "notes": "四佳集 詩集卷四에서 확인한 전가 소재 2수. 제목 단위가 짧아 우선 한 카드에 보존한다.",
+        "matchedTitle": "田家書事 其一",
+        "notes": "四佳集 詩集卷四의 `田家書事` 2수 중 첫째 수. 벼 베기와 관조 부담을 다룬 독립 절구로 보아 하위 작품 카드로 분리했다.",
         "ownedTranslationNeeded": true
       }
     },
     {
       "poemId": "KPOEM-WORKER-SEO-GEOJEONG-008",
       "canonicalId": "KPOEM-CANON-WORKER-SEO-GEOJEONG-008",
+      "title": {
+        "zh": "田家書事 其二",
+        "ko": "田家書事 其二"
+      },
+      "author": {
+        "authorId": "KAUTH-SEO-GEOJEONG",
+        "zh": "徐居正",
+        "ko": "서거정"
+      },
+      "era": {
+        "label": "조선 전기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "四佳集",
+        "juan": "詩集卷四",
+        "entryTitle": "田家書事",
+        "sourceUrl": "https://zh.wikisource.org/wiki/四佳集/詩集卷四",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=四佳集/詩集卷四&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "繰出新絲白雪香。辛勤當日禿千乘。終然不分田家有。輸與閏妹作嫁裳。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-5-kim-siseup-seo-geojeong-jeong-yagyong.v1.json",
+        "workerId": "worker-5-kim-siseup-seo-geojeong-jeong-yagyong",
+        "candidateTitle": "전원시",
+        "matchedTitle": "田家書事 其二",
+        "notes": "四佳集 詩集卷四의 `田家書事` 2수 중 둘째 수. 누에고치와 비단 조세를 다룬 독립 절구로 보아 하위 작품 카드로 분리했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-SEO-GEOJEONG-009",
+      "canonicalId": "KPOEM-CANON-WORKER-SEO-GEOJEONG-009",
       "title": {
         "zh": "早朝",
         "ko": "早朝"
@@ -10547,8 +10610,8 @@
       }
     },
     {
-      "poemId": "KPOEM-WORKER-SEO-GEOJEONG-009",
-      "canonicalId": "KPOEM-CANON-WORKER-SEO-GEOJEONG-009",
+      "poemId": "KPOEM-WORKER-SEO-GEOJEONG-010",
+      "canonicalId": "KPOEM-CANON-WORKER-SEO-GEOJEONG-010",
       "title": {
         "zh": "春日卽事",
         "ko": "春日卽事"
@@ -10610,8 +10673,8 @@
       }
     },
     {
-      "poemId": "KPOEM-WORKER-SEO-GEOJEONG-010",
-      "canonicalId": "KPOEM-CANON-WORKER-SEO-GEOJEONG-010",
+      "poemId": "KPOEM-WORKER-SEO-GEOJEONG-011",
+      "canonicalId": "KPOEM-CANON-WORKER-SEO-GEOJEONG-011",
       "title": {
         "zh": "客從山中來",
         "ko": "客從山中來"
@@ -10673,8 +10736,8 @@
       }
     },
     {
-      "poemId": "KPOEM-WORKER-JEONG-YAGYONG-011",
-      "canonicalId": "KPOEM-CANON-WORKER-JEONG-YAGYONG-011",
+      "poemId": "KPOEM-WORKER-JEONG-YAGYONG-012",
+      "canonicalId": "KPOEM-CANON-WORKER-JEONG-YAGYONG-012",
       "title": {
         "zh": "過野人村居",
         "ko": "過野人村居"
@@ -10736,8 +10799,8 @@
       }
     },
     {
-      "poemId": "KPOEM-WORKER-JEONG-YAGYONG-012",
-      "canonicalId": "KPOEM-CANON-WORKER-JEONG-YAGYONG-012",
+      "poemId": "KPOEM-WORKER-JEONG-YAGYONG-013",
+      "canonicalId": "KPOEM-CANON-WORKER-JEONG-YAGYONG-013",
       "title": {
         "zh": "客中書懷",
         "ko": "客中書懷"
@@ -10799,8 +10862,8 @@
       }
     },
     {
-      "poemId": "KPOEM-WORKER-JEONG-YAGYONG-013",
-      "canonicalId": "KPOEM-CANON-WORKER-JEONG-YAGYONG-013",
+      "poemId": "KPOEM-WORKER-JEONG-YAGYONG-014",
+      "canonicalId": "KPOEM-CANON-WORKER-JEONG-YAGYONG-014",
       "title": {
         "zh": "打麥行",
         "ko": "打麥行"
@@ -10862,8 +10925,8 @@
       }
     },
     {
-      "poemId": "KPOEM-WORKER-JEONG-YAGYONG-014",
-      "canonicalId": "KPOEM-CANON-WORKER-JEONG-YAGYONG-014",
+      "poemId": "KPOEM-WORKER-JEONG-YAGYONG-015",
+      "canonicalId": "KPOEM-CANON-WORKER-JEONG-YAGYONG-015",
       "title": {
         "zh": "快雨行",
         "ko": "快雨行"
@@ -10925,8 +10988,8 @@
       }
     },
     {
-      "poemId": "KPOEM-WORKER-JEONG-YAGYONG-015",
-      "canonicalId": "KPOEM-CANON-WORKER-JEONG-YAGYONG-015",
+      "poemId": "KPOEM-WORKER-JEONG-YAGYONG-016",
+      "canonicalId": "KPOEM-CANON-WORKER-JEONG-YAGYONG-016",
       "title": {
         "zh": "贈惠藏上人",
         "ko": "贈惠藏上人"
@@ -10984,6 +11047,1014 @@
         "candidateTitle": "유배시",
         "matchedTitle": "贈惠藏上人",
         "notes": "與猶堂全書 第一集 第五卷에서 확인한 혜장 관련 교유시. 강진 유배기 불교 인맥 설명과 연결 가능하다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-YI-I-001",
+      "canonicalId": "KPOEM-CANON-WORKER-YI-I-001",
+      "title": {
+        "zh": "花石亭",
+        "ko": "花石亭"
+      },
+      "author": {
+        "authorId": "KAUTH-YI-I",
+        "zh": "李珥",
+        "ko": "이이"
+      },
+      "era": {
+        "label": "조선 중기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "栗谷先生全書",
+        "juan": "卷一",
+        "entryTitle": "花石亭",
+        "sourceUrl": "https://zh.wikisource.org/wiki/栗谷先生全書/卷一",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=栗谷先生全書/卷一&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "林亭秋已晚。騷客意無窮。遠水連天碧。霜楓向日紅。山吐孤輪月。江含萬里風。塞鴻何處去。聲斷暮雲中。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-6-yi-i-jeong-cheol.v1.json",
+        "workerId": "worker-6-yi-i-jeong-cheol",
+        "candidateTitle": "율곡 한시",
+        "matchedTitle": "花石亭",
+        "notes": "栗谷先生全書 卷一 詩上의 팔세작. 이이 대표 한시 seed의 초입 작품으로 우선 수집했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-YI-I-002",
+      "canonicalId": "KPOEM-CANON-WORKER-YI-I-002",
+      "title": {
+        "zh": "偶興 其一",
+        "ko": "偶興 其一"
+      },
+      "author": {
+        "authorId": "KAUTH-YI-I",
+        "zh": "李珥",
+        "ko": "이이"
+      },
+      "era": {
+        "label": "조선 중기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "栗谷先生全書",
+        "juan": "卷一",
+        "entryTitle": "偶興",
+        "sourceUrl": "https://zh.wikisource.org/wiki/栗谷先生全書/卷一",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=栗谷先生全書/卷一&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "步屧松林下。開樽空翠來。雨昏鴻外岫。溪漱石邊苔。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-6-yi-i-jeong-cheol.v1.json",
+        "workerId": "worker-6-yi-i-jeong-cheol",
+        "candidateTitle": "율곡 한시",
+        "matchedTitle": "偶興 其一",
+        "notes": "栗谷先生全書 卷一 `偶興 二首` 중 첫째 수. 연작 제목 아래 독립 절구로 분리했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-YI-I-003",
+      "canonicalId": "KPOEM-CANON-WORKER-YI-I-003",
+      "title": {
+        "zh": "偶興 其二",
+        "ko": "偶興 其二"
+      },
+      "author": {
+        "authorId": "KAUTH-YI-I",
+        "zh": "李珥",
+        "ko": "이이"
+      },
+      "era": {
+        "label": "조선 중기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "栗谷先生全書",
+        "juan": "卷一",
+        "entryTitle": "偶興",
+        "sourceUrl": "https://zh.wikisource.org/wiki/栗谷先生全書/卷一",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=栗谷先生全書/卷一&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "地勢千山小。泉源萬壑分。高人獨昏曉。迎送只閒雲。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-6-yi-i-jeong-cheol.v1.json",
+        "workerId": "worker-6-yi-i-jeong-cheol",
+        "candidateTitle": "율곡 한시",
+        "matchedTitle": "偶興 其二",
+        "notes": "栗谷先生全書 卷一 `偶興 二首` 중 둘째 수. 첫째 수와 별도 장면을 이루므로 하위 작품 카드로 분리했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-YI-I-004",
+      "canonicalId": "KPOEM-CANON-WORKER-YI-I-004",
+      "title": {
+        "zh": "望寶蓋山",
+        "ko": "望寶蓋山"
+      },
+      "author": {
+        "authorId": "KAUTH-YI-I",
+        "zh": "李珥",
+        "ko": "이이"
+      },
+      "era": {
+        "label": "조선 중기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "栗谷先生全書",
+        "juan": "卷一",
+        "entryTitle": "望寶蓋山",
+        "sourceUrl": "https://zh.wikisource.org/wiki/栗谷先生全書/卷一",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=栗谷先生全書/卷一&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "寶蓋山容入望中。洞門應有白雲封。遙知隱者饒春睡。松下殘棊斂未終。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-6-yi-i-jeong-cheol.v1.json",
+        "workerId": "worker-6-yi-i-jeong-cheol",
+        "candidateTitle": "율곡 한시",
+        "matchedTitle": "望寶蓋山",
+        "notes": "栗谷先生全書 卷一에서 확인한 산수·은자 상상 계열의 단편.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-YI-I-005",
+      "canonicalId": "KPOEM-CANON-WORKER-YI-I-005",
+      "title": {
+        "zh": "山中",
+        "ko": "山中"
+      },
+      "author": {
+        "authorId": "KAUTH-YI-I",
+        "zh": "李珥",
+        "ko": "이이"
+      },
+      "era": {
+        "label": "조선 중기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "栗谷先生全書",
+        "juan": "卷一",
+        "entryTitle": "山中",
+        "sourceUrl": "https://zh.wikisource.org/wiki/栗谷先生全書/卷一",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=栗谷先生全書/卷一&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "採藥忽迷路。千峯秋葉裏。山僧汲水歸。林末茶煙起。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-6-yi-i-jeong-cheol.v1.json",
+        "workerId": "worker-6-yi-i-jeong-cheol",
+        "candidateTitle": "율곡 한시",
+        "matchedTitle": "山中",
+        "notes": "栗谷先生全書 卷一에서 확인한 산중 소품. 경계가 짧고 명확해 direct-text 카드로 적합하다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-JEONG-CHEOL-006",
+      "canonicalId": "KPOEM-CANON-WORKER-JEONG-CHEOL-006",
+      "title": {
+        "zh": "秋日作",
+        "ko": "秋日作"
+      },
+      "author": {
+        "authorId": "KAUTH-JEONG-CHEOL",
+        "zh": "鄭澈",
+        "ko": "정철"
+      },
+      "era": {
+        "label": "조선 중기"
+      },
+      "genre": {
+        "broad": "고유시가",
+        "form": "가사",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "松江集",
+        "juan": "卷一",
+        "entryTitle": "秋日作",
+        "sourceUrl": "https://zh.wikisource.org/wiki/松江集/卷一",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=松江集/卷一&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "山雨夜鳴竹。草虫秋近床。流年那可駐。白髮不禁長。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-6-yi-i-jeong-cheol.v1.json",
+        "workerId": "worker-6-yi-i-jeong-cheol",
+        "candidateTitle": "술·은거시",
+        "matchedTitle": "秋日作",
+        "notes": "松江集 卷一 五言絶句 항목 첫머리 작품. 정철 한시 direct-text 수집의 안정적인 시작점이다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-JEONG-CHEOL-007",
+      "canonicalId": "KPOEM-CANON-WORKER-JEONG-CHEOL-007",
+      "title": {
+        "zh": "平湖堂 其一",
+        "ko": "平湖堂 其一"
+      },
+      "author": {
+        "authorId": "KAUTH-JEONG-CHEOL",
+        "zh": "鄭澈",
+        "ko": "정철"
+      },
+      "era": {
+        "label": "조선 중기"
+      },
+      "genre": {
+        "broad": "고유시가",
+        "form": "가사",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "松江集",
+        "juan": "卷一",
+        "entryTitle": "平湖堂",
+        "sourceUrl": "https://zh.wikisource.org/wiki/松江集/卷一",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=松江集/卷一&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "宇宙殘生在。江湖白髮多。明時休痛哭。醉後一長歌。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-6-yi-i-jeong-cheol.v1.json",
+        "workerId": "worker-6-yi-i-jeong-cheol",
+        "candidateTitle": "술·은거시",
+        "matchedTitle": "平湖堂 其一",
+        "notes": "松江集 卷一 `平湖堂 二首` 중 첫째 수. 같은 제목의 연작이지만 각 수가 독립 단편으로 쓰인다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-JEONG-CHEOL-008",
+      "canonicalId": "KPOEM-CANON-WORKER-JEONG-CHEOL-008",
+      "title": {
+        "zh": "平湖堂 其二",
+        "ko": "平湖堂 其二"
+      },
+      "author": {
+        "authorId": "KAUTH-JEONG-CHEOL",
+        "zh": "鄭澈",
+        "ko": "정철"
+      },
+      "era": {
+        "label": "조선 중기"
+      },
+      "genre": {
+        "broad": "고유시가",
+        "form": "가사",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "松江集",
+        "juan": "卷一",
+        "entryTitle": "平湖堂",
+        "sourceUrl": "https://zh.wikisource.org/wiki/松江集/卷一",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=松江集/卷一&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "遠岫頻晴雨。漁村乍有無。孤舟一片月。萬里照平湖。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-6-yi-i-jeong-cheol.v1.json",
+        "workerId": "worker-6-yi-i-jeong-cheol",
+        "candidateTitle": "술·은거시",
+        "matchedTitle": "平湖堂 其二",
+        "notes": "松江集 卷一 `平湖堂 二首` 중 둘째 수. 첫째 수와 별도 정경을 이루므로 분리 수집했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-JEONG-CHEOL-009",
+      "canonicalId": "KPOEM-CANON-WORKER-JEONG-CHEOL-009",
+      "title": {
+        "zh": "別退陶先生",
+        "ko": "別退陶先生"
+      },
+      "author": {
+        "authorId": "KAUTH-JEONG-CHEOL",
+        "zh": "鄭澈",
+        "ko": "정철"
+      },
+      "era": {
+        "label": "조선 중기"
+      },
+      "genre": {
+        "broad": "고유시가",
+        "form": "가사",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "松江集",
+        "juan": "卷一",
+        "entryTitle": "別退陶先生",
+        "sourceUrl": "https://zh.wikisource.org/wiki/松江集/卷一",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=松江集/卷一&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "追到廣陵上。仙舟已杳冥。秋風滿江思。斜日獨登亭。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-6-yi-i-jeong-cheol.v1.json",
+        "workerId": "worker-6-yi-i-jeong-cheol",
+        "candidateTitle": "송강 한시",
+        "matchedTitle": "別退陶先生",
+        "notes": "松江集 卷一에서 확인한 퇴계 이황 관련 송별시. 인물 관계 설명에도 연결 가능하다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-JEONG-CHEOL-010",
+      "canonicalId": "KPOEM-CANON-WORKER-JEONG-CHEOL-010",
+      "title": {
+        "zh": "祝堯樓",
+        "ko": "祝堯樓"
+      },
+      "author": {
+        "authorId": "KAUTH-JEONG-CHEOL",
+        "zh": "鄭澈",
+        "ko": "정철"
+      },
+      "era": {
+        "label": "조선 중기"
+      },
+      "genre": {
+        "broad": "고유시가",
+        "form": "가사",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "松江集",
+        "juan": "卷一",
+        "entryTitle": "祝堯樓",
+        "sourceUrl": "https://zh.wikisource.org/wiki/松江集/卷一",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=松江集/卷一&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "去國一千里。天涯又見秋。孤臣已白髮。獨上祝堯樓。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-6-yi-i-jeong-cheol.v1.json",
+        "workerId": "worker-6-yi-i-jeong-cheol",
+        "candidateTitle": "송강 한시",
+        "matchedTitle": "祝堯樓",
+        "notes": "松江集 卷一에서 확인한 원방 유배·충정 정서의 단편.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-GWON-PIL-001",
+      "canonicalId": "KPOEM-CANON-WORKER-GWON-PIL-001",
+      "title": {
+        "zh": "感懷 其一",
+        "ko": "感懷 其一"
+      },
+      "author": {
+        "authorId": "KAUTH-GWON-PIL",
+        "zh": "權韠",
+        "ko": "권필"
+      },
+      "era": {
+        "label": "조선 중기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "石洲集",
+        "juan": "卷一",
+        "entryTitle": "感懷",
+        "sourceUrl": "https://zh.wikisource.org/wiki/石洲集/卷一",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=石洲集/卷一&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "今日忽不樂。杖策登北林。雪消遠山淨。日落浮雲陰。蕭蕭叢薄間。磔磔喧衆禽。衆禽各有侶。客子方獨吟。美人在天端。悵望傷我心。巾車欲有往。道路多嶇嶔。朅來理舟楫。滄海闊且深。坐看高飛鴻。涕下沾衣襟。夜歸寒檐臥。夢行湘水潯。臨水弔楚魂。碧水空沈沈。回首叫虞舜。但見雲外岑。古有遠別離。此恨寧獨今。去去勿復念。芳樽聊自斟。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-7-gwon-pil.v1.json",
+        "workerId": "worker-7-gwon-pil",
+        "candidateTitle": "권필 한시",
+        "matchedTitle": "感懷 其一",
+        "notes": "石洲集 卷一 `感懷 三首` 중 첫째 수. 권필의 감시·회고 성격을 보여주는 장편 고시라 하위 작품으로 분리했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-GWON-PIL-002",
+      "canonicalId": "KPOEM-CANON-WORKER-GWON-PIL-002",
+      "title": {
+        "zh": "感懷 其二",
+        "ko": "感懷 其二"
+      },
+      "author": {
+        "authorId": "KAUTH-GWON-PIL",
+        "zh": "權韠",
+        "ko": "권필"
+      },
+      "era": {
+        "label": "조선 중기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "石洲集",
+        "juan": "卷一",
+        "entryTitle": "感懷",
+        "sourceUrl": "https://zh.wikisource.org/wiki/石洲集/卷一",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=石洲集/卷一&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "黃雀何翩翩。寄巢枯葦枝。江天喟然風。葦折巢仍欹。巢破不足惜。卵破良可悲。雄雌飛且鳴。日夕無所依。君看彼黃雀。物理因可推。結巢豈不固。所託非其宜。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-7-gwon-pil.v1.json",
+        "workerId": "worker-7-gwon-pil",
+        "candidateTitle": "풍자시",
+        "matchedTitle": "感懷 其二",
+        "notes": "石洲集 卷一 `感懷 三首` 중 둘째 수. 황작 비유가 독립적이어서 별도 작품 카드로 분리했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-GWON-PIL-003",
+      "canonicalId": "KPOEM-CANON-WORKER-GWON-PIL-003",
+      "title": {
+        "zh": "感懷 其三",
+        "ko": "感懷 其三"
+      },
+      "author": {
+        "authorId": "KAUTH-GWON-PIL",
+        "zh": "權韠",
+        "ko": "권필"
+      },
+      "era": {
+        "label": "조선 중기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "石洲集",
+        "juan": "卷一",
+        "entryTitle": "感懷",
+        "sourceUrl": "https://zh.wikisource.org/wiki/石洲集/卷一",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=石洲集/卷一&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "種蘭盈九畹。雨露日芳菲。坐冀枝葉茂。庶用充佩幃。嚴霜昨夜下。百草倏已腓。杉篁尙不免。況乃蕙茝微。仰視白日光。有淚霑我衣。豈徒感時節。君子有所思。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-7-gwon-pil.v1.json",
+        "workerId": "worker-7-gwon-pil",
+        "candidateTitle": "풍자시",
+        "matchedTitle": "感懷 其三",
+        "notes": "石洲集 卷一 `感懷 三首` 중 셋째 수. 난초와 서리 비유가 분명한 독립 수로 보아 분리했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-GWON-PIL-004",
+      "canonicalId": "KPOEM-CANON-WORKER-GWON-PIL-004",
+      "title": {
+        "zh": "述懷",
+        "ko": "述懷"
+      },
+      "author": {
+        "authorId": "KAUTH-GWON-PIL",
+        "zh": "權韠",
+        "ko": "권필"
+      },
+      "era": {
+        "label": "조선 중기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "石洲集",
+        "juan": "卷一",
+        "entryTitle": "述懷",
+        "sourceUrl": "https://zh.wikisource.org/wiki/石洲集/卷一",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=石洲集/卷一&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "朝日自何來。夕日向何去。一朝復一夕。白髮遽如許。少年志氣壯。長嘯望伊呂。方圓豈相謀。與世實鉏鋙。始也多毀譽。終焉寡儔侶。況逢干戈際。漂泊忍羈旅。溝壑幸而免。疾病固其所。皎皎平生心。壹鬱誰與語。手掇秋菊英。願貽高兵女。佳期未易得。歲暮徒延佇。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-7-gwon-pil.v1.json",
+        "workerId": "worker-7-gwon-pil",
+        "candidateTitle": "권필 한시",
+        "matchedTitle": "述懷",
+        "notes": "石洲集 卷一에서 확인한 자술형 작품. 전란과 방랑의 자기 서술이 강해 권필 대표 정서와 연결된다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-GWON-PIL-005",
+      "canonicalId": "KPOEM-CANON-WORKER-GWON-PIL-005",
+      "title": {
+        "zh": "切切何切切",
+        "ko": "切切何切切"
+      },
+      "author": {
+        "authorId": "KAUTH-GWON-PIL",
+        "zh": "權韠",
+        "ko": "권필"
+      },
+      "era": {
+        "label": "조선 중기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "石洲集",
+        "juan": "卷一",
+        "entryTitle": "切切何切切",
+        "sourceUrl": "https://zh.wikisource.org/wiki/石洲集/卷一",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=石洲集/卷一&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "切切何切切。有婦當道哭。問婦何哭爲。夫壻遠行役。謂言卽顧反。三載絶消息。一女未離乳。賤妾無筋力。高堂有舅姑。何以備饘粥。拾穗野田中。歲暮衣裳薄。北風吹郊墟。寒日慘將夕。獨歸茅簷底。哀怨豈終極。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-7-gwon-pil.v1.json",
+        "workerId": "worker-7-gwon-pil",
+        "candidateTitle": "사회시",
+        "matchedTitle": "切切何切切",
+        "notes": "石洲集 卷一에서 확인한 사회 현실 소재 작품. 행역 간 남편과 남은 가족의 곤궁을 다뤄 사회시 seed에 매핑한다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-GWON-PIL-006",
+      "canonicalId": "KPOEM-CANON-WORKER-GWON-PIL-006",
+      "title": {
+        "zh": "貧",
+        "ko": "貧"
+      },
+      "author": {
+        "authorId": "KAUTH-GWON-PIL",
+        "zh": "權韠",
+        "ko": "권필"
+      },
+      "era": {
+        "label": "조선 중기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "石洲集",
+        "juan": "卷一",
+        "entryTitle": "貧",
+        "sourceUrl": "https://zh.wikisource.org/wiki/石洲集/卷一",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=石洲集/卷一&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "人無置錐地。而我本無錐。物量有定分。盜誇非所期。蓬蒿原憲宅。霖雨子來詩。去者雖已遠。淸風猶可追。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-7-gwon-pil.v1.json",
+        "workerId": "worker-7-gwon-pil",
+        "candidateTitle": "사회시",
+        "matchedTitle": "貧",
+        "notes": "石洲集 卷一에서 확인한 빈궁 소재 단편. 사회시·자기 풍자 양쪽 설명에 활용할 수 있다.",
         "ownedTranslationNeeded": true
       }
     },
@@ -15308,60 +16379,6 @@
       }
     },
     {
-      "poemId": "KPOEM-CAND-JEONG-CHEOL-002",
-      "canonicalId": "KPOEM-CANON-JEONG-CHEOL-002",
-      "title": {
-        "zh": null,
-        "ko": "술·은거시"
-      },
-      "author": {
-        "authorId": "KAUTH-JEONG-CHEOL",
-        "zh": "鄭澈",
-        "ko": "정철"
-      },
-      "era": {
-        "label": "조선 중기"
-      },
-      "genre": {
-        "broad": "고유시가",
-        "form": "가사",
-        "track": "native-form"
-      },
-      "sourceWork": {
-        "collectionTitle": "松江集",
-        "sourceUrl": null,
-        "sourcePolicyId": null,
-        "verificationStatus": "needs-source-url"
-      },
-      "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
-      },
-      "assets": {
-        "translationKo": null,
-        "commentaryKo": null,
-        "ownedTranslationNeeded": true
-      },
-      "rights": {
-        "originalText": {
-          "status": "candidate",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        },
-        "translation": {
-          "status": "owned-translation-needed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        }
-      },
-      "ingest": {
-        "readiness": "candidate-only",
-        "targetDb": "poems",
-        "sourceFile": "docs/research/2026-04-25-korean-poet-chronology-seed-catalog.md"
-      }
-    },
-    {
       "poemId": "KPOEM-CAND-AUTHOR-EAB8B0EB-001",
       "canonicalId": "KPOEM-CANON-AUTHOR-EAB8B0EB-001",
       "title": {
@@ -15740,119 +16757,11 @@
       }
     },
     {
-      "poemId": "KPOEM-CAND-GWON-PIL-001",
-      "canonicalId": "KPOEM-CANON-GWON-PIL-001",
-      "title": {
-        "zh": null,
-        "ko": "풍자시"
-      },
-      "author": {
-        "authorId": "KAUTH-GWON-PIL",
-        "zh": "權韠",
-        "ko": "권필"
-      },
-      "era": {
-        "label": "조선 중기"
-      },
-      "genre": {
-        "broad": "한시",
-        "form": "미확정",
-        "track": "hansi-candidate"
-      },
-      "sourceWork": {
-        "collectionTitle": "石洲集",
-        "sourceUrl": null,
-        "sourcePolicyId": null,
-        "verificationStatus": "needs-source-url"
-      },
-      "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
-      },
-      "assets": {
-        "translationKo": null,
-        "commentaryKo": null,
-        "ownedTranslationNeeded": true
-      },
-      "rights": {
-        "originalText": {
-          "status": "candidate",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        },
-        "translation": {
-          "status": "owned-translation-needed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        }
-      },
-      "ingest": {
-        "readiness": "candidate-only",
-        "targetDb": "poems",
-        "sourceFile": "docs/research/2026-04-25-korean-poet-chronology-seed-catalog.md"
-      }
-    },
-    {
       "poemId": "KPOEM-CAND-GWON-PIL-002",
       "canonicalId": "KPOEM-CANON-GWON-PIL-002",
       "title": {
         "zh": null,
         "ko": "애도시"
-      },
-      "author": {
-        "authorId": "KAUTH-GWON-PIL",
-        "zh": "權韠",
-        "ko": "권필"
-      },
-      "era": {
-        "label": "조선 중기"
-      },
-      "genre": {
-        "broad": "한시",
-        "form": "미확정",
-        "track": "hansi-candidate"
-      },
-      "sourceWork": {
-        "collectionTitle": "石洲集",
-        "sourceUrl": null,
-        "sourcePolicyId": null,
-        "verificationStatus": "needs-source-url"
-      },
-      "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
-      },
-      "assets": {
-        "translationKo": null,
-        "commentaryKo": null,
-        "ownedTranslationNeeded": true
-      },
-      "rights": {
-        "originalText": {
-          "status": "candidate",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        },
-        "translation": {
-          "status": "owned-translation-needed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        }
-      },
-      "ingest": {
-        "readiness": "candidate-only",
-        "targetDb": "poems",
-        "sourceFile": "docs/research/2026-04-25-korean-poet-chronology-seed-catalog.md"
-      }
-    },
-    {
-      "poemId": "KPOEM-CAND-GWON-PIL-003",
-      "canonicalId": "KPOEM-CANON-GWON-PIL-003",
-      "title": {
-        "zh": null,
-        "ko": "사회시"
       },
       "author": {
         "authorId": "KAUTH-GWON-PIL",

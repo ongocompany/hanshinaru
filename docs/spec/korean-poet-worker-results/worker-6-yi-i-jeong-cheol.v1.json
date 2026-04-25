@@ -1,0 +1,310 @@
+{
+  "workerId": "worker-6-yi-i-jeong-cheol",
+  "modelRecommendation": "gpt-5.4",
+  "status": "completed",
+  "targetAuthors": [
+    "이이",
+    "정철"
+  ],
+  "summary": {
+    "candidateWorksChecked": 4,
+    "directTextWorksFound": 10,
+    "ocrCandidates": 0,
+    "blockedWorks": 0
+  },
+  "poems": [
+    {
+      "authorKo": "이이",
+      "authorHanja": "李珥",
+      "candidateTitle": "율곡 한시",
+      "matchedTitle": "花石亭",
+      "sourceWork": {
+        "collectionTitle": "栗谷先生全書",
+        "juan": "卷一",
+        "entryTitle": "花石亭",
+        "sourceUrl": "https://zh.wikisource.org/wiki/栗谷先生全書/卷一",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=栗谷先生全書/卷一&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "林亭秋已晚。騷客意無窮。遠水連天碧。霜楓向日紅。山吐孤輪月。江含萬里風。塞鴻何處去。聲斷暮雲中。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "栗谷先生全書 卷一 詩上의 팔세작. 이이 대표 한시 seed의 초입 작품으로 우선 수집했다."
+      }
+    },
+    {
+      "authorKo": "이이",
+      "authorHanja": "李珥",
+      "candidateTitle": "율곡 한시",
+      "matchedTitle": "偶興 其一",
+      "sourceWork": {
+        "collectionTitle": "栗谷先生全書",
+        "juan": "卷一",
+        "entryTitle": "偶興",
+        "sourceUrl": "https://zh.wikisource.org/wiki/栗谷先生全書/卷一",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=栗谷先生全書/卷一&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "步屧松林下。開樽空翠來。雨昏鴻外岫。溪漱石邊苔。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "栗谷先生全書 卷一 `偶興 二首` 중 첫째 수. 연작 제목 아래 독립 절구로 분리했다."
+      }
+    },
+    {
+      "authorKo": "이이",
+      "authorHanja": "李珥",
+      "candidateTitle": "율곡 한시",
+      "matchedTitle": "偶興 其二",
+      "sourceWork": {
+        "collectionTitle": "栗谷先生全書",
+        "juan": "卷一",
+        "entryTitle": "偶興",
+        "sourceUrl": "https://zh.wikisource.org/wiki/栗谷先生全書/卷一",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=栗谷先生全書/卷一&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "地勢千山小。泉源萬壑分。高人獨昏曉。迎送只閒雲。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "栗谷先生全書 卷一 `偶興 二首` 중 둘째 수. 첫째 수와 별도 장면을 이루므로 하위 작품 카드로 분리했다."
+      }
+    },
+    {
+      "authorKo": "이이",
+      "authorHanja": "李珥",
+      "candidateTitle": "율곡 한시",
+      "matchedTitle": "望寶蓋山",
+      "sourceWork": {
+        "collectionTitle": "栗谷先生全書",
+        "juan": "卷一",
+        "entryTitle": "望寶蓋山",
+        "sourceUrl": "https://zh.wikisource.org/wiki/栗谷先生全書/卷一",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=栗谷先生全書/卷一&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "寶蓋山容入望中。洞門應有白雲封。遙知隱者饒春睡。松下殘棊斂未終。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "栗谷先生全書 卷一에서 확인한 산수·은자 상상 계열의 단편."
+      }
+    },
+    {
+      "authorKo": "이이",
+      "authorHanja": "李珥",
+      "candidateTitle": "율곡 한시",
+      "matchedTitle": "山中",
+      "sourceWork": {
+        "collectionTitle": "栗谷先生全書",
+        "juan": "卷一",
+        "entryTitle": "山中",
+        "sourceUrl": "https://zh.wikisource.org/wiki/栗谷先生全書/卷一",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=栗谷先生全書/卷一&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "採藥忽迷路。千峯秋葉裏。山僧汲水歸。林末茶煙起。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "栗谷先生全書 卷一에서 확인한 산중 소품. 경계가 짧고 명확해 direct-text 카드로 적합하다."
+      }
+    },
+    {
+      "authorKo": "정철",
+      "authorHanja": "鄭澈",
+      "candidateTitle": "술·은거시",
+      "matchedTitle": "秋日作",
+      "sourceWork": {
+        "collectionTitle": "松江集",
+        "juan": "卷一",
+        "entryTitle": "秋日作",
+        "sourceUrl": "https://zh.wikisource.org/wiki/松江集/卷一",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=松江集/卷一&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "山雨夜鳴竹。草虫秋近床。流年那可駐。白髮不禁長。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "松江集 卷一 五言絶句 항목 첫머리 작품. 정철 한시 direct-text 수집의 안정적인 시작점이다."
+      }
+    },
+    {
+      "authorKo": "정철",
+      "authorHanja": "鄭澈",
+      "candidateTitle": "술·은거시",
+      "matchedTitle": "平湖堂 其一",
+      "sourceWork": {
+        "collectionTitle": "松江集",
+        "juan": "卷一",
+        "entryTitle": "平湖堂",
+        "sourceUrl": "https://zh.wikisource.org/wiki/松江集/卷一",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=松江集/卷一&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "宇宙殘生在。江湖白髮多。明時休痛哭。醉後一長歌。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "松江集 卷一 `平湖堂 二首` 중 첫째 수. 같은 제목의 연작이지만 각 수가 독립 단편으로 쓰인다."
+      }
+    },
+    {
+      "authorKo": "정철",
+      "authorHanja": "鄭澈",
+      "candidateTitle": "술·은거시",
+      "matchedTitle": "平湖堂 其二",
+      "sourceWork": {
+        "collectionTitle": "松江集",
+        "juan": "卷一",
+        "entryTitle": "平湖堂",
+        "sourceUrl": "https://zh.wikisource.org/wiki/松江集/卷一",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=松江集/卷一&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "遠岫頻晴雨。漁村乍有無。孤舟一片月。萬里照平湖。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "松江集 卷一 `平湖堂 二首` 중 둘째 수. 첫째 수와 별도 정경을 이루므로 분리 수집했다."
+      }
+    },
+    {
+      "authorKo": "정철",
+      "authorHanja": "鄭澈",
+      "candidateTitle": "송강 한시",
+      "matchedTitle": "別退陶先生",
+      "sourceWork": {
+        "collectionTitle": "松江集",
+        "juan": "卷一",
+        "entryTitle": "別退陶先生",
+        "sourceUrl": "https://zh.wikisource.org/wiki/松江集/卷一",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=松江集/卷一&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "追到廣陵上。仙舟已杳冥。秋風滿江思。斜日獨登亭。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "松江集 卷一에서 확인한 퇴계 이황 관련 송별시. 인물 관계 설명에도 연결 가능하다."
+      }
+    },
+    {
+      "authorKo": "정철",
+      "authorHanja": "鄭澈",
+      "candidateTitle": "송강 한시",
+      "matchedTitle": "祝堯樓",
+      "sourceWork": {
+        "collectionTitle": "松江集",
+        "juan": "卷一",
+        "entryTitle": "祝堯樓",
+        "sourceUrl": "https://zh.wikisource.org/wiki/松江集/卷一",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=松江集/卷一&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "去國一千里。天涯又見秋。孤臣已白髮。獨上祝堯樓。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "松江集 卷一에서 확인한 원방 유배·충정 정서의 단편."
+      }
+    }
+  ],
+  "blockers": [],
+  "sourcesConsulted": [
+    {
+      "url": "https://zh.wikisource.org/wiki/栗谷先生全書/卷一",
+      "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+      "note": "raw view로 이이 詩上 초반의 단편 5건을 확인했다."
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/松江集/卷一",
+      "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+      "note": "raw view로 정철 五言絶句 초반의 단편 5건을 확인했다."
+    }
+  ]
+}
