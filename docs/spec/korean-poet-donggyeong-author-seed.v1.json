@@ -1,0 +1,610 @@
+{
+  "version": "2026-04-25.v1",
+  "generatedAt": "2026-04-25",
+  "source": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json",
+  "purpose": "Seed author rows for Donggyeong Japgi poem blocks whose authors are not yet in the main Korean poet chronology seed catalog.",
+  "caution": "authorKo, life, and eraLabel are intentionally provisional until verified against external biographical sources.",
+  "summary": {
+    "supplementalAuthors": 35,
+    "supplementalWorks": 50
+  },
+  "authors": [
+    {
+      "authorZh": "尹子雲",
+      "authorKo": null,
+      "collectionTier": "D",
+      "eraLabel": "동경잡기 수록 인물",
+      "life": "생몰 미상",
+      "sourceHint": "東京雜記",
+      "workCount": 1,
+      "workTitles": [
+        "尹子雲詩"
+      ],
+      "rawLabels": [
+        "尹子雲"
+      ],
+      "needsNameReadingVerification": true,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요."
+    },
+    {
+      "authorZh": "田祿生",
+      "authorKo": null,
+      "collectionTier": "D",
+      "eraLabel": "동경잡기 수록 인물",
+      "life": "생몰 미상",
+      "sourceHint": "東京雜記",
+      "workCount": 1,
+      "workTitles": [
+        "田祿生詩"
+      ],
+      "rawLabels": [
+        "田祿生"
+      ],
+      "needsNameReadingVerification": true,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요."
+    },
+    {
+      "authorZh": "全湜",
+      "authorKo": null,
+      "collectionTier": "D",
+      "eraLabel": "동경잡기 수록 인물",
+      "life": "생몰 미상",
+      "sourceHint": "東京雜記",
+      "workCount": 1,
+      "workTitles": [
+        "府尹全湜詩"
+      ],
+      "rawLabels": [
+        "府尹全湜"
+      ],
+      "needsNameReadingVerification": true,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요."
+    },
+    {
+      "authorZh": "成侃",
+      "authorKo": null,
+      "collectionTier": "D",
+      "eraLabel": "동경잡기 수록 인물",
+      "life": "생몰 미상",
+      "sourceHint": "東京雜記",
+      "workCount": 1,
+      "workTitles": [
+        "成侃詩"
+      ],
+      "rawLabels": [
+        "成侃"
+      ],
+      "needsNameReadingVerification": true,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요."
+    },
+    {
+      "authorZh": "朴元亨",
+      "authorKo": null,
+      "collectionTier": "D",
+      "eraLabel": "동경잡기 수록 인물",
+      "life": "생몰 미상",
+      "sourceHint": "東京雜記",
+      "workCount": 2,
+      "workTitles": [
+        "朴元亨詩"
+      ],
+      "rawLabels": [
+        "朴元亨"
+      ],
+      "needsNameReadingVerification": true,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요."
+    },
+    {
+      "authorZh": "朴文佑",
+      "authorKo": null,
+      "collectionTier": "D",
+      "eraLabel": "동경잡기 수록 인물",
+      "life": "생몰 미상",
+      "sourceHint": "東京雜記",
+      "workCount": 1,
+      "workTitles": [
+        "朴文佑慈仁縣詩"
+      ],
+      "rawLabels": [
+        "朴文佑慈仁縣"
+      ],
+      "needsNameReadingVerification": true,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요."
+    },
+    {
+      "authorZh": "朴孝修",
+      "authorKo": null,
+      "collectionTier": "D",
+      "eraLabel": "동경잡기 수록 인물",
+      "life": "생몰 미상",
+      "sourceHint": "東京雜記",
+      "workCount": 1,
+      "workTitles": [
+        "朴孝修詩"
+      ],
+      "rawLabels": [
+        "朴孝修"
+      ],
+      "needsNameReadingVerification": true,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요."
+    },
+    {
+      "authorZh": "李元絃",
+      "authorKo": null,
+      "collectionTier": "D",
+      "eraLabel": "동경잡기 수록 인물",
+      "life": "생몰 미상",
+      "sourceHint": "東京雜記",
+      "workCount": 1,
+      "workTitles": [
+        "李元絃詩"
+      ],
+      "rawLabels": [
+        "李元絃"
+      ],
+      "needsNameReadingVerification": true,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요."
+    },
+    {
+      "authorZh": "李公升",
+      "authorKo": null,
+      "collectionTier": "D",
+      "eraLabel": "동경잡기 수록 인물",
+      "life": "생몰 미상",
+      "sourceHint": "東京雜記",
+      "workCount": 1,
+      "workTitles": [
+        "高麗李公升詩"
+      ],
+      "rawLabels": [
+        "高麗李公升"
+      ],
+      "needsNameReadingVerification": true,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요."
+    },
+    {
+      "authorZh": "李文和",
+      "authorKo": null,
+      "collectionTier": "D",
+      "eraLabel": "동경잡기 수록 인물",
+      "life": "생몰 미상",
+      "sourceHint": "東京雜記",
+      "workCount": 1,
+      "workTitles": [
+        "李文和詩"
+      ],
+      "rawLabels": [
+        "李文和"
+      ],
+      "needsNameReadingVerification": true,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요."
+    },
+    {
+      "authorZh": "李石亨",
+      "authorKo": null,
+      "collectionTier": "D",
+      "eraLabel": "동경잡기 수록 인물",
+      "life": "생몰 미상",
+      "sourceHint": "東京雜記",
+      "workCount": 1,
+      "workTitles": [
+        "李石亨詩"
+      ],
+      "rawLabels": [
+        "李石亨"
+      ],
+      "needsNameReadingVerification": true,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요."
+    },
+    {
+      "authorZh": "李好閔",
+      "authorKo": null,
+      "collectionTier": "D",
+      "eraLabel": "동경잡기 수록 인물",
+      "life": "생몰 미상",
+      "sourceHint": "東京雜記",
+      "workCount": 1,
+      "workTitles": [
+        "五峰李好閔詩"
+      ],
+      "rawLabels": [
+        "五峰李好閔"
+      ],
+      "needsNameReadingVerification": true,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요."
+    },
+    {
+      "authorZh": "李安訥",
+      "authorKo": null,
+      "collectionTier": "D",
+      "eraLabel": "동경잡기 수록 인물",
+      "life": "생몰 미상",
+      "sourceHint": "東京雜記",
+      "workCount": 3,
+      "workTitles": [
+        "東岳李安訥詩",
+        "東岳李安訥無邊樓"
+      ],
+      "rawLabels": [
+        "東岳李安訥",
+        "東岳李安訥無邊樓"
+      ],
+      "needsNameReadingVerification": true,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요."
+    },
+    {
+      "authorZh": "李敏求",
+      "authorKo": null,
+      "collectionTier": "D",
+      "eraLabel": "동경잡기 수록 인물",
+      "life": "생몰 미상",
+      "sourceHint": "東京雜記",
+      "workCount": 1,
+      "workTitles": [
+        "李敏求詩"
+      ],
+      "rawLabels": [
+        "李敏求"
+      ],
+      "needsNameReadingVerification": true,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요."
+    },
+    {
+      "authorZh": "李詹",
+      "authorKo": null,
+      "collectionTier": "D",
+      "eraLabel": "동경잡기 수록 인물",
+      "life": "생몰 미상",
+      "sourceHint": "東京雜記",
+      "workCount": 1,
+      "workTitles": [
+        "李詹詩"
+      ],
+      "rawLabels": [
+        "李詹"
+      ],
+      "needsNameReadingVerification": true,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요."
+    },
+    {
+      "authorZh": "李達哀",
+      "authorKo": null,
+      "collectionTier": "D",
+      "eraLabel": "동경잡기 수록 인물",
+      "life": "생몰 미상",
+      "sourceHint": "東京雜記",
+      "workCount": 1,
+      "workTitles": [
+        "李達哀詩"
+      ],
+      "rawLabels": [
+        "李達哀"
+      ],
+      "needsNameReadingVerification": true,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요."
+    },
+    {
+      "authorZh": "李達衷",
+      "authorKo": null,
+      "collectionTier": "D",
+      "eraLabel": "동경잡기 수록 인물",
+      "life": "생몰 미상",
+      "sourceHint": "東京雜記",
+      "workCount": 1,
+      "workTitles": [
+        "李達衷詩"
+      ],
+      "rawLabels": [
+        "李達衷"
+      ],
+      "needsNameReadingVerification": true,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요."
+    },
+    {
+      "authorZh": "金九容",
+      "authorKo": null,
+      "collectionTier": "D",
+      "eraLabel": "동경잡기 수록 인물",
+      "life": "생몰 미상",
+      "sourceHint": "東京雜記",
+      "workCount": 1,
+      "workTitles": [
+        "金九容送權府尹詩"
+      ],
+      "rawLabels": [
+        "金九容送權府尹"
+      ],
+      "needsNameReadingVerification": true,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요."
+    },
+    {
+      "authorZh": "金淡",
+      "authorKo": null,
+      "collectionTier": "D",
+      "eraLabel": "동경잡기 수록 인물",
+      "life": "생몰 미상",
+      "sourceHint": "東京雜記",
+      "workCount": 1,
+      "workTitles": [
+        "金淡詩"
+      ],
+      "rawLabels": [
+        "金淡"
+      ],
+      "needsNameReadingVerification": true,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요."
+    },
+    {
+      "authorZh": "金銧",
+      "authorKo": null,
+      "collectionTier": "D",
+      "eraLabel": "동경잡기 수록 인물",
+      "life": "생몰 미상",
+      "sourceHint": "東京雜記",
+      "workCount": 1,
+      "workTitles": [
+        "金銧詩"
+      ],
+      "rawLabels": [
+        "金銧"
+      ],
+      "needsNameReadingVerification": true,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요."
+    },
+    {
+      "authorZh": "兪好仁",
+      "authorKo": null,
+      "collectionTier": "D",
+      "eraLabel": "동경잡기 수록 인물",
+      "life": "생몰 미상",
+      "sourceHint": "東京雜記",
+      "workCount": 1,
+      "workTitles": [
+        "雜詠兪好仁詩"
+      ],
+      "rawLabels": [
+        "雜詠兪好仁"
+      ],
+      "needsNameReadingVerification": true,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요."
+    },
+    {
+      "authorZh": "柳成龍",
+      "authorKo": null,
+      "collectionTier": "D",
+      "eraLabel": "동경잡기 수록 인물",
+      "life": "생몰 미상",
+      "sourceHint": "東京雜記",
+      "workCount": 2,
+      "workTitles": [
+        "柳西厓詩"
+      ],
+      "rawLabels": [
+        "柳西厓"
+      ],
+      "needsNameReadingVerification": true,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요."
+    },
+    {
+      "authorZh": "崔淑精",
+      "authorKo": null,
+      "collectionTier": "D",
+      "eraLabel": "동경잡기 수록 인물",
+      "life": "생몰 미상",
+      "sourceHint": "東京雜記",
+      "workCount": 1,
+      "workTitles": [
+        "崔淑精詩"
+      ],
+      "rawLabels": [
+        "崔淑精"
+      ],
+      "needsNameReadingVerification": true,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요."
+    },
+    {
+      "authorZh": "張鎰",
+      "authorKo": null,
+      "collectionTier": "D",
+      "eraLabel": "동경잡기 수록 인물",
+      "life": "생몰 미상",
+      "sourceHint": "東京雜記",
+      "workCount": 1,
+      "workTitles": [
+        "張鎰詩"
+      ],
+      "rawLabels": [
+        "張鎰"
+      ],
+      "needsNameReadingVerification": true,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요."
+    },
+    {
+      "authorZh": "張顯光",
+      "authorKo": null,
+      "collectionTier": "D",
+      "eraLabel": "동경잡기 수록 인물",
+      "life": "생몰 미상",
+      "sourceHint": "東京雜記",
+      "workCount": 1,
+      "workTitles": [
+        "旅軒張先生詩"
+      ],
+      "rawLabels": [
+        "旅軒張先生"
+      ],
+      "needsNameReadingVerification": true,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요."
+    },
+    {
+      "authorZh": "魚世謙",
+      "authorKo": null,
+      "collectionTier": "D",
+      "eraLabel": "동경잡기 수록 인물",
+      "life": "생몰 미상",
+      "sourceHint": "東京雜記",
+      "workCount": 12,
+      "workTitles": [
+        "魚世謙詩"
+      ],
+      "rawLabels": [
+        "魚世謙"
+      ],
+      "needsNameReadingVerification": true,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요."
+    },
+    {
+      "authorZh": "閔思平",
+      "authorKo": null,
+      "collectionTier": "D",
+      "eraLabel": "동경잡기 수록 인물",
+      "life": "생몰 미상",
+      "sourceHint": "東京雜記",
+      "workCount": 1,
+      "workTitles": [
+        "閔思平詩"
+      ],
+      "rawLabels": [
+        "閔思平"
+      ],
+      "needsNameReadingVerification": true,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요."
+    },
+    {
+      "authorZh": "趙浚",
+      "authorKo": null,
+      "collectionTier": "D",
+      "eraLabel": "동경잡기 수록 인물",
+      "life": "생몰 미상",
+      "sourceHint": "東京雜記",
+      "workCount": 1,
+      "workTitles": [
+        "趙浚詩"
+      ],
+      "rawLabels": [
+        "趙浚"
+      ],
+      "needsNameReadingVerification": true,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요."
+    },
+    {
+      "authorZh": "趙絅",
+      "authorKo": null,
+      "collectionTier": "D",
+      "eraLabel": "동경잡기 수록 인물",
+      "life": "생몰 미상",
+      "sourceHint": "東京雜記",
+      "workCount": 1,
+      "workTitles": [
+        "龍洲趙絅詩"
+      ],
+      "rawLabels": [
+        "龍洲趙絅"
+      ],
+      "needsNameReadingVerification": true,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요."
+    },
+    {
+      "authorZh": "鄭文翼",
+      "authorKo": null,
+      "collectionTier": "D",
+      "eraLabel": "동경잡기 수록 인물",
+      "life": "생몰 미상",
+      "sourceHint": "東京雜記",
+      "workCount": 1,
+      "workTitles": [
+        "府尹鄭文翼詩"
+      ],
+      "rawLabels": [
+        "府尹鄭文翼"
+      ],
+      "needsNameReadingVerification": true,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요."
+    },
+    {
+      "authorZh": "鄭以吾",
+      "authorKo": null,
+      "collectionTier": "D",
+      "eraLabel": "동경잡기 수록 인물",
+      "life": "생몰 미상",
+      "sourceHint": "東京雜記",
+      "workCount": 1,
+      "workTitles": [
+        "鄭以吾詩"
+      ],
+      "rawLabels": [
+        "鄭以吾"
+      ],
+      "needsNameReadingVerification": true,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요."
+    },
+    {
+      "authorZh": "鄭孝常",
+      "authorKo": null,
+      "collectionTier": "D",
+      "eraLabel": "동경잡기 수록 인물",
+      "life": "생몰 미상",
+      "sourceHint": "東京雜記",
+      "workCount": 1,
+      "workTitles": [
+        "鄭孝常詩"
+      ],
+      "rawLabels": [
+        "鄭孝常"
+      ],
+      "needsNameReadingVerification": true,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요."
+    },
+    {
+      "authorZh": "鄭樞",
+      "authorKo": null,
+      "collectionTier": "D",
+      "eraLabel": "동경잡기 수록 인물",
+      "life": "생몰 미상",
+      "sourceHint": "東京雜記",
+      "workCount": 1,
+      "workTitles": [
+        "鄭樞詩"
+      ],
+      "rawLabels": [
+        "鄭樞"
+      ],
+      "needsNameReadingVerification": true,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요."
+    },
+    {
+      "authorZh": "盧盼",
+      "authorKo": null,
+      "collectionTier": "D",
+      "eraLabel": "동경잡기 수록 인물",
+      "life": "생몰 미상",
+      "sourceHint": "東京雜記",
+      "workCount": 1,
+      "workTitles": [
+        "盧盼詩"
+      ],
+      "rawLabels": [
+        "盧盼"
+      ],
+      "needsNameReadingVerification": true,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요."
+    },
+    {
+      "authorZh": "顧雲",
+      "authorKo": null,
+      "collectionTier": "D",
+      "eraLabel": "동경잡기 수록 인물",
+      "life": "생몰 미상",
+      "sourceHint": "東京雜記",
+      "workCount": 1,
+      "workTitles": [
+        "唐顧雲贈崔文昌詩"
+      ],
+      "rawLabels": [
+        "唐顧雲贈崔文昌"
+      ],
+      "needsNameReadingVerification": true,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요."
+    }
+  ]
+}

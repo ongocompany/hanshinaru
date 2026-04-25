@@ -10,17 +10,21 @@
     "docs/spec/korean-hansi-jeong-jisang-tranche1.records.v1.json",
     "docs/spec/korean-hansi-jeong-jisang-tranche2.records.v1.json",
     "docs/spec/korean-poet-worker-results/*.json",
-    "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+    "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json",
+    "docs/spec/korean-poet-donggyeong-author-seed.v1.json"
   ],
   "catalogId": "korean-poets-chronology",
   "targetDb": "poets",
   "summary": {
-    "totalAuthors": 97,
+    "totalAuthors": 132,
+    "baseSeedAuthors": 97,
+    "donggyeongSupplementAuthors": 35,
     "v1PriorityAuthors": 28,
     "tierCounts": {
       "C": 8,
       "A": 34,
-      "B": 55
+      "B": 55,
+      "D": 35
     }
   },
   "authors": [
@@ -5218,6 +5222,1688 @@
       "wave": null,
       "stats": {
         "candidateWorkCount": 2,
+        "directTextCollectedWorks": 0,
+        "localTimelineFullPoems": 0,
+        "localTimelineOtherWorks": 0
+      }
+    },
+    {
+      "authorId": "KAUTH-AUTHOR-E5B0B9E5",
+      "slug": "author-e5b0b9e5",
+      "name": {
+        "ko": "尹子雲",
+        "hanja": "尹子雲"
+      },
+      "era": {
+        "label": "동경잡기 수록 인물"
+      },
+      "life": {
+        "raw": "생몰 미상",
+        "birth": null,
+        "death": null,
+        "uncertain": true
+      },
+      "collectionTier": "D",
+      "v1Priority": null,
+      "chronologyOrder": 98,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
+      "sourceHint": "東京雜記",
+      "candidateWorkTitles": [
+        "尹子雲詩"
+      ],
+      "collectionPlan": {
+        "phase": "V3-donggyeong-supplement",
+        "preferredMode": "regional-document-seed-review",
+        "needsOwnedTranslation": true,
+        "needsSourceUrlVerification": false,
+        "needsNameReadingVerification": true
+      },
+      "donggyeongJapgiSeed": {
+        "sourceFile": "docs/spec/korean-poet-donggyeong-author-seed.v1.json",
+        "sourceAuthorZh": "尹子雲",
+        "sourceRawLabels": [
+          "尹子雲"
+        ],
+        "sourceWorkCount": 1
+      },
+      "timeline": {},
+      "wave": null,
+      "stats": {
+        "candidateWorkCount": 1,
+        "directTextCollectedWorks": 0,
+        "localTimelineFullPoems": 0,
+        "localTimelineOtherWorks": 0
+      }
+    },
+    {
+      "authorId": "KAUTH-AUTHOR-E794B0E7",
+      "slug": "author-e794b0e7",
+      "name": {
+        "ko": "田祿生",
+        "hanja": "田祿生"
+      },
+      "era": {
+        "label": "동경잡기 수록 인물"
+      },
+      "life": {
+        "raw": "생몰 미상",
+        "birth": null,
+        "death": null,
+        "uncertain": true
+      },
+      "collectionTier": "D",
+      "v1Priority": null,
+      "chronologyOrder": 99,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
+      "sourceHint": "東京雜記",
+      "candidateWorkTitles": [
+        "田祿生詩"
+      ],
+      "collectionPlan": {
+        "phase": "V3-donggyeong-supplement",
+        "preferredMode": "regional-document-seed-review",
+        "needsOwnedTranslation": true,
+        "needsSourceUrlVerification": false,
+        "needsNameReadingVerification": true
+      },
+      "donggyeongJapgiSeed": {
+        "sourceFile": "docs/spec/korean-poet-donggyeong-author-seed.v1.json",
+        "sourceAuthorZh": "田祿生",
+        "sourceRawLabels": [
+          "田祿生"
+        ],
+        "sourceWorkCount": 1
+      },
+      "timeline": {},
+      "wave": null,
+      "stats": {
+        "candidateWorkCount": 1,
+        "directTextCollectedWorks": 0,
+        "localTimelineFullPoems": 0,
+        "localTimelineOtherWorks": 0
+      }
+    },
+    {
+      "authorId": "KAUTH-AUTHOR-E585A8E6",
+      "slug": "author-e585a8e6",
+      "name": {
+        "ko": "全湜",
+        "hanja": "全湜"
+      },
+      "era": {
+        "label": "동경잡기 수록 인물"
+      },
+      "life": {
+        "raw": "생몰 미상",
+        "birth": null,
+        "death": null,
+        "uncertain": true
+      },
+      "collectionTier": "D",
+      "v1Priority": null,
+      "chronologyOrder": 100,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
+      "sourceHint": "東京雜記",
+      "candidateWorkTitles": [
+        "府尹全湜詩"
+      ],
+      "collectionPlan": {
+        "phase": "V3-donggyeong-supplement",
+        "preferredMode": "regional-document-seed-review",
+        "needsOwnedTranslation": true,
+        "needsSourceUrlVerification": false,
+        "needsNameReadingVerification": true
+      },
+      "donggyeongJapgiSeed": {
+        "sourceFile": "docs/spec/korean-poet-donggyeong-author-seed.v1.json",
+        "sourceAuthorZh": "全湜",
+        "sourceRawLabels": [
+          "府尹全湜"
+        ],
+        "sourceWorkCount": 1
+      },
+      "timeline": {},
+      "wave": null,
+      "stats": {
+        "candidateWorkCount": 1,
+        "directTextCollectedWorks": 0,
+        "localTimelineFullPoems": 0,
+        "localTimelineOtherWorks": 0
+      }
+    },
+    {
+      "authorId": "KAUTH-AUTHOR-E68890E4",
+      "slug": "author-e68890e4",
+      "name": {
+        "ko": "成侃",
+        "hanja": "成侃"
+      },
+      "era": {
+        "label": "동경잡기 수록 인물"
+      },
+      "life": {
+        "raw": "생몰 미상",
+        "birth": null,
+        "death": null,
+        "uncertain": true
+      },
+      "collectionTier": "D",
+      "v1Priority": null,
+      "chronologyOrder": 101,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
+      "sourceHint": "東京雜記",
+      "candidateWorkTitles": [
+        "成侃詩"
+      ],
+      "collectionPlan": {
+        "phase": "V3-donggyeong-supplement",
+        "preferredMode": "regional-document-seed-review",
+        "needsOwnedTranslation": true,
+        "needsSourceUrlVerification": false,
+        "needsNameReadingVerification": true
+      },
+      "donggyeongJapgiSeed": {
+        "sourceFile": "docs/spec/korean-poet-donggyeong-author-seed.v1.json",
+        "sourceAuthorZh": "成侃",
+        "sourceRawLabels": [
+          "成侃"
+        ],
+        "sourceWorkCount": 1
+      },
+      "timeline": {},
+      "wave": null,
+      "stats": {
+        "candidateWorkCount": 1,
+        "directTextCollectedWorks": 0,
+        "localTimelineFullPoems": 0,
+        "localTimelineOtherWorks": 0
+      }
+    },
+    {
+      "authorId": "KAUTH-AUTHOR-E69CB4E5",
+      "slug": "author-e69cb4e5",
+      "name": {
+        "ko": "朴元亨",
+        "hanja": "朴元亨"
+      },
+      "era": {
+        "label": "동경잡기 수록 인물"
+      },
+      "life": {
+        "raw": "생몰 미상",
+        "birth": null,
+        "death": null,
+        "uncertain": true
+      },
+      "collectionTier": "D",
+      "v1Priority": null,
+      "chronologyOrder": 102,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
+      "sourceHint": "東京雜記",
+      "candidateWorkTitles": [
+        "朴元亨詩"
+      ],
+      "collectionPlan": {
+        "phase": "V3-donggyeong-supplement",
+        "preferredMode": "regional-document-seed-review",
+        "needsOwnedTranslation": true,
+        "needsSourceUrlVerification": false,
+        "needsNameReadingVerification": true
+      },
+      "donggyeongJapgiSeed": {
+        "sourceFile": "docs/spec/korean-poet-donggyeong-author-seed.v1.json",
+        "sourceAuthorZh": "朴元亨",
+        "sourceRawLabels": [
+          "朴元亨"
+        ],
+        "sourceWorkCount": 2
+      },
+      "timeline": {},
+      "wave": null,
+      "stats": {
+        "candidateWorkCount": 1,
+        "directTextCollectedWorks": 0,
+        "localTimelineFullPoems": 0,
+        "localTimelineOtherWorks": 0
+      }
+    },
+    {
+      "authorId": "KAUTH-AUTHOR-E69CB4E6",
+      "slug": "author-e69cb4e6",
+      "name": {
+        "ko": "朴文佑",
+        "hanja": "朴文佑"
+      },
+      "era": {
+        "label": "동경잡기 수록 인물"
+      },
+      "life": {
+        "raw": "생몰 미상",
+        "birth": null,
+        "death": null,
+        "uncertain": true
+      },
+      "collectionTier": "D",
+      "v1Priority": null,
+      "chronologyOrder": 103,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
+      "sourceHint": "東京雜記",
+      "candidateWorkTitles": [
+        "朴文佑慈仁縣詩"
+      ],
+      "collectionPlan": {
+        "phase": "V3-donggyeong-supplement",
+        "preferredMode": "regional-document-seed-review",
+        "needsOwnedTranslation": true,
+        "needsSourceUrlVerification": false,
+        "needsNameReadingVerification": true
+      },
+      "donggyeongJapgiSeed": {
+        "sourceFile": "docs/spec/korean-poet-donggyeong-author-seed.v1.json",
+        "sourceAuthorZh": "朴文佑",
+        "sourceRawLabels": [
+          "朴文佑慈仁縣"
+        ],
+        "sourceWorkCount": 1
+      },
+      "timeline": {},
+      "wave": null,
+      "stats": {
+        "candidateWorkCount": 1,
+        "directTextCollectedWorks": 0,
+        "localTimelineFullPoems": 0,
+        "localTimelineOtherWorks": 0
+      }
+    },
+    {
+      "authorId": "KAUTH-AUTHOR-E69CB4E5",
+      "slug": "author-e69cb4e5",
+      "name": {
+        "ko": "朴孝修",
+        "hanja": "朴孝修"
+      },
+      "era": {
+        "label": "동경잡기 수록 인물"
+      },
+      "life": {
+        "raw": "생몰 미상",
+        "birth": null,
+        "death": null,
+        "uncertain": true
+      },
+      "collectionTier": "D",
+      "v1Priority": null,
+      "chronologyOrder": 104,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
+      "sourceHint": "東京雜記",
+      "candidateWorkTitles": [
+        "朴孝修詩"
+      ],
+      "collectionPlan": {
+        "phase": "V3-donggyeong-supplement",
+        "preferredMode": "regional-document-seed-review",
+        "needsOwnedTranslation": true,
+        "needsSourceUrlVerification": false,
+        "needsNameReadingVerification": true
+      },
+      "donggyeongJapgiSeed": {
+        "sourceFile": "docs/spec/korean-poet-donggyeong-author-seed.v1.json",
+        "sourceAuthorZh": "朴孝修",
+        "sourceRawLabels": [
+          "朴孝修"
+        ],
+        "sourceWorkCount": 1
+      },
+      "timeline": {},
+      "wave": null,
+      "stats": {
+        "candidateWorkCount": 1,
+        "directTextCollectedWorks": 0,
+        "localTimelineFullPoems": 0,
+        "localTimelineOtherWorks": 0
+      }
+    },
+    {
+      "authorId": "KAUTH-AUTHOR-E69D8EE5",
+      "slug": "author-e69d8ee5",
+      "name": {
+        "ko": "李元絃",
+        "hanja": "李元絃"
+      },
+      "era": {
+        "label": "동경잡기 수록 인물"
+      },
+      "life": {
+        "raw": "생몰 미상",
+        "birth": null,
+        "death": null,
+        "uncertain": true
+      },
+      "collectionTier": "D",
+      "v1Priority": null,
+      "chronologyOrder": 105,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
+      "sourceHint": "東京雜記",
+      "candidateWorkTitles": [
+        "李元絃詩"
+      ],
+      "collectionPlan": {
+        "phase": "V3-donggyeong-supplement",
+        "preferredMode": "regional-document-seed-review",
+        "needsOwnedTranslation": true,
+        "needsSourceUrlVerification": false,
+        "needsNameReadingVerification": true
+      },
+      "donggyeongJapgiSeed": {
+        "sourceFile": "docs/spec/korean-poet-donggyeong-author-seed.v1.json",
+        "sourceAuthorZh": "李元絃",
+        "sourceRawLabels": [
+          "李元絃"
+        ],
+        "sourceWorkCount": 1
+      },
+      "timeline": {},
+      "wave": null,
+      "stats": {
+        "candidateWorkCount": 1,
+        "directTextCollectedWorks": 0,
+        "localTimelineFullPoems": 0,
+        "localTimelineOtherWorks": 0
+      }
+    },
+    {
+      "authorId": "KAUTH-AUTHOR-E69D8EE5",
+      "slug": "author-e69d8ee5",
+      "name": {
+        "ko": "李公升",
+        "hanja": "李公升"
+      },
+      "era": {
+        "label": "동경잡기 수록 인물"
+      },
+      "life": {
+        "raw": "생몰 미상",
+        "birth": null,
+        "death": null,
+        "uncertain": true
+      },
+      "collectionTier": "D",
+      "v1Priority": null,
+      "chronologyOrder": 106,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
+      "sourceHint": "東京雜記",
+      "candidateWorkTitles": [
+        "高麗李公升詩"
+      ],
+      "collectionPlan": {
+        "phase": "V3-donggyeong-supplement",
+        "preferredMode": "regional-document-seed-review",
+        "needsOwnedTranslation": true,
+        "needsSourceUrlVerification": false,
+        "needsNameReadingVerification": true
+      },
+      "donggyeongJapgiSeed": {
+        "sourceFile": "docs/spec/korean-poet-donggyeong-author-seed.v1.json",
+        "sourceAuthorZh": "李公升",
+        "sourceRawLabels": [
+          "高麗李公升"
+        ],
+        "sourceWorkCount": 1
+      },
+      "timeline": {},
+      "wave": null,
+      "stats": {
+        "candidateWorkCount": 1,
+        "directTextCollectedWorks": 0,
+        "localTimelineFullPoems": 0,
+        "localTimelineOtherWorks": 0
+      }
+    },
+    {
+      "authorId": "KAUTH-AUTHOR-E69D8EE6",
+      "slug": "author-e69d8ee6",
+      "name": {
+        "ko": "李文和",
+        "hanja": "李文和"
+      },
+      "era": {
+        "label": "동경잡기 수록 인물"
+      },
+      "life": {
+        "raw": "생몰 미상",
+        "birth": null,
+        "death": null,
+        "uncertain": true
+      },
+      "collectionTier": "D",
+      "v1Priority": null,
+      "chronologyOrder": 107,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
+      "sourceHint": "東京雜記",
+      "candidateWorkTitles": [
+        "李文和詩"
+      ],
+      "collectionPlan": {
+        "phase": "V3-donggyeong-supplement",
+        "preferredMode": "regional-document-seed-review",
+        "needsOwnedTranslation": true,
+        "needsSourceUrlVerification": false,
+        "needsNameReadingVerification": true
+      },
+      "donggyeongJapgiSeed": {
+        "sourceFile": "docs/spec/korean-poet-donggyeong-author-seed.v1.json",
+        "sourceAuthorZh": "李文和",
+        "sourceRawLabels": [
+          "李文和"
+        ],
+        "sourceWorkCount": 1
+      },
+      "timeline": {},
+      "wave": null,
+      "stats": {
+        "candidateWorkCount": 1,
+        "directTextCollectedWorks": 0,
+        "localTimelineFullPoems": 0,
+        "localTimelineOtherWorks": 0
+      }
+    },
+    {
+      "authorId": "KAUTH-AUTHOR-E69D8EE7",
+      "slug": "author-e69d8ee7",
+      "name": {
+        "ko": "李石亨",
+        "hanja": "李石亨"
+      },
+      "era": {
+        "label": "동경잡기 수록 인물"
+      },
+      "life": {
+        "raw": "생몰 미상",
+        "birth": null,
+        "death": null,
+        "uncertain": true
+      },
+      "collectionTier": "D",
+      "v1Priority": null,
+      "chronologyOrder": 108,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
+      "sourceHint": "東京雜記",
+      "candidateWorkTitles": [
+        "李石亨詩"
+      ],
+      "collectionPlan": {
+        "phase": "V3-donggyeong-supplement",
+        "preferredMode": "regional-document-seed-review",
+        "needsOwnedTranslation": true,
+        "needsSourceUrlVerification": false,
+        "needsNameReadingVerification": true
+      },
+      "donggyeongJapgiSeed": {
+        "sourceFile": "docs/spec/korean-poet-donggyeong-author-seed.v1.json",
+        "sourceAuthorZh": "李石亨",
+        "sourceRawLabels": [
+          "李石亨"
+        ],
+        "sourceWorkCount": 1
+      },
+      "timeline": {},
+      "wave": null,
+      "stats": {
+        "candidateWorkCount": 1,
+        "directTextCollectedWorks": 0,
+        "localTimelineFullPoems": 0,
+        "localTimelineOtherWorks": 0
+      }
+    },
+    {
+      "authorId": "KAUTH-AUTHOR-E69D8EE5",
+      "slug": "author-e69d8ee5",
+      "name": {
+        "ko": "李好閔",
+        "hanja": "李好閔"
+      },
+      "era": {
+        "label": "동경잡기 수록 인물"
+      },
+      "life": {
+        "raw": "생몰 미상",
+        "birth": null,
+        "death": null,
+        "uncertain": true
+      },
+      "collectionTier": "D",
+      "v1Priority": null,
+      "chronologyOrder": 109,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
+      "sourceHint": "東京雜記",
+      "candidateWorkTitles": [
+        "五峰李好閔詩"
+      ],
+      "collectionPlan": {
+        "phase": "V3-donggyeong-supplement",
+        "preferredMode": "regional-document-seed-review",
+        "needsOwnedTranslation": true,
+        "needsSourceUrlVerification": false,
+        "needsNameReadingVerification": true
+      },
+      "donggyeongJapgiSeed": {
+        "sourceFile": "docs/spec/korean-poet-donggyeong-author-seed.v1.json",
+        "sourceAuthorZh": "李好閔",
+        "sourceRawLabels": [
+          "五峰李好閔"
+        ],
+        "sourceWorkCount": 1
+      },
+      "timeline": {},
+      "wave": null,
+      "stats": {
+        "candidateWorkCount": 1,
+        "directTextCollectedWorks": 0,
+        "localTimelineFullPoems": 0,
+        "localTimelineOtherWorks": 0
+      }
+    },
+    {
+      "authorId": "KAUTH-AUTHOR-E69D8EE5",
+      "slug": "author-e69d8ee5",
+      "name": {
+        "ko": "李安訥",
+        "hanja": "李安訥"
+      },
+      "era": {
+        "label": "동경잡기 수록 인물"
+      },
+      "life": {
+        "raw": "생몰 미상",
+        "birth": null,
+        "death": null,
+        "uncertain": true
+      },
+      "collectionTier": "D",
+      "v1Priority": null,
+      "chronologyOrder": 110,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
+      "sourceHint": "東京雜記",
+      "candidateWorkTitles": [
+        "東岳李安訥詩",
+        "東岳李安訥無邊樓"
+      ],
+      "collectionPlan": {
+        "phase": "V3-donggyeong-supplement",
+        "preferredMode": "regional-document-seed-review",
+        "needsOwnedTranslation": true,
+        "needsSourceUrlVerification": false,
+        "needsNameReadingVerification": true
+      },
+      "donggyeongJapgiSeed": {
+        "sourceFile": "docs/spec/korean-poet-donggyeong-author-seed.v1.json",
+        "sourceAuthorZh": "李安訥",
+        "sourceRawLabels": [
+          "東岳李安訥",
+          "東岳李安訥無邊樓"
+        ],
+        "sourceWorkCount": 3
+      },
+      "timeline": {},
+      "wave": null,
+      "stats": {
+        "candidateWorkCount": 2,
+        "directTextCollectedWorks": 0,
+        "localTimelineFullPoems": 0,
+        "localTimelineOtherWorks": 0
+      }
+    },
+    {
+      "authorId": "KAUTH-AUTHOR-E69D8EE6",
+      "slug": "author-e69d8ee6",
+      "name": {
+        "ko": "李敏求",
+        "hanja": "李敏求"
+      },
+      "era": {
+        "label": "동경잡기 수록 인물"
+      },
+      "life": {
+        "raw": "생몰 미상",
+        "birth": null,
+        "death": null,
+        "uncertain": true
+      },
+      "collectionTier": "D",
+      "v1Priority": null,
+      "chronologyOrder": 111,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
+      "sourceHint": "東京雜記",
+      "candidateWorkTitles": [
+        "李敏求詩"
+      ],
+      "collectionPlan": {
+        "phase": "V3-donggyeong-supplement",
+        "preferredMode": "regional-document-seed-review",
+        "needsOwnedTranslation": true,
+        "needsSourceUrlVerification": false,
+        "needsNameReadingVerification": true
+      },
+      "donggyeongJapgiSeed": {
+        "sourceFile": "docs/spec/korean-poet-donggyeong-author-seed.v1.json",
+        "sourceAuthorZh": "李敏求",
+        "sourceRawLabels": [
+          "李敏求"
+        ],
+        "sourceWorkCount": 1
+      },
+      "timeline": {},
+      "wave": null,
+      "stats": {
+        "candidateWorkCount": 1,
+        "directTextCollectedWorks": 0,
+        "localTimelineFullPoems": 0,
+        "localTimelineOtherWorks": 0
+      }
+    },
+    {
+      "authorId": "KAUTH-AUTHOR-E69D8EE8",
+      "slug": "author-e69d8ee8",
+      "name": {
+        "ko": "李詹",
+        "hanja": "李詹"
+      },
+      "era": {
+        "label": "동경잡기 수록 인물"
+      },
+      "life": {
+        "raw": "생몰 미상",
+        "birth": null,
+        "death": null,
+        "uncertain": true
+      },
+      "collectionTier": "D",
+      "v1Priority": null,
+      "chronologyOrder": 112,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
+      "sourceHint": "東京雜記",
+      "candidateWorkTitles": [
+        "李詹詩"
+      ],
+      "collectionPlan": {
+        "phase": "V3-donggyeong-supplement",
+        "preferredMode": "regional-document-seed-review",
+        "needsOwnedTranslation": true,
+        "needsSourceUrlVerification": false,
+        "needsNameReadingVerification": true
+      },
+      "donggyeongJapgiSeed": {
+        "sourceFile": "docs/spec/korean-poet-donggyeong-author-seed.v1.json",
+        "sourceAuthorZh": "李詹",
+        "sourceRawLabels": [
+          "李詹"
+        ],
+        "sourceWorkCount": 1
+      },
+      "timeline": {},
+      "wave": null,
+      "stats": {
+        "candidateWorkCount": 1,
+        "directTextCollectedWorks": 0,
+        "localTimelineFullPoems": 0,
+        "localTimelineOtherWorks": 0
+      }
+    },
+    {
+      "authorId": "KAUTH-AUTHOR-E69D8EE9",
+      "slug": "author-e69d8ee9",
+      "name": {
+        "ko": "李達哀",
+        "hanja": "李達哀"
+      },
+      "era": {
+        "label": "동경잡기 수록 인물"
+      },
+      "life": {
+        "raw": "생몰 미상",
+        "birth": null,
+        "death": null,
+        "uncertain": true
+      },
+      "collectionTier": "D",
+      "v1Priority": null,
+      "chronologyOrder": 113,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
+      "sourceHint": "東京雜記",
+      "candidateWorkTitles": [
+        "李達哀詩"
+      ],
+      "collectionPlan": {
+        "phase": "V3-donggyeong-supplement",
+        "preferredMode": "regional-document-seed-review",
+        "needsOwnedTranslation": true,
+        "needsSourceUrlVerification": false,
+        "needsNameReadingVerification": true
+      },
+      "donggyeongJapgiSeed": {
+        "sourceFile": "docs/spec/korean-poet-donggyeong-author-seed.v1.json",
+        "sourceAuthorZh": "李達哀",
+        "sourceRawLabels": [
+          "李達哀"
+        ],
+        "sourceWorkCount": 1
+      },
+      "timeline": {},
+      "wave": null,
+      "stats": {
+        "candidateWorkCount": 1,
+        "directTextCollectedWorks": 0,
+        "localTimelineFullPoems": 0,
+        "localTimelineOtherWorks": 0
+      }
+    },
+    {
+      "authorId": "KAUTH-AUTHOR-E69D8EE9",
+      "slug": "author-e69d8ee9",
+      "name": {
+        "ko": "李達衷",
+        "hanja": "李達衷"
+      },
+      "era": {
+        "label": "동경잡기 수록 인물"
+      },
+      "life": {
+        "raw": "생몰 미상",
+        "birth": null,
+        "death": null,
+        "uncertain": true
+      },
+      "collectionTier": "D",
+      "v1Priority": null,
+      "chronologyOrder": 114,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
+      "sourceHint": "東京雜記",
+      "candidateWorkTitles": [
+        "李達衷詩"
+      ],
+      "collectionPlan": {
+        "phase": "V3-donggyeong-supplement",
+        "preferredMode": "regional-document-seed-review",
+        "needsOwnedTranslation": true,
+        "needsSourceUrlVerification": false,
+        "needsNameReadingVerification": true
+      },
+      "donggyeongJapgiSeed": {
+        "sourceFile": "docs/spec/korean-poet-donggyeong-author-seed.v1.json",
+        "sourceAuthorZh": "李達衷",
+        "sourceRawLabels": [
+          "李達衷"
+        ],
+        "sourceWorkCount": 1
+      },
+      "timeline": {},
+      "wave": null,
+      "stats": {
+        "candidateWorkCount": 1,
+        "directTextCollectedWorks": 0,
+        "localTimelineFullPoems": 0,
+        "localTimelineOtherWorks": 0
+      }
+    },
+    {
+      "authorId": "KAUTH-AUTHOR-E98791E4",
+      "slug": "author-e98791e4",
+      "name": {
+        "ko": "金九容",
+        "hanja": "金九容"
+      },
+      "era": {
+        "label": "동경잡기 수록 인물"
+      },
+      "life": {
+        "raw": "생몰 미상",
+        "birth": null,
+        "death": null,
+        "uncertain": true
+      },
+      "collectionTier": "D",
+      "v1Priority": null,
+      "chronologyOrder": 115,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
+      "sourceHint": "東京雜記",
+      "candidateWorkTitles": [
+        "金九容送權府尹詩"
+      ],
+      "collectionPlan": {
+        "phase": "V3-donggyeong-supplement",
+        "preferredMode": "regional-document-seed-review",
+        "needsOwnedTranslation": true,
+        "needsSourceUrlVerification": false,
+        "needsNameReadingVerification": true
+      },
+      "donggyeongJapgiSeed": {
+        "sourceFile": "docs/spec/korean-poet-donggyeong-author-seed.v1.json",
+        "sourceAuthorZh": "金九容",
+        "sourceRawLabels": [
+          "金九容送權府尹"
+        ],
+        "sourceWorkCount": 1
+      },
+      "timeline": {},
+      "wave": null,
+      "stats": {
+        "candidateWorkCount": 1,
+        "directTextCollectedWorks": 0,
+        "localTimelineFullPoems": 0,
+        "localTimelineOtherWorks": 0
+      }
+    },
+    {
+      "authorId": "KAUTH-AUTHOR-E98791E6",
+      "slug": "author-e98791e6",
+      "name": {
+        "ko": "金淡",
+        "hanja": "金淡"
+      },
+      "era": {
+        "label": "동경잡기 수록 인물"
+      },
+      "life": {
+        "raw": "생몰 미상",
+        "birth": null,
+        "death": null,
+        "uncertain": true
+      },
+      "collectionTier": "D",
+      "v1Priority": null,
+      "chronologyOrder": 116,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
+      "sourceHint": "東京雜記",
+      "candidateWorkTitles": [
+        "金淡詩"
+      ],
+      "collectionPlan": {
+        "phase": "V3-donggyeong-supplement",
+        "preferredMode": "regional-document-seed-review",
+        "needsOwnedTranslation": true,
+        "needsSourceUrlVerification": false,
+        "needsNameReadingVerification": true
+      },
+      "donggyeongJapgiSeed": {
+        "sourceFile": "docs/spec/korean-poet-donggyeong-author-seed.v1.json",
+        "sourceAuthorZh": "金淡",
+        "sourceRawLabels": [
+          "金淡"
+        ],
+        "sourceWorkCount": 1
+      },
+      "timeline": {},
+      "wave": null,
+      "stats": {
+        "candidateWorkCount": 1,
+        "directTextCollectedWorks": 0,
+        "localTimelineFullPoems": 0,
+        "localTimelineOtherWorks": 0
+      }
+    },
+    {
+      "authorId": "KAUTH-AUTHOR-E98791E9",
+      "slug": "author-e98791e9",
+      "name": {
+        "ko": "金銧",
+        "hanja": "金銧"
+      },
+      "era": {
+        "label": "동경잡기 수록 인물"
+      },
+      "life": {
+        "raw": "생몰 미상",
+        "birth": null,
+        "death": null,
+        "uncertain": true
+      },
+      "collectionTier": "D",
+      "v1Priority": null,
+      "chronologyOrder": 117,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
+      "sourceHint": "東京雜記",
+      "candidateWorkTitles": [
+        "金銧詩"
+      ],
+      "collectionPlan": {
+        "phase": "V3-donggyeong-supplement",
+        "preferredMode": "regional-document-seed-review",
+        "needsOwnedTranslation": true,
+        "needsSourceUrlVerification": false,
+        "needsNameReadingVerification": true
+      },
+      "donggyeongJapgiSeed": {
+        "sourceFile": "docs/spec/korean-poet-donggyeong-author-seed.v1.json",
+        "sourceAuthorZh": "金銧",
+        "sourceRawLabels": [
+          "金銧"
+        ],
+        "sourceWorkCount": 1
+      },
+      "timeline": {},
+      "wave": null,
+      "stats": {
+        "candidateWorkCount": 1,
+        "directTextCollectedWorks": 0,
+        "localTimelineFullPoems": 0,
+        "localTimelineOtherWorks": 0
+      }
+    },
+    {
+      "authorId": "KAUTH-AUTHOR-E585AAE5",
+      "slug": "author-e585aae5",
+      "name": {
+        "ko": "兪好仁",
+        "hanja": "兪好仁"
+      },
+      "era": {
+        "label": "동경잡기 수록 인물"
+      },
+      "life": {
+        "raw": "생몰 미상",
+        "birth": null,
+        "death": null,
+        "uncertain": true
+      },
+      "collectionTier": "D",
+      "v1Priority": null,
+      "chronologyOrder": 118,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
+      "sourceHint": "東京雜記",
+      "candidateWorkTitles": [
+        "雜詠兪好仁詩"
+      ],
+      "collectionPlan": {
+        "phase": "V3-donggyeong-supplement",
+        "preferredMode": "regional-document-seed-review",
+        "needsOwnedTranslation": true,
+        "needsSourceUrlVerification": false,
+        "needsNameReadingVerification": true
+      },
+      "donggyeongJapgiSeed": {
+        "sourceFile": "docs/spec/korean-poet-donggyeong-author-seed.v1.json",
+        "sourceAuthorZh": "兪好仁",
+        "sourceRawLabels": [
+          "雜詠兪好仁"
+        ],
+        "sourceWorkCount": 1
+      },
+      "timeline": {},
+      "wave": null,
+      "stats": {
+        "candidateWorkCount": 1,
+        "directTextCollectedWorks": 0,
+        "localTimelineFullPoems": 0,
+        "localTimelineOtherWorks": 0
+      }
+    },
+    {
+      "authorId": "KAUTH-AUTHOR-E69FB3E6",
+      "slug": "author-e69fb3e6",
+      "name": {
+        "ko": "柳成龍",
+        "hanja": "柳成龍"
+      },
+      "era": {
+        "label": "동경잡기 수록 인물"
+      },
+      "life": {
+        "raw": "생몰 미상",
+        "birth": null,
+        "death": null,
+        "uncertain": true
+      },
+      "collectionTier": "D",
+      "v1Priority": null,
+      "chronologyOrder": 119,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
+      "sourceHint": "東京雜記",
+      "candidateWorkTitles": [
+        "柳西厓詩"
+      ],
+      "collectionPlan": {
+        "phase": "V3-donggyeong-supplement",
+        "preferredMode": "regional-document-seed-review",
+        "needsOwnedTranslation": true,
+        "needsSourceUrlVerification": false,
+        "needsNameReadingVerification": true
+      },
+      "donggyeongJapgiSeed": {
+        "sourceFile": "docs/spec/korean-poet-donggyeong-author-seed.v1.json",
+        "sourceAuthorZh": "柳成龍",
+        "sourceRawLabels": [
+          "柳西厓"
+        ],
+        "sourceWorkCount": 2
+      },
+      "timeline": {},
+      "wave": null,
+      "stats": {
+        "candidateWorkCount": 1,
+        "directTextCollectedWorks": 0,
+        "localTimelineFullPoems": 0,
+        "localTimelineOtherWorks": 0
+      }
+    },
+    {
+      "authorId": "KAUTH-AUTHOR-E5B494E6",
+      "slug": "author-e5b494e6",
+      "name": {
+        "ko": "崔淑精",
+        "hanja": "崔淑精"
+      },
+      "era": {
+        "label": "동경잡기 수록 인물"
+      },
+      "life": {
+        "raw": "생몰 미상",
+        "birth": null,
+        "death": null,
+        "uncertain": true
+      },
+      "collectionTier": "D",
+      "v1Priority": null,
+      "chronologyOrder": 120,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
+      "sourceHint": "東京雜記",
+      "candidateWorkTitles": [
+        "崔淑精詩"
+      ],
+      "collectionPlan": {
+        "phase": "V3-donggyeong-supplement",
+        "preferredMode": "regional-document-seed-review",
+        "needsOwnedTranslation": true,
+        "needsSourceUrlVerification": false,
+        "needsNameReadingVerification": true
+      },
+      "donggyeongJapgiSeed": {
+        "sourceFile": "docs/spec/korean-poet-donggyeong-author-seed.v1.json",
+        "sourceAuthorZh": "崔淑精",
+        "sourceRawLabels": [
+          "崔淑精"
+        ],
+        "sourceWorkCount": 1
+      },
+      "timeline": {},
+      "wave": null,
+      "stats": {
+        "candidateWorkCount": 1,
+        "directTextCollectedWorks": 0,
+        "localTimelineFullPoems": 0,
+        "localTimelineOtherWorks": 0
+      }
+    },
+    {
+      "authorId": "KAUTH-AUTHOR-E5BCB5E9",
+      "slug": "author-e5bcb5e9",
+      "name": {
+        "ko": "張鎰",
+        "hanja": "張鎰"
+      },
+      "era": {
+        "label": "동경잡기 수록 인물"
+      },
+      "life": {
+        "raw": "생몰 미상",
+        "birth": null,
+        "death": null,
+        "uncertain": true
+      },
+      "collectionTier": "D",
+      "v1Priority": null,
+      "chronologyOrder": 121,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
+      "sourceHint": "東京雜記",
+      "candidateWorkTitles": [
+        "張鎰詩"
+      ],
+      "collectionPlan": {
+        "phase": "V3-donggyeong-supplement",
+        "preferredMode": "regional-document-seed-review",
+        "needsOwnedTranslation": true,
+        "needsSourceUrlVerification": false,
+        "needsNameReadingVerification": true
+      },
+      "donggyeongJapgiSeed": {
+        "sourceFile": "docs/spec/korean-poet-donggyeong-author-seed.v1.json",
+        "sourceAuthorZh": "張鎰",
+        "sourceRawLabels": [
+          "張鎰"
+        ],
+        "sourceWorkCount": 1
+      },
+      "timeline": {},
+      "wave": null,
+      "stats": {
+        "candidateWorkCount": 1,
+        "directTextCollectedWorks": 0,
+        "localTimelineFullPoems": 0,
+        "localTimelineOtherWorks": 0
+      }
+    },
+    {
+      "authorId": "KAUTH-AUTHOR-E5BCB5E9",
+      "slug": "author-e5bcb5e9",
+      "name": {
+        "ko": "張顯光",
+        "hanja": "張顯光"
+      },
+      "era": {
+        "label": "동경잡기 수록 인물"
+      },
+      "life": {
+        "raw": "생몰 미상",
+        "birth": null,
+        "death": null,
+        "uncertain": true
+      },
+      "collectionTier": "D",
+      "v1Priority": null,
+      "chronologyOrder": 122,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
+      "sourceHint": "東京雜記",
+      "candidateWorkTitles": [
+        "旅軒張先生詩"
+      ],
+      "collectionPlan": {
+        "phase": "V3-donggyeong-supplement",
+        "preferredMode": "regional-document-seed-review",
+        "needsOwnedTranslation": true,
+        "needsSourceUrlVerification": false,
+        "needsNameReadingVerification": true
+      },
+      "donggyeongJapgiSeed": {
+        "sourceFile": "docs/spec/korean-poet-donggyeong-author-seed.v1.json",
+        "sourceAuthorZh": "張顯光",
+        "sourceRawLabels": [
+          "旅軒張先生"
+        ],
+        "sourceWorkCount": 1
+      },
+      "timeline": {},
+      "wave": null,
+      "stats": {
+        "candidateWorkCount": 1,
+        "directTextCollectedWorks": 0,
+        "localTimelineFullPoems": 0,
+        "localTimelineOtherWorks": 0
+      }
+    },
+    {
+      "authorId": "KAUTH-AUTHOR-E9AD9AE4",
+      "slug": "author-e9ad9ae4",
+      "name": {
+        "ko": "魚世謙",
+        "hanja": "魚世謙"
+      },
+      "era": {
+        "label": "동경잡기 수록 인물"
+      },
+      "life": {
+        "raw": "생몰 미상",
+        "birth": null,
+        "death": null,
+        "uncertain": true
+      },
+      "collectionTier": "D",
+      "v1Priority": null,
+      "chronologyOrder": 123,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
+      "sourceHint": "東京雜記",
+      "candidateWorkTitles": [
+        "魚世謙詩"
+      ],
+      "collectionPlan": {
+        "phase": "V3-donggyeong-supplement",
+        "preferredMode": "regional-document-seed-review",
+        "needsOwnedTranslation": true,
+        "needsSourceUrlVerification": false,
+        "needsNameReadingVerification": true
+      },
+      "donggyeongJapgiSeed": {
+        "sourceFile": "docs/spec/korean-poet-donggyeong-author-seed.v1.json",
+        "sourceAuthorZh": "魚世謙",
+        "sourceRawLabels": [
+          "魚世謙"
+        ],
+        "sourceWorkCount": 12
+      },
+      "timeline": {},
+      "wave": null,
+      "stats": {
+        "candidateWorkCount": 1,
+        "directTextCollectedWorks": 0,
+        "localTimelineFullPoems": 0,
+        "localTimelineOtherWorks": 0
+      }
+    },
+    {
+      "authorId": "KAUTH-AUTHOR-E99694E6",
+      "slug": "author-e99694e6",
+      "name": {
+        "ko": "閔思平",
+        "hanja": "閔思平"
+      },
+      "era": {
+        "label": "동경잡기 수록 인물"
+      },
+      "life": {
+        "raw": "생몰 미상",
+        "birth": null,
+        "death": null,
+        "uncertain": true
+      },
+      "collectionTier": "D",
+      "v1Priority": null,
+      "chronologyOrder": 124,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
+      "sourceHint": "東京雜記",
+      "candidateWorkTitles": [
+        "閔思平詩"
+      ],
+      "collectionPlan": {
+        "phase": "V3-donggyeong-supplement",
+        "preferredMode": "regional-document-seed-review",
+        "needsOwnedTranslation": true,
+        "needsSourceUrlVerification": false,
+        "needsNameReadingVerification": true
+      },
+      "donggyeongJapgiSeed": {
+        "sourceFile": "docs/spec/korean-poet-donggyeong-author-seed.v1.json",
+        "sourceAuthorZh": "閔思平",
+        "sourceRawLabels": [
+          "閔思平"
+        ],
+        "sourceWorkCount": 1
+      },
+      "timeline": {},
+      "wave": null,
+      "stats": {
+        "candidateWorkCount": 1,
+        "directTextCollectedWorks": 0,
+        "localTimelineFullPoems": 0,
+        "localTimelineOtherWorks": 0
+      }
+    },
+    {
+      "authorId": "KAUTH-AUTHOR-E8B699E6",
+      "slug": "author-e8b699e6",
+      "name": {
+        "ko": "趙浚",
+        "hanja": "趙浚"
+      },
+      "era": {
+        "label": "동경잡기 수록 인물"
+      },
+      "life": {
+        "raw": "생몰 미상",
+        "birth": null,
+        "death": null,
+        "uncertain": true
+      },
+      "collectionTier": "D",
+      "v1Priority": null,
+      "chronologyOrder": 125,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
+      "sourceHint": "東京雜記",
+      "candidateWorkTitles": [
+        "趙浚詩"
+      ],
+      "collectionPlan": {
+        "phase": "V3-donggyeong-supplement",
+        "preferredMode": "regional-document-seed-review",
+        "needsOwnedTranslation": true,
+        "needsSourceUrlVerification": false,
+        "needsNameReadingVerification": true
+      },
+      "donggyeongJapgiSeed": {
+        "sourceFile": "docs/spec/korean-poet-donggyeong-author-seed.v1.json",
+        "sourceAuthorZh": "趙浚",
+        "sourceRawLabels": [
+          "趙浚"
+        ],
+        "sourceWorkCount": 1
+      },
+      "timeline": {},
+      "wave": null,
+      "stats": {
+        "candidateWorkCount": 1,
+        "directTextCollectedWorks": 0,
+        "localTimelineFullPoems": 0,
+        "localTimelineOtherWorks": 0
+      }
+    },
+    {
+      "authorId": "KAUTH-AUTHOR-E8B699E7",
+      "slug": "author-e8b699e7",
+      "name": {
+        "ko": "趙絅",
+        "hanja": "趙絅"
+      },
+      "era": {
+        "label": "동경잡기 수록 인물"
+      },
+      "life": {
+        "raw": "생몰 미상",
+        "birth": null,
+        "death": null,
+        "uncertain": true
+      },
+      "collectionTier": "D",
+      "v1Priority": null,
+      "chronologyOrder": 126,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
+      "sourceHint": "東京雜記",
+      "candidateWorkTitles": [
+        "龍洲趙絅詩"
+      ],
+      "collectionPlan": {
+        "phase": "V3-donggyeong-supplement",
+        "preferredMode": "regional-document-seed-review",
+        "needsOwnedTranslation": true,
+        "needsSourceUrlVerification": false,
+        "needsNameReadingVerification": true
+      },
+      "donggyeongJapgiSeed": {
+        "sourceFile": "docs/spec/korean-poet-donggyeong-author-seed.v1.json",
+        "sourceAuthorZh": "趙絅",
+        "sourceRawLabels": [
+          "龍洲趙絅"
+        ],
+        "sourceWorkCount": 1
+      },
+      "timeline": {},
+      "wave": null,
+      "stats": {
+        "candidateWorkCount": 1,
+        "directTextCollectedWorks": 0,
+        "localTimelineFullPoems": 0,
+        "localTimelineOtherWorks": 0
+      }
+    },
+    {
+      "authorId": "KAUTH-AUTHOR-E984ADE6",
+      "slug": "author-e984ade6",
+      "name": {
+        "ko": "鄭文翼",
+        "hanja": "鄭文翼"
+      },
+      "era": {
+        "label": "동경잡기 수록 인물"
+      },
+      "life": {
+        "raw": "생몰 미상",
+        "birth": null,
+        "death": null,
+        "uncertain": true
+      },
+      "collectionTier": "D",
+      "v1Priority": null,
+      "chronologyOrder": 127,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
+      "sourceHint": "東京雜記",
+      "candidateWorkTitles": [
+        "府尹鄭文翼詩"
+      ],
+      "collectionPlan": {
+        "phase": "V3-donggyeong-supplement",
+        "preferredMode": "regional-document-seed-review",
+        "needsOwnedTranslation": true,
+        "needsSourceUrlVerification": false,
+        "needsNameReadingVerification": true
+      },
+      "donggyeongJapgiSeed": {
+        "sourceFile": "docs/spec/korean-poet-donggyeong-author-seed.v1.json",
+        "sourceAuthorZh": "鄭文翼",
+        "sourceRawLabels": [
+          "府尹鄭文翼"
+        ],
+        "sourceWorkCount": 1
+      },
+      "timeline": {},
+      "wave": null,
+      "stats": {
+        "candidateWorkCount": 1,
+        "directTextCollectedWorks": 0,
+        "localTimelineFullPoems": 0,
+        "localTimelineOtherWorks": 0
+      }
+    },
+    {
+      "authorId": "KAUTH-AUTHOR-E984ADE4",
+      "slug": "author-e984ade4",
+      "name": {
+        "ko": "鄭以吾",
+        "hanja": "鄭以吾"
+      },
+      "era": {
+        "label": "동경잡기 수록 인물"
+      },
+      "life": {
+        "raw": "생몰 미상",
+        "birth": null,
+        "death": null,
+        "uncertain": true
+      },
+      "collectionTier": "D",
+      "v1Priority": null,
+      "chronologyOrder": 128,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
+      "sourceHint": "東京雜記",
+      "candidateWorkTitles": [
+        "鄭以吾詩"
+      ],
+      "collectionPlan": {
+        "phase": "V3-donggyeong-supplement",
+        "preferredMode": "regional-document-seed-review",
+        "needsOwnedTranslation": true,
+        "needsSourceUrlVerification": false,
+        "needsNameReadingVerification": true
+      },
+      "donggyeongJapgiSeed": {
+        "sourceFile": "docs/spec/korean-poet-donggyeong-author-seed.v1.json",
+        "sourceAuthorZh": "鄭以吾",
+        "sourceRawLabels": [
+          "鄭以吾"
+        ],
+        "sourceWorkCount": 1
+      },
+      "timeline": {},
+      "wave": null,
+      "stats": {
+        "candidateWorkCount": 1,
+        "directTextCollectedWorks": 0,
+        "localTimelineFullPoems": 0,
+        "localTimelineOtherWorks": 0
+      }
+    },
+    {
+      "authorId": "KAUTH-AUTHOR-E984ADE5",
+      "slug": "author-e984ade5",
+      "name": {
+        "ko": "鄭孝常",
+        "hanja": "鄭孝常"
+      },
+      "era": {
+        "label": "동경잡기 수록 인물"
+      },
+      "life": {
+        "raw": "생몰 미상",
+        "birth": null,
+        "death": null,
+        "uncertain": true
+      },
+      "collectionTier": "D",
+      "v1Priority": null,
+      "chronologyOrder": 129,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
+      "sourceHint": "東京雜記",
+      "candidateWorkTitles": [
+        "鄭孝常詩"
+      ],
+      "collectionPlan": {
+        "phase": "V3-donggyeong-supplement",
+        "preferredMode": "regional-document-seed-review",
+        "needsOwnedTranslation": true,
+        "needsSourceUrlVerification": false,
+        "needsNameReadingVerification": true
+      },
+      "donggyeongJapgiSeed": {
+        "sourceFile": "docs/spec/korean-poet-donggyeong-author-seed.v1.json",
+        "sourceAuthorZh": "鄭孝常",
+        "sourceRawLabels": [
+          "鄭孝常"
+        ],
+        "sourceWorkCount": 1
+      },
+      "timeline": {},
+      "wave": null,
+      "stats": {
+        "candidateWorkCount": 1,
+        "directTextCollectedWorks": 0,
+        "localTimelineFullPoems": 0,
+        "localTimelineOtherWorks": 0
+      }
+    },
+    {
+      "authorId": "KAUTH-AUTHOR-E984ADE6",
+      "slug": "author-e984ade6",
+      "name": {
+        "ko": "鄭樞",
+        "hanja": "鄭樞"
+      },
+      "era": {
+        "label": "동경잡기 수록 인물"
+      },
+      "life": {
+        "raw": "생몰 미상",
+        "birth": null,
+        "death": null,
+        "uncertain": true
+      },
+      "collectionTier": "D",
+      "v1Priority": null,
+      "chronologyOrder": 130,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
+      "sourceHint": "東京雜記",
+      "candidateWorkTitles": [
+        "鄭樞詩"
+      ],
+      "collectionPlan": {
+        "phase": "V3-donggyeong-supplement",
+        "preferredMode": "regional-document-seed-review",
+        "needsOwnedTranslation": true,
+        "needsSourceUrlVerification": false,
+        "needsNameReadingVerification": true
+      },
+      "donggyeongJapgiSeed": {
+        "sourceFile": "docs/spec/korean-poet-donggyeong-author-seed.v1.json",
+        "sourceAuthorZh": "鄭樞",
+        "sourceRawLabels": [
+          "鄭樞"
+        ],
+        "sourceWorkCount": 1
+      },
+      "timeline": {},
+      "wave": null,
+      "stats": {
+        "candidateWorkCount": 1,
+        "directTextCollectedWorks": 0,
+        "localTimelineFullPoems": 0,
+        "localTimelineOtherWorks": 0
+      }
+    },
+    {
+      "authorId": "KAUTH-AUTHOR-E79BA7E7",
+      "slug": "author-e79ba7e7",
+      "name": {
+        "ko": "盧盼",
+        "hanja": "盧盼"
+      },
+      "era": {
+        "label": "동경잡기 수록 인물"
+      },
+      "life": {
+        "raw": "생몰 미상",
+        "birth": null,
+        "death": null,
+        "uncertain": true
+      },
+      "collectionTier": "D",
+      "v1Priority": null,
+      "chronologyOrder": 131,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
+      "sourceHint": "東京雜記",
+      "candidateWorkTitles": [
+        "盧盼詩"
+      ],
+      "collectionPlan": {
+        "phase": "V3-donggyeong-supplement",
+        "preferredMode": "regional-document-seed-review",
+        "needsOwnedTranslation": true,
+        "needsSourceUrlVerification": false,
+        "needsNameReadingVerification": true
+      },
+      "donggyeongJapgiSeed": {
+        "sourceFile": "docs/spec/korean-poet-donggyeong-author-seed.v1.json",
+        "sourceAuthorZh": "盧盼",
+        "sourceRawLabels": [
+          "盧盼"
+        ],
+        "sourceWorkCount": 1
+      },
+      "timeline": {},
+      "wave": null,
+      "stats": {
+        "candidateWorkCount": 1,
+        "directTextCollectedWorks": 0,
+        "localTimelineFullPoems": 0,
+        "localTimelineOtherWorks": 0
+      }
+    },
+    {
+      "authorId": "KAUTH-AUTHOR-E9A1A7E9",
+      "slug": "author-e9a1a7e9",
+      "name": {
+        "ko": "顧雲",
+        "hanja": "顧雲"
+      },
+      "era": {
+        "label": "동경잡기 수록 인물"
+      },
+      "life": {
+        "raw": "생몰 미상",
+        "birth": null,
+        "death": null,
+        "uncertain": true
+      },
+      "collectionTier": "D",
+      "v1Priority": null,
+      "chronologyOrder": 132,
+      "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
+      "sourceHint": "東京雜記",
+      "candidateWorkTitles": [
+        "唐顧雲贈崔文昌詩"
+      ],
+      "collectionPlan": {
+        "phase": "V3-donggyeong-supplement",
+        "preferredMode": "regional-document-seed-review",
+        "needsOwnedTranslation": true,
+        "needsSourceUrlVerification": false,
+        "needsNameReadingVerification": true
+      },
+      "donggyeongJapgiSeed": {
+        "sourceFile": "docs/spec/korean-poet-donggyeong-author-seed.v1.json",
+        "sourceAuthorZh": "顧雲",
+        "sourceRawLabels": [
+          "唐顧雲贈崔文昌"
+        ],
+        "sourceWorkCount": 1
+      },
+      "timeline": {},
+      "wave": null,
+      "stats": {
+        "candidateWorkCount": 1,
         "directTextCollectedWorks": 0,
         "localTimelineFullPoems": 0,
         "localTimelineOtherWorks": 0

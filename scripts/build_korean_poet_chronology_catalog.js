@@ -26,6 +26,7 @@ const RECORD_FILES = [
 ];
 const WORKER_RESULTS_DIR = path.join(ROOT, 'docs', 'spec', 'korean-poet-worker-results');
 const DONGGYEONG_JAPGI_BUNDLE = path.join(ROOT, 'docs', 'spec', 'korean-classics-donggyeong-japgi-collection-bundle.v1.json');
+const DONGGYEONG_AUTHOR_SEED = path.join(ROOT, 'docs', 'spec', 'korean-poet-donggyeong-author-seed.v1.json');
 
 const OUT_POETS = path.join(ROOT, 'docs', 'spec', 'korean-poets-chronology.v1.json');
 const OUT_POEMS = path.join(ROOT, 'docs', 'spec', 'korean-poems-chronology.v1.json');
@@ -203,6 +204,48 @@ function buildSeedAuthors() {
       }
     };
   });
+}
+
+function buildDonggyeongSupplementAuthors(existingAuthors) {
+  if (!fs.existsSync(DONGGYEONG_AUTHOR_SEED)) return [];
+  const seed = readJson(DONGGYEONG_AUTHOR_SEED);
+  const existingHanja = new Set(existingAuthors.map((author) => author.name.hanja).filter(Boolean));
+  const startOrder = existingAuthors.length;
+
+  return (seed.authors || [])
+    .filter((row) => row.authorZh && !existingHanja.has(row.authorZh))
+    .map((row, index) => {
+      const nameKo = row.authorKo || row.authorZh;
+      return {
+        authorId: row.authorId || authorIdFor(nameKo),
+        slug: row.slug || slugifyAuthor(nameKo),
+        name: {
+          ko: nameKo,
+          hanja: row.authorZh
+        },
+        era: { label: row.eraLabel || '동경잡기 수록 인물' },
+        life: parseBirthDeath(row.life || '생몰 미상'),
+        collectionTier: row.collectionTier || 'D',
+        v1Priority: null,
+        chronologyOrder: startOrder + index + 1,
+        notes: row.notes || '동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.',
+        sourceHint: row.sourceHint || '東京雜記',
+        candidateWorkTitles: row.workTitles || ['東京雜記 수록작'],
+        collectionPlan: {
+          phase: 'V3-donggyeong-supplement',
+          preferredMode: 'regional-document-seed-review',
+          needsOwnedTranslation: true,
+          needsSourceUrlVerification: false,
+          needsNameReadingVerification: row.needsNameReadingVerification !== false
+        },
+        donggyeongJapgiSeed: {
+          sourceFile: path.relative(ROOT, DONGGYEONG_AUTHOR_SEED),
+          sourceAuthorZh: row.authorZh,
+          sourceRawLabels: row.rawLabels || [],
+          sourceWorkCount: row.workCount || null
+        }
+      };
+    });
 }
 
 function loadTimelineIndex() {
@@ -658,7 +701,8 @@ function main() {
     directByAuthor.set(record.author.ko, list);
   }
 
-  const authors = buildSeedAuthors().map((author) => {
+  const seedAuthors = buildSeedAuthors();
+  const authors = [...seedAuthors, ...buildDonggyeongSupplementAuthors(seedAuthors)].map((author) => {
     const timeline = timelineIndex.get(author.name.ko) || {};
     const wave = waveIndex.get(author.name.ko) || null;
     const direct = directByAuthor.get(author.name.ko) || [];
@@ -699,7 +743,8 @@ function main() {
       'docs/spec/korean-hansi-jeong-jisang-tranche1.records.v1.json',
       'docs/spec/korean-hansi-jeong-jisang-tranche2.records.v1.json',
       'docs/spec/korean-poet-worker-results/*.json',
-      'docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json'
+      'docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json',
+      'docs/spec/korean-poet-donggyeong-author-seed.v1.json'
     ]
   };
 
@@ -709,6 +754,8 @@ function main() {
     targetDb: 'poets',
     summary: {
       totalAuthors: authors.length,
+      baseSeedAuthors: seedAuthors.length,
+      donggyeongSupplementAuthors: authors.length - seedAuthors.length,
       v1PriorityAuthors: authors.filter((author) => author.v1Priority !== null).length,
       tierCounts: authors.reduce((acc, author) => {
         acc[author.collectionTier] = (acc[author.collectionTier] || 0) + 1;
