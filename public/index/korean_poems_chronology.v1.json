@@ -14,8 +14,8 @@
   "catalogId": "korean-poems-chronology",
   "targetDb": "poems",
   "summary": {
-    "directTextCollected": 58,
-    "sourceLocated": 13,
+    "directTextCollected": 60,
+    "sourceLocated": 11,
     "ocrCandidate": 0,
     "blocked": 1,
     "candidateOnly": 154,
@@ -8241,7 +8241,7 @@
         "entryTitle": "小樂府",
         "sourceUrl": "https://ygc.skku.edu/ygc/sub.do?dataid=A_koc_IJN_0090",
         "rawUrl": "https://ygc.skku.edu/ygc/sub.do?dataid=A_koc_IJN_0090_0490",
-        "sourcePolicyId": null,
+        "sourcePolicyId": "SRC-YGC-ORIGINAL-TEXT",
         "locatorConfidence": "high",
         "verificationStatus": "source-located"
       },
@@ -8304,7 +8304,7 @@
         "entryTitle": "題長安逆旅",
         "sourceUrl": "https://ygc.skku.edu/ygc/sub.do?dataid=A_koc_IJN_0070",
         "rawUrl": "https://ygc.skku.edu/ygc/sub.do?dataid=A_koc_IJN_0070_0270",
-        "sourcePolicyId": null,
+        "sourcePolicyId": "SRC-YGC-ORIGINAL-TEXT",
         "locatorConfidence": "high",
         "verificationStatus": "source-located"
       },
@@ -8367,7 +8367,7 @@
         "entryTitle": "寄題白花禪院觀空樓次韻",
         "sourceUrl": "https://ygc.skku.edu/ygc/sub.do?dataid=A_koc_IJN_0080",
         "rawUrl": "https://ygc.skku.edu/ygc/sub.do?dataid=A_koc_IJN_0080_0250",
-        "sourcePolicyId": null,
+        "sourcePolicyId": "SRC-YGC-ORIGINAL-TEXT",
         "locatorConfidence": "high",
         "verificationStatus": "source-located"
       },
@@ -8430,7 +8430,7 @@
         "entryTitle": "關山月",
         "sourceUrl": "https://ygc.skku.edu/ygc/sub.do?dataid=A_jon_SBZ_0040",
         "rawUrl": "https://ygc.skku.edu/ygc/sub.do?dataid=A_jon_SBZ_0040_0020_0010",
-        "sourcePolicyId": null,
+        "sourcePolicyId": "SRC-YGC-ORIGINAL-TEXT",
         "locatorConfidence": "high",
         "verificationStatus": "source-located"
       },
@@ -8493,7 +8493,7 @@
         "entryTitle": "秋夜",
         "sourceUrl": "https://ygc.skku.edu/ygc/sub.do?dataid=A_jon_SBZ_0040",
         "rawUrl": "https://ygc.skku.edu/ygc/sub.do?dataid=A_jon_SBZ_0040_0020_0090",
-        "sourcePolicyId": null,
+        "sourcePolicyId": "SRC-YGC-ORIGINAL-TEXT",
         "locatorConfidence": "high",
         "verificationStatus": "source-located"
       },
@@ -8556,7 +8556,7 @@
         "entryTitle": "文德曲",
         "sourceUrl": "https://ygc.skku.edu/ygc/sub.do?dataid=A_jon_SBZ_0050_0050",
         "rawUrl": "https://ygc.skku.edu/ygc/sub.do?dataid=A_jon_SBZ_0050_0050_0040",
-        "sourcePolicyId": null,
+        "sourcePolicyId": "SRC-YGC-ORIGINAL-TEXT",
         "locatorConfidence": "high",
         "verificationStatus": "source-located"
       },
@@ -8611,7 +8611,7 @@
       "genre": {
         "broad": "한시",
         "form": "미확정",
-        "track": "hansi-candidate"
+        "track": "hansi-direct-text"
       },
       "sourceWork": {
         "collectionTitle": "佔畢齋集 卷七",
@@ -8621,10 +8621,10 @@
         "rawUrl": "https://zh.wikisource.org/w/index.php?title=%E4%BD%94%E7%95%A2%E9%BD%8B%E9%9B%86/%E5%8D%B7%E4%B8%83&oldid=2408539",
         "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
         "locatorConfidence": "high",
-        "verificationStatus": "source-located"
+        "verificationStatus": "verified-direct-text"
       },
       "text": {
-        "poemZh": null,
+        "poemZh": "河邊靈匹度雲車\n世上穿針術已踈\n學士樓前月如練\n請君來曬腹中書",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -8636,8 +8636,8 @@
       "rights": {
         "originalText": {
           "status": "commercial_allowed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
         },
         "translation": {
           "status": "owned-translation-needed",
@@ -8646,13 +8646,13 @@
         }
       },
       "ingest": {
-        "readiness": "source-located",
+        "readiness": "direct-text-collected",
         "targetDb": "poems",
         "sourceFile": "docs/spec/korean-poet-worker-results/worker-3-lee-jehyeon-jeong-dojeon-kim-jongjik.v1.json",
         "workerId": "worker-3-lee-jehyeon-jeong-dojeon-kim-jongjik",
         "candidateTitle": "七夕。邀春塘。",
         "matchedTitle": "七夕。邀春塘。",
-        "notes": "zh Wikisource 권7 목차와 본문 heading에서 직접 확인. 위키문헌 계열이라 후속 수집은 비교적 수월하다.",
+        "notes": "zh Wikisource 권7 raw에서 heading과 4구 전문을 직접 확인해 수집했다.",
         "ownedTranslationNeeded": true
       }
     },
@@ -8674,7 +8674,7 @@
       "genre": {
         "broad": "한시",
         "form": "미확정",
-        "track": "hansi-candidate"
+        "track": "hansi-direct-text"
       },
       "sourceWork": {
         "collectionTitle": "佔畢齋集 卷九",
@@ -8684,10 +8684,10 @@
         "rawUrl": "https://zh.wikisource.org/w/index.php?title=%E4%BD%94%E7%95%A2%E9%BD%8B%E9%9B%86/%E5%8D%B7%E4%B9%9D&oldid=2408541",
         "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
         "locatorConfidence": "high",
-        "verificationStatus": "source-located"
+        "verificationStatus": "verified-direct-text"
       },
       "text": {
-        "poemZh": null,
+        "poemZh": "窮荒何幸遇斯人\n珠貝携來爛熳陳\n好去更尋韓吏部\n愧余衰朽未傾囷\n看君詩語玉生煙\n陳榻從今不要懸\n莫把殷盤窮詰屈\n須知方寸淡天淵",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -8699,8 +8699,8 @@
       "rights": {
         "originalText": {
           "status": "commercial_allowed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
         },
         "translation": {
           "status": "owned-translation-needed",
@@ -8709,13 +8709,13 @@
         }
       },
       "ingest": {
-        "readiness": "source-located",
+        "readiness": "direct-text-collected",
         "targetDb": "poems",
         "sourceFile": "docs/spec/korean-poet-worker-results/worker-3-lee-jehyeon-jeong-dojeon-kim-jongjik.v1.json",
         "workerId": "worker-3-lee-jehyeon-jeong-dojeon-kim-jongjik",
         "candidateTitle": "答金郭二秀才",
         "matchedTitle": "答金郭二秀才",
-        "notes": "zh Wikisource 권9 목차와 본문 heading에서 직접 확인. 사림 교유망이 드러나는 대표 항목으로 채택.",
+        "notes": "zh Wikisource 권9 raw에서 heading과 8구 전문을 직접 확인해 수집했다.",
         "ownedTranslationNeeded": true
       }
     },
