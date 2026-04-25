@@ -9,7 +9,7 @@
   ],
   "summary": {
     "candidateWorksChecked": 9,
-    "directTextWorksFound": 9,
+    "directTextWorksFound": 15,
     "ocrCandidates": 0,
     "blockedWorks": 0
   },
@@ -23,23 +23,23 @@
         "collectionTitle": "益齋亂稿 卷第四",
         "juan": "卷第四",
         "entryTitle": "小樂府",
-        "sourceUrl": "https://ygc.skku.edu/ygc/sub.do?dataid=A_koc_IJN_0090",
-        "rawUrl": "https://ygc.skku.edu/ygc/sub.do?dataid=A_koc_IJN_0090_0490",
-        "sourcePolicyId": "SRC-YGC-ORIGINAL-TEXT",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E7%9B%8A%E9%BD%8B%E4%BA%82%E7%A8%BF/%E5%8D%B7%E5%9B%9B",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=%E7%9B%8A%E9%BD%8B%E4%BA%82%E7%A8%BF/%E5%8D%B7%E5%9B%9B&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
         "locatorConfidence": "high"
       },
       "text": {
-        "poemZh": null,
+        "poemZh": "拘拘有雀爾奚爲。觸着網羅黃口兒。眼孔元來在何許。可憐觸網雀兒癡。\n鵲兒籬際噪花枝。喜子床頭引網絲。余美歸來應未遠。精神早已報人知。\n浣沙溪上傍垂楊。執手論心白馬郞。縱有連簷三月雨。指頭何忍洗餘香。\n黃雀何方來去飛。一年農事不曾知。鰥翁獨自耕耘了。耗盡田中禾黍爲。\n脫却春衣掛一肩。呼朋去入菜花田。東馳西走追蝴蝶。昨日嬉遊尙宛然。\n新羅昔日處容翁。見說來從碧海中。貝齒赬唇歌夜月。鳶肩紫袖舞春風。\n木頭雕作小唐鷄。筯子拈來壁上棲。此鳥膠膠報時節。慈顏始似日平西。\n縱然巖石落珠璣。纓縷固應無斷時。與郞千載相離別。一點丹心何改移。\n憶君無日不霑衣。政似春山蜀子規。爲是爲非人莫問。只應殘月曉星知。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
       "rights": {
-        "originalTextUsage": "unknown",
+        "originalTextUsage": "commercial_allowed",
         "translationUsage": "owned_translation_needed"
       },
       "ingest": {
-        "recommendedReadiness": "source-located",
-        "notes": "YGC 개별 항목 page에서 제목과 본문 노출을 확인했지만, 현재 source policy 매핑이 없어 poemZh는 비워 두고 locator만 남김."
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `益齋亂稿/卷四` raw에서 `小樂府` heading 아래 9수 전문을 직접 확인해 YGC locator에서 공개 원문으로 승격했다."
       }
     },
     {
@@ -51,23 +51,23 @@
         "collectionTitle": "益齋亂稿 卷第二",
         "juan": "卷第二",
         "entryTitle": "題長安逆旅",
-        "sourceUrl": "https://ygc.skku.edu/ygc/sub.do?dataid=A_koc_IJN_0070",
-        "rawUrl": "https://ygc.skku.edu/ygc/sub.do?dataid=A_koc_IJN_0070_0270",
-        "sourcePolicyId": "SRC-YGC-ORIGINAL-TEXT",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E7%9B%8A%E9%BD%8B%E4%BA%82%E7%A8%BF/%E5%8D%B7%E4%BA%8C",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=%E7%9B%8A%E9%BD%8B%E4%BA%82%E7%A8%BF/%E5%8D%B7%E4%BA%8C&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
         "locatorConfidence": "high"
       },
       "text": {
-        "poemZh": null,
+        "poemZh": "車馬函關道。風塵季子裘。轍環天下半。心逐水東流。萬事唯呼酒。千山獨倚樓。靑雲有知己。未用嘆悠悠。\n倦客重遊秦樹老。佳人一去隴雲賖。愁聽杜叟三年笛。悵望張候萬里槎。夢裏家山空蕙帳。酒闌簷雨落燈花。宦情已似秋雲薄。胸次唯餘一寸霞。\n海上箕封禮義鄕。曾修職貢荷龍光。河山萬世同盟國。雨露三朝異姓王。貝錦誰將委豺虎。干戈無奈到參商。扶持自有宗祧力。會見松都業更昌。\n早信忠誠可動天。孰云仁聖竟容奸。雞竿曙色開暘谷。鳳闕春光到雪山。讖雨池蛙喧欲鬪。唳雲皐鶴倦思還。區區吳薛何爲者。自鼓嚨胡徹帝關。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
       "rights": {
-        "originalTextUsage": "unknown",
+        "originalTextUsage": "commercial_allowed",
         "translationUsage": "owned_translation_needed"
       },
       "ingest": {
-        "recommendedReadiness": "source-located",
-        "notes": "益齋亂稿 권2 개별 poem page가 바로 열려서 작품 locator는 안정적이다. 이번 worker는 collection catalog 용도로만 기록."
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `益齋亂稿/卷二` raw에서 `題長安逆旅` heading과 4수 전문을 직접 확인해 YGC locator에서 공개 원문으로 승격했다."
       }
     },
     {
@@ -79,23 +79,23 @@
         "collectionTitle": "益齋亂稿 卷第三",
         "juan": "卷第三",
         "entryTitle": "寄題白花禪院觀空樓次韻",
-        "sourceUrl": "https://ygc.skku.edu/ygc/sub.do?dataid=A_koc_IJN_0080",
-        "rawUrl": "https://ygc.skku.edu/ygc/sub.do?dataid=A_koc_IJN_0080_0250",
-        "sourcePolicyId": "SRC-YGC-ORIGINAL-TEXT",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E7%9B%8A%E9%BD%8B%E4%BA%82%E7%A8%BF/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=%E7%9B%8A%E9%BD%8B%E4%BA%82%E7%A8%BF/%E5%8D%B7%E4%B8%89&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
         "locatorConfidence": "high"
       },
       "text": {
-        "poemZh": null,
+        "poemZh": "勝遊多是費躋攀。最愛蓮坊住淺山。一水帶鋪延曠遠。兩巒襟合貯幽閑。莫求佛外兼心外。須着人間比夢間。一聽樓名如有契。便堪千里笑開顏。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
       "rights": {
-        "originalTextUsage": "unknown",
+        "originalTextUsage": "commercial_allowed",
         "translationUsage": "owned_translation_needed"
       },
       "ingest": {
-        "recommendedReadiness": "source-located",
-        "notes": "권3의 개별 수록 위치와 제목이 바로 확인된다. 사찰 제영시 계열 대표 예시로 채택."
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `益齋亂稿/卷三` raw에서 `寄題白花禪院觀空樓次韻` heading과 전문을 직접 확인해 YGC locator에서 공개 원문으로 승격했다."
       }
     },
     {
@@ -107,23 +107,23 @@
         "collectionTitle": "三峯集 卷之一",
         "juan": "卷之一",
         "entryTitle": "關山月",
-        "sourceUrl": "https://ygc.skku.edu/ygc/sub.do?dataid=A_jon_SBZ_0040",
-        "rawUrl": "https://ygc.skku.edu/ygc/sub.do?dataid=A_jon_SBZ_0040_0020_0010",
-        "sourcePolicyId": "SRC-YGC-ORIGINAL-TEXT",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E4%B8%89%E5%B3%AF%E9%9B%86/%E5%8D%B7%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=%E4%B8%89%E5%B3%AF%E9%9B%86/%E5%8D%B7%E4%B8%80&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
         "locatorConfidence": "high"
       },
       "text": {
-        "poemZh": null,
+        "poemZh": "一片關山月。長天萬里來。【塞風吹不盡。冷影故徘徊。】蘇武何時返。李陵亦未廻。【蕭疏白旄節。寂寞望鄕臺。豈無南飛雁。音信何遼哉。見月三歎息。搔首有餘哀。】",
         "poemKoReading": null,
         "poemKoGloss": null
       },
       "rights": {
-        "originalTextUsage": "unknown",
+        "originalTextUsage": "commercial_allowed",
         "translationUsage": "owned_translation_needed"
       },
       "ingest": {
-        "recommendedReadiness": "source-located",
-        "notes": "三峯集 권1 오언고시 하위의 개별 item page가 존재한다. collection locator와 개별 작품 locator가 함께 확인됨."
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `三峯集/卷一` raw에서 `關山月` heading과 전문을 직접 확인해 YGC locator에서 공개 원문으로 승격했다."
       }
     },
     {
@@ -135,23 +135,23 @@
         "collectionTitle": "三峯集 卷之一",
         "juan": "卷之一",
         "entryTitle": "秋夜",
-        "sourceUrl": "https://ygc.skku.edu/ygc/sub.do?dataid=A_jon_SBZ_0040",
-        "rawUrl": "https://ygc.skku.edu/ygc/sub.do?dataid=A_jon_SBZ_0040_0020_0090",
-        "sourcePolicyId": "SRC-YGC-ORIGINAL-TEXT",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E4%B8%89%E5%B3%AF%E9%9B%86/%E5%8D%B7%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=%E4%B8%89%E5%B3%AF%E9%9B%86/%E5%8D%B7%E4%B8%80&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
         "locatorConfidence": "high"
       },
       "text": {
-        "poemZh": null,
+        "poemZh": "【以我山野人。未償丘壑心。營營塵土間。倦矣不能任。嚮晦方就休。宴坐到夜深。】忽有淸商聲。廻薄牕北林。【初疑笙鶴來。又訝虯龍吟。起視竟無有。灝氣襲衣衿。】少焉山月上。庭柯布疏陰。恍然沈痾痊。【沖澹生胸襟。】因之懷舊山。彈我牀上琴。【秋風吹南去。託此寄遺音。】",
         "poemKoReading": null,
         "poemKoGloss": null
       },
       "rights": {
-        "originalTextUsage": "unknown",
+        "originalTextUsage": "commercial_allowed",
         "translationUsage": "owned_translation_needed"
       },
       "ingest": {
-        "recommendedReadiness": "source-located",
-        "notes": "권1 오언고시 개별 page 확인. 정치적 전환기 정서를 보여주는 대표 시로 잡기 좋다."
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `三峯集/卷一` raw에서 첫 번째 `秋夜` heading과 전문을 직접 확인해 YGC locator에서 공개 원문으로 승격했다."
       }
     },
     {
@@ -163,23 +163,23 @@
         "collectionTitle": "三峯集 卷之二",
         "juan": "卷之二",
         "entryTitle": "文德曲",
-        "sourceUrl": "https://ygc.skku.edu/ygc/sub.do?dataid=A_jon_SBZ_0050_0050",
-        "rawUrl": "https://ygc.skku.edu/ygc/sub.do?dataid=A_jon_SBZ_0050_0050_0040",
-        "sourcePolicyId": "SRC-YGC-ORIGINAL-TEXT",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E4%B8%89%E5%B3%AF%E9%9B%86/%E5%8D%B7%E4%BA%8C",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=%E4%B8%89%E5%B3%AF%E9%9B%86/%E5%8D%B7%E4%BA%8C&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
         "locatorConfidence": "high"
       },
       "text": {
-        "poemZh": null,
+        "poemZh": "殿下初卽位。立經陳紀。與民更始。可頌者多矣。擧其大者。作開言路保功臣。正經界定禮樂。其詞曰。\n法宮有儼深九重。一日萬機紛其叢。君王要得民情通。大開言路達四聰。開言路臣所見。我后之德與舜同。\n聖人受命乘飛龍。多士競起如雲從。協謀效力成厥功。誓以山河保始終。保功臣臣所見。我后之德垂無窮。\n經界毀矣久不修。強幷弱削相炰烋。我后正之期甫周。倉廩充富民息休。正經界臣所見。烝哉樂豈享千秋。\n爲政之要在禮樂。近自閨門達邦國。我后定之垂典則。秩然以序和以懌。定禮樂臣所見。功成治定配無極。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
       "rights": {
-        "originalTextUsage": "unknown",
+        "originalTextUsage": "commercial_allowed",
         "translationUsage": "owned_translation_needed"
       },
       "ingest": {
-        "recommendedReadiness": "source-located",
-        "notes": "권2 樂章 항목에서 직접 확인. 정도전의 개국 악장 계열 대표 locator로 적합하다."
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `三峯集/卷二` raw에서 `文德曲 幷序` heading과 전문을 직접 확인해 YGC locator에서 공개 원문으로 승격했다."
       }
     },
     {

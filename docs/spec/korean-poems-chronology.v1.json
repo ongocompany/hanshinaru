@@ -16,13 +16,13 @@
   "catalogId": "korean-poems-chronology",
   "targetDb": "poems",
   "summary": {
-    "directTextCollected": 182,
-    "sourceLocated": 6,
+    "directTextCollected": 195,
+    "sourceLocated": 0,
     "ocrCandidate": 0,
     "blocked": 0,
-    "candidateOnly": 154,
-    "totalWorks": 342,
-    "workerResultWorks": 79,
+    "candidateOnly": 151,
+    "totalWorks": 346,
+    "workerResultWorks": 86,
     "donggyeongJapgiMatchedBlocks": 94,
     "donggyeongJapgiImportedWorks": 64,
     "donggyeongJapgiSourceVariants": 30
@@ -8324,20 +8324,20 @@
       "genre": {
         "broad": "한시",
         "form": "미확정",
-        "track": "hansi-candidate"
+        "track": "hansi-direct-text"
       },
       "sourceWork": {
         "collectionTitle": "益齋亂稿 卷第四",
         "juan": "卷第四",
         "entryTitle": "小樂府",
-        "sourceUrl": "https://ygc.skku.edu/ygc/sub.do?dataid=A_koc_IJN_0090",
-        "rawUrl": "https://ygc.skku.edu/ygc/sub.do?dataid=A_koc_IJN_0090_0490",
-        "sourcePolicyId": "SRC-YGC-ORIGINAL-TEXT",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E7%9B%8A%E9%BD%8B%E4%BA%82%E7%A8%BF/%E5%8D%B7%E5%9B%9B",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=%E7%9B%8A%E9%BD%8B%E4%BA%82%E7%A8%BF/%E5%8D%B7%E5%9B%9B&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
         "locatorConfidence": "high",
-        "verificationStatus": "source-located"
+        "verificationStatus": "verified-direct-text"
       },
       "text": {
-        "poemZh": null,
+        "poemZh": "拘拘有雀爾奚爲。觸着網羅黃口兒。眼孔元來在何許。可憐觸網雀兒癡。\n鵲兒籬際噪花枝。喜子床頭引網絲。余美歸來應未遠。精神早已報人知。\n浣沙溪上傍垂楊。執手論心白馬郞。縱有連簷三月雨。指頭何忍洗餘香。\n黃雀何方來去飛。一年農事不曾知。鰥翁獨自耕耘了。耗盡田中禾黍爲。\n脫却春衣掛一肩。呼朋去入菜花田。東馳西走追蝴蝶。昨日嬉遊尙宛然。\n新羅昔日處容翁。見說來從碧海中。貝齒赬唇歌夜月。鳶肩紫袖舞春風。\n木頭雕作小唐鷄。筯子拈來壁上棲。此鳥膠膠報時節。慈顏始似日平西。\n縱然巖石落珠璣。纓縷固應無斷時。與郞千載相離別。一點丹心何改移。\n憶君無日不霑衣。政似春山蜀子規。爲是爲非人莫問。只應殘月曉星知。",
         "poemKoReading": null,
         "poemKoGloss": null,
         "textParts": null
@@ -8349,9 +8349,9 @@
       },
       "rights": {
         "originalText": {
-          "status": "unknown",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
         },
         "translation": {
           "status": "owned-translation-needed",
@@ -8360,13 +8360,13 @@
         }
       },
       "ingest": {
-        "readiness": "source-located",
+        "readiness": "direct-text-collected",
         "targetDb": "poems",
         "sourceFile": "docs/spec/korean-poet-worker-results/worker-3-lee-jehyeon-jeong-dojeon-kim-jongjik.v1.json",
         "workerId": "worker-3-lee-jehyeon-jeong-dojeon-kim-jongjik",
         "candidateTitle": "小樂府",
         "matchedTitle": "小樂府",
-        "notes": "YGC 개별 항목 page에서 제목과 본문 노출을 확인했지만, 현재 source policy 매핑이 없어 poemZh는 비워 두고 locator만 남김.",
+        "notes": "zh Wikisource `益齋亂稿/卷四` raw에서 `小樂府` heading 아래 9수 전문을 직접 확인해 YGC locator에서 공개 원문으로 승격했다.",
         "ownedTranslationNeeded": true
       }
     },
@@ -8388,20 +8388,20 @@
       "genre": {
         "broad": "한시",
         "form": "미확정",
-        "track": "hansi-candidate"
+        "track": "hansi-direct-text"
       },
       "sourceWork": {
         "collectionTitle": "益齋亂稿 卷第二",
         "juan": "卷第二",
         "entryTitle": "題長安逆旅",
-        "sourceUrl": "https://ygc.skku.edu/ygc/sub.do?dataid=A_koc_IJN_0070",
-        "rawUrl": "https://ygc.skku.edu/ygc/sub.do?dataid=A_koc_IJN_0070_0270",
-        "sourcePolicyId": "SRC-YGC-ORIGINAL-TEXT",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E7%9B%8A%E9%BD%8B%E4%BA%82%E7%A8%BF/%E5%8D%B7%E4%BA%8C",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=%E7%9B%8A%E9%BD%8B%E4%BA%82%E7%A8%BF/%E5%8D%B7%E4%BA%8C&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
         "locatorConfidence": "high",
-        "verificationStatus": "source-located"
+        "verificationStatus": "verified-direct-text"
       },
       "text": {
-        "poemZh": null,
+        "poemZh": "車馬函關道。風塵季子裘。轍環天下半。心逐水東流。萬事唯呼酒。千山獨倚樓。靑雲有知己。未用嘆悠悠。\n倦客重遊秦樹老。佳人一去隴雲賖。愁聽杜叟三年笛。悵望張候萬里槎。夢裏家山空蕙帳。酒闌簷雨落燈花。宦情已似秋雲薄。胸次唯餘一寸霞。\n海上箕封禮義鄕。曾修職貢荷龍光。河山萬世同盟國。雨露三朝異姓王。貝錦誰將委豺虎。干戈無奈到參商。扶持自有宗祧力。會見松都業更昌。\n早信忠誠可動天。孰云仁聖竟容奸。雞竿曙色開暘谷。鳳闕春光到雪山。讖雨池蛙喧欲鬪。唳雲皐鶴倦思還。區區吳薛何爲者。自鼓嚨胡徹帝關。",
         "poemKoReading": null,
         "poemKoGloss": null,
         "textParts": null
@@ -8413,9 +8413,9 @@
       },
       "rights": {
         "originalText": {
-          "status": "unknown",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
         },
         "translation": {
           "status": "owned-translation-needed",
@@ -8424,13 +8424,13 @@
         }
       },
       "ingest": {
-        "readiness": "source-located",
+        "readiness": "direct-text-collected",
         "targetDb": "poems",
         "sourceFile": "docs/spec/korean-poet-worker-results/worker-3-lee-jehyeon-jeong-dojeon-kim-jongjik.v1.json",
         "workerId": "worker-3-lee-jehyeon-jeong-dojeon-kim-jongjik",
         "candidateTitle": "題長安逆旅",
         "matchedTitle": "題長安逆旅",
-        "notes": "益齋亂稿 권2 개별 poem page가 바로 열려서 작품 locator는 안정적이다. 이번 worker는 collection catalog 용도로만 기록.",
+        "notes": "zh Wikisource `益齋亂稿/卷二` raw에서 `題長安逆旅` heading과 4수 전문을 직접 확인해 YGC locator에서 공개 원문으로 승격했다.",
         "ownedTranslationNeeded": true
       }
     },
@@ -8452,20 +8452,20 @@
       "genre": {
         "broad": "한시",
         "form": "미확정",
-        "track": "hansi-candidate"
+        "track": "hansi-direct-text"
       },
       "sourceWork": {
         "collectionTitle": "益齋亂稿 卷第三",
         "juan": "卷第三",
         "entryTitle": "寄題白花禪院觀空樓次韻",
-        "sourceUrl": "https://ygc.skku.edu/ygc/sub.do?dataid=A_koc_IJN_0080",
-        "rawUrl": "https://ygc.skku.edu/ygc/sub.do?dataid=A_koc_IJN_0080_0250",
-        "sourcePolicyId": "SRC-YGC-ORIGINAL-TEXT",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E7%9B%8A%E9%BD%8B%E4%BA%82%E7%A8%BF/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=%E7%9B%8A%E9%BD%8B%E4%BA%82%E7%A8%BF/%E5%8D%B7%E4%B8%89&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
         "locatorConfidence": "high",
-        "verificationStatus": "source-located"
+        "verificationStatus": "verified-direct-text"
       },
       "text": {
-        "poemZh": null,
+        "poemZh": "勝遊多是費躋攀。最愛蓮坊住淺山。一水帶鋪延曠遠。兩巒襟合貯幽閑。莫求佛外兼心外。須着人間比夢間。一聽樓名如有契。便堪千里笑開顏。",
         "poemKoReading": null,
         "poemKoGloss": null,
         "textParts": null
@@ -8477,9 +8477,9 @@
       },
       "rights": {
         "originalText": {
-          "status": "unknown",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
         },
         "translation": {
           "status": "owned-translation-needed",
@@ -8488,13 +8488,13 @@
         }
       },
       "ingest": {
-        "readiness": "source-located",
+        "readiness": "direct-text-collected",
         "targetDb": "poems",
         "sourceFile": "docs/spec/korean-poet-worker-results/worker-3-lee-jehyeon-jeong-dojeon-kim-jongjik.v1.json",
         "workerId": "worker-3-lee-jehyeon-jeong-dojeon-kim-jongjik",
         "candidateTitle": "寄題白花禪院觀空樓次韻",
         "matchedTitle": "寄題白花禪院觀空樓次韻",
-        "notes": "권3의 개별 수록 위치와 제목이 바로 확인된다. 사찰 제영시 계열 대표 예시로 채택.",
+        "notes": "zh Wikisource `益齋亂稿/卷三` raw에서 `寄題白花禪院觀空樓次韻` heading과 전문을 직접 확인해 YGC locator에서 공개 원문으로 승격했다.",
         "ownedTranslationNeeded": true
       }
     },
@@ -8516,20 +8516,20 @@
       "genre": {
         "broad": "한시",
         "form": "미확정",
-        "track": "hansi-candidate"
+        "track": "hansi-direct-text"
       },
       "sourceWork": {
         "collectionTitle": "三峯集 卷之一",
         "juan": "卷之一",
         "entryTitle": "關山月",
-        "sourceUrl": "https://ygc.skku.edu/ygc/sub.do?dataid=A_jon_SBZ_0040",
-        "rawUrl": "https://ygc.skku.edu/ygc/sub.do?dataid=A_jon_SBZ_0040_0020_0010",
-        "sourcePolicyId": "SRC-YGC-ORIGINAL-TEXT",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E4%B8%89%E5%B3%AF%E9%9B%86/%E5%8D%B7%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=%E4%B8%89%E5%B3%AF%E9%9B%86/%E5%8D%B7%E4%B8%80&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
         "locatorConfidence": "high",
-        "verificationStatus": "source-located"
+        "verificationStatus": "verified-direct-text"
       },
       "text": {
-        "poemZh": null,
+        "poemZh": "一片關山月。長天萬里來。【塞風吹不盡。冷影故徘徊。】蘇武何時返。李陵亦未廻。【蕭疏白旄節。寂寞望鄕臺。豈無南飛雁。音信何遼哉。見月三歎息。搔首有餘哀。】",
         "poemKoReading": null,
         "poemKoGloss": null,
         "textParts": null
@@ -8541,9 +8541,9 @@
       },
       "rights": {
         "originalText": {
-          "status": "unknown",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
         },
         "translation": {
           "status": "owned-translation-needed",
@@ -8552,13 +8552,13 @@
         }
       },
       "ingest": {
-        "readiness": "source-located",
+        "readiness": "direct-text-collected",
         "targetDb": "poems",
         "sourceFile": "docs/spec/korean-poet-worker-results/worker-3-lee-jehyeon-jeong-dojeon-kim-jongjik.v1.json",
         "workerId": "worker-3-lee-jehyeon-jeong-dojeon-kim-jongjik",
         "candidateTitle": "關山月",
         "matchedTitle": "關山月",
-        "notes": "三峯集 권1 오언고시 하위의 개별 item page가 존재한다. collection locator와 개별 작품 locator가 함께 확인됨.",
+        "notes": "zh Wikisource `三峯集/卷一` raw에서 `關山月` heading과 전문을 직접 확인해 YGC locator에서 공개 원문으로 승격했다.",
         "ownedTranslationNeeded": true
       }
     },
@@ -8580,20 +8580,20 @@
       "genre": {
         "broad": "한시",
         "form": "미확정",
-        "track": "hansi-candidate"
+        "track": "hansi-direct-text"
       },
       "sourceWork": {
         "collectionTitle": "三峯集 卷之一",
         "juan": "卷之一",
         "entryTitle": "秋夜",
-        "sourceUrl": "https://ygc.skku.edu/ygc/sub.do?dataid=A_jon_SBZ_0040",
-        "rawUrl": "https://ygc.skku.edu/ygc/sub.do?dataid=A_jon_SBZ_0040_0020_0090",
-        "sourcePolicyId": "SRC-YGC-ORIGINAL-TEXT",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E4%B8%89%E5%B3%AF%E9%9B%86/%E5%8D%B7%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=%E4%B8%89%E5%B3%AF%E9%9B%86/%E5%8D%B7%E4%B8%80&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
         "locatorConfidence": "high",
-        "verificationStatus": "source-located"
+        "verificationStatus": "verified-direct-text"
       },
       "text": {
-        "poemZh": null,
+        "poemZh": "【以我山野人。未償丘壑心。營營塵土間。倦矣不能任。嚮晦方就休。宴坐到夜深。】忽有淸商聲。廻薄牕北林。【初疑笙鶴來。又訝虯龍吟。起視竟無有。灝氣襲衣衿。】少焉山月上。庭柯布疏陰。恍然沈痾痊。【沖澹生胸襟。】因之懷舊山。彈我牀上琴。【秋風吹南去。託此寄遺音。】",
         "poemKoReading": null,
         "poemKoGloss": null,
         "textParts": null
@@ -8605,9 +8605,9 @@
       },
       "rights": {
         "originalText": {
-          "status": "unknown",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
         },
         "translation": {
           "status": "owned-translation-needed",
@@ -8616,13 +8616,13 @@
         }
       },
       "ingest": {
-        "readiness": "source-located",
+        "readiness": "direct-text-collected",
         "targetDb": "poems",
         "sourceFile": "docs/spec/korean-poet-worker-results/worker-3-lee-jehyeon-jeong-dojeon-kim-jongjik.v1.json",
         "workerId": "worker-3-lee-jehyeon-jeong-dojeon-kim-jongjik",
         "candidateTitle": "秋夜",
         "matchedTitle": "秋夜",
-        "notes": "권1 오언고시 개별 page 확인. 정치적 전환기 정서를 보여주는 대표 시로 잡기 좋다.",
+        "notes": "zh Wikisource `三峯集/卷一` raw에서 첫 번째 `秋夜` heading과 전문을 직접 확인해 YGC locator에서 공개 원문으로 승격했다.",
         "ownedTranslationNeeded": true
       }
     },
@@ -8644,20 +8644,20 @@
       "genre": {
         "broad": "한시",
         "form": "미확정",
-        "track": "hansi-candidate"
+        "track": "hansi-direct-text"
       },
       "sourceWork": {
         "collectionTitle": "三峯集 卷之二",
         "juan": "卷之二",
         "entryTitle": "文德曲",
-        "sourceUrl": "https://ygc.skku.edu/ygc/sub.do?dataid=A_jon_SBZ_0050_0050",
-        "rawUrl": "https://ygc.skku.edu/ygc/sub.do?dataid=A_jon_SBZ_0050_0050_0040",
-        "sourcePolicyId": "SRC-YGC-ORIGINAL-TEXT",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E4%B8%89%E5%B3%AF%E9%9B%86/%E5%8D%B7%E4%BA%8C",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=%E4%B8%89%E5%B3%AF%E9%9B%86/%E5%8D%B7%E4%BA%8C&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
         "locatorConfidence": "high",
-        "verificationStatus": "source-located"
+        "verificationStatus": "verified-direct-text"
       },
       "text": {
-        "poemZh": null,
+        "poemZh": "殿下初卽位。立經陳紀。與民更始。可頌者多矣。擧其大者。作開言路保功臣。正經界定禮樂。其詞曰。\n法宮有儼深九重。一日萬機紛其叢。君王要得民情通。大開言路達四聰。開言路臣所見。我后之德與舜同。\n聖人受命乘飛龍。多士競起如雲從。協謀效力成厥功。誓以山河保始終。保功臣臣所見。我后之德垂無窮。\n經界毀矣久不修。強幷弱削相炰烋。我后正之期甫周。倉廩充富民息休。正經界臣所見。烝哉樂豈享千秋。\n爲政之要在禮樂。近自閨門達邦國。我后定之垂典則。秩然以序和以懌。定禮樂臣所見。功成治定配無極。",
         "poemKoReading": null,
         "poemKoGloss": null,
         "textParts": null
@@ -8669,9 +8669,9 @@
       },
       "rights": {
         "originalText": {
-          "status": "unknown",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
         },
         "translation": {
           "status": "owned-translation-needed",
@@ -8680,13 +8680,13 @@
         }
       },
       "ingest": {
-        "readiness": "source-located",
+        "readiness": "direct-text-collected",
         "targetDb": "poems",
         "sourceFile": "docs/spec/korean-poet-worker-results/worker-3-lee-jehyeon-jeong-dojeon-kim-jongjik.v1.json",
         "workerId": "worker-3-lee-jehyeon-jeong-dojeon-kim-jongjik",
         "candidateTitle": "文德曲",
         "matchedTitle": "文德曲",
-        "notes": "권2 樂章 항목에서 직접 확인. 정도전의 개국 악장 계열 대표 locator로 적합하다.",
+        "notes": "zh Wikisource `三峯集/卷二` raw에서 `文德曲 幷序` heading과 전문을 직접 확인해 YGC locator에서 공개 원문으로 승격했다.",
         "ownedTranslationNeeded": true
       }
     },
@@ -12814,6 +12814,454 @@
         "candidateTitle": "사회시",
         "matchedTitle": "貧",
         "notes": "石洲集 卷一에서 확인한 빈궁 소재 단편. 사회시·자기 풍자 양쪽 설명에 활용할 수 있다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-HWANG-HYEON-001",
+      "canonicalId": "KPOEM-CANON-WORKER-HWANG-HYEON-001",
+      "title": {
+        "zh": "絶命詩 四首",
+        "ko": "絶命詩 四首"
+      },
+      "author": {
+        "authorId": "KAUTH-HWANG-HYEON",
+        "zh": "黃玹",
+        "ko": "황현"
+      },
+      "era": {
+        "label": "근대 전환기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "梅泉集 卷五",
+        "juan": "卷五",
+        "entryTitle": "絶命詩 四首",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%A2%85%E6%B3%89%E9%9B%86/%E5%8D%B7%E4%BA%94",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%B3%89%E9%9B%86/%E5%8D%B7%E4%BA%94?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "亂離滾到白頭年，幾合捐生却未然。\n今日眞成無可奈，輝輝風燭照蒼天。\n妖氛晻翳帝星移，九闕沉沉晝漏遲。\n詔勅從今無復有，琳琅一紙淚千絲。\n鳥獸哀鳴海岳嚬，槿花世界已沉淪。\n秋燈掩卷懷千古，難作人間識字人。\n曾無支廈半椽功，只是成仁不是忠。\n止竟僅能追尹穀，當時愧不躡陳東？",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-8-hwang-hyeon-public-wikisource.v1.json",
+        "workerId": "worker-8-hwang-hyeon-public-wikisource",
+        "candidateTitle": "絶命詩",
+        "matchedTitle": "絶命詩 四首",
+        "notes": "zh Wikisource `梅泉集/卷五` raw에서 `絶命詩 四首` heading과 4수 전문을 직접 확인해 수집했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-HWANG-HYEON-002",
+      "canonicalId": "KPOEM-CANON-WORKER-HWANG-HYEON-002",
+      "title": {
+        "zh": "元宵",
+        "ko": "元宵"
+      },
+      "author": {
+        "authorId": "KAUTH-HWANG-HYEON",
+        "zh": "黃玹",
+        "ko": "황현"
+      },
+      "era": {
+        "label": "근대 전환기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "梅泉集 卷五",
+        "juan": "卷五",
+        "entryTitle": "元宵",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%A2%85%E6%B3%89%E9%9B%86/%E5%8D%B7%E4%BA%94",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%B3%89%E9%9B%86/%E5%8D%B7%E4%BA%94?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "medium",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "春寒難道是輕寒，風利如刀袴褶單。\n處處沙塲今夜月，無人把作舊時看。\n千家待月出村前，額手齊瞻圓未圓。\n大似有人來館糓，莫將圓月待豐年。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-8-hwang-hyeon-public-wikisource.v1.json",
+        "workerId": "worker-8-hwang-hyeon-public-wikisource",
+        "candidateTitle": "上元雜詠",
+        "matchedTitle": "元宵",
+        "notes": "seed의 `上元雜詠` 후보는 같은 세시 주제의 `元宵` 2수로 대응했다. 제목 불일치가 있어 locatorConfidence는 medium으로 둔다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-HWANG-HYEON-003",
+      "canonicalId": "KPOEM-CANON-WORKER-HWANG-HYEON-003",
+      "title": {
+        "zh": "孤雲吹笛臺有感",
+        "ko": "孤雲吹笛臺有感"
+      },
+      "author": {
+        "authorId": "KAUTH-HWANG-HYEON",
+        "zh": "黃玹",
+        "ko": "황현"
+      },
+      "era": {
+        "label": "근대 전환기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "梅泉集 卷二",
+        "juan": "卷二",
+        "entryTitle": "孤雲吹笛臺有感",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%A2%85%E6%B3%89%E9%9B%86/%E5%8D%B7%E4%BA%8C",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%B3%89%E9%9B%86/%E5%8D%B7%E4%BA%8C?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "medium",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "國末難容黼黻才，鷄林黃葉足興哀。\n仙家何管興亡事，勤向新朝獻讖來？",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-8-hwang-hyeon-public-wikisource.v1.json",
+        "workerId": "worker-8-hwang-hyeon-public-wikisource",
+        "candidateTitle": "우국시",
+        "matchedTitle": "孤雲吹笛臺有感",
+        "notes": "seed의 포괄 후보 `우국시`에 대해 신라 말 崔致遠 유적을 빌려 흥망을 탄식하는 `孤雲吹笛臺有感`을 대표 수집했다. 포괄 후보 대응이라 locatorConfidence는 medium으로 둔다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-HWANG-HYEON-004",
+      "canonicalId": "KPOEM-CANON-WORKER-HWANG-HYEON-004",
+      "title": {
+        "zh": "登梅營南門",
+        "ko": "登梅營南門"
+      },
+      "author": {
+        "authorId": "KAUTH-HWANG-HYEON",
+        "zh": "黃玹",
+        "ko": "황현"
+      },
+      "era": {
+        "label": "근대 전환기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "梅泉集 卷一",
+        "juan": "卷一",
+        "entryTitle": "登梅營南門",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%A2%85%E6%B3%89%E9%9B%86/%E5%8D%B7%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%B3%89%E9%9B%86/%E5%8D%B7%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "毁堞如今艸樹荒，昔人於此鑠封疆。\n地彎七鎭雄南服，海擁羣山豁內洋。\n倚棹雲祥新畫本，尋僧忠武古祠堂。\n日夜邊風吹不盡，危樓一望怯靑蒼。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-8-hwang-hyeon-public-wikisource.v1.json",
+        "workerId": "worker-8-hwang-hyeon-public-wikisource",
+        "candidateTitle": "登梅營南門",
+        "matchedTitle": "登梅營南門",
+        "notes": "zh Wikisource `梅泉集/卷一` raw에서 heading과 7언율시 전문을 직접 확인해 추가 대표작으로 수집했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-HWANG-HYEON-005",
+      "canonicalId": "KPOEM-CANON-WORKER-HWANG-HYEON-005",
+      "title": {
+        "zh": "秋夜吟",
+        "ko": "秋夜吟"
+      },
+      "author": {
+        "authorId": "KAUTH-HWANG-HYEON",
+        "zh": "黃玹",
+        "ko": "황현"
+      },
+      "era": {
+        "label": "근대 전환기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "梅泉集 卷一",
+        "juan": "卷一",
+        "entryTitle": "秋夜吟",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%A2%85%E6%B3%89%E9%9B%86/%E5%8D%B7%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%B3%89%E9%9B%86/%E5%8D%B7%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "寒江送氣峽天開，萬葉流風夜壑哀。\n山犬忽喑驚虎過，書燈正亮怕人來。\n戱呼稚子聯衾宿，催送園丁卷碓回。\n莫怪今宵偏睡困，經旬野屧破溪苔。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-8-hwang-hyeon-public-wikisource.v1.json",
+        "workerId": "worker-8-hwang-hyeon-public-wikisource",
+        "candidateTitle": "秋夜吟",
+        "matchedTitle": "秋夜吟",
+        "notes": "zh Wikisource `梅泉集/卷一` raw에서 heading과 7언율시 전문을 직접 확인해 추가 대표작으로 수집했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-HWANG-HYEON-006",
+      "canonicalId": "KPOEM-CANON-WORKER-HWANG-HYEON-006",
+      "title": {
+        "zh": "一蠧遺墟 二首",
+        "ko": "一蠧遺墟 二首"
+      },
+      "author": {
+        "authorId": "KAUTH-HWANG-HYEON",
+        "zh": "黃玹",
+        "ko": "황현"
+      },
+      "era": {
+        "label": "근대 전환기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "梅泉集 卷二",
+        "juan": "卷二",
+        "entryTitle": "一蠧遺墟 二首",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%A2%85%E6%B3%89%E9%9B%86/%E5%8D%B7%E4%BA%8C",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%B3%89%E9%9B%86/%E5%8D%B7%E4%BA%8C?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "誰道斯文薄命騷？小詩猶復見人豪。\n世間不乏千鸚鵡，有否風蒲一絶高？\n寒、蠧微言百不傳，紛紛廡議感當年。\n廢朝萬事勤吹索，大胆人無及五賢。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-8-hwang-hyeon-public-wikisource.v1.json",
+        "workerId": "worker-8-hwang-hyeon-public-wikisource",
+        "candidateTitle": "一蠧遺墟",
+        "matchedTitle": "一蠧遺墟 二首",
+        "notes": "zh Wikisource `梅泉集/卷二` raw에서 heading과 2수 전문을 직접 확인해 조선 사림 회고 계열 대표작으로 수집했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-HWANG-HYEON-007",
+      "canonicalId": "KPOEM-CANON-WORKER-HWANG-HYEON-007",
+      "title": {
+        "zh": "哀朴長興憲陽",
+        "ko": "哀朴長興憲陽"
+      },
+      "author": {
+        "authorId": "KAUTH-HWANG-HYEON",
+        "zh": "黃玹",
+        "ko": "황현"
+      },
+      "era": {
+        "label": "근대 전환기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "梅泉集 卷二",
+        "juan": "卷二",
+        "entryTitle": "哀朴長興憲陽",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%A2%85%E6%B3%89%E9%9B%86/%E5%8D%B7%E4%BA%8C",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%B3%89%E9%9B%86/%E5%8D%B7%E4%BA%8C?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "兵刃須臾間，一死無痛楚。\n從古知如此，臨難竟錯做。\n朴侯不勝衣，外若柔可茹。\n胸中一寸鐵，百碎甘刀鋸。\n亦知效鄰城，竄身得其所。\n封疆慨無人，努力警狐鼠。\n峩峩南將臺，肅肅靑楓渚。\n欲行復夷猶，是侯畢命處。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-8-hwang-hyeon-public-wikisource.v1.json",
+        "workerId": "worker-8-hwang-hyeon-public-wikisource",
+        "candidateTitle": "哀朴長興憲陽",
+        "matchedTitle": "哀朴長興憲陽",
+        "notes": "zh Wikisource `梅泉集/卷二` raw에서 heading과 전문을 직접 확인해 충절 애도 계열 대표작으로 수집했다.",
         "ownedTranslationNeeded": true
       }
     },
@@ -27258,168 +27706,6 @@
       },
       "sourceWork": {
         "collectionTitle": "滄江稿",
-        "sourceUrl": null,
-        "sourcePolicyId": null,
-        "verificationStatus": "needs-source-url"
-      },
-      "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
-      },
-      "assets": {
-        "translationKo": null,
-        "commentaryKo": null,
-        "ownedTranslationNeeded": true
-      },
-      "rights": {
-        "originalText": {
-          "status": "candidate",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        },
-        "translation": {
-          "status": "owned-translation-needed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        }
-      },
-      "ingest": {
-        "readiness": "candidate-only",
-        "targetDb": "poems",
-        "sourceFile": "docs/research/2026-04-25-korean-poet-chronology-seed-catalog.md"
-      }
-    },
-    {
-      "poemId": "KPOEM-CAND-HWANG-HYEON-001",
-      "canonicalId": "KPOEM-CANON-HWANG-HYEON-001",
-      "title": {
-        "zh": "絶命詩",
-        "ko": "絶命詩"
-      },
-      "author": {
-        "authorId": "KAUTH-HWANG-HYEON",
-        "zh": "黃玹",
-        "ko": "황현"
-      },
-      "era": {
-        "label": "근대 전환기"
-      },
-      "genre": {
-        "broad": "한시",
-        "form": "미확정",
-        "track": "hansi-candidate"
-      },
-      "sourceWork": {
-        "collectionTitle": "梅泉集, 梅泉野錄",
-        "sourceUrl": null,
-        "sourcePolicyId": null,
-        "verificationStatus": "needs-source-url"
-      },
-      "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
-      },
-      "assets": {
-        "translationKo": null,
-        "commentaryKo": null,
-        "ownedTranslationNeeded": true
-      },
-      "rights": {
-        "originalText": {
-          "status": "candidate",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        },
-        "translation": {
-          "status": "owned-translation-needed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        }
-      },
-      "ingest": {
-        "readiness": "candidate-only",
-        "targetDb": "poems",
-        "sourceFile": "docs/research/2026-04-25-korean-poet-chronology-seed-catalog.md"
-      }
-    },
-    {
-      "poemId": "KPOEM-CAND-HWANG-HYEON-002",
-      "canonicalId": "KPOEM-CANON-HWANG-HYEON-002",
-      "title": {
-        "zh": "上元雜詠",
-        "ko": "上元雜詠"
-      },
-      "author": {
-        "authorId": "KAUTH-HWANG-HYEON",
-        "zh": "黃玹",
-        "ko": "황현"
-      },
-      "era": {
-        "label": "근대 전환기"
-      },
-      "genre": {
-        "broad": "한시",
-        "form": "미확정",
-        "track": "hansi-candidate"
-      },
-      "sourceWork": {
-        "collectionTitle": "梅泉集, 梅泉野錄",
-        "sourceUrl": null,
-        "sourcePolicyId": null,
-        "verificationStatus": "needs-source-url"
-      },
-      "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
-      },
-      "assets": {
-        "translationKo": null,
-        "commentaryKo": null,
-        "ownedTranslationNeeded": true
-      },
-      "rights": {
-        "originalText": {
-          "status": "candidate",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        },
-        "translation": {
-          "status": "owned-translation-needed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        }
-      },
-      "ingest": {
-        "readiness": "candidate-only",
-        "targetDb": "poems",
-        "sourceFile": "docs/research/2026-04-25-korean-poet-chronology-seed-catalog.md"
-      }
-    },
-    {
-      "poemId": "KPOEM-CAND-HWANG-HYEON-003",
-      "canonicalId": "KPOEM-CANON-HWANG-HYEON-003",
-      "title": {
-        "zh": null,
-        "ko": "우국시"
-      },
-      "author": {
-        "authorId": "KAUTH-HWANG-HYEON",
-        "zh": "黃玹",
-        "ko": "황현"
-      },
-      "era": {
-        "label": "근대 전환기"
-      },
-      "genre": {
-        "broad": "한시",
-        "form": "미확정",
-        "track": "hansi-candidate"
-      },
-      "sourceWork": {
-        "collectionTitle": "梅泉集, 梅泉野錄",
         "sourceUrl": null,
         "sourcePolicyId": null,
         "verificationStatus": "needs-source-url"

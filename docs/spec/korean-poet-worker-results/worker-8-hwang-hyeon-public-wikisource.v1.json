@@ -1,0 +1,235 @@
+{
+  "workerId": "worker-8-hwang-hyeon-public-wikisource",
+  "modelRecommendation": "gpt-5.4",
+  "status": "completed",
+  "targetAuthors": [
+    "황현"
+  ],
+  "summary": {
+    "candidateWorksChecked": 7,
+    "directTextWorksFound": 7,
+    "ocrCandidates": 0,
+    "blockedWorks": 0
+  },
+  "poems": [
+    {
+      "authorKo": "황현",
+      "authorHanja": "黃玹",
+      "candidateTitle": "絶命詩",
+      "matchedTitle": "絶命詩 四首",
+      "sourceWork": {
+        "collectionTitle": "梅泉集 卷五",
+        "juan": "卷五",
+        "entryTitle": "絶命詩 四首",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%A2%85%E6%B3%89%E9%9B%86/%E5%8D%B7%E4%BA%94",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%B3%89%E9%9B%86/%E5%8D%B7%E4%BA%94?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "亂離滾到白頭年，幾合捐生却未然。\n今日眞成無可奈，輝輝風燭照蒼天。\n妖氛晻翳帝星移，九闕沉沉晝漏遲。\n詔勅從今無復有，琳琅一紙淚千絲。\n鳥獸哀鳴海岳嚬，槿花世界已沉淪。\n秋燈掩卷懷千古，難作人間識字人。\n曾無支廈半椽功，只是成仁不是忠。\n止竟僅能追尹穀，當時愧不躡陳東？",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `梅泉集/卷五` raw에서 `絶命詩 四首` heading과 4수 전문을 직접 확인해 수집했다."
+      }
+    },
+    {
+      "authorKo": "황현",
+      "authorHanja": "黃玹",
+      "candidateTitle": "上元雜詠",
+      "matchedTitle": "元宵",
+      "sourceWork": {
+        "collectionTitle": "梅泉集 卷五",
+        "juan": "卷五",
+        "entryTitle": "元宵",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%A2%85%E6%B3%89%E9%9B%86/%E5%8D%B7%E4%BA%94",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%B3%89%E9%9B%86/%E5%8D%B7%E4%BA%94?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "medium"
+      },
+      "text": {
+        "poemZh": "春寒難道是輕寒，風利如刀袴褶單。\n處處沙塲今夜月，無人把作舊時看。\n千家待月出村前，額手齊瞻圓未圓。\n大似有人來館糓，莫將圓月待豐年。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "seed의 `上元雜詠` 후보는 같은 세시 주제의 `元宵` 2수로 대응했다. 제목 불일치가 있어 locatorConfidence는 medium으로 둔다."
+      }
+    },
+    {
+      "authorKo": "황현",
+      "authorHanja": "黃玹",
+      "candidateTitle": "우국시",
+      "matchedTitle": "孤雲吹笛臺有感",
+      "sourceWork": {
+        "collectionTitle": "梅泉集 卷二",
+        "juan": "卷二",
+        "entryTitle": "孤雲吹笛臺有感",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%A2%85%E6%B3%89%E9%9B%86/%E5%8D%B7%E4%BA%8C",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%B3%89%E9%9B%86/%E5%8D%B7%E4%BA%8C?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "medium"
+      },
+      "text": {
+        "poemZh": "國末難容黼黻才，鷄林黃葉足興哀。\n仙家何管興亡事，勤向新朝獻讖來？",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "seed의 포괄 후보 `우국시`에 대해 신라 말 崔致遠 유적을 빌려 흥망을 탄식하는 `孤雲吹笛臺有感`을 대표 수집했다. 포괄 후보 대응이라 locatorConfidence는 medium으로 둔다."
+      }
+    },
+    {
+      "authorKo": "황현",
+      "authorHanja": "黃玹",
+      "candidateTitle": "登梅營南門",
+      "matchedTitle": "登梅營南門",
+      "sourceWork": {
+        "collectionTitle": "梅泉集 卷一",
+        "juan": "卷一",
+        "entryTitle": "登梅營南門",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%A2%85%E6%B3%89%E9%9B%86/%E5%8D%B7%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%B3%89%E9%9B%86/%E5%8D%B7%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "毁堞如今艸樹荒，昔人於此鑠封疆。\n地彎七鎭雄南服，海擁羣山豁內洋。\n倚棹雲祥新畫本，尋僧忠武古祠堂。\n日夜邊風吹不盡，危樓一望怯靑蒼。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `梅泉集/卷一` raw에서 heading과 7언율시 전문을 직접 확인해 추가 대표작으로 수집했다."
+      }
+    },
+    {
+      "authorKo": "황현",
+      "authorHanja": "黃玹",
+      "candidateTitle": "秋夜吟",
+      "matchedTitle": "秋夜吟",
+      "sourceWork": {
+        "collectionTitle": "梅泉集 卷一",
+        "juan": "卷一",
+        "entryTitle": "秋夜吟",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%A2%85%E6%B3%89%E9%9B%86/%E5%8D%B7%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%B3%89%E9%9B%86/%E5%8D%B7%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "寒江送氣峽天開，萬葉流風夜壑哀。\n山犬忽喑驚虎過，書燈正亮怕人來。\n戱呼稚子聯衾宿，催送園丁卷碓回。\n莫怪今宵偏睡困，經旬野屧破溪苔。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `梅泉集/卷一` raw에서 heading과 7언율시 전문을 직접 확인해 추가 대표작으로 수집했다."
+      }
+    },
+    {
+      "authorKo": "황현",
+      "authorHanja": "黃玹",
+      "candidateTitle": "一蠧遺墟",
+      "matchedTitle": "一蠧遺墟 二首",
+      "sourceWork": {
+        "collectionTitle": "梅泉集 卷二",
+        "juan": "卷二",
+        "entryTitle": "一蠧遺墟 二首",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%A2%85%E6%B3%89%E9%9B%86/%E5%8D%B7%E4%BA%8C",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%B3%89%E9%9B%86/%E5%8D%B7%E4%BA%8C?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "誰道斯文薄命騷？小詩猶復見人豪。\n世間不乏千鸚鵡，有否風蒲一絶高？\n寒、蠧微言百不傳，紛紛廡議感當年。\n廢朝萬事勤吹索，大胆人無及五賢。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `梅泉集/卷二` raw에서 heading과 2수 전문을 직접 확인해 조선 사림 회고 계열 대표작으로 수집했다."
+      }
+    },
+    {
+      "authorKo": "황현",
+      "authorHanja": "黃玹",
+      "candidateTitle": "哀朴長興憲陽",
+      "matchedTitle": "哀朴長興憲陽",
+      "sourceWork": {
+        "collectionTitle": "梅泉集 卷二",
+        "juan": "卷二",
+        "entryTitle": "哀朴長興憲陽",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%A2%85%E6%B3%89%E9%9B%86/%E5%8D%B7%E4%BA%8C",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%B3%89%E9%9B%86/%E5%8D%B7%E4%BA%8C?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "兵刃須臾間，一死無痛楚。\n從古知如此，臨難竟錯做。\n朴侯不勝衣，外若柔可茹。\n胸中一寸鐵，百碎甘刀鋸。\n亦知效鄰城，竄身得其所。\n封疆慨無人，努力警狐鼠。\n峩峩南將臺，肅肅靑楓渚。\n欲行復夷猶，是侯畢命處。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `梅泉集/卷二` raw에서 heading과 전문을 직접 확인해 충절 애도 계열 대표작으로 수집했다."
+      }
+    }
+  ],
+  "blockers": [],
+  "sourcesConsulted": [
+    {
+      "label": "梅泉集/卷一",
+      "url": "https://zh.wikisource.org/zh-hant/%E6%A2%85%E6%B3%89%E9%9B%86/%E5%8D%B7%E4%B8%80",
+      "result": "登梅營南門과 秋夜吟 원문 확인"
+    },
+    {
+      "label": "梅泉集/卷五",
+      "url": "https://zh.wikisource.org/zh-hant/%E6%A2%85%E6%B3%89%E9%9B%86/%E5%8D%B7%E4%BA%94",
+      "result": "絶命詩 四首와 元宵 원문 확인"
+    },
+    {
+      "label": "梅泉集/卷二",
+      "url": "https://zh.wikisource.org/zh-hant/%E6%A2%85%E6%B3%89%E9%9B%86/%E5%8D%B7%E4%BA%8C",
+      "result": "孤雲吹笛臺有感, 一蠧遺墟, 哀朴長興憲陽 원문 확인"
+    },
+    {
+      "label": "梅泉集/本傳",
+      "url": "https://zh.wikisource.org/zh-hant/%E6%A2%85%E6%B3%89%E9%9B%86/%E6%9C%AC%E5%82%B3",
+      "result": "絶命詩 四章 작성과 순국 맥락 확인"
+    }
+  ]
+}
