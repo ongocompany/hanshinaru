@@ -1,0 +1,216 @@
+{
+  "workerId": "worker-2-yi-saek",
+  "modelRecommendation": "gpt-5.4",
+  "status": "completed",
+  "targetAuthors": [
+    "이색"
+  ],
+  "summary": {
+    "candidateWorksChecked": 7,
+    "directTextWorksFound": 6,
+    "ocrCandidates": 0,
+    "blockedWorks": 1
+  },
+  "poems": [
+    {
+      "authorKo": "이색",
+      "authorHanja": "李穡",
+      "candidateTitle": "浮碧樓",
+      "matchedTitle": "浮碧樓",
+      "sourceWork": {
+        "collectionTitle": "牧隱詩藁",
+        "juan": "卷二",
+        "entryTitle": "浮碧樓",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E7%89%A7%E9%9A%B1%E9%9B%86/%E8%A9%A9%E8%97%81%E5%8D%B7%E4%BA%8C",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=%E7%89%A7%E9%9A%B1%E9%9B%86/%E8%A9%A9%E8%97%81%E5%8D%B7%E4%BA%8C&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "昨過永明寺。暫登浮碧樓。城空月一片。石老雲千秋。麟馬去不返。天孫何處遊。長嘯倚風磴。山靑江水流。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "위키문헌 牧隱集/詩藁卷二에서 본문을 직접 확인했다. 같은 제목 혼동을 피하려고 東文選/卷十도 대조했고, 해당 전승 역시 李穡 항목 아래에 실린 작품임을 확인했다."
+      }
+    },
+    {
+      "authorKo": "이색",
+      "authorHanja": "李穡",
+      "candidateTitle": "제야시",
+      "matchedTitle": "歲暮",
+      "sourceWork": {
+        "collectionTitle": "牧隱詩藁",
+        "juan": "卷二十七",
+        "entryTitle": "歲暮",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E7%89%A7%E9%9A%B1%E9%9B%86/%E8%A9%A9%E8%97%81%E5%8D%B7%E4%BA%8C%E5%8D%81%E4%B8%83",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=%E7%89%A7%E9%9A%B1%E9%9B%86/%E8%A9%A9%E8%97%81%E5%8D%B7%E4%BA%8C%E5%8D%81%E4%B8%83&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "歲暮心彌壯。天陰骨更酸。丹田久蕪穢。白晝懶衣冠。詩酒三生樂。雲山四面寬。微吟抱眞素。深谷翳芝蘭。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "seed의 '제야시'를 현재 공개 원문 경로에 맞춰 연말 시 후보로 구체화했다. 이번 확인 범위에서는 제목이 그대로 除夜인 李穡 작품은 찾지 못했고, 같은 牧隱詩藁의 歲暮를 우선 확보했다."
+      }
+    },
+    {
+      "authorKo": "이색",
+      "authorHanja": "李穡",
+      "candidateTitle": "사행·회고시",
+      "matchedTitle": "渡鴨綠",
+      "sourceWork": {
+        "collectionTitle": "牧隱詩藁",
+        "juan": "卷二",
+        "entryTitle": "渡鴨綠",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E7%89%A7%E9%9A%B1%E9%9B%86/%E8%A9%A9%E8%97%81%E5%8D%B7%E4%BA%8C",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=%E7%89%A7%E9%9A%B1%E9%9B%86/%E8%A9%A9%E8%97%81%E5%8D%B7%E4%BA%8C&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "熏風吹客路。落日照鄕關。小雨波聲急。平波草色寒。北征通萬里。東去接三韓。駟馬今安在。吾生愧滿顏。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "鴨綠을 건너는 장면이 제목에 직접 드러나는 사행 계열 작품이라 seed의 '사행·회고시' 묶음에 바로 연결하기 좋다."
+      }
+    },
+    {
+      "authorKo": "이색",
+      "authorHanja": "李穡",
+      "candidateTitle": "사행·회고시",
+      "matchedTitle": "送申碩甫歸寧海府",
+      "sourceWork": {
+        "collectionTitle": "牧隱詩藁",
+        "juan": "卷二",
+        "entryTitle": "送申碩甫歸寧海府",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E7%89%A7%E9%9A%B1%E9%9B%86/%E8%A9%A9%E8%97%81%E5%8D%B7%E4%BA%8C",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=%E7%89%A7%E9%9A%B1%E9%9B%86/%E8%A9%A9%E8%97%81%E5%8D%B7%E4%BA%8C&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "飄風何發發。白雲亦茫茫。之子有遐想。超忽歸故鄕。新王方重士。臺閤集鸞凰。如何尙其事。白駒不食場。丹陽我鄕曲。雲物冠東方。功名苟云可。卜築及康彊。共上觀魚臺。一吸扶桑光。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "권말 주기에는 名彥 annotation이 붙어 있다. 귀향·전송 맥락이 뚜렷해 이동과 회고 정서를 함께 보여주는 후보로 적합하다."
+      }
+    },
+    {
+      "authorKo": "이색",
+      "authorHanja": "李穡",
+      "candidateTitle": "牧隱藁 수록시",
+      "matchedTitle": "牧牛吟",
+      "sourceWork": {
+        "collectionTitle": "牧隱詩藁",
+        "juan": "卷二",
+        "entryTitle": "牧牛吟",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E7%89%A7%E9%9A%B1%E9%9B%86/%E8%A9%A9%E8%97%81%E5%8D%B7%E4%BA%8C",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=%E7%89%A7%E9%9A%B1%E9%9B%86/%E8%A9%A9%E8%97%81%E5%8D%B7%E4%BA%8C&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "平莎綿綿乍收霧。村童牽牛向溪樹。牛行芳草坡。牛飮垂楊渡。村童亦睡牛亦飽。吹笛歸來日將暮。年▣新菑趁春扈。牛蹄欲脫汗如雨。辛勤耕穫不滿甔。猶向春風醉歌舞。吾生慣作行路難。長羡爾背如車安。何時林下讀周易。蓑笠不知風雨寒。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "seed에 적힌 특정 제목은 아니지만, 牧隱詩藁 본편에서 안정적으로 열리는 대표 수록시라서 worker 결과의 기본 앵커로 삼기 좋다. 원문에 일부 판독 곤란 문자(▣)가 남아 있다."
+      }
+    },
+    {
+      "authorKo": "이색",
+      "authorHanja": "李穡",
+      "candidateTitle": "牧隱藁 수록시",
+      "matchedTitle": "夜坐有感",
+      "sourceWork": {
+        "collectionTitle": "牧隱詩藁",
+        "juan": "卷二",
+        "entryTitle": "夜坐有感",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E7%89%A7%E9%9A%B1%E9%9B%86/%E8%A9%A9%E8%97%81%E5%8D%B7%E4%BA%8C",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=%E7%89%A7%E9%9A%B1%E9%9B%86/%E8%A9%A9%E8%97%81%E5%8D%B7%E4%BA%8C&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "草堂燈火絶煩囂。入夜都忘涉獵勞。忽得唐詩參李杜。更將秦史斬斯高。\n\n天下紛紛衆口囂。何人能息我民勞。臥看滄海風濤壯。擬掛雲帆萬丈高。\n\n丈夫志氣本囂囂。再造乾坤豈是勞。擊柱已萌烹狗禍。始知圯下素書高。\n\n車馬紛紛日夜囂。縱成功業亦云勞。世間萬事眞棋局。妙手無如不著高。\n\n森森綠樹鳥猿囂。欲試昌黎陟降勞。上了㝡尖還大笑。不如平地望嵩高。\n\n盪盡風騷更不囂。雕龍畫虎是徒勞。文非西漢未爲古。詩到建安方是高。\n\n却掃柴門誰敢囂。閑中尤覺昔年勞。夜來小雨風吹去。更喜春畦芽漸高。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "七首 연작 전체가 한 제목 아래 묶여 있으므로, 병합 단계에서는 단일 작품 카드로 둘지 연작 분할이 필요한지 별도 판단이 필요하다."
+      }
+    }
+  ],
+  "blockers": [
+    {
+      "candidateTitle": "제야시",
+      "reason": "이번 확인에서는 공개 위키문헌 경로에서 李穡의 제목이 그대로 '除夜'인 작품을 찾지 못했다. 대신 같은 牧隱詩藁의 연말 시 '歲暮'를 확보해 제야시 계열 후보로 대체 기록했다."
+    }
+  ],
+  "sourcesConsulted": [
+    {
+      "url": "https://zh.wikisource.org/zh-hant/%E7%89%A7%E9%9A%B1%E9%9B%86",
+      "note": "牧隱集 메인 목차에서 作者 李穡, 詩藁卷一-三十五 노출, 1626 표기, 공공영역/위키문헌 라이선스 문구를 확인했다."
+    },
+    {
+      "url": "https://zh.wikisource.org/zh-hant/%E7%89%A7%E9%9A%B1%E9%9B%86/%E8%A9%A9%E8%97%81%E5%8D%B7%E4%BA%8C",
+      "note": "浮碧樓, 渡鴨綠, 送申碩甫歸寧海府, 牧牛吟, 夜坐有感 등 핵심 후보의 공개 본문을 직접 확인했다."
+    },
+    {
+      "url": "https://zh.wikisource.org/w/index.php?title=%E7%89%A7%E9%9A%B1%E9%9B%86/%E8%A9%A9%E8%97%81%E5%8D%B7%E4%BA%8C&action=raw",
+      "note": "volume 2 raw endpoint로 제목과 본문 문자열을 다시 대조해 복사 정확도를 확인했다."
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E7%89%A7%E9%9A%B1%E9%9B%86/%E8%A9%A9%E8%97%81%E5%8D%B7%E4%BA%8C%E5%8D%81%E4%B8%83",
+      "note": "연말 계열 후보 歲暮의 공개 본문 위치를 확인했다."
+    },
+    {
+      "url": "https://zh.wikisource.org/w/index.php?title=%E7%89%A7%E9%9A%B1%E9%9B%86/%E8%A9%A9%E8%97%81%E5%8D%B7%E4%BA%8C%E5%8D%81%E4%B8%83&action=raw",
+      "note": "volume 27 raw endpoint에서 歲暮 제목과 본문을 다시 확인했다."
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/%E6%9D%B1%E6%96%87%E9%81%B8/%E5%8D%B7%E5%8D%81",
+      "note": "浮碧樓가 東文選/卷十에서도 李穡 아래 실려 있음을 확인했다. 바로 뒤에 李崇仁 등 다른 저자 항목이 이어져 같은 제목 혼동 방지에 사용했다."
+    }
+  ]
+}

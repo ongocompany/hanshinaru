@@ -1,0 +1,329 @@
+{
+  "workerId": "worker-3-lee-jehyeon-jeong-dojeon-kim-jongjik",
+  "modelRecommendation": "gpt-5.4",
+  "status": "completed",
+  "targetAuthors": [
+    "이제현",
+    "정도전",
+    "김종직"
+  ],
+  "summary": {
+    "candidateWorksChecked": 9,
+    "directTextWorksFound": 0,
+    "ocrCandidates": 0,
+    "blockedWorks": 0
+  },
+  "poems": [
+    {
+      "authorKo": "이제현",
+      "authorHanja": "李齊賢",
+      "candidateTitle": "小樂府",
+      "matchedTitle": "小樂府",
+      "sourceWork": {
+        "collectionTitle": "益齋亂稿 卷第四",
+        "juan": "卷第四",
+        "entryTitle": "小樂府",
+        "sourceUrl": "https://ygc.skku.edu/ygc/sub.do?dataid=A_koc_IJN_0090",
+        "rawUrl": "https://ygc.skku.edu/ygc/sub.do?dataid=A_koc_IJN_0090_0490",
+        "sourcePolicyId": null,
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "source-located",
+        "notes": "YGC 개별 항목 page에서 제목과 본문 노출을 확인했지만, 현재 source policy 매핑이 없어 poemZh는 비워 두고 locator만 남김."
+      }
+    },
+    {
+      "authorKo": "이제현",
+      "authorHanja": "李齊賢",
+      "candidateTitle": "題長安逆旅",
+      "matchedTitle": "題長安逆旅",
+      "sourceWork": {
+        "collectionTitle": "益齋亂稿 卷第二",
+        "juan": "卷第二",
+        "entryTitle": "題長安逆旅",
+        "sourceUrl": "https://ygc.skku.edu/ygc/sub.do?dataid=A_koc_IJN_0070",
+        "rawUrl": "https://ygc.skku.edu/ygc/sub.do?dataid=A_koc_IJN_0070_0270",
+        "sourcePolicyId": null,
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "source-located",
+        "notes": "益齋亂稿 권2 개별 poem page가 바로 열려서 작품 locator는 안정적이다. 이번 worker는 collection catalog 용도로만 기록."
+      }
+    },
+    {
+      "authorKo": "이제현",
+      "authorHanja": "李齊賢",
+      "candidateTitle": "寄題白花禪院觀空樓次韻",
+      "matchedTitle": "寄題白花禪院觀空樓次韻",
+      "sourceWork": {
+        "collectionTitle": "益齋亂稿 卷第三",
+        "juan": "卷第三",
+        "entryTitle": "寄題白花禪院觀空樓次韻",
+        "sourceUrl": "https://ygc.skku.edu/ygc/sub.do?dataid=A_koc_IJN_0080",
+        "rawUrl": "https://ygc.skku.edu/ygc/sub.do?dataid=A_koc_IJN_0080_0250",
+        "sourcePolicyId": null,
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "source-located",
+        "notes": "권3의 개별 수록 위치와 제목이 바로 확인된다. 사찰 제영시 계열 대표 예시로 채택."
+      }
+    },
+    {
+      "authorKo": "정도전",
+      "authorHanja": "鄭道傳",
+      "candidateTitle": "關山月",
+      "matchedTitle": "關山月",
+      "sourceWork": {
+        "collectionTitle": "三峯集 卷之一",
+        "juan": "卷之一",
+        "entryTitle": "關山月",
+        "sourceUrl": "https://ygc.skku.edu/ygc/sub.do?dataid=A_jon_SBZ_0040",
+        "rawUrl": "https://ygc.skku.edu/ygc/sub.do?dataid=A_jon_SBZ_0040_0020_0010",
+        "sourcePolicyId": null,
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "source-located",
+        "notes": "三峯集 권1 오언고시 하위의 개별 item page가 존재한다. collection locator와 개별 작품 locator가 함께 확인됨."
+      }
+    },
+    {
+      "authorKo": "정도전",
+      "authorHanja": "鄭道傳",
+      "candidateTitle": "秋夜",
+      "matchedTitle": "秋夜",
+      "sourceWork": {
+        "collectionTitle": "三峯集 卷之一",
+        "juan": "卷之一",
+        "entryTitle": "秋夜",
+        "sourceUrl": "https://ygc.skku.edu/ygc/sub.do?dataid=A_jon_SBZ_0040",
+        "rawUrl": "https://ygc.skku.edu/ygc/sub.do?dataid=A_jon_SBZ_0040_0020_0090",
+        "sourcePolicyId": null,
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "source-located",
+        "notes": "권1 오언고시 개별 page 확인. 정치적 전환기 정서를 보여주는 대표 시로 잡기 좋다."
+      }
+    },
+    {
+      "authorKo": "정도전",
+      "authorHanja": "鄭道傳",
+      "candidateTitle": "文德曲",
+      "matchedTitle": "文德曲",
+      "sourceWork": {
+        "collectionTitle": "三峯集 卷之二",
+        "juan": "卷之二",
+        "entryTitle": "文德曲",
+        "sourceUrl": "https://ygc.skku.edu/ygc/sub.do?dataid=A_jon_SBZ_0050_0050",
+        "rawUrl": "https://ygc.skku.edu/ygc/sub.do?dataid=A_jon_SBZ_0050_0050_0040",
+        "sourcePolicyId": null,
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "source-located",
+        "notes": "권2 樂章 항목에서 직접 확인. 정도전의 개국 악장 계열 대표 locator로 적합하다."
+      }
+    },
+    {
+      "authorKo": "김종직",
+      "authorHanja": "金宗直",
+      "candidateTitle": "七夕。邀春塘。",
+      "matchedTitle": "七夕。邀春塘。",
+      "sourceWork": {
+        "collectionTitle": "佔畢齋集 卷七",
+        "juan": "卷七",
+        "entryTitle": "七夕。邀春塘。",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E4%BD%94%E7%95%A2%E9%BD%8B%E9%9B%86/%E5%8D%B7%E4%B8%83",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=%E4%BD%94%E7%95%A2%E9%BD%8B%E9%9B%86/%E5%8D%B7%E4%B8%83&oldid=2408539",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "source-located",
+        "notes": "zh Wikisource 권7 목차와 본문 heading에서 직접 확인. 위키문헌 계열이라 후속 수집은 비교적 수월하다."
+      }
+    },
+    {
+      "authorKo": "김종직",
+      "authorHanja": "金宗直",
+      "candidateTitle": "答金郭二秀才",
+      "matchedTitle": "答金郭二秀才",
+      "sourceWork": {
+        "collectionTitle": "佔畢齋集 卷九",
+        "juan": "卷九",
+        "entryTitle": "答金郭二秀才 宏弼, 承華",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E4%BD%94%E7%95%A2%E9%BD%8B%E9%9B%86/%E5%8D%B7%E4%B9%9D",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=%E4%BD%94%E7%95%A2%E9%BD%8B%E9%9B%86/%E5%8D%B7%E4%B9%9D&oldid=2408541",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "source-located",
+        "notes": "zh Wikisource 권9 목차와 본문 heading에서 직접 확인. 사림 교유망이 드러나는 대표 항목으로 채택."
+      }
+    },
+    {
+      "authorKo": "김종직",
+      "authorHanja": "金宗直",
+      "candidateTitle": "七詠",
+      "matchedTitle": "七詠",
+      "sourceWork": {
+        "collectionTitle": "新增東國輿地勝覽 卷021, 佔畢齋集",
+        "juan": "卷021",
+        "entryTitle": "新增七詠金宗直詩 會蘇曲 외 6수",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%96%B0%E5%A2%9E%E6%9D%B1%E5%9C%8B%E8%BC%BF%E5%9C%B0%E5%8B%9D%E8%A6%BD/%E5%8D%B7021",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%A2%9E%E6%9D%B1%E5%9C%8B%E8%BC%BF%E5%9C%B0%E5%8B%9D%E8%A6%BD/%E5%8D%B7021&oldid=2440001",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "source-located",
+        "notes": "Donggyeong Japgi 쪽 compound split과 같은 7곡 묶음으로 확인됨. 會蘇曲, 憂息曲, 鴟述嶺(repo 표기는 鵄述嶺), 怛忉歌, 陽山歌, 碓樂, 黃昌郞의 순서로 열린다."
+      }
+    }
+  ],
+  "blockers": [],
+  "sourcesConsulted": [
+    {
+      "url": "https://ygc.skku.edu/ygc/sub.do?dataid=A_koc_IJN",
+      "note": "益齋亂稿 전체 locator와 권1~10 구조를 확인했다."
+    },
+    {
+      "url": "https://ygc.skku.edu/ygc/sub.do?dataid=A_koc_IJN_0090_0490",
+      "note": "小樂府 개별 item page. 제목과 연작 본문이 메타 description까지 노출된다."
+    },
+    {
+      "url": "https://ygc.skku.edu/ygc/sub.do?dataid=A_koc_IJN_0070_0270",
+      "note": "題長安逆旅 개별 item page. 권2 소속과 본문 locator를 확인했다."
+    },
+    {
+      "url": "https://ygc.skku.edu/ygc/sub.do?dataid=A_koc_IJN_0080_0250",
+      "note": "寄題白花禪院觀空樓次韻 개별 item page. 권3 수록 위치 확인."
+    },
+    {
+      "url": "https://zh.wikisource.org/zh-hans/%E6%AB%9F%E7%BF%81%E7%A8%97%E8%AA%AA",
+      "note": "櫟翁稗說 collection locator 확인. 현재 zh Wikisource는 partial 상태이고 산문 계열이라 이번 worker의 poem 후보에는 넣지 않았다."
+    },
+    {
+      "url": "https://ygc.skku.edu/ygc/sub.do?dataid=A_jon_SBZ",
+      "note": "三峯集 전체 권차와 세부 dataid 구조를 확인했다."
+    },
+    {
+      "url": "https://jsg.aks.ac.kr/dir/view?catePath=%EC%88%98%EC%A7%91%EB%B6%84%EB%A5%98%2F%EC%99%95%EC%8B%A4%2F%EA%B3%A0%EC%84%9C&dataId=LIB_113823",
+      "note": "디지털장서각 서지 page. 현재 전하는 三峰集이 1791년 중간본 14권 7책임을 재확인했다."
+    },
+    {
+      "url": "https://ygc.skku.edu/ygc/sub.do?dataid=A_jon_SBZ_0040_0020_0010",
+      "note": "關山月 개별 item page. 권1 오언고시에 직접 걸린다."
+    },
+    {
+      "url": "https://ygc.skku.edu/ygc/sub.do?dataid=A_jon_SBZ_0040_0020_0090",
+      "note": "秋夜 개별 item page. 권1 오언고시에 직접 걸린다."
+    },
+    {
+      "url": "https://ygc.skku.edu/ygc/sub.do?dataid=A_jon_SBZ_0050_0050_0040",
+      "note": "文德曲 개별 item page. 권2 樂章 수록을 확인했다."
+    },
+    {
+      "url": "https://zh.wikisource.org/zh-hant/%E4%BD%94%E7%95%A2%E9%BD%8B%E9%9B%86",
+      "note": "佔畢齋集 collection locator. 권1~23과 부록, PD-old 표기를 확인했다."
+    },
+    {
+      "url": "https://zh.wikisource.org/zh-hant/%E4%BD%94%E7%95%A2%E9%BD%8B%E9%9B%86/%E5%8D%B7%E4%B8%83",
+      "note": "卷七에서 七夕。邀春塘。 heading과 영구 oldid 2408539를 확인했다."
+    },
+    {
+      "url": "https://zh.wikisource.org/zh-hant/%E4%BD%94%E7%95%A2%E9%BD%8B%E9%9B%86/%E5%8D%B7%E4%B9%9D",
+      "note": "卷九에서 答金郭二秀才 heading과 영구 oldid 2408541를 확인했다."
+    },
+    {
+      "url": "https://zh.wikisource.org/zh-hant/%E6%96%B0%E5%A2%9E%E6%9D%B1%E5%9C%8B%E8%BC%BF%E5%9C%B0%E5%8B%9D%E8%A6%BD/%E5%8D%B7021",
+      "note": "卷021에서 新增七詠金宗直詩 會蘇曲을 시작으로 憂息曲, 鴟述嶺, 怛忉歌, 陽山歌, 碓樂, 黃昌郞이 연속해 열리는 것을 확인했다."
+    }
+  ]
+}

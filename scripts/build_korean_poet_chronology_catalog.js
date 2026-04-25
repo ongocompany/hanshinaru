@@ -24,6 +24,7 @@ const RECORD_FILES = [
   path.join(ROOT, 'docs', 'spec', 'korean-hansi-jeong-jisang-tranche1.records.v1.json'),
   path.join(ROOT, 'docs', 'spec', 'korean-hansi-jeong-jisang-tranche2.records.v1.json')
 ];
+const WORKER_RESULTS_DIR = path.join(ROOT, 'docs', 'spec', 'korean-poet-worker-results');
 
 const OUT_POETS = path.join(ROOT, 'docs', 'spec', 'korean-poets-chronology.v1.json');
 const OUT_POEMS = path.join(ROOT, 'docs', 'spec', 'korean-poems-chronology.v1.json');
@@ -129,6 +130,10 @@ function parseWorkCandidates(value) {
     .filter(Boolean)
     .map((item) => item.replace(/^《|》$/g, '').trim())
     .filter(Boolean);
+}
+
+function hasHanja(value) {
+  return typeof value === 'string' && /[\u3400-\u9FFF]/u.test(value);
 }
 
 function inferGenre(authorRow, title) {
@@ -356,6 +361,105 @@ function normalizeDirectRecord(record) {
   };
 }
 
+function loadWorkerResults() {
+  if (!fs.existsSync(WORKER_RESULTS_DIR)) return [];
+  const results = [];
+  for (const fileName of fs.readdirSync(WORKER_RESULTS_DIR).filter((name) => name.endsWith('.json')).sort()) {
+    const filePath = path.join(WORKER_RESULTS_DIR, fileName);
+    const data = readJson(filePath);
+    for (const [index, poem] of (data.poems || []).entries()) {
+      results.push({
+        ...poem,
+        workerId: data.workerId || fileName.replace(/\.json$/u, ''),
+        workerFile: path.relative(ROOT, filePath),
+        workerIndex: index + 1
+      });
+    }
+  }
+  return results;
+}
+
+function normalizeWorkerPoem(workerPoem, authorsByName) {
+  const author = authorsByName.get(workerPoem.authorKo);
+  if (!author) {
+    throw new Error(`Unknown worker author: ${workerPoem.authorKo}`);
+  }
+
+  const sourceWork = workerPoem.sourceWork || {};
+  const ingest = workerPoem.ingest || {};
+  const readiness = ingest.recommendedReadiness || 'source-located';
+  const sequence = String(workerPoem.workerIndex).padStart(3, '0');
+  const idPrefix = `KPOEM-WORKER-${author.slug.toUpperCase()}-${sequence}`;
+  const displayTitle = workerPoem.matchedTitle || workerPoem.candidateTitle;
+  const genre = inferGenre(author, displayTitle || workerPoem.candidateTitle || '');
+  const publicAllowed = readiness === 'direct-text-collected' && workerPoem.rights?.originalTextUsage === 'commercial_allowed';
+
+  return {
+    poemId: idPrefix,
+    canonicalId: `KPOEM-CANON-WORKER-${author.slug.toUpperCase()}-${sequence}`,
+    title: {
+      zh: hasHanja(displayTitle) ? displayTitle : null,
+      ko: displayTitle || workerPoem.candidateTitle
+    },
+    author: {
+      authorId: author.authorId,
+      zh: workerPoem.authorHanja || author.name.hanja,
+      ko: workerPoem.authorKo
+    },
+    era: author.era,
+    genre: {
+      ...genre,
+      track: readiness === 'direct-text-collected' ? 'hansi-direct-text' : genre.track
+    },
+    sourceWork: {
+      collectionTitle: sourceWork.collectionTitle || author.sourceHint || null,
+      juan: sourceWork.juan || null,
+      entryTitle: sourceWork.entryTitle || workerPoem.matchedTitle || workerPoem.candidateTitle || null,
+      sourceUrl: sourceWork.sourceUrl || null,
+      rawUrl: sourceWork.rawUrl || null,
+      sourcePolicyId: sourceWork.sourcePolicyId || null,
+      locatorConfidence: sourceWork.locatorConfidence || 'low',
+      verificationStatus: readiness === 'blocked' ? 'blocked' : readiness === 'direct-text-collected' ? 'verified-direct-text' : 'source-located'
+    },
+    text: {
+      poemZh: workerPoem.text?.poemZh || null,
+      poemKoReading: workerPoem.text?.poemKoReading || null,
+      poemKoGloss: workerPoem.text?.poemKoGloss || null
+    },
+    assets: {
+      translationKo: null,
+      commentaryKo: null,
+      ownedTranslationNeeded: true
+    },
+    rights: {
+      originalText: {
+        status: workerPoem.rights?.originalTextUsage || 'unknown',
+        publicDisplayAllowedNow: publicAllowed,
+        commercialAllowedNow: publicAllowed
+      },
+      translation: {
+        status: 'owned-translation-needed',
+        publicDisplayAllowedNow: false,
+        commercialAllowedNow: false
+      }
+    },
+    ingest: {
+      readiness,
+      targetDb: 'poems',
+      sourceFile: workerPoem.workerFile,
+      workerId: workerPoem.workerId,
+      candidateTitle: workerPoem.candidateTitle,
+      matchedTitle: workerPoem.matchedTitle || null,
+      notes: ingest.notes || null,
+      ownedTranslationNeeded: true
+    }
+  };
+}
+
+function countByReadiness(poems, readiness) {
+  return poems.filter((poem) => poem.ingest?.readiness === readiness).length;
+}
+
 function main() {
   const timelineIndex = loadTimelineIndex();
   const waveIndex = loadWaveIndex();
@@ -383,12 +487,16 @@ function main() {
       }
     };
   });
+  const authorsByName = new Map(authors.map((author) => [author.name.ko, author]));
 
   const directPoems = directRecords.map(normalizeDirectRecord);
+  const workerPoems = loadWorkerResults().map((workerPoem) => normalizeWorkerPoem(workerPoem, authorsByName));
   const directKeys = new Set(directPoems.map((poem) => `${poem.author.ko}::${poem.title.zh || poem.title.ko}`));
+  const workerCandidateKeys = new Set(workerPoems.map((poem) => `${poem.author.ko}::${poem.ingest.candidateTitle}`));
   const candidatePoems = authors
     .flatMap(buildCandidatePoems)
-    .filter((poem) => !directKeys.has(`${poem.author.ko}::${poem.title.zh || poem.title.ko}`));
+    .filter((poem) => !directKeys.has(`${poem.author.ko}::${poem.title.zh || poem.title.ko}`))
+    .filter((poem) => !workerCandidateKeys.has(`${poem.author.ko}::${poem.title.zh || poem.title.ko}`));
 
   const commonMeta = {
     version: '2026-04-25.v1',
@@ -400,7 +508,8 @@ function main() {
       'docs/spec/korean-hansi-famous-authors-wave1-batch.v1.json',
       'docs/spec/korean-hansi-choe-chiwon-tranche1.records.v1.json',
       'docs/spec/korean-hansi-jeong-jisang-tranche1.records.v1.json',
-      'docs/spec/korean-hansi-jeong-jisang-tranche2.records.v1.json'
+      'docs/spec/korean-hansi-jeong-jisang-tranche2.records.v1.json',
+      'docs/spec/korean-poet-worker-results/*.json'
     ]
   };
 
@@ -424,11 +533,15 @@ function main() {
     catalogId: 'korean-poems-chronology',
     targetDb: 'poems',
     summary: {
-      directTextCollected: directPoems.length,
+      directTextCollected: directPoems.length + countByReadiness(workerPoems, 'direct-text-collected'),
+      sourceLocated: countByReadiness(workerPoems, 'source-located'),
+      ocrCandidate: countByReadiness(workerPoems, 'ocr-candidate'),
+      blocked: countByReadiness(workerPoems, 'blocked'),
       candidateOnly: candidatePoems.length,
-      totalWorks: directPoems.length + candidatePoems.length
+      totalWorks: directPoems.length + workerPoems.length + candidatePoems.length,
+      workerResultWorks: workerPoems.length
     },
-    poems: [...directPoems, ...candidatePoems]
+    poems: [...directPoems, ...workerPoems, ...candidatePoems]
   };
 
   writeJson(OUT_POETS, poetsCatalog);
@@ -439,6 +552,8 @@ function main() {
   console.log(`Authors: ${poetsCatalog.summary.totalAuthors}`);
   console.log(`V1 priority authors: ${poetsCatalog.summary.v1PriorityAuthors}`);
   console.log(`Direct-text poems: ${poemsCatalog.summary.directTextCollected}`);
+  console.log(`Source-located poems: ${poemsCatalog.summary.sourceLocated}`);
+  console.log(`Blocked poems: ${poemsCatalog.summary.blocked}`);
   console.log(`Candidate poems: ${poemsCatalog.summary.candidateOnly}`);
   console.log(`Output: ${path.relative(ROOT, OUT_POETS)}`);
   console.log(`Output: ${path.relative(ROOT, OUT_POEMS)}`);

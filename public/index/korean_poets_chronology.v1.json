@@ -8,7 +8,8 @@
     "docs/spec/korean-hansi-famous-authors-wave1-batch.v1.json",
     "docs/spec/korean-hansi-choe-chiwon-tranche1.records.v1.json",
     "docs/spec/korean-hansi-jeong-jisang-tranche1.records.v1.json",
-    "docs/spec/korean-hansi-jeong-jisang-tranche2.records.v1.json"
+    "docs/spec/korean-hansi-jeong-jisang-tranche2.records.v1.json",
+    "docs/spec/korean-poet-worker-results/*.json"
   ],
   "catalogId": "korean-poets-chronology",
   "targetDb": "poets",
