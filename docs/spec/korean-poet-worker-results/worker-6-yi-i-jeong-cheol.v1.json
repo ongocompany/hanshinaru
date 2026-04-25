@@ -7,8 +7,8 @@
     "정철"
   ],
   "summary": {
-    "candidateWorksChecked": 4,
-    "directTextWorksFound": 10,
+    "candidateWorksChecked": 6,
+    "directTextWorksFound": 15,
     "ocrCandidates": 0,
     "blockedWorks": 0
   },
@@ -292,6 +292,146 @@
         "recommendedReadiness": "direct-text-collected",
         "notes": "松江集 卷一에서 확인한 원방 유배·충정 정서의 단편."
       }
+    },
+    {
+      "authorKo": "이이",
+      "authorHanja": "李珥",
+      "candidateTitle": "금강산시",
+      "matchedTitle": "楓嶽贈小菴老僧",
+      "sourceWork": {
+        "collectionTitle": "栗谷先生全書",
+        "juan": "卷一",
+        "entryTitle": "楓嶽贈小菴老僧",
+        "sourceUrl": "https://zh.wikisource.org/wiki/栗谷先生全書/卷一",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=栗谷先生全書/卷一&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "魚躍鳶飛上下同。這般非色亦非空。等閒一笑看身世。獨立斜陽萬木中。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "栗谷先生全書 卷一 `楓嶽贈小菴老僧 幷序`의 시 본문. 금강산 유람과 유불 논변 맥락이 함께 있어 금강산시 seed 해소에 적합하다."
+      }
+    },
+    {
+      "authorKo": "이이",
+      "authorHanja": "李珥",
+      "candidateTitle": "금강산시",
+      "matchedTitle": "萬瀑洞",
+      "sourceWork": {
+        "collectionTitle": "栗谷先生全書",
+        "juan": "卷一",
+        "entryTitle": "萬瀑洞",
+        "sourceUrl": "https://zh.wikisource.org/wiki/栗谷先生全書/卷一",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=栗谷先生全書/卷一&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "石逕高低入洞門。洞中飛瀑怒雷奔。巖橫萬古難消雪。山聳千秋不散雲。獅子峯前披翠霧。火龍淵上坐黃昏。夜投普德禪菴宿。鶴唳猿啼攪夢魂。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "栗谷先生全書 卷一의 금강산 萬瀑洞 제영. 장소성이 뚜렷한 팔구 한시라 개별 카드로 분리했다."
+      }
+    },
+    {
+      "authorKo": "이이",
+      "authorHanja": "李珥",
+      "candidateTitle": "금강산시",
+      "matchedTitle": "楓嶽登九井看日出",
+      "sourceWork": {
+        "collectionTitle": "栗谷先生全書",
+        "juan": "卷一",
+        "entryTitle": "楓嶽登九井看日出",
+        "sourceUrl": "https://zh.wikisource.org/wiki/栗谷先生全書/卷一",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=栗谷先生全書/卷一&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "嵯峨雪峯幾千仞。鳥道人行白雲外。靑藜戛上犖确中。兩眼漸覺東丘隘。夜投禪室徹曉坐。時聽笙簫來上界。金鷄一鳴登絶頂。萬境熹微天尙昧。須臾火光漲天地。不辨滄波與曉靄。朱輪轉上數竿高。一朶彩雲如傘蓋。靑紅漸分水與天。極目始知東海大。扶桑暘谷渺何處。欲看出處知無奈。秦皇夸父等小兒。千載令人起一喟。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "栗谷先生全書 卷一에서 확인한 금강산 九井 일출 장편. 금강산 유람시의 대표 장면으로 남긴다."
+      }
+    },
+    {
+      "authorKo": "이이",
+      "authorHanja": "李珥",
+      "candidateTitle": "학문·수양시",
+      "matchedTitle": "燈下看書",
+      "sourceWork": {
+        "collectionTitle": "栗谷先生全書",
+        "juan": "卷一",
+        "entryTitle": "燈下看書",
+        "sourceUrl": "https://zh.wikisource.org/wiki/栗谷先生全書/卷一",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=栗谷先生全書/卷一&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "何處人閒有廣居。百年身世是蘧廬。初回海外游山夢。一盞靑燈照古書。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "栗谷先生全書 卷一의 독서 장면 단편. 학문·수양시 seed를 짧고 안정적인 본문으로 해소한다."
+      }
+    },
+    {
+      "authorKo": "이이",
+      "authorHanja": "李珥",
+      "candidateTitle": "학문·수양시",
+      "matchedTitle": "至夜書懷",
+      "sourceWork": {
+        "collectionTitle": "栗谷先生全書",
+        "juan": "卷一",
+        "entryTitle": "至夜書懷",
+        "sourceUrl": "https://zh.wikisource.org/wiki/栗谷先生全書/卷一",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=栗谷先生全書/卷一&action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "子半一陽動。天心妙難議。若識無中有。雷聲殷大地。中宵點新火。耿耿坐不寐。及此夜氣淸。默念玄機祕。向來剝牀膚。萬彙困凋瘁。春回九泉底。萌蘖含生意。一氣互動靜。闔闢誰汝使。感彼天運復。省心還惴惴。噫我參三極。精氣秀萬類。明德皎日月。斯皇天所畀。妄念蝕本明。始微終轉熾。山木困斧斤。天眞泪私僞。二十五年閒。沈迷夢中醉。追思昨者非。令人發驚悸。我今痛自誓。昊天應聽視。色爲伐性斧。胡爲留汝思。若使敬爲主。染心安所自。名乃實之賓。莫以文爲事。用功於實地。繡繪何暇嗜。家貧親已老。念之常不置。君子養以善。三牲不足比。苟能素其位。所居常坦易。外貌不莊肅。怠慢於斯萃。散坐與空談。畢竟非善戲。衣冠必整飭。言語愼勿費。中心不專一。邪思所窺覬。擾擾起復滅。火炎兼馬駛。截斷前後際。卓立恒勿貳。愼獨與不息。聖謨斯爲至。參前復倚衡。不可須臾離。處心廓如天。屋漏可無愧。任重且道遠。要以志爲帥。九仞今正始。莫使虧一簣。冥觀天地化。至健功乃施。爲人不法此。有身乃自棄。但使泥塵盡。水鏡元無累。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "栗谷先生全書 卷一의 수양·성찰 장편. 내용상 敬, 愼獨, 不息, 立志를 직접 다루므로 학문·수양시 seed에 대응한다."
+      }
     }
   ],
   "blockers": [],
@@ -305,6 +445,11 @@
       "url": "https://zh.wikisource.org/wiki/松江集/卷一",
       "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
       "note": "raw view로 정철 五言絶句 초반의 단편 5건을 확인했다."
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/栗谷先生全書/卷一",
+      "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+      "note": "raw view로 이이 금강산시 3건과 학문·수양시 2건을 추가 확인했다."
     }
   ]
 }
