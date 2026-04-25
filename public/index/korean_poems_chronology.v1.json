@@ -14,13 +14,13 @@
   "catalogId": "korean-poems-chronology",
   "targetDb": "poems",
   "summary": {
-    "directTextCollected": 60,
-    "sourceLocated": 11,
+    "directTextCollected": 78,
+    "sourceLocated": 8,
     "ocrCandidate": 0,
     "blocked": 1,
     "candidateOnly": 154,
-    "totalWorks": 226,
-    "workerResultWorks": 27
+    "totalWorks": 241,
+    "workerResultWorks": 42
   },
   "poems": [
     {
@@ -8723,8 +8723,8 @@
       "poemId": "KPOEM-WORKER-KIM-JONGJIK-009",
       "canonicalId": "KPOEM-CANON-WORKER-KIM-JONGJIK-009",
       "title": {
-        "zh": "七詠",
-        "ko": "七詠"
+        "zh": "會蘇曲",
+        "ko": "會蘇曲"
       },
       "author": {
         "authorId": "KAUTH-KIM-JONGJIK",
@@ -8737,20 +8737,20 @@
       "genre": {
         "broad": "한시",
         "form": "미확정",
-        "track": "hansi-candidate"
+        "track": "hansi-direct-text"
       },
       "sourceWork": {
         "collectionTitle": "新增東國輿地勝覽 卷021, 佔畢齋集",
         "juan": "卷021",
-        "entryTitle": "新增七詠金宗直詩 會蘇曲 외 6수",
+        "entryTitle": "新增七詠金宗直詩 會蘇曲",
         "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%96%B0%E5%A2%9E%E6%9D%B1%E5%9C%8B%E8%BC%BF%E5%9C%B0%E5%8B%9D%E8%A6%BD/%E5%8D%B7021",
         "rawUrl": "https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%A2%9E%E6%9D%B1%E5%9C%8B%E8%BC%BF%E5%9C%B0%E5%8B%9D%E8%A6%BD/%E5%8D%B7021&oldid=2440001",
         "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
         "locatorConfidence": "high",
-        "verificationStatus": "source-located"
+        "verificationStatus": "verified-direct-text"
       },
       "text": {
-        "poemZh": null,
+        "poemZh": "會蘇曲會蘇曲。西風吹廣庭，明月滿華屋。王姬壓坐理繅車，六部女兒多如簇。爾筥旣盈我筐空，釃酒揶揄笑相謔。一婦嘆千室勸，坐令四方勤杼柚。嘉俳縱失閨中儀，猶勝跋河爭嗃嗃。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -8762,8 +8762,8 @@
       "rights": {
         "originalText": {
           "status": "commercial_allowed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
         },
         "translation": {
           "status": "owned-translation-needed",
@@ -8772,13 +8772,391 @@
         }
       },
       "ingest": {
-        "readiness": "source-located",
+        "readiness": "direct-text-collected",
         "targetDb": "poems",
         "sourceFile": "docs/spec/korean-poet-worker-results/worker-3-lee-jehyeon-jeong-dojeon-kim-jongjik.v1.json",
         "workerId": "worker-3-lee-jehyeon-jeong-dojeon-kim-jongjik",
         "candidateTitle": "七詠",
-        "matchedTitle": "七詠",
-        "notes": "Donggyeong Japgi 쪽 compound split과 같은 7곡 묶음으로 확인됨. 會蘇曲, 憂息曲, 鴟述嶺(repo 표기는 鵄述嶺), 怛忉歌, 陽山歌, 碓樂, 黃昌郞의 순서로 열린다.",
+        "matchedTitle": "會蘇曲",
+        "notes": "Donggyeong Japgi 쪽 compound split과 같은 기준으로 七詠 7수 중 會蘇曲을 독립 작품으로 분리했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-KIM-JONGJIK-010",
+      "canonicalId": "KPOEM-CANON-WORKER-KIM-JONGJIK-010",
+      "title": {
+        "zh": "憂息曲",
+        "ko": "憂息曲"
+      },
+      "author": {
+        "authorId": "KAUTH-KIM-JONGJIK",
+        "zh": "金宗直",
+        "ko": "김종직"
+      },
+      "era": {
+        "label": "조선 전기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "新增東國輿地勝覽 卷021, 佔畢齋集",
+        "juan": "卷021",
+        "entryTitle": "憂息曲",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%96%B0%E5%A2%9E%E6%9D%B1%E5%9C%8B%E8%BC%BF%E5%9C%B0%E5%8B%9D%E8%A6%BD/%E5%8D%B7021",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%A2%9E%E6%9D%B1%E5%9C%8B%E8%BC%BF%E5%9C%B0%E5%8B%9D%E8%A6%BD/%E5%8D%B7021&oldid=2440001",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "常棣華隨風落扶桑。扶桑萬里鯨鯢浪，縱有音書誰得將？常棣花隨風返鷄林。鷄林春色擁雙闕，友于歡情如許深。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-3-lee-jehyeon-jeong-dojeon-kim-jongjik.v1.json",
+        "workerId": "worker-3-lee-jehyeon-jeong-dojeon-kim-jongjik",
+        "candidateTitle": "七詠",
+        "matchedTitle": "憂息曲",
+        "notes": "七詠 7수 중 憂息曲을 독립 작품으로 분리했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-KIM-JONGJIK-011",
+      "canonicalId": "KPOEM-CANON-WORKER-KIM-JONGJIK-011",
+      "title": {
+        "zh": "鴟述嶺",
+        "ko": "鴟述嶺"
+      },
+      "author": {
+        "authorId": "KAUTH-KIM-JONGJIK",
+        "zh": "金宗直",
+        "ko": "김종직"
+      },
+      "era": {
+        "label": "조선 전기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "新增東國輿地勝覽 卷021, 佔畢齋集",
+        "juan": "卷021",
+        "entryTitle": "鴟述嶺",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%96%B0%E5%A2%9E%E6%9D%B1%E5%9C%8B%E8%BC%BF%E5%9C%B0%E5%8B%9D%E8%A6%BD/%E5%8D%B7021",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%A2%9E%E6%9D%B1%E5%9C%8B%E8%BC%BF%E5%9C%B0%E5%8B%9D%E8%A6%BD/%E5%8D%B7021&oldid=2440001",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "鴟述嶺頭望日本，粘天鯨海無涯岸。良人去時但搖手，生歟死歟音耗斷。長別離，死生寧有相見時？呼天便化武昌石，烈氣千載干空碧。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-3-lee-jehyeon-jeong-dojeon-kim-jongjik.v1.json",
+        "workerId": "worker-3-lee-jehyeon-jeong-dojeon-kim-jongjik",
+        "candidateTitle": "七詠",
+        "matchedTitle": "鴟述嶺",
+        "notes": "七詠 7수 중 鴟述嶺을 독립 작품으로 분리했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-KIM-JONGJIK-012",
+      "canonicalId": "KPOEM-CANON-WORKER-KIM-JONGJIK-012",
+      "title": {
+        "zh": "怛忉歌",
+        "ko": "怛忉歌"
+      },
+      "author": {
+        "authorId": "KAUTH-KIM-JONGJIK",
+        "zh": "金宗直",
+        "ko": "김종직"
+      },
+      "era": {
+        "label": "조선 전기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "新增東國輿地勝覽 卷021, 佔畢齋集",
+        "juan": "卷021",
+        "entryTitle": "怛忉歌",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%96%B0%E5%A2%9E%E6%9D%B1%E5%9C%8B%E8%BC%BF%E5%9C%B0%E5%8B%9D%E8%A6%BD/%E5%8D%B7021",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%A2%9E%E6%9D%B1%E5%9C%8B%E8%BC%BF%E5%9C%B0%E5%8B%9D%E8%A6%BD/%E5%8D%B7021&oldid=2440001",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "怛怛復忉忉，大家幾不保。流蘇帳裏玄鶴倒，揚且之晳難偕老。忉怛忉怛，神物不告知奈何？神物告兮基圖大。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-3-lee-jehyeon-jeong-dojeon-kim-jongjik.v1.json",
+        "workerId": "worker-3-lee-jehyeon-jeong-dojeon-kim-jongjik",
+        "candidateTitle": "七詠",
+        "matchedTitle": "怛忉歌",
+        "notes": "七詠 7수 중 怛忉歌를 독립 작품으로 분리했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-KIM-JONGJIK-013",
+      "canonicalId": "KPOEM-CANON-WORKER-KIM-JONGJIK-013",
+      "title": {
+        "zh": "陽山歌",
+        "ko": "陽山歌"
+      },
+      "author": {
+        "authorId": "KAUTH-KIM-JONGJIK",
+        "zh": "金宗直",
+        "ko": "김종직"
+      },
+      "era": {
+        "label": "조선 전기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "新增東國輿地勝覽 卷021, 佔畢齋集",
+        "juan": "卷021",
+        "entryTitle": "陽山歌",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%96%B0%E5%A2%9E%E6%9D%B1%E5%9C%8B%E8%BC%BF%E5%9C%B0%E5%8B%9D%E8%A6%BD/%E5%8D%B7021",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%A2%9E%E6%9D%B1%E5%9C%8B%E8%BC%BF%E5%9C%B0%E5%8B%9D%E8%A6%BD/%E5%8D%B7021&oldid=2440001",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "敵國爲封豕，荐食我邊彊。赳赳花郞徒，報國心靡遑。荷戈訣妻子，嗽泉啖糗糧。賊人夜劘壘，毅魂飛劍鋩。回首陽山雲，矗矗虹蜺光。哀哉四丈夫，終是北方强。千秋爲鬼雄，相與歆椒漿。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-3-lee-jehyeon-jeong-dojeon-kim-jongjik.v1.json",
+        "workerId": "worker-3-lee-jehyeon-jeong-dojeon-kim-jongjik",
+        "candidateTitle": "七詠",
+        "matchedTitle": "陽山歌",
+        "notes": "七詠 7수 중 陽山歌를 독립 작품으로 분리했다. Wikisource 교감 표기에서는 糧/粻 이형을 주석 처리하고 있어 본문 표기는 糧로 정규화했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-KIM-JONGJIK-014",
+      "canonicalId": "KPOEM-CANON-WORKER-KIM-JONGJIK-014",
+      "title": {
+        "zh": "碓樂",
+        "ko": "碓樂"
+      },
+      "author": {
+        "authorId": "KAUTH-KIM-JONGJIK",
+        "zh": "金宗直",
+        "ko": "김종직"
+      },
+      "era": {
+        "label": "조선 전기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "新增東國輿地勝覽 卷021, 佔畢齋集",
+        "juan": "卷021",
+        "entryTitle": "碓樂",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%96%B0%E5%A2%9E%E6%9D%B1%E5%9C%8B%E8%BC%BF%E5%9C%B0%E5%8B%9D%E8%A6%BD/%E5%8D%B7021",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%A2%9E%E6%9D%B1%E5%9C%8B%E8%BC%BF%E5%9C%B0%E5%8B%9D%E8%A6%BD/%E5%8D%B7021&oldid=2440001",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "東家砧舂黍稻，西家杵擣寒襖。東家西家砧杵聲，卒歲之資贏復贏。儂家窖乏甔石，儂家箱無尺帛。懸鶉衣兮藜羹盌，榮期之樂足飽煖。糟妻糟妻莫謾憂，富貴在天那可求？曲肱而寢有至味，梁鴻孟光眞好逑。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-3-lee-jehyeon-jeong-dojeon-kim-jongjik.v1.json",
+        "workerId": "worker-3-lee-jehyeon-jeong-dojeon-kim-jongjik",
+        "candidateTitle": "七詠",
+        "matchedTitle": "碓樂",
+        "notes": "七詠 7수 중 碓樂을 독립 작품으로 분리했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-KIM-JONGJIK-015",
+      "canonicalId": "KPOEM-CANON-WORKER-KIM-JONGJIK-015",
+      "title": {
+        "zh": "黃昌郞",
+        "ko": "黃昌郞"
+      },
+      "author": {
+        "authorId": "KAUTH-KIM-JONGJIK",
+        "zh": "金宗直",
+        "ko": "김종직"
+      },
+      "era": {
+        "label": "조선 전기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "新增東國輿地勝覽 卷021, 佔畢齋集",
+        "juan": "卷021",
+        "entryTitle": "黃昌郞",
+        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%96%B0%E5%A2%9E%E6%9D%B1%E5%9C%8B%E8%BC%BF%E5%9C%B0%E5%8B%9D%E8%A6%BD/%E5%8D%B7021",
+        "rawUrl": "https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%A2%9E%E6%9D%B1%E5%9C%8B%E8%BC%BF%E5%9C%B0%E5%8B%9D%E8%A6%BD/%E5%8D%B7021&oldid=2440001",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "若有人兮纔離齠，身未三尺何雄驍？平生汪錡我所師，爲國雪恥心無憀。劍鐔擬頸股不戰，劍鍔指心目不搖。功成脫然罷舞去，挾山北海猶可超。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-3-lee-jehyeon-jeong-dojeon-kim-jongjik.v1.json",
+        "workerId": "worker-3-lee-jehyeon-jeong-dojeon-kim-jongjik",
+        "candidateTitle": "七詠",
+        "matchedTitle": "黃昌郞",
+        "notes": "七詠 7수 중 黃昌郞을 독립 작품으로 분리했다.",
         "ownedTranslationNeeded": true
       }
     },
@@ -8849,8 +9227,8 @@
       "poemId": "KPOEM-WORKER-HEO-NANSEOLHEON-002",
       "canonicalId": "KPOEM-CANON-WORKER-HEO-NANSEOLHEON-002",
       "title": {
-        "zh": "貧女吟",
-        "ko": "貧女吟"
+        "zh": "貧女吟 其一",
+        "ko": "貧女吟 其一"
       },
       "author": {
         "authorId": "KAUTH-HEO-NANSEOLHEON",
@@ -8863,7 +9241,7 @@
       "genre": {
         "broad": "한시",
         "form": "미확정",
-        "track": "hansi-candidate"
+        "track": "hansi-direct-text"
       },
       "sourceWork": {
         "collectionTitle": "蘭雪軒詩集",
@@ -8872,11 +9250,11 @@
         "sourceUrl": "https://zh.wikisource.org/wiki/蘭雪軒詩集",
         "rawUrl": "https://zh.wikisource.org/wiki/蘭雪軒詩集?action=raw",
         "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
-        "locatorConfidence": "low",
-        "verificationStatus": "source-located"
+        "locatorConfidence": "medium",
+        "verificationStatus": "verified-direct-text"
       },
       "text": {
-        "poemZh": null,
+        "poemZh": "豈是乏容色。工鍼復工織。少小長寒門。良媒不相識。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -8888,8 +9266,8 @@
       "rights": {
         "originalText": {
           "status": "commercial_allowed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
         },
         "translation": {
           "status": "owned-translation-needed",
@@ -8898,19 +9276,145 @@
         }
       },
       "ingest": {
-        "readiness": "source-located",
+        "readiness": "direct-text-collected",
         "targetDb": "poems",
         "sourceFile": "docs/spec/korean-poet-worker-results/worker-4-heo-nanseolheon.v1.json",
         "workerId": "worker-4-heo-nanseolheon",
         "candidateTitle": "貧女吟",
-        "matchedTitle": "貧女吟",
-        "notes": "위키문헌 collection에는 `貧女吟`이 3수 연작으로 보이지만, EncyKorea `난설헌집` 항목은 이 제목을 core `난설헌집` 바깥의 `東洋女詩選` 수록작으로 설명한다. collection 귀속과 연작 분량이 흔들려 이번 worker 결과에선 locator만 고정한다.",
+        "matchedTitle": "貧女吟 其一",
+        "notes": "蘭雪軒詩集 raw에서 貧女吟 3수 중 첫 수를 독립 작품으로 분리했다. 전승 귀속 논점은 남기되 Wikisource 공개 원문 기준으로 catalog에는 표시 가능하다.",
         "ownedTranslationNeeded": true
       }
     },
     {
       "poemId": "KPOEM-WORKER-HEO-NANSEOLHEON-003",
       "canonicalId": "KPOEM-CANON-WORKER-HEO-NANSEOLHEON-003",
+      "title": {
+        "zh": "貧女吟 其二",
+        "ko": "貧女吟 其二"
+      },
+      "author": {
+        "authorId": "KAUTH-HEO-NANSEOLHEON",
+        "zh": "許蘭雪軒",
+        "ko": "허난설헌"
+      },
+      "era": {
+        "label": "조선 중기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "蘭雪軒詩集",
+        "juan": null,
+        "entryTitle": "貧女吟 又",
+        "sourceUrl": "https://zh.wikisource.org/wiki/蘭雪軒詩集",
+        "rawUrl": "https://zh.wikisource.org/wiki/蘭雪軒詩集?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "medium",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "夜久織未休。戛戛鳴寒機。機中一匹練。終作阿誰衣。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-4-heo-nanseolheon.v1.json",
+        "workerId": "worker-4-heo-nanseolheon",
+        "candidateTitle": "貧女吟",
+        "matchedTitle": "貧女吟 其二",
+        "notes": "蘭雪軒詩集 raw에서 貧女吟 3수 중 둘째 수를 독립 작품으로 분리했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-HEO-NANSEOLHEON-004",
+      "canonicalId": "KPOEM-CANON-WORKER-HEO-NANSEOLHEON-004",
+      "title": {
+        "zh": "貧女吟 其三",
+        "ko": "貧女吟 其三"
+      },
+      "author": {
+        "authorId": "KAUTH-HEO-NANSEOLHEON",
+        "zh": "許蘭雪軒",
+        "ko": "허난설헌"
+      },
+      "era": {
+        "label": "조선 중기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "蘭雪軒詩集",
+        "juan": null,
+        "entryTitle": "貧女吟 又",
+        "sourceUrl": "https://zh.wikisource.org/wiki/蘭雪軒詩集",
+        "rawUrl": "https://zh.wikisource.org/wiki/蘭雪軒詩集?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "medium",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "手把金翦刀。夜寒十指直。爲人作嫁衣。年年還獨宿。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-4-heo-nanseolheon.v1.json",
+        "workerId": "worker-4-heo-nanseolheon",
+        "candidateTitle": "貧女吟",
+        "matchedTitle": "貧女吟 其三",
+        "notes": "蘭雪軒詩集 raw에서 貧女吟 3수 중 셋째 수를 독립 작품으로 분리했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-HEO-NANSEOLHEON-005",
+      "canonicalId": "KPOEM-CANON-WORKER-HEO-NANSEOLHEON-005",
       "title": {
         "zh": "哭子",
         "ko": "哭子"
@@ -8972,11 +9476,11 @@
       }
     },
     {
-      "poemId": "KPOEM-WORKER-HEO-NANSEOLHEON-004",
-      "canonicalId": "KPOEM-CANON-WORKER-HEO-NANSEOLHEON-004",
+      "poemId": "KPOEM-WORKER-HEO-NANSEOLHEON-006",
+      "canonicalId": "KPOEM-CANON-WORKER-HEO-NANSEOLHEON-006",
       "title": {
-        "zh": "遣興",
-        "ko": "遣興"
+        "zh": "遣興 其一",
+        "ko": "遣興 其一"
       },
       "author": {
         "authorId": "KAUTH-HEO-NANSEOLHEON",
@@ -8989,7 +9493,7 @@
       "genre": {
         "broad": "한시",
         "form": "미확정",
-        "track": "hansi-candidate"
+        "track": "hansi-direct-text"
       },
       "sourceWork": {
         "collectionTitle": "蘭雪軒詩集",
@@ -8999,10 +9503,10 @@
         "rawUrl": "https://zh.wikisource.org/wiki/蘭雪軒詩集?action=raw",
         "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
         "locatorConfidence": "medium",
-        "verificationStatus": "source-located"
+        "verificationStatus": "verified-direct-text"
       },
       "text": {
-        "poemZh": null,
+        "poemZh": "梧桐生嶧陽。幾年傲寒陰。幸遇稀代工。劚取爲鳴琴。琴成彈一曲。擧世無知音。所以廣陵散。終古聲堙沈。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -9014,8 +9518,8 @@
       "rights": {
         "originalText": {
           "status": "commercial_allowed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
         },
         "translation": {
           "status": "owned-translation-needed",
@@ -9024,19 +9528,460 @@
         }
       },
       "ingest": {
-        "readiness": "source-located",
+        "readiness": "direct-text-collected",
         "targetDb": "poems",
         "sourceFile": "docs/spec/korean-poet-worker-results/worker-4-heo-nanseolheon.v1.json",
         "workerId": "worker-4-heo-nanseolheon",
         "candidateTitle": "遣興",
-        "matchedTitle": "遣興",
-        "notes": "위키문헌 collection에는 `遣興` 머리표제 아래 8수 연작이 이어진다. seed title은 맞지만, 단일 작품으로 넣을지 연작 전부를 묶을지 normalization 결정이 먼저라 이번 단계에서는 locator만 고정한다.",
+        "matchedTitle": "遣興 其一",
+        "notes": "蘭雪軒詩集 raw에서 遣興 8수 중 첫 수를 독립 작품으로 분리했다.",
         "ownedTranslationNeeded": true
       }
     },
     {
-      "poemId": "KPOEM-WORKER-HEO-NANSEOLHEON-005",
-      "canonicalId": "KPOEM-CANON-WORKER-HEO-NANSEOLHEON-005",
+      "poemId": "KPOEM-WORKER-HEO-NANSEOLHEON-007",
+      "canonicalId": "KPOEM-CANON-WORKER-HEO-NANSEOLHEON-007",
+      "title": {
+        "zh": "遣興 其二",
+        "ko": "遣興 其二"
+      },
+      "author": {
+        "authorId": "KAUTH-HEO-NANSEOLHEON",
+        "zh": "許蘭雪軒",
+        "ko": "허난설헌"
+      },
+      "era": {
+        "label": "조선 중기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "蘭雪軒詩集",
+        "juan": null,
+        "entryTitle": "遣興 又",
+        "sourceUrl": "https://zh.wikisource.org/wiki/蘭雪軒詩集",
+        "rawUrl": "https://zh.wikisource.org/wiki/蘭雪軒詩集?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "medium",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "鳳凰出丹穴。九苞燦文章。覽德翔千仞。噦噦鳴朝陽。稻梁非所求。竹實乃其飡。奈何梧桐枝。反棲鴟與鳶。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-4-heo-nanseolheon.v1.json",
+        "workerId": "worker-4-heo-nanseolheon",
+        "candidateTitle": "遣興",
+        "matchedTitle": "遣興 其二",
+        "notes": "蘭雪軒詩集 raw에서 遣興 8수 중 둘째 수를 독립 작품으로 분리했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-HEO-NANSEOLHEON-008",
+      "canonicalId": "KPOEM-CANON-WORKER-HEO-NANSEOLHEON-008",
+      "title": {
+        "zh": "遣興 其三",
+        "ko": "遣興 其三"
+      },
+      "author": {
+        "authorId": "KAUTH-HEO-NANSEOLHEON",
+        "zh": "許蘭雪軒",
+        "ko": "허난설헌"
+      },
+      "era": {
+        "label": "조선 중기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "蘭雪軒詩集",
+        "juan": null,
+        "entryTitle": "遣興 又",
+        "sourceUrl": "https://zh.wikisource.org/wiki/蘭雪軒詩集",
+        "rawUrl": "https://zh.wikisource.org/wiki/蘭雪軒詩集?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "medium",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "我有一端綺。拂拭光凌亂。對織雙鳳凰。文章何燦爛。幾年篋中藏。今朝持贈郞。不惜作君袴。莫作他人裳。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-4-heo-nanseolheon.v1.json",
+        "workerId": "worker-4-heo-nanseolheon",
+        "candidateTitle": "遣興",
+        "matchedTitle": "遣興 其三",
+        "notes": "蘭雪軒詩集 raw에서 遣興 8수 중 셋째 수를 독립 작품으로 분리했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-HEO-NANSEOLHEON-009",
+      "canonicalId": "KPOEM-CANON-WORKER-HEO-NANSEOLHEON-009",
+      "title": {
+        "zh": "遣興 其四",
+        "ko": "遣興 其四"
+      },
+      "author": {
+        "authorId": "KAUTH-HEO-NANSEOLHEON",
+        "zh": "許蘭雪軒",
+        "ko": "허난설헌"
+      },
+      "era": {
+        "label": "조선 중기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "蘭雪軒詩集",
+        "juan": null,
+        "entryTitle": "遣興 又",
+        "sourceUrl": "https://zh.wikisource.org/wiki/蘭雪軒詩集",
+        "rawUrl": "https://zh.wikisource.org/wiki/蘭雪軒詩集?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "medium",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "精金凝寶氣。鏤作半月光。嫁時舅姑贈。繫在紅羅裳。今日贈君行。願君爲雜佩。不惜棄道上。莫結新人帶。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-4-heo-nanseolheon.v1.json",
+        "workerId": "worker-4-heo-nanseolheon",
+        "candidateTitle": "遣興",
+        "matchedTitle": "遣興 其四",
+        "notes": "蘭雪軒詩集 raw에서 遣興 8수 중 넷째 수를 독립 작품으로 분리했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-HEO-NANSEOLHEON-010",
+      "canonicalId": "KPOEM-CANON-WORKER-HEO-NANSEOLHEON-010",
+      "title": {
+        "zh": "遣興 其五",
+        "ko": "遣興 其五"
+      },
+      "author": {
+        "authorId": "KAUTH-HEO-NANSEOLHEON",
+        "zh": "許蘭雪軒",
+        "ko": "허난설헌"
+      },
+      "era": {
+        "label": "조선 중기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "蘭雪軒詩集",
+        "juan": null,
+        "entryTitle": "遣興 又",
+        "sourceUrl": "https://zh.wikisource.org/wiki/蘭雪軒詩集",
+        "rawUrl": "https://zh.wikisource.org/wiki/蘭雪軒詩集?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "medium",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "近者崔白輩。攻詩軌盛唐。寥寥大雅音。得此復鏗鏘。下僚困光祿。邊郡愁積薪。年位共零落。始信詩窮人。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-4-heo-nanseolheon.v1.json",
+        "workerId": "worker-4-heo-nanseolheon",
+        "candidateTitle": "遣興",
+        "matchedTitle": "遣興 其五",
+        "notes": "蘭雪軒詩集 raw에서 遣興 8수 중 다섯째 수를 독립 작품으로 분리했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-HEO-NANSEOLHEON-011",
+      "canonicalId": "KPOEM-CANON-WORKER-HEO-NANSEOLHEON-011",
+      "title": {
+        "zh": "遣興 其六",
+        "ko": "遣興 其六"
+      },
+      "author": {
+        "authorId": "KAUTH-HEO-NANSEOLHEON",
+        "zh": "許蘭雪軒",
+        "ko": "허난설헌"
+      },
+      "era": {
+        "label": "조선 중기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "蘭雪軒詩集",
+        "juan": null,
+        "entryTitle": "遣興 又",
+        "sourceUrl": "https://zh.wikisource.org/wiki/蘭雪軒詩集",
+        "rawUrl": "https://zh.wikisource.org/wiki/蘭雪軒詩集?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "medium",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "仙人騎綵鳳。夜下朝元宮。絳幡拂海雲。霓衣鳴春風。邀我瑤池岑。飮我流霞鐘。借我綠玉杖。登我芙蓉峯。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-4-heo-nanseolheon.v1.json",
+        "workerId": "worker-4-heo-nanseolheon",
+        "candidateTitle": "遣興",
+        "matchedTitle": "遣興 其六",
+        "notes": "蘭雪軒詩集 raw에서 遣興 8수 중 여섯째 수를 독립 작품으로 분리했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-HEO-NANSEOLHEON-012",
+      "canonicalId": "KPOEM-CANON-WORKER-HEO-NANSEOLHEON-012",
+      "title": {
+        "zh": "遣興 其七",
+        "ko": "遣興 其七"
+      },
+      "author": {
+        "authorId": "KAUTH-HEO-NANSEOLHEON",
+        "zh": "許蘭雪軒",
+        "ko": "허난설헌"
+      },
+      "era": {
+        "label": "조선 중기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "蘭雪軒詩集",
+        "juan": null,
+        "entryTitle": "遣興 又",
+        "sourceUrl": "https://zh.wikisource.org/wiki/蘭雪軒詩集",
+        "rawUrl": "https://zh.wikisource.org/wiki/蘭雪軒詩集?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "medium",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "有客自遠方。遺我雙鯉魚。剖之何所見。中有尺素書。上言長相思。下問今何如。讀書知君意。零淚沾衣裾。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-4-heo-nanseolheon.v1.json",
+        "workerId": "worker-4-heo-nanseolheon",
+        "candidateTitle": "遣興",
+        "matchedTitle": "遣興 其七",
+        "notes": "蘭雪軒詩集 raw에서 遣興 8수 중 일곱째 수를 독립 작품으로 분리했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-HEO-NANSEOLHEON-013",
+      "canonicalId": "KPOEM-CANON-WORKER-HEO-NANSEOLHEON-013",
+      "title": {
+        "zh": "遣興 其八",
+        "ko": "遣興 其八"
+      },
+      "author": {
+        "authorId": "KAUTH-HEO-NANSEOLHEON",
+        "zh": "許蘭雪軒",
+        "ko": "허난설헌"
+      },
+      "era": {
+        "label": "조선 중기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "蘭雪軒詩集",
+        "juan": null,
+        "entryTitle": "遣興 又",
+        "sourceUrl": "https://zh.wikisource.org/wiki/蘭雪軒詩集",
+        "rawUrl": "https://zh.wikisource.org/wiki/蘭雪軒詩集?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "medium",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "芳樹藹初綠。蘼蕪葉已齊。春物自姸華。我獨多悲悽。壁上五岳圖。牀頭參同契。煉丹倘有成。歸謁蒼梧帝。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-4-heo-nanseolheon.v1.json",
+        "workerId": "worker-4-heo-nanseolheon",
+        "candidateTitle": "遣興",
+        "matchedTitle": "遣興 其八",
+        "notes": "蘭雪軒詩集 raw에서 遣興 8수 중 여덟째 수를 독립 작품으로 분리했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-HEO-NANSEOLHEON-014",
+      "canonicalId": "KPOEM-CANON-WORKER-HEO-NANSEOLHEON-014",
       "title": {
         "zh": "送荷谷謫甲山",
         "ko": "送荷谷謫甲山"

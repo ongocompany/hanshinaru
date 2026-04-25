@@ -7,7 +7,7 @@
   ],
   "summary": {
     "candidateWorksChecked": 5,
-    "directTextWorksFound": 2,
+    "directTextWorksFound": 13,
     "ocrCandidates": 0,
     "blockedWorks": 0
   },
@@ -44,7 +44,7 @@
       "authorKo": "허난설헌",
       "authorHanja": "許蘭雪軒",
       "candidateTitle": "貧女吟",
-      "matchedTitle": "貧女吟",
+      "matchedTitle": "貧女吟 其一",
       "sourceWork": {
         "collectionTitle": "蘭雪軒詩集",
         "juan": null,
@@ -52,10 +52,10 @@
         "sourceUrl": "https://zh.wikisource.org/wiki/蘭雪軒詩集",
         "rawUrl": "https://zh.wikisource.org/wiki/蘭雪軒詩集?action=raw",
         "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
-        "locatorConfidence": "low"
+        "locatorConfidence": "medium"
       },
       "text": {
-        "poemZh": null,
+        "poemZh": "豈是乏容色。工鍼復工織。少小長寒門。良媒不相識。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -64,8 +64,64 @@
         "translationUsage": "owned_translation_needed"
       },
       "ingest": {
-        "recommendedReadiness": "source-located",
-        "notes": "위키문헌 collection에는 `貧女吟`이 3수 연작으로 보이지만, EncyKorea `난설헌집` 항목은 이 제목을 core `난설헌집` 바깥의 `東洋女詩選` 수록작으로 설명한다. collection 귀속과 연작 분량이 흔들려 이번 worker 결과에선 locator만 고정한다."
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "蘭雪軒詩集 raw에서 貧女吟 3수 중 첫 수를 독립 작품으로 분리했다. 전승 귀속 논점은 남기되 Wikisource 공개 원문 기준으로 catalog에는 표시 가능하다."
+      }
+    },
+    {
+      "authorKo": "허난설헌",
+      "authorHanja": "許蘭雪軒",
+      "candidateTitle": "貧女吟",
+      "matchedTitle": "貧女吟 其二",
+      "sourceWork": {
+        "collectionTitle": "蘭雪軒詩集",
+        "juan": null,
+        "entryTitle": "貧女吟 又",
+        "sourceUrl": "https://zh.wikisource.org/wiki/蘭雪軒詩集",
+        "rawUrl": "https://zh.wikisource.org/wiki/蘭雪軒詩集?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "medium"
+      },
+      "text": {
+        "poemZh": "夜久織未休。戛戛鳴寒機。機中一匹練。終作阿誰衣。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "蘭雪軒詩集 raw에서 貧女吟 3수 중 둘째 수를 독립 작품으로 분리했다."
+      }
+    },
+    {
+      "authorKo": "허난설헌",
+      "authorHanja": "許蘭雪軒",
+      "candidateTitle": "貧女吟",
+      "matchedTitle": "貧女吟 其三",
+      "sourceWork": {
+        "collectionTitle": "蘭雪軒詩集",
+        "juan": null,
+        "entryTitle": "貧女吟 又",
+        "sourceUrl": "https://zh.wikisource.org/wiki/蘭雪軒詩集",
+        "rawUrl": "https://zh.wikisource.org/wiki/蘭雪軒詩集?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "medium"
+      },
+      "text": {
+        "poemZh": "手把金翦刀。夜寒十指直。爲人作嫁衣。年年還獨宿。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "蘭雪軒詩集 raw에서 貧女吟 3수 중 셋째 수를 독립 작품으로 분리했다."
       }
     },
     {
@@ -100,7 +156,7 @@
       "authorKo": "허난설헌",
       "authorHanja": "許蘭雪軒",
       "candidateTitle": "遣興",
-      "matchedTitle": "遣興",
+      "matchedTitle": "遣興 其一",
       "sourceWork": {
         "collectionTitle": "蘭雪軒詩集",
         "juan": null,
@@ -111,7 +167,7 @@
         "locatorConfidence": "medium"
       },
       "text": {
-        "poemZh": null,
+        "poemZh": "梧桐生嶧陽。幾年傲寒陰。幸遇稀代工。劚取爲鳴琴。琴成彈一曲。擧世無知音。所以廣陵散。終古聲堙沈。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -120,8 +176,204 @@
         "translationUsage": "owned_translation_needed"
       },
       "ingest": {
-        "recommendedReadiness": "source-located",
-        "notes": "위키문헌 collection에는 `遣興` 머리표제 아래 8수 연작이 이어진다. seed title은 맞지만, 단일 작품으로 넣을지 연작 전부를 묶을지 normalization 결정이 먼저라 이번 단계에서는 locator만 고정한다."
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "蘭雪軒詩集 raw에서 遣興 8수 중 첫 수를 독립 작품으로 분리했다."
+      }
+    },
+    {
+      "authorKo": "허난설헌",
+      "authorHanja": "許蘭雪軒",
+      "candidateTitle": "遣興",
+      "matchedTitle": "遣興 其二",
+      "sourceWork": {
+        "collectionTitle": "蘭雪軒詩集",
+        "juan": null,
+        "entryTitle": "遣興 又",
+        "sourceUrl": "https://zh.wikisource.org/wiki/蘭雪軒詩集",
+        "rawUrl": "https://zh.wikisource.org/wiki/蘭雪軒詩集?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "medium"
+      },
+      "text": {
+        "poemZh": "鳳凰出丹穴。九苞燦文章。覽德翔千仞。噦噦鳴朝陽。稻梁非所求。竹實乃其飡。奈何梧桐枝。反棲鴟與鳶。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "蘭雪軒詩集 raw에서 遣興 8수 중 둘째 수를 독립 작품으로 분리했다."
+      }
+    },
+    {
+      "authorKo": "허난설헌",
+      "authorHanja": "許蘭雪軒",
+      "candidateTitle": "遣興",
+      "matchedTitle": "遣興 其三",
+      "sourceWork": {
+        "collectionTitle": "蘭雪軒詩集",
+        "juan": null,
+        "entryTitle": "遣興 又",
+        "sourceUrl": "https://zh.wikisource.org/wiki/蘭雪軒詩集",
+        "rawUrl": "https://zh.wikisource.org/wiki/蘭雪軒詩集?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "medium"
+      },
+      "text": {
+        "poemZh": "我有一端綺。拂拭光凌亂。對織雙鳳凰。文章何燦爛。幾年篋中藏。今朝持贈郞。不惜作君袴。莫作他人裳。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "蘭雪軒詩集 raw에서 遣興 8수 중 셋째 수를 독립 작품으로 분리했다."
+      }
+    },
+    {
+      "authorKo": "허난설헌",
+      "authorHanja": "許蘭雪軒",
+      "candidateTitle": "遣興",
+      "matchedTitle": "遣興 其四",
+      "sourceWork": {
+        "collectionTitle": "蘭雪軒詩集",
+        "juan": null,
+        "entryTitle": "遣興 又",
+        "sourceUrl": "https://zh.wikisource.org/wiki/蘭雪軒詩集",
+        "rawUrl": "https://zh.wikisource.org/wiki/蘭雪軒詩集?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "medium"
+      },
+      "text": {
+        "poemZh": "精金凝寶氣。鏤作半月光。嫁時舅姑贈。繫在紅羅裳。今日贈君行。願君爲雜佩。不惜棄道上。莫結新人帶。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "蘭雪軒詩集 raw에서 遣興 8수 중 넷째 수를 독립 작품으로 분리했다."
+      }
+    },
+    {
+      "authorKo": "허난설헌",
+      "authorHanja": "許蘭雪軒",
+      "candidateTitle": "遣興",
+      "matchedTitle": "遣興 其五",
+      "sourceWork": {
+        "collectionTitle": "蘭雪軒詩集",
+        "juan": null,
+        "entryTitle": "遣興 又",
+        "sourceUrl": "https://zh.wikisource.org/wiki/蘭雪軒詩集",
+        "rawUrl": "https://zh.wikisource.org/wiki/蘭雪軒詩集?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "medium"
+      },
+      "text": {
+        "poemZh": "近者崔白輩。攻詩軌盛唐。寥寥大雅音。得此復鏗鏘。下僚困光祿。邊郡愁積薪。年位共零落。始信詩窮人。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "蘭雪軒詩集 raw에서 遣興 8수 중 다섯째 수를 독립 작품으로 분리했다."
+      }
+    },
+    {
+      "authorKo": "허난설헌",
+      "authorHanja": "許蘭雪軒",
+      "candidateTitle": "遣興",
+      "matchedTitle": "遣興 其六",
+      "sourceWork": {
+        "collectionTitle": "蘭雪軒詩集",
+        "juan": null,
+        "entryTitle": "遣興 又",
+        "sourceUrl": "https://zh.wikisource.org/wiki/蘭雪軒詩集",
+        "rawUrl": "https://zh.wikisource.org/wiki/蘭雪軒詩集?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "medium"
+      },
+      "text": {
+        "poemZh": "仙人騎綵鳳。夜下朝元宮。絳幡拂海雲。霓衣鳴春風。邀我瑤池岑。飮我流霞鐘。借我綠玉杖。登我芙蓉峯。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "蘭雪軒詩集 raw에서 遣興 8수 중 여섯째 수를 독립 작품으로 분리했다."
+      }
+    },
+    {
+      "authorKo": "허난설헌",
+      "authorHanja": "許蘭雪軒",
+      "candidateTitle": "遣興",
+      "matchedTitle": "遣興 其七",
+      "sourceWork": {
+        "collectionTitle": "蘭雪軒詩集",
+        "juan": null,
+        "entryTitle": "遣興 又",
+        "sourceUrl": "https://zh.wikisource.org/wiki/蘭雪軒詩集",
+        "rawUrl": "https://zh.wikisource.org/wiki/蘭雪軒詩集?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "medium"
+      },
+      "text": {
+        "poemZh": "有客自遠方。遺我雙鯉魚。剖之何所見。中有尺素書。上言長相思。下問今何如。讀書知君意。零淚沾衣裾。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "蘭雪軒詩集 raw에서 遣興 8수 중 일곱째 수를 독립 작품으로 분리했다."
+      }
+    },
+    {
+      "authorKo": "허난설헌",
+      "authorHanja": "許蘭雪軒",
+      "candidateTitle": "遣興",
+      "matchedTitle": "遣興 其八",
+      "sourceWork": {
+        "collectionTitle": "蘭雪軒詩集",
+        "juan": null,
+        "entryTitle": "遣興 又",
+        "sourceUrl": "https://zh.wikisource.org/wiki/蘭雪軒詩集",
+        "rawUrl": "https://zh.wikisource.org/wiki/蘭雪軒詩集?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "medium"
+      },
+      "text": {
+        "poemZh": "芳樹藹初綠。蘼蕪葉已齊。春物自姸華。我獨多悲悽。壁上五岳圖。牀頭參同契。煉丹倘有成。歸謁蒼梧帝。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "蘭雪軒詩集 raw에서 遣興 8수 중 여덟째 수를 독립 작품으로 분리했다."
       }
     },
     {
