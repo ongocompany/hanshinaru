@@ -1,0 +1,23 @@
+name: Supabase Keepalive
+
+on:
+  schedule:
+    - cron: '0 15 * * *'  # 매일 오전 0시 KST (UTC 15:00)
+  workflow_dispatch:        # 수동 실행 가능
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Supabase (poems table)
+        run: |
+          STATUS=$(curl -s -o /dev/null -w "%{http_code}" \
+            "https://iplxexvmrnzlqglfqrpg.supabase.co/rest/v1/poems?select=id&limit=1" \
+            -H "apikey: sb_publishable_SBqquD4OkM6a93H3dMPNRQ_X5JChwWI" \
+            -H "Authorization: Bearer sb_publishable_SBqquD4OkM6a93H3dMPNRQ_X5JChwWI")
+          echo "Supabase response: $STATUS"
+          if [ "$STATUS" != "200" ]; then
+            echo "::warning::Supabase returned non-200 status: $STATUS"
+            exit 1
+          fi
+          echo "Supabase is alive."
