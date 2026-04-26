@@ -1,23 +1,40 @@
 {
   "topMenu": [
     {
-      "id": "chinese-poetry",
-      "label": "중국 시문학",
-      "path": "/chinese-poetry/general/",
+      "id": "introduction",
+      "label": "한시 입문",
+      "path": "/china",
       "children": [
-        { "label": "한시(漢詩) 일반론", "path": "/chinese-poetry/general/" },
-        { "label": "대표 시인과 작품들", "path": "/chinese-poetry/poets/" },
-        { "label": "한시(漢詩) 변천사", "path": "/chinese-poetry/history/" }
+        { "label": "중국", "path": "/china" },
+        { "label": "한국", "path": "/korea" }
       ]
     },
     {
-      "id": "korean-poetry",
-      "label": "한국의 한시",
-      "path": "/korean-poetry/",
-      "children": [
-        { "label": "한국의 전통시문학", "path": "/korean-poetry/" },
-        { "label": "시대별 시인과 작품", "path": "/korean-poetry/poets/" }
-      ]
+      "id": "books",
+      "label": "서적",
+      "path": "/books"
+    },
+    {
+      "id": "poets",
+      "label": "시인",
+      "path": "/poets"
+    },
+    {
+      "id": "poems",
+      "label": "작품",
+      "path": "/poems",
+      "disabled": true
+    },
+    {
+      "id": "hanja",
+      "label": "한자와 한문",
+      "path": "/hanja/"
+    },
+    {
+      "id": "writing-helper",
+      "label": "작성 도우미",
+      "path": "/writing-helper/",
+      "disabled": true
     },
     {
       "id": "community",
@@ -30,58 +47,9 @@
         { "label": "묻고 답하기", "path": "/community/qna/" },
         { "label": "창작마당", "path": "/community/showcase/" }
       ]
-    },
-    {
-      "id": "hanja",
-      "label": "한자와 한문",
-      "path": "/hanja/"
-    },
-    {
-      "id": "writing-helper",
-      "label": "작성도우미",
-      "path": "/writing-helper/",
-      "disabled": true
     }
   ],
   "sidebar": {
-    "chinese-poetry": [
-      {
-        "label": "일반론",
-        "path": "/chinese-poetry/general/",
-        "children": [
-          {
-            "label": "문학사",
-            "path": "/chinese-poetry/literary-history/",
-            "children": [
-              { "label": "선진~한대", "path": "/chinese-poetry/literary-history/pre-han/" },
-              { "label": "위진남북조", "path": "/chinese-poetry/literary-history/wei-jin/" },
-              { "label": "당대", "path": "/chinese-poetry/literary-history/tang/" },
-              { "label": "송대 이후", "path": "/chinese-poetry/literary-history/post-tang/" }
-            ]
-          },
-          { "label": "명작 소개", "path": "/chinese-poetry/masterworks/" },
-          { "label": "서적 소개", "path": "/chinese-poetry/books/" }
-        ]
-      },
-      {
-        "label": "시인과 작품",
-        "path": "/chinese-poetry/poets/"
-      },
-      {
-        "label": "변천사",
-        "path": "/chinese-poetry/history/"
-      }
-    ],
-    "korean-poetry": [
-      {
-        "label": "개요",
-        "path": "/korean-poetry/"
-      },
-      {
-        "label": "시인과 작품",
-        "path": "/korean-poetry/poets/"
-      }
-    ],
     "community": [
       { "label": "공지사항", "path": "/community/notice/" },
       { "label": "자유게시판", "path": "/community/forum/" },

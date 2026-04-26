@@ -1,0 +1,217 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getPoet, getPoetBySlug, getPoemsByPoet } from '../../lib/db';
+
+const { slug } = Astro.params;
+
+if (!slug || typeof slug !== 'string') {
+  return new Response('Not Found', { status: 404 });
+}
+
+let poet = null;
+
+if (slug.startsWith('k-')) {
+  const id = Number(slug.slice(2));
+  if (Number.isInteger(id) && id > 0) {
+    poet = await getPoet(id);
+  }
+} else {
+  poet = await getPoetBySlug(slug);
+}
+
+if (!poet) {
+  return new Response('Not Found', { status: 404 });
+}
+
+const poems = await getPoemsByPoet(poet.id, 50);
+
+const countryLabel = poet.country === 'CN' ? '중국' : poet.country === 'KR' ? '한국' : poet.country;
+const eraLabel = poet.era_period;
+const lifeLabel = poet.life_raw
+  ?? (poet.life_birth || poet.life_death
+    ? `${poet.life_birth ?? '?'}–${poet.life_death ?? '?'}`
+    : null);
+
+const pageTitle = poet.name_ko
+  ? `${poet.name_zh} (${poet.name_ko})`
+  : poet.name_zh;
+---
+
+<BaseLayout title={pageTitle} description={poet.bio_ko ?? `${poet.name_zh}의 시 ${poet.poem_count}수`}>
+  <main class="poet-page">
+    <header class="poet-header">
+      <h1 class="name-zh">{poet.name_zh}</h1>
+      {poet.name_ko && <p class="name-ko">{poet.name_ko}</p>}
+      <p class="meta">
+        {countryLabel && <span class="badge">{countryLabel}</span>}
+        {eraLabel && <span class="badge">{eraLabel}</span>}
+        {lifeLabel && <span class="badge">{lifeLabel}</span>}
+        <span class="badge badge-count">{poet.poem_count}수</span>
+      </p>
+    </header>
+
+    {poet.bio_ko && (
+      <section class="poet-section">
+        <h2>약전</h2>
+        <p class="bio">{poet.bio_ko}</p>
+      </section>
+    )}
+
+    <section class="poet-section">
+      <h2>작품 ({poems.length === 50 ? '대표 50수' : `${poems.length}수`})</h2>
+      {poems.length === 0 ? (
+        <p class="empty">등록된 시가 없습니다.</p>
+      ) : (
+        <ul class="poem-list">
+          {poems.map((p) => (
+            <li class="poem-item">
+              <a href={`/poems/${p.id}`} class="poem-link">
+                <span class="poem-title-zh">{p.title_zh}</span>
+                {p.title_ko && <span class="poem-title-ko"> · {p.title_ko}</span>}
+                {!p.has_translation && <span class="badge-progress">번역 진행 중</span>}
+              </a>
+            </li>
+          ))}
+        </ul>
+      )}
+    </section>
+
+    {!poet.slug && (
+      <p class="footnote">
+        ⚠️ 이 시인은 영문 slug가 아직 부여되지 않아 임시 URL(<code>/poets/k-{poet.id}</code>)로 접근 중입니다.
+      </p>
+    )}
+  </main>
+</BaseLayout>
+
+<style>
+  .poet-page {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+    line-height: 1.7;
+  }
+
+  .poet-header {
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 24px;
+    margin-bottom: 32px;
+  }
+
+  .name-zh {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0 0 6px;
+  }
+
+  .name-ko {
+    color: #6b7280;
+    font-size: 1.1rem;
+    margin: 0 0 12px;
+  }
+
+  .meta {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  .badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 999px;
+    background: #f3f4f6;
+    color: #4b5563;
+    font-size: 0.85rem;
+  }
+
+  .badge-count {
+    background: #e0e7ff;
+    color: #3730a3;
+  }
+
+  .poet-section {
+    margin-bottom: 40px;
+  }
+
+  .poet-section h2 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin: 0 0 16px;
+  }
+
+  .bio {
+    color: #374151;
+    margin: 0;
+  }
+
+  .empty {
+    color: #9ca3af;
+    font-style: italic;
+  }
+
+  .poem-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .poem-item {
+    border-bottom: 1px solid #f3f4f6;
+  }
+
+  .poem-link {
+    display: block;
+    padding: 12px 8px;
+    color: inherit;
+    text-decoration: none;
+    transition: background 0.15s;
+  }
+
+  .poem-link:hover {
+    background: #f9fafb;
+  }
+
+  .poem-title-zh {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+
+  .poem-title-ko {
+    color: #6b7280;
+    font-size: 0.95rem;
+  }
+
+  .badge-progress {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: #fef3c7;
+    color: #92400e;
+    font-size: 0.75rem;
+    vertical-align: middle;
+  }
+
+  .footnote {
+    margin-top: 48px;
+    padding: 12px 16px;
+    background: #fffbeb;
+    border-left: 3px solid #fbbf24;
+    color: #78350f;
+    font-size: 0.9rem;
+  }
+
+  .footnote code {
+    background: #fff;
+    padding: 1px 6px;
+    border-radius: 3px;
+    font-size: 0.85rem;
+  }
+</style>

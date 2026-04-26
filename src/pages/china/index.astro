@@ -1,0 +1,142 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { CN_ERAS } from '../../data/eras';
+import { countPoetsByEra } from '../../lib/db';
+
+const eraCards = await Promise.all(
+  CN_ERAS.map(async (era) => ({
+    ...era,
+    poetCount: await countPoetsByEra('CN', era.matchPeriods),
+  })),
+);
+---
+
+<BaseLayout title="중국 한시" description="중국 한시를 시대별로 둘러보기">
+  <main class="country-page">
+    <header class="hero">
+      <p class="kicker">권역</p>
+      <h1>중국</h1>
+      <p class="lead">시경에서 청대까지, 약 3,000년 한시의 흐름.</p>
+    </header>
+
+    <section class="timeline">
+      {eraCards.map((era, idx) => (
+        <a href={`/eras/${era.slug}`} class="era-card">
+          <span class="era-num">{String(idx + 1).padStart(2, '0')}</span>
+          <div class="era-body">
+            <h2 class="era-label">{era.label}</h2>
+            <p class="era-years">{era.yearRange}</p>
+            <p class="era-desc">{era.description}</p>
+            <p class="era-meta">
+              <span class="badge">{era.poetCount.toLocaleString()}명</span>
+            </p>
+          </div>
+        </a>
+      ))}
+    </section>
+  </main>
+</BaseLayout>
+
+<style>
+  .country-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+
+  .hero {
+    margin-bottom: 40px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .kicker {
+    color: #9ca3af;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 0 0 8px;
+  }
+
+  .hero h1 {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0 0 8px;
+  }
+
+  .lead {
+    color: #6b7280;
+    font-size: 1.1rem;
+    margin: 0;
+  }
+
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .era-card {
+    display: flex;
+    gap: 20px;
+    padding: 24px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    text-decoration: none;
+    color: inherit;
+    background: #fff;
+    transition: border-color 0.15s, transform 0.15s;
+  }
+
+  .era-card:hover {
+    border-color: #6e8387;
+    transform: translateX(4px);
+  }
+
+  .era-num {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #d1d5db;
+    line-height: 1;
+    flex-shrink: 0;
+  }
+
+  .era-body {
+    flex: 1;
+  }
+
+  .era-label {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 0 4px;
+  }
+
+  .era-years {
+    color: #9ca3af;
+    font-size: 0.9rem;
+    margin: 0 0 8px;
+  }
+
+  .era-desc {
+    color: #4b5563;
+    font-size: 0.95rem;
+    margin: 0 0 12px;
+    line-height: 1.6;
+  }
+
+  .era-meta {
+    margin: 0;
+  }
+
+  .badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 999px;
+    background: #e0e7ff;
+    color: #3730a3;
+    font-size: 0.8rem;
+  }
+</style>

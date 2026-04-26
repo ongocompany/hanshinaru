@@ -1,0 +1,222 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { getBookBySlug, getBookAnnotationCount, getPoet } from '../../../lib/db';
+
+const { slug } = Astro.params;
+
+if (!slug || typeof slug !== 'string') {
+  return new Response('Not Found', { status: 404 });
+}
+
+const book = await getBookBySlug(slug);
+
+if (!book) {
+  return new Response('Not Found', { status: 404 });
+}
+
+const compiler = book.compiler_id ? await getPoet(book.compiler_id) : null;
+const annotationCount = await getBookAnnotationCount(book.id);
+const hasMapping = annotationCount > 0;
+
+const countryLabel = book.country === 'CN' ? '중국' : book.country === 'KR' ? '한국' : book.country;
+---
+
+<BaseLayout title={book.title_ko ?? book.title_zh} description={book.intro_ko ?? `${book.title_zh} (${book.poem_count}수)`}>
+  <main class="book-page">
+    <header class="book-header">
+      <p class="breadcrumb">
+        <a href="/books">서적</a> · {countryLabel}
+      </p>
+      <h1 class="title-zh">{book.title_zh}</h1>
+      {book.title_ko && <p class="title-ko">{book.title_ko}</p>}
+      <p class="meta">
+        <span class="badge">{countryLabel}</span>
+        {book.era_period && <span class="badge">{book.era_period}</span>}
+        <span class="badge badge-count">{book.poem_count.toLocaleString()}수</span>
+        {compiler && (
+          <span class="badge">
+            편자: {compiler.slug
+              ? <a href={`/poets/${compiler.slug}`}>{compiler.name_zh}</a>
+              : compiler.name_zh}
+          </span>
+        )}
+      </p>
+    </header>
+
+    {book.intro_ko && (
+      <section class="book-section">
+        <h2>해제</h2>
+        <p class="intro">{book.intro_ko}</p>
+      </section>
+    )}
+
+    <section class="book-section">
+      <h2>진입 메뉴</h2>
+      {hasMapping ? (
+        <div class="entry-menu">
+          <a href={`/books/${book.slug}/volumes`} class="entry-card">
+            <span class="entry-icon">📚</span>
+            <span class="entry-label">권별 보기</span>
+            <span class="entry-desc">권/章 목차 ({annotationCount}수)</span>
+          </a>
+        </div>
+      ) : (
+        <div class="placeholder">
+          <p>📋 본 책의 시 데이터(<code>poem_annotations</code>)가 아직 비어 있어 권별/시인별 진입은 준비 중입니다.</p>
+          <p class="sub">데이터가 채워지면 자동으로 활성화됩니다.</p>
+        </div>
+      )}
+    </section>
+  </main>
+</BaseLayout>
+
+<style>
+  .book-page {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+    line-height: 1.7;
+  }
+
+  .breadcrumb {
+    color: #6b7280;
+    font-size: 0.9rem;
+    margin: 0 0 16px;
+  }
+
+  .breadcrumb a {
+    color: #4b5563;
+    text-decoration: none;
+    border-bottom: 1px dashed #9ca3af;
+  }
+
+  .breadcrumb a:hover {
+    color: #111827;
+  }
+
+  .book-header {
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 24px;
+    margin-bottom: 32px;
+  }
+
+  .title-zh {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0 0 6px;
+  }
+
+  .title-ko {
+    color: #6b7280;
+    font-size: 1.1rem;
+    margin: 0 0 14px;
+  }
+
+  .meta {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  .badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 999px;
+    background: #f3f4f6;
+    color: #4b5563;
+    font-size: 0.85rem;
+  }
+
+  .badge-count {
+    background: #e0e7ff;
+    color: #3730a3;
+  }
+
+  .badge a {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+  }
+
+  .book-section {
+    margin-bottom: 40px;
+  }
+
+  .book-section h2 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin: 0 0 16px;
+  }
+
+  .intro {
+    color: #374151;
+    margin: 0;
+  }
+
+  .entry-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
+  }
+
+  .entry-card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.15s, background 0.15s;
+  }
+
+  .entry-card:hover {
+    border-color: #6e8387;
+    background: #f9fafb;
+  }
+
+  .entry-icon {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+  }
+
+  .entry-label {
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+
+  .entry-desc {
+    color: #6b7280;
+    font-size: 0.9rem;
+  }
+
+  .placeholder {
+    padding: 16px 20px;
+    background: #fffbeb;
+    border-left: 3px solid #fbbf24;
+    color: #78350f;
+    border-radius: 0 6px 6px 0;
+  }
+
+  .placeholder p {
+    margin: 0;
+  }
+
+  .placeholder .sub {
+    margin-top: 6px;
+    color: #92400e;
+    font-size: 0.9rem;
+  }
+
+  .placeholder code {
+    background: #fff;
+    padding: 1px 6px;
+    border-radius: 3px;
+    font-size: 0.85rem;
+  }
+</style>

@@ -1,0 +1,189 @@
+---
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import { getBookBySlug, getBookVolumes } from '../../../../lib/db';
+
+const { slug } = Astro.params;
+
+if (!slug || typeof slug !== 'string') {
+  return new Response('Not Found', { status: 404 });
+}
+
+const book = await getBookBySlug(slug);
+
+if (!book) {
+  return new Response('Not Found', { status: 404 });
+}
+
+const volumes = await getBookVolumes(book.id);
+
+const HANJA_NUM: Record<string, number> = {
+  '一': 1, '二': 2, '三': 3, '四': 4, '五': 5,
+  '六': 6, '七': 7, '八': 8, '九': 9, '十': 10,
+};
+
+function juanToNum(juan: string): number {
+  const m = juan.match(/卷([一二三四五六七八九十])/);
+  if (m && HANJA_NUM[m[1]]) return HANJA_NUM[m[1]];
+  return 0;
+}
+
+volumes.sort((a, b) => juanToNum(a.juan) - juanToNum(b.juan));
+
+const countryLabel = book.country === 'CN' ? '중국' : book.country === 'KR' ? '한국' : book.country;
+---
+
+<BaseLayout title={`권별 보기 — ${book.title_ko ?? book.title_zh}`} description={`${book.title_zh}의 권/장 목차`}>
+  <main class="volumes-page">
+    <header class="page-header">
+      <p class="breadcrumb">
+        <a href="/books">서적</a> · {countryLabel} · <a href={`/books/${book.slug}`}>{book.title_zh}</a>
+      </p>
+      <h1>권별 보기</h1>
+      <p class="lead">《{book.title_zh}》은(는) 총 {volumes.length}권으로 구성됩니다.</p>
+    </header>
+
+    {volumes.length === 0 ? (
+      <p class="empty">권 정보가 비어 있습니다.</p>
+    ) : (
+      <ul class="volume-list">
+        {volumes.map((v) => {
+          const num = juanToNum(v.juan);
+          const href = num > 0 ? `/books/${book.slug}/volumes/${num}` : `/books/${book.slug}`;
+          return (
+            <li>
+              <a href={href} class="volume-card">
+                <span class="volume-juan">{v.juan}</span>
+                <div class="volume-body">
+                  <p class="volume-cats">
+                    {v.categories.map((c) => (
+                      <span class="cat-chip">
+                        {c.category} <span class="cnt">{c.cnt}</span>
+                      </span>
+                    ))}
+                  </p>
+                </div>
+                <span class="volume-total">{v.poem_count}수</span>
+              </a>
+            </li>
+          );
+        })}
+      </ul>
+    )}
+  </main>
+</BaseLayout>
+
+<style>
+  .volumes-page {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+
+  .breadcrumb {
+    color: #9ca3af;
+    font-size: 0.9rem;
+    margin: 0 0 8px;
+  }
+
+  .breadcrumb a {
+    color: #6b7280;
+    text-decoration: none;
+    border-bottom: 1px dashed #9ca3af;
+  }
+
+  .breadcrumb a:hover { color: #111827; }
+
+  .page-header {
+    margin-bottom: 32px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .page-header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 0 8px;
+  }
+
+  .lead {
+    color: #6b7280;
+    margin: 0;
+  }
+
+  .volume-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .volume-card {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 20px 24px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    text-decoration: none;
+    color: inherit;
+    background: #fff;
+    transition: border-color 0.15s, transform 0.15s;
+  }
+
+  .volume-card:hover {
+    border-color: #6e8387;
+    transform: translateX(4px);
+  }
+
+  .volume-juan {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1f2937;
+    flex-shrink: 0;
+    min-width: 60px;
+  }
+
+  .volume-body { flex: 1; }
+
+  .volume-cats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 0;
+  }
+
+  .cat-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 3px 10px;
+    border-radius: 999px;
+    background: #f3f4f6;
+    color: #4b5563;
+    font-size: 0.85rem;
+  }
+
+  .cat-chip .cnt {
+    color: #9ca3af;
+    font-size: 0.75rem;
+  }
+
+  .volume-total {
+    font-weight: 600;
+    color: #3730a3;
+    background: #e0e7ff;
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: 0.9rem;
+  }
+
+  .empty {
+    color: #9ca3af;
+    font-style: italic;
+    text-align: center;
+    padding: 48px 0;
+  }
+</style>

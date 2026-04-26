@@ -22,16 +22,18 @@
     "hansi:famous-wave1": "node scripts/build_korean_hansi_famous_authors_wave1_batch.js",
     "hansi:jeong-jisang-tranche1": "node scripts/build_korean_hansi_jeong_jisang_tranche1.js",
     "hansi:jeong-jisang-tranche2": "node scripts/build_korean_hansi_jeong_jisang_tranche2.js",
-    "hansi:tokyo-zakki-author-view": "node scripts/build_korean_classics_tokyo_zakki_author_view.js",
-    "hansi:tokyo-zakki-review-queue": "node scripts/build_korean_classics_tokyo_zakki_review_queue.js",
-    "hansi:tokyo-zakki-vol1-harvest": "TZ_VOLUME=1 node scripts/build_korean_hansi_tokyo_zakki_volume2_harvest.js",
-    "hansi:tokyo-zakki-vol2-harvest": "node scripts/build_korean_hansi_tokyo_zakki_volume2_harvest.js",
-    "hansi:tokyo-zakki-vol3-harvest": "TZ_VOLUME=3 node scripts/build_korean_hansi_tokyo_zakki_volume2_harvest.js",
-    "classics:tokyo-zakki-bundle": "node scripts/build_korean_classics_tokyo_zakki_collection_bundle.js"
+    "hansi:donggyeong-japgi-author-view": "node scripts/build_korean_classics_donggyeong_japgi_author_view.js",
+    "hansi:donggyeong-japgi-review-queue": "node scripts/build_korean_classics_donggyeong_japgi_review_queue.js",
+    "hansi:donggyeong-japgi-vol1-harvest": "TZ_VOLUME=1 node scripts/build_korean_hansi_donggyeong_japgi_volume_harvest.js",
+    "hansi:donggyeong-japgi-vol2-harvest": "node scripts/build_korean_hansi_donggyeong_japgi_volume_harvest.js",
+    "hansi:donggyeong-japgi-vol3-harvest": "TZ_VOLUME=3 node scripts/build_korean_hansi_donggyeong_japgi_volume_harvest.js",
+    "classics:donggyeong-japgi-bundle": "node scripts/build_korean_classics_donggyeong_japgi_collection_bundle.js"
   },
   "dependencies": {
+    "@astrojs/node": "^10.0.6",
     "@supabase/supabase-js": "^2.97.0",
-    "pinyin-pro": "^3.26.0"
+    "pinyin-pro": "^3.26.0",
+    "postgres": "^3.4.9"
   },
   "devDependencies": {
     "astro": "^6.1.1"

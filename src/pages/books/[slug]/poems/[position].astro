@@ -1,0 +1,256 @@
+---
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import { getAnnotationByBookPosition, getPoem, getPoet } from '../../../../lib/db';
+
+const { slug, position } = Astro.params;
+
+if (!slug || typeof slug !== 'string' || !position || typeof position !== 'string') {
+  return new Response('Not Found', { status: 404 });
+}
+
+const ann = await getAnnotationByBookPosition(slug, position);
+
+if (!ann) {
+  return new Response('Not Found', { status: 404 });
+}
+
+const canonical = ann.poem_id ? await getPoem(ann.poem_id) : null;
+const poet = canonical?.poet_id ? await getPoet(canonical.poet_id) : null;
+
+const displayBody = ann.body_zh_variant ?? canonical?.body_zh ?? '';
+const displayTitleZh = ann.title_zh ?? canonical?.title_zh ?? '';
+const displayTitleKo = ann.title_ko ?? canonical?.title_ko ?? null;
+
+const pageTitle = poet
+  ? `${displayTitleZh} · ${poet.name_zh}`
+  : displayTitleZh;
+
+const poetHref = poet
+  ? (poet.slug ? `/poets/${poet.slug}` : `/poets/k-${poet.id}`)
+  : null;
+---
+
+<BaseLayout title={pageTitle} description={displayTitleKo ?? displayTitleZh}>
+  <main class="poem-page">
+    <header class="poem-header">
+      <p class="breadcrumb">
+        <a href="/books">서적</a> ·
+        <a href={`/books/${slug}`}>《{ann.book_title_zh}》</a>
+        {ann.juan && <span> · {ann.juan}</span>}
+        {position && <span> · 제 {position}수</span>}
+      </p>
+
+      <h1 class="title-zh">{displayTitleZh}</h1>
+      {displayTitleKo && <p class="title-ko">{displayTitleKo}</p>}
+
+      {poet && poetHref && (
+        <p class="byline">
+          <a href={poetHref} class="poet-link">
+            <span class="poet-name-zh">{poet.name_zh}</span>
+            {poet.name_ko && <span class="poet-name-ko"> · {poet.name_ko}</span>}
+          </a>
+          {poet.life_raw && <span class="poet-life"> ({poet.life_raw})</span>}
+        </p>
+      )}
+
+      <p class="meta">
+        {ann.category && <span class="badge">{ann.category}</span>}
+        {!ann.poem_id && <span class="badge badge-warn">이 책 자체 본문</span>}
+        {ann.poem_id && canonical && (
+          <a href={`/poems/${ann.poem_id}`} class="badge-link">
+            전당시 캐노니컬 보기 →
+          </a>
+        )}
+      </p>
+    </header>
+
+    <section class="poem-section">
+      <h2>원문{ann.body_zh_variant ? ' (이 책 판본)' : ''}</h2>
+      <pre class="body-zh">{displayBody}</pre>
+    </section>
+
+    {ann.translation_ko && (
+      <section class="poem-section">
+        <h2>번역</h2>
+        <pre class="translation">{ann.translation_ko}</pre>
+      </section>
+    )}
+
+    {ann.commentary_ko && (
+      <section class="poem-section">
+        <h2>해설</h2>
+        <div class="commentary">{ann.commentary_ko}</div>
+      </section>
+    )}
+
+    {ann.jipyeong_zh && (
+      <section class="poem-section">
+        <h2>집평(集評)</h2>
+        <pre class="jipyeong">{ann.jipyeong_zh}</pre>
+      </section>
+    )}
+
+    {ann.notes && ann.notes.length > 0 && (
+      <section class="poem-section">
+        <h2>주석</h2>
+        <ol class="notes-list">
+          {ann.notes.map((n) => (
+            <li class="note">
+              <span class="note-head">{n.head ?? n.headKo ?? n.headZh}</span>
+              {n.text && <span class="note-text">{n.text}</span>}
+            </li>
+          ))}
+        </ol>
+      </section>
+    )}
+  </main>
+</BaseLayout>
+
+<style>
+  .poem-page {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+    line-height: 1.7;
+  }
+
+  .breadcrumb {
+    color: #9ca3af;
+    font-size: 0.9rem;
+    margin: 0 0 8px;
+  }
+
+  .breadcrumb a {
+    color: #6b7280;
+    text-decoration: none;
+    border-bottom: 1px dashed #9ca3af;
+  }
+
+  .breadcrumb a:hover { color: #111827; }
+
+  .poem-header {
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 24px;
+    margin-bottom: 32px;
+  }
+
+  .title-zh {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin: 0 0 8px;
+  }
+
+  .title-ko {
+    color: #6b7280;
+    font-size: 1.05rem;
+    margin: 0 0 12px;
+  }
+
+  .byline { margin: 0 0 12px; color: #374151; }
+
+  .poet-link {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px dashed #9ca3af;
+  }
+
+  .poet-name-zh {
+    font-family: 'Noto Serif SC', serif;
+    font-weight: 600;
+  }
+
+  .poet-life { color: #9ca3af; font-size: 0.9rem; }
+
+  .meta { display: flex; gap: 8px; flex-wrap: wrap; margin: 0; align-items: center; }
+
+  .badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 999px;
+    background: #f3f4f6;
+    color: #4b5563;
+    font-size: 0.8rem;
+  }
+
+  .badge-warn {
+    background: #fef3c7;
+    color: #92400e;
+  }
+
+  .badge-link {
+    color: #1f2937;
+    font-size: 0.85rem;
+    text-decoration: none;
+    border-bottom: 1px dashed #9ca3af;
+    padding-bottom: 1px;
+  }
+
+  .badge-link:hover { color: #6e8387; }
+
+  .poem-section { margin-bottom: 32px; }
+
+  .poem-section h2 {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin: 0 0 12px;
+  }
+
+  .body-zh, .translation, .jipyeong {
+    font-family: 'Noto Serif SC', serif;
+    white-space: pre-wrap;
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 2;
+    background: none;
+    padding: 0;
+  }
+
+  .body-zh { font-size: 1.35rem; }
+
+  .commentary { color: #374151; }
+
+  .jipyeong {
+    color: #4b5563;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    background: #f9fafb;
+    padding: 12px 16px;
+    border-left: 3px solid #d1d5db;
+  }
+
+  .notes-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    counter-reset: note;
+  }
+
+  .note {
+    counter-increment: note;
+    padding: 10px 0;
+    border-bottom: 1px solid #f3f4f6;
+    line-height: 1.7;
+  }
+
+  .note:last-child { border-bottom: none; }
+
+  .note::before {
+    content: counter(note) '.';
+    color: #9ca3af;
+    font-weight: 600;
+    margin-right: 8px;
+  }
+
+  .note-head {
+    font-family: 'Noto Serif SC', serif;
+    font-weight: 600;
+    color: #1f2937;
+    margin-right: 6px;
+  }
+
+  .note-text { color: #4b5563; }
+</style>

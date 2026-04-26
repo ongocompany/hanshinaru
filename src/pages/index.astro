@@ -21,6 +21,28 @@ import Footer from '../components/Footer.astro';
 
     <div class="page-container">
 
+      <!-- ===== A2. 둘러보기 (SSR 진입) ===== -->
+      <section class="explore-section">
+        <h2 class="section-title">둘러보기</h2>
+        <div class="explore-grid">
+          <a href="/books" class="explore-card">
+            <span class="explore-icon">📚</span>
+            <span class="explore-label">서적</span>
+            <span class="explore-desc">전권 수록 책 카탈로그</span>
+          </a>
+          <a href="/poets" class="explore-card">
+            <span class="explore-icon">👤</span>
+            <span class="explore-label">시인</span>
+            <span class="explore-desc">한·중 시인 2,848명</span>
+          </a>
+          <a href="/poems/1" class="explore-card">
+            <span class="explore-icon">✨</span>
+            <span class="explore-label">작품 발견</span>
+            <span class="explore-desc">시 47,567수</span>
+          </a>
+        </div>
+      </section>
+
       <!-- ===== B. 日日五首 ===== -->
       <section class="daily-five-section">
         <h2 class="section-title-zh">日日五首</h2>
@@ -88,11 +110,61 @@ import Footer from '../components/Footer.astro';
   /* 섹션 공통 */
   .daily-five-section,
   .poet-today-section,
-  .news-section {
+  .news-section,
+  .explore-section {
     background: #fff;
     border-bottom: 1px dashed var(--c-silver);
   }
   .news-section { border-bottom: none; }
+
+  /* ===== A2. 둘러보기 ===== */
+  .explore-section {
+    padding: 48px 24px;
+    text-align: center;
+  }
+
+  .explore-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    max-width: 800px;
+    margin: 24px auto 0;
+  }
+
+  .explore-card {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 28px 20px;
+    border: 1px solid var(--c-silver, #e5e7eb);
+    border-radius: 8px;
+    text-decoration: none;
+    color: inherit;
+    background: #fff;
+    transition: border-color 0.15s, transform 0.15s, box-shadow 0.15s;
+  }
+
+  .explore-card:hover {
+    border-color: var(--c-slate-grey, #6e8387);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
+    text-decoration: none;
+  }
+
+  .explore-icon {
+    font-size: 2rem;
+  }
+
+  .explore-label {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--c-ink, #111);
+  }
+
+  .explore-desc {
+    font-size: 0.9rem;
+    color: var(--c-muted, #6b7280);
+  }
 
   /* ===== A. Hero ===== */
   .main-hero {

@@ -1,12 +1,12 @@
 ---
-import { getTopMenu } from '../lib/menu';
+import navigation from '../data/navigation.json';
 
 interface Props {
   currentPath?: string;
 }
 
 const { currentPath = '' } = Astro.props;
-const topMenu = await getTopMenu();
+const topMenu = navigation.topMenu;
 ---
 
 <nav class="nav" id="topNav">

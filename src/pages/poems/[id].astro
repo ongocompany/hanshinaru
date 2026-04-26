@@ -1,0 +1,420 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getPoem, getPoet, getAnnotationsByPoem } from '../../lib/db';
+
+const { id } = Astro.params;
+const numericId = Number(id);
+
+if (!Number.isInteger(numericId) || numericId <= 0) {
+  return new Response('Not Found', { status: 404 });
+}
+
+const poem = await getPoem(numericId);
+
+if (!poem) {
+  return new Response('Not Found', { status: 404 });
+}
+
+const poet = poem.poet_id ? await getPoet(poem.poet_id) : null;
+const annotations = await getAnnotationsByPoem(poem.id);
+
+const pageTitle = poet
+  ? `${poem.title_zh} · ${poet.name_zh}`
+  : poem.title_zh;
+
+const poetHref = poet
+  ? (poet.slug ? `/poets/${poet.slug}` : `/poets/k-${poet.id}`)
+  : null;
+---
+
+<BaseLayout title={pageTitle} description={poem.title_ko ?? poem.title_zh}>
+  <main class="poem-page">
+    <header class="poem-header">
+      <h1 class="title-zh">{poem.title_zh}</h1>
+      {poem.title_ko && <p class="title-ko">{poem.title_ko}</p>}
+      {poet && poetHref && (
+        <p class="byline">
+          <a href={poetHref} class="poet-link">
+            <span class="poet-name-zh">{poet.name_zh}</span>
+            {poet.name_ko && <span class="poet-name-ko"> · {poet.name_ko}</span>}
+          </a>
+          {poet.life_raw && <span class="poet-life"> ({poet.life_raw})</span>}
+        </p>
+      )}
+      {poem.country && (
+        <p class="meta">
+          <span class="badge">{poem.country === 'CN' ? '중국' : poem.country === 'KR' ? '한국' : poem.country}</span>
+          {poem.genre && <span class="badge">{poem.genre}</span>}
+          {poem.status === 'parsed' && !poem.translation_ko && (
+            <span class="badge badge-progress">AI 번역 진행 중</span>
+          )}
+        </p>
+      )}
+    </header>
+
+    {poem.preface_zh && (
+      <section class="poem-section">
+        <h2>서(序)</h2>
+        <p class="preface">{poem.preface_zh}</p>
+      </section>
+    )}
+
+    <section class="poem-section">
+      <h2>원문</h2>
+      <pre class="body-zh">{poem.body_zh}</pre>
+    </section>
+
+    {poem.pinyin && (
+      <section class="poem-section">
+        <h2>독음</h2>
+        <pre class="pinyin">{poem.pinyin}</pre>
+      </section>
+    )}
+
+    {poem.translation_ko && (
+      <section class="poem-section">
+        <h2>번역</h2>
+        <pre class="translation">{poem.translation_ko}</pre>
+      </section>
+    )}
+
+    {poem.commentary_ko && (
+      <section class="poem-section">
+        <h2>해설</h2>
+        <div class="commentary">{poem.commentary_ko}</div>
+      </section>
+    )}
+
+    {annotations.length > 0 && (
+      <section class="poem-section annotations">
+        <h2>📚 수록 책별 보기</h2>
+        <p class="annotations-lead">이 시를 수록한 책의 자체 본문·번역·해설·집평·주석입니다. 책마다 다를 수 있습니다.</p>
+
+        {annotations.map((a) => (
+          <details class="annotation-block" open>
+            <summary class="annotation-summary">
+              <a href={`/books/${a.book_slug}`} class="book-link">
+                《{a.book_title_zh}》
+              </a>
+              {a.book_title_ko && <span class="book-title-ko">{a.book_title_ko}</span>}
+              {a.juan && <span class="badge">{a.juan}</span>}
+              {a.position && <span class="badge">제 {a.position}수</span>}
+              {a.category && <span class="badge">{a.category}</span>}
+            </summary>
+
+            <div class="annotation-body">
+              {a.title_zh && a.title_zh !== poem.title_zh && (
+                <p class="alt-title">
+                  <strong>제목 (이 책 판본):</strong> {a.title_zh}
+                  {a.title_ko && <span class="ko"> · {a.title_ko}</span>}
+                </p>
+              )}
+
+              {a.body_zh_variant && (
+                <div class="ann-section">
+                  <h3>본문 (이 책 판본)</h3>
+                  <pre class="body-zh">{a.body_zh_variant}</pre>
+                </div>
+              )}
+
+              {a.translation_ko && (
+                <div class="ann-section">
+                  <h3>번역</h3>
+                  <pre class="translation">{a.translation_ko}</pre>
+                </div>
+              )}
+
+              {a.commentary_ko && (
+                <div class="ann-section">
+                  <h3>해설</h3>
+                  <div class="commentary">{a.commentary_ko}</div>
+                </div>
+              )}
+
+              {a.jipyeong_zh && (
+                <div class="ann-section">
+                  <h3>집평(集評)</h3>
+                  <pre class="jipyeong">{a.jipyeong_zh}</pre>
+                </div>
+              )}
+
+              {a.notes && a.notes.length > 0 && (
+                <div class="ann-section">
+                  <h3>주석</h3>
+                  <ol class="notes-list">
+                    {a.notes.map((n) => (
+                      <li class="note">
+                        <span class="note-head">
+                          {n.head ?? n.headKo ?? n.headZh}
+                        </span>
+                        {n.text && <span class="note-text">{n.text}</span>}
+                      </li>
+                    ))}
+                  </ol>
+                </div>
+              )}
+            </div>
+          </details>
+        ))}
+      </section>
+    )}
+  </main>
+</BaseLayout>
+
+<style>
+  .poem-page {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+    line-height: 1.7;
+  }
+
+  .poem-header {
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 24px;
+    margin-bottom: 32px;
+  }
+
+  .title-zh {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin: 0 0 8px;
+  }
+
+  .title-ko {
+    color: #6b7280;
+    font-size: 1.05rem;
+    margin: 0 0 12px;
+  }
+
+  .byline {
+    margin: 0 0 12px;
+    color: #374151;
+  }
+
+  .poet-link {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px dashed #9ca3af;
+  }
+
+  .poet-link:hover {
+    border-bottom-color: #374151;
+    color: #111827;
+  }
+
+  .poet-name-zh {
+    font-family: 'Noto Serif SC', serif;
+    font-weight: 600;
+  }
+
+  .poet-life {
+    color: #9ca3af;
+    font-size: 0.9rem;
+  }
+
+  .meta {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  .badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 999px;
+    background: #f3f4f6;
+    color: #4b5563;
+    font-size: 0.8rem;
+  }
+
+  .badge-progress {
+    background: #fef3c7;
+    color: #92400e;
+  }
+
+  .poem-section {
+    margin-bottom: 32px;
+  }
+
+  .poem-section h2 {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin: 0 0 12px;
+  }
+
+  .body-zh,
+  .preface,
+  .pinyin,
+  .translation {
+    font-family: 'Noto Serif SC', serif;
+    white-space: pre-wrap;
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 2;
+    background: none;
+    padding: 0;
+  }
+
+  .body-zh {
+    font-size: 1.35rem;
+  }
+
+  .pinyin {
+    color: #6b7280;
+    font-family: ui-monospace, monospace;
+    font-size: 0.95rem;
+    line-height: 1.8;
+  }
+
+  .commentary {
+    color: #374151;
+  }
+
+  /* ===== Annotations 섹션 ===== */
+  .annotations {
+    margin-top: 48px;
+    padding-top: 32px;
+    border-top: 2px solid #e5e7eb;
+  }
+
+  .annotations-lead {
+    color: #6b7280;
+    font-size: 0.95rem;
+    margin: 0 0 24px;
+  }
+
+  .annotation-block {
+    margin-bottom: 20px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fafafa;
+  }
+
+  .annotation-summary {
+    padding: 14px 18px;
+    background: #f3f4f6;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style: none;
+    user-select: none;
+  }
+
+  .annotation-summary::-webkit-details-marker { display: none; }
+
+  .annotation-summary::before {
+    content: '▶';
+    font-size: 0.7rem;
+    color: #9ca3af;
+    transition: transform 0.15s;
+  }
+
+  details[open] > .annotation-summary::before {
+    transform: rotate(90deg);
+  }
+
+  .book-link {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #1f2937;
+    text-decoration: none;
+  }
+
+  .book-link:hover {
+    color: #6e8387;
+  }
+
+  .book-title-ko {
+    color: #6b7280;
+    font-size: 0.9rem;
+  }
+
+  .annotation-summary .badge {
+    background: #fff;
+    color: #4b5563;
+    font-size: 0.75rem;
+  }
+
+  .annotation-body {
+    padding: 24px;
+  }
+
+  .alt-title {
+    color: #6b7280;
+    margin: 0 0 20px;
+    font-size: 0.95rem;
+  }
+
+  .alt-title .ko { color: #9ca3af; }
+
+  .ann-section {
+    margin-bottom: 24px;
+  }
+
+  .ann-section:last-child { margin-bottom: 0; }
+
+  .ann-section h3 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin: 0 0 10px;
+  }
+
+  .jipyeong {
+    font-family: 'Noto Serif SC', serif;
+    color: #4b5563;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    background: #fff;
+    padding: 12px 16px;
+    border-left: 3px solid #d1d5db;
+    margin: 0;
+    white-space: pre-wrap;
+  }
+
+  .notes-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    counter-reset: note;
+  }
+
+  .note {
+    counter-increment: note;
+    padding: 10px 0;
+    border-bottom: 1px solid #e5e7eb;
+    line-height: 1.7;
+  }
+
+  .note:last-child { border-bottom: none; }
+
+  .note::before {
+    content: counter(note) '.';
+    color: #9ca3af;
+    font-weight: 600;
+    margin-right: 8px;
+  }
+
+  .note-head {
+    font-family: 'Noto Serif SC', serif;
+    font-weight: 600;
+    color: #1f2937;
+    margin-right: 6px;
+  }
+
+  .note-text {
+    color: #4b5563;
+  }
+</style>

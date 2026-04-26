@@ -1,0 +1,295 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getPoetsList } from '../../lib/db';
+
+const url = new URL(Astro.request.url);
+const countryParam = url.searchParams.get('country');
+const search = url.searchParams.get('q') ?? '';
+const pageParam = Number(url.searchParams.get('page') ?? '1');
+const page = Number.isInteger(pageParam) && pageParam > 0 ? pageParam : 1;
+const PAGE_SIZE = 50;
+
+const country = countryParam === 'CN' || countryParam === 'KR' ? countryParam : undefined;
+
+const { items, total } = await getPoetsList({
+  country,
+  search,
+  limit: PAGE_SIZE,
+  offset: (page - 1) * PAGE_SIZE,
+});
+
+const totalPages = Math.max(1, Math.ceil(total / PAGE_SIZE));
+
+function buildHref(overrides: Record<string, string | null>): string {
+  const final: Record<string, string | null> = {
+    country: countryParam,
+    q: search || null,
+    page: page > 1 ? String(page) : null,
+    ...overrides,
+  };
+  const params = new URLSearchParams();
+  for (const [k, v] of Object.entries(final)) {
+    if (!v) continue;
+    if (k === 'page' && v === '1') continue;
+    params.set(k, v);
+  }
+  const qs = params.toString();
+  return qs ? `/poets?${qs}` : '/poets';
+}
+
+function poetHref(p: { slug: string | null; id: number }): string {
+  return p.slug ? `/poets/${p.slug}` : `/poets/k-${p.id}`;
+}
+
+function countryLabel(c: string | null): string {
+  return c === 'CN' ? '중국' : c === 'KR' ? '한국' : '';
+}
+---
+
+<BaseLayout title="시인 인덱스" description="한시나루 등록 시인 전체 보기">
+  <main class="poets-index">
+    <header class="page-header">
+      <h1>시인</h1>
+      <p class="lead">전체 {total.toLocaleString()}명</p>
+    </header>
+
+    <nav class="filters">
+      <div class="filter-group">
+        <a href={buildHref({ country: null, page: '1' })} class={`filter-chip ${!country ? 'active' : ''}`}>전체</a>
+        <a href={buildHref({ country: 'CN', page: '1' })} class={`filter-chip ${country === 'CN' ? 'active' : ''}`}>중국</a>
+        <a href={buildHref({ country: 'KR', page: '1' })} class={`filter-chip ${country === 'KR' ? 'active' : ''}`}>한국</a>
+      </div>
+
+      <form method="get" class="search-form">
+        {country && <input type="hidden" name="country" value={country} />}
+        <input
+          type="search"
+          name="q"
+          placeholder="이름·slug 검색"
+          value={search}
+          class="search-input"
+        />
+        <button type="submit" class="search-btn">검색</button>
+      </form>
+    </nav>
+
+    {items.length === 0 ? (
+      <p class="empty">조건에 맞는 시인이 없습니다.</p>
+    ) : (
+      <ul class="poet-list">
+        {items.map((p) => (
+          <li class="poet-item">
+            <a href={poetHref(p)} class="poet-link">
+              <span class="poet-name-zh">{p.name_zh}</span>
+              {p.name_ko && <span class="poet-name-ko"> · {p.name_ko}</span>}
+              <span class="poet-meta">
+                {p.country && <span class="badge">{countryLabel(p.country)}</span>}
+                {p.era_period && <span class="badge">{p.era_period}</span>}
+                <span class="badge badge-count">{p.actual_poem_count.toLocaleString()}수</span>
+              </span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    )}
+
+    {totalPages > 1 && (
+      <nav class="pagination">
+        {page > 1 && (
+          <a href={buildHref({ page: String(page - 1) })} class="page-btn">← 이전</a>
+        )}
+        <span class="page-status">{page} / {totalPages}</span>
+        {page < totalPages && (
+          <a href={buildHref({ page: String(page + 1) })} class="page-btn">다음 →</a>
+        )}
+      </nav>
+    )}
+  </main>
+</BaseLayout>
+
+<style>
+  .poets-index {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+
+  .page-header {
+    margin-bottom: 32px;
+  }
+
+  .page-header h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin: 0 0 8px;
+  }
+
+  .lead {
+    color: #6b7280;
+    margin: 0;
+  }
+
+  .filters {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 32px;
+    padding: 16px;
+    background: #f9fafb;
+    border-radius: 8px;
+  }
+
+  .filter-group {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .filter-chip {
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: #fff;
+    color: #4b5563;
+    text-decoration: none;
+    font-size: 0.9rem;
+    border: 1px solid #e5e7eb;
+    transition: all 0.15s;
+  }
+
+  .filter-chip:hover {
+    border-color: #6e8387;
+  }
+
+  .filter-chip.active {
+    background: #6e8387;
+    color: #fff;
+    border-color: #6e8387;
+  }
+
+  .search-form {
+    display: flex;
+    gap: 8px;
+  }
+
+  .search-input {
+    flex: 1;
+    padding: 8px 14px;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    background: #fff;
+  }
+
+  .search-input:focus {
+    outline: none;
+    border-color: #6e8387;
+  }
+
+  .search-btn {
+    padding: 8px 18px;
+    border: none;
+    border-radius: 6px;
+    background: #374151;
+    color: #fff;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+
+  .search-btn:hover {
+    background: #1f2937;
+  }
+
+  .poet-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .poet-item {
+    border-bottom: 1px solid #f3f4f6;
+  }
+
+  .poet-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 8px;
+    color: inherit;
+    text-decoration: none;
+    transition: background 0.15s;
+  }
+
+  .poet-link:hover {
+    background: #f9fafb;
+  }
+
+  .poet-name-zh {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 1.15rem;
+    font-weight: 600;
+    min-width: 80px;
+  }
+
+  .poet-name-ko {
+    color: #6b7280;
+    font-size: 0.95rem;
+    flex: 1;
+  }
+
+  .poet-meta {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-left: auto;
+  }
+
+  .badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: #f3f4f6;
+    color: #4b5563;
+    font-size: 0.75rem;
+  }
+
+  .badge-count {
+    background: #e0e7ff;
+    color: #3730a3;
+  }
+
+  .empty {
+    color: #9ca3af;
+    font-style: italic;
+    text-align: center;
+    padding: 32px 0;
+  }
+
+  .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .page-btn {
+    padding: 8px 16px;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    color: #4b5563;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+
+  .page-btn:hover {
+    border-color: #6e8387;
+    color: #111827;
+  }
+
+  .page-status {
+    color: #6b7280;
+    font-size: 0.9rem;
+  }
+</style>

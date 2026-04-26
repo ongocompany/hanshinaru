@@ -1,0 +1,394 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { findEraBySlug } from '../../data/eras';
+import {
+  getPoetsByEra, getTopPoemsByPoet, getPoet, getPoetBySlug,
+  getFeaturedPoetsByEra, getFeaturedPoemsByPoet,
+} from '../../lib/db';
+
+const { slug } = Astro.params;
+
+if (!slug || typeof slug !== 'string') {
+  return new Response('Not Found', { status: 404 });
+}
+
+const era = findEraBySlug(slug);
+
+if (!era) {
+  return new Response('Not Found', { status: 404 });
+}
+
+// featured_poets 우선, 없으면 자동 ranking
+const featured = await getFeaturedPoetsByEra(era.slug);
+const poets = featured.length > 0 ? featured : await getPoetsByEra(era.country, era.matchPeriods, 30);
+
+const url = new URL(Astro.request.url);
+const poetParam = url.searchParams.get('poet');
+
+let selectedPoet = null;
+
+if (poetParam) {
+  if (poetParam.startsWith('k-')) {
+    const id = Number(poetParam.slice(2));
+    if (Number.isInteger(id) && id > 0) {
+      selectedPoet = await getPoet(id);
+    }
+  } else {
+    selectedPoet = await getPoetBySlug(poetParam);
+  }
+}
+
+if (!selectedPoet && poets.length > 0) {
+  selectedPoet = await getPoet(poets[0].id);
+}
+
+// 선택된 시인의 대표작: featured_poems 우선, 없으면 fallback
+let topPoems: any[] = [];
+if (selectedPoet) {
+  const featuredPoems = await getFeaturedPoemsByPoet(era.slug, selectedPoet.id, 8);
+  topPoems = featuredPoems.length > 0
+    ? featuredPoems
+    : await getTopPoemsByPoet(selectedPoet.id, 8);
+}
+
+function poetRouteSlug(p: { slug: string | null; id: number }): string {
+  return p.slug ?? `k-${p.id}`;
+}
+
+const countryHref = era.country === 'CN' ? '/china' : '/korea';
+const countryLabel = era.country === 'CN' ? '중국' : '한국';
+---
+
+<BaseLayout title={`${era.label} — ${countryLabel} 한시`} description={era.description}>
+  <main class="era-page">
+    <header class="era-header">
+      <p class="breadcrumb">
+        <a href={countryHref}>{countryLabel}</a> · 시대
+      </p>
+      <h1 class="era-title">{era.label}</h1>
+      <p class="era-years">{era.yearRange}</p>
+      <p class="era-desc">{era.description}</p>
+    </header>
+
+    {poets.length === 0 ? (
+      <p class="empty">이 시대로 분류된 시인이 아직 없습니다.</p>
+    ) : (
+      <div class="cascade">
+        <aside class="poet-sidebar">
+          <h2 class="sidebar-heading">대표 시인</h2>
+          <ul class="poet-list">
+            {poets.map((p) => {
+              const routeSlug = poetRouteSlug(p);
+              const isSelected = selectedPoet?.id === p.id;
+              return (
+                <li>
+                  <a
+                    href={`/eras/${era.slug}?poet=${routeSlug}`}
+                    class={`poet-item ${isSelected ? 'selected' : ''}`}
+                  >
+                    <span class="poet-name-zh">{p.name_zh}</span>
+                    {p.name_ko && <span class="poet-name-ko">{p.name_ko}</span>}
+                    <span class="poet-count">{p.poem_count}수</span>
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+        </aside>
+
+        {selectedPoet && (
+          <section class="poet-detail">
+            <header class="poet-detail-header">
+              <h2 class="poet-name-large">{selectedPoet.name_zh}</h2>
+              {selectedPoet.name_ko && <p class="poet-ko">{selectedPoet.name_ko}</p>}
+              <p class="poet-meta">
+                {selectedPoet.life_raw && <span class="badge">{selectedPoet.life_raw}</span>}
+                {selectedPoet.era_period && <span class="badge">{selectedPoet.era_period}</span>}
+                <span class="badge badge-count">{selectedPoet.poem_count}수</span>
+              </p>
+            </header>
+
+            {selectedPoet.bio_ko && (
+              <p class="poet-bio">{selectedPoet.bio_ko}</p>
+            )}
+
+            <h3 class="poems-heading">대표작</h3>
+            {topPoems.length === 0 ? (
+              <p class="empty-small">등록된 시가 없습니다.</p>
+            ) : (
+              <ul class="poems-list">
+                {topPoems.map((poem) => (
+                  <li>
+                    <a href={`/poems/${poem.id}`} class="poem-link">
+                      <span class="poem-title-zh">{poem.title_zh}</span>
+                      {poem.title_ko && <span class="poem-title-ko">{poem.title_ko}</span>}
+                      {!poem.has_translation && <span class="badge-small">번역 진행 중</span>}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            )}
+
+            <a
+              href={selectedPoet.slug ? `/poets/${selectedPoet.slug}` : `/poets/k-${selectedPoet.id}`}
+              class="see-all-cta"
+            >
+              {selectedPoet.name_zh}의 모든 시 보기 →
+            </a>
+          </section>
+        )}
+      </div>
+    )}
+  </main>
+</BaseLayout>
+
+<style>
+  .era-page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+
+  .breadcrumb {
+    color: #9ca3af;
+    font-size: 0.9rem;
+    margin: 0 0 8px;
+  }
+
+  .breadcrumb a {
+    color: #6b7280;
+    text-decoration: none;
+    border-bottom: 1px dashed #9ca3af;
+  }
+
+  .breadcrumb a:hover {
+    color: #111827;
+  }
+
+  .era-header {
+    margin-bottom: 32px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .era-title {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0 0 4px;
+  }
+
+  .era-years {
+    color: #9ca3af;
+    font-size: 0.95rem;
+    margin: 0 0 12px;
+  }
+
+  .era-desc {
+    color: #4b5563;
+    font-size: 1.05rem;
+    margin: 0;
+    line-height: 1.7;
+  }
+
+  .empty {
+    color: #9ca3af;
+    font-style: italic;
+    text-align: center;
+    padding: 48px 0;
+  }
+
+  .cascade {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 32px;
+  }
+
+  @media (max-width: 768px) {
+    .cascade {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .poet-sidebar {
+    position: sticky;
+    top: calc(var(--nav-height) + 24px);
+    align-self: start;
+    max-height: calc(100vh - var(--nav-height) - 48px);
+    overflow-y: auto;
+  }
+
+  .sidebar-heading {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin: 0 0 12px;
+  }
+
+  .poet-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .poet-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 6px 8px;
+    padding: 10px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: inherit;
+    transition: background 0.15s;
+  }
+
+  .poet-item:hover {
+    background: #f3f4f6;
+  }
+
+  .poet-item.selected {
+    background: #1f2937;
+    color: #fff;
+  }
+
+  .poet-item.selected .poet-name-ko,
+  .poet-item.selected .poet-count {
+    color: #d1d5db;
+  }
+
+  .poet-name-zh {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+  }
+
+  .poet-name-ko {
+    color: #6b7280;
+    font-size: 0.85rem;
+  }
+
+  .poet-count {
+    margin-left: auto;
+    color: #9ca3af;
+    font-size: 0.8rem;
+  }
+
+  .poet-detail-header {
+    margin-bottom: 16px;
+  }
+
+  .poet-name-large {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 0 4px;
+  }
+
+  .poet-ko {
+    color: #6b7280;
+    font-size: 1rem;
+    margin: 0 0 8px;
+  }
+
+  .poet-meta {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin: 0 0 16px;
+  }
+
+  .badge {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 999px;
+    background: #f3f4f6;
+    color: #4b5563;
+    font-size: 0.8rem;
+  }
+
+  .badge-count {
+    background: #e0e7ff;
+    color: #3730a3;
+  }
+
+  .poet-bio {
+    color: #374151;
+    line-height: 1.7;
+    margin: 0 0 24px;
+  }
+
+  .poems-heading {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin: 0 0 12px;
+  }
+
+  .poems-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px;
+  }
+
+  .poem-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 8px;
+    border-bottom: 1px solid #f3f4f6;
+    text-decoration: none;
+    color: inherit;
+    transition: background 0.15s;
+  }
+
+  .poem-link:hover {
+    background: #f9fafb;
+  }
+
+  .poem-title-zh {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 1.05rem;
+    font-weight: 500;
+  }
+
+  .poem-title-ko {
+    color: #6b7280;
+    font-size: 0.9rem;
+  }
+
+  .badge-small {
+    margin-left: auto;
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: #fef3c7;
+    color: #92400e;
+    font-size: 0.7rem;
+  }
+
+  .see-all-cta {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 10px 18px;
+    border: 1px solid #6e8387;
+    border-radius: 6px;
+    color: #1f2937;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: background 0.15s;
+  }
+
+  .see-all-cta:hover {
+    background: #6e8387;
+    color: #fff;
+  }
+
+  .empty-small {
+    color: #9ca3af;
+    font-style: italic;
+  }
+</style>

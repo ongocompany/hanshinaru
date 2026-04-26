@@ -1,0 +1,161 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getBooks } from '../../lib/db';
+
+const books = await getBooks();
+const cnBooks = books.filter((b) => b.country === 'CN');
+const krBooks = books.filter((b) => b.country === 'KR');
+
+function countryLabel(c: string): string {
+  return c === 'CN' ? '중국' : c === 'KR' ? '한국' : c;
+}
+---
+
+<BaseLayout title="서적" description="전권 수록된 한시 책 카탈로그">
+  <main class="books-page">
+    <header class="page-header">
+      <h1>서적</h1>
+      <p class="lead">전권을 수록한 한시 책. 권별·시인별·색인 진입이 가능합니다.</p>
+    </header>
+
+    {cnBooks.length > 0 && (
+      <section class="country-block">
+        <h2>중국</h2>
+        <div class="grid">
+          {cnBooks.map((b) => (
+            <a href={`/books/${b.slug}`} class="book-card">
+              <h3 class="title-zh">{b.title_zh}</h3>
+              {b.title_ko && <p class="title-ko">{b.title_ko}</p>}
+              <p class="meta">
+                {b.era_period && <span class="badge">{b.era_period}</span>}
+                <span class="badge badge-count">{b.poem_count.toLocaleString()}수</span>
+              </p>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+
+    {krBooks.length > 0 && (
+      <section class="country-block">
+        <h2>한국</h2>
+        <div class="grid">
+          {krBooks.map((b) => (
+            <a href={`/books/${b.slug}`} class="book-card">
+              <h3 class="title-zh">{b.title_zh}</h3>
+              {b.title_ko && <p class="title-ko">{b.title_ko}</p>}
+              <p class="meta">
+                {b.era_period && <span class="badge">{b.era_period}</span>}
+                <span class="badge badge-count">{b.poem_count.toLocaleString()}수</span>
+              </p>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+
+    {krBooks.length === 0 && (
+      <p class="empty-note">한국 한시 전권 수록 책은 후속 단계에서 추가됩니다.</p>
+    )}
+  </main>
+</BaseLayout>
+
+<style>
+  .books-page {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+
+  .page-header {
+    margin-bottom: 40px;
+  }
+
+  .page-header h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin: 0 0 8px;
+  }
+
+  .lead {
+    color: #6b7280;
+    margin: 0;
+    font-size: 1.05rem;
+  }
+
+  .country-block {
+    margin-bottom: 48px;
+  }
+
+  .country-block h2 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin: 0 0 16px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+  }
+
+  .book-card {
+    display: block;
+    padding: 24px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    text-decoration: none;
+    color: inherit;
+    background: #fff;
+    transition: border-color 0.15s, transform 0.15s, box-shadow 0.15s;
+  }
+
+  .book-card:hover {
+    border-color: #6e8387;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  }
+
+  .title-zh {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 0 6px;
+  }
+
+  .title-ko {
+    color: #6b7280;
+    font-size: 0.95rem;
+    margin: 0 0 12px;
+  }
+
+  .meta {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  .badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 999px;
+    background: #f3f4f6;
+    color: #4b5563;
+    font-size: 0.8rem;
+  }
+
+  .badge-count {
+    background: #e0e7ff;
+    color: #3730a3;
+  }
+
+  .empty-note {
+    color: #9ca3af;
+    font-style: italic;
+    margin-top: 16px;
+  }
+</style>
