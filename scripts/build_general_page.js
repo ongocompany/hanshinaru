@@ -463,6 +463,5 @@ ${buildSubItems(sections3, 'poets')}
 fs.mkdirSync(path.dirname(OUT), { recursive: true });
 fs.writeFileSync(OUT, pageHtml, 'utf8');
 console.log('✅ Generated', OUT);
-`;
 
 console.log('Script complete');
