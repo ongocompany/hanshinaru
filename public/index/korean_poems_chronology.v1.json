@@ -16,13 +16,13 @@
   "catalogId": "korean-poems-chronology",
   "targetDb": "poems",
   "summary": {
-    "directTextCollected": 225,
+    "directTextCollected": 235,
     "sourceLocated": 0,
     "ocrCandidate": 0,
     "blocked": 0,
     "candidateOnly": 137,
-    "totalWorks": 362,
-    "workerResultWorks": 116,
+    "totalWorks": 372,
+    "workerResultWorks": 126,
     "donggyeongJapgiMatchedBlocks": 94,
     "donggyeongJapgiImportedWorks": 64,
     "donggyeongJapgiSourceVariants": 30
@@ -8947,6 +8947,262 @@
       }
     },
     {
+      "poemId": "KPOEM-WORKER-AUTHOR-EC9DB4EC-009",
+      "canonicalId": "KPOEM-CANON-WORKER-AUTHOR-EC9DB4EC-009",
+      "title": {
+        "zh": "南郊",
+        "ko": "南郊"
+      },
+      "author": {
+        "authorId": "KAUTH-AUTHOR-EC9DB4EC",
+        "zh": "李崇仁",
+        "ko": "이숭인"
+      },
+      "era": {
+        "label": "고려 말"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "entryTitle": "南郊",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "晴雲濃暖白於綿，芳草蒙葺綠似煙。\n信馬獨歸仍得句，箇中佳興儘悠然。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-11-yi-sungin-doeunjip.v1.json",
+        "workerId": "worker-11-yi-sungin-doeunjip",
+        "candidateTitle": "회고시",
+        "matchedTitle": "南郊",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `南郊` heading과 전문을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-AUTHOR-EC9DB4EC-010",
+      "canonicalId": "KPOEM-CANON-WORKER-AUTHOR-EC9DB4EC-010",
+      "title": {
+        "zh": "苦熱",
+        "ko": "苦熱"
+      },
+      "author": {
+        "authorId": "KAUTH-AUTHOR-EC9DB4EC",
+        "zh": "李崇仁",
+        "ko": "이숭인"
+      },
+      "era": {
+        "label": "고려 말"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "entryTitle": "苦熱",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "軒窓蒸鬱汗翻漿，赤日彤雲晝刻長。\n賴有寸心能似水，却於炎處作淸涼。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-11-yi-sungin-doeunjip.v1.json",
+        "workerId": "worker-11-yi-sungin-doeunjip",
+        "candidateTitle": "회고시",
+        "matchedTitle": "苦熱",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `苦熱` heading과 전문을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-AUTHOR-EC9DB4EC-011",
+      "canonicalId": "KPOEM-CANON-WORKER-AUTHOR-EC9DB4EC-011",
+      "title": {
+        "zh": "玄聖寺讀書",
+        "ko": "玄聖寺讀書"
+      },
+      "author": {
+        "authorId": "KAUTH-AUTHOR-EC9DB4EC",
+        "zh": "李崇仁",
+        "ko": "이숭인"
+      },
+      "era": {
+        "label": "고려 말"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "entryTitle": "玄聖寺讀書",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "古木千章五月涼，小樓八尺一爐香。\n讀殘數紙還拋却，瞌睡居然是坐忘。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-11-yi-sungin-doeunjip.v1.json",
+        "workerId": "worker-11-yi-sungin-doeunjip",
+        "candidateTitle": "회고시",
+        "matchedTitle": "玄聖寺讀書",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `玄聖寺讀書` heading과 전문을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-AUTHOR-EC9DB4EC-012",
+      "canonicalId": "KPOEM-CANON-WORKER-AUTHOR-EC9DB4EC-012",
+      "title": {
+        "zh": "奉送羅判事使日東",
+        "ko": "奉送羅判事使日東"
+      },
+      "author": {
+        "authorId": "KAUTH-AUTHOR-EC9DB4EC",
+        "zh": "李崇仁",
+        "ko": "이숭인"
+      },
+      "era": {
+        "label": "고려 말"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "entryTitle": "奉送羅判事使日東",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "封章慷慨達宸居，白髮丹心六十餘。\n慙愧書生身健在，紬衾豆粥愛吾廬。\n扶桑萬里海波淸，初日曈曨畫舸明。\n好去秋風廻使節，紫宸殿下奏昇平。\n藤、橘、原、平四姓賢，遙聞千載有雲《玄》。\n煩公鄭重携家乘，題紀憑將大史傳。\n徐生避世一乘桴，滄海橫流今幾秋？\n可是日東重人物，歲時祭祀未曾休。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-11-yi-sungin-doeunjip.v1.json",
+        "workerId": "worker-11-yi-sungin-doeunjip",
+        "candidateTitle": "회고시",
+        "matchedTitle": "奉送羅判事使日東",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `奉送羅判事使日東` heading과 네 수 전문을 직접 확인했다. 이번 wave에서는 한 작품 row 안에 보존한다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
       "poemId": "KPOEM-WORKER-AUTHOR-EC9588EC-001",
       "canonicalId": "KPOEM-CANON-WORKER-AUTHOR-EC9588EC-001",
       "title": {
@@ -9327,6 +9583,390 @@
         "candidateTitle": "관동 지역 시문",
         "matchedTitle": "金剛山",
         "notes": "zh Wikisource `謹齋集/卷一` raw에서 `金剛山` heading과 전문을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-AUTHOR-EC9588EC-007",
+      "canonicalId": "KPOEM-CANON-WORKER-AUTHOR-EC9588EC-007",
+      "title": {
+        "zh": "元帥臺詩",
+        "ko": "元帥臺詩"
+      },
+      "author": {
+        "authorId": "KAUTH-AUTHOR-EC9588EC",
+        "zh": "安軸",
+        "ko": "안축"
+      },
+      "era": {
+        "label": "고려 후기"
+      },
+      "genre": {
+        "broad": "고유시가",
+        "form": "가사",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "元帥臺詩",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "滄海支流作鏡湖，靑峯四擁水平鋪。中藏別島非塵土，上有高臺作畫圖。日映波心跳尺鯉，雨晴沙觜戲雙鳧。百年前輩風流散，惟有長松老不枯。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-12-an-chuk-geunjaejip.v1.json",
+        "workerId": "worker-12-an-chuk-geunjaejip",
+        "candidateTitle": "관동 지역 시문",
+        "matchedTitle": "元帥臺詩",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `元帥臺詩` heading과 전문을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-AUTHOR-EC9588EC-008",
+      "canonicalId": "KPOEM-CANON-WORKER-AUTHOR-EC9588EC-008",
+      "title": {
+        "zh": "次洞山縣觀瀾亭詩韻",
+        "ko": "次洞山縣觀瀾亭詩韻"
+      },
+      "author": {
+        "authorId": "KAUTH-AUTHOR-EC9588EC",
+        "zh": "安軸",
+        "ko": "안축"
+      },
+      "era": {
+        "label": "고려 후기"
+      },
+      "genre": {
+        "broad": "고유시가",
+        "form": "가사",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "次洞山縣觀瀾亭詩韻",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "民間百物入侯門，山水千年屬一村。別島隔雲橫縹緲，片帆和月落黃昏。鴻飛冥路弋何慕？鯨吸滄波舟可呑。雨過新亭推未去，吏人迎拜是陽尊。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-12-an-chuk-geunjaejip.v1.json",
+        "workerId": "worker-12-an-chuk-geunjaejip",
+        "candidateTitle": "관동 지역 시문",
+        "matchedTitle": "次洞山縣觀瀾亭詩韻",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `次洞山縣觀瀾亭詩韻` heading과 전문을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-AUTHOR-EC9588EC-009",
+      "canonicalId": "KPOEM-CANON-WORKER-AUTHOR-EC9588EC-009",
+      "title": {
+        "zh": "叢石亭宴使臣有作",
+        "ko": "叢石亭宴使臣有作"
+      },
+      "author": {
+        "authorId": "KAUTH-AUTHOR-EC9588EC",
+        "zh": "安軸",
+        "ko": "안축"
+      },
+      "era": {
+        "label": "고려 후기"
+      },
+      "genre": {
+        "broad": "고유시가",
+        "form": "가사",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "叢石亭宴使臣有作",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "仙峯在海濱，觀覽奇且壯。倚欄四回顧，長天接煙浪。條石列水中，叢立多異狀。如繩墨削成，元氣爲良匠。羅代四仙徒，簪履遊亭上。當時碣猶存，摩挲空悵望。嘉言遍四方，使賓競來訪。傍邑慣送迎，奔走移供帳。亭下吏呀咻，樽前仙妓唱。民今失農業，妻子不能養。斗蓄已殫空，一宴勝仇餉。何人寫作圖，持獻君與相？",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-12-an-chuk-geunjaejip.v1.json",
+        "workerId": "worker-12-an-chuk-geunjaejip",
+        "candidateTitle": "관동 지역 시문",
+        "matchedTitle": "叢石亭宴使臣有作",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `叢石亭宴使臣有作` heading과 전문을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-AUTHOR-EC9588EC-010",
+      "canonicalId": "KPOEM-CANON-WORKER-AUTHOR-EC9588EC-010",
+      "title": {
+        "zh": "穿島詩",
+        "ko": "穿島詩"
+      },
+      "author": {
+        "authorId": "KAUTH-AUTHOR-EC9588EC",
+        "zh": "安軸",
+        "ko": "안축"
+      },
+      "era": {
+        "label": "고려 후기"
+      },
+      "genre": {
+        "broad": "고유시가",
+        "form": "가사",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "穿島詩",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "小島出洪波，橫穿作通穴。南北水互連，相激碎飛雪。滿島石狀奇，條條均削截。橫臥若積籌，倒垂如裹鐵。長者束而立，短者散以列。陰崖或成窪，驚浪常舂齧。穴中少廣平，坐席無地設。苔石滑而側，腥潤不淸潔。海風忽打頭，須臾心不悅。望岸促行舟，舟人力鼓枻。行行白沙渚，始喜免魚鼈。以島比叢石，奚止十倍劣？觀彼此可遺，悔余信人說。使賓遠聞名，來往無時節。豈惟舟楫勞？亦浚民膏血。霹靂不摧殘，此害何時絶？",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-12-an-chuk-geunjaejip.v1.json",
+        "workerId": "worker-12-an-chuk-geunjaejip",
+        "candidateTitle": "관동 지역 시문",
+        "matchedTitle": "穿島詩",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `穿島詩` heading과 전문을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-AUTHOR-EC9588EC-011",
+      "canonicalId": "KPOEM-CANON-WORKER-AUTHOR-EC9588EC-011",
+      "title": {
+        "zh": "金幱窟詩",
+        "ko": "金幱窟詩"
+      },
+      "author": {
+        "authorId": "KAUTH-AUTHOR-EC9588EC",
+        "zh": "安軸",
+        "ko": "안축"
+      },
+      "era": {
+        "label": "고려 후기"
+      },
+      "genre": {
+        "broad": "고유시가",
+        "form": "가사",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "金幱窟詩",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "海上蒼崖窟穴深，人傳常住是觀音。飛翔鳥翼靑如錦，出沒巖紋色似金。見此皆言眞聖現，至今虛使衆癡尋。欲參水月莊嚴相，回照明明本分心。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-12-an-chuk-geunjaejip.v1.json",
+        "workerId": "worker-12-an-chuk-geunjaejip",
+        "candidateTitle": "관동 지역 시문",
+        "matchedTitle": "金幱窟詩",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `金幱窟詩` heading과 전문을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-AUTHOR-EC9588EC-012",
+      "canonicalId": "KPOEM-CANON-WORKER-AUTHOR-EC9588EC-012",
+      "title": {
+        "zh": "登州古城懷古",
+        "ko": "登州古城懷古"
+      },
+      "author": {
+        "authorId": "KAUTH-AUTHOR-EC9588EC",
+        "zh": "安軸",
+        "ko": "안축"
+      },
+      "era": {
+        "label": "고려 후기"
+      },
+      "genre": {
+        "broad": "고유시가",
+        "form": "가사",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "登州古城懷古",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "暮天懷古立城頭，赤葉黃花滿眼秋。不覺蕭墻藏近禍，惟憑海島作深謀。百年丘隴無情草，十里風煙有信鷗。遙望朔方空歎息，一聲羌笛使人愁。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-12-an-chuk-geunjaejip.v1.json",
+        "workerId": "worker-12-an-chuk-geunjaejip",
+        "candidateTitle": "관동 지역 시문",
+        "matchedTitle": "登州古城懷古",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `登州古城懷古` heading과 전문을 직접 확인했다.",
         "ownedTranslationNeeded": true
       }
     },

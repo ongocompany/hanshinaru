@@ -7,7 +7,7 @@
   ],
   "summary": {
     "candidateWorksChecked": 2,
-    "directTextWorksFound": 6,
+    "directTextWorksFound": 12,
     "ocrCandidates": 0,
     "blockedWorks": 0
   },
@@ -178,6 +178,174 @@
       "ingest": {
         "recommendedReadiness": "direct-text-collected",
         "notes": "zh Wikisource `謹齋集/卷一` raw에서 `金剛山` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "元帥臺詩",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "元帥臺詩",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "滄海支流作鏡湖，靑峯四擁水平鋪。中藏別島非塵土，上有高臺作畫圖。日映波心跳尺鯉，雨晴沙觜戲雙鳧。百年前輩風流散，惟有長松老不枯。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `元帥臺詩` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "次洞山縣觀瀾亭詩韻",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "次洞山縣觀瀾亭詩韻",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "民間百物入侯門，山水千年屬一村。別島隔雲橫縹緲，片帆和月落黃昏。鴻飛冥路弋何慕？鯨吸滄波舟可呑。雨過新亭推未去，吏人迎拜是陽尊。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `次洞山縣觀瀾亭詩韻` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "叢石亭宴使臣有作",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "叢石亭宴使臣有作",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "仙峯在海濱，觀覽奇且壯。倚欄四回顧，長天接煙浪。條石列水中，叢立多異狀。如繩墨削成，元氣爲良匠。羅代四仙徒，簪履遊亭上。當時碣猶存，摩挲空悵望。嘉言遍四方，使賓競來訪。傍邑慣送迎，奔走移供帳。亭下吏呀咻，樽前仙妓唱。民今失農業，妻子不能養。斗蓄已殫空，一宴勝仇餉。何人寫作圖，持獻君與相？",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `叢石亭宴使臣有作` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "穿島詩",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "穿島詩",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "小島出洪波，橫穿作通穴。南北水互連，相激碎飛雪。滿島石狀奇，條條均削截。橫臥若積籌，倒垂如裹鐵。長者束而立，短者散以列。陰崖或成窪，驚浪常舂齧。穴中少廣平，坐席無地設。苔石滑而側，腥潤不淸潔。海風忽打頭，須臾心不悅。望岸促行舟，舟人力鼓枻。行行白沙渚，始喜免魚鼈。以島比叢石，奚止十倍劣？觀彼此可遺，悔余信人說。使賓遠聞名，來往無時節。豈惟舟楫勞？亦浚民膏血。霹靂不摧殘，此害何時絶？",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `穿島詩` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "金幱窟詩",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "金幱窟詩",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "海上蒼崖窟穴深，人傳常住是觀音。飛翔鳥翼靑如錦，出沒巖紋色似金。見此皆言眞聖現，至今虛使衆癡尋。欲參水月莊嚴相，回照明明本分心。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `金幱窟詩` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "登州古城懷古",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "登州古城懷古",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "暮天懷古立城頭，赤葉黃花滿眼秋。不覺蕭墻藏近禍，惟憑海島作深謀。百年丘隴無情草，十里風煙有信鷗。遙望朔方空歎息，一聲羌笛使人愁。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `登州古城懷古` heading과 전문을 직접 확인했다."
       }
     }
   ],
