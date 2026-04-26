@@ -6,8 +6,8 @@
     "안축"
   ],
   "summary": {
-    "candidateWorksChecked": 2,
-    "directTextWorksFound": 12,
+    "candidateWorksChecked": 6,
+    "directTextWorksFound": 128,
     "ocrCandidates": 0,
     "blockedWorks": 0
   },
@@ -347,6 +347,3254 @@
         "recommendedReadiness": "direct-text-collected",
         "notes": "zh Wikisource `謹齋集/卷一` raw에서 `登州古城懷古` heading과 전문을 직접 확인했다."
       }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "榮親席上作",
+      "matchedTitle": "李起居注榮親席上作：四時紅",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷二",
+        "entryTitle": "李起居注榮親席上作：四時紅",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "地上仙村洛水濱，四時紅艶見來新。琴中調撫《芳華曲》，助獻高堂不世春。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷二` raw에서 `李起居注榮親席上作：四時紅` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "榮親席上作",
+      "matchedTitle": "李起居注榮親席上作：小蠻",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷二",
+        "entryTitle": "李起居注榮親席上作：小蠻",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "巾櫛當年侍樂天，情多解弄十二絃。夜深一曲須傾耳，曾學詩翁長短篇。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷二` raw에서 `李起居注榮親席上作：小蠻` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "榮親席上作",
+      "matchedTitle": "李起居注榮親席上作：紅眞",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷二",
+        "entryTitle": "李起居注榮親席上作：紅眞",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "恩榮宴上樂無窮，御史花搖桂殿風。一朶春光何處老？染來花彩是眞紅。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷二` raw에서 `李起居注榮親席上作：紅眞` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "榮親席上作",
+      "matchedTitle": "李起居注榮親席上作：滿月",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷二",
+        "entryTitle": "李起居注榮親席上作：滿月",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "竊藥登仙竟不廻，廣漢宮裏築粧臺。折來丹桂非他物，是妾春風手自栽。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷二` raw에서 `李起居注榮親席上作：滿月` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "榮親席上作",
+      "matchedTitle": "李起居注榮親席上作：金花",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷二",
+        "entryTitle": "李起居注榮親席上作：金花",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "遠聞仙邑闢瓊筵，巧翦黃金作寶鈿。曉起紗窓粧未了，半空仙樂下勻天。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷二` raw에서 `李起居注榮親席上作：金花` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "白文寶按部上謠",
+      "matchedTitle": "白文寶按部上謠：商山洛東江",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷二",
+        "entryTitle": "白文寶按部上謠：商山洛東江",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "雨餘江色染藍靑，十里奇巖水墨屛。刺史歡迎新按部，木蘭舟上構茅亭。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷二` raw에서 `白文寶按部上謠：商山洛東江` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "白文寶按部上謠",
+      "matchedTitle": "白文寶按部上謠：永嘉文華山",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷二",
+        "entryTitle": "白文寶按部上謠：永嘉文華山",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "羅代金生筆法新，學書山室已千春。硯池餘滴今猶在，誰識賢侯是後身？",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷二` raw에서 `白文寶按部上謠：永嘉文華山` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "白文寶按部上謠",
+      "matchedTitle": "白文寶按部上謠：月城瞻星臺",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷二",
+        "entryTitle": "白文寶按部上謠：月城瞻星臺",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "前代興亡歲月經，石臺千尺聳靑冥。何人今日觀天象，一點文星作使星？",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷二` raw에서 `白文寶按部上謠：月城瞻星臺` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "白文寶按部上謠",
+      "matchedTitle": "白文寶按部上謠：寧海觀魚臺",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷二",
+        "entryTitle": "白文寶按部上謠：寧海觀魚臺",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "巖下游魚作隊行，避鉤逃網得全生。如今恩洽東溟水，圉圉洋洋尾不赬。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷二` raw에서 `白文寶按部上謠：寧海觀魚臺` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "白文寶按部上謠",
+      "matchedTitle": "白文寶按部上謠：東萊積翠軒",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷二",
+        "entryTitle": "白文寶按部上謠：東萊積翠軒",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "碧玉千竿密作圍，滿空蒼翠積軒墀。雨天誰喚王逢手，官暇來饒一局棋？",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷二` raw에서 `白文寶按部上謠：東萊積翠軒` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "白文寶按部上謠",
+      "matchedTitle": "白文寶按部上謠：金海七點山",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷二",
+        "entryTitle": "白文寶按部上謠：金海七點山",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "海門千里水浮空，七點靑峯杳靄中。此是琴仙棲息處，乘舟且莫過悤悤。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷二` raw에서 `白文寶按部上謠：金海七點山` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "白文寶按部上謠",
+      "matchedTitle": "白文寶按部上謠：珠浦月影臺",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷二",
+        "entryTitle": "白文寶按部上謠：珠浦月影臺",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "海上層臺景最奇，照波明月幾盈虧？不須更詠孤雲句？今古賢才各一時。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷二` raw에서 `白文寶按部上謠：珠浦月影臺` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "白文寶按部上謠",
+      "matchedTitle": "白文寶按部上謠：晉陽矗石樓",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷二",
+        "entryTitle": "白文寶按部上謠：晉陽矗石樓",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "晉陽江水似潯陽，金碧樓高映水明。\n送客秋風知有日，倚舟須賦《琵琶行》。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷二` raw에서 `白文寶按部上謠：晉陽矗石樓` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "白文寶按部上謠",
+      "matchedTitle": "白文寶按部上謠：靈龜山宿水樓",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷二",
+        "entryTitle": "白文寶按部上謠：靈龜山宿水樓",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "靈龜形勢縮山頭，下有臨溪百尺樓。\n須倚涼軒嚥朝日，釀成眞氣已千秋。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷二` raw에서 `白文寶按部上謠：靈龜山宿水樓` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "同使上妓謠",
+      "matchedTitle": "同使上妓謠：西施",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷二",
+        "entryTitle": "同使上妓謠：西施",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "范蠡乘舟問幾春？五湖煙月正愁人。洛濱坐待神仙客，自笑西施誤一身。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷二` raw에서 `同使上妓謠：西施` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "同使上妓謠",
+      "matchedTitle": "同使上妓謠：綠珠",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷二",
+        "entryTitle": "同使上妓謠：綠珠",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "石家豪富不如貧，畢竟難全一美人。此是分明千載鑑，欲將淸節待詞臣。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷二` raw에서 `同使上妓謠：綠珠` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "同使上妓謠",
+      "matchedTitle": "同使上妓謠：巫娥",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷二",
+        "entryTitle": "同使上妓謠：巫娥",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "一片巫雲謾有情，憂民夜夜夢難成。從今便作隨車雨，導霈弘恩處處行。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷二` raw에서 `同使上妓謠：巫娥` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "同使上妓謠",
+      "matchedTitle": "同使上妓謠：燕尋玉京",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷二",
+        "entryTitle": "同使上妓謠：燕尋玉京",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "翩翩雙燕傍空閨，應感佳人惜別離。相對知心不知語，一庭風月落花時。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷二` raw에서 `同使上妓謠：燕尋玉京` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "同使上妓謠",
+      "matchedTitle": "同使上妓謠：眞眞",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷二",
+        "entryTitle": "同使上妓謠：眞眞",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "學士剛腸似廣平，儂家曾不眼廻靑。若爲得入畫工手，長與眞眞在錦屛？",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷二` raw에서 `同使上妓謠：眞眞` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "同使上妓謠",
+      "matchedTitle": "同使上妓謠：四時紅",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷二",
+        "entryTitle": "同使上妓謠：四時紅",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "春天朝暮雨連風，過眼芳華掃地空。昨有商山花一朶，爲迎行色四時紅。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷二` raw에서 `同使上妓謠：四時紅` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "同使上妓謠",
+      "matchedTitle": "同使上妓謠：新月",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷二",
+        "entryTitle": "同使上妓謠：新月",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "姸姸片月更多姿，不害圓光暫有虧。知得高軒行度嶺，故低粧閣學蛾眉。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷二` raw에서 `同使上妓謠：新月` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "同使上妓謠",
+      "matchedTitle": "同使上妓謠：滿月、商山月",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷二",
+        "entryTitle": "同使上妓謠：滿月、商山月",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "一鞍飛馹疾如神，驛路誰能逐後塵？千古商山滿、新月，相隨處處似佳人。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷二` raw에서 `同使上妓謠：滿月、商山月` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "同使上妓謠",
+      "matchedTitle": "同使上妓謠：金蓮、玉蓮",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷二",
+        "entryTitle": "同使上妓謠：金蓮、玉蓮",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "商山秋景見來稀，金、玉蓮開品絶奇。若使賢侯長得見，明年移種鳳凰池。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷二` raw에서 `同使上妓謠：金蓮、玉蓮` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "同使上妓謠",
+      "matchedTitle": "同使上妓謠：洛中仙",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷二",
+        "entryTitle": "同使上妓謠：洛中仙",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "洛中江水接銀河，上有珠樓是妾家。爲是風流天上客，秋來幾待一乘槎？",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷二` raw에서 `同使上妓謠：洛中仙` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "한시 후보",
+      "matchedTitle": "送李中父還朝",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷二",
+        "entryTitle": "送李中父還朝",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "奎、璧照東方，仙李生鄕曲。晬面氣英奇，璞中藏美玉。結髮從我遊，五經已在腹。無人識眞才，貴耳而賤目。一朝與計偕，謁帝戰場屋。三捷收奇功，禁苑得頗、牧。腸摛謫仙詞，高詠對蓮燭。手持太史筆，直書汗靑竹。去年錦還鄕，相如使西蜀。駟馬生光輝，萱堂披綵服。養志在立揚，割愛辭鞠育。爲君惜芳辰，池塘春草綠。伊我誤良圖，悔之不可復。賜袍在篋閑，坐羨雲間鵠。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷二` raw에서 `送李中父還朝` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "關東別曲",
+      "matchedTitle": "關東別曲",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷二",
+        "entryTitle": "關東別曲",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "海千重，山萬疊，關東別境。碧油幢，紅蓮幕，兵馬營主。玉帶傾蓋，黑槊紅旗，鳴沙路。爲巡察景幾何如？朔方民物，慕義趨風。爲王化中興景幾何如？\n鶴城東，元帥臺，穿島、國島。轉三山，移十洲，金鼇頂上。收紫霧，卷紅嵐，風恬浪靜。爲登望滄溟景幾何如？桂棹蘭舟，紅粉歌吹。爲歷訪景幾何如？\n叢石亭，金幱窟，奇巖怪石。顚倒巖，四仙峯，蒼苔古碣。我也足，石巖回，殊形異狀。爲四海天下無豆舍叱多！玉簪珠履，三千徒客。爲又來悉何奴日是古？\n三日浦，四仙亭，奇觀異迹。彌勒堂，安祥渚，三十六峯。夜深深，波瀲瀲，松梢片月。爲古溫貌我隱伊西爲乎伊多！述郞徒矣，六字丹書。爲萬古千秋尙分明！\n仙遊潭，永郞湖，神淸洞裏。綠荷洲，靑瑤嶂，風煙十里。香冉冉，翠霏霏，琉璃水面。爲泛舟景幾何如？蓴羹鱸膾，銀絲雪縷。爲羊酪豈勿參爲里古？\n雪嶽東，洛山西，襄陽風景。降仙亭，祥雲亭，南北相望。騎紫鳳，駕紅鸞，佳麗神仙。爲爭弄朱絃景幾何如？高陽酒徒，習家池館。爲四節遊伊沙伊多！\n三韓禮義，千古風流，臨瀛古邑。鏡浦臺，寒松亭，明月淸風。海棠路，菡萏池，春秋佳節。爲遊賞景何如爲尼伊古？燈明樓上，五更鍾後。爲日出景幾何如？\n五十川，竹西樓，西村八景。翠雲樓，越松亭，十里靑松。吹玉篴，弄瑤琴，淸歌緩舞。爲迎送佳賓景何如？望槎亭上，滄波萬里。爲鷗伊鳥蘇甲豆斜羅！\n江十里，壁千層，屛圍鏡澈。倚風巖，臨水穴，飛龍頂上。傾綠蟻，聳氷峯，六月淸風。爲避暑景幾何如？朱陳家世，武陵風物。爲傳子傳孫景幾何如？",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷二` raw에서 `關東別曲` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "竹溪別曲",
+      "matchedTitle": "竹溪別曲",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷二",
+        "entryTitle": "竹溪別曲",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "竹嶺南，永嘉北，小白山前。千載興亡，一樣風流，順政城裏。他代無隱，翠華峯，王子藏胎。爲釀作中興景幾何如？淸風杜閣，兩國頭御。爲山水淸高景幾何如？\n宿水樓，福田臺，僧林亭子。草庵洞，郁錦溪，聚遠樓上。半醉半醒，紅白花開，山雨裏良。爲遊興景幾何如？高陽酒徒，珠履三千。爲携手相從景幾何如？彩鳳飛，玉龍盤，碧山松麓。紙筆峯，硯墨池，齊隱鄕校。心趣六經，志窮千古，夫子門徒。爲春誦夏絃景幾何如？年年三月，長程路良。爲呵喝迎新景幾何如？\n楚山曉，小雲英，山苑佳節。花爛熳，爲君開，柳陰谷。忙待重來，獨倚欄干，新鶯聲裏。爲一朶綠雲垂未絶！天生絶艶，小桃紅時。爲千里相思又奈何？\n紅杏紛紛，芳草萋萋，樽前永日。綠樹陰陰，畫閣沈沈，琴上薰風。黃菊丹楓，錦繡春山，鴻飛後良。爲雪月交光景幾何如？中興聖代，長樂太平。爲四節遊是沙伊多！",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷二` raw에서 `竹溪別曲` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "天曆三年五月，受江陵道存撫使之命。是月三十日，發松京宿白嶺驛，夜半雨作有懷",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "天曆三年五月，受江陵道存撫使之命。是月三十日，發松京宿白嶺驛，夜半雨作有懷",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "讀書求道竟無成，自愧明時有此行。但盡迂疎施實學，敢將崖異盜虛名？民生塗炭知難救，國病膏肓念可驚。耿耿枕前眠未穩，臥聞山雨注深更。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `天曆三年五月，受江陵道存撫使之命。是月三十日，發松京宿白嶺驛，夜半雨作有懷` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "六月三日，入鐵嶺關望和州作",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "六月三日，入鐵嶺關望和州作",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "路入關門眼暫開，紅旗黑槊共徘徊。忽驚職是憂民寄，還愧身無濟世才。煙火里閭多索寞，草萊城塹久摧頹。可憐聚散邊鄕吏，猶具衣冠禮往來。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `六月三日，入鐵嶺關望和州作` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "次和州本營詩韻",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "次和州本營詩韻",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "萬疊山圍四望中，東溟隔岸水浮空。龍爭古壘黃楡月，鴉噪遺墟老樹風。懷土重遷憐噍類，棄城謀變說姦雄。當時誰握籌邊策？惆悵無人衣一戎。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `次和州本營詩韻` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "次安昌驛亭許正言詩韻",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "次安昌驛亭許正言詩韻",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "海上靑霞紫霧間，揖仙東望問三山。倚欄人未須臾駐，萬古千秋物自閒。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `次安昌驛亭許正言詩韻` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "次興富驛亭詩韻",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "次興富驛亭詩韻",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "千畦禾黍舞風前，喜見農家大有年。久倚陰軒淸爽足，水禽飛過小溪煙。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `次興富驛亭詩韻` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "次平海公館後亭詩韻",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "次平海公館後亭詩韻",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "公館多幽鬱，褰衣上後亭。疎簾風燕舞，高樹露蟬聲。地古村容老，天低水面平。溪山皆舊眼，記我去年行。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `次平海公館後亭詩韻` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "次韻張秀才見贈",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "次韻張秀才見贈",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "昨日城西四顧行，桑麻深處望煙光。停驂謂有隱君子，此是先生避世堂。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `次韻張秀才見贈` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "過仙遊潭",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "過仙遊潭",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "潭上風煙畫淡濃，欣然似與故人逢。也應嗔我悤悤過，却恐重來不見容。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `過仙遊潭` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "謾成",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "謾成",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "碧海、靑山畫不如，事稀端合置迂疎。午窓睡足吏人散，讀盡巾箱數卷書。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `謾成` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "次韻許正言見寄",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "次韻許正言見寄",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "燈前偶讀《北山移》，自愧歸休已太遲。俗薄何人遵我敎？弊深無計救今時。處身道可貧無諂，到口言當遜莫違。惟子與吾交契厚，相規豈合各從宜？",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `次韻許正言見寄` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "大雨歎",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "大雨歎",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "二氣失調燮，群龍未安蟄。陰怒發玄機，懸空雨勢急。暴流漲南川，浩浩沒原隰。水溢雨不止，皆言及井邑。惟恐卷人家，更憂傷穀粒。顧余牧一方，此咎其誰執？誠微不動天，起坐徒悒悒。願天罪我躬，哀聽生民泣。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `大雨歎` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "在和州始見二毛有感",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "在和州始見二毛有感",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "壯健光陰夢裏經，百年身世亦堪驚。忙多閒小靑山遠，謬算狂謀白髮生。沐罷塵冠漸羞澁，曉來菱鑑太分明。自知貴賤難逃事，有底未禁悲感情？",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `在和州始見二毛有感` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "齒痛",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "齒痛",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "壯歲氣益增，晚年病交會。血脈衰於中，齒髮老于外。毛髮不覺痛，雖白尙無害。牙齒熱以搖，酸痛極刀劊。飯麤啜糜粥，肉硬啗魚膾。漸見脫以虛，唇亦不能蓋。還童藥未成，嘆息無可奈。謂言少年子，莫恃如編貝。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `齒痛` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "和州鷹坊人羅鷹示余",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "和州鷹坊人羅鷹示余",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "俊猛精神外躍如，電明雙眼在秋虛。寸機坐得冥冥翼，可畏人心巧有餘。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `和州鷹坊人羅鷹示余` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "葡萄酒和州隱者持以勸余",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "葡萄酒和州隱者持以勸余",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "斗酒千金足市恩，古人曾獻貴人門。山翁癡拙無機巧，虛食涼州老一村。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `葡萄酒和州隱者持以勸余` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "松魚",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "松魚",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "潑潑如飛氣力多，懸流十尺可跳過。嗟哉知進不知退，永失滄溟萬里波。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `松魚` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "松菌",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "松菌",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "秋涼杖履步松間，手摘嘗新氣味閒。粱肉官家香已損，望雲投筯愧靑山。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `松菌` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "王昭君",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "王昭君",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "君王曉開黃金闕，氈車轔轔北使發。明妃含淚出椒房，有意春風吹鬢髮。漢山、秦塞漸茫茫，逆耳悲笳秋夜長。可憐穹廬一眉月，曾照臺前宮樣粧。將身已與胡兒老，惟恐紅顏凋不早。琵琶絃中不盡情，塚上年年見靑草。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `王昭君` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "夢見西掖同舍諸賢",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "夢見西掖同舍諸賢",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "一辭西掖傍東溟，過幾樓臺幾驛亭？宿志已償山水窟，高吟還憶牧丹屛。別來無信顏雖赩，夢裏相逢眼尙靑。何日朝天參枕上，共傾宣醞醉還醒？",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `夢見西掖同舍諸賢` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "范丞相《麥舟圖》",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "范丞相《麥舟圖》",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "大義深仁作相公，能輕重利恤人窮。父知子貴非先見，只爲渠心與我同。\n異氣當從大義求，虎生三日便窺牛。曼卿一得無心惠，天下民皆飽麥舟。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `范丞相《麥舟圖》` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "伯顏丞相訪文正公義田宅圖",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "伯顏丞相訪文正公義田宅圖",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "弓馬南廻過古村，前賢遺澤至今存。戰功豈獨彊兵力？能訪田廬義子孫。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `伯顏丞相訪文正公義田宅圖` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "九月十三日，因迎香使，北行途中卽事",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "九月十三日，因迎香使，北行途中卽事",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "天香絡繹降丹霄，候吏郵民望使軺。夜聽先聲離古館，曉牽殘夢過長橋。雨晴海嶠歸雲懶，風亂山蹊落葉驕。南去北來身已老，舊盟魚鳥苦相招。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `九月十三日，因迎香使，北行途中卽事` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "高城道中小歇",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "高城道中小歇",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "倦遊南北路茫茫，來往如梭有底忙？翠麓斷時看佛塔，橫峯高處踞胡床。老鴉村樹秋煙淡，瘦馬河堤暮草黃。弊郡殘民誠可憫，一年生理失農桑。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `高城道中小歇` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "賀尹代言",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "賀尹代言",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "年方列宿掌文衡，東國儒林罕有榮。入彀英才皆俊逸，察毫精鑑獨分明。堂親未老稱觴壽，座主俱存擁笏迎。我與相公緣更厚，白眉家弟作門生。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `賀尹代言` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "用前韻獻尹政丞",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "用前韻獻尹政丞",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "三韓德業是阿衡，兩代偏承絶代榮。黃閣已和金鼎味，錦䙀曾養寶珠明。森森王筍盈門立，濟濟簪裾滿路迎。使外未能參慶席，顧余遺恨在平生。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `用前韻獻尹政丞` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "至順元年十月始八日，承王命赴京，發和州馬上偶作",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "至順元年十月始八日，承王命赴京，發和州馬上偶作",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "晨昏戀主貢忠誠，更有思家骨肉情。山水關東雖信美，出城西笑馬蹄輕。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `至順元年十月始八日，承王命赴京，發和州馬上偶作` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "是日過孤山驛",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "是日過孤山驛",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "破驛依山麓，居民勢可憐。薄田荒不種，逋戶索無煙。吏酷豺當路，賓多馬困鞭。何時回太古，飽食得安眠？",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `是日過孤山驛` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "是日過鐵嶺",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "是日過鐵嶺",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "巨嶺橫空半，東西路此分。登高笑前將，負險怯孤軍。絶澗氷和雪，危峯石戴雲。無人修古壘，天下但崇文。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `是日過鐵嶺` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "宿銀溪驛",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "宿銀溪驛",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "馬首前途熟，歸來已再經。天寒積雪白，夜永一燈靑。暗室聞飢鼠，疎簾見小星。溪名如有實，豈得屬郵亭？",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `宿銀溪驛` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "九日過多林驛",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "九日過多林驛",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "冒曉尋山驛，茅茨傍水潯。負暄鮐背曲，伏櫪馬瘡深。度嶮腰如束，凌寒口似噤。朝暉猶未上，爐火直千金。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `九日過多林驛` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "過松澗驛",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "過松澗驛",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "一區幽澗隘，雙嶺擁嵯峨。墻北狐貍走，門前雉兔過。地磽秋穫少，洞密暮寒多。聞說渠生理，踟躕獨自嗟。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `過松澗驛` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "十日宿林丹驛",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "十日宿林丹驛",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "黃昏投古館，數戶閉柴扉。隔岸人猶語，棲林鳥已稀。幽窓多鬱氣，暖堗挫寒威。年儉困供億，寧敎妻子肥？",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `十日宿林丹驛` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "過楓林驛",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "過楓林驛",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "望煙知有驛，老吏出迎忙。馬困溪山遠，人稀草樹荒。飢鼯緣壞壁，飛雪洒虛堂。王事隨吾後，遲留已夕陽。時有京使持符役故云",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `過楓林驛` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "宿龍潭驛",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "宿龍潭驛",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "寄宿茅茨下，霜濃洌氣嚴。困來伸病脚，危坐撚疎髥。屋老塵棲壁，窓明月掛簷。心忙眠未穩，斗覺夜猒猒。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `宿龍潭驛` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "十一日過王溪驛",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "十一日過王溪驛",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "吏引緣溪路，平田桑柘疎。林間逢猛犬，氷底見纖魚。門有輪蹄困，家無䃫石儲。傷時空仰屋，寒日照荒墟。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `十一日過王溪驛` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "過澄波渡",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "過澄波渡",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "古渡舟如葉，天寒波更澄。崩崖懸醜石，斷岸積層氷。浪鳥近堪枻，游魚深莫罾。篙師敢輕淺？手有濟人能。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `過澄波渡` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "宿白嶺驛",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "宿白嶺驛",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "歸路天容慘，凍雲增暮寒。眼明看傳舍，身倦卸征鞍。喬木藏煙塢，靑松立雪巒。倚窓瞻鵠嶺，蒼翠出雲端。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `宿白嶺驛` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "過桃源驛",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "過桃源驛",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "小亭臨大道，遙望是桃源。風雪滿深巷，草萊埋壞垣。誰將此山驛，輕比古仙村？百歲興亡裏，居民半不存。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `過桃源驛` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "除夜",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "除夜",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "燈殘古館轉幽幽，客路難堪歲暮愁。夢罷明朝年五十，夜深高臥數更籌。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `除夜` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "元日",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "元日",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "人多先我飮屠蘇，已覺衰遲負壯圖。歲歲賣癡癡不盡，猶將古我到今吾。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `元日` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "次通州客舍詩韻",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "次通州客舍詩韻",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "倚欄東望海連天，喬木村容不記年。鶴路迢迢仙島外，鯨波浩浩釣臺前。強呑弱吐歸樵話，異迹、奇觀載史篇。坐對遺民問興廢，夕陽漁笛隔風煙。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `次通州客舍詩韻` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "海棠",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "海棠",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "海棠花發白沙堤，紅艶紛紛沒馬蹄。時復行間六七里，忽聞枝上鷓鴣啼。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `海棠` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "題灌木驛亭",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "題灌木驛亭",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "彤雲赤日火鎖空，傍岸團茅在眼中。珍重成林百年樹，坐來分我一襟風。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `題灌木驛亭` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "永郞浦泛舟",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "永郞浦泛舟",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "平湖鏡面澄，滄波凝不流。蘭舟縱所如，泛泛隨輕鷗。浩然發淸興，泝洄入深幽。丹崖抱蒼石，玉洞藏瓊洲。循山泊松下，空翠涼生秋。荷葉淨如洗，蓴絲滑且柔。向晚欲廻棹，風煙千古愁。古仙若可作，於此從之遊。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `永郞浦泛舟` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "遊雲巖縣亭",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "遊雲巖縣亭",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "鞍馬長途困熱忙，解衣亭上快風涼。儉年民事知誰恤？喜見山田麥半黃。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `遊雲巖縣亭` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "次韻寄題張秀才幽居",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "次韻寄題張秀才幽居",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "勝地千金不易求，山禽野鶴混沙鷗。若爲卜築滄波上，同把漁竿萬事休？",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `次韻寄題張秀才幽居` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "五月二十五日，自和州南行，中途遇雨，馬上有作",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "五月二十五日，自和州南行，中途遇雨，馬上有作",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "海天雲黑遍微茫，吹面斜風送雨忙。山路黃泥深滑滑，野田寒水漲泱泱。濕裝束縛困難動，暑氣熏蒸眠欲僵。行近村橋驚短夢，釣魚人語隔鶖梁。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `五月二十五日，自和州南行，中途遇雨，馬上有作` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "是日阻雨留宿歙谷",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "是日阻雨留宿歙谷",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "困臥風軒萬事輕，一成幽夢到天明。滿階新竹應嗔我，不聽燈前疎雨聲。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `是日阻雨留宿歙谷` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "次歙谷客館詩韻",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "次歙谷客館詩韻",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "栽種成陰竹木兼，孫枝稚筍日新添。事稀庭院吏人散，坐見蜘蛛網雨簷。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `次歙谷客館詩韻` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "阻雨留通州，雨晴向高城，有作贈太守",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "阻雨留通州，雨晴向高城，有作贈太守",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "蕭條弊邑雨留人，對食時時愧吏民。曉起雲容皆脫壞，日昇天氣忽淸新。坐知芒刺在吾背，旋喜羽毛生此身。爲囑同心賢太守，一年農課莫因循。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `阻雨留通州，雨晴向高城，有作贈太守` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "是日馬上卽事",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "是日馬上卽事",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "積雨難堪悶悶愁，喜看晴日出雲頭。自然行處得佳景，可是良辰兼勝遊。草野晚花香澹澹，稻畦新葉綠油油。道傍聞說老農話，今歲應逢大有秋。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `是日馬上卽事` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "瓮遷路",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "瓮遷路",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "峻巖臨海作懸崖，棧道緣空望欲迷。俯瞰狂瀾深莫尺，仰攀危磴滑難梯。行人匍匐投雙手，羸馬凌兢跼四蹄。叱馭王公猶畏愼，解飛漢士亦顚躋。險㠊豈與井陘比？要害應將函谷齊。聞道賊軍曾過此，愧無良將一丸泥。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `瓮遷路` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "次高城客館詩韻",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "次高城客館詩韻",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "海嶠昏陰卷，村墟霽景明。晚涼浮几席，空翠落簷楹。雪裏苔巖瘦，風前麥壟平。屢經凋弊邑，無術濟民生。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `次高城客館詩韻` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "又次三日浦詩韻",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "又次三日浦詩韻",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "海上金鼇頭戴瀛，珠宮此日入門屛。蘭舟泊近丹書洞，綠霧輕飛瑤草汀。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `又次三日浦詩韻` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "二十九日馬上卽事",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "二十九日馬上卽事",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "水旱相仍値歲荒，推擠未去久遑遑。力微任重今方困，北去南來太似忙。鷺立碧池荷背側，燕飛黃壟麥頭昂。新晴尙有薄陰在，疎雨過山生晚涼。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `二十九日馬上卽事` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "次韻杆城客館詩",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "次韻杆城客館詩",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "重岡四擁地幽幽，歲久松鱗百尺脩。官道樹深風滿院，海門霞霽水明樓。雨蓑漁艇平生約，塵袂征鞍早晚休。若賜城南鏡湖月，舊居何必戀吾州？",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `次韻杆城客館詩` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "白鷗",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "白鷗",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "矰弋元非爲汝施，滄波萬里尙驚疑。回看今世功名路，無地安然可立錐。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `白鷗` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "題淸澗驛萬景臺次許獻納詩韻",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "題淸澗驛萬景臺次許獻納詩韻",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "海邊蒼石疊成臺，萬景雲奔入眼來。一葉漁舟向何處？信風輕漾似浮杯。\n何代高賢舊釣臺？坐看魚鳥去還來。可憐虛棄郵亭路，登賞無人擧酒杯。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `題淸澗驛萬景臺次許獻納詩韻` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "奉答末山堂頭惠朱李",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "奉答末山堂頭惠朱李",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "異果堆盤色味鮮，淸香馥馥噀炎天。細看不是人間種，擬食還丹學地仙。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `奉答末山堂頭惠朱李` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "六月十三日眞珠南江泛舟",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "六月十三日眞珠南江泛舟",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "小艇泛橫江，雨餘波淨淥。投篙泝東流，陰崖邃且曲。蒯纜繫蒼藤，坐石濯我足。石罅寒泉生，泠泠瀉氷玉。有客靜彈琴，松風滿山谷。晚來棹中流，歌笑往而復。此樂人間無，眠來伴鷗宿。乘舟下南灘，淸露泣疎竹。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `六月十三日眞珠南江泛舟` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "六月十七日三陟西樓夜坐",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "六月十七日三陟西樓夜坐",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "夜色虛明水氣淸，登樓俯檻聽江聲。兀然忘我無人見，風露滿空山月生。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `六月十七日三陟西樓夜坐` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "翠雲亭",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "翠雲亭",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "城南新構一層樓，栽種成陰地轉幽。午日燒空紅不漏，夏陰籠檻翠如流。故人遠在誰同賞？馹騎催行爲少留。舊眼稚松今已壯，登臨感念昔年遊。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `翠雲亭` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "次越松亭詩韻",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "次越松亭詩韻",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "事去人非水自東，千金遺種在亭松。女蘿情合膠難解，弟竹心親粟可舂。有底仙郞同煮鶴？莫令樵父學屠龍。二毛重到曾遊地，却羨蒼蒼昔日容。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `次越松亭詩韻` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "題平海望槎亭",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "題平海望槎亭",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "金碧浮空映水陰，登臨一望灑塵襟。雨晴綠樹黃鸝語，風軟滄波白鳥心。八月仙槎通上漢，百年漁店隔前林。峨洋萬古人無眼，祕蓄天慳直待今。\n邑南舊無樓，存撫使朴公始起樓故云。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `題平海望槎亭` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "次韻題南同年書樓",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "次韻題南同年書樓",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "養性逍遙學老、莊，夢魂終不到槐堂。爲民讀史功曾熟，尙有葵心向太陽。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `次韻題南同年書樓` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "七月一日自蔚珍向三陟路上遇雨",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "七月一日自蔚珍向三陟路上遇雨",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "馬頭貪賞好風煙，沙渚徐驅懶下鞭。出海遠山明復暗，滿空疎雨止還連。不嫌霑濕行泥路，却喜凄涼洗熱天。時見漁舟雪鬢叟，綠蓑衣底枕肱眠。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `七月一日自蔚珍向三陟路上遇雨` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "次旌善公館趙元帥詩韻",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "次旌善公館趙元帥詩韻",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "峻坂縈廻叱馭行，桑麻十里是荒城。不毛石齒圭田小，側足山腰線路橫。聽雨更添爲客恨，望雲難禁戀親情。風巖水穴非人世，洗盡塵痕骨已淸。吾鄕隔嶺，不得覲母故云。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `次旌善公館趙元帥詩韻` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "次旌善板上韻",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "次旌善板上韻",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "雨餘江漲滯殘鄕，民事民情問細詳。隱士耦耕疑桀溺，散仙來過是庚桑。地高霜早秋禾短，洞密陰深夏木長。一代後生多俊秀，百年遺俗尙循良。山村豚飽非晨飮，隣舍鷄肥無日攘。太守不須開宴樂，我因慵病眩臨觴。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `次旌善板上韻` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "贈母山崔大賢",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "贈母山崔大賢",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "平生所學是綱常，傲世心高魚稻鄕。下視榮名如弊屣，肯將韋帶換金章？",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `贈母山崔大賢` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "次臨瀛公館東軒詩韻",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "次臨瀛公館東軒詩韻",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "宦遊湖海感流年，恩薄誰言有二天？秋院虛涼歸燕後，暮山平遠斷鴉邊。織機深巷三更火，漁艇滄波萬古煙。鏡浦松亭容我住，不須蓬島更求仙。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `次臨瀛公館東軒詩韻` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "題寒松亭",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "題寒松亭",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "四仙曾會此，客似孟嘗門。珠履雲無迹，蒼官火不存。尋眞思翠密，懷古立黃昏。惟有煎茶井，依然在石根。松近爲山火所燒故云",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `題寒松亭` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "別母",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "別母",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "暮逢朝別未留連，母子相持淚似泉。養志光陰今漸短，不知何日報恩憐。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `別母` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "登太白山",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "登太白山",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "直過長空入紫煙，始知登了最高巓。一丸白日低頭上，四面群山落眼前。身逐飛雲疑駕鶴，路懸危磴似梯天。雨餘萬壑奔流漲，愁度縈廻五十川。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `登太白山` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "七月雨中發江陵府",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "七月雨中發江陵府",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "才疎無術救斯民，衆責紛紛在此身。解負今朝歸意迫，雨師那得少留人？\n二載劬勞但爲民，豈曾求媚自謀身？寒松片月知吾意，時逐征鞍遠送人。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `七月雨中發江陵府` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "到襄州寄通州太守",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "到襄州寄通州太守",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "朝天路上肯遲留？二載關東已倦遊。元帥臺前湖月滿，與君寒夜泛蘭舟。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `到襄州寄通州太守` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "八月始四日北行泛永郞湖",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "八月始四日北行泛永郞湖",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "暮雲半卷山如畫，秋雨新晴水自波。此地重來難可必，更聞船上一聲歌。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `八月始四日北行泛永郞湖` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "奉答通州太守贈別詩",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "奉答通州太守贈別詩",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "關東二載鎭軍營，未把恩憐慰物情。回謝江湖釣臺月，他年尋我白鷗盟。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `奉答通州太守贈別詩` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "再遊三日浦次板上詩",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "再遊三日浦次板上詩",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "亭上奇觀似畫成，怳疑凡骨入三淸。雙雙白鷺和煙靜，六六奇峯照水明。甲乙難尋碑篆跡，宮商已變棹歌聲。惟餘石面丹書在，誰解仙郞萬古情？",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `再遊三日浦次板上詩` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "在和州伏見批目，寄獻質齋尹大叔相國",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "在和州伏見批目，寄獻質齋尹大叔相國",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "廊廟經綸係一身，德高山斗老儒臣。滿門子姪承餘慶，同日遷官六七人。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `在和州伏見批目，寄獻質齋尹大叔相國` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "賀尹侍中",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "賀尹侍中",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "明主憂時起大賢，再魁黃閣尙中年。雖當一飯寧忘國？塗炭蒼生望息肩。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `賀尹侍中` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "賀金七宰",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "賀金七宰",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "賢相來從畎畝中，三韓拭目仰淸風。我今燕賀區區意，但爲蒼生不爲公。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `賀金七宰` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "賀李政堂",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "賀李政堂",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "相國高懷慕謝安，華堂氣味似東山。今朝復爲蒼生起，三尺琴閒自不閒。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `賀李政堂` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "八月將赴京，又有旨仍行秋祭，南行路上有作",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "八月將赴京，又有旨仍行秋祭，南行路上有作",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "鞍馬關東路，秋黃再入槐。吏民嫌拙政，山水猒凡才。昨已推相送，今胡去又廻？多慙見沙鳥，虛過釣魚臺。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `八月將赴京，又有旨仍行秋祭，南行路上有作` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "鏡浦泛舟",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "鏡浦泛舟",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "雨晴秋氣滿江城，來泛扁舟放野情。地入壺中塵不到，人遊鏡裏畫難成。煙波白鳥時時過，沙路靑驢緩緩行。爲報長年休疾棹，待看孤月夜深明。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `鏡浦泛舟` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "夜坐聞鴻",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "夜坐聞鴻",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "月落寒空霜露淸，雲間孤雁兩三聲。秋風湖海倦遊客，半夜思鄕心不平。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `夜坐聞鴻` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "次洛山詩韻",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "次洛山詩韻",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "大聖圓通境，曾聞海上峯。恩同甘露潤，香有紫泥封。隨類身常現，纏迷眼不逢。莫論眞與假，但自禮慈容。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `次洛山詩韻` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "至順二年九月十七日，罷任如京，過順忠關",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "至順二年九月十七日，罷任如京，過順忠關",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "杖節入關口，還從此路歸。朔風吹列戟，落葉滿征衣。未救民間病，寧敎國體肥？縱傾東海水，難洗二年非。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `至順二年九月十七日，罷任如京，過順忠關` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "過桃源驛（卷一第2首）",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "過桃源驛",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "山下蕭條數戶民，平生奔走馬蹄塵。田頭雨足身無暇，名是桃源實是秦。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `過桃源驛` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "過松澗驛（卷一第2首）",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "過松澗驛",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "地瘠山危少廣平，此間何事可安生？居民不忍離鄕土，料得流亡非本情。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `過松澗驛` heading과 전문을 직접 확인했다."
+      }
     }
   ],
   "blockers": [],
@@ -355,6 +3603,13 @@
       "label": "謹齋集 卷一 raw",
       "url": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
       "notes": "안축 관동 지역 시문과 한시 후보 원문을 확인했다."
+    },
+    {
+      "title": "謹齋集/卷二",
+      "url": "https://zh.wikisource.org/wiki/謹齋集/卷二",
+      "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷二?action=raw",
+      "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+      "note": "卷二의 詩·歌辭 section에서 개별 제목과 전문을 직접 확인했다."
     }
   ]
 }
