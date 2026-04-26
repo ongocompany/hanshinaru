@@ -1,0 +1,747 @@
+{
+  "workerId": "worker-14-kim-byeongyeon-jeongjo-hyomyeong-royal",
+  "modelRecommendation": "gpt-5.4",
+  "status": "completed",
+  "targetAuthors": [
+    "김병연",
+    "정조",
+    "효명세자"
+  ],
+  "summary": {
+    "candidateWorksChecked": 25,
+    "directTextWorksFound": 25,
+    "ocrCandidates": 0,
+    "blockedWorks": 0
+  },
+  "poems": [
+    {
+      "authorKo": "김병연",
+      "authorHanja": "金炳淵",
+      "candidateTitle": "김삿갓 한시",
+      "matchedTitle": "嘲僧儒",
+      "sourceWork": {
+        "collectionTitle": "zh Wikisource 金炳淵 개별 수록작",
+        "juan": null,
+        "entryTitle": "嘲僧儒",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E5%98%B2%E5%83%A7%E5%84%92",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E5%98%B2%E5%83%A7%E5%84%92?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "僧頭團團汗馬螂\n儒頭尖尖坐狗腎\n聲今銅鈴零銅鼎\n目若黑楸落白粥",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 개별 작품 raw에서 金炳淵 작자와 전문을 직접 확인했다. 선집명 단위가 아니라 개별 수록작이라 collectionTitle은 개별 수록작으로 둔다."
+      }
+    },
+    {
+      "authorKo": "김병연",
+      "authorHanja": "金炳淵",
+      "candidateTitle": "풍자시",
+      "matchedTitle": "蚤",
+      "sourceWork": {
+        "collectionTitle": "zh Wikisource 金炳淵 개별 수록작",
+        "juan": null,
+        "entryTitle": "蚤",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%9A%A4",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%9A%A4?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "貌似棗仁勇絕倫\n伴虱爲友蝎爲隣\n朝從席隔藏身密\n暮向衾中犯脚親\n尖嘴嚼時心動索\n赤身躍處夢驚頻\n平明點檢肌膚上\n剩得桃花萬片春",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource raw에서 金炳淵 작자와 `蚤` 전문을 직접 확인해 풍자·영물 계열 대표작으로 수집했다."
+      }
+    },
+    {
+      "authorKo": "김병연",
+      "authorHanja": "金炳淵",
+      "candidateTitle": "방랑시",
+      "matchedTitle": "步至華楊洞歌",
+      "sourceWork": {
+        "collectionTitle": "zh Wikisource 金炳淵 개별 수록작",
+        "juan": null,
+        "entryTitle": "步至華楊洞歌",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%AD%A5%E8%87%B3%E8%8F%AF%E6%A5%8A%E6%B4%9E%E6%AD%8C",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%AD%A5%E8%87%B3%E8%8F%AF%E6%A5%8A%E6%B4%9E%E6%AD%8C?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "medium"
+      },
+      "text": {
+        "poemZh": "步至華楊洞\n書堂來早至\n學童諸未十\n師父奈不謁",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource raw의 notes가 원작자와 許穆을 함께 언급해 locatorConfidence는 medium으로 둔다. 제목과 전문은 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "김병연",
+      "authorHanja": "金炳淵",
+      "candidateTitle": "파격시",
+      "matchedTitle": "論鄭嘉山忠節死 嘆金益淳罪通于天",
+      "sourceWork": {
+        "collectionTitle": "zh Wikisource 金炳淵 개별 수록작",
+        "juan": null,
+        "entryTitle": "論鄭嘉山忠節死 嘆金益淳罪通于天",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%AB%96%E9%84%AD%E5%98%89%E5%B1%B1%E5%BF%A0%E7%AF%80%E6%AD%BB_%E5%98%86%E9%87%91%E7%9B%8A%E6%B7%B3%E7%BD%AA%E9%80%9A%E4%BA%8E%E5%A4%A9",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%AB%96%E9%84%AD%E5%98%89%E5%B1%B1%E5%BF%A0%E7%AF%80%E6%AD%BB_%E5%98%86%E9%87%91%E7%9B%8A%E6%B7%B3%E7%BD%AA%E9%80%9A%E4%BA%8E%E5%A4%A9?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "曰爾世臣金益淳\n鄭公不過卿大夫\n將軍桃李隴西落\n烈士功名圖末高\n詩人到此亦慷慨\n撫劍悲歌秋水唆\n宣川自古大將邑\n此諸嘉山先守義\n淸朝共作一王臣\n死地寧爲二心子\n升平日月歲辛未\n風雨西關何變有\n尊周孰非魯仲連\n輔漢人多諸葛亮\n同朝舊臣鄭忠臣\n抵掌風塵立節士\n嘉陵老吏揚名旌\n生色秋天白日下\n魂歸南畝伴岳飛\n骨埋西山傍伯夷\n西來消息慨然多\n問是誰家食祿臣\n家聲壯洞甲族金\n名字長安行列淳\n家門如許聖恩重\n百萬兵前義不下\n淸川江水洗兵波\n鐵甕山樹掛弓枝\n吾王庭下進退膝\n背向西城凶賊脆\n魂飛莫向九泉去\n地下猶存先大王\n忘君是日又忘親\n一死猶輕萬死宜\n春秋筆法爾知否\n此事流傳東國史",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource raw에서 金炳淵 작자와 장편 전문을 직접 확인했다. 김익순 관련 대표 풍자·가계 서사 맥락 작품이다."
+      }
+    },
+    {
+      "authorKo": "정조",
+      "authorHanja": "正祖",
+      "candidateTitle": "弘齋全書 수록 한시",
+      "matchedTitle": "贐原任直提學鄭民始出按關北",
+      "sourceWork": {
+        "collectionTitle": "弘齋全書 卷六",
+        "juan": "卷六",
+        "entryTitle": "贐原任直提學鄭民始出按關北",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E5%BC%98%E9%BD%8B%E5%85%A8%E6%9B%B8/%E5%8D%B7%E5%85%AD",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E5%BC%98%E9%BD%8B%E5%85%A8%E6%9B%B8/%E5%8D%B7%E5%85%AD?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "知君輕遠別。圖報以忘身。盤錯纔西節。風謠又北輪。山川應識面。夷獠儻歸仁。九陛勤宵旰。須先問樂民。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `弘齋全書/卷六` raw에서 heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정조",
+      "authorHanja": "正祖",
+      "candidateTitle": "어제시",
+      "matchedTitle": "淸漪亭賞花日。唫示在筵諸臣。",
+      "sourceWork": {
+        "collectionTitle": "弘齋全書 卷六",
+        "juan": "卷六",
+        "entryTitle": "淸漪亭賞花日。唫示在筵諸臣。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E5%BC%98%E9%BD%8B%E5%85%A8%E6%9B%B8/%E5%8D%B7%E5%85%AD",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E5%BC%98%E9%BD%8B%E5%85%A8%E6%9B%B8/%E5%8D%B7%E5%85%AD?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "彈琴花底石。携釣水中亭。雅會仍探勝。雲端畫鵠聽。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `弘齋全書/卷六` raw에서 heading과 5언절구 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정조",
+      "authorHanja": "正祖",
+      "candidateTitle": "弘齋全書 수록 한시",
+      "matchedTitle": "太液池。看花垂釣。",
+      "sourceWork": {
+        "collectionTitle": "弘齋全書 卷六",
+        "juan": "卷六",
+        "entryTitle": "太液池。看花垂釣。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E5%BC%98%E9%BD%8B%E5%85%A8%E6%9B%B8/%E5%8D%B7%E5%85%AD",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E5%BC%98%E9%BD%8B%E5%85%A8%E6%9B%B8/%E5%8D%B7%E5%85%AD?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "液池西畔萬重花。釀得氤氳元氣多。直到月昇方捲釣。近臣隨意醉紅霞。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `弘齋全書/卷六` raw에서 heading과 7언절구 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정조",
+      "authorHanja": "正祖",
+      "candidateTitle": "어제시",
+      "matchedTitle": "洗劒亭。恭和先朝御製韻。",
+      "sourceWork": {
+        "collectionTitle": "弘齋全書 卷六",
+        "juan": "卷六",
+        "entryTitle": "洗劒亭。恭和先朝御製韻。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E5%BC%98%E9%BD%8B%E5%85%A8%E6%9B%B8/%E5%8D%B7%E5%85%AD",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E5%BC%98%E9%BD%8B%E5%85%A8%E6%9B%B8/%E5%8D%B7%E5%85%AD?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "詰戎餘意此臨亭。漢北天高畫角淸。可愛源泉深有力。泠然一道萬山聲。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `弘齋全書/卷六` raw에서 heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정조",
+      "authorHanja": "正祖",
+      "candidateTitle": "弘齋全書 수록 한시",
+      "matchedTitle": "皇帝登極六十年。進賀副价鄭大容之行。唫示。",
+      "sourceWork": {
+        "collectionTitle": "弘齋全書 卷六",
+        "juan": "卷六",
+        "entryTitle": "皇帝登極六十年。進賀副价鄭大容之行。唫示。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E5%BC%98%E9%BD%8B%E5%85%A8%E6%9B%B8/%E5%8D%B7%E5%85%AD",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E5%BC%98%E9%BD%8B%E5%85%A8%E6%9B%B8/%E5%8D%B7%E5%85%AD?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "不見遼東廣。焉知天下寬。星軺今副价。奎閣是仙官。風雅須專對。山河入壯觀。明春釣魚會。花事待君闌。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `弘齋全書/卷六` raw에서 heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "효명세자",
+      "authorHanja": "孝明世子",
+      "candidateTitle": "개인 한시 후보",
+      "matchedTitle": "山齋詠物詩 鶴",
+      "sourceWork": {
+        "collectionTitle": "敬軒集 卷二",
+        "juan": "卷二",
+        "entryTitle": "山齋詠物詩 鶴",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%BA%8C",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%BA%8C?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "丹頂縞衣動羽儀。中庭廻舞影參差。碧海靑田歸夢遠。數聲淸唳月明時。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `敬軒集/卷二` raw의 `山齋詠物詩` 하위 heading에서 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "효명세자",
+      "authorHanja": "孝明世子",
+      "candidateTitle": "개인 한시 후보",
+      "matchedTitle": "山齋詠物詩 梅花",
+      "sourceWork": {
+        "collectionTitle": "敬軒集 卷二",
+        "juan": "卷二",
+        "entryTitle": "山齋詠物詩 梅花",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%BA%8C",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%BA%8C?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "園上梅花滿樹香。氷魂搖落月昏黃。爛開不用東風力。殘雪惟能助淡粧。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `敬軒集/卷二` raw의 `山齋詠物詩` 하위 heading에서 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "효명세자",
+      "authorHanja": "孝明世子",
+      "candidateTitle": "개인 한시 후보",
+      "matchedTitle": "山齋詠物詩 竹",
+      "sourceWork": {
+        "collectionTitle": "敬軒集 卷二",
+        "juan": "卷二",
+        "entryTitle": "山齋詠物詩 竹",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%BA%8C",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%BA%8C?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "高節虗心亦歲寒。滿園森束碧琅玕。自有淸陰常不改。何須月日報平安。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `敬軒集/卷二` raw의 `山齋詠物詩` 하위 heading에서 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "효명세자",
+      "authorHanja": "孝明世子",
+      "candidateTitle": "개인 한시 후보",
+      "matchedTitle": "秋夜聽羗篴。拈唐人韻。",
+      "sourceWork": {
+        "collectionTitle": "敬軒集 卷二",
+        "juan": "卷二",
+        "entryTitle": "秋夜聽羗篴。拈唐人韻。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%BA%8C",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%BA%8C?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "晴空新月出雲間。睡起寒窓對遠山。半夜誰家悽短笛。一聲應自玉門關。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `敬軒集/卷二` raw에서 heading과 7언절구 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "효명세자",
+      "authorHanja": "孝明世子",
+      "candidateTitle": "개인 한시 후보",
+      "matchedTitle": "晩香軒十景 陽欄春曉",
+      "sourceWork": {
+        "collectionTitle": "敬軒集 卷二",
+        "juan": "卷二",
+        "entryTitle": "晩香軒十景 陽欄春曉",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%BA%8C",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%BA%8C?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "千門通曉色。花露壓重欄。斜月依遅下。殘星的歷看。漏壺催漸曙。宮錦護輕寒。樹動喧棲翼。林開出遠巒。村鷄聆喔喔。庭珮集珊珊。化日昇若木。觚稜瑞氣盤。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `敬軒集/卷二` raw의 `晩香軒十景` 하위 heading에서 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "효명세자",
+      "authorHanja": "孝明世子",
+      "candidateTitle": "왕실 악장",
+      "matchedTitle": "殿閣立春帖",
+      "sourceWork": {
+        "collectionTitle": "敬軒集 卷三",
+        "juan": "卷三",
+        "entryTitle": "殿閣立春帖",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "東郊朝日迓春回。萬戶韶光次第來。奏罷靑陽歌一曲。上林先報綻新梅。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `敬軒集/卷三` raw에서 궁중 절첩 계열 heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "효명세자",
+      "authorHanja": "孝明世子",
+      "candidateTitle": "궁중 정재 관련 시문",
+      "matchedTitle": "大造殿立春帖",
+      "sourceWork": {
+        "collectionTitle": "敬軒集 卷三",
+        "juan": "卷三",
+        "entryTitle": "大造殿立春帖",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "陽與梅香動。寒仍雪意消。畫圖長樂壽。劒佩建章朝。漢德頒春詔。堯功聽野謠。曉看宮樹暖。淑氣接雲霄。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `敬軒集/卷三` raw에서 궁중 절첩 계열 heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "효명세자",
+      "authorHanja": "孝明世子",
+      "candidateTitle": "궁중 정재 관련 시문",
+      "matchedTitle": "宮詞",
+      "sourceWork": {
+        "collectionTitle": "敬軒集 卷三",
+        "juan": "卷三",
+        "entryTitle": "宮詞",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "侵晨劒佩入明光。近侍皆含鷄舌香。十二朱欄齊捲箔。嵩呼聲在半天揚。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `敬軒集/卷三` raw에서 `宮詞` heading과 첫 수 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "효명세자",
+      "authorHanja": "孝明世子",
+      "candidateTitle": "개인 한시 후보",
+      "matchedTitle": "願以詩輸之",
+      "sourceWork": {
+        "collectionTitle": "敬軒集 卷三",
+        "juan": "卷三",
+        "entryTitle": "願以詩輸之",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "近水蘆花不染塵。漁翁也織藉爲茵。晩披巖下風生腋。夜拂船頭月滿身。安用金錢論價直。可將詩句敵淸貧。江湖泛宅閒如許。一幅雲箋詠暮春。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `敬軒集/卷三` raw에서 heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "효명세자",
+      "authorHanja": "孝明世子",
+      "candidateTitle": "개인 한시 후보",
+      "matchedTitle": "題吉冶隱抗節圖",
+      "sourceWork": {
+        "collectionTitle": "敬軒集 卷三",
+        "juan": "卷三",
+        "entryTitle": "題吉冶隱抗節圖",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "晩節葆松栢。此心一片丹。淸風釣㙜上。猶帶子陵寒。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `敬軒集/卷三` raw에서 heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "효명세자",
+      "authorHanja": "孝明世子",
+      "candidateTitle": "개인 한시 후보",
+      "matchedTitle": "山中獨坐",
+      "sourceWork": {
+        "collectionTitle": "敬軒集 卷三",
+        "juan": "卷三",
+        "entryTitle": "山中獨坐",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "獨坐無相親。對松心自閒。月上千林靜。彈琴話故山。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `敬軒集/卷三` raw에서 heading과 첫 수 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "효명세자",
+      "authorHanja": "孝明世子",
+      "candidateTitle": "개인 한시 후보",
+      "matchedTitle": "塞鄕曲",
+      "sourceWork": {
+        "collectionTitle": "敬軒集 卷三",
+        "juan": "卷三",
+        "entryTitle": "塞鄕曲",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "梅花笛裏曲。忽發關山響。皎皎今宵月。應照戍樓上。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `敬軒集/卷三` raw에서 heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "효명세자",
+      "authorHanja": "孝明世子",
+      "candidateTitle": "개인 한시 후보",
+      "matchedTitle": "千尺雪咏",
+      "sourceWork": {
+        "collectionTitle": "敬軒集 卷三",
+        "juan": "卷三",
+        "entryTitle": "千尺雪咏",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "東風吹雪捲朝霞。偃竹封松夾路斜。一夜宮林花盡發。却疑春色在山家。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `敬軒集/卷三` raw에서 heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "효명세자",
+      "authorHanja": "孝明世子",
+      "candidateTitle": "개인 한시 후보",
+      "matchedTitle": "朝謁紫宸。退食金門小房。咏雪。",
+      "sourceWork": {
+        "collectionTitle": "敬軒集 卷三",
+        "juan": "卷三",
+        "entryTitle": "朝謁紫宸。退食金門小房。咏雪。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "金門霽色晩。三白暎宮欄。竹似琅玕束。梅疑月夜看。危巖塩虎伏。遠樹玉龍寒。此日龍光重。前筵起整冠。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `敬軒集/卷三` raw에서 heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "효명세자",
+      "authorHanja": "孝明世子",
+      "candidateTitle": "궁중 정재 관련 시문",
+      "matchedTitle": "梨花亭卽事",
+      "sourceWork": {
+        "collectionTitle": "敬軒集 卷三",
+        "juan": "卷三",
+        "entryTitle": "梨花亭卽事",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "深苑高堂霽月明。朱欄曲曲晩風淸。天際雲遙鶴唳歇。茶依松韻細香輕。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `敬軒集/卷三` raw에서 heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "효명세자",
+      "authorHanja": "孝明世子",
+      "candidateTitle": "궁중 정재 관련 시문",
+      "matchedTitle": "夜朝金殿應製",
+      "sourceWork": {
+        "collectionTitle": "敬軒集 卷三",
+        "juan": "卷三",
+        "entryTitle": "夜朝金殿應製",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "瓊苑仙桃千歲結。龜生碧海永斯年。聖王仁德履堯道。八域元元戴舜天。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `敬軒集/卷三` raw에서 heading과 전문을 직접 확인했다."
+      }
+    }
+  ],
+  "blockers": [
+    {
+      "authorKo": "김병연",
+      "candidateTitle": "蘭皐集 / 金笠詩集 단위 원문",
+      "reason": "zh Wikisource opensearch에서는 `蘭皐集`이 중국 `蘭軒集`류로 빗나갔고, `金笠詩集`은 단권 문집 페이지가 확인되지 않았다. 대신 金炳淵 작자 개별 수록작을 직접 수집했다."
+    }
+  ],
+  "sourcesConsulted": [
+    {
+      "label": "zh Wikisource search: 金炳淵",
+      "url": "https://zh.wikisource.org/w/api.php?action=query&list=search&srsearch=%22%E9%87%91%E7%82%B3%E6%B7%B5%22&format=json&srlimit=10",
+      "result": "金炳淵 작자 개별 작품 `嘲僧儒`, `蚤`, `論鄭嘉山忠節死 嘆金益淳罪通于天`, `步至華楊洞歌` 확인"
+    },
+    {
+      "label": "弘齋全書/卷六",
+      "url": "https://zh.wikisource.org/wiki/%E5%BC%98%E9%BD%8B%E5%85%A8%E6%9B%B8/%E5%8D%B7%E5%85%AD",
+      "result": "정조 어제시 5건 직접 수집"
+    },
+    {
+      "label": "敬軒集/卷二",
+      "url": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%BA%8C",
+      "result": "효명세자 개인 한시 5건 직접 수집"
+    },
+    {
+      "label": "敬軒集/卷三",
+      "url": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%B8%89",
+      "result": "효명세자 왕실 절첩·궁중시·개인 한시 11건 직접 수집"
+    }
+  ]
+}

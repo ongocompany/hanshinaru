@@ -16,13 +16,13 @@
   "catalogId": "korean-poems-chronology",
   "targetDb": "poems",
   "summary": {
-    "directTextCollected": 702,
+    "directTextCollected": 727,
     "sourceLocated": 0,
     "ocrCandidate": 0,
     "blocked": 0,
-    "candidateOnly": 149,
-    "totalWorks": 851,
-    "workerResultWorks": 594,
+    "candidateOnly": 140,
+    "totalWorks": 867,
+    "workerResultWorks": 619,
     "donggyeongJapgiMatchedBlocks": 94,
     "donggyeongJapgiImportedWorks": 63,
     "donggyeongJapgiSourceVariants": 31
@@ -39964,6 +39964,1606 @@
       }
     },
     {
+      "poemId": "KPOEM-WORKER-KIM-BYEONGYEON-001",
+      "canonicalId": "KPOEM-CANON-WORKER-KIM-BYEONGYEON-001",
+      "title": {
+        "zh": "嘲僧儒",
+        "ko": "嘲僧儒"
+      },
+      "author": {
+        "authorId": "KAUTH-KIM-BYEONGYEON",
+        "zh": "金炳淵",
+        "ko": "김병연"
+      },
+      "era": {
+        "label": "조선 후기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "zh Wikisource 金炳淵 개별 수록작",
+        "juan": null,
+        "entryTitle": "嘲僧儒",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E5%98%B2%E5%83%A7%E5%84%92",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E5%98%B2%E5%83%A7%E5%84%92?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "僧頭團團汗馬螂\n儒頭尖尖坐狗腎\n聲今銅鈴零銅鼎\n目若黑楸落白粥",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-14-kim-byeongyeon-jeongjo-hyomyeong-royal.v1.json",
+        "workerId": "worker-14-kim-byeongyeon-jeongjo-hyomyeong-royal",
+        "candidateTitle": "김삿갓 한시",
+        "matchedTitle": "嘲僧儒",
+        "notes": "zh Wikisource 개별 작품 raw에서 金炳淵 작자와 전문을 직접 확인했다. 선집명 단위가 아니라 개별 수록작이라 collectionTitle은 개별 수록작으로 둔다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-KIM-BYEONGYEON-002",
+      "canonicalId": "KPOEM-CANON-WORKER-KIM-BYEONGYEON-002",
+      "title": {
+        "zh": "蚤",
+        "ko": "蚤"
+      },
+      "author": {
+        "authorId": "KAUTH-KIM-BYEONGYEON",
+        "zh": "金炳淵",
+        "ko": "김병연"
+      },
+      "era": {
+        "label": "조선 후기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "zh Wikisource 金炳淵 개별 수록작",
+        "juan": null,
+        "entryTitle": "蚤",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%9A%A4",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%9A%A4?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "貌似棗仁勇絕倫\n伴虱爲友蝎爲隣\n朝從席隔藏身密\n暮向衾中犯脚親\n尖嘴嚼時心動索\n赤身躍處夢驚頻\n平明點檢肌膚上\n剩得桃花萬片春",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-14-kim-byeongyeon-jeongjo-hyomyeong-royal.v1.json",
+        "workerId": "worker-14-kim-byeongyeon-jeongjo-hyomyeong-royal",
+        "candidateTitle": "풍자시",
+        "matchedTitle": "蚤",
+        "notes": "zh Wikisource raw에서 金炳淵 작자와 `蚤` 전문을 직접 확인해 풍자·영물 계열 대표작으로 수집했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-KIM-BYEONGYEON-003",
+      "canonicalId": "KPOEM-CANON-WORKER-KIM-BYEONGYEON-003",
+      "title": {
+        "zh": "步至華楊洞歌",
+        "ko": "步至華楊洞歌"
+      },
+      "author": {
+        "authorId": "KAUTH-KIM-BYEONGYEON",
+        "zh": "金炳淵",
+        "ko": "김병연"
+      },
+      "era": {
+        "label": "조선 후기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "zh Wikisource 金炳淵 개별 수록작",
+        "juan": null,
+        "entryTitle": "步至華楊洞歌",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%AD%A5%E8%87%B3%E8%8F%AF%E6%A5%8A%E6%B4%9E%E6%AD%8C",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%AD%A5%E8%87%B3%E8%8F%AF%E6%A5%8A%E6%B4%9E%E6%AD%8C?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "medium",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "步至華楊洞\n書堂來早至\n學童諸未十\n師父奈不謁",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-14-kim-byeongyeon-jeongjo-hyomyeong-royal.v1.json",
+        "workerId": "worker-14-kim-byeongyeon-jeongjo-hyomyeong-royal",
+        "candidateTitle": "방랑시",
+        "matchedTitle": "步至華楊洞歌",
+        "notes": "zh Wikisource raw의 notes가 원작자와 許穆을 함께 언급해 locatorConfidence는 medium으로 둔다. 제목과 전문은 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-KIM-BYEONGYEON-004",
+      "canonicalId": "KPOEM-CANON-WORKER-KIM-BYEONGYEON-004",
+      "title": {
+        "zh": "論鄭嘉山忠節死 嘆金益淳罪通于天",
+        "ko": "論鄭嘉山忠節死 嘆金益淳罪通于天"
+      },
+      "author": {
+        "authorId": "KAUTH-KIM-BYEONGYEON",
+        "zh": "金炳淵",
+        "ko": "김병연"
+      },
+      "era": {
+        "label": "조선 후기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "zh Wikisource 金炳淵 개별 수록작",
+        "juan": null,
+        "entryTitle": "論鄭嘉山忠節死 嘆金益淳罪通于天",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%AB%96%E9%84%AD%E5%98%89%E5%B1%B1%E5%BF%A0%E7%AF%80%E6%AD%BB_%E5%98%86%E9%87%91%E7%9B%8A%E6%B7%B3%E7%BD%AA%E9%80%9A%E4%BA%8E%E5%A4%A9",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%AB%96%E9%84%AD%E5%98%89%E5%B1%B1%E5%BF%A0%E7%AF%80%E6%AD%BB_%E5%98%86%E9%87%91%E7%9B%8A%E6%B7%B3%E7%BD%AA%E9%80%9A%E4%BA%8E%E5%A4%A9?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "曰爾世臣金益淳\n鄭公不過卿大夫\n將軍桃李隴西落\n烈士功名圖末高\n詩人到此亦慷慨\n撫劍悲歌秋水唆\n宣川自古大將邑\n此諸嘉山先守義\n淸朝共作一王臣\n死地寧爲二心子\n升平日月歲辛未\n風雨西關何變有\n尊周孰非魯仲連\n輔漢人多諸葛亮\n同朝舊臣鄭忠臣\n抵掌風塵立節士\n嘉陵老吏揚名旌\n生色秋天白日下\n魂歸南畝伴岳飛\n骨埋西山傍伯夷\n西來消息慨然多\n問是誰家食祿臣\n家聲壯洞甲族金\n名字長安行列淳\n家門如許聖恩重\n百萬兵前義不下\n淸川江水洗兵波\n鐵甕山樹掛弓枝\n吾王庭下進退膝\n背向西城凶賊脆\n魂飛莫向九泉去\n地下猶存先大王\n忘君是日又忘親\n一死猶輕萬死宜\n春秋筆法爾知否\n此事流傳東國史",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-14-kim-byeongyeon-jeongjo-hyomyeong-royal.v1.json",
+        "workerId": "worker-14-kim-byeongyeon-jeongjo-hyomyeong-royal",
+        "candidateTitle": "파격시",
+        "matchedTitle": "論鄭嘉山忠節死 嘆金益淳罪通于天",
+        "notes": "zh Wikisource raw에서 金炳淵 작자와 장편 전문을 직접 확인했다. 김익순 관련 대표 풍자·가계 서사 맥락 작품이다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-JEONGJO-005",
+      "canonicalId": "KPOEM-CANON-WORKER-JEONGJO-005",
+      "title": {
+        "zh": "贐原任直提學鄭民始出按關北",
+        "ko": "贐原任直提學鄭民始出按關北"
+      },
+      "author": {
+        "authorId": "KAUTH-JEONGJO",
+        "zh": "正祖",
+        "ko": "정조"
+      },
+      "era": {
+        "label": "조선 후기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "弘齋全書 卷六",
+        "juan": "卷六",
+        "entryTitle": "贐原任直提學鄭民始出按關北",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E5%BC%98%E9%BD%8B%E5%85%A8%E6%9B%B8/%E5%8D%B7%E5%85%AD",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E5%BC%98%E9%BD%8B%E5%85%A8%E6%9B%B8/%E5%8D%B7%E5%85%AD?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "知君輕遠別。圖報以忘身。盤錯纔西節。風謠又北輪。山川應識面。夷獠儻歸仁。九陛勤宵旰。須先問樂民。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-14-kim-byeongyeon-jeongjo-hyomyeong-royal.v1.json",
+        "workerId": "worker-14-kim-byeongyeon-jeongjo-hyomyeong-royal",
+        "candidateTitle": "弘齋全書 수록 한시",
+        "matchedTitle": "贐原任直提學鄭民始出按關北",
+        "notes": "zh Wikisource `弘齋全書/卷六` raw에서 heading과 전문을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-JEONGJO-006",
+      "canonicalId": "KPOEM-CANON-WORKER-JEONGJO-006",
+      "title": {
+        "zh": "淸漪亭賞花日。唫示在筵諸臣。",
+        "ko": "淸漪亭賞花日。唫示在筵諸臣。"
+      },
+      "author": {
+        "authorId": "KAUTH-JEONGJO",
+        "zh": "正祖",
+        "ko": "정조"
+      },
+      "era": {
+        "label": "조선 후기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "弘齋全書 卷六",
+        "juan": "卷六",
+        "entryTitle": "淸漪亭賞花日。唫示在筵諸臣。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E5%BC%98%E9%BD%8B%E5%85%A8%E6%9B%B8/%E5%8D%B7%E5%85%AD",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E5%BC%98%E9%BD%8B%E5%85%A8%E6%9B%B8/%E5%8D%B7%E5%85%AD?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "彈琴花底石。携釣水中亭。雅會仍探勝。雲端畫鵠聽。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-14-kim-byeongyeon-jeongjo-hyomyeong-royal.v1.json",
+        "workerId": "worker-14-kim-byeongyeon-jeongjo-hyomyeong-royal",
+        "candidateTitle": "어제시",
+        "matchedTitle": "淸漪亭賞花日。唫示在筵諸臣。",
+        "notes": "zh Wikisource `弘齋全書/卷六` raw에서 heading과 5언절구 전문을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-JEONGJO-007",
+      "canonicalId": "KPOEM-CANON-WORKER-JEONGJO-007",
+      "title": {
+        "zh": "太液池。看花垂釣。",
+        "ko": "太液池。看花垂釣。"
+      },
+      "author": {
+        "authorId": "KAUTH-JEONGJO",
+        "zh": "正祖",
+        "ko": "정조"
+      },
+      "era": {
+        "label": "조선 후기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "弘齋全書 卷六",
+        "juan": "卷六",
+        "entryTitle": "太液池。看花垂釣。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E5%BC%98%E9%BD%8B%E5%85%A8%E6%9B%B8/%E5%8D%B7%E5%85%AD",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E5%BC%98%E9%BD%8B%E5%85%A8%E6%9B%B8/%E5%8D%B7%E5%85%AD?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "液池西畔萬重花。釀得氤氳元氣多。直到月昇方捲釣。近臣隨意醉紅霞。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-14-kim-byeongyeon-jeongjo-hyomyeong-royal.v1.json",
+        "workerId": "worker-14-kim-byeongyeon-jeongjo-hyomyeong-royal",
+        "candidateTitle": "弘齋全書 수록 한시",
+        "matchedTitle": "太液池。看花垂釣。",
+        "notes": "zh Wikisource `弘齋全書/卷六` raw에서 heading과 7언절구 전문을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-JEONGJO-008",
+      "canonicalId": "KPOEM-CANON-WORKER-JEONGJO-008",
+      "title": {
+        "zh": "洗劒亭。恭和先朝御製韻。",
+        "ko": "洗劒亭。恭和先朝御製韻。"
+      },
+      "author": {
+        "authorId": "KAUTH-JEONGJO",
+        "zh": "正祖",
+        "ko": "정조"
+      },
+      "era": {
+        "label": "조선 후기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "弘齋全書 卷六",
+        "juan": "卷六",
+        "entryTitle": "洗劒亭。恭和先朝御製韻。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E5%BC%98%E9%BD%8B%E5%85%A8%E6%9B%B8/%E5%8D%B7%E5%85%AD",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E5%BC%98%E9%BD%8B%E5%85%A8%E6%9B%B8/%E5%8D%B7%E5%85%AD?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "詰戎餘意此臨亭。漢北天高畫角淸。可愛源泉深有力。泠然一道萬山聲。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-14-kim-byeongyeon-jeongjo-hyomyeong-royal.v1.json",
+        "workerId": "worker-14-kim-byeongyeon-jeongjo-hyomyeong-royal",
+        "candidateTitle": "어제시",
+        "matchedTitle": "洗劒亭。恭和先朝御製韻。",
+        "notes": "zh Wikisource `弘齋全書/卷六` raw에서 heading과 전문을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-JEONGJO-009",
+      "canonicalId": "KPOEM-CANON-WORKER-JEONGJO-009",
+      "title": {
+        "zh": "皇帝登極六十年。進賀副价鄭大容之行。唫示。",
+        "ko": "皇帝登極六十年。進賀副价鄭大容之行。唫示。"
+      },
+      "author": {
+        "authorId": "KAUTH-JEONGJO",
+        "zh": "正祖",
+        "ko": "정조"
+      },
+      "era": {
+        "label": "조선 후기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "弘齋全書 卷六",
+        "juan": "卷六",
+        "entryTitle": "皇帝登極六十年。進賀副价鄭大容之行。唫示。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E5%BC%98%E9%BD%8B%E5%85%A8%E6%9B%B8/%E5%8D%B7%E5%85%AD",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E5%BC%98%E9%BD%8B%E5%85%A8%E6%9B%B8/%E5%8D%B7%E5%85%AD?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "不見遼東廣。焉知天下寬。星軺今副价。奎閣是仙官。風雅須專對。山河入壯觀。明春釣魚會。花事待君闌。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-14-kim-byeongyeon-jeongjo-hyomyeong-royal.v1.json",
+        "workerId": "worker-14-kim-byeongyeon-jeongjo-hyomyeong-royal",
+        "candidateTitle": "弘齋全書 수록 한시",
+        "matchedTitle": "皇帝登極六十年。進賀副价鄭大容之行。唫示。",
+        "notes": "zh Wikisource `弘齋全書/卷六` raw에서 heading과 전문을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-HYOMYEONG-SEJA-010",
+      "canonicalId": "KPOEM-CANON-WORKER-HYOMYEONG-SEJA-010",
+      "title": {
+        "zh": "山齋詠物詩 鶴",
+        "ko": "山齋詠物詩 鶴"
+      },
+      "author": {
+        "authorId": "KAUTH-HYOMYEONG-SEJA",
+        "zh": "孝明世子",
+        "ko": "효명세자"
+      },
+      "era": {
+        "label": "조선 후기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "敬軒集 卷二",
+        "juan": "卷二",
+        "entryTitle": "山齋詠物詩 鶴",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%BA%8C",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%BA%8C?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "丹頂縞衣動羽儀。中庭廻舞影參差。碧海靑田歸夢遠。數聲淸唳月明時。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-14-kim-byeongyeon-jeongjo-hyomyeong-royal.v1.json",
+        "workerId": "worker-14-kim-byeongyeon-jeongjo-hyomyeong-royal",
+        "candidateTitle": "개인 한시 후보",
+        "matchedTitle": "山齋詠物詩 鶴",
+        "notes": "zh Wikisource `敬軒集/卷二` raw의 `山齋詠物詩` 하위 heading에서 전문을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-HYOMYEONG-SEJA-011",
+      "canonicalId": "KPOEM-CANON-WORKER-HYOMYEONG-SEJA-011",
+      "title": {
+        "zh": "山齋詠物詩 梅花",
+        "ko": "山齋詠物詩 梅花"
+      },
+      "author": {
+        "authorId": "KAUTH-HYOMYEONG-SEJA",
+        "zh": "孝明世子",
+        "ko": "효명세자"
+      },
+      "era": {
+        "label": "조선 후기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "敬軒集 卷二",
+        "juan": "卷二",
+        "entryTitle": "山齋詠物詩 梅花",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%BA%8C",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%BA%8C?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "園上梅花滿樹香。氷魂搖落月昏黃。爛開不用東風力。殘雪惟能助淡粧。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-14-kim-byeongyeon-jeongjo-hyomyeong-royal.v1.json",
+        "workerId": "worker-14-kim-byeongyeon-jeongjo-hyomyeong-royal",
+        "candidateTitle": "개인 한시 후보",
+        "matchedTitle": "山齋詠物詩 梅花",
+        "notes": "zh Wikisource `敬軒集/卷二` raw의 `山齋詠物詩` 하위 heading에서 전문을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-HYOMYEONG-SEJA-012",
+      "canonicalId": "KPOEM-CANON-WORKER-HYOMYEONG-SEJA-012",
+      "title": {
+        "zh": "山齋詠物詩 竹",
+        "ko": "山齋詠物詩 竹"
+      },
+      "author": {
+        "authorId": "KAUTH-HYOMYEONG-SEJA",
+        "zh": "孝明世子",
+        "ko": "효명세자"
+      },
+      "era": {
+        "label": "조선 후기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "敬軒集 卷二",
+        "juan": "卷二",
+        "entryTitle": "山齋詠物詩 竹",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%BA%8C",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%BA%8C?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "高節虗心亦歲寒。滿園森束碧琅玕。自有淸陰常不改。何須月日報平安。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-14-kim-byeongyeon-jeongjo-hyomyeong-royal.v1.json",
+        "workerId": "worker-14-kim-byeongyeon-jeongjo-hyomyeong-royal",
+        "candidateTitle": "개인 한시 후보",
+        "matchedTitle": "山齋詠物詩 竹",
+        "notes": "zh Wikisource `敬軒集/卷二` raw의 `山齋詠物詩` 하위 heading에서 전문을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-HYOMYEONG-SEJA-013",
+      "canonicalId": "KPOEM-CANON-WORKER-HYOMYEONG-SEJA-013",
+      "title": {
+        "zh": "秋夜聽羗篴。拈唐人韻。",
+        "ko": "秋夜聽羗篴。拈唐人韻。"
+      },
+      "author": {
+        "authorId": "KAUTH-HYOMYEONG-SEJA",
+        "zh": "孝明世子",
+        "ko": "효명세자"
+      },
+      "era": {
+        "label": "조선 후기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "敬軒集 卷二",
+        "juan": "卷二",
+        "entryTitle": "秋夜聽羗篴。拈唐人韻。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%BA%8C",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%BA%8C?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "晴空新月出雲間。睡起寒窓對遠山。半夜誰家悽短笛。一聲應自玉門關。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-14-kim-byeongyeon-jeongjo-hyomyeong-royal.v1.json",
+        "workerId": "worker-14-kim-byeongyeon-jeongjo-hyomyeong-royal",
+        "candidateTitle": "개인 한시 후보",
+        "matchedTitle": "秋夜聽羗篴。拈唐人韻。",
+        "notes": "zh Wikisource `敬軒集/卷二` raw에서 heading과 7언절구 전문을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-HYOMYEONG-SEJA-014",
+      "canonicalId": "KPOEM-CANON-WORKER-HYOMYEONG-SEJA-014",
+      "title": {
+        "zh": "晩香軒十景 陽欄春曉",
+        "ko": "晩香軒十景 陽欄春曉"
+      },
+      "author": {
+        "authorId": "KAUTH-HYOMYEONG-SEJA",
+        "zh": "孝明世子",
+        "ko": "효명세자"
+      },
+      "era": {
+        "label": "조선 후기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "敬軒集 卷二",
+        "juan": "卷二",
+        "entryTitle": "晩香軒十景 陽欄春曉",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%BA%8C",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%BA%8C?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "千門通曉色。花露壓重欄。斜月依遅下。殘星的歷看。漏壺催漸曙。宮錦護輕寒。樹動喧棲翼。林開出遠巒。村鷄聆喔喔。庭珮集珊珊。化日昇若木。觚稜瑞氣盤。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-14-kim-byeongyeon-jeongjo-hyomyeong-royal.v1.json",
+        "workerId": "worker-14-kim-byeongyeon-jeongjo-hyomyeong-royal",
+        "candidateTitle": "개인 한시 후보",
+        "matchedTitle": "晩香軒十景 陽欄春曉",
+        "notes": "zh Wikisource `敬軒集/卷二` raw의 `晩香軒十景` 하위 heading에서 전문을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-HYOMYEONG-SEJA-015",
+      "canonicalId": "KPOEM-CANON-WORKER-HYOMYEONG-SEJA-015",
+      "title": {
+        "zh": "殿閣立春帖",
+        "ko": "殿閣立春帖"
+      },
+      "author": {
+        "authorId": "KAUTH-HYOMYEONG-SEJA",
+        "zh": "孝明世子",
+        "ko": "효명세자"
+      },
+      "era": {
+        "label": "조선 후기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "敬軒集 卷三",
+        "juan": "卷三",
+        "entryTitle": "殿閣立春帖",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "東郊朝日迓春回。萬戶韶光次第來。奏罷靑陽歌一曲。上林先報綻新梅。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-14-kim-byeongyeon-jeongjo-hyomyeong-royal.v1.json",
+        "workerId": "worker-14-kim-byeongyeon-jeongjo-hyomyeong-royal",
+        "candidateTitle": "왕실 악장",
+        "matchedTitle": "殿閣立春帖",
+        "notes": "zh Wikisource `敬軒集/卷三` raw에서 궁중 절첩 계열 heading과 전문을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-HYOMYEONG-SEJA-016",
+      "canonicalId": "KPOEM-CANON-WORKER-HYOMYEONG-SEJA-016",
+      "title": {
+        "zh": "大造殿立春帖",
+        "ko": "大造殿立春帖"
+      },
+      "author": {
+        "authorId": "KAUTH-HYOMYEONG-SEJA",
+        "zh": "孝明世子",
+        "ko": "효명세자"
+      },
+      "era": {
+        "label": "조선 후기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "敬軒集 卷三",
+        "juan": "卷三",
+        "entryTitle": "大造殿立春帖",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "陽與梅香動。寒仍雪意消。畫圖長樂壽。劒佩建章朝。漢德頒春詔。堯功聽野謠。曉看宮樹暖。淑氣接雲霄。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-14-kim-byeongyeon-jeongjo-hyomyeong-royal.v1.json",
+        "workerId": "worker-14-kim-byeongyeon-jeongjo-hyomyeong-royal",
+        "candidateTitle": "궁중 정재 관련 시문",
+        "matchedTitle": "大造殿立春帖",
+        "notes": "zh Wikisource `敬軒集/卷三` raw에서 궁중 절첩 계열 heading과 전문을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-HYOMYEONG-SEJA-017",
+      "canonicalId": "KPOEM-CANON-WORKER-HYOMYEONG-SEJA-017",
+      "title": {
+        "zh": "宮詞",
+        "ko": "宮詞"
+      },
+      "author": {
+        "authorId": "KAUTH-HYOMYEONG-SEJA",
+        "zh": "孝明世子",
+        "ko": "효명세자"
+      },
+      "era": {
+        "label": "조선 후기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "敬軒集 卷三",
+        "juan": "卷三",
+        "entryTitle": "宮詞",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "侵晨劒佩入明光。近侍皆含鷄舌香。十二朱欄齊捲箔。嵩呼聲在半天揚。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-14-kim-byeongyeon-jeongjo-hyomyeong-royal.v1.json",
+        "workerId": "worker-14-kim-byeongyeon-jeongjo-hyomyeong-royal",
+        "candidateTitle": "궁중 정재 관련 시문",
+        "matchedTitle": "宮詞",
+        "notes": "zh Wikisource `敬軒集/卷三` raw에서 `宮詞` heading과 첫 수 전문을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-HYOMYEONG-SEJA-018",
+      "canonicalId": "KPOEM-CANON-WORKER-HYOMYEONG-SEJA-018",
+      "title": {
+        "zh": "願以詩輸之",
+        "ko": "願以詩輸之"
+      },
+      "author": {
+        "authorId": "KAUTH-HYOMYEONG-SEJA",
+        "zh": "孝明世子",
+        "ko": "효명세자"
+      },
+      "era": {
+        "label": "조선 후기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "敬軒集 卷三",
+        "juan": "卷三",
+        "entryTitle": "願以詩輸之",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "近水蘆花不染塵。漁翁也織藉爲茵。晩披巖下風生腋。夜拂船頭月滿身。安用金錢論價直。可將詩句敵淸貧。江湖泛宅閒如許。一幅雲箋詠暮春。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-14-kim-byeongyeon-jeongjo-hyomyeong-royal.v1.json",
+        "workerId": "worker-14-kim-byeongyeon-jeongjo-hyomyeong-royal",
+        "candidateTitle": "개인 한시 후보",
+        "matchedTitle": "願以詩輸之",
+        "notes": "zh Wikisource `敬軒集/卷三` raw에서 heading과 전문을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-HYOMYEONG-SEJA-019",
+      "canonicalId": "KPOEM-CANON-WORKER-HYOMYEONG-SEJA-019",
+      "title": {
+        "zh": "題吉冶隱抗節圖",
+        "ko": "題吉冶隱抗節圖"
+      },
+      "author": {
+        "authorId": "KAUTH-HYOMYEONG-SEJA",
+        "zh": "孝明世子",
+        "ko": "효명세자"
+      },
+      "era": {
+        "label": "조선 후기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "敬軒集 卷三",
+        "juan": "卷三",
+        "entryTitle": "題吉冶隱抗節圖",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "晩節葆松栢。此心一片丹。淸風釣㙜上。猶帶子陵寒。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-14-kim-byeongyeon-jeongjo-hyomyeong-royal.v1.json",
+        "workerId": "worker-14-kim-byeongyeon-jeongjo-hyomyeong-royal",
+        "candidateTitle": "개인 한시 후보",
+        "matchedTitle": "題吉冶隱抗節圖",
+        "notes": "zh Wikisource `敬軒集/卷三` raw에서 heading과 전문을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-HYOMYEONG-SEJA-020",
+      "canonicalId": "KPOEM-CANON-WORKER-HYOMYEONG-SEJA-020",
+      "title": {
+        "zh": "山中獨坐",
+        "ko": "山中獨坐"
+      },
+      "author": {
+        "authorId": "KAUTH-HYOMYEONG-SEJA",
+        "zh": "孝明世子",
+        "ko": "효명세자"
+      },
+      "era": {
+        "label": "조선 후기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "敬軒集 卷三",
+        "juan": "卷三",
+        "entryTitle": "山中獨坐",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "獨坐無相親。對松心自閒。月上千林靜。彈琴話故山。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-14-kim-byeongyeon-jeongjo-hyomyeong-royal.v1.json",
+        "workerId": "worker-14-kim-byeongyeon-jeongjo-hyomyeong-royal",
+        "candidateTitle": "개인 한시 후보",
+        "matchedTitle": "山中獨坐",
+        "notes": "zh Wikisource `敬軒集/卷三` raw에서 heading과 첫 수 전문을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-HYOMYEONG-SEJA-021",
+      "canonicalId": "KPOEM-CANON-WORKER-HYOMYEONG-SEJA-021",
+      "title": {
+        "zh": "塞鄕曲",
+        "ko": "塞鄕曲"
+      },
+      "author": {
+        "authorId": "KAUTH-HYOMYEONG-SEJA",
+        "zh": "孝明世子",
+        "ko": "효명세자"
+      },
+      "era": {
+        "label": "조선 후기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "敬軒集 卷三",
+        "juan": "卷三",
+        "entryTitle": "塞鄕曲",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "梅花笛裏曲。忽發關山響。皎皎今宵月。應照戍樓上。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-14-kim-byeongyeon-jeongjo-hyomyeong-royal.v1.json",
+        "workerId": "worker-14-kim-byeongyeon-jeongjo-hyomyeong-royal",
+        "candidateTitle": "개인 한시 후보",
+        "matchedTitle": "塞鄕曲",
+        "notes": "zh Wikisource `敬軒集/卷三` raw에서 heading과 전문을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-HYOMYEONG-SEJA-022",
+      "canonicalId": "KPOEM-CANON-WORKER-HYOMYEONG-SEJA-022",
+      "title": {
+        "zh": "千尺雪咏",
+        "ko": "千尺雪咏"
+      },
+      "author": {
+        "authorId": "KAUTH-HYOMYEONG-SEJA",
+        "zh": "孝明世子",
+        "ko": "효명세자"
+      },
+      "era": {
+        "label": "조선 후기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "敬軒集 卷三",
+        "juan": "卷三",
+        "entryTitle": "千尺雪咏",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "東風吹雪捲朝霞。偃竹封松夾路斜。一夜宮林花盡發。却疑春色在山家。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-14-kim-byeongyeon-jeongjo-hyomyeong-royal.v1.json",
+        "workerId": "worker-14-kim-byeongyeon-jeongjo-hyomyeong-royal",
+        "candidateTitle": "개인 한시 후보",
+        "matchedTitle": "千尺雪咏",
+        "notes": "zh Wikisource `敬軒集/卷三` raw에서 heading과 전문을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-HYOMYEONG-SEJA-023",
+      "canonicalId": "KPOEM-CANON-WORKER-HYOMYEONG-SEJA-023",
+      "title": {
+        "zh": "朝謁紫宸。退食金門小房。咏雪。",
+        "ko": "朝謁紫宸。退食金門小房。咏雪。"
+      },
+      "author": {
+        "authorId": "KAUTH-HYOMYEONG-SEJA",
+        "zh": "孝明世子",
+        "ko": "효명세자"
+      },
+      "era": {
+        "label": "조선 후기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "敬軒集 卷三",
+        "juan": "卷三",
+        "entryTitle": "朝謁紫宸。退食金門小房。咏雪。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "金門霽色晩。三白暎宮欄。竹似琅玕束。梅疑月夜看。危巖塩虎伏。遠樹玉龍寒。此日龍光重。前筵起整冠。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-14-kim-byeongyeon-jeongjo-hyomyeong-royal.v1.json",
+        "workerId": "worker-14-kim-byeongyeon-jeongjo-hyomyeong-royal",
+        "candidateTitle": "개인 한시 후보",
+        "matchedTitle": "朝謁紫宸。退食金門小房。咏雪。",
+        "notes": "zh Wikisource `敬軒集/卷三` raw에서 heading과 전문을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-HYOMYEONG-SEJA-024",
+      "canonicalId": "KPOEM-CANON-WORKER-HYOMYEONG-SEJA-024",
+      "title": {
+        "zh": "梨花亭卽事",
+        "ko": "梨花亭卽事"
+      },
+      "author": {
+        "authorId": "KAUTH-HYOMYEONG-SEJA",
+        "zh": "孝明世子",
+        "ko": "효명세자"
+      },
+      "era": {
+        "label": "조선 후기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "敬軒集 卷三",
+        "juan": "卷三",
+        "entryTitle": "梨花亭卽事",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "深苑高堂霽月明。朱欄曲曲晩風淸。天際雲遙鶴唳歇。茶依松韻細香輕。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-14-kim-byeongyeon-jeongjo-hyomyeong-royal.v1.json",
+        "workerId": "worker-14-kim-byeongyeon-jeongjo-hyomyeong-royal",
+        "candidateTitle": "궁중 정재 관련 시문",
+        "matchedTitle": "梨花亭卽事",
+        "notes": "zh Wikisource `敬軒集/卷三` raw에서 heading과 전문을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-HYOMYEONG-SEJA-025",
+      "canonicalId": "KPOEM-CANON-WORKER-HYOMYEONG-SEJA-025",
+      "title": {
+        "zh": "夜朝金殿應製",
+        "ko": "夜朝金殿應製"
+      },
+      "author": {
+        "authorId": "KAUTH-HYOMYEONG-SEJA",
+        "zh": "孝明世子",
+        "ko": "효명세자"
+      },
+      "era": {
+        "label": "조선 후기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "敬軒集 卷三",
+        "juan": "卷三",
+        "entryTitle": "夜朝金殿應製",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%95%AC%E8%BB%92%E9%9B%86/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "瓊苑仙桃千歲結。龜生碧海永斯年。聖王仁德履堯道。八域元元戴舜天。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-14-kim-byeongyeon-jeongjo-hyomyeong-royal.v1.json",
+        "workerId": "worker-14-kim-byeongyeon-jeongjo-hyomyeong-royal",
+        "candidateTitle": "궁중 정재 관련 시문",
+        "matchedTitle": "夜朝金殿應製",
+        "notes": "zh Wikisource `敬軒集/卷三` raw에서 heading과 전문을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
       "poemId": "KPOEM-WORKER-YI-SAEK-001",
       "canonicalId": "KPOEM-CANON-WORKER-YI-SAEK-001",
       "title": {
@@ -58735,222 +60335,6 @@
       }
     },
     {
-      "poemId": "KPOEM-CAND-KIM-BYEONGYEON-001",
-      "canonicalId": "KPOEM-CANON-KIM-BYEONGYEON-001",
-      "title": {
-        "zh": null,
-        "ko": "김삿갓 한시"
-      },
-      "author": {
-        "authorId": "KAUTH-KIM-BYEONGYEON",
-        "zh": "金炳淵",
-        "ko": "김병연"
-      },
-      "era": {
-        "label": "조선 후기"
-      },
-      "genre": {
-        "broad": "한시",
-        "form": "미확정",
-        "track": "hansi-candidate"
-      },
-      "sourceWork": {
-        "collectionTitle": "蘭皐集, 金笠詩集 계열, 후대 선집류",
-        "sourceUrl": null,
-        "sourcePolicyId": null,
-        "verificationStatus": "needs-source-url"
-      },
-      "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
-      },
-      "assets": {
-        "translationKo": null,
-        "commentaryKo": null,
-        "ownedTranslationNeeded": true
-      },
-      "rights": {
-        "originalText": {
-          "status": "candidate",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        },
-        "translation": {
-          "status": "owned-translation-needed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        }
-      },
-      "ingest": {
-        "readiness": "candidate-only",
-        "targetDb": "poems",
-        "sourceFile": "docs/research/2026-04-25-korean-poet-chronology-seed-catalog.md"
-      }
-    },
-    {
-      "poemId": "KPOEM-CAND-KIM-BYEONGYEON-002",
-      "canonicalId": "KPOEM-CANON-KIM-BYEONGYEON-002",
-      "title": {
-        "zh": null,
-        "ko": "방랑시"
-      },
-      "author": {
-        "authorId": "KAUTH-KIM-BYEONGYEON",
-        "zh": "金炳淵",
-        "ko": "김병연"
-      },
-      "era": {
-        "label": "조선 후기"
-      },
-      "genre": {
-        "broad": "한시",
-        "form": "미확정",
-        "track": "hansi-candidate"
-      },
-      "sourceWork": {
-        "collectionTitle": "蘭皐集, 金笠詩集 계열, 후대 선집류",
-        "sourceUrl": null,
-        "sourcePolicyId": null,
-        "verificationStatus": "needs-source-url"
-      },
-      "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
-      },
-      "assets": {
-        "translationKo": null,
-        "commentaryKo": null,
-        "ownedTranslationNeeded": true
-      },
-      "rights": {
-        "originalText": {
-          "status": "candidate",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        },
-        "translation": {
-          "status": "owned-translation-needed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        }
-      },
-      "ingest": {
-        "readiness": "candidate-only",
-        "targetDb": "poems",
-        "sourceFile": "docs/research/2026-04-25-korean-poet-chronology-seed-catalog.md"
-      }
-    },
-    {
-      "poemId": "KPOEM-CAND-KIM-BYEONGYEON-003",
-      "canonicalId": "KPOEM-CANON-KIM-BYEONGYEON-003",
-      "title": {
-        "zh": null,
-        "ko": "풍자시"
-      },
-      "author": {
-        "authorId": "KAUTH-KIM-BYEONGYEON",
-        "zh": "金炳淵",
-        "ko": "김병연"
-      },
-      "era": {
-        "label": "조선 후기"
-      },
-      "genre": {
-        "broad": "한시",
-        "form": "미확정",
-        "track": "hansi-candidate"
-      },
-      "sourceWork": {
-        "collectionTitle": "蘭皐集, 金笠詩集 계열, 후대 선집류",
-        "sourceUrl": null,
-        "sourcePolicyId": null,
-        "verificationStatus": "needs-source-url"
-      },
-      "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
-      },
-      "assets": {
-        "translationKo": null,
-        "commentaryKo": null,
-        "ownedTranslationNeeded": true
-      },
-      "rights": {
-        "originalText": {
-          "status": "candidate",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        },
-        "translation": {
-          "status": "owned-translation-needed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        }
-      },
-      "ingest": {
-        "readiness": "candidate-only",
-        "targetDb": "poems",
-        "sourceFile": "docs/research/2026-04-25-korean-poet-chronology-seed-catalog.md"
-      }
-    },
-    {
-      "poemId": "KPOEM-CAND-KIM-BYEONGYEON-004",
-      "canonicalId": "KPOEM-CANON-KIM-BYEONGYEON-004",
-      "title": {
-        "zh": null,
-        "ko": "파격시"
-      },
-      "author": {
-        "authorId": "KAUTH-KIM-BYEONGYEON",
-        "zh": "金炳淵",
-        "ko": "김병연"
-      },
-      "era": {
-        "label": "조선 후기"
-      },
-      "genre": {
-        "broad": "한시",
-        "form": "미확정",
-        "track": "hansi-candidate"
-      },
-      "sourceWork": {
-        "collectionTitle": "蘭皐集, 金笠詩集 계열, 후대 선집류",
-        "sourceUrl": null,
-        "sourcePolicyId": null,
-        "verificationStatus": "needs-source-url"
-      },
-      "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
-      },
-      "assets": {
-        "translationKo": null,
-        "commentaryKo": null,
-        "ownedTranslationNeeded": true
-      },
-      "rights": {
-        "originalText": {
-          "status": "candidate",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        },
-        "translation": {
-          "status": "owned-translation-needed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        }
-      },
-      "ingest": {
-        "readiness": "candidate-only",
-        "targetDb": "poems",
-        "sourceFile": "docs/research/2026-04-25-korean-poet-chronology-seed-catalog.md"
-      }
-    },
-    {
       "poemId": "KPOEM-CAND-AUTHOR-EC9DB4EC-001",
       "canonicalId": "KPOEM-CANON-AUTHOR-EC9DB4EC-001",
       "title": {
@@ -59080,276 +60464,6 @@
       },
       "sourceWork": {
         "collectionTitle": "紫霞詩集",
-        "sourceUrl": null,
-        "sourcePolicyId": null,
-        "verificationStatus": "needs-source-url"
-      },
-      "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
-      },
-      "assets": {
-        "translationKo": null,
-        "commentaryKo": null,
-        "ownedTranslationNeeded": true
-      },
-      "rights": {
-        "originalText": {
-          "status": "candidate",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        },
-        "translation": {
-          "status": "owned-translation-needed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        }
-      },
-      "ingest": {
-        "readiness": "candidate-only",
-        "targetDb": "poems",
-        "sourceFile": "docs/research/2026-04-25-korean-poet-chronology-seed-catalog.md"
-      }
-    },
-    {
-      "poemId": "KPOEM-CAND-JEONGJO-001",
-      "canonicalId": "KPOEM-CANON-JEONGJO-001",
-      "title": {
-        "zh": "弘齋全書 수록 한시",
-        "ko": "弘齋全書 수록 한시"
-      },
-      "author": {
-        "authorId": "KAUTH-JEONGJO",
-        "zh": "正祖",
-        "ko": "정조"
-      },
-      "era": {
-        "label": "조선 후기"
-      },
-      "genre": {
-        "broad": "한시",
-        "form": "미확정",
-        "track": "hansi-candidate"
-      },
-      "sourceWork": {
-        "collectionTitle": "弘齋全書, 어제 시문",
-        "sourceUrl": null,
-        "sourcePolicyId": null,
-        "verificationStatus": "needs-source-url"
-      },
-      "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
-      },
-      "assets": {
-        "translationKo": null,
-        "commentaryKo": null,
-        "ownedTranslationNeeded": true
-      },
-      "rights": {
-        "originalText": {
-          "status": "candidate",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        },
-        "translation": {
-          "status": "owned-translation-needed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        }
-      },
-      "ingest": {
-        "readiness": "candidate-only",
-        "targetDb": "poems",
-        "sourceFile": "docs/research/2026-04-25-korean-poet-chronology-seed-catalog.md"
-      }
-    },
-    {
-      "poemId": "KPOEM-CAND-JEONGJO-002",
-      "canonicalId": "KPOEM-CANON-JEONGJO-002",
-      "title": {
-        "zh": null,
-        "ko": "어제시"
-      },
-      "author": {
-        "authorId": "KAUTH-JEONGJO",
-        "zh": "正祖",
-        "ko": "정조"
-      },
-      "era": {
-        "label": "조선 후기"
-      },
-      "genre": {
-        "broad": "한시",
-        "form": "미확정",
-        "track": "hansi-candidate"
-      },
-      "sourceWork": {
-        "collectionTitle": "弘齋全書, 어제 시문",
-        "sourceUrl": null,
-        "sourcePolicyId": null,
-        "verificationStatus": "needs-source-url"
-      },
-      "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
-      },
-      "assets": {
-        "translationKo": null,
-        "commentaryKo": null,
-        "ownedTranslationNeeded": true
-      },
-      "rights": {
-        "originalText": {
-          "status": "candidate",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        },
-        "translation": {
-          "status": "owned-translation-needed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        }
-      },
-      "ingest": {
-        "readiness": "candidate-only",
-        "targetDb": "poems",
-        "sourceFile": "docs/research/2026-04-25-korean-poet-chronology-seed-catalog.md"
-      }
-    },
-    {
-      "poemId": "KPOEM-CAND-HYOMYEONG-SEJA-001",
-      "canonicalId": "KPOEM-CANON-HYOMYEONG-SEJA-001",
-      "title": {
-        "zh": null,
-        "ko": "왕실 악장"
-      },
-      "author": {
-        "authorId": "KAUTH-HYOMYEONG-SEJA",
-        "zh": "孝明世子",
-        "ko": "효명세자"
-      },
-      "era": {
-        "label": "조선 후기"
-      },
-      "genre": {
-        "broad": "한시",
-        "form": "미확정",
-        "track": "hansi-candidate"
-      },
-      "sourceWork": {
-        "collectionTitle": "敬軒集, 궁중 정재·악장 자료",
-        "sourceUrl": null,
-        "sourcePolicyId": null,
-        "verificationStatus": "needs-source-url"
-      },
-      "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
-      },
-      "assets": {
-        "translationKo": null,
-        "commentaryKo": null,
-        "ownedTranslationNeeded": true
-      },
-      "rights": {
-        "originalText": {
-          "status": "candidate",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        },
-        "translation": {
-          "status": "owned-translation-needed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        }
-      },
-      "ingest": {
-        "readiness": "candidate-only",
-        "targetDb": "poems",
-        "sourceFile": "docs/research/2026-04-25-korean-poet-chronology-seed-catalog.md"
-      }
-    },
-    {
-      "poemId": "KPOEM-CAND-HYOMYEONG-SEJA-002",
-      "canonicalId": "KPOEM-CANON-HYOMYEONG-SEJA-002",
-      "title": {
-        "zh": null,
-        "ko": "궁중 정재 관련 시문"
-      },
-      "author": {
-        "authorId": "KAUTH-HYOMYEONG-SEJA",
-        "zh": "孝明世子",
-        "ko": "효명세자"
-      },
-      "era": {
-        "label": "조선 후기"
-      },
-      "genre": {
-        "broad": "한시",
-        "form": "미확정",
-        "track": "hansi-candidate"
-      },
-      "sourceWork": {
-        "collectionTitle": "敬軒集, 궁중 정재·악장 자료",
-        "sourceUrl": null,
-        "sourcePolicyId": null,
-        "verificationStatus": "needs-source-url"
-      },
-      "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
-      },
-      "assets": {
-        "translationKo": null,
-        "commentaryKo": null,
-        "ownedTranslationNeeded": true
-      },
-      "rights": {
-        "originalText": {
-          "status": "candidate",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        },
-        "translation": {
-          "status": "owned-translation-needed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        }
-      },
-      "ingest": {
-        "readiness": "candidate-only",
-        "targetDb": "poems",
-        "sourceFile": "docs/research/2026-04-25-korean-poet-chronology-seed-catalog.md"
-      }
-    },
-    {
-      "poemId": "KPOEM-CAND-HYOMYEONG-SEJA-003",
-      "canonicalId": "KPOEM-CANON-HYOMYEONG-SEJA-003",
-      "title": {
-        "zh": null,
-        "ko": "개인 한시 후보"
-      },
-      "author": {
-        "authorId": "KAUTH-HYOMYEONG-SEJA",
-        "zh": "孝明世子",
-        "ko": "효명세자"
-      },
-      "era": {
-        "label": "조선 후기"
-      },
-      "genre": {
-        "broad": "한시",
-        "form": "미확정",
-        "track": "hansi-candidate"
-      },
-      "sourceWork": {
-        "collectionTitle": "敬軒集, 궁중 정재·악장 자료",
         "sourceUrl": null,
         "sourcePolicyId": null,
         "verificationStatus": "needs-source-url"
