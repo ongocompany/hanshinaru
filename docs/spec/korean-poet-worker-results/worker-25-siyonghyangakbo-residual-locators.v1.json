@@ -1,0 +1,117 @@
+{
+  "workerId": "worker-25-siyonghyangakbo-residual-locators",
+  "status": "partial",
+  "targetAuthors": [
+    "조선 궁중가요 무명씨"
+  ],
+  "summary": {
+    "candidateWorksChecked": 4,
+    "directTextWorksFound": 0,
+    "ocrCandidates": 0,
+    "blockedWorks": 0
+  },
+  "poems": [
+    {
+      "authorKo": "조선 궁중가요 무명씨",
+      "candidateTitle": "城隍飯",
+      "matchedTitle": "城隍飯",
+      "sourceWork": {
+        "collectionTitle": "時用鄕樂譜 / 국립국악원 국악사전 이미지",
+        "juan": null,
+        "entryTitle": "성황반",
+        "sourceUrl": "https://www.gugak.go.kr/ency/multimedia/view/image/6821",
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "source-located",
+        "notes": "국립국악원 국악사전의 `시용향악보 성황반` 대표 이미지 항목과 이어지는 세부 이미지 6879, 6880, 6882, 6886, 6889, 6890, 6891, 6892, 6893을 확인했다. 이미지 기반 원문이라 OCR/전사 후 direct-text 승격이 필요하다."
+      }
+    },
+    {
+      "authorKo": "조선 궁중가요 무명씨",
+      "candidateTitle": "內堂",
+      "matchedTitle": "內堂",
+      "sourceWork": {
+        "collectionTitle": "時用鄕樂譜 / 국립국악원 국악사전 이미지",
+        "juan": null,
+        "entryTitle": "내당",
+        "sourceUrl": "https://www.gugak.go.kr/ency/multimedia/view/image/6822",
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "source-located",
+        "notes": "국립국악원 국악사전의 `시용향악보 내당` 대표 이미지 항목과 세부 이미지 6844-6850을 확인했다. 이미지 기반 원문이라 OCR/전사 후 direct-text 승격이 필요하다."
+      }
+    },
+    {
+      "authorKo": "조선 궁중가요 무명씨",
+      "candidateTitle": "大國",
+      "matchedTitle": "大國",
+      "sourceWork": {
+        "collectionTitle": "時用鄕樂譜 / 국립국악원 국악사전 이미지",
+        "juan": null,
+        "entryTitle": "대국",
+        "sourceUrl": "https://www.gugak.go.kr/ency/multimedia/view/image/6827",
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "source-located",
+        "notes": "국립국악원 국악사전의 `시용향악보 대국` 대표 이미지 항목과 세부 이미지 6851, 6852, 6853, 6854, 6856, 6857을 확인했다. 이미지 기반 원문이라 OCR/전사 후 direct-text 승격이 필요하다."
+      }
+    }
+  ],
+  "blockers": [
+    {
+      "authorKo": "조선 궁중가요 무명씨",
+      "candidateTitle": "궁중 악장·무속가요 후보",
+      "reason": "포괄 후보명이라 단일 작품 원문 위치로 고정하지 않았다. 時用鄕樂譜의 다른 곡명 후보를 별도 작품명으로 확정해야 한다."
+    }
+  ],
+  "sourcesConsulted": [
+    {
+      "label": "국립국악원 국악사전 시용향악보 성황반",
+      "url": "https://www.gugak.go.kr/ency/multimedia/view/image/6821"
+    },
+    {
+      "label": "국립국악원 국악사전 시용향악보 내당",
+      "url": "https://www.gugak.go.kr/ency/multimedia/view/image/6822"
+    },
+    {
+      "label": "국립국악원 국악사전 시용향악보 대국",
+      "url": "https://www.gugak.go.kr/ency/multimedia/view/image/6827"
+    }
+  ]
+}

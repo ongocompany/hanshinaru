@@ -17,12 +17,12 @@
   "targetDb": "poems",
   "summary": {
     "directTextCollected": 1616,
-    "sourceLocated": 0,
+    "sourceLocated": 3,
     "ocrCandidate": 0,
     "blocked": 65,
-    "candidateOnly": 13,
+    "candidateOnly": 10,
     "totalWorks": 1629,
-    "workerResultWorks": 1576,
+    "workerResultWorks": 1579,
     "donggyeongJapgiMatchedBlocks": 94,
     "donggyeongJapgiImportedWorks": 60,
     "donggyeongJapgiSourceVariants": 34
@@ -98990,6 +98990,198 @@
       }
     },
     {
+      "poemId": "KPOEM-WORKER-ANONYMOUS-JOSEON-COURT-SONG-001",
+      "canonicalId": "KPOEM-CANON-WORKER-ANONYMOUS-JOSEON-COURT-SONG-001",
+      "title": {
+        "zh": "城隍飯",
+        "ko": "城隍飯"
+      },
+      "author": {
+        "authorId": "KAUTH-ANONYMOUS-JOSEON-COURT-SONG",
+        "zh": null,
+        "ko": "조선 궁중가요 무명씨"
+      },
+      "era": {
+        "label": "조선 전기~후기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-candidate"
+      },
+      "sourceWork": {
+        "collectionTitle": "時用鄕樂譜 / 국립국악원 국악사전 이미지",
+        "juan": null,
+        "entryTitle": "성황반",
+        "sourceUrl": "https://www.gugak.go.kr/ency/multimedia/view/image/6821",
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "high",
+        "verificationStatus": "source-located"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "unknown",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "source-located",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-25-siyonghyangakbo-residual-locators.v1.json",
+        "workerId": "worker-25-siyonghyangakbo-residual-locators",
+        "candidateTitle": "城隍飯",
+        "matchedTitle": "城隍飯",
+        "notes": "국립국악원 국악사전의 `시용향악보 성황반` 대표 이미지 항목과 이어지는 세부 이미지 6879, 6880, 6882, 6886, 6889, 6890, 6891, 6892, 6893을 확인했다. 이미지 기반 원문이라 OCR/전사 후 direct-text 승격이 필요하다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-ANONYMOUS-JOSEON-COURT-SONG-002",
+      "canonicalId": "KPOEM-CANON-WORKER-ANONYMOUS-JOSEON-COURT-SONG-002",
+      "title": {
+        "zh": "內堂",
+        "ko": "內堂"
+      },
+      "author": {
+        "authorId": "KAUTH-ANONYMOUS-JOSEON-COURT-SONG",
+        "zh": null,
+        "ko": "조선 궁중가요 무명씨"
+      },
+      "era": {
+        "label": "조선 전기~후기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-candidate"
+      },
+      "sourceWork": {
+        "collectionTitle": "時用鄕樂譜 / 국립국악원 국악사전 이미지",
+        "juan": null,
+        "entryTitle": "내당",
+        "sourceUrl": "https://www.gugak.go.kr/ency/multimedia/view/image/6822",
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "high",
+        "verificationStatus": "source-located"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "unknown",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "source-located",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-25-siyonghyangakbo-residual-locators.v1.json",
+        "workerId": "worker-25-siyonghyangakbo-residual-locators",
+        "candidateTitle": "內堂",
+        "matchedTitle": "內堂",
+        "notes": "국립국악원 국악사전의 `시용향악보 내당` 대표 이미지 항목과 세부 이미지 6844-6850을 확인했다. 이미지 기반 원문이라 OCR/전사 후 direct-text 승격이 필요하다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-ANONYMOUS-JOSEON-COURT-SONG-003",
+      "canonicalId": "KPOEM-CANON-WORKER-ANONYMOUS-JOSEON-COURT-SONG-003",
+      "title": {
+        "zh": "大國",
+        "ko": "大國"
+      },
+      "author": {
+        "authorId": "KAUTH-ANONYMOUS-JOSEON-COURT-SONG",
+        "zh": null,
+        "ko": "조선 궁중가요 무명씨"
+      },
+      "era": {
+        "label": "조선 전기~후기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-candidate"
+      },
+      "sourceWork": {
+        "collectionTitle": "時用鄕樂譜 / 국립국악원 국악사전 이미지",
+        "juan": null,
+        "entryTitle": "대국",
+        "sourceUrl": "https://www.gugak.go.kr/ency/multimedia/view/image/6827",
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "high",
+        "verificationStatus": "source-located"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "unknown",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "source-located",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-25-siyonghyangakbo-residual-locators.v1.json",
+        "workerId": "worker-25-siyonghyangakbo-residual-locators",
+        "candidateTitle": "大國",
+        "matchedTitle": "大國",
+        "notes": "국립국악원 국악사전의 `시용향악보 대국` 대표 이미지 항목과 세부 이미지 6851, 6852, 6853, 6854, 6856, 6857을 확인했다. 이미지 기반 원문이라 OCR/전사 후 direct-text 승격이 필요하다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
       "poemId": "KPOEM-WORKER-YI-JEHYEON-001",
       "canonicalId": "KPOEM-CANON-WORKER-YI-JEHYEON-001",
       "title": {
@@ -111870,168 +112062,6 @@
       },
       "sourceWork": {
         "collectionTitle": "令壽閣詩稿, 여성 한시 선집",
-        "sourceUrl": null,
-        "sourcePolicyId": null,
-        "verificationStatus": "needs-source-url"
-      },
-      "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
-      },
-      "assets": {
-        "translationKo": null,
-        "commentaryKo": null,
-        "ownedTranslationNeeded": true
-      },
-      "rights": {
-        "originalText": {
-          "status": "candidate",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        },
-        "translation": {
-          "status": "owned-translation-needed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        }
-      },
-      "ingest": {
-        "readiness": "candidate-only",
-        "targetDb": "poems",
-        "sourceFile": "docs/research/2026-04-25-korean-poet-chronology-seed-catalog.md"
-      }
-    },
-    {
-      "poemId": "KPOEM-CAND-ANONYMOUS-JOSEON-COURT-SONG-001",
-      "canonicalId": "KPOEM-CANON-ANONYMOUS-JOSEON-COURT-SONG-001",
-      "title": {
-        "zh": "城隍飯",
-        "ko": "城隍飯"
-      },
-      "author": {
-        "authorId": "KAUTH-ANONYMOUS-JOSEON-COURT-SONG",
-        "zh": null,
-        "ko": "조선 궁중가요 무명씨"
-      },
-      "era": {
-        "label": "조선 전기~후기"
-      },
-      "genre": {
-        "broad": "한시",
-        "form": "미확정",
-        "track": "hansi-candidate"
-      },
-      "sourceWork": {
-        "collectionTitle": "時用鄕樂譜, 樂學軌範, 大樂後譜, 궁중 정재 자료",
-        "sourceUrl": null,
-        "sourcePolicyId": null,
-        "verificationStatus": "needs-source-url"
-      },
-      "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
-      },
-      "assets": {
-        "translationKo": null,
-        "commentaryKo": null,
-        "ownedTranslationNeeded": true
-      },
-      "rights": {
-        "originalText": {
-          "status": "candidate",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        },
-        "translation": {
-          "status": "owned-translation-needed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        }
-      },
-      "ingest": {
-        "readiness": "candidate-only",
-        "targetDb": "poems",
-        "sourceFile": "docs/research/2026-04-25-korean-poet-chronology-seed-catalog.md"
-      }
-    },
-    {
-      "poemId": "KPOEM-CAND-ANONYMOUS-JOSEON-COURT-SONG-002",
-      "canonicalId": "KPOEM-CANON-ANONYMOUS-JOSEON-COURT-SONG-002",
-      "title": {
-        "zh": "內堂",
-        "ko": "內堂"
-      },
-      "author": {
-        "authorId": "KAUTH-ANONYMOUS-JOSEON-COURT-SONG",
-        "zh": null,
-        "ko": "조선 궁중가요 무명씨"
-      },
-      "era": {
-        "label": "조선 전기~후기"
-      },
-      "genre": {
-        "broad": "한시",
-        "form": "미확정",
-        "track": "hansi-candidate"
-      },
-      "sourceWork": {
-        "collectionTitle": "時用鄕樂譜, 樂學軌範, 大樂後譜, 궁중 정재 자료",
-        "sourceUrl": null,
-        "sourcePolicyId": null,
-        "verificationStatus": "needs-source-url"
-      },
-      "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
-      },
-      "assets": {
-        "translationKo": null,
-        "commentaryKo": null,
-        "ownedTranslationNeeded": true
-      },
-      "rights": {
-        "originalText": {
-          "status": "candidate",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        },
-        "translation": {
-          "status": "owned-translation-needed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        }
-      },
-      "ingest": {
-        "readiness": "candidate-only",
-        "targetDb": "poems",
-        "sourceFile": "docs/research/2026-04-25-korean-poet-chronology-seed-catalog.md"
-      }
-    },
-    {
-      "poemId": "KPOEM-CAND-ANONYMOUS-JOSEON-COURT-SONG-003",
-      "canonicalId": "KPOEM-CANON-ANONYMOUS-JOSEON-COURT-SONG-003",
-      "title": {
-        "zh": "大國",
-        "ko": "大國"
-      },
-      "author": {
-        "authorId": "KAUTH-ANONYMOUS-JOSEON-COURT-SONG",
-        "zh": null,
-        "ko": "조선 궁중가요 무명씨"
-      },
-      "era": {
-        "label": "조선 전기~후기"
-      },
-      "genre": {
-        "broad": "한시",
-        "form": "미확정",
-        "track": "hansi-candidate"
-      },
-      "sourceWork": {
-        "collectionTitle": "時用鄕樂譜, 樂學軌範, 大樂後譜, 궁중 정재 자료",
         "sourceUrl": null,
         "sourcePolicyId": null,
         "verificationStatus": "needs-source-url"
