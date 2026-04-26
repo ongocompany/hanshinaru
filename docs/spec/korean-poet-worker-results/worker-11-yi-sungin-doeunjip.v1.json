@@ -7,7 +7,7 @@
   ],
   "summary": {
     "candidateWorksChecked": 2,
-    "directTextWorksFound": 12,
+    "directTextWorksFound": 20,
     "ocrCandidates": 0,
     "blockedWorks": 0
   },
@@ -347,6 +347,230 @@
         "recommendedReadiness": "direct-text-collected",
         "notes": "zh Wikisource `陶隱集/卷三` raw에서 `奉送羅判事使日東` heading과 네 수 전문을 직접 확인했다. 이번 wave에서는 한 작품 row 안에 보존한다."
       }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "尋散翁不遇",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "entryTitle": "尋散翁不遇",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "公餘策馬訪君來，晝永柴扉獨自開。\n若未僧房留問法，定應酒社醉對杯。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `尋散翁不遇` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "呈金仲權",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "entryTitle": "呈金仲權",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "弱冠連鑣共往還，花朝月夕禁林間。\n相逢依舊心顏好，祭此區區未暫閑？",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `呈金仲權` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "西江卽事",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "entryTitle": "西江卽事",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "淸嘯長歌卽勝遊，機心消盡狎沙鷗。\n瓦盆濁酒家家有，從此江頭日典裘。\n杏花如雪柳如絲，春滿江城日政遲。\n低帽短靴人不識，歸來馬上有新詩。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `西江卽事` heading과 두 수 전문을 직접 확인했다. 이번 wave에서는 한 작품 row 안에 보존한다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "送李生之水原",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "entryTitle": "送李生之水原",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "樓下荷花滿水開，隋城六月亦佳哉。\n曾聞牧隱留題詠，爲我登臨一讀來。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `送李生之水原` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "江邊夜宿",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "entryTitle": "江邊夜宿",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "賈舶漁船鬧一江，江邊茅舍酒盈缸。\n夜深水氣渾如霧，風緊濤聲忽打窓。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `江邊夜宿` heading과 전문을 직접 확인했다. raw의 후주 `夜半有暴風。`은 본문에 넣지 않았다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "題全五倫山房",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "entryTitle": "題全五倫山房",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "春風先我到山家，山北山南萬樹花。\n談笑自留休挽袖，興來更覺酒須賖。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `題全五倫山房` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "泰齋相公宅梅花",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "entryTitle": "泰齋相公宅梅花",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "臘前璀璨一枝香，暗使春光已濫觴。\n和靖淸風花亦識，定應笑我斐然狂。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `泰齋相公宅梅花` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "丁未十月二十九日扈駕康安殿",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "entryTitle": "丁未十月二十九日扈駕康安殿",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "后妃美化被周南，千載依然見《葛覃》。\n盛代卽今開盛禮，小臣稽首祝多男。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `丁未十月二十九日，扈駕康安殿` heading과 전문을 직접 확인했다."
+      }
     }
   ],
   "blockers": [],
@@ -364,7 +588,7 @@
     {
       "label": "陶隱集 卷三 raw",
       "url": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
-      "notes": "南郊, 苦熱, 玄聖寺讀書, 奉送羅判事使日東 원문을 확인했다."
+      "notes": "南郊, 苦熱, 玄聖寺讀書, 奉送羅判事使日東, 尋散翁不遇, 呈金仲權, 西江卽事, 送李生之水原, 江邊夜宿, 題全五倫山房, 泰齋相公宅梅花, 丁未十月二十九日扈駕康安殿 원문을 확인했다."
     }
   ]
 }

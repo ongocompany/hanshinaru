@@ -16,13 +16,13 @@
   "catalogId": "korean-poems-chronology",
   "targetDb": "poems",
   "summary": {
-    "directTextCollected": 235,
+    "directTextCollected": 243,
     "sourceLocated": 0,
     "ocrCandidate": 0,
     "blocked": 0,
     "candidateOnly": 137,
-    "totalWorks": 372,
-    "workerResultWorks": 126,
+    "totalWorks": 380,
+    "workerResultWorks": 134,
     "donggyeongJapgiMatchedBlocks": 94,
     "donggyeongJapgiImportedWorks": 64,
     "donggyeongJapgiSourceVariants": 30
@@ -9199,6 +9199,518 @@
         "candidateTitle": "회고시",
         "matchedTitle": "奉送羅判事使日東",
         "notes": "zh Wikisource `陶隱集/卷三` raw에서 `奉送羅判事使日東` heading과 네 수 전문을 직접 확인했다. 이번 wave에서는 한 작품 row 안에 보존한다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-AUTHOR-EC9DB4EC-013",
+      "canonicalId": "KPOEM-CANON-WORKER-AUTHOR-EC9DB4EC-013",
+      "title": {
+        "zh": "尋散翁不遇",
+        "ko": "尋散翁不遇"
+      },
+      "author": {
+        "authorId": "KAUTH-AUTHOR-EC9DB4EC",
+        "zh": "李崇仁",
+        "ko": "이숭인"
+      },
+      "era": {
+        "label": "고려 말"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "entryTitle": "尋散翁不遇",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "公餘策馬訪君來，晝永柴扉獨自開。\n若未僧房留問法，定應酒社醉對杯。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-11-yi-sungin-doeunjip.v1.json",
+        "workerId": "worker-11-yi-sungin-doeunjip",
+        "candidateTitle": "회고시",
+        "matchedTitle": "尋散翁不遇",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `尋散翁不遇` heading과 전문을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-AUTHOR-EC9DB4EC-014",
+      "canonicalId": "KPOEM-CANON-WORKER-AUTHOR-EC9DB4EC-014",
+      "title": {
+        "zh": "呈金仲權",
+        "ko": "呈金仲權"
+      },
+      "author": {
+        "authorId": "KAUTH-AUTHOR-EC9DB4EC",
+        "zh": "李崇仁",
+        "ko": "이숭인"
+      },
+      "era": {
+        "label": "고려 말"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "entryTitle": "呈金仲權",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "弱冠連鑣共往還，花朝月夕禁林間。\n相逢依舊心顏好，祭此區區未暫閑？",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-11-yi-sungin-doeunjip.v1.json",
+        "workerId": "worker-11-yi-sungin-doeunjip",
+        "candidateTitle": "회고시",
+        "matchedTitle": "呈金仲權",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `呈金仲權` heading과 전문을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-AUTHOR-EC9DB4EC-015",
+      "canonicalId": "KPOEM-CANON-WORKER-AUTHOR-EC9DB4EC-015",
+      "title": {
+        "zh": "西江卽事",
+        "ko": "西江卽事"
+      },
+      "author": {
+        "authorId": "KAUTH-AUTHOR-EC9DB4EC",
+        "zh": "李崇仁",
+        "ko": "이숭인"
+      },
+      "era": {
+        "label": "고려 말"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "entryTitle": "西江卽事",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "淸嘯長歌卽勝遊，機心消盡狎沙鷗。\n瓦盆濁酒家家有，從此江頭日典裘。\n杏花如雪柳如絲，春滿江城日政遲。\n低帽短靴人不識，歸來馬上有新詩。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-11-yi-sungin-doeunjip.v1.json",
+        "workerId": "worker-11-yi-sungin-doeunjip",
+        "candidateTitle": "회고시",
+        "matchedTitle": "西江卽事",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `西江卽事` heading과 두 수 전문을 직접 확인했다. 이번 wave에서는 한 작품 row 안에 보존한다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-AUTHOR-EC9DB4EC-016",
+      "canonicalId": "KPOEM-CANON-WORKER-AUTHOR-EC9DB4EC-016",
+      "title": {
+        "zh": "送李生之水原",
+        "ko": "送李生之水原"
+      },
+      "author": {
+        "authorId": "KAUTH-AUTHOR-EC9DB4EC",
+        "zh": "李崇仁",
+        "ko": "이숭인"
+      },
+      "era": {
+        "label": "고려 말"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "entryTitle": "送李生之水原",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "樓下荷花滿水開，隋城六月亦佳哉。\n曾聞牧隱留題詠，爲我登臨一讀來。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-11-yi-sungin-doeunjip.v1.json",
+        "workerId": "worker-11-yi-sungin-doeunjip",
+        "candidateTitle": "회고시",
+        "matchedTitle": "送李生之水原",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `送李生之水原` heading과 전문을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-AUTHOR-EC9DB4EC-017",
+      "canonicalId": "KPOEM-CANON-WORKER-AUTHOR-EC9DB4EC-017",
+      "title": {
+        "zh": "江邊夜宿",
+        "ko": "江邊夜宿"
+      },
+      "author": {
+        "authorId": "KAUTH-AUTHOR-EC9DB4EC",
+        "zh": "李崇仁",
+        "ko": "이숭인"
+      },
+      "era": {
+        "label": "고려 말"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "entryTitle": "江邊夜宿",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "賈舶漁船鬧一江，江邊茅舍酒盈缸。\n夜深水氣渾如霧，風緊濤聲忽打窓。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-11-yi-sungin-doeunjip.v1.json",
+        "workerId": "worker-11-yi-sungin-doeunjip",
+        "candidateTitle": "회고시",
+        "matchedTitle": "江邊夜宿",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `江邊夜宿` heading과 전문을 직접 확인했다. raw의 후주 `夜半有暴風。`은 본문에 넣지 않았다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-AUTHOR-EC9DB4EC-018",
+      "canonicalId": "KPOEM-CANON-WORKER-AUTHOR-EC9DB4EC-018",
+      "title": {
+        "zh": "題全五倫山房",
+        "ko": "題全五倫山房"
+      },
+      "author": {
+        "authorId": "KAUTH-AUTHOR-EC9DB4EC",
+        "zh": "李崇仁",
+        "ko": "이숭인"
+      },
+      "era": {
+        "label": "고려 말"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "entryTitle": "題全五倫山房",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "春風先我到山家，山北山南萬樹花。\n談笑自留休挽袖，興來更覺酒須賖。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-11-yi-sungin-doeunjip.v1.json",
+        "workerId": "worker-11-yi-sungin-doeunjip",
+        "candidateTitle": "회고시",
+        "matchedTitle": "題全五倫山房",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `題全五倫山房` heading과 전문을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-AUTHOR-EC9DB4EC-019",
+      "canonicalId": "KPOEM-CANON-WORKER-AUTHOR-EC9DB4EC-019",
+      "title": {
+        "zh": "泰齋相公宅梅花",
+        "ko": "泰齋相公宅梅花"
+      },
+      "author": {
+        "authorId": "KAUTH-AUTHOR-EC9DB4EC",
+        "zh": "李崇仁",
+        "ko": "이숭인"
+      },
+      "era": {
+        "label": "고려 말"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "entryTitle": "泰齋相公宅梅花",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "臘前璀璨一枝香，暗使春光已濫觴。\n和靖淸風花亦識，定應笑我斐然狂。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-11-yi-sungin-doeunjip.v1.json",
+        "workerId": "worker-11-yi-sungin-doeunjip",
+        "candidateTitle": "회고시",
+        "matchedTitle": "泰齋相公宅梅花",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `泰齋相公宅梅花` heading과 전문을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-AUTHOR-EC9DB4EC-020",
+      "canonicalId": "KPOEM-CANON-WORKER-AUTHOR-EC9DB4EC-020",
+      "title": {
+        "zh": "丁未十月二十九日扈駕康安殿",
+        "ko": "丁未十月二十九日扈駕康安殿"
+      },
+      "author": {
+        "authorId": "KAUTH-AUTHOR-EC9DB4EC",
+        "zh": "李崇仁",
+        "ko": "이숭인"
+      },
+      "era": {
+        "label": "고려 말"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "entryTitle": "丁未十月二十九日扈駕康安殿",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "后妃美化被周南，千載依然見《葛覃》。\n盛代卽今開盛禮，小臣稽首祝多男。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-11-yi-sungin-doeunjip.v1.json",
+        "workerId": "worker-11-yi-sungin-doeunjip",
+        "candidateTitle": "회고시",
+        "matchedTitle": "丁未十月二十九日扈駕康安殿",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `丁未十月二十九日，扈駕康安殿` heading과 전문을 직접 확인했다.",
         "ownedTranslationNeeded": true
       }
     },
