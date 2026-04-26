@@ -1,0 +1,258 @@
+{
+  "workerId": "worker-10-samguk-yusa-hyangga",
+  "modelRecommendation": "gpt-5.4",
+  "status": "completed",
+  "targetAuthors": [
+    "월명사",
+    "충담사",
+    "융천사",
+    "신충",
+    "영재",
+    "처용"
+  ],
+  "summary": {
+    "candidateWorksChecked": 8,
+    "directTextWorksFound": 8,
+    "ocrCandidates": 0,
+    "blockedWorks": 0
+  },
+  "poems": [
+    {
+      "authorKo": "월명사",
+      "authorHanja": "月明師",
+      "candidateTitle": "兜率歌",
+      "matchedTitle": "兜率歌",
+      "sourceWork": {
+        "collectionTitle": "三國遺事",
+        "juan": "卷第五",
+        "entryTitle": "月明師兜率歌",
+        "sourceUrl": "https://zh.wikisource.org/wiki/三國遺事/卷第五",
+        "rawUrl": "https://zh.wikisource.org/wiki/三國遺事/卷第五?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "今日此矣散花唱良巴寶白乎隱花良汝隱直等隱心音矣命叱使以惡只 彌勒座主陪立羅良",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `三國遺事/卷第五` raw의 `月明師兜率歌` 항목에서 `其詞曰` 뒤 <poem> 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "월명사",
+      "authorHanja": "月明師",
+      "candidateTitle": "祭亡妹歌",
+      "matchedTitle": "祭亡妹歌",
+      "sourceWork": {
+        "collectionTitle": "三國遺事",
+        "juan": "卷第五",
+        "entryTitle": "月明師兜率歌",
+        "sourceUrl": "https://zh.wikisource.org/wiki/三國遺事/卷第五",
+        "rawUrl": "https://zh.wikisource.org/wiki/三國遺事/卷第五?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "生死路隱 此矣有阿米次肹伊遣 吾隱去內如辭叱都 毛如云遣去內尼叱古 於內秋察早隱風未 此矣彼矣浮良落尸葉如一等隱枝良出古 去奴隱處毛冬乎丁 阿也 彌陀剎良逢乎吾道修良待是古如",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `三國遺事/卷第五` raw의 `月明師兜率歌` 항목에서 `明又嘗為亡妹...歌曰` 뒤 <poem> 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "충담사",
+      "authorHanja": "忠談師",
+      "candidateTitle": "安民歌",
+      "matchedTitle": "安民歌",
+      "sourceWork": {
+        "collectionTitle": "三國遺事",
+        "juan": "卷第二",
+        "entryTitle": "景德王 忠談師 表訓大德",
+        "sourceUrl": "https://zh.wikisource.org/wiki/三國遺事/卷第二",
+        "rawUrl": "https://zh.wikisource.org/wiki/三國遺事/卷第二?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "君隱父也 臣隱愛賜尸母史也 民焉狂尸恨阿孩古為賜尸知民是愛尸知古如 窟理叱大肹生以支所音物生此肹喰惡支治良羅 此地肹捨遣只於冬是去於丁 為尸知國惡支持以 支知右如後句 君如臣多支民隱如 為內尸等焉國惡太平恨音叱如",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `三國遺事/卷第二` raw의 `景德王 忠談師 表訓大德` 항목에서 `安民歌曰` 뒤 <poem> 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "충담사",
+      "authorHanja": "忠談師",
+      "candidateTitle": "讚耆婆郞歌",
+      "matchedTitle": "讚耆婆郞歌",
+      "sourceWork": {
+        "collectionTitle": "三國遺事",
+        "juan": "卷第二",
+        "entryTitle": "景德王 忠談師 表訓大德",
+        "sourceUrl": "https://zh.wikisource.org/wiki/三國遺事/卷第二",
+        "rawUrl": "https://zh.wikisource.org/wiki/三國遺事/卷第二?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "咽嗚爾處米 露曉邪隱月羅理 白雲音逐于浮去隱安支下 沙是八陵隱汀理也中 耆郎矣貌史是史藪邪 逸烏川理叱磧惡希 郎也持以支如賜烏隱心未際叱肹逐內良齊 阿耶 柏史叱枝次高支好 雪是毛冬乃乎尸花判也",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `三國遺事/卷第二` raw의 `景德王 忠談師 表訓大德` 항목에서 `讚耆婆郎歌曰` 뒤 <poem> 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "융천사",
+      "authorHanja": "融天師",
+      "candidateTitle": "彗星歌",
+      "matchedTitle": "彗星歌",
+      "sourceWork": {
+        "collectionTitle": "三國遺事",
+        "juan": "卷第五",
+        "entryTitle": "融天師彗星歌 真平王代",
+        "sourceUrl": "https://zh.wikisource.org/wiki/三國遺事/卷第五",
+        "rawUrl": "https://zh.wikisource.org/wiki/三國遺事/卷第五?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "舊理東尸汀叱 乾達婆矣遊烏隱城叱肹良望良古 倭理叱軍置來叱 多烽燒邪隱邊也藪耶 三花矣岳音見賜烏尸聞古 月置八切爾數於將來尸波衣 道尸掃尸星利望良古 彗星也白反也人是有叱多 後句 達阿羅浮去伊叱等邪 此也友物比所音叱彗叱只有叱故",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `三國遺事/卷第五` raw의 `融天師彗星歌 真平王代` 항목에서 `歌曰` 뒤 <poem> 전문을 직접 확인했다. seed에는 작자 한자가 비어 있으나 원문 heading은 `融天師`다."
+      }
+    },
+    {
+      "authorKo": "신충",
+      "authorHanja": "信忠",
+      "candidateTitle": "怨歌",
+      "matchedTitle": "怨歌",
+      "sourceWork": {
+        "collectionTitle": "三國遺事",
+        "juan": "卷第五",
+        "entryTitle": "信忠掛冠",
+        "sourceUrl": "https://zh.wikisource.org/wiki/三國遺事/卷第五",
+        "rawUrl": "https://zh.wikisource.org/wiki/三國遺事/卷第五?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "物叱好支柏史 秋察尸不冬爾屋支墮米 汝於多支行齊教因隱 仰頓隱面矣改衣賜乎隱冬矣也 月羅理影支古理因淵之叱 行尸浪 阿叱沙矣以支如支 兒史沙叱望阿乃 世理都 之叱逸烏隱第也 後句亡",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `三國遺事/卷第五` raw의 `信忠掛冠` 항목에서 `忠怨而作歌...歌曰` 뒤 <poem> 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "영재",
+      "authorHanja": "永才",
+      "candidateTitle": "遇賊歌",
+      "matchedTitle": "遇賊歌",
+      "sourceWork": {
+        "collectionTitle": "三國遺事",
+        "juan": "卷第五",
+        "entryTitle": "永才遇賊",
+        "sourceUrl": "https://zh.wikisource.org/wiki/三國遺事/卷第五",
+        "rawUrl": "https://zh.wikisource.org/wiki/三國遺事/卷第五?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "自矣心米 貌史毛達只將來吞隱日遠鳥逸□過出知遣 今吞藪未去遣省如 但非乎隱焉破□主次弗□史內於都還於尸朗也 此兵物叱沙過乎好尸曰沙也內乎吞尼 阿耶 唯只伊吾音之叱恨隱㵛陵隱安支尚宅都乎隱以多",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `三國遺事/卷第五` raw의 `永才遇賊` 항목에서 `其辭曰` 뒤 <poem> 전문을 직접 확인했다. raw 원문의 결자 표지 `□`는 그대로 보존했다."
+      }
+    },
+    {
+      "authorKo": "처용",
+      "authorHanja": "處容",
+      "candidateTitle": "處容歌",
+      "matchedTitle": "處容歌",
+      "sourceWork": {
+        "collectionTitle": "三國遺事",
+        "juan": "卷第二",
+        "entryTitle": "處容郎 望海寺",
+        "sourceUrl": "https://zh.wikisource.org/wiki/三國遺事/卷第二",
+        "rawUrl": "https://zh.wikisource.org/wiki/三國遺事/卷第二?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "東京明期月良夜入伊遊行如可入良沙寢矣見昆腳烏伊四是良羅二𬚵隱吾下於叱古二𬚵隱誰支下焉古本矣吾下是如馬於隱奪叱良乙何如為理古",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `三國遺事/卷第二` raw의 `處容郎 望海寺` 항목에서 `歌曰` 뒤 <poem> 전문을 직접 확인했다. raw의 `{{!|𬚵|...}}` 표기는 표시 글자 `𬚵`로 정리했다."
+      }
+    }
+  ],
+  "blockers": [],
+  "sourcesConsulted": [
+    {
+      "label": "三國遺事 卷第五 raw",
+      "url": "https://zh.wikisource.org/wiki/三國遺事/卷第五?action=raw",
+      "notes": "月明師兜率歌, 融天師彗星歌, 信忠掛冠, 永才遇賊 항목의 향가 원문을 확인했다."
+    },
+    {
+      "label": "三國遺事 卷第二 raw",
+      "url": "https://zh.wikisource.org/wiki/三國遺事/卷第二?action=raw",
+      "notes": "景德王 忠談師 表訓大德, 處容郎 望海寺 항목의 향가 원문을 확인했다."
+    }
+  ]
+}

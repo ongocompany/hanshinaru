@@ -1,0 +1,192 @@
+{
+  "workerId": "worker-12-an-chuk-geunjaejip",
+  "modelRecommendation": "gpt-5.4",
+  "status": "completed",
+  "targetAuthors": [
+    "안축"
+  ],
+  "summary": {
+    "candidateWorksChecked": 2,
+    "directTextWorksFound": 6,
+    "ocrCandidates": 0,
+    "blockedWorks": 0
+  },
+  "poems": [
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "過鐵嶺",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "過鐵嶺",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "乾坤設險竟何功？小賊驅民掃地空。誰使兵權歸豎子？至今遺堞起悲風。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `過鐵嶺` heading과 전문을 직접 확인했다. 관동 지역 체험시 후보에 매핑한다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "次襄州公館詩韻",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "次襄州公館詩韻",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "名途信步不圖前，來往斯樓已二年。覆檻竹叢分爽氣，廕門榕樹撼蒼煙。歷觀民業憂吾國，虛負君恩愧彼天。計拙未能興利路，若爲溪壑湧金泉？",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `次襄州公館詩韻` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "三陟西樓八詠",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "三陟西樓八詠",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "竹藏古寺\n脩篁歲久盡成圍，手種居僧今已非。禪榻、茶軒深不見，穿林翠羽獨知歸。\n巖控淸潭\n流川爲陸陸爲川，有底淸潭獨不然？看取奔灘停滀處，奇巖削立重難遷。\n依山村舍\n傍山煙火占孤村，竹下紅桃臥守門。力穡田夫皆惜日，戴星服役返乘昏。\n臥水木橋\n一木搖搖跨石灘，望來惟恐蹈波瀾。居民足與心曾熟，如過平途不細看。\n牛背牧童\n仰空吹笛快軒眉，牛背身無掩脛衣。家在山前陂隴隔，雨天行趁暮鴉歸。\n壟頭饁婦\n婦具農飧自廢飧，曉來心在夏畦間。壟頭日午催行邁，餉了田夫信步還。\n臨流數魚\n樓下淸潭窟穴空，游魚育卵粟排紅。莘莘衆尾知多少，前數無窮後亦同。\n隔墻呼僧\n聳壑郡樓臨水府，隔墻禪舍倚巖叢。愛僧眞趣無人會，十里茶煙颺竹風。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `三陟西樓八詠` heading과 8영 전문을 직접 확인했다. 연작이므로 이번 wave에서는 한 작품 row 안에 보존한다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "한시 후보",
+      "matchedTitle": "詠梅",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "詠梅",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "關東處處賞江梅，愛此新枝最後開。風雨人間春掃地，出塵仙艶映粧臺。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `詠梅` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "次叢石亭詩韻",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "次叢石亭詩韻",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "千條怪石成奇峯，蒼崖煙霏水墨濃。鯨濤起海雪霜漲，蜃氣浮空樓閣重。糢糊字沒太古碣，癭瘦根蟠何代松？磯邊箬笠坐相揖，月下羽衣招可逢。悵望仙徒已雨散，厭看俗子如雲從。若爲亭前伴鷗鷺，掃却人間塵土蹤？",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `次叢石亭詩韻` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "안축",
+      "authorHanja": "安軸",
+      "candidateTitle": "관동 지역 시문",
+      "matchedTitle": "金剛山",
+      "sourceWork": {
+        "collectionTitle": "謹齋集",
+        "juan": "卷一",
+        "entryTitle": "金剛山",
+        "sourceUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "骨立峯巒劍戟明，居僧齋罷坐無營。如何山下生民類，瞻望時時蹙頞行？",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `謹齋集/卷一` raw에서 `金剛山` heading과 전문을 직접 확인했다."
+      }
+    }
+  ],
+  "blockers": [],
+  "sourcesConsulted": [
+    {
+      "label": "謹齋集 卷一 raw",
+      "url": "https://zh.wikisource.org/wiki/謹齋集/卷一?action=raw",
+      "notes": "안축 관동 지역 시문과 한시 후보 원문을 확인했다."
+    }
+  ]
+}
