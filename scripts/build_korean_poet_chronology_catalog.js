@@ -762,10 +762,11 @@ function main() {
 
   const directPoems = directRecords.map(normalizeDirectRecord);
   const workerPoems = loadWorkerResults().map((workerPoem) => normalizeWorkerPoem(workerPoem, authorsByName));
+  const catalogWorkerPoems = workerPoems.filter((poem) => poem.ingest?.readiness !== 'blocked');
   const donggyeongImport = loadDonggyeongJapgiPoems(authors);
-  const mergedCollected = mergeDonggyeongWitnesses([...directPoems, ...workerPoems], donggyeongImport.poems);
+  const mergedCollected = mergeDonggyeongWitnesses([...directPoems, ...catalogWorkerPoems], donggyeongImport.poems);
   const collectedTitleKeys = new Set(mergedCollected.poems.map((poem) => `${poem.author.ko}::${poem.title.zh || poem.title.ko}`));
-  const collectedCandidateKeys = buildCollectedCandidateKeys(mergedCollected.poems);
+  const collectedCandidateKeys = buildCollectedCandidateKeys([...mergedCollected.poems, ...workerPoems.filter((poem) => poem.ingest?.readiness === 'blocked')]);
   const candidatePoems = authors
     .flatMap(buildCandidatePoems)
     .filter((poem) => !collectedTitleKeys.has(`${poem.author.ko}::${poem.title.zh || poem.title.ko}`))
@@ -810,7 +811,7 @@ function main() {
     catalogId: 'korean-poems-chronology',
     targetDb: 'poems',
     summary: {
-      directTextCollected: directPoems.length + countByReadiness(workerPoems, 'direct-text-collected') + mergedCollected.importedWorkCount,
+      directTextCollected: directPoems.length + countByReadiness(catalogWorkerPoems, 'direct-text-collected') + mergedCollected.importedWorkCount,
       sourceLocated: countByReadiness(workerPoems, 'source-located'),
       ocrCandidate: countByReadiness(workerPoems, 'ocr-candidate'),
       blocked: countByReadiness(workerPoems, 'blocked'),

@@ -1,0 +1,2204 @@
+{
+  "workerId": "worker-99-candidate-exhaustion-wave",
+  "status": "completed",
+  "targetAuthors": [
+    "설총",
+    "최승우",
+    "예종",
+    "정지상",
+    "이규보",
+    "임춘",
+    "진화",
+    "최자",
+    "이제현",
+    "이곡",
+    "원천석",
+    "하륜",
+    "변계량",
+    "세종",
+    "서거정",
+    "정인지",
+    "박팽년",
+    "김종직",
+    "조위",
+    "신사임당",
+    "이황",
+    "허균",
+    "임제",
+    "차천로",
+    "황진이",
+    "홍랑",
+    "허목",
+    "이익",
+    "홍대용",
+    "박지원",
+    "박제가",
+    "유득공",
+    "이옥",
+    "이언진",
+    "신위",
+    "김정희",
+    "조희룡",
+    "임윤지당",
+    "매창",
+    "강위",
+    "이건창",
+    "김택영",
+    "최송설당",
+    "안중근",
+    "정인보"
+  ],
+  "summary": {
+    "candidateWorksChecked": 67,
+    "directTextWorksFound": 2,
+    "ocrCandidates": 0,
+    "blockedWorks": 65
+  },
+  "poems": [
+    {
+      "authorKo": "설총",
+      "candidateTitle": "花王戒",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "花王戒 전승",
+        "juan": null,
+        "entryTitle": "花王戒",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "산문 성격이 강해 시 작품 direct-text로 승격하지 않는다."
+      }
+    },
+    {
+      "authorKo": "최승우",
+      "candidateTitle": "선집 수록시 확인 필요",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "선집류, 사서",
+        "juan": null,
+        "entryTitle": "선집 수록시 확인 필요",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+      }
+    },
+    {
+      "authorKo": "예종",
+      "candidateTitle": "왕실 한시 후보 확인",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "왕실 시문, 사서",
+        "juan": null,
+        "entryTitle": "왕실 한시 후보 확인",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+      }
+    },
+    {
+      "authorKo": "정지상",
+      "candidateTitle": "西樓",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "東文選, 新增東國輿地勝覽, 東京雜記",
+        "juan": null,
+        "entryTitle": "西樓",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "기존 조사에서 정지상 별도 표제라기보다 `栢栗寺西樓`/`栢律寺` 계열 이칭 가능성이 높아 중복 후보로 닫는다."
+      }
+    },
+    {
+      "authorKo": "이규보",
+      "candidateTitle": "제야시",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "東國李相國集",
+        "juan": null,
+        "entryTitle": "제야시",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+      }
+    },
+    {
+      "authorKo": "임춘",
+      "candidateTitle": "孔方傳은 산문",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "西河集, 선집류",
+        "juan": null,
+        "entryTitle": "孔方傳은 산문",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "산문 성격이 강해 시 작품 direct-text로 승격하지 않는다."
+      }
+    },
+    {
+      "authorKo": "진화",
+      "candidateTitle": "제야시 후보",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "선집류",
+        "juan": null,
+        "entryTitle": "제야시 후보",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+      }
+    },
+    {
+      "authorKo": "최자",
+      "candidateTitle": "시화 수록작",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "補閑集",
+        "juan": null,
+        "entryTitle": "시화 수록작",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+      }
+    },
+    {
+      "authorKo": "최자",
+      "candidateTitle": "한시 후보",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "補閑集",
+        "juan": null,
+        "entryTitle": "한시 후보",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+      }
+    },
+    {
+      "authorKo": "이제현",
+      "candidateTitle": "원 관련 시",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "益齋亂藁, 櫟翁稗說",
+        "juan": null,
+        "entryTitle": "원 관련 시",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+      }
+    },
+    {
+      "authorKo": "이제현",
+      "candidateTitle": "회고시",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "益齋亂藁, 櫟翁稗說",
+        "juan": null,
+        "entryTitle": "회고시",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+      }
+    },
+    {
+      "authorKo": "이곡",
+      "candidateTitle": "鷄林府公館西樓詩序 관련",
+      "matchedTitle": "雞林府公館西樓詩序 中詩",
+      "sourceWork": {
+        "collectionTitle": "稼亭集 卷十",
+        "juan": "卷十",
+        "entryTitle": "雞林府公館西樓詩序",
+        "sourceUrl": "https://zh.wikisource.org/wiki/稼亭集/卷十",
+        "rawUrl": "https://zh.wikisource.org/wiki/稼亭集/卷十?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "東都文物尙繁華，更起高樓不紫霞。\n城郭千年羅代樹，閭閻一半梵王家。\n珠簾捲盡山如畵，玉笛吹殘日未斜。\n倚柱吟詩還自笑，重來不必要籠紗。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `稼亭集/卷十` raw의 `雞林府公館西樓詩序`에 포함된 장구를 직접 확인했다. 후보명은 詩序 관련이지만 실제 catalog 작품은 序 말미의 시로 분리했다."
+      }
+    },
+    {
+      "authorKo": "이곡",
+      "candidateTitle": "문집 수록시",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "稼亭集, 東京雜記 수록작",
+        "juan": null,
+        "entryTitle": "문집 수록시",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+      }
+    },
+    {
+      "authorKo": "원천석",
+      "candidateTitle": "은거시",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "耘谷集",
+        "juan": null,
+        "entryTitle": "은거시",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+      }
+    },
+    {
+      "authorKo": "원천석",
+      "candidateTitle": "회고시",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "耘谷集",
+        "juan": null,
+        "entryTitle": "회고시",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+      }
+    },
+    {
+      "authorKo": "하륜",
+      "candidateTitle": "정치·관료시 후보",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "浩亭集",
+        "juan": null,
+        "entryTitle": "정치·관료시 후보",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+      }
+    },
+    {
+      "authorKo": "변계량",
+      "candidateTitle": "관각시",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "春亭集",
+        "juan": null,
+        "entryTitle": "관각시",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+      }
+    },
+    {
+      "authorKo": "변계량",
+      "candidateTitle": "외교시",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "春亭集",
+        "juan": null,
+        "entryTitle": "외교시",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+      }
+    },
+    {
+      "authorKo": "세종",
+      "candidateTitle": "月印千江之曲",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "月印千江之曲, 龍飛御天歌 계열, 왕실 악장 자료",
+        "juan": null,
+        "entryTitle": "月印千江之曲",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "Wikisource raw에서 안정적인 전체 원문을 확보하지 못했고 transclusion/이미지 중심 확인이 필요하다."
+      }
+    },
+    {
+      "authorKo": "세종",
+      "candidateTitle": "龍飛御天歌",
+      "matchedTitle": "龍飛御天歌 卷第一 第一章",
+      "sourceWork": {
+        "collectionTitle": "龍飛御天歌 卷第一",
+        "juan": "卷第一",
+        "entryTitle": "龍飛御天歌 卷第一 第一章",
+        "sourceUrl": "https://zh.wikisource.org/wiki/龍飛御天歌/卷第一",
+        "rawUrl": "https://zh.wikisource.org/wiki/龍飛御天歌/卷第一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "海東 六龍飛，莫非天所扶、古聖同符。\n根深之木，風亦不扤，有灼其華，有蕡其實。\n源遠之水，旱亦不竭，流斯為川，于海必達。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `龍飛御天歌/卷第一` raw에서 제1장과 제2장 한문 대응구를 확인했다. 장편 악장 전체가 매우 길어 catalog에는 권1 초두 대표 장으로 우선 승격한다."
+      }
+    },
+    {
+      "authorKo": "서거정",
+      "candidateTitle": "東京雜記 수록작",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "四佳集, 東文選",
+        "juan": null,
+        "entryTitle": "東京雜記 수록작",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "Donggyeong Japgi bundle import와 중복될 수 있어 후보 슬롯에서 제외하고 기존 bundle witness 쪽을 기준으로 둔다."
+      }
+    },
+    {
+      "authorKo": "정인지",
+      "candidateTitle": "관각시 후보",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "문집, 관찬자료",
+        "juan": null,
+        "entryTitle": "관각시 후보",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+      }
+    },
+    {
+      "authorKo": "박팽년",
+      "candidateTitle": "절의시 후보",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "문집 잔편",
+        "juan": null,
+        "entryTitle": "절의시 후보",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+      }
+    },
+    {
+      "authorKo": "김종직",
+      "candidateTitle": "산수시",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "佔畢齋集, 東京雜記",
+        "juan": null,
+        "entryTitle": "산수시",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+      }
+    },
+    {
+      "authorKo": "김종직",
+      "candidateTitle": "제영시",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "佔畢齋集, 東京雜記",
+        "juan": null,
+        "entryTitle": "제영시",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+      }
+    },
+    {
+      "authorKo": "조위",
+      "candidateTitle": "東京雜記 수록작",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "梅溪集, 東京雜記",
+        "juan": null,
+        "entryTitle": "東京雜記 수록작",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "Donggyeong Japgi bundle import와 중복될 수 있어 후보 슬롯에서 제외하고 기존 bundle witness 쪽을 기준으로 둔다."
+      }
+    },
+    {
+      "authorKo": "조위",
+      "candidateTitle": "유배시",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "梅溪集, 東京雜記",
+        "juan": null,
+        "entryTitle": "유배시",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+      }
+    },
+    {
+      "authorKo": "신사임당",
+      "candidateTitle": "여성 한시 후보",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "전승 시문",
+        "juan": null,
+        "entryTitle": "여성 한시 후보",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+      }
+    },
+    {
+      "authorKo": "이황",
+      "candidateTitle": "陶山雜詠",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "退溪集",
+        "juan": null,
+        "entryTitle": "陶山雜詠",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+      }
+    },
+    {
+      "authorKo": "이황",
+      "candidateTitle": "매화시",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "退溪集",
+        "juan": null,
+        "entryTitle": "매화시",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+      }
+    },
+    {
+      "authorKo": "이황",
+      "candidateTitle": "도산 관련 시",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "退溪集",
+        "juan": null,
+        "entryTitle": "도산 관련 시",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+      }
+    },
+    {
+      "authorKo": "허균",
+      "candidateTitle": "교산 시문",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "惺所覆瓿藁",
+        "juan": null,
+        "entryTitle": "교산 시문",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "산문과 한시가 섞인 넓은 주제 후보라 작품 단위 direct-text 없이 후보로 계속 두지 않는다."
+      }
+    },
+    {
+      "authorKo": "허균",
+      "candidateTitle": "누이 관련 맥락",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "惺所覆瓿藁",
+        "juan": null,
+        "entryTitle": "누이 관련 맥락",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+      }
+    },
+    {
+      "authorKo": "임제",
+      "candidateTitle": "풍류·애도시",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "白湖集",
+        "juan": null,
+        "entryTitle": "풍류·애도시",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+      }
+    },
+    {
+      "authorKo": "차천로",
+      "candidateTitle": "전란 관련 시",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "五山集",
+        "juan": null,
+        "entryTitle": "전란 관련 시",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+      }
+    },
+    {
+      "authorKo": "황진이",
+      "candidateTitle": "시조 중심",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "전승 시문",
+        "juan": null,
+        "entryTitle": "시조 중심",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "시조 전승 중심 후보라 한시 direct-text catalog와 분리한다."
+      }
+    },
+    {
+      "authorKo": "황진이",
+      "candidateTitle": "한시 후보 확인",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "전승 시문",
+        "juan": null,
+        "entryTitle": "한시 후보 확인",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "시조 전승 중심 후보라 한시 direct-text catalog와 분리한다."
+      }
+    },
+    {
+      "authorKo": "홍랑",
+      "candidateTitle": "묏버들은 시조",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "전승 시문",
+        "juan": null,
+        "entryTitle": "묏버들은 시조",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "시조 전승 중심 후보라 한시 direct-text catalog와 분리한다."
+      }
+    },
+    {
+      "authorKo": "홍랑",
+      "candidateTitle": "한시 후보 확인",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "전승 시문",
+        "juan": null,
+        "entryTitle": "한시 후보 확인",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "시조 전승 중심 후보라 한시 direct-text catalog와 분리한다."
+      }
+    },
+    {
+      "authorKo": "허목",
+      "candidateTitle": "고문체 시문 후보",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "記言",
+        "juan": null,
+        "entryTitle": "고문체 시문 후보",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "산문과 한시가 섞인 넓은 주제 후보라 작품 단위 direct-text 없이 후보로 계속 두지 않는다."
+      }
+    },
+    {
+      "authorKo": "이익",
+      "candidateTitle": "학문·사회시 후보",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "星湖全集",
+        "juan": null,
+        "entryTitle": "학문·사회시 후보",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "산문과 한시가 섞인 넓은 주제 후보라 작품 단위 direct-text 없이 후보로 계속 두지 않는다."
+      }
+    },
+    {
+      "authorKo": "홍대용",
+      "candidateTitle": "연행 관련 시문",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "湛軒書",
+        "juan": null,
+        "entryTitle": "연행 관련 시문",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "산문과 한시가 섞인 넓은 주제 후보라 작품 단위 direct-text 없이 후보로 계속 두지 않는다."
+      }
+    },
+    {
+      "authorKo": "박지원",
+      "candidateTitle": "열하 관련 시문",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "燕巖集",
+        "juan": null,
+        "entryTitle": "열하 관련 시문",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "산문과 한시가 섞인 넓은 주제 후보라 작품 단위 direct-text 없이 후보로 계속 두지 않는다."
+      }
+    },
+    {
+      "authorKo": "박지원",
+      "candidateTitle": "풍자시",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "燕巖集",
+        "juan": null,
+        "entryTitle": "풍자시",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+      }
+    },
+    {
+      "authorKo": "박제가",
+      "candidateTitle": "연행시",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "貞蕤集, 北學議",
+        "juan": null,
+        "entryTitle": "연행시",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "산문과 한시가 섞인 넓은 주제 후보라 작품 단위 direct-text 없이 후보로 계속 두지 않는다."
+      }
+    },
+    {
+      "authorKo": "박제가",
+      "candidateTitle": "북학 관련 시문",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "貞蕤集, 北學議",
+        "juan": null,
+        "entryTitle": "북학 관련 시문",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "산문과 한시가 섞인 넓은 주제 후보라 작품 단위 direct-text 없이 후보로 계속 두지 않는다."
+      }
+    },
+    {
+      "authorKo": "유득공",
+      "candidateTitle": "역사·연행 관련 시문",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "泠齋集, 渤海考",
+        "juan": null,
+        "entryTitle": "역사·연행 관련 시문",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "산문과 한시가 섞인 넓은 주제 후보라 작품 단위 direct-text 없이 후보로 계속 두지 않는다."
+      }
+    },
+    {
+      "authorKo": "이옥",
+      "candidateTitle": "소품·한시 후보",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "李鈺集",
+        "juan": null,
+        "entryTitle": "소품·한시 후보",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "산문과 한시가 섞인 넓은 주제 후보라 작품 단위 direct-text 없이 후보로 계속 두지 않는다."
+      }
+    },
+    {
+      "authorKo": "이언진",
+      "candidateTitle": "일본 사행 관련 시",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "松穆館集",
+        "juan": null,
+        "entryTitle": "일본 사행 관련 시",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+      }
+    },
+    {
+      "authorKo": "신위",
+      "candidateTitle": "제화시",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "紫霞詩集",
+        "juan": null,
+        "entryTitle": "제화시",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+      }
+    },
+    {
+      "authorKo": "신위",
+      "candidateTitle": "예술 관련 시",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "紫霞詩集",
+        "juan": null,
+        "entryTitle": "예술 관련 시",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+      }
+    },
+    {
+      "authorKo": "김정희",
+      "candidateTitle": "제주 유배시",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "阮堂集",
+        "juan": null,
+        "entryTitle": "제주 유배시",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+      }
+    },
+    {
+      "authorKo": "김정희",
+      "candidateTitle": "제발시",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "阮堂集",
+        "juan": null,
+        "entryTitle": "제발시",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+      }
+    },
+    {
+      "authorKo": "조희룡",
+      "candidateTitle": "제화시",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "壺山外記, 문집",
+        "juan": null,
+        "entryTitle": "제화시",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+      }
+    },
+    {
+      "authorKo": "조희룡",
+      "candidateTitle": "매화시",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "壺山外記, 문집",
+        "juan": null,
+        "entryTitle": "매화시",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+      }
+    },
+    {
+      "authorKo": "임윤지당",
+      "candidateTitle": "수양시 후보",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "允摯堂遺稿",
+        "juan": null,
+        "entryTitle": "수양시 후보",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+      }
+    },
+    {
+      "authorKo": "매창",
+      "candidateTitle": "이별시",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "梅窓集",
+        "juan": null,
+        "entryTitle": "이별시",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+      }
+    },
+    {
+      "authorKo": "매창",
+      "candidateTitle": "교유시",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "梅窓集",
+        "juan": null,
+        "entryTitle": "교유시",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+      }
+    },
+    {
+      "authorKo": "강위",
+      "candidateTitle": "개화·사행 관련 시문",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "古歡堂集",
+        "juan": null,
+        "entryTitle": "개화·사행 관련 시문",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "산문과 한시가 섞인 넓은 주제 후보라 작품 단위 direct-text 없이 후보로 계속 두지 않는다."
+      }
+    },
+    {
+      "authorKo": "이건창",
+      "candidateTitle": "우국·역사시",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "明美堂集",
+        "juan": null,
+        "entryTitle": "우국·역사시",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+      }
+    },
+    {
+      "authorKo": "김택영",
+      "candidateTitle": "망명시",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "滄江稿",
+        "juan": null,
+        "entryTitle": "망명시",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+      }
+    },
+    {
+      "authorKo": "김택영",
+      "candidateTitle": "우국시",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "滄江稿",
+        "juan": null,
+        "entryTitle": "우국시",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+      }
+    },
+    {
+      "authorKo": "최송설당",
+      "candidateTitle": "여성 한시 후보",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "松雪堂集",
+        "juan": null,
+        "entryTitle": "여성 한시 후보",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "근대 저작권과 공개 원문 사용 가능성 검토가 필요해 direct-text로 넣지 않는다."
+      }
+    },
+    {
+      "authorKo": "안중근",
+      "candidateTitle": "옥중 한시",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "유묵, 옥중 시문",
+        "juan": null,
+        "entryTitle": "옥중 한시",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "유묵 문구와 옥중 한시 전승은 원문·저작권·작품 단위 검토가 필요해 별도 큐로 보낸다."
+      }
+    },
+    {
+      "authorKo": "안중근",
+      "candidateTitle": "유묵 문구",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "유묵, 옥중 시문",
+        "juan": null,
+        "entryTitle": "유묵 문구",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "유묵 문구와 옥중 한시 전승은 원문·저작권·작품 단위 검토가 필요해 별도 큐로 보낸다."
+      }
+    },
+    {
+      "authorKo": "정인보",
+      "candidateTitle": "근대 한시 후보",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "薝園文錄 등",
+        "juan": null,
+        "entryTitle": "근대 한시 후보",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "근대 저작권과 공개 원문 사용 가능성 검토가 필요해 direct-text로 넣지 않는다."
+      }
+    },
+    {
+      "authorKo": "정인보",
+      "candidateTitle": "저작권 주의",
+      "matchedTitle": null,
+      "sourceWork": {
+        "collectionTitle": "薝園文錄 등",
+        "juan": null,
+        "entryTitle": "저작권 주의",
+        "sourceUrl": null,
+        "rawUrl": null,
+        "sourcePolicyId": null,
+        "locatorConfidence": "low"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "unknown",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "blocked",
+        "notes": "근대 저작권과 공개 원문 사용 가능성 검토가 필요해 direct-text로 넣지 않는다."
+      }
+    }
+  ],
+  "blockers": [
+    {
+      "authorKo": "설총",
+      "candidateTitle": "花王戒",
+      "reason": "산문 성격이 강해 시 작품 direct-text로 승격하지 않는다."
+    },
+    {
+      "authorKo": "최승우",
+      "candidateTitle": "선집 수록시 확인 필요",
+      "reason": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+    },
+    {
+      "authorKo": "예종",
+      "candidateTitle": "왕실 한시 후보 확인",
+      "reason": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+    },
+    {
+      "authorKo": "정지상",
+      "candidateTitle": "西樓",
+      "reason": "기존 조사에서 정지상 별도 표제라기보다 `栢栗寺西樓`/`栢律寺` 계열 이칭 가능성이 높아 중복 후보로 닫는다."
+    },
+    {
+      "authorKo": "이규보",
+      "candidateTitle": "제야시",
+      "reason": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+    },
+    {
+      "authorKo": "임춘",
+      "candidateTitle": "孔方傳은 산문",
+      "reason": "산문 성격이 강해 시 작품 direct-text로 승격하지 않는다."
+    },
+    {
+      "authorKo": "진화",
+      "candidateTitle": "제야시 후보",
+      "reason": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+    },
+    {
+      "authorKo": "최자",
+      "candidateTitle": "시화 수록작",
+      "reason": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+    },
+    {
+      "authorKo": "최자",
+      "candidateTitle": "한시 후보",
+      "reason": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+    },
+    {
+      "authorKo": "이제현",
+      "candidateTitle": "원 관련 시",
+      "reason": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+    },
+    {
+      "authorKo": "이제현",
+      "candidateTitle": "회고시",
+      "reason": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+    },
+    {
+      "authorKo": "이곡",
+      "candidateTitle": "문집 수록시",
+      "reason": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+    },
+    {
+      "authorKo": "원천석",
+      "candidateTitle": "은거시",
+      "reason": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+    },
+    {
+      "authorKo": "원천석",
+      "candidateTitle": "회고시",
+      "reason": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+    },
+    {
+      "authorKo": "하륜",
+      "candidateTitle": "정치·관료시 후보",
+      "reason": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+    },
+    {
+      "authorKo": "변계량",
+      "candidateTitle": "관각시",
+      "reason": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+    },
+    {
+      "authorKo": "변계량",
+      "candidateTitle": "외교시",
+      "reason": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+    },
+    {
+      "authorKo": "세종",
+      "candidateTitle": "月印千江之曲",
+      "reason": "Wikisource raw에서 안정적인 전체 원문을 확보하지 못했고 transclusion/이미지 중심 확인이 필요하다."
+    },
+    {
+      "authorKo": "서거정",
+      "candidateTitle": "東京雜記 수록작",
+      "reason": "Donggyeong Japgi bundle import와 중복될 수 있어 후보 슬롯에서 제외하고 기존 bundle witness 쪽을 기준으로 둔다."
+    },
+    {
+      "authorKo": "정인지",
+      "candidateTitle": "관각시 후보",
+      "reason": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+    },
+    {
+      "authorKo": "박팽년",
+      "candidateTitle": "절의시 후보",
+      "reason": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+    },
+    {
+      "authorKo": "김종직",
+      "candidateTitle": "산수시",
+      "reason": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+    },
+    {
+      "authorKo": "김종직",
+      "candidateTitle": "제영시",
+      "reason": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+    },
+    {
+      "authorKo": "조위",
+      "candidateTitle": "東京雜記 수록작",
+      "reason": "Donggyeong Japgi bundle import와 중복될 수 있어 후보 슬롯에서 제외하고 기존 bundle witness 쪽을 기준으로 둔다."
+    },
+    {
+      "authorKo": "조위",
+      "candidateTitle": "유배시",
+      "reason": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+    },
+    {
+      "authorKo": "신사임당",
+      "candidateTitle": "여성 한시 후보",
+      "reason": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+    },
+    {
+      "authorKo": "이황",
+      "candidateTitle": "陶山雜詠",
+      "reason": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+    },
+    {
+      "authorKo": "이황",
+      "candidateTitle": "매화시",
+      "reason": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+    },
+    {
+      "authorKo": "이황",
+      "candidateTitle": "도산 관련 시",
+      "reason": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+    },
+    {
+      "authorKo": "허균",
+      "candidateTitle": "교산 시문",
+      "reason": "산문과 한시가 섞인 넓은 주제 후보라 작품 단위 direct-text 없이 후보로 계속 두지 않는다."
+    },
+    {
+      "authorKo": "허균",
+      "candidateTitle": "누이 관련 맥락",
+      "reason": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+    },
+    {
+      "authorKo": "임제",
+      "candidateTitle": "풍류·애도시",
+      "reason": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+    },
+    {
+      "authorKo": "차천로",
+      "candidateTitle": "전란 관련 시",
+      "reason": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+    },
+    {
+      "authorKo": "황진이",
+      "candidateTitle": "시조 중심",
+      "reason": "시조 전승 중심 후보라 한시 direct-text catalog와 분리한다."
+    },
+    {
+      "authorKo": "황진이",
+      "candidateTitle": "한시 후보 확인",
+      "reason": "시조 전승 중심 후보라 한시 direct-text catalog와 분리한다."
+    },
+    {
+      "authorKo": "홍랑",
+      "candidateTitle": "묏버들은 시조",
+      "reason": "시조 전승 중심 후보라 한시 direct-text catalog와 분리한다."
+    },
+    {
+      "authorKo": "홍랑",
+      "candidateTitle": "한시 후보 확인",
+      "reason": "시조 전승 중심 후보라 한시 direct-text catalog와 분리한다."
+    },
+    {
+      "authorKo": "허목",
+      "candidateTitle": "고문체 시문 후보",
+      "reason": "산문과 한시가 섞인 넓은 주제 후보라 작품 단위 direct-text 없이 후보로 계속 두지 않는다."
+    },
+    {
+      "authorKo": "이익",
+      "candidateTitle": "학문·사회시 후보",
+      "reason": "산문과 한시가 섞인 넓은 주제 후보라 작품 단위 direct-text 없이 후보로 계속 두지 않는다."
+    },
+    {
+      "authorKo": "홍대용",
+      "candidateTitle": "연행 관련 시문",
+      "reason": "산문과 한시가 섞인 넓은 주제 후보라 작품 단위 direct-text 없이 후보로 계속 두지 않는다."
+    },
+    {
+      "authorKo": "박지원",
+      "candidateTitle": "열하 관련 시문",
+      "reason": "산문과 한시가 섞인 넓은 주제 후보라 작품 단위 direct-text 없이 후보로 계속 두지 않는다."
+    },
+    {
+      "authorKo": "박지원",
+      "candidateTitle": "풍자시",
+      "reason": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+    },
+    {
+      "authorKo": "박제가",
+      "candidateTitle": "연행시",
+      "reason": "산문과 한시가 섞인 넓은 주제 후보라 작품 단위 direct-text 없이 후보로 계속 두지 않는다."
+    },
+    {
+      "authorKo": "박제가",
+      "candidateTitle": "북학 관련 시문",
+      "reason": "산문과 한시가 섞인 넓은 주제 후보라 작품 단위 direct-text 없이 후보로 계속 두지 않는다."
+    },
+    {
+      "authorKo": "유득공",
+      "candidateTitle": "역사·연행 관련 시문",
+      "reason": "산문과 한시가 섞인 넓은 주제 후보라 작품 단위 direct-text 없이 후보로 계속 두지 않는다."
+    },
+    {
+      "authorKo": "이옥",
+      "candidateTitle": "소품·한시 후보",
+      "reason": "산문과 한시가 섞인 넓은 주제 후보라 작품 단위 direct-text 없이 후보로 계속 두지 않는다."
+    },
+    {
+      "authorKo": "이언진",
+      "candidateTitle": "일본 사행 관련 시",
+      "reason": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+    },
+    {
+      "authorKo": "신위",
+      "candidateTitle": "제화시",
+      "reason": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+    },
+    {
+      "authorKo": "신위",
+      "candidateTitle": "예술 관련 시",
+      "reason": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+    },
+    {
+      "authorKo": "김정희",
+      "candidateTitle": "제주 유배시",
+      "reason": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+    },
+    {
+      "authorKo": "김정희",
+      "candidateTitle": "제발시",
+      "reason": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+    },
+    {
+      "authorKo": "조희룡",
+      "candidateTitle": "제화시",
+      "reason": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+    },
+    {
+      "authorKo": "조희룡",
+      "candidateTitle": "매화시",
+      "reason": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+    },
+    {
+      "authorKo": "임윤지당",
+      "candidateTitle": "수양시 후보",
+      "reason": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+    },
+    {
+      "authorKo": "매창",
+      "candidateTitle": "이별시",
+      "reason": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+    },
+    {
+      "authorKo": "매창",
+      "candidateTitle": "교유시",
+      "reason": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+    },
+    {
+      "authorKo": "강위",
+      "candidateTitle": "개화·사행 관련 시문",
+      "reason": "산문과 한시가 섞인 넓은 주제 후보라 작품 단위 direct-text 없이 후보로 계속 두지 않는다."
+    },
+    {
+      "authorKo": "이건창",
+      "candidateTitle": "우국·역사시",
+      "reason": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+    },
+    {
+      "authorKo": "김택영",
+      "candidateTitle": "망명시",
+      "reason": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+    },
+    {
+      "authorKo": "김택영",
+      "candidateTitle": "우국시",
+      "reason": "이번 후보 축소 wave에서 공개 raw로 안전한 작품 단위 원문을 확정하지 못해 후보 슬롯에서 제거하고 후속 문집 단위 조사로 넘긴다."
+    },
+    {
+      "authorKo": "최송설당",
+      "candidateTitle": "여성 한시 후보",
+      "reason": "근대 저작권과 공개 원문 사용 가능성 검토가 필요해 direct-text로 넣지 않는다."
+    },
+    {
+      "authorKo": "안중근",
+      "candidateTitle": "옥중 한시",
+      "reason": "유묵 문구와 옥중 한시 전승은 원문·저작권·작품 단위 검토가 필요해 별도 큐로 보낸다."
+    },
+    {
+      "authorKo": "안중근",
+      "candidateTitle": "유묵 문구",
+      "reason": "유묵 문구와 옥중 한시 전승은 원문·저작권·작품 단위 검토가 필요해 별도 큐로 보낸다."
+    },
+    {
+      "authorKo": "정인보",
+      "candidateTitle": "근대 한시 후보",
+      "reason": "근대 저작권과 공개 원문 사용 가능성 검토가 필요해 direct-text로 넣지 않는다."
+    },
+    {
+      "authorKo": "정인보",
+      "candidateTitle": "저작권 주의",
+      "reason": "근대 저작권과 공개 원문 사용 가능성 검토가 필요해 direct-text로 넣지 않는다."
+    }
+  ],
+  "sourcesConsulted": [
+    "https://zh.wikisource.org/wiki/龍飛御天歌/卷第一?action=raw",
+    "https://zh.wikisource.org/wiki/稼亭集/卷十?action=raw",
+    "https://zh.wikisource.org/wiki/五山集/卷一?action=raw",
+    "https://zh.wikisource.org/wiki/燕巖集?action=raw",
+    "https://zh.wikisource.org/wiki/湛軒書/外集卷一?action=raw",
+    "docs/research/2026-04-23-jeong-jisang-seoru-locator-check.md",
+    "docs/handoff/2026-04-26-wikisource-sequence-candidate-wave.md"
+  ]
+}
