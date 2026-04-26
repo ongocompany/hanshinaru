@@ -16,16 +16,16 @@
   "catalogId": "korean-poems-chronology",
   "targetDb": "poems",
   "summary": {
-    "directTextCollected": 1316,
+    "directTextCollected": 1350,
     "sourceLocated": 0,
     "ocrCandidate": 0,
     "blocked": 0,
-    "candidateOnly": 74,
-    "totalWorks": 1390,
-    "workerResultWorks": 1209,
+    "candidateOnly": 67,
+    "totalWorks": 1417,
+    "workerResultWorks": 1244,
     "donggyeongJapgiMatchedBlocks": 94,
-    "donggyeongJapgiImportedWorks": 62,
-    "donggyeongJapgiSourceVariants": 32
+    "donggyeongJapgiImportedWorks": 61,
+    "donggyeongJapgiSourceVariants": 33
   },
   "poems": [
     {
@@ -79749,6 +79749,2287 @@
       }
     },
     {
+      "poemId": "KPOEM-WORKER-AUTHOR-EAB7A0EC-001",
+      "canonicalId": "KPOEM-CANON-WORKER-AUTHOR-EAB7A0EC-001",
+      "title": {
+        "zh": "禮敬諸佛歌",
+        "ko": "禮敬諸佛歌"
+      },
+      "author": {
+        "authorId": "KAUTH-AUTHOR-EAB7A0EC",
+        "zh": "均如",
+        "ko": "균여"
+      },
+      "era": {
+        "label": "고려 전기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "ko Wikisource 보현십원가",
+        "juan": null,
+        "entryTitle": "禮敬諸佛歌",
+        "sourceUrl": "https://ko.wikisource.org/wiki/보현십원가/예경제불가",
+        "rawUrl": "https://ko.wikisource.org/wiki/보현십원가/예경제불가?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "心未筆留\n慕呂白乎隱佛體前衣\n拜內乎隱身萬隱\n法界毛叱所只至去良\n塵塵馬洛佛體叱刹亦\n刹刹每如邀\n里白乎隱\n法界滿賜隱佛體\n九世盡良禮爲白齊\n歎曰 身語意業无疲厭\n此良夫作沙毛叱等耶",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-22-wikisource-sequence-residual-wave.v1.json",
+        "workerId": "worker-22-wikisource-sequence-residual-wave",
+        "candidateTitle": "普賢十願歌",
+        "matchedTitle": "禮敬諸佛歌",
+        "notes": "ko Wikisource 보현십원가 하위 raw에서 향찰 원문을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-AUTHOR-EAB7A0EC-002",
+      "canonicalId": "KPOEM-CANON-WORKER-AUTHOR-EAB7A0EC-002",
+      "title": {
+        "zh": "稱讚如來歌",
+        "ko": "稱讚如來歌"
+      },
+      "author": {
+        "authorId": "KAUTH-AUTHOR-EAB7A0EC",
+        "zh": "均如",
+        "ko": "균여"
+      },
+      "era": {
+        "label": "고려 전기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "ko Wikisource 보현십원가",
+        "juan": null,
+        "entryTitle": "稱讚如來歌",
+        "sourceUrl": "https://ko.wikisource.org/wiki/보현십원가/칭찬여래가",
+        "rawUrl": "https://ko.wikisource.org/wiki/보현십원가/칭찬여래가?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "今日部伊冬衣\n南无佛也白孫舌良衣\n無尺辯才叱海等\n一念惡中涌出去良\n塵塵虛物叱邀呂白乎隱\n切德叱身乙對爲白惡只\n際于萬隱德海肹\n間王冬留讚伊白制\n隔句 必只一毛叱德置\n毛等尺良白乎隱乃兮",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-22-wikisource-sequence-residual-wave.v1.json",
+        "workerId": "worker-22-wikisource-sequence-residual-wave",
+        "candidateTitle": "普賢十願歌",
+        "matchedTitle": "稱讚如來歌",
+        "notes": "ko Wikisource 보현십원가 하위 raw에서 향찰 원문을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-AUTHOR-EAB7A0EC-003",
+      "canonicalId": "KPOEM-CANON-WORKER-AUTHOR-EAB7A0EC-003",
+      "title": {
+        "zh": "廣修供養歌",
+        "ko": "廣修供養歌"
+      },
+      "author": {
+        "authorId": "KAUTH-AUTHOR-EAB7A0EC",
+        "zh": "均如",
+        "ko": "균여"
+      },
+      "era": {
+        "label": "고려 전기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "ko Wikisource 보현십원가",
+        "juan": null,
+        "entryTitle": "廣修供養歌",
+        "sourceUrl": "https://ko.wikisource.org/wiki/보현십원가/광수공양가",
+        "rawUrl": "https://ko.wikisource.org/wiki/보현십원가/광수공양가?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "火條執音馬\n佛前灯乙直體良焉多衣\n灯炷隱須彌也\n灯油隱大海逸留去耶\n手焉法界毛叱色只爲旀\n手良每如法叱供乙留\n法界滿賜仁佛體\n佛佛周物叱供爲白制\n阿耶 法供沙叱多奈\n伊於衣波最勝供也",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-22-wikisource-sequence-residual-wave.v1.json",
+        "workerId": "worker-22-wikisource-sequence-residual-wave",
+        "candidateTitle": "普賢十願歌",
+        "matchedTitle": "廣修供養歌",
+        "notes": "ko Wikisource 보현십원가 하위 raw에서 향찰 원문을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-AUTHOR-EAB7A0EC-004",
+      "canonicalId": "KPOEM-CANON-WORKER-AUTHOR-EAB7A0EC-004",
+      "title": {
+        "zh": "懺悔業障歌",
+        "ko": "懺悔業障歌"
+      },
+      "author": {
+        "authorId": "KAUTH-AUTHOR-EAB7A0EC",
+        "zh": "均如",
+        "ko": "균여"
+      },
+      "era": {
+        "label": "고려 전기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "ko Wikisource 보현십원가",
+        "juan": null,
+        "entryTitle": "懺悔業障歌",
+        "sourceUrl": "https://ko.wikisource.org/wiki/보현십원가/참회업장가",
+        "rawUrl": "https://ko.wikisource.org/wiki/보현십원가/참회업장가?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "顚倒逸耶\n菩提向焉道乙迷波\n造將來臥乎隱惡寸隱\n法界餘音玉只出隱伊音叱如支\n惡寸習落臥乎隱三業\n淨戒叱主留卜以支乃遣只\n今日部頓部叱懺悔\n十方叱佛體閼遣只賜立\n落句 衆生界盡我懺盡\n來際永良造物捨齊",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-22-wikisource-sequence-residual-wave.v1.json",
+        "workerId": "worker-22-wikisource-sequence-residual-wave",
+        "candidateTitle": "普賢十願歌",
+        "matchedTitle": "懺悔業障歌",
+        "notes": "ko Wikisource 보현십원가 하위 raw에서 향찰 원문을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-AUTHOR-EAB7A0EC-005",
+      "canonicalId": "KPOEM-CANON-WORKER-AUTHOR-EAB7A0EC-005",
+      "title": {
+        "zh": "隨喜功德歌",
+        "ko": "隨喜功德歌"
+      },
+      "author": {
+        "authorId": "KAUTH-AUTHOR-EAB7A0EC",
+        "zh": "均如",
+        "ko": "균여"
+      },
+      "era": {
+        "label": "고려 전기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "ko Wikisource 보현십원가",
+        "juan": null,
+        "entryTitle": "隨喜功德歌",
+        "sourceUrl": "https://ko.wikisource.org/wiki/보현십원가/수희공덕가",
+        "rawUrl": "https://ko.wikisource.org/wiki/보현십원가/수희공덕가?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "迷悟同體叱\n緣起叱理良尋只見根\n佛伊衆生毛叱所只\n吾衣身不喩仁人音有叱下呂\n修叱賜乙隱頓部叱吾衣修叱孫丁\n得賜伊馬落人米無叱昆\n於內人衣善陵等沙\n不冬喜好尸置乎理叱過\n後句 伊羅擬可行等\n嫉姤叱心音至刀來去",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-22-wikisource-sequence-residual-wave.v1.json",
+        "workerId": "worker-22-wikisource-sequence-residual-wave",
+        "candidateTitle": "普賢十願歌",
+        "matchedTitle": "隨喜功德歌",
+        "notes": "ko Wikisource 보현십원가 하위 raw에서 향찰 원문을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-AUTHOR-EAB7A0EC-006",
+      "canonicalId": "KPOEM-CANON-WORKER-AUTHOR-EAB7A0EC-006",
+      "title": {
+        "zh": "請轉法輪歌",
+        "ko": "請轉法輪歌"
+      },
+      "author": {
+        "authorId": "KAUTH-AUTHOR-EAB7A0EC",
+        "zh": "均如",
+        "ko": "균여"
+      },
+      "era": {
+        "label": "고려 전기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "ko Wikisource 보현십원가",
+        "juan": null,
+        "entryTitle": "請轉法輪歌",
+        "sourceUrl": "https://ko.wikisource.org/wiki/보현십원가/청전법륜가",
+        "rawUrl": "https://ko.wikisource.org/wiki/보현십원가/청전법륜가?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "彼仍反隱\n法界惡之叱佛會阿希\n吾焉頓叱進良只\n法雨乙乞白乎叱等耶\n無明土深以埋多\n煩惱熱留煎將來出米\n善芽毛冬長乙隱\n衆生叱田乙潤只沙音也\n後言 菩提叱菓音烏乙反隱\n覺月明斤秋察羅波處也",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-22-wikisource-sequence-residual-wave.v1.json",
+        "workerId": "worker-22-wikisource-sequence-residual-wave",
+        "candidateTitle": "普賢十願歌",
+        "matchedTitle": "請轉法輪歌",
+        "notes": "ko Wikisource 보현십원가 하위 raw에서 향찰 원문을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-AUTHOR-EAB7A0EC-007",
+      "canonicalId": "KPOEM-CANON-WORKER-AUTHOR-EAB7A0EC-007",
+      "title": {
+        "zh": "請佛王生歌",
+        "ko": "請佛王生歌"
+      },
+      "author": {
+        "authorId": "KAUTH-AUTHOR-EAB7A0EC",
+        "zh": "均如",
+        "ko": "균여"
+      },
+      "era": {
+        "label": "고려 전기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "ko Wikisource 보현십원가",
+        "juan": null,
+        "entryTitle": "請佛王生歌",
+        "sourceUrl": "https://ko.wikisource.org/wiki/보현십원가/청불왕생가",
+        "rawUrl": "https://ko.wikisource.org/wiki/보현십원가/청불왕생가?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "皆佛體\n必于化緣盡動賜隱乃\n手乙寶非鳴良尒\n世呂中止以友白乎等耶\n曉留朝于萬夜未\n向屋賜尸朋知良閪尸也\n伊知皆矣爲米\n道尸迷反群良哀呂舌\n落句 吾里心音水淸等\n佛影不冬應爲賜下呂",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-22-wikisource-sequence-residual-wave.v1.json",
+        "workerId": "worker-22-wikisource-sequence-residual-wave",
+        "candidateTitle": "普賢十願歌",
+        "matchedTitle": "請佛王生歌",
+        "notes": "ko Wikisource 보현십원가 하위 raw에서 향찰 원문을 직접 확인했다. raw 부제에는 請佛王世歌로 표기되어 있으나 후보 제거를 위해 통용 표제 請佛王生歌를 matchedTitle로 두었다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-AUTHOR-EAB7A0EC-008",
+      "canonicalId": "KPOEM-CANON-WORKER-AUTHOR-EAB7A0EC-008",
+      "title": {
+        "zh": "常隨佛學歌",
+        "ko": "常隨佛學歌"
+      },
+      "author": {
+        "authorId": "KAUTH-AUTHOR-EAB7A0EC",
+        "zh": "均如",
+        "ko": "균여"
+      },
+      "era": {
+        "label": "고려 전기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "ko Wikisource 보현십원가",
+        "juan": null,
+        "entryTitle": "常隨佛學歌",
+        "sourceUrl": "https://ko.wikisource.org/wiki/보현십원가/상수불학가",
+        "rawUrl": "https://ko.wikisource.org/wiki/보현십원가/상수불학가?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "俄佛禮\n皆往焉世呂修將來賜留隱\n難行苦行叱願乙\n吾焉頓部叱逐好友伊音叱多\n身靡只碎良只塵伊去米\n命乙施好尸歲史中置\n然叱皆好尸卜下里\n皆佛體置然叱爲賜隱伊留兮\n城上人 佛道向隱心下\n他道不冬斜 良只行齊",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-22-wikisource-sequence-residual-wave.v1.json",
+        "workerId": "worker-22-wikisource-sequence-residual-wave",
+        "candidateTitle": "普賢十願歌",
+        "matchedTitle": "常隨佛學歌",
+        "notes": "ko Wikisource 보현십원가 하위 raw에서 향찰 원문을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-AUTHOR-EAB7A0EC-009",
+      "canonicalId": "KPOEM-CANON-WORKER-AUTHOR-EAB7A0EC-009",
+      "title": {
+        "zh": "恒順衆生歌",
+        "ko": "恒順衆生歌"
+      },
+      "author": {
+        "authorId": "KAUTH-AUTHOR-EAB7A0EC",
+        "zh": "均如",
+        "ko": "균여"
+      },
+      "era": {
+        "label": "고려 전기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "ko Wikisource 보현십원가",
+        "juan": null,
+        "entryTitle": "恒順衆生歌",
+        "sourceUrl": "https://ko.wikisource.org/wiki/보현십원가/항순중생가",
+        "rawUrl": "https://ko.wikisource.org/wiki/보현십원가/항순중생가?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "覺樹王焉\n迷火隱乙根中沙音賜焉逸良\n大悲叱水留潤良只\n不冬萎玉內乎留叱等耶\n法界居得丘物叱丘物叱\n爲乙吾置同生同死\n念念相續無間斷\n佛體爲尸如敬叱好叱等耶\n打心 衆生安爲飛等\n佛體頓叱喜賜以留也",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-22-wikisource-sequence-residual-wave.v1.json",
+        "workerId": "worker-22-wikisource-sequence-residual-wave",
+        "candidateTitle": "普賢十願歌",
+        "matchedTitle": "恒順衆生歌",
+        "notes": "ko Wikisource 보현십원가 하위 raw에서 향찰 원문을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-AUTHOR-EAB7A0EC-010",
+      "canonicalId": "KPOEM-CANON-WORKER-AUTHOR-EAB7A0EC-010",
+      "title": {
+        "zh": "普賢廻向歌",
+        "ko": "普賢廻向歌"
+      },
+      "author": {
+        "authorId": "KAUTH-AUTHOR-EAB7A0EC",
+        "zh": "均如",
+        "ko": "균여"
+      },
+      "era": {
+        "label": "고려 전기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "ko Wikisource 보현십원가",
+        "juan": null,
+        "entryTitle": "普賢廻向歌",
+        "sourceUrl": "https://ko.wikisource.org/wiki/보현십원가/보현회향가",
+        "rawUrl": "https://ko.wikisource.org/wiki/보현십원가/보현회향가?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "皆吾衣修孫\n一切善陵頓部叱廻良只\n衆生叱海惡中\n迷反群無史悟內去霽\n佛體叱海等成留焉日尸恨\n懺爲如乎仁惡寸業置\n法性叱宅阿叱寶良\n舊留然叱爲事置耶\n病吟 禮爲白孫隱佛體刀\n吾衣身伊波人有叱下呂",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-22-wikisource-sequence-residual-wave.v1.json",
+        "workerId": "worker-22-wikisource-sequence-residual-wave",
+        "candidateTitle": "普賢十願歌",
+        "matchedTitle": "普賢廻向歌",
+        "notes": "ko Wikisource 보현십원가 하위 raw에서 향찰 원문을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-AUTHOR-EAB7A0EC-011",
+      "canonicalId": "KPOEM-CANON-WORKER-AUTHOR-EAB7A0EC-011",
+      "title": {
+        "zh": "總結無盡歌",
+        "ko": "總結無盡歌"
+      },
+      "author": {
+        "authorId": "KAUTH-AUTHOR-EAB7A0EC",
+        "zh": "均如",
+        "ko": "균여"
+      },
+      "era": {
+        "label": "고려 전기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "ko Wikisource 보현십원가",
+        "juan": null,
+        "entryTitle": "總結無盡歌",
+        "sourceUrl": "https://ko.wikisource.org/wiki/보현십원가/총결무진가",
+        "rawUrl": "https://ko.wikisource.org/wiki/보현십원가/총결무진가?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "生界盡尸等隱\n吾衣願盡尸日置仁伊而也\n衆生叱邊衣于音毛\n際毛冬留願海伊過\n此如趣可伊羅行根\n向乎仁所留善陵道也\n伊波普賢行願\n又都佛體叱事伊置耶\n阿耶 普賢叱心音阿于波\n伊留叱餘音良他事捨齊",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-22-wikisource-sequence-residual-wave.v1.json",
+        "workerId": "worker-22-wikisource-sequence-residual-wave",
+        "candidateTitle": "普賢十願歌",
+        "matchedTitle": "總結無盡歌",
+        "notes": "ko Wikisource 보현십원가 하위 raw에서 향찰 원문을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-CHOE-CHIWON-012",
+      "canonicalId": "KPOEM-CANON-WORKER-CHOE-CHIWON-012",
+      "title": {
+        "zh": "鄕樂雜詠 金丸",
+        "ko": "鄕樂雜詠 金丸"
+      },
+      "author": {
+        "authorId": "KAUTH-CHOE-CHIWON",
+        "zh": "崔致遠",
+        "ko": "최치원"
+      },
+      "era": {
+        "label": "신라 말"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "三國史記 卷32",
+        "juan": "卷32",
+        "entryTitle": "鄕樂雜詠 金丸",
+        "sourceUrl": "https://zh.wikisource.org/wiki/三國史記/卷32",
+        "rawUrl": "https://zh.wikisource.org/wiki/三國史記/卷32?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "廻身掉臂弄金丸，月轉星浮滿眼看，縱有宜僚那勝此，定知鯨海息波瀾",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-22-wikisource-sequence-residual-wave.v1.json",
+        "workerId": "worker-22-wikisource-sequence-residual-wave",
+        "candidateTitle": "鄕樂雜詠",
+        "matchedTitle": "鄕樂雜詠 金丸",
+        "notes": "zh Wikisource 三國史記 卷32 raw의 鄕樂雜詠 五首 대목에서 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-CHOE-CHIWON-013",
+      "canonicalId": "KPOEM-CANON-WORKER-CHOE-CHIWON-013",
+      "title": {
+        "zh": "鄕樂雜詠 月顚",
+        "ko": "鄕樂雜詠 月顚"
+      },
+      "author": {
+        "authorId": "KAUTH-CHOE-CHIWON",
+        "zh": "崔致遠",
+        "ko": "최치원"
+      },
+      "era": {
+        "label": "신라 말"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "三國史記 卷32",
+        "juan": "卷32",
+        "entryTitle": "鄕樂雜詠 月顚",
+        "sourceUrl": "https://zh.wikisource.org/wiki/三國史記/卷32",
+        "rawUrl": "https://zh.wikisource.org/wiki/三國史記/卷32?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "肩高項縮髮崔嵬，攘臂羣儒鬪酒盃，聽得歌聲人盡笑，夜頭旗幟曉頭催",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-22-wikisource-sequence-residual-wave.v1.json",
+        "workerId": "worker-22-wikisource-sequence-residual-wave",
+        "candidateTitle": "鄕樂雜詠",
+        "matchedTitle": "鄕樂雜詠 月顚",
+        "notes": "zh Wikisource 三國史記 卷32 raw의 鄕樂雜詠 五首 대목에서 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-CHOE-CHIWON-014",
+      "canonicalId": "KPOEM-CANON-WORKER-CHOE-CHIWON-014",
+      "title": {
+        "zh": "鄕樂雜詠 大面",
+        "ko": "鄕樂雜詠 大面"
+      },
+      "author": {
+        "authorId": "KAUTH-CHOE-CHIWON",
+        "zh": "崔致遠",
+        "ko": "최치원"
+      },
+      "era": {
+        "label": "신라 말"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "三國史記 卷32",
+        "juan": "卷32",
+        "entryTitle": "鄕樂雜詠 大面",
+        "sourceUrl": "https://zh.wikisource.org/wiki/三國史記/卷32",
+        "rawUrl": "https://zh.wikisource.org/wiki/三國史記/卷32?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "黃金面色是其人，手抱珠鞭役鬼神，疾步徐趍呈雅舞，宛如丹鳳舞堯春",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-22-wikisource-sequence-residual-wave.v1.json",
+        "workerId": "worker-22-wikisource-sequence-residual-wave",
+        "candidateTitle": "鄕樂雜詠",
+        "matchedTitle": "鄕樂雜詠 大面",
+        "notes": "zh Wikisource 三國史記 卷32 raw의 鄕樂雜詠 五首 대목에서 직접 확인했다.",
+        "ownedTranslationNeeded": true,
+        "sourceFiles": [
+          "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+        ],
+        "duplicateSourceCount": 1
+      },
+      "sourceVariants": [
+        {
+          "variantType": "collection-witness",
+          "collectionId": "korean-classics-donggyeong-japgi",
+          "collectionTitle": "東京雜記",
+          "collectionTitleKo": "동경잡기",
+          "collectionTitleRomanization": "Donggyeong Japgi",
+          "harvestId": "KHS-TZ1-H-0002",
+          "documentEntryId": "KHS-TZ1-D-0009",
+          "documentSectionId": "KHS-TZ1-S-0012",
+          "displayLabelZh": "大面詩",
+          "titleHintZh": null,
+          "authorNormalization": {
+            "rawLabelZh": "大面",
+            "normalizedAuthorZh": "崔致遠",
+            "confidence": "high",
+            "titlePrefixZh": "大面",
+            "note": "鄕樂 五技 연작 표제 정리 규칙"
+          },
+          "sourceWork": {
+            "collectionTitle": "東京雜記 卷一",
+            "juan": "卷一",
+            "entryTitle": "大面詩",
+            "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%80",
+            "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+            "verificationStatus": "verified-direct-text"
+          },
+          "text": {
+            "poemZh": "黃金面色是其人\n手抱珠鞭役鬼神\n疾步徐趍呈雅舞\n宛如丹鳳舞堯春"
+          },
+          "ingest": {
+            "readiness": "direct-text-collected",
+            "targetDb": "poems",
+            "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
+          }
+        }
+      ]
+    },
+    {
+      "poemId": "KPOEM-WORKER-CHOE-CHIWON-015",
+      "canonicalId": "KPOEM-CANON-WORKER-CHOE-CHIWON-015",
+      "title": {
+        "zh": "鄕樂雜詠 束毒",
+        "ko": "鄕樂雜詠 束毒"
+      },
+      "author": {
+        "authorId": "KAUTH-CHOE-CHIWON",
+        "zh": "崔致遠",
+        "ko": "최치원"
+      },
+      "era": {
+        "label": "신라 말"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "三國史記 卷32",
+        "juan": "卷32",
+        "entryTitle": "鄕樂雜詠 束毒",
+        "sourceUrl": "https://zh.wikisource.org/wiki/三國史記/卷32",
+        "rawUrl": "https://zh.wikisource.org/wiki/三國史記/卷32?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "蓮頭藍面異人間，押隊來庭學舞鸞，打鼓冬冬風瑟瑟，南奔北躍也無端",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-22-wikisource-sequence-residual-wave.v1.json",
+        "workerId": "worker-22-wikisource-sequence-residual-wave",
+        "candidateTitle": "鄕樂雜詠",
+        "matchedTitle": "鄕樂雜詠 束毒",
+        "notes": "zh Wikisource 三國史記 卷32 raw의 鄕樂雜詠 五首 대목에서 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-CHOE-CHIWON-016",
+      "canonicalId": "KPOEM-CANON-WORKER-CHOE-CHIWON-016",
+      "title": {
+        "zh": "鄕樂雜詠 狻猊",
+        "ko": "鄕樂雜詠 狻猊"
+      },
+      "author": {
+        "authorId": "KAUTH-CHOE-CHIWON",
+        "zh": "崔致遠",
+        "ko": "최치원"
+      },
+      "era": {
+        "label": "신라 말"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "三國史記 卷32",
+        "juan": "卷32",
+        "entryTitle": "鄕樂雜詠 狻猊",
+        "sourceUrl": "https://zh.wikisource.org/wiki/三國史記/卷32",
+        "rawUrl": "https://zh.wikisource.org/wiki/三國史記/卷32?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "遠涉流沙萬里來，毛衣破盡着塵埃，搖頭掉尾馴仁德，雄氣寧同百獸才",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-22-wikisource-sequence-residual-wave.v1.json",
+        "workerId": "worker-22-wikisource-sequence-residual-wave",
+        "candidateTitle": "鄕樂雜詠",
+        "matchedTitle": "鄕樂雜詠 狻猊",
+        "notes": "zh Wikisource 三國史記 卷32 raw의 鄕樂雜詠 五首 대목에서 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-AUTHOR-ECB59CEA-017",
+      "canonicalId": "KPOEM-CANON-WORKER-AUTHOR-ECB59CEA-017",
+      "title": {
+        "zh": "御溝",
+        "ko": "御溝"
+      },
+      "author": {
+        "authorId": "KAUTH-AUTHOR-ECB59CEA",
+        "zh": "崔匡裕",
+        "ko": "최광유"
+      },
+      "era": {
+        "label": "신라 말"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "東文選 卷十二",
+        "juan": "卷十二",
+        "entryTitle": "御溝",
+        "sourceUrl": "https://zh.wikisource.org/wiki/東文選/卷十二",
+        "rawUrl": "https://zh.wikisource.org/wiki/東文選/卷十二?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "長鋪白練靜無風。澄景涵暉皎鏡同。堤柳雨餘光暎綠。墻花春半影含紅。曉和殘月流城外。夜帶殘鍾出禁中。人若有心上星漢。乘査未必此難通。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-22-wikisource-sequence-residual-wave.v1.json",
+        "workerId": "worker-22-wikisource-sequence-residual-wave",
+        "candidateTitle": "선집 수록시 확인 필요",
+        "matchedTitle": "御溝",
+        "notes": "zh Wikisource 東文選 卷十二 raw에서 崔匡裕 heading과 御溝 항목을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-AUTHOR-EBB095EC-018",
+      "canonicalId": "KPOEM-CANON-WORKER-AUTHOR-EBB095EC-018",
+      "title": {
+        "zh": "涇州龍朔寺閣兼柬雲栖上人",
+        "ko": "涇州龍朔寺閣兼柬雲栖上人"
+      },
+      "author": {
+        "authorId": "KAUTH-AUTHOR-EBB095EC",
+        "zh": "朴仁範",
+        "ko": "박인범"
+      },
+      "era": {
+        "label": "신라 말"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "東文選 卷十二",
+        "juan": "卷十二",
+        "entryTitle": "涇州龍朔寺閣。兼柬雲栖上人。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/東文選/卷十二",
+        "rawUrl": "https://zh.wikisource.org/wiki/東文選/卷十二?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "翬飛仙閣在靑冥。月殿笙歌歷歷聽。燈撼螢光明鳥道。梯回虹影到岩扃。人隨流水何時盡。竹帶寒山萬古靑。試問是非空色理。百年愁醉坐來醒。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-22-wikisource-sequence-residual-wave.v1.json",
+        "workerId": "worker-22-wikisource-sequence-residual-wave",
+        "candidateTitle": "涇州龍朔寺 계열 후보 확인",
+        "matchedTitle": "涇州龍朔寺閣兼柬雲栖上人",
+        "notes": "zh Wikisource 東文選 卷十二 raw에서 朴仁範 heading과 涇州龍朔寺閣 항목을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-AUTHOR-EC98A4EC-019",
+      "canonicalId": "KPOEM-CANON-WORKER-AUTHOR-EC98A4EC-019",
+      "title": {
+        "zh": "次韻金無迹見贈",
+        "ko": "次韻金無迹見贈"
+      },
+      "author": {
+        "authorId": "KAUTH-AUTHOR-EC98A4EC",
+        "zh": "吳世才",
+        "ko": "오세재"
+      },
+      "era": {
+        "label": "고려 중기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "東文選 卷十三",
+        "juan": "卷十三",
+        "entryTitle": "次韻金無迹見贈",
+        "sourceUrl": "https://zh.wikisource.org/wiki/東文選/卷十三",
+        "rawUrl": "https://zh.wikisource.org/wiki/東文選/卷十三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "才先李賀賦高軒。道比楊雄入聖門。大百圍材無用用。長三尺喙不言言。仙童不寄西山藥。公子須傾北海樽。七葉蟬貂餘慶在。忠純終被漢家恩。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-22-wikisource-sequence-residual-wave.v1.json",
+        "workerId": "worker-22-wikisource-sequence-residual-wave",
+        "candidateTitle": "선집 수록시 확인",
+        "matchedTitle": "次韻金無迹見贈",
+        "notes": "zh Wikisource 東文選 卷十三 raw에서 吳世才 heading과 次韻金無迹見贈 항목을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-JEONG-YAGYONG-020",
+      "canonicalId": "KPOEM-CANON-WORKER-JEONG-YAGYONG-020",
+      "title": {
+        "zh": "耽津村謠 其一",
+        "ko": "耽津村謠 其一"
+      },
+      "author": {
+        "authorId": "KAUTH-JEONG-YAGYONG",
+        "zh": "丁若鏞",
+        "ko": "정약용"
+      },
+      "era": {
+        "label": "조선 후기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "與猶堂全書 第一集 第四卷",
+        "juan": "第一集 第四卷",
+        "entryTitle": "耽津村謠十五首",
+        "sourceUrl": "https://zh.wikisource.org/wiki/與猶堂全書/第一集/第四卷",
+        "rawUrl": "https://zh.wikisource.org/wiki/與猶堂全書/第一集/第四卷?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "樓犂嶺上石漸漸，長得行人淚洒沾。莫向月南瞻月出，峰峰都似道峰尖。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-22-wikisource-sequence-residual-wave.v1.json",
+        "workerId": "worker-22-wikisource-sequence-residual-wave",
+        "candidateTitle": "耽津村謠",
+        "matchedTitle": "耽津村謠 其一",
+        "notes": "zh Wikisource 與猶堂全書 raw의 耽津村謠十五首를 확인하고 ul 주석 표지는 제거했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-JEONG-YAGYONG-021",
+      "canonicalId": "KPOEM-CANON-WORKER-JEONG-YAGYONG-021",
+      "title": {
+        "zh": "耽津村謠 其二",
+        "ko": "耽津村謠 其二"
+      },
+      "author": {
+        "authorId": "KAUTH-JEONG-YAGYONG",
+        "zh": "丁若鏞",
+        "ko": "정약용"
+      },
+      "era": {
+        "label": "조선 후기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "與猶堂全書 第一集 第四卷",
+        "juan": "第一集 第四卷",
+        "entryTitle": "耽津村謠十五首",
+        "sourceUrl": "https://zh.wikisource.org/wiki/與猶堂全書/第一集/第四卷",
+        "rawUrl": "https://zh.wikisource.org/wiki/與猶堂全書/第一集/第四卷?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "山茶接葉冷童童，雪裏花開鶴頂紅。一自甲寅鹽雨後，朱欒黃櫾盡枯叢。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-22-wikisource-sequence-residual-wave.v1.json",
+        "workerId": "worker-22-wikisource-sequence-residual-wave",
+        "candidateTitle": "耽津村謠",
+        "matchedTitle": "耽津村謠 其二",
+        "notes": "zh Wikisource 與猶堂全書 raw의 耽津村謠十五首를 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-JEONG-YAGYONG-022",
+      "canonicalId": "KPOEM-CANON-WORKER-JEONG-YAGYONG-022",
+      "title": {
+        "zh": "耽津村謠 其三",
+        "ko": "耽津村謠 其三"
+      },
+      "author": {
+        "authorId": "KAUTH-JEONG-YAGYONG",
+        "zh": "丁若鏞",
+        "ko": "정약용"
+      },
+      "era": {
+        "label": "조선 후기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "與猶堂全書 第一集 第四卷",
+        "juan": "第一集 第四卷",
+        "entryTitle": "耽津村謠十五首",
+        "sourceUrl": "https://zh.wikisource.org/wiki/與猶堂全書/第一集/第四卷",
+        "rawUrl": "https://zh.wikisource.org/wiki/與猶堂全書/第一集/第四卷?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "海岸篔簹百尺高，如今不中釣船篙。園丁日日培新笋，留作朱門竹瀝膏。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-22-wikisource-sequence-residual-wave.v1.json",
+        "workerId": "worker-22-wikisource-sequence-residual-wave",
+        "candidateTitle": "耽津村謠",
+        "matchedTitle": "耽津村謠 其三",
+        "notes": "zh Wikisource 與猶堂全書 raw의 耽津村謠十五首를 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-JEONG-YAGYONG-023",
+      "canonicalId": "KPOEM-CANON-WORKER-JEONG-YAGYONG-023",
+      "title": {
+        "zh": "耽津村謠 其四",
+        "ko": "耽津村謠 其四"
+      },
+      "author": {
+        "authorId": "KAUTH-JEONG-YAGYONG",
+        "zh": "丁若鏞",
+        "ko": "정약용"
+      },
+      "era": {
+        "label": "조선 후기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "與猶堂全書 第一集 第四卷",
+        "juan": "第一集 第四卷",
+        "entryTitle": "耽津村謠十五首",
+        "sourceUrl": "https://zh.wikisource.org/wiki/與猶堂全書/第一集/第四卷",
+        "rawUrl": "https://zh.wikisource.org/wiki/與猶堂全書/第一集/第四卷?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "崩城敗壁枕寒丘，鐃吹黃昏古礎頭。諸島年年空斫木，無人重建聽潮樓。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-22-wikisource-sequence-residual-wave.v1.json",
+        "workerId": "worker-22-wikisource-sequence-residual-wave",
+        "candidateTitle": "耽津村謠",
+        "matchedTitle": "耽津村謠 其四",
+        "notes": "zh Wikisource 與猶堂全書 raw의 耽津村謠十五首를 확인하고 ul 주석 표지는 제거했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-JEONG-YAGYONG-024",
+      "canonicalId": "KPOEM-CANON-WORKER-JEONG-YAGYONG-024",
+      "title": {
+        "zh": "耽津村謠 其五",
+        "ko": "耽津村謠 其五"
+      },
+      "author": {
+        "authorId": "KAUTH-JEONG-YAGYONG",
+        "zh": "丁若鏞",
+        "ko": "정약용"
+      },
+      "era": {
+        "label": "조선 후기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "與猶堂全書 第一集 第四卷",
+        "juan": "第一集 第四卷",
+        "entryTitle": "耽津村謠十五首",
+        "sourceUrl": "https://zh.wikisource.org/wiki/與猶堂全書/第一集/第四卷",
+        "rawUrl": "https://zh.wikisource.org/wiki/與猶堂全書/第一集/第四卷?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "水田風起麥波長，麥上場時稻揷秧。菘菜雪天新葉綠，鷄雛蜡月嫩毛黃。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-22-wikisource-sequence-residual-wave.v1.json",
+        "workerId": "worker-22-wikisource-sequence-residual-wave",
+        "candidateTitle": "耽津村謠",
+        "matchedTitle": "耽津村謠 其五",
+        "notes": "zh Wikisource 與猶堂全書 raw의 耽津村謠十五首를 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-JEONG-YAGYONG-025",
+      "canonicalId": "KPOEM-CANON-WORKER-JEONG-YAGYONG-025",
+      "title": {
+        "zh": "耽津村謠 其六",
+        "ko": "耽津村謠 其六"
+      },
+      "author": {
+        "authorId": "KAUTH-JEONG-YAGYONG",
+        "zh": "丁若鏞",
+        "ko": "정약용"
+      },
+      "era": {
+        "label": "조선 후기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "與猶堂全書 第一集 第四卷",
+        "juan": "第一集 第四卷",
+        "entryTitle": "耽津村謠十五首",
+        "sourceUrl": "https://zh.wikisource.org/wiki/與猶堂全書/第一集/第四卷",
+        "rawUrl": "https://zh.wikisource.org/wiki/與猶堂全書/第一集/第四卷?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "石梯院北路多歧，終古娘娘此別離。恨殺門前楊柳樹，炎霜摧折少餘枝。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-22-wikisource-sequence-residual-wave.v1.json",
+        "workerId": "worker-22-wikisource-sequence-residual-wave",
+        "candidateTitle": "耽津村謠",
+        "matchedTitle": "耽津村謠 其六",
+        "notes": "zh Wikisource 與猶堂全書 raw의 耽津村謠十五首를 확인하고 ul 주석 표지는 제거했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-JEONG-YAGYONG-026",
+      "canonicalId": "KPOEM-CANON-WORKER-JEONG-YAGYONG-026",
+      "title": {
+        "zh": "耽津村謠 其七",
+        "ko": "耽津村謠 其七"
+      },
+      "author": {
+        "authorId": "KAUTH-JEONG-YAGYONG",
+        "zh": "丁若鏞",
+        "ko": "정약용"
+      },
+      "era": {
+        "label": "조선 후기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "與猶堂全書 第一集 第四卷",
+        "juan": "第一集 第四卷",
+        "entryTitle": "耽津村謠十五首",
+        "sourceUrl": "https://zh.wikisource.org/wiki/與猶堂全書/第一集/第四卷",
+        "rawUrl": "https://zh.wikisource.org/wiki/與猶堂全書/第一集/第四卷?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "棉布新治雪樣鮮，黃頭來博吏房錢。漏田督稅如星火，三月中旬道發船。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-22-wikisource-sequence-residual-wave.v1.json",
+        "workerId": "worker-22-wikisource-sequence-residual-wave",
+        "candidateTitle": "耽津村謠",
+        "matchedTitle": "耽津村謠 其七",
+        "notes": "zh Wikisource 與猶堂全書 raw의 耽津村謠十五首를 확인하고 원주를 제외했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-JEONG-YAGYONG-027",
+      "canonicalId": "KPOEM-CANON-WORKER-JEONG-YAGYONG-027",
+      "title": {
+        "zh": "耽津村謠 其八",
+        "ko": "耽津村謠 其八"
+      },
+      "author": {
+        "authorId": "KAUTH-JEONG-YAGYONG",
+        "zh": "丁若鏞",
+        "ko": "정약용"
+      },
+      "era": {
+        "label": "조선 후기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "與猶堂全書 第一集 第四卷",
+        "juan": "第一集 第四卷",
+        "entryTitle": "耽津村謠十五首",
+        "sourceUrl": "https://zh.wikisource.org/wiki/與猶堂全書/第一集/第四卷",
+        "rawUrl": "https://zh.wikisource.org/wiki/與猶堂全書/第一集/第四卷?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "莞洲黃㯃瀅琉璃，天下皆聞此樹奇。聖旨前年蠲貢額，春風髠枿又生枝。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-22-wikisource-sequence-residual-wave.v1.json",
+        "workerId": "worker-22-wikisource-sequence-residual-wave",
+        "candidateTitle": "耽津村謠",
+        "matchedTitle": "耽津村謠 其八",
+        "notes": "zh Wikisource 與猶堂全書 raw의 耽津村謠十五首를 확인하고 ul 주석 표지는 제거했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-JEONG-YAGYONG-028",
+      "canonicalId": "KPOEM-CANON-WORKER-JEONG-YAGYONG-028",
+      "title": {
+        "zh": "耽津村謠 其九",
+        "ko": "耽津村謠 其九"
+      },
+      "author": {
+        "authorId": "KAUTH-JEONG-YAGYONG",
+        "zh": "丁若鏞",
+        "ko": "정약용"
+      },
+      "era": {
+        "label": "조선 후기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "與猶堂全書 第一集 第四卷",
+        "juan": "第一集 第四卷",
+        "entryTitle": "耽津村謠十五首",
+        "sourceUrl": "https://zh.wikisource.org/wiki/與猶堂全書/第一集/第四卷",
+        "rawUrl": "https://zh.wikisource.org/wiki/與猶堂全書/第一集/第四卷?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "烏蠻總角髮如雲，寫出三倉法外文。不是瓜哇應呂宋，薔薇玉盒潑奇芬。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-22-wikisource-sequence-residual-wave.v1.json",
+        "workerId": "worker-22-wikisource-sequence-residual-wave",
+        "candidateTitle": "耽津村謠",
+        "matchedTitle": "耽津村謠 其九",
+        "notes": "zh Wikisource 與猶堂全書 raw의 耽津村謠十五首를 확인하고 ul 주석 표지는 제거했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-JEONG-YAGYONG-029",
+      "canonicalId": "KPOEM-CANON-WORKER-JEONG-YAGYONG-029",
+      "title": {
+        "zh": "耽津村謠 其十",
+        "ko": "耽津村謠 其十"
+      },
+      "author": {
+        "authorId": "KAUTH-JEONG-YAGYONG",
+        "zh": "丁若鏞",
+        "ko": "정약용"
+      },
+      "era": {
+        "label": "조선 후기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "與猶堂全書 第一集 第四卷",
+        "juan": "第一集 第四卷",
+        "entryTitle": "耽津村謠十五首",
+        "sourceUrl": "https://zh.wikisource.org/wiki/與猶堂全書/第一集/第四卷",
+        "rawUrl": "https://zh.wikisource.org/wiki/與猶堂全書/第一集/第四卷?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "蓮寺樓前水一規，春潮如雪上門楣。名藍總隷頭輪寺，爲有西山御製碑。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-22-wikisource-sequence-residual-wave.v1.json",
+        "workerId": "worker-22-wikisource-sequence-residual-wave",
+        "candidateTitle": "耽津村謠",
+        "matchedTitle": "耽津村謠 其十",
+        "notes": "zh Wikisource 與猶堂全書 raw의 耽津村謠十五首를 확인하고 ul 주석 표지는 제거했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-JEONG-YAGYONG-030",
+      "canonicalId": "KPOEM-CANON-WORKER-JEONG-YAGYONG-030",
+      "title": {
+        "zh": "耽津村謠 其十一",
+        "ko": "耽津村謠 其十一"
+      },
+      "author": {
+        "authorId": "KAUTH-JEONG-YAGYONG",
+        "zh": "丁若鏞",
+        "ko": "정약용"
+      },
+      "era": {
+        "label": "조선 후기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "與猶堂全書 第一集 第四卷",
+        "juan": "第一集 第四卷",
+        "entryTitle": "耽津村謠十五首",
+        "sourceUrl": "https://zh.wikisource.org/wiki/與猶堂全書/第一集/第四卷",
+        "rawUrl": "https://zh.wikisource.org/wiki/與猶堂全書/第一集/第四卷?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "村童書法苦支離，點畫戈波箇箇欹。筆苑舊開薪智島，掾房皆祖李匡師。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-22-wikisource-sequence-residual-wave.v1.json",
+        "workerId": "worker-22-wikisource-sequence-residual-wave",
+        "candidateTitle": "耽津村謠",
+        "matchedTitle": "耽津村謠 其十一",
+        "notes": "zh Wikisource 與猶堂全書 raw의 耽津村謠十五首를 확인하고 ul 주석 표지는 제거했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-JEONG-YAGYONG-031",
+      "canonicalId": "KPOEM-CANON-WORKER-JEONG-YAGYONG-031",
+      "title": {
+        "zh": "耽津村謠 其十二",
+        "ko": "耽津村謠 其十二"
+      },
+      "author": {
+        "authorId": "KAUTH-JEONG-YAGYONG",
+        "zh": "丁若鏞",
+        "ko": "정약용"
+      },
+      "era": {
+        "label": "조선 후기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "與猶堂全書 第一集 第四卷",
+        "juan": "第一集 第四卷",
+        "entryTitle": "耽津村謠十五首",
+        "sourceUrl": "https://zh.wikisource.org/wiki/與猶堂全書/第一集/第四卷",
+        "rawUrl": "https://zh.wikisource.org/wiki/與猶堂全書/第一集/第四卷?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "荊棘何年一路開？黃茅苦竹似珠雷。刑房小吏傳呼急，知是京城謫客來。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-22-wikisource-sequence-residual-wave.v1.json",
+        "workerId": "worker-22-wikisource-sequence-residual-wave",
+        "candidateTitle": "耽津村謠",
+        "matchedTitle": "耽津村謠 其十二",
+        "notes": "zh Wikisource 與猶堂全書 raw의 耽津村謠十五首를 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-JEONG-YAGYONG-032",
+      "canonicalId": "KPOEM-CANON-WORKER-JEONG-YAGYONG-032",
+      "title": {
+        "zh": "耽津村謠 其十三",
+        "ko": "耽津村謠 其十三"
+      },
+      "author": {
+        "authorId": "KAUTH-JEONG-YAGYONG",
+        "zh": "丁若鏞",
+        "ko": "정약용"
+      },
+      "era": {
+        "label": "조선 후기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "與猶堂全書 第一集 第四卷",
+        "juan": "第一集 第四卷",
+        "entryTitle": "耽津村謠十五首",
+        "sourceUrl": "https://zh.wikisource.org/wiki/與猶堂全書/第一集/第四卷",
+        "rawUrl": "https://zh.wikisource.org/wiki/與猶堂全書/第一集/第四卷?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "三月松池馬市開，一駒五百揀天才。白騣籮子烏騣帽，都自拏山牧裏來。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-22-wikisource-sequence-residual-wave.v1.json",
+        "workerId": "worker-22-wikisource-sequence-residual-wave",
+        "candidateTitle": "耽津村謠",
+        "matchedTitle": "耽津村謠 其十三",
+        "notes": "zh Wikisource 與猶堂全書 raw의 耽津村謠十五首를 확인하고 원주를 제외했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-JEONG-YAGYONG-033",
+      "canonicalId": "KPOEM-CANON-WORKER-JEONG-YAGYONG-033",
+      "title": {
+        "zh": "耽津村謠 其十四",
+        "ko": "耽津村謠 其十四"
+      },
+      "author": {
+        "authorId": "KAUTH-JEONG-YAGYONG",
+        "zh": "丁若鏞",
+        "ko": "정약용"
+      },
+      "era": {
+        "label": "조선 후기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "與猶堂全書 第一集 第四卷",
+        "juan": "第一集 第四卷",
+        "entryTitle": "耽津村謠十五首",
+        "sourceUrl": "https://zh.wikisource.org/wiki/與猶堂全書/第一集/第四卷",
+        "rawUrl": "https://zh.wikisource.org/wiki/與猶堂全書/第一集/第四卷?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "自古漸臺嗜鰒魚，山茶濯䐈語非虛。城中小吏房櫳內，徧揷奎瀛學士書。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-22-wikisource-sequence-residual-wave.v1.json",
+        "workerId": "worker-22-wikisource-sequence-residual-wave",
+        "candidateTitle": "耽津村謠",
+        "matchedTitle": "耽津村謠 其十四",
+        "notes": "zh Wikisource 與猶堂全書 raw의 耽津村謠十五首를 확인하고 ul 주석 표지는 제거했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-JEONG-YAGYONG-034",
+      "canonicalId": "KPOEM-CANON-WORKER-JEONG-YAGYONG-034",
+      "title": {
+        "zh": "耽津村謠 其十五",
+        "ko": "耽津村謠 其十五"
+      },
+      "author": {
+        "authorId": "KAUTH-JEONG-YAGYONG",
+        "zh": "丁若鏞",
+        "ko": "정약용"
+      },
+      "era": {
+        "label": "조선 후기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "與猶堂全書 第一集 第四卷",
+        "juan": "第一集 第四卷",
+        "entryTitle": "耽津村謠十五首",
+        "sourceUrl": "https://zh.wikisource.org/wiki/與猶堂全書/第一集/第四卷",
+        "rawUrl": "https://zh.wikisource.org/wiki/與猶堂全書/第一集/第四卷?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "都督開營二百年，臯夷不復繫倭船。陳璘廟裏生春草，漁女時投乞子錢。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-22-wikisource-sequence-residual-wave.v1.json",
+        "workerId": "worker-22-wikisource-sequence-residual-wave",
+        "candidateTitle": "耽津村謠",
+        "matchedTitle": "耽津村謠 其十五",
+        "notes": "zh Wikisource 與猶堂全書 raw의 耽津村謠十五首를 확인하고 ul 주석 표지는 제거했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-JEONG-YAGYONG-035",
+      "canonicalId": "KPOEM-CANON-WORKER-JEONG-YAGYONG-035",
+      "title": {
+        "zh": "哀絶陽",
+        "ko": "哀絶陽"
+      },
+      "author": {
+        "authorId": "KAUTH-JEONG-YAGYONG",
+        "zh": "丁若鏞",
+        "ko": "정약용"
+      },
+      "era": {
+        "label": "조선 후기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "與猶堂全書 第一集 第四卷",
+        "juan": "第一集 第四卷",
+        "entryTitle": "哀絶陽",
+        "sourceUrl": "https://zh.wikisource.org/wiki/與猶堂全書/第一集/第四卷",
+        "rawUrl": "https://zh.wikisource.org/wiki/與猶堂全書/第一集/第四卷?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "蘆田少婦哭聲長，哭向縣門號穹蒼。夫征不復尙可有，自古未聞男絶陽。舅喪已縞兒未澡，三代名簽在軍保。薄言往愬虎守閽，里正咆哮牛去皁。磨刀入房血滿席，自恨生兒遭窘厄。蠶室淫刑豈有辜？閩囝去勢良亦慽。生生之理天所予，乾道成男坤道女。騸馬豶豕猶云悲，況乃生民思繼序？豪家終歲奏管弦，粒米寸帛無所捐。均吾赤子何厚薄？客窓重誦〈鳲鳩〉篇。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-22-wikisource-sequence-residual-wave.v1.json",
+        "workerId": "worker-22-wikisource-sequence-residual-wave",
+        "candidateTitle": "哀絶陽",
+        "matchedTitle": "哀絶陽",
+        "notes": "zh Wikisource 與猶堂全書 raw와 ko Wikisource 애절양 raw를 교차 확인했다. 번역문은 수집하지 않았다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
       "poemId": "KPOEM-WORKER-YI-JEHYEON-001",
       "canonicalId": "KPOEM-CANON-WORKER-YI-JEHYEON-001",
       "title": {
@@ -85309,105 +87590,6 @@
           },
           "text": {
             "poemZh": "肩高項縮髮崔嵬\n攘臂群儒鬪酒盃\n聽得歌聲人盡笑\n夜頭旗幟曉頭催"
-          },
-          "ingest": {
-            "readiness": "direct-text-collected",
-            "targetDb": "poems",
-            "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json"
-          }
-        }
-      ]
-    },
-    {
-      "poemId": "KPOEM-DONGGYEONG-JAPGI-1-H-0002",
-      "canonicalId": "KPOEM-CANON-DONGGYEONG-JAPGI-1-H-0002",
-      "title": {
-        "zh": "大面",
-        "ko": "大面"
-      },
-      "author": {
-        "authorId": "KAUTH-CHOE-CHIWON",
-        "zh": "崔致遠",
-        "ko": "최치원"
-      },
-      "era": {
-        "label": "신라 말"
-      },
-      "genre": {
-        "broad": "한시",
-        "form": "칠언절구",
-        "track": "hansi-direct-text"
-      },
-      "sourceWork": {
-        "collectionTitle": "東京雜記 卷一",
-        "juan": "卷一",
-        "entryTitle": "大面詩",
-        "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%80",
-        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
-        "verificationStatus": "verified-direct-text"
-      },
-      "text": {
-        "poemZh": "黃金面色是其人\n手抱珠鞭役鬼神\n疾步徐趍呈雅舞\n宛如丹鳳舞堯春",
-        "poemKoReading": null,
-        "poemKoGloss": null
-      },
-      "assets": {
-        "translationKo": null,
-        "commentaryKo": null,
-        "ownedTranslationNeeded": true
-      },
-      "rights": {
-        "originalText": {
-          "status": "commercial_allowed",
-          "publicDisplayAllowedNow": true,
-          "commercialAllowedNow": true
-        },
-        "translation": {
-          "status": "owned-translation-needed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        }
-      },
-      "ingest": {
-        "readiness": "direct-text-collected",
-        "targetDb": "poems",
-        "sourceFile": "docs/spec/korean-classics-donggyeong-japgi-collection-bundle.v1.json",
-        "workerId": "donggyeong-japgi-bundle-import",
-        "candidateTitle": "大面",
-        "matchedTitle": "大面",
-        "harvestId": "KHS-TZ1-H-0002",
-        "ownedTranslationNeeded": true,
-        "notes": "동경잡기 전권 bundle에서 기존 seed 시인과 매칭된 작품을 1차 승격함"
-      },
-      "collectionWitnesses": [
-        {
-          "variantType": "collection-witness",
-          "collectionId": "korean-classics-donggyeong-japgi",
-          "collectionTitle": "東京雜記",
-          "collectionTitleKo": "동경잡기",
-          "collectionTitleRomanization": "Donggyeong Japgi",
-          "harvestId": "KHS-TZ1-H-0002",
-          "documentEntryId": "KHS-TZ1-D-0009",
-          "documentSectionId": "KHS-TZ1-S-0012",
-          "displayLabelZh": "大面詩",
-          "titleHintZh": null,
-          "authorNormalization": {
-            "rawLabelZh": "大面",
-            "normalizedAuthorZh": "崔致遠",
-            "confidence": "high",
-            "titlePrefixZh": "大面",
-            "note": "鄕樂 五技 연작 표제 정리 규칙"
-          },
-          "sourceWork": {
-            "collectionTitle": "東京雜記 卷一",
-            "juan": "卷一",
-            "entryTitle": "大面詩",
-            "sourceUrl": "https://zh.wikisource.org/zh-hant/%E6%9D%B1%E4%BA%AC%E9%9B%9C%E8%A8%98/%E5%8D%B7%E4%B8%80",
-            "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
-            "verificationStatus": "verified-direct-text"
-          },
-          "text": {
-            "poemZh": "黃金面色是其人\n手抱珠鞭役鬼神\n疾步徐趍呈雅舞\n宛如丹鳳舞堯春"
           },
           "ingest": {
             "readiness": "direct-text-collected",
@@ -92259,114 +94441,6 @@
       }
     },
     {
-      "poemId": "KPOEM-CAND-CHOE-CHIWON-004",
-      "canonicalId": "KPOEM-CANON-CHOE-CHIWON-004",
-      "title": {
-        "zh": "鄕樂雜詠",
-        "ko": "鄕樂雜詠"
-      },
-      "author": {
-        "authorId": "KAUTH-CHOE-CHIWON",
-        "zh": "崔致遠",
-        "ko": "최치원"
-      },
-      "era": {
-        "label": "신라 말"
-      },
-      "genre": {
-        "broad": "한시",
-        "form": "미확정",
-        "track": "hansi-candidate"
-      },
-      "sourceWork": {
-        "collectionTitle": "孤雲集, 桂苑筆耕集, 東文選, 위키문헌",
-        "sourceUrl": null,
-        "sourcePolicyId": null,
-        "verificationStatus": "needs-source-url"
-      },
-      "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
-      },
-      "assets": {
-        "translationKo": null,
-        "commentaryKo": null,
-        "ownedTranslationNeeded": true
-      },
-      "rights": {
-        "originalText": {
-          "status": "candidate",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        },
-        "translation": {
-          "status": "owned-translation-needed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        }
-      },
-      "ingest": {
-        "readiness": "candidate-only",
-        "targetDb": "poems",
-        "sourceFile": "docs/research/2026-04-25-korean-poet-chronology-seed-catalog.md"
-      }
-    },
-    {
-      "poemId": "KPOEM-CAND-AUTHOR-ECB59CEA-001",
-      "canonicalId": "KPOEM-CANON-AUTHOR-ECB59CEA-001",
-      "title": {
-        "zh": null,
-        "ko": "선집 수록시 확인 필요"
-      },
-      "author": {
-        "authorId": "KAUTH-AUTHOR-ECB59CEA",
-        "zh": "崔匡裕",
-        "ko": "최광유"
-      },
-      "era": {
-        "label": "신라 말"
-      },
-      "genre": {
-        "broad": "한시",
-        "form": "미확정",
-        "track": "hansi-candidate"
-      },
-      "sourceWork": {
-        "collectionTitle": "선집류, 사서",
-        "sourceUrl": null,
-        "sourcePolicyId": null,
-        "verificationStatus": "needs-source-url"
-      },
-      "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
-      },
-      "assets": {
-        "translationKo": null,
-        "commentaryKo": null,
-        "ownedTranslationNeeded": true
-      },
-      "rights": {
-        "originalText": {
-          "status": "candidate",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        },
-        "translation": {
-          "status": "owned-translation-needed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        }
-      },
-      "ingest": {
-        "readiness": "candidate-only",
-        "targetDb": "poems",
-        "sourceFile": "docs/research/2026-04-25-korean-poet-chronology-seed-catalog.md"
-      }
-    },
-    {
       "poemId": "KPOEM-CAND-AUTHOR-ECB59CEC-001",
       "canonicalId": "KPOEM-CANON-AUTHOR-ECB59CEC-001",
       "title": {
@@ -92388,114 +94462,6 @@
       },
       "sourceWork": {
         "collectionTitle": "선집류, 사서",
-        "sourceUrl": null,
-        "sourcePolicyId": null,
-        "verificationStatus": "needs-source-url"
-      },
-      "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
-      },
-      "assets": {
-        "translationKo": null,
-        "commentaryKo": null,
-        "ownedTranslationNeeded": true
-      },
-      "rights": {
-        "originalText": {
-          "status": "candidate",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        },
-        "translation": {
-          "status": "owned-translation-needed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        }
-      },
-      "ingest": {
-        "readiness": "candidate-only",
-        "targetDb": "poems",
-        "sourceFile": "docs/research/2026-04-25-korean-poet-chronology-seed-catalog.md"
-      }
-    },
-    {
-      "poemId": "KPOEM-CAND-AUTHOR-EBB095EC-001",
-      "canonicalId": "KPOEM-CANON-AUTHOR-EBB095EC-001",
-      "title": {
-        "zh": "涇州龍朔寺 계열 후보 확인",
-        "ko": "涇州龍朔寺 계열 후보 확인"
-      },
-      "author": {
-        "authorId": "KAUTH-AUTHOR-EBB095EC",
-        "zh": "朴仁範",
-        "ko": "박인범"
-      },
-      "era": {
-        "label": "신라 말"
-      },
-      "genre": {
-        "broad": "한시",
-        "form": "미확정",
-        "track": "hansi-candidate"
-      },
-      "sourceWork": {
-        "collectionTitle": "선집류",
-        "sourceUrl": null,
-        "sourcePolicyId": null,
-        "verificationStatus": "needs-source-url"
-      },
-      "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
-      },
-      "assets": {
-        "translationKo": null,
-        "commentaryKo": null,
-        "ownedTranslationNeeded": true
-      },
-      "rights": {
-        "originalText": {
-          "status": "candidate",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        },
-        "translation": {
-          "status": "owned-translation-needed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        }
-      },
-      "ingest": {
-        "readiness": "candidate-only",
-        "targetDb": "poems",
-        "sourceFile": "docs/research/2026-04-25-korean-poet-chronology-seed-catalog.md"
-      }
-    },
-    {
-      "poemId": "KPOEM-CAND-AUTHOR-EAB7A0EC-001",
-      "canonicalId": "KPOEM-CANON-AUTHOR-EAB7A0EC-001",
-      "title": {
-        "zh": "普賢十願歌",
-        "ko": "普賢十願歌"
-      },
-      "author": {
-        "authorId": "KAUTH-AUTHOR-EAB7A0EC",
-        "zh": "均如",
-        "ko": "균여"
-      },
-      "era": {
-        "label": "고려 전기"
-      },
-      "genre": {
-        "broad": "고유시가",
-        "form": "향가",
-        "track": "native-form"
-      },
-      "sourceWork": {
-        "collectionTitle": "均如傳, 普賢十願歌",
         "sourceUrl": null,
         "sourcePolicyId": null,
         "verificationStatus": "needs-source-url"
@@ -92712,60 +94678,6 @@
       },
       "sourceWork": {
         "collectionTitle": "西河集, 선집류",
-        "sourceUrl": null,
-        "sourcePolicyId": null,
-        "verificationStatus": "needs-source-url"
-      },
-      "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
-      },
-      "assets": {
-        "translationKo": null,
-        "commentaryKo": null,
-        "ownedTranslationNeeded": true
-      },
-      "rights": {
-        "originalText": {
-          "status": "candidate",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        },
-        "translation": {
-          "status": "owned-translation-needed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        }
-      },
-      "ingest": {
-        "readiness": "candidate-only",
-        "targetDb": "poems",
-        "sourceFile": "docs/research/2026-04-25-korean-poet-chronology-seed-catalog.md"
-      }
-    },
-    {
-      "poemId": "KPOEM-CAND-AUTHOR-EC98A4EC-001",
-      "canonicalId": "KPOEM-CANON-AUTHOR-EC98A4EC-001",
-      "title": {
-        "zh": null,
-        "ko": "선집 수록시 확인"
-      },
-      "author": {
-        "authorId": "KAUTH-AUTHOR-EC98A4EC",
-        "zh": "吳世才",
-        "ko": "오세재"
-      },
-      "era": {
-        "label": "고려 중기"
-      },
-      "genre": {
-        "broad": "한시",
-        "form": "미확정",
-        "track": "hansi-candidate"
-      },
-      "sourceWork": {
-        "collectionTitle": "선집류",
         "sourceUrl": null,
         "sourcePolicyId": null,
         "verificationStatus": "needs-source-url"
@@ -95034,114 +96946,6 @@
       },
       "sourceWork": {
         "collectionTitle": "李鈺集",
-        "sourceUrl": null,
-        "sourcePolicyId": null,
-        "verificationStatus": "needs-source-url"
-      },
-      "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
-      },
-      "assets": {
-        "translationKo": null,
-        "commentaryKo": null,
-        "ownedTranslationNeeded": true
-      },
-      "rights": {
-        "originalText": {
-          "status": "candidate",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        },
-        "translation": {
-          "status": "owned-translation-needed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        }
-      },
-      "ingest": {
-        "readiness": "candidate-only",
-        "targetDb": "poems",
-        "sourceFile": "docs/research/2026-04-25-korean-poet-chronology-seed-catalog.md"
-      }
-    },
-    {
-      "poemId": "KPOEM-CAND-JEONG-YAGYONG-001",
-      "canonicalId": "KPOEM-CANON-JEONG-YAGYONG-001",
-      "title": {
-        "zh": "哀絶陽",
-        "ko": "哀絶陽"
-      },
-      "author": {
-        "authorId": "KAUTH-JEONG-YAGYONG",
-        "zh": "丁若鏞",
-        "ko": "정약용"
-      },
-      "era": {
-        "label": "조선 후기"
-      },
-      "genre": {
-        "broad": "한시",
-        "form": "미확정",
-        "track": "hansi-candidate"
-      },
-      "sourceWork": {
-        "collectionTitle": "茶山詩文集",
-        "sourceUrl": null,
-        "sourcePolicyId": null,
-        "verificationStatus": "needs-source-url"
-      },
-      "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
-      },
-      "assets": {
-        "translationKo": null,
-        "commentaryKo": null,
-        "ownedTranslationNeeded": true
-      },
-      "rights": {
-        "originalText": {
-          "status": "candidate",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        },
-        "translation": {
-          "status": "owned-translation-needed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        }
-      },
-      "ingest": {
-        "readiness": "candidate-only",
-        "targetDb": "poems",
-        "sourceFile": "docs/research/2026-04-25-korean-poet-chronology-seed-catalog.md"
-      }
-    },
-    {
-      "poemId": "KPOEM-CAND-JEONG-YAGYONG-002",
-      "canonicalId": "KPOEM-CANON-JEONG-YAGYONG-002",
-      "title": {
-        "zh": "耽津村謠",
-        "ko": "耽津村謠"
-      },
-      "author": {
-        "authorId": "KAUTH-JEONG-YAGYONG",
-        "zh": "丁若鏞",
-        "ko": "정약용"
-      },
-      "era": {
-        "label": "조선 후기"
-      },
-      "genre": {
-        "broad": "한시",
-        "form": "미확정",
-        "track": "hansi-candidate"
-      },
-      "sourceWork": {
-        "collectionTitle": "茶山詩文集",
         "sourceUrl": null,
         "sourcePolicyId": null,
         "verificationStatus": "needs-source-url"
