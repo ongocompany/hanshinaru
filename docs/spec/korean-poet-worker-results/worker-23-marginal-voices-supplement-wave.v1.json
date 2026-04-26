@@ -1,0 +1,493 @@
+{
+  "workerId": "worker-23-marginal-voices-supplement-wave",
+  "status": "completed",
+  "targetAuthors": [
+    "고려가요 무명씨",
+    "이옥봉",
+    "김금원",
+    "삼의당 김씨",
+    "월산대군"
+  ],
+  "summary": {
+    "candidateWorksChecked": 17,
+    "directTextWorksFound": 13,
+    "ocrCandidates": 0,
+    "blockedWorks": 0
+  },
+  "poems": [
+    {
+      "authorKo": "고려가요 무명씨",
+      "candidateTitle": "歸乎曲",
+      "matchedTitle": "가시리",
+      "sourceWork": {
+        "collectionTitle": "ko Wikisource 고려속요",
+        "juan": null,
+        "entryTitle": "가시리",
+        "sourceUrl": "https://ko.wikisource.org/wiki/가시리",
+        "rawUrl": "https://ko.wikisource.org/wiki/가시리?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "가시리 가시리잇고 나ᄂᆞᆫ\nᄇᆞ리고 가시리잇고 나ᄂᆞᆫ\n위 증즐가 大平盛代\n\n날러는 엇디 살라 ᄒᆞ고\nᄇᆞ리고 가시리잇고 나ᄂᆞᆫ\n위 증즐가 大平盛代\n\n잡ᄉᆞ와 두어리마 ᄂᆞᄂᆞᆫ\n선ᄒᆞ면 아니 올셰라\n위 증즐가 大平盛代\n\n셜온 님 보내ᄋᆞᆸ노니 나ᄂᆞᆫ\n가시ᄂᆞᆫ ᄃᆞᆺ 도셔 오셔셔 나ᄂᆞᆫ\n위 증즐가 大平盛代",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "ko Wikisource `가시리?action=raw`에서 원문을 확인했다. 작자 미상 고려가요 보충 후보 중 직접 수집 가능한 짧은 작품으로 우선 승격한다."
+      }
+    },
+    {
+      "authorKo": "고려가요 무명씨",
+      "candidateTitle": "思母曲",
+      "matchedTitle": "사모곡",
+      "sourceWork": {
+        "collectionTitle": "ko Wikisource 고려속요",
+        "juan": null,
+        "entryTitle": "사모곡",
+        "sourceUrl": "https://ko.wikisource.org/wiki/사모곡",
+        "rawUrl": "https://ko.wikisource.org/wiki/사모곡?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "호ᄆᆡ도 ᄂᆞᆯ히언마ᄅᆞᄂᆞᆫ\n낟ᄀᆞ티 들 리도 업스니이다\n아바님도 어이어신마ᄅᆞᄂᆞᆫ\n위 덩더둥셩\n어마님ᄀᆞ티 괴시 리 업세라\n아소 님하\n아마님ᄀᆞ티 괴시 리 업세라",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "ko Wikisource `사모곡?action=raw`에서 원문을 확인했다."
+      }
+    },
+    {
+      "authorKo": "고려가요 무명씨",
+      "candidateTitle": "相杵歌",
+      "matchedTitle": "상저가",
+      "sourceWork": {
+        "collectionTitle": "ko Wikisource 고려속요",
+        "juan": null,
+        "entryTitle": "상저가",
+        "sourceUrl": "https://ko.wikisource.org/wiki/상저가",
+        "rawUrl": "https://ko.wikisource.org/wiki/상저가?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "듥긔동 방해나 디히 히얘\n게우즌 바비나 지ᅀᅥ 히얘\n아버님 어머님ᄭᅴ 받ᄌᆞᆸ고 히야해\n남거시든 내 머고리 히야해",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "ko Wikisource `상저가?action=raw`에서 원문을 확인했다."
+      }
+    },
+    {
+      "authorKo": "고려가요 무명씨",
+      "candidateTitle": "靑山別曲",
+      "matchedTitle": "청산별곡",
+      "sourceWork": {
+        "collectionTitle": "ko Wikisource 고려속요",
+        "juan": null,
+        "entryTitle": "청산별곡",
+        "sourceUrl": "https://ko.wikisource.org/wiki/청산별곡",
+        "rawUrl": "https://ko.wikisource.org/wiki/청산별곡?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "source-located",
+        "notes": "ko Wikisource raw에서 전문 위치를 확인했다. 길이와 옛한글 주석 정리 때문에 다음 direct-text pass에서 전문 정제 대상으로 둔다."
+      }
+    },
+    {
+      "authorKo": "고려가요 무명씨",
+      "candidateTitle": "西京別曲",
+      "matchedTitle": "서경별곡",
+      "sourceWork": {
+        "collectionTitle": "ko Wikisource 고려속요",
+        "juan": null,
+        "entryTitle": "서경별곡",
+        "sourceUrl": "https://ko.wikisource.org/wiki/서경별곡",
+        "rawUrl": "https://ko.wikisource.org/wiki/서경별곡?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "source-located",
+        "notes": "ko Wikisource raw에서 전문 위치를 확인했다. 다음 pass에서 주석 제거와 원문 정제를 진행한다."
+      }
+    },
+    {
+      "authorKo": "고려가요 무명씨",
+      "candidateTitle": "動動",
+      "matchedTitle": "동동",
+      "sourceWork": {
+        "collectionTitle": "ko Wikisource 고려속요",
+        "juan": null,
+        "entryTitle": "동동",
+        "sourceUrl": "https://ko.wikisource.org/wiki/동동",
+        "rawUrl": "https://ko.wikisource.org/wiki/동동?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "source-located",
+        "notes": "ko Wikisource raw에서 전문 위치를 확인했다. 월령 구조가 길어 다음 pass에서 textParts 분리 후보로 둔다."
+      }
+    },
+    {
+      "authorKo": "고려가요 무명씨",
+      "candidateTitle": "雙花店",
+      "matchedTitle": "쌍화점",
+      "sourceWork": {
+        "collectionTitle": "ko Wikisource 고려속요",
+        "juan": null,
+        "entryTitle": "쌍화점",
+        "sourceUrl": "https://ko.wikisource.org/wiki/쌍화점",
+        "rawUrl": "https://ko.wikisource.org/wiki/쌍화점?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": null,
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "source-located",
+        "notes": "ko Wikisource raw에서 전문 위치를 확인했다. 성적 풍자와 주석 처리 때문에 공개 화면 문맥 주석을 먼저 붙인 뒤 direct-text로 올리는 편이 좋다."
+      }
+    },
+    {
+      "authorKo": "이옥봉",
+      "candidateTitle": "近來安否問如何",
+      "matchedTitle": "近來安否問如何",
+      "sourceWork": {
+        "collectionTitle": "海東艷史",
+        "juan": null,
+        "entryTitle": "조원 첩 이옥봉",
+        "sourceUrl": "https://ko.wikisource.org/wiki/해동염사/조원_첩_이옥봉",
+        "rawUrl": "https://ko.wikisource.org/wiki/해동염사/조원_첩_이옥봉?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "近來安否問如何，月到紗窓妾恨多。\n若徒夢魂行有跡，門前石路己成沙。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "ko Wikisource `海東艷史/조원 첩 이옥봉` raw에서 원시를 확인했다. 기존 남성 중심 wave에서 빠진 여성 한시 보강이다."
+      }
+    },
+    {
+      "authorKo": "이옥봉",
+      "candidateTitle": "千里長程三日越",
+      "matchedTitle": "魯陵 감상시",
+      "sourceWork": {
+        "collectionTitle": "海東艷史",
+        "juan": null,
+        "entryTitle": "조원 첩 이옥봉",
+        "sourceUrl": "https://ko.wikisource.org/wiki/해동염사/조원_첩_이옥봉",
+        "rawUrl": "https://ko.wikisource.org/wiki/해동염사/조원_첩_이옥봉?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "千里長程三日越，哀歌唱斷魯陵雲。\n妾身亦是王孫女，此地鵑聲不忍聞。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "단종 魯陵을 바라보고 지은 감상시로 raw의 원시를 확인했다."
+      }
+    },
+    {
+      "authorKo": "이옥봉",
+      "candidateTitle": "別恨",
+      "matchedTitle": "別恨",
+      "sourceWork": {
+        "collectionTitle": "海東艷史",
+        "juan": null,
+        "entryTitle": "조원 첩 이옥봉",
+        "sourceUrl": "https://ko.wikisource.org/wiki/해동염사/조원_첩_이옥봉",
+        "rawUrl": "https://ko.wikisource.org/wiki/해동염사/조원_첩_이옥봉?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "明筲雖短短，今夜願長長。\n鷄聲聽欲曉，雙瞼淚千行。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "raw의 `別恨` 원시를 확인했다."
+      }
+    },
+    {
+      "authorKo": "이옥봉",
+      "candidateTitle": "閨情",
+      "matchedTitle": "閨情",
+      "sourceWork": {
+        "collectionTitle": "海東艷史",
+        "juan": null,
+        "entryTitle": "조원 첩 이옥봉",
+        "sourceUrl": "https://ko.wikisource.org/wiki/해동염사/조원_첩_이옥봉",
+        "rawUrl": "https://ko.wikisource.org/wiki/해동염사/조원_첩_이옥봉?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "有約郎何晚，庭梅欲謝時。\n忽聞枝上鵲，空畵鏡中眉。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "raw의 `閨情` 원시를 확인했다."
+      }
+    },
+    {
+      "authorKo": "김금원",
+      "candidateTitle": "龍山泛舟",
+      "matchedTitle": "龍山泛舟",
+      "sourceWork": {
+        "collectionTitle": "海東艷史",
+        "juan": null,
+        "entryTitle": "김시랑 덕희 첩 금원",
+        "sourceUrl": "https://ko.wikisource.org/wiki/해동염사/김덕희_첩_김금원",
+        "rawUrl": "https://ko.wikisource.org/wiki/해동염사/김덕희_첩_김금원?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "櫓歌聲裏棹扁舟，斜日雲霞遠欲流。\n一色烟波三十里，近江垂柳盡名樓。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "ko Wikisource `海東艷史/김시랑 덕희 첩 금원` raw에서 원시를 확인했다."
+      }
+    },
+    {
+      "authorKo": "김금원",
+      "candidateTitle": "堤川義林池",
+      "matchedTitle": "堤川義林池",
+      "sourceWork": {
+        "collectionTitle": "海東艷史",
+        "juan": null,
+        "entryTitle": "김시랑 덕희 첩 금원",
+        "sourceUrl": "https://ko.wikisource.org/wiki/해동염사/김덕희_첩_김금원",
+        "rawUrl": "https://ko.wikisource.org/wiki/해동염사/김덕희_첩_김금원?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "池邊楊柳綠垂垂，黯黯春愁若有知。\n上有黃鸝啼未己，不堪惆悵送人時。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "raw의 `堤川義林池` 원시를 확인했다."
+      }
+    },
+    {
+      "authorKo": "삼의당 김씨",
+      "candidateTitle": "寄在京夫子",
+      "matchedTitle": "寄在京夫子",
+      "sourceWork": {
+        "collectionTitle": "조선여류한시선집",
+        "juan": null,
+        "entryTitle": "님에게 (삼의당)",
+        "sourceUrl": "https://ko.wikisource.org/wiki/조선여류한시선집/님에게_(삼의당)",
+        "rawUrl": "https://ko.wikisource.org/wiki/조선여류한시선집/님에게_(삼의당)?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "女兒柔質易傷心，所以相思每發吟。\n大丈夫當身在外，回頭莫念洞房深。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "ko Wikisource `조선여류한시선집/님에게 (삼의당)` raw에서 원시를 확인했다."
+      }
+    },
+    {
+      "authorKo": "월산대군",
+      "candidateTitle": "奉賡御製五言排律十韻",
+      "matchedTitle": "奉賡御製五言排律十韻",
+      "sourceWork": {
+        "collectionTitle": "風月亭集 卷之一",
+        "juan": "卷之一",
+        "entryTitle": "奉賡御製五言排律十韻",
+        "sourceUrl": "https://zh.wikisource.org/wiki/風月亭集/卷之一",
+        "rawUrl": "https://zh.wikisource.org/wiki/風月亭集/卷之一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "始見明良詠。賡歌有古詩。君臣逢泰運。天地合淸時。日月開黃道。星辰耀紫微。依形如有樂。造物豈無機。禮樂觀嚴整。神人不責譏。安身雖可樂。憂國肯忘危。時節催春景。花光出短蘺。園梅初綻蘂。宮柳幾生枝。和氣應無盡。韶光亦可施。須將太平象。今日使人知。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `風月亭集/卷之一` raw에서 heading과 전문을 확인했다. 종친 문인 보강의 첫 direct-text 항목이다."
+      }
+    },
+    {
+      "authorKo": "월산대군",
+      "candidateTitle": "進喜雨詩一首",
+      "matchedTitle": "進喜雨詩一首",
+      "sourceWork": {
+        "collectionTitle": "風月亭集 卷之一",
+        "juan": "卷之一",
+        "entryTitle": "進喜雨詩一首",
+        "sourceUrl": "https://zh.wikisource.org/wiki/風月亭集/卷之一",
+        "rawUrl": "https://zh.wikisource.org/wiki/風月亭集/卷之一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "此雨來何處。吾君方寸心。前時久憂旱。今日已爲霖。喜見驕陽變。俄成霈澤深。空濛連四野。霂霡散千林。禾黍芃芃發。桑麻苒苒陰。田家重農業。朝路費謳吟。聖澤霑何許。汪恩注不禁。從今一萬載。稽首聽虞琴。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "raw에서 `進喜雨詩一首` heading과 전문을 확인했다."
+      }
+    },
+    {
+      "authorKo": "월산대군",
+      "candidateTitle": "題畫蘭竹",
+      "matchedTitle": "題畫蘭竹",
+      "sourceWork": {
+        "collectionTitle": "風月亭集 卷之一",
+        "juan": "卷之一",
+        "entryTitle": "題畫蘭竹",
+        "sourceUrl": "https://zh.wikisource.org/wiki/風月亭集/卷之一",
+        "rawUrl": "https://zh.wikisource.org/wiki/風月亭集/卷之一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "新竹猗猗處。幽蘭艶艶時。知音唯此好。到處豈相宜。翠色雲猶濕。狂香風更吹。曾瞻淇澳簀。閑伴謝庭蕤。千畒封誰見。三閭佩已垂。深林看更翫。空谷對何爲。可愛孤高質。應隨艶麗姿。光華霜帶冷。柔軟露含滋。高節無人識。芳名罕世知。羣花已零落。凡卉失芳菲。與汝心爲友。看余意奈癡。平安何日報。馨馥幾人思。願得穿雲樂。無令化艾悲。形容轉圖畫。看此且題詩。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "raw에서 `題畫蘭竹` heading과 전문을 확인했다. 서화 제영시 후보로도 중요하다."
+      }
+    }
+  ],
+  "blockers": [],
+  "sourcesConsulted": [
+    "https://ko.wikisource.org/wiki/가시리?action=raw",
+    "https://ko.wikisource.org/wiki/사모곡?action=raw",
+    "https://ko.wikisource.org/wiki/상저가?action=raw",
+    "https://ko.wikisource.org/wiki/청산별곡?action=raw",
+    "https://ko.wikisource.org/wiki/서경별곡?action=raw",
+    "https://ko.wikisource.org/wiki/동동?action=raw",
+    "https://ko.wikisource.org/wiki/쌍화점?action=raw",
+    "https://ko.wikisource.org/wiki/해동염사/조원_첩_이옥봉?action=raw",
+    "https://ko.wikisource.org/wiki/해동염사/김덕희_첩_김금원?action=raw",
+    "https://ko.wikisource.org/wiki/조선여류한시선집/님에게_(삼의당)?action=raw",
+    "https://zh.wikisource.org/wiki/風月亭集/卷之一?action=raw"
+  ],
+  "notes": "여성 시인, 작자 미상 고려가요, 왕족/종친 문인을 우선 보강한 wave다. 일부 긴 고려가요는 source-located로 두고 다음 pass에서 주석 제거와 textParts 정제를 한다."
+}

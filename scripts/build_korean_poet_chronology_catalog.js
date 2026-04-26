@@ -73,12 +73,22 @@ const ROMAN_SLUG_OVERRIDES = {
   '신위': 'sin-wi',
   '정조': 'jeongjo',
   '효명세자': 'hyomyeong-seja',
-  '김병연': 'kim-byeongyeon'
+  '김병연': 'kim-byeongyeon',
+  '고려가요 무명씨': 'anonymous-goryeo-gayo',
+  '조선 궁중가요 무명씨': 'anonymous-joseon-court-song',
+  '이옥봉': 'yi-okbong',
+  '김금원': 'kim-geumwon',
+  '김부용': 'kim-buyong',
+  '삼의당 김씨': 'sameuidang-kim',
+  '김호연재': 'kim-hoyeonjae',
+  '서영수합': 'seo-yeongsuhap',
+  '안평대군': 'anpyeong-daegun',
+  '월산대군': 'wolsan-daegun'
 };
 
 const GENRE_HINTS = [
   { pattern: /향가|祭亡妹歌|兜率歌|讚耆婆郞歌|安民歌|遇賊歌|彗星歌|怨歌|處容歌|普賢十願歌/u, broad: '고유시가', form: '향가', track: 'native-form' },
-  { pattern: /고려가요|鄭瓜亭曲/u, broad: '고유시가', form: '고려가요', track: 'native-form' },
+  { pattern: /고려가요|靑山別曲|청산별곡|歸乎曲|가시리|西京別曲|서경별곡|動動|동동|雙花店|쌍화점|思母曲|사모곡|相杵歌|상저가|鄭瓜亭曲/u, broad: '고유시가', form: '고려가요', track: 'native-form' },
   { pattern: /黃鳥歌|薯童謠|月印千江之曲|龍飛御天歌/u, broad: '고유시가', form: '고대/왕실 시가', track: 'native-form' },
   { pattern: /시조|丹心歌|묏버들/u, broad: '고유시가', form: '시조', track: 'native-form' },
   { pattern: /가사|關東別曲|사미인곡/u, broad: '고유시가', form: '가사', track: 'native-form' },
