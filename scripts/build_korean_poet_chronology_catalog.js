@@ -702,6 +702,34 @@ function countByReadiness(poems, readiness) {
   return poems.filter((poem) => poem.ingest?.readiness === readiness).length;
 }
 
+function addCandidateKey(keys, authorKo, title) {
+  if (!authorKo || !title) return;
+  keys.add(`${authorKo}::${title}`);
+}
+
+function buildCollectedCandidateKeys(poems) {
+  const keys = new Set();
+  for (const poem of poems) {
+    const authorKo = poem.author?.ko;
+    addCandidateKey(keys, authorKo, poem.ingest?.candidateTitle);
+    addCandidateKey(keys, authorKo, poem.ingest?.matchedTitle);
+    addCandidateKey(keys, authorKo, poem.sourceWork?.entryTitle);
+    for (const variant of poem.sourceVariants || []) {
+      addCandidateKey(keys, authorKo, variant.displayLabelZh);
+      addCandidateKey(keys, authorKo, variant.titleHintZh);
+      addCandidateKey(keys, authorKo, variant.sourceWork?.entryTitle);
+      addCandidateKey(keys, authorKo, variant.authorNormalization?.titlePrefixZh);
+    }
+    for (const variant of poem.collectionWitnesses || []) {
+      addCandidateKey(keys, authorKo, variant.displayLabelZh);
+      addCandidateKey(keys, authorKo, variant.titleHintZh);
+      addCandidateKey(keys, authorKo, variant.sourceWork?.entryTitle);
+      addCandidateKey(keys, authorKo, variant.authorNormalization?.titlePrefixZh);
+    }
+  }
+  return keys;
+}
+
 function main() {
   const timelineIndex = loadTimelineIndex();
   const waveIndex = loadWaveIndex();
@@ -737,11 +765,11 @@ function main() {
   const donggyeongImport = loadDonggyeongJapgiPoems(authors);
   const mergedCollected = mergeDonggyeongWitnesses([...directPoems, ...workerPoems], donggyeongImport.poems);
   const collectedTitleKeys = new Set(mergedCollected.poems.map((poem) => `${poem.author.ko}::${poem.title.zh || poem.title.ko}`));
-  const workerCandidateKeys = new Set(workerPoems.map((poem) => `${poem.author.ko}::${poem.ingest.candidateTitle}`));
+  const collectedCandidateKeys = buildCollectedCandidateKeys(mergedCollected.poems);
   const candidatePoems = authors
     .flatMap(buildCandidatePoems)
     .filter((poem) => !collectedTitleKeys.has(`${poem.author.ko}::${poem.title.zh || poem.title.ko}`))
-    .filter((poem) => !workerCandidateKeys.has(`${poem.author.ko}::${poem.title.zh || poem.title.ko}`));
+    .filter((poem) => !collectedCandidateKeys.has(`${poem.author.ko}::${poem.title.zh || poem.title.ko}`));
 
   const commonMeta = {
     version: '2026-04-25.v1',

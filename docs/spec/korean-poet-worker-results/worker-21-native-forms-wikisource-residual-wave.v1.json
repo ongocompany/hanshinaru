@@ -1,0 +1,188 @@
+{
+  "workerId": "worker-21-native-forms-wikisource-residual-wave",
+  "modelRecommendation": "gpt-5.4",
+  "status": "completed",
+  "targetAuthors": [
+    "유리왕",
+    "서동",
+    "정서",
+    "정몽주",
+    "박인량"
+  ],
+  "summary": {
+    "candidateWorksChecked": 5,
+    "directTextWorksFound": 5,
+    "ocrCandidates": 0,
+    "blockedWorks": 0
+  },
+  "poems": [
+    {
+      "authorKo": "유리왕",
+      "authorHanja": "琉璃王",
+      "candidateTitle": "黃鳥歌",
+      "matchedTitle": "黃鳥歌",
+      "sourceWork": {
+        "collectionTitle": "ko Wikisource 黃鳥歌",
+        "juan": null,
+        "entryTitle": "黃鳥歌",
+        "sourceUrl": "https://ko.wikisource.org/wiki/황조가",
+        "rawUrl": "https://ko.wikisource.org/wiki/황조가?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "翩翩黃鳥\n雌雄相依\n念我之獨\n誰其與歸",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "ko Wikisource `황조가?action=raw`의 poem 원문 한자 4구를 직접 확인했다. 번역문은 수집하지 않았다."
+      }
+    },
+    {
+      "authorKo": "서동",
+      "authorHanja": "薯童",
+      "candidateTitle": "薯童謠",
+      "matchedTitle": "薯童謠",
+      "sourceWork": {
+        "collectionTitle": "ko Wikisource 薯童謠",
+        "juan": null,
+        "entryTitle": "薯童謠",
+        "sourceUrl": "https://ko.wikisource.org/wiki/서동요",
+        "rawUrl": "https://ko.wikisource.org/wiki/서동요?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "善化公主主隱\n他密只嫁良置古\n薯童房乙\n夜矣夘乙抱遣去如",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "ko Wikisource `서동요?action=raw`의 poem 원문 4행을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정서",
+      "authorHanja": "鄭敍",
+      "candidateTitle": "鄭瓜亭曲",
+      "matchedTitle": "鄭瓜亭",
+      "sourceWork": {
+        "collectionTitle": "ko Wikisource 鄭瓜亭",
+        "juan": null,
+        "entryTitle": "鄭瓜亭",
+        "sourceUrl": "https://ko.wikisource.org/wiki/정과정",
+        "rawUrl": "https://ko.wikisource.org/wiki/정과정?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "前腔 내 님믈 그리ᅀᆞ와 우니다니\n中腔 山 졉동새 난 이슷ᄒᆞ요이다\n後腔 아니시며 거츠르신 ᄃᆞᆯ 아으\n附葉 殘月曉星이 아ᄅᆞ시리이다\n大葉 넉시라도 님은 ᄒᆞᆫᄃᆡ 녀져라 아으\n附葉 벼기더시니 뉘러시니잇가\n二葉 過도 허믈도 千萬 업소이다\n三葉 ᄆᆞᆯ힛마리신뎌\n四葉 ᄉᆞᆯ읏븐뎌 아으\n附葉 니미 나ᄅᆞᆯ 하마 니ᄌᆞ시니잇가\n五葉 아소 님하 도람 드르샤 괴오쇼셔",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "ko Wikisource `정과정?action=raw`의 옛한글 원문을 직접 확인했다. 주석과 현대어 해석은 제외했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "丹心歌는 맥락",
+      "matchedTitle": "丹心歌",
+      "sourceWork": {
+        "collectionTitle": "ko Wikisource 丹心歌",
+        "juan": null,
+        "entryTitle": "丹心歌",
+        "sourceUrl": "https://ko.wikisource.org/wiki/단심가",
+        "rawUrl": "https://ko.wikisource.org/wiki/단심가?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "此身死了死了 一百番更死了\n白骨爲塵土 魂魄有也無\n向主一片丹心 寧有改理也歟",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "ko Wikisource `단심가?action=raw`의 한역 poem 원문을 직접 확인했다. 이미지 transclusion 영역은 건드리지 않았다."
+      }
+    },
+    {
+      "authorKo": "박인량",
+      "authorHanja": "朴寅亮",
+      "candidateTitle": "舟中夜吟",
+      "matchedTitle": "舟中夜吟",
+      "sourceWork": {
+        "collectionTitle": "ko Wikisource 舟中夜吟",
+        "juan": null,
+        "entryTitle": "舟中夜吟",
+        "sourceUrl": "https://ko.wikisource.org/wiki/주중야음",
+        "rawUrl": "https://ko.wikisource.org/wiki/주중야음?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "故國三韓遠\n秋風客意多\n孤舟一夜夢\n月落洞庭波",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "ko Wikisource `주중야음` 검색 결과와 raw 본문에서 한문 원문을 확인했다. 번역문은 수집하지 않았다."
+      }
+    }
+  ],
+  "blockers": [],
+  "sourcesConsulted": [
+    {
+      "label": "ko Wikisource 황조가 raw",
+      "url": "https://ko.wikisource.org/wiki/황조가?action=raw",
+      "result": "黃鳥歌 direct text 확인"
+    },
+    {
+      "label": "ko Wikisource 서동요 raw",
+      "url": "https://ko.wikisource.org/wiki/서동요?action=raw",
+      "result": "薯童謠 direct text 확인"
+    },
+    {
+      "label": "ko Wikisource 정과정 raw",
+      "url": "https://ko.wikisource.org/wiki/정과정?action=raw",
+      "result": "鄭瓜亭 direct text 확인"
+    },
+    {
+      "label": "ko Wikisource 단심가 raw",
+      "url": "https://ko.wikisource.org/wiki/단심가?action=raw",
+      "result": "丹心歌 한역 direct text 확인"
+    },
+    {
+      "label": "ko Wikisource 주중야음 raw",
+      "url": "https://ko.wikisource.org/wiki/주중야음?action=raw",
+      "result": "舟中夜吟 direct text 확인"
+    }
+  ]
+}

@@ -16,13 +16,13 @@
   "catalogId": "korean-poems-chronology",
   "targetDb": "poems",
   "summary": {
-    "directTextCollected": 1292,
+    "directTextCollected": 1316,
     "sourceLocated": 0,
     "ocrCandidate": 0,
     "blocked": 0,
-    "candidateOnly": 102,
-    "totalWorks": 1394,
-    "workerResultWorks": 1185,
+    "candidateOnly": 74,
+    "totalWorks": 1390,
+    "workerResultWorks": 1209,
     "donggyeongJapgiMatchedBlocks": 94,
     "donggyeongJapgiImportedWorks": 62,
     "donggyeongJapgiSourceVariants": 32
@@ -78213,6 +78213,1542 @@
       }
     },
     {
+      "poemId": "KPOEM-WORKER-AUTHOR-EC9D84EC-001",
+      "canonicalId": "KPOEM-CANON-WORKER-AUTHOR-EC9D84EC-001",
+      "title": {
+        "zh": "贈隋右翊衛大將軍于仲文",
+        "ko": "贈隋右翊衛大將軍于仲文"
+      },
+      "author": {
+        "authorId": "KAUTH-AUTHOR-EC9D84EC",
+        "zh": "乙支文德",
+        "ko": "을지문덕"
+      },
+      "era": {
+        "label": "고구려"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "東文選 卷十九",
+        "juan": "卷十九",
+        "entryTitle": "贈隋右翊衛大將軍于仲文",
+        "sourceUrl": "https://zh.wikisource.org/wiki/東文選/卷十九",
+        "rawUrl": "https://zh.wikisource.org/wiki/東文選/卷十九?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "神策究天文。妙筭窮地理。戰勝功旣高。知足願云止。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-20-dongmunseon-yaeun-residual-wave.v1.json",
+        "workerId": "worker-20-dongmunseon-yaeun-residual-wave",
+        "candidateTitle": "與隋將于仲文詩",
+        "matchedTitle": "贈隋右翊衛大將軍于仲文",
+        "notes": "zh Wikisource 東文選 卷十九 raw의 五言絶句 항목에서 제목·저자·본문을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-KIM-BUSIK-002",
+      "canonicalId": "KPOEM-CANON-WORKER-KIM-BUSIK-002",
+      "title": {
+        "zh": "結綺宮",
+        "ko": "結綺宮"
+      },
+      "author": {
+        "authorId": "KAUTH-KIM-BUSIK",
+        "zh": "金富軾",
+        "ko": "김부식"
+      },
+      "era": {
+        "label": "고려 중기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "東文選 卷四",
+        "juan": "卷四",
+        "entryTitle": "結綺宮",
+        "sourceUrl": "https://zh.wikisource.org/wiki/東文選/卷四",
+        "rawUrl": "https://zh.wikisource.org/wiki/東文選/卷四?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "堯階三尺卑。千載餘其德。秦城萬里長。二世失其國。古今靑史中。可以爲觀式。隋皇何不思。土木竭人力。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-20-dongmunseon-yaeun-residual-wave.v1.json",
+        "workerId": "worker-20-dongmunseon-yaeun-residual-wave",
+        "candidateTitle": "잔편 한시",
+        "matchedTitle": "結綺宮",
+        "notes": "zh Wikisource 東文選 卷四 raw에서 金富軾 heading과 본문을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-KIM-BUSIK-003",
+      "canonicalId": "KPOEM-CANON-WORKER-KIM-BUSIK-003",
+      "title": {
+        "zh": "大興寺聞子規",
+        "ko": "大興寺聞子規"
+      },
+      "author": {
+        "authorId": "KAUTH-KIM-BUSIK",
+        "zh": "金富軾",
+        "ko": "김부식"
+      },
+      "era": {
+        "label": "고려 중기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "東文選 卷十九",
+        "juan": "卷十九",
+        "entryTitle": "大興寺聞子規",
+        "sourceUrl": "https://zh.wikisource.org/wiki/東文選/卷十九",
+        "rawUrl": "https://zh.wikisource.org/wiki/東文選/卷十九?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "俗客夢已斷。子規啼尙咽。世無公冶長。誰知心所結。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-20-dongmunseon-yaeun-residual-wave.v1.json",
+        "workerId": "worker-20-dongmunseon-yaeun-residual-wave",
+        "candidateTitle": "사행시",
+        "matchedTitle": "大興寺聞子規",
+        "notes": "zh Wikisource 東文選 卷十九 raw에서 金富軾 heading과 본문을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-KIM-BUSIK-004",
+      "canonicalId": "KPOEM-CANON-WORKER-KIM-BUSIK-004",
+      "title": {
+        "zh": "內殿春帖子",
+        "ko": "內殿春帖子"
+      },
+      "author": {
+        "authorId": "KAUTH-KIM-BUSIK",
+        "zh": "金富軾",
+        "ko": "김부식"
+      },
+      "era": {
+        "label": "고려 중기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "東文選 卷十九",
+        "juan": "卷十九",
+        "entryTitle": "內殿春帖子",
+        "sourceUrl": "https://zh.wikisource.org/wiki/東文選/卷十九",
+        "rawUrl": "https://zh.wikisource.org/wiki/東文選/卷十九?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "雪垠猶在三雲陛。日脚初昇五鳳樓。寶曆授時周太史。玉巵稱壽漢諸侯。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-20-dongmunseon-yaeun-residual-wave.v1.json",
+        "workerId": "worker-20-dongmunseon-yaeun-residual-wave",
+        "candidateTitle": "송 관련 시",
+        "matchedTitle": "內殿春帖子",
+        "notes": "zh Wikisource 東文選 卷十九 raw에서 金富軾 heading과 본문을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-AUTHOR-ECA095EC-005",
+      "canonicalId": "KPOEM-CANON-WORKER-AUTHOR-ECA095EC-005",
+      "title": {
+        "zh": "題墨竹後",
+        "ko": "題墨竹後"
+      },
+      "author": {
+        "authorId": "KAUTH-AUTHOR-ECA095EC",
+        "zh": "鄭敍",
+        "ko": "정서"
+      },
+      "era": {
+        "label": "고려"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "東文選 卷十九",
+        "juan": "卷十九",
+        "entryTitle": "題墨竹後",
+        "sourceUrl": "https://zh.wikisource.org/wiki/東文選/卷十九",
+        "rawUrl": "https://zh.wikisource.org/wiki/東文選/卷十九?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "閑餘弄筆硯。寫作一竿竹。時於壁上看。幽姿故不俗。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-20-dongmunseon-yaeun-residual-wave.v1.json",
+        "workerId": "worker-20-dongmunseon-yaeun-residual-wave",
+        "candidateTitle": "한문 한시 후보 확인",
+        "matchedTitle": "題墨竹後",
+        "notes": "鄭瓜亭曲은 별도 고유시가로 남기고, 한문 한시 후보만 東文選 raw 확인본으로 처리한다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-YI-INRO-006",
+      "canonicalId": "KPOEM-CANON-WORKER-YI-INRO-006",
+      "title": {
+        "zh": "山居",
+        "ko": "山居"
+      },
+      "author": {
+        "authorId": "KAUTH-YI-INRO",
+        "zh": "李仁老",
+        "ko": "이인로"
+      },
+      "era": {
+        "label": "고려 중기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "東文選 卷十九",
+        "juan": "卷十九",
+        "entryTitle": "山居",
+        "sourceUrl": "https://zh.wikisource.org/wiki/東文選/卷十九",
+        "rawUrl": "https://zh.wikisource.org/wiki/東文選/卷十九?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "春去花猶在。天晴谷自陰。杜鵑啼白晝。始覺卜居深。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-20-dongmunseon-yaeun-residual-wave.v1.json",
+        "workerId": "worker-20-dongmunseon-yaeun-residual-wave",
+        "candidateTitle": "산수시",
+        "matchedTitle": "山居",
+        "notes": "zh Wikisource 東文選 卷十九 raw에서 李仁老 heading과 본문을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-YI-INRO-007",
+      "canonicalId": "KPOEM-CANON-WORKER-YI-INRO-007",
+      "title": {
+        "zh": "竹醉日移竹",
+        "ko": "竹醉日移竹"
+      },
+      "author": {
+        "authorId": "KAUTH-YI-INRO",
+        "zh": "李仁老",
+        "ko": "이인로"
+      },
+      "era": {
+        "label": "고려 중기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "東文選 卷四",
+        "juan": "卷四",
+        "entryTitle": "竹醉日移竹",
+        "sourceUrl": "https://zh.wikisource.org/wiki/東文選/卷四",
+        "rawUrl": "https://zh.wikisource.org/wiki/東文選/卷四?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "古今一丘貉。天地眞籧廬。此君獨酩酊。兀兀忘所如。江山雖有異。風景本無殊。不用更醒悟。操戈便逐儒。\n司馬甞客遊。夫子亦旅寓。新亭相對泣。數子眞兒女。此君恥匏繫。所適天不阻。何必登樓吟。信美非吾土。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-20-dongmunseon-yaeun-residual-wave.v1.json",
+        "workerId": "worker-20-dongmunseon-yaeun-residual-wave",
+        "candidateTitle": "죽림고회 관련 시",
+        "matchedTitle": "竹醉日移竹",
+        "notes": "zh Wikisource 東文選 卷四 raw에서 李仁老 heading과 본문을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-AUTHOR-EC9E84EC-008",
+      "canonicalId": "KPOEM-CANON-WORKER-AUTHOR-EC9E84EC-008",
+      "title": {
+        "zh": "留別金璿",
+        "ko": "留別金璿"
+      },
+      "author": {
+        "authorId": "KAUTH-AUTHOR-EC9E84EC",
+        "zh": "林椿",
+        "ko": "임춘"
+      },
+      "era": {
+        "label": "고려 중기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "東文選 卷四",
+        "juan": "卷四",
+        "entryTitle": "留別金璿",
+        "sourceUrl": "https://zh.wikisource.org/wiki/東文選/卷四",
+        "rawUrl": "https://zh.wikisource.org/wiki/東文選/卷四?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "苟同近循身。苟異近循名。兩者未免累。不如俱忘情。我性非好高。矯矯豈其誠。只爲謀口腹。及辰欲歸耕。鄕人來勸我。香稻富烏程。閑乘一葉去。海上寄餘生。軒軒金子美。肝膽何崢嶸。與我年雖少。聞道卽己兄。臨別但相語。子去吾亦行。滄浪知幾里。朝發暮江城。愼勿負玆期。雞黍吾當烹。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-20-dongmunseon-yaeun-residual-wave.v1.json",
+        "workerId": "worker-20-dongmunseon-yaeun-residual-wave",
+        "candidateTitle": "한시 후보 확인",
+        "matchedTitle": "留別金璿",
+        "notes": "孔方傳은 산문으로 유지하고, 한시 후보만 東文選 raw 확인본으로 처리한다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-AUTHOR-EC9E84EC-009",
+      "canonicalId": "KPOEM-CANON-WORKER-AUTHOR-EC9E84EC-009",
+      "title": {
+        "zh": "茶店晝睡",
+        "ko": "茶店晝睡"
+      },
+      "author": {
+        "authorId": "KAUTH-AUTHOR-EC9E84EC",
+        "zh": "林椿",
+        "ko": "임춘"
+      },
+      "era": {
+        "label": "고려 중기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "東文選 卷十九",
+        "juan": "卷十九",
+        "entryTitle": "茶店晝睡",
+        "sourceUrl": "https://zh.wikisource.org/wiki/東文選/卷十九",
+        "rawUrl": "https://zh.wikisource.org/wiki/東文選/卷十九?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "頹然卧榻便忘形。午枕風來睡自醒。夢裏此身無處着。乾坤都是一長亭。\n虛樓夢罷正高舂。兩眼空濛看遠峯。誰識幽人閑氣味。一軒春睡敵千鍾。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-20-dongmunseon-yaeun-residual-wave.v1.json",
+        "workerId": "worker-20-dongmunseon-yaeun-residual-wave",
+        "candidateTitle": "한시 후보 확인",
+        "matchedTitle": "茶店晝睡",
+        "notes": "zh Wikisource 東文選 卷十九 raw에서 林椿 heading과 본문을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-KIM-GEUKGI-010",
+      "canonicalId": "KPOEM-CANON-WORKER-KIM-GEUKGI-010",
+      "title": {
+        "zh": "宿香村",
+        "ko": "宿香村"
+      },
+      "author": {
+        "authorId": "KAUTH-KIM-GEUKGI",
+        "zh": "金克己",
+        "ko": "김극기"
+      },
+      "era": {
+        "label": "고려 중기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "東文選 卷四",
+        "juan": "卷四",
+        "entryTitle": "宿香村",
+        "sourceUrl": "https://zh.wikisource.org/wiki/東文選/卷四",
+        "rawUrl": "https://zh.wikisource.org/wiki/東文選/卷四?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "雲行四五里。漸下蒼山根。烏鳶忽驚起。始見桑柘村。村婦理蓬鬢。出開林下門。靑苔滿古巷。綠稻侵頹垣。茅簷坐未久。落日低瓊盆。伐薪忽照夜。魚蠏腥盤飡。耕夫各入室。四壁農談諠。磎作魚貫。咿喔紛鳥言。我時耿不寐。欹枕臨西軒。露冷螢火濕。寒蛩噪空園。悲吟卧待曙。碧海含朝暾.",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-20-dongmunseon-yaeun-residual-wave.v1.json",
+        "workerId": "worker-20-dongmunseon-yaeun-residual-wave",
+        "candidateTitle": "선집 수록 다수",
+        "matchedTitle": "宿香村",
+        "notes": "zh Wikisource 東文選 卷四 raw에서 金克己 heading과 본문을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-KIM-GEUKGI-011",
+      "canonicalId": "KPOEM-CANON-WORKER-KIM-GEUKGI-011",
+      "title": {
+        "zh": "李花 此咏秋日李花",
+        "ko": "李花 此咏秋日李花"
+      },
+      "author": {
+        "authorId": "KAUTH-KIM-GEUKGI",
+        "zh": "金克己",
+        "ko": "김극기"
+      },
+      "era": {
+        "label": "고려 중기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "東文選 卷十九",
+        "juan": "卷十九",
+        "entryTitle": "李花 此咏秋日李花",
+        "sourceUrl": "https://zh.wikisource.org/wiki/東文選/卷十九",
+        "rawUrl": "https://zh.wikisource.org/wiki/東文選/卷十九?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "淒風冷雨濕枯根。一樹狂花獨放春。無奈異香來聚窟。漢宮重見李夫人。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-20-dongmunseon-yaeun-residual-wave.v1.json",
+        "workerId": "worker-20-dongmunseon-yaeun-residual-wave",
+        "candidateTitle": "산수·영물시",
+        "matchedTitle": "李花 此咏秋日李花",
+        "notes": "zh Wikisource 東文選 卷十九 raw에서 金克己 heading과 본문을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-AUTHOR-EAB8B8EC-012",
+      "canonicalId": "KPOEM-CANON-WORKER-AUTHOR-EAB8B8EC-012",
+      "title": {
+        "zh": "述志",
+        "ko": "述志"
+      },
+      "author": {
+        "authorId": "KAUTH-AUTHOR-EAB8B8EC",
+        "zh": "吉再",
+        "ko": "길재"
+      },
+      "era": {
+        "label": "고려 말~조선 초"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "冶隱先生言行拾遺 卷上",
+        "juan": "卷上",
+        "entryTitle": "述志",
+        "sourceUrl": "https://zh.wikisource.org/wiki/冶隱先生言行拾遺/卷上",
+        "rawUrl": "https://zh.wikisource.org/wiki/冶隱先生言行拾遺/卷上?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "臨溪茅屋獨閑居。月白風淸興有餘。外客不來山鳥語。移床竹塢臥看書。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-20-dongmunseon-yaeun-residual-wave.v1.json",
+        "workerId": "worker-20-dongmunseon-yaeun-residual-wave",
+        "candidateTitle": "절의시",
+        "matchedTitle": "述志",
+        "notes": "zh Wikisource 冶隱先生言行拾遺 卷上의 先生遺詩 아래에서 길재 본인 시로 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-AUTHOR-EAB8B8EC-013",
+      "canonicalId": "KPOEM-CANON-WORKER-AUTHOR-EAB8B8EC-013",
+      "title": {
+        "zh": "泮宮偶吟",
+        "ko": "泮宮偶吟"
+      },
+      "author": {
+        "authorId": "KAUTH-AUTHOR-EAB8B8EC",
+        "zh": "吉再",
+        "ko": "길재"
+      },
+      "era": {
+        "label": "고려 말~조선 초"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "冶隱先生言行拾遺 卷上",
+        "juan": "卷上",
+        "entryTitle": "泮宮偶吟",
+        "sourceUrl": "https://zh.wikisource.org/wiki/冶隱先生言行拾遺/卷上",
+        "rawUrl": "https://zh.wikisource.org/wiki/冶隱先生言行拾遺/卷上?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "龍首正東傾短墻。水芹田畔有垂楊。身雖從衆無奇特。志則夷齊餓首陽。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-20-dongmunseon-yaeun-residual-wave.v1.json",
+        "workerId": "worker-20-dongmunseon-yaeun-residual-wave",
+        "candidateTitle": "절의시",
+        "matchedTitle": "泮宮偶吟",
+        "notes": "zh Wikisource 冶隱先生言行拾遺 卷上의 先生遺詩 아래에서 길재 본인 시로 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-AUTHOR-EAB8B8EC-014",
+      "canonicalId": "KPOEM-CANON-WORKER-AUTHOR-EAB8B8EC-014",
+      "title": {
+        "zh": "足夢中聯句",
+        "ko": "足夢中聯句"
+      },
+      "author": {
+        "authorId": "KAUTH-AUTHOR-EAB8B8EC",
+        "zh": "吉再",
+        "ko": "길재"
+      },
+      "era": {
+        "label": "고려 말~조선 초"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "冶隱先生言行拾遺 卷上",
+        "juan": "卷上",
+        "entryTitle": "足夢中聯句",
+        "sourceUrl": "https://zh.wikisource.org/wiki/冶隱先生言行拾遺/卷上",
+        "rawUrl": "https://zh.wikisource.org/wiki/冶隱先生言行拾遺/卷上?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "古今僚友身新變。天地江山是故人。太極眞君應許我。仁心不老自靑春。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-20-dongmunseon-yaeun-residual-wave.v1.json",
+        "workerId": "worker-20-dongmunseon-yaeun-residual-wave",
+        "candidateTitle": "회고시",
+        "matchedTitle": "足夢中聯句",
+        "notes": "zh Wikisource 冶隱先生言行拾遺 卷上의 先生遺詩 아래에서 길재 본인 시로 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-AUTHOR-EAB8B8EC-015",
+      "canonicalId": "KPOEM-CANON-WORKER-AUTHOR-EAB8B8EC-015",
+      "title": {
+        "zh": "閑居",
+        "ko": "閑居"
+      },
+      "author": {
+        "authorId": "KAUTH-AUTHOR-EAB8B8EC",
+        "zh": "吉再",
+        "ko": "길재"
+      },
+      "era": {
+        "label": "고려 말~조선 초"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "冶隱先生言行拾遺 卷上",
+        "juan": "卷上",
+        "entryTitle": "閑居",
+        "sourceUrl": "https://zh.wikisource.org/wiki/冶隱先生言行拾遺/卷上",
+        "rawUrl": "https://zh.wikisource.org/wiki/冶隱先生言行拾遺/卷上?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "盥手淸泉冷。臨身茂樹高。冠童來問字。聊可與逍遙。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-20-dongmunseon-yaeun-residual-wave.v1.json",
+        "workerId": "worker-20-dongmunseon-yaeun-residual-wave",
+        "candidateTitle": "회고시",
+        "matchedTitle": "閑居",
+        "notes": "zh Wikisource 冶隱先生言行拾遺 卷上의 先生遺詩 아래에서 길재 본인 시로 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-AUTHOR-EAB8B8EC-016",
+      "canonicalId": "KPOEM-CANON-WORKER-AUTHOR-EAB8B8EC-016",
+      "title": {
+        "zh": "偶吟",
+        "ko": "偶吟"
+      },
+      "author": {
+        "authorId": "KAUTH-AUTHOR-EAB8B8EC",
+        "zh": "吉再",
+        "ko": "길재"
+      },
+      "era": {
+        "label": "고려 말~조선 초"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "冶隱先生言行拾遺 卷上",
+        "juan": "卷上",
+        "entryTitle": "偶吟",
+        "sourceUrl": "https://zh.wikisource.org/wiki/冶隱先生言行拾遺/卷上",
+        "rawUrl": "https://zh.wikisource.org/wiki/冶隱先生言行拾遺/卷上?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "竹色春秋堅節義。溪流日夜洗貪婪。心源瑩靜無塵態。從此方知道味甘。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-20-dongmunseon-yaeun-residual-wave.v1.json",
+        "workerId": "worker-20-dongmunseon-yaeun-residual-wave",
+        "candidateTitle": "절의시",
+        "matchedTitle": "偶吟",
+        "notes": "zh Wikisource 冶隱先生言行拾遺 卷上의 先生遺詩 아래에서 길재 본인 시로 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-AUTHOR-EAB8B8EC-017",
+      "canonicalId": "KPOEM-CANON-WORKER-AUTHOR-EAB8B8EC-017",
+      "title": {
+        "zh": "偶吟 又",
+        "ko": "偶吟 又"
+      },
+      "author": {
+        "authorId": "KAUTH-AUTHOR-EAB8B8EC",
+        "zh": "吉再",
+        "ko": "길재"
+      },
+      "era": {
+        "label": "고려 말~조선 초"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "冶隱先生言行拾遺 卷上",
+        "juan": "卷上",
+        "entryTitle": "偶吟 又",
+        "sourceUrl": "https://zh.wikisource.org/wiki/冶隱先生言行拾遺/卷上",
+        "rawUrl": "https://zh.wikisource.org/wiki/冶隱先生言行拾遺/卷上?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "五更殘月窓前白。十里松風枕上淸。富貴多勞貧賤苦。隱居滋味與誰評。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-20-dongmunseon-yaeun-residual-wave.v1.json",
+        "workerId": "worker-20-dongmunseon-yaeun-residual-wave",
+        "candidateTitle": "회고시",
+        "matchedTitle": "偶吟 又",
+        "notes": "zh Wikisource 冶隱先生言行拾遺 卷上의 先生遺詩 아래에서 길재 본인 시로 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-AUTHOR-EAB8B8EC-018",
+      "canonicalId": "KPOEM-CANON-WORKER-AUTHOR-EAB8B8EC-018",
+      "title": {
+        "zh": "無題",
+        "ko": "無題"
+      },
+      "author": {
+        "authorId": "KAUTH-AUTHOR-EAB8B8EC",
+        "zh": "吉再",
+        "ko": "길재"
+      },
+      "era": {
+        "label": "고려 말~조선 초"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "冶隱先生言行拾遺 卷上",
+        "juan": "卷上",
+        "entryTitle": "無題",
+        "sourceUrl": "https://zh.wikisource.org/wiki/冶隱先生言行拾遺/卷上",
+        "rawUrl": "https://zh.wikisource.org/wiki/冶隱先生言行拾遺/卷上?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "曾讀前書笑古今。愧隨流俗共浮沉。終期直道扶元氣。肯爲虛名役片心。默坐野禽啼晝景。閉門官柳長春陰。人間事了須先退。不待霜毛漸滿簪。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-20-dongmunseon-yaeun-residual-wave.v1.json",
+        "workerId": "worker-20-dongmunseon-yaeun-residual-wave",
+        "candidateTitle": "절의시",
+        "matchedTitle": "無題",
+        "notes": "zh Wikisource 冶隱先生言行拾遺 卷上의 先生遺詩 아래에서 길재 본인 시로 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-AUTHOR-EAB8B8EC-019",
+      "canonicalId": "KPOEM-CANON-WORKER-AUTHOR-EAB8B8EC-019",
+      "title": {
+        "zh": "謝監司南龜庵送酒",
+        "ko": "謝監司南龜庵送酒"
+      },
+      "author": {
+        "authorId": "KAUTH-AUTHOR-EAB8B8EC",
+        "zh": "吉再",
+        "ko": "길재"
+      },
+      "era": {
+        "label": "고려 말~조선 초"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "冶隱先生言行拾遺 卷上",
+        "juan": "卷上",
+        "entryTitle": "謝監司南龜庵送酒",
+        "sourceUrl": "https://zh.wikisource.org/wiki/冶隱先生言行拾遺/卷上",
+        "rawUrl": "https://zh.wikisource.org/wiki/冶隱先生言行拾遺/卷上?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "五湖仙藥到柴荊。顚倒開緘手自傾。病骨勝酣回壯骨。衰情得醉返風情。家貧野蔬盛三豆。市遠村醪奠一甁。欲謝却嫌無謝地。但將蠅手祝遐齡。",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-20-dongmunseon-yaeun-residual-wave.v1.json",
+        "workerId": "worker-20-dongmunseon-yaeun-residual-wave",
+        "candidateTitle": "회고시",
+        "matchedTitle": "謝監司南龜庵送酒",
+        "notes": "zh Wikisource 冶隱先生言行拾遺 卷上의 先生遺詩 아래에서 길재 본인 시로 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-YURI-WANG-001",
+      "canonicalId": "KPOEM-CANON-WORKER-YURI-WANG-001",
+      "title": {
+        "zh": "黃鳥歌",
+        "ko": "黃鳥歌"
+      },
+      "author": {
+        "authorId": "KAUTH-YURI-WANG",
+        "zh": "琉璃王",
+        "ko": "유리왕"
+      },
+      "era": {
+        "label": "고구려"
+      },
+      "genre": {
+        "broad": "고유시가",
+        "form": "고대/왕실 시가",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "ko Wikisource 黃鳥歌",
+        "juan": null,
+        "entryTitle": "黃鳥歌",
+        "sourceUrl": "https://ko.wikisource.org/wiki/황조가",
+        "rawUrl": "https://ko.wikisource.org/wiki/황조가?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "翩翩黃鳥\n雌雄相依\n念我之獨\n誰其與歸",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-21-native-forms-wikisource-residual-wave.v1.json",
+        "workerId": "worker-21-native-forms-wikisource-residual-wave",
+        "candidateTitle": "黃鳥歌",
+        "matchedTitle": "黃鳥歌",
+        "notes": "ko Wikisource `황조가?action=raw`의 poem 원문 한자 4구를 직접 확인했다. 번역문은 수집하지 않았다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-SEODONG-002",
+      "canonicalId": "KPOEM-CANON-WORKER-SEODONG-002",
+      "title": {
+        "zh": "薯童謠",
+        "ko": "薯童謠"
+      },
+      "author": {
+        "authorId": "KAUTH-SEODONG",
+        "zh": "薯童",
+        "ko": "서동"
+      },
+      "era": {
+        "label": "백제"
+      },
+      "genre": {
+        "broad": "고유시가",
+        "form": "고대/왕실 시가",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "ko Wikisource 薯童謠",
+        "juan": null,
+        "entryTitle": "薯童謠",
+        "sourceUrl": "https://ko.wikisource.org/wiki/서동요",
+        "rawUrl": "https://ko.wikisource.org/wiki/서동요?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "善化公主主隱\n他密只嫁良置古\n薯童房乙\n夜矣夘乙抱遣去如",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-21-native-forms-wikisource-residual-wave.v1.json",
+        "workerId": "worker-21-native-forms-wikisource-residual-wave",
+        "candidateTitle": "薯童謠",
+        "matchedTitle": "薯童謠",
+        "notes": "ko Wikisource `서동요?action=raw`의 poem 원문 4행을 직접 확인했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-AUTHOR-ECA095EC-003",
+      "canonicalId": "KPOEM-CANON-WORKER-AUTHOR-ECA095EC-003",
+      "title": {
+        "zh": "鄭瓜亭",
+        "ko": "鄭瓜亭"
+      },
+      "author": {
+        "authorId": "KAUTH-AUTHOR-ECA095EC",
+        "zh": "鄭敍",
+        "ko": "정서"
+      },
+      "era": {
+        "label": "고려"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "ko Wikisource 鄭瓜亭",
+        "juan": null,
+        "entryTitle": "鄭瓜亭",
+        "sourceUrl": "https://ko.wikisource.org/wiki/정과정",
+        "rawUrl": "https://ko.wikisource.org/wiki/정과정?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "前腔 내 님믈 그리ᅀᆞ와 우니다니\n中腔 山 졉동새 난 이슷ᄒᆞ요이다\n後腔 아니시며 거츠르신 ᄃᆞᆯ 아으\n附葉 殘月曉星이 아ᄅᆞ시리이다\n大葉 넉시라도 님은 ᄒᆞᆫᄃᆡ 녀져라 아으\n附葉 벼기더시니 뉘러시니잇가\n二葉 過도 허믈도 千萬 업소이다\n三葉 ᄆᆞᆯ힛마리신뎌\n四葉 ᄉᆞᆯ읏븐뎌 아으\n附葉 니미 나ᄅᆞᆯ 하마 니ᄌᆞ시니잇가\n五葉 아소 님하 도람 드르샤 괴오쇼셔",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-21-native-forms-wikisource-residual-wave.v1.json",
+        "workerId": "worker-21-native-forms-wikisource-residual-wave",
+        "candidateTitle": "鄭瓜亭曲",
+        "matchedTitle": "鄭瓜亭",
+        "notes": "ko Wikisource `정과정?action=raw`의 옛한글 원문을 직접 확인했다. 주석과 현대어 해석은 제외했다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-JEONG-MONGJU-004",
+      "canonicalId": "KPOEM-CANON-WORKER-JEONG-MONGJU-004",
+      "title": {
+        "zh": "丹心歌",
+        "ko": "丹心歌"
+      },
+      "author": {
+        "authorId": "KAUTH-JEONG-MONGJU",
+        "zh": "鄭夢周",
+        "ko": "정몽주"
+      },
+      "era": {
+        "label": "고려 말"
+      },
+      "genre": {
+        "broad": "고유시가",
+        "form": "시조",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "ko Wikisource 丹心歌",
+        "juan": null,
+        "entryTitle": "丹心歌",
+        "sourceUrl": "https://ko.wikisource.org/wiki/단심가",
+        "rawUrl": "https://ko.wikisource.org/wiki/단심가?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "此身死了死了 一百番更死了\n白骨爲塵土 魂魄有也無\n向主一片丹心 寧有改理也歟",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-21-native-forms-wikisource-residual-wave.v1.json",
+        "workerId": "worker-21-native-forms-wikisource-residual-wave",
+        "candidateTitle": "丹心歌는 맥락",
+        "matchedTitle": "丹心歌",
+        "notes": "ko Wikisource `단심가?action=raw`의 한역 poem 원문을 직접 확인했다. 이미지 transclusion 영역은 건드리지 않았다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
+      "poemId": "KPOEM-WORKER-BAK-INRYANG-005",
+      "canonicalId": "KPOEM-CANON-WORKER-BAK-INRYANG-005",
+      "title": {
+        "zh": "舟中夜吟",
+        "ko": "舟中夜吟"
+      },
+      "author": {
+        "authorId": "KAUTH-BAK-INRYANG",
+        "zh": "朴寅亮",
+        "ko": "박인량"
+      },
+      "era": {
+        "label": "고려 전기"
+      },
+      "genre": {
+        "broad": "한시",
+        "form": "미확정",
+        "track": "hansi-direct-text"
+      },
+      "sourceWork": {
+        "collectionTitle": "ko Wikisource 舟中夜吟",
+        "juan": null,
+        "entryTitle": "舟中夜吟",
+        "sourceUrl": "https://ko.wikisource.org/wiki/주중야음",
+        "rawUrl": "https://ko.wikisource.org/wiki/주중야음?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "verificationStatus": "verified-direct-text"
+      },
+      "text": {
+        "poemZh": "故國三韓遠\n秋風客意多\n孤舟一夜夢\n月落洞庭波",
+        "poemKoReading": null,
+        "poemKoGloss": null,
+        "textParts": null
+      },
+      "assets": {
+        "translationKo": null,
+        "commentaryKo": null,
+        "ownedTranslationNeeded": true
+      },
+      "rights": {
+        "originalText": {
+          "status": "commercial_allowed",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true
+        },
+        "translation": {
+          "status": "owned-translation-needed",
+          "publicDisplayAllowedNow": false,
+          "commercialAllowedNow": false
+        }
+      },
+      "ingest": {
+        "readiness": "direct-text-collected",
+        "targetDb": "poems",
+        "sourceFile": "docs/spec/korean-poet-worker-results/worker-21-native-forms-wikisource-residual-wave.v1.json",
+        "workerId": "worker-21-native-forms-wikisource-residual-wave",
+        "candidateTitle": "舟中夜吟",
+        "matchedTitle": "舟中夜吟",
+        "notes": "ko Wikisource `주중야음` 검색 결과와 raw 본문에서 한문 원문을 확인했다. 번역문은 수집하지 않았다.",
+        "ownedTranslationNeeded": true
+      }
+    },
+    {
       "poemId": "KPOEM-WORKER-YI-JEHYEON-001",
       "canonicalId": "KPOEM-CANON-WORKER-YI-JEHYEON-001",
       "title": {
@@ -90669,168 +92205,6 @@
       ]
     },
     {
-      "poemId": "KPOEM-CAND-YURI-WANG-001",
-      "canonicalId": "KPOEM-CANON-YURI-WANG-001",
-      "title": {
-        "zh": "黃鳥歌",
-        "ko": "黃鳥歌"
-      },
-      "author": {
-        "authorId": "KAUTH-YURI-WANG",
-        "zh": "琉璃王",
-        "ko": "유리왕"
-      },
-      "era": {
-        "label": "고구려"
-      },
-      "genre": {
-        "broad": "고유시가",
-        "form": "고대/왕실 시가",
-        "track": "native-form"
-      },
-      "sourceWork": {
-        "collectionTitle": "三國史記",
-        "sourceUrl": null,
-        "sourcePolicyId": null,
-        "verificationStatus": "needs-source-url"
-      },
-      "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
-      },
-      "assets": {
-        "translationKo": null,
-        "commentaryKo": null,
-        "ownedTranslationNeeded": true
-      },
-      "rights": {
-        "originalText": {
-          "status": "candidate",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        },
-        "translation": {
-          "status": "owned-translation-needed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        }
-      },
-      "ingest": {
-        "readiness": "candidate-only",
-        "targetDb": "poems",
-        "sourceFile": "docs/research/2026-04-25-korean-poet-chronology-seed-catalog.md"
-      }
-    },
-    {
-      "poemId": "KPOEM-CAND-AUTHOR-EC9D84EC-001",
-      "canonicalId": "KPOEM-CANON-AUTHOR-EC9D84EC-001",
-      "title": {
-        "zh": "與隋將于仲文詩",
-        "ko": "與隋將于仲文詩"
-      },
-      "author": {
-        "authorId": "KAUTH-AUTHOR-EC9D84EC",
-        "zh": "乙支文德",
-        "ko": "을지문덕"
-      },
-      "era": {
-        "label": "고구려"
-      },
-      "genre": {
-        "broad": "한시",
-        "form": "미확정",
-        "track": "hansi-candidate"
-      },
-      "sourceWork": {
-        "collectionTitle": "三國史記",
-        "sourceUrl": null,
-        "sourcePolicyId": null,
-        "verificationStatus": "needs-source-url"
-      },
-      "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
-      },
-      "assets": {
-        "translationKo": null,
-        "commentaryKo": null,
-        "ownedTranslationNeeded": true
-      },
-      "rights": {
-        "originalText": {
-          "status": "candidate",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        },
-        "translation": {
-          "status": "owned-translation-needed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        }
-      },
-      "ingest": {
-        "readiness": "candidate-only",
-        "targetDb": "poems",
-        "sourceFile": "docs/research/2026-04-25-korean-poet-chronology-seed-catalog.md"
-      }
-    },
-    {
-      "poemId": "KPOEM-CAND-SEODONG-001",
-      "canonicalId": "KPOEM-CANON-SEODONG-001",
-      "title": {
-        "zh": "薯童謠",
-        "ko": "薯童謠"
-      },
-      "author": {
-        "authorId": "KAUTH-SEODONG",
-        "zh": "薯童",
-        "ko": "서동"
-      },
-      "era": {
-        "label": "백제"
-      },
-      "genre": {
-        "broad": "고유시가",
-        "form": "고대/왕실 시가",
-        "track": "native-form"
-      },
-      "sourceWork": {
-        "collectionTitle": "三國遺事",
-        "sourceUrl": null,
-        "sourcePolicyId": null,
-        "verificationStatus": "needs-source-url"
-      },
-      "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
-      },
-      "assets": {
-        "translationKo": null,
-        "commentaryKo": null,
-        "ownedTranslationNeeded": true
-      },
-      "rights": {
-        "originalText": {
-          "status": "candidate",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        },
-        "translation": {
-          "status": "owned-translation-needed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        }
-      },
-      "ingest": {
-        "readiness": "candidate-only",
-        "targetDb": "poems",
-        "sourceFile": "docs/research/2026-04-25-korean-poet-chronology-seed-catalog.md"
-      }
-    },
-    {
       "poemId": "KPOEM-CAND-AUTHOR-EC84A4EC-001",
       "canonicalId": "KPOEM-CANON-AUTHOR-EC84A4EC-001",
       "title": {
@@ -91155,60 +92529,6 @@
       }
     },
     {
-      "poemId": "KPOEM-CAND-BAK-INRYANG-001",
-      "canonicalId": "KPOEM-CANON-BAK-INRYANG-001",
-      "title": {
-        "zh": "舟中夜吟",
-        "ko": "舟中夜吟"
-      },
-      "author": {
-        "authorId": "KAUTH-BAK-INRYANG",
-        "zh": "朴寅亮",
-        "ko": "박인량"
-      },
-      "era": {
-        "label": "고려 전기"
-      },
-      "genre": {
-        "broad": "한시",
-        "form": "미확정",
-        "track": "hansi-candidate"
-      },
-      "sourceWork": {
-        "collectionTitle": "위키문헌, 선집류",
-        "sourceUrl": null,
-        "sourcePolicyId": null,
-        "verificationStatus": "needs-source-url"
-      },
-      "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
-      },
-      "assets": {
-        "translationKo": null,
-        "commentaryKo": null,
-        "ownedTranslationNeeded": true
-      },
-      "rights": {
-        "originalText": {
-          "status": "candidate",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        },
-        "translation": {
-          "status": "owned-translation-needed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        }
-      },
-      "ingest": {
-        "readiness": "candidate-only",
-        "targetDb": "poems",
-        "sourceFile": "docs/research/2026-04-25-korean-poet-chronology-seed-catalog.md"
-      }
-    },
-    {
       "poemId": "KPOEM-CAND-AUTHOR-EC9888EC-001",
       "canonicalId": "KPOEM-CANON-AUTHOR-EC9888EC-001",
       "title": {
@@ -91230,276 +92550,6 @@
       },
       "sourceWork": {
         "collectionTitle": "왕실 시문, 사서",
-        "sourceUrl": null,
-        "sourcePolicyId": null,
-        "verificationStatus": "needs-source-url"
-      },
-      "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
-      },
-      "assets": {
-        "translationKo": null,
-        "commentaryKo": null,
-        "ownedTranslationNeeded": true
-      },
-      "rights": {
-        "originalText": {
-          "status": "candidate",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        },
-        "translation": {
-          "status": "owned-translation-needed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        }
-      },
-      "ingest": {
-        "readiness": "candidate-only",
-        "targetDb": "poems",
-        "sourceFile": "docs/research/2026-04-25-korean-poet-chronology-seed-catalog.md"
-      }
-    },
-    {
-      "poemId": "KPOEM-CAND-AUTHOR-ECA095EC-001",
-      "canonicalId": "KPOEM-CANON-AUTHOR-ECA095EC-001",
-      "title": {
-        "zh": "鄭瓜亭曲",
-        "ko": "鄭瓜亭曲"
-      },
-      "author": {
-        "authorId": "KAUTH-AUTHOR-ECA095EC",
-        "zh": "鄭敍",
-        "ko": "정서"
-      },
-      "era": {
-        "label": "고려"
-      },
-      "genre": {
-        "broad": "고유시가",
-        "form": "고려가요",
-        "track": "native-form"
-      },
-      "sourceWork": {
-        "collectionTitle": "鄭瓜亭曲 전승",
-        "sourceUrl": null,
-        "sourcePolicyId": null,
-        "verificationStatus": "needs-source-url"
-      },
-      "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
-      },
-      "assets": {
-        "translationKo": null,
-        "commentaryKo": null,
-        "ownedTranslationNeeded": true
-      },
-      "rights": {
-        "originalText": {
-          "status": "candidate",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        },
-        "translation": {
-          "status": "owned-translation-needed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        }
-      },
-      "ingest": {
-        "readiness": "candidate-only",
-        "targetDb": "poems",
-        "sourceFile": "docs/research/2026-04-25-korean-poet-chronology-seed-catalog.md"
-      }
-    },
-    {
-      "poemId": "KPOEM-CAND-AUTHOR-ECA095EC-002",
-      "canonicalId": "KPOEM-CANON-AUTHOR-ECA095EC-002",
-      "title": {
-        "zh": null,
-        "ko": "한문 한시 후보 확인"
-      },
-      "author": {
-        "authorId": "KAUTH-AUTHOR-ECA095EC",
-        "zh": "鄭敍",
-        "ko": "정서"
-      },
-      "era": {
-        "label": "고려"
-      },
-      "genre": {
-        "broad": "고유시가",
-        "form": "고려가요",
-        "track": "native-form"
-      },
-      "sourceWork": {
-        "collectionTitle": "鄭瓜亭曲 전승",
-        "sourceUrl": null,
-        "sourcePolicyId": null,
-        "verificationStatus": "needs-source-url"
-      },
-      "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
-      },
-      "assets": {
-        "translationKo": null,
-        "commentaryKo": null,
-        "ownedTranslationNeeded": true
-      },
-      "rights": {
-        "originalText": {
-          "status": "candidate",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        },
-        "translation": {
-          "status": "owned-translation-needed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        }
-      },
-      "ingest": {
-        "readiness": "candidate-only",
-        "targetDb": "poems",
-        "sourceFile": "docs/research/2026-04-25-korean-poet-chronology-seed-catalog.md"
-      }
-    },
-    {
-      "poemId": "KPOEM-CAND-KIM-BUSIK-001",
-      "canonicalId": "KPOEM-CANON-KIM-BUSIK-001",
-      "title": {
-        "zh": null,
-        "ko": "사행시"
-      },
-      "author": {
-        "authorId": "KAUTH-KIM-BUSIK",
-        "zh": "金富軾",
-        "ko": "김부식"
-      },
-      "era": {
-        "label": "고려 중기"
-      },
-      "genre": {
-        "broad": "한시",
-        "form": "미확정",
-        "track": "hansi-candidate"
-      },
-      "sourceWork": {
-        "collectionTitle": "三國史記, 문집 잔편, 東文選",
-        "sourceUrl": null,
-        "sourcePolicyId": null,
-        "verificationStatus": "needs-source-url"
-      },
-      "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
-      },
-      "assets": {
-        "translationKo": null,
-        "commentaryKo": null,
-        "ownedTranslationNeeded": true
-      },
-      "rights": {
-        "originalText": {
-          "status": "candidate",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        },
-        "translation": {
-          "status": "owned-translation-needed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        }
-      },
-      "ingest": {
-        "readiness": "candidate-only",
-        "targetDb": "poems",
-        "sourceFile": "docs/research/2026-04-25-korean-poet-chronology-seed-catalog.md"
-      }
-    },
-    {
-      "poemId": "KPOEM-CAND-KIM-BUSIK-002",
-      "canonicalId": "KPOEM-CANON-KIM-BUSIK-002",
-      "title": {
-        "zh": null,
-        "ko": "송 관련 시"
-      },
-      "author": {
-        "authorId": "KAUTH-KIM-BUSIK",
-        "zh": "金富軾",
-        "ko": "김부식"
-      },
-      "era": {
-        "label": "고려 중기"
-      },
-      "genre": {
-        "broad": "한시",
-        "form": "미확정",
-        "track": "hansi-candidate"
-      },
-      "sourceWork": {
-        "collectionTitle": "三國史記, 문집 잔편, 東文選",
-        "sourceUrl": null,
-        "sourcePolicyId": null,
-        "verificationStatus": "needs-source-url"
-      },
-      "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
-      },
-      "assets": {
-        "translationKo": null,
-        "commentaryKo": null,
-        "ownedTranslationNeeded": true
-      },
-      "rights": {
-        "originalText": {
-          "status": "candidate",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        },
-        "translation": {
-          "status": "owned-translation-needed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        }
-      },
-      "ingest": {
-        "readiness": "candidate-only",
-        "targetDb": "poems",
-        "sourceFile": "docs/research/2026-04-25-korean-poet-chronology-seed-catalog.md"
-      }
-    },
-    {
-      "poemId": "KPOEM-CAND-KIM-BUSIK-003",
-      "canonicalId": "KPOEM-CANON-KIM-BUSIK-003",
-      "title": {
-        "zh": null,
-        "ko": "잔편 한시"
-      },
-      "author": {
-        "authorId": "KAUTH-KIM-BUSIK",
-        "zh": "金富軾",
-        "ko": "김부식"
-      },
-      "era": {
-        "label": "고려 중기"
-      },
-      "genre": {
-        "broad": "한시",
-        "form": "미확정",
-        "track": "hansi-candidate"
-      },
-      "sourceWork": {
-        "collectionTitle": "三國史記, 문집 잔편, 東文選",
         "sourceUrl": null,
         "sourcePolicyId": null,
         "verificationStatus": "needs-source-url"
@@ -91641,173 +92691,11 @@
       }
     },
     {
-      "poemId": "KPOEM-CAND-YI-INRO-001",
-      "canonicalId": "KPOEM-CANON-YI-INRO-001",
-      "title": {
-        "zh": null,
-        "ko": "죽림고회 관련 시"
-      },
-      "author": {
-        "authorId": "KAUTH-YI-INRO",
-        "zh": "李仁老",
-        "ko": "이인로"
-      },
-      "era": {
-        "label": "고려 중기"
-      },
-      "genre": {
-        "broad": "한시",
-        "form": "미확정",
-        "track": "hansi-candidate"
-      },
-      "sourceWork": {
-        "collectionTitle": "破閑集, 선집류",
-        "sourceUrl": null,
-        "sourcePolicyId": null,
-        "verificationStatus": "needs-source-url"
-      },
-      "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
-      },
-      "assets": {
-        "translationKo": null,
-        "commentaryKo": null,
-        "ownedTranslationNeeded": true
-      },
-      "rights": {
-        "originalText": {
-          "status": "candidate",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        },
-        "translation": {
-          "status": "owned-translation-needed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        }
-      },
-      "ingest": {
-        "readiness": "candidate-only",
-        "targetDb": "poems",
-        "sourceFile": "docs/research/2026-04-25-korean-poet-chronology-seed-catalog.md"
-      }
-    },
-    {
-      "poemId": "KPOEM-CAND-YI-INRO-002",
-      "canonicalId": "KPOEM-CANON-YI-INRO-002",
-      "title": {
-        "zh": null,
-        "ko": "산수시"
-      },
-      "author": {
-        "authorId": "KAUTH-YI-INRO",
-        "zh": "李仁老",
-        "ko": "이인로"
-      },
-      "era": {
-        "label": "고려 중기"
-      },
-      "genre": {
-        "broad": "한시",
-        "form": "미확정",
-        "track": "hansi-candidate"
-      },
-      "sourceWork": {
-        "collectionTitle": "破閑集, 선집류",
-        "sourceUrl": null,
-        "sourcePolicyId": null,
-        "verificationStatus": "needs-source-url"
-      },
-      "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
-      },
-      "assets": {
-        "translationKo": null,
-        "commentaryKo": null,
-        "ownedTranslationNeeded": true
-      },
-      "rights": {
-        "originalText": {
-          "status": "candidate",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        },
-        "translation": {
-          "status": "owned-translation-needed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        }
-      },
-      "ingest": {
-        "readiness": "candidate-only",
-        "targetDb": "poems",
-        "sourceFile": "docs/research/2026-04-25-korean-poet-chronology-seed-catalog.md"
-      }
-    },
-    {
       "poemId": "KPOEM-CAND-AUTHOR-EC9E84EC-001",
       "canonicalId": "KPOEM-CANON-AUTHOR-EC9E84EC-001",
       "title": {
         "zh": "孔方傳은 산문",
         "ko": "孔方傳은 산문"
-      },
-      "author": {
-        "authorId": "KAUTH-AUTHOR-EC9E84EC",
-        "zh": "林椿",
-        "ko": "임춘"
-      },
-      "era": {
-        "label": "고려 중기"
-      },
-      "genre": {
-        "broad": "한시",
-        "form": "미확정",
-        "track": "hansi-candidate"
-      },
-      "sourceWork": {
-        "collectionTitle": "西河集, 선집류",
-        "sourceUrl": null,
-        "sourcePolicyId": null,
-        "verificationStatus": "needs-source-url"
-      },
-      "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
-      },
-      "assets": {
-        "translationKo": null,
-        "commentaryKo": null,
-        "ownedTranslationNeeded": true
-      },
-      "rights": {
-        "originalText": {
-          "status": "candidate",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        },
-        "translation": {
-          "status": "owned-translation-needed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        }
-      },
-      "ingest": {
-        "readiness": "candidate-only",
-        "targetDb": "poems",
-        "sourceFile": "docs/research/2026-04-25-korean-poet-chronology-seed-catalog.md"
-      }
-    },
-    {
-      "poemId": "KPOEM-CAND-AUTHOR-EC9E84EC-002",
-      "canonicalId": "KPOEM-CANON-AUTHOR-EC9E84EC-002",
-      "title": {
-        "zh": null,
-        "ko": "한시 후보 확인"
       },
       "author": {
         "authorId": "KAUTH-AUTHOR-EC9E84EC",
@@ -91932,114 +92820,6 @@
       },
       "sourceWork": {
         "collectionTitle": "선집류",
-        "sourceUrl": null,
-        "sourcePolicyId": null,
-        "verificationStatus": "needs-source-url"
-      },
-      "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
-      },
-      "assets": {
-        "translationKo": null,
-        "commentaryKo": null,
-        "ownedTranslationNeeded": true
-      },
-      "rights": {
-        "originalText": {
-          "status": "candidate",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        },
-        "translation": {
-          "status": "owned-translation-needed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        }
-      },
-      "ingest": {
-        "readiness": "candidate-only",
-        "targetDb": "poems",
-        "sourceFile": "docs/research/2026-04-25-korean-poet-chronology-seed-catalog.md"
-      }
-    },
-    {
-      "poemId": "KPOEM-CAND-KIM-GEUKGI-001",
-      "canonicalId": "KPOEM-CANON-KIM-GEUKGI-001",
-      "title": {
-        "zh": null,
-        "ko": "선집 수록 다수"
-      },
-      "author": {
-        "authorId": "KAUTH-KIM-GEUKGI",
-        "zh": "金克己",
-        "ko": "김극기"
-      },
-      "era": {
-        "label": "고려 중기"
-      },
-      "genre": {
-        "broad": "한시",
-        "form": "미확정",
-        "track": "hansi-candidate"
-      },
-      "sourceWork": {
-        "collectionTitle": "三韓詩龜鑑, 東文選, 東京雜記",
-        "sourceUrl": null,
-        "sourcePolicyId": null,
-        "verificationStatus": "needs-source-url"
-      },
-      "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
-      },
-      "assets": {
-        "translationKo": null,
-        "commentaryKo": null,
-        "ownedTranslationNeeded": true
-      },
-      "rights": {
-        "originalText": {
-          "status": "candidate",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        },
-        "translation": {
-          "status": "owned-translation-needed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        }
-      },
-      "ingest": {
-        "readiness": "candidate-only",
-        "targetDb": "poems",
-        "sourceFile": "docs/research/2026-04-25-korean-poet-chronology-seed-catalog.md"
-      }
-    },
-    {
-      "poemId": "KPOEM-CAND-KIM-GEUKGI-002",
-      "canonicalId": "KPOEM-CANON-KIM-GEUKGI-002",
-      "title": {
-        "zh": null,
-        "ko": "산수·영물시"
-      },
-      "author": {
-        "authorId": "KAUTH-KIM-GEUKGI",
-        "zh": "金克己",
-        "ko": "김극기"
-      },
-      "era": {
-        "label": "고려 중기"
-      },
-      "genre": {
-        "broad": "한시",
-        "form": "미확정",
-        "track": "hansi-candidate"
-      },
-      "sourceWork": {
-        "collectionTitle": "三韓詩龜鑑, 東文選, 東京雜記",
         "sourceUrl": null,
         "sourcePolicyId": null,
         "verificationStatus": "needs-source-url"
@@ -92397,60 +93177,6 @@
       }
     },
     {
-      "poemId": "KPOEM-CAND-JEONG-MONGJU-002",
-      "canonicalId": "KPOEM-CANON-JEONG-MONGJU-002",
-      "title": {
-        "zh": "丹心歌는 맥락",
-        "ko": "丹心歌는 맥락"
-      },
-      "author": {
-        "authorId": "KAUTH-JEONG-MONGJU",
-        "zh": "鄭夢周",
-        "ko": "정몽주"
-      },
-      "era": {
-        "label": "고려 말"
-      },
-      "genre": {
-        "broad": "고유시가",
-        "form": "시조",
-        "track": "native-form"
-      },
-      "sourceWork": {
-        "collectionTitle": "圃隱集",
-        "sourceUrl": null,
-        "sourcePolicyId": null,
-        "verificationStatus": "needs-source-url"
-      },
-      "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
-      },
-      "assets": {
-        "translationKo": null,
-        "commentaryKo": null,
-        "ownedTranslationNeeded": true
-      },
-      "rights": {
-        "originalText": {
-          "status": "candidate",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        },
-        "translation": {
-          "status": "owned-translation-needed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        }
-      },
-      "ingest": {
-        "readiness": "candidate-only",
-        "targetDb": "poems",
-        "sourceFile": "docs/research/2026-04-25-korean-poet-chronology-seed-catalog.md"
-      }
-    },
-    {
       "poemId": "KPOEM-CAND-AUTHOR-EC9B90EC-001",
       "canonicalId": "KPOEM-CANON-AUTHOR-EC9B90EC-001",
       "title": {
@@ -92688,114 +93414,6 @@
       },
       "sourceWork": {
         "collectionTitle": "春亭集",
-        "sourceUrl": null,
-        "sourcePolicyId": null,
-        "verificationStatus": "needs-source-url"
-      },
-      "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
-      },
-      "assets": {
-        "translationKo": null,
-        "commentaryKo": null,
-        "ownedTranslationNeeded": true
-      },
-      "rights": {
-        "originalText": {
-          "status": "candidate",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        },
-        "translation": {
-          "status": "owned-translation-needed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        }
-      },
-      "ingest": {
-        "readiness": "candidate-only",
-        "targetDb": "poems",
-        "sourceFile": "docs/research/2026-04-25-korean-poet-chronology-seed-catalog.md"
-      }
-    },
-    {
-      "poemId": "KPOEM-CAND-AUTHOR-EAB8B8EC-001",
-      "canonicalId": "KPOEM-CANON-AUTHOR-EAB8B8EC-001",
-      "title": {
-        "zh": null,
-        "ko": "절의시"
-      },
-      "author": {
-        "authorId": "KAUTH-AUTHOR-EAB8B8EC",
-        "zh": "吉再",
-        "ko": "길재"
-      },
-      "era": {
-        "label": "고려 말~조선 초"
-      },
-      "genre": {
-        "broad": "한시",
-        "form": "미확정",
-        "track": "hansi-candidate"
-      },
-      "sourceWork": {
-        "collectionTitle": "冶隱集",
-        "sourceUrl": null,
-        "sourcePolicyId": null,
-        "verificationStatus": "needs-source-url"
-      },
-      "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
-      },
-      "assets": {
-        "translationKo": null,
-        "commentaryKo": null,
-        "ownedTranslationNeeded": true
-      },
-      "rights": {
-        "originalText": {
-          "status": "candidate",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        },
-        "translation": {
-          "status": "owned-translation-needed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        }
-      },
-      "ingest": {
-        "readiness": "candidate-only",
-        "targetDb": "poems",
-        "sourceFile": "docs/research/2026-04-25-korean-poet-chronology-seed-catalog.md"
-      }
-    },
-    {
-      "poemId": "KPOEM-CAND-AUTHOR-EAB8B8EC-002",
-      "canonicalId": "KPOEM-CANON-AUTHOR-EAB8B8EC-002",
-      "title": {
-        "zh": null,
-        "ko": "회고시"
-      },
-      "author": {
-        "authorId": "KAUTH-AUTHOR-EAB8B8EC",
-        "zh": "吉再",
-        "ko": "길재"
-      },
-      "era": {
-        "label": "고려 말~조선 초"
-      },
-      "genre": {
-        "broad": "한시",
-        "form": "미확정",
-        "track": "hansi-candidate"
-      },
-      "sourceWork": {
-        "collectionTitle": "冶隱集",
         "sourceUrl": null,
         "sourcePolicyId": null,
         "verificationStatus": "needs-source-url"
@@ -95550,600 +96168,6 @@
       },
       "sourceWork": {
         "collectionTitle": "薝園文錄 등",
-        "sourceUrl": null,
-        "sourcePolicyId": null,
-        "verificationStatus": "needs-source-url"
-      },
-      "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
-      },
-      "assets": {
-        "translationKo": null,
-        "commentaryKo": null,
-        "ownedTranslationNeeded": true
-      },
-      "rights": {
-        "originalText": {
-          "status": "candidate",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        },
-        "translation": {
-          "status": "owned-translation-needed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        }
-      },
-      "ingest": {
-        "readiness": "candidate-only",
-        "targetDb": "poems",
-        "sourceFile": "docs/research/2026-04-25-korean-poet-chronology-seed-catalog.md"
-      }
-    },
-    {
-      "poemId": "KPOEM-CAND-AUTHOR-E585A8E6-001",
-      "canonicalId": "KPOEM-CANON-AUTHOR-E585A8E6-001",
-      "title": {
-        "zh": "府尹全湜詩",
-        "ko": "府尹全湜詩"
-      },
-      "author": {
-        "authorId": "KAUTH-AUTHOR-E585A8E6",
-        "zh": "全湜",
-        "ko": "全湜"
-      },
-      "era": {
-        "label": "동경잡기 수록 인물"
-      },
-      "genre": {
-        "broad": "한시",
-        "form": "미확정",
-        "track": "hansi-candidate"
-      },
-      "sourceWork": {
-        "collectionTitle": "東京雜記",
-        "sourceUrl": null,
-        "sourcePolicyId": null,
-        "verificationStatus": "needs-source-url"
-      },
-      "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
-      },
-      "assets": {
-        "translationKo": null,
-        "commentaryKo": null,
-        "ownedTranslationNeeded": true
-      },
-      "rights": {
-        "originalText": {
-          "status": "candidate",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        },
-        "translation": {
-          "status": "owned-translation-needed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        }
-      },
-      "ingest": {
-        "readiness": "candidate-only",
-        "targetDb": "poems",
-        "sourceFile": "docs/research/2026-04-25-korean-poet-chronology-seed-catalog.md"
-      }
-    },
-    {
-      "poemId": "KPOEM-CAND-AUTHOR-E69CB4E6-001",
-      "canonicalId": "KPOEM-CANON-AUTHOR-E69CB4E6-001",
-      "title": {
-        "zh": "朴文佑慈仁縣詩",
-        "ko": "朴文佑慈仁縣詩"
-      },
-      "author": {
-        "authorId": "KAUTH-AUTHOR-E69CB4E6",
-        "zh": "朴文佑",
-        "ko": "朴文佑"
-      },
-      "era": {
-        "label": "동경잡기 수록 인물"
-      },
-      "genre": {
-        "broad": "한시",
-        "form": "미확정",
-        "track": "hansi-candidate"
-      },
-      "sourceWork": {
-        "collectionTitle": "東京雜記",
-        "sourceUrl": null,
-        "sourcePolicyId": null,
-        "verificationStatus": "needs-source-url"
-      },
-      "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
-      },
-      "assets": {
-        "translationKo": null,
-        "commentaryKo": null,
-        "ownedTranslationNeeded": true
-      },
-      "rights": {
-        "originalText": {
-          "status": "candidate",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        },
-        "translation": {
-          "status": "owned-translation-needed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        }
-      },
-      "ingest": {
-        "readiness": "candidate-only",
-        "targetDb": "poems",
-        "sourceFile": "docs/research/2026-04-25-korean-poet-chronology-seed-catalog.md"
-      }
-    },
-    {
-      "poemId": "KPOEM-CAND-AUTHOR-E69D8EE5-001",
-      "canonicalId": "KPOEM-CANON-AUTHOR-E69D8EE5-001",
-      "title": {
-        "zh": "高麗李公升詩",
-        "ko": "高麗李公升詩"
-      },
-      "author": {
-        "authorId": "KAUTH-AUTHOR-E69D8EE5",
-        "zh": "李公升",
-        "ko": "李公升"
-      },
-      "era": {
-        "label": "동경잡기 수록 인물"
-      },
-      "genre": {
-        "broad": "한시",
-        "form": "미확정",
-        "track": "hansi-candidate"
-      },
-      "sourceWork": {
-        "collectionTitle": "東京雜記",
-        "sourceUrl": null,
-        "sourcePolicyId": null,
-        "verificationStatus": "needs-source-url"
-      },
-      "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
-      },
-      "assets": {
-        "translationKo": null,
-        "commentaryKo": null,
-        "ownedTranslationNeeded": true
-      },
-      "rights": {
-        "originalText": {
-          "status": "candidate",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        },
-        "translation": {
-          "status": "owned-translation-needed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        }
-      },
-      "ingest": {
-        "readiness": "candidate-only",
-        "targetDb": "poems",
-        "sourceFile": "docs/research/2026-04-25-korean-poet-chronology-seed-catalog.md"
-      }
-    },
-    {
-      "poemId": "KPOEM-CAND-AUTHOR-E69D8EE5-001",
-      "canonicalId": "KPOEM-CANON-AUTHOR-E69D8EE5-001",
-      "title": {
-        "zh": "五峰李好閔詩",
-        "ko": "五峰李好閔詩"
-      },
-      "author": {
-        "authorId": "KAUTH-AUTHOR-E69D8EE5",
-        "zh": "李好閔",
-        "ko": "李好閔"
-      },
-      "era": {
-        "label": "동경잡기 수록 인물"
-      },
-      "genre": {
-        "broad": "한시",
-        "form": "미확정",
-        "track": "hansi-candidate"
-      },
-      "sourceWork": {
-        "collectionTitle": "東京雜記",
-        "sourceUrl": null,
-        "sourcePolicyId": null,
-        "verificationStatus": "needs-source-url"
-      },
-      "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
-      },
-      "assets": {
-        "translationKo": null,
-        "commentaryKo": null,
-        "ownedTranslationNeeded": true
-      },
-      "rights": {
-        "originalText": {
-          "status": "candidate",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        },
-        "translation": {
-          "status": "owned-translation-needed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        }
-      },
-      "ingest": {
-        "readiness": "candidate-only",
-        "targetDb": "poems",
-        "sourceFile": "docs/research/2026-04-25-korean-poet-chronology-seed-catalog.md"
-      }
-    },
-    {
-      "poemId": "KPOEM-CAND-AUTHOR-E69D8EE5-001",
-      "canonicalId": "KPOEM-CANON-AUTHOR-E69D8EE5-001",
-      "title": {
-        "zh": "東岳李安訥詩",
-        "ko": "東岳李安訥詩"
-      },
-      "author": {
-        "authorId": "KAUTH-AUTHOR-E69D8EE5",
-        "zh": "李安訥",
-        "ko": "李安訥"
-      },
-      "era": {
-        "label": "동경잡기 수록 인물"
-      },
-      "genre": {
-        "broad": "한시",
-        "form": "미확정",
-        "track": "hansi-candidate"
-      },
-      "sourceWork": {
-        "collectionTitle": "東京雜記",
-        "sourceUrl": null,
-        "sourcePolicyId": null,
-        "verificationStatus": "needs-source-url"
-      },
-      "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
-      },
-      "assets": {
-        "translationKo": null,
-        "commentaryKo": null,
-        "ownedTranslationNeeded": true
-      },
-      "rights": {
-        "originalText": {
-          "status": "candidate",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        },
-        "translation": {
-          "status": "owned-translation-needed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        }
-      },
-      "ingest": {
-        "readiness": "candidate-only",
-        "targetDb": "poems",
-        "sourceFile": "docs/research/2026-04-25-korean-poet-chronology-seed-catalog.md"
-      }
-    },
-    {
-      "poemId": "KPOEM-CAND-AUTHOR-E69D8EE5-002",
-      "canonicalId": "KPOEM-CANON-AUTHOR-E69D8EE5-002",
-      "title": {
-        "zh": "東岳李安訥無邊樓",
-        "ko": "東岳李安訥無邊樓"
-      },
-      "author": {
-        "authorId": "KAUTH-AUTHOR-E69D8EE5",
-        "zh": "李安訥",
-        "ko": "李安訥"
-      },
-      "era": {
-        "label": "동경잡기 수록 인물"
-      },
-      "genre": {
-        "broad": "한시",
-        "form": "미확정",
-        "track": "hansi-candidate"
-      },
-      "sourceWork": {
-        "collectionTitle": "東京雜記",
-        "sourceUrl": null,
-        "sourcePolicyId": null,
-        "verificationStatus": "needs-source-url"
-      },
-      "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
-      },
-      "assets": {
-        "translationKo": null,
-        "commentaryKo": null,
-        "ownedTranslationNeeded": true
-      },
-      "rights": {
-        "originalText": {
-          "status": "candidate",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        },
-        "translation": {
-          "status": "owned-translation-needed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        }
-      },
-      "ingest": {
-        "readiness": "candidate-only",
-        "targetDb": "poems",
-        "sourceFile": "docs/research/2026-04-25-korean-poet-chronology-seed-catalog.md"
-      }
-    },
-    {
-      "poemId": "KPOEM-CAND-AUTHOR-E98791E4-001",
-      "canonicalId": "KPOEM-CANON-AUTHOR-E98791E4-001",
-      "title": {
-        "zh": "金九容送權府尹詩",
-        "ko": "金九容送權府尹詩"
-      },
-      "author": {
-        "authorId": "KAUTH-AUTHOR-E98791E4",
-        "zh": "金九容",
-        "ko": "金九容"
-      },
-      "era": {
-        "label": "동경잡기 수록 인물"
-      },
-      "genre": {
-        "broad": "한시",
-        "form": "미확정",
-        "track": "hansi-candidate"
-      },
-      "sourceWork": {
-        "collectionTitle": "東京雜記",
-        "sourceUrl": null,
-        "sourcePolicyId": null,
-        "verificationStatus": "needs-source-url"
-      },
-      "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
-      },
-      "assets": {
-        "translationKo": null,
-        "commentaryKo": null,
-        "ownedTranslationNeeded": true
-      },
-      "rights": {
-        "originalText": {
-          "status": "candidate",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        },
-        "translation": {
-          "status": "owned-translation-needed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        }
-      },
-      "ingest": {
-        "readiness": "candidate-only",
-        "targetDb": "poems",
-        "sourceFile": "docs/research/2026-04-25-korean-poet-chronology-seed-catalog.md"
-      }
-    },
-    {
-      "poemId": "KPOEM-CAND-AUTHOR-E585AAE5-001",
-      "canonicalId": "KPOEM-CANON-AUTHOR-E585AAE5-001",
-      "title": {
-        "zh": "雜詠兪好仁詩",
-        "ko": "雜詠兪好仁詩"
-      },
-      "author": {
-        "authorId": "KAUTH-AUTHOR-E585AAE5",
-        "zh": "兪好仁",
-        "ko": "兪好仁"
-      },
-      "era": {
-        "label": "동경잡기 수록 인물"
-      },
-      "genre": {
-        "broad": "한시",
-        "form": "미확정",
-        "track": "hansi-candidate"
-      },
-      "sourceWork": {
-        "collectionTitle": "東京雜記",
-        "sourceUrl": null,
-        "sourcePolicyId": null,
-        "verificationStatus": "needs-source-url"
-      },
-      "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
-      },
-      "assets": {
-        "translationKo": null,
-        "commentaryKo": null,
-        "ownedTranslationNeeded": true
-      },
-      "rights": {
-        "originalText": {
-          "status": "candidate",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        },
-        "translation": {
-          "status": "owned-translation-needed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        }
-      },
-      "ingest": {
-        "readiness": "candidate-only",
-        "targetDb": "poems",
-        "sourceFile": "docs/research/2026-04-25-korean-poet-chronology-seed-catalog.md"
-      }
-    },
-    {
-      "poemId": "KPOEM-CAND-AUTHOR-E8B699E7-001",
-      "canonicalId": "KPOEM-CANON-AUTHOR-E8B699E7-001",
-      "title": {
-        "zh": "龍洲趙絅詩",
-        "ko": "龍洲趙絅詩"
-      },
-      "author": {
-        "authorId": "KAUTH-AUTHOR-E8B699E7",
-        "zh": "趙絅",
-        "ko": "趙絅"
-      },
-      "era": {
-        "label": "동경잡기 수록 인물"
-      },
-      "genre": {
-        "broad": "한시",
-        "form": "미확정",
-        "track": "hansi-candidate"
-      },
-      "sourceWork": {
-        "collectionTitle": "東京雜記",
-        "sourceUrl": null,
-        "sourcePolicyId": null,
-        "verificationStatus": "needs-source-url"
-      },
-      "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
-      },
-      "assets": {
-        "translationKo": null,
-        "commentaryKo": null,
-        "ownedTranslationNeeded": true
-      },
-      "rights": {
-        "originalText": {
-          "status": "candidate",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        },
-        "translation": {
-          "status": "owned-translation-needed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        }
-      },
-      "ingest": {
-        "readiness": "candidate-only",
-        "targetDb": "poems",
-        "sourceFile": "docs/research/2026-04-25-korean-poet-chronology-seed-catalog.md"
-      }
-    },
-    {
-      "poemId": "KPOEM-CAND-AUTHOR-E984ADE6-001",
-      "canonicalId": "KPOEM-CANON-AUTHOR-E984ADE6-001",
-      "title": {
-        "zh": "府尹鄭文翼詩",
-        "ko": "府尹鄭文翼詩"
-      },
-      "author": {
-        "authorId": "KAUTH-AUTHOR-E984ADE6",
-        "zh": "鄭文翼",
-        "ko": "鄭文翼"
-      },
-      "era": {
-        "label": "동경잡기 수록 인물"
-      },
-      "genre": {
-        "broad": "한시",
-        "form": "미확정",
-        "track": "hansi-candidate"
-      },
-      "sourceWork": {
-        "collectionTitle": "東京雜記",
-        "sourceUrl": null,
-        "sourcePolicyId": null,
-        "verificationStatus": "needs-source-url"
-      },
-      "text": {
-        "poemZh": null,
-        "poemKoReading": null,
-        "poemKoGloss": null
-      },
-      "assets": {
-        "translationKo": null,
-        "commentaryKo": null,
-        "ownedTranslationNeeded": true
-      },
-      "rights": {
-        "originalText": {
-          "status": "candidate",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        },
-        "translation": {
-          "status": "owned-translation-needed",
-          "publicDisplayAllowedNow": false,
-          "commercialAllowedNow": false
-        }
-      },
-      "ingest": {
-        "readiness": "candidate-only",
-        "targetDb": "poems",
-        "sourceFile": "docs/research/2026-04-25-korean-poet-chronology-seed-catalog.md"
-      }
-    },
-    {
-      "poemId": "KPOEM-CAND-AUTHOR-E9A1A7E9-001",
-      "canonicalId": "KPOEM-CANON-AUTHOR-E9A1A7E9-001",
-      "title": {
-        "zh": "唐顧雲贈崔文昌詩",
-        "ko": "唐顧雲贈崔文昌詩"
-      },
-      "author": {
-        "authorId": "KAUTH-AUTHOR-E9A1A7E9",
-        "zh": "顧雲",
-        "ko": "顧雲"
-      },
-      "era": {
-        "label": "동경잡기 수록 인물"
-      },
-      "genre": {
-        "broad": "한시",
-        "form": "미확정",
-        "track": "hansi-candidate"
-      },
-      "sourceWork": {
-        "collectionTitle": "東京雜記",
         "sourceUrl": null,
         "sourcePolicyId": null,
         "verificationStatus": "needs-source-url"

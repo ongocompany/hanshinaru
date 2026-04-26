@@ -1,0 +1,572 @@
+{
+  "workerId": "worker-20-dongmunseon-yaeun-residual-wave",
+  "modelRecommendation": "gpt-5.4",
+  "status": "completed",
+  "targetAuthors": [
+    "을지문덕",
+    "김부식",
+    "정서",
+    "이인로",
+    "임춘",
+    "김극기",
+    "길재"
+  ],
+  "summary": {
+    "candidateWorksChecked": 12,
+    "directTextWorksFound": 19,
+    "ocrCandidates": 0,
+    "blockedWorks": 0
+  },
+  "poems": [
+    {
+      "authorKo": "을지문덕",
+      "authorHanja": "乙支文德",
+      "candidateTitle": "與隋將于仲文詩",
+      "matchedTitle": "贈隋右翊衛大將軍于仲文",
+      "sourceWork": {
+        "collectionTitle": "東文選 卷十九",
+        "juan": "卷十九",
+        "entryTitle": "贈隋右翊衛大將軍于仲文",
+        "sourceUrl": "https://zh.wikisource.org/wiki/東文選/卷十九",
+        "rawUrl": "https://zh.wikisource.org/wiki/東文選/卷十九?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "神策究天文。妙筭窮地理。戰勝功旣高。知足願云止。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 東文選 卷十九 raw의 五言絶句 항목에서 제목·저자·본문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "김부식",
+      "authorHanja": "金富軾",
+      "candidateTitle": "잔편 한시",
+      "matchedTitle": "結綺宮",
+      "sourceWork": {
+        "collectionTitle": "東文選 卷四",
+        "juan": "卷四",
+        "entryTitle": "結綺宮",
+        "sourceUrl": "https://zh.wikisource.org/wiki/東文選/卷四",
+        "rawUrl": "https://zh.wikisource.org/wiki/東文選/卷四?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "堯階三尺卑。千載餘其德。秦城萬里長。二世失其國。古今靑史中。可以爲觀式。隋皇何不思。土木竭人力。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 東文選 卷四 raw에서 金富軾 heading과 본문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "김부식",
+      "authorHanja": "金富軾",
+      "candidateTitle": "사행시",
+      "matchedTitle": "大興寺聞子規",
+      "sourceWork": {
+        "collectionTitle": "東文選 卷十九",
+        "juan": "卷十九",
+        "entryTitle": "大興寺聞子規",
+        "sourceUrl": "https://zh.wikisource.org/wiki/東文選/卷十九",
+        "rawUrl": "https://zh.wikisource.org/wiki/東文選/卷十九?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "俗客夢已斷。子規啼尙咽。世無公冶長。誰知心所結。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 東文選 卷十九 raw에서 金富軾 heading과 본문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "김부식",
+      "authorHanja": "金富軾",
+      "candidateTitle": "송 관련 시",
+      "matchedTitle": "內殿春帖子",
+      "sourceWork": {
+        "collectionTitle": "東文選 卷十九",
+        "juan": "卷十九",
+        "entryTitle": "內殿春帖子",
+        "sourceUrl": "https://zh.wikisource.org/wiki/東文選/卷十九",
+        "rawUrl": "https://zh.wikisource.org/wiki/東文選/卷十九?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "雪垠猶在三雲陛。日脚初昇五鳳樓。寶曆授時周太史。玉巵稱壽漢諸侯。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 東文選 卷十九 raw에서 金富軾 heading과 본문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정서",
+      "authorHanja": "鄭敍",
+      "candidateTitle": "한문 한시 후보 확인",
+      "matchedTitle": "題墨竹後",
+      "sourceWork": {
+        "collectionTitle": "東文選 卷十九",
+        "juan": "卷十九",
+        "entryTitle": "題墨竹後",
+        "sourceUrl": "https://zh.wikisource.org/wiki/東文選/卷十九",
+        "rawUrl": "https://zh.wikisource.org/wiki/東文選/卷十九?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "閑餘弄筆硯。寫作一竿竹。時於壁上看。幽姿故不俗。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "鄭瓜亭曲은 별도 고유시가로 남기고, 한문 한시 후보만 東文選 raw 확인본으로 처리한다."
+      }
+    },
+    {
+      "authorKo": "이인로",
+      "authorHanja": "李仁老",
+      "candidateTitle": "산수시",
+      "matchedTitle": "山居",
+      "sourceWork": {
+        "collectionTitle": "東文選 卷十九",
+        "juan": "卷十九",
+        "entryTitle": "山居",
+        "sourceUrl": "https://zh.wikisource.org/wiki/東文選/卷十九",
+        "rawUrl": "https://zh.wikisource.org/wiki/東文選/卷十九?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "春去花猶在。天晴谷自陰。杜鵑啼白晝。始覺卜居深。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 東文選 卷十九 raw에서 李仁老 heading과 본문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이인로",
+      "authorHanja": "李仁老",
+      "candidateTitle": "죽림고회 관련 시",
+      "matchedTitle": "竹醉日移竹",
+      "sourceWork": {
+        "collectionTitle": "東文選 卷四",
+        "juan": "卷四",
+        "entryTitle": "竹醉日移竹",
+        "sourceUrl": "https://zh.wikisource.org/wiki/東文選/卷四",
+        "rawUrl": "https://zh.wikisource.org/wiki/東文選/卷四?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "古今一丘貉。天地眞籧廬。此君獨酩酊。兀兀忘所如。江山雖有異。風景本無殊。不用更醒悟。操戈便逐儒。\n司馬甞客遊。夫子亦旅寓。新亭相對泣。數子眞兒女。此君恥匏繫。所適天不阻。何必登樓吟。信美非吾土。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 東文選 卷四 raw에서 李仁老 heading과 본문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "임춘",
+      "authorHanja": "林椿",
+      "candidateTitle": "한시 후보 확인",
+      "matchedTitle": "留別金璿",
+      "sourceWork": {
+        "collectionTitle": "東文選 卷四",
+        "juan": "卷四",
+        "entryTitle": "留別金璿",
+        "sourceUrl": "https://zh.wikisource.org/wiki/東文選/卷四",
+        "rawUrl": "https://zh.wikisource.org/wiki/東文選/卷四?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "苟同近循身。苟異近循名。兩者未免累。不如俱忘情。我性非好高。矯矯豈其誠。只爲謀口腹。及辰欲歸耕。鄕人來勸我。香稻富烏程。閑乘一葉去。海上寄餘生。軒軒金子美。肝膽何崢嶸。與我年雖少。聞道卽己兄。臨別但相語。子去吾亦行。滄浪知幾里。朝發暮江城。愼勿負玆期。雞黍吾當烹。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "孔方傳은 산문으로 유지하고, 한시 후보만 東文選 raw 확인본으로 처리한다."
+      }
+    },
+    {
+      "authorKo": "임춘",
+      "authorHanja": "林椿",
+      "candidateTitle": "한시 후보 확인",
+      "matchedTitle": "茶店晝睡",
+      "sourceWork": {
+        "collectionTitle": "東文選 卷十九",
+        "juan": "卷十九",
+        "entryTitle": "茶店晝睡",
+        "sourceUrl": "https://zh.wikisource.org/wiki/東文選/卷十九",
+        "rawUrl": "https://zh.wikisource.org/wiki/東文選/卷十九?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "頹然卧榻便忘形。午枕風來睡自醒。夢裏此身無處着。乾坤都是一長亭。\n虛樓夢罷正高舂。兩眼空濛看遠峯。誰識幽人閑氣味。一軒春睡敵千鍾。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 東文選 卷十九 raw에서 林椿 heading과 본문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "김극기",
+      "authorHanja": "金克己",
+      "candidateTitle": "선집 수록 다수",
+      "matchedTitle": "宿香村",
+      "sourceWork": {
+        "collectionTitle": "東文選 卷四",
+        "juan": "卷四",
+        "entryTitle": "宿香村",
+        "sourceUrl": "https://zh.wikisource.org/wiki/東文選/卷四",
+        "rawUrl": "https://zh.wikisource.org/wiki/東文選/卷四?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "雲行四五里。漸下蒼山根。烏鳶忽驚起。始見桑柘村。村婦理蓬鬢。出開林下門。靑苔滿古巷。綠稻侵頹垣。茅簷坐未久。落日低瓊盆。伐薪忽照夜。魚蠏腥盤飡。耕夫各入室。四壁農談諠。磎作魚貫。咿喔紛鳥言。我時耿不寐。欹枕臨西軒。露冷螢火濕。寒蛩噪空園。悲吟卧待曙。碧海含朝暾.",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 東文選 卷四 raw에서 金克己 heading과 본문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "김극기",
+      "authorHanja": "金克己",
+      "candidateTitle": "산수·영물시",
+      "matchedTitle": "李花 此咏秋日李花",
+      "sourceWork": {
+        "collectionTitle": "東文選 卷十九",
+        "juan": "卷十九",
+        "entryTitle": "李花 此咏秋日李花",
+        "sourceUrl": "https://zh.wikisource.org/wiki/東文選/卷十九",
+        "rawUrl": "https://zh.wikisource.org/wiki/東文選/卷十九?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "淒風冷雨濕枯根。一樹狂花獨放春。無奈異香來聚窟。漢宮重見李夫人。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 東文選 卷十九 raw에서 金克己 heading과 본문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "길재",
+      "authorHanja": "吉再",
+      "candidateTitle": "절의시",
+      "matchedTitle": "述志",
+      "sourceWork": {
+        "collectionTitle": "冶隱先生言行拾遺 卷上",
+        "juan": "卷上",
+        "entryTitle": "述志",
+        "sourceUrl": "https://zh.wikisource.org/wiki/冶隱先生言行拾遺/卷上",
+        "rawUrl": "https://zh.wikisource.org/wiki/冶隱先生言行拾遺/卷上?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "臨溪茅屋獨閑居。月白風淸興有餘。外客不來山鳥語。移床竹塢臥看書。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 冶隱先生言行拾遺 卷上의 先生遺詩 아래에서 길재 본인 시로 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "길재",
+      "authorHanja": "吉再",
+      "candidateTitle": "절의시",
+      "matchedTitle": "泮宮偶吟",
+      "sourceWork": {
+        "collectionTitle": "冶隱先生言行拾遺 卷上",
+        "juan": "卷上",
+        "entryTitle": "泮宮偶吟",
+        "sourceUrl": "https://zh.wikisource.org/wiki/冶隱先生言行拾遺/卷上",
+        "rawUrl": "https://zh.wikisource.org/wiki/冶隱先生言行拾遺/卷上?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "龍首正東傾短墻。水芹田畔有垂楊。身雖從衆無奇特。志則夷齊餓首陽。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 冶隱先生言行拾遺 卷上의 先生遺詩 아래에서 길재 본인 시로 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "길재",
+      "authorHanja": "吉再",
+      "candidateTitle": "회고시",
+      "matchedTitle": "足夢中聯句",
+      "sourceWork": {
+        "collectionTitle": "冶隱先生言行拾遺 卷上",
+        "juan": "卷上",
+        "entryTitle": "足夢中聯句",
+        "sourceUrl": "https://zh.wikisource.org/wiki/冶隱先生言行拾遺/卷上",
+        "rawUrl": "https://zh.wikisource.org/wiki/冶隱先生言行拾遺/卷上?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "古今僚友身新變。天地江山是故人。太極眞君應許我。仁心不老自靑春。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 冶隱先生言行拾遺 卷上의 先生遺詩 아래에서 길재 본인 시로 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "길재",
+      "authorHanja": "吉再",
+      "candidateTitle": "회고시",
+      "matchedTitle": "閑居",
+      "sourceWork": {
+        "collectionTitle": "冶隱先生言行拾遺 卷上",
+        "juan": "卷上",
+        "entryTitle": "閑居",
+        "sourceUrl": "https://zh.wikisource.org/wiki/冶隱先生言行拾遺/卷上",
+        "rawUrl": "https://zh.wikisource.org/wiki/冶隱先生言行拾遺/卷上?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "盥手淸泉冷。臨身茂樹高。冠童來問字。聊可與逍遙。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 冶隱先生言行拾遺 卷上의 先生遺詩 아래에서 길재 본인 시로 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "길재",
+      "authorHanja": "吉再",
+      "candidateTitle": "절의시",
+      "matchedTitle": "偶吟",
+      "sourceWork": {
+        "collectionTitle": "冶隱先生言行拾遺 卷上",
+        "juan": "卷上",
+        "entryTitle": "偶吟",
+        "sourceUrl": "https://zh.wikisource.org/wiki/冶隱先生言行拾遺/卷上",
+        "rawUrl": "https://zh.wikisource.org/wiki/冶隱先生言行拾遺/卷上?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "竹色春秋堅節義。溪流日夜洗貪婪。心源瑩靜無塵態。從此方知道味甘。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 冶隱先生言行拾遺 卷上의 先生遺詩 아래에서 길재 본인 시로 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "길재",
+      "authorHanja": "吉再",
+      "candidateTitle": "회고시",
+      "matchedTitle": "偶吟 又",
+      "sourceWork": {
+        "collectionTitle": "冶隱先生言行拾遺 卷上",
+        "juan": "卷上",
+        "entryTitle": "偶吟 又",
+        "sourceUrl": "https://zh.wikisource.org/wiki/冶隱先生言行拾遺/卷上",
+        "rawUrl": "https://zh.wikisource.org/wiki/冶隱先生言行拾遺/卷上?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "五更殘月窓前白。十里松風枕上淸。富貴多勞貧賤苦。隱居滋味與誰評。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 冶隱先生言行拾遺 卷上의 先生遺詩 아래에서 길재 본인 시로 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "길재",
+      "authorHanja": "吉再",
+      "candidateTitle": "절의시",
+      "matchedTitle": "無題",
+      "sourceWork": {
+        "collectionTitle": "冶隱先生言行拾遺 卷上",
+        "juan": "卷上",
+        "entryTitle": "無題",
+        "sourceUrl": "https://zh.wikisource.org/wiki/冶隱先生言行拾遺/卷上",
+        "rawUrl": "https://zh.wikisource.org/wiki/冶隱先生言行拾遺/卷上?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "曾讀前書笑古今。愧隨流俗共浮沉。終期直道扶元氣。肯爲虛名役片心。默坐野禽啼晝景。閉門官柳長春陰。人間事了須先退。不待霜毛漸滿簪。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 冶隱先生言行拾遺 卷上의 先生遺詩 아래에서 길재 본인 시로 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "길재",
+      "authorHanja": "吉再",
+      "candidateTitle": "회고시",
+      "matchedTitle": "謝監司南龜庵送酒",
+      "sourceWork": {
+        "collectionTitle": "冶隱先生言行拾遺 卷上",
+        "juan": "卷上",
+        "entryTitle": "謝監司南龜庵送酒",
+        "sourceUrl": "https://zh.wikisource.org/wiki/冶隱先生言行拾遺/卷上",
+        "rawUrl": "https://zh.wikisource.org/wiki/冶隱先生言行拾遺/卷上?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "五湖仙藥到柴荊。顚倒開緘手自傾。病骨勝酣回壯骨。衰情得醉返風情。家貧野蔬盛三豆。市遠村醪奠一甁。欲謝却嫌無謝地。但將蠅手祝遐齡。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 冶隱先生言行拾遺 卷上의 先生遺詩 아래에서 길재 본인 시로 직접 확인했다."
+      }
+    }
+  ],
+  "blockers": [],
+  "sourcesConsulted": [
+    {
+      "label": "東文選 卷四 raw",
+      "url": "https://zh.wikisource.org/wiki/東文選/卷四?action=raw",
+      "result": "김부식, 이인로, 임춘, 김극기 항목 direct text 확인"
+    },
+    {
+      "label": "東文選 卷十九 raw",
+      "url": "https://zh.wikisource.org/wiki/東文選/卷十九?action=raw",
+      "result": "을지문덕, 김부식, 정서, 이인로, 임춘, 김극기 항목 direct text 확인"
+    },
+    {
+      "label": "冶隱先生言行拾遺 卷上 raw",
+      "url": "https://zh.wikisource.org/wiki/冶隱先生言行拾遺/卷上?action=raw",
+      "result": "先生遺詩 아래 길재 본인 시 8편 direct text 확인"
+    }
+  ]
+}
