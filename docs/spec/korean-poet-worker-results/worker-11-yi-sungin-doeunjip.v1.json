@@ -7,7 +7,7 @@
   ],
   "summary": {
     "candidateWorksChecked": 2,
-    "directTextWorksFound": 20,
+    "directTextWorksFound": 102,
     "ocrCandidates": 0,
     "blockedWorks": 0
   },
@@ -571,6 +571,2302 @@
         "recommendedReadiness": "direct-text-collected",
         "notes": "zh Wikisource `陶隱集/卷三` raw에서 `丁未十月二十九日，扈駕康安殿` heading과 전문을 직접 확인했다."
       }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "登松嶽",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "登松嶽"
+      },
+      "text": {
+        "poemZh": "蓐食晨登至天還，層氷積雪滿山顏。\n少年脚力眞堪託，飛上危巓一瞬間。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `登松嶽` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "登樓",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "登樓"
+      },
+      "text": {
+        "poemZh": "晚來長嘯獨登樓，天闊風高又一秋。\n入夜客懷殊寂寞，半簾江月照淸愁。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `登樓` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "送金若齋",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "送金若齋"
+      },
+      "text": {
+        "poemZh": "禮成港口秋水淸，扶桑初日向人明。\n樓船萬斛江南去，使者還如垂馬行。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `送金若齋` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "送李密直承源巡問楊廣",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "送李密直承源巡問楊廣"
+      },
+      "text": {
+        "poemZh": "十年海徼少人煙，似聽居民羽化仙。\n今日相君持節鉞，書生不復更籌邊。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `送李密直承源巡問楊廣` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "失題",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "失題"
+      },
+      "text": {
+        "poemZh": "石磵淸陰接竹園，一時才俊入銓掄。\n慶筵醉客扶歸路，帽頂花枝月有痕。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `失題` heading과 전문을 직접 확인했다. 같은 권 앞쪽의 `失題` 연작과 구분되는 후반 단독 항목이다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "旅寓聞鶯",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "旅寓聞鶯"
+      },
+      "text": {
+        "poemZh": "園林白晝暑風淸，聽得黃鸝第一聲。\n却憶去年猶此日，客中偏覺寸心驚。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `旅寓聞鶯` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "道上遇雪",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "道上遇雪"
+      },
+      "text": {
+        "poemZh": "雪華如席亂飄揚，驢背吟高興更長。\n我本陶齋好詩者，旁人錯比孟襄陽。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `道上遇雪` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "雪夜憶三峯呈諸友",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "雪夜，憶三峯，呈諸友"
+      },
+      "text": {
+        "poemZh": "日暮寒雲勢漸癡，夜來密雪下如篩。\n紙窓燈火團圝語，只欠三峯隱者詩。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `雪夜，憶三峯，呈諸友` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "春雲",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "春雲"
+      },
+      "text": {
+        "poemZh": "春雲如獸復如禽，點綴晴空乍欲陰。\n不礙吾詩無態度，偶然乘興卽長吟。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `春雲` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "秋日雨中有感",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "秋日，雨中有感"
+      },
+      "text": {
+        "poemZh": "琵琶一曲《鄭過庭》，遺響凄然不忍聽。\n俯仰古今多少恨，滿簾疎雨讀《騷經》。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `秋日，雨中有感` heading과 전문을 직접 확인했다. 뒤의 思菴先生 임종시는 원문 주석으로 보아 `poemZh`에는 넣지 않았다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "丁未七月十五日夜赴直廬夢得一聯",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "丁未七月十五日，夜赴直廬，夢得一聯。覺而記之，用字頗奇，遂足成一絶"
+      },
+      "text": {
+        "poemZh": "腸鐵不紅炎熱裏，眼波常白混淆中。\n欲從稚子問松菊，倒壑狂瀾難復東。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `丁未七月十五日，夜赴直廬，夢得一聯...` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "冒雨過地藏寺南池",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "冒雨過地藏寺南池"
+      },
+      "text": {
+        "poemZh": "楊柳和煙絲樣垂，滿池春雨燕飛飛。\n蓑衣過客知多少，能得新詩一首歸。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `冒雨過地藏寺南池` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "山中感興",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "山中感興"
+      },
+      "text": {
+        "poemZh": "十載邯鄲夢裏身，歸來喜見故山春。\n松醪酒熟無人過，醉向花陰脫却巾。\n水聲松韻有誰爭？占斷他時更野情。\n大地烘爐人自苦，山中盡日嫩涼生。\n小溪東畔兩三家，梨栗今秋結轉加。\n收拾不拘山遠近，日斜歸路伴林鴉。\n爐紅氈暖睡方濃，不省紛紛雪滿峯。\n淸興曉來開戶出，玉壺銀界沒人蹤。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `山中感興` heading과 네 수 전문을 직접 확인했다. 이번 wave에서는 한 작품 row 안에 보존한다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "游琊山呈息谷",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "游琊山，呈息谷"
+      },
+      "text": {
+        "poemZh": "春山花木政紛披，三日騎驢醉賦詩。\n在俗超然端自負，更須印可賴吾師。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `游琊山，呈息谷` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "奉送息谷吉祥山之行",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "奉送息谷吉祥山之行"
+      },
+      "text": {
+        "poemZh": "吉祥山色夢中靑，行李飄然一淨甁。\n若見林君煩寄語，杜門淸坐草《玄經》。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `奉送息谷吉祥山之行` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "雨中看牧丹",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "雨中看牧丹"
+      },
+      "text": {
+        "poemZh": "嬌嬈無力任支撑，笑臉初開尙宿酲。\n雨濕紅粧終不管，憐渠元自大憨生。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `雨中看牧丹` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "謝息谷惠米",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "謝息谷惠米"
+      },
+      "text": {
+        "poemZh": "吾生潦倒復麤疎，久矣家無擔石儲。\n蒙賜長腰珠玉粒，何須更作魯公書？",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `謝息谷惠米` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "七夕",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "七夕"
+      },
+      "text": {
+        "poemZh": "銀河淸淺鵲橋橫，天上星官此夕行。\n乞巧從來兒女事，令人笑殺柳先生。\n天孫歲歲有佳期，勝似人間遠別離。\n回首脩門路迢遞，不堪秋色上江籬。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `七夕` heading과 두 수 전문을 직접 확인했다. 이번 wave에서는 한 작품 row 안에 보존한다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "冒雨過東安江書所見",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "冒雨過東安江，書所見"
+      },
+      "text": {
+        "poemZh": "下却扁舟立釣磯，一江風細雨絲絲。\n蓑衣蒻笠眞成畫，遮莫渠儂未解詩。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `冒雨過東安江，書所見` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "白廉使惠茶",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "白廉使惠茶"
+      },
+      "text": {
+        "poemZh": "先生分我火前春，色味和香一一新。\n滌盡天涯流落恨，須知佳茗似佳人。\n活火淸泉手自煎，香浮碧椀洗葷羶。\n巓崖百萬蒼生命，擬問蓬山列位仙。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `白廉使惠茶` heading과 두 수 전문을 직접 확인했다. 이번 wave에서는 한 작품 row 안에 보존한다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "有感寄樞齊先生",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "有感，寄樞齊先生"
+      },
+      "text": {
+        "poemZh": "浮雲流水古今情，得失同歸一羽輕。\n持正祗應成獨笑，木綿菴遠可憐生。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `有感，寄樞齊先生` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "李浩然借拙藁以詩答之",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "李浩然借拙藁，以詩答之"
+      },
+      "text": {
+        "poemZh": "嶺海三年謾賦詩，遣懷寧復冀人知？\n若加斤削猶堪讀，只恐先生下手遲。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `李浩然借拙藁，以詩答之` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "題浩然遁村卷後",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "題浩然《遁村卷》後"
+      },
+      "text": {
+        "poemZh": "求田問舍愧吾遲，富貴從來不可期。\n好向遁村消日月，李先生記《子虛》詩。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `題浩然《遁村卷》後` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "十月十五日夜寄呈息谷長老",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "十月十五日夜，霜月滿天，負手行庭，吟得短篇，寄呈息谷長老"
+      },
+      "text": {
+        "poemZh": "琊山靑琊水淸□，客子胡爲久都城？\n歲將暮矣霜霰零，便當扣師月下扃。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `十月十五日夜...寄呈息谷長老` heading과 전문을 직접 확인했다. raw의 결자 표시 `□`는 원문 상태로 보존했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "呈尹判書求梅",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "呈尹判書求梅"
+      },
+      "text": {
+        "poemZh": "遠游曾到海南湄，千樹梅花千首詩。\n今日歸來玄化里，誰人寄與兩三枝？",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `呈尹判書求梅` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "再呈尹判書求瑞香",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "再呈尹判書求瑞香"
+      },
+      "text": {
+        "poemZh": "床頭置《易》淨無塵，日色烘窓暖似春。\n靑葉紫花香可愛，煩公擔送伴幽人。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `再呈尹判書求瑞香` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "梅花",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "梅花"
+      },
+      "text": {
+        "poemZh": "折得梅花一兩枝，膽甁斜揷轉淸奇。\n騷人只解吟秋菊，未見參橫月落時。\n暖日晴窓始吐葩，相看胸次自無邪。\n多生結習從今盡，髣髴毘耶長者家。\n一自江湖有此花，古人題詠幾相誇？\n暗香疎影眞佳語，試信逋仙是大家。\n溧泊曾游海上村，婆娑千樹月黃昏。\n卽今京國仍爲客，一詠幽姿一斷魂。\n坤陰用事政難禁，萬彙歸根未易尋。\n昨夜南枝生一白，焚香端坐見天心。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `梅花` heading과 다섯 수 전문을 직접 확인했다. 이번 wave에서는 한 작품 row 안에 보존한다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "李浩然送唐詩以詩答之",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "李浩然送唐詩，以詩答之"
+      },
+      "text": {
+        "poemZh": "漢山南望路逶迤，有底花時久別離。\n二月已過三月盡，苦吟多是憶君詩。\n令子傳書慰所思，仍携數秩盛唐詩。\n杜門終日高聲讀，人道陶齋一段奇。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `李浩然送唐詩，以詩答之` heading과 두 수 전문을 직접 확인했다. 이번 wave에서는 한 작품 row 안에 보존한다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "雨中寄淸涼然禪師",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "雨中，寄淸涼然禪師"
+      },
+      "text": {
+        "poemZh": "細雨濛濛晚未晴，摩耶山與白雲橫。\n自慙牽俗無由往，遙向中峯禮磬聲。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `雨中，寄淸涼然禪師` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "睡菴文長老印藏經于海印寺戲呈",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "睡菴文長老印藏經于海印寺，戲呈"
+      },
+      "text": {
+        "poemZh": "睡菴認破本來眞，不是尋行數墨人。\n安用區區印經卷？止啼黃葉未爲珍。\n曹溪一味豈言傳？微笑拈花亦偶然。\n好向武陵橋上看，山光水色蔚藍天。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `睡菴文長老印藏經于海印寺，戲呈` heading과 두 수 전문을 직접 확인했다. 뒤의 `海印洞口...`는 위치 주석으로 보아 `poemZh`에는 넣지 않았다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "題僧舍",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "題僧舍"
+      },
+      "text": {
+        "poemZh": "山北山南細路分，松花含雨落繽紛。\n道人汲井歸茅舍，一帶靑煙染白雲。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 후반 `題僧舍` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "送兪散翁還別業",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "送兪散翁還別業"
+      },
+      "text": {
+        "poemZh": "湍州山水號淸幽，我欲臨江起一樓。\n黃髮他年同里社，鷄豚往復燕春秋。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `送兪散翁還別業` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "代書寄法水長老",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "代書，寄法水長老"
+      },
+      "text": {
+        "poemZh": "秋風吹送雁南飛，一首新詩寄翠微。\n松鶴巖猿應悵望，去年游客不曾歸。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `代書，寄法水長老` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "寄深源長老",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "寄深源長老"
+      },
+      "text": {
+        "poemZh": "深源古寺在琊山，松柏陰中不掩關。\n擬把《楞嚴》叩精義，倘能乞得此身閑。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `寄深源長老` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "寄全齋李先生",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "寄全齋李先生"
+      },
+      "text": {
+        "poemZh": "契闊如今已四年，中間世故政紛然。\n莫雲春樹相思意，說與崇文子細傳。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `寄全齋李先生` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "過廣州憶李浩然",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "過廣州憶李浩然"
+      },
+      "text": {
+        "poemZh": "一年兩過漢山邊，復憶吟詩李浩然。\n宦路向來翻覆甚，好將身世付漁船。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `過廣州憶李浩然` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "日本有天祐上人饋赤城紫石硯以詩爲謝",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "日本有天祐上人，饋赤城紫石硯，以詩爲謝"
+      },
+      "text": {
+        "poemZh": "海岸神山是赤城，山中寶氣燭天明。\n上人斲得羊肝石，持贈東韓翰墨生。\n肌理如脂不假硎，池邊石眼點華星。\n染毫敢作雕蟲字？擬寫《楞伽》一部經。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `日本有天祐上人...` heading과 두 수 전문을 직접 확인했다. 이번 wave에서는 한 작품 row 안에 보존한다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "次如大虛九日韻",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "次如大虛九日韻"
+      },
+      "text": {
+        "poemZh": "山川形勝更淸秋，病客無聊只臥遊。\n門外白衣誰解送？籬東黃菊不曾收。\n三峯渺渺聳高秋，峯頂騷人賦《遠遊》。\n今日飄零猶故態，皇天老眼幾時收？\n劉安鷄犬白雲秋，曾怪神仙汗漫遊。\n縱是陶齋低且小，主人豪氣未能收。\n松都最好一年秋，瀟洒溪山勸客遊。\n想得風流三峴會，花前落帽玉纖收。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `次如大虛九日韻` heading과 네 수 전문을 직접 확인했다. 중간의 `三峯，曾吾也...`는 주석으로 보고 본문에 넣지 않았다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "走筆謝眞師惠蒲萄",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "走筆謝眞師惠蒲萄"
+      },
+      "text": {
+        "poemZh": "筠籠玉實累累堆，題封遠自梵宮來。\n一箇入口沈痾失，何必採藥尋蓬萊？",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `走筆謝眞師惠蒲萄` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "八關大會日呈誥院諸公",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "八關大會日，呈誥院諸公"
+      },
+      "text": {
+        "poemZh": "先朝法從似晨星，竊忝鴻樞鬢尙靑。\n却憶當年沈醉處，吏曹南畔有槐廳。\n望之誰不是仙儒？唾落人間萬斛珠。\n霞液橘杯香滿座，風流却似舊時無。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `八關大會日，呈誥院諸公` heading과 두 수 전문을 직접 확인했다. 이번 wave에서는 한 작품 row 안에 보존한다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "題妙覺琛師房",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "題妙覺琛師房"
+      },
+      "text": {
+        "poemZh": "十日禪扉九不開，香爐火滅但寒煤。\n西風陌上紅塵漲，何處飄然去未回？",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `題妙覺琛師房` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "奉送冏公智異山之行次圃隱韻",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "奉送冏公智異山之行，次圃隱韻"
+      },
+      "text": {
+        "poemZh": "壽老雖亡尙典刑，冏公後出似藍靑。\n今從智異山中去，且問何人共說經？",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `奉送冏公智異山之行，次圃隱韻` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "題神孝寺祖師房",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "題神孝寺祖師房"
+      },
+      "text": {
+        "poemZh": "綠葉低簷暑氣微，寺樓終日澹忘歸。\n烹茶享客求題壁，却笑居僧未息機。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `題神孝寺祖師房` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "送門生韓有文之西原覲親",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "送門生韓有文之西原覲親"
+      },
+      "text": {
+        "poemZh": "生子須當不後人，此行亦足慰渠親。\n壽觴酒瀲斑斕舞，好是庭闈一笑春。\n陶隱登科最少年，年來學業墮茫然。\n如今眊矂應休怪，玉汝吾知上有天。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `送門生韓有文之西原覲親` heading과 두 수 전문을 직접 확인했다. 이번 wave에서는 한 작품 row 안에 보존한다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "吟得二十八字寄崛山近公禪師",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "吟得二十八字，寄崛山近公禪師"
+      },
+      "text": {
+        "poemZh": "陶隱先生數甚奇，天涯三載髮如絲。\n歸來京國故人少，東望崛山勞夢思。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `吟得二十八字，寄崛山近公禪師` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "贈省敏近公禪",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "贈省敏近公禪"
+      },
+      "text": {
+        "poemZh": "柳州遺藁氣凌雲，晨起硏劘至日曛。\n自笑老生多技癢，從君又欲借蘇文。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `贈省敏近公禪` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "七夕宴集",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "七夕宴集"
+      },
+      "text": {
+        "poemZh": "落日徘徊雲不流，高樓歌吹海山秋。\n天孫也自有佳會，遠客奈何搔白頭？\n珈琊山下是吾州，老子遠遊今又秋。\n夢裏幾回成獨往？覺來依舊海西頭。\n使君風采照南州，握手笑談聊散愁。\n行止由來天所賦，病夫從此亦何求？",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `七夕宴集` heading과 세 수 전문을 직접 확인했다. 이번 wave에서는 한 작품 row 안에 보존한다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "贈寶蓮",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "贈寶蓮"
+      },
+      "text": {
+        "poemZh": "懶殘逝矣幾星霜？回首天台路渺茫。\n又是寶蓮相見少，不禁淸夢覓禪房。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `贈寶蓮` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "贈慶山",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "贈慶山"
+      },
+      "text": {
+        "poemZh": "明日重陽欲乃何？慶山携酒卽來過。\n杯心不厭十分凸，泛泛黃花生綠波。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `贈慶山` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "失題枕蘭亭",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "失題"
+      },
+      "text": {
+        "poemZh": "枕蘭亭畔水悠悠，紅樹秋光漾小舟。\n安得玉簫橫玉手，一聲吹送客中愁？\n州判先生有好懷，淸風太守玉山頹。\n樽前共作神仙會，病客扶筇首重回。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 후반 `失題` heading과 두 수 전문을 직접 확인했다. 기존 `失題` 항목과 구분하기 위해 첫 구절을 title에 반영했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "南行呈圃隱",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "南行，呈圃隱"
+      },
+      "text": {
+        "poemZh": "兩鬢年來雪一層，不堪羸疾更侵凌。\n誰家解畜江南藥？却老吾當學永興。\n先生手撫一張琴，座上諸公更整襟。\n自笑十年箏笛耳，却於今日聽淸音。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `南行，呈圃隱` heading과 두 수 전문을 직접 확인했다. 중간의 永興君 관련 긴 설명은 주석으로 보고 본문에 넣지 않았다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "送金少年自知之陽山兼柬陽山長老",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "送金少年自知之陽山，兼柬陽山長老"
+      },
+      "text": {
+        "poemZh": "陽山寶地淨無塵，好箇齋公作主人。\n邇來消息平安未？爲報相思過一春。\n年少金生藝已工，他時場屋捷奇功。\n吾家豚犬何爲者？勤苦看書笑乃翁。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `送金少年自知之陽山，兼柬陽山長老` heading과 두 수 전문을 직접 확인했다. 이번 wave에서는 한 작품 row 안에 보존한다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "星山別業",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "星山別業"
+      },
+      "text": {
+        "poemZh": "身世飄然水上萍，歸來幸此有柴荊。\n却將萬里乾坤眼，坐對星山一點靑。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `星山別業` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "奉寄密陽朴壯元",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "奉寄密陽朴壯元"
+      },
+      "text": {
+        "poemZh": "綠髮離鄕白髮歸，中間世故夢耶非？\n從今何處來尋我？不是僧窓卽釣磯。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `奉寄密陽朴壯元` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "失題神堂南澗",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "失題"
+      },
+      "text": {
+        "poemZh": "致身兩製亦無端，夕直朝衙醉夢間。\n好在神堂南澗水，他年歸去照蒼顏。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 후반 두 번째 `失題` heading과 전문을 직접 확인했다. 기존 `失題` 항목과 구분하기 위해 핵심 구절을 title에 반영했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "僧舍",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "僧舍"
+      },
+      "text": {
+        "poemZh": "金剛僧舍在城東，一樹山茶滿院紅。\n何日更爲花下客，醉看香霧洒空濛？\n曾共猊師撫稚松，東峯游了又西峯。\n如今松樹已過顙，惆悵猊師難再逢。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `僧舍` heading과 두 수 전문을 직접 확인했다. 이번 wave에서는 한 작품 row 안에 보존한다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "扈駕壺串卽事",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "扈駕壺串卽事"
+      },
+      "text": {
+        "poemZh": "從臣帳幕與雲浮，細雨斜風六月秋。\n却恐翠華霑濕久，新樓高壓大江頭。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `扈駕壺串卽事` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "題諫院詩卷",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "題諫院詩卷"
+      },
+      "text": {
+        "poemZh": "朝焚諫草綠煙長，世道區區好事郞。\n自是君王高舜聖，祗緣無處費文章。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `題諫院詩卷` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "寄圃隱",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "寄圃隱"
+      },
+      "text": {
+        "poemZh": "圃隱崇班押廟堂，靑雲知己倒輝光。\n南歸敢作留連計？佳會應須趁早涼。\n回首松山髮樣微，旅魂鄕思共依依。\n道坊堠子應相怪，又是飄然一布衣。\n山重水復路微茫，白汗翻漿畏景長。\n馬上有時成獨笑，悲歌一曲《鳳求凰》。\n少日陪游翰墨場，中間存歿兩堪傷。\n如今海內孤危甚，政是稽山盛孝章。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `寄圃隱` heading과 네 수 전문을 직접 확인했다. 뒤의 孔文擧 관련 설명은 주석으로 보고 본문에 넣지 않았다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "中原雜題",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "中原雜題"
+      },
+      "text": {
+        "poemZh": "天淨雲高秋氣新，倦游無處可怡神。\n行過萬里仍爲客，坐愛南山不負人。\n千峯廣利遠來過，列案珍羞厚意多。\n想得分從香積界，深慙不是老維摩。\n靑山環拱水縈回，布襪芒鞋幾往來？\n三十二年如一夢，夢中猶記鳳凰臺。\n人世誰非夢幻身？却從流落作悲辛。\n何當共聽松風坐，話盡三生石上因？",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `中原雜題` heading과 네 수 전문을 직접 확인했다. 이번 wave에서는 한 작품 row 안에 보존한다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "睡起率爾有作錄奉金生長老法座",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "睡起率爾有作，錄奉金生長老法座，幸一笑"
+      },
+      "text": {
+        "poemZh": "古鼎燒殘一炷香，頹然自到黑甜鄕。\n覺來情思淸如水，未用區區學坐忘。\n小梁《棋品》豈名科？爲底香秔費數馱？\n若對陶生饒一著，便能呼酒飮無何。\n疎風細雨近重陽，籬下黃花已有芳。\n爲報金生堂上老，引陶沽酒也何妨？",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `睡起率爾有作...` heading과 세 수 전문을 직접 확인했다. 이번 wave에서는 한 작품 row 안에 보존한다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "十七日早朝奉天門蒙賜冠服",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "十七日早朝，上御奉天門，臣崇仁等蒙賜冠服，獲與朝官列拜午門之外"
+      },
+      "text": {
+        "poemZh": "黃金闕角上初暾，踵武夔、龍謁至尊。\n須信聖恩無內外，朱衣、玉佩映端門。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `十七日早朝，上御奉天門...` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "是日皇太子御文華殿",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "是日，皇太子御文華殿，儀禮司序班前導，入自左掖門，列拜東宮南門之外"
+      },
+      "text": {
+        "poemZh": "謳歌四域共歸仁，端拱春坊近薦紳。\n何幸微臣隨列辟？得瞻堯顙類高辛。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `是日，皇太子御文華殿...` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "詠安南",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "詠安南"
+      },
+      "text": {
+        "poemZh": "漆紗爲帽皁紗衣，會得華言說却非。\n函表更兼珍翫進，逡巡不敢近天威。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `詠安南` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "詠流求",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "詠流求"
+      },
+      "text": {
+        "poemZh": "揷羽仍將帛裹頭，斑衣却使別人羞。\n說來言語侏𠌯甚，土貢唯看果下駒。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `詠流求` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "自詠口號",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "旣賦二詠，以示周君嗣昌，嗣昌曰：「願聞自詠。」輒口號。"
+      },
+      "text": {
+        "poemZh": "表裏山河習俗醇，地連華夏必親仁。\n千秋天錫箕疇在，神會心融豈乏人？",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `旣賦二詠...輒口號` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "龍江驛開船",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "龍江驛開船"
+      },
+      "text": {
+        "poemZh": "畫船撾鼓發江關，正是朝正使者還。\n更向都門一回首，五雲飛繞紫金山。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `龍江驛開船` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "楊子江",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "楊子江"
+      },
+      "text": {
+        "poemZh": "蒙衝巨艦載熊羆，百里央央見彩旗。\n誰道長江限南北？君王神武耀華夷。\n江流東注政漫漫，日暖波光綠可餐。\n堪笑六朝何事業？祗憑衣帶欲偏安。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `楊子江` heading과 두 수 전문을 직접 확인했다. 이번 wave에서는 한 작품 row 안에 보존한다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "過儀眞",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "過儀眞"
+      },
+      "text": {
+        "poemZh": "粉堞雲橫水遠藍，畫船來往接東南。\n政逢四海爲家日，還問當年郝大參。\n十里春風颺酒帘，筠籠處處賣黃柑。\n蓬窓曉起成微醉，頓覺江湖興味添。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `過儀眞` heading과 두 수 전문을 직접 확인했다. 중간의 `處俊爲遼東副總管`은 주석으로 보고 본문에 넣지 않았다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "過楊州",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "過楊州"
+      },
+      "text": {
+        "poemZh": "朝雲暮雨鎖嬋娟，羅綺氤氳鬧管絃。\n人物繁華渾似舊，風流還有杜樊川。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `過楊州` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "瓊花館有感",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "瓊花館有感"
+      },
+      "text": {
+        "poemZh": "苔斑石柱雨痕多，春盡何人肯暫過？\n惆悵花神無處覓，定應奔月伴姮娥。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `瓊花館有感` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "舟行自高郵湖過范光白馬二湖奉懷東亭圃隱",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "舟行自高郵湖，過范光、白馬二湖，奉懷東亭、圃隱二位先生"
+      },
+      "text": {
+        "poemZh": "高郵城下片帆張，白馬長湖接范光。\n滿目滄波渺何限？先生胸次更汪汪。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `舟行自高郵湖...奉懷東亭、圃隱` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "舟中望寶應",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "舟中望寶應"
+      },
+      "text": {
+        "poemZh": "孤城背水望來遙，白塔亭亭已見招。\n坐倚蓬窓詩思遠，江湖滿地畫難消。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `舟中望寶應` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "過淮陰有感漂母事",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "過淮陰，有感漂母事"
+      },
+      "text": {
+        "poemZh": "一飯王孫感慨多，不知菹醢竟如何？\n孤墳千載精靈在，笑煞高皇壯士歌。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `過淮陰，有感漂母事` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "超然臺",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "超然臺"
+      },
+      "text": {
+        "poemZh": "一片高臺聳半空，摩挲短碣認蘇公。\n風流人物今安在？寒雀疎林夕照紅。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `超然臺` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "沙門島懷古",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "沙門島懷古"
+      },
+      "text": {
+        "poemZh": "憑高欲望蓬萊島，渺渺煙波接蒼昊。\n安期空有棗如瓜，斜日茂陵生秋卓。\n八仙當日訪壺瀛，雲間旌旄擁飆輦。\n令人悵然欲從游，且問弱水今淸淺？\n千古之罘一點山，鴉鬟倒影滄波間。\n祖龍遺跡復誰記？石剡剝落苔紋斑。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `沙門島懷古` heading과 장편 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "金州途中",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "金州途中"
+      },
+      "text": {
+        "poemZh": "馬上東風日日吹，遙看楊柳萬金絲。\n歸來政趁韶光早，擬向高堂獻壽卮。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `金州途中` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "渡鴨綠",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "渡鴨綠"
+      },
+      "text": {
+        "poemZh": "行行恰到鴨江濆，物色依然是故園。\n怪底相逢皆刮目，新詩大半帶華言。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `渡鴨綠` heading과 전문을 직접 확인했다. 뒤의 `已上二十首，出《奉使錄》。`는 묶음 주석으로 보고 본문에 넣지 않았다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "送僧卷三末",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "送僧"
+      },
+      "text": {
+        "poemZh": "忽忽羈懷未易寧，秋風況復送師行。\n一般門外淸溪水，嗚咽殊非舊日聲。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw 끝부분의 `送僧` heading과 전문을 직접 확인했다. 기존 동명 heading과 구분하기 위해 title에 권3 말미 표시를 붙였다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "蠅",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "蠅"
+      },
+      "text": {
+        "poemZh": "終日營營几案前，飛來飛去勢飄然。\n家童未用麾椶拂，留與淸霜九月天。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `蠅` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "題明遠菴",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "題明遠菴"
+      },
+      "text": {
+        "poemZh": "架巖開數間屋，面壁有一箇僧。\n洞裏淸泉白石，軒前古木蒼藤。\n詩思奇奇怪怪，宦情莫莫殊殊。\n手裏携柱杖子，尋僧直到山頭。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 `題明遠菴` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "이숭인",
+      "authorHanja": "李崇仁",
+      "candidateTitle": "회고시",
+      "matchedTitle": "題康子野卷",
+      "sourceWork": {
+        "collectionTitle": "陶隱集",
+        "juan": "卷三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三",
+        "rawUrl": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high",
+        "entryTitle": "題康子野卷"
+      },
+      "text": {
+        "poemZh": "憶昔與君獻賦，南巡駐蹕西原。\n邇來歲月踰八，交契深於弟昆。\n雪盡梅谿淸淺，香凝竹屋氤氳。\n羡子翩然歸去，宦情淡似秋雲。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `陶隱集/卷三` raw에서 마지막 `題康子野卷` heading과 전문을 직접 확인했다."
+      }
     }
   ],
   "blockers": [],
@@ -588,7 +2884,7 @@
     {
       "label": "陶隱集 卷三 raw",
       "url": "https://zh.wikisource.org/wiki/陶隱集/卷三?action=raw",
-      "notes": "南郊, 苦熱, 玄聖寺讀書, 奉送羅判事使日東, 尋散翁不遇, 呈金仲權, 西江卽事, 送李生之水原, 江邊夜宿, 題全五倫山房, 泰齋相公宅梅花, 丁未十月二十九日扈駕康安殿 원문을 확인했다."
+      "notes": "南郊, 苦熱, 玄聖寺讀書, 奉送羅判事使日東, 尋散翁不遇, 呈金仲權, 西江卽事, 送李生之水原, 江邊夜宿, 題全五倫山房, 泰齋相公宅梅花, 丁未十月二十九日扈駕康安殿, 登松嶽, 登樓, 送金若齋, 送李密直承源巡問楊廣, 失題, 旅寓聞鶯, 道上遇雪, 雪夜憶三峯呈諸友, 春雲, 秋日雨中有感, 丁未七月十五日夜赴直廬夢得一聯, 冒雨過地藏寺南池, 山中感興 원문을 확인했다. 후속 pass에서 游琊山呈息谷부터 寄深源長老까지 21건을 추가 확인했다. final push에서 寄全齋李先生부터 題康子野卷까지 권3 끝부분 48건을 추가 확인했다."
     }
   ]
 }
