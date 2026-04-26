@@ -1,0 +1,3162 @@
+{
+  "workerId": "worker-13-jeong-mongju-poeunjip",
+  "modelRecommendation": "gpt-5.4",
+  "status": "completed",
+  "targetAuthors": [
+    "정몽주"
+  ],
+  "summary": {
+    "candidateWorksChecked": 2,
+    "directTextWorksFound": 112,
+    "ocrCandidates": 0,
+    "blockedWorks": 0
+  },
+  "poems": [
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "蓬萊驛。示韓書狀。",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "蓬萊驛。示韓書狀。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "昨日張帆涉海波。故園回首已天涯。地經遼霫軍容壯。路入登萊景物多。客子未歸逢燕子。杏花纔落又桃花。同來幸有韓生在。每作新詩和我歌。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `蓬萊驛。示韓書狀。` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "龍山驛",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "龍山驛",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "自愧因王事。往來勤館人。登樓望行色。撾鼓出迎賓。列俎供珍饌。高床設累茵。誰言爲客苦。不及在家貧。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `龍山驛` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "黃山驛路上",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "黃山驛路上",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "麥穗靑靑桑葉稠。沃饒千里接鋤耰。地連北海波聲壯。山擁東秦翠色浮。每寫詩篇爲日課。聊將使節當春遊。此行又是朝天去。明日丹墀拜冕旒。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `黃山驛路上` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "書諸橋驛壁上",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "書諸橋驛壁上",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "積雪經寒凜。狂濤涉險難。東來今幾日。南去漸無山。官柳綠相倚。野花紅未殘。書生亦榮矣。獻馬向天閑。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `書諸橋驛壁上` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "萊州海神廟",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "萊州海神廟",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "海神遺廟壓滄茫。天子時修爲降香。自是聖朝崇祀典。王魁往事也荒唐。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `萊州海神廟` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "膠水縣。別徐敎諭。",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "膠水縣。別徐敎諭。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "萬邦同軌日。聖主右文時。邂逅逢佳士。懽忻似舊知。風儀傾後輩。經術卽吾師。遠大宜相勉。何須惜別離。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `膠水縣。別徐敎諭。` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "客夜在丘西驛",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "客夜在丘西驛",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "客夜人誰問。沉吟欲二更。詩從枕上得。燈在壁間明。默默思前事。遙遙計去程。俄然睡一覺。僮僕報鷄鳴。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `客夜在丘西驛` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "四月初一日。高密縣聞鸎。",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "四月初一日。高密縣聞鸎。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "日午來過古縣城。綠陰深巷暑風淸。殷勤拂壁題詩句。記取流鸎第一聲。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `四月初一日。高密縣聞鸎。` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "次韓揔郞鴨綠江詩韻",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "次韓揔郞鴨綠江詩韻",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "歸來豈待故人招。擬向南山種豆苗。受命何曾顧家事。觀光又欲覲天朝。華風昔慕衣冠美。土貢今將騄駬驕。盛代政逢收混一。江南海北路非遙。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `次韓揔郞鴨綠江詩韻` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "日照縣",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "日照縣",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "海上孤城草樹荒。最先迎日上扶桑。我來東望仍搔首。波浪遙應接故鄕。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `日照縣` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "飮酒",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "飮酒",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "客路春風發興狂。每逢佳處卽傾觴。還家莫愧黃金盡。剩得新詩滿錦囊。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `飮酒` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "宿贛楡縣",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "宿贛楡縣",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "縣官無事草生庭。城上不聞刀斗聲。父老賽神來討卦。兒童下學競呼名。柳塘日暖紅鱗戱。麥隴風過翠浪生。惆悵三韓遠遊客。問津還愧耦而耕。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `宿贛楡縣` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "山東途中",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "山東途中",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "飄然乘風涉滄溟。跨馬日日登郵亭。柳條拂地翠蛟舞。桃花滿城紅錦零。客鬚盡向異鄕白。俗眼肯爲吾曹靑。愁來無方不可撥。直須火急呼酒甁。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `山東途中` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "憶宗誠，宗本兩兒。",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "憶宗誠，宗本兩兒。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "百念俱灰滅。關心只兩兒。未離慈母養。已誦古人詩。積善吾何有。揚名汝自期。秪思衰老日。及見長成時。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `憶宗誠，宗本兩兒。` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "上㽵驛。贈高侍郞。",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "上㽵驛。贈高侍郞。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "過客何曾識。先生在上㽵。明時懷耿介。列宿缺光芒。借耒耕瓜圃。求錢葺草堂。朝廷用寬典。終不負賢良。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `上㽵驛。贈高侍郞。` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "有懷李陶隱，鄭三峯，李遁村三君子。",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "有懷李陶隱，鄭三峯，李遁村三君子。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "日長濃綠滿園林。想見陶翁坐獨吟。每遇鄭生留講學。時邀李老共論心。月臨屋角思顔色。風動簾鉤訝足音。後會何時說今夜。明朝驅馬向淮陰。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `有懷李陶隱，鄭三峯，李遁村三君子。` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "山東老人",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "山東老人",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "婦去採桑男去耕。籬間炙背喜新晴。鬂毛幾閱經離亂。眠孔猶存見太平。小圃花開親灌漑。比鄰酒熟屢招迎。坐談八十年前事。童稚來聽耳共傾。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `山東老人` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "諸城驛夜雨",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "諸城驛夜雨",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "今夜諸城驛。胡爲思舊居。遠遊春盡後。獨卧雨來初。永野田宜稻。烏川食有魚。我能兼二者。但未賦歸歟。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `諸城驛夜雨` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "金城驛。懷松京諸友。",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "金城驛。懷松京諸友。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "夫人美如玉。第宅在松京。爲祿曾同仕。題詩每共評。夢回燈吐艶。更盡鼓添聲。欹枕金城驛。誰知此夜情。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `金城驛。懷松京諸友。` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "韓信墓",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "韓信墓",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "嗣子孱柔諸將雄。高皇無復念前功。楚王飮恨重泉下。千載知心只晦翁。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `韓信墓` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "漂母塚",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "漂母塚",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "漂母高風我所歆。道經遺塚爲傷心。莫言不受王孫報。千古芳名直幾金。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `漂母塚` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "四月十四日。淮陰水驛登舟。",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "四月十四日。淮陰水驛登舟。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "經春困鞍馬。今日喜登舟。旣有床褥穩。又無風浪憂。淡烟橫柳驛。細雨濕芳洲。向晚棹歌發。忽生千里愁。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `四月十四日。淮陰水驛登舟。` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "淮陰驛分道。別龎鎭撫。",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "淮陰驛分道。別龎鎭撫。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "我行牽畫舸。君去策飛驂。客路初分處。春愁愈不堪。靑山繞淮甸。芳草滿江南。明日維楊驛。還期共夜談。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `淮陰驛分道。別龎鎭撫。` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "舟發淮陰。向寶應縣。",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "舟發淮陰。向寶應縣。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "百里平湖深丈餘。畫船來往勝吾廬。荷舒綠葉宜包飯。柳長新枝可貫魚。且向客途經險易。因知世事有乘除。卧思故里多佳處。恠底靑山獨負余。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `舟發淮陰。向寶應縣。` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "范光湖曉景",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "范光湖曉景",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "早起看曉色。客心還慘悽。湖明波瀲瀲。月落氣凄凄。意適與景會。詩因著字迷。舟人忽相喚。搖棹各東西。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `范光湖曉景` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "夢",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "夢",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "世人多夢寐。夢罷旋成空。自是因思慮。何能有感通。殷家得傅說。孔氏見周公。此理人如問。當求至靜中。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `夢` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "高郵湖",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "高郵湖",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "南歸日日是遨遊。湖上淸風送葉舟。兩岸菰蒲行不盡。又隨明月宿芳洲。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `高郵湖` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "高郵城",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "高郵城",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "湖光瀲灧繞重城。粉堞崔巍百里明。仰認聖人憂治世。故留精卒誡嚴更。往時豪傑來依險。每逞頑凶此弄兵。畢竟驅民爲湯武。今看菱芡滿池生。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `高郵城` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "客中自遣",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "客中自遣",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "天地容吾輩。光陰負老夫。簪花羞短髮。丸藥養殘軀。風雨歸舟小。江湖客枕孤。終然爲君父。不得念妻孥。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `客中自遣` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "楊州",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "楊州",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "經過楚地山川。想像隋家宮闕。往時興廢誰嗟。此日繁華可悅。仙花杳杳難尋。官柳依依堪折。晚來偶泊蘭舟。二十四橋明月。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `楊州` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "戱贈偕行年少",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "戱贈偕行年少",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "曾聞杜牧最風流。每向楊州好暗遊。今日周南王化近。行人且莫錯回頭。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `戱贈偕行年少` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "眞州",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "眞州",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "芳草遙連楊子津。浮生再度過儀眞。畫船相送煩郵吏。寶塔來迎似故人。共說郝公囚縶久。誰言鄭老往還頻。今朝喜氣那堪說。望見祥雲繞紫宸。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `眞州` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "楊州竹西亭。懷松京諸友。",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "楊州竹西亭。懷松京諸友。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "大王堂壓石流淸。煬帝堤連草色靑。月夜故人松下路。春風孤客竹西亭。遠遊自識爲心苦。臨老欣逢至治馨。寄語諸君莫相憶。梯航來往接東溟。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `楊州竹西亭。懷松京諸友。` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "舟中美人",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "舟中美人",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "美人輕漾木蘭舟。背揷花枝照碧流。北楫南檣多少客。一時腸斷忽回頭。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `舟中美人` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "四月十九日渡江。至龍潭驛。",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "四月十九日渡江。至龍潭驛。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "雪落來過鴨綠。花飛始到龍潭。隱約鍾山蒼翠。白頭又踏江南。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `四月十九日渡江。至龍潭驛。` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "入京",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "入京",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "江南形勝地。千古石頭城。綠水環金闕。靑山繞玉京。一人中建極。萬國此朝正。我亦乘査至。宛如天上行。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `入京` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "皇都",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "皇都",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "皇都穆穆四門開。遠客觀光𢠢壯懷。日暖紫雲低魏闕。春深翠柳夾官街。錦袍公子烏紗帽。蒨袖女兒紅綉鞋。賓館岹嶢近天上。蘭舟不用泊秦淮。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `皇都` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "出京",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "出京",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "聖恩偏及遠。何以答生成。土薄蠲常貢。天高察下情。陛辭瞻日表。舟卧聽江聲。半夜潮回急。須臾帶我行。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `出京` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "舟次白鷺洲",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "舟次白鷺洲",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "白鷺洲邊浪接天。鳳凰臺下草如烟。三山二水渾依舊。不見當年李謫仙。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `舟次白鷺洲` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "楊子渡。望北固山悼金若齋。",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "楊子渡。望北固山悼金若齋。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "先生豪氣盖南州。憶昔同登多景樓。今日重遊君不見。蜀江何處獨魂遊。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `楊子渡。望北固山悼金若齋。` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "高郵湖舟中",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "高郵湖舟中",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "路涉湖中返。相望百里堤。風帆翻背面。水枕易東西。舟走身如寄。山移眼忽迷。明朝過淮上。騎馬向靑齊。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `高郵湖舟中` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "舟中夜興",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "舟中夜興",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "湖水澄澄鏡面平。舟中宿客不勝淸。悄然半夜微風起。十里菰蒲作雨聲。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `舟中夜興` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "南望",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "南望",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "匹馬朝辭建業。扁舟暮抵維楊。腸斷不堪南望。空看水遠山長。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `南望` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "題遼東龎鎭撫扇",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "題遼東龎鎭撫扇",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "皎月近人揚素輝。淸風爲子却炎威。提携莫憚遼東遠。當見三軍屬指揮。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `題遼東龎鎭撫扇` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "端午日戱題",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "端午日戱題",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "今年端午在郵亭。誰送菖蒲酒一甁。此日不宣沈角黍。自家還是屈原醒。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `端午日戱題` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "途中遇雨",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "途中遇雨",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "黑雲才起忽聞雷。白雨時從野外來。似爲行人洗炎熱。又從歸路淨塵埃。水添蒲渚新芽沒。露浥禾畦嫩葉開。馬上微涼飄客袂。吟看霽色亦佳哉。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `途中遇雨` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "湖中觀魚",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "湖中觀魚",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "潛在深淵或躍如。子思何取著于書。但將眼孔分明見。物物眞成潑潑魚。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `湖中觀魚` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "諸城縣聞簫",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "諸城縣聞簫",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "黃梅雨歇嫩凉生。綠樹陰濃暑氣淸。欹枕暫眠風簟上。隔墻時聽鳳簫聲。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `諸城縣聞簫` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "贈孔主事",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "贈孔主事",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "聖門千載見雲仍。一聽微言爲服膺。別後何忘寄書札。况蒙厚意惠溪藤。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `贈孔主事` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "石橋鋪。示陶鋪司。",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "石橋鋪。示陶鋪司。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "園葵向日紅房拆。庭樹含風翠盖搖。白髮鋪兵無一事。綠陰長日獨逍遙。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `石橋鋪。示陶鋪司。` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "卽墨縣",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "卽墨縣",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "眼見全齊次第降。謀臣於此慮弓藏。二城不待勞餘力。樂毅眞先負惠王。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `卽墨縣` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "田橫島",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "田橫島",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "五百人爭爲殺身。田橫高義感千春。當時失地夫何責。大漢寬仁得萬民。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `田橫島` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "蓬萊閣",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "蓬萊閣",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "採藥未還滄海深。秦皇東望此登臨。徐生詐計非難悟。自是君王有欲心。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `蓬萊閣` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "沙門島",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "沙門島",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "神女祠何處。沙門海上岑。戎車連鶴野。貢道接雞林。利涉由靈貺。徽封自聖心。泊舟來酌酒。稽首冀來歆。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `沙門島` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "鐵山",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "鐵山",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "浪湧烟沉不見津。鐵山千古導行人。羞將白髮經過遠。喜遇蒼顔指點頻。形勢北來仍㟮屼。峯巒東走尙逡廵。如今峽口多舟楫。天子興師淨塞塵。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `鐵山` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "旅順驛。呈管驛馬鎭撫。",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "旅順驛。呈管驛馬鎭撫。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "美鬚長大氣豪雄。佳士如君亦罕逢。賤介往來王化裏。高朋談笑客途中。畜蕃驛廏靑騘富。食足官厨綠蟻濃。盛代人才皆有用。他時塞上看成功。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `旅順驛。呈管驛馬鎭撫。` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "旅順驛阻雨",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "旅順驛阻雨",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "海風吹雨冷颼颼。五月遼東也似秋。此去前程尙迢遞。那堪數日獨淹留。孤燈明滅分漁艇。畫角悲涼起戍樓。縱向明朝看霽色。馬疲泥滑使人愁。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `旅順驛阻雨` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "金州韋指揮宅畫鷹。走筆。",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "金州韋指揮宅畫鷹。走筆。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "坐客咨嗟看畫鷹。風霜滿壁欲揚翎。君王羽獵鍾山下。賤介何時獻海靑。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `金州韋指揮宅畫鷹。走筆。` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "聞角",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "聞角",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "畫角吹殘入渺茫。高空過鴈亦回翔。一聲半夜梅花弄。斷盡遼東壯士腸。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `聞角` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "安市城懷古",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "安市城懷古",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "黃金殿上坐垂衣。百戰雄心不自持。想見太宗親駕日。宛如馮婦下車時。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `安市城懷古` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "楊子江",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "楊子江",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "貫楚呑吳氣象雄。如今四海此朝宗。泝流若問江源去。直到峩眉第一峯。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `楊子江` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "太平簫",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "太平簫",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "鳳管裝金口。淸商自此生。一聲高撼月。六孔巧鑽星。作止嚴軍令。低昂動客情。想看征北日。吹徹虜王庭。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `太平簫` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "李勣戰處",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "李勣戰處",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "三渡遼河敵始摧。當時戰骨亦哀哉。君王竟受窮兵責。好把渠家富貴來。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `李勣戰處` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "野航",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "野航",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "昔在野航上。輕橈傍釣臺。泛溪携稚戱。浮月訪僧回。人去誰乘載。風吹自往來。君毋思理楫。盛代急贒材。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `野航` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "復州館中井",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "復州館中井",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "伊誰修館宇。鑿井在墻東。赤日行天上。淸泉出地中。往來紛似織。酌飮利無窮。玩易曾觀象。知渠濟物功。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `復州館中井` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "行次復州呈王指揮。兼簡列位指揮相公。",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "行次復州呈王指揮。兼簡列位指揮相公。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "諸公逢盛世。豪氣上金臺。早已紆宸眷。于斯展將材。城修百雉峻。陣布六花開。待見功成月。洋洋奏凱廻。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `行次復州呈王指揮。兼簡列位指揮相公。` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "呈楊指揮",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "呈楊指揮",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "精悍饒奇略。公才古亦稀。燕山曾陷陣。瀘水遠宣威。富貴凝金帶。功名起鐵衣。同過遼海上。別路欲斜暉。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `呈楊指揮` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "復州驛夜雨",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "復州驛夜雨",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "漸近鄕關喜可勝。心忙日日數長亭。雨聲今夜頭添白。山色明朝眼共靑。驛廐荒涼鳴瘦馬。賓軒寂寞點流螢。却從地主謀歸計。客子狂言肯一聽。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `復州驛夜雨` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "楊州。食枇杷。",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "楊州。食枇杷。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "稟性生南服。貞姿度歲寒。葉繁交翠羽。子熟蔟金丸。藥裹收爲用。冰盤獻可飡。嘗新楚江上。懷核種東韓。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `楊州。食枇杷。` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "復州。食櫻桃。",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "復州。食櫻桃。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "五月遼東暑氣微。櫻桃初熟壓低枝。嘗新客路還腸斷。不及吾君薦廟時。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `復州。食櫻桃。` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "喜晴",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "喜晴",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "雨斷簷前霽色佳。暮天詩興𮬾齊霞。驛䆫涼吹生庭樹。古戍斜陽照塞沙。却愧主人煩送路。應憐客子欲還家。想看小圃霑濡遍。荷耒何時去種瓜。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `喜晴` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "京城食瓜",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "京城食瓜",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "憶在靑門灌漑多。暮春方見長新芽。江南地暖生成早。四月中旬已食瓜。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `京城食瓜` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "食藕",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "食藕",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "味甜如蜜涼如雪。采采終朝出碧池。錯落滿盤堆玉質。飄搖迎刃散銀絲。愛花周氏曾留說。種實韓公亦有詩。愧我久爲糊口者。唯知咀嚼豈非癡。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `食藕` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "熊嶽古城",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "熊嶽古城",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "瘦馬荒城路。低佪行色微。旋風帶沙起。片雨逐雲飛。日落狐狸走。叢深鳥雀歸。哀哉北征卒。車下宿相依。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `熊嶽古城` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "宿盖州",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "宿盖州",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "唐帝親臨戰。相傅說盖牟。廢興知幾遍。登覽不禁愁。民自往時散。城從今日修。盛朝家四海。遺俗可無憂。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `宿盖州` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "遼河漕運",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "遼河漕運",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "年年遼水上。粳稻自東吳。萬里連烽燧。千帆接舳艫。主憂因遠略。師飽只相娛。安得增屯種。於焉足所需。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `遼河漕運` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "甘蔗",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "甘蔗",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "玉肌細切初宜啖。靈液濃煎亦可飡。漸入始知佳境遠。莫將世味比渠看。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `甘蔗` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "盖州雨中。留待落後人。",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "盖州雨中。留待落後人。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "無事唯宜睡。終朝卧竹床。雨驚鄕夢破。日共客愁長。後騎雲山隔。歸程泥路妨。何時喜晴霽。相率過遼陽。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `盖州雨中。留待落後人。` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "會同館柳",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "會同館柳",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "洪武初年種。亭亭接上林。新梢過碧瓦。綠葉蔭華簪。舞集鸞凰盛。生成雨露深。我來歌聖德。遶樹一沉吟。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `會同館柳` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "蒙賜朝服行賀禮",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "蒙賜朝服行賀禮",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "上國崇文治。藩邦賀太平。聖恩榮賤介。朝服拜明庭。日照添袍色。風淸送佩聲。小臣何以報。億載祝皇齡。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `蒙賜朝服行賀禮` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "盖州館柳",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "盖州館柳",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "築館仍栽柳。迎門似盖欹。春庭濃綠滿。夏榻嫩涼吹。驛騎來磨樹。行人愛折枝。州民好封植。天使此游嬉。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `盖州館柳` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "渤海古城",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "渤海古城",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "渤海昔爲國。於焉遺址存。唐家許相襲。遼氏肆幷呑。附我全臣庶。于今有子孫。遺民那解此。嘆息住歸軒。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `渤海古城` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "聞曉鼓",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "聞曉鼓",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "更深耿耿抱愁懷。城上俄聞曉鼓催。客路半年孤枕上。䆫欞依舊送明來。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `聞曉鼓` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "望潤州",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "望潤州",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "欲以慰幽抱。天涯作此行。哦詩浮海闊。煮茗汲江淸。水遶金山寺。花藏鐵甕城。相望似圖畫。爲汝駐歸程。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `望潤州` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "江南。憶陶隱。",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "江南。憶陶隱。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "客路江南每獨唫。錦囊千首是光陰。只嫌詩病還依舊。他日煩君試一針。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `江南。憶陶隱。` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "吟詩",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "吟詩",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "終朝高詠又微吟。苦似披沙欲鍊金。莫恠作詩成太瘦。只緣佳句每難尋。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `吟詩` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "夜興",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "夜興",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "夜氣生公館。空庭雨乍收。飛螢帶秋思。宿客抱淸愁。露葉聞餘滴。星河看欲流。明朝還北去。數起問更籌。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `夜興` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "湯浴",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "湯浴",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "雨行泥汚遍。熱走汗霑頻。沂浴思春暮。湯銘誦日新。氤氳喜有水。淸淨洗無塵。頓覺精神爽。臨風更岸巾。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `湯浴` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "江上。憶周左參。",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "江上。憶周左參。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "江上玉人何處游。江聲日暮向東流。春風萬里孤舟客。一夜相思欲白頭。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `江上。憶周左參。` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "江南曲",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "江南曲",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "江南女兒花揷頭。笑呼伴侶游芳洲。蕩漿歸來日欲暮。鴛鴦雙飛無限愁。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `江南曲` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "征婦怨",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "征婦怨",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "一別年多消息稀。塞垣存歿有誰知。今朝始寄寒衣去。泣送歸時在腹兒。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `征婦怨` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "渤海懷古",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "渤海懷古",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "唐室勞師定海東。太郞隨起作王宮。請君莫說關邊策。自古伊誰保始終。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `渤海懷古` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "壬子十月十二日發京師。宿鎭江府丹徒驛。",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "壬子十月十二日發京師。宿鎭江府丹徒驛。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "龍江關口解行舟。日暮來投古潤州。永夜不眠看月色。旅魂鄕思共悠悠。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `壬子十月十二日發京師。宿鎭江府丹徒驛。` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "金山寺",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "金山寺",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "金山宛在碧波間。山下扁舟信往還。眼底已窮眞面目。不須脚力更登攀。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `金山寺` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "大倉九月。贈工部主事胡璉。",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "大倉九月。贈工部主事胡璉。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "男子平生愛遠遊。異鄕胡乃疑淹留。無人爲下陳蕃榻。有客獨登王粲樓。萬戶砧聲明月夜。一江帆影白蘋秋。時來飮酒城東市。豪氣猶能塞九州。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `大倉九月。贈工部主事胡璉。` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "大倉九月",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "大倉九月",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "幽人夜不寐。秋氣颯以涼。曉來眄庭樹。枝葉半已黃。白雲從東來。悠然思故鄕。故鄕萬餘里。思歸不可得。手把故人書。悶悶聊自讀。憂來縈中腸。廢書長嘆息。人生百歲內。光陰如過隙。胡爲不自安。而作遠游客。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `大倉九月` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "龍江關",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "龍江關",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "蘭舟早發鳳凰臺。城闕崔巍首重回。欲爲鍾山題一句。龍江津吏苦相催。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `龍江關` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "瓜州",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "瓜州",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "泊舟登岸待潮生。楊子津南第一程。楚岸鴈聲還北去。海門帆影尙西行。石幢始認金山寺。粉堞相望鐵甕城。隱約鍾山來入望。五雲深處卽神京。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `瓜州` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "江南柳",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "江南柳",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "江南柳江南柳。春風裊裊黃金絲。江南柳色年年好。江南行客歸何時。蒼海茫茫萬丈波。家山遠在天之涯。天涯之人日夜望歸舟。坐對落花空長嘆。空長嘆但識相思苦。肯識此間行路難。人生莫作遠游客。少年兩鬢如雪白。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `江南柳` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "楊子江船上",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "楊子江船上",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "身隨海舶賀王正。路入江南眼忽明。地闢天開新建極。龍盤虎踞舊聞名。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `楊子江船上` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "登州仙祠",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "登州仙祠",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "何處登臨慰我思。之罘城下古仙祠。只嫌汲汲南歸疾。未和坡翁海市詩。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `登州仙祠` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "登州過海",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "登州過海",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "之罘城下片帆張。便覺須臾入杳茫。雲接蓬萊仙闕遠。月明遼海客衣涼。百年天地身如粟。兩字功名鬢欲霜。何日長歌賦歸去。蓬䆫終夜寸心傷。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `登州過海` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "孛蘭店路上",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "孛蘭店路上",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "向夕問前店。天寒行旅稀。朔風吹瘦馬。微雪點征衣。浮世身如寄。危途計易非。遙知故山下。稚子掩柴扉。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `孛蘭店路上` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "在楊子江路上",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "在楊子江路上",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "壯志當年在四方。海隅長嘆獨彷徨。此行剩被天工笑。才到江南憶故鄕。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `在楊子江路上` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "多景樓贈季潭",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "多景樓贈季潭",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "欲展平生氣浩然。須來甘露寺樓前。甕城畫角斜陽裏。瓜浦歸帆細雨邊。古鑊尙留梁歲月。高軒直壓楚山川。登臨半日逢僧話。忘却東韓路八千。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `多景樓贈季潭` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "嗚呼島",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "嗚呼島",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "三傑徒勞作漢臣。一時功業竟成塵。只今留得嗚呼島。長使行人淚滿巾。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `嗚呼島` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "姑蘇臺",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "姑蘇臺",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "衰草斜陽欲暮秋。姑蘇臺上使人愁。前車未必後車戒。今古幾番麋鹿遊。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `姑蘇臺` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "急遞鋪",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "急遞鋪",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "臨路翬飛起小亭。官家置簿又留兵。一封遠至金鈴響。十里相望雪脊明。走布上恩頒縣邑。又傳邊報達京城。盛朝政令流行速。四海如今見太平。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `急遞鋪` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "宿湯站",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "宿湯站",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "半生豪氣未全除。跨馬重遊鴨綠堤。獨卧野盤無夢寐。滿山明月子䂓啼。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `宿湯站` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "洪武丁巳。奉使日本作。",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "洪武丁巳。奉使日本作。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "海島千年郡邑開。乘桴到此久徘徊。山僧每爲求詩至。地主時能送酒來。却喜人情猶可賴。休將物色共相猜。殊方孰謂無佳興。日借肩輿訪早梅。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `洪武丁巳。奉使日本作。` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "遊觀音寺",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "遊觀音寺",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "野寺春風長綠苔。來遊終日不知回。園中無數梅花樹。盡是居僧手自栽。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `遊觀音寺` heading과 전문을 직접 확인했다."
+      }
+    },
+    {
+      "authorKo": "정몽주",
+      "authorHanja": "鄭夢周",
+      "candidateTitle": "圃隱集 한시",
+      "matchedTitle": "再遊是寺",
+      "sourceWork": {
+        "collectionTitle": "圃隱集",
+        "juan": "卷一",
+        "entryTitle": "再遊是寺",
+        "sourceUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+        "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "溪流遶石綠徘徊。策杖沿溪入洞來。古寺閉門僧不見。落花如雪覆池臺。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource `圃隱集/卷一` raw에서 `再遊是寺` heading과 전문을 직접 확인했다."
+      }
+    }
+  ],
+  "sourcesConsulted": [
+    {
+      "title": "圃隱集/卷一",
+      "url": "https://zh.wikisource.org/wiki/圃隱集/卷一",
+      "rawUrl": "https://zh.wikisource.org/wiki/圃隱集/卷一?action=raw",
+      "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+      "notes": "zh Wikisource raw text. Heading 경계가 분명하고 주석 template을 제거한 짧은 詩 항목 112건을 반영. 길거나 산문 설명이 섞인 항목은 제외."
+    }
+  ],
+  "blockers": []
+}

@@ -40,6 +40,8 @@ const AUTHOR_ID_OVERRIDES = {
 };
 
 const ROMAN_SLUG_OVERRIDES = {
+  '유리왕': 'yuri-wang',
+  '서동': 'seodong',
   '최치원': 'choe-chiwon',
   '박인량': 'bak-inryang',
   '김부식': 'kim-busik',
@@ -52,6 +54,7 @@ const ROMAN_SLUG_OVERRIDES = {
   '정몽주': 'jeong-mongju',
   '정도전': 'jeong-dojeon',
   '권근': 'gwon-geun',
+  '세종': 'sejong',
   '김시습': 'kim-siseup',
   '서거정': 'seo-geojeong',
   '김종직': 'kim-jongjik',
@@ -67,12 +70,16 @@ const ROMAN_SLUG_OVERRIDES = {
   '김정희': 'kim-jeonghui',
   '황현': 'hwang-hyeon',
   '김택영': 'kim-taekyeong',
-  '신위': 'sin-wi'
+  '신위': 'sin-wi',
+  '정조': 'jeongjo',
+  '효명세자': 'hyomyeong-seja',
+  '김병연': 'kim-byeongyeon'
 };
 
 const GENRE_HINTS = [
   { pattern: /향가|祭亡妹歌|兜率歌|讚耆婆郞歌|安民歌|遇賊歌|彗星歌|怨歌|處容歌|普賢十願歌/u, broad: '고유시가', form: '향가', track: 'native-form' },
   { pattern: /고려가요|鄭瓜亭曲/u, broad: '고유시가', form: '고려가요', track: 'native-form' },
+  { pattern: /黃鳥歌|薯童謠|月印千江之曲|龍飛御天歌/u, broad: '고유시가', form: '고대/왕실 시가', track: 'native-form' },
   { pattern: /시조|丹心歌|묏버들/u, broad: '고유시가', form: '시조', track: 'native-form' },
   { pattern: /가사|關東別曲|사미인곡/u, broad: '고유시가', form: '가사', track: 'native-form' },
   { pattern: /설화|花王戒/u, broad: '고전시문', form: '설화/교훈 시문', track: 'context-work' },
@@ -444,6 +451,11 @@ function normalizeWorkerPoem(workerPoem, authorsByName) {
   const idPrefix = `KPOEM-WORKER-${author.slug.toUpperCase()}-${sequence}`;
   const displayTitle = workerPoem.matchedTitle || workerPoem.candidateTitle;
   const genre = inferGenre(author, displayTitle || workerPoem.candidateTitle || '');
+  const titleOnlyGenre = inferGenre({ ...author, sourceHint: '', notes: '' }, displayTitle || workerPoem.candidateTitle || '');
+  if (readiness === 'direct-text-collected' && titleOnlyGenre.track === 'hansi-candidate') {
+    genre.broad = '한시';
+    genre.form = '미확정';
+  }
   if (displayTitle === '東明王篇 幷序') {
     genre.form = '장편 서사시';
   }

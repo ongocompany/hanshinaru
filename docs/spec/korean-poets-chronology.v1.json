@@ -16,18 +16,76 @@
   "catalogId": "korean-poets-chronology",
   "targetDb": "poets",
   "summary": {
-    "totalAuthors": 132,
-    "baseSeedAuthors": 97,
+    "totalAuthors": 138,
+    "baseSeedAuthors": 103,
     "donggyeongSupplementAuthors": 35,
     "v1PriorityAuthors": 28,
     "tierCounts": {
-      "C": 8,
-      "A": 34,
-      "B": 55,
+      "C": 10,
+      "A": 35,
+      "B": 58,
       "D": 35
     }
   },
   "authors": [
+    {
+      "authorId": "KAUTH-YURI-WANG",
+      "slug": "yuri-wang",
+      "name": {
+        "ko": "유리왕",
+        "hanja": "琉璃王"
+      },
+      "era": {
+        "label": "고구려"
+      },
+      "life": {
+        "raw": "기원전 1세기~기원후 1세기",
+        "birth": null,
+        "death": null,
+        "uncertain": false
+      },
+      "collectionTier": "C",
+      "v1Priority": null,
+      "chronologyOrder": 1,
+      "notes": "고구려 2대 왕. 黃鳥歌 전승을 통해 왕실 서정시의 가장 이른 층을 보여준다. 역사 기록 속 노래이므로 원문·번역·설화 맥락을 분리해 다룬다.",
+      "sourceHint": "三國史記",
+      "candidateWorkTitles": [
+        "黃鳥歌"
+      ],
+      "collectionPlan": {
+        "phase": "native-form-review",
+        "preferredMode": "genre-specific-source-review",
+        "needsOwnedTranslation": true,
+        "needsSourceUrlVerification": true
+      },
+      "timeline": {
+        "timelineEraId": "ancient",
+        "timelineEraName": "고조선~통일신라",
+        "bio": "고구려 2대 왕, 왕실 서정시 전승의 핵심 인물",
+        "bioDetail": "유리명왕(瑠璃明王, 기원전 38년~기원후 18년 음력 10월), 또는 유리왕(瑠璃王)은 고구려의 제2대 국왕(재위: 기원전 19년 음력 9월~기원후 18년 음력 10월)으로 이름은 유리(榴璃 또는 類利) 또는 유류(孺留)이고, 동명성왕과 예씨 부인의 맏아들이다.\n기원후 3년에 졸본에서 수도를 국내성으로 옮겼다. 유리왕이 계비 치희를 그리워해서 지었다는 황조가는 지금도 전해지고 있다. 재위 33년인 14년에 무휼을 태자로 삼았고, 2만 명의 군대와 오이와 마리장군을 보내 서쪽의 양맥(梁貊)을 치고, 또 현도군의 고구려현(高句麗縣 또는 高句驪縣)을 쳐서 복속시켰다. 혼인 동맹과 적극적인 대외 투쟁을 통해 세력 기반을 확대하고자 하였으며, 고구려의 기틀을 마련한 영주(英主)였다.\n다른 이름은 여달(閭達), 여해(閭諧), 시여해(始閭諧)이며, 삼국지의 위서 고구려전에는 그의 이름을 원래 여달이었다가 아버지를 찾아 고구려로 온 뒤 여해로 고쳤다고 한다. 광개토왕릉비에는 그의 이름을 유류(孺留)로 기술하고 있다.\n유리명왕을 '누리(세상)' + '발거'로 해석하여 신라의 시조 '박혁거세'와 동일한 의미의 이름으로 해석하기도 한다.당시 재구음은 '누루-'였다가 후대에 '누리-'로 어말모음변화가 생긴 것으로 추정한다.\n'누리'라는 왕명이 시조왕 다음 왕을 뜻한다는 견해가 있다.\n\n유리명왕은 동명성왕의 맏아들로 동부여 출신인 예씨부인의 소생이다. 동명성왕이 동부여에서 졸본부여로 망명한 이후에 태어났고, 기원전 18년에 20세의 나이에 혼인한 것으로 추정되므로, 출생년도는 기원전 38년으로 추정된다. 유리명왕은 뜻이 크고 기이한 절개 있으며 어렸을때부터 기이한 기절이 있었다. 동부여에서 태어나 장성하여 아버지를 찾아 고구려로 와서 기원전 19년 음력 4월에 왕태자에 책봉되었다. 이 때, 동명성왕이 남긴 부러진 칼 조각이라는 징표를 주춧돌에서 찾아냈다는 이야기가 전해지고 있다. 유리명왕이 부여에서 탈출하는 과정은 주몽의 탈출 신화와 흡사한 면이 많고, 유리명왕 이후 모본왕까지의 왕성이 해(解)씨로 나타나는 등의 문제로 인해 유리명왕의 왕위 계승을 찬탈이나 개국의 형태로 보는 시각도 있다.\n삼국지의 위서 고구려전에는 그의 본명은 여달이었는데 아버지를 찾아 고구려로 내려온 뒤 주몽왕에게서 친자로 인정받고 이름을 여해로 고쳤다고 한다. 그의 후손인 광개토왕의 비문인 광개토대왕릉비에는 그를 유류 세자라 하여 주몽왕의 명으로 태자에 책봉되었다고 기록하였다. 고구려에 돌아오자마자 왕태자에 책봉된 유리는, 석 달간의 대리청정을 지낸 후 기원전 19년 음력 9월에 주몽왕이 서거하자 왕위를 이어받았다. 이때 비류와 온조는 유리가 태자로 책봉된 이후 백성들을 이끌고 남하하여 백제를 건국하였다.\n\n대표 작품으로는 황조가가 자주 거론되며, 전승 자료를 통해 문학사적 위치가 재구성된다.",
+        "localFullPoems": [
+          {
+            "id": "KPOEM-0007",
+            "title": {
+              "한자": "黃鳥歌",
+              "한글": "황조가"
+            },
+            "content": "翩翩黃鳥\n雌雄相依\n念我之獨\n誰其與歸",
+            "pronunciation": "편편황조\n자웅상의\n념아지독\n수기여귀",
+            "translation": "펄펄 나는 저 꾀꼬리\n암수 서로 의지하는데\n외로운 이 몸 생각하니\n누구와 함께 돌아갈까",
+            "commentary": ""
+          }
+        ],
+        "localOtherWorks": []
+      },
+      "wave": null,
+      "stats": {
+        "candidateWorkCount": 1,
+        "directTextCollectedWorks": 0,
+        "localTimelineFullPoems": 1,
+        "localTimelineOtherWorks": 0
+      }
+    },
     {
       "authorId": "KAUTH-AUTHOR-EC9D84EC",
       "slug": "author-ec9d84ec",
@@ -46,7 +104,7 @@
       },
       "collectionTier": "C",
       "v1Priority": null,
-      "chronologyOrder": 1,
+      "chronologyOrder": 2,
       "notes": "살수대첩의 장수. 與隋將于仲文詩는 역사 기록 속 한문 시문으로, 고대 시문 본편에 넣되 외교·전쟁시 갈래로 분리한다.",
       "sourceHint": "三國史記",
       "candidateWorkTitles": [
@@ -87,6 +145,64 @@
       }
     },
     {
+      "authorId": "KAUTH-SEODONG",
+      "slug": "seodong",
+      "name": {
+        "ko": "서동",
+        "hanja": "薯童"
+      },
+      "era": {
+        "label": "백제"
+      },
+      "life": {
+        "raw": "6~7세기 전승",
+        "birth": null,
+        "death": null,
+        "uncertain": false
+      },
+      "collectionTier": "C",
+      "v1Priority": null,
+      "chronologyOrder": 3,
+      "notes": "백제 무왕으로 비정되는 설화 속 인물. 薯童謠는 왕실·설화·고대 노래가 결합된 사례라 본편 후보에 넣되, 역사 인물 확정과 작품 귀속은 별도 주석이 필요하다.",
+      "sourceHint": "三國遺事",
+      "candidateWorkTitles": [
+        "薯童謠"
+      ],
+      "collectionPlan": {
+        "phase": "native-form-review",
+        "preferredMode": "genre-specific-source-review",
+        "needsOwnedTranslation": true,
+        "needsSourceUrlVerification": true
+      },
+      "timeline": {
+        "timelineEraId": "ancient",
+        "timelineEraName": "고조선~통일신라",
+        "bio": "백제 무왕으로 비정되는 인물, 설화·노래 결합 사례",
+        "bioDetail": "서동(미상)는 백제/신라 시기에 활동한 인물로, 생몰연대는 580?~641로 전한다. 백제 무왕으로 비정되는 인물, 설화·노래 결합 사례 대표 작품으로는 서동요가 자주 거론되며, 전승 자료를 통해 문학사적 위치가 재구성된다. 현전 사료가 단편적으로 남아 있는 경우가 많아 세부 행적과 작품 귀속에는 학설 차이가 존재하지만, 문헌 전승의 맥락에서 이 인물은 한국 시문학사의 흐름을 이해하는 주요 고리로 다루어진다. 특히 정치·사회적 전환기와 맞물린 문학적 실천, 장르 간 영향, 그리고 후대 문학사 서술에서의 위치를 통해 역사적 의미가 재평가되어 왔다. 해당 인물을 둘러싼 연구는 대체로 1차 사료의 분량과 신뢰도, 후대 선집 편찬 과정, 그리고 문학사 서술의 이념적 프레임에 따라 결론이 달라진다. 따라서 동일한 인물이라도 어떤 문헌을 중심으로 읽는지에 따라 작가상과 작품 해석이 크게 달라질 수 있다. 예를 들어 관료 문인으로 분류되는 경우에는 정치적 행적과 문체의 관계가 강조되고, 승려·기생·왕족 등 비전형적 작가군으로 분류되는 경우에는 장르의 경계 이동과 전승 구조의 특수성이 더 강하게 부각된다. 오늘날 연구에서는 텍스트 자체의 미학뿐 아니라 해당 작품이 언제, 어떤 매체에서, 누구에 의해 전사되고 편집되었는지를 함께 검토하는 경향이 강하다. 이러한 관점에서 볼 때, 이 인물의 작품과 관련 기록은 단순한 개인 창작물의 목록을 넘어 한국 시문학이 시대 변화에 적응해 온 방식 자체를 보여주는 자료군으로 해석될 수 있다.또한 동일 인물의 명칭·연대·관직 표기에는 사서 간 편차가 빈번하여, 연구자는 동명이인 가능성, 후대의 추증 기록, 그리고 문집 편찬 연대를 함께 대조해야 한다. 시문학사에서의 위치를 정리할 때에도 특정 작품 한 편의 유명세만으로 결론을 내리기보다, 동시대 교유망, 정치적 사건과의 연동, 장르 선택의 변화를 종합적으로 살피는 방식이 요구된다. 이처럼 제한된 자료 환경에서도 반복적으로 확인되는 어휘 선택, 정서 구조, 인용 전통은 작가의 미적 성향을 추정할 수 있는 단서가 되며, 후대 선집에 수록된 양상은 당대 문단이 해당 인물을 어떻게 기억하고 재배치했는지를 보여준다.",
+        "localFullPoems": [
+          {
+            "id": "KPOEM-0010",
+            "title": {
+              "한자": "薯童謠",
+              "한글": "서동요"
+            },
+            "content": "善化公主主隱\n他密只嫁良置古\n薯童房乙\n夜矣夘乙抱遣去如",
+            "pronunciation": "선화공주주은\n타밀지가량치고\n서동방을\n야의夘을포견거여",
+            "translation": "",
+            "commentary": ""
+          }
+        ],
+        "localOtherWorks": []
+      },
+      "wave": null,
+      "stats": {
+        "candidateWorkCount": 1,
+        "directTextCollectedWorks": 0,
+        "localTimelineFullPoems": 1,
+        "localTimelineOtherWorks": 0
+      }
+    },
+    {
       "authorId": "KAUTH-AUTHOR-EC84A4EC",
       "slug": "author-ec84a4ec",
       "name": {
@@ -104,7 +220,7 @@
       },
       "collectionTier": "C",
       "v1Priority": null,
-      "chronologyOrder": 2,
+      "chronologyOrder": 4,
       "notes": "이두와 유교적 교훈 문학의 상징. 산문적 성격이 강하지만 고유 시문 전통의 뿌리로 수집 대상에 둔다.",
       "sourceHint": "花王戒 전승",
       "candidateWorkTitles": [
@@ -143,7 +259,7 @@
       },
       "collectionTier": "C",
       "v1Priority": null,
-      "chronologyOrder": 3,
+      "chronologyOrder": 5,
       "notes": "승려 향가 작가. 향가는 한국 고유 형태의 시문으로 보고 본편 수집 대상에 넣는다.",
       "sourceHint": "三國遺事",
       "candidateWorkTitles": [
@@ -213,7 +329,7 @@
       },
       "collectionTier": "C",
       "v1Priority": null,
-      "chronologyOrder": 4,
+      "chronologyOrder": 6,
       "notes": "향가와 불교적 노래 전승의 핵심.",
       "sourceHint": "三國遺事",
       "candidateWorkTitles": [
@@ -283,7 +399,7 @@
       },
       "collectionTier": "C",
       "v1Priority": null,
-      "chronologyOrder": 5,
+      "chronologyOrder": 7,
       "notes": "향가 遇賊歌 전승 인물. 고유 시가 본편으로 수집하되 원문 표기·향찰 해독·현대어 풀이를 분리한다.",
       "sourceHint": "三國遺事",
       "candidateWorkTitles": [
@@ -341,7 +457,7 @@
       },
       "collectionTier": "C",
       "v1Priority": null,
-      "chronologyOrder": 6,
+      "chronologyOrder": 8,
       "notes": "彗星歌 전승의 승려. 향가 본편 수집 대상으로 둔다.",
       "sourceHint": "三國遺事",
       "candidateWorkTitles": [
@@ -399,7 +515,7 @@
       },
       "collectionTier": "C",
       "v1Priority": null,
-      "chronologyOrder": 7,
+      "chronologyOrder": 9,
       "notes": "원가 전승 인물. 정치적 원망과 노래의 연결을 보여준다.",
       "sourceHint": "三國遺事",
       "candidateWorkTitles": [
@@ -457,7 +573,7 @@
       },
       "collectionTier": "C",
       "v1Priority": null,
-      "chronologyOrder": 8,
+      "chronologyOrder": 10,
       "notes": "처용설화와 처용가의 인물. 의례·설화 맥락을 함께 보존하되 處容歌 자체는 고유 시가 본편으로 수집한다.",
       "sourceHint": "三國遺事",
       "candidateWorkTitles": [
@@ -515,7 +631,7 @@
       },
       "collectionTier": "A",
       "v1Priority": 1,
-      "chronologyOrder": 9,
+      "chronologyOrder": 11,
       "notes": "당 유학, 빈공과 급제, 황소 토벌 격문, 귀국 후 시무책과 은거 전승. 한국 한문학의 출발점.",
       "sourceHint": "孤雲集, 桂苑筆耕集, 東文選, 위키문헌",
       "candidateWorkTitles": [
@@ -650,7 +766,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 10,
+      "chronologyOrder": 12,
       "notes": "신라 말 한문학 작가군. 현전 자료가 제한되어 원문 후보 확인 필요.",
       "sourceHint": "선집류, 사서",
       "candidateWorkTitles": [
@@ -689,7 +805,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 11,
+      "chronologyOrder": 13,
       "notes": "신라 말 삼최 계열 문인. 후삼국 전환기의 지식인.",
       "sourceHint": "선집류, 사서",
       "candidateWorkTitles": [
@@ -766,7 +882,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 12,
+      "chronologyOrder": 14,
       "notes": "신라 말 후세에 이름이 전한 한시 작가군.",
       "sourceHint": "선집류",
       "candidateWorkTitles": [
@@ -805,7 +921,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 13,
+      "chronologyOrder": 15,
       "notes": "화엄종 승려, 향가 普賢十願歌의 작가. 불교시가·승려문학 본편 수집 대상으로 둔다.",
       "sourceHint": "均如傳, 普賢十願歌",
       "candidateWorkTitles": [
@@ -967,7 +1083,7 @@
       },
       "collectionTier": "A",
       "v1Priority": 2,
-      "chronologyOrder": 14,
+      "chronologyOrder": 16,
       "notes": "송 사행 경험과 초기 고려 한시 전승의 대표 사례.",
       "sourceHint": "위키문헌, 선집류",
       "candidateWorkTitles": [
@@ -1006,7 +1122,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 15,
+      "chronologyOrder": 17,
       "notes": "고려 왕실 문학과 궁중 시문을 보여주는 대상.",
       "sourceHint": "왕실 시문, 사서",
       "candidateWorkTitles": [
@@ -1064,7 +1180,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 16,
+      "chronologyOrder": 18,
       "notes": "鄭瓜亭曲으로 유명. 고려가요도 한국 고유 시문 본편으로 보고, 한문 한시 후보와 병행한다.",
       "sourceHint": "鄭瓜亭曲 전승",
       "candidateWorkTitles": [
@@ -1123,7 +1239,7 @@
       },
       "collectionTier": "A",
       "v1Priority": 3,
-      "chronologyOrder": 17,
+      "chronologyOrder": 19,
       "notes": "유교적 국가 질서, 묘청의 난 진압, 三國史記 편찬.",
       "sourceHint": "三國史記, 문집 잔편, 東文選",
       "candidateWorkTitles": [
@@ -1182,7 +1298,7 @@
       },
       "collectionTier": "A",
       "v1Priority": 4,
-      "chronologyOrder": 18,
+      "chronologyOrder": 20,
       "notes": "고려 전기 한시 대표. 서경 세력, 묘청의 난, 김부식과의 정치적 대립 맥락.",
       "sourceHint": "東文選, 新增東國輿地勝覽, 東京雜記",
       "candidateWorkTitles": [
@@ -1263,7 +1379,7 @@
       },
       "collectionTier": "A",
       "v1Priority": 5,
-      "chronologyOrder": 19,
+      "chronologyOrder": 21,
       "notes": "무신정권기 대문호. 자기 시론, 장편 서사, 대형 문집으로 확장성 최상.",
       "sourceHint": "東國李相國集",
       "candidateWorkTitles": [
@@ -1328,7 +1444,7 @@
       },
       "collectionTier": "A",
       "v1Priority": 7,
-      "chronologyOrder": 20,
+      "chronologyOrder": 22,
       "notes": "죽림고회, 고려 문인 비평과 시화 전통.",
       "sourceHint": "破閑集, 선집류",
       "candidateWorkTitles": [
@@ -1381,7 +1497,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 21,
+      "chronologyOrder": 23,
       "notes": "죽림고회 문인. 불우한 문인의 삶과 문학을 보여준다.",
       "sourceHint": "西河集, 선집류",
       "candidateWorkTitles": [
@@ -1434,7 +1550,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 22,
+      "chronologyOrder": 24,
       "notes": "죽림고회 문인. 현전 작품 확인이 필요하다.",
       "sourceHint": "선집류",
       "candidateWorkTitles": [
@@ -1473,7 +1589,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 23,
+      "chronologyOrder": 25,
       "notes": "고려 후기 시인. 제야시와 후기 문인 네트워크에서 확인 필요.",
       "sourceHint": "선집류",
       "candidateWorkTitles": [
@@ -1512,7 +1628,7 @@
       },
       "collectionTier": "A",
       "v1Priority": 6,
-      "chronologyOrder": 24,
+      "chronologyOrder": 26,
       "notes": "三韓詩龜鑑 등에서 높은 비중을 보이는 고려 시인.",
       "sourceHint": "三韓詩龜鑑, 東文選, 東京雜記",
       "candidateWorkTitles": [
@@ -1552,7 +1668,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 25,
+      "chronologyOrder": 27,
       "notes": "補閑集 편찬, 시화와 문학사 자료 가치가 크다.",
       "sourceHint": "補閑集",
       "candidateWorkTitles": [
@@ -1605,7 +1721,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 26,
+      "chronologyOrder": 28,
       "notes": "경기체가와 한시를 함께 검토할 수 있는 작가.",
       "sourceHint": "謹齋集, 關東別曲 맥락",
       "candidateWorkTitles": [
@@ -1663,7 +1779,7 @@
       },
       "collectionTier": "A",
       "v1Priority": 8,
-      "chronologyOrder": 27,
+      "chronologyOrder": 29,
       "notes": "원 간섭기 국제 문인, 시화·소악부·문집이 모두 중요.",
       "sourceHint": "益齋亂藁, 櫟翁稗說",
       "candidateWorkTitles": [
@@ -1726,7 +1842,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 28,
+      "chronologyOrder": 30,
       "notes": "원·고려 문단을 잇는 문인. 이색의 부친.",
       "sourceHint": "稼亭集, 東京雜記 수록작",
       "candidateWorkTitles": [
@@ -1766,7 +1882,7 @@
       },
       "collectionTier": "A",
       "v1Priority": 9,
-      "chronologyOrder": 29,
+      "chronologyOrder": 31,
       "notes": "성리학, 고려 말 문단, 조선 건국 전환기의 핵심.",
       "sourceHint": "牧隱藁",
       "candidateWorkTitles": [
@@ -1829,7 +1945,7 @@
       },
       "collectionTier": "A",
       "v1Priority": 10,
-      "chronologyOrder": 30,
+      "chronologyOrder": 32,
       "notes": "고려 충절의 상징. 시조와 한시를 함께 다룬다.",
       "sourceHint": "圃隱集",
       "candidateWorkTitles": [
@@ -1888,7 +2004,7 @@
       },
       "collectionTier": "A",
       "v1Priority": null,
-      "chronologyOrder": 31,
+      "chronologyOrder": 33,
       "notes": "고려 말 문학사 핵심. 정도전과의 정치적 갈등 맥락.",
       "sourceHint": "陶隱集",
       "candidateWorkTitles": [
@@ -1941,7 +2057,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 32,
+      "chronologyOrder": 34,
       "notes": "은거와 절의 문학의 대표.",
       "sourceHint": "耘谷集",
       "candidateWorkTitles": [
@@ -1981,7 +2097,7 @@
       },
       "collectionTier": "A",
       "v1Priority": 11,
-      "chronologyOrder": 33,
+      "chronologyOrder": 35,
       "notes": "조선 건국 이념 설계자. 정치시문과 산문을 함께 다룬다.",
       "sourceHint": "三峰集",
       "candidateWorkTitles": [
@@ -2043,7 +2159,7 @@
       },
       "collectionTier": "A",
       "v1Priority": 12,
-      "chronologyOrder": 34,
+      "chronologyOrder": 36,
       "notes": "조선 초기 성리학·제도 정착의 핵심 문인.",
       "sourceHint": "陽村集",
       "candidateWorkTitles": [
@@ -2083,7 +2199,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 35,
+      "chronologyOrder": 37,
       "notes": "조선 건국과 태종대 정치문인.",
       "sourceHint": "浩亭集",
       "candidateWorkTitles": [
@@ -2135,7 +2251,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 36,
+      "chronologyOrder": 38,
       "notes": "조선 초기 관각문학과 외교문서의 핵심.",
       "sourceHint": "春亭集",
       "candidateWorkTitles": [
@@ -2175,7 +2291,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 37,
+      "chronologyOrder": 39,
       "notes": "절의와 은거의 상징.",
       "sourceHint": "冶隱集",
       "candidateWorkTitles": [
@@ -2211,6 +2327,64 @@
       }
     },
     {
+      "authorId": "KAUTH-SEJONG",
+      "slug": "sejong",
+      "name": {
+        "ko": "세종",
+        "hanja": "世宗"
+      },
+      "era": {
+        "label": "조선 전기"
+      },
+      "life": {
+        "raw": "1397~1450",
+        "birth": 1397,
+        "death": 1450,
+        "uncertain": false
+      },
+      "collectionTier": "B",
+      "v1Priority": null,
+      "chronologyOrder": 40,
+      "notes": "조선 왕실 문학과 훈민정음 이후 국문 시가 정비의 핵심 인물. 직접 창작·왕명 편찬·악장 맥락을 구분해 검토해야 한다.",
+      "sourceHint": "月印千江之曲, 龍飛御天歌 계열, 왕실 악장 자료",
+      "candidateWorkTitles": [
+        "月印千江之曲",
+        "龍飛御天歌"
+      ],
+      "collectionPlan": {
+        "phase": "V2-candidate",
+        "preferredMode": "author-collection-tranche",
+        "needsOwnedTranslation": true,
+        "needsSourceUrlVerification": true
+      },
+      "timeline": {
+        "timelineEraId": "joseon-early",
+        "timelineEraName": "조선전기",
+        "bio": "조선 4대 왕, 악장·국문 시가 정비",
+        "bioDetail": "세종(미상)는 조선 전기 시기에 활동한 인물로, 생몰연대는 1397~1450로 전한다. 조선 4대 왕, 악장·국문 시가 정비 대표 작품으로는 용비어천가, 그리고 월인천강지곡 등이 전하며, 작품군은 해당 인물의 문학적 성격을 파악하는 핵심 자료로 활용된다. 현전 사료가 단편적으로 남아 있는 경우가 많아 세부 행적과 작품 귀속에는 학설 차이가 존재하지만, 문헌 전승의 맥락에서 이 인물은 한국 시문학사의 흐름을 이해하는 주요 고리로 다루어진다. 특히 정치·사회적 전환기와 맞물린 문학적 실천, 장르 간 영향, 그리고 후대 문학사 서술에서의 위치를 통해 역사적 의미가 재평가되어 왔다. 해당 인물을 둘러싼 연구는 대체로 1차 사료의 분량과 신뢰도, 후대 선집 편찬 과정, 그리고 문학사 서술의 이념적 프레임에 따라 결론이 달라진다. 따라서 동일한 인물이라도 어떤 문헌을 중심으로 읽는지에 따라 작가상과 작품 해석이 크게 달라질 수 있다. 예를 들어 관료 문인으로 분류되는 경우에는 정치적 행적과 문체의 관계가 강조되고, 승려·기생·왕족 등 비전형적 작가군으로 분류되는 경우에는 장르의 경계 이동과 전승 구조의 특수성이 더 강하게 부각된다. 오늘날 연구에서는 텍스트 자체의 미학뿐 아니라 해당 작품이 언제, 어떤 매체에서, 누구에 의해 전사되고 편집되었는지를 함께 검토하는 경향이 강하다. 이러한 관점에서 볼 때, 이 인물의 작품과 관련 기록은 단순한 개인 창작물의 목록을 넘어 한국 시문학이 시대 변화에 적응해 온 방식 자체를 보여주는 자료군으로 해석될 수 있다.또한 동일 인물의 명칭·연대·관직 표기에는 사서 간 편차가 빈번하여, 연구자는 동명이인 가능성, 후대의 추증 기록, 그리고 문집 편찬 연대를 함께 대조해야 한다. 시문학사에서의 위치를 정리할 때에도 특정 작품 한 편의 유명세만으로 결론을 내리기보다, 동시대 교유망, 정치적 사건과의 연동, 장르 선택의 변화를 종합적으로 살피는 방식이 요구된다. 이처럼 제한된 자료 환경에서도 반복적으로 확인되는 어휘 선택, 정서 구조, 인용 전통은 작가의 미적 성향을 추정할 수 있는 단서가 되며, 후대 선집에 수록된 양상은 당대 문단이 해당 인물을 어떻게 기억하고 재배치했는지를 보여준다.",
+        "localFullPoems": [],
+        "localOtherWorks": [
+          {
+            "titleKo": "용비어천가",
+            "titleHanja": "미상",
+            "source": "미상"
+          },
+          {
+            "titleKo": "월인천강지곡",
+            "titleHanja": "미상",
+            "source": "미상"
+          }
+        ]
+      },
+      "wave": null,
+      "stats": {
+        "candidateWorkCount": 2,
+        "directTextCollectedWorks": 0,
+        "localTimelineFullPoems": 0,
+        "localTimelineOtherWorks": 2
+      }
+    },
+    {
       "authorId": "KAUTH-KIM-SISEUP",
       "slug": "kim-siseup",
       "name": {
@@ -2228,7 +2402,7 @@
       },
       "collectionTier": "A",
       "v1Priority": 13,
-      "chronologyOrder": 38,
+      "chronologyOrder": 41,
       "notes": "생육신·방외문인·불교적 사유가 결합된 작가.",
       "sourceHint": "梅月堂集",
       "candidateWorkTitles": [
@@ -2287,7 +2461,7 @@
       },
       "collectionTier": "A",
       "v1Priority": 14,
-      "chronologyOrder": 39,
+      "chronologyOrder": 42,
       "notes": "관각문학, 편찬, 시평의 중심.",
       "sourceHint": "四佳集, 東文選",
       "candidateWorkTitles": [
@@ -2346,7 +2520,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 40,
+      "chronologyOrder": 43,
       "notes": "외교·언어·편찬의 관료문인.",
       "sourceHint": "保閑齋集",
       "candidateWorkTitles": [
@@ -2399,7 +2573,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 41,
+      "chronologyOrder": 44,
       "notes": "훈민정음·편찬 사업의 중심 관료.",
       "sourceHint": "문집, 관찬자료",
       "candidateWorkTitles": [
@@ -2456,7 +2630,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 42,
+      "chronologyOrder": 45,
       "notes": "사육신 충절 문학.",
       "sourceHint": "成謹甫集 계열",
       "candidateWorkTitles": [
@@ -2509,7 +2683,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 43,
+      "chronologyOrder": 46,
       "notes": "사육신 문학과 충절 서사.",
       "sourceHint": "문집 잔편",
       "candidateWorkTitles": [
@@ -2561,7 +2735,7 @@
       },
       "collectionTier": "A",
       "v1Priority": 15,
-      "chronologyOrder": 44,
+      "chronologyOrder": 47,
       "notes": "사림 문학의 핵심. 무오사화의 발단이 된 문학사 맥락.",
       "sourceHint": "佔畢齋集, 東京雜記",
       "candidateWorkTitles": [
@@ -2624,7 +2798,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 45,
+      "chronologyOrder": 48,
       "notes": "사림파, 사화와 사초 문제의 중심 인물.",
       "sourceHint": "濯纓集",
       "candidateWorkTitles": [
@@ -2676,7 +2850,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 46,
+      "chronologyOrder": 49,
       "notes": "매계 문인. 유배와 사림 문학 맥락.",
       "sourceHint": "梅溪集, 東京雜記",
       "candidateWorkTitles": [
@@ -2716,7 +2890,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 47,
+      "chronologyOrder": 50,
       "notes": "조선 전기 문장가.",
       "sourceHint": "容齋集",
       "candidateWorkTitles": [
@@ -2756,7 +2930,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 48,
+      "chronologyOrder": 51,
       "notes": "강호가도, 국문시가와 한시 병행.",
       "sourceHint": "聾巖集",
       "candidateWorkTitles": [
@@ -2808,7 +2982,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 49,
+      "chronologyOrder": 52,
       "notes": "여성 문인·화가. 현전 한시와 그림 제재를 함께 검토.",
       "sourceHint": "전승 시문",
       "candidateWorkTitles": [
@@ -2860,7 +3034,7 @@
       },
       "collectionTier": "A",
       "v1Priority": 16,
-      "chronologyOrder": 50,
+      "chronologyOrder": 53,
       "notes": "도산, 성리학, 자연시의 중심.",
       "sourceHint": "退溪集",
       "candidateWorkTitles": [
@@ -2914,7 +3088,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 51,
+      "chronologyOrder": 54,
       "notes": "남명학파와 산천재 은거 문학.",
       "sourceHint": "南冥集",
       "candidateWorkTitles": [
@@ -2954,7 +3128,7 @@
       },
       "collectionTier": "A",
       "v1Priority": 17,
-      "chronologyOrder": 52,
+      "chronologyOrder": 55,
       "notes": "율곡학과 경세론의 중심.",
       "sourceHint": "栗谷全書",
       "candidateWorkTitles": [
@@ -3013,7 +3187,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 53,
+      "chronologyOrder": 56,
       "notes": "면앙정가단과 호남 문학.",
       "sourceHint": "俛仰集",
       "candidateWorkTitles": [
@@ -3071,7 +3245,7 @@
       },
       "collectionTier": "A",
       "v1Priority": 18,
-      "chronologyOrder": 54,
+      "chronologyOrder": 57,
       "notes": "송강 문학. 가사와 한시의 병행 수집 가치가 크다.",
       "sourceHint": "松江集",
       "candidateWorkTitles": [
@@ -3146,7 +3320,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 55,
+      "chronologyOrder": 58,
       "notes": "퇴계와 사단칠정 논변. 학문시와 교유시 중심.",
       "sourceHint": "高峯集",
       "candidateWorkTitles": [
@@ -3186,7 +3360,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 56,
+      "chronologyOrder": 59,
       "notes": "임진왜란 의병장, 호남 문인.",
       "sourceHint": "霽峰集",
       "candidateWorkTitles": [
@@ -3225,7 +3399,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 57,
+      "chronologyOrder": 60,
       "notes": "삼당시인 계열.",
       "sourceHint": "玉峯集",
       "candidateWorkTitles": [
@@ -3277,7 +3451,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 58,
+      "chronologyOrder": 61,
       "notes": "삼당시인, 홍랑과의 서사로도 유명.",
       "sourceHint": "孤竹遺稿",
       "candidateWorkTitles": [
@@ -3317,7 +3491,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 59,
+      "chronologyOrder": 62,
       "notes": "삼당시인, 서얼 문인의 대표.",
       "sourceHint": "蓀谷集",
       "candidateWorkTitles": [
@@ -3356,7 +3530,7 @@
       },
       "collectionTier": "A",
       "v1Priority": 19,
-      "chronologyOrder": 60,
+      "chronologyOrder": 63,
       "notes": "강한 비판 정신과 풍자성.",
       "sourceHint": "石洲集",
       "candidateWorkTitles": [
@@ -3397,7 +3571,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 61,
+      "chronologyOrder": 64,
       "notes": "허난설헌·허균의 형, 양천 허씨 문학가문.",
       "sourceHint": "荷谷集",
       "candidateWorkTitles": [
@@ -3450,7 +3624,7 @@
       },
       "collectionTier": "A",
       "v1Priority": 20,
-      "chronologyOrder": 62,
+      "chronologyOrder": 65,
       "notes": "조선 여성 한시 대표. 사후 중국 간행과 국제 전파.",
       "sourceHint": "蘭雪軒集, 위키문헌",
       "candidateWorkTitles": [
@@ -3522,7 +3696,7 @@
       },
       "collectionTier": "A",
       "v1Priority": 21,
-      "chronologyOrder": 63,
+      "chronologyOrder": 66,
       "notes": "비판적 지식인, 허난설헌 작품 전승자.",
       "sourceHint": "惺所覆瓿藁",
       "candidateWorkTitles": [
@@ -3580,7 +3754,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 64,
+      "chronologyOrder": 67,
       "notes": "자유분방한 문학과 한문소설 맥락.",
       "sourceHint": "白湖集",
       "candidateWorkTitles": [
@@ -3632,7 +3806,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 65,
+      "chronologyOrder": 68,
       "notes": "문장가, 임진왜란기 문인.",
       "sourceHint": "五山集",
       "candidateWorkTitles": [
@@ -3671,7 +3845,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 66,
+      "chronologyOrder": 69,
       "notes": "기생 문학 대표. 시조와 한시 귀속 검토 필요.",
       "sourceHint": "전승 시문",
       "candidateWorkTitles": [
@@ -3724,7 +3898,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 67,
+      "chronologyOrder": 70,
       "notes": "기생 문학과 이별시 전승.",
       "sourceHint": "전승 시문",
       "candidateWorkTitles": [
@@ -3777,7 +3951,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 68,
+      "chronologyOrder": 71,
       "notes": "시조 대표지만 한시도 문집에 있다.",
       "sourceHint": "孤山遺稿",
       "candidateWorkTitles": [
@@ -3852,7 +4026,7 @@
       },
       "collectionTier": "A",
       "v1Priority": null,
-      "chronologyOrder": 69,
+      "chronologyOrder": 72,
       "notes": "병자호란, 척화, 절의 문학의 중심.",
       "sourceHint": "淸陰集",
       "candidateWorkTitles": [
@@ -3905,7 +4079,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 70,
+      "chronologyOrder": 73,
       "notes": "계곡 문학, 조선 후기 문장가.",
       "sourceHint": "谿谷集",
       "candidateWorkTitles": [
@@ -3944,7 +4118,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 71,
+      "chronologyOrder": 74,
       "notes": "월사 문학, 한문 산문과 시문.",
       "sourceHint": "象村稿",
       "candidateWorkTitles": [
@@ -3997,7 +4171,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 72,
+      "chronologyOrder": 75,
       "notes": "미수, 고문·예학·서체의 문인.",
       "sourceHint": "記言",
       "candidateWorkTitles": [
@@ -4036,7 +4210,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 73,
+      "chronologyOrder": 76,
       "notes": "노론 문단과 농암 문학.",
       "sourceHint": "農巖集",
       "candidateWorkTitles": [
@@ -4075,7 +4249,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 74,
+      "chronologyOrder": 77,
       "notes": "삼연 문학, 산수시와 은거시.",
       "sourceHint": "三淵集",
       "candidateWorkTitles": [
@@ -4114,7 +4288,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 75,
+      "chronologyOrder": 78,
       "notes": "성호학파, 실학 맥락.",
       "sourceHint": "星湖全集",
       "candidateWorkTitles": [
@@ -4153,7 +4327,7 @@
       },
       "collectionTier": "A",
       "v1Priority": null,
-      "chronologyOrder": 76,
+      "chronologyOrder": 79,
       "notes": "북학과 과학사상, 청 교류.",
       "sourceHint": "湛軒書",
       "candidateWorkTitles": [
@@ -4205,7 +4379,7 @@
       },
       "collectionTier": "A",
       "v1Priority": 22,
-      "chronologyOrder": 77,
+      "chronologyOrder": 80,
       "notes": "연암, 북학, 산문 혁신.",
       "sourceHint": "燕巖集",
       "candidateWorkTitles": [
@@ -4263,7 +4437,7 @@
       },
       "collectionTier": "A",
       "v1Priority": null,
-      "chronologyOrder": 78,
+      "chronologyOrder": 81,
       "notes": "북학파, 청 문물 수용론.",
       "sourceHint": "貞蕤集, 北學議",
       "candidateWorkTitles": [
@@ -4316,7 +4490,7 @@
       },
       "collectionTier": "A",
       "v1Priority": 23,
-      "chronologyOrder": 79,
+      "chronologyOrder": 82,
       "notes": "백탑파, 독서와 사물 관찰의 문학.",
       "sourceHint": "靑莊館全書",
       "candidateWorkTitles": [
@@ -4369,7 +4543,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 80,
+      "chronologyOrder": 83,
       "notes": "발해고, 백탑파, 역사 인식.",
       "sourceHint": "泠齋集, 渤海考",
       "candidateWorkTitles": [
@@ -4426,7 +4600,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 81,
+      "chronologyOrder": 84,
       "notes": "문체반정과 개성적 문체.",
       "sourceHint": "李鈺集",
       "candidateWorkTitles": [
@@ -4478,7 +4652,7 @@
       },
       "collectionTier": "A",
       "v1Priority": 24,
-      "chronologyOrder": 82,
+      "chronologyOrder": 85,
       "notes": "실학, 유배, 사회 비판시의 중심.",
       "sourceHint": "茶山詩文集",
       "candidateWorkTitles": [
@@ -4532,7 +4706,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 83,
+      "chronologyOrder": 86,
       "notes": "유배문학과 서민 생활 관찰.",
       "sourceHint": "藫庭遺藁",
       "candidateWorkTitles": [
@@ -4555,6 +4729,61 @@
       }
     },
     {
+      "authorId": "KAUTH-KIM-BYEONGYEON",
+      "slug": "kim-byeongyeon",
+      "name": {
+        "ko": "김병연",
+        "hanja": "金炳淵"
+      },
+      "era": {
+        "label": "조선 후기"
+      },
+      "life": {
+        "raw": "1807~1863",
+        "birth": 1807,
+        "death": 1863,
+        "uncertain": false
+      },
+      "collectionTier": "A",
+      "v1Priority": null,
+      "chronologyOrder": 87,
+      "notes": "김삿갓으로 알려진 방랑 시인. 파격적 언어유희와 풍자 한시가 강해 조선 후기 대중적 한시 화면의 핵심 후보로 보강한다.",
+      "sourceHint": "蘭皐集, 金笠詩集 계열, 후대 선집류",
+      "candidateWorkTitles": [
+        "김삿갓 한시",
+        "방랑시",
+        "풍자시",
+        "파격시"
+      ],
+      "collectionPlan": {
+        "phase": "V1-candidate",
+        "preferredMode": "author-collection-tranche",
+        "needsOwnedTranslation": true,
+        "needsSourceUrlVerification": true
+      },
+      "timeline": {
+        "timelineEraId": "joseon-late",
+        "timelineEraName": "조선후기",
+        "bio": "풍자·방랑 한시로 유명",
+        "bioDetail": "김병연(金炳淵)는 조선 후기 시기에 활동한 인물로, 생몰연대는 1807~1863로 전한다. 풍자·방랑 한시로 유명 현전 사료가 단편적으로 남아 있는 경우가 많아 세부 행적과 작품 귀속에는 학설 차이가 존재하지만, 문헌 전승의 맥락에서 이 인물은 한국 시문학사의 흐름을 이해하는 주요 고리로 다루어진다. 특히 정치·사회적 전환기와 맞물린 문학적 실천, 장르 간 영향, 그리고 후대 문학사 서술에서의 위치를 통해 역사적 의미가 재평가되어 왔다. 해당 인물을 둘러싼 연구는 대체로 1차 사료의 분량과 신뢰도, 후대 선집 편찬 과정, 그리고 문학사 서술의 이념적 프레임에 따라 결론이 달라진다. 따라서 동일한 인물이라도 어떤 문헌을 중심으로 읽는지에 따라 작가상과 작품 해석이 크게 달라질 수 있다. 예를 들어 관료 문인으로 분류되는 경우에는 정치적 행적과 문체의 관계가 강조되고, 승려·기생·왕족 등 비전형적 작가군으로 분류되는 경우에는 장르의 경계 이동과 전승 구조의 특수성이 더 강하게 부각된다. 오늘날 연구에서는 텍스트 자체의 미학뿐 아니라 해당 작품이 언제, 어떤 매체에서, 누구에 의해 전사되고 편집되었는지를 함께 검토하는 경향이 강하다. 이러한 관점에서 볼 때, 이 인물의 작품과 관련 기록은 단순한 개인 창작물의 목록을 넘어 한국 시문학이 시대 변화에 적응해 온 방식 자체를 보여주는 자료군으로 해석될 수 있다.또한 동일 인물의 명칭·연대·관직 표기에는 사서 간 편차가 빈번하여, 연구자는 동명이인 가능성, 후대의 추증 기록, 그리고 문집 편찬 연대를 함께 대조해야 한다. 시문학사에서의 위치를 정리할 때에도 특정 작품 한 편의 유명세만으로 결론을 내리기보다, 동시대 교유망, 정치적 사건과의 연동, 장르 선택의 변화를 종합적으로 살피는 방식이 요구된다. 이처럼 제한된 자료 환경에서도 반복적으로 확인되는 어휘 선택, 정서 구조, 인용 전통은 작가의 미적 성향을 추정할 수 있는 단서가 되며, 후대 선집에 수록된 양상은 당대 문단이 해당 인물을 어떻게 기억하고 재배치했는지를 보여준다.",
+        "localFullPoems": [],
+        "localOtherWorks": [
+          {
+            "titleKo": "한시 다수",
+            "titleHanja": "미상",
+            "source": "《김립시집》 계열 편찬본"
+          }
+        ]
+      },
+      "wave": null,
+      "stats": {
+        "candidateWorkCount": 4,
+        "directTextCollectedWorks": 0,
+        "localTimelineFullPoems": 0,
+        "localTimelineOtherWorks": 1
+      }
+    },
+    {
       "authorId": "KAUTH-AUTHOR-EC9DB4EC",
       "slug": "author-ec9db4ec",
       "name": {
@@ -4572,7 +4801,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 84,
+      "chronologyOrder": 88,
       "notes": "중인 문학과 역관 문학.",
       "sourceHint": "松穆館集",
       "candidateWorkTitles": [
@@ -4624,7 +4853,7 @@
       },
       "collectionTier": "A",
       "v1Priority": 28,
-      "chronologyOrder": 85,
+      "chronologyOrder": 89,
       "notes": "자하 시풍, 서화와 시의 결합.",
       "sourceHint": "紫霞詩集",
       "candidateWorkTitles": [
@@ -4660,6 +4889,87 @@
       }
     },
     {
+      "authorId": "KAUTH-JEONGJO",
+      "slug": "jeongjo",
+      "name": {
+        "ko": "정조",
+        "hanja": "正祖"
+      },
+      "era": {
+        "label": "조선 후기"
+      },
+      "life": {
+        "raw": "1752~1800",
+        "birth": 1752,
+        "death": 1800,
+        "uncertain": false
+      },
+      "collectionTier": "B",
+      "v1Priority": null,
+      "chronologyOrder": 90,
+      "notes": "조선 후기 왕실 문예와 규장각 문화를 이끈 군주. 弘齋全書에 어제 시문이 남아 있어 왕실 한시 후보로 별도 검토가 필요하다.",
+      "sourceHint": "弘齋全書, 어제 시문",
+      "candidateWorkTitles": [
+        "弘齋全書 수록 한시",
+        "어제시"
+      ],
+      "collectionPlan": {
+        "phase": "V2-candidate",
+        "preferredMode": "author-collection-tranche",
+        "needsOwnedTranslation": true,
+        "needsSourceUrlVerification": true
+      },
+      "timeline": {},
+      "wave": null,
+      "stats": {
+        "candidateWorkCount": 2,
+        "directTextCollectedWorks": 0,
+        "localTimelineFullPoems": 0,
+        "localTimelineOtherWorks": 0
+      }
+    },
+    {
+      "authorId": "KAUTH-HYOMYEONG-SEJA",
+      "slug": "hyomyeong-seja",
+      "name": {
+        "ko": "효명세자",
+        "hanja": "孝明世子"
+      },
+      "era": {
+        "label": "조선 후기"
+      },
+      "life": {
+        "raw": "1809~1830",
+        "birth": 1809,
+        "death": 1830,
+        "uncertain": false
+      },
+      "collectionTier": "B",
+      "v1Priority": null,
+      "chronologyOrder": 91,
+      "notes": "순조대 대리청정과 궁중 정재·악장 정비의 중심 왕세자. 왕실 악장·궁중 공연 텍스트와 개인 시문을 구분해 수집한다.",
+      "sourceHint": "敬軒集, 궁중 정재·악장 자료",
+      "candidateWorkTitles": [
+        "왕실 악장",
+        "궁중 정재 관련 시문",
+        "개인 한시 후보"
+      ],
+      "collectionPlan": {
+        "phase": "V2-candidate",
+        "preferredMode": "author-collection-tranche",
+        "needsOwnedTranslation": true,
+        "needsSourceUrlVerification": true
+      },
+      "timeline": {},
+      "wave": null,
+      "stats": {
+        "candidateWorkCount": 3,
+        "directTextCollectedWorks": 0,
+        "localTimelineFullPoems": 0,
+        "localTimelineOtherWorks": 0
+      }
+    },
+    {
       "authorId": "KAUTH-KIM-JEONGHUI",
       "slug": "kim-jeonghui",
       "name": {
@@ -4677,7 +4987,7 @@
       },
       "collectionTier": "A",
       "v1Priority": 25,
-      "chronologyOrder": 86,
+      "chronologyOrder": 92,
       "notes": "추사체, 금석학, 제주 유배.",
       "sourceHint": "阮堂集",
       "candidateWorkTitles": [
@@ -4730,7 +5040,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 87,
+      "chronologyOrder": 93,
       "notes": "중인 서화가, 매화와 예술 문학.",
       "sourceHint": "壺山外記, 문집",
       "candidateWorkTitles": [
@@ -4770,7 +5080,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 88,
+      "chronologyOrder": 94,
       "notes": "여성 유학자. 철학·수양 문학의 여성 축.",
       "sourceHint": "靜一堂遺稿",
       "candidateWorkTitles": [
@@ -4823,7 +5133,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 89,
+      "chronologyOrder": 95,
       "notes": "여성 성리학자. 문학사 다양성 보강.",
       "sourceHint": "允摯堂遺稿",
       "candidateWorkTitles": [
@@ -4875,7 +5185,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 90,
+      "chronologyOrder": 96,
       "notes": "기생 문학 대표. 한시와 시조 전승을 분리 검토해야 한다.",
       "sourceHint": "梅窓集",
       "candidateWorkTitles": [
@@ -4928,7 +5238,7 @@
       },
       "collectionTier": "A",
       "v1Priority": null,
-      "chronologyOrder": 91,
+      "chronologyOrder": 97,
       "notes": "개화기 한문학과 국제 정세 인식.",
       "sourceHint": "古歡堂集",
       "candidateWorkTitles": [
@@ -4967,7 +5277,7 @@
       },
       "collectionTier": "A",
       "v1Priority": null,
-      "chronologyOrder": 92,
+      "chronologyOrder": 98,
       "notes": "강화학파, 한말 문장가.",
       "sourceHint": "明美堂集",
       "candidateWorkTitles": [
@@ -5006,7 +5316,7 @@
       },
       "collectionTier": "A",
       "v1Priority": 27,
-      "chronologyOrder": 93,
+      "chronologyOrder": 99,
       "notes": "망명 지식인, 한문학 정리자.",
       "sourceHint": "滄江稿",
       "candidateWorkTitles": [
@@ -5046,7 +5356,7 @@
       },
       "collectionTier": "A",
       "v1Priority": 26,
-      "chronologyOrder": 94,
+      "chronologyOrder": 100,
       "notes": "매천, 국권 상실기의 역사 기록과 절명시.",
       "sourceHint": "梅泉集, 梅泉野錄",
       "candidateWorkTitles": [
@@ -5100,7 +5410,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 95,
+      "chronologyOrder": 101,
       "notes": "근대 여성 문인·후원자.",
       "sourceHint": "松雪堂集",
       "candidateWorkTitles": [
@@ -5152,7 +5462,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 96,
+      "chronologyOrder": 102,
       "notes": "독립운동가. 옥중 한시와 유묵 중심 수집.",
       "sourceHint": "유묵, 옥중 시문",
       "candidateWorkTitles": [
@@ -5205,7 +5515,7 @@
       },
       "collectionTier": "B",
       "v1Priority": null,
-      "chronologyOrder": 97,
+      "chronologyOrder": 103,
       "notes": "위당, 국학과 한문학을 잇는 근대 지식인. 저작권 검토 필요.",
       "sourceHint": "薝園文錄 등",
       "candidateWorkTitles": [
@@ -5245,7 +5555,7 @@
       },
       "collectionTier": "D",
       "v1Priority": null,
-      "chronologyOrder": 98,
+      "chronologyOrder": 104,
       "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
       "sourceHint": "東京雜記",
       "candidateWorkTitles": [
@@ -5293,7 +5603,7 @@
       },
       "collectionTier": "D",
       "v1Priority": null,
-      "chronologyOrder": 99,
+      "chronologyOrder": 105,
       "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
       "sourceHint": "東京雜記",
       "candidateWorkTitles": [
@@ -5341,7 +5651,7 @@
       },
       "collectionTier": "D",
       "v1Priority": null,
-      "chronologyOrder": 100,
+      "chronologyOrder": 106,
       "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
       "sourceHint": "東京雜記",
       "candidateWorkTitles": [
@@ -5389,7 +5699,7 @@
       },
       "collectionTier": "D",
       "v1Priority": null,
-      "chronologyOrder": 101,
+      "chronologyOrder": 107,
       "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
       "sourceHint": "東京雜記",
       "candidateWorkTitles": [
@@ -5437,7 +5747,7 @@
       },
       "collectionTier": "D",
       "v1Priority": null,
-      "chronologyOrder": 102,
+      "chronologyOrder": 108,
       "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
       "sourceHint": "東京雜記",
       "candidateWorkTitles": [
@@ -5485,7 +5795,7 @@
       },
       "collectionTier": "D",
       "v1Priority": null,
-      "chronologyOrder": 103,
+      "chronologyOrder": 109,
       "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
       "sourceHint": "東京雜記",
       "candidateWorkTitles": [
@@ -5533,7 +5843,7 @@
       },
       "collectionTier": "D",
       "v1Priority": null,
-      "chronologyOrder": 104,
+      "chronologyOrder": 110,
       "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
       "sourceHint": "東京雜記",
       "candidateWorkTitles": [
@@ -5581,7 +5891,7 @@
       },
       "collectionTier": "D",
       "v1Priority": null,
-      "chronologyOrder": 105,
+      "chronologyOrder": 111,
       "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
       "sourceHint": "東京雜記",
       "candidateWorkTitles": [
@@ -5629,7 +5939,7 @@
       },
       "collectionTier": "D",
       "v1Priority": null,
-      "chronologyOrder": 106,
+      "chronologyOrder": 112,
       "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
       "sourceHint": "東京雜記",
       "candidateWorkTitles": [
@@ -5677,7 +5987,7 @@
       },
       "collectionTier": "D",
       "v1Priority": null,
-      "chronologyOrder": 107,
+      "chronologyOrder": 113,
       "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
       "sourceHint": "東京雜記",
       "candidateWorkTitles": [
@@ -5725,7 +6035,7 @@
       },
       "collectionTier": "D",
       "v1Priority": null,
-      "chronologyOrder": 108,
+      "chronologyOrder": 114,
       "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
       "sourceHint": "東京雜記",
       "candidateWorkTitles": [
@@ -5773,7 +6083,7 @@
       },
       "collectionTier": "D",
       "v1Priority": null,
-      "chronologyOrder": 109,
+      "chronologyOrder": 115,
       "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
       "sourceHint": "東京雜記",
       "candidateWorkTitles": [
@@ -5821,7 +6131,7 @@
       },
       "collectionTier": "D",
       "v1Priority": null,
-      "chronologyOrder": 110,
+      "chronologyOrder": 116,
       "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
       "sourceHint": "東京雜記",
       "candidateWorkTitles": [
@@ -5871,7 +6181,7 @@
       },
       "collectionTier": "D",
       "v1Priority": null,
-      "chronologyOrder": 111,
+      "chronologyOrder": 117,
       "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
       "sourceHint": "東京雜記",
       "candidateWorkTitles": [
@@ -5919,7 +6229,7 @@
       },
       "collectionTier": "D",
       "v1Priority": null,
-      "chronologyOrder": 112,
+      "chronologyOrder": 118,
       "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
       "sourceHint": "東京雜記",
       "candidateWorkTitles": [
@@ -5967,7 +6277,7 @@
       },
       "collectionTier": "D",
       "v1Priority": null,
-      "chronologyOrder": 113,
+      "chronologyOrder": 119,
       "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
       "sourceHint": "東京雜記",
       "candidateWorkTitles": [
@@ -6015,7 +6325,7 @@
       },
       "collectionTier": "D",
       "v1Priority": null,
-      "chronologyOrder": 114,
+      "chronologyOrder": 120,
       "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
       "sourceHint": "東京雜記",
       "candidateWorkTitles": [
@@ -6063,7 +6373,7 @@
       },
       "collectionTier": "D",
       "v1Priority": null,
-      "chronologyOrder": 115,
+      "chronologyOrder": 121,
       "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
       "sourceHint": "東京雜記",
       "candidateWorkTitles": [
@@ -6111,7 +6421,7 @@
       },
       "collectionTier": "D",
       "v1Priority": null,
-      "chronologyOrder": 116,
+      "chronologyOrder": 122,
       "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
       "sourceHint": "東京雜記",
       "candidateWorkTitles": [
@@ -6159,7 +6469,7 @@
       },
       "collectionTier": "D",
       "v1Priority": null,
-      "chronologyOrder": 117,
+      "chronologyOrder": 123,
       "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
       "sourceHint": "東京雜記",
       "candidateWorkTitles": [
@@ -6207,7 +6517,7 @@
       },
       "collectionTier": "D",
       "v1Priority": null,
-      "chronologyOrder": 118,
+      "chronologyOrder": 124,
       "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
       "sourceHint": "東京雜記",
       "candidateWorkTitles": [
@@ -6255,7 +6565,7 @@
       },
       "collectionTier": "D",
       "v1Priority": null,
-      "chronologyOrder": 119,
+      "chronologyOrder": 125,
       "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
       "sourceHint": "東京雜記",
       "candidateWorkTitles": [
@@ -6303,7 +6613,7 @@
       },
       "collectionTier": "D",
       "v1Priority": null,
-      "chronologyOrder": 120,
+      "chronologyOrder": 126,
       "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
       "sourceHint": "東京雜記",
       "candidateWorkTitles": [
@@ -6351,7 +6661,7 @@
       },
       "collectionTier": "D",
       "v1Priority": null,
-      "chronologyOrder": 121,
+      "chronologyOrder": 127,
       "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
       "sourceHint": "東京雜記",
       "candidateWorkTitles": [
@@ -6399,7 +6709,7 @@
       },
       "collectionTier": "D",
       "v1Priority": null,
-      "chronologyOrder": 122,
+      "chronologyOrder": 128,
       "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
       "sourceHint": "東京雜記",
       "candidateWorkTitles": [
@@ -6447,7 +6757,7 @@
       },
       "collectionTier": "D",
       "v1Priority": null,
-      "chronologyOrder": 123,
+      "chronologyOrder": 129,
       "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
       "sourceHint": "東京雜記",
       "candidateWorkTitles": [
@@ -6495,7 +6805,7 @@
       },
       "collectionTier": "D",
       "v1Priority": null,
-      "chronologyOrder": 124,
+      "chronologyOrder": 130,
       "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
       "sourceHint": "東京雜記",
       "candidateWorkTitles": [
@@ -6543,7 +6853,7 @@
       },
       "collectionTier": "D",
       "v1Priority": null,
-      "chronologyOrder": 125,
+      "chronologyOrder": 131,
       "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
       "sourceHint": "東京雜記",
       "candidateWorkTitles": [
@@ -6591,7 +6901,7 @@
       },
       "collectionTier": "D",
       "v1Priority": null,
-      "chronologyOrder": 126,
+      "chronologyOrder": 132,
       "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
       "sourceHint": "東京雜記",
       "candidateWorkTitles": [
@@ -6639,7 +6949,7 @@
       },
       "collectionTier": "D",
       "v1Priority": null,
-      "chronologyOrder": 127,
+      "chronologyOrder": 133,
       "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
       "sourceHint": "東京雜記",
       "candidateWorkTitles": [
@@ -6687,7 +6997,7 @@
       },
       "collectionTier": "D",
       "v1Priority": null,
-      "chronologyOrder": 128,
+      "chronologyOrder": 134,
       "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
       "sourceHint": "東京雜記",
       "candidateWorkTitles": [
@@ -6735,7 +7045,7 @@
       },
       "collectionTier": "D",
       "v1Priority": null,
-      "chronologyOrder": 129,
+      "chronologyOrder": 135,
       "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
       "sourceHint": "東京雜記",
       "candidateWorkTitles": [
@@ -6783,7 +7093,7 @@
       },
       "collectionTier": "D",
       "v1Priority": null,
-      "chronologyOrder": 130,
+      "chronologyOrder": 136,
       "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
       "sourceHint": "東京雜記",
       "candidateWorkTitles": [
@@ -6831,7 +7141,7 @@
       },
       "collectionTier": "D",
       "v1Priority": null,
-      "chronologyOrder": 131,
+      "chronologyOrder": 137,
       "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
       "sourceHint": "東京雜記",
       "candidateWorkTitles": [
@@ -6879,7 +7189,7 @@
       },
       "collectionTier": "D",
       "v1Priority": null,
-      "chronologyOrder": 132,
+      "chronologyOrder": 138,
       "notes": "동경잡기 2차 import를 위한 보충 author seed. 한글 독음과 생애 정보는 후속 검증 필요.",
       "sourceHint": "東京雜記",
       "candidateWorkTitles": [
