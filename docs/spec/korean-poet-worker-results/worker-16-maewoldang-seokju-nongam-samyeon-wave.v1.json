@@ -1,0 +1,3987 @@
+{
+  "workerId": "worker-16-maewoldang-seokju-nongam-samyeon-wave",
+  "modelRecommendation": "gpt-5.4",
+  "status": "completed",
+  "targetAuthors": [
+    "김시습",
+    "권필",
+    "이현보",
+    "김창협",
+    "김창흡",
+    "송순",
+    "신흠"
+  ],
+  "summary": {
+    "candidateWorksChecked": 140,
+    "directTextWorksFound": 140,
+    "ocrCandidates": 0,
+    "blockedWorks": 0
+  },
+  "poems": [
+    {
+      "authorKo": "김시습",
+      "authorHanja": "金時習",
+      "candidateTitle": "방랑시",
+      "matchedTitle": "訪友於三淸宮。適醮立冬。",
+      "sourceWork": {
+        "collectionTitle": "梅月堂集 卷三",
+        "juan": "卷三",
+        "entryTitle": "訪友於三淸宮。適醮立冬。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%9C%88%E5%A0%82%E9%9B%86/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%9C%88%E5%A0%82%E9%9B%86/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "雲散長空星斗寒。瓊章讀罷禮天壇。玉皇降處圍香霧。金母來時駕彩鸞。寶磬有聲人寂寂。瑤臺無累月團團。三淸醮畢門重鎖。照殿靑燈徹夜闌。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 梅月堂集 卷三 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '방랑시'을 구체 작품 '訪友於三淸宮。適醮立冬。'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김시습",
+      "authorHanja": "金時習",
+      "candidateTitle": "방랑시",
+      "matchedTitle": "登三淸宮",
+      "sourceWork": {
+        "collectionTitle": "梅月堂集 卷三",
+        "juan": "卷三",
+        "entryTitle": "登三淸宮",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%9C%88%E5%A0%82%E9%9B%86/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%9C%88%E5%A0%82%E9%9B%86/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "上帝高居玉座遙。群仙濟濟列層霄。碧窓縹緲香煙繞。絳闕森嚴翠羽翹。滿院松濤醒俗夢。一庭霜彩滑雲橋。天光甚邇無聲臭。坱圠玄機亦孔昭。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 梅月堂集 卷三 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '방랑시'을 구체 작품 '登三淸宮'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김시습",
+      "authorHanja": "金時習",
+      "candidateTitle": "방랑시",
+      "matchedTitle": "夜宿祭署感懷",
+      "sourceWork": {
+        "collectionTitle": "梅月堂集 卷三",
+        "juan": "卷三",
+        "entryTitle": "夜宿祭署感懷",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%9C%88%E5%A0%82%E9%9B%86/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%9C%88%E5%A0%82%E9%9B%86/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "至道渺難名。實理常一致。俯仰曠無垠。只有天與地。天高何所極。地厚何所依。茫茫不可辨。浩浩難析微。人生於兩間。靈智知彰幾。明則有禮樂。幽則有鬼神。鬼神不可測。本無形段身。云何有兩歧。紛紛爲贗眞。中華出伯陽。西土生能仁。各言所得心。異說難重陳。栖栖東魯翁。衰周生不辰。祖述追三五。示民以彝倫。自從王綱頹。大道轍斯阻。異言入人耳。淫泥莫能曉。遂使平常道。高議凌冥藐。渺渺指心性。恍惚起言表。捷徑一以開。靡然世爭許。仁義爲迂闊。爭趨夸大語。至于魏晉間。物情傷時危。風流江左輩。鋪張潤其辭。聖謨與奇言。爲騈爲指枝。事無二可行。理無二可安。一藥一是病。誰析其倪端。悠悠想千古。渺渺良可歎。漢帝求神仙。元皇焚道藏。佛心稱蕭武。釋敎亡會昌。敬者是何心。壞者云何意。安得叫九原。歷歷問其志。永懷達申朝。古壇號松吹。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 梅月堂集 卷三 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '방랑시'을 구체 작품 '夜宿祭署感懷'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김시습",
+      "authorHanja": "金時習",
+      "candidateTitle": "방랑시",
+      "matchedTitle": "遊仙宮。贈柳別提。",
+      "sourceWork": {
+        "collectionTitle": "梅月堂集 卷三",
+        "juan": "卷三",
+        "entryTitle": "遊仙宮。贈柳別提。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%9C%88%E5%A0%82%E9%9B%86/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%9C%88%E5%A0%82%E9%9B%86/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "我亦常時放浪民。偶登琳館禮眞人。一樽玉薤瑤池醞。兩卷黃庭紫府珍。窓畔折殘陶令菊。壁間斜掛謝公巾。玉京秋夜朝天返。淡月疏星繞帝宸。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 梅月堂集 卷三 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '방랑시'을 구체 작품 '遊仙宮。贈柳別提。'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김시습",
+      "authorHanja": "金時習",
+      "candidateTitle": "방랑시",
+      "matchedTitle": "贈道士",
+      "sourceWork": {
+        "collectionTitle": "梅月堂集 卷三",
+        "juan": "卷三",
+        "entryTitle": "贈道士",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%9C%88%E5%A0%82%E9%9B%86/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%9C%88%E5%A0%82%E9%9B%86/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "玉淸壇上退朝還。環佩珊珊態度閑。靈寶度人飧六氣。黃庭換寫養三關。奇香滿竈晨成藥。異氣浮空夜入班。乞我半升鐺折脚。年來我亦煮溪山。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 梅月堂集 卷三 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '방랑시'을 구체 작품 '贈道士'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김시습",
+      "authorHanja": "金時習",
+      "candidateTitle": "방랑시",
+      "matchedTitle": "贈三淸監點",
+      "sourceWork": {
+        "collectionTitle": "梅月堂集 卷三",
+        "juan": "卷三",
+        "entryTitle": "贈三淸監點",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%9C%88%E5%A0%82%E9%9B%86/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%9C%88%E5%A0%82%E9%9B%86/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "玄都觀裏看花郞。詩賦風流耀一鄕。暫屈玉堂揮翰手。來參具闕煉砂房。洞門深鎖看周易。丹竈牢封禮紫皇。異日登瀛攀鳳扆。刁圭分與濟黔蒼。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 梅月堂集 卷三 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '방랑시'을 구체 작품 '贈三淸監點'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김시습",
+      "authorHanja": "金時習",
+      "candidateTitle": "방랑시",
+      "matchedTitle": "別道人",
+      "sourceWork": {
+        "collectionTitle": "梅月堂集 卷三",
+        "juan": "卷三",
+        "entryTitle": "別道人",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%9C%88%E5%A0%82%E9%9B%86/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%9C%88%E5%A0%82%E9%9B%86/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "團欒相話無窮盡。綠水靑山望望遙。何日重期松榻下。十分淸話握吹毛。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 梅月堂集 卷三 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '방랑시'을 구체 작품 '別道人'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김시습",
+      "authorHanja": "金時習",
+      "candidateTitle": "방랑시",
+      "matchedTitle": "凌虛詞",
+      "sourceWork": {
+        "collectionTitle": "梅月堂集 卷三",
+        "juan": "卷三",
+        "entryTitle": "凌虛詞",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%9C%88%E5%A0%82%E9%9B%86/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%9C%88%E5%A0%82%E9%9B%86/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "碧落無雲天氣淸。蹁躚時聽步虛聲。十二樓上吹長笛。便是神仙白玉京。\n\n朝餐沆瀣暮流霞。須信凌虛有作家。下視塊蘇嗟渺渺。大鵬飛少蠛蠓多。\n\n淸晨騎鶴上淸虛。洞闢紅雲玉帝居。特命弄臣宣紫詔。朗吟天篆一行書。\n\n左界無雲種白楡。廣寒宮裏舞仙姝。泛槎銀海波瀾闊。金闕瓊樓是帝都。\n\n人間無地不風波。八翼凌風是大家。下界蜉蝣寰宇窄。塵埃萬丈賺君何。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 梅月堂集 卷三 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '방랑시'을 구체 작품 '凌虛詞'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김시습",
+      "authorHanja": "金時習",
+      "candidateTitle": "방랑시",
+      "matchedTitle": "贈峻上人二十首",
+      "sourceWork": {
+        "collectionTitle": "梅月堂集 卷三",
+        "juan": "卷三",
+        "entryTitle": "贈峻上人二十首",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%9C%88%E5%A0%82%E9%9B%86/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%9C%88%E5%A0%82%E9%9B%86/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "峻上人。禪門老宿。初於湖南。有可隱之處。住錫數年。道力旣成。歷遍雲水。忽過京洛。士女輻湊。望風而靡。所化無同。乃因名宰及善信居士固請。因雅適大願訖。復遊湖南。容儀有道骨焉。僕於壬申夏。制弭錫曹溪。遂同住上社臺。果如素聞。其慕道超脫之心。著於語辭之表。每日扣問禪關。語琅琅然。因其曩日探翫景。却掃數聯。以資碧峯淸澗眠食之一味。拈翰走爾。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 梅月堂集 卷三 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '방랑시'을 구체 작품 '贈峻上人二十首'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김시습",
+      "authorHanja": "金時習",
+      "candidateTitle": "방랑시",
+      "matchedTitle": "其一",
+      "sourceWork": {
+        "collectionTitle": "梅月堂集 卷三",
+        "juan": "卷三",
+        "entryTitle": "其一",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%9C%88%E5%A0%82%E9%9B%86/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%9C%88%E5%A0%82%E9%9B%86/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "南山紫翠鬱芙蓉。寺在曹溪第一峯。萬古乾坤雙草屩。百年身世短瘦筇。有時對月看僧話。何處焚香坐枯松。要識吾師眞面目。竹林西畔石橋東。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 梅月堂集 卷三 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '방랑시'을 구체 작품 '其一'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김시습",
+      "authorHanja": "金時習",
+      "candidateTitle": "산사시",
+      "matchedTitle": "其二",
+      "sourceWork": {
+        "collectionTitle": "梅月堂集 卷三",
+        "juan": "卷三",
+        "entryTitle": "其二",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%9C%88%E5%A0%82%E9%9B%86/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%9C%88%E5%A0%82%E9%9B%86/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "翩翩一錫響空飛。五月松花滿翠微。盡日鉢擎千戶飯。多年衲乞幾人衣。心同流水自淸淨。身與片雲無是非。踏遍江山雙眼碧。優曇花發及時歸。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 梅月堂集 卷三 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '산사시'을 구체 작품 '其二'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김시습",
+      "authorHanja": "金時習",
+      "candidateTitle": "산사시",
+      "matchedTitle": "其三",
+      "sourceWork": {
+        "collectionTitle": "梅月堂集 卷三",
+        "juan": "卷三",
+        "entryTitle": "其三",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%9C%88%E5%A0%82%E9%9B%86/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%9C%88%E5%A0%82%E9%9B%86/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "只愛靑山不愛名。靑山相對可忘情。苔痕一徑白雲鎖。花影半窓紅日明。澗暗但聞泉浙瀝。峯回剩見月虧盈。葛藤三尺無人和。付與隔林幽鳥聲。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 梅月堂集 卷三 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '산사시'을 구체 작품 '其三'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김시습",
+      "authorHanja": "金時習",
+      "candidateTitle": "산사시",
+      "matchedTitle": "其四",
+      "sourceWork": {
+        "collectionTitle": "梅月堂集 卷三",
+        "juan": "卷三",
+        "entryTitle": "其四",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%9C%88%E5%A0%82%E9%9B%86/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%9C%88%E5%A0%82%E9%9B%86/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "一炷淸香一卷經。一輪孤月一溪聲。鼎中甘茗黃金賤。松下茅齋紫綬輕。漂渺煙霞心與潔。嬋娟水月性常明。閑眠盡日無人到。自有淸風撼竹楹。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 梅月堂集 卷三 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '산사시'을 구체 작품 '其四'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김시습",
+      "authorHanja": "金時習",
+      "candidateTitle": "산사시",
+      "matchedTitle": "其五",
+      "sourceWork": {
+        "collectionTitle": "梅月堂集 卷三",
+        "juan": "卷三",
+        "entryTitle": "其五",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%9C%88%E5%A0%82%E9%9B%86/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%9C%88%E5%A0%82%E9%9B%86/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "肯學參禪求出離。眞空笑我又相欺。爭名塵土渾無意。放志江湖已不疑。榻上坐聞松落子。林間行見竹生稚。只將枯影飄然去。綠水靑山何處期。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 梅月堂集 卷三 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '산사시'을 구체 작품 '其五'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김시습",
+      "authorHanja": "金時習",
+      "candidateTitle": "산사시",
+      "matchedTitle": "其六",
+      "sourceWork": {
+        "collectionTitle": "梅月堂集 卷三",
+        "juan": "卷三",
+        "entryTitle": "其六",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%9C%88%E5%A0%82%E9%9B%86/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%9C%88%E5%A0%82%E9%9B%86/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "有身何處不爲家。甘分靑山試一嗟。雨後荷鋤種瑞草。風前扱衽採胡麻。一窓明月一窓徹。千里浮雲千里遮。好向煙霞君莫出。小溪流水長蘚花。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 梅月堂集 卷三 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '산사시'을 구체 작품 '其六'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김시습",
+      "authorHanja": "金時習",
+      "candidateTitle": "산사시",
+      "matchedTitle": "其七",
+      "sourceWork": {
+        "collectionTitle": "梅月堂集 卷三",
+        "juan": "卷三",
+        "entryTitle": "其七",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%9C%88%E5%A0%82%E9%9B%86/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%9C%88%E5%A0%82%E9%9B%86/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "八萬峯頭月欲低。曙光和霧落庭除。半溪雨夜藤花老。一逕春風芋葉齊。松子打窓雲入戶。苔痕繞砌竹穿階。世間甲子知多少。唯有空林山鳥啼。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 梅月堂集 卷三 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '산사시'을 구체 작품 '其七'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김시습",
+      "authorHanja": "金時習",
+      "candidateTitle": "산사시",
+      "matchedTitle": "其八",
+      "sourceWork": {
+        "collectionTitle": "梅月堂集 卷三",
+        "juan": "卷三",
+        "entryTitle": "其八",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%9C%88%E5%A0%82%E9%9B%86/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%9C%88%E5%A0%82%E9%9B%86/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "終日芒鞋信脚行。一山行盡一山靑。心非有像奚形役。道本無名豈假成。宿霧未晞山鳥語。春風不盡野花明。短筇歸去千峯靜。翠壁亂煙生晚晴。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 梅月堂集 卷三 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '산사시'을 구체 작품 '其八'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김시습",
+      "authorHanja": "金時習",
+      "candidateTitle": "산사시",
+      "matchedTitle": "其九",
+      "sourceWork": {
+        "collectionTitle": "梅月堂集 卷三",
+        "juan": "卷三",
+        "entryTitle": "其九",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%9C%88%E5%A0%82%E9%9B%86/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%9C%88%E5%A0%82%E9%9B%86/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "楓岳高低十二峯。峯頭石角掛枯松。塵紛却是郭郞巧。世事盡隨蝴蝶空。桂子落時殘照薄。楊花飛處晚山濃。蒲團獨坐香如縷。愛聽楓橋半夜鍾。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 梅月堂集 卷三 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '산사시'을 구체 작품 '其九'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김시습",
+      "authorHanja": "金時習",
+      "candidateTitle": "산사시",
+      "matchedTitle": "其十",
+      "sourceWork": {
+        "collectionTitle": "梅月堂集 卷三",
+        "juan": "卷三",
+        "entryTitle": "其十",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%9C%88%E5%A0%82%E9%9B%86/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%9C%88%E5%A0%82%E9%9B%86/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "空色觀來色卽空。更無一物可相容。松非有意當軒翠。花自無心向日紅。同異異同同異異。異同同異異同同。欲尋同異眞消息。看取高高最上峯。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 梅月堂集 卷三 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '산사시'을 구체 작품 '其十'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김시습",
+      "authorHanja": "金時習",
+      "candidateTitle": "산사시",
+      "matchedTitle": "其十一",
+      "sourceWork": {
+        "collectionTitle": "梅月堂集 卷三",
+        "juan": "卷三",
+        "entryTitle": "其十一",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%9C%88%E5%A0%82%E9%9B%86/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%9C%88%E5%A0%82%E9%9B%86/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "怪來無事可馳奔。時有淸風來掃門。春鳥弄成絃管節。晚山濃作畫圖痕。滿庭天篆幽禽踏。八尺人爻涼簟紋。情慮萬般都殺了。夜深風趁一窓雲。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 梅月堂集 卷三 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '산사시'을 구체 작품 '其十一'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "권필",
+      "authorHanja": "權韠",
+      "candidateTitle": "풍자시",
+      "matchedTitle": "驅車兒兒時作",
+      "sourceWork": {
+        "collectionTitle": "石洲集 卷二",
+        "juan": "卷二",
+        "entryTitle": "驅車兒兒時作",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E7%9F%B3%E6%B4%B2%E9%9B%86/%E5%8D%B7%E4%BA%8C",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E7%9F%B3%E6%B4%B2%E9%9B%86/%E5%8D%B7%E4%BA%8C?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "驅車兒。三十四十猶總角。有廬不居田不耕。年年伐木在山谷。借問伐木何所用。長安城中起樓閣。樓閣連雲山木盡。官家催促無虛日。城南昨夜飛雨滑。陌上春泥深沒膝。竟日十步五步間。牛飢無草兒不食。兒不食尙可。牛飢恐失足。驅車兒兒有辭。傍人問之亦悽惻。兒驅牛牛駕車。牛蹄趵趵車轆轆。轆轆趵趵十餘歲。兒身無子牛無犢。一朝牛斃兒亦死。官家何處施鞭朴。願將此意叫天閽。及時下令除苦役。兒但與牛相對眠。日長村巷桑麻綠。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 石洲集 卷二 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '풍자시'을 구체 작품 '驅車兒兒時作'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "권필",
+      "authorHanja": "權韠",
+      "candidateTitle": "풍자시",
+      "matchedTitle": "秋懷。側體。",
+      "sourceWork": {
+        "collectionTitle": "石洲集 卷二",
+        "juan": "卷二",
+        "entryTitle": "秋懷。側體。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E7%9F%B3%E6%B4%B2%E9%9B%86/%E5%8D%B7%E4%BA%8C",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E7%9F%B3%E6%B4%B2%E9%9B%86/%E5%8D%B7%E4%BA%8C?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "柴荊寂寞無人跡。中酒多年與世隔。諸葛休誇管樂儔。荊公正笑春秋學。牀蟲喞喞語深秋。籬蕊盈盈斂寒夕。獨背孤燈枕手眠。雲山入夢參差碧。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 石洲集 卷二 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '풍자시'을 구체 작품 '秋懷。側體。'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "권필",
+      "authorHanja": "權韠",
+      "candidateTitle": "풍자시",
+      "matchedTitle": "觀燈行。示友人。",
+      "sourceWork": {
+        "collectionTitle": "石洲集 卷二",
+        "juan": "卷二",
+        "entryTitle": "觀燈行。示友人。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E7%9F%B3%E6%B4%B2%E9%9B%86/%E5%8D%B7%E4%BA%8C",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E7%9F%B3%E6%B4%B2%E9%9B%86/%E5%8D%B7%E4%BA%8C?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "須彌之山兜率天。四月八日生金仙。心心相印比傳燈。流入東華知幾年。漢陽豪富天下雄。張燈設戲傳遺風。紛紛甲第鬪奢華。羅幃繡幕連靑空。金樽酒重花滿煙。紗籠銀燭光玲瓏。五鳳毰毸九龍騰。十里金碧輝觚稜。是日金吾不禁夜。笙歌滿路香煙凝。靑樓處處捲珠箔。分曹作隊多豪客。繁華幾時人事改。滿目干戈日月晦。九重城闕忽丘墟。疇昔同遊幾人在。他鄕作客伴孤燈。歸夢遙遙越雲海。閉門飢臥動經旬。不覺明朝是佳節。速宜相就飮一斗。人世悲歡不堪說。男兒百年貴得意。何用傷心催白髮。玉蟲金粟亦無賴。夜來應有花間月。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 石洲集 卷二 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '풍자시'을 구체 작품 '觀燈行。示友人。'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "권필",
+      "authorHanja": "權韠",
+      "candidateTitle": "풍자시",
+      "matchedTitle": "遊摩尼山。用觀燈行韻。",
+      "sourceWork": {
+        "collectionTitle": "石洲集 卷二",
+        "juan": "卷二",
+        "entryTitle": "遊摩尼山。用觀燈行韻。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E7%9F%B3%E6%B4%B2%E9%9B%86/%E5%8D%B7%E4%BA%8C",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E7%9F%B3%E6%B4%B2%E9%9B%86/%E5%8D%B7%E4%BA%8C?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "摩尼山高高揷天。上有瑤臺遊羽仙。溪花笑日知幾重。澗松閱世皆千年。危峯拔地氣勢雄。絶頂四月多寒風。西南軒豁眼力窮。碧海萬里涵靑空。玉京去此不盈尺。想聞仙佩鳴玲瓏。琳宮駕虛鐵鳳騰。萬壑嵐翠連觚𧤁。晩歸蒲團聞妙香。客塵滅盡神魂凝。山光雲影繞箱箔。數聲啼鳥留歸客。向來人事易變改。浮世光陰幾明晦。昨日飛綏拖玉者。今日曾無一人在。萬古消沈忽忽間。吾生一粟浮滄海。方丈聞名徒怳惚。玄圃尋河費時節。不如卜宅近前峯。依止老宿求法說。出門一笑歸路遙。水樹微茫綠如髮。夜來陳迹已空虛。茅簷祗對山中月。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 石洲集 卷二 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '풍자시'을 구체 작품 '遊摩尼山。用觀燈行韻。'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "권필",
+      "authorHanja": "權韠",
+      "candidateTitle": "풍자시",
+      "matchedTitle": "贈李明應。用前韻。",
+      "sourceWork": {
+        "collectionTitle": "石洲集 卷二",
+        "juan": "卷二",
+        "entryTitle": "贈李明應。用前韻。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E7%9F%B3%E6%B4%B2%E9%9B%86/%E5%8D%B7%E4%BA%8C",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E7%9F%B3%E6%B4%B2%E9%9B%86/%E5%8D%B7%E4%BA%8C?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "李白騎鯨飛上天。芙蓉城裏追群仙。醉飜王母九霞觴。再謫人間三十年。多生習氣尙豪雄。歷落頗有前身風。向來能事未全消。淸詩健賦聲磨空。比年學劍干伯王。腰間㻫琫搖玲瓏。風塵蹭蹬失騫騰。白羽在篋還生𧤁。卽今飄泊江海間。相逢一破窮愁凝。自嘆貧賤事織箔。屠市夷門曾結客。狂圖未試鬢先改。大醉長歌自韜晦。有時彈鋏氣如虹。知音賴有夫君在。旣不能揚鞭走馬出橫門。腋挾燕山超北海。又不能上章請斬佞臣頭。折檻天庭立奇節。破窓燈火坐閑散。鬱鬱幽懷向誰說。飮君樽酒爲君歌。莫論世事多如髮。各將藤杖待秋風。去踏萬二千峯月。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 石洲集 卷二 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '풍자시'을 구체 작품 '贈李明應。用前韻。'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "권필",
+      "authorHanja": "權韠",
+      "candidateTitle": "풍자시",
+      "matchedTitle": "天何蒼蒼。醉中走筆。",
+      "sourceWork": {
+        "collectionTitle": "石洲集 卷二",
+        "juan": "卷二",
+        "entryTitle": "天何蒼蒼。醉中走筆。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E7%9F%B3%E6%B4%B2%E9%9B%86/%E5%8D%B7%E4%BA%8C",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E7%9F%B3%E6%B4%B2%E9%9B%86/%E5%8D%B7%E4%BA%8C?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "天何蒼蒼。地何茫茫。山岳何崒崒。江海何洋洋。堯舜何巍巍。孔孟何遑遑。盜跖何以壽。顏淵何以殤。甯子何爲愚。箕子何爲狂。萬物盡如此。此理誰能詳。君不見楚國群陰蔽明月。屈原懷石沈江湘。又不見漢廷諸公惡年少。賈誼去傅長沙王。鳳翔千仞竟焉往。蕙樹百畝空餘芳。有才不必用。有德不必彰。李斯入關秦乃帝。孔明出廬漢終亡。世間成敗本如此。力耶命耶誰主張。酈生舌下七十城。不免身作鼎中烹。淮陰戰勝攻必取。不免身死女兒手。智巧不可恃。從古有如此。爲問白日金殿上。何似淸風北窓裏。況復長安大道多險巇。前有太行山。後有巫峽水。魍魎嘯林蛇出竇。熊羆西咆虎東踞。水鏡俟人影。天螻錄人語。罿罣兩肩。矰蜼罥雙脚。寄立尺才地。進退俱不得。人生莫向此間行。富貴向來生五兵。所以江東張季鷹。但愛一杯酒。不願千載名。去子驕氣與多欲。不用多言與多力。驕則不自保。欲則不知止。言終裂蘇秦。力不救任鄙。莫愛采石江上月。莫愛灞㶚陵橋上雪。蹇驢覓句只冷淡。長鯨登天終怳惚。不如樹樗無何鄕。游居寢臥于其傍。六合爲室。萬物爲糧。星辰爲佩。雲月爲裳。塞兌閉門。與道翺翔。下跐黃泉。上登太皇。男兒到此。卽是大休歇。何用在世長蹩躠。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 石洲集 卷二 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '풍자시'을 구체 작품 '天何蒼蒼。醉中走筆。'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "권필",
+      "authorHanja": "權韠",
+      "candidateTitle": "풍자시",
+      "matchedTitle": "詩酒歌",
+      "sourceWork": {
+        "collectionTitle": "石洲集 卷二",
+        "juan": "卷二",
+        "entryTitle": "詩酒歌",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E7%9F%B3%E6%B4%B2%E9%9B%86/%E5%8D%B7%E4%BA%8C",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E7%9F%B3%E6%B4%B2%E9%9B%86/%E5%8D%B7%E4%BA%8C?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "杜子耽佳句。岑生嗜醇酎。而我何如者。愛詩兼愛酒。擧世盡趢趗。二老可尙友。人生快意貴目前。何用浮名萬歲後。我筆不去手。我杯不離口。岑生在吾左。杜子在吾右。一生如此又如此。詩凡幾首酒幾斗。不管人間寒暑換。不問天上日月走。不是堯與舜。不非桀與紂。不悲貧賤夭。不喜富貴壽。或登山臨水。或訪花隨柳。有興輒醉醉卽吟。萬物於我知何有。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 石洲集 卷二 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '풍자시'을 구체 작품 '詩酒歌'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "권필",
+      "authorHanja": "權韠",
+      "candidateTitle": "풍자시",
+      "matchedTitle": "飛光。戲贈友人。",
+      "sourceWork": {
+        "collectionTitle": "石洲集 卷二",
+        "juan": "卷二",
+        "entryTitle": "飛光。戲贈友人。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E7%9F%B3%E6%B4%B2%E9%9B%86/%E5%8D%B7%E4%BA%8C",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E7%9F%B3%E6%B4%B2%E9%9B%86/%E5%8D%B7%E4%BA%8C?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "飛光飛光爾行誰所迫。朝出東溟暮西極。昨日今日又明日。如此如此不得息。人生世間駒過隙。少年一失難再得。不知身後名何似眼前樂。請呼精衛銜木石。塡四海之波化平陸。駕神農以耕。召后稷播百穀。千歲爲春禾始生。千歲爲秋禾乃熟。九州之鐵鑄大鎌。穫而積之高於崑崙碣石。釀作無限酒。元氣以爲麴。一飮九九八十一萬斛。醉臥鴻濛之野溟涬之域。大兒赤精子。小兒衛叔卿。令湘娥鼓瑟。命子晉吹笙。下視無懷几蘧等蜼螟。其餘堯舜禹湯文武周孔瑣瑣不足程。時乘紫雲車。容與出八紘。手撼若木枝。花葉紛而零。要令天下人。拾以食之皆長生。狂吟志在此。無乃太瓠落。旣覯百年友。是不是歌一曲。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 石洲集 卷二 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '풍자시'을 구체 작품 '飛光。戲贈友人。'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "권필",
+      "authorHanja": "權韠",
+      "candidateTitle": "풍자시",
+      "matchedTitle": "醉吟",
+      "sourceWork": {
+        "collectionTitle": "石洲集 卷二",
+        "juan": "卷二",
+        "entryTitle": "醉吟",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E7%9F%B3%E6%B4%B2%E9%9B%86/%E5%8D%B7%E4%BA%8C",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E7%9F%B3%E6%B4%B2%E9%9B%86/%E5%8D%B7%E4%BA%8C?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "三尺太阿劍。百年梁甫吟。逢迎多白眼。遊說少黃金。風塵萬事一揮淚。誰識男兒方寸心。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 石洲集 卷二 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '풍자시'을 구체 작품 '醉吟'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "권필",
+      "authorHanja": "權韠",
+      "candidateTitle": "풍자시",
+      "matchedTitle": "棲烏問答",
+      "sourceWork": {
+        "collectionTitle": "石洲集 卷二",
+        "juan": "卷二",
+        "entryTitle": "棲烏問答",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E7%9F%B3%E6%B4%B2%E9%9B%86/%E5%8D%B7%E4%BA%8C",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E7%9F%B3%E6%B4%B2%E9%9B%86/%E5%8D%B7%E4%BA%8C?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "問棲烏。秦塞楚山無限樹。何處不堪棲。却向遠客窓前秋夜月。飛來飛去伴人啼。棲烏答。去年失雛仍失雌。在野空見虞羅羈。豈知牕裏愁人泣。只愛牕前好樹枝。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 石洲集 卷二 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '풍자시'을 구체 작품 '棲烏問答'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "권필",
+      "authorHanja": "權韠",
+      "candidateTitle": "애도시",
+      "matchedTitle": "走筆。謝申質夫樸惠鷄。",
+      "sourceWork": {
+        "collectionTitle": "石洲集 卷二",
+        "juan": "卷二",
+        "entryTitle": "走筆。謝申質夫樸惠鷄。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E7%9F%B3%E6%B4%B2%E9%9B%86/%E5%8D%B7%E4%BA%8C",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E7%9F%B3%E6%B4%B2%E9%9B%86/%E5%8D%B7%E4%BA%8C?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "君家物色似尸鄕。赤幘喧呼滿阡陌。去年從君得孤雄。熟視方知不是木。至今茆簷風雨曉。夢罷隔牕聞喔喔。豈但盥櫛事父母。更以利善分舜跖。昨日又惠一隻雌。定知獨陽難化育。人言此物合養老。況乃天生備五德。從今飽喫錦帶羹。飣餖肯復供藜藿。不許小奴縛向市。恨無稚子催成柵。翰林得鷴報以詩。右軍換鵝曾費墨。故用再拜謝君嘉。題此寄去君應噱。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 石洲集 卷二 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '애도시'을 구체 작품 '走筆。謝申質夫樸惠鷄。'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "권필",
+      "authorHanja": "權韠",
+      "candidateTitle": "애도시",
+      "matchedTitle": "詠畫。爲宋子深淵作。六首。",
+      "sourceWork": {
+        "collectionTitle": "石洲集 卷二",
+        "juan": "卷二",
+        "entryTitle": "詠畫。爲宋子深淵作。六首。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E7%9F%B3%E6%B4%B2%E9%9B%86/%E5%8D%B7%E4%BA%8C",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E7%9F%B3%E6%B4%B2%E9%9B%86/%E5%8D%B7%E4%BA%8C?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "孤舟夜泊依古岸。翠壁十丈垂雲蘿。淸尊獨酌無與語。擧首向月彈琵琶。曲終絃絶萬籟空。寒江湛湛生微波。\n\n道人古貌淸且奇。百年泛宅何超忽。橫吹銅笛學龍吟。獨占煙波無限月。天風捲入碧空去。江上蒼崖十字裂。\n\n屋下淸江屋上山。酒旗半出平林間。江邊老人百不憂。靑篛綠蓑隨分閑。平生不識城市路。往來只在蘆花灣。\n\n老木槎牙臨古道。淸陰滿地生涼颸。騎驢客入小橋去。行色但有琴相隨。傍人秪道肩聳山。豈知擧目皆新詩。\n\n山風一夜吹飛雪。苦竹蕭蕭凍欲折。溪頭老梅忽放春。冷蕊疏枝太孤潔。詩翁覓句魂骨爽。獨倚寒査正愁絶。\n\n一幅空天數疊山。鐵崖揷入秋雲高。銀河倒落天中央。下射百里飛湍豪。何人岸幘倚長松。盡日山風吹鬢毛。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 石洲集 卷二 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '애도시'을 구체 작품 '詠畫。爲宋子深淵作。六首。'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "권필",
+      "authorHanja": "權韠",
+      "candidateTitle": "애도시",
+      "matchedTitle": "古長安行",
+      "sourceWork": {
+        "collectionTitle": "石洲集 卷二",
+        "juan": "卷二",
+        "entryTitle": "古長安行",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E7%9F%B3%E6%B4%B2%E9%9B%86/%E5%8D%B7%E4%BA%8C",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E7%9F%B3%E6%B4%B2%E9%9B%86/%E5%8D%B7%E4%BA%8C?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "長安甲第橫靑雲。高樓絲管遙相聞。漢代承相七寶車。轔轔夜入金張家。琱盤綺食天廚來。宮中美女顏如花。燭影熒煌淸漏遲。尊前密語無人知。門巷斜連夾城路。平明冠蓋多如霧。機開欻翕令人迷。白日鼻息吹虹霓。一朝人事忽顚倒。玉臺金館生春草。寄語世間夸奪子。古來浮榮不足恃。只今人憐賈太傅。紛紛絳灌誰比數。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 石洲集 卷二 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '애도시'을 구체 작품 '古長安行'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "권필",
+      "authorHanja": "權韠",
+      "candidateTitle": "애도시",
+      "matchedTitle": "春宮詞",
+      "sourceWork": {
+        "collectionTitle": "石洲集 卷二",
+        "juan": "卷二",
+        "entryTitle": "春宮詞",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E7%9F%B3%E6%B4%B2%E9%9B%86/%E5%8D%B7%E4%BA%8C",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E7%9F%B3%E6%B4%B2%E9%9B%86/%E5%8D%B7%E4%BA%8C?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "香風澹蕩吹綺羅。千門碧樹鶯聲多。珠簾晝下洞房深。美人睡覺傷春心。起把金針刺孤鳳。翠鬟欲墜鸞釵重。芳華已晩君不來。玉階寂寂生靑苔。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 石洲集 卷二 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '애도시'을 구체 작품 '春宮詞'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "권필",
+      "authorHanja": "權韠",
+      "candidateTitle": "애도시",
+      "matchedTitle": "送胡秀才慶元從吳都司南下",
+      "sourceWork": {
+        "collectionTitle": "石洲集 卷二",
+        "juan": "卷二",
+        "entryTitle": "送胡秀才慶元從吳都司南下",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E7%9F%B3%E6%B4%B2%E9%9B%86/%E5%8D%B7%E4%BA%8C",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E7%9F%B3%E6%B4%B2%E9%9B%86/%E5%8D%B7%E4%BA%8C?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "吾聞鏡湖水荷花。十里傳香風。又聞會稽山千峯。影落波濤中。淑氣鍾精鬱磅礴。其間往往生豪椎。賀公已去餘古宅。蘭亭高會亦寂寞。後來何者繼千古。人道胡生材卓犖。胡生年少風骨殊。意氣昂昂出塵鸛。上有爺孃下有弟。孝悌出天無失禮。力貧不足供珍羞。去家千里來遠遊。樓船將軍是知己。引爲幕客資良籌。大帆如雲略扶桑。百年壯觀超子長。去年來住江都城。閭巷小兒知姓名。我時陸沈屠市中。一日傾蓋如平生。眉宇之間得心事。朱絲之直氷壺淸。投我詩文動哀玉。建安七子堪動色。龍文之鼎可獨扛。筆端自有千鈞力。羨君才如不羈馬。一生豈是長貧者。自歎短衣不掩。長夜悲歌牛口下。幸蒙夫子許知音。片言出口輕黃金。胸中恢疏無愛憎。快辨可破窮愁凝。客舍開樽對雪峯。江頭走馬觀春燈。奇遊忽忽不可再。世間離合元相仍。君今南去逐旌麾。丈夫所期誰得知。方將跨海斬長鯨。肯作屑屑兒女悲。斗酒高歌臨大道。離魂黯黯連芳草。湖南自古淸絶地。驛路梅花今正好。煩君折得一枝春。遠寄江潭憔悴人。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 石洲集 卷二 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '애도시'을 구체 작품 '送胡秀才慶元從吳都司南下'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "권필",
+      "authorHanja": "權韠",
+      "candidateTitle": "애도시",
+      "matchedTitle": "以竹枝報菊花之惠。寄車五山。天輅",
+      "sourceWork": {
+        "collectionTitle": "石洲集 卷二",
+        "juan": "卷二",
+        "entryTitle": "以竹枝報菊花之惠。寄車五山。天輅",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E7%9F%B3%E6%B4%B2%E9%9B%86/%E5%8D%B7%E4%BA%8C",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E7%9F%B3%E6%B4%B2%E9%9B%86/%E5%8D%B7%E4%BA%8C?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "故人贈我秋菊英。何以報之靑竹枝。我佩幽芳當自潔。君依勁操終莫移。平生相許只如此。此心耿耿誰得知。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 石洲集 卷二 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '애도시'을 구체 작품 '以竹枝報菊花之惠。寄車五山。天輅'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "권필",
+      "authorHanja": "權韠",
+      "candidateTitle": "애도시",
+      "matchedTitle": "郊居。忽有詩思。命婢覓酒。詩成而酒不至。",
+      "sourceWork": {
+        "collectionTitle": "石洲集 卷二",
+        "juan": "卷二",
+        "entryTitle": "郊居。忽有詩思。命婢覓酒。詩成而酒不至。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E7%9F%B3%E6%B4%B2%E9%9B%86/%E5%8D%B7%E4%BA%8C",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E7%9F%B3%E6%B4%B2%E9%9B%86/%E5%8D%B7%E4%BA%8C?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "三冬被酒遊康莊。任敎俗子譏淸狂。榮辱寧論世翻覆。得失但覺心淸涼。昨者歸來田舍間。日照苜蓿春盤香。人生趣舍隨所適。且把詩篇慰朝夕。詩成不得一杯酒。腹不負吾吾負腹。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 石洲集 卷二 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '애도시'을 구체 작품 '郊居。忽有詩思。命婢覓酒。詩成而酒不至。'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "권필",
+      "authorHanja": "權韠",
+      "candidateTitle": "애도시",
+      "matchedTitle": "鬪狗行",
+      "sourceWork": {
+        "collectionTitle": "石洲集 卷二",
+        "juan": "卷二",
+        "entryTitle": "鬪狗行",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E7%9F%B3%E6%B4%B2%E9%9B%86/%E5%8D%B7%E4%BA%8C",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E7%9F%B3%E6%B4%B2%E9%9B%86/%E5%8D%B7%E4%BA%8C?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "誰投與狗骨。群狗鬪方狠。小者必死大者傷。有盜窺窬欲乘釁。主人抱膝中夜泣。天雨墻壞百憂集。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 石洲集 卷二 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '애도시'을 구체 작품 '鬪狗行'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "권필",
+      "authorHanja": "權韠",
+      "candidateTitle": "애도시",
+      "matchedTitle": "次韻宋子深長句見示",
+      "sourceWork": {
+        "collectionTitle": "石洲集 卷二",
+        "juan": "卷二",
+        "entryTitle": "次韻宋子深長句見示",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E7%9F%B3%E6%B4%B2%E9%9B%86/%E5%8D%B7%E4%BA%8C",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E7%9F%B3%E6%B4%B2%E9%9B%86/%E5%8D%B7%E4%BA%8C?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "天公於我賦窮相。短不可續如鳧脛。倡狂自許同阮籍。歇後從他譏鄭綮。三秋讀書深巷中。風雨茅簷坐寒冷。濁酒酣眠聊自娛。恥向塵埃伍噲等。感君作詩能起我。合眼依依夢漁艇。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 石洲集 卷二 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '애도시'을 구체 작품 '次韻宋子深長句見示'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "권필",
+      "authorHanja": "權韠",
+      "candidateTitle": "애도시",
+      "matchedTitle": "燕都行。送李子敏。",
+      "sourceWork": {
+        "collectionTitle": "石洲集 卷二",
+        "juan": "卷二",
+        "entryTitle": "燕都行。送李子敏。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E7%9F%B3%E6%B4%B2%E9%9B%86/%E5%8D%B7%E4%BA%8C",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E7%9F%B3%E6%B4%B2%E9%9B%86/%E5%8D%B7%E4%BA%8C?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "燕都地理雄且壯。城闕峨峨九天上。南臨五嶺西蔥河。四海萬國皆奔波。往者楊獠頗猖狂。天子赫怒誅姦彊。大開明堂受朝賀。諸候冠蓋遙相望。我王赤心拱北宸。妙簡在庭馳使臣。李侯貳之才有餘。萬里結束隨征車。薊樹蒼蒼遼塞長。漁陽驛路連醫間。去去追趨丹陛前。身與佳氣同周旋。男兒墮地要遠遊。李侯此行仍少年。我守蓬廬三十霜。壯志索莫頭髮蒼。知君定過黃金臺。爲我一弔燕昭王。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 石洲集 卷二 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '애도시'을 구체 작품 '燕都行。送李子敏。'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "이현보",
+      "authorHanja": "李賢輔",
+      "candidateTitle": "강호 관련 한시",
+      "matchedTitle": "謫中憂旱甲子四月",
+      "sourceWork": {
+        "collectionTitle": "聾巖集 卷一",
+        "juan": "卷一",
+        "entryTitle": "謫中憂旱甲子四月",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%81%BE%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%81%BE%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "其雨其雨日杲杲。天心豈識民心勞。萬口待哺方噞喁。我欲上天天路高。嗟茲之旱誠有由。安得淑問如皐陶。雲師欲作風伯怒。助勢黨惡鴟音豪。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 聾巖集 卷一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '강호 관련 한시'을 구체 작품 '謫中憂旱甲子四月'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "이현보",
+      "authorHanja": "李賢輔",
+      "candidateTitle": "강호 관련 한시",
+      "matchedTitle": "關東途中。示弟國卿。丙寅春蒙赦。自京歸覲麟蹄親之任所。",
+      "sourceWork": {
+        "collectionTitle": "聾巖集 卷一",
+        "juan": "卷一",
+        "entryTitle": "關東途中。示弟國卿。丙寅春蒙赦。自京歸覲麟蹄親之任所。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%81%BE%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%81%BE%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "始入長安雪滿城。綠陰三月此還行。眉間黃色君同我。明日山間過鯉庭。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 聾巖集 卷一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '강호 관련 한시'을 구체 작품 '關東途中。示弟國卿。丙寅春蒙赦。自京歸覲麟蹄親之任所。'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "이현보",
+      "authorHanja": "李賢輔",
+      "candidateTitle": "강호 관련 한시",
+      "matchedTitle": "偶吟示三兒辛未夏。守永川。衙罷閒坐。三兒侍側。出白字以試之。雖皆稚拙。不相蹈襲。聊此志喜。要驗他日成就與否云耳。",
+      "sourceWork": {
+        "collectionTitle": "聾巖集 卷一",
+        "juan": "卷一",
+        "entryTitle": "偶吟示三兒辛未夏。守永川。衙罷閒坐。三兒侍側。出白字以試之。雖皆稚拙。不相蹈襲。聊此志喜。要驗他日成就與否云耳。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%81%BE%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%81%BE%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "總角三兒雁作行。試吟聯句各成章。吾家積慶應無替。佇見渠曹共立揚。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 聾巖集 卷一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '강호 관련 한시'을 구체 작품 '偶吟示三兒辛未夏。守永川。衙罷閒坐。三兒侍側。出白字以試之。雖皆稚拙。不相蹈襲。聊此志喜。要驗他日成就與否云耳。'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "이현보",
+      "authorHanja": "李賢輔",
+      "candidateTitle": "강호 관련 한시",
+      "matchedTitle": "永川雙淸堂。次蘇都事元友。世良。○堂在明遠▣▣樓傍。公所建。",
+      "sourceWork": {
+        "collectionTitle": "聾巖集 卷一",
+        "juan": "卷一",
+        "entryTitle": "永川雙淸堂。次蘇都事元友。世良。○堂在明遠▣▣樓傍。公所建。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%81%BE%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%81%BE%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "斷岸橫岡類削氷。堂新喜與客同登。風生庭樹含秋氣。水落南川露石稜。十里煙雲輸勝槩。一杯談笑集親朋。相逢但得今宵醉。肯要名聲去後稱。\n\n桑梓長年費夢思。身紆紫綬豈曾知。行尋舊里埋三逕。坐嘯孤城送六期。官劇每愁煩簿牒。時淸惟喜對樽巵。鄕人與我同編管。爲主爲民此一時。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 聾巖集 卷一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '강호 관련 한시'을 구체 작품 '永川雙淸堂。次蘇都事元友。世良。○堂在明遠▣▣樓傍。公所建。'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "이현보",
+      "authorHanja": "李賢輔",
+      "candidateTitle": "강호 관련 한시",
+      "matchedTitle": "金丹城萬鈞枕流亭。次李明仲堣。",
+      "sourceWork": {
+        "collectionTitle": "聾巖集 卷一",
+        "juan": "卷一",
+        "entryTitle": "金丹城萬鈞枕流亭。次李明仲堣。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%81%BE%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%81%BE%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "淸白傳文節。烏川始卜家。園林宜隱逸。山水喜幽遐。名役甘爲恥。身閒還可誇。朝廷知姓字。虛老不須嗟。\n\n未負幽棲志。江湖作小亭。千山環簇簇。一水帶盈盈。擧目天光遠。憑欄地勢傾。膏肓成此地。夢絶帝王城。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 聾巖集 卷一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '강호 관련 한시'을 구체 작품 '金丹城萬鈞枕流亭。次李明仲堣。'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "이현보",
+      "authorHanja": "李賢輔",
+      "candidateTitle": "강호 관련 한시",
+      "matchedTitle": "明農堂幷序",
+      "sourceWork": {
+        "collectionTitle": "聾巖集 卷一",
+        "juan": "卷一",
+        "entryTitle": "明農堂幷序",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%81%BE%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%81%BE%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "吾先。起於永陽鄕裔。世居東都。高祖諱軒。仕宦于京。以軍器少尹告老。始改卜于茲。自後堂構累代。宦成終老皆於此。其山水之奇。林園之勝。天作備盡。不假增飾。第無亭榭池臺。戊辰秋。余以秋部郞官。悶親年老。乞補永陽。公私有事。往來無虛月。遂得隙地。鑿池而作堂其上。堂成。畫以淵明歸去來圖。意有在焉。秩滿還京。甲戌冬。更以密城宰來觀之。壁間圖畫無恙。而五斗之折吾腰猶古。能無羞愧乎。時則爺孃在堂。勢不得任便。姑吟絶句。留諸壁上。欲驗他日成就其志與否云。\n\n龍壽山前汾水隅。菟裘新築計非無。東華十載霜侵鬢。滿壁虛成歸去圖。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 聾巖集 卷一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '강호 관련 한시'을 구체 작품 '明農堂幷序'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "이현보",
+      "authorHanja": "李賢輔",
+      "candidateTitle": "강호 관련 한시",
+      "matchedTitle": "次韻",
+      "sourceWork": {
+        "collectionTitle": "聾巖集 卷一",
+        "juan": "卷一",
+        "entryTitle": "次韻",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%81%BE%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%81%BE%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "病人宜退故山隅。君亦言歸信有無。何日紋枰亭上對。從君一賭壁中圖。\n\n溪轉山回抱四隅。桃源方信有非無。應嫌俗客來相訪。漏泄人間上畫圖。\n\n嶺外行行地一隅。山川明媚見曾無。此中宜著投簪老。須倩龍眠上畫圖。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 聾巖集 卷一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '강호 관련 한시'을 구체 작품 '次韻'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "이현보",
+      "authorHanja": "李賢輔",
+      "candidateTitle": "강호 관련 한시",
+      "matchedTitle": "次映湖樓與金監司克成同賦",
+      "sourceWork": {
+        "collectionTitle": "聾巖集 卷一",
+        "juan": "卷一",
+        "entryTitle": "次映湖樓與金監司克成同賦",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%81%BE%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%81%BE%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "落魄登樓歲月多。重來非分印章加。黌堂負笈留遺迹。驛里居停有主家。白首東西身已老。靑山今古眼添花。長林遠樹渾依舊。三十年來半作槎。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 聾巖集 卷一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '강호 관련 한시'을 구체 작품 '次映湖樓與金監司克成同賦'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "이현보",
+      "authorHanja": "李賢輔",
+      "candidateTitle": "강호 관련 한시",
+      "matchedTitle": "花山養老宴詩幷序",
+      "sourceWork": {
+        "collectionTitle": "聾巖集 卷一",
+        "juan": "卷一",
+        "entryTitle": "花山養老宴詩幷序",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%81%BE%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%81%BE%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "己卯秋。設養老宴於任府。搜訪境內年八十以上老。自士族至賤隷。無問男女。苟準齒者咸與焉。多至數百人。時余之雙親。在花之隣縣。距半日程。年且八旬。軻書云。老吾老。以及人之老。當此佳辰。開設宴席。聚賓客娛鄕老。而不先吾親。情與事豈得歟。因邀共參。分作內外廳。皆以吾老作主。大張供具。極盡歡欣。觀者稱美。予亦自多焉。蓋仕宦而至將相。享列鼎。榮養其親者。世豈無之。作宰隣邑。聚會鄕老。奉兩親同歡如予者。宜未多得。予亦不識此後能更作此會否。一喜一懼之懷。自然生於歡感之餘。遂成四韻詩。示座中求和。因以爲他日永留之資焉。\n\n歲稔時淸九月天。公堂開宴會高年。霜髥雪鬢扶携處。赤葉黃花爛熳邊。位設尊卑酬酢遍。廳分內外管絃連。樽前綵戲人休怪。太守雙親亦在筵。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 聾巖集 卷一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '강호 관련 한시'을 구체 작품 '花山養老宴詩幷序'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "이현보",
+      "authorHanja": "李賢輔",
+      "candidateTitle": "강호 관련 한시",
+      "matchedTitle": "次愛蓮堂",
+      "sourceWork": {
+        "collectionTitle": "聾巖集 卷一",
+        "juan": "卷一",
+        "entryTitle": "次愛蓮堂",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%81%BE%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%81%BE%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "風搖荷葉颭爲聲。香滿軒堂擁鼻淸。剩得十分奇絶處。夜窓明月掛簾旌。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 聾巖集 卷一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '강호 관련 한시'을 구체 작품 '次愛蓮堂'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "이현보",
+      "authorHanja": "李賢輔",
+      "candidateTitle": "강호 관련 한시",
+      "matchedTitle": "獨坐愛蓮堂憶大休休乃文繼昌。時爲豐基郡守約遊。",
+      "sourceWork": {
+        "collectionTitle": "聾巖集 卷一",
+        "juan": "卷一",
+        "entryTitle": "獨坐愛蓮堂憶大休休乃文繼昌。時爲豐基郡守約遊。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%81%BE%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%81%BE%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "共賞新荷有宿期。待君三日強臨池。紅蕖落盡無消息。一葉飄來一度思。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 聾巖集 卷一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '강호 관련 한시'을 구체 작품 '獨坐愛蓮堂憶大休休乃文繼昌。時爲豐基郡守約遊。'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "이현보",
+      "authorHanja": "李賢輔",
+      "candidateTitle": "강호 관련 한시",
+      "matchedTitle": "送朴德璋赴賢良科時爲安東判官。名璨。與予乙卯同年。",
+      "sourceWork": {
+        "collectionTitle": "聾巖集 卷一",
+        "juan": "卷一",
+        "entryTitle": "送朴德璋赴賢良科時爲安東判官。名璨。與予乙卯同年。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%81%BE%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%81%BE%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "天開羅網萃賢良。一夜徵書布四方。幕裏同年今赴召。賀情離思兩交腸。\n\n三月春歸客亦行。天涯落莫老夫情。君今定簸連雲翮。未遽重來困一城。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 聾巖集 卷一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '강호 관련 한시'을 구체 작품 '送朴德璋赴賢良科時爲安東判官。名璨。與予乙卯同年。'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "이현보",
+      "authorHanja": "李賢輔",
+      "candidateTitle": "강호 관련 한시",
+      "matchedTitle": "題安東黌舍",
+      "sourceWork": {
+        "collectionTitle": "聾巖集 卷一",
+        "juan": "卷一",
+        "entryTitle": "題安東黌舍",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%81%BE%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%81%BE%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "曾無惠澤及鄕人。但嘯三年坐席塵。未有一名留去後。題詩板上愧還新。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 聾巖集 卷一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '강호 관련 한시'을 구체 작품 '題安東黌舍'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "이현보",
+      "authorHanja": "李賢輔",
+      "candidateTitle": "강호 관련 한시",
+      "matchedTitle": "聾巖愛日堂",
+      "sourceWork": {
+        "collectionTitle": "聾巖集 卷一",
+        "juan": "卷一",
+        "entryTitle": "聾巖愛日堂",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%81%BE%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%81%BE%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "十室宣城是我鄕。祖先餘慶積流長。皤皤雙老年踰耋。膝下雲仍已滿堂。\n\n親老那堪戀帝鄕。古人猶說事君長。平泉世業汾川曲。新作巖邊具慶堂。\n\n巖在家東一里許。高數丈餘。上可坐二十人。前臨大川。灘激則響應。聒亂人耳。聲語不聞。意者聾巖其以此而得名歟。如有隱而黜陟不聞者居焉。則名義尤合。眞佳境也。自先世卜居以來。每於佳辰令節。率子弟遊于此。欲作亭臺增飾其美。而不果者。蓋累代。迄我家君。尤常念念。而遷延不就。以至于老。予悶其先志之不遂。勝境之蕪沒。因巖而基。疊石爲臺。作堂其上。欲及雙親之無𧏮。侍遊其中。以娛餘年。名之曰愛日堂。情志豈不急急歟。成詩二絶。求和諸公。欲與前之養老詩幷留云。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 聾巖集 卷一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '강호 관련 한시'을 구체 작품 '聾巖愛日堂'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "이현보",
+      "authorHanja": "李賢輔",
+      "candidateTitle": "강호 관련 한시",
+      "matchedTitle": "次觀風樓與文醴泉敬仝同賦",
+      "sourceWork": {
+        "collectionTitle": "聾巖集 卷一",
+        "juan": "卷一",
+        "entryTitle": "次觀風樓與文醴泉敬仝同賦",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%81%BE%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%81%BE%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "何人携妓臥東山。千古遺名滿世間。愧我一生多繫累。從他九折苦躋攀。白駒過隙難爲縶。素髮垂肩不勝刪。屈指餘年今半百。行將一擲賭長閒。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 聾巖集 卷一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '강호 관련 한시'을 구체 작품 '次觀風樓與文醴泉敬仝同賦'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "이현보",
+      "authorHanja": "李賢輔",
+      "candidateTitle": "강호 관련 한시",
+      "matchedTitle": "次金山樓",
+      "sourceWork": {
+        "collectionTitle": "聾巖集 卷一",
+        "juan": "卷一",
+        "entryTitle": "次金山樓",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%81%BE%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%81%BE%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "何年創構此樓新。興廢關時必待人。雨霽朱簾褰一面。雲收黃嶽露全身。黃生抱屈才猶健。曺老居閒語益神。把酒登臨春欲暮。落花香襲客衣巾。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 聾巖集 卷一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '강호 관련 한시'을 구체 작품 '次金山樓'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "이현보",
+      "authorHanja": "李賢輔",
+      "candidateTitle": "강호 관련 한시",
+      "matchedTitle": "歸來亭在安東。李留守浤。其主人也。",
+      "sourceWork": {
+        "collectionTitle": "聾巖集 卷一",
+        "juan": "卷一",
+        "entryTitle": "歸來亭在安東。李留守浤。其主人也。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%81%BE%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%81%BE%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "皤皤須鬢廟廊身。乞退當年見此人。今日亭中非舊主。一杯雙淚忽沾巾。\n\n亭臨大野敞危欄。下有澄江蘸碧寒。西接映湖波更闊。平鋪素練沒林端。\n\n官家塵事厭悤悤。陪忝皇華燕席同。日暮興闌乘小艇。江山暗淡有無中。\n\n我有宣城負郭田。一區泉石老將專。登公亭上情尤發。鷄助鷗盟豈兩全。\n\n少年爭自說歸田。晩歲依違志不專。白首江亭兄及弟。宦成名節一家全。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 聾巖集 卷一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '강호 관련 한시'을 구체 작품 '歸來亭在安東。李留守浤。其主人也。'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "이현보",
+      "authorHanja": "李賢輔",
+      "candidateTitle": "강호 관련 한시",
+      "matchedTitle": "次永川光風堂",
+      "sourceWork": {
+        "collectionTitle": "聾巖集 卷一",
+        "juan": "卷一",
+        "entryTitle": "次永川光風堂",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%81%BE%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%81%BE%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "雙溪波漲沒涯湄。客到黃梅雨歇時。北海樽前連日飮。南柯夢記十年遲。華堂古額何時換。當檻淸風依舊吹。江畔柳林曾手植。看他民吏半新知。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 聾巖集 卷一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '강호 관련 한시'을 구체 작품 '次永川光風堂'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "이현보",
+      "authorHanja": "李賢輔",
+      "candidateTitle": "강호 관련 한시",
+      "matchedTitle": "甘浦。次魚興海子游。丙戌。以輔德爲點馬時也。",
+      "sourceWork": {
+        "collectionTitle": "聾巖集 卷一",
+        "juan": "卷一",
+        "entryTitle": "甘浦。次魚興海子游。丙戌。以輔德爲點馬時也。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%81%BE%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%81%BE%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "點閱三千牝。兼旬傍海東。連天波不盡。緣岸路非窮。設鎭開城柵。編茅避雨風。將軍莫驕惰。戍卒欠羆熊。慙他水上忘機鳥。浮沒閒閒送歲年。白首奔馳南與北。一生虛計說歸田。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 聾巖集 卷一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '강호 관련 한시'을 구체 작품 '甘浦。次魚興海子游。丙戌。以輔德爲點馬時也。'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "이현보",
+      "authorHanja": "李賢輔",
+      "candidateTitle": "강호 관련 한시",
+      "matchedTitle": "寄李上舍景浩滉赴試在京",
+      "sourceWork": {
+        "collectionTitle": "聾巖集 卷一",
+        "juan": "卷一",
+        "entryTitle": "寄李上舍景浩滉赴試在京",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%81%BE%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%81%BE%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "天網恢恢多士徵。隴西才子姓名騰。龍門橋會秋曾驗。爲問如今躡幾層。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 聾巖集 卷一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '강호 관련 한시'을 구체 작품 '寄李上舍景浩滉赴試在京'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김창협",
+      "authorHanja": "金昌協",
+      "candidateTitle": "산수·교유시",
+      "matchedTitle": "憶遠賦寄茅島主人族姪時傑",
+      "sourceWork": {
+        "collectionTitle": "農巖集 卷一",
+        "juan": "卷一",
+        "entryTitle": "憶遠賦寄茅島主人族姪時傑",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%BE%B2%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%BE%B2%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "登高丘而遙望兮。余有懷夫遠者。飄風發其四起兮。雲莽莽以蔽野。脩路重阻以氷雪兮。鬱岡巒又峻塞。心凌厲而馳邁兮。欲往集而不得。昔余與女遊兮。謇朝往而夕來。迨暇日而翺翔兮。繽酒食以娛時。扣書詩以追琢兮。申歌詠以繼之。夫何此樂之不可長兮。又故居之不可懷。出國門而遷逝兮。焉亹亹而背違。羌東西之莫當兮。況山海其相離絶。望海水之湯湯兮。島嶼汩其出沒。葺幽廬彼中洲兮。邈爾獨處乎菰蘆。夫何樂斯之幽隱兮。黿與鼉之雜居。伏嵁巖之冥冥兮。余又同羣乎鹿豕。玄熊萃於戶庭兮。虎豹嘷號以騰。倚樹蓬藋以塞門兮。吾誰與此息偃。眷儔匹其日疏兮。尋往昔其日遠。臨頹歲之廩廩兮。慨良時之不吾反。夜反側以屢興兮。仰觀天星之列次。彼何箕斗之南北兮。永終古而不比。心惆悵而不怡兮。思糾結而莫釋。覽都邑之總總兮。車與馬其馳逐。日往來之翕翕兮。笑言喔咿以相樂。對面之不可知兮。有旋背而離逖。夫惟君子之壹志兮。固彌久而弗移。神與心其相屬兮。豈山川以間之。契闊之匪遠兮。又何懷夫同堂。願德音之靡忒兮。終歷年而不相忘。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 農巖集 卷一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '산수·교유시'을 구체 작품 '憶遠賦寄茅島主人族姪時傑'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김창협",
+      "authorHanja": "金昌協",
+      "candidateTitle": "산수·교유시",
+      "matchedTitle": "敬次晦翁感春賦和寄兪寧叔得一",
+      "sourceWork": {
+        "collectionTitle": "農巖集 卷一",
+        "juan": "卷一",
+        "entryTitle": "敬次晦翁感春賦和寄兪寧叔得一",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%BE%B2%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%BE%B2%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "夙余馳騁乎世趨兮。心有憂而違之。投嵁巖而絶跡兮。與鹿豕乎相期。靚潛思而眇觀兮。悟世運之隆替。勛華邈以不可慕兮。寧隱約而守志。聊儃徊余棲遲兮。忽吾涉夫冬春。相陰陽之變化兮。辰不肯乎假人。往余有志於前脩兮。期日邁其遺訓。夫何大道之遼遠兮。余曾不進夫尺寸。心慷慨而發憤兮。託幼眇乎鳴琴。時蹝履而縱步兮。肆余目以娛心。俯湍瀨之汩逝兮。仰林岫之峭蒨。樂禽魚之羣游兮。慨有懷而莫見。吾旣無與玩時芳兮。又孰留此景光。冀同好之眷余兮。報德音以瓊璫。時冉冉其不可再兮。情婉孌而不可忘。吾將抱耿介以終年兮。苟處幽獨其何傷。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 農巖集 卷一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '산수·교유시'을 구체 작품 '敬次晦翁感春賦和寄兪寧叔得一'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김창협",
+      "authorHanja": "金昌協",
+      "candidateTitle": "산수·교유시",
+      "matchedTitle": "敬次尤齋宋先生時烈題道峰韻癸丑",
+      "sourceWork": {
+        "collectionTitle": "農巖集 卷一",
+        "juan": "卷一",
+        "entryTitle": "敬次尤齋宋先生時烈題道峰韻癸丑",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%BE%B2%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%BE%B2%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "空山肅肅廟門開。碧石淸泉左右廻。可惜當年丘壑志。君王不放此間來。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 農巖集 卷一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '산수·교유시'을 구체 작품 '敬次尤齋宋先生時烈題道峰韻癸丑'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김창협",
+      "authorHanja": "金昌協",
+      "candidateTitle": "산수·교유시",
+      "matchedTitle": "春夜。偶至楓溪。與士興時傑昆季晤語。翼朝。賦此寄之。乙卯",
+      "sourceWork": {
+        "collectionTitle": "農巖集 卷一",
+        "juan": "卷一",
+        "entryTitle": "春夜。偶至楓溪。與士興時傑昆季晤語。翼朝。賦此寄之。乙卯",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%BE%B2%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%BE%B2%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "山暝曖蒼翠。月華散疎林。幽人坐虛閣。萬籟靜方沈。澗芳識幽花。谷響聞棲禽。偶至本無期。却忘閒夜深。起來步庭除。竹柏交淸陰。微風松際來。爲我吹素襟。怡然適性靈。遂獲塵外心。欲去復遲回。巖泉有遺音。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 農巖集 卷一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '산수·교유시'을 구체 작품 '春夜。偶至楓溪。與士興時傑昆季晤語。翼朝。賦此寄之。乙卯'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김창협",
+      "authorHanja": "金昌協",
+      "candidateTitle": "산수·교유시",
+      "matchedTitle": "疊前韻答士敬族姪時保",
+      "sourceWork": {
+        "collectionTitle": "農巖集 卷一",
+        "juan": "卷一",
+        "entryTitle": "疊前韻答士敬族姪時保",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%BE%B2%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%BE%B2%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "達人抱高情。寓地卽山林。豈如世中士。擾擾空浮沈。我家北山下。地僻唯鳴禽。宴坐絶還往。日看庭草深。林花吐淸馥。園柳垂幽陰。雲歸或送目。風至時散襟。西隣有嘉士。同我遺世心。因之寄此詩。佇待瑤華音。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 農巖集 卷一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '산수·교유시'을 구체 작품 '疊前韻答士敬族姪時保'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김창협",
+      "authorHanja": "金昌協",
+      "candidateTitle": "산수·교유시",
+      "matchedTitle": "夏日卽事",
+      "sourceWork": {
+        "collectionTitle": "農巖集 卷一",
+        "juan": "卷一",
+        "entryTitle": "夏日卽事",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%BE%B2%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%BE%B2%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "盛夏苦炎熱。煩抱鬱難舒。積雨長蓬蒿。舊竹日荒蕪。蒼苔被徑路。嘉木繞園廬。泥潦浩盈軌。誰來顧我居。竟日臥北牖。偃仰聊自如。好風有時至。卷我床上書。遇此且欣然。何言古人疎。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 農巖集 卷一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '산수·교유시'을 구체 작품 '夏日卽事'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김창협",
+      "authorHanja": "金昌協",
+      "candidateTitle": "산수·교유시",
+      "matchedTitle": "鑿氷行",
+      "sourceWork": {
+        "collectionTitle": "農巖集 卷一",
+        "juan": "卷一",
+        "entryTitle": "鑿氷行",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%BE%B2%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%BE%B2%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "季冬江漢氷始壯。千人萬人出江上。丁丁斧斤亂相斲。隱隱下侵馮夷國。斲出層氷似雪山。積陰凜凜逼人寒。朝朝背負入凌陰。夜夜椎鑿集江心。晝短夜長夜未休。勞歌相應在中洲。短衣至骭足無屝。江上嚴風欲墮指。高堂六月盛炎蒸。美人素手傳淸氷。鸞刀擊碎四座徧。空裏白日流素霰。滿堂歡樂不知暑。誰言鑿氷此勞苦。君不見道傍暍死民。多是江中鑿氷人。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 農巖集 卷一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '산수·교유시'을 구체 작품 '鑿氷行'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김창협",
+      "authorHanja": "金昌協",
+      "candidateTitle": "산수·교유시",
+      "matchedTitle": "將隨家大人赴謫朗州。前一日。族兄子固盛完仲惠盛迪族姪士興士敬及李士澄泓。皆以夜至。少飮敍別。翼朝。士興士敬各送詩贐余。道間追賦以酬。",
+      "sourceWork": {
+        "collectionTitle": "農巖集 卷一",
+        "juan": "卷一",
+        "entryTitle": "將隨家大人赴謫朗州。前一日。族兄子固盛完仲惠盛迪族姪士興士敬及李士澄泓。皆以夜至。少飮敍別。翼朝。士興士敬各送詩贐余。道間追賦以酬。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%BE%B2%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%BE%B2%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "高樹多烈風。首秋已先寒。游子懷苦心。得酒難解顏。只爲親愛故。薄言展殷勤。明明夜中月。照我席上樽。終宴各不醉。四座發悲嘆。含思結中腸。婉孌不能言。漼彼在庭露。幾何晞朝暾。將子且無歸。我車已戒轅。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 農巖集 卷一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '산수·교유시'을 구체 작품 '將隨家大人赴謫朗州。前一日。族兄子固盛完仲惠盛迪族姪士興士敬及李士澄泓。皆以夜至。少飮敍別。翼朝。士興士敬各送詩贐余。道間追賦以酬。'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김창협",
+      "authorHanja": "金昌協",
+      "candidateTitle": "산수·교유시",
+      "matchedTitle": "道岬寺以下七首係月出山雜詠",
+      "sourceWork": {
+        "collectionTitle": "農巖集 卷一",
+        "juan": "卷一",
+        "entryTitle": "道岬寺以下七首係月出山雜詠",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%BE%B2%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%BE%B2%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "古寺好僧房。一宿寄其中。鐘鼓知永夜。鈴鐸知高風。寤言發眞想。客塵他自空。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 農巖集 卷一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '산수·교유시'을 구체 작품 '道岬寺以下七首係月出山雜詠'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김창협",
+      "authorHanja": "金昌協",
+      "candidateTitle": "산수·교유시",
+      "matchedTitle": "碧澗亭",
+      "sourceWork": {
+        "collectionTitle": "農巖集 卷一",
+        "juan": "卷一",
+        "entryTitle": "碧澗亭",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%BE%B2%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%BE%B2%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "南崖多楓樹。北崖多竹林。淸陰一澗合。中見綠潭深。植杖跂幽石。飛泉灑素襟。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 農巖集 卷一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '산수·교유시'을 구체 작품 '碧澗亭'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김창협",
+      "authorHanja": "金昌協",
+      "candidateTitle": "산수·교유시",
+      "matchedTitle": "東浮圖",
+      "sourceWork": {
+        "collectionTitle": "農巖集 卷一",
+        "juan": "卷一",
+        "entryTitle": "東浮圖",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%BE%B2%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%BE%B2%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "精舍無餘地。十畝皆種竹。檀欒映牖戶。靈籟滿空谷。寄言緇衣子。歲暮復來宿。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 農巖集 卷一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '산수·교유시'을 구체 작품 '東浮圖'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김창협",
+      "authorHanja": "金昌協",
+      "candidateTitle": "산수·교유시",
+      "matchedTitle": "朝向九井。山人勝岑。贈以紫竹杖。",
+      "sourceWork": {
+        "collectionTitle": "農巖集 卷一",
+        "juan": "卷一",
+        "entryTitle": "朝向九井。山人勝岑。贈以紫竹杖。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%BE%B2%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%BE%B2%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "竹生在石上。未老已昂藏。梯雲斬琅玕。八尺過身長。持贈見好意。險艱得扶將。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 農巖集 卷一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '산수·교유시'을 구체 작품 '朝向九井。山人勝岑。贈以紫竹杖。'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김창협",
+      "authorHanja": "金昌協",
+      "candidateTitle": "산수·교유시",
+      "matchedTitle": "九井峰",
+      "sourceWork": {
+        "collectionTitle": "農巖集 卷一",
+        "juan": "卷一",
+        "entryTitle": "九井峰",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%BE%B2%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%BE%B2%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "天爲九龍居。峨峨作高峰。變化曾幾年。蜿蜒空舊蹤。尙疑一斛水。下與滄溟通。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 農巖集 卷一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '산수·교유시'을 구체 작품 '九井峰'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김창협",
+      "authorHanja": "金昌協",
+      "candidateTitle": "산수·교유시",
+      "matchedTitle": "自九井迤向孤山。路絶險幾不可行。",
+      "sourceWork": {
+        "collectionTitle": "農巖集 卷一",
+        "juan": "卷一",
+        "entryTitle": "自九井迤向孤山。路絶險幾不可行。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%BE%B2%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%BE%B2%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "竦身凌絶頂。俯身下岡巒。亂石竟高下。藤蘿錯其間。獨往意已厲。斯路豈險艱。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 農巖集 卷一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '산수·교유시'을 구체 작품 '自九井迤向孤山。路絶險幾不可行。'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김창협",
+      "authorHanja": "金昌協",
+      "candidateTitle": "산수·교유시",
+      "matchedTitle": "孤山菴",
+      "sourceWork": {
+        "collectionTitle": "農巖集 卷一",
+        "juan": "卷一",
+        "entryTitle": "孤山菴",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%BE%B2%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%BE%B2%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "結構寄空表。駕石作飛梁。自非冥寂士。棲息豈所當。九峰在戶牖。岧嶢永相望。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 農巖集 卷一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '산수·교유시'을 구체 작품 '孤山菴'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김창협",
+      "authorHanja": "金昌協",
+      "candidateTitle": "산수·교유시",
+      "matchedTitle": "次李白紫極感秋詩",
+      "sourceWork": {
+        "collectionTitle": "農巖集 卷一",
+        "juan": "卷一",
+        "entryTitle": "次李白紫極感秋詩",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%BE%B2%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%BE%B2%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "伯父嘗爲此詩。屬數三諸賢共和。今年秋。尤翁在蓬山謫所。和二篇以來。且屬家親以逮小子。玆敢不揆蕪拙。依韻臚志。\n\n昔我北山下。手種數畝竹。日望枝葉長。采實且盈掬。何意衆草滋。薆然蔽孤獨。朱鳳自天來。哀鳴難託宿。慨焉覽物化。生理遂可卜。畏塗亮無夷。吾行久當復。回心訪初服。改轍戒前覆。歸歟稅我田。力耕會有熟。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 農巖集 卷一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '산수·교유시'을 구체 작품 '次李白紫極感秋詩'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김창협",
+      "authorHanja": "金昌協",
+      "candidateTitle": "산수·교유시",
+      "matchedTitle": "將赴京夜與子益弟昌翕大有弟昌業呼韻同賦",
+      "sourceWork": {
+        "collectionTitle": "農巖集 卷一",
+        "juan": "卷一",
+        "entryTitle": "將赴京夜與子益弟昌翕大有弟昌業呼韻同賦",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%BE%B2%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%BE%B2%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "亦知無幾別。聊復永今宵。斷行悲嶺鴈。離恨寄江潮。歌唱驪駒短。書傳赤鯉遙。故園花樹在。春色久寥寥。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 農巖集 卷一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '산수·교유시'을 구체 작품 '將赴京夜與子益弟昌翕大有弟昌業呼韻同賦'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김창협",
+      "authorHanja": "金昌協",
+      "candidateTitle": "산수·교유시",
+      "matchedTitle": "南平訪趙子直相愚謫居留贈丙辰",
+      "sourceWork": {
+        "collectionTitle": "農巖集 卷一",
+        "juan": "卷一",
+        "entryTitle": "南平訪趙子直相愚謫居留贈丙辰",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%BE%B2%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%BE%B2%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "楚臣哀怨未如君。何處登高望白雲。澤畔靑楓深樹裏。烏啼夜夜不堪聞。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 農巖集 卷一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '산수·교유시'을 구체 작품 '南平訪趙子直相愚謫居留贈丙辰'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김창협",
+      "authorHanja": "金昌協",
+      "candidateTitle": "산수·교유시",
+      "matchedTitle": "西湖春泛",
+      "sourceWork": {
+        "collectionTitle": "農巖集 卷一",
+        "juan": "卷一",
+        "entryTitle": "西湖春泛",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%BE%B2%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%BE%B2%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "西湖朝望迥。極目上春潮。闊浸連山盡。光浮出日搖。安流迎鷁首。高浪沒漁標。浩蕩看鷗性。憐渠不避橈。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 農巖集 卷一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '산수·교유시'을 구체 작품 '西湖春泛'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김창협",
+      "authorHanja": "金昌協",
+      "candidateTitle": "산수·교유시",
+      "matchedTitle": "其二",
+      "sourceWork": {
+        "collectionTitle": "農巖集 卷一",
+        "juan": "卷一",
+        "entryTitle": "其二",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%BE%B2%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%BE%B2%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "小艇搖雙槳。淸樽載兩頭。遙遙指極浦。望望下中洲。鳥向空明度。人疑汗漫游。回頭看月嶽。秀色半滄流。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 農巖集 卷一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '산수·교유시'을 구체 작품 '其二'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김창흡",
+      "authorHanja": "金昌翕",
+      "candidateTitle": "산수·은거시",
+      "matchedTitle": "元日石室書院會宿己卯",
+      "sourceWork": {
+        "collectionTitle": "三淵集 卷七",
+        "juan": "卷七",
+        "entryTitle": "元日石室書院會宿己卯",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E6%B7%B5%E9%9B%86/%E5%8D%B7%E4%B8%83",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E6%B7%B5%E9%9B%86/%E5%8D%B7%E4%B8%83?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "連床短燭徹晨吟。忽忽其如限古今。倍惜年光應老態。若論懷抱尙童心。欹行江岸聞鴻早。徙倚黌堂聽雨深。此夜村村求酒易。故人牽興又相尋。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 三淵集 卷七 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '산수·은거시'을 구체 작품 '元日石室書院會宿己卯'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김창흡",
+      "authorHanja": "金昌翕",
+      "candidateTitle": "산수·은거시",
+      "matchedTitle": "又賦",
+      "sourceWork": {
+        "collectionTitle": "三淵集 卷七",
+        "juan": "卷七",
+        "entryTitle": "又賦",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E6%B7%B5%E9%9B%86/%E5%8D%B7%E4%B8%83",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E6%B7%B5%E9%9B%86/%E5%8D%B7%E4%B8%83?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "剪燭環床坐。渾如復餞年。神淸吟未了。髮白意蕭然。雨色江鷗外。灘聲櫪馬前。新春第一會。興到各成篇。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 三淵集 卷七 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '산수·은거시'을 구체 작품 '又賦'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김창흡",
+      "authorHanja": "金昌翕",
+      "candidateTitle": "산수·은거시",
+      "matchedTitle": "石室書院",
+      "sourceWork": {
+        "collectionTitle": "三淵集 卷七",
+        "juan": "卷七",
+        "entryTitle": "石室書院",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E6%B7%B5%E9%9B%86/%E5%8D%B7%E4%B8%83",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E6%B7%B5%E9%9B%86/%E5%8D%B7%E4%B8%83?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "每憐黌舍靜。冬後有經聲。講席隨時拂。篝燈幾夜更。誰能求道渴。多欲以詩鳴。未暇憂吾姪。循躬惕若驚。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 三淵集 卷七 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '산수·은거시'을 구체 작품 '石室書院'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김창흡",
+      "authorHanja": "金昌翕",
+      "candidateTitle": "산수·은거시",
+      "matchedTitle": "四友堂夜會。呼韻共賦。",
+      "sourceWork": {
+        "collectionTitle": "三淵集 卷七",
+        "juan": "卷七",
+        "entryTitle": "四友堂夜會。呼韻共賦。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E6%B7%B5%E9%9B%86/%E5%8D%B7%E4%B8%83",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E6%B7%B5%E9%9B%86/%E5%8D%B7%E4%B8%83?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "城市留堪哭。妻兒對亦愁。徒然天際想。誰與竹林遊。衾枕君家是。壎箎此夜求。春風方浩浩。花樹會應稠。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 三淵集 卷七 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '산수·은거시'을 구체 작품 '四友堂夜會。呼韻共賦。'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김창흡",
+      "authorHanja": "金昌翕",
+      "candidateTitle": "산수·은거시",
+      "matchedTitle": "自石郊騎牛向檗溪",
+      "sourceWork": {
+        "collectionTitle": "三淵集 卷七",
+        "juan": "卷七",
+        "entryTitle": "自石郊騎牛向檗溪",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E6%B7%B5%E9%9B%86/%E5%8D%B7%E4%B8%83",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E6%B7%B5%E9%9B%86/%E5%8D%B7%E4%B8%83?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "素昧京居趣。况復有不平。低徊靑郊步。率爾還山情。歸牛有緩轡。騎著萬緣輕。路兒或指點。雲山自歡迎。襟前谷風來。眼中車嶺橫。威遲澗道澀。曲折泥棧縈。扣角動高詠。時禽出林鳴。陽阿草可憐。鱗次細菜生。春光雖淺被。我興在深征。檗溪一向幽。茅齋半垂成。涓涓圃可灌。釋釋麥須耕。斫畬易後時。驚聞伐木聲。茫然鹿門計。妻子方在城。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 三淵集 卷七 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '산수·은거시'을 구체 작품 '自石郊騎牛向檗溪'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김창흡",
+      "authorHanja": "金昌翕",
+      "candidateTitle": "산수·은거시",
+      "matchedTitle": "風雪閉戶",
+      "sourceWork": {
+        "collectionTitle": "三淵集 卷七",
+        "juan": "卷七",
+        "entryTitle": "風雪閉戶",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E6%B7%B5%E9%9B%86/%E5%8D%B7%E4%B8%83",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E6%B7%B5%E9%9B%86/%E5%8D%B7%E4%B8%83?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "數日憐暄煦。深山倐雨暘。煙花春昧昧。風絮雪茫茫。鳥出茅簷少。雲過石峽忙。對時存動靜。幽意一書床。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 三淵集 卷七 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '산수·은거시'을 구체 작품 '風雪閉戶'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김창흡",
+      "authorHanja": "金昌翕",
+      "candidateTitle": "산수·은거시",
+      "matchedTitle": "沁州洗心齋。得池字。",
+      "sourceWork": {
+        "collectionTitle": "三淵集 卷七",
+        "juan": "卷七",
+        "entryTitle": "沁州洗心齋。得池字。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E6%B7%B5%E9%9B%86/%E5%8D%B7%E4%B8%83",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E6%B7%B5%E9%9B%86/%E5%8D%B7%E4%B8%83?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "海國茫茫雨。晴來湛一池。閒齋有白日。好鳥自高枝。事外遙山綠。眠中細草滋。蕭然賓主意。漫興五言詩。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 三淵集 卷七 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '산수·은거시'을 구체 작품 '沁州洗心齋。得池字。'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김창흡",
+      "authorHanja": "金昌翕",
+      "candidateTitle": "산수·은거시",
+      "matchedTitle": "和成上舍璟松壇夜吟",
+      "sourceWork": {
+        "collectionTitle": "三淵集 卷七",
+        "juan": "卷七",
+        "entryTitle": "和成上舍璟松壇夜吟",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E6%B7%B5%E9%9B%86/%E5%8D%B7%E4%B8%83",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E6%B7%B5%E9%9B%86/%E5%8D%B7%E4%B8%83?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "小齋湛春夜。携君步移時。海月冉冉來。側挂虬松枝。光從翠葉漏。瀲灧目下池。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 三淵集 卷七 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '산수·은거시'을 구체 작품 '和成上舍璟松壇夜吟'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김창흡",
+      "authorHanja": "金昌翕",
+      "candidateTitle": "산수·은거시",
+      "matchedTitle": "忠烈祠",
+      "sourceWork": {
+        "collectionTitle": "三淵集 卷七",
+        "juan": "卷七",
+        "entryTitle": "忠烈祠",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E6%B7%B5%E9%9B%86/%E5%8D%B7%E4%B8%83",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E6%B7%B5%E9%9B%86/%E5%8D%B7%E4%B8%83?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "憑陵虜騎北來時。提起猶令父老悲。忠烈一祠還大壯。山河小國未全卑。熊魚各自忙中判。俎豆終同沒後爲。若說居留先後務。須知香火急城池。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 三淵集 卷七 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '산수·은거시'을 구체 작품 '忠烈祠'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김창흡",
+      "authorHanja": "金昌翕",
+      "candidateTitle": "산수·은거시",
+      "matchedTitle": "南門樓",
+      "sourceWork": {
+        "collectionTitle": "三淵集 卷七",
+        "juan": "卷七",
+        "entryTitle": "南門樓",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E6%B7%B5%E9%9B%86/%E5%8D%B7%E4%B8%83",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E6%B7%B5%E9%9B%86/%E5%8D%B7%E4%B8%83?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "千秋瞻挹此南樓。相國衣冠昔未收。甲子重回神赫赫。金湯猶在恨悠悠。悲騰暮郭煙光紫。淚入春天日色愁。文獻後人成子過。共謀城側屹龜頭。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 三淵集 卷七 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '산수·은거시'을 구체 작품 '南門樓'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김창흡",
+      "authorHanja": "金昌翕",
+      "candidateTitle": "산수·은거시",
+      "matchedTitle": "其二",
+      "sourceWork": {
+        "collectionTitle": "三淵集 卷七",
+        "juan": "卷七",
+        "entryTitle": "其二",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E6%B7%B5%E9%9B%86/%E5%8D%B7%E4%B8%83",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E6%B7%B5%E9%9B%86/%E5%8D%B7%E4%B8%83?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "南漢江都陷後先。弟兄雙節日星懸。降書碎手城摧哭。高焰投身羽化僊。義熟連床講有素。心符易地處皆然。諸孫若昧春秋義。便是全忘二祖年。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 三淵集 卷七 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '산수·은거시'을 구체 작품 '其二'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김창흡",
+      "authorHanja": "金昌翕",
+      "candidateTitle": "산수·은거시",
+      "matchedTitle": "喜晴",
+      "sourceWork": {
+        "collectionTitle": "三淵集 卷七",
+        "juan": "卷七",
+        "entryTitle": "喜晴",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E6%B7%B5%E9%9B%86/%E5%8D%B7%E4%B8%83",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E6%B7%B5%E9%9B%86/%E5%8D%B7%E4%B8%83?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "今日仍澄霽。年華美在斯。幽鳩聲入院。芳草氣熏池。晝靜留賓好。風恬散帙宜。還愁花柳攪。道意困于詩。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 三淵集 卷七 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '산수·은거시'을 구체 작품 '喜晴'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김창흡",
+      "authorHanja": "金昌翕",
+      "candidateTitle": "산수·은거시",
+      "matchedTitle": "洗心齋夜吟",
+      "sourceWork": {
+        "collectionTitle": "三淵集 卷七",
+        "juan": "卷七",
+        "entryTitle": "洗心齋夜吟",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E6%B7%B5%E9%9B%86/%E5%8D%B7%E4%B8%83",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E6%B7%B5%E9%9B%86/%E5%8D%B7%E4%B8%83?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "稍見來山月。遙知斂海雲。餘淸不成睡。高興復超羣。受露池華淨。承風松影紛。阿咸有淸唱。寥朗倚軒聞。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 三淵集 卷七 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '산수·은거시'을 구체 작품 '洗心齋夜吟'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김창흡",
+      "authorHanja": "金昌翕",
+      "candidateTitle": "산수·은거시",
+      "matchedTitle": "積石寺途中",
+      "sourceWork": {
+        "collectionTitle": "三淵集 卷七",
+        "juan": "卷七",
+        "entryTitle": "積石寺途中",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E6%B7%B5%E9%9B%86/%E5%8D%B7%E4%B8%83",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E6%B7%B5%E9%9B%86/%E5%8D%B7%E4%B8%83?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "招提遙入眼。感興馬前生。積石看千仞。高鐘待一聲。僧猶多少在。路自古今橫。半嶺頻休所。蒼煙老樹縈。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 三淵集 卷七 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '산수·은거시'을 구체 작품 '積石寺途中'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김창흡",
+      "authorHanja": "金昌翕",
+      "candidateTitle": "산수·은거시",
+      "matchedTitle": "寺西臺觀日落",
+      "sourceWork": {
+        "collectionTitle": "三淵集 卷七",
+        "juan": "卷七",
+        "entryTitle": "寺西臺觀日落",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E6%B7%B5%E9%9B%86/%E5%8D%B7%E4%B8%83",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E6%B7%B5%E9%9B%86/%E5%8D%B7%E4%B8%83?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "披雲上嶺亦云疲。寅餞虞淵敢自遲。勢迫懸車羣晦急。光搖列島萬紅滋。迢迢倚石將如失。冉冉辭空欲戀誰。明日豈無東旭煥。感深華髮映崦嵫。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 三淵集 卷七 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '산수·은거시'을 구체 작품 '寺西臺觀日落'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김창흡",
+      "authorHanja": "金昌翕",
+      "candidateTitle": "산수·은거시",
+      "matchedTitle": "其二",
+      "sourceWork": {
+        "collectionTitle": "三淵集 卷七",
+        "juan": "卷七",
+        "entryTitle": "其二",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E6%B7%B5%E9%9B%86/%E5%8D%B7%E4%B8%83",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E6%B7%B5%E9%9B%86/%E5%8D%B7%E4%B8%83?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "戱將昧谷較咸池。隨處奇觀興一時。蕩潏羣龍含火澤。低昂若木卧雲枝。紅波迹共長潮落。黃道光磨片月窺。黯黯金鴉沉翅後。首陽山影閃天涯。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 三淵集 卷七 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '산수·은거시'을 구체 작품 '其二'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김창흡",
+      "authorHanja": "金昌翕",
+      "candidateTitle": "산수·은거시",
+      "matchedTitle": "西樓望月",
+      "sourceWork": {
+        "collectionTitle": "三淵集 卷七",
+        "juan": "卷七",
+        "entryTitle": "西樓望月",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E6%B7%B5%E9%9B%86/%E5%8D%B7%E4%B8%83",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E6%B7%B5%E9%9B%86/%E5%8D%B7%E4%B8%83?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "餞了虞淵悵若愁。下山明月在西樓。光含香海磨尼炯。露濯靑蓮色界浮。花雨滿庭春自霽。鯨鐘吼閣夜還幽。三更散步疑眞夢。莫辨前遊與後遊。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 三淵集 卷七 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '산수·은거시'을 구체 작품 '西樓望月'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김창흡",
+      "authorHanja": "金昌翕",
+      "candidateTitle": "산수·은거시",
+      "matchedTitle": "曉望",
+      "sourceWork": {
+        "collectionTitle": "三淵集 卷七",
+        "juan": "卷七",
+        "entryTitle": "曉望",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E6%B7%B5%E9%9B%86/%E5%8D%B7%E4%B8%83",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E6%B7%B5%E9%9B%86/%E5%8D%B7%E4%B8%83?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "起望繁霞射海門。夜來無恙日輪存。光陰如許俄幽顯。天水由來互吐呑。萬嶠皆靑分草色。一帆孤黑向雲飜。眼中未改恒河水。三十年前倚此軒。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 三淵集 卷七 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '산수·은거시'을 구체 작품 '曉望'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김창흡",
+      "authorHanja": "金昌翕",
+      "candidateTitle": "산수·은거시",
+      "matchedTitle": "感舊棲",
+      "sourceWork": {
+        "collectionTitle": "三淵集 卷七",
+        "juan": "卷七",
+        "entryTitle": "感舊棲",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E6%B7%B5%E9%9B%86/%E5%8D%B7%E4%B8%83",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E6%B7%B5%E9%9B%86/%E5%8D%B7%E4%B8%83?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "憶我讀書日。年方阿岳時。排雲千里轡。映雪一冬帷。蹤迹眞如夢。聰明久矣衰。南華百千誦。今日僅能詩。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 三淵集 卷七 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '산수·은거시'을 구체 작품 '感舊棲'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "김창흡",
+      "authorHanja": "金昌翕",
+      "candidateTitle": "산수·은거시",
+      "matchedTitle": "又賦",
+      "sourceWork": {
+        "collectionTitle": "三淵集 卷七",
+        "juan": "卷七",
+        "entryTitle": "又賦",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E6%B7%B5%E9%9B%86/%E5%8D%B7%E4%B8%83",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E6%B7%B5%E9%9B%86/%E5%8D%B7%E4%B8%83?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "少年十八讀書寺。三十年久今又至。入門何限慨前迹。聞鐘不覺潛下淚。天策長老亦亡矣。今夜壇薦正爲爾。雨花飄空風入幡。二更月照紺園裏。梵樂轟轟睡不成。萬感怳惚難爲情。試喚殘僧到面前。各怪容鬢兩蒼然。話深轉成開口笑。魂醒頓還負笈年。北風孤燈兜率天。南華一卷逍遙篇。長廊齋罷或晨衾。多向西樓倚柱吟。庭前老栢幾枝摧。檻外滄溟萬古深。摩尼在南普門西。此日登臨過去心。隨來岳姪與春兒。岳也年方如我時。春遊澹蕩老少同。射日臺高俯崦嵫。紅盆金柱休拍手。飛光欺人易白首。人生一老各有時。讀書無成我所悲。兒曹兒曹其勉之。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 三淵集 卷七 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '산수·은거시'을 구체 작품 '又賦'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "송순",
+      "authorHanja": "宋純",
+      "candidateTitle": "면앙정 관련 한시",
+      "matchedTitle": "次李太白愁陽春賦月課竝序",
+      "sourceWork": {
+        "collectionTitle": "俛仰集 卷之一",
+        "juan": null,
+        "entryTitle": "次李太白愁陽春賦月課竝序",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E4%BF%9B%E4%BB%B0%E9%9B%86/%E5%8D%B7%E4%B9%8B%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E4%BF%9B%E4%BB%B0%E9%9B%86/%E5%8D%B7%E4%B9%8B%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "少時雜作。錄在一冊。中年失所在。今幸得之。其爲生拙。難掛人眼。然且移書者。欲令子孫知遺跡已而。尙公震字起夫。與余同年生。又於己卯同登第。由是情好爲密。賦性和厚。不與人忤。循至領議政。在台府十七年。甲子春卒。年七十二。曾爲典翰。有所作月課十首。適在卷末。今幷錄之。\n\n斗何爲而指東。使余心兮愁春。風飄紅兮水綠波。日遲遲兮惱人。陟高岡兮騁目。覽物情之鼎新。江鷗漫喜而不眠。渚蘭葳蕤而芳鮮。猿垂藤而攀緣。馬逸群而飮泉。柳飄絮兮如綿。草碧色兮如煙。彼含氣之得時。增遠情之凄然。山之高兮水之遠。懷魏闕兮費孤吟。紛蘼蕪之送香。又江上兮楓林。望蒼梧兮何許。渺湘南之幽心。綴蕙茝而延佇。謇憂思之如雪。水驚波而東注。春不留兮替節。浮花浪蕊之一瞥兮。慨委泥而相因。折瓊枝而徘徊。懷閬風其可親。安得駐跳丸於彼蒼。共長春兮美人。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 俛仰集 卷之一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '면앙정 관련 한시'을 구체 작품 '次李太白愁陽春賦月課竝序'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "송순",
+      "authorHanja": "宋純",
+      "candidateTitle": "면앙정 관련 한시",
+      "matchedTitle": "庚辰仲秋。登無等山。口號錄呈石軒先生。朴公祐字昌邦。訥齋先生之弟。後改號六峯。",
+      "sourceWork": {
+        "collectionTitle": "俛仰集 卷之一",
+        "juan": null,
+        "entryTitle": "庚辰仲秋。登無等山。口號錄呈石軒先生。朴公祐字昌邦。訥齋先生之弟。後改號六峯。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E4%BF%9B%E4%BB%B0%E9%9B%86/%E5%8D%B7%E4%B9%8B%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E4%BF%9B%E4%BB%B0%E9%9B%86/%E5%8D%B7%E4%B9%8B%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "野曠知天遠。林疏會氣寒。保靑憐檜柏。柀折惜芝蘭。自酌杯雖滿。仍愁意不寬。一秋於四序。胡獨奪人歡。\n\n放闊秋山路。披懷任四馳。谷虛傳籟遠。天曠送雲遲。明月堪留影。西方轉起思。商飆如借翼。跨鶴問黃羲。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 俛仰集 卷之一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '면앙정 관련 한시'을 구체 작품 '庚辰仲秋。登無等山。口號錄呈石軒先生。朴公祐字昌邦。訥齋先生之弟。後改號六峯。'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "송순",
+      "authorHanja": "宋純",
+      "candidateTitle": "면앙정 관련 한시",
+      "matchedTitle": "山夜詠懷",
+      "sourceWork": {
+        "collectionTitle": "俛仰集 卷之一",
+        "juan": null,
+        "entryTitle": "山夜詠懷",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E4%BF%9B%E4%BB%B0%E9%9B%86/%E5%8D%B7%E4%B9%8B%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E4%BF%9B%E4%BB%B0%E9%9B%86/%E5%8D%B7%E4%B9%8B%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "林梢寒月報幽櫺。夜靜天高淡臭聲。百慮空來心始定。精神從此向全淸。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 俛仰集 卷之一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '면앙정 관련 한시'을 구체 작품 '山夜詠懷'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "송순",
+      "authorHanja": "宋純",
+      "candidateTitle": "면앙정 관련 한시",
+      "matchedTitle": "金訓導松命挽二首",
+      "sourceWork": {
+        "collectionTitle": "俛仰集 卷之一",
+        "juan": null,
+        "entryTitle": "金訓導松命挽二首",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E4%BF%9B%E4%BB%B0%E9%9B%86/%E5%8D%B7%E4%B9%8B%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E4%BF%9B%E4%BB%B0%E9%9B%86/%E5%8D%B7%E4%B9%8B%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "二氣無停運。紛回萬物情。盈虛元有數。禍福會爲平。去去無窮化。來來不盡生。都歸一理。何用辨枯榮。形體浮生世。從知有始終。晴虛消薄霧。枯樹謝殘紅。俱盡捐脩短。渾歸無異同。丘墳看滿目。何處覓英雄。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 俛仰集 卷之一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '면앙정 관련 한시'을 구체 작품 '金訓導松命挽二首'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "송순",
+      "authorHanja": "宋純",
+      "candidateTitle": "면앙정 관련 한시",
+      "matchedTitle": "月山李上舍允溫移菊請酌",
+      "sourceWork": {
+        "collectionTitle": "俛仰集 卷之一",
+        "juan": null,
+        "entryTitle": "月山李上舍允溫移菊請酌",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E4%BF%9B%E4%BB%B0%E9%9B%86/%E5%8D%B7%E4%B9%8B%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E4%BF%9B%E4%BB%B0%E9%9B%86/%E5%8D%B7%E4%B9%8B%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "野老有佳期。移花開竹扉。挽衫要客醉。深淺兩心知。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 俛仰集 卷之一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '면앙정 관련 한시'을 구체 작품 '月山李上舍允溫移菊請酌'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "송순",
+      "authorHanja": "宋純",
+      "candidateTitle": "면앙정 관련 한시",
+      "matchedTitle": "奉和訥齋先生祥贈僧韻時先生被斥在鄕",
+      "sourceWork": {
+        "collectionTitle": "俛仰集 卷之一",
+        "juan": null,
+        "entryTitle": "奉和訥齋先生祥贈僧韻時先生被斥在鄕",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E4%BF%9B%E4%BB%B0%E9%9B%86/%E5%8D%B7%E4%B9%8B%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E4%BF%9B%E4%BB%B0%E9%9B%86/%E5%8D%B7%E4%B9%8B%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "抽身危偪解微官。斷壁延蘿復躡攀。穿石老鼯爭忽忽。隔林雄虎尙桓桓。遠望直屬長雲外。寒景偏熹短峽間。虛谷太弘嫌閼障。疊峯何事敢衝干。春留舊谷忻松檜。秋晩東坡惜茝蘭。遊覽欲攄幽思盡。孤筇終夕最崇巒。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 俛仰集 卷之一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '면앙정 관련 한시'을 구체 작품 '奉和訥齋先生祥贈僧韻時先生被斥在鄕'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "송순",
+      "authorHanja": "宋純",
+      "candidateTitle": "면앙정 관련 한시",
+      "matchedTitle": "次石煕上人詩軸",
+      "sourceWork": {
+        "collectionTitle": "俛仰集 卷之一",
+        "juan": null,
+        "entryTitle": "次石煕上人詩軸",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E4%BF%9B%E4%BB%B0%E9%9B%86/%E5%8D%B7%E4%B9%8B%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E4%BF%9B%E4%BB%B0%E9%9B%86/%E5%8D%B7%E4%B9%8B%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "飮食無煩支外形。醍醐散性已爲嬴。心歸淡泊空姸醜。學向虛無盡死生。玄鍵遙開臨罔象。靈珠曾拭見圓淸。工夫了底方通妙。莫道玆燈有滅明。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 俛仰集 卷之一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '면앙정 관련 한시'을 구체 작품 '次石煕上人詩軸'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "송순",
+      "authorHanja": "宋純",
+      "candidateTitle": "면앙정 관련 한시",
+      "matchedTitle": "送金正言希說覲省嶺南辛巳竝小序",
+      "sourceWork": {
+        "collectionTitle": "俛仰集 卷之一",
+        "juan": null,
+        "entryTitle": "送金正言希說覲省嶺南辛巳竝小序",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E4%BF%9B%E4%BB%B0%E9%9B%86/%E5%8D%B7%E4%B9%8B%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E4%BF%9B%E4%BB%B0%E9%9B%86/%E5%8D%B7%E4%B9%8B%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "己卯十月。登科。庚辰春。以承文院權知副正字。免新未畢。入薦藝文館。參試史才。退歸鄕家。其冬。除檢閱。參入弘文錄。又選賜暇讀書。辛巳春夏六朔。分番於東湖讀書堂。每朔所讀製。皆令書啓。\n\n春思悠悠嶺之南。時物已多淸江曲。遊子忽發長安道。東風千里歸期促。名聲不虧氣力健。白髮堂前歡始足。車馬塡門鬧如市。半年別離傾諸族。園中草木帶欣意。靑白參看梅與竹。旋玆北轅自遲回。事非一家多反復。我亦湖南一病夫。無等山陰是舊谷。撤床縫橐決歸謀。山水邊頭安草屋。明朝漢濟分舟去。二南別恨應相屬。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 俛仰集 卷之一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '면앙정 관련 한시'을 구체 작품 '送金正言希說覲省嶺南辛巳竝小序'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "송순",
+      "authorHanja": "宋純",
+      "candidateTitle": "면앙정 관련 한시",
+      "matchedTitle": "奉酬黃正郞叔貢讀書堂同番人名孝獻。官至吏曹參判。號愼齋。壬辰卒。甲戌九月。別試。以進士。中乙科二十人。居尙州。孟獻弟。",
+      "sourceWork": {
+        "collectionTitle": "俛仰集 卷之一",
+        "juan": null,
+        "entryTitle": "奉酬黃正郞叔貢讀書堂同番人名孝獻。官至吏曹參判。號愼齋。壬辰卒。甲戌九月。別試。以進士。中乙科二十人。居尙州。孟獻弟。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E4%BF%9B%E4%BB%B0%E9%9B%86/%E5%8D%B7%E4%B9%8B%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E4%BF%9B%E4%BB%B0%E9%9B%86/%E5%8D%B7%E4%B9%8B%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "士歸麤放逐紅塵。不見當時學向眞。千萬聖謨經束寘。二三佳句賦傳新。措治誰借經綸手。撫世遙憐鰥寡人。俗迫誇虛猶莫救。至今人恨晉君臣。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 俛仰集 卷之一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '면앙정 관련 한시'을 구체 작품 '奉酬黃正郞叔貢讀書堂同番人名孝獻。官至吏曹參判。號愼齋。壬辰卒。甲戌九月。別試。以進士。中乙科二十人。居尙州。孟獻弟。'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "송순",
+      "authorHanja": "宋純",
+      "candidateTitle": "면앙정 관련 한시",
+      "matchedTitle": "夜中卽事東湖堂臨江",
+      "sourceWork": {
+        "collectionTitle": "俛仰集 卷之一",
+        "juan": null,
+        "entryTitle": "夜中卽事東湖堂臨江",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E4%BF%9B%E4%BB%B0%E9%9B%86/%E5%8D%B7%E4%B9%8B%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E4%BF%9B%E4%BB%B0%E9%9B%86/%E5%8D%B7%E4%B9%8B%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "渚宿舟人半夜喧。遙知急雨沒江濆。波聲遠駕南陵外。兼送山窓喚客魂。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 俛仰集 卷之一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '면앙정 관련 한시'을 구체 작품 '夜中卽事東湖堂臨江'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "송순",
+      "authorHanja": "宋純",
+      "candidateTitle": "면앙정 관련 한시",
+      "matchedTitle": "奉答黃學士叔貢",
+      "sourceWork": {
+        "collectionTitle": "俛仰集 卷之一",
+        "juan": null,
+        "entryTitle": "奉答黃學士叔貢",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E4%BF%9B%E4%BB%B0%E9%9B%86/%E5%8D%B7%E4%B9%8B%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E4%BF%9B%E4%BB%B0%E9%9B%86/%E5%8D%B7%E4%B9%8B%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "有生全肝肺。不曾向人輸。涼涼一世間。歲月足悲吁。窮途感晩遇。萬里期同徂。志氣渾實強。從玆訂頑愚。但媿將疏懶。名班忝俗儒。所願資講力。探泥拭明珠。賢愚本同命。承訓無異趨。文字參古今。言語辨精麤。究思有未竟。觸處多抵捂。裁紙表疑端。俟子窮朝晡。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 俛仰集 卷之一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '면앙정 관련 한시'을 구체 작품 '奉答黃學士叔貢'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "송순",
+      "authorHanja": "宋純",
+      "candidateTitle": "면앙정 관련 한시",
+      "matchedTitle": "東湖樓上夜懷二首",
+      "sourceWork": {
+        "collectionTitle": "俛仰集 卷之一",
+        "juan": null,
+        "entryTitle": "東湖樓上夜懷二首",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E4%BF%9B%E4%BB%B0%E9%9B%86/%E5%8D%B7%E4%B9%8B%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E4%BF%9B%E4%BB%B0%E9%9B%86/%E5%8D%B7%E4%B9%8B%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "南樓終夕伴疏慵。感慨相仍涕亦從。風月自能秋夜態。江山非復故園容。枕邊消息憑誰問。洛上文書未數封。羨彼征鴻飛遠去。明朝應得過追峯。\n\n日盡乾坤人倚樓。溶溶惟見大江流。投巢已定前林鳥。要涉猶喧近渚舟。萬里山河歸路隔。一身京洛客憂稠。催時蟋蟀休相近。遊子傷秋欲白頭。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 俛仰集 卷之一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '면앙정 관련 한시'을 구체 작품 '東湖樓上夜懷二首'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "송순",
+      "authorHanja": "宋純",
+      "candidateTitle": "면앙정 관련 한시",
+      "matchedTitle": "漁父",
+      "sourceWork": {
+        "collectionTitle": "俛仰集 卷之一",
+        "juan": null,
+        "entryTitle": "漁父",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E4%BF%9B%E4%BB%B0%E9%9B%86/%E5%8D%B7%E4%B9%8B%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E4%BF%9B%E4%BB%B0%E9%9B%86/%E5%8D%B7%E4%B9%8B%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "秋江百里正平虛。泛泛輕舠聽所如。莫學群兒爭笑餌。渭翕竿下不歸魚。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 俛仰集 卷之一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '면앙정 관련 한시'을 구체 작품 '漁父'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "송순",
+      "authorHanja": "宋純",
+      "candidateTitle": "면앙정 관련 한시",
+      "matchedTitle": "曉吟二首在東湖書樓",
+      "sourceWork": {
+        "collectionTitle": "俛仰集 卷之一",
+        "juan": null,
+        "entryTitle": "曉吟二首在東湖書樓",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E4%BF%9B%E4%BB%B0%E9%9B%86/%E5%8D%B7%E4%B9%8B%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E4%BF%9B%E4%BB%B0%E9%9B%86/%E5%8D%B7%E4%B9%8B%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "山窓歸夢罷。秋夜未終更。江市人無語。沙庭月獨明。已爲千里客。那免百憂生。感慨還吾枕。高歌敍不平。\n\n爲探淸曉意。書榻早移樓。寒露深秋草。殘星點玉流。沙汀喧宿鳥。官渡喚行舟。閑向東山坐。看看曙色浮。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 俛仰集 卷之一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '면앙정 관련 한시'을 구체 작품 '曉吟二首在東湖書樓'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "송순",
+      "authorHanja": "宋純",
+      "candidateTitle": "면앙정 관련 한시",
+      "matchedTitle": "奉別宗丈令公欽赴光州知止堂。諡孝憲。甲申。拜全州府尹。移光州。",
+      "sourceWork": {
+        "collectionTitle": "俛仰集 卷之一",
+        "juan": null,
+        "entryTitle": "奉別宗丈令公欽赴光州知止堂。諡孝憲。甲申。拜全州府尹。移光州。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E4%BF%9B%E4%BB%B0%E9%9B%86/%E5%8D%B7%E4%B9%8B%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E4%BF%9B%E4%BB%B0%E9%9B%86/%E5%8D%B7%E4%B9%8B%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "當年奉養試爲州。不是餘生謝故丘。慣向幽居曾着趣。暫從人世強低頭。承家已喜名聲遠。享壽堪誇氣力遒。小子追車相別意。一身珍重保金甌。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 俛仰集 卷之一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '면앙정 관련 한시'을 구체 작품 '奉別宗丈令公欽赴光州知止堂。諡孝憲。甲申。拜全州府尹。移光州。'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "송순",
+      "authorHanja": "宋純",
+      "candidateTitle": "면앙정 관련 한시",
+      "matchedTitle": "次柳司成成春韻己卯士流。字天章。歷吏曹佐郞兵曹正郞。甲戌九月。別試。以生員中丙科一人。居海南。桂隣子。時患瘤疾。久留京師。",
+      "sourceWork": {
+        "collectionTitle": "俛仰集 卷之一",
+        "juan": null,
+        "entryTitle": "次柳司成成春韻己卯士流。字天章。歷吏曹佐郞兵曹正郞。甲戌九月。別試。以生員中丙科一人。居海南。桂隣子。時患瘤疾。久留京師。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E4%BF%9B%E4%BB%B0%E9%9B%86/%E5%8D%B7%E4%B9%8B%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E4%BF%9B%E4%BB%B0%E9%9B%86/%E5%8D%B7%E4%B9%8B%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "衣冠久未謁王宮。却抱沈痾費藥筒。身外功名催客老。山前草木已秋風。棲遲便可尋田舍。辛苦何須滯洛中。待得調平心氣健。年時應不至衰翁。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 俛仰集 卷之一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '면앙정 관련 한시'을 구체 작품 '次柳司成成春韻己卯士流。字天章。歷吏曹佐郞兵曹正郞。甲戌九月。別試。以生員中丙科一人。居海南。桂隣子。時患瘤疾。久留京師。'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "송순",
+      "authorHanja": "宋純",
+      "candidateTitle": "면앙정 관련 한시",
+      "matchedTitle": "又次自敍客懷",
+      "sourceWork": {
+        "collectionTitle": "俛仰集 卷之一",
+        "juan": null,
+        "entryTitle": "又次自敍客懷",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E4%BF%9B%E4%BB%B0%E9%9B%86/%E5%8D%B7%E4%B9%8B%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E4%BF%9B%E4%BB%B0%E9%9B%86/%E5%8D%B7%E4%B9%8B%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "白露傳秋夜向嚴。新寒細細透疏簾。風殘江路舟依渚。雲斂天容月上簷。無夢自難消永漏。抽書還得遍諸籖。離家萬里逢時換。轉覺歸心十分添。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 俛仰集 卷之一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '면앙정 관련 한시'을 구체 작품 '又次自敍客懷'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "송순",
+      "authorHanja": "宋純",
+      "candidateTitle": "면앙정 관련 한시",
+      "matchedTitle": "暮思己卯秋。士類多斥死。而朔啓竝錄此詩。承旨崔世節。仍欲中傷。同僚止之云云。",
+      "sourceWork": {
+        "collectionTitle": "俛仰集 卷之一",
+        "juan": null,
+        "entryTitle": "暮思己卯秋。士類多斥死。而朔啓竝錄此詩。承旨崔世節。仍欲中傷。同僚止之云云。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E4%BF%9B%E4%BB%B0%E9%9B%86/%E5%8D%B7%E4%B9%8B%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E4%BF%9B%E4%BB%B0%E9%9B%86/%E5%8D%B7%E4%B9%8B%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "日已西時月未東。群星爭耀點長空。山川氣色因沈沒。誰識孤懷病此中。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 俛仰集 卷之一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '면앙정 관련 한시'을 구체 작품 '暮思己卯秋。士類多斥死。而朔啓竝錄此詩。承旨崔世節。仍欲中傷。同僚止之云云。'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "송순",
+      "authorHanja": "宋純",
+      "candidateTitle": "면앙정 관련 한시",
+      "matchedTitle": "送李同年士高巙以書狀官赴京",
+      "sourceWork": {
+        "collectionTitle": "俛仰集 卷之一",
+        "juan": null,
+        "entryTitle": "送李同年士高巙以書狀官赴京",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E4%BF%9B%E4%BB%B0%E9%9B%86/%E5%8D%B7%E4%B9%8B%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E4%BF%9B%E4%BB%B0%E9%9B%86/%E5%8D%B7%E4%B9%8B%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "邊塞秋風草木衰。山河車馬愼驅馳。男兒已決平生計。何用幽懷怨別離。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 俛仰集 卷之一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '면앙정 관련 한시'을 구체 작품 '送李同年士高巙以書狀官赴京'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "송순",
+      "authorHanja": "宋純",
+      "candidateTitle": "면앙정 관련 한시",
+      "matchedTitle": "送李同年應物認赴密陽司馬同年。官兵曹正郞。丁丑十月。別試。中乙科一人。居三嘉。增壽子。",
+      "sourceWork": {
+        "collectionTitle": "俛仰集 卷之一",
+        "juan": null,
+        "entryTitle": "送李同年應物認赴密陽司馬同年。官兵曹正郞。丁丑十月。別試。中乙科一人。居三嘉。增壽子。",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E4%BF%9B%E4%BB%B0%E9%9B%86/%E5%8D%B7%E4%B9%8B%E4%B8%80",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E4%BF%9B%E4%BB%B0%E9%9B%86/%E5%8D%B7%E4%B9%8B%E4%B8%80?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "周家基業晩移東。千載寥寥王澤窮。萬古餘民猶秉性。當時列邑憶分封。臨官只恐仁無給。承敎何嫌化不同。一向吾誠謀出治。莫憑刑法迫魚蟲。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 俛仰集 卷之一 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '면앙정 관련 한시'을 구체 작품 '送李同年應物認赴密陽司馬同年。官兵曹正郞。丁丑十月。別試。中乙科一人。居三嘉。增壽子。'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "신흠",
+      "authorHanja": "申欽",
+      "candidateTitle": "교유시",
+      "matchedTitle": "東飛伯勞西飛燕歌前稿",
+      "sourceWork": {
+        "collectionTitle": "象村稿 卷三",
+        "juan": "卷三",
+        "entryTitle": "東飛伯勞西飛燕歌前稿",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B1%A1%E6%9D%91%E7%A8%BF/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%B1%A1%E6%9D%91%E7%A8%BF/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "東隣楊柳四隣花。三月四月爭韶華。誰家女兒奪春色。翠佩明璫嬌艶飾。金塘風動繡羅裾。粧罷雙娥愁未舒。美人年幾十六七。休使佳期暗中失。蜂喧蝶鬧總不顧。寶帶同心爲誰故。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 象村稿 卷三 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '교유시'을 구체 작품 '東飛伯勞西飛燕歌前稿'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "신흠",
+      "authorHanja": "申欽",
+      "candidateTitle": "교유시",
+      "matchedTitle": "獨不見",
+      "sourceWork": {
+        "collectionTitle": "象村稿 卷三",
+        "juan": "卷三",
+        "entryTitle": "獨不見",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B1%A1%E6%9D%91%E7%A8%BF/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%B1%A1%E6%9D%91%E7%A8%BF/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "桂宇千重隔。星河一道遙。含愁獨不見。斜月下桐梢。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 象村稿 卷三 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '교유시'을 구체 작품 '獨不見'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "신흠",
+      "authorHanja": "申欽",
+      "candidateTitle": "교유시",
+      "matchedTitle": "艶曲二首",
+      "sourceWork": {
+        "collectionTitle": "象村稿 卷三",
+        "juan": "卷三",
+        "entryTitle": "艶曲二首",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B1%A1%E6%9D%91%E7%A8%BF/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%B1%A1%E6%9D%91%E7%A8%BF/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "生綠羅屛玉鏡臺。流蘇翠帳晩慵開。春來轉覺嬌無力。機上鴛鴦懶翦裁。\n\n絳河東望玉繩低。金博山前生碧縷。漫把瓊鉤拳錦帷。井闌颯颯梧桐雨。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 象村稿 卷三 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '교유시'을 구체 작품 '艶曲二首'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "신흠",
+      "authorHanja": "申欽",
+      "candidateTitle": "교유시",
+      "matchedTitle": "齊梁體",
+      "sourceWork": {
+        "collectionTitle": "象村稿 卷三",
+        "juan": "卷三",
+        "entryTitle": "齊梁體",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B1%A1%E6%9D%91%E7%A8%BF/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%B1%A1%E6%9D%91%E7%A8%BF/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "來似雲去似月。眉如黛頰如花。請君門外柳。繫我金犢車。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 象村稿 卷三 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '교유시'을 구체 작품 '齊梁體'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "신흠",
+      "authorHanja": "申欽",
+      "candidateTitle": "교유시",
+      "matchedTitle": "著作謠",
+      "sourceWork": {
+        "collectionTitle": "象村稿 卷三",
+        "juan": "卷三",
+        "entryTitle": "著作謠",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B1%A1%E6%9D%91%E7%A8%BF/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%B1%A1%E6%9D%91%E7%A8%BF/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "著作纔容車上坐。祕書能問體中何。好將開府三司貴。看向磨驢與爾歌。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 象村稿 卷三 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '교유시'을 구체 작품 '著作謠'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "신흠",
+      "authorHanja": "申欽",
+      "candidateTitle": "교유시",
+      "matchedTitle": "將進酒短曲",
+      "sourceWork": {
+        "collectionTitle": "象村稿 卷三",
+        "juan": "卷三",
+        "entryTitle": "將進酒短曲",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B1%A1%E6%9D%91%E7%A8%BF/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%B1%A1%E6%9D%91%E7%A8%BF/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "有琴曷不絃。有酒曷不觴。昨日少年子。今朝歸北邙。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 象村稿 卷三 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '교유시'을 구체 작품 '將進酒短曲'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "신흠",
+      "authorHanja": "申欽",
+      "candidateTitle": "교유시",
+      "matchedTitle": "將進酒長曲",
+      "sourceWork": {
+        "collectionTitle": "象村稿 卷三",
+        "juan": "卷三",
+        "entryTitle": "將進酒長曲",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B1%A1%E6%9D%91%E7%A8%BF/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%B1%A1%E6%9D%91%E7%A8%BF/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "今日非昨日。今年非去年。君看明鏡裏。素髮無由玄。床頭金屈巵。有酒如流川。堂中窈窕人。有色如花姸。此夕不肯飮。明朝應悵然。道傍朱戶宅。行馬施門前。當時將與相。翕赫俱機權。如今安在哉。飄風過耳邊。壟上石麒麟。秋草埋荒阡。所以將進酒。日日同醉眠。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 象村稿 卷三 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '교유시'을 구체 작품 '將進酒長曲'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "신흠",
+      "authorHanja": "申欽",
+      "candidateTitle": "교유시",
+      "matchedTitle": "姚黃花",
+      "sourceWork": {
+        "collectionTitle": "象村稿 卷三",
+        "juan": "卷三",
+        "entryTitle": "姚黃花",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B1%A1%E6%9D%91%E7%A8%BF/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%B1%A1%E6%9D%91%E7%A8%BF/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "姚黃花穠且華。只可自怡悅。獻御其又何。可憐相公忠孝家。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 象村稿 卷三 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '교유시'을 구체 작품 '姚黃花'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "신흠",
+      "authorHanja": "申欽",
+      "candidateTitle": "교유시",
+      "matchedTitle": "五色羅",
+      "sourceWork": {
+        "collectionTitle": "象村稿 卷三",
+        "juan": "卷三",
+        "entryTitle": "五色羅",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B1%A1%E6%9D%91%E7%A8%BF/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%B1%A1%E6%9D%91%E7%A8%BF/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "一色螺函信手開。輕羅披拂五雲堆。女官傳奉相歡笑。知是成都日進來。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 象村稿 卷三 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '교유시'을 구체 작품 '五色羅'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "신흠",
+      "authorHanja": "申欽",
+      "candidateTitle": "교유시",
+      "matchedTitle": "成都鞋",
+      "sourceWork": {
+        "collectionTitle": "象村稿 卷三",
+        "juan": "卷三",
+        "entryTitle": "成都鞋",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B1%A1%E6%9D%91%E7%A8%BF/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%B1%A1%E6%9D%91%E7%A8%BF/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "幾箇成都新樣鞋。朝來宣喚賜宮娃。從今羅幭移雲步。不怕輕塵上玉階。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 象村稿 卷三 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '교유시'을 구체 작품 '成都鞋'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "신흠",
+      "authorHanja": "申欽",
+      "candidateTitle": "사행시",
+      "matchedTitle": "春意",
+      "sourceWork": {
+        "collectionTitle": "象村稿 卷三",
+        "juan": "卷三",
+        "entryTitle": "春意",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B1%A1%E6%9D%91%E7%A8%BF/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%B1%A1%E6%9D%91%E7%A8%BF/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "五侯池館春風裏。粉壁椒房相對峙。東園桃李紅白枝。韶光淡沲香煙起。水晶簾鎭紫流蘇。雲母屛風開邐迤。後堂佳人年二八。曲檻新試鴛鴦戲。鴛鴦雙雙七十二。屬玉鵁鶄共嫵媚。銅山金穴未爲珍。倒海揚塵翻手似。車如流水馬如龍。不信人間有寒士。瓊筵取醉百年期。但恐白日淪濛汜。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 象村稿 卷三 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '사행시'을 구체 작품 '春意'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "신흠",
+      "authorHanja": "申欽",
+      "candidateTitle": "사행시",
+      "matchedTitle": "白紵詞後稿",
+      "sourceWork": {
+        "collectionTitle": "象村稿 卷三",
+        "juan": "卷三",
+        "entryTitle": "白紵詞後稿",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B1%A1%E6%9D%91%E7%A8%BF/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%B1%A1%E6%9D%91%E7%A8%BF/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "流蘇寶幄雲母屛。象床羅薦龍涎馨。靑娥縫罷舞衣成。白紵薄薄煙絲輕。新翻歌曲寄深情。寄深情。願君歡。瑤箏鳳瑟動哀弹。北斗橫天夜未闌。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 象村稿 卷三 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '사행시'을 구체 작품 '白紵詞後稿'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "신흠",
+      "authorHanja": "申欽",
+      "candidateTitle": "사행시",
+      "matchedTitle": "烏夜啼",
+      "sourceWork": {
+        "collectionTitle": "象村稿 卷三",
+        "juan": "卷三",
+        "entryTitle": "烏夜啼",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B1%A1%E6%9D%91%E7%A8%BF/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%B1%A1%E6%9D%91%E7%A8%BF/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "夜如何其夜如年。烏啼樹頭人未眠。一聲兩聲復三聲。烏本無心人有情。不恨烏啼恨離別。桂楹愁看花似雪。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 象村稿 卷三 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '사행시'을 구체 작품 '烏夜啼'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "신흠",
+      "authorHanja": "申欽",
+      "candidateTitle": "사행시",
+      "matchedTitle": "三婦艶",
+      "sourceWork": {
+        "collectionTitle": "象村稿 卷三",
+        "juan": "卷三",
+        "entryTitle": "三婦艶",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B1%A1%E6%9D%91%E7%A8%BF/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%B1%A1%E6%9D%91%E7%A8%BF/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "大婦入廚下。中婦上鴛機。少婦惜春色。靚粧弄金徽。勸君且安坐。節物正芳菲。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 象村稿 卷三 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '사행시'을 구체 작품 '三婦艶'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "신흠",
+      "authorHanja": "申欽",
+      "candidateTitle": "사행시",
+      "matchedTitle": "山鷓鴣詞二首",
+      "sourceWork": {
+        "collectionTitle": "象村稿 卷三",
+        "juan": "卷三",
+        "entryTitle": "山鷓鴣詞二首",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B1%A1%E6%9D%91%E7%A8%BF/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%B1%A1%E6%9D%91%E7%A8%BF/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "庾嶺叢篁路欲迷。峯頭落日鷓鴣啼。休敎雁壻來相惱。沙磧千重豈我棲。\n\n江南地暖竹如蘆。孔翠元央錦翼姝。我自相依不相失。雁門千里莫招呼。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 象村稿 卷三 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '사행시'을 구체 작품 '山鷓鴣詞二首'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "신흠",
+      "authorHanja": "申欽",
+      "candidateTitle": "사행시",
+      "matchedTitle": "採蓮曲",
+      "sourceWork": {
+        "collectionTitle": "象村稿 卷三",
+        "juan": "卷三",
+        "entryTitle": "採蓮曲",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B1%A1%E6%9D%91%E7%A8%BF/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%B1%A1%E6%9D%91%E7%A8%BF/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "東隣女兒脚不幭。兩足如霜踏溪渚。溪頭蕩槳誰家郞。手折荷花笑相語。移船同去不知處。別浦驚起元央侶。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 象村稿 卷三 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '사행시'을 구체 작품 '採蓮曲'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "신흠",
+      "authorHanja": "申欽",
+      "candidateTitle": "사행시",
+      "matchedTitle": "拘幽操續稿",
+      "sourceWork": {
+        "collectionTitle": "象村稿 卷三",
+        "juan": "卷三",
+        "entryTitle": "拘幽操續稿",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B1%A1%E6%9D%91%E7%A8%BF/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%B1%A1%E6%9D%91%E7%A8%BF/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "上不見天下不地兮。口不能言心則記兮。如何如何。拘我若此。伊臣之拘。惟君之累。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 象村稿 卷三 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '사행시'을 구체 작품 '拘幽操續稿'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "신흠",
+      "authorHanja": "申欽",
+      "candidateTitle": "사행시",
+      "matchedTitle": "文王操",
+      "sourceWork": {
+        "collectionTitle": "象村稿 卷三",
+        "juan": "卷三",
+        "entryTitle": "文王操",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B1%A1%E6%9D%91%E7%A8%BF/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%B1%A1%E6%9D%91%E7%A8%BF/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "九侯非辜。鄂侯乃職。後死臣罪。臣心實盡。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 象村稿 卷三 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '사행시'을 구체 작품 '文王操'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "신흠",
+      "authorHanja": "申欽",
+      "candidateTitle": "사행시",
+      "matchedTitle": "箕子操",
+      "sourceWork": {
+        "collectionTitle": "象村稿 卷三",
+        "juan": "卷三",
+        "entryTitle": "箕子操",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B1%A1%E6%9D%91%E7%A8%BF/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%B1%A1%E6%9D%91%E7%A8%BF/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "賢聖兮六七。宗祧兮盤石。曷之兆兮喪亂。我無以告我先辟。我有疇兮何施。罔於周兮臣僕。嗟彼狡兮。不知我心蹙兮。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 象村稿 卷三 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '사행시'을 구체 작품 '箕子操'로 확장한다."
+      }
+    },
+    {
+      "authorKo": "신흠",
+      "authorHanja": "申欽",
+      "candidateTitle": "사행시",
+      "matchedTitle": "釣竿行",
+      "sourceWork": {
+        "collectionTitle": "象村稿 卷三",
+        "juan": "卷三",
+        "entryTitle": "釣竿行",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B1%A1%E6%9D%91%E7%A8%BF/%E5%8D%B7%E4%B8%89",
+        "rawUrl": "https://zh.wikisource.org/wiki/%E8%B1%A1%E6%9D%91%E7%A8%BF/%E5%8D%B7%E4%B8%89?action=raw",
+        "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+        "locatorConfidence": "high"
+      },
+      "text": {
+        "poemZh": "夷採薇望釣國。夷何心望何得。夷可知望不可測。夫何使武有慙德兮。",
+        "poemKoReading": null,
+        "poemKoGloss": null
+      },
+      "rights": {
+        "originalTextUsage": "commercial_allowed",
+        "translationUsage": "owned_translation_needed"
+      },
+      "ingest": {
+        "recommendedReadiness": "direct-text-collected",
+        "notes": "zh Wikisource 象村稿 卷三 raw에서 heading과 원문을 직접 확인했다. 기존 후보 묶음 '사행시'을 구체 작품 '釣竿行'로 확장한다."
+      }
+    }
+  ],
+  "blockers": [],
+  "sourcesConsulted": [
+    {
+      "source": "zh Wikisource raw",
+      "rawUrl": "https://zh.wikisource.org/wiki/%E6%A2%85%E6%9C%88%E5%A0%82%E9%9B%86/%E5%8D%B7%E4%B8%89?action=raw",
+      "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+      "usage": "direct text collection"
+    },
+    {
+      "source": "zh Wikisource raw",
+      "rawUrl": "https://zh.wikisource.org/wiki/%E7%9F%B3%E6%B4%B2%E9%9B%86/%E5%8D%B7%E4%BA%8C?action=raw",
+      "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+      "usage": "direct text collection"
+    },
+    {
+      "source": "zh Wikisource raw",
+      "rawUrl": "https://zh.wikisource.org/wiki/%E8%81%BE%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80?action=raw",
+      "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+      "usage": "direct text collection"
+    },
+    {
+      "source": "zh Wikisource raw",
+      "rawUrl": "https://zh.wikisource.org/wiki/%E8%BE%B2%E5%B7%96%E9%9B%86/%E5%8D%B7%E4%B8%80?action=raw",
+      "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+      "usage": "direct text collection"
+    },
+    {
+      "source": "zh Wikisource raw",
+      "rawUrl": "https://zh.wikisource.org/wiki/%E4%B8%89%E6%B7%B5%E9%9B%86/%E5%8D%B7%E4%B8%83?action=raw",
+      "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+      "usage": "direct text collection"
+    },
+    {
+      "source": "zh Wikisource raw",
+      "rawUrl": "https://zh.wikisource.org/wiki/%E4%BF%9B%E4%BB%B0%E9%9B%86/%E5%8D%B7%E4%B9%8B%E4%B8%80?action=raw",
+      "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+      "usage": "direct text collection"
+    },
+    {
+      "source": "zh Wikisource raw",
+      "rawUrl": "https://zh.wikisource.org/wiki/%E8%B1%A1%E6%9D%91%E7%A8%BF/%E5%8D%B7%E4%B8%89?action=raw",
+      "sourcePolicyId": "SRC-WIKISOURCE-TEXT",
+      "usage": "direct text collection"
+    }
+  ]
+}
