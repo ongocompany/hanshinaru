@@ -17,3 +17,16 @@ graphify-out/
 
 # 아카이브 (로컬 참고용, git 미추적)
 docs/archive/
+
+# 도구/에이전트 메타 (로컬 전용)
+.bkit/
+.gemini/
+.omc/
+.superpowers/
+.venv/
+.claude/settings.json
+FOREMAN-E2E-TEST.md
+
+# 옛 경로 잔재
+scripts/auto-push-error.log
+
