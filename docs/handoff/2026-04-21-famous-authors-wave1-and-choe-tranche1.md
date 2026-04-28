@@ -103,7 +103,7 @@ author: 태훈
 
 1. `docs/spec/korean-hansi-famous-authors-wave1-batch.v1.json`을 열어 wave 1 배치 기준을 그대로 유지한다.
 2. 최치원을 계속 밀려면 `孤雲集/卷二`, `孤雲集/卷三` 공개 원문부터 tranche 2를 만든다.
-3. 최치원을 잠시 멈추고 병렬화하려면 정지상 tranche 1을 `東文選`/`東京雜記` 축으로 연다.
+3. 최치원을 잠시 멈추고 병렬화하려면 정지상 tranche 1을 `東文選`/`동경잡기(東京雜記)` 축으로 연다.
 4. direct-text 확보가 author batch 임계치 아래로 막히면 그 시점에서 OCR lane을 붙인다.
 
 # 다음 세션이 피해야 할 함정

@@ -15,7 +15,7 @@ author: 태훈
   - `정지상` author 검색은 진양정씨세보 계열로 오염됨을 재확인
   - `鄭司諫集` direct title 검색은 결과 0건
   - 작품명 direct 검색 `送人`, `栢律寺`도 결과 0건
-  - 대신 collection title 검색으로 `東文選`, `東京雜記` KORCIS 수록본 다건 확인
+  - 대신 collection title 검색으로 `東文選`, `동경잡기(東京雜記)` KORCIS 수록본 다건 확인
 - EncyKorea `정지상` 항목의 “작품으로는 『동문선』, 『동경잡기』, 『정사간집』에 전함” 문장을 근거로 KORCIS 판정을 `collection-level hit` 기준으로 상향
 - `scripts/build_korean_hansi_priority_11_board.js` 갱신 후 보드 JSON/TSV 재생성
 - `scripts/assess_korean_hansi_pipeline_readiness.js`를 상태 기반 `nextRequirements`/`openBlockers` 생성 방식으로 개선하고 readiness JSON 재생성
@@ -67,7 +67,7 @@ author: 태훈
 - KORCIS 검색:
   - `정지상`
   - `東文選`
-  - `東京雜記`
+  - `동경잡기(東京雜記)`
   - `鄭司諫集`
   - `送人`
   - `栢律寺`
