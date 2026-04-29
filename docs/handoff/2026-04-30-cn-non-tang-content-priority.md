@@ -22,6 +22,7 @@ author: 지훈
 - `docs/spec/2026-04-30-cn-non-tang-max-collection-targets.md`
 - `docs/spec/cn-non-tang-collection-targets.v1.json`
 - `docs/spec/cn-non-tang-category-targets.raw.v1.json`
+- `docs/spec/cn-non-tang-category-candidate-index.v1.json`
 - `docs/spec/cn-non-tang-tranche1.sources.raw.json`
 - `docs/spec/cn-non-tang-tranche1.records.v1.json`
 - `docs/spec/cn-non-tang-tranche1.report.v1.json`
@@ -39,6 +40,7 @@ author: 지훈
 - `scripts/fetch_cn_wikisource_tranche1.mjs`: tranche 1 source URL의 위키문헌 raw page bundle을 생성한다.
 - `scripts/fetch_cn_non_tang_category_targets.mjs`: 위키문헌 시대 category에서 대량 후보 page list를 수집한다.
 - `scripts/build_cn_non_tang_collection_targets.mjs`: 대량 수집 목표 JSON을 생성한다.
+- `scripts/build_cn_non_tang_category_candidate_index.mjs`: category raw 후보에서 괄호 작가명이 있는 작품을 1순위 후보로 추출한다.
 - `scripts/build_cn_non_tang_tranche1.mjs`: seed를 records/report JSON으로 생성한다.
 - `scripts/build_cn_non_tang_tranche1_db_dry_run.mjs`: 실제 DB 쓰기 전 curated upsert 후보를 negative provisional id로 생성한다.
 - `scripts/build_cn_non_tang_tranche1_jds_sql.mjs`: JDS 선적재용 SQL을 생성한다. 기본 끝맺음은 `ROLLBACK`이다.
@@ -50,6 +52,7 @@ author: 지훈
 - 위키문헌 raw source page bundle 10페이지
 - 대량 수집 목표: Wave 1 기준 73명/최소 380수, 장기 목표 1,000명/10,000수 이상
 - category 후보 수집: `宋詩` 1,463쪽, `元詩` 762쪽, `明詩` 2,447쪽, 합계 4,672쪽
+- category 후보 인덱스: 총 4,672쪽 중 괄호 작가명 추정 659쪽 (`宋` 230, `元` 93, `明` 336)
 - `清詩` category는 위키문헌 429로 이번 실행에서는 0쪽이며 재시도 큐로 남김
 - DB dry-run: curated poets 9명, curated poems 12수
 - JDS SQL ROLLBACK 검증: insert 예상 poets 9명, poems 12수, 실제 잔존 0건
@@ -66,6 +69,7 @@ author: 지훈
 - `node scripts/build_cn_non_tang_tranche1_db_dry_run.mjs` 통과
 - `node scripts/build_cn_non_tang_collection_targets.mjs` 통과: Wave 1 73명/최소 380수
 - `node scripts/fetch_cn_non_tang_category_targets.mjs` partial 통과: 4,672쪽 raw 후보 저장, `清詩` 429 실패 기록
+- `node scripts/build_cn_non_tang_category_candidate_index.mjs` 통과: 작가명 추정 후보 659쪽 생성
 - `ssh jinas "PGPASSWORD=jds psql ..."`로 `cn-non-tang-tranche1.jds-upsert.sql` ROLLBACK 검증 통과
 - 생성 결과: `records=12`, `translatedOwned=12`
 
@@ -102,8 +106,8 @@ author: 지훈
 1. `docs/spec/2026-04-30-cn-non-tang-source-catalog.v1.json`을 연다.
 2. `docs/spec/2026-04-30-cn-non-tang-max-collection-targets.md`를 먼저 확인해 Wave 1 수집 대상표를 검토한다.
 3. `docs/spec/cn-non-tang-category-targets.raw.v1.json`에서 `清詩` category만 재시도한다.
-4. category raw 후보에서 괄호 작가명이 있는 작품을 우선 추출해 `candidate records`를 만든다.
-5. DB 반영은 아직 하지 않는다. 수집 대상표와 raw 후보를 검토한 뒤 tranche별 records를 만든다.
+4. `docs/spec/cn-non-tang-category-candidate-index.v1.json`의 `author-parentheses-likely` 659쪽을 우선 수집 대상으로 삼는다.
+5. DB 반영은 아직 하지 않는다. 후보 인덱스에서 원문 raw와 normalized records를 만든 뒤 tranche별 검토 큐로 넘긴다.
 
 # 다음 세션이 피해야 할 함정
 
