@@ -29,7 +29,8 @@
     "hansi:donggyeong-japgi-vol3-harvest": "TZ_VOLUME=3 node scripts/build_korean_hansi_donggyeong_japgi_volume_harvest.js",
     "classics:donggyeong-japgi-bundle": "node scripts/build_korean_classics_donggyeong_japgi_collection_bundle.js",
     "cn:pre-tang-manifest": "node scripts/build_cn_pre_tang_whole_corpus_manifest.mjs",
-    "cn:pre-tang-dump-pages": "python3 scripts/extract_cn_wikisource_manifest_pages.py"
+    "cn:pre-tang-dump-pages": "python3 scripts/extract_cn_wikisource_manifest_pages.py",
+    "cn:pre-tang-cached-first-tranche": "node scripts/build_cn_pre_tang_first_tranche_from_cached_sources.mjs"
   },
   "dependencies": {
     "@astrojs/node": "^10.0.6",

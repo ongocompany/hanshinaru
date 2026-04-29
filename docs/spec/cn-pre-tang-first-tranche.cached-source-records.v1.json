@@ -1,0 +1,1120 @@
+{
+  "version": "2026-04-30.v1",
+  "batchId": "cn-pre-tang-first-tranche-cached-sources",
+  "generatedAt": "2026-04-29T21:50:15.437Z",
+  "sourcePolicy": "cached zh Wikisource companion sources",
+  "records": [
+    {
+      "recordId": "CN-PRETANG-CACHED-PRE-QIN-64ca-58e4-6b4c-2d-4f5a-540d",
+      "country": "CN",
+      "eraSlug": "pre-qin",
+      "title": {
+        "zh": "擊壤歌",
+        "ko": null
+      },
+      "author": {
+        "zh": "佚名",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "古詩源",
+        "section": "卷一古逸",
+        "kind": "anthology-section"
+      },
+      "text": {
+        "poemZh": "日出而作，日入而息；\n鑿井而飲，耕田而食。\n帝力於我何有哉！",
+        "lineCount": 3,
+        "charCount": 28
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "anthology-section-extraction"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-PRE-QIN-5eb7-8862-8b20-2d-4f5a-540d",
+      "country": "CN",
+      "eraSlug": "pre-qin",
+      "title": {
+        "zh": "康衢謠",
+        "ko": null
+      },
+      "author": {
+        "zh": "佚名",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "古詩源",
+        "section": "卷一古逸",
+        "kind": "anthology-section"
+      },
+      "text": {
+        "poemZh": "立我蒸民，莫匪爾極。\n不識不知，順帝之則。",
+        "lineCount": 2,
+        "charCount": 20
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "anthology-section-extraction"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-PRE-QIN-4f0a-8006-6c0f-881f-8fad-2d-4f5a-540d",
+      "country": "CN",
+      "eraSlug": "pre-qin",
+      "title": {
+        "zh": "伊耆氏蠟辭",
+        "ko": null
+      },
+      "author": {
+        "zh": "佚名",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "古詩源",
+        "section": "卷一古逸",
+        "kind": "anthology-section"
+      },
+      "text": {
+        "poemZh": "土反其宅，水歸其壑。\n昆蟲毋作，草木歸其澤。",
+        "lineCount": 2,
+        "charCount": 21
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "anthology-section-extraction"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-PRE-QIN-582f-6212-2d-4f5a-540d",
+      "country": "CN",
+      "eraSlug": "pre-qin",
+      "title": {
+        "zh": "堯戒",
+        "ko": null
+      },
+      "author": {
+        "zh": "佚名",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "古詩源",
+        "section": "卷一古逸",
+        "kind": "anthology-section"
+      },
+      "text": {
+        "poemZh": "戰戰慄慄，日謹一日。\n人莫躓於山，而躓於垤。",
+        "lineCount": 2,
+        "charCount": 21
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "anthology-section-extraction"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-PRE-QIN-537f-96f2-6b4c-2d-4f5a-540d",
+      "country": "CN",
+      "eraSlug": "pre-qin",
+      "title": {
+        "zh": "卿雲歌",
+        "ko": null
+      },
+      "author": {
+        "zh": "佚名",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "古詩源",
+        "section": "卷一古逸",
+        "kind": "anthology-section"
+      },
+      "text": {
+        "poemZh": "卿雲爛兮，糺縵縵兮。\n日月光華，旦復旦兮。",
+        "lineCount": 2,
+        "charCount": 20
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "anthology-section-extraction"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-PRE-QIN-516b-4f2f-6b4c-2d-4f5a-540d",
+      "country": "CN",
+      "eraSlug": "pre-qin",
+      "title": {
+        "zh": "八伯歌",
+        "ko": null
+      },
+      "author": {
+        "zh": "佚名",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "古詩源",
+        "section": "卷一古逸",
+        "kind": "anthology-section"
+      },
+      "text": {
+        "poemZh": "明明上天，爛然星陳。\n日月光華，弘於一人。",
+        "lineCount": 2,
+        "charCount": 20
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "anthology-section-extraction"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-PRE-QIN-5e1d-8f09-6b4c-2d-4f5a-540d",
+      "country": "CN",
+      "eraSlug": "pre-qin",
+      "title": {
+        "zh": "帝載歌",
+        "ko": null
+      },
+      "author": {
+        "zh": "佚名",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "古詩源",
+        "section": "卷一古逸",
+        "kind": "anthology-section"
+      },
+      "text": {
+        "poemZh": "日月有常，星辰有行。\n四時從經，萬姓允誠。\n於予論樂，配天之靈。\n遷於賢善，莫不咸聽。\n鼚乎鼓之，軒乎舞之。\n菁華已竭，褰裳去之。",
+        "lineCount": 6,
+        "charCount": 60
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "anthology-section-extraction"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-PRE-QIN-5357-98a8-6b4c-2d-4f5a-540d",
+      "country": "CN",
+      "eraSlug": "pre-qin",
+      "title": {
+        "zh": "南風歌",
+        "ko": null
+      },
+      "author": {
+        "zh": "佚名",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "古詩源",
+        "section": "卷一古逸",
+        "kind": "anthology-section"
+      },
+      "text": {
+        "poemZh": "南風之熏兮，可以解吾民之慍兮！\n南風之時兮，可以阜吾民之財兮！",
+        "lineCount": 2,
+        "charCount": 30
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "anthology-section-extraction"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-PRE-QIN-79b9-7389-7252-8fad-2d-4f5a-540d",
+      "country": "CN",
+      "eraSlug": "pre-qin",
+      "title": {
+        "zh": "禹玉牒辭",
+        "ko": null
+      },
+      "author": {
+        "zh": "佚名",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "古詩源",
+        "section": "卷一古逸",
+        "kind": "anthology-section"
+      },
+      "text": {
+        "poemZh": "祝融司方發其英，\n沐日浴月百寶生。",
+        "lineCount": 2,
+        "charCount": 16
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "anthology-section-extraction"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-PRE-QIN-590f-5f8c-9444-9f0e-7e47-2d-4f5a-540d",
+      "country": "CN",
+      "eraSlug": "pre-qin",
+      "title": {
+        "zh": "夏後鑄鼎繇",
+        "ko": null
+      },
+      "author": {
+        "zh": "佚名",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "古詩源",
+        "section": "卷一古逸",
+        "kind": "anthology-section"
+      },
+      "text": {
+        "poemZh": "逢逢白雲，一南一北，一西一東。\n九鼎既成，遷於三國。",
+        "lineCount": 2,
+        "charCount": 25
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "anthology-section-extraction"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-PRE-QIN-5546-9298-2d-4f5a-540d",
+      "country": "CN",
+      "eraSlug": "pre-qin",
+      "title": {
+        "zh": "商銘",
+        "ko": null
+      },
+      "author": {
+        "zh": "佚名",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "古詩源",
+        "section": "卷一古逸",
+        "kind": "anthology-section"
+      },
+      "text": {
+        "poemZh": "嗛嗛之德，不足就也，不可以矜，而祗取憂也。\n嗛嗛之食，不足狃也，不能為膏，而祗離咎也。",
+        "lineCount": 2,
+        "charCount": 42
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "anthology-section-extraction"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-PRE-QIN-9ea5-79c0-6b4c-2d-4f5a-540d",
+      "country": "CN",
+      "eraSlug": "pre-qin",
+      "title": {
+        "zh": "麥秀歌",
+        "ko": null
+      },
+      "author": {
+        "zh": "佚名",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "古詩源",
+        "section": "卷一古逸",
+        "kind": "anthology-section"
+      },
+      "text": {
+        "poemZh": "麥秀漸漸兮，禾黍油油，\n彼狡童兮，不與我好兮。",
+        "lineCount": 2,
+        "charCount": 22
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "anthology-section-extraction"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-PRE-QIN-91c7-8587-6b4c-2d-4f5a-540d",
+      "country": "CN",
+      "eraSlug": "pre-qin",
+      "title": {
+        "zh": "采薇歌",
+        "ko": null
+      },
+      "author": {
+        "zh": "佚名",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "古詩源",
+        "section": "卷一古逸",
+        "kind": "anthology-section"
+      },
+      "text": {
+        "poemZh": "登彼西山兮，采其薇矣。\n以暴易暴兮，不知其非矣。\n神農虞夏，忽焉沒兮，吾適安歸矣？\n籲嗟徂兮，命之衰矣。",
+        "lineCount": 4,
+        "charCount": 49
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "anthology-section-extraction",
+          "uncertain-author-or-text-marker"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-PRE-QIN-76e5-76e4-9298-2d-4f5a-540d",
+      "country": "CN",
+      "eraSlug": "pre-qin",
+      "title": {
+        "zh": "盥盤銘",
+        "ko": null
+      },
+      "author": {
+        "zh": "佚名",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "古詩源",
+        "section": "卷一古逸",
+        "kind": "anthology-section"
+      },
+      "text": {
+        "poemZh": "與其溺於人也，甯溺於淵。\n溺于淵猶可遊也，溺於人不可救也。",
+        "lineCount": 2,
+        "charCount": 28
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "anthology-section-extraction"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-PRE-QIN-5e36-9298-2d-4f5a-540d",
+      "country": "CN",
+      "eraSlug": "pre-qin",
+      "title": {
+        "zh": "帶銘",
+        "ko": null
+      },
+      "author": {
+        "zh": "佚名",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "古詩源",
+        "section": "卷一古逸",
+        "kind": "anthology-section"
+      },
+      "text": {
+        "poemZh": "火滅修容，慎戒必恭，恭則壽。",
+        "lineCount": 1,
+        "charCount": 14
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "anthology-section-extraction",
+          "short-text"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-PRE-QIN-6756-9298-2d-4f5a-540d",
+      "country": "CN",
+      "eraSlug": "pre-qin",
+      "title": {
+        "zh": "杖銘",
+        "ko": null
+      },
+      "author": {
+        "zh": "佚名",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "古詩源",
+        "section": "卷一古逸",
+        "kind": "anthology-section"
+      },
+      "text": {
+        "poemZh": "惡乎危，於忿懥。\n惡乎失道，於嗜欲。\n惡乎相忘，于富貴。",
+        "lineCount": 3,
+        "charCount": 26
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "anthology-section-extraction"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-PRE-QIN-8863-9298-2d-4f5a-540d",
+      "country": "CN",
+      "eraSlug": "pre-qin",
+      "title": {
+        "zh": "衣銘",
+        "ko": null
+      },
+      "author": {
+        "zh": "佚名",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "古詩源",
+        "section": "卷一古逸",
+        "kind": "anthology-section"
+      },
+      "text": {
+        "poemZh": "桑蠶苦，女工難，得新捐故後必寒。",
+        "lineCount": 1,
+        "charCount": 16
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "anthology-section-extraction",
+          "short-text"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-PRE-QIN-7b46-9298-2d-4f5a-540d",
+      "country": "CN",
+      "eraSlug": "pre-qin",
+      "title": {
+        "zh": "筆銘",
+        "ko": null
+      },
+      "author": {
+        "zh": "佚名",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "古詩源",
+        "section": "卷一古逸",
+        "kind": "anthology-section"
+      },
+      "text": {
+        "poemZh": "豪毛茂茂，陷水可脫，陷文不活。",
+        "lineCount": 1,
+        "charCount": 15
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "anthology-section-extraction",
+          "short-text"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-PRE-QIN-77db-9298-2d-4f5a-540d",
+      "country": "CN",
+      "eraSlug": "pre-qin",
+      "title": {
+        "zh": "矛銘",
+        "ko": null
+      },
+      "author": {
+        "zh": "佚名",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "古詩源",
+        "section": "卷一古逸",
+        "kind": "anthology-section"
+      },
+      "text": {
+        "poemZh": "造矛造矛，少間弗忍，終身之羞。\n餘一人所聞。以戒後世子孫。",
+        "lineCount": 2,
+        "charCount": 28
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "anthology-section-extraction"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-PRE-QIN-66f8-8eca-2d-4f5a-540d",
+      "country": "CN",
+      "eraSlug": "pre-qin",
+      "title": {
+        "zh": "書車",
+        "ko": null
+      },
+      "author": {
+        "zh": "佚名",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "古詩源",
+        "section": "卷一古逸",
+        "kind": "anthology-section"
+      },
+      "text": {
+        "poemZh": "出畏之，入懼之。",
+        "lineCount": 1,
+        "charCount": 8
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "anthology-section-extraction",
+          "short-text"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-PRE-QIN-66f8-6236-2d-4f5a-540d",
+      "country": "CN",
+      "eraSlug": "pre-qin",
+      "title": {
+        "zh": "書戶",
+        "ko": null
+      },
+      "author": {
+        "zh": "佚名",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "古詩源",
+        "section": "卷一古逸",
+        "kind": "anthology-section"
+      },
+      "text": {
+        "poemZh": "行必履正，無懷僥倖。",
+        "lineCount": 1,
+        "charCount": 10
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "anthology-section-extraction",
+          "short-text"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-PRE-QIN-66f8-5c65-2d-4f5a-540d",
+      "country": "CN",
+      "eraSlug": "pre-qin",
+      "title": {
+        "zh": "書履",
+        "ko": null
+      },
+      "author": {
+        "zh": "佚名",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "古詩源",
+        "section": "卷一古逸",
+        "kind": "anthology-section"
+      },
+      "text": {
+        "poemZh": "行必履正，無懷僥倖。",
+        "lineCount": 1,
+        "charCount": 10
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "anthology-section-extraction",
+          "short-text"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-PRE-QIN-66f8-786f-2d-4f5a-540d",
+      "country": "CN",
+      "eraSlug": "pre-qin",
+      "title": {
+        "zh": "書硯",
+        "ko": null
+      },
+      "author": {
+        "zh": "佚名",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "古詩源",
+        "section": "卷一古逸",
+        "kind": "anthology-section"
+      },
+      "text": {
+        "poemZh": "石墨相著而黑，邪心讒言，無得汙白。",
+        "lineCount": 1,
+        "charCount": 17
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "anthology-section-extraction",
+          "short-text"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-PRE-QIN-66f8-92d2-2d-4f5a-540d",
+      "country": "CN",
+      "eraSlug": "pre-qin",
+      "title": {
+        "zh": "書鋒",
+        "ko": null
+      },
+      "author": {
+        "zh": "佚名",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "古詩源",
+        "section": "卷一古逸",
+        "kind": "anthology-section"
+      },
+      "text": {
+        "poemZh": "忍之須臾，乃全汝軀。",
+        "lineCount": 1,
+        "charCount": 10
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "anthology-section-extraction",
+          "short-text"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-PRE-QIN-66f8-6756-2d-4f5a-540d",
+      "country": "CN",
+      "eraSlug": "pre-qin",
+      "title": {
+        "zh": "書杖",
+        "ko": null
+      },
+      "author": {
+        "zh": "佚名",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "古詩源",
+        "section": "卷一古逸",
+        "kind": "anthology-section"
+      },
+      "text": {
+        "poemZh": "輔人無苟，扶人無咎。",
+        "lineCount": 1,
+        "charCount": 10
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "anthology-section-extraction",
+          "short-text"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-PRE-QIN-66f8-4e95-2d-4f5a-540d",
+      "country": "CN",
+      "eraSlug": "pre-qin",
+      "title": {
+        "zh": "書井",
+        "ko": null
+      },
+      "author": {
+        "zh": "佚名",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "古詩源",
+        "section": "卷一古逸",
+        "kind": "anthology-section"
+      },
+      "text": {
+        "poemZh": "原泉滑滑，連旱則絶。\n取事有常，賦斂有節。",
+        "lineCount": 2,
+        "charCount": 20
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "anthology-section-extraction"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-HAN-4e0a-90aa-2d-7121-540d-6c0f-2f-6f22-6a02-5e9c",
+      "country": "CN",
+      "eraSlug": "han",
+      "title": {
+        "zh": "上邪",
+        "ko": null
+      },
+      "author": {
+        "zh": "無名氏/漢樂府",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "上邪",
+        "section": null,
+        "kind": "standalone-page"
+      },
+      "text": {
+        "poemZh": "我欲與君相知\n長命無絶衰\n山無陵\n江水為竭\n冬雷震震\n夏雨雪\n天地合\n乃敢與君絶",
+        "lineCount": 8,
+        "charCount": 33
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "standalone-page-reuse"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-HAN-884c-884c-91cd-884c-884c-2d-4f5a-540d",
+      "country": "CN",
+      "eraSlug": "han",
+      "title": {
+        "zh": "行行重行行",
+        "ko": null
+      },
+      "author": {
+        "zh": "佚名",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "行行重行行",
+        "section": null,
+        "kind": "standalone-page"
+      },
+      "text": {
+        "poemZh": "行行重行行 與君生別離\n相去萬餘里 各在天一涯\n道路阻且長 會面安可知\n胡馬依北風 越鳥巢南枝\n相去日已遠 衣帶日已緩\n浮雲蔽白日 遊子不顧反\n思君令人老 歲月忽已晚\n棄捐勿復道 努力加餐飯",
+        "lineCount": 8,
+        "charCount": 80
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "standalone-page-reuse"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-HAN-8fe2-8fe2-727d-725b-661f-2d-4f5a-540d",
+      "country": "CN",
+      "eraSlug": "han",
+      "title": {
+        "zh": "迢迢牽牛星",
+        "ko": null
+      },
+      "author": {
+        "zh": "佚名",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "迢迢牽牛星",
+        "section": null,
+        "kind": "standalone-page"
+      },
+      "text": {
+        "poemZh": "迢迢牽牛星 皎皎河漢女\n纎纎擢素手 札札弄機杼\n終日不成章 泣涕零如雨\n河漢清且淺 相去復幾許\n盈盈一水間 脈脈不得語",
+        "lineCount": 5,
+        "charCount": 50
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "standalone-page-reuse"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    }
+  ]
+}

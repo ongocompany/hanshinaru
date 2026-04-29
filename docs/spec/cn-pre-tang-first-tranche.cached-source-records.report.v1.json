@@ -1,0 +1,24 @@
+{
+  "batchId": "cn-pre-tang-first-tranche-cached-sources",
+  "generatedAt": "2026-04-29T21:50:15.437Z",
+  "source": "/Users/jinwoo/Documents/development/hanshinaru/docs/spec/cn-non-tang-tranche1.sources.raw.json",
+  "summary": {
+    "sourcePages": 10,
+    "extractedRecords": 29,
+    "byEra": {
+      "pre-qin": 26,
+      "han": 3
+    },
+    "bySourcePage": {
+      "古詩源": 26,
+      "上邪": 1,
+      "行行重行行": 1,
+      "迢迢牽牛星": 1
+    }
+  },
+  "policy": [
+    "This is a companion-source recovery after exact 先秦漢魏晉南北朝詩 volume titles were missing in the zhwikisource dump.",
+    "Records are source witnesses, not final DB upserts.",
+    "詩經 and 楚辭 remain excluded from this first tranche body."
+  ]
+}
