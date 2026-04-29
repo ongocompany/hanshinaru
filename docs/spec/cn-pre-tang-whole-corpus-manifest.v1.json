@@ -1,0 +1,3873 @@
+{
+  "version": "2026-04-30.v1",
+  "sourceWork": {
+    "titleZh": "先秦漢魏晉南北朝詩",
+    "editorZh": "逯欽立",
+    "bibliographicScope": "先秦至隋; excludes 詩經 and 楚辭 from the main body",
+    "role": "index-manifest-only",
+    "rightsNote": "Use this as a collection index and provenance scaffold only. Public poem text must come from public-domain source witnesses such as Wikisource pages, older anthologies, or public scans."
+  },
+  "extractionPlan": {
+    "firstTrancheEraSlugs": [
+      "pre-qin",
+      "han"
+    ],
+    "sourceLookupOrder": [
+      "zh Wikisource exact title/page lookup",
+      "zh Wikisource anthology or transclusion target lookup",
+      "public classical-text source cross-check",
+      "public scan OCR fallback",
+      "manual review queue"
+    ],
+    "excludedClassicFamilies": [
+      "詩經",
+      "楚辭"
+    ],
+    "companionSources": [
+      "樂府詩集",
+      "玉臺新詠",
+      "昭明文選",
+      "古詩源"
+    ]
+  },
+  "eras": [
+    {
+      "eraSlug": "pre-qin",
+      "eraNameZh": "先秦",
+      "volumePrefixZh": "先秦詩",
+      "volumeCount": 7,
+      "collectionFamily": "pre-qin-poetry",
+      "firstPassPolicy": "exclude-shijing-chuci",
+      "notes": [
+        "詩經 and 楚辭 are separate classic families, not folded into this manifest body.",
+        "Expect many anonymous songs, sayings, and fragmentary verse; provenance review is mandatory."
+      ]
+    },
+    {
+      "eraSlug": "han",
+      "eraNameZh": "漢",
+      "volumePrefixZh": "漢詩",
+      "volumeCount": 12,
+      "collectionFamily": "han-poetry",
+      "firstPassPolicy": "separate-yuefu-and-gushi19",
+      "notes": [
+        "漢樂府 and 古詩十九首 should be tagged as subfamilies before DB upsert.",
+        "Attribution-sensitive works such as 蔡琰 material remain review-first."
+      ]
+    },
+    {
+      "eraSlug": "wei",
+      "eraNameZh": "魏",
+      "volumePrefixZh": "魏詩",
+      "volumeCount": 12,
+      "collectionFamily": "wei-jin-northern-southern-poetry",
+      "firstPassPolicy": "jianan-core-first",
+      "notes": [
+        "曹氏 and 建安 poets are good early validation targets."
+      ]
+    },
+    {
+      "eraSlug": "jin",
+      "eraNameZh": "晉",
+      "volumePrefixZh": "晉詩",
+      "volumeCount": 21,
+      "collectionFamily": "wei-jin-northern-southern-poetry",
+      "firstPassPolicy": "tao-ruan-anchor-first",
+      "notes": [
+        "阮籍 and 陶淵明 should be treated as anchor authors before long-tail expansion."
+      ]
+    },
+    {
+      "eraSlug": "liu-song",
+      "eraNameZh": "宋",
+      "displayEraZh": "南朝宋",
+      "volumePrefixZh": "宋詩",
+      "volumeCount": 12,
+      "collectionFamily": "southern-dynasties-poetry",
+      "firstPassPolicy": "xie-bao-anchor-first",
+      "notes": [
+        "Use displayEraZh to avoid confusion with later 宋 dynasty collection targets."
+      ]
+    },
+    {
+      "eraSlug": "qi",
+      "eraNameZh": "齊",
+      "displayEraZh": "南朝齊",
+      "volumePrefixZh": "齊詩",
+      "volumeCount": 7,
+      "collectionFamily": "southern-dynasties-poetry",
+      "firstPassPolicy": "yongming-style-review",
+      "notes": [
+        "謝朓 and 永明體 material need author and form tagging."
+      ]
+    },
+    {
+      "eraSlug": "liang",
+      "eraNameZh": "梁",
+      "volumePrefixZh": "梁詩",
+      "volumeCount": 30,
+      "collectionFamily": "southern-dynasties-poetry",
+      "firstPassPolicy": "defer-until-parser-stable",
+      "notes": [
+        "Largest block in the pre-Tang corpus; enter after first-pass parser proof."
+      ]
+    },
+    {
+      "eraSlug": "northern-wei",
+      "eraNameZh": "北魏",
+      "volumePrefixZh": "北魏詩",
+      "volumeCount": 4,
+      "collectionFamily": "northern-dynasties-poetry",
+      "firstPassPolicy": "northern-dynasty-supplement",
+      "notes": [
+        "Keep northern-dynasty provenance visible; do not merge under southern dynasties."
+      ]
+    },
+    {
+      "eraSlug": "northern-qi",
+      "eraNameZh": "北齊",
+      "volumePrefixZh": "北齊詩",
+      "volumeCount": 4,
+      "collectionFamily": "northern-dynasties-poetry",
+      "firstPassPolicy": "northern-dynasty-supplement",
+      "notes": [
+        "Small block; useful for testing low-volume era handling."
+      ]
+    },
+    {
+      "eraSlug": "northern-zhou",
+      "eraNameZh": "北周",
+      "volumePrefixZh": "北周詩",
+      "volumeCount": 6,
+      "collectionFamily": "northern-dynasties-poetry",
+      "firstPassPolicy": "yuxin-anchor-review",
+      "notes": [
+        "庾信-related material may cross southern and northern dynasty contexts."
+      ]
+    },
+    {
+      "eraSlug": "chen",
+      "eraNameZh": "陳",
+      "volumePrefixZh": "陳詩",
+      "volumeCount": 10,
+      "collectionFamily": "southern-dynasties-poetry",
+      "firstPassPolicy": "late-southern-dynasty",
+      "notes": [
+        "Late southern-dynasty material should stay separate from Sui transition records."
+      ]
+    },
+    {
+      "eraSlug": "sui",
+      "eraNameZh": "隋",
+      "volumePrefixZh": "隋詩",
+      "volumeCount": 10,
+      "collectionFamily": "sui-poetry",
+      "firstPassPolicy": "pre-tang-boundary-review",
+      "notes": [
+        "Tang-adjacent works require boundary review before public display."
+      ]
+    }
+  ],
+  "generatedAt": "2026-04-29T21:10:39.952Z",
+  "volumes": [
+    {
+      "volumeId": "CN-PRETANG-PRE-QIN-01",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "pre-qin",
+      "eraNameZh": "先秦",
+      "displayEraZh": "先秦",
+      "collectionFamily": "pre-qin-poetry",
+      "volumeNumberWithinEra": 1,
+      "volumeTitleZh": "先秦詩卷一",
+      "firstPassPolicy": "exclude-shijing-chuci",
+      "lookupStatus": "first-tranche",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/先秦詩卷一",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "先秦詩卷一",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "companion-source",
+          "title": "古詩源",
+          "status": "fallback-candidate"
+        }
+      ],
+      "notes": [
+        "詩經 and 楚辭 are separate classic families, not folded into this manifest body.",
+        "Expect many anonymous songs, sayings, and fragmentary verse; provenance review is mandatory."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-PRE-QIN-02",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "pre-qin",
+      "eraNameZh": "先秦",
+      "displayEraZh": "先秦",
+      "collectionFamily": "pre-qin-poetry",
+      "volumeNumberWithinEra": 2,
+      "volumeTitleZh": "先秦詩卷二",
+      "firstPassPolicy": "exclude-shijing-chuci",
+      "lookupStatus": "first-tranche",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/先秦詩卷二",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "先秦詩卷二",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "companion-source",
+          "title": "古詩源",
+          "status": "fallback-candidate"
+        }
+      ],
+      "notes": [
+        "詩經 and 楚辭 are separate classic families, not folded into this manifest body.",
+        "Expect many anonymous songs, sayings, and fragmentary verse; provenance review is mandatory."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-PRE-QIN-03",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "pre-qin",
+      "eraNameZh": "先秦",
+      "displayEraZh": "先秦",
+      "collectionFamily": "pre-qin-poetry",
+      "volumeNumberWithinEra": 3,
+      "volumeTitleZh": "先秦詩卷三",
+      "firstPassPolicy": "exclude-shijing-chuci",
+      "lookupStatus": "first-tranche",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/先秦詩卷三",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "先秦詩卷三",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "companion-source",
+          "title": "古詩源",
+          "status": "fallback-candidate"
+        }
+      ],
+      "notes": [
+        "詩經 and 楚辭 are separate classic families, not folded into this manifest body.",
+        "Expect many anonymous songs, sayings, and fragmentary verse; provenance review is mandatory."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-PRE-QIN-04",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "pre-qin",
+      "eraNameZh": "先秦",
+      "displayEraZh": "先秦",
+      "collectionFamily": "pre-qin-poetry",
+      "volumeNumberWithinEra": 4,
+      "volumeTitleZh": "先秦詩卷四",
+      "firstPassPolicy": "exclude-shijing-chuci",
+      "lookupStatus": "first-tranche",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/先秦詩卷四",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "先秦詩卷四",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "companion-source",
+          "title": "古詩源",
+          "status": "fallback-candidate"
+        }
+      ],
+      "notes": [
+        "詩經 and 楚辭 are separate classic families, not folded into this manifest body.",
+        "Expect many anonymous songs, sayings, and fragmentary verse; provenance review is mandatory."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-PRE-QIN-05",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "pre-qin",
+      "eraNameZh": "先秦",
+      "displayEraZh": "先秦",
+      "collectionFamily": "pre-qin-poetry",
+      "volumeNumberWithinEra": 5,
+      "volumeTitleZh": "先秦詩卷五",
+      "firstPassPolicy": "exclude-shijing-chuci",
+      "lookupStatus": "first-tranche",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/先秦詩卷五",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "先秦詩卷五",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "companion-source",
+          "title": "古詩源",
+          "status": "fallback-candidate"
+        }
+      ],
+      "notes": [
+        "詩經 and 楚辭 are separate classic families, not folded into this manifest body.",
+        "Expect many anonymous songs, sayings, and fragmentary verse; provenance review is mandatory."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-PRE-QIN-06",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "pre-qin",
+      "eraNameZh": "先秦",
+      "displayEraZh": "先秦",
+      "collectionFamily": "pre-qin-poetry",
+      "volumeNumberWithinEra": 6,
+      "volumeTitleZh": "先秦詩卷六",
+      "firstPassPolicy": "exclude-shijing-chuci",
+      "lookupStatus": "first-tranche",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/先秦詩卷六",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "先秦詩卷六",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "companion-source",
+          "title": "古詩源",
+          "status": "fallback-candidate"
+        }
+      ],
+      "notes": [
+        "詩經 and 楚辭 are separate classic families, not folded into this manifest body.",
+        "Expect many anonymous songs, sayings, and fragmentary verse; provenance review is mandatory."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-PRE-QIN-07",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "pre-qin",
+      "eraNameZh": "先秦",
+      "displayEraZh": "先秦",
+      "collectionFamily": "pre-qin-poetry",
+      "volumeNumberWithinEra": 7,
+      "volumeTitleZh": "先秦詩卷七",
+      "firstPassPolicy": "exclude-shijing-chuci",
+      "lookupStatus": "first-tranche",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/先秦詩卷七",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "先秦詩卷七",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "companion-source",
+          "title": "古詩源",
+          "status": "fallback-candidate"
+        }
+      ],
+      "notes": [
+        "詩經 and 楚辭 are separate classic families, not folded into this manifest body.",
+        "Expect many anonymous songs, sayings, and fragmentary verse; provenance review is mandatory."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-HAN-01",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "han",
+      "eraNameZh": "漢",
+      "displayEraZh": "漢",
+      "collectionFamily": "han-poetry",
+      "volumeNumberWithinEra": 1,
+      "volumeTitleZh": "漢詩卷一",
+      "firstPassPolicy": "separate-yuefu-and-gushi19",
+      "lookupStatus": "first-tranche",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/漢詩卷一",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "漢詩卷一",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "漢樂府 and 古詩十九首 should be tagged as subfamilies before DB upsert.",
+        "Attribution-sensitive works such as 蔡琰 material remain review-first."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-HAN-02",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "han",
+      "eraNameZh": "漢",
+      "displayEraZh": "漢",
+      "collectionFamily": "han-poetry",
+      "volumeNumberWithinEra": 2,
+      "volumeTitleZh": "漢詩卷二",
+      "firstPassPolicy": "separate-yuefu-and-gushi19",
+      "lookupStatus": "first-tranche",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/漢詩卷二",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "漢詩卷二",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "漢樂府 and 古詩十九首 should be tagged as subfamilies before DB upsert.",
+        "Attribution-sensitive works such as 蔡琰 material remain review-first."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-HAN-03",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "han",
+      "eraNameZh": "漢",
+      "displayEraZh": "漢",
+      "collectionFamily": "han-poetry",
+      "volumeNumberWithinEra": 3,
+      "volumeTitleZh": "漢詩卷三",
+      "firstPassPolicy": "separate-yuefu-and-gushi19",
+      "lookupStatus": "first-tranche",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/漢詩卷三",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "漢詩卷三",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "漢樂府 and 古詩十九首 should be tagged as subfamilies before DB upsert.",
+        "Attribution-sensitive works such as 蔡琰 material remain review-first."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-HAN-04",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "han",
+      "eraNameZh": "漢",
+      "displayEraZh": "漢",
+      "collectionFamily": "han-poetry",
+      "volumeNumberWithinEra": 4,
+      "volumeTitleZh": "漢詩卷四",
+      "firstPassPolicy": "separate-yuefu-and-gushi19",
+      "lookupStatus": "first-tranche",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/漢詩卷四",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "漢詩卷四",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "漢樂府 and 古詩十九首 should be tagged as subfamilies before DB upsert.",
+        "Attribution-sensitive works such as 蔡琰 material remain review-first."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-HAN-05",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "han",
+      "eraNameZh": "漢",
+      "displayEraZh": "漢",
+      "collectionFamily": "han-poetry",
+      "volumeNumberWithinEra": 5,
+      "volumeTitleZh": "漢詩卷五",
+      "firstPassPolicy": "separate-yuefu-and-gushi19",
+      "lookupStatus": "first-tranche",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/漢詩卷五",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "漢詩卷五",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "漢樂府 and 古詩十九首 should be tagged as subfamilies before DB upsert.",
+        "Attribution-sensitive works such as 蔡琰 material remain review-first."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-HAN-06",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "han",
+      "eraNameZh": "漢",
+      "displayEraZh": "漢",
+      "collectionFamily": "han-poetry",
+      "volumeNumberWithinEra": 6,
+      "volumeTitleZh": "漢詩卷六",
+      "firstPassPolicy": "separate-yuefu-and-gushi19",
+      "lookupStatus": "first-tranche",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/漢詩卷六",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "漢詩卷六",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "漢樂府 and 古詩十九首 should be tagged as subfamilies before DB upsert.",
+        "Attribution-sensitive works such as 蔡琰 material remain review-first."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-HAN-07",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "han",
+      "eraNameZh": "漢",
+      "displayEraZh": "漢",
+      "collectionFamily": "han-poetry",
+      "volumeNumberWithinEra": 7,
+      "volumeTitleZh": "漢詩卷七",
+      "firstPassPolicy": "separate-yuefu-and-gushi19",
+      "lookupStatus": "first-tranche",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/漢詩卷七",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "漢詩卷七",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "漢樂府 and 古詩十九首 should be tagged as subfamilies before DB upsert.",
+        "Attribution-sensitive works such as 蔡琰 material remain review-first."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-HAN-08",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "han",
+      "eraNameZh": "漢",
+      "displayEraZh": "漢",
+      "collectionFamily": "han-poetry",
+      "volumeNumberWithinEra": 8,
+      "volumeTitleZh": "漢詩卷八",
+      "firstPassPolicy": "separate-yuefu-and-gushi19",
+      "lookupStatus": "first-tranche",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/漢詩卷八",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "漢詩卷八",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "漢樂府 and 古詩十九首 should be tagged as subfamilies before DB upsert.",
+        "Attribution-sensitive works such as 蔡琰 material remain review-first."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-HAN-09",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "han",
+      "eraNameZh": "漢",
+      "displayEraZh": "漢",
+      "collectionFamily": "han-poetry",
+      "volumeNumberWithinEra": 9,
+      "volumeTitleZh": "漢詩卷九",
+      "firstPassPolicy": "separate-yuefu-and-gushi19",
+      "lookupStatus": "first-tranche",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/漢詩卷九",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "漢詩卷九",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "漢樂府 and 古詩十九首 should be tagged as subfamilies before DB upsert.",
+        "Attribution-sensitive works such as 蔡琰 material remain review-first."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-HAN-10",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "han",
+      "eraNameZh": "漢",
+      "displayEraZh": "漢",
+      "collectionFamily": "han-poetry",
+      "volumeNumberWithinEra": 10,
+      "volumeTitleZh": "漢詩卷十",
+      "firstPassPolicy": "separate-yuefu-and-gushi19",
+      "lookupStatus": "first-tranche",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/漢詩卷十",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "漢詩卷十",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "漢樂府 and 古詩十九首 should be tagged as subfamilies before DB upsert.",
+        "Attribution-sensitive works such as 蔡琰 material remain review-first."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-HAN-11",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "han",
+      "eraNameZh": "漢",
+      "displayEraZh": "漢",
+      "collectionFamily": "han-poetry",
+      "volumeNumberWithinEra": 11,
+      "volumeTitleZh": "漢詩卷十一",
+      "firstPassPolicy": "separate-yuefu-and-gushi19",
+      "lookupStatus": "first-tranche",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/漢詩卷十一",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "漢詩卷十一",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "漢樂府 and 古詩十九首 should be tagged as subfamilies before DB upsert.",
+        "Attribution-sensitive works such as 蔡琰 material remain review-first."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-HAN-12",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "han",
+      "eraNameZh": "漢",
+      "displayEraZh": "漢",
+      "collectionFamily": "han-poetry",
+      "volumeNumberWithinEra": 12,
+      "volumeTitleZh": "漢詩卷十二",
+      "firstPassPolicy": "separate-yuefu-and-gushi19",
+      "lookupStatus": "first-tranche",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/漢詩卷十二",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "漢詩卷十二",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "漢樂府 and 古詩十九首 should be tagged as subfamilies before DB upsert.",
+        "Attribution-sensitive works such as 蔡琰 material remain review-first."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-WEI-01",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "wei",
+      "eraNameZh": "魏",
+      "displayEraZh": "魏",
+      "collectionFamily": "wei-jin-northern-southern-poetry",
+      "volumeNumberWithinEra": 1,
+      "volumeTitleZh": "魏詩卷一",
+      "firstPassPolicy": "jianan-core-first",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/魏詩卷一",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "魏詩卷一",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "曹氏 and 建安 poets are good early validation targets."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-WEI-02",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "wei",
+      "eraNameZh": "魏",
+      "displayEraZh": "魏",
+      "collectionFamily": "wei-jin-northern-southern-poetry",
+      "volumeNumberWithinEra": 2,
+      "volumeTitleZh": "魏詩卷二",
+      "firstPassPolicy": "jianan-core-first",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/魏詩卷二",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "魏詩卷二",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "曹氏 and 建安 poets are good early validation targets."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-WEI-03",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "wei",
+      "eraNameZh": "魏",
+      "displayEraZh": "魏",
+      "collectionFamily": "wei-jin-northern-southern-poetry",
+      "volumeNumberWithinEra": 3,
+      "volumeTitleZh": "魏詩卷三",
+      "firstPassPolicy": "jianan-core-first",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/魏詩卷三",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "魏詩卷三",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "曹氏 and 建安 poets are good early validation targets."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-WEI-04",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "wei",
+      "eraNameZh": "魏",
+      "displayEraZh": "魏",
+      "collectionFamily": "wei-jin-northern-southern-poetry",
+      "volumeNumberWithinEra": 4,
+      "volumeTitleZh": "魏詩卷四",
+      "firstPassPolicy": "jianan-core-first",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/魏詩卷四",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "魏詩卷四",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "曹氏 and 建安 poets are good early validation targets."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-WEI-05",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "wei",
+      "eraNameZh": "魏",
+      "displayEraZh": "魏",
+      "collectionFamily": "wei-jin-northern-southern-poetry",
+      "volumeNumberWithinEra": 5,
+      "volumeTitleZh": "魏詩卷五",
+      "firstPassPolicy": "jianan-core-first",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/魏詩卷五",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "魏詩卷五",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "曹氏 and 建安 poets are good early validation targets."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-WEI-06",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "wei",
+      "eraNameZh": "魏",
+      "displayEraZh": "魏",
+      "collectionFamily": "wei-jin-northern-southern-poetry",
+      "volumeNumberWithinEra": 6,
+      "volumeTitleZh": "魏詩卷六",
+      "firstPassPolicy": "jianan-core-first",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/魏詩卷六",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "魏詩卷六",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "曹氏 and 建安 poets are good early validation targets."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-WEI-07",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "wei",
+      "eraNameZh": "魏",
+      "displayEraZh": "魏",
+      "collectionFamily": "wei-jin-northern-southern-poetry",
+      "volumeNumberWithinEra": 7,
+      "volumeTitleZh": "魏詩卷七",
+      "firstPassPolicy": "jianan-core-first",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/魏詩卷七",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "魏詩卷七",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "曹氏 and 建安 poets are good early validation targets."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-WEI-08",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "wei",
+      "eraNameZh": "魏",
+      "displayEraZh": "魏",
+      "collectionFamily": "wei-jin-northern-southern-poetry",
+      "volumeNumberWithinEra": 8,
+      "volumeTitleZh": "魏詩卷八",
+      "firstPassPolicy": "jianan-core-first",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/魏詩卷八",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "魏詩卷八",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "曹氏 and 建安 poets are good early validation targets."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-WEI-09",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "wei",
+      "eraNameZh": "魏",
+      "displayEraZh": "魏",
+      "collectionFamily": "wei-jin-northern-southern-poetry",
+      "volumeNumberWithinEra": 9,
+      "volumeTitleZh": "魏詩卷九",
+      "firstPassPolicy": "jianan-core-first",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/魏詩卷九",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "魏詩卷九",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "曹氏 and 建安 poets are good early validation targets."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-WEI-10",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "wei",
+      "eraNameZh": "魏",
+      "displayEraZh": "魏",
+      "collectionFamily": "wei-jin-northern-southern-poetry",
+      "volumeNumberWithinEra": 10,
+      "volumeTitleZh": "魏詩卷十",
+      "firstPassPolicy": "jianan-core-first",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/魏詩卷十",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "魏詩卷十",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "曹氏 and 建安 poets are good early validation targets."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-WEI-11",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "wei",
+      "eraNameZh": "魏",
+      "displayEraZh": "魏",
+      "collectionFamily": "wei-jin-northern-southern-poetry",
+      "volumeNumberWithinEra": 11,
+      "volumeTitleZh": "魏詩卷十一",
+      "firstPassPolicy": "jianan-core-first",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/魏詩卷十一",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "魏詩卷十一",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "曹氏 and 建安 poets are good early validation targets."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-WEI-12",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "wei",
+      "eraNameZh": "魏",
+      "displayEraZh": "魏",
+      "collectionFamily": "wei-jin-northern-southern-poetry",
+      "volumeNumberWithinEra": 12,
+      "volumeTitleZh": "魏詩卷十二",
+      "firstPassPolicy": "jianan-core-first",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/魏詩卷十二",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "魏詩卷十二",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "曹氏 and 建安 poets are good early validation targets."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-JIN-01",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "jin",
+      "eraNameZh": "晉",
+      "displayEraZh": "晉",
+      "collectionFamily": "wei-jin-northern-southern-poetry",
+      "volumeNumberWithinEra": 1,
+      "volumeTitleZh": "晉詩卷一",
+      "firstPassPolicy": "tao-ruan-anchor-first",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/晉詩卷一",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "晉詩卷一",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "阮籍 and 陶淵明 should be treated as anchor authors before long-tail expansion."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-JIN-02",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "jin",
+      "eraNameZh": "晉",
+      "displayEraZh": "晉",
+      "collectionFamily": "wei-jin-northern-southern-poetry",
+      "volumeNumberWithinEra": 2,
+      "volumeTitleZh": "晉詩卷二",
+      "firstPassPolicy": "tao-ruan-anchor-first",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/晉詩卷二",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "晉詩卷二",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "阮籍 and 陶淵明 should be treated as anchor authors before long-tail expansion."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-JIN-03",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "jin",
+      "eraNameZh": "晉",
+      "displayEraZh": "晉",
+      "collectionFamily": "wei-jin-northern-southern-poetry",
+      "volumeNumberWithinEra": 3,
+      "volumeTitleZh": "晉詩卷三",
+      "firstPassPolicy": "tao-ruan-anchor-first",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/晉詩卷三",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "晉詩卷三",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "阮籍 and 陶淵明 should be treated as anchor authors before long-tail expansion."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-JIN-04",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "jin",
+      "eraNameZh": "晉",
+      "displayEraZh": "晉",
+      "collectionFamily": "wei-jin-northern-southern-poetry",
+      "volumeNumberWithinEra": 4,
+      "volumeTitleZh": "晉詩卷四",
+      "firstPassPolicy": "tao-ruan-anchor-first",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/晉詩卷四",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "晉詩卷四",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "阮籍 and 陶淵明 should be treated as anchor authors before long-tail expansion."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-JIN-05",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "jin",
+      "eraNameZh": "晉",
+      "displayEraZh": "晉",
+      "collectionFamily": "wei-jin-northern-southern-poetry",
+      "volumeNumberWithinEra": 5,
+      "volumeTitleZh": "晉詩卷五",
+      "firstPassPolicy": "tao-ruan-anchor-first",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/晉詩卷五",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "晉詩卷五",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "阮籍 and 陶淵明 should be treated as anchor authors before long-tail expansion."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-JIN-06",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "jin",
+      "eraNameZh": "晉",
+      "displayEraZh": "晉",
+      "collectionFamily": "wei-jin-northern-southern-poetry",
+      "volumeNumberWithinEra": 6,
+      "volumeTitleZh": "晉詩卷六",
+      "firstPassPolicy": "tao-ruan-anchor-first",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/晉詩卷六",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "晉詩卷六",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "阮籍 and 陶淵明 should be treated as anchor authors before long-tail expansion."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-JIN-07",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "jin",
+      "eraNameZh": "晉",
+      "displayEraZh": "晉",
+      "collectionFamily": "wei-jin-northern-southern-poetry",
+      "volumeNumberWithinEra": 7,
+      "volumeTitleZh": "晉詩卷七",
+      "firstPassPolicy": "tao-ruan-anchor-first",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/晉詩卷七",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "晉詩卷七",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "阮籍 and 陶淵明 should be treated as anchor authors before long-tail expansion."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-JIN-08",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "jin",
+      "eraNameZh": "晉",
+      "displayEraZh": "晉",
+      "collectionFamily": "wei-jin-northern-southern-poetry",
+      "volumeNumberWithinEra": 8,
+      "volumeTitleZh": "晉詩卷八",
+      "firstPassPolicy": "tao-ruan-anchor-first",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/晉詩卷八",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "晉詩卷八",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "阮籍 and 陶淵明 should be treated as anchor authors before long-tail expansion."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-JIN-09",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "jin",
+      "eraNameZh": "晉",
+      "displayEraZh": "晉",
+      "collectionFamily": "wei-jin-northern-southern-poetry",
+      "volumeNumberWithinEra": 9,
+      "volumeTitleZh": "晉詩卷九",
+      "firstPassPolicy": "tao-ruan-anchor-first",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/晉詩卷九",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "晉詩卷九",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "阮籍 and 陶淵明 should be treated as anchor authors before long-tail expansion."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-JIN-10",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "jin",
+      "eraNameZh": "晉",
+      "displayEraZh": "晉",
+      "collectionFamily": "wei-jin-northern-southern-poetry",
+      "volumeNumberWithinEra": 10,
+      "volumeTitleZh": "晉詩卷十",
+      "firstPassPolicy": "tao-ruan-anchor-first",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/晉詩卷十",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "晉詩卷十",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "阮籍 and 陶淵明 should be treated as anchor authors before long-tail expansion."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-JIN-11",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "jin",
+      "eraNameZh": "晉",
+      "displayEraZh": "晉",
+      "collectionFamily": "wei-jin-northern-southern-poetry",
+      "volumeNumberWithinEra": 11,
+      "volumeTitleZh": "晉詩卷十一",
+      "firstPassPolicy": "tao-ruan-anchor-first",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/晉詩卷十一",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "晉詩卷十一",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "阮籍 and 陶淵明 should be treated as anchor authors before long-tail expansion."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-JIN-12",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "jin",
+      "eraNameZh": "晉",
+      "displayEraZh": "晉",
+      "collectionFamily": "wei-jin-northern-southern-poetry",
+      "volumeNumberWithinEra": 12,
+      "volumeTitleZh": "晉詩卷十二",
+      "firstPassPolicy": "tao-ruan-anchor-first",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/晉詩卷十二",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "晉詩卷十二",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "阮籍 and 陶淵明 should be treated as anchor authors before long-tail expansion."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-JIN-13",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "jin",
+      "eraNameZh": "晉",
+      "displayEraZh": "晉",
+      "collectionFamily": "wei-jin-northern-southern-poetry",
+      "volumeNumberWithinEra": 13,
+      "volumeTitleZh": "晉詩卷十三",
+      "firstPassPolicy": "tao-ruan-anchor-first",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/晉詩卷十三",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "晉詩卷十三",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "阮籍 and 陶淵明 should be treated as anchor authors before long-tail expansion."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-JIN-14",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "jin",
+      "eraNameZh": "晉",
+      "displayEraZh": "晉",
+      "collectionFamily": "wei-jin-northern-southern-poetry",
+      "volumeNumberWithinEra": 14,
+      "volumeTitleZh": "晉詩卷十四",
+      "firstPassPolicy": "tao-ruan-anchor-first",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/晉詩卷十四",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "晉詩卷十四",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "阮籍 and 陶淵明 should be treated as anchor authors before long-tail expansion."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-JIN-15",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "jin",
+      "eraNameZh": "晉",
+      "displayEraZh": "晉",
+      "collectionFamily": "wei-jin-northern-southern-poetry",
+      "volumeNumberWithinEra": 15,
+      "volumeTitleZh": "晉詩卷十五",
+      "firstPassPolicy": "tao-ruan-anchor-first",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/晉詩卷十五",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "晉詩卷十五",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "阮籍 and 陶淵明 should be treated as anchor authors before long-tail expansion."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-JIN-16",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "jin",
+      "eraNameZh": "晉",
+      "displayEraZh": "晉",
+      "collectionFamily": "wei-jin-northern-southern-poetry",
+      "volumeNumberWithinEra": 16,
+      "volumeTitleZh": "晉詩卷十六",
+      "firstPassPolicy": "tao-ruan-anchor-first",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/晉詩卷十六",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "晉詩卷十六",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "阮籍 and 陶淵明 should be treated as anchor authors before long-tail expansion."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-JIN-17",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "jin",
+      "eraNameZh": "晉",
+      "displayEraZh": "晉",
+      "collectionFamily": "wei-jin-northern-southern-poetry",
+      "volumeNumberWithinEra": 17,
+      "volumeTitleZh": "晉詩卷十七",
+      "firstPassPolicy": "tao-ruan-anchor-first",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/晉詩卷十七",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "晉詩卷十七",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "阮籍 and 陶淵明 should be treated as anchor authors before long-tail expansion."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-JIN-18",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "jin",
+      "eraNameZh": "晉",
+      "displayEraZh": "晉",
+      "collectionFamily": "wei-jin-northern-southern-poetry",
+      "volumeNumberWithinEra": 18,
+      "volumeTitleZh": "晉詩卷十八",
+      "firstPassPolicy": "tao-ruan-anchor-first",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/晉詩卷十八",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "晉詩卷十八",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "阮籍 and 陶淵明 should be treated as anchor authors before long-tail expansion."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-JIN-19",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "jin",
+      "eraNameZh": "晉",
+      "displayEraZh": "晉",
+      "collectionFamily": "wei-jin-northern-southern-poetry",
+      "volumeNumberWithinEra": 19,
+      "volumeTitleZh": "晉詩卷十九",
+      "firstPassPolicy": "tao-ruan-anchor-first",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/晉詩卷十九",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "晉詩卷十九",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "阮籍 and 陶淵明 should be treated as anchor authors before long-tail expansion."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-JIN-20",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "jin",
+      "eraNameZh": "晉",
+      "displayEraZh": "晉",
+      "collectionFamily": "wei-jin-northern-southern-poetry",
+      "volumeNumberWithinEra": 20,
+      "volumeTitleZh": "晉詩卷二十",
+      "firstPassPolicy": "tao-ruan-anchor-first",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/晉詩卷二十",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "晉詩卷二十",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "阮籍 and 陶淵明 should be treated as anchor authors before long-tail expansion."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-JIN-21",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "jin",
+      "eraNameZh": "晉",
+      "displayEraZh": "晉",
+      "collectionFamily": "wei-jin-northern-southern-poetry",
+      "volumeNumberWithinEra": 21,
+      "volumeTitleZh": "晉詩卷二十一",
+      "firstPassPolicy": "tao-ruan-anchor-first",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/晉詩卷二十一",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "晉詩卷二十一",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "阮籍 and 陶淵明 should be treated as anchor authors before long-tail expansion."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-LIU-SONG-01",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "liu-song",
+      "eraNameZh": "宋",
+      "displayEraZh": "南朝宋",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 1,
+      "volumeTitleZh": "宋詩卷一",
+      "firstPassPolicy": "xie-bao-anchor-first",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/宋詩卷一",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "宋詩卷一",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Use displayEraZh to avoid confusion with later 宋 dynasty collection targets."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-LIU-SONG-02",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "liu-song",
+      "eraNameZh": "宋",
+      "displayEraZh": "南朝宋",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 2,
+      "volumeTitleZh": "宋詩卷二",
+      "firstPassPolicy": "xie-bao-anchor-first",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/宋詩卷二",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "宋詩卷二",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Use displayEraZh to avoid confusion with later 宋 dynasty collection targets."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-LIU-SONG-03",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "liu-song",
+      "eraNameZh": "宋",
+      "displayEraZh": "南朝宋",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 3,
+      "volumeTitleZh": "宋詩卷三",
+      "firstPassPolicy": "xie-bao-anchor-first",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/宋詩卷三",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "宋詩卷三",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Use displayEraZh to avoid confusion with later 宋 dynasty collection targets."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-LIU-SONG-04",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "liu-song",
+      "eraNameZh": "宋",
+      "displayEraZh": "南朝宋",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 4,
+      "volumeTitleZh": "宋詩卷四",
+      "firstPassPolicy": "xie-bao-anchor-first",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/宋詩卷四",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "宋詩卷四",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Use displayEraZh to avoid confusion with later 宋 dynasty collection targets."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-LIU-SONG-05",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "liu-song",
+      "eraNameZh": "宋",
+      "displayEraZh": "南朝宋",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 5,
+      "volumeTitleZh": "宋詩卷五",
+      "firstPassPolicy": "xie-bao-anchor-first",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/宋詩卷五",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "宋詩卷五",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Use displayEraZh to avoid confusion with later 宋 dynasty collection targets."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-LIU-SONG-06",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "liu-song",
+      "eraNameZh": "宋",
+      "displayEraZh": "南朝宋",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 6,
+      "volumeTitleZh": "宋詩卷六",
+      "firstPassPolicy": "xie-bao-anchor-first",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/宋詩卷六",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "宋詩卷六",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Use displayEraZh to avoid confusion with later 宋 dynasty collection targets."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-LIU-SONG-07",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "liu-song",
+      "eraNameZh": "宋",
+      "displayEraZh": "南朝宋",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 7,
+      "volumeTitleZh": "宋詩卷七",
+      "firstPassPolicy": "xie-bao-anchor-first",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/宋詩卷七",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "宋詩卷七",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Use displayEraZh to avoid confusion with later 宋 dynasty collection targets."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-LIU-SONG-08",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "liu-song",
+      "eraNameZh": "宋",
+      "displayEraZh": "南朝宋",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 8,
+      "volumeTitleZh": "宋詩卷八",
+      "firstPassPolicy": "xie-bao-anchor-first",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/宋詩卷八",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "宋詩卷八",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Use displayEraZh to avoid confusion with later 宋 dynasty collection targets."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-LIU-SONG-09",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "liu-song",
+      "eraNameZh": "宋",
+      "displayEraZh": "南朝宋",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 9,
+      "volumeTitleZh": "宋詩卷九",
+      "firstPassPolicy": "xie-bao-anchor-first",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/宋詩卷九",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "宋詩卷九",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Use displayEraZh to avoid confusion with later 宋 dynasty collection targets."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-LIU-SONG-10",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "liu-song",
+      "eraNameZh": "宋",
+      "displayEraZh": "南朝宋",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 10,
+      "volumeTitleZh": "宋詩卷十",
+      "firstPassPolicy": "xie-bao-anchor-first",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/宋詩卷十",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "宋詩卷十",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Use displayEraZh to avoid confusion with later 宋 dynasty collection targets."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-LIU-SONG-11",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "liu-song",
+      "eraNameZh": "宋",
+      "displayEraZh": "南朝宋",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 11,
+      "volumeTitleZh": "宋詩卷十一",
+      "firstPassPolicy": "xie-bao-anchor-first",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/宋詩卷十一",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "宋詩卷十一",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Use displayEraZh to avoid confusion with later 宋 dynasty collection targets."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-LIU-SONG-12",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "liu-song",
+      "eraNameZh": "宋",
+      "displayEraZh": "南朝宋",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 12,
+      "volumeTitleZh": "宋詩卷十二",
+      "firstPassPolicy": "xie-bao-anchor-first",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/宋詩卷十二",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "宋詩卷十二",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Use displayEraZh to avoid confusion with later 宋 dynasty collection targets."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-QI-01",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "qi",
+      "eraNameZh": "齊",
+      "displayEraZh": "南朝齊",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 1,
+      "volumeTitleZh": "齊詩卷一",
+      "firstPassPolicy": "yongming-style-review",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/齊詩卷一",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "齊詩卷一",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "謝朓 and 永明體 material need author and form tagging."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-QI-02",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "qi",
+      "eraNameZh": "齊",
+      "displayEraZh": "南朝齊",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 2,
+      "volumeTitleZh": "齊詩卷二",
+      "firstPassPolicy": "yongming-style-review",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/齊詩卷二",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "齊詩卷二",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "謝朓 and 永明體 material need author and form tagging."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-QI-03",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "qi",
+      "eraNameZh": "齊",
+      "displayEraZh": "南朝齊",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 3,
+      "volumeTitleZh": "齊詩卷三",
+      "firstPassPolicy": "yongming-style-review",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/齊詩卷三",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "齊詩卷三",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "謝朓 and 永明體 material need author and form tagging."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-QI-04",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "qi",
+      "eraNameZh": "齊",
+      "displayEraZh": "南朝齊",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 4,
+      "volumeTitleZh": "齊詩卷四",
+      "firstPassPolicy": "yongming-style-review",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/齊詩卷四",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "齊詩卷四",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "謝朓 and 永明體 material need author and form tagging."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-QI-05",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "qi",
+      "eraNameZh": "齊",
+      "displayEraZh": "南朝齊",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 5,
+      "volumeTitleZh": "齊詩卷五",
+      "firstPassPolicy": "yongming-style-review",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/齊詩卷五",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "齊詩卷五",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "謝朓 and 永明體 material need author and form tagging."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-QI-06",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "qi",
+      "eraNameZh": "齊",
+      "displayEraZh": "南朝齊",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 6,
+      "volumeTitleZh": "齊詩卷六",
+      "firstPassPolicy": "yongming-style-review",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/齊詩卷六",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "齊詩卷六",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "謝朓 and 永明體 material need author and form tagging."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-QI-07",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "qi",
+      "eraNameZh": "齊",
+      "displayEraZh": "南朝齊",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 7,
+      "volumeTitleZh": "齊詩卷七",
+      "firstPassPolicy": "yongming-style-review",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/齊詩卷七",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "齊詩卷七",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "謝朓 and 永明體 material need author and form tagging."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-LIANG-01",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "liang",
+      "eraNameZh": "梁",
+      "displayEraZh": "梁",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 1,
+      "volumeTitleZh": "梁詩卷一",
+      "firstPassPolicy": "defer-until-parser-stable",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/梁詩卷一",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "梁詩卷一",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Largest block in the pre-Tang corpus; enter after first-pass parser proof."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-LIANG-02",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "liang",
+      "eraNameZh": "梁",
+      "displayEraZh": "梁",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 2,
+      "volumeTitleZh": "梁詩卷二",
+      "firstPassPolicy": "defer-until-parser-stable",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/梁詩卷二",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "梁詩卷二",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Largest block in the pre-Tang corpus; enter after first-pass parser proof."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-LIANG-03",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "liang",
+      "eraNameZh": "梁",
+      "displayEraZh": "梁",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 3,
+      "volumeTitleZh": "梁詩卷三",
+      "firstPassPolicy": "defer-until-parser-stable",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/梁詩卷三",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "梁詩卷三",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Largest block in the pre-Tang corpus; enter after first-pass parser proof."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-LIANG-04",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "liang",
+      "eraNameZh": "梁",
+      "displayEraZh": "梁",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 4,
+      "volumeTitleZh": "梁詩卷四",
+      "firstPassPolicy": "defer-until-parser-stable",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/梁詩卷四",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "梁詩卷四",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Largest block in the pre-Tang corpus; enter after first-pass parser proof."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-LIANG-05",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "liang",
+      "eraNameZh": "梁",
+      "displayEraZh": "梁",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 5,
+      "volumeTitleZh": "梁詩卷五",
+      "firstPassPolicy": "defer-until-parser-stable",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/梁詩卷五",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "梁詩卷五",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Largest block in the pre-Tang corpus; enter after first-pass parser proof."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-LIANG-06",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "liang",
+      "eraNameZh": "梁",
+      "displayEraZh": "梁",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 6,
+      "volumeTitleZh": "梁詩卷六",
+      "firstPassPolicy": "defer-until-parser-stable",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/梁詩卷六",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "梁詩卷六",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Largest block in the pre-Tang corpus; enter after first-pass parser proof."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-LIANG-07",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "liang",
+      "eraNameZh": "梁",
+      "displayEraZh": "梁",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 7,
+      "volumeTitleZh": "梁詩卷七",
+      "firstPassPolicy": "defer-until-parser-stable",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/梁詩卷七",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "梁詩卷七",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Largest block in the pre-Tang corpus; enter after first-pass parser proof."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-LIANG-08",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "liang",
+      "eraNameZh": "梁",
+      "displayEraZh": "梁",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 8,
+      "volumeTitleZh": "梁詩卷八",
+      "firstPassPolicy": "defer-until-parser-stable",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/梁詩卷八",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "梁詩卷八",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Largest block in the pre-Tang corpus; enter after first-pass parser proof."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-LIANG-09",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "liang",
+      "eraNameZh": "梁",
+      "displayEraZh": "梁",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 9,
+      "volumeTitleZh": "梁詩卷九",
+      "firstPassPolicy": "defer-until-parser-stable",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/梁詩卷九",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "梁詩卷九",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Largest block in the pre-Tang corpus; enter after first-pass parser proof."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-LIANG-10",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "liang",
+      "eraNameZh": "梁",
+      "displayEraZh": "梁",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 10,
+      "volumeTitleZh": "梁詩卷十",
+      "firstPassPolicy": "defer-until-parser-stable",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/梁詩卷十",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "梁詩卷十",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Largest block in the pre-Tang corpus; enter after first-pass parser proof."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-LIANG-11",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "liang",
+      "eraNameZh": "梁",
+      "displayEraZh": "梁",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 11,
+      "volumeTitleZh": "梁詩卷十一",
+      "firstPassPolicy": "defer-until-parser-stable",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/梁詩卷十一",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "梁詩卷十一",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Largest block in the pre-Tang corpus; enter after first-pass parser proof."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-LIANG-12",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "liang",
+      "eraNameZh": "梁",
+      "displayEraZh": "梁",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 12,
+      "volumeTitleZh": "梁詩卷十二",
+      "firstPassPolicy": "defer-until-parser-stable",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/梁詩卷十二",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "梁詩卷十二",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Largest block in the pre-Tang corpus; enter after first-pass parser proof."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-LIANG-13",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "liang",
+      "eraNameZh": "梁",
+      "displayEraZh": "梁",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 13,
+      "volumeTitleZh": "梁詩卷十三",
+      "firstPassPolicy": "defer-until-parser-stable",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/梁詩卷十三",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "梁詩卷十三",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Largest block in the pre-Tang corpus; enter after first-pass parser proof."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-LIANG-14",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "liang",
+      "eraNameZh": "梁",
+      "displayEraZh": "梁",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 14,
+      "volumeTitleZh": "梁詩卷十四",
+      "firstPassPolicy": "defer-until-parser-stable",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/梁詩卷十四",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "梁詩卷十四",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Largest block in the pre-Tang corpus; enter after first-pass parser proof."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-LIANG-15",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "liang",
+      "eraNameZh": "梁",
+      "displayEraZh": "梁",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 15,
+      "volumeTitleZh": "梁詩卷十五",
+      "firstPassPolicy": "defer-until-parser-stable",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/梁詩卷十五",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "梁詩卷十五",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Largest block in the pre-Tang corpus; enter after first-pass parser proof."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-LIANG-16",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "liang",
+      "eraNameZh": "梁",
+      "displayEraZh": "梁",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 16,
+      "volumeTitleZh": "梁詩卷十六",
+      "firstPassPolicy": "defer-until-parser-stable",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/梁詩卷十六",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "梁詩卷十六",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Largest block in the pre-Tang corpus; enter after first-pass parser proof."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-LIANG-17",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "liang",
+      "eraNameZh": "梁",
+      "displayEraZh": "梁",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 17,
+      "volumeTitleZh": "梁詩卷十七",
+      "firstPassPolicy": "defer-until-parser-stable",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/梁詩卷十七",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "梁詩卷十七",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Largest block in the pre-Tang corpus; enter after first-pass parser proof."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-LIANG-18",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "liang",
+      "eraNameZh": "梁",
+      "displayEraZh": "梁",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 18,
+      "volumeTitleZh": "梁詩卷十八",
+      "firstPassPolicy": "defer-until-parser-stable",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/梁詩卷十八",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "梁詩卷十八",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Largest block in the pre-Tang corpus; enter after first-pass parser proof."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-LIANG-19",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "liang",
+      "eraNameZh": "梁",
+      "displayEraZh": "梁",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 19,
+      "volumeTitleZh": "梁詩卷十九",
+      "firstPassPolicy": "defer-until-parser-stable",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/梁詩卷十九",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "梁詩卷十九",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Largest block in the pre-Tang corpus; enter after first-pass parser proof."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-LIANG-20",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "liang",
+      "eraNameZh": "梁",
+      "displayEraZh": "梁",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 20,
+      "volumeTitleZh": "梁詩卷二十",
+      "firstPassPolicy": "defer-until-parser-stable",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/梁詩卷二十",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "梁詩卷二十",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Largest block in the pre-Tang corpus; enter after first-pass parser proof."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-LIANG-21",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "liang",
+      "eraNameZh": "梁",
+      "displayEraZh": "梁",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 21,
+      "volumeTitleZh": "梁詩卷二十一",
+      "firstPassPolicy": "defer-until-parser-stable",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/梁詩卷二十一",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "梁詩卷二十一",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Largest block in the pre-Tang corpus; enter after first-pass parser proof."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-LIANG-22",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "liang",
+      "eraNameZh": "梁",
+      "displayEraZh": "梁",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 22,
+      "volumeTitleZh": "梁詩卷二十二",
+      "firstPassPolicy": "defer-until-parser-stable",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/梁詩卷二十二",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "梁詩卷二十二",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Largest block in the pre-Tang corpus; enter after first-pass parser proof."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-LIANG-23",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "liang",
+      "eraNameZh": "梁",
+      "displayEraZh": "梁",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 23,
+      "volumeTitleZh": "梁詩卷二十三",
+      "firstPassPolicy": "defer-until-parser-stable",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/梁詩卷二十三",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "梁詩卷二十三",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Largest block in the pre-Tang corpus; enter after first-pass parser proof."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-LIANG-24",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "liang",
+      "eraNameZh": "梁",
+      "displayEraZh": "梁",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 24,
+      "volumeTitleZh": "梁詩卷二十四",
+      "firstPassPolicy": "defer-until-parser-stable",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/梁詩卷二十四",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "梁詩卷二十四",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Largest block in the pre-Tang corpus; enter after first-pass parser proof."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-LIANG-25",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "liang",
+      "eraNameZh": "梁",
+      "displayEraZh": "梁",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 25,
+      "volumeTitleZh": "梁詩卷二十五",
+      "firstPassPolicy": "defer-until-parser-stable",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/梁詩卷二十五",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "梁詩卷二十五",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Largest block in the pre-Tang corpus; enter after first-pass parser proof."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-LIANG-26",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "liang",
+      "eraNameZh": "梁",
+      "displayEraZh": "梁",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 26,
+      "volumeTitleZh": "梁詩卷二十六",
+      "firstPassPolicy": "defer-until-parser-stable",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/梁詩卷二十六",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "梁詩卷二十六",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Largest block in the pre-Tang corpus; enter after first-pass parser proof."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-LIANG-27",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "liang",
+      "eraNameZh": "梁",
+      "displayEraZh": "梁",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 27,
+      "volumeTitleZh": "梁詩卷二十七",
+      "firstPassPolicy": "defer-until-parser-stable",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/梁詩卷二十七",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "梁詩卷二十七",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Largest block in the pre-Tang corpus; enter after first-pass parser proof."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-LIANG-28",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "liang",
+      "eraNameZh": "梁",
+      "displayEraZh": "梁",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 28,
+      "volumeTitleZh": "梁詩卷二十八",
+      "firstPassPolicy": "defer-until-parser-stable",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/梁詩卷二十八",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "梁詩卷二十八",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Largest block in the pre-Tang corpus; enter after first-pass parser proof."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-LIANG-29",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "liang",
+      "eraNameZh": "梁",
+      "displayEraZh": "梁",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 29,
+      "volumeTitleZh": "梁詩卷二十九",
+      "firstPassPolicy": "defer-until-parser-stable",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/梁詩卷二十九",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "梁詩卷二十九",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Largest block in the pre-Tang corpus; enter after first-pass parser proof."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-LIANG-30",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "liang",
+      "eraNameZh": "梁",
+      "displayEraZh": "梁",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 30,
+      "volumeTitleZh": "梁詩卷三十",
+      "firstPassPolicy": "defer-until-parser-stable",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/梁詩卷三十",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "梁詩卷三十",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Largest block in the pre-Tang corpus; enter after first-pass parser proof."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-NORTHERN-WEI-01",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "northern-wei",
+      "eraNameZh": "北魏",
+      "displayEraZh": "北魏",
+      "collectionFamily": "northern-dynasties-poetry",
+      "volumeNumberWithinEra": 1,
+      "volumeTitleZh": "北魏詩卷一",
+      "firstPassPolicy": "northern-dynasty-supplement",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/北魏詩卷一",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "北魏詩卷一",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Keep northern-dynasty provenance visible; do not merge under southern dynasties."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-NORTHERN-WEI-02",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "northern-wei",
+      "eraNameZh": "北魏",
+      "displayEraZh": "北魏",
+      "collectionFamily": "northern-dynasties-poetry",
+      "volumeNumberWithinEra": 2,
+      "volumeTitleZh": "北魏詩卷二",
+      "firstPassPolicy": "northern-dynasty-supplement",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/北魏詩卷二",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "北魏詩卷二",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Keep northern-dynasty provenance visible; do not merge under southern dynasties."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-NORTHERN-WEI-03",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "northern-wei",
+      "eraNameZh": "北魏",
+      "displayEraZh": "北魏",
+      "collectionFamily": "northern-dynasties-poetry",
+      "volumeNumberWithinEra": 3,
+      "volumeTitleZh": "北魏詩卷三",
+      "firstPassPolicy": "northern-dynasty-supplement",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/北魏詩卷三",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "北魏詩卷三",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Keep northern-dynasty provenance visible; do not merge under southern dynasties."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-NORTHERN-WEI-04",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "northern-wei",
+      "eraNameZh": "北魏",
+      "displayEraZh": "北魏",
+      "collectionFamily": "northern-dynasties-poetry",
+      "volumeNumberWithinEra": 4,
+      "volumeTitleZh": "北魏詩卷四",
+      "firstPassPolicy": "northern-dynasty-supplement",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/北魏詩卷四",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "北魏詩卷四",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Keep northern-dynasty provenance visible; do not merge under southern dynasties."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-NORTHERN-QI-01",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "northern-qi",
+      "eraNameZh": "北齊",
+      "displayEraZh": "北齊",
+      "collectionFamily": "northern-dynasties-poetry",
+      "volumeNumberWithinEra": 1,
+      "volumeTitleZh": "北齊詩卷一",
+      "firstPassPolicy": "northern-dynasty-supplement",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/北齊詩卷一",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "北齊詩卷一",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Small block; useful for testing low-volume era handling."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-NORTHERN-QI-02",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "northern-qi",
+      "eraNameZh": "北齊",
+      "displayEraZh": "北齊",
+      "collectionFamily": "northern-dynasties-poetry",
+      "volumeNumberWithinEra": 2,
+      "volumeTitleZh": "北齊詩卷二",
+      "firstPassPolicy": "northern-dynasty-supplement",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/北齊詩卷二",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "北齊詩卷二",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Small block; useful for testing low-volume era handling."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-NORTHERN-QI-03",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "northern-qi",
+      "eraNameZh": "北齊",
+      "displayEraZh": "北齊",
+      "collectionFamily": "northern-dynasties-poetry",
+      "volumeNumberWithinEra": 3,
+      "volumeTitleZh": "北齊詩卷三",
+      "firstPassPolicy": "northern-dynasty-supplement",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/北齊詩卷三",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "北齊詩卷三",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Small block; useful for testing low-volume era handling."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-NORTHERN-QI-04",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "northern-qi",
+      "eraNameZh": "北齊",
+      "displayEraZh": "北齊",
+      "collectionFamily": "northern-dynasties-poetry",
+      "volumeNumberWithinEra": 4,
+      "volumeTitleZh": "北齊詩卷四",
+      "firstPassPolicy": "northern-dynasty-supplement",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/北齊詩卷四",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "北齊詩卷四",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Small block; useful for testing low-volume era handling."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-NORTHERN-ZHOU-01",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "northern-zhou",
+      "eraNameZh": "北周",
+      "displayEraZh": "北周",
+      "collectionFamily": "northern-dynasties-poetry",
+      "volumeNumberWithinEra": 1,
+      "volumeTitleZh": "北周詩卷一",
+      "firstPassPolicy": "yuxin-anchor-review",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/北周詩卷一",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "北周詩卷一",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "庾信-related material may cross southern and northern dynasty contexts."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-NORTHERN-ZHOU-02",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "northern-zhou",
+      "eraNameZh": "北周",
+      "displayEraZh": "北周",
+      "collectionFamily": "northern-dynasties-poetry",
+      "volumeNumberWithinEra": 2,
+      "volumeTitleZh": "北周詩卷二",
+      "firstPassPolicy": "yuxin-anchor-review",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/北周詩卷二",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "北周詩卷二",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "庾信-related material may cross southern and northern dynasty contexts."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-NORTHERN-ZHOU-03",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "northern-zhou",
+      "eraNameZh": "北周",
+      "displayEraZh": "北周",
+      "collectionFamily": "northern-dynasties-poetry",
+      "volumeNumberWithinEra": 3,
+      "volumeTitleZh": "北周詩卷三",
+      "firstPassPolicy": "yuxin-anchor-review",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/北周詩卷三",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "北周詩卷三",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "庾信-related material may cross southern and northern dynasty contexts."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-NORTHERN-ZHOU-04",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "northern-zhou",
+      "eraNameZh": "北周",
+      "displayEraZh": "北周",
+      "collectionFamily": "northern-dynasties-poetry",
+      "volumeNumberWithinEra": 4,
+      "volumeTitleZh": "北周詩卷四",
+      "firstPassPolicy": "yuxin-anchor-review",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/北周詩卷四",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "北周詩卷四",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "庾信-related material may cross southern and northern dynasty contexts."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-NORTHERN-ZHOU-05",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "northern-zhou",
+      "eraNameZh": "北周",
+      "displayEraZh": "北周",
+      "collectionFamily": "northern-dynasties-poetry",
+      "volumeNumberWithinEra": 5,
+      "volumeTitleZh": "北周詩卷五",
+      "firstPassPolicy": "yuxin-anchor-review",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/北周詩卷五",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "北周詩卷五",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "庾信-related material may cross southern and northern dynasty contexts."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-NORTHERN-ZHOU-06",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "northern-zhou",
+      "eraNameZh": "北周",
+      "displayEraZh": "北周",
+      "collectionFamily": "northern-dynasties-poetry",
+      "volumeNumberWithinEra": 6,
+      "volumeTitleZh": "北周詩卷六",
+      "firstPassPolicy": "yuxin-anchor-review",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/北周詩卷六",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "北周詩卷六",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "庾信-related material may cross southern and northern dynasty contexts."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-CHEN-01",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "chen",
+      "eraNameZh": "陳",
+      "displayEraZh": "陳",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 1,
+      "volumeTitleZh": "陳詩卷一",
+      "firstPassPolicy": "late-southern-dynasty",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/陳詩卷一",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "陳詩卷一",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Late southern-dynasty material should stay separate from Sui transition records."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-CHEN-02",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "chen",
+      "eraNameZh": "陳",
+      "displayEraZh": "陳",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 2,
+      "volumeTitleZh": "陳詩卷二",
+      "firstPassPolicy": "late-southern-dynasty",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/陳詩卷二",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "陳詩卷二",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Late southern-dynasty material should stay separate from Sui transition records."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-CHEN-03",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "chen",
+      "eraNameZh": "陳",
+      "displayEraZh": "陳",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 3,
+      "volumeTitleZh": "陳詩卷三",
+      "firstPassPolicy": "late-southern-dynasty",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/陳詩卷三",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "陳詩卷三",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Late southern-dynasty material should stay separate from Sui transition records."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-CHEN-04",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "chen",
+      "eraNameZh": "陳",
+      "displayEraZh": "陳",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 4,
+      "volumeTitleZh": "陳詩卷四",
+      "firstPassPolicy": "late-southern-dynasty",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/陳詩卷四",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "陳詩卷四",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Late southern-dynasty material should stay separate from Sui transition records."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-CHEN-05",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "chen",
+      "eraNameZh": "陳",
+      "displayEraZh": "陳",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 5,
+      "volumeTitleZh": "陳詩卷五",
+      "firstPassPolicy": "late-southern-dynasty",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/陳詩卷五",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "陳詩卷五",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Late southern-dynasty material should stay separate from Sui transition records."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-CHEN-06",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "chen",
+      "eraNameZh": "陳",
+      "displayEraZh": "陳",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 6,
+      "volumeTitleZh": "陳詩卷六",
+      "firstPassPolicy": "late-southern-dynasty",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/陳詩卷六",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "陳詩卷六",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Late southern-dynasty material should stay separate from Sui transition records."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-CHEN-07",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "chen",
+      "eraNameZh": "陳",
+      "displayEraZh": "陳",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 7,
+      "volumeTitleZh": "陳詩卷七",
+      "firstPassPolicy": "late-southern-dynasty",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/陳詩卷七",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "陳詩卷七",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Late southern-dynasty material should stay separate from Sui transition records."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-CHEN-08",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "chen",
+      "eraNameZh": "陳",
+      "displayEraZh": "陳",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 8,
+      "volumeTitleZh": "陳詩卷八",
+      "firstPassPolicy": "late-southern-dynasty",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/陳詩卷八",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "陳詩卷八",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Late southern-dynasty material should stay separate from Sui transition records."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-CHEN-09",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "chen",
+      "eraNameZh": "陳",
+      "displayEraZh": "陳",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 9,
+      "volumeTitleZh": "陳詩卷九",
+      "firstPassPolicy": "late-southern-dynasty",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/陳詩卷九",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "陳詩卷九",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Late southern-dynasty material should stay separate from Sui transition records."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-CHEN-10",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "chen",
+      "eraNameZh": "陳",
+      "displayEraZh": "陳",
+      "collectionFamily": "southern-dynasties-poetry",
+      "volumeNumberWithinEra": 10,
+      "volumeTitleZh": "陳詩卷十",
+      "firstPassPolicy": "late-southern-dynasty",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/陳詩卷十",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "陳詩卷十",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Late southern-dynasty material should stay separate from Sui transition records."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-SUI-01",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "sui",
+      "eraNameZh": "隋",
+      "displayEraZh": "隋",
+      "collectionFamily": "sui-poetry",
+      "volumeNumberWithinEra": 1,
+      "volumeTitleZh": "隋詩卷一",
+      "firstPassPolicy": "pre-tang-boundary-review",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/隋詩卷一",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "隋詩卷一",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Tang-adjacent works require boundary review before public display."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-SUI-02",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "sui",
+      "eraNameZh": "隋",
+      "displayEraZh": "隋",
+      "collectionFamily": "sui-poetry",
+      "volumeNumberWithinEra": 2,
+      "volumeTitleZh": "隋詩卷二",
+      "firstPassPolicy": "pre-tang-boundary-review",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/隋詩卷二",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "隋詩卷二",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Tang-adjacent works require boundary review before public display."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-SUI-03",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "sui",
+      "eraNameZh": "隋",
+      "displayEraZh": "隋",
+      "collectionFamily": "sui-poetry",
+      "volumeNumberWithinEra": 3,
+      "volumeTitleZh": "隋詩卷三",
+      "firstPassPolicy": "pre-tang-boundary-review",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/隋詩卷三",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "隋詩卷三",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Tang-adjacent works require boundary review before public display."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-SUI-04",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "sui",
+      "eraNameZh": "隋",
+      "displayEraZh": "隋",
+      "collectionFamily": "sui-poetry",
+      "volumeNumberWithinEra": 4,
+      "volumeTitleZh": "隋詩卷四",
+      "firstPassPolicy": "pre-tang-boundary-review",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/隋詩卷四",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "隋詩卷四",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Tang-adjacent works require boundary review before public display."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-SUI-05",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "sui",
+      "eraNameZh": "隋",
+      "displayEraZh": "隋",
+      "collectionFamily": "sui-poetry",
+      "volumeNumberWithinEra": 5,
+      "volumeTitleZh": "隋詩卷五",
+      "firstPassPolicy": "pre-tang-boundary-review",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/隋詩卷五",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "隋詩卷五",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Tang-adjacent works require boundary review before public display."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-SUI-06",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "sui",
+      "eraNameZh": "隋",
+      "displayEraZh": "隋",
+      "collectionFamily": "sui-poetry",
+      "volumeNumberWithinEra": 6,
+      "volumeTitleZh": "隋詩卷六",
+      "firstPassPolicy": "pre-tang-boundary-review",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/隋詩卷六",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "隋詩卷六",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Tang-adjacent works require boundary review before public display."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-SUI-07",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "sui",
+      "eraNameZh": "隋",
+      "displayEraZh": "隋",
+      "collectionFamily": "sui-poetry",
+      "volumeNumberWithinEra": 7,
+      "volumeTitleZh": "隋詩卷七",
+      "firstPassPolicy": "pre-tang-boundary-review",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/隋詩卷七",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "隋詩卷七",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Tang-adjacent works require boundary review before public display."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-SUI-08",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "sui",
+      "eraNameZh": "隋",
+      "displayEraZh": "隋",
+      "collectionFamily": "sui-poetry",
+      "volumeNumberWithinEra": 8,
+      "volumeTitleZh": "隋詩卷八",
+      "firstPassPolicy": "pre-tang-boundary-review",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/隋詩卷八",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "隋詩卷八",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Tang-adjacent works require boundary review before public display."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-SUI-09",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "sui",
+      "eraNameZh": "隋",
+      "displayEraZh": "隋",
+      "collectionFamily": "sui-poetry",
+      "volumeNumberWithinEra": 9,
+      "volumeTitleZh": "隋詩卷九",
+      "firstPassPolicy": "pre-tang-boundary-review",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/隋詩卷九",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "隋詩卷九",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Tang-adjacent works require boundary review before public display."
+      ]
+    },
+    {
+      "volumeId": "CN-PRETANG-SUI-10",
+      "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+      "eraSlug": "sui",
+      "eraNameZh": "隋",
+      "displayEraZh": "隋",
+      "collectionFamily": "sui-poetry",
+      "volumeNumberWithinEra": 10,
+      "volumeTitleZh": "隋詩卷十",
+      "firstPassPolicy": "pre-tang-boundary-review",
+      "lookupStatus": "planned",
+      "sourceLookupCandidates": [
+        {
+          "source": "zh-wikisource",
+          "title": "先秦漢魏晉南北朝詩/隋詩卷十",
+          "status": "needs-dump-lookup"
+        },
+        {
+          "source": "zh-wikisource",
+          "title": "隋詩卷十",
+          "status": "needs-dump-lookup"
+        }
+      ],
+      "notes": [
+        "Tang-adjacent works require boundary review before public display."
+      ]
+    }
+  ]
+}

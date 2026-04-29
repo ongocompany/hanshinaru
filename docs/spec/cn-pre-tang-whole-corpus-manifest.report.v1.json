@@ -1,0 +1,35 @@
+{
+  "batchId": "cn-pre-tang-whole-corpus-manifest",
+  "generatedAt": "2026-04-29T21:10:39.952Z",
+  "sourceWorkTitleZh": "先秦漢魏晉南北朝詩",
+  "summary": {
+    "eras": 12,
+    "volumes": 135,
+    "expectedVolumes": 135,
+    "firstTrancheVolumes": 19,
+    "byEra": {
+      "pre-qin": 7,
+      "han": 12,
+      "wei": 12,
+      "jin": 21,
+      "liu-song": 12,
+      "qi": 7,
+      "liang": 30,
+      "northern-wei": 4,
+      "northern-qi": 4,
+      "northern-zhou": 6,
+      "chen": 10,
+      "sui": 10
+    }
+  },
+  "validation": {
+    "ok": true,
+    "errors": []
+  },
+  "nextActions": [
+    "Use this manifest as the fixed volume scaffold before any DB upsert.",
+    "Start dump/source lookup with pre-qin and han volumes only.",
+    "Keep 詩經 and 楚辭 as separate collection families.",
+    "Attach raw source, normalized record, review queue, and dry-run counts before import."
+  ]
+}
