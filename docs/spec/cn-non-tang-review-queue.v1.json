@@ -1,7 +1,7 @@
 {
   "version": "2026-04-30.v1",
   "batchId": "cn-non-tang-category-candidates",
-  "generatedAt": "2026-04-29T20:27:29.634Z",
+  "generatedAt": "2026-04-29T20:35:29.531Z",
   "queue": [
     {
       "queueId": "REVIEW-CN-NT-CAT-00001",
@@ -76,18 +76,16 @@
     {
       "queueId": "REVIEW-CN-NT-CAT-00006",
       "recordId": "CN-NT-CAT-00006",
-      "priority": "manual-check",
+      "priority": "bulk-review",
       "eraSlug": "song",
       "titleZh": "七絶",
       "authorZh": "趙佶",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%83%E7%B5%95_(%E8%B6%99%E4%BD%B6)",
-      "lineCount": 4,
+      "lineCount": 8,
       "charCount": 56,
-      "extractionStatus": "needs-review",
-      "reviewReasons": [
-        "possible-joined-lines"
-      ],
-      "poemPreview": "杳杳神京路八千宗祧隔越幾經年\n衰殘病渴那能久茹苦窮荒敢怨天\n茸母初生忍禁煙無家對景倍淒然\n帝城春色誰為主遙指鄉關涕淚漣"
+      "extractionStatus": "auto-extracted",
+      "reviewReasons": [],
+      "poemPreview": "杳杳神京路八千\n宗祧隔越幾經年\n衰殘病渴那能久\n茹苦窮荒敢怨天"
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00007",
@@ -318,18 +316,16 @@
     {
       "queueId": "REVIEW-CN-NT-CAT-00023",
       "recordId": "CN-NT-CAT-00023",
-      "priority": "manual-check",
+      "priority": "bulk-review",
       "eraSlug": "song",
       "titleZh": "清明",
       "authorZh": "王禹偁",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E6%98%8E_(%E7%8E%8B%E7%A6%B9%E5%81%81)",
-      "lineCount": 2,
+      "lineCount": 4,
       "charCount": 28,
-      "extractionStatus": "needs-review",
-      "reviewReasons": [
-        "possible-joined-lines"
-      ],
-      "poemPreview": "無花無酒過清明興味蕭然似野僧\n昨日鄰家乞新火曉窓分與讀書燈"
+      "extractionStatus": "auto-extracted",
+      "reviewReasons": [],
+      "poemPreview": "無花無酒過清明\n興味蕭然似野僧\n昨日鄰家乞新火\n曉窓分與讀書燈"
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00024",
@@ -362,16 +358,19 @@
     {
       "queueId": "REVIEW-CN-NT-CAT-00026",
       "recordId": "CN-NT-CAT-00026",
-      "priority": "bulk-review",
+      "priority": "manual-check",
       "eraSlug": "song",
       "titleZh": "西湖二首",
       "authorZh": "曾鞏",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E8%A5%BF%E6%B9%96%E4%BA%8C%E9%A6%96_(%E6%9B%BE%E9%9E%8F)",
-      "lineCount": 2,
-      "charCount": 12,
-      "extractionStatus": "auto-extracted",
-      "reviewReasons": [],
-      "poemPreview": "==其一==\n==其二=="
+      "lineCount": 0,
+      "charCount": 0,
+      "extractionStatus": "needs-review",
+      "reviewReasons": [
+        "extracted-too-few-lines",
+        "empty-body"
+      ],
+      "poemPreview": ""
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00027",
@@ -474,114 +473,100 @@
     {
       "queueId": "REVIEW-CN-NT-CAT-00034",
       "recordId": "CN-NT-CAT-00034",
-      "priority": "manual-check",
+      "priority": "bulk-review",
       "eraSlug": "song",
       "titleZh": "寓意",
       "authorZh": "晏殊",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AF%93%E6%84%8F_(%E6%99%8F%E6%AE%8A)",
-      "lineCount": 4,
+      "lineCount": 8,
       "charCount": 56,
-      "extractionStatus": "needs-review",
-      "reviewReasons": [
-        "possible-joined-lines"
-      ],
-      "poemPreview": "油壁香車不再逢峽雲無跡任西東\n梨花院落溶溶月柳絮池塘淡淡風\n幾日寂寥傷酒後一番蕭索禁煙中\n魚書欲寄何由達水遠山長處處同"
+      "extractionStatus": "auto-extracted",
+      "reviewReasons": [],
+      "poemPreview": "油壁香車不再逢\n峽雲無跡任西東\n梨花院落溶溶月\n柳絮池塘淡淡風"
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00035",
       "recordId": "CN-NT-CAT-00035",
-      "priority": "manual-check",
+      "priority": "bulk-review",
       "eraSlug": "song",
       "titleZh": "上元應製",
       "authorZh": "蔡襄",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%8A%E5%85%83%E6%87%89%E8%A3%BD_(%E8%94%A1%E8%A5%84)",
-      "lineCount": 4,
+      "lineCount": 8,
       "charCount": 56,
-      "extractionStatus": "needs-review",
-      "reviewReasons": [
-        "possible-joined-lines"
-      ],
-      "poemPreview": "高列千峰寶炬森端門方喜翠華臨\n宸遊不為三元夜樂事還同萬眾心\n天上清光留此夕人間和氣閣春陰\n要知盡慶華封祝四十餘年惠愛深"
+      "extractionStatus": "auto-extracted",
+      "reviewReasons": [],
+      "poemPreview": "高列千峰寶炬森\n端門方喜翠華臨\n宸遊不為三元夜\n樂事還同萬眾心"
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00036",
       "recordId": "CN-NT-CAT-00036",
-      "priority": "manual-check",
+      "priority": "bulk-review",
       "eraSlug": "song",
       "titleZh": "上元應製",
       "authorZh": "王珪",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%8A%E5%85%83%E6%87%89%E8%A3%BD_(%E7%8E%8B%E7%8F%AA)",
-      "lineCount": 4,
+      "lineCount": 8,
       "charCount": 56,
-      "extractionStatus": "needs-review",
-      "reviewReasons": [
-        "possible-joined-lines"
-      ],
-      "poemPreview": "雪消華月滿仙臺萬燭當樓寶扇開\n雙鳳雲中扶輦下六鰲海上駕山來\n鎬京春酒霑周宴汾水秋風陋漢才\n一曲昇平人盡樂君王又進紫霞杯"
+      "extractionStatus": "auto-extracted",
+      "reviewReasons": [],
+      "poemPreview": "雪消華月滿仙臺\n萬燭當樓寶扇開\n雙鳳雲中扶輦下\n六鰲海上駕山來"
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00037",
       "recordId": "CN-NT-CAT-00037",
-      "priority": "manual-check",
+      "priority": "bulk-review",
       "eraSlug": "song",
       "titleZh": "清明",
       "authorZh": "黃庭堅",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E6%98%8E_(%E9%BB%83%E5%BA%AD%E5%A0%85)",
-      "lineCount": 4,
+      "lineCount": 8,
       "charCount": 56,
-      "extractionStatus": "needs-review",
-      "reviewReasons": [
-        "possible-joined-lines"
-      ],
-      "poemPreview": "佳節清明桃李笑野田荒隴紙生愁\n雷驚天地龍蛇蟄雨足郊原草木柔\n人乞祭餘驕妾婦士甘焚死不公侯\n賢愚千載知誰是滿眼蓬蒿共一坵"
+      "extractionStatus": "auto-extracted",
+      "reviewReasons": [],
+      "poemPreview": "佳節清明桃李笑\n野田荒隴紙生愁\n雷驚天地龍蛇蟄\n雨足郊原草木柔"
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00038",
       "recordId": "CN-NT-CAT-00038",
-      "priority": "manual-check",
+      "priority": "bulk-review",
       "eraSlug": "song",
       "titleZh": "鞦韆",
       "authorZh": "釋惠洪",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E9%9E%A6%E9%9F%86_(%E9%87%8B%E6%83%A0%E6%B4%AA)",
-      "lineCount": 4,
+      "lineCount": 8,
       "charCount": 56,
-      "extractionStatus": "needs-review",
-      "reviewReasons": [
-        "possible-joined-lines"
-      ],
-      "poemPreview": "畫架雙裁翠絡偏佳人春戲小樓前\n飄揚血色裙拖地斷送玉容人上天\n花板潤霑紅杏雨綵繩斜挂綠楊煙\n下來閒處從容立疑是蟾宮謫降仙"
+      "extractionStatus": "auto-extracted",
+      "reviewReasons": [],
+      "poemPreview": "畫架雙裁翠絡偏\n佳人春戲小樓前\n飄揚血色裙拖地\n斷送玉容人上天"
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00039",
       "recordId": "CN-NT-CAT-00039",
-      "priority": "manual-check",
+      "priority": "bulk-review",
       "eraSlug": "song",
       "titleZh": "夏日",
       "authorZh": "張耒",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E5%A4%8F%E6%97%A5_(%E5%BC%B5%E8%80%92)",
-      "lineCount": 4,
+      "lineCount": 8,
       "charCount": 56,
-      "extractionStatus": "needs-review",
-      "reviewReasons": [
-        "possible-joined-lines"
-      ],
-      "poemPreview": "長夏江村風日清簷牙燕雀已生成\n蝶衣曬粉花枝午蛛網添絲屋角晴\n落落疏簾邀月影嘈嘈虛枕納溪聲\n久斑兩鬢如霜雪直欲樵漁過此生"
+      "extractionStatus": "auto-extracted",
+      "reviewReasons": [],
+      "poemPreview": "長夏江村風日清\n簷牙燕雀已生成\n蝶衣曬粉花枝午\n蛛網添絲屋角晴"
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00040",
       "recordId": "CN-NT-CAT-00040",
-      "priority": "manual-check",
+      "priority": "bulk-review",
       "eraSlug": "song",
       "titleZh": "新竹",
       "authorZh": "黃庭堅",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E6%96%B0%E7%AB%B9_(%E9%BB%83%E5%BA%AD%E5%A0%85)",
-      "lineCount": 4,
+      "lineCount": 8,
       "charCount": 56,
-      "extractionStatus": "needs-review",
-      "reviewReasons": [
-        "possible-joined-lines"
-      ],
-      "poemPreview": "插棘編籬謹護持養成寒碧映漣漪\n清風掠地秋先到赤日行天午不知\n解籜時聞聲簌簌放梢初見影離離\n歸閒我欲頻來此枕簟仍教到處隨"
+      "extractionStatus": "auto-extracted",
+      "reviewReasons": [],
+      "poemPreview": "插棘編籬謹護持\n養成寒碧映漣漪\n清風掠地秋先到\n赤日行天午不知"
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00041",
@@ -600,82 +585,72 @@
     {
       "queueId": "REVIEW-CN-NT-CAT-00042",
       "recordId": "CN-NT-CAT-00042",
-      "priority": "manual-check",
+      "priority": "bulk-review",
       "eraSlug": "song",
       "titleZh": "秋思",
       "authorZh": "陸遊",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E7%A7%8B%E6%80%9D_(%E9%99%B8%E6%B8%B8)",
-      "lineCount": 4,
+      "lineCount": 8,
       "charCount": 56,
-      "extractionStatus": "needs-review",
-      "reviewReasons": [
-        "possible-joined-lines"
-      ],
-      "poemPreview": "利欲驅人萬火牛江湖浪跡一沙鷗\n日長似歲閒方覺事大如天醉亦休\n砧杵敲殘深巷月梧桐搖落故園秋\n欲舒老眼無高處安得元龍百尺樓"
+      "extractionStatus": "auto-extracted",
+      "reviewReasons": [],
+      "poemPreview": "利欲驅人萬火牛\n江湖浪跡一沙鷗\n日長似歲閒方覺\n事大如天醉亦休"
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00043",
       "recordId": "CN-NT-CAT-00043",
-      "priority": "manual-check",
+      "priority": "bulk-review",
       "eraSlug": "song",
       "titleZh": "海棠",
       "authorZh": "蘇軾",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B5%B7%E6%A3%A0_(%E8%98%87%E8%BB%BE)",
-      "lineCount": 2,
+      "lineCount": 4,
       "charCount": 28,
-      "extractionStatus": "needs-review",
-      "reviewReasons": [
-        "possible-joined-lines"
-      ],
-      "poemPreview": "東風嫋嫋泛崇光香霧空濛月轉廊\n只恐夜深花睡去故燒高燭照紅粧"
+      "extractionStatus": "auto-extracted",
+      "reviewReasons": [],
+      "poemPreview": "東風嫋嫋泛崇光\n香霧空濛月轉廊\n只恐夜深花睡去\n故燒高燭照紅粧"
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00044",
       "recordId": "CN-NT-CAT-00044",
-      "priority": "manual-check",
+      "priority": "bulk-review",
       "eraSlug": "song",
       "titleZh": "絶句",
       "authorZh": "僧志安",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E7%B5%95%E5%8F%A5_(%E5%83%A7%E5%BF%97%E5%AE%89)",
-      "lineCount": 2,
+      "lineCount": 4,
       "charCount": 28,
-      "extractionStatus": "needs-review",
-      "reviewReasons": [
-        "possible-joined-lines"
-      ],
-      "poemPreview": "古木陰中繫短篷杖藜扶我過橋東\n沾衣欲濕杏花雨吹面不寒楊柳風"
+      "extractionStatus": "auto-extracted",
+      "reviewReasons": [],
+      "poemPreview": "古木陰中繫短篷\n杖藜扶我過橋東\n沾衣欲濕杏花雨\n吹面不寒楊柳風"
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00045",
       "recordId": "CN-NT-CAT-00045",
-      "priority": "manual-check",
+      "priority": "bulk-review",
       "eraSlug": "song",
       "titleZh": "湖上",
       "authorZh": "徐元傑",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B9%96%E4%B8%8A_(%E5%BE%90%E5%85%83%E5%82%91)",
-      "lineCount": 2,
+      "lineCount": 4,
       "charCount": 28,
-      "extractionStatus": "needs-review",
-      "reviewReasons": [
-        "possible-joined-lines"
-      ],
-      "poemPreview": "花開紅樹亂鶯啼草長平湖白鷺飛\n風日平和人意好夕陽簫鼓幾船歸"
+      "extractionStatus": "auto-extracted",
+      "reviewReasons": [],
+      "poemPreview": "花開紅樹亂鶯啼\n草長平湖白鷺飛\n風日平和人意好\n夕陽簫鼓幾船歸"
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00046",
       "recordId": "CN-NT-CAT-00046",
-      "priority": "manual-check",
+      "priority": "bulk-review",
       "eraSlug": "song",
       "titleZh": "落花",
       "authorZh": "朱淑真",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E8%90%BD%E8%8A%B1_(%E6%9C%B1%E6%B7%91%E7%9C%9F)",
-      "lineCount": 2,
+      "lineCount": 4,
       "charCount": 28,
-      "extractionStatus": "needs-review",
-      "reviewReasons": [
-        "possible-joined-lines"
-      ],
-      "poemPreview": "連理枝頭花正開妒花風雨便相催\n願教青帝常為主莫遣紛紛點翠苔"
+      "extractionStatus": "auto-extracted",
+      "reviewReasons": [],
+      "poemPreview": "連理枝頭花正開\n妒花風雨便相催\n願教青帝常為主\n莫遣紛紛點翠苔"
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00047",
@@ -696,66 +671,58 @@
     {
       "queueId": "REVIEW-CN-NT-CAT-00048",
       "recordId": "CN-NT-CAT-00048",
-      "priority": "manual-check",
+      "priority": "bulk-review",
       "eraSlug": "song",
       "titleZh": "送春",
       "authorZh": "王令",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E9%80%81%E6%98%A5_(%E7%8E%8B%E4%BB%A4)",
-      "lineCount": 2,
+      "lineCount": 4,
       "charCount": 28,
-      "extractionStatus": "needs-review",
-      "reviewReasons": [
-        "possible-joined-lines"
-      ],
-      "poemPreview": "三月殘花落更開小簷日日燕飛來\n子規夜半猶啼血不信東風喚不回"
+      "extractionStatus": "auto-extracted",
+      "reviewReasons": [],
+      "poemPreview": "三月殘花落更開\n小簷日日燕飛來\n子規夜半猶啼血\n不信東風喚不回"
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00049",
       "recordId": "CN-NT-CAT-00049",
-      "priority": "manual-check",
+      "priority": "bulk-review",
       "eraSlug": "song",
       "titleZh": "田家",
       "authorZh": "范成大",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E7%94%B0%E5%AE%B6_(%E8%8C%83%E6%88%90%E5%A4%A7)",
-      "lineCount": 2,
+      "lineCount": 4,
       "charCount": 28,
-      "extractionStatus": "needs-review",
-      "reviewReasons": [
-        "possible-joined-lines"
-      ],
-      "poemPreview": "晝出耘田夜績麻村莊兒女各當家\n童孫未解供耕織也傍桑陰學種瓜"
+      "extractionStatus": "auto-extracted",
+      "reviewReasons": [],
+      "poemPreview": "晝出耘田夜績麻\n村莊兒女各當家\n童孫未解供耕織\n也傍桑陰學種瓜"
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00050",
       "recordId": "CN-NT-CAT-00050",
-      "priority": "manual-check",
+      "priority": "bulk-review",
       "eraSlug": "song",
       "titleZh": "秋月",
       "authorZh": "程顥",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E7%A7%8B%E6%9C%88_(%E7%A8%8B%E9%A1%A5)",
-      "lineCount": 2,
+      "lineCount": 4,
       "charCount": 28,
-      "extractionStatus": "needs-review",
-      "reviewReasons": [
-        "possible-joined-lines"
-      ],
-      "poemPreview": "清溪流過碧山頭空水澄鮮一色秋\n隔斷紅塵三十里白雲紅葉雨悠悠"
+      "extractionStatus": "auto-extracted",
+      "reviewReasons": [],
+      "poemPreview": "清溪流過碧山頭\n空水澄鮮一色秋\n隔斷紅塵三十里\n白雲紅葉雨悠悠"
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00051",
       "recordId": "CN-NT-CAT-00051",
-      "priority": "manual-check",
+      "priority": "bulk-review",
       "eraSlug": "song",
       "titleZh": "七夕",
       "authorZh": "楊樸",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%83%E5%A4%95_(%E6%A5%8A%E6%A8%B8)",
-      "lineCount": 2,
+      "lineCount": 4,
       "charCount": 28,
-      "extractionStatus": "needs-review",
-      "reviewReasons": [
-        "possible-joined-lines"
-      ],
-      "poemPreview": "未會牽牛意若何須邀織女弄金梭\n年年乞與人間巧不道人間巧幾多"
+      "extractionStatus": "auto-extracted",
+      "reviewReasons": [],
+      "poemPreview": "未會牽牛意若何\n須邀織女弄金梭\n年年乞與人間巧\n不道人間巧幾多"
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00052",
@@ -774,34 +741,30 @@
     {
       "queueId": "REVIEW-CN-NT-CAT-00053",
       "recordId": "CN-NT-CAT-00053",
-      "priority": "manual-check",
+      "priority": "bulk-review",
       "eraSlug": "song",
       "titleZh": "梅",
       "authorZh": "王淇",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%85_(%E7%8E%8B%E6%B7%87)",
-      "lineCount": 2,
+      "lineCount": 4,
       "charCount": 28,
-      "extractionStatus": "needs-review",
-      "reviewReasons": [
-        "possible-joined-lines"
-      ],
-      "poemPreview": "不受塵埃半點侵竹籬茅舍自甘心\n只因誤識林和靖惹得詩人說到今"
+      "extractionStatus": "auto-extracted",
+      "reviewReasons": [],
+      "poemPreview": "不受塵埃半點侵\n竹籬茅舍自甘心\n只因誤識林和靖\n惹得詩人說到今"
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00054",
       "recordId": "CN-NT-CAT-00054",
-      "priority": "manual-check",
+      "priority": "bulk-review",
       "eraSlug": "song",
       "titleZh": "早春",
       "authorZh": "白玉蟾",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E6%97%A9%E6%98%A5_(%E7%99%BD%E7%8E%89%E8%9F%BE)",
-      "lineCount": 2,
+      "lineCount": 4,
       "charCount": 28,
-      "extractionStatus": "needs-review",
-      "reviewReasons": [
-        "possible-joined-lines"
-      ],
-      "poemPreview": "南枝纔放兩三花雪裏吟香弄粉些\n淡淡著煙濃著月深深籠水淺籠沙"
+      "extractionStatus": "auto-extracted",
+      "reviewReasons": [],
+      "poemPreview": "南枝纔放兩三花\n雪裏吟香弄粉些\n淡淡著煙濃著月\n深深籠水淺籠沙"
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00055",
@@ -811,13 +774,13 @@
       "titleZh": "雪梅",
       "authorZh": "盧梅坡",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E9%9B%AA%E6%A2%85_(%E7%9B%A7%E6%A2%85%E5%9D%A1)",
-      "lineCount": 6,
-      "charCount": 78,
+      "lineCount": 7,
+      "charCount": 62,
       "extractionStatus": "needs-review",
       "reviewReasons": [
         "possible-joined-lines"
       ],
-      "poemPreview": "===其一===\n梅雪爭春未肯降騷人擱筆費評章（擱一作閣）\n梅須遜雪三分白雪卻輸梅一段香\n===其二==="
+      "poemPreview": "梅雪爭春未肯降騷人擱筆費評章（擱一作閣）\n梅須遜雪三分白\n雪卻輸梅一段香\n有梅無雪不精神"
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00056",
@@ -878,18 +841,16 @@
     {
       "queueId": "REVIEW-CN-NT-CAT-00060",
       "recordId": "CN-NT-CAT-00060",
-      "priority": "manual-check",
+      "priority": "bulk-review",
       "eraSlug": "song",
       "titleZh": "花影",
       "authorZh": "蘇軾",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E8%8A%B1%E5%BD%B1_(%E8%98%87%E8%BB%BE)",
-      "lineCount": 2,
+      "lineCount": 4,
       "charCount": 28,
-      "extractionStatus": "needs-review",
-      "reviewReasons": [
-        "possible-joined-lines"
-      ],
-      "poemPreview": "重重疊疊上瑤臺幾度呼童掃不開\n剛被太陽收拾去卻教明月送將來"
+      "extractionStatus": "auto-extracted",
+      "reviewReasons": [],
+      "poemPreview": "重重疊疊上瑤臺\n幾度呼童掃不開\n剛被太陽收拾去\n卻教明月送將來"
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00061",
@@ -997,11 +958,11 @@
       "titleZh": "即事",
       "authorZh": "夏完淳",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8D%B3%E4%BA%8B_(%E5%A4%8F%E5%AE%8C%E6%B7%B3)",
-      "lineCount": 27,
-      "charCount": 171,
+      "lineCount": 24,
+      "charCount": 144,
       "extractionStatus": "auto-extracted",
       "reviewReasons": [],
-      "poemPreview": "==復楚情何極==\n復楚情何極，\n亡秦氣未平。\n雄風清角勁，"
+      "poemPreview": "復楚情何極，\n亡秦氣未平。\n雄風清角勁，\n落日大旗明。"
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00069",
@@ -1306,16 +1267,19 @@
     {
       "queueId": "REVIEW-CN-NT-CAT-00090",
       "recordId": "CN-NT-CAT-00090",
-      "priority": "bulk-review",
+      "priority": "manual-check",
       "eraSlug": "ming",
       "titleZh": "偶成",
       "authorZh": "劉淑",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E5%81%B6%E6%88%90_(%E5%8A%89%E6%B7%91)",
-      "lineCount": 2,
-      "charCount": 12,
-      "extractionStatus": "auto-extracted",
-      "reviewReasons": [],
-      "poemPreview": "==其二==\n==其六=="
+      "lineCount": 0,
+      "charCount": 0,
+      "extractionStatus": "needs-review",
+      "reviewReasons": [
+        "extracted-too-few-lines",
+        "empty-body"
+      ],
+      "poemPreview": ""
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00091",
@@ -1516,16 +1480,19 @@
     {
       "queueId": "REVIEW-CN-NT-CAT-00105",
       "recordId": "CN-NT-CAT-00105",
-      "priority": "bulk-review",
+      "priority": "manual-check",
       "eraSlug": "song",
       "titleZh": "偶成",
       "authorZh": "文天祥",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E5%81%B6%E6%88%90_(%E6%96%87%E5%A4%A9%E7%A5%A5)",
-      "lineCount": 2,
-      "charCount": 18,
-      "extractionStatus": "auto-extracted",
-      "reviewReasons": [],
-      "poemPreview": "===偶成===\n===偶成二首==="
+      "lineCount": 0,
+      "charCount": 0,
+      "extractionStatus": "needs-review",
+      "reviewReasons": [
+        "extracted-too-few-lines",
+        "empty-body"
+      ],
+      "poemPreview": ""
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00106",
@@ -1577,8 +1544,8 @@
       "titleZh": "喜蔣德瞻還里",
       "authorZh": "翁卷",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E5%96%9C%E8%94%A3%E5%BE%B7%E7%9E%BB%E9%82%84%E9%87%8C_(%E7%BF%81%E5%8D%B7)",
-      "lineCount": 11,
-      "charCount": 68,
+      "lineCount": 10,
+      "charCount": 63,
       "extractionStatus": "auto-extracted",
       "reviewReasons": [],
       "poemPreview": "爲官三載餘，\n所得是清虛。\n學就金丹法，\n修成玉檢書。"
@@ -1591,8 +1558,8 @@
       "titleZh": "信州草衣寺",
       "authorZh": "翁卷",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E4%BF%A1%E5%B7%9E%E8%8D%89%E8%A1%A3%E5%AF%BA_(%E7%BF%81%E5%8D%B7)",
-      "lineCount": 9,
-      "charCount": 97,
+      "lineCount": 8,
+      "charCount": 92,
       "extractionStatus": "needs-review",
       "reviewReasons": [
         "possible-joined-lines"
@@ -1607,11 +1574,11 @@
       "titleZh": "句",
       "authorZh": "翁卷",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%A5_(%E7%BF%81%E5%8D%B7)",
-      "lineCount": 16,
-      "charCount": 110,
+      "lineCount": 9,
+      "charCount": 69,
       "extractionStatus": "auto-extracted",
       "reviewReasons": [],
-      "poemPreview": "==其一==\n留客看花賦詩坐。\n==其二==\n獨自卷簾樓上望。"
+      "poemPreview": "留客看花賦詩坐。\n獨自卷簾樓上望。\n梅花處處妍。\n官歷春猶淺。"
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00112",
@@ -1635,8 +1602,8 @@
       "titleZh": "贈不食姑",
       "authorZh": "翁卷",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B4%88%E4%B8%8D%E9%A3%9F%E5%A7%91_(%E7%BF%81%E5%8D%B7)",
-      "lineCount": 10,
-      "charCount": 71,
+      "lineCount": 9,
+      "charCount": 66,
       "extractionStatus": "needs-review",
       "reviewReasons": [
         "possible-joined-lines"
@@ -1651,8 +1618,8 @@
       "titleZh": "能仁寺",
       "authorZh": "翁卷",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E8%83%BD%E4%BB%81%E5%AF%BA_(%E7%BF%81%E5%8D%B7)",
-      "lineCount": 9,
-      "charCount": 56,
+      "lineCount": 8,
+      "charCount": 51,
       "extractionStatus": "auto-extracted",
       "reviewReasons": [],
       "poemPreview": "芙蓉峰入天，\n寺與此峰連。\n得見是冬月，\n要來從昔年。"
@@ -1665,8 +1632,8 @@
       "titleZh": "宿寺",
       "authorZh": "翁卷",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%BF%E5%AF%BA_(%E7%BF%81%E5%8D%B7)",
-      "lineCount": 9,
-      "charCount": 56,
+      "lineCount": 8,
+      "charCount": 51,
       "extractionStatus": "auto-extracted",
       "reviewReasons": [],
       "poemPreview": "一宿此禪宮，\n身同落西巖集作薙。\n深窓難得月，\n老屋易生風。"
@@ -1693,8 +1660,8 @@
       "titleZh": "幽居",
       "authorZh": "翁卷",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E5%B9%BD%E5%B1%85_(%E7%BF%81%E5%8D%B7)",
-      "lineCount": 9,
-      "charCount": 92,
+      "lineCount": 8,
+      "charCount": 87,
       "extractionStatus": "needs-review",
       "reviewReasons": [
         "possible-joined-lines"
@@ -1723,8 +1690,8 @@
       "titleZh": "偶題",
       "authorZh": "翁卷",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E5%81%B6%E9%A1%8C_(%E7%BF%81%E5%8D%B7)",
-      "lineCount": 9,
-      "charCount": 62,
+      "lineCount": 8,
+      "charCount": 57,
       "extractionStatus": "needs-review",
       "reviewReasons": [
         "possible-joined-lines"
@@ -1753,8 +1720,8 @@
       "titleZh": "題江心寺",
       "authorZh": "翁卷",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E9%A1%8C%E6%B1%9F%E5%BF%83%E5%AF%BA_(%E7%BF%81%E5%8D%B7)",
-      "lineCount": 9,
-      "charCount": 66,
+      "lineCount": 8,
+      "charCount": 61,
       "extractionStatus": "needs-review",
       "reviewReasons": [
         "possible-joined-lines"
@@ -1783,8 +1750,8 @@
       "titleZh": "尋僧",
       "authorZh": "翁卷",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E5%B0%8B%E5%83%A7_(%E7%BF%81%E5%8D%B7)",
-      "lineCount": 5,
-      "charCount": 36,
+      "lineCount": 4,
+      "charCount": 31,
       "extractionStatus": "auto-extracted",
       "reviewReasons": [],
       "poemPreview": "秋凈日暉暉，\n間行風滿衣。\n尋僧雖不遇，\n折得菊花歸以上《西巖集》。"
@@ -1797,8 +1764,8 @@
       "titleZh": "西風",
       "authorZh": "翁卷",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E8%A5%BF%E9%A2%A8_(%E7%BF%81%E5%8D%B7)",
-      "lineCount": 5,
-      "charCount": 40,
+      "lineCount": 4,
+      "charCount": 35,
       "extractionStatus": "auto-extracted",
       "reviewReasons": [],
       "poemPreview": "一處西風一處愁，\n又逢鳴雁在西巖集作宿。\n芙蓉不分秋蕭索，\n鬭拆繁紅滿樹頭。"
@@ -1839,8 +1806,8 @@
       "titleZh": "步虛詞",
       "authorZh": "翁卷",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E6%AD%A5%E8%99%9B%E8%A9%9E_(%E7%BF%81%E5%8D%B7)",
-      "lineCount": 14,
-      "charCount": 103,
+      "lineCount": 13,
+      "charCount": 98,
       "extractionStatus": "needs-review",
       "reviewReasons": [
         "possible-joined-lines"
@@ -1855,8 +1822,8 @@
       "titleZh": "白紵詞",
       "authorZh": "翁卷",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E7%99%BD%E7%B4%B5%E8%A9%9E_(%E7%BF%81%E5%8D%B7)",
-      "lineCount": 9,
-      "charCount": 76,
+      "lineCount": 8,
+      "charCount": 71,
       "extractionStatus": "needs-review",
       "reviewReasons": [
         "possible-joined-lines"
@@ -1871,8 +1838,8 @@
       "titleZh": "秋色",
       "authorZh": "趙師秀",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E7%A7%8B%E8%89%B2_(%E8%B6%99%E5%B8%AB%E7%A7%80)",
-      "lineCount": 9,
-      "charCount": 53,
+      "lineCount": 8,
+      "charCount": 48,
       "extractionStatus": "auto-extracted",
       "reviewReasons": [],
       "poemPreview": "幽人愛秋色，\n祗為屬吟情。\n一片葉初落，\n數聯詩已清。"
@@ -1885,8 +1852,8 @@
       "titleZh": "信州草衣寺",
       "authorZh": "趙師秀",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E4%BF%A1%E5%B7%9E%E8%8D%89%E8%A1%A3%E5%AF%BA_(%E8%B6%99%E5%B8%AB%E7%A7%80)",
-      "lineCount": 9,
-      "charCount": 53,
+      "lineCount": 8,
+      "charCount": 48,
       "extractionStatus": "auto-extracted",
       "reviewReasons": [],
       "poemPreview": "芙蕖四五枝，\n寂寞在空池。\n難見草衣士，\n空看宴坐碑。"
@@ -1899,8 +1866,8 @@
       "titleZh": "大龍湫",
       "authorZh": "趙師秀",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E5%A4%A7%E9%BE%8D%E6%B9%AB_(%E8%B6%99%E5%B8%AB%E7%A7%80)",
-      "lineCount": 9,
-      "charCount": 53,
+      "lineCount": 8,
+      "charCount": 48,
       "extractionStatus": "auto-extracted",
       "reviewReasons": [],
       "poemPreview": "一派落虛空，\n如何畫得同。\n髙風吹作雨，\n低日射成虹。"
@@ -1913,8 +1880,8 @@
       "titleZh": "送薛子舒赴華亭船官",
       "authorZh": "翁卷",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E9%80%81%E8%96%9B%E5%AD%90%E8%88%92%E8%B5%B4%E8%8F%AF%E4%BA%AD%E8%88%B9%E5%AE%98_(%E7%BF%81%E5%8D%B7)",
-      "lineCount": 11,
-      "charCount": 70,
+      "lineCount": 10,
+      "charCount": 65,
       "extractionStatus": "auto-extracted",
       "reviewReasons": [],
       "poemPreview": "君到西巖集作至。\n雲間日，\n應分二陸名。\n縣圖山色少西巖集作好。"
@@ -1927,8 +1894,8 @@
       "titleZh": "春晚即事",
       "authorZh": "趙師秀",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%A5%E6%99%9A%E5%8D%B3%E4%BA%8B_(%E8%B6%99%E5%B8%AB%E7%A7%80)",
-      "lineCount": 9,
-      "charCount": 53,
+      "lineCount": 8,
+      "charCount": 48,
       "extractionStatus": "auto-extracted",
       "reviewReasons": [],
       "poemPreview": "一身來作吏，\n白日算徒勞。\n塵土侵衣重，\n年光如鬢牢。"
@@ -1941,8 +1908,8 @@
       "titleZh": "病起",
       "authorZh": "趙師秀",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E7%97%85%E8%B5%B7_(%E8%B6%99%E5%B8%AB%E7%A7%80)",
-      "lineCount": 9,
-      "charCount": 69,
+      "lineCount": 8,
+      "charCount": 64,
       "extractionStatus": "auto-extracted",
       "reviewReasons": [],
       "poemPreview": "身如瘦鶴已伶俜，\n一卧兼旬更有零。\n朝客偶知親送藥，\n野僧相保密持經。"
@@ -1955,8 +1922,8 @@
       "titleZh": "池上",
       "authorZh": "趙師秀",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B1%A0%E4%B8%8A_(%E8%B6%99%E5%B8%AB%E7%A7%80)",
-      "lineCount": 5,
-      "charCount": 37,
+      "lineCount": 4,
+      "charCount": 32,
       "extractionStatus": "auto-extracted",
       "reviewReasons": [],
       "poemPreview": "朝來行樂向秋池，\n池上秋深病不知。\n一樹木犀供夜雨，\n清香移在菊花枝。"
@@ -1969,11 +1936,11 @@
       "titleZh": "自君之出矣",
       "authorZh": "徐照",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E8%87%AA%E5%90%9B%E4%B9%8B%E5%87%BA%E7%9F%A3_(%E5%BE%90%E7%85%A7)",
-      "lineCount": 18,
-      "charCount": 130,
+      "lineCount": 14,
+      "charCount": 95,
       "extractionStatus": "auto-extracted",
       "reviewReasons": [],
-      "poemPreview": "====其一====\n自君之出矣，\n心意明本、顧本作魂。\n遠相隨。"
+      "poemPreview": "自君之出矣，\n心意明本、顧本作魂。\n遠相隨。\n拆破唐人絹，"
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00137",
@@ -1983,8 +1950,8 @@
       "titleZh": "猛虎行",
       "authorZh": "徐照",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E7%8C%9B%E8%99%8E%E8%A1%8C_(%E5%BE%90%E7%85%A7)",
-      "lineCount": 9,
-      "charCount": 65,
+      "lineCount": 8,
+      "charCount": 60,
       "extractionStatus": "needs-review",
       "reviewReasons": [
         "possible-joined-lines"
@@ -2013,11 +1980,11 @@
       "titleZh": "采蓮曲",
       "authorZh": "徐照",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E9%87%87%E8%93%AE%E6%9B%B2_(%E5%BE%90%E7%85%A7)",
-      "lineCount": 10,
-      "charCount": 84,
+      "lineCount": 8,
+      "charCount": 64,
       "extractionStatus": "auto-extracted",
       "reviewReasons": [],
-      "poemPreview": "====其一====\n行遍塘邊不肯歸，\n鴛鴦打起看雙飛。\n荷花近岸難攀折，"
+      "poemPreview": "行遍塘邊不肯歸，\n鴛鴦打起看雙飛。\n荷花近岸難攀折，\n蒲葦叢深露濕衣。"
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00140",
@@ -2083,8 +2050,8 @@
       "titleZh": "宿寺",
       "authorZh": "徐照",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%BF%E5%AF%BA_(%E5%BE%90%E7%85%A7)",
-      "lineCount": 10,
-      "charCount": 58,
+      "lineCount": 9,
+      "charCount": 53,
       "extractionStatus": "auto-extracted",
       "reviewReasons": [],
       "poemPreview": "古殿清燈冷，\n虛堂明本作廊。\n葉掃風。\n掩關人迹外，"
@@ -2125,8 +2092,8 @@
       "titleZh": "露",
       "authorZh": "徐照",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E9%9C%B2_(%E5%BE%90%E7%85%A7)",
-      "lineCount": 9,
-      "charCount": 55,
+      "lineCount": 8,
+      "charCount": 50,
       "extractionStatus": "auto-extracted",
       "reviewReasons": [],
       "poemPreview": "立久衣襟潤，\n空中氣結成。\n光凝蘭葉膩，\n冷逼鶴黃本作桂。"
@@ -2195,8 +2162,8 @@
       "titleZh": "漁家",
       "authorZh": "徐照",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%81%E5%AE%B6_(%E5%BE%90%E7%85%A7)",
-      "lineCount": 9,
-      "charCount": 58,
+      "lineCount": 8,
+      "charCount": 53,
       "extractionStatus": "auto-extracted",
       "reviewReasons": [],
       "poemPreview": "阿翁年紀老，\n生計在綸絲。\n野水無人占，\n扁舟逐處移。"
@@ -2209,8 +2176,8 @@
       "titleZh": "山中即事",
       "authorZh": "徐照",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E5%B1%B1%E4%B8%AD%E5%8D%B3%E4%BA%8B_(%E5%BE%90%E7%85%A7)",
-      "lineCount": 12,
-      "charCount": 75,
+      "lineCount": 11,
+      "charCount": 70,
       "extractionStatus": "auto-extracted",
       "reviewReasons": [],
       "poemPreview": "著履明本、顧本作屐。\n上崔嵬，\n呼兒注瓦杯。\n千岑黃本作嶺。"
@@ -2223,8 +2190,8 @@
       "titleZh": "鴈",
       "authorZh": "徐照",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E9%B4%88_(%E5%BE%90%E7%85%A7)",
-      "lineCount": 10,
-      "charCount": 68,
+      "lineCount": 9,
+      "charCount": 63,
       "extractionStatus": "auto-extracted",
       "reviewReasons": [],
       "poemPreview": "今春北歸鴈，\n秋至又南征。\n冷避燕關雪，\n暖逢湘水晴。"
@@ -2265,8 +2232,8 @@
       "titleZh": "送翁靈舒遊邊",
       "authorZh": "徐照",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E9%80%81%E7%BF%81%E9%9D%88%E8%88%92%E9%81%8A%E9%82%8A_(%E5%BE%90%E7%85%A7)",
-      "lineCount": 9,
-      "charCount": 60,
+      "lineCount": 8,
+      "charCount": 55,
       "extractionStatus": "auto-extracted",
       "reviewReasons": [],
       "poemPreview": "孤劍色磨青，\n深謀祕鬼靈。\n離山春值雪，\n憂國夜觀星。"
@@ -2293,8 +2260,8 @@
       "titleZh": "贈九華李丹士",
       "authorZh": "徐照",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B4%88%E4%B9%9D%E8%8F%AF%E6%9D%8E%E4%B8%B9%E5%A3%AB_(%E5%BE%90%E7%85%A7)",
-      "lineCount": 11,
-      "charCount": 69,
+      "lineCount": 10,
+      "charCount": 64,
       "extractionStatus": "auto-extracted",
       "reviewReasons": [],
       "poemPreview": "長記零陵郡，\n共看江上峰。\n平明本、顧本作一。\n生輕世事，"
@@ -2321,8 +2288,8 @@
       "titleZh": "喜蔣德瞻還里",
       "authorZh": "徐照",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E5%96%9C%E8%94%A3%E5%BE%B7%E7%9E%BB%E9%82%84%E9%87%8C_(%E5%BE%90%E7%85%A7)",
-      "lineCount": 9,
-      "charCount": 53,
+      "lineCount": 8,
+      "charCount": 48,
       "extractionStatus": "auto-extracted",
       "reviewReasons": [],
       "poemPreview": "長作湯村夢，\n今來免所思。\n丹靈年命永，\n琴裂壁風吹。"
@@ -2349,8 +2316,8 @@
       "titleZh": "白石巖",
       "authorZh": "徐照",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E7%99%BD%E7%9F%B3%E5%B7%96_(%E5%BE%90%E7%85%A7)",
-      "lineCount": 9,
-      "charCount": 59,
+      "lineCount": 8,
+      "charCount": 54,
       "extractionStatus": "auto-extracted",
       "reviewReasons": [],
       "poemPreview": "一石入遙天，\n千峰疊在前。\n人行不到處，\n仙去未多年。"
@@ -2377,8 +2344,8 @@
       "titleZh": "病中作",
       "authorZh": "徐照",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E7%97%85%E4%B8%AD%E4%BD%9C_(%E5%BE%90%E7%85%A7)",
-      "lineCount": 11,
-      "charCount": 65,
+      "lineCount": 10,
+      "charCount": 60,
       "extractionStatus": "auto-extracted",
       "reviewReasons": [],
       "poemPreview": "一原作三，\n據明本、顧本改。\n行三步歇，\n屋漏坐頻移。"
@@ -2405,11 +2372,11 @@
       "titleZh": "宮詞",
       "authorZh": "徐照",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%AE%E8%A9%9E_(%E5%BE%90%E7%85%A7)",
-      "lineCount": 10,
-      "charCount": 84,
+      "lineCount": 8,
+      "charCount": 64,
       "extractionStatus": "auto-extracted",
       "reviewReasons": [],
-      "poemPreview": "====其一====\n睡眼蒙茸帶宿酲，\n起來階下探春晴。\n滿身花露聽鶯久，"
+      "poemPreview": "睡眼蒙茸帶宿酲，\n起來階下探春晴。\n滿身花露聽鶯久，\n禁鼓重新打六更。"
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00168",
@@ -2517,8 +2484,8 @@
       "titleZh": "廢居行",
       "authorZh": "徐照",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E5%BB%A2%E5%B1%85%E8%A1%8C_(%E5%BE%90%E7%85%A7)",
-      "lineCount": 17,
-      "charCount": 156,
+      "lineCount": 16,
+      "charCount": 151,
       "extractionStatus": "needs-review",
       "reviewReasons": [
         "possible-joined-lines"
@@ -2547,8 +2514,8 @@
       "titleZh": "李夫人",
       "authorZh": "徐照",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E6%9D%8E%E5%A4%AB%E4%BA%BA_(%E5%BE%90%E7%85%A7)",
-      "lineCount": 11,
-      "charCount": 101,
+      "lineCount": 10,
+      "charCount": 96,
       "extractionStatus": "needs-review",
       "reviewReasons": [
         "possible-joined-lines"
@@ -2577,8 +2544,8 @@
       "titleZh": "贈張亦",
       "authorZh": "翁卷",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B4%88%E5%BC%B5%E4%BA%A6_(%E7%BF%81%E5%8D%B7)",
-      "lineCount": 10,
-      "charCount": 62,
+      "lineCount": 9,
+      "charCount": 57,
       "extractionStatus": "auto-extracted",
       "reviewReasons": [],
       "poemPreview": "興兵又罷兵，\n策士恥無名。\n閑西巖集作乍。\n見秋風起，"
@@ -2591,8 +2558,8 @@
       "titleZh": "送薛子舒赴華亭船官",
       "authorZh": "趙師秀",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E9%80%81%E8%96%9B%E5%AD%90%E8%88%92%E8%B5%B4%E8%8F%AF%E4%BA%AD%E8%88%B9%E5%AE%98_(%E8%B6%99%E5%B8%AB%E7%A7%80)",
-      "lineCount": 9,
-      "charCount": 53,
+      "lineCount": 8,
+      "charCount": 48,
       "extractionStatus": "auto-extracted",
       "reviewReasons": [],
       "poemPreview": "竹籠盛書去，\n遙知官事閒。\n水程春有雨，\n海岸曉無山。"
@@ -2661,8 +2628,8 @@
       "titleZh": "夏日",
       "authorZh": "徐璣",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E5%A4%8F%E6%97%A5_(%E5%BE%90%E7%92%A3)",
-      "lineCount": 10,
-      "charCount": 58,
+      "lineCount": 9,
+      "charCount": 53,
       "extractionStatus": "auto-extracted",
       "reviewReasons": [],
       "poemPreview": "書疑當作晝。\n困當檐立，\n微風動鬢毛。\n桐陰遮井暗，"
@@ -2731,8 +2698,8 @@
       "titleZh": "霜",
       "authorZh": "徐璣",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E9%9C%9C_(%E5%BE%90%E7%92%A3)",
-      "lineCount": 9,
-      "charCount": 58,
+      "lineCount": 8,
+      "charCount": 53,
       "extractionStatus": "auto-extracted",
       "reviewReasons": [],
       "poemPreview": "詩鬢曉星星，\n霜天似水清。\n風當窓眼入，\n冰向硯池生。"
@@ -2745,8 +2712,8 @@
       "titleZh": "山居",
       "authorZh": "徐璣",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E5%B1%B1%E5%B1%85_(%E5%BE%90%E7%92%A3)",
-      "lineCount": 9,
-      "charCount": 59,
+      "lineCount": 8,
+      "charCount": 54,
       "extractionStatus": "auto-extracted",
       "reviewReasons": [],
       "poemPreview": "柳竹藏花塢，\n茅茨接草池。\n開門驚燕子，\n汲水得魚兒。"
@@ -2801,11 +2768,11 @@
       "titleZh": "梅",
       "authorZh": "徐璣",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%85_(%E5%BE%90%E7%92%A3)",
-      "lineCount": 18,
-      "charCount": 148,
+      "lineCount": 16,
+      "charCount": 128,
       "extractionStatus": "auto-extracted",
       "reviewReasons": [],
-      "poemPreview": "====其一====\n疎芳點點是春冰，\n應笑浮華去不停。\n石畔長來枝易老，"
+      "poemPreview": "疎芳點點是春冰，\n應笑浮華去不停。\n石畔長來枝易老，\n竹間瘦得萼全青。"
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00196",
@@ -2824,16 +2791,19 @@
     {
       "queueId": "REVIEW-CN-NT-CAT-00197",
       "recordId": "CN-NT-CAT-00197",
-      "priority": "bulk-review",
+      "priority": "manual-check",
       "eraSlug": "song",
       "titleZh": "含笑花",
       "authorZh": "徐璣",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E5%90%AB%E7%AC%91%E8%8A%B1_(%E5%BE%90%E7%92%A3)",
-      "lineCount": 3,
-      "charCount": 23,
-      "extractionStatus": "auto-extracted",
-      "reviewReasons": [],
-      "poemPreview": "==薄薄沉熏骨==\n==瓜香濃欲爛==\n==註=="
+      "lineCount": 0,
+      "charCount": 0,
+      "extractionStatus": "needs-review",
+      "reviewReasons": [
+        "extracted-too-few-lines",
+        "empty-body"
+      ],
+      "poemPreview": ""
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00198",
@@ -2899,8 +2869,8 @@
       "titleZh": "湖",
       "authorZh": "徐璣",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B9%96_(%E5%BE%90%E7%92%A3)",
-      "lineCount": 5,
-      "charCount": 50,
+      "lineCount": 4,
+      "charCount": 45,
       "extractionStatus": "needs-review",
       "reviewReasons": [
         "possible-joined-lines"
@@ -2915,11 +2885,11 @@
       "titleZh": "春雨",
       "authorZh": "徐璣",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%A5%E9%9B%A8_(%E5%BE%90%E7%92%A3)",
-      "lineCount": 10,
-      "charCount": 84,
+      "lineCount": 8,
+      "charCount": 64,
       "extractionStatus": "auto-extracted",
       "reviewReasons": [],
-      "poemPreview": "====其一====\n斷橋橫落淺沙邊，\n沙岸疎梅卧曉煙。\n新雨漲溪三尺水，"
+      "poemPreview": "斷橋橫落淺沙邊，\n沙岸疎梅卧曉煙。\n新雨漲溪三尺水，\n漁翁來覓渡船錢。"
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00204",
@@ -2929,8 +2899,8 @@
       "titleZh": "山茶花",
       "authorZh": "徐璣",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E5%B1%B1%E8%8C%B6%E8%8A%B1_(%E5%BE%90%E7%92%A3)",
-      "lineCount": 25,
-      "charCount": 162,
+      "lineCount": 24,
+      "charCount": 157,
       "extractionStatus": "needs-review",
       "reviewReasons": [
         "possible-joined-lines"
@@ -2945,13 +2915,13 @@
       "titleZh": "句",
       "authorZh": "徐璣",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%A5_(%E5%BE%90%E7%92%A3)",
-      "lineCount": 33,
-      "charCount": 275,
+      "lineCount": 25,
+      "charCount": 201,
       "extractionStatus": "needs-review",
       "reviewReasons": [
         "possible-joined-lines"
       ],
-      "poemPreview": "====其一====\n要是此花清絶處，\n端如醉面讀離騷紅梅。\n====其二===="
+      "poemPreview": "要是此花清絶處，\n端如醉面讀離騷紅梅。\n青蛟煖晝拏雲上，\n白雪深春壓架香酴醿。"
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00206",
@@ -2961,8 +2931,8 @@
       "titleZh": "白石巖",
       "authorZh": "趙師秀",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E7%99%BD%E7%9F%B3%E5%B7%96_(%E8%B6%99%E5%B8%AB%E7%A7%80)",
-      "lineCount": 5,
-      "charCount": 37,
+      "lineCount": 4,
+      "charCount": 32,
       "extractionStatus": "auto-extracted",
       "reviewReasons": [],
       "poemPreview": "誰炷清香禮少君，\n數聲金磬夢中聞。\n起來閑把青衣袖，\n裹得欄乾一片雲。"
@@ -2991,8 +2961,8 @@
       "titleZh": "遊白石巖",
       "authorZh": "陳傅良",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E9%81%8A%E7%99%BD%E7%9F%B3%E5%B7%96_(%E9%99%B3%E5%82%85%E8%89%AF)",
-      "lineCount": 19,
-      "charCount": 113,
+      "lineCount": 18,
+      "charCount": 108,
       "extractionStatus": "auto-extracted",
       "reviewReasons": [],
       "poemPreview": "地向東南傾，\n石際滄海立。\n蛟鼉限波濤，\n鷄犬得城邑。"
@@ -3019,8 +2989,8 @@
       "titleZh": "白石巖",
       "authorZh": "錢文婉",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E7%99%BD%E7%9F%B3%E5%B7%96_(%E9%8C%A2%E6%96%87%E5%A9%89)",
-      "lineCount": 9,
-      "charCount": 87,
+      "lineCount": 8,
+      "charCount": 82,
       "extractionStatus": "needs-review",
       "reviewReasons": [
         "possible-joined-lines"
@@ -3035,8 +3005,8 @@
       "titleZh": "白石巖",
       "authorZh": "錢宏",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E7%99%BD%E7%9F%B3%E5%B7%96_(%E9%8C%A2%E5%AE%8F)",
-      "lineCount": 5,
-      "charCount": 50,
+      "lineCount": 4,
+      "charCount": 45,
       "extractionStatus": "needs-review",
       "reviewReasons": [
         "possible-joined-lines"
@@ -3051,8 +3021,8 @@
       "titleZh": "樓上",
       "authorZh": "趙師秀",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A8%93%E4%B8%8A_(%E8%B6%99%E5%B8%AB%E7%A7%80)",
-      "lineCount": 5,
-      "charCount": 47,
+      "lineCount": 4,
+      "charCount": 42,
       "extractionStatus": "needs-review",
       "reviewReasons": [
         "possible-joined-lines"
@@ -3067,8 +3037,8 @@
       "titleZh": "樓上",
       "authorZh": "葛起耕",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A8%93%E4%B8%8A_(%E8%91%9B%E8%B5%B7%E8%80%95)",
-      "lineCount": 6,
-      "charCount": 46,
+      "lineCount": 5,
+      "charCount": 41,
       "extractionStatus": "auto-extracted",
       "reviewReasons": [],
       "poemPreview": "樓上何人奏玉簫，\n數聲和月伴春宵原作霄，\n據群賢集改。\n斷腸喚起江南夢，"
@@ -3081,8 +3051,8 @@
       "titleZh": "樓上",
       "authorZh": "戴敏",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A8%93%E4%B8%8A_(%E6%88%B4%E6%95%8F)",
-      "lineCount": 9,
-      "charCount": 69,
+      "lineCount": 8,
+      "charCount": 64,
       "extractionStatus": "auto-extracted",
       "reviewReasons": [],
       "poemPreview": "終朝役役晚來閑，\n識破浮生一夢間。\n挈榼去沽深巷酒，\n倚樓貪看夕陽山。"
@@ -3095,8 +3065,8 @@
       "titleZh": "杜鵑",
       "authorZh": "趙師秀",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E6%9D%9C%E9%B5%91_(%E8%B6%99%E5%B8%AB%E7%A7%80)",
-      "lineCount": 5,
-      "charCount": 47,
+      "lineCount": 4,
+      "charCount": 42,
       "extractionStatus": "needs-review",
       "reviewReasons": [
         "possible-joined-lines"
@@ -3111,13 +3081,13 @@
       "titleZh": "句",
       "authorZh": "趙師秀",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%A5_(%E8%B6%99%E5%B8%AB%E7%A7%80)",
-      "lineCount": 23,
-      "charCount": 252,
+      "lineCount": 15,
+      "charCount": 177,
       "extractionStatus": "needs-review",
       "reviewReasons": [
         "possible-joined-lines"
       ],
-      "poemPreview": "====其一====\n病與西湖絶半年。\n宋李龏《梅花衲》。\n====其二===="
+      "poemPreview": "病與西湖絶半年。\n宋李龏《梅花衲》。\n況多秋蘚色。\n宋李龏《梅花衲》。"
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00217",
@@ -3127,8 +3097,8 @@
       "titleZh": "尋僧",
       "authorZh": "沈明臣",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E5%B0%8B%E5%83%A7_(%E6%B2%88%E6%98%8E%E8%87%A3)",
-      "lineCount": 9,
-      "charCount": 52,
+      "lineCount": 8,
+      "charCount": 47,
       "extractionStatus": "auto-extracted",
       "reviewReasons": [],
       "poemPreview": "卧交知絶，\n尋僧出野行。\n岸花紛委露，\n溪竹半侵萍。"
@@ -3155,8 +3125,8 @@
       "titleZh": "夢回",
       "authorZh": "劉克莊",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E5%A4%A2%E5%9B%9E_(%E5%8A%89%E5%85%8B%E8%8E%8A)",
-      "lineCount": 9,
-      "charCount": 73,
+      "lineCount": 8,
+      "charCount": 68,
       "extractionStatus": "auto-extracted",
       "reviewReasons": [],
       "poemPreview": "跳出槐安有底忙，\n何須更待熟黃粱。\n牙籤載返善和宅，\n手板抽回政事堂。"
@@ -3225,8 +3195,8 @@
       "titleZh": "夢回",
       "authorZh": "趙汝鐩",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E5%A4%A2%E5%9B%9E_(%E8%B6%99%E6%B1%9D%E9%90%A9)",
-      "lineCount": 6,
-      "charCount": 44,
+      "lineCount": 5,
+      "charCount": 39,
       "extractionStatus": "auto-extracted",
       "reviewReasons": [],
       "poemPreview": "春意已深寒未了，\n夢回鬥帳房櫳悄。\n五更五群賢集本作三。\n點殘月銷，"
@@ -3281,11 +3251,11 @@
       "titleZh": "夢回二首",
       "authorZh": "薛季宣",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E5%A4%A2%E5%9B%9E%E4%BA%8C%E9%A6%96_(%E8%96%9B%E5%AD%A3%E5%AE%A3)",
-      "lineCount": 20,
-      "charCount": 127,
+      "lineCount": 17,
+      "charCount": 102,
       "extractionStatus": "auto-extracted",
       "reviewReasons": [],
-      "poemPreview": "====其一====\n憶到梯雲梯雲，\n走家坊名。\n哀傷韡鄂叢。"
+      "poemPreview": "憶到梯雲梯雲，\n走家坊名。\n哀傷韡鄂叢。\n舞鸞悲引鏡，"
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00229",
@@ -3365,13 +3335,14 @@
       "titleZh": "旅興",
       "authorZh": "劉基",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E6%97%85%E8%88%88_(%E5%8A%89%E5%9F%BA)",
-      "lineCount": 50,
-      "charCount": 367,
+      "lineCount": 0,
+      "charCount": 0,
       "extractionStatus": "needs-review",
       "reviewReasons": [
-        "extracted-too-many-lines"
+        "extracted-too-few-lines",
+        "empty-body"
       ],
-      "poemPreview": "==其一==\n==其二==\n==其三==\n==其四=="
+      "poemPreview": ""
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00235",
@@ -4265,13 +4236,14 @@
       "titleZh": "落花",
       "authorZh": "耶律鑄",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E8%90%BD%E8%8A%B1_(%E8%80%B6%E5%BE%8B%E9%91%84)",
-      "lineCount": 1,
-      "charCount": 8,
+      "lineCount": 0,
+      "charCount": 0,
       "extractionStatus": "needs-review",
       "reviewReasons": [
-        "extracted-too-few-lines"
+        "extracted-too-few-lines",
+        "empty-body"
       ],
-      "poemPreview": "===落花==="
+      "poemPreview": ""
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00299",
@@ -4869,11 +4841,11 @@
       "titleZh": "銅雀伎",
       "authorZh": "王世貞",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E9%8A%85%E9%9B%80%E4%BC%8E_(%E7%8E%8B%E4%B8%96%E8%B2%9E)",
-      "lineCount": 18,
-      "charCount": 116,
+      "lineCount": 16,
+      "charCount": 96,
       "extractionStatus": "auto-extracted",
       "reviewReasons": [],
-      "poemPreview": "====其一====\n往事秦雲逝，\n深恩漳水流。\n月歸金鴈冷，"
+      "poemPreview": "往事秦雲逝，\n深恩漳水流。\n月歸金鴈冷，\n風至玉衣秋。"
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00342",
@@ -4883,11 +4855,11 @@
       "titleZh": "銅雀伎二首",
       "authorZh": "王立道",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E9%8A%85%E9%9B%80%E4%BC%8E%E4%BA%8C%E9%A6%96_(%E7%8E%8B%E7%AB%8B%E9%81%93)",
-      "lineCount": 18,
-      "charCount": 116,
+      "lineCount": 16,
+      "charCount": 96,
       "extractionStatus": "auto-extracted",
       "reviewReasons": [],
-      "poemPreview": "====其一====\n掩涕辭金屋，\n含情向白雲。\n衣冠新卜道，"
+      "poemPreview": "掩涕辭金屋，\n含情向白雲。\n衣冠新卜道，\n歌舞舊來羣。"
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00343",
@@ -4953,11 +4925,11 @@
       "titleZh": "銅雀伎",
       "authorZh": "彭孫貽",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E9%8A%85%E9%9B%80%E4%BC%8E_(%E5%BD%AD%E5%AD%AB%E8%B2%BD)",
-      "lineCount": 10,
-      "charCount": 68,
+      "lineCount": 8,
+      "charCount": 48,
       "extractionStatus": "auto-extracted",
       "reviewReasons": [],
-      "poemPreview": "====其一====\n高臺歌舞意，\n無復望君憐。\n寂寂西陵下，"
+      "poemPreview": "高臺歌舞意，\n無復望君憐。\n寂寂西陵下，\n深松枕墓田。"
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00348",
@@ -4981,8 +4953,8 @@
       "titleZh": "老農",
       "authorZh": "劉子翬",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E8%80%81%E8%BE%B2_(%E5%8A%89%E5%AD%90%E7%BF%AC)",
-      "lineCount": 10,
-      "charCount": 64,
+      "lineCount": 9,
+      "charCount": 58,
       "extractionStatus": "auto-extracted",
       "reviewReasons": [],
       "poemPreview": "山前有老農，\n給我薪水役。\n得錢徑沽酒，\n醉卧山日夕。"
@@ -4995,13 +4967,14 @@
       "titleZh": "贈歌者",
       "authorZh": "徐熥",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B4%88%E6%AD%8C%E8%80%85_(%E5%BE%90%E7%86%A5)",
-      "lineCount": 2,
-      "charCount": 36,
+      "lineCount": 0,
+      "charCount": 0,
       "extractionStatus": "needs-review",
       "reviewReasons": [
-        "possible-joined-lines"
+        "extracted-too-few-lines",
+        "empty-body"
       ],
-      "poemPreview": "===贈歌者(習家池上春晝長)===\n===贈歌者(鷪喉宛轉舞蹁躚)==="
+      "poemPreview": ""
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00351",
@@ -5053,13 +5026,14 @@
       "titleZh": "春日懷舊",
       "authorZh": "徐熥",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%A5%E6%97%A5%E6%87%B7%E8%88%8A_(%E5%BE%90%E7%86%A5)",
-      "lineCount": 1,
-      "charCount": 10,
+      "lineCount": 0,
+      "charCount": 0,
       "extractionStatus": "needs-review",
       "reviewReasons": [
-        "extracted-too-few-lines"
+        "extracted-too-few-lines",
+        "empty-body"
       ],
-      "poemPreview": "===春日懷舊==="
+      "poemPreview": ""
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00355",
@@ -5517,13 +5491,13 @@
       "titleZh": "五君詠",
       "authorZh": "徐熥",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E4%BA%94%E5%90%9B%E8%A9%A0_(%E5%BE%90%E7%86%A5)",
-      "lineCount": 61,
-      "charCount": 390,
+      "lineCount": 56,
+      "charCount": 335,
       "extractionStatus": "needs-review",
       "reviewReasons": [
         "extracted-too-many-lines"
       ],
-      "poemPreview": "====陳汝大====\n汝大長者流，\n涉世嗟不偶。\n𤣥牝有精詣，"
+      "poemPreview": "汝大長者流，\n涉世嗟不偶。\n𤣥牝有精詣，\n黃庭能自守。"
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00388",
@@ -5984,12 +5958,12 @@
       "authorZh": "李攀龍",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%A5%E6%97%A5%E9%96%91%E5%B1%85_(%E6%9D%8E%E6%94%80%E9%BE%8D)",
       "lineCount": 80,
-      "charCount": 516,
+      "charCount": 480,
       "extractionStatus": "needs-review",
       "reviewReasons": [
         "extracted-too-many-lines"
       ],
-      "poemPreview": "====其一====\n即令闗請謁，\n何用乞江湖。\n僻性終難狎，"
+      "poemPreview": "即令闗請謁，\n何用乞江湖。\n僻性終難狎，\n浮名本易汙。"
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00421",
@@ -5999,13 +5973,13 @@
       "titleZh": "感興四首",
       "authorZh": "戴鱀",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E6%84%9F%E8%88%88%E5%9B%9B%E9%A6%96_(%E6%88%B4%E9%B1%80)",
-      "lineCount": 50,
-      "charCount": 316,
+      "lineCount": 46,
+      "charCount": 276,
       "extractionStatus": "needs-review",
       "reviewReasons": [
         "extracted-too-many-lines"
       ],
-      "poemPreview": "====其一====\n梧桐有良質，\n斲為雙綺琴。\n疏絃映金徽，"
+      "poemPreview": "梧桐有良質，\n斲為雙綺琴。\n疏絃映金徽，\n泠泠發佳音。"
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00422",
@@ -6057,11 +6031,11 @@
       "titleZh": "春遊",
       "authorZh": "戴鯨",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%A5%E9%81%8A_(%E6%88%B4%E9%AF%A8)",
-      "lineCount": 18,
-      "charCount": 116,
+      "lineCount": 16,
+      "charCount": 96,
       "extractionStatus": "auto-extracted",
       "reviewReasons": [],
-      "poemPreview": "====其一====\n微風桃李夕，\n是處鬭春華。\n湖海平三月，"
+      "poemPreview": "微風桃李夕，\n是處鬭春華。\n湖海平三月，\n邊城活萬家。"
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00426",
@@ -6211,11 +6185,11 @@
       "titleZh": "贈隱者二首",
       "authorZh": "陸遊",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B4%88%E9%9A%B1%E8%80%85%E4%BA%8C%E9%A6%96_(%E9%99%B8%E6%B8%B8)",
-      "lineCount": 18,
-      "charCount": 116,
+      "lineCount": 16,
+      "charCount": 96,
       "extractionStatus": "auto-extracted",
       "reviewReasons": [],
-      "poemPreview": "====其一====\n疇昔從君處，\n玄都太古壇。\n月高旛影直，"
+      "poemPreview": "疇昔從君處，\n玄都太古壇。\n月高旛影直，\n霜重佩聲寒。"
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00437",
@@ -6407,11 +6381,11 @@
       "titleZh": "去婦詞三首",
       "authorZh": "魏允中",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8E%BB%E5%A9%A6%E8%A9%9E%E4%B8%89%E9%A6%96_(%E9%AD%8F%E5%85%81%E4%B8%AD)",
-      "lineCount": 15,
-      "charCount": 126,
+      "lineCount": 12,
+      "charCount": 96,
       "extractionStatus": "auto-extracted",
       "reviewReasons": [],
-      "poemPreview": "====其一====\n半遮紅粉蹙雙眉，\n一片離心行路知。\n憑為語郎休望妾，"
+      "poemPreview": "半遮紅粉蹙雙眉，\n一片離心行路知。\n憑為語郎休望妾，\n妾歸猶似未歸時。"
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00451",
@@ -6421,11 +6395,11 @@
       "titleZh": "去婦詞三首",
       "authorZh": "胡奎",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8E%BB%E5%A9%A6%E8%A9%9E%E4%B8%89%E9%A6%96_(%E8%83%A1%E5%A5%8E)",
-      "lineCount": 35,
-      "charCount": 226,
+      "lineCount": 32,
+      "charCount": 196,
       "extractionStatus": "auto-extracted",
       "reviewReasons": [],
-      "poemPreview": "====其一====\n出戶心悄悄，\n中情向誰道。\n吞聲不敢啼，"
+      "poemPreview": "出戶心悄悄，\n中情向誰道。\n吞聲不敢啼，\n又恐傍人笑。"
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00452",
@@ -6519,11 +6493,11 @@
       "titleZh": "詠竹二首",
       "authorZh": "蘇轍",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E8%A9%A0%E7%AB%B9%E4%BA%8C%E9%A6%96_(%E8%98%87%E8%BD%8D)",
-      "lineCount": 18,
-      "charCount": 112,
+      "lineCount": 16,
+      "charCount": 96,
       "extractionStatus": "auto-extracted",
       "reviewReasons": [],
-      "poemPreview": "===其一===\n湖濱宜草木，\n修竹可三尋。\n廛居多野思，"
+      "poemPreview": "湖濱宜草木，\n修竹可三尋。\n廛居多野思，\n移種近牆陰。"
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00459",
@@ -6556,18 +6530,16 @@
     {
       "queueId": "REVIEW-CN-NT-CAT-00461",
       "recordId": "CN-NT-CAT-00461",
-      "priority": "manual-check",
+      "priority": "bulk-review",
       "eraSlug": "song",
       "titleZh": "詠竹二首",
       "authorZh": "袁燮",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E8%A9%A0%E7%AB%B9%E4%BA%8C%E9%A6%96_(%E8%A2%81%E7%87%AE)",
-      "lineCount": 42,
-      "charCount": 256,
-      "extractionStatus": "needs-review",
-      "reviewReasons": [
-        "extracted-too-many-lines"
-      ],
-      "poemPreview": "===其一===\n去年種蒼玉，\n今歲抽華簪。\n初萌節已具，"
+      "lineCount": 40,
+      "charCount": 240,
+      "extractionStatus": "auto-extracted",
+      "reviewReasons": [],
+      "poemPreview": "去年種蒼玉，\n今歲抽華簪。\n初萌節已具，\n欲奮力未任。"
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00462",
@@ -7197,11 +7169,11 @@
       "titleZh": "馬上",
       "authorZh": "唐之淳",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E9%A6%AC%E4%B8%8A_(%E5%94%90%E4%B9%8B%E6%B7%B3)",
-      "lineCount": 10,
-      "charCount": 80,
+      "lineCount": 8,
+      "charCount": 64,
       "extractionStatus": "auto-extracted",
       "reviewReasons": [],
-      "poemPreview": "===其一===\n谷深風急帽簷斜，\n滿眼寒雲滿面沙。\n騎馬過山看不盡，"
+      "poemPreview": "谷深風急帽簷斜，\n滿眼寒雲滿面沙。\n騎馬過山看不盡，\n更多芳樹沒人家。"
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00507",
@@ -7435,11 +7407,11 @@
       "titleZh": "彭城懷古二首",
       "authorZh": "洪焱祖",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E5%BD%AD%E5%9F%8E%E6%87%B7%E5%8F%A4%E4%BA%8C%E9%A6%96_(%E6%B4%AA%E7%84%B1%E7%A5%96)",
-      "lineCount": 18,
-      "charCount": 116,
+      "lineCount": 16,
+      "charCount": 96,
       "extractionStatus": "auto-extracted",
       "reviewReasons": [],
-      "poemPreview": "====其一====\n霸業重瞳子，\n雄才大耳兒。\n河山猶表裏，"
+      "poemPreview": "霸業重瞳子，\n雄才大耳兒。\n河山猶表裏，\n今古幾興衰。"
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00524",
@@ -7885,11 +7857,11 @@
       "titleZh": "五絶二首",
       "authorZh": "趙佶",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E4%BA%94%E7%B5%95%E4%BA%8C%E9%A6%96_(%E8%B6%99%E4%BD%B6)",
-      "lineCount": 4,
+      "lineCount": 7,
       "charCount": 42,
       "extractionStatus": "auto-extracted",
       "reviewReasons": [],
-      "poemPreview": "國破山河在人非殿宇空\n中興何日是搔首賦《車攻》\n國破山河在宮庭荆棘春\n衣冠今左𥙛忍作北朝臣"
+      "poemPreview": "國破山河在\n人非殿宇空\n中興何日是搔首賦《車攻》\n國破山河在"
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00556",
@@ -8020,16 +7992,19 @@
     {
       "queueId": "REVIEW-CN-NT-CAT-00565",
       "recordId": "CN-NT-CAT-00565",
-      "priority": "bulk-review",
+      "priority": "manual-check",
       "eraSlug": "ming",
       "titleZh": "絶命詩",
       "authorZh": "劉熙祚",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E7%B5%95%E5%91%BD%E8%A9%A9_(%E5%8A%89%E7%86%99%E7%A5%9A)",
-      "lineCount": 3,
-      "charCount": 18,
-      "extractionStatus": "auto-extracted",
-      "reviewReasons": [],
-      "poemPreview": "==其一==\n==其二==\n==其三=="
+      "lineCount": 0,
+      "charCount": 0,
+      "extractionStatus": "needs-review",
+      "reviewReasons": [
+        "extracted-too-few-lines",
+        "empty-body"
+      ],
+      "poemPreview": ""
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00566",
@@ -8134,16 +8109,19 @@
     {
       "queueId": "REVIEW-CN-NT-CAT-00573",
       "recordId": "CN-NT-CAT-00573",
-      "priority": "bulk-review",
+      "priority": "manual-check",
       "eraSlug": "ming",
       "titleZh": "絶命詩",
       "authorZh": "陳良謨",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E7%B5%95%E5%91%BD%E8%A9%A9_(%E9%99%B3%E8%89%AF%E8%AC%A8)",
-      "lineCount": 2,
-      "charCount": 12,
-      "extractionStatus": "auto-extracted",
-      "reviewReasons": [],
-      "poemPreview": "==其一==\n==其二=="
+      "lineCount": 0,
+      "charCount": 0,
+      "extractionStatus": "needs-review",
+      "reviewReasons": [
+        "extracted-too-few-lines",
+        "empty-body"
+      ],
+      "poemPreview": ""
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00574",
@@ -8176,16 +8154,19 @@
     {
       "queueId": "REVIEW-CN-NT-CAT-00576",
       "recordId": "CN-NT-CAT-00576",
-      "priority": "bulk-review",
+      "priority": "manual-check",
       "eraSlug": "ming",
       "titleZh": "絶命詩",
       "authorZh": "許直",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E7%B5%95%E5%91%BD%E8%A9%A9_(%E8%A8%B1%E7%9B%B4)",
-      "lineCount": 6,
-      "charCount": 36,
-      "extractionStatus": "auto-extracted",
-      "reviewReasons": [],
-      "poemPreview": "==其一==\n==其二==\n==其三==\n==其四=="
+      "lineCount": 0,
+      "charCount": 0,
+      "extractionStatus": "needs-review",
+      "reviewReasons": [
+        "extracted-too-few-lines",
+        "empty-body"
+      ],
+      "poemPreview": ""
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00577",
@@ -8414,16 +8395,19 @@
     {
       "queueId": "REVIEW-CN-NT-CAT-00593",
       "recordId": "CN-NT-CAT-00593",
-      "priority": "bulk-review",
+      "priority": "manual-check",
       "eraSlug": "ming",
       "titleZh": "小遊仙",
       "authorZh": "黃毓祺",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E5%B0%8F%E9%81%8A%E4%BB%99_(%E9%BB%83%E6%AF%93%E7%A5%BA)",
-      "lineCount": 6,
-      "charCount": 36,
-      "extractionStatus": "auto-extracted",
-      "reviewReasons": [],
-      "poemPreview": "==其一==\n==其二==\n==其三==\n==其四=="
+      "lineCount": 0,
+      "charCount": 0,
+      "extractionStatus": "needs-review",
+      "reviewReasons": [
+        "extracted-too-few-lines",
+        "empty-body"
+      ],
+      "poemPreview": ""
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00594",
@@ -8554,16 +8538,19 @@
     {
       "queueId": "REVIEW-CN-NT-CAT-00603",
       "recordId": "CN-NT-CAT-00603",
-      "priority": "bulk-review",
+      "priority": "manual-check",
       "eraSlug": "ming",
       "titleZh": "江南曲",
       "authorZh": "黎遂球",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B1%9F%E5%8D%97%E6%9B%B2_(%E9%BB%8E%E9%81%82%E7%90%83)",
-      "lineCount": 2,
-      "charCount": 14,
-      "extractionStatus": "auto-extracted",
-      "reviewReasons": [],
-      "poemPreview": "==古詩==\n==五言絶句=="
+      "lineCount": 0,
+      "charCount": 0,
+      "extractionStatus": "needs-review",
+      "reviewReasons": [
+        "extracted-too-few-lines",
+        "empty-body"
+      ],
+      "poemPreview": ""
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00604",
@@ -8708,16 +8695,19 @@
     {
       "queueId": "REVIEW-CN-NT-CAT-00614",
       "recordId": "CN-NT-CAT-00614",
-      "priority": "bulk-review",
+      "priority": "manual-check",
       "eraSlug": "ming",
       "titleZh": "西湖二首",
       "authorZh": "黎遂球",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E8%A5%BF%E6%B9%96%E4%BA%8C%E9%A6%96_(%E9%BB%8E%E9%81%82%E7%90%83)",
-      "lineCount": 2,
-      "charCount": 12,
-      "extractionStatus": "auto-extracted",
-      "reviewReasons": [],
-      "poemPreview": "==其一==\n==其二=="
+      "lineCount": 0,
+      "charCount": 0,
+      "extractionStatus": "needs-review",
+      "reviewReasons": [
+        "extracted-too-few-lines",
+        "empty-body"
+      ],
+      "poemPreview": ""
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00615",
@@ -8862,16 +8852,19 @@
     {
       "queueId": "REVIEW-CN-NT-CAT-00625",
       "recordId": "CN-NT-CAT-00625",
-      "priority": "bulk-review",
+      "priority": "manual-check",
       "eraSlug": "ming",
       "titleZh": "古詞二首",
       "authorZh": "黎遂球",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%A4%E8%A9%9E%E4%BA%8C%E9%A6%96_(%E9%BB%8E%E9%81%82%E7%90%83)",
-      "lineCount": 2,
-      "charCount": 12,
-      "extractionStatus": "auto-extracted",
-      "reviewReasons": [],
-      "poemPreview": "==其一==\n==其二=="
+      "lineCount": 0,
+      "charCount": 0,
+      "extractionStatus": "needs-review",
+      "reviewReasons": [
+        "extracted-too-few-lines",
+        "empty-body"
+      ],
+      "poemPreview": ""
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00626",
@@ -8988,16 +8981,19 @@
     {
       "queueId": "REVIEW-CN-NT-CAT-00634",
       "recordId": "CN-NT-CAT-00634",
-      "priority": "bulk-review",
+      "priority": "manual-check",
       "eraSlug": "ming",
       "titleZh": "短歌行",
       "authorZh": "黎遂球",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E7%9F%AD%E6%AD%8C%E8%A1%8C_(%E9%BB%8E%E9%81%82%E7%90%83)",
-      "lineCount": 2,
-      "charCount": 13,
-      "extractionStatus": "auto-extracted",
-      "reviewReasons": [],
-      "poemPreview": "==古詩==\n==樂府詩=="
+      "lineCount": 0,
+      "charCount": 0,
+      "extractionStatus": "needs-review",
+      "reviewReasons": [
+        "extracted-too-few-lines",
+        "empty-body"
+      ],
+      "poemPreview": ""
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00635",
@@ -9214,8 +9210,8 @@
       "recordId": "CN-NT-CAT-00650",
       "priority": "bulk-review",
       "eraSlug": "yuan",
-      "titleZh": "登嶽阳樓",
-      "authorZh": "歐阳玄",
+      "titleZh": "登嶽陽樓",
+      "authorZh": "歐陽玄",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E7%99%BB%E5%B2%B3%E9%98%B3%E6%A5%BC_(%E6%AC%A7%E9%98%B3%E7%8E%84)",
       "lineCount": 8,
       "charCount": 64,
@@ -9282,16 +9278,19 @@
     {
       "queueId": "REVIEW-CN-NT-CAT-00655",
       "recordId": "CN-NT-CAT-00655",
-      "priority": "bulk-review",
+      "priority": "manual-check",
       "eraSlug": "yuan",
       "titleZh": "湖上二首",
       "authorZh": "甘泳",
       "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B9%96%E4%B8%8A%E4%BA%8C%E9%A6%96_(%E7%94%98%E6%B3%B3)",
-      "lineCount": 2,
-      "charCount": 12,
-      "extractionStatus": "auto-extracted",
-      "reviewReasons": [],
-      "poemPreview": "==其一==\n==其二=="
+      "lineCount": 0,
+      "charCount": 0,
+      "extractionStatus": "needs-review",
+      "reviewReasons": [
+        "extracted-too-few-lines",
+        "empty-body"
+      ],
+      "poemPreview": ""
     },
     {
       "queueId": "REVIEW-CN-NT-CAT-00656",

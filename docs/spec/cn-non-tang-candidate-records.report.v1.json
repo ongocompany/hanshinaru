@@ -1,13 +1,13 @@
 {
   "batchId": "cn-non-tang-category-candidates",
-  "generatedAt": "2026-04-29T20:27:29.634Z",
+  "generatedAt": "2026-04-29T20:35:29.531Z",
   "source": "/Users/jinwoo/Documents/development/hanshinaru/docs/spec/cn-non-tang-candidate-pages.dump.raw.v1.json",
   "summary": {
     "pages": 657,
     "records": 657,
-    "autoExtracted": 597,
-    "needsReview": 60,
-    "totalLines": 6303,
+    "autoExtracted": 606,
+    "needsReview": 51,
+    "totalLines": 6152,
     "byEra": {
       "song": 228,
       "ming": 336,
@@ -187,7 +187,7 @@
       "黎遂球": 46,
       "姚奇胤": 1,
       "黃道周": 1,
-      "歐阳玄": 1,
+      "歐陽玄": 1,
       "王冕": 1,
       "趙蕃": 1,
       "方信孺": 1,

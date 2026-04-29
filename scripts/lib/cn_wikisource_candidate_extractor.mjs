@@ -178,7 +178,7 @@ function normalizeCandidateLines(lines) {
 
 function splitPoeticLine(line) {
   const parts = line.match(/[^，。！？；：]+[，。！？；：]?/g) ?? [line];
-  if (parts.length <= 1) return [line];
+  if (parts.length <= 1) return splitUnpunctuatedPoeticLine(line);
   return parts
     .map((part) => part.trim())
     .filter((part) => {
@@ -187,8 +187,28 @@ function splitPoeticLine(line) {
     });
 }
 
+function splitUnpunctuatedPoeticLine(line) {
+  if (/[（）()《》「」『』]/.test(line)) return [line];
+  const chars = Array.from(line.replace(/\s+/g, ''));
+  const chunkSize = inferPoeticChunkSize(chars.length);
+  if (!chunkSize) return [line];
+
+  const chunks = [];
+  for (let i = 0; i < chars.length; i += chunkSize) {
+    chunks.push(chars.slice(i, i + chunkSize).join(''));
+  }
+  return chunks;
+}
+
+function inferPoeticChunkSize(length) {
+  if (length >= 14 && length <= 56 && length % 7 === 0) return 7;
+  if (length >= 10 && length <= 40 && length % 5 === 0) return 5;
+  return null;
+}
+
 function isNoiseLine(line) {
   return [
+    /^=+.+?=+$/,
     /^作者[：:]/,
     /^姊妹計[畫劃]/,
     /^維基文庫/,

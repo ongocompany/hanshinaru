@@ -2,7 +2,7 @@
   "version": "2026-04-30.v1",
   "batchId": "cn-non-tang-category-candidates",
   "sourcePolicy": "Chinese Wikisource category candidate pages, Korean-style Hanja normalized",
-  "generatedAt": "2026-04-29T20:27:29.634Z",
+  "generatedAt": "2026-04-29T20:35:29.531Z",
   "records": [
     {
       "recordId": "CN-NT-CAT-00001",
@@ -391,7 +391,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "杳杳神京路八千宗祧隔越幾經年\n衰殘病渴那能久茹苦窮荒敢怨天\n茸母初生忍禁煙無家對景倍淒然\n帝城春色誰為主遙指鄉關涕淚漣",
+        "poemZh": "杳杳神京路八千\n宗祧隔越幾經年\n衰殘病渴那能久\n茹苦窮荒敢怨天\n茸母初生忍禁煙\n無家對景倍淒然\n帝城春色誰為主\n遙指鄉關涕淚漣",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -400,13 +400,11 @@
         "commentaryKoOwned": null
       },
       "extraction": {
-        "status": "needs-review",
-        "reviewPriority": "manual-check",
-        "lineCount": 4,
+        "status": "auto-extracted",
+        "reviewPriority": "bulk-review",
+        "lineCount": 8,
         "charCount": 56,
-        "reviewReasons": [
-          "possible-joined-lines"
-        ]
+        "reviewReasons": []
       },
       "jdsCandidate": {
         "poet": {
@@ -420,9 +418,9 @@
         "poem": {
           "title_zh": "七絶",
           "title_ko": null,
-          "body_zh": "杳杳神京路八千宗祧隔越幾經年\n衰殘病渴那能久茹苦窮荒敢怨天\n茸母初生忍禁煙無家對景倍淒然\n帝城春色誰為主遙指鄉關涕淚漣",
-          "category": null,
-          "meter": null,
+          "body_zh": "杳杳神京路八千\n宗祧隔越幾經年\n衰殘病渴那能久\n茹苦窮荒敢怨天\n茸母初生忍禁煙\n無家對景倍淒然\n帝城春色誰為主\n遙指鄉關涕淚漣",
+          "category": "七言律詩",
+          "meter": 7,
           "country": "CN",
           "status": "parsed",
           "quality": "category-auto-needs-review"
@@ -1636,7 +1634,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "無花無酒過清明興味蕭然似野僧\n昨日鄰家乞新火曉窓分與讀書燈",
+        "poemZh": "無花無酒過清明\n興味蕭然似野僧\n昨日鄰家乞新火\n曉窓分與讀書燈",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -1645,13 +1643,11 @@
         "commentaryKoOwned": null
       },
       "extraction": {
-        "status": "needs-review",
-        "reviewPriority": "manual-check",
-        "lineCount": 2,
+        "status": "auto-extracted",
+        "reviewPriority": "bulk-review",
+        "lineCount": 4,
         "charCount": 28,
-        "reviewReasons": [
-          "possible-joined-lines"
-        ]
+        "reviewReasons": []
       },
       "jdsCandidate": {
         "poet": {
@@ -1665,9 +1661,9 @@
         "poem": {
           "title_zh": "清明",
           "title_ko": null,
-          "body_zh": "無花無酒過清明興味蕭然似野僧\n昨日鄰家乞新火曉窓分與讀書燈",
-          "category": null,
-          "meter": null,
+          "body_zh": "無花無酒過清明\n興味蕭然似野僧\n昨日鄰家乞新火\n曉窓分與讀書燈",
+          "category": "七言絶句",
+          "meter": 7,
           "country": "CN",
           "status": "parsed",
           "quality": "category-auto-needs-review"
@@ -1857,7 +1853,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "==其一==\n==其二==",
+        "poemZh": "",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -1866,11 +1862,14 @@
         "commentaryKoOwned": null
       },
       "extraction": {
-        "status": "auto-extracted",
-        "reviewPriority": "bulk-review",
-        "lineCount": 2,
-        "charCount": 12,
-        "reviewReasons": []
+        "status": "needs-review",
+        "reviewPriority": "manual-check",
+        "lineCount": 0,
+        "charCount": 0,
+        "reviewReasons": [
+          "extracted-too-few-lines",
+          "empty-body"
+        ]
       },
       "jdsCandidate": {
         "poet": {
@@ -1884,11 +1883,11 @@
         "poem": {
           "title_zh": "西湖二首",
           "title_ko": null,
-          "body_zh": "==其一==\n==其二==",
+          "body_zh": "",
           "category": null,
           "meter": null,
           "country": "CN",
-          "status": "parsed",
+          "status": "needs-review",
           "quality": "category-auto-needs-review"
         }
       },
@@ -2441,7 +2440,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "油壁香車不再逢峽雲無跡任西東\n梨花院落溶溶月柳絮池塘淡淡風\n幾日寂寥傷酒後一番蕭索禁煙中\n魚書欲寄何由達水遠山長處處同",
+        "poemZh": "油壁香車不再逢\n峽雲無跡任西東\n梨花院落溶溶月\n柳絮池塘淡淡風\n幾日寂寥傷酒後\n一番蕭索禁煙中\n魚書欲寄何由達\n水遠山長處處同",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -2450,13 +2449,11 @@
         "commentaryKoOwned": null
       },
       "extraction": {
-        "status": "needs-review",
-        "reviewPriority": "manual-check",
-        "lineCount": 4,
+        "status": "auto-extracted",
+        "reviewPriority": "bulk-review",
+        "lineCount": 8,
         "charCount": 56,
-        "reviewReasons": [
-          "possible-joined-lines"
-        ]
+        "reviewReasons": []
       },
       "jdsCandidate": {
         "poet": {
@@ -2470,9 +2467,9 @@
         "poem": {
           "title_zh": "寓意",
           "title_ko": null,
-          "body_zh": "油壁香車不再逢峽雲無跡任西東\n梨花院落溶溶月柳絮池塘淡淡風\n幾日寂寥傷酒後一番蕭索禁煙中\n魚書欲寄何由達水遠山長處處同",
-          "category": null,
-          "meter": null,
+          "body_zh": "油壁香車不再逢\n峽雲無跡任西東\n梨花院落溶溶月\n柳絮池塘淡淡風\n幾日寂寥傷酒後\n一番蕭索禁煙中\n魚書欲寄何由達\n水遠山長處處同",
+          "category": "七言律詩",
+          "meter": 7,
           "country": "CN",
           "status": "parsed",
           "quality": "category-auto-needs-review"
@@ -2516,7 +2513,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "高列千峰寶炬森端門方喜翠華臨\n宸遊不為三元夜樂事還同萬眾心\n天上清光留此夕人間和氣閣春陰\n要知盡慶華封祝四十餘年惠愛深",
+        "poemZh": "高列千峰寶炬森\n端門方喜翠華臨\n宸遊不為三元夜\n樂事還同萬眾心\n天上清光留此夕\n人間和氣閣春陰\n要知盡慶華封祝\n四十餘年惠愛深",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -2525,13 +2522,11 @@
         "commentaryKoOwned": null
       },
       "extraction": {
-        "status": "needs-review",
-        "reviewPriority": "manual-check",
-        "lineCount": 4,
+        "status": "auto-extracted",
+        "reviewPriority": "bulk-review",
+        "lineCount": 8,
         "charCount": 56,
-        "reviewReasons": [
-          "possible-joined-lines"
-        ]
+        "reviewReasons": []
       },
       "jdsCandidate": {
         "poet": {
@@ -2545,9 +2540,9 @@
         "poem": {
           "title_zh": "上元應製",
           "title_ko": null,
-          "body_zh": "高列千峰寶炬森端門方喜翠華臨\n宸遊不為三元夜樂事還同萬眾心\n天上清光留此夕人間和氣閣春陰\n要知盡慶華封祝四十餘年惠愛深",
-          "category": null,
-          "meter": null,
+          "body_zh": "高列千峰寶炬森\n端門方喜翠華臨\n宸遊不為三元夜\n樂事還同萬眾心\n天上清光留此夕\n人間和氣閣春陰\n要知盡慶華封祝\n四十餘年惠愛深",
+          "category": "七言律詩",
+          "meter": 7,
           "country": "CN",
           "status": "parsed",
           "quality": "category-auto-needs-review"
@@ -2591,7 +2586,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "雪消華月滿仙臺萬燭當樓寶扇開\n雙鳳雲中扶輦下六鰲海上駕山來\n鎬京春酒霑周宴汾水秋風陋漢才\n一曲昇平人盡樂君王又進紫霞杯",
+        "poemZh": "雪消華月滿仙臺\n萬燭當樓寶扇開\n雙鳳雲中扶輦下\n六鰲海上駕山來\n鎬京春酒霑周宴\n汾水秋風陋漢才\n一曲昇平人盡樂\n君王又進紫霞杯",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -2600,13 +2595,11 @@
         "commentaryKoOwned": null
       },
       "extraction": {
-        "status": "needs-review",
-        "reviewPriority": "manual-check",
-        "lineCount": 4,
+        "status": "auto-extracted",
+        "reviewPriority": "bulk-review",
+        "lineCount": 8,
         "charCount": 56,
-        "reviewReasons": [
-          "possible-joined-lines"
-        ]
+        "reviewReasons": []
       },
       "jdsCandidate": {
         "poet": {
@@ -2620,9 +2613,9 @@
         "poem": {
           "title_zh": "上元應製",
           "title_ko": null,
-          "body_zh": "雪消華月滿仙臺萬燭當樓寶扇開\n雙鳳雲中扶輦下六鰲海上駕山來\n鎬京春酒霑周宴汾水秋風陋漢才\n一曲昇平人盡樂君王又進紫霞杯",
-          "category": null,
-          "meter": null,
+          "body_zh": "雪消華月滿仙臺\n萬燭當樓寶扇開\n雙鳳雲中扶輦下\n六鰲海上駕山來\n鎬京春酒霑周宴\n汾水秋風陋漢才\n一曲昇平人盡樂\n君王又進紫霞杯",
+          "category": "七言律詩",
+          "meter": 7,
           "country": "CN",
           "status": "parsed",
           "quality": "category-auto-needs-review"
@@ -2666,7 +2659,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "佳節清明桃李笑野田荒隴紙生愁\n雷驚天地龍蛇蟄雨足郊原草木柔\n人乞祭餘驕妾婦士甘焚死不公侯\n賢愚千載知誰是滿眼蓬蒿共一坵",
+        "poemZh": "佳節清明桃李笑\n野田荒隴紙生愁\n雷驚天地龍蛇蟄\n雨足郊原草木柔\n人乞祭餘驕妾婦\n士甘焚死不公侯\n賢愚千載知誰是\n滿眼蓬蒿共一坵",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -2675,13 +2668,11 @@
         "commentaryKoOwned": null
       },
       "extraction": {
-        "status": "needs-review",
-        "reviewPriority": "manual-check",
-        "lineCount": 4,
+        "status": "auto-extracted",
+        "reviewPriority": "bulk-review",
+        "lineCount": 8,
         "charCount": 56,
-        "reviewReasons": [
-          "possible-joined-lines"
-        ]
+        "reviewReasons": []
       },
       "jdsCandidate": {
         "poet": {
@@ -2695,9 +2686,9 @@
         "poem": {
           "title_zh": "清明",
           "title_ko": null,
-          "body_zh": "佳節清明桃李笑野田荒隴紙生愁\n雷驚天地龍蛇蟄雨足郊原草木柔\n人乞祭餘驕妾婦士甘焚死不公侯\n賢愚千載知誰是滿眼蓬蒿共一坵",
-          "category": null,
-          "meter": null,
+          "body_zh": "佳節清明桃李笑\n野田荒隴紙生愁\n雷驚天地龍蛇蟄\n雨足郊原草木柔\n人乞祭餘驕妾婦\n士甘焚死不公侯\n賢愚千載知誰是\n滿眼蓬蒿共一坵",
+          "category": "七言律詩",
+          "meter": 7,
           "country": "CN",
           "status": "parsed",
           "quality": "category-auto-needs-review"
@@ -2741,7 +2732,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "畫架雙裁翠絡偏佳人春戲小樓前\n飄揚血色裙拖地斷送玉容人上天\n花板潤霑紅杏雨綵繩斜挂綠楊煙\n下來閒處從容立疑是蟾宮謫降仙",
+        "poemZh": "畫架雙裁翠絡偏\n佳人春戲小樓前\n飄揚血色裙拖地\n斷送玉容人上天\n花板潤霑紅杏雨\n綵繩斜挂綠楊煙\n下來閒處從容立\n疑是蟾宮謫降仙",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -2750,13 +2741,11 @@
         "commentaryKoOwned": null
       },
       "extraction": {
-        "status": "needs-review",
-        "reviewPriority": "manual-check",
-        "lineCount": 4,
+        "status": "auto-extracted",
+        "reviewPriority": "bulk-review",
+        "lineCount": 8,
         "charCount": 56,
-        "reviewReasons": [
-          "possible-joined-lines"
-        ]
+        "reviewReasons": []
       },
       "jdsCandidate": {
         "poet": {
@@ -2770,9 +2759,9 @@
         "poem": {
           "title_zh": "鞦韆",
           "title_ko": null,
-          "body_zh": "畫架雙裁翠絡偏佳人春戲小樓前\n飄揚血色裙拖地斷送玉容人上天\n花板潤霑紅杏雨綵繩斜挂綠楊煙\n下來閒處從容立疑是蟾宮謫降仙",
-          "category": null,
-          "meter": null,
+          "body_zh": "畫架雙裁翠絡偏\n佳人春戲小樓前\n飄揚血色裙拖地\n斷送玉容人上天\n花板潤霑紅杏雨\n綵繩斜挂綠楊煙\n下來閒處從容立\n疑是蟾宮謫降仙",
+          "category": "七言律詩",
+          "meter": 7,
           "country": "CN",
           "status": "parsed",
           "quality": "category-auto-needs-review"
@@ -2816,7 +2805,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "長夏江村風日清簷牙燕雀已生成\n蝶衣曬粉花枝午蛛網添絲屋角晴\n落落疏簾邀月影嘈嘈虛枕納溪聲\n久斑兩鬢如霜雪直欲樵漁過此生",
+        "poemZh": "長夏江村風日清\n簷牙燕雀已生成\n蝶衣曬粉花枝午\n蛛網添絲屋角晴\n落落疏簾邀月影\n嘈嘈虛枕納溪聲\n久斑兩鬢如霜雪\n直欲樵漁過此生",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -2825,13 +2814,11 @@
         "commentaryKoOwned": null
       },
       "extraction": {
-        "status": "needs-review",
-        "reviewPriority": "manual-check",
-        "lineCount": 4,
+        "status": "auto-extracted",
+        "reviewPriority": "bulk-review",
+        "lineCount": 8,
         "charCount": 56,
-        "reviewReasons": [
-          "possible-joined-lines"
-        ]
+        "reviewReasons": []
       },
       "jdsCandidate": {
         "poet": {
@@ -2845,9 +2832,9 @@
         "poem": {
           "title_zh": "夏日",
           "title_ko": null,
-          "body_zh": "長夏江村風日清簷牙燕雀已生成\n蝶衣曬粉花枝午蛛網添絲屋角晴\n落落疏簾邀月影嘈嘈虛枕納溪聲\n久斑兩鬢如霜雪直欲樵漁過此生",
-          "category": null,
-          "meter": null,
+          "body_zh": "長夏江村風日清\n簷牙燕雀已生成\n蝶衣曬粉花枝午\n蛛網添絲屋角晴\n落落疏簾邀月影\n嘈嘈虛枕納溪聲\n久斑兩鬢如霜雪\n直欲樵漁過此生",
+          "category": "七言律詩",
+          "meter": 7,
           "country": "CN",
           "status": "parsed",
           "quality": "category-auto-needs-review"
@@ -2891,7 +2878,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "插棘編籬謹護持養成寒碧映漣漪\n清風掠地秋先到赤日行天午不知\n解籜時聞聲簌簌放梢初見影離離\n歸閒我欲頻來此枕簟仍教到處隨",
+        "poemZh": "插棘編籬謹護持\n養成寒碧映漣漪\n清風掠地秋先到\n赤日行天午不知\n解籜時聞聲簌簌\n放梢初見影離離\n歸閒我欲頻來此\n枕簟仍教到處隨",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -2900,13 +2887,11 @@
         "commentaryKoOwned": null
       },
       "extraction": {
-        "status": "needs-review",
-        "reviewPriority": "manual-check",
-        "lineCount": 4,
+        "status": "auto-extracted",
+        "reviewPriority": "bulk-review",
+        "lineCount": 8,
         "charCount": 56,
-        "reviewReasons": [
-          "possible-joined-lines"
-        ]
+        "reviewReasons": []
       },
       "jdsCandidate": {
         "poet": {
@@ -2920,9 +2905,9 @@
         "poem": {
           "title_zh": "新竹",
           "title_ko": null,
-          "body_zh": "插棘編籬謹護持養成寒碧映漣漪\n清風掠地秋先到赤日行天午不知\n解籜時聞聲簌簌放梢初見影離離\n歸閒我欲頻來此枕簟仍教到處隨",
-          "category": null,
-          "meter": null,
+          "body_zh": "插棘編籬謹護持\n養成寒碧映漣漪\n清風掠地秋先到\n赤日行天午不知\n解籜時聞聲簌簌\n放梢初見影離離\n歸閒我欲頻來此\n枕簟仍教到處隨",
+          "category": "七言律詩",
+          "meter": 7,
           "country": "CN",
           "status": "parsed",
           "quality": "category-auto-needs-review"
@@ -3039,7 +3024,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "利欲驅人萬火牛江湖浪跡一沙鷗\n日長似歲閒方覺事大如天醉亦休\n砧杵敲殘深巷月梧桐搖落故園秋\n欲舒老眼無高處安得元龍百尺樓",
+        "poemZh": "利欲驅人萬火牛\n江湖浪跡一沙鷗\n日長似歲閒方覺\n事大如天醉亦休\n砧杵敲殘深巷月\n梧桐搖落故園秋\n欲舒老眼無高處\n安得元龍百尺樓",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -3048,13 +3033,11 @@
         "commentaryKoOwned": null
       },
       "extraction": {
-        "status": "needs-review",
-        "reviewPriority": "manual-check",
-        "lineCount": 4,
+        "status": "auto-extracted",
+        "reviewPriority": "bulk-review",
+        "lineCount": 8,
         "charCount": 56,
-        "reviewReasons": [
-          "possible-joined-lines"
-        ]
+        "reviewReasons": []
       },
       "jdsCandidate": {
         "poet": {
@@ -3068,9 +3051,9 @@
         "poem": {
           "title_zh": "秋思",
           "title_ko": null,
-          "body_zh": "利欲驅人萬火牛江湖浪跡一沙鷗\n日長似歲閒方覺事大如天醉亦休\n砧杵敲殘深巷月梧桐搖落故園秋\n欲舒老眼無高處安得元龍百尺樓",
-          "category": null,
-          "meter": null,
+          "body_zh": "利欲驅人萬火牛\n江湖浪跡一沙鷗\n日長似歲閒方覺\n事大如天醉亦休\n砧杵敲殘深巷月\n梧桐搖落故園秋\n欲舒老眼無高處\n安得元龍百尺樓",
+          "category": "七言律詩",
+          "meter": 7,
           "country": "CN",
           "status": "parsed",
           "quality": "category-auto-needs-review"
@@ -3114,7 +3097,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "東風嫋嫋泛崇光香霧空濛月轉廊\n只恐夜深花睡去故燒高燭照紅粧",
+        "poemZh": "東風嫋嫋泛崇光\n香霧空濛月轉廊\n只恐夜深花睡去\n故燒高燭照紅粧",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -3123,13 +3106,11 @@
         "commentaryKoOwned": null
       },
       "extraction": {
-        "status": "needs-review",
-        "reviewPriority": "manual-check",
-        "lineCount": 2,
+        "status": "auto-extracted",
+        "reviewPriority": "bulk-review",
+        "lineCount": 4,
         "charCount": 28,
-        "reviewReasons": [
-          "possible-joined-lines"
-        ]
+        "reviewReasons": []
       },
       "jdsCandidate": {
         "poet": {
@@ -3143,9 +3124,9 @@
         "poem": {
           "title_zh": "海棠",
           "title_ko": null,
-          "body_zh": "東風嫋嫋泛崇光香霧空濛月轉廊\n只恐夜深花睡去故燒高燭照紅粧",
-          "category": null,
-          "meter": null,
+          "body_zh": "東風嫋嫋泛崇光\n香霧空濛月轉廊\n只恐夜深花睡去\n故燒高燭照紅粧",
+          "category": "七言絶句",
+          "meter": 7,
           "country": "CN",
           "status": "parsed",
           "quality": "category-auto-needs-review"
@@ -3189,7 +3170,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "古木陰中繫短篷杖藜扶我過橋東\n沾衣欲濕杏花雨吹面不寒楊柳風",
+        "poemZh": "古木陰中繫短篷\n杖藜扶我過橋東\n沾衣欲濕杏花雨\n吹面不寒楊柳風",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -3198,13 +3179,11 @@
         "commentaryKoOwned": null
       },
       "extraction": {
-        "status": "needs-review",
-        "reviewPriority": "manual-check",
-        "lineCount": 2,
+        "status": "auto-extracted",
+        "reviewPriority": "bulk-review",
+        "lineCount": 4,
         "charCount": 28,
-        "reviewReasons": [
-          "possible-joined-lines"
-        ]
+        "reviewReasons": []
       },
       "jdsCandidate": {
         "poet": {
@@ -3218,9 +3197,9 @@
         "poem": {
           "title_zh": "絶句",
           "title_ko": null,
-          "body_zh": "古木陰中繫短篷杖藜扶我過橋東\n沾衣欲濕杏花雨吹面不寒楊柳風",
-          "category": null,
-          "meter": null,
+          "body_zh": "古木陰中繫短篷\n杖藜扶我過橋東\n沾衣欲濕杏花雨\n吹面不寒楊柳風",
+          "category": "七言絶句",
+          "meter": 7,
           "country": "CN",
           "status": "parsed",
           "quality": "category-auto-needs-review"
@@ -3264,7 +3243,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "花開紅樹亂鶯啼草長平湖白鷺飛\n風日平和人意好夕陽簫鼓幾船歸",
+        "poemZh": "花開紅樹亂鶯啼\n草長平湖白鷺飛\n風日平和人意好\n夕陽簫鼓幾船歸",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -3273,13 +3252,11 @@
         "commentaryKoOwned": null
       },
       "extraction": {
-        "status": "needs-review",
-        "reviewPriority": "manual-check",
-        "lineCount": 2,
+        "status": "auto-extracted",
+        "reviewPriority": "bulk-review",
+        "lineCount": 4,
         "charCount": 28,
-        "reviewReasons": [
-          "possible-joined-lines"
-        ]
+        "reviewReasons": []
       },
       "jdsCandidate": {
         "poet": {
@@ -3293,9 +3270,9 @@
         "poem": {
           "title_zh": "湖上",
           "title_ko": null,
-          "body_zh": "花開紅樹亂鶯啼草長平湖白鷺飛\n風日平和人意好夕陽簫鼓幾船歸",
-          "category": null,
-          "meter": null,
+          "body_zh": "花開紅樹亂鶯啼\n草長平湖白鷺飛\n風日平和人意好\n夕陽簫鼓幾船歸",
+          "category": "七言絶句",
+          "meter": 7,
           "country": "CN",
           "status": "parsed",
           "quality": "category-auto-needs-review"
@@ -3339,7 +3316,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "連理枝頭花正開妒花風雨便相催\n願教青帝常為主莫遣紛紛點翠苔",
+        "poemZh": "連理枝頭花正開\n妒花風雨便相催\n願教青帝常為主\n莫遣紛紛點翠苔",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -3348,13 +3325,11 @@
         "commentaryKoOwned": null
       },
       "extraction": {
-        "status": "needs-review",
-        "reviewPriority": "manual-check",
-        "lineCount": 2,
+        "status": "auto-extracted",
+        "reviewPriority": "bulk-review",
+        "lineCount": 4,
         "charCount": 28,
-        "reviewReasons": [
-          "possible-joined-lines"
-        ]
+        "reviewReasons": []
       },
       "jdsCandidate": {
         "poet": {
@@ -3368,9 +3343,9 @@
         "poem": {
           "title_zh": "落花",
           "title_ko": null,
-          "body_zh": "連理枝頭花正開妒花風雨便相催\n願教青帝常為主莫遣紛紛點翠苔",
-          "category": null,
-          "meter": null,
+          "body_zh": "連理枝頭花正開\n妒花風雨便相催\n願教青帝常為主\n莫遣紛紛點翠苔",
+          "category": "七言絶句",
+          "meter": 7,
           "country": "CN",
           "status": "parsed",
           "quality": "category-auto-needs-review"
@@ -3489,7 +3464,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "三月殘花落更開小簷日日燕飛來\n子規夜半猶啼血不信東風喚不回",
+        "poemZh": "三月殘花落更開\n小簷日日燕飛來\n子規夜半猶啼血\n不信東風喚不回",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -3498,13 +3473,11 @@
         "commentaryKoOwned": null
       },
       "extraction": {
-        "status": "needs-review",
-        "reviewPriority": "manual-check",
-        "lineCount": 2,
+        "status": "auto-extracted",
+        "reviewPriority": "bulk-review",
+        "lineCount": 4,
         "charCount": 28,
-        "reviewReasons": [
-          "possible-joined-lines"
-        ]
+        "reviewReasons": []
       },
       "jdsCandidate": {
         "poet": {
@@ -3518,9 +3491,9 @@
         "poem": {
           "title_zh": "送春",
           "title_ko": null,
-          "body_zh": "三月殘花落更開小簷日日燕飛來\n子規夜半猶啼血不信東風喚不回",
-          "category": null,
-          "meter": null,
+          "body_zh": "三月殘花落更開\n小簷日日燕飛來\n子規夜半猶啼血\n不信東風喚不回",
+          "category": "七言絶句",
+          "meter": 7,
           "country": "CN",
           "status": "parsed",
           "quality": "category-auto-needs-review"
@@ -3564,7 +3537,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "晝出耘田夜績麻村莊兒女各當家\n童孫未解供耕織也傍桑陰學種瓜",
+        "poemZh": "晝出耘田夜績麻\n村莊兒女各當家\n童孫未解供耕織\n也傍桑陰學種瓜",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -3573,13 +3546,11 @@
         "commentaryKoOwned": null
       },
       "extraction": {
-        "status": "needs-review",
-        "reviewPriority": "manual-check",
-        "lineCount": 2,
+        "status": "auto-extracted",
+        "reviewPriority": "bulk-review",
+        "lineCount": 4,
         "charCount": 28,
-        "reviewReasons": [
-          "possible-joined-lines"
-        ]
+        "reviewReasons": []
       },
       "jdsCandidate": {
         "poet": {
@@ -3593,9 +3564,9 @@
         "poem": {
           "title_zh": "田家",
           "title_ko": null,
-          "body_zh": "晝出耘田夜績麻村莊兒女各當家\n童孫未解供耕織也傍桑陰學種瓜",
-          "category": null,
-          "meter": null,
+          "body_zh": "晝出耘田夜績麻\n村莊兒女各當家\n童孫未解供耕織\n也傍桑陰學種瓜",
+          "category": "七言絶句",
+          "meter": 7,
           "country": "CN",
           "status": "parsed",
           "quality": "category-auto-needs-review"
@@ -3639,7 +3610,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "清溪流過碧山頭空水澄鮮一色秋\n隔斷紅塵三十里白雲紅葉雨悠悠",
+        "poemZh": "清溪流過碧山頭\n空水澄鮮一色秋\n隔斷紅塵三十里\n白雲紅葉雨悠悠",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -3648,13 +3619,11 @@
         "commentaryKoOwned": null
       },
       "extraction": {
-        "status": "needs-review",
-        "reviewPriority": "manual-check",
-        "lineCount": 2,
+        "status": "auto-extracted",
+        "reviewPriority": "bulk-review",
+        "lineCount": 4,
         "charCount": 28,
-        "reviewReasons": [
-          "possible-joined-lines"
-        ]
+        "reviewReasons": []
       },
       "jdsCandidate": {
         "poet": {
@@ -3668,9 +3637,9 @@
         "poem": {
           "title_zh": "秋月",
           "title_ko": null,
-          "body_zh": "清溪流過碧山頭空水澄鮮一色秋\n隔斷紅塵三十里白雲紅葉雨悠悠",
-          "category": null,
-          "meter": null,
+          "body_zh": "清溪流過碧山頭\n空水澄鮮一色秋\n隔斷紅塵三十里\n白雲紅葉雨悠悠",
+          "category": "七言絶句",
+          "meter": 7,
           "country": "CN",
           "status": "parsed",
           "quality": "category-auto-needs-review"
@@ -3714,7 +3683,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "未會牽牛意若何須邀織女弄金梭\n年年乞與人間巧不道人間巧幾多",
+        "poemZh": "未會牽牛意若何\n須邀織女弄金梭\n年年乞與人間巧\n不道人間巧幾多",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -3723,13 +3692,11 @@
         "commentaryKoOwned": null
       },
       "extraction": {
-        "status": "needs-review",
-        "reviewPriority": "manual-check",
-        "lineCount": 2,
+        "status": "auto-extracted",
+        "reviewPriority": "bulk-review",
+        "lineCount": 4,
         "charCount": 28,
-        "reviewReasons": [
-          "possible-joined-lines"
-        ]
+        "reviewReasons": []
       },
       "jdsCandidate": {
         "poet": {
@@ -3743,9 +3710,9 @@
         "poem": {
           "title_zh": "七夕",
           "title_ko": null,
-          "body_zh": "未會牽牛意若何須邀織女弄金梭\n年年乞與人間巧不道人間巧幾多",
-          "category": null,
-          "meter": null,
+          "body_zh": "未會牽牛意若何\n須邀織女弄金梭\n年年乞與人間巧\n不道人間巧幾多",
+          "category": "七言絶句",
+          "meter": 7,
           "country": "CN",
           "status": "parsed",
           "quality": "category-auto-needs-review"
@@ -3862,7 +3829,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "不受塵埃半點侵竹籬茅舍自甘心\n只因誤識林和靖惹得詩人說到今",
+        "poemZh": "不受塵埃半點侵\n竹籬茅舍自甘心\n只因誤識林和靖\n惹得詩人說到今",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -3871,13 +3838,11 @@
         "commentaryKoOwned": null
       },
       "extraction": {
-        "status": "needs-review",
-        "reviewPriority": "manual-check",
-        "lineCount": 2,
+        "status": "auto-extracted",
+        "reviewPriority": "bulk-review",
+        "lineCount": 4,
         "charCount": 28,
-        "reviewReasons": [
-          "possible-joined-lines"
-        ]
+        "reviewReasons": []
       },
       "jdsCandidate": {
         "poet": {
@@ -3891,9 +3856,9 @@
         "poem": {
           "title_zh": "梅",
           "title_ko": null,
-          "body_zh": "不受塵埃半點侵竹籬茅舍自甘心\n只因誤識林和靖惹得詩人說到今",
-          "category": null,
-          "meter": null,
+          "body_zh": "不受塵埃半點侵\n竹籬茅舍自甘心\n只因誤識林和靖\n惹得詩人說到今",
+          "category": "七言絶句",
+          "meter": 7,
           "country": "CN",
           "status": "parsed",
           "quality": "category-auto-needs-review"
@@ -3937,7 +3902,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "南枝纔放兩三花雪裏吟香弄粉些\n淡淡著煙濃著月深深籠水淺籠沙",
+        "poemZh": "南枝纔放兩三花\n雪裏吟香弄粉些\n淡淡著煙濃著月\n深深籠水淺籠沙",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -3946,13 +3911,11 @@
         "commentaryKoOwned": null
       },
       "extraction": {
-        "status": "needs-review",
-        "reviewPriority": "manual-check",
-        "lineCount": 2,
+        "status": "auto-extracted",
+        "reviewPriority": "bulk-review",
+        "lineCount": 4,
         "charCount": 28,
-        "reviewReasons": [
-          "possible-joined-lines"
-        ]
+        "reviewReasons": []
       },
       "jdsCandidate": {
         "poet": {
@@ -3966,9 +3929,9 @@
         "poem": {
           "title_zh": "早春",
           "title_ko": null,
-          "body_zh": "南枝纔放兩三花雪裏吟香弄粉些\n淡淡著煙濃著月深深籠水淺籠沙",
-          "category": null,
-          "meter": null,
+          "body_zh": "南枝纔放兩三花\n雪裏吟香弄粉些\n淡淡著煙濃著月\n深深籠水淺籠沙",
+          "category": "七言絶句",
+          "meter": 7,
           "country": "CN",
           "status": "parsed",
           "quality": "category-auto-needs-review"
@@ -4012,7 +3975,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "===其一===\n梅雪爭春未肯降騷人擱筆費評章（擱一作閣）\n梅須遜雪三分白雪卻輸梅一段香\n===其二===\n有梅無雪不精神有雪無詩俗了人\n日暮詩成天又雪與梅並作十分春",
+        "poemZh": "梅雪爭春未肯降騷人擱筆費評章（擱一作閣）\n梅須遜雪三分白\n雪卻輸梅一段香\n有梅無雪不精神\n有雪無詩俗了人\n日暮詩成天又雪\n與梅並作十分春",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -4023,8 +3986,8 @@
       "extraction": {
         "status": "needs-review",
         "reviewPriority": "manual-check",
-        "lineCount": 6,
-        "charCount": 78,
+        "lineCount": 7,
+        "charCount": 62,
         "reviewReasons": [
           "possible-joined-lines"
         ]
@@ -4041,7 +4004,7 @@
         "poem": {
           "title_zh": "雪梅",
           "title_ko": null,
-          "body_zh": "===其一===\n梅雪爭春未肯降騷人擱筆費評章（擱一作閣）\n梅須遜雪三分白雪卻輸梅一段香\n===其二===\n有梅無雪不精神有雪無詩俗了人\n日暮詩成天又雪與梅並作十分春",
+          "body_zh": "梅雪爭春未肯降騷人擱筆費評章（擱一作閣）\n梅須遜雪三分白\n雪卻輸梅一段香\n有梅無雪不精神\n有雪無詩俗了人\n日暮詩成天又雪\n與梅並作十分春",
           "category": null,
           "meter": null,
           "country": "CN",
@@ -4379,7 +4342,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "重重疊疊上瑤臺幾度呼童掃不開\n剛被太陽收拾去卻教明月送將來",
+        "poemZh": "重重疊疊上瑤臺\n幾度呼童掃不開\n剛被太陽收拾去\n卻教明月送將來",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -4388,13 +4351,11 @@
         "commentaryKoOwned": null
       },
       "extraction": {
-        "status": "needs-review",
-        "reviewPriority": "manual-check",
-        "lineCount": 2,
+        "status": "auto-extracted",
+        "reviewPriority": "bulk-review",
+        "lineCount": 4,
         "charCount": 28,
-        "reviewReasons": [
-          "possible-joined-lines"
-        ]
+        "reviewReasons": []
       },
       "jdsCandidate": {
         "poet": {
@@ -4408,9 +4369,9 @@
         "poem": {
           "title_zh": "花影",
           "title_ko": null,
-          "body_zh": "重重疊疊上瑤臺幾度呼童掃不開\n剛被太陽收拾去卻教明月送將來",
-          "category": null,
-          "meter": null,
+          "body_zh": "重重疊疊上瑤臺\n幾度呼童掃不開\n剛被太陽收拾去\n卻教明月送將來",
+          "category": "七言絶句",
+          "meter": 7,
           "country": "CN",
           "status": "parsed",
           "quality": "category-auto-needs-review"
@@ -4965,7 +4926,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "==復楚情何極==\n復楚情何極，\n亡秦氣未平。\n雄風清角勁，\n落日大旗明。\n縞素酬家國，\n戈船決死生！\n胡笳千古恨，\n一片月臨城。\n==戰苦難酬國==\n戰苦難酬國，\n仇深敢憶家。\n一身存漢臘，\n滿目盡胡沙。\n落月翻旗影，\n清霜冷劍花。\n六軍渾散盡，\n半夜起悲笳。\n==一旅同仇誼==\n一旅同仇誼，\n三秋故主懷。\n將星沉左輔，\n卿月隱中台。\n東閣塵賓幕，\n西征愧賦才。\n月明笳鼓切，\n今夜為誰哀。",
+        "poemZh": "復楚情何極，\n亡秦氣未平。\n雄風清角勁，\n落日大旗明。\n縞素酬家國，\n戈船決死生！\n胡笳千古恨，\n一片月臨城。\n戰苦難酬國，\n仇深敢憶家。\n一身存漢臘，\n滿目盡胡沙。\n落月翻旗影，\n清霜冷劍花。\n六軍渾散盡，\n半夜起悲笳。\n一旅同仇誼，\n三秋故主懷。\n將星沉左輔，\n卿月隱中台。\n東閣塵賓幕，\n西征愧賦才。\n月明笳鼓切，\n今夜為誰哀。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -4976,8 +4937,8 @@
       "extraction": {
         "status": "auto-extracted",
         "reviewPriority": "bulk-review",
-        "lineCount": 27,
-        "charCount": 171,
+        "lineCount": 24,
+        "charCount": 144,
         "reviewReasons": []
       },
       "jdsCandidate": {
@@ -4992,9 +4953,9 @@
         "poem": {
           "title_zh": "即事",
           "title_ko": null,
-          "body_zh": "==復楚情何極==\n復楚情何極，\n亡秦氣未平。\n雄風清角勁，\n落日大旗明。\n縞素酬家國，\n戈船決死生！\n胡笳千古恨，\n一片月臨城。\n==戰苦難酬國==\n戰苦難酬國，\n仇深敢憶家。\n一身存漢臘，\n滿目盡胡沙。\n落月翻旗影，\n清霜冷劍花。\n六軍渾散盡，\n半夜起悲笳。\n==一旅同仇誼==\n一旅同仇誼，\n三秋故主懷。\n將星沉左輔，\n卿月隱中台。\n東閣塵賓幕，\n西征愧賦才。\n月明笳鼓切，\n今夜為誰哀。",
-          "category": null,
-          "meter": null,
+          "body_zh": "復楚情何極，\n亡秦氣未平。\n雄風清角勁，\n落日大旗明。\n縞素酬家國，\n戈船決死生！\n胡笳千古恨，\n一片月臨城。\n戰苦難酬國，\n仇深敢憶家。\n一身存漢臘，\n滿目盡胡沙。\n落月翻旗影，\n清霜冷劍花。\n六軍渾散盡，\n半夜起悲笳。\n一旅同仇誼，\n三秋故主懷。\n將星沉左輔，\n卿月隱中台。\n東閣塵賓幕，\n西征愧賦才。\n月明笳鼓切，\n今夜為誰哀。",
+          "category": "五言古詩",
+          "meter": 5,
           "country": "CN",
           "status": "parsed",
           "quality": "category-auto-needs-review"
@@ -6577,7 +6538,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "==其二==\n==其六==",
+        "poemZh": "",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -6586,11 +6547,14 @@
         "commentaryKoOwned": null
       },
       "extraction": {
-        "status": "auto-extracted",
-        "reviewPriority": "bulk-review",
-        "lineCount": 2,
-        "charCount": 12,
-        "reviewReasons": []
+        "status": "needs-review",
+        "reviewPriority": "manual-check",
+        "lineCount": 0,
+        "charCount": 0,
+        "reviewReasons": [
+          "extracted-too-few-lines",
+          "empty-body"
+        ]
       },
       "jdsCandidate": {
         "poet": {
@@ -6604,11 +6568,11 @@
         "poem": {
           "title_zh": "偶成",
           "title_ko": null,
-          "body_zh": "==其二==\n==其六==",
+          "body_zh": "",
           "category": null,
           "meter": null,
           "country": "CN",
-          "status": "parsed",
+          "status": "needs-review",
           "quality": "category-auto-needs-review"
         }
       },
@@ -7672,7 +7636,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "===偶成===\n===偶成二首===",
+        "poemZh": "",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -7681,11 +7645,14 @@
         "commentaryKoOwned": null
       },
       "extraction": {
-        "status": "auto-extracted",
-        "reviewPriority": "bulk-review",
-        "lineCount": 2,
-        "charCount": 18,
-        "reviewReasons": []
+        "status": "needs-review",
+        "reviewPriority": "manual-check",
+        "lineCount": 0,
+        "charCount": 0,
+        "reviewReasons": [
+          "extracted-too-few-lines",
+          "empty-body"
+        ]
       },
       "jdsCandidate": {
         "poet": {
@@ -7699,11 +7666,11 @@
         "poem": {
           "title_zh": "偶成",
           "title_ko": null,
-          "body_zh": "===偶成===\n===偶成二首===",
+          "body_zh": "",
           "category": null,
           "meter": null,
           "country": "CN",
-          "status": "parsed",
+          "status": "needs-review",
           "quality": "category-auto-needs-review"
         }
       },
@@ -7964,7 +7931,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "爲官三載餘，\n所得是清虛。\n學就金丹法，\n修成玉檢書。\n乍歸人客西巖集作朋舊。\n久出竹林疎。\n怪我吟髭白，\n相歡原作還，\n據西巖集改。\n相見初。\n==註==",
+        "poemZh": "爲官三載餘，\n所得是清虛。\n學就金丹法，\n修成玉檢書。\n乍歸人客西巖集作朋舊。\n久出竹林疎。\n怪我吟髭白，\n相歡原作還，\n據西巖集改。\n相見初。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -7975,8 +7942,8 @@
       "extraction": {
         "status": "auto-extracted",
         "reviewPriority": "bulk-review",
-        "lineCount": 11,
-        "charCount": 68,
+        "lineCount": 10,
+        "charCount": 63,
         "reviewReasons": []
       },
       "jdsCandidate": {
@@ -7991,7 +7958,7 @@
         "poem": {
           "title_zh": "喜蔣德瞻還里",
           "title_ko": null,
-          "body_zh": "爲官三載餘，\n所得是清虛。\n學就金丹法，\n修成玉檢書。\n乍歸人客西巖集作朋舊。\n久出竹林疎。\n怪我吟髭白，\n相歡原作還，\n據西巖集改。\n相見初。\n==註==",
+          "body_zh": "爲官三載餘，\n所得是清虛。\n學就金丹法，\n修成玉檢書。\n乍歸人客西巖集作朋舊。\n久出竹林疎。\n怪我吟髭白，\n相歡原作還，\n據西巖集改。\n相見初。",
           "category": null,
           "meter": null,
           "country": "CN",
@@ -8037,7 +8004,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "簷多山鳥啼，\n山外西巖集、《瀛奎律髓》卷三五作下玉爲溪。\n林樹若又西巖集、《瀛奎律髓》作爲長，\n塔峰應更低。\n數僧歸西巖集、《瀛奎律髓》作居似客，\n一佛壞方泥。\n宴坐當時事，\n廊碑具西巖集作俱刻題。\n==註==",
+        "poemZh": "簷多山鳥啼，\n山外西巖集、《瀛奎律髓》卷三五作下玉爲溪。\n林樹若又西巖集、《瀛奎律髓》作爲長，\n塔峰應更低。\n數僧歸西巖集、《瀛奎律髓》作居似客，\n一佛壞方泥。\n宴坐當時事，\n廊碑具西巖集作俱刻題。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -8048,8 +8015,8 @@
       "extraction": {
         "status": "needs-review",
         "reviewPriority": "manual-check",
-        "lineCount": 9,
-        "charCount": 97,
+        "lineCount": 8,
+        "charCount": 92,
         "reviewReasons": [
           "possible-joined-lines"
         ]
@@ -8066,7 +8033,7 @@
         "poem": {
           "title_zh": "信州草衣寺",
           "title_ko": null,
-          "body_zh": "簷多山鳥啼，\n山外西巖集、《瀛奎律髓》卷三五作下玉爲溪。\n林樹若又西巖集、《瀛奎律髓》作爲長，\n塔峰應更低。\n數僧歸西巖集、《瀛奎律髓》作居似客，\n一佛壞方泥。\n宴坐當時事，\n廊碑具西巖集作俱刻題。\n==註==",
+          "body_zh": "簷多山鳥啼，\n山外西巖集、《瀛奎律髓》卷三五作下玉爲溪。\n林樹若又西巖集、《瀛奎律髓》作爲長，\n塔峰應更低。\n數僧歸西巖集、《瀛奎律髓》作居似客，\n一佛壞方泥。\n宴坐當時事，\n廊碑具西巖集作俱刻題。",
           "category": null,
           "meter": null,
           "country": "CN",
@@ -8112,7 +8079,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "==其一==\n留客看花賦詩坐。\n==其二==\n獨自卷簾樓上望。\n==其三==\n梅花處處妍。\n==其四==\n官歷春猶淺。\n==其五==\n空把月中枝。\n以上宋李龏《梅花衲》\n==其六==\n分石同僧坐，\n看松見鶴來（遊寺）。\n宋張端義《貴耳集》\n==註==",
+        "poemZh": "留客看花賦詩坐。\n獨自卷簾樓上望。\n梅花處處妍。\n官歷春猶淺。\n空把月中枝。\n以上宋李龏《梅花衲》\n分石同僧坐，\n看松見鶴來（遊寺）。\n宋張端義《貴耳集》",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -8123,8 +8090,8 @@
       "extraction": {
         "status": "auto-extracted",
         "reviewPriority": "bulk-review",
-        "lineCount": 16,
-        "charCount": 110,
+        "lineCount": 9,
+        "charCount": 69,
         "reviewReasons": []
       },
       "jdsCandidate": {
@@ -8139,7 +8106,7 @@
         "poem": {
           "title_zh": "句",
           "title_ko": null,
-          "body_zh": "==其一==\n留客看花賦詩坐。\n==其二==\n獨自卷簾樓上望。\n==其三==\n梅花處處妍。\n==其四==\n官歷春猶淺。\n==其五==\n空把月中枝。\n以上宋李龏《梅花衲》\n==其六==\n分石同僧坐，\n看松見鶴來（遊寺）。\n宋張端義《貴耳集》\n==註==",
+          "body_zh": "留客看花賦詩坐。\n獨自卷簾樓上望。\n梅花處處妍。\n官歷春猶淺。\n空把月中枝。\n以上宋李龏《梅花衲》\n分石同僧坐，\n看松見鶴來（遊寺）。\n宋張端義《貴耳集》",
           "category": null,
           "meter": null,
           "country": "CN",
@@ -8258,7 +8225,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "嫁時衣尚著，\n忽自欲通西巖集、《瀛奎律髓》卷四八作尋。\n終日常持呪，\n經年只飲泉。\n瘦形非是病，\n怪語却如顛。\n金母還知爾，\n招邀歸顧校：\n一作入。\n==註==",
+        "poemZh": "嫁時衣尚著，\n忽自欲通西巖集、《瀛奎律髓》卷四八作尋。\n終日常持呪，\n經年只飲泉。\n瘦形非是病，\n怪語却如顛。\n金母還知爾，\n招邀歸顧校：\n一作入。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -8269,8 +8236,8 @@
       "extraction": {
         "status": "needs-review",
         "reviewPriority": "manual-check",
-        "lineCount": 10,
-        "charCount": 71,
+        "lineCount": 9,
+        "charCount": 66,
         "reviewReasons": [
           "possible-joined-lines"
         ]
@@ -8287,7 +8254,7 @@
         "poem": {
           "title_zh": "贈不食姑",
           "title_ko": null,
-          "body_zh": "嫁時衣尚著，\n忽自欲通西巖集、《瀛奎律髓》卷四八作尋。\n終日常持呪，\n經年只飲泉。\n瘦形非是病，\n怪語却如顛。\n金母還知爾，\n招邀歸顧校：\n一作入。\n==註==",
+          "body_zh": "嫁時衣尚著，\n忽自欲通西巖集、《瀛奎律髓》卷四八作尋。\n終日常持呪，\n經年只飲泉。\n瘦形非是病，\n怪語却如顛。\n金母還知爾，\n招邀歸顧校：\n一作入。",
           "category": null,
           "meter": null,
           "country": "CN",
@@ -8333,7 +8300,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "芙蓉峰入天，\n寺與此峰連。\n得見是冬月，\n要來從昔年。\n寒潭盛西巖集作摇。\n古木帶厨煙。\n偶值高僧出，\n禪牀坐默然。\n==註==",
+        "poemZh": "芙蓉峰入天，\n寺與此峰連。\n得見是冬月，\n要來從昔年。\n寒潭盛西巖集作摇。\n古木帶厨煙。\n偶值高僧出，\n禪牀坐默然。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -8344,8 +8311,8 @@
       "extraction": {
         "status": "auto-extracted",
         "reviewPriority": "bulk-review",
-        "lineCount": 9,
-        "charCount": 56,
+        "lineCount": 8,
+        "charCount": 51,
         "reviewReasons": []
       },
       "jdsCandidate": {
@@ -8360,7 +8327,7 @@
         "poem": {
           "title_zh": "能仁寺",
           "title_ko": null,
-          "body_zh": "芙蓉峰入天，\n寺與此峰連。\n得見是冬月，\n要來從昔年。\n寒潭盛西巖集作摇。\n古木帶厨煙。\n偶值高僧出，\n禪牀坐默然。\n==註==",
+          "body_zh": "芙蓉峰入天，\n寺與此峰連。\n得見是冬月，\n要來從昔年。\n寒潭盛西巖集作摇。\n古木帶厨煙。\n偶值高僧出，\n禪牀坐默然。",
           "category": null,
           "meter": null,
           "country": "CN",
@@ -8406,7 +8373,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "一宿此禪宮，\n身同落西巖集作薙。\n深窓難得月，\n老屋易生風。\n燈冷紗光淡，\n香殘印篆空。\n獨憐吟思苦，\n妨却夢西東。\n==註==",
+        "poemZh": "一宿此禪宮，\n身同落西巖集作薙。\n深窓難得月，\n老屋易生風。\n燈冷紗光淡，\n香殘印篆空。\n獨憐吟思苦，\n妨却夢西東。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -8417,8 +8384,8 @@
       "extraction": {
         "status": "auto-extracted",
         "reviewPriority": "bulk-review",
-        "lineCount": 9,
-        "charCount": 56,
+        "lineCount": 8,
+        "charCount": 51,
         "reviewReasons": []
       },
       "jdsCandidate": {
@@ -8433,7 +8400,7 @@
         "poem": {
           "title_zh": "宿寺",
           "title_ko": null,
-          "body_zh": "一宿此禪宮，\n身同落西巖集作薙。\n深窓難得月，\n老屋易生風。\n燈冷紗光淡，\n香殘印篆空。\n獨憐吟思苦，\n妨却夢西東。\n==註==",
+          "body_zh": "一宿此禪宮，\n身同落西巖集作薙。\n深窓難得月，\n老屋易生風。\n燈冷紗光淡，\n香殘印篆空。\n獨憐吟思苦，\n妨却夢西東。",
           "category": null,
           "meter": null,
           "country": "CN",
@@ -8552,7 +8519,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "蓬戶掩還開，\n幽居稱不才《詩淵》作行歌任興回。\n移松連嶠土《貴耳集》卷上、《詩淵》作移花連舊土。\n買石帶溪《貴耳集》、《詩淵》作新。\n藥信仙方服，\n衣從古樣裁。\n本無官可棄，\n何用賦歸來。\n==註==",
+        "poemZh": "蓬戶掩還開，\n幽居稱不才《詩淵》作行歌任興回。\n移松連嶠土《貴耳集》卷上、《詩淵》作移花連舊土。\n買石帶溪《貴耳集》、《詩淵》作新。\n藥信仙方服，\n衣從古樣裁。\n本無官可棄，\n何用賦歸來。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -8563,8 +8530,8 @@
       "extraction": {
         "status": "needs-review",
         "reviewPriority": "manual-check",
-        "lineCount": 9,
-        "charCount": 92,
+        "lineCount": 8,
+        "charCount": 87,
         "reviewReasons": [
           "possible-joined-lines"
         ]
@@ -8581,7 +8548,7 @@
         "poem": {
           "title_zh": "幽居",
           "title_ko": null,
-          "body_zh": "蓬戶掩還開，\n幽居稱不才《詩淵》作行歌任興回。\n移松連嶠土《貴耳集》卷上、《詩淵》作移花連舊土。\n買石帶溪《貴耳集》、《詩淵》作新。\n藥信仙方服，\n衣從古樣裁。\n本無官可棄，\n何用賦歸來。\n==註==",
+          "body_zh": "蓬戶掩還開，\n幽居稱不才《詩淵》作行歌任興回。\n移松連嶠土《貴耳集》卷上、《詩淵》作移花連舊土。\n買石帶溪《貴耳集》、《詩淵》作新。\n藥信仙方服，\n衣從古樣裁。\n本無官可棄，\n何用賦歸來。",
           "category": null,
           "meter": null,
           "country": "CN",
@@ -8700,7 +8667,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "綠樹何稠疊，\n清風稍羨餘。\n枕縈雲片片，\n簾透雨疎疎。\n脩筧通泉壑，\n殘碑出野鋤。\n丘陵知幾變，\n耕稼學《瀛奎律髓》卷二九作雜。\n==註==",
+        "poemZh": "綠樹何稠疊，\n清風稍羨餘。\n枕縈雲片片，\n簾透雨疎疎。\n脩筧通泉壑，\n殘碑出野鋤。\n丘陵知幾變，\n耕稼學《瀛奎律髓》卷二九作雜。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -8711,8 +8678,8 @@
       "extraction": {
         "status": "needs-review",
         "reviewPriority": "manual-check",
-        "lineCount": 9,
-        "charCount": 62,
+        "lineCount": 8,
+        "charCount": 57,
         "reviewReasons": [
           "possible-joined-lines"
         ]
@@ -8729,7 +8696,7 @@
         "poem": {
           "title_zh": "偶題",
           "title_ko": null,
-          "body_zh": "綠樹何稠疊，\n清風稍羨餘。\n枕縈雲片片，\n簾透雨疎疎。\n脩筧通泉壑，\n殘碑出野鋤。\n丘陵知幾變，\n耕稼學《瀛奎律髓》卷二九作雜。\n==註==",
+          "body_zh": "綠樹何稠疊，\n清風稍羨餘。\n枕縈雲片片，\n簾透雨疎疎。\n脩筧通泉壑，\n殘碑出野鋤。\n丘陵知幾變，\n耕稼學《瀛奎律髓》卷二九作雜。",
           "category": null,
           "meter": null,
           "country": "CN",
@@ -8848,7 +8815,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "名與金山並，\n僧言景更幽。\n寺無雙嶼近，\n地占一江浮。\n曾是龍爲宅，\n還疑蜃吐樓。\n他鄉遠歸者，\n望此得停舟影印《詩淵》冊五頁三七二二。\n==註==",
+        "poemZh": "名與金山並，\n僧言景更幽。\n寺無雙嶼近，\n地占一江浮。\n曾是龍爲宅，\n還疑蜃吐樓。\n他鄉遠歸者，\n望此得停舟影印《詩淵》冊五頁三七二二。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -8859,8 +8826,8 @@
       "extraction": {
         "status": "needs-review",
         "reviewPriority": "manual-check",
-        "lineCount": 9,
-        "charCount": 66,
+        "lineCount": 8,
+        "charCount": 61,
         "reviewReasons": [
           "possible-joined-lines"
         ]
@@ -8877,7 +8844,7 @@
         "poem": {
           "title_zh": "題江心寺",
           "title_ko": null,
-          "body_zh": "名與金山並，\n僧言景更幽。\n寺無雙嶼近，\n地占一江浮。\n曾是龍爲宅，\n還疑蜃吐樓。\n他鄉遠歸者，\n望此得停舟影印《詩淵》冊五頁三七二二。\n==註==",
+          "body_zh": "名與金山並，\n僧言景更幽。\n寺無雙嶼近，\n地占一江浮。\n曾是龍爲宅，\n還疑蜃吐樓。\n他鄉遠歸者，\n望此得停舟影印《詩淵》冊五頁三七二二。",
           "category": null,
           "meter": null,
           "country": "CN",
@@ -8996,7 +8963,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "秋凈日暉暉，\n間行風滿衣。\n尋僧雖不遇，\n折得菊花歸以上《西巖集》。\n==註==",
+        "poemZh": "秋凈日暉暉，\n間行風滿衣。\n尋僧雖不遇，\n折得菊花歸以上《西巖集》。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -9007,8 +8974,8 @@
       "extraction": {
         "status": "auto-extracted",
         "reviewPriority": "bulk-review",
-        "lineCount": 5,
-        "charCount": 36,
+        "lineCount": 4,
+        "charCount": 31,
         "reviewReasons": []
       },
       "jdsCandidate": {
@@ -9023,7 +8990,7 @@
         "poem": {
           "title_zh": "尋僧",
           "title_ko": null,
-          "body_zh": "秋凈日暉暉，\n間行風滿衣。\n尋僧雖不遇，\n折得菊花歸以上《西巖集》。\n==註==",
+          "body_zh": "秋凈日暉暉，\n間行風滿衣。\n尋僧雖不遇，\n折得菊花歸以上《西巖集》。",
           "category": null,
           "meter": null,
           "country": "CN",
@@ -9069,7 +9036,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "一處西風一處愁，\n又逢鳴雁在西巖集作宿。\n芙蓉不分秋蕭索，\n鬭拆繁紅滿樹頭。\n==註==",
+        "poemZh": "一處西風一處愁，\n又逢鳴雁在西巖集作宿。\n芙蓉不分秋蕭索，\n鬭拆繁紅滿樹頭。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -9080,8 +9047,8 @@
       "extraction": {
         "status": "auto-extracted",
         "reviewPriority": "bulk-review",
-        "lineCount": 5,
-        "charCount": 40,
+        "lineCount": 4,
+        "charCount": 35,
         "reviewReasons": []
       },
       "jdsCandidate": {
@@ -9096,7 +9063,7 @@
         "poem": {
           "title_zh": "西風",
           "title_ko": null,
-          "body_zh": "一處西風一處愁，\n又逢鳴雁在西巖集作宿。\n芙蓉不分秋蕭索，\n鬭拆繁紅滿樹頭。\n==註==",
+          "body_zh": "一處西風一處愁，\n又逢鳴雁在西巖集作宿。\n芙蓉不分秋蕭索，\n鬭拆繁紅滿樹頭。",
           "category": null,
           "meter": null,
           "country": "CN",
@@ -9288,7 +9255,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "玄根布靈葉，\n妙化無常人。\n結茲清陽氣，\n挺我空洞神。\n煉度得長生，\n列籍齊衆真。\n登賓原作□登，\n據西巖集、《詩淵》冊六頁四〇九〇改玉皇家，\n執侍羅星嬪。\n欻往宴十洲，\n飛客成《詩淵》作咸。\n茫茫塵中區，\n荒穢何足鄰。\n==註==",
+        "poemZh": "玄根布靈葉，\n妙化無常人。\n結茲清陽氣，\n挺我空洞神。\n煉度得長生，\n列籍齊衆真。\n登賓原作□登，\n據西巖集、《詩淵》冊六頁四〇九〇改玉皇家，\n執侍羅星嬪。\n欻往宴十洲，\n飛客成《詩淵》作咸。\n茫茫塵中區，\n荒穢何足鄰。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -9299,8 +9266,8 @@
       "extraction": {
         "status": "needs-review",
         "reviewPriority": "manual-check",
-        "lineCount": 14,
-        "charCount": 103,
+        "lineCount": 13,
+        "charCount": 98,
         "reviewReasons": [
           "possible-joined-lines"
         ]
@@ -9317,7 +9284,7 @@
         "poem": {
           "title_zh": "步虛詞",
           "title_ko": null,
-          "body_zh": "玄根布靈葉，\n妙化無常人。\n結茲清陽氣，\n挺我空洞神。\n煉度得長生，\n列籍齊衆真。\n登賓原作□登，\n據西巖集、《詩淵》冊六頁四〇九〇改玉皇家，\n執侍羅星嬪。\n欻往宴十洲，\n飛客成《詩淵》作咸。\n茫茫塵中區，\n荒穢何足鄰。\n==註==",
+          "body_zh": "玄根布靈葉，\n妙化無常人。\n結茲清陽氣，\n挺我空洞神。\n煉度得長生，\n列籍齊衆真。\n登賓原作□登，\n據西巖集、《詩淵》冊六頁四〇九〇改玉皇家，\n執侍羅星嬪。\n欻往宴十洲，\n飛客成《詩淵》作咸。\n茫茫塵中區，\n荒穢何足鄰。",
           "category": null,
           "meter": null,
           "country": "CN",
@@ -9363,7 +9330,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "翩翩長袖光閃銀，\n繡羅帳密流香西巖集作香密流芳。\n歌分四時舞一色，\n淥觴傳處馳金輪。\n急竹繁絲互催逼，\n吳娘嬌濃玉無力。\n呵星喚月留夜長，\n十二圍屏暖山色。\n==註==",
+        "poemZh": "翩翩長袖光閃銀，\n繡羅帳密流香西巖集作香密流芳。\n歌分四時舞一色，\n淥觴傳處馳金輪。\n急竹繁絲互催逼，\n吳娘嬌濃玉無力。\n呵星喚月留夜長，\n十二圍屏暖山色。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -9374,8 +9341,8 @@
       "extraction": {
         "status": "needs-review",
         "reviewPriority": "manual-check",
-        "lineCount": 9,
-        "charCount": 76,
+        "lineCount": 8,
+        "charCount": 71,
         "reviewReasons": [
           "possible-joined-lines"
         ]
@@ -9392,7 +9359,7 @@
         "poem": {
           "title_zh": "白紵詞",
           "title_ko": null,
-          "body_zh": "翩翩長袖光閃銀，\n繡羅帳密流香西巖集作香密流芳。\n歌分四時舞一色，\n淥觴傳處馳金輪。\n急竹繁絲互催逼，\n吳娘嬌濃玉無力。\n呵星喚月留夜長，\n十二圍屏暖山色。\n==註==",
+          "body_zh": "翩翩長袖光閃銀，\n繡羅帳密流香西巖集作香密流芳。\n歌分四時舞一色，\n淥觴傳處馳金輪。\n急竹繁絲互催逼，\n吳娘嬌濃玉無力。\n呵星喚月留夜長，\n十二圍屏暖山色。",
           "category": null,
           "meter": null,
           "country": "CN",
@@ -9438,7 +9405,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "幽人愛秋色，\n祗為屬吟情。\n一片葉初落，\n數聯詩已清。\n瘦便藤杖細，\n凉覺葛衣輕。\n門外蕭蕭徑，\n今年菊自生。\n==註==",
+        "poemZh": "幽人愛秋色，\n祗為屬吟情。\n一片葉初落，\n數聯詩已清。\n瘦便藤杖細，\n凉覺葛衣輕。\n門外蕭蕭徑，\n今年菊自生。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -9449,8 +9416,8 @@
       "extraction": {
         "status": "auto-extracted",
         "reviewPriority": "bulk-review",
-        "lineCount": 9,
-        "charCount": 53,
+        "lineCount": 8,
+        "charCount": 48,
         "reviewReasons": []
       },
       "jdsCandidate": {
@@ -9465,8 +9432,8 @@
         "poem": {
           "title_zh": "秋色",
           "title_ko": null,
-          "body_zh": "幽人愛秋色，\n祗為屬吟情。\n一片葉初落，\n數聯詩已清。\n瘦便藤杖細，\n凉覺葛衣輕。\n門外蕭蕭徑，\n今年菊自生。\n==註==",
-          "category": "五言古詩",
+          "body_zh": "幽人愛秋色，\n祗為屬吟情。\n一片葉初落，\n數聯詩已清。\n瘦便藤杖細，\n凉覺葛衣輕。\n門外蕭蕭徑，\n今年菊自生。",
+          "category": "五言律詩",
           "meter": 5,
           "country": "CN",
           "status": "parsed",
@@ -9511,7 +9478,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "芙蕖四五枝，\n寂寞在空池。\n難見草衣士，\n空看宴坐碑。\n香煙思盛日，\n詩句記遊時。\n欲問苔中鶴，\n長松自不知。\n==註==",
+        "poemZh": "芙蕖四五枝，\n寂寞在空池。\n難見草衣士，\n空看宴坐碑。\n香煙思盛日，\n詩句記遊時。\n欲問苔中鶴，\n長松自不知。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -9522,8 +9489,8 @@
       "extraction": {
         "status": "auto-extracted",
         "reviewPriority": "bulk-review",
-        "lineCount": 9,
-        "charCount": 53,
+        "lineCount": 8,
+        "charCount": 48,
         "reviewReasons": []
       },
       "jdsCandidate": {
@@ -9538,8 +9505,8 @@
         "poem": {
           "title_zh": "信州草衣寺",
           "title_ko": null,
-          "body_zh": "芙蕖四五枝，\n寂寞在空池。\n難見草衣士，\n空看宴坐碑。\n香煙思盛日，\n詩句記遊時。\n欲問苔中鶴，\n長松自不知。\n==註==",
-          "category": "五言古詩",
+          "body_zh": "芙蕖四五枝，\n寂寞在空池。\n難見草衣士，\n空看宴坐碑。\n香煙思盛日，\n詩句記遊時。\n欲問苔中鶴，\n長松自不知。",
+          "category": "五言律詩",
           "meter": 5,
           "country": "CN",
           "status": "parsed",
@@ -9584,7 +9551,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "一派落虛空，\n如何畫得同。\n髙風吹作雨，\n低日射成虹。\n西域書曽說，\n先朝路始通。\n或言龍已去，\n幽處別為宮。\n==註==",
+        "poemZh": "一派落虛空，\n如何畫得同。\n髙風吹作雨，\n低日射成虹。\n西域書曽說，\n先朝路始通。\n或言龍已去，\n幽處別為宮。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -9595,8 +9562,8 @@
       "extraction": {
         "status": "auto-extracted",
         "reviewPriority": "bulk-review",
-        "lineCount": 9,
-        "charCount": 53,
+        "lineCount": 8,
+        "charCount": 48,
         "reviewReasons": []
       },
       "jdsCandidate": {
@@ -9611,8 +9578,8 @@
         "poem": {
           "title_zh": "大龍湫",
           "title_ko": null,
-          "body_zh": "一派落虛空，\n如何畫得同。\n髙風吹作雨，\n低日射成虹。\n西域書曽說，\n先朝路始通。\n或言龍已去，\n幽處別為宮。\n==註==",
-          "category": "五言古詩",
+          "body_zh": "一派落虛空，\n如何畫得同。\n髙風吹作雨，\n低日射成虹。\n西域書曽說，\n先朝路始通。\n或言龍已去，\n幽處別為宮。",
+          "category": "五言律詩",
           "meter": 5,
           "country": "CN",
           "status": "parsed",
@@ -9657,7 +9624,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "君到西巖集作至。\n雲間日，\n應分二陸名。\n縣圖山色少西巖集作好。\n井味海潮並。\n剡局三年印，\n春風半月程。\n野人因買鶴，\n曾向西巖集作到。\n此中行。\n==註==",
+        "poemZh": "君到西巖集作至。\n雲間日，\n應分二陸名。\n縣圖山色少西巖集作好。\n井味海潮並。\n剡局三年印，\n春風半月程。\n野人因買鶴，\n曾向西巖集作到。\n此中行。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -9668,8 +9635,8 @@
       "extraction": {
         "status": "auto-extracted",
         "reviewPriority": "bulk-review",
-        "lineCount": 11,
-        "charCount": 70,
+        "lineCount": 10,
+        "charCount": 65,
         "reviewReasons": []
       },
       "jdsCandidate": {
@@ -9684,7 +9651,7 @@
         "poem": {
           "title_zh": "送薛子舒赴華亭船官",
           "title_ko": null,
-          "body_zh": "君到西巖集作至。\n雲間日，\n應分二陸名。\n縣圖山色少西巖集作好。\n井味海潮並。\n剡局三年印，\n春風半月程。\n野人因買鶴，\n曾向西巖集作到。\n此中行。\n==註==",
+          "body_zh": "君到西巖集作至。\n雲間日，\n應分二陸名。\n縣圖山色少西巖集作好。\n井味海潮並。\n剡局三年印，\n春風半月程。\n野人因買鶴，\n曾向西巖集作到。\n此中行。",
           "category": null,
           "meter": null,
           "country": "CN",
@@ -9730,7 +9697,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "一身來作吏，\n白日算徒勞。\n塵土侵衣重，\n年光如鬢牢。\n春深禽語改，\n溪落岸沙髙。\n柳下垂鈎者，\n吾今媿爾曹。\n==註==",
+        "poemZh": "一身來作吏，\n白日算徒勞。\n塵土侵衣重，\n年光如鬢牢。\n春深禽語改，\n溪落岸沙髙。\n柳下垂鈎者，\n吾今媿爾曹。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -9741,8 +9708,8 @@
       "extraction": {
         "status": "auto-extracted",
         "reviewPriority": "bulk-review",
-        "lineCount": 9,
-        "charCount": 53,
+        "lineCount": 8,
+        "charCount": 48,
         "reviewReasons": []
       },
       "jdsCandidate": {
@@ -9757,8 +9724,8 @@
         "poem": {
           "title_zh": "春晚即事",
           "title_ko": null,
-          "body_zh": "一身來作吏，\n白日算徒勞。\n塵土侵衣重，\n年光如鬢牢。\n春深禽語改，\n溪落岸沙髙。\n柳下垂鈎者，\n吾今媿爾曹。\n==註==",
-          "category": "五言古詩",
+          "body_zh": "一身來作吏，\n白日算徒勞。\n塵土侵衣重，\n年光如鬢牢。\n春深禽語改，\n溪落岸沙髙。\n柳下垂鈎者，\n吾今媿爾曹。",
+          "category": "五言律詩",
           "meter": 5,
           "country": "CN",
           "status": "parsed",
@@ -9803,7 +9770,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "身如瘦鶴已伶俜，\n一卧兼旬更有零。\n朝客偶知親送藥，\n野僧相保密持經。\n力微尚覺衣裳重，\n才退難邀筆硯靈。\n惟有愛花心未已，\n遍分黃菊插空瓶。\n==註==",
+        "poemZh": "身如瘦鶴已伶俜，\n一卧兼旬更有零。\n朝客偶知親送藥，\n野僧相保密持經。\n力微尚覺衣裳重，\n才退難邀筆硯靈。\n惟有愛花心未已，\n遍分黃菊插空瓶。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -9814,8 +9781,8 @@
       "extraction": {
         "status": "auto-extracted",
         "reviewPriority": "bulk-review",
-        "lineCount": 9,
-        "charCount": 69,
+        "lineCount": 8,
+        "charCount": 64,
         "reviewReasons": []
       },
       "jdsCandidate": {
@@ -9830,9 +9797,9 @@
         "poem": {
           "title_zh": "病起",
           "title_ko": null,
-          "body_zh": "身如瘦鶴已伶俜，\n一卧兼旬更有零。\n朝客偶知親送藥，\n野僧相保密持經。\n力微尚覺衣裳重，\n才退難邀筆硯靈。\n惟有愛花心未已，\n遍分黃菊插空瓶。\n==註==",
-          "category": null,
-          "meter": null,
+          "body_zh": "身如瘦鶴已伶俜，\n一卧兼旬更有零。\n朝客偶知親送藥，\n野僧相保密持經。\n力微尚覺衣裳重，\n才退難邀筆硯靈。\n惟有愛花心未已，\n遍分黃菊插空瓶。",
+          "category": "七言律詩",
+          "meter": 7,
           "country": "CN",
           "status": "parsed",
           "quality": "category-auto-needs-review"
@@ -9876,7 +9843,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "朝來行樂向秋池，\n池上秋深病不知。\n一樹木犀供夜雨，\n清香移在菊花枝。\n==註==",
+        "poemZh": "朝來行樂向秋池，\n池上秋深病不知。\n一樹木犀供夜雨，\n清香移在菊花枝。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -9887,8 +9854,8 @@
       "extraction": {
         "status": "auto-extracted",
         "reviewPriority": "bulk-review",
-        "lineCount": 5,
-        "charCount": 37,
+        "lineCount": 4,
+        "charCount": 32,
         "reviewReasons": []
       },
       "jdsCandidate": {
@@ -9903,9 +9870,9 @@
         "poem": {
           "title_zh": "池上",
           "title_ko": null,
-          "body_zh": "朝來行樂向秋池，\n池上秋深病不知。\n一樹木犀供夜雨，\n清香移在菊花枝。\n==註==",
-          "category": null,
-          "meter": null,
+          "body_zh": "朝來行樂向秋池，\n池上秋深病不知。\n一樹木犀供夜雨，\n清香移在菊花枝。",
+          "category": "七言絶句",
+          "meter": 7,
           "country": "CN",
           "status": "parsed",
           "quality": "category-auto-needs-review"
@@ -9949,7 +9916,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "====其一====\n自君之出矣，\n心意明本、顧本作魂。\n遠相隨。\n拆破唐人絹，\n經經是雙絲。\n====其二====\n自君之出矣，\n玉鑑明本、顧本作琴。\n生塵垢。\n蓮子種成荷，\n曷時可成藕。\n====其三====\n自君之出矣，\n懶粧眉黛濃。\n愁心如屋漏，\n點點不移床明本、顧本作蹤。\n==註==",
+        "poemZh": "自君之出矣，\n心意明本、顧本作魂。\n遠相隨。\n拆破唐人絹，\n經經是雙絲。\n自君之出矣，\n玉鑑明本、顧本作琴。\n生塵垢。\n蓮子種成荷，\n曷時可成藕。\n自君之出矣，\n懶粧眉黛濃。\n愁心如屋漏，\n點點不移床明本、顧本作蹤。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -9960,8 +9927,8 @@
       "extraction": {
         "status": "auto-extracted",
         "reviewPriority": "bulk-review",
-        "lineCount": 18,
-        "charCount": 130,
+        "lineCount": 14,
+        "charCount": 95,
         "reviewReasons": []
       },
       "jdsCandidate": {
@@ -9976,7 +9943,7 @@
         "poem": {
           "title_zh": "自君之出矣",
           "title_ko": null,
-          "body_zh": "====其一====\n自君之出矣，\n心意明本、顧本作魂。\n遠相隨。\n拆破唐人絹，\n經經是雙絲。\n====其二====\n自君之出矣，\n玉鑑明本、顧本作琴。\n生塵垢。\n蓮子種成荷，\n曷時可成藕。\n====其三====\n自君之出矣，\n懶粧眉黛濃。\n愁心如屋漏，\n點點不移床明本、顧本作蹤。\n==註==",
+          "body_zh": "自君之出矣，\n心意明本、顧本作魂。\n遠相隨。\n拆破唐人絹，\n經經是雙絲。\n自君之出矣，\n玉鑑明本、顧本作琴。\n生塵垢。\n蓮子種成荷，\n曷時可成藕。\n自君之出矣，\n懶粧眉黛濃。\n愁心如屋漏，\n點點不移床明本、顧本作蹤。",
           "category": null,
           "meter": null,
           "country": "CN",
@@ -10022,7 +9989,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "猛虎出林行，\n咆哮取人食。\n居人慮虎至，\n荆棘挂牆壁。\n虎乃愛其身，\n驚遁不近側。\n人兮不《詩淵》冊四頁二七一三作苦弗。\n甘心墮荆棘。\n==註==",
+        "poemZh": "猛虎出林行，\n咆哮取人食。\n居人慮虎至，\n荆棘挂牆壁。\n虎乃愛其身，\n驚遁不近側。\n人兮不《詩淵》冊四頁二七一三作苦弗。\n甘心墮荆棘。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -10033,8 +10000,8 @@
       "extraction": {
         "status": "needs-review",
         "reviewPriority": "manual-check",
-        "lineCount": 9,
-        "charCount": 65,
+        "lineCount": 8,
+        "charCount": 60,
         "reviewReasons": [
           "possible-joined-lines"
         ]
@@ -10051,7 +10018,7 @@
         "poem": {
           "title_zh": "猛虎行",
           "title_ko": null,
-          "body_zh": "猛虎出林行，\n咆哮取人食。\n居人慮虎至，\n荆棘挂牆壁。\n虎乃愛其身，\n驚遁不近側。\n人兮不《詩淵》冊四頁二七一三作苦弗。\n甘心墮荆棘。\n==註==",
+          "body_zh": "猛虎出林行，\n咆哮取人食。\n居人慮虎至，\n荆棘挂牆壁。\n虎乃愛其身，\n驚遁不近側。\n人兮不《詩淵》冊四頁二七一三作苦弗。\n甘心墮荆棘。",
           "category": null,
           "meter": null,
           "country": "CN",
@@ -10170,7 +10137,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "====其一====\n行遍塘邊不肯歸，\n鴛鴦打起看雙飛。\n荷花近岸難攀折，\n蒲葦叢深露濕衣。\n====其二====\n羅蓋初收晚日陰，\n野鳬飛起小魚沉。\n蓮蓬摘下留空柄，\n把向船前探水深。",
+        "poemZh": "行遍塘邊不肯歸，\n鴛鴦打起看雙飛。\n荷花近岸難攀折，\n蒲葦叢深露濕衣。\n羅蓋初收晚日陰，\n野鳬飛起小魚沉。\n蓮蓬摘下留空柄，\n把向船前探水深。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -10181,8 +10148,8 @@
       "extraction": {
         "status": "auto-extracted",
         "reviewPriority": "bulk-review",
-        "lineCount": 10,
-        "charCount": 84,
+        "lineCount": 8,
+        "charCount": 64,
         "reviewReasons": []
       },
       "jdsCandidate": {
@@ -10197,9 +10164,9 @@
         "poem": {
           "title_zh": "采蓮曲",
           "title_ko": null,
-          "body_zh": "====其一====\n行遍塘邊不肯歸，\n鴛鴦打起看雙飛。\n荷花近岸難攀折，\n蒲葦叢深露濕衣。\n====其二====\n羅蓋初收晚日陰，\n野鳬飛起小魚沉。\n蓮蓬摘下留空柄，\n把向船前探水深。",
-          "category": null,
-          "meter": null,
+          "body_zh": "行遍塘邊不肯歸，\n鴛鴦打起看雙飛。\n荷花近岸難攀折，\n蒲葦叢深露濕衣。\n羅蓋初收晚日陰，\n野鳬飛起小魚沉。\n蓮蓬摘下留空柄，\n把向船前探水深。",
+          "category": "七言律詩",
+          "meter": 7,
           "country": "CN",
           "status": "parsed",
           "quality": "category-auto-needs-review"
@@ -10535,7 +10502,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "古殿清燈冷，\n虛堂明本作廊。\n葉掃風。\n掩關人迹外，\n得句佛香中。\n鶴睡應無夢，\n僧談必悟空。\n坐驚窓欲曉，\n片月在林東。\n==註==",
+        "poemZh": "古殿清燈冷，\n虛堂明本作廊。\n葉掃風。\n掩關人迹外，\n得句佛香中。\n鶴睡應無夢，\n僧談必悟空。\n坐驚窓欲曉，\n片月在林東。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -10546,8 +10513,8 @@
       "extraction": {
         "status": "auto-extracted",
         "reviewPriority": "bulk-review",
-        "lineCount": 10,
-        "charCount": 58,
+        "lineCount": 9,
+        "charCount": 53,
         "reviewReasons": []
       },
       "jdsCandidate": {
@@ -10562,7 +10529,7 @@
         "poem": {
           "title_zh": "宿寺",
           "title_ko": null,
-          "body_zh": "古殿清燈冷，\n虛堂明本作廊。\n葉掃風。\n掩關人迹外，\n得句佛香中。\n鶴睡應無夢，\n僧談必悟空。\n坐驚窓欲曉，\n片月在林東。\n==註==",
+          "body_zh": "古殿清燈冷，\n虛堂明本作廊。\n葉掃風。\n掩關人迹外，\n得句佛香中。\n鶴睡應無夢，\n僧談必悟空。\n坐驚窓欲曉，\n片月在林東。",
           "category": null,
           "meter": null,
           "country": "CN",
@@ -10754,7 +10721,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "立久衣襟潤，\n空中氣結成。\n光凝蘭葉膩，\n冷逼鶴黃本作桂。\n又覺爲霜近，\n猶能向日明。\n惟知漢宮內，\n千尺有金莖。\n==註==",
+        "poemZh": "立久衣襟潤，\n空中氣結成。\n光凝蘭葉膩，\n冷逼鶴黃本作桂。\n又覺爲霜近，\n猶能向日明。\n惟知漢宮內，\n千尺有金莖。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -10765,8 +10732,8 @@
       "extraction": {
         "status": "auto-extracted",
         "reviewPriority": "bulk-review",
-        "lineCount": 9,
-        "charCount": 55,
+        "lineCount": 8,
+        "charCount": 50,
         "reviewReasons": []
       },
       "jdsCandidate": {
@@ -10781,7 +10748,7 @@
         "poem": {
           "title_zh": "露",
           "title_ko": null,
-          "body_zh": "立久衣襟潤，\n空中氣結成。\n光凝蘭葉膩，\n冷逼鶴黃本作桂。\n又覺爲霜近，\n猶能向日明。\n惟知漢宮內，\n千尺有金莖。\n==註==",
+          "body_zh": "立久衣襟潤，\n空中氣結成。\n光凝蘭葉膩，\n冷逼鶴黃本作桂。\n又覺爲霜近，\n猶能向日明。\n惟知漢宮內，\n千尺有金莖。",
           "category": null,
           "meter": null,
           "country": "CN",
@@ -11119,7 +11086,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "阿翁年紀老，\n生計在綸絲。\n野水無人占，\n扁舟逐處移。\n數鱗新柳串，\n一笛小兒吹。\n有酒人明本、顧本作全。\n公卿要識誰。\n==註==",
+        "poemZh": "阿翁年紀老，\n生計在綸絲。\n野水無人占，\n扁舟逐處移。\n數鱗新柳串，\n一笛小兒吹。\n有酒人明本、顧本作全。\n公卿要識誰。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -11130,8 +11097,8 @@
       "extraction": {
         "status": "auto-extracted",
         "reviewPriority": "bulk-review",
-        "lineCount": 9,
-        "charCount": 58,
+        "lineCount": 8,
+        "charCount": 53,
         "reviewReasons": []
       },
       "jdsCandidate": {
@@ -11146,7 +11113,7 @@
         "poem": {
           "title_zh": "漁家",
           "title_ko": null,
-          "body_zh": "阿翁年紀老，\n生計在綸絲。\n野水無人占，\n扁舟逐處移。\n數鱗新柳串，\n一笛小兒吹。\n有酒人明本、顧本作全。\n公卿要識誰。\n==註==",
+          "body_zh": "阿翁年紀老，\n生計在綸絲。\n野水無人占，\n扁舟逐處移。\n數鱗新柳串，\n一笛小兒吹。\n有酒人明本、顧本作全。\n公卿要識誰。",
           "category": null,
           "meter": null,
           "country": "CN",
@@ -11192,7 +11159,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "著履明本、顧本作屐。\n上崔嵬，\n呼兒注瓦杯。\n千岑黃本作嶺。\n經雨後，\n一鴈帶秋來。\n野艇乘潮發，\n山園逐主開。\n餘生落樵牧，\n開卷明本、顧本作門巷。\n少塵埃。\n==註==",
+        "poemZh": "著履明本、顧本作屐。\n上崔嵬，\n呼兒注瓦杯。\n千岑黃本作嶺。\n經雨後，\n一鴈帶秋來。\n野艇乘潮發，\n山園逐主開。\n餘生落樵牧，\n開卷明本、顧本作門巷。\n少塵埃。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -11203,8 +11170,8 @@
       "extraction": {
         "status": "auto-extracted",
         "reviewPriority": "bulk-review",
-        "lineCount": 12,
-        "charCount": 75,
+        "lineCount": 11,
+        "charCount": 70,
         "reviewReasons": []
       },
       "jdsCandidate": {
@@ -11219,7 +11186,7 @@
         "poem": {
           "title_zh": "山中即事",
           "title_ko": null,
-          "body_zh": "著履明本、顧本作屐。\n上崔嵬，\n呼兒注瓦杯。\n千岑黃本作嶺。\n經雨後，\n一鴈帶秋來。\n野艇乘潮發，\n山園逐主開。\n餘生落樵牧，\n開卷明本、顧本作門巷。\n少塵埃。\n==註==",
+          "body_zh": "著履明本、顧本作屐。\n上崔嵬，\n呼兒注瓦杯。\n千岑黃本作嶺。\n經雨後，\n一鴈帶秋來。\n野艇乘潮發，\n山園逐主開。\n餘生落樵牧，\n開卷明本、顧本作門巷。\n少塵埃。",
           "category": null,
           "meter": null,
           "country": "CN",
@@ -11265,7 +11232,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "今春北歸鴈，\n秋至又南征。\n冷避燕關雪，\n暖逢湘水晴。\n連行衝原作銜，\n據黃本、明本、顧本改。\n並食雜鷗行。\n沙上無繒黃本作矰。\n相呼一夜鳴。\n==註==",
+        "poemZh": "今春北歸鴈，\n秋至又南征。\n冷避燕關雪，\n暖逢湘水晴。\n連行衝原作銜，\n據黃本、明本、顧本改。\n並食雜鷗行。\n沙上無繒黃本作矰。\n相呼一夜鳴。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -11276,8 +11243,8 @@
       "extraction": {
         "status": "auto-extracted",
         "reviewPriority": "bulk-review",
-        "lineCount": 10,
-        "charCount": 68,
+        "lineCount": 9,
+        "charCount": 63,
         "reviewReasons": []
       },
       "jdsCandidate": {
@@ -11292,7 +11259,7 @@
         "poem": {
           "title_zh": "鴈",
           "title_ko": null,
-          "body_zh": "今春北歸鴈，\n秋至又南征。\n冷避燕關雪，\n暖逢湘水晴。\n連行衝原作銜，\n據黃本、明本、顧本改。\n並食雜鷗行。\n沙上無繒黃本作矰。\n相呼一夜鳴。\n==註==",
+          "body_zh": "今春北歸鴈，\n秋至又南征。\n冷避燕關雪，\n暖逢湘水晴。\n連行衝原作銜，\n據黃本、明本、顧本改。\n並食雜鷗行。\n沙上無繒黃本作矰。\n相呼一夜鳴。",
           "category": null,
           "meter": null,
           "country": "CN",
@@ -11484,7 +11451,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "孤劍色磨青，\n深謀祕鬼靈。\n離山春值雪，\n憂國夜觀星。\n奏凱邊人悅，\n翻營戰地腥。\n期君歸幕下，\n何石可書名明本、顧本作銘。\n==註==",
+        "poemZh": "孤劍色磨青，\n深謀祕鬼靈。\n離山春值雪，\n憂國夜觀星。\n奏凱邊人悅，\n翻營戰地腥。\n期君歸幕下，\n何石可書名明本、顧本作銘。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -11495,8 +11462,8 @@
       "extraction": {
         "status": "auto-extracted",
         "reviewPriority": "bulk-review",
-        "lineCount": 9,
-        "charCount": 60,
+        "lineCount": 8,
+        "charCount": 55,
         "reviewReasons": []
       },
       "jdsCandidate": {
@@ -11511,7 +11478,7 @@
         "poem": {
           "title_zh": "送翁靈舒遊邊",
           "title_ko": null,
-          "body_zh": "孤劍色磨青，\n深謀祕鬼靈。\n離山春值雪，\n憂國夜觀星。\n奏凱邊人悅，\n翻營戰地腥。\n期君歸幕下，\n何石可書名明本、顧本作銘。\n==註==",
+          "body_zh": "孤劍色磨青，\n深謀祕鬼靈。\n離山春值雪，\n憂國夜觀星。\n奏凱邊人悅，\n翻營戰地腥。\n期君歸幕下，\n何石可書名明本、顧本作銘。",
           "category": null,
           "meter": null,
           "country": "CN",
@@ -11630,7 +11597,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "長記零陵郡，\n共看江上峰。\n平明本、顧本作一。\n生輕世事，\n幾度明本、顧本作處。\n認仙蹤。\n轉式驅雷電，\n封泥伏虎龍。\n三千三百里，\n今日又相逢。\n==註==",
+        "poemZh": "長記零陵郡，\n共看江上峰。\n平明本、顧本作一。\n生輕世事，\n幾度明本、顧本作處。\n認仙蹤。\n轉式驅雷電，\n封泥伏虎龍。\n三千三百里，\n今日又相逢。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -11641,8 +11608,8 @@
       "extraction": {
         "status": "auto-extracted",
         "reviewPriority": "bulk-review",
-        "lineCount": 11,
-        "charCount": 69,
+        "lineCount": 10,
+        "charCount": 64,
         "reviewReasons": []
       },
       "jdsCandidate": {
@@ -11657,7 +11624,7 @@
         "poem": {
           "title_zh": "贈九華李丹士",
           "title_ko": null,
-          "body_zh": "長記零陵郡，\n共看江上峰。\n平明本、顧本作一。\n生輕世事，\n幾度明本、顧本作處。\n認仙蹤。\n轉式驅雷電，\n封泥伏虎龍。\n三千三百里，\n今日又相逢。\n==註==",
+          "body_zh": "長記零陵郡，\n共看江上峰。\n平明本、顧本作一。\n生輕世事，\n幾度明本、顧本作處。\n認仙蹤。\n轉式驅雷電，\n封泥伏虎龍。\n三千三百里，\n今日又相逢。",
           "category": null,
           "meter": null,
           "country": "CN",
@@ -11776,7 +11743,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "長作湯村夢，\n今來免所思。\n丹靈年命永，\n琴裂壁風吹。\n開戶秋花發，\n終經午飯遲。\n嶽陽何日去，\n後集要君詩。\n==註==",
+        "poemZh": "長作湯村夢，\n今來免所思。\n丹靈年命永，\n琴裂壁風吹。\n開戶秋花發，\n終經午飯遲。\n嶽陽何日去，\n後集要君詩。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -11787,8 +11754,8 @@
       "extraction": {
         "status": "auto-extracted",
         "reviewPriority": "bulk-review",
-        "lineCount": 9,
-        "charCount": 53,
+        "lineCount": 8,
+        "charCount": 48,
         "reviewReasons": []
       },
       "jdsCandidate": {
@@ -11803,8 +11770,8 @@
         "poem": {
           "title_zh": "喜蔣德瞻還里",
           "title_ko": null,
-          "body_zh": "長作湯村夢，\n今來免所思。\n丹靈年命永，\n琴裂壁風吹。\n開戶秋花發，\n終經午飯遲。\n嶽陽何日去，\n後集要君詩。\n==註==",
-          "category": "五言古詩",
+          "body_zh": "長作湯村夢，\n今來免所思。\n丹靈年命永，\n琴裂壁風吹。\n開戶秋花發，\n終經午飯遲。\n嶽陽何日去，\n後集要君詩。",
+          "category": "五言律詩",
           "meter": 5,
           "country": "CN",
           "status": "parsed",
@@ -11922,7 +11889,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "一石入遙天，\n千峰疊在前。\n人行不到處，\n仙去未多年。\n竇暗雲生像，\n簷斜日照泉。\n皇朝宣賜物，\n弟子尚相明本、顧本作能。\n==註==",
+        "poemZh": "一石入遙天，\n千峰疊在前。\n人行不到處，\n仙去未多年。\n竇暗雲生像，\n簷斜日照泉。\n皇朝宣賜物，\n弟子尚相明本、顧本作能。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -11933,8 +11900,8 @@
       "extraction": {
         "status": "auto-extracted",
         "reviewPriority": "bulk-review",
-        "lineCount": 9,
-        "charCount": 59,
+        "lineCount": 8,
+        "charCount": 54,
         "reviewReasons": []
       },
       "jdsCandidate": {
@@ -11949,7 +11916,7 @@
         "poem": {
           "title_zh": "白石巖",
           "title_ko": null,
-          "body_zh": "一石入遙天，\n千峰疊在前。\n人行不到處，\n仙去未多年。\n竇暗雲生像，\n簷斜日照泉。\n皇朝宣賜物，\n弟子尚相明本、顧本作能。\n==註==",
+          "body_zh": "一石入遙天，\n千峰疊在前。\n人行不到處，\n仙去未多年。\n竇暗雲生像，\n簷斜日照泉。\n皇朝宣賜物，\n弟子尚相明本、顧本作能。",
           "category": null,
           "meter": null,
           "country": "CN",
@@ -12068,7 +12035,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "一原作三，\n據明本、顧本改。\n行三步歇，\n屋漏坐頻移。\n妻欲藏茶鼎，\n僧能施藥資。\n鄰園梅盡發，\n河岸草生遲。\n天解憐貧病，\n難令不作詩。\n==註==",
+        "poemZh": "一原作三，\n據明本、顧本改。\n行三步歇，\n屋漏坐頻移。\n妻欲藏茶鼎，\n僧能施藥資。\n鄰園梅盡發，\n河岸草生遲。\n天解憐貧病，\n難令不作詩。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -12079,8 +12046,8 @@
       "extraction": {
         "status": "auto-extracted",
         "reviewPriority": "bulk-review",
-        "lineCount": 11,
-        "charCount": 65,
+        "lineCount": 10,
+        "charCount": 60,
         "reviewReasons": []
       },
       "jdsCandidate": {
@@ -12095,7 +12062,7 @@
         "poem": {
           "title_zh": "病中作",
           "title_ko": null,
-          "body_zh": "一原作三，\n據明本、顧本改。\n行三步歇，\n屋漏坐頻移。\n妻欲藏茶鼎，\n僧能施藥資。\n鄰園梅盡發，\n河岸草生遲。\n天解憐貧病，\n難令不作詩。\n==註==",
+          "body_zh": "一原作三，\n據明本、顧本改。\n行三步歇，\n屋漏坐頻移。\n妻欲藏茶鼎，\n僧能施藥資。\n鄰園梅盡發，\n河岸草生遲。\n天解憐貧病，\n難令不作詩。",
           "category": null,
           "meter": null,
           "country": "CN",
@@ -12214,7 +12181,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "====其一====\n睡眼蒙茸帶宿酲，\n起來階下探春晴。\n滿身花露聽鶯久，\n禁鼓重新打六更。\n====其二====\n懶臨粧架索朱綿，\n上得高臺失寶鈿。\n內屋深屏多畫杏，\n有誰獨喜畫雙蓮。",
+        "poemZh": "睡眼蒙茸帶宿酲，\n起來階下探春晴。\n滿身花露聽鶯久，\n禁鼓重新打六更。\n懶臨粧架索朱綿，\n上得高臺失寶鈿。\n內屋深屏多畫杏，\n有誰獨喜畫雙蓮。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -12225,8 +12192,8 @@
       "extraction": {
         "status": "auto-extracted",
         "reviewPriority": "bulk-review",
-        "lineCount": 10,
-        "charCount": 84,
+        "lineCount": 8,
+        "charCount": 64,
         "reviewReasons": []
       },
       "jdsCandidate": {
@@ -12241,9 +12208,9 @@
         "poem": {
           "title_zh": "宮詞",
           "title_ko": null,
-          "body_zh": "====其一====\n睡眼蒙茸帶宿酲，\n起來階下探春晴。\n滿身花露聽鶯久，\n禁鼓重新打六更。\n====其二====\n懶臨粧架索朱綿，\n上得高臺失寶鈿。\n內屋深屏多畫杏，\n有誰獨喜畫雙蓮。",
-          "category": null,
-          "meter": null,
+          "body_zh": "睡眼蒙茸帶宿酲，\n起來階下探春晴。\n滿身花露聽鶯久，\n禁鼓重新打六更。\n懶臨粧架索朱綿，\n上得高臺失寶鈿。\n內屋深屏多畫杏，\n有誰獨喜畫雙蓮。",
+          "category": "七言律詩",
+          "meter": 7,
           "country": "CN",
           "status": "parsed",
           "quality": "category-auto-needs-review"
@@ -12798,7 +12765,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "北風蕭蕭胡馬鳴，\n邊人走盡空戶庭。\n黃金埋藏禾米棄，\n路上逐日空明本、顧本作長。\n子西父南弗相守，\n仰面看日啼無聲。\n生身不合屬中土，\n自昔無時無戰爭。\n家桑椹熟生野蛾，\n兔跳席箕田成坡。\n一路幾州皆明本、顧本作盡。\n處處戰骨平草多。\n傳報將軍殺胡虜，\n取得山河歸漢主。\n殘生只願還本鄉，\n且免後裔有兵禍明本、顧本作難保後裔無兵禍。\n==註==",
+        "poemZh": "北風蕭蕭胡馬鳴，\n邊人走盡空戶庭。\n黃金埋藏禾米棄，\n路上逐日空明本、顧本作長。\n子西父南弗相守，\n仰面看日啼無聲。\n生身不合屬中土，\n自昔無時無戰爭。\n家桑椹熟生野蛾，\n兔跳席箕田成坡。\n一路幾州皆明本、顧本作盡。\n處處戰骨平草多。\n傳報將軍殺胡虜，\n取得山河歸漢主。\n殘生只願還本鄉，\n且免後裔有兵禍明本、顧本作難保後裔無兵禍。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -12809,8 +12776,8 @@
       "extraction": {
         "status": "needs-review",
         "reviewPriority": "manual-check",
-        "lineCount": 17,
-        "charCount": 156,
+        "lineCount": 16,
+        "charCount": 151,
         "reviewReasons": [
           "possible-joined-lines"
         ]
@@ -12827,7 +12794,7 @@
         "poem": {
           "title_zh": "廢居行",
           "title_ko": null,
-          "body_zh": "北風蕭蕭胡馬鳴，\n邊人走盡空戶庭。\n黃金埋藏禾米棄，\n路上逐日空明本、顧本作長。\n子西父南弗相守，\n仰面看日啼無聲。\n生身不合屬中土，\n自昔無時無戰爭。\n家桑椹熟生野蛾，\n兔跳席箕田成坡。\n一路幾州皆明本、顧本作盡。\n處處戰骨平草多。\n傳報將軍殺胡虜，\n取得山河歸漢主。\n殘生只願還本鄉，\n且免後裔有兵禍明本、顧本作難保後裔無兵禍。\n==註==",
+          "body_zh": "北風蕭蕭胡馬鳴，\n邊人走盡空戶庭。\n黃金埋藏禾米棄，\n路上逐日空明本、顧本作長。\n子西父南弗相守，\n仰面看日啼無聲。\n生身不合屬中土，\n自昔無時無戰爭。\n家桑椹熟生野蛾，\n兔跳席箕田成坡。\n一路幾州皆明本、顧本作盡。\n處處戰骨平草多。\n傳報將軍殺胡虜，\n取得山河歸漢主。\n殘生只願還本鄉，\n且免後裔有兵禍明本、顧本作難保後裔無兵禍。",
           "category": null,
           "meter": null,
           "country": "CN",
@@ -12946,7 +12913,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "延年有妹顔如花，\n十四選入君王家。\n翡翠結簾玉鏤牀，\n君王一時無暫忘。\n朝朝出入芙蓉殿，\n莫道妾身出微賤。\n妾生未久身入泉，\n上天何不與妾年。\n君王愛妾言不死，\n逐夜宮中喚方士以上《宋元四十三家集·芳蘭軒集》。\n==註==",
+        "poemZh": "延年有妹顔如花，\n十四選入君王家。\n翡翠結簾玉鏤牀，\n君王一時無暫忘。\n朝朝出入芙蓉殿，\n莫道妾身出微賤。\n妾生未久身入泉，\n上天何不與妾年。\n君王愛妾言不死，\n逐夜宮中喚方士以上《宋元四十三家集·芳蘭軒集》。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -12957,8 +12924,8 @@
       "extraction": {
         "status": "needs-review",
         "reviewPriority": "manual-check",
-        "lineCount": 11,
-        "charCount": 101,
+        "lineCount": 10,
+        "charCount": 96,
         "reviewReasons": [
           "possible-joined-lines"
         ]
@@ -12975,7 +12942,7 @@
         "poem": {
           "title_zh": "李夫人",
           "title_ko": null,
-          "body_zh": "延年有妹顔如花，\n十四選入君王家。\n翡翠結簾玉鏤牀，\n君王一時無暫忘。\n朝朝出入芙蓉殿，\n莫道妾身出微賤。\n妾生未久身入泉，\n上天何不與妾年。\n君王愛妾言不死，\n逐夜宮中喚方士以上《宋元四十三家集·芳蘭軒集》。\n==註==",
+          "body_zh": "延年有妹顔如花，\n十四選入君王家。\n翡翠結簾玉鏤牀，\n君王一時無暫忘。\n朝朝出入芙蓉殿，\n莫道妾身出微賤。\n妾生未久身入泉，\n上天何不與妾年。\n君王愛妾言不死，\n逐夜宮中喚方士以上《宋元四十三家集·芳蘭軒集》。",
           "category": null,
           "meter": null,
           "country": "CN",
@@ -13094,7 +13061,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "興兵又罷兵，\n策士恥無名。\n閑西巖集作乍。\n見秋風起，\n猶生萬里情。\n借窓臨水歇，\n沽酒對花傾。\n示我新詩卷，\n如編衆西巖集作珠。\n==註==",
+        "poemZh": "興兵又罷兵，\n策士恥無名。\n閑西巖集作乍。\n見秋風起，\n猶生萬里情。\n借窓臨水歇，\n沽酒對花傾。\n示我新詩卷，\n如編衆西巖集作珠。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -13105,8 +13072,8 @@
       "extraction": {
         "status": "auto-extracted",
         "reviewPriority": "bulk-review",
-        "lineCount": 10,
-        "charCount": 62,
+        "lineCount": 9,
+        "charCount": 57,
         "reviewReasons": []
       },
       "jdsCandidate": {
@@ -13121,7 +13088,7 @@
         "poem": {
           "title_zh": "贈張亦",
           "title_ko": null,
-          "body_zh": "興兵又罷兵，\n策士恥無名。\n閑西巖集作乍。\n見秋風起，\n猶生萬里情。\n借窓臨水歇，\n沽酒對花傾。\n示我新詩卷，\n如編衆西巖集作珠。\n==註==",
+          "body_zh": "興兵又罷兵，\n策士恥無名。\n閑西巖集作乍。\n見秋風起，\n猶生萬里情。\n借窓臨水歇，\n沽酒對花傾。\n示我新詩卷，\n如編衆西巖集作珠。",
           "category": null,
           "meter": null,
           "country": "CN",
@@ -13167,7 +13134,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "竹籠盛書去，\n遙知官事閒。\n水程春有雨，\n海岸曉無山。\n奥理漸摩後，\n清名䕶養間。\n坐曹觀剡木，\n意與易相關。\n==註==",
+        "poemZh": "竹籠盛書去，\n遙知官事閒。\n水程春有雨，\n海岸曉無山。\n奥理漸摩後，\n清名䕶養間。\n坐曹觀剡木，\n意與易相關。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -13178,8 +13145,8 @@
       "extraction": {
         "status": "auto-extracted",
         "reviewPriority": "bulk-review",
-        "lineCount": 9,
-        "charCount": 53,
+        "lineCount": 8,
+        "charCount": 48,
         "reviewReasons": []
       },
       "jdsCandidate": {
@@ -13194,8 +13161,8 @@
         "poem": {
           "title_zh": "送薛子舒赴華亭船官",
           "title_ko": null,
-          "body_zh": "竹籠盛書去，\n遙知官事閒。\n水程春有雨，\n海岸曉無山。\n奥理漸摩後，\n清名䕶養間。\n坐曹觀剡木，\n意與易相關。\n==註==",
-          "category": "五言古詩",
+          "body_zh": "竹籠盛書去，\n遙知官事閒。\n水程春有雨，\n海岸曉無山。\n奥理漸摩後，\n清名䕶養間。\n坐曹觀剡木，\n意與易相關。",
+          "category": "五言律詩",
           "meter": 5,
           "country": "CN",
           "status": "parsed",
@@ -13532,7 +13499,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "書疑當作晝。\n困當檐立，\n微風動鬢毛。\n桐陰遮井暗，\n鶯語出林高。\n執熱思時雨，\n如疲得美醪。\n居然吟思起，\n獨步幾周遭。\n==註==",
+        "poemZh": "書疑當作晝。\n困當檐立，\n微風動鬢毛。\n桐陰遮井暗，\n鶯語出林高。\n執熱思時雨，\n如疲得美醪。\n居然吟思起，\n獨步幾周遭。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -13543,8 +13510,8 @@
       "extraction": {
         "status": "auto-extracted",
         "reviewPriority": "bulk-review",
-        "lineCount": 10,
-        "charCount": 58,
+        "lineCount": 9,
+        "charCount": 53,
         "reviewReasons": []
       },
       "jdsCandidate": {
@@ -13559,7 +13526,7 @@
         "poem": {
           "title_zh": "夏日",
           "title_ko": null,
-          "body_zh": "書疑當作晝。\n困當檐立，\n微風動鬢毛。\n桐陰遮井暗，\n鶯語出林高。\n執熱思時雨，\n如疲得美醪。\n居然吟思起，\n獨步幾周遭。\n==註==",
+          "body_zh": "書疑當作晝。\n困當檐立，\n微風動鬢毛。\n桐陰遮井暗，\n鶯語出林高。\n執熱思時雨，\n如疲得美醪。\n居然吟思起，\n獨步幾周遭。",
           "category": null,
           "meter": null,
           "country": "CN",
@@ -13897,7 +13864,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "詩鬢曉星星，\n霜天似水清。\n風當窓眼入，\n冰向硯池生。\n已瘦梅明本、顧本作花。\n猶乾竹葉聲。\n夜來天地潔，\n惟是月華明。\n==註==",
+        "poemZh": "詩鬢曉星星，\n霜天似水清。\n風當窓眼入，\n冰向硯池生。\n已瘦梅明本、顧本作花。\n猶乾竹葉聲。\n夜來天地潔，\n惟是月華明。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -13908,8 +13875,8 @@
       "extraction": {
         "status": "auto-extracted",
         "reviewPriority": "bulk-review",
-        "lineCount": 9,
-        "charCount": 58,
+        "lineCount": 8,
+        "charCount": 53,
         "reviewReasons": []
       },
       "jdsCandidate": {
@@ -13924,7 +13891,7 @@
         "poem": {
           "title_zh": "霜",
           "title_ko": null,
-          "body_zh": "詩鬢曉星星，\n霜天似水清。\n風當窓眼入，\n冰向硯池生。\n已瘦梅明本、顧本作花。\n猶乾竹葉聲。\n夜來天地潔，\n惟是月華明。\n==註==",
+          "body_zh": "詩鬢曉星星，\n霜天似水清。\n風當窓眼入，\n冰向硯池生。\n已瘦梅明本、顧本作花。\n猶乾竹葉聲。\n夜來天地潔，\n惟是月華明。",
           "category": null,
           "meter": null,
           "country": "CN",
@@ -13970,7 +13937,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "柳竹藏花塢，\n茅茨接草池。\n開門驚燕子，\n汲水得魚兒。\n地僻春猶靜，\n人閑日自明本、顧本作更。\n山禽啼忽住，\n飛起又相隨。\n==註==",
+        "poemZh": "柳竹藏花塢，\n茅茨接草池。\n開門驚燕子，\n汲水得魚兒。\n地僻春猶靜，\n人閑日自明本、顧本作更。\n山禽啼忽住，\n飛起又相隨。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -13981,8 +13948,8 @@
       "extraction": {
         "status": "auto-extracted",
         "reviewPriority": "bulk-review",
-        "lineCount": 9,
-        "charCount": 59,
+        "lineCount": 8,
+        "charCount": 54,
         "reviewReasons": []
       },
       "jdsCandidate": {
@@ -13997,7 +13964,7 @@
         "poem": {
           "title_zh": "山居",
           "title_ko": null,
-          "body_zh": "柳竹藏花塢，\n茅茨接草池。\n開門驚燕子，\n汲水得魚兒。\n地僻春猶靜，\n人閑日自明本、顧本作更。\n山禽啼忽住，\n飛起又相隨。\n==註==",
+          "body_zh": "柳竹藏花塢，\n茅茨接草池。\n開門驚燕子，\n汲水得魚兒。\n地僻春猶靜，\n人閑日自明本、顧本作更。\n山禽啼忽住，\n飛起又相隨。",
           "category": null,
           "meter": null,
           "country": "CN",
@@ -14262,7 +14229,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "====其一====\n疎芳點點是春冰，\n應笑浮華去不停。\n石畔長來枝易老，\n竹間瘦得萼全青。\n孤高自愛香無色，\n寂寞渾教影問形。\n莫遣豐□種宮苑，\n野橋流水最清泠。\n====其二====\n是誰曾種白玻璃，\n夐絶寒荒一點奇。\n不厭壠頭千百樹，\n最憐窓下兩三枝。\n幽深真似離騷句，\n枯健猶如賈島詩。\n吟到月斜渾未已，\n蕭蕭鬢影有風吹。",
+        "poemZh": "疎芳點點是春冰，\n應笑浮華去不停。\n石畔長來枝易老，\n竹間瘦得萼全青。\n孤高自愛香無色，\n寂寞渾教影問形。\n莫遣豐□種宮苑，\n野橋流水最清泠。\n是誰曾種白玻璃，\n夐絶寒荒一點奇。\n不厭壠頭千百樹，\n最憐窓下兩三枝。\n幽深真似離騷句，\n枯健猶如賈島詩。\n吟到月斜渾未已，\n蕭蕭鬢影有風吹。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -14273,8 +14240,8 @@
       "extraction": {
         "status": "auto-extracted",
         "reviewPriority": "bulk-review",
-        "lineCount": 18,
-        "charCount": 148,
+        "lineCount": 16,
+        "charCount": 128,
         "reviewReasons": []
       },
       "jdsCandidate": {
@@ -14289,9 +14256,9 @@
         "poem": {
           "title_zh": "梅",
           "title_ko": null,
-          "body_zh": "====其一====\n疎芳點點是春冰，\n應笑浮華去不停。\n石畔長來枝易老，\n竹間瘦得萼全青。\n孤高自愛香無色，\n寂寞渾教影問形。\n莫遣豐□種宮苑，\n野橋流水最清泠。\n====其二====\n是誰曾種白玻璃，\n夐絶寒荒一點奇。\n不厭壠頭千百樹，\n最憐窓下兩三枝。\n幽深真似離騷句，\n枯健猶如賈島詩。\n吟到月斜渾未已，\n蕭蕭鬢影有風吹。",
-          "category": null,
-          "meter": null,
+          "body_zh": "疎芳點點是春冰，\n應笑浮華去不停。\n石畔長來枝易老，\n竹間瘦得萼全青。\n孤高自愛香無色，\n寂寞渾教影問形。\n莫遣豐□種宮苑，\n野橋流水最清泠。\n是誰曾種白玻璃，\n夐絶寒荒一點奇。\n不厭壠頭千百樹，\n最憐窓下兩三枝。\n幽深真似離騷句，\n枯健猶如賈島詩。\n吟到月斜渾未已，\n蕭蕭鬢影有風吹。",
+          "category": "七言古詩",
+          "meter": 7,
           "country": "CN",
           "status": "parsed",
           "quality": "category-auto-needs-review"
@@ -14408,7 +14375,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "==薄薄沉熏骨==\n==瓜香濃欲爛==\n==註==",
+        "poemZh": "",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -14417,11 +14384,14 @@
         "commentaryKoOwned": null
       },
       "extraction": {
-        "status": "auto-extracted",
-        "reviewPriority": "bulk-review",
-        "lineCount": 3,
-        "charCount": 23,
-        "reviewReasons": []
+        "status": "needs-review",
+        "reviewPriority": "manual-check",
+        "lineCount": 0,
+        "charCount": 0,
+        "reviewReasons": [
+          "extracted-too-few-lines",
+          "empty-body"
+        ]
       },
       "jdsCandidate": {
         "poet": {
@@ -14435,11 +14405,11 @@
         "poem": {
           "title_zh": "含笑花",
           "title_ko": null,
-          "body_zh": "==薄薄沉熏骨==\n==瓜香濃欲爛==\n==註==",
+          "body_zh": "",
           "category": null,
           "meter": null,
           "country": "CN",
-          "status": "parsed",
+          "status": "needs-review",
           "quality": "category-auto-needs-review"
         }
       },
@@ -14773,7 +14743,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "拾得柔條弄淺波，\n清風吹斷采蓮歌。\n又移小艇前汀去，\n蓮葉稠時柳葉多劉克莊《後村千家詩》卷一五。\n==註==",
+        "poemZh": "拾得柔條弄淺波，\n清風吹斷采蓮歌。\n又移小艇前汀去，\n蓮葉稠時柳葉多劉克莊《後村千家詩》卷一五。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -14784,8 +14754,8 @@
       "extraction": {
         "status": "needs-review",
         "reviewPriority": "manual-check",
-        "lineCount": 5,
-        "charCount": 50,
+        "lineCount": 4,
+        "charCount": 45,
         "reviewReasons": [
           "possible-joined-lines"
         ]
@@ -14802,7 +14772,7 @@
         "poem": {
           "title_zh": "湖",
           "title_ko": null,
-          "body_zh": "拾得柔條弄淺波，\n清風吹斷采蓮歌。\n又移小艇前汀去，\n蓮葉稠時柳葉多劉克莊《後村千家詩》卷一五。\n==註==",
+          "body_zh": "拾得柔條弄淺波，\n清風吹斷采蓮歌。\n又移小艇前汀去，\n蓮葉稠時柳葉多劉克莊《後村千家詩》卷一五。",
           "category": null,
           "meter": null,
           "country": "CN",
@@ -14848,7 +14818,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "====其一====\n斷橋橫落淺沙邊，\n沙岸疎梅卧曉煙。\n新雨漲溪三尺水，\n漁翁來覓渡船錢。\n====其二====\n柳著輕黃欲染衣，\n汀沙漠漠草菲菲。\n曉風吹斷寒煙碧，\n無數鴛鴦溪上飛。",
+        "poemZh": "斷橋橫落淺沙邊，\n沙岸疎梅卧曉煙。\n新雨漲溪三尺水，\n漁翁來覓渡船錢。\n柳著輕黃欲染衣，\n汀沙漠漠草菲菲。\n曉風吹斷寒煙碧，\n無數鴛鴦溪上飛。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -14859,8 +14829,8 @@
       "extraction": {
         "status": "auto-extracted",
         "reviewPriority": "bulk-review",
-        "lineCount": 10,
-        "charCount": 84,
+        "lineCount": 8,
+        "charCount": 64,
         "reviewReasons": []
       },
       "jdsCandidate": {
@@ -14875,9 +14845,9 @@
         "poem": {
           "title_zh": "春雨",
           "title_ko": null,
-          "body_zh": "====其一====\n斷橋橫落淺沙邊，\n沙岸疎梅卧曉煙。\n新雨漲溪三尺水，\n漁翁來覓渡船錢。\n====其二====\n柳著輕黃欲染衣，\n汀沙漠漠草菲菲。\n曉風吹斷寒煙碧，\n無數鴛鴦溪上飛。",
-          "category": null,
-          "meter": null,
+          "body_zh": "斷橋橫落淺沙邊，\n沙岸疎梅卧曉煙。\n新雨漲溪三尺水，\n漁翁來覓渡船錢。\n柳著輕黃欲染衣，\n汀沙漠漠草菲菲。\n曉風吹斷寒煙碧，\n無數鴛鴦溪上飛。",
+          "category": "七言律詩",
+          "meter": 7,
           "country": "CN",
           "status": "parsed",
           "quality": "category-auto-needs-review"
@@ -14921,7 +14891,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "山茶又晚出，\n舊不聞圖經。\n花深嫌少態，\n曾入蘇公評。\n邇來亦變怪，\n紛然著名稱。\n黃香開最早，\n與菊爲輩朋。\n紛紅更妖艷，\n玉環帶春酲。\n偉哉紅百葉，\n花重枝不勝。\n猶愛並山茶，\n開花一尺盈。\n日丹又其亞，\n不減紅帶鞓。\n吐絲心抽鬚，\n鋸齒葉剪稜。\n白茶亦數品，\n玉磬尤精明。\n桃葉何從來，\n派別疑武陵。\n愈出愈奇怪，\n一見一欲驚以上《全芳備祖》前集卷一九。\n==註==",
+        "poemZh": "山茶又晚出，\n舊不聞圖經。\n花深嫌少態，\n曾入蘇公評。\n邇來亦變怪，\n紛然著名稱。\n黃香開最早，\n與菊爲輩朋。\n紛紅更妖艷，\n玉環帶春酲。\n偉哉紅百葉，\n花重枝不勝。\n猶愛並山茶，\n開花一尺盈。\n日丹又其亞，\n不減紅帶鞓。\n吐絲心抽鬚，\n鋸齒葉剪稜。\n白茶亦數品，\n玉磬尤精明。\n桃葉何從來，\n派別疑武陵。\n愈出愈奇怪，\n一見一欲驚以上《全芳備祖》前集卷一九。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -14932,8 +14902,8 @@
       "extraction": {
         "status": "needs-review",
         "reviewPriority": "manual-check",
-        "lineCount": 25,
-        "charCount": 162,
+        "lineCount": 24,
+        "charCount": 157,
         "reviewReasons": [
           "possible-joined-lines"
         ]
@@ -14950,7 +14920,7 @@
         "poem": {
           "title_zh": "山茶花",
           "title_ko": null,
-          "body_zh": "山茶又晚出，\n舊不聞圖經。\n花深嫌少態，\n曾入蘇公評。\n邇來亦變怪，\n紛然著名稱。\n黃香開最早，\n與菊爲輩朋。\n紛紅更妖艷，\n玉環帶春酲。\n偉哉紅百葉，\n花重枝不勝。\n猶愛並山茶，\n開花一尺盈。\n日丹又其亞，\n不減紅帶鞓。\n吐絲心抽鬚，\n鋸齒葉剪稜。\n白茶亦數品，\n玉磬尤精明。\n桃葉何從來，\n派別疑武陵。\n愈出愈奇怪，\n一見一欲驚以上《全芳備祖》前集卷一九。\n==註==",
+          "body_zh": "山茶又晚出，\n舊不聞圖經。\n花深嫌少態，\n曾入蘇公評。\n邇來亦變怪，\n紛然著名稱。\n黃香開最早，\n與菊爲輩朋。\n紛紅更妖艷，\n玉環帶春酲。\n偉哉紅百葉，\n花重枝不勝。\n猶愛並山茶，\n開花一尺盈。\n日丹又其亞，\n不減紅帶鞓。\n吐絲心抽鬚，\n鋸齒葉剪稜。\n白茶亦數品，\n玉磬尤精明。\n桃葉何從來，\n派別疑武陵。\n愈出愈奇怪，\n一見一欲驚以上《全芳備祖》前集卷一九。",
           "category": null,
           "meter": null,
           "country": "CN",
@@ -14996,7 +14966,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "====其一====\n要是此花清絶處，\n端如醉面讀離騷紅梅。\n====其二====\n青蛟煖晝拏雲上，\n白雪深春壓架香酴醿。\n====其三====\n照眼粧新就，\n扶頭酒半醒。\n妖姿隨變化，\n薄命易飄零麗春花。\n====其四====\n嬌困扶頭憐半醒，\n淡濃宜面鬬新粧。\n並肩罌粟多含怨，\n具體牡丹惟欠香以上同上書卷二〇。\n====其五====\n礬弟墮小白，\n梅兄憐老蒼。\n仲氏似白眉，\n表表金玉相水仙花。\n以上同上書卷二一。\n====其六====\n鮮鮮金鳳花，\n得時亦自媚。\n物生無貴賤，\n罕見乃爲貴金鳳花。\n以上同上書卷二六。\n====句====\n薤葉秀且聳，\n蘭香細而幽水仙。\n《全芳備祖》前集卷二一。\n==註==",
+        "poemZh": "要是此花清絶處，\n端如醉面讀離騷紅梅。\n青蛟煖晝拏雲上，\n白雪深春壓架香酴醿。\n照眼粧新就，\n扶頭酒半醒。\n妖姿隨變化，\n薄命易飄零麗春花。\n嬌困扶頭憐半醒，\n淡濃宜面鬬新粧。\n並肩罌粟多含怨，\n具體牡丹惟欠香以上同上書卷二〇。\n礬弟墮小白，\n梅兄憐老蒼。\n仲氏似白眉，\n表表金玉相水仙花。\n以上同上書卷二一。\n鮮鮮金鳳花，\n得時亦自媚。\n物生無貴賤，\n罕見乃爲貴金鳳花。\n以上同上書卷二六。\n薤葉秀且聳，\n蘭香細而幽水仙。\n《全芳備祖》前集卷二一。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -15007,8 +14977,8 @@
       "extraction": {
         "status": "needs-review",
         "reviewPriority": "manual-check",
-        "lineCount": 33,
-        "charCount": 275,
+        "lineCount": 25,
+        "charCount": 201,
         "reviewReasons": [
           "possible-joined-lines"
         ]
@@ -15025,7 +14995,7 @@
         "poem": {
           "title_zh": "句",
           "title_ko": null,
-          "body_zh": "====其一====\n要是此花清絶處，\n端如醉面讀離騷紅梅。\n====其二====\n青蛟煖晝拏雲上，\n白雪深春壓架香酴醿。\n====其三====\n照眼粧新就，\n扶頭酒半醒。\n妖姿隨變化，\n薄命易飄零麗春花。\n====其四====\n嬌困扶頭憐半醒，\n淡濃宜面鬬新粧。\n並肩罌粟多含怨，\n具體牡丹惟欠香以上同上書卷二〇。\n====其五====\n礬弟墮小白，\n梅兄憐老蒼。\n仲氏似白眉，\n表表金玉相水仙花。\n以上同上書卷二一。\n====其六====\n鮮鮮金鳳花，\n得時亦自媚。\n物生無貴賤，\n罕見乃爲貴金鳳花。\n以上同上書卷二六。\n====句====\n薤葉秀且聳，\n蘭香細而幽水仙。\n《全芳備祖》前集卷二一。\n==註==",
+          "body_zh": "要是此花清絶處，\n端如醉面讀離騷紅梅。\n青蛟煖晝拏雲上，\n白雪深春壓架香酴醿。\n照眼粧新就，\n扶頭酒半醒。\n妖姿隨變化，\n薄命易飄零麗春花。\n嬌困扶頭憐半醒，\n淡濃宜面鬬新粧。\n並肩罌粟多含怨，\n具體牡丹惟欠香以上同上書卷二〇。\n礬弟墮小白，\n梅兄憐老蒼。\n仲氏似白眉，\n表表金玉相水仙花。\n以上同上書卷二一。\n鮮鮮金鳳花，\n得時亦自媚。\n物生無貴賤，\n罕見乃爲貴金鳳花。\n以上同上書卷二六。\n薤葉秀且聳，\n蘭香細而幽水仙。\n《全芳備祖》前集卷二一。",
           "category": null,
           "meter": null,
           "country": "CN",
@@ -15071,7 +15041,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "誰炷清香禮少君，\n數聲金磬夢中聞。\n起來閑把青衣袖，\n裹得欄乾一片雲。\n==註==",
+        "poemZh": "誰炷清香禮少君，\n數聲金磬夢中聞。\n起來閑把青衣袖，\n裹得欄乾一片雲。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -15082,8 +15052,8 @@
       "extraction": {
         "status": "auto-extracted",
         "reviewPriority": "bulk-review",
-        "lineCount": 5,
-        "charCount": 37,
+        "lineCount": 4,
+        "charCount": 32,
         "reviewReasons": []
       },
       "jdsCandidate": {
@@ -15098,9 +15068,9 @@
         "poem": {
           "title_zh": "白石巖",
           "title_ko": null,
-          "body_zh": "誰炷清香禮少君，\n數聲金磬夢中聞。\n起來閑把青衣袖，\n裹得欄乾一片雲。\n==註==",
-          "category": null,
-          "meter": null,
+          "body_zh": "誰炷清香禮少君，\n數聲金磬夢中聞。\n起來閑把青衣袖，\n裹得欄乾一片雲。",
+          "category": "七言絶句",
+          "meter": 7,
           "country": "CN",
           "status": "parsed",
           "quality": "category-auto-needs-review"
@@ -15219,7 +15189,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "地向東南傾，\n石際滄海立。\n蛟鼉限波濤，\n鷄犬得城邑。\n居然通國望，\n跋莫他山及。\n道人獨有之，\n置屋三四級。\n幾看星月爛，\n卻聽風雨急。\n於今二百年，\n我共冥鴻集。\n晤語夕陽低，\n對酒秋旻濕。\n明朝江上舟，\n避雨漁翁笠。\n邂逅一俛仰，\n此道可於邑。\n==註==",
+        "poemZh": "地向東南傾，\n石際滄海立。\n蛟鼉限波濤，\n鷄犬得城邑。\n居然通國望，\n跋莫他山及。\n道人獨有之，\n置屋三四級。\n幾看星月爛，\n卻聽風雨急。\n於今二百年，\n我共冥鴻集。\n晤語夕陽低，\n對酒秋旻濕。\n明朝江上舟，\n避雨漁翁笠。\n邂逅一俛仰，\n此道可於邑。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -15230,8 +15200,8 @@
       "extraction": {
         "status": "auto-extracted",
         "reviewPriority": "bulk-review",
-        "lineCount": 19,
-        "charCount": 113,
+        "lineCount": 18,
+        "charCount": 108,
         "reviewReasons": []
       },
       "jdsCandidate": {
@@ -15246,7 +15216,7 @@
         "poem": {
           "title_zh": "遊白石巖",
           "title_ko": null,
-          "body_zh": "地向東南傾，\n石際滄海立。\n蛟鼉限波濤，\n鷄犬得城邑。\n居然通國望，\n跋莫他山及。\n道人獨有之，\n置屋三四級。\n幾看星月爛，\n卻聽風雨急。\n於今二百年，\n我共冥鴻集。\n晤語夕陽低，\n對酒秋旻濕。\n明朝江上舟，\n避雨漁翁笠。\n邂逅一俛仰，\n此道可於邑。\n==註==",
+          "body_zh": "地向東南傾，\n石際滄海立。\n蛟鼉限波濤，\n鷄犬得城邑。\n居然通國望，\n跋莫他山及。\n道人獨有之，\n置屋三四級。\n幾看星月爛，\n卻聽風雨急。\n於今二百年，\n我共冥鴻集。\n晤語夕陽低，\n對酒秋旻濕。\n明朝江上舟，\n避雨漁翁笠。\n邂逅一俛仰，\n此道可於邑。",
           "category": "五言古詩",
           "meter": 5,
           "country": "CN",
@@ -15365,7 +15335,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "兩道蟠溪鎖碧山，\n飄然仙帶綠回環。\n千巖林木溝渠下，\n萬頃滄田指掌間。\n霜月天邊清興遠，\n金鍾雲裏夢魂閒。\n夕陽歸步饒仙騎，\n懶拂煙蘿下玉關《永樂大典》卷九七六四引《溫州府志》。\n==註==",
+        "poemZh": "兩道蟠溪鎖碧山，\n飄然仙帶綠回環。\n千巖林木溝渠下，\n萬頃滄田指掌間。\n霜月天邊清興遠，\n金鍾雲裏夢魂閒。\n夕陽歸步饒仙騎，\n懶拂煙蘿下玉關《永樂大典》卷九七六四引《溫州府志》。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -15376,8 +15346,8 @@
       "extraction": {
         "status": "needs-review",
         "reviewPriority": "manual-check",
-        "lineCount": 9,
-        "charCount": 87,
+        "lineCount": 8,
+        "charCount": 82,
         "reviewReasons": [
           "possible-joined-lines"
         ]
@@ -15394,7 +15364,7 @@
         "poem": {
           "title_zh": "白石巖",
           "title_ko": null,
-          "body_zh": "兩道蟠溪鎖碧山，\n飄然仙帶綠回環。\n千巖林木溝渠下，\n萬頃滄田指掌間。\n霜月天邊清興遠，\n金鍾雲裏夢魂閒。\n夕陽歸步饒仙騎，\n懶拂煙蘿下玉關《永樂大典》卷九七六四引《溫州府志》。\n==註==",
+          "body_zh": "兩道蟠溪鎖碧山，\n飄然仙帶綠回環。\n千巖林木溝渠下，\n萬頃滄田指掌間。\n霜月天邊清興遠，\n金鍾雲裏夢魂閒。\n夕陽歸步饒仙騎，\n懶拂煙蘿下玉關《永樂大典》卷九七六四引《溫州府志》。",
           "category": null,
           "meter": null,
           "country": "CN",
@@ -15440,7 +15410,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "巖下碧藤掛紫煙，\n巖頭白石插青天。\n精靈屹作鄉邦鎮，\n一劍霜寒二百年以上清曾唯《東甌詩存》卷四。\n==註==",
+        "poemZh": "巖下碧藤掛紫煙，\n巖頭白石插青天。\n精靈屹作鄉邦鎮，\n一劍霜寒二百年以上清曾唯《東甌詩存》卷四。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -15451,8 +15421,8 @@
       "extraction": {
         "status": "needs-review",
         "reviewPriority": "manual-check",
-        "lineCount": 5,
-        "charCount": 50,
+        "lineCount": 4,
+        "charCount": 45,
         "reviewReasons": [
           "possible-joined-lines"
         ]
@@ -15469,7 +15439,7 @@
         "poem": {
           "title_zh": "白石巖",
           "title_ko": null,
-          "body_zh": "巖下碧藤掛紫煙，\n巖頭白石插青天。\n精靈屹作鄉邦鎮，\n一劍霜寒二百年以上清曾唯《東甌詩存》卷四。\n==註==",
+          "body_zh": "巖下碧藤掛紫煙，\n巖頭白石插青天。\n精靈屹作鄉邦鎮，\n一劍霜寒二百年以上清曾唯《東甌詩存》卷四。",
           "category": null,
           "meter": null,
           "country": "CN",
@@ -15515,7 +15485,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "曉雨微微灑物華，\n牽牛初發傍牆花。\n數聲野鶴無尋處，\n只在樓西有竹家同上書冊四頁三〇三一。\n==註==",
+        "poemZh": "曉雨微微灑物華，\n牽牛初發傍牆花。\n數聲野鶴無尋處，\n只在樓西有竹家同上書冊四頁三〇三一。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -15526,8 +15496,8 @@
       "extraction": {
         "status": "needs-review",
         "reviewPriority": "manual-check",
-        "lineCount": 5,
-        "charCount": 47,
+        "lineCount": 4,
+        "charCount": 42,
         "reviewReasons": [
           "possible-joined-lines"
         ]
@@ -15544,7 +15514,7 @@
         "poem": {
           "title_zh": "樓上",
           "title_ko": null,
-          "body_zh": "曉雨微微灑物華，\n牽牛初發傍牆花。\n數聲野鶴無尋處，\n只在樓西有竹家同上書冊四頁三〇三一。\n==註==",
+          "body_zh": "曉雨微微灑物華，\n牽牛初發傍牆花。\n數聲野鶴無尋處，\n只在樓西有竹家同上書冊四頁三〇三一。",
           "category": null,
           "meter": null,
           "country": "CN",
@@ -15590,7 +15560,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "樓上何人奏玉簫，\n數聲和月伴春宵原作霄，\n據群賢集改。\n斷腸喚起江南夢，\n愁絶寒梅酒半銷。\n==註==",
+        "poemZh": "樓上何人奏玉簫，\n數聲和月伴春宵原作霄，\n據群賢集改。\n斷腸喚起江南夢，\n愁絶寒梅酒半銷。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -15601,8 +15571,8 @@
       "extraction": {
         "status": "auto-extracted",
         "reviewPriority": "bulk-review",
-        "lineCount": 6,
-        "charCount": 46,
+        "lineCount": 5,
+        "charCount": 41,
         "reviewReasons": []
       },
       "jdsCandidate": {
@@ -15617,7 +15587,7 @@
         "poem": {
           "title_zh": "樓上",
           "title_ko": null,
-          "body_zh": "樓上何人奏玉簫，\n數聲和月伴春宵原作霄，\n據群賢集改。\n斷腸喚起江南夢，\n愁絶寒梅酒半銷。\n==註==",
+          "body_zh": "樓上何人奏玉簫，\n數聲和月伴春宵原作霄，\n據群賢集改。\n斷腸喚起江南夢，\n愁絶寒梅酒半銷。",
           "category": null,
           "meter": null,
           "country": "CN",
@@ -15663,7 +15633,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "終朝役役晚來閑，\n識破浮生一夢間。\n挈榼去沽深巷酒，\n倚樓貪看夕陽山。\n月臨江館人橫笛，\n風折蘆花雁度關。\n堪羨漁翁無檢束，\n扁舟占斷白雲灣。\n==註==",
+        "poemZh": "終朝役役晚來閑，\n識破浮生一夢間。\n挈榼去沽深巷酒，\n倚樓貪看夕陽山。\n月臨江館人橫笛，\n風折蘆花雁度關。\n堪羨漁翁無檢束，\n扁舟占斷白雲灣。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -15674,8 +15644,8 @@
       "extraction": {
         "status": "auto-extracted",
         "reviewPriority": "bulk-review",
-        "lineCount": 9,
-        "charCount": 69,
+        "lineCount": 8,
+        "charCount": 64,
         "reviewReasons": []
       },
       "jdsCandidate": {
@@ -15690,9 +15660,9 @@
         "poem": {
           "title_zh": "樓上",
           "title_ko": null,
-          "body_zh": "終朝役役晚來閑，\n識破浮生一夢間。\n挈榼去沽深巷酒，\n倚樓貪看夕陽山。\n月臨江館人橫笛，\n風折蘆花雁度關。\n堪羨漁翁無檢束，\n扁舟占斷白雲灣。\n==註==",
-          "category": null,
-          "meter": null,
+          "body_zh": "終朝役役晚來閑，\n識破浮生一夢間。\n挈榼去沽深巷酒，\n倚樓貪看夕陽山。\n月臨江館人橫笛，\n風折蘆花雁度關。\n堪羨漁翁無檢束，\n扁舟占斷白雲灣。",
+          "category": "七言律詩",
+          "meter": 7,
           "country": "CN",
           "status": "parsed",
           "quality": "category-auto-needs-review"
@@ -15736,7 +15706,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "三月江頭花正開，\n啼教花片委青苔。\n若嫌此地非君土，\n今度歸時莫要來同上書冊四頁二六七七。\n==註==",
+        "poemZh": "三月江頭花正開，\n啼教花片委青苔。\n若嫌此地非君土，\n今度歸時莫要來同上書冊四頁二六七七。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -15747,8 +15717,8 @@
       "extraction": {
         "status": "needs-review",
         "reviewPriority": "manual-check",
-        "lineCount": 5,
-        "charCount": 47,
+        "lineCount": 4,
+        "charCount": 42,
         "reviewReasons": [
           "possible-joined-lines"
         ]
@@ -15765,7 +15735,7 @@
         "poem": {
           "title_zh": "杜鵑",
           "title_ko": null,
-          "body_zh": "三月江頭花正開，\n啼教花片委青苔。\n若嫌此地非君土，\n今度歸時莫要來同上書冊四頁二六七七。\n==註==",
+          "body_zh": "三月江頭花正開，\n啼教花片委青苔。\n若嫌此地非君土，\n今度歸時莫要來同上書冊四頁二六七七。",
           "category": null,
           "meter": null,
           "country": "CN",
@@ -15811,7 +15781,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "====其一====\n病與西湖絶半年。\n宋李龏《梅花衲》。\n====其二====\n況多秋蘚色。\n宋李龏《梅花衲》。\n====其三====\n恨不坐通宵宋李龏《梅花衲》。。\n====其六====\n地僻傳聞新事少，\n路遥牽率故人多（再移居）。\n宋張端義《貴耳集》卷上。\n====其七====\n一瓶茶外無祗待，\n同上西樓看晚山宋羅大經《鶴林玉露》乙編卷三。\n====其八====\n石畔長來枝易老，\n竹間瘦得萼全清宋陳景沂《全芳備祖》前集卷一。\n====其九====\n教人知遁甲，\n笑客問勾庚（贈李道人）。\n《說郛》卷九引宋趙與虤《娛書堂詩話》。\n==註==",
+        "poemZh": "病與西湖絶半年。\n宋李龏《梅花衲》。\n況多秋蘚色。\n宋李龏《梅花衲》。\n恨不坐通宵宋李龏《梅花衲》。。\n地僻傳聞新事少，\n路遥牽率故人多（再移居）。\n宋張端義《貴耳集》卷上。\n一瓶茶外無祗待，\n同上西樓看晚山宋羅大經《鶴林玉露》乙編卷三。\n石畔長來枝易老，\n竹間瘦得萼全清宋陳景沂《全芳備祖》前集卷一。\n教人知遁甲，\n笑客問勾庚（贈李道人）。\n《說郛》卷九引宋趙與虤《娛書堂詩話》。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -15822,8 +15792,8 @@
       "extraction": {
         "status": "needs-review",
         "reviewPriority": "manual-check",
-        "lineCount": 23,
-        "charCount": 252,
+        "lineCount": 15,
+        "charCount": 177,
         "reviewReasons": [
           "possible-joined-lines"
         ]
@@ -15840,7 +15810,7 @@
         "poem": {
           "title_zh": "句",
           "title_ko": null,
-          "body_zh": "====其一====\n病與西湖絶半年。\n宋李龏《梅花衲》。\n====其二====\n況多秋蘚色。\n宋李龏《梅花衲》。\n====其三====\n恨不坐通宵宋李龏《梅花衲》。。\n====其六====\n地僻傳聞新事少，\n路遥牽率故人多（再移居）。\n宋張端義《貴耳集》卷上。\n====其七====\n一瓶茶外無祗待，\n同上西樓看晚山宋羅大經《鶴林玉露》乙編卷三。\n====其八====\n石畔長來枝易老，\n竹間瘦得萼全清宋陳景沂《全芳備祖》前集卷一。\n====其九====\n教人知遁甲，\n笑客問勾庚（贈李道人）。\n《說郛》卷九引宋趙與虤《娛書堂詩話》。\n==註==",
+          "body_zh": "病與西湖絶半年。\n宋李龏《梅花衲》。\n況多秋蘚色。\n宋李龏《梅花衲》。\n恨不坐通宵宋李龏《梅花衲》。。\n地僻傳聞新事少，\n路遥牽率故人多（再移居）。\n宋張端義《貴耳集》卷上。\n一瓶茶外無祗待，\n同上西樓看晚山宋羅大經《鶴林玉露》乙編卷三。\n石畔長來枝易老，\n竹間瘦得萼全清宋陳景沂《全芳備祖》前集卷一。\n教人知遁甲，\n笑客問勾庚（贈李道人）。\n《說郛》卷九引宋趙與虤《娛書堂詩話》。",
           "category": null,
           "meter": null,
           "country": "CN",
@@ -15886,7 +15856,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "卧交知絶，\n尋僧出野行。\n岸花紛委露，\n溪竹半侵萍。\n力倦逢人歇，\n林昏到寺明。\n小橋斜處立，\n波與夕陽平。\n==註==",
+        "poemZh": "卧交知絶，\n尋僧出野行。\n岸花紛委露，\n溪竹半侵萍。\n力倦逢人歇，\n林昏到寺明。\n小橋斜處立，\n波與夕陽平。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -15897,8 +15867,8 @@
       "extraction": {
         "status": "auto-extracted",
         "reviewPriority": "bulk-review",
-        "lineCount": 9,
-        "charCount": 52,
+        "lineCount": 8,
+        "charCount": 47,
         "reviewReasons": []
       },
       "jdsCandidate": {
@@ -15913,7 +15883,7 @@
         "poem": {
           "title_zh": "尋僧",
           "title_ko": null,
-          "body_zh": "卧交知絶，\n尋僧出野行。\n岸花紛委露，\n溪竹半侵萍。\n力倦逢人歇，\n林昏到寺明。\n小橋斜處立，\n波與夕陽平。\n==註==",
+          "body_zh": "卧交知絶，\n尋僧出野行。\n岸花紛委露，\n溪竹半侵萍。\n力倦逢人歇，\n林昏到寺明。\n小橋斜處立，\n波與夕陽平。",
           "category": null,
           "meter": null,
           "country": "CN",
@@ -16032,7 +16002,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "跳出槐安有底忙，\n何須更待熟黃粱。\n牙籤載返善和宅，\n手板抽回政事堂。\n效玉川生稱銳漢，\n愛楊處士號憨郎。\n山中豈不差岑寂，\n猶勝人間臭腐腸馮本作場。\n==註==",
+        "poemZh": "跳出槐安有底忙，\n何須更待熟黃粱。\n牙籤載返善和宅，\n手板抽回政事堂。\n效玉川生稱銳漢，\n愛楊處士號憨郎。\n山中豈不差岑寂，\n猶勝人間臭腐腸馮本作場。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -16043,8 +16013,8 @@
       "extraction": {
         "status": "auto-extracted",
         "reviewPriority": "bulk-review",
-        "lineCount": 9,
-        "charCount": 73,
+        "lineCount": 8,
+        "charCount": 68,
         "reviewReasons": []
       },
       "jdsCandidate": {
@@ -16059,7 +16029,7 @@
         "poem": {
           "title_zh": "夢回",
           "title_ko": null,
-          "body_zh": "跳出槐安有底忙，\n何須更待熟黃粱。\n牙籤載返善和宅，\n手板抽回政事堂。\n效玉川生稱銳漢，\n愛楊處士號憨郎。\n山中豈不差岑寂，\n猶勝人間臭腐腸馮本作場。\n==註==",
+          "body_zh": "跳出槐安有底忙，\n何須更待熟黃粱。\n牙籤載返善和宅，\n手板抽回政事堂。\n效玉川生稱銳漢，\n愛楊處士號憨郎。\n山中豈不差岑寂，\n猶勝人間臭腐腸馮本作場。",
           "category": null,
           "meter": null,
           "country": "CN",
@@ -16397,7 +16367,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "春意已深寒未了，\n夢回鬥帳房櫳悄。\n五更五群賢集本作三。\n點殘月銷，\n山鳥一聲先破曉。\n==註==",
+        "poemZh": "春意已深寒未了，\n夢回鬥帳房櫳悄。\n五更五群賢集本作三。\n點殘月銷，\n山鳥一聲先破曉。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -16408,8 +16378,8 @@
       "extraction": {
         "status": "auto-extracted",
         "reviewPriority": "bulk-review",
-        "lineCount": 6,
-        "charCount": 44,
+        "lineCount": 5,
+        "charCount": 39,
         "reviewReasons": []
       },
       "jdsCandidate": {
@@ -16424,7 +16394,7 @@
         "poem": {
           "title_zh": "夢回",
           "title_ko": null,
-          "body_zh": "春意已深寒未了，\n夢回鬥帳房櫳悄。\n五更五群賢集本作三。\n點殘月銷，\n山鳥一聲先破曉。\n==註==",
+          "body_zh": "春意已深寒未了，\n夢回鬥帳房櫳悄。\n五更五群賢集本作三。\n點殘月銷，\n山鳥一聲先破曉。",
           "category": null,
           "meter": null,
           "country": "CN",
@@ -16689,7 +16659,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "====其一====\n憶到梯雲梯雲，\n走家坊名。\n哀傷韡鄂叢。\n舞鸞悲引鏡，\n傷雁落空弓。\n清夢回時雨，\n繁聲發夏蟲。\n情鍾正吾輩，\n匡坐泣薰風。\n====其二====\n吾宗鮮兄弟，\n何事日飄零。\n凋落皆鵷鳳，\n相從謝鶺鴒。\n世緣那可了，\n魂夢也非寧。\n屈指傷心事，\n端如欲曙星。\n==註==",
+        "poemZh": "憶到梯雲梯雲，\n走家坊名。\n哀傷韡鄂叢。\n舞鸞悲引鏡，\n傷雁落空弓。\n清夢回時雨，\n繁聲發夏蟲。\n情鍾正吾輩，\n匡坐泣薰風。\n吾宗鮮兄弟，\n何事日飄零。\n凋落皆鵷鳳，\n相從謝鶺鴒。\n世緣那可了，\n魂夢也非寧。\n屈指傷心事，\n端如欲曙星。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -16700,8 +16670,8 @@
       "extraction": {
         "status": "auto-extracted",
         "reviewPriority": "bulk-review",
-        "lineCount": 20,
-        "charCount": 127,
+        "lineCount": 17,
+        "charCount": 102,
         "reviewReasons": []
       },
       "jdsCandidate": {
@@ -16716,7 +16686,7 @@
         "poem": {
           "title_zh": "夢回二首",
           "title_ko": null,
-          "body_zh": "====其一====\n憶到梯雲梯雲，\n走家坊名。\n哀傷韡鄂叢。\n舞鸞悲引鏡，\n傷雁落空弓。\n清夢回時雨，\n繁聲發夏蟲。\n情鍾正吾輩，\n匡坐泣薰風。\n====其二====\n吾宗鮮兄弟，\n何事日飄零。\n凋落皆鵷鳳，\n相從謝鶺鴒。\n世緣那可了，\n魂夢也非寧。\n屈指傷心事，\n端如欲曙星。\n==註==",
+          "body_zh": "憶到梯雲梯雲，\n走家坊名。\n哀傷韡鄂叢。\n舞鸞悲引鏡，\n傷雁落空弓。\n清夢回時雨，\n繁聲發夏蟲。\n情鍾正吾輩，\n匡坐泣薰風。\n吾宗鮮兄弟，\n何事日飄零。\n凋落皆鵷鳳，\n相從謝鶺鴒。\n世緣那可了，\n魂夢也非寧。\n屈指傷心事，\n端如欲曙星。",
           "category": null,
           "meter": null,
           "country": "CN",
@@ -17127,7 +17097,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "==其一==\n==其二==\n==其三==\n==其四==\n==其五==\n==其六==\n==其七==\n==其八==\n==其九==\n==其十==\n==其十一==\n==其十二==\n==其十三==\n==其十四==\n==其十五==\n==其十六==\n==其十七==\n==其十八==\n==其十九==\n==其二十==\n==其二十一==\n==其二十二==\n==其二十三==\n==其二十四==\n==其二十五==\n==其二十六==\n==其二十七==\n==其二十八==\n==其二十九==\n==其三十==\n==其三十一==\n==其三十二==\n==其三十三==\n==其三十四==\n==其三十五==\n==其三十六==\n==其三十七==\n==其三十八==\n==其三十九==\n==其四十==\n==其四十一==\n==其四十二==\n==其四十三==\n==其四十四==\n==其四十五==\n==其四十六==\n==其四十七==\n==其四十八==\n==其四十九==\n==其五十==",
+        "poemZh": "",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -17138,10 +17108,11 @@
       "extraction": {
         "status": "needs-review",
         "reviewPriority": "manual-check",
-        "lineCount": 50,
-        "charCount": 367,
+        "lineCount": 0,
+        "charCount": 0,
         "reviewReasons": [
-          "extracted-too-many-lines"
+          "extracted-too-few-lines",
+          "empty-body"
         ]
       },
       "jdsCandidate": {
@@ -17156,11 +17127,11 @@
         "poem": {
           "title_zh": "旅興",
           "title_ko": null,
-          "body_zh": "==其一==\n==其二==\n==其三==\n==其四==\n==其五==\n==其六==\n==其七==\n==其八==\n==其九==\n==其十==\n==其十一==\n==其十二==\n==其十三==\n==其十四==\n==其十五==\n==其十六==\n==其十七==\n==其十八==\n==其十九==\n==其二十==\n==其二十一==\n==其二十二==\n==其二十三==\n==其二十四==\n==其二十五==\n==其二十六==\n==其二十七==\n==其二十八==\n==其二十九==\n==其三十==\n==其三十一==\n==其三十二==\n==其三十三==\n==其三十四==\n==其三十五==\n==其三十六==\n==其三十七==\n==其三十八==\n==其三十九==\n==其四十==\n==其四十一==\n==其四十二==\n==其四十三==\n==其四十四==\n==其四十五==\n==其四十六==\n==其四十七==\n==其四十八==\n==其四十九==\n==其五十==",
+          "body_zh": "",
           "category": null,
           "meter": null,
           "country": "CN",
-          "status": "parsed",
+          "status": "needs-review",
           "quality": "category-auto-needs-review"
         }
       },
@@ -21803,7 +21774,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "===落花===",
+        "poemZh": "",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -21814,10 +21785,11 @@
       "extraction": {
         "status": "needs-review",
         "reviewPriority": "manual-check",
-        "lineCount": 1,
-        "charCount": 8,
+        "lineCount": 0,
+        "charCount": 0,
         "reviewReasons": [
-          "extracted-too-few-lines"
+          "extracted-too-few-lines",
+          "empty-body"
         ]
       },
       "jdsCandidate": {
@@ -21832,11 +21804,11 @@
         "poem": {
           "title_zh": "落花",
           "title_ko": null,
-          "body_zh": "===落花===",
+          "body_zh": "",
           "category": null,
           "meter": null,
           "country": "CN",
-          "status": "parsed",
+          "status": "needs-review",
           "quality": "category-auto-needs-review"
         }
       },
@@ -24944,7 +24916,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "====其一====\n往事秦雲逝，\n深恩漳水流。\n月歸金鴈冷，\n風至玉衣秋。\n粉黛年年薄，\n絃歌夜夜愁。\n誰同漢武帝，\n還向茂陵遊。\n====其二====\n奉寢傳遺敎，\n分香更繫情。\n履猶明主跡，\n絃是向時聲。\n寂寞無新故，\n榮華有重輕。\n尚疑僊樂動，\n別院夜相迎。",
+        "poemZh": "往事秦雲逝，\n深恩漳水流。\n月歸金鴈冷，\n風至玉衣秋。\n粉黛年年薄，\n絃歌夜夜愁。\n誰同漢武帝，\n還向茂陵遊。\n奉寢傳遺敎，\n分香更繫情。\n履猶明主跡，\n絃是向時聲。\n寂寞無新故，\n榮華有重輕。\n尚疑僊樂動，\n別院夜相迎。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -24955,8 +24927,8 @@
       "extraction": {
         "status": "auto-extracted",
         "reviewPriority": "bulk-review",
-        "lineCount": 18,
-        "charCount": 116,
+        "lineCount": 16,
+        "charCount": 96,
         "reviewReasons": []
       },
       "jdsCandidate": {
@@ -24971,9 +24943,9 @@
         "poem": {
           "title_zh": "銅雀伎",
           "title_ko": null,
-          "body_zh": "====其一====\n往事秦雲逝，\n深恩漳水流。\n月歸金鴈冷，\n風至玉衣秋。\n粉黛年年薄，\n絃歌夜夜愁。\n誰同漢武帝，\n還向茂陵遊。\n====其二====\n奉寢傳遺敎，\n分香更繫情。\n履猶明主跡，\n絃是向時聲。\n寂寞無新故，\n榮華有重輕。\n尚疑僊樂動，\n別院夜相迎。",
-          "category": null,
-          "meter": null,
+          "body_zh": "往事秦雲逝，\n深恩漳水流。\n月歸金鴈冷，\n風至玉衣秋。\n粉黛年年薄，\n絃歌夜夜愁。\n誰同漢武帝，\n還向茂陵遊。\n奉寢傳遺敎，\n分香更繫情。\n履猶明主跡，\n絃是向時聲。\n寂寞無新故，\n榮華有重輕。\n尚疑僊樂動，\n別院夜相迎。",
+          "category": "五言古詩",
+          "meter": 5,
           "country": "CN",
           "status": "parsed",
           "quality": "category-auto-needs-review"
@@ -25017,7 +24989,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "====其一====\n掩涕辭金屋，\n含情向白雲。\n衣冠新卜道，\n歌舞舊來羣。\n貟枕無時覺，\n哀猿終夜聞。\n誰言妾薄命，\n生死只從君。\n====其二====\n漳河流日夜，\n歌舞未能休。\n艶色今誰妬，\n餘香空自留。\n朝雲不作雨，\n陵樹早生秋。\n滿目多疑塚，\n君靈在此不。",
+        "poemZh": "掩涕辭金屋，\n含情向白雲。\n衣冠新卜道，\n歌舞舊來羣。\n貟枕無時覺，\n哀猿終夜聞。\n誰言妾薄命，\n生死只從君。\n漳河流日夜，\n歌舞未能休。\n艶色今誰妬，\n餘香空自留。\n朝雲不作雨，\n陵樹早生秋。\n滿目多疑塚，\n君靈在此不。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -25028,8 +25000,8 @@
       "extraction": {
         "status": "auto-extracted",
         "reviewPriority": "bulk-review",
-        "lineCount": 18,
-        "charCount": 116,
+        "lineCount": 16,
+        "charCount": 96,
         "reviewReasons": []
       },
       "jdsCandidate": {
@@ -25044,9 +25016,9 @@
         "poem": {
           "title_zh": "銅雀伎二首",
           "title_ko": null,
-          "body_zh": "====其一====\n掩涕辭金屋，\n含情向白雲。\n衣冠新卜道，\n歌舞舊來羣。\n貟枕無時覺，\n哀猿終夜聞。\n誰言妾薄命，\n生死只從君。\n====其二====\n漳河流日夜，\n歌舞未能休。\n艶色今誰妬，\n餘香空自留。\n朝雲不作雨，\n陵樹早生秋。\n滿目多疑塚，\n君靈在此不。",
-          "category": null,
-          "meter": null,
+          "body_zh": "掩涕辭金屋，\n含情向白雲。\n衣冠新卜道，\n歌舞舊來羣。\n貟枕無時覺，\n哀猿終夜聞。\n誰言妾薄命，\n生死只從君。\n漳河流日夜，\n歌舞未能休。\n艶色今誰妬，\n餘香空自留。\n朝雲不作雨，\n陵樹早生秋。\n滿目多疑塚，\n君靈在此不。",
+          "category": "五言古詩",
+          "meter": 5,
           "country": "CN",
           "status": "parsed",
           "quality": "category-auto-needs-review"
@@ -25382,7 +25354,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "====其一====\n高臺歌舞意，\n無復望君憐。\n寂寂西陵下，\n深松枕墓田。\n====其二====\n青青洛城雨，\n北邙歌吹發。\n鄴宮舊舞人，\n春風生白髪。",
+        "poemZh": "高臺歌舞意，\n無復望君憐。\n寂寂西陵下，\n深松枕墓田。\n青青洛城雨，\n北邙歌吹發。\n鄴宮舊舞人，\n春風生白髪。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -25393,8 +25365,8 @@
       "extraction": {
         "status": "auto-extracted",
         "reviewPriority": "bulk-review",
-        "lineCount": 10,
-        "charCount": 68,
+        "lineCount": 8,
+        "charCount": 48,
         "reviewReasons": []
       },
       "jdsCandidate": {
@@ -25409,9 +25381,9 @@
         "poem": {
           "title_zh": "銅雀伎",
           "title_ko": null,
-          "body_zh": "====其一====\n高臺歌舞意，\n無復望君憐。\n寂寂西陵下，\n深松枕墓田。\n====其二====\n青青洛城雨，\n北邙歌吹發。\n鄴宮舊舞人，\n春風生白髪。",
-          "category": null,
-          "meter": null,
+          "body_zh": "高臺歌舞意，\n無復望君憐。\n寂寂西陵下，\n深松枕墓田。\n青青洛城雨，\n北邙歌吹發。\n鄴宮舊舞人，\n春風生白髪。",
+          "category": "五言律詩",
+          "meter": 5,
           "country": "CN",
           "status": "parsed",
           "quality": "category-auto-needs-review"
@@ -25528,7 +25500,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "山前有老農，\n給我薪水役。\n得錢徑沽酒，\n醉卧山日夕。\n忘形與之語，\n妙理時見益。\n志士多隠淪，\n欲言原作墨丁，\n據四庫本補慚未識。\n==註解==",
+        "poemZh": "山前有老農，\n給我薪水役。\n得錢徑沽酒，\n醉卧山日夕。\n忘形與之語，\n妙理時見益。\n志士多隠淪，\n欲言原作墨丁，\n據四庫本補慚未識。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -25539,8 +25511,8 @@
       "extraction": {
         "status": "auto-extracted",
         "reviewPriority": "bulk-review",
-        "lineCount": 10,
-        "charCount": 64,
+        "lineCount": 9,
+        "charCount": 58,
         "reviewReasons": []
       },
       "jdsCandidate": {
@@ -25555,7 +25527,7 @@
         "poem": {
           "title_zh": "老農",
           "title_ko": null,
-          "body_zh": "山前有老農，\n給我薪水役。\n得錢徑沽酒，\n醉卧山日夕。\n忘形與之語，\n妙理時見益。\n志士多隠淪，\n欲言原作墨丁，\n據四庫本補慚未識。\n==註解==",
+          "body_zh": "山前有老農，\n給我薪水役。\n得錢徑沽酒，\n醉卧山日夕。\n忘形與之語，\n妙理時見益。\n志士多隠淪，\n欲言原作墨丁，\n據四庫本補慚未識。",
           "category": null,
           "meter": null,
           "country": "CN",
@@ -25601,7 +25573,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "===贈歌者(習家池上春晝長)===\n===贈歌者(鷪喉宛轉舞蹁躚)===",
+        "poemZh": "",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -25612,10 +25584,11 @@
       "extraction": {
         "status": "needs-review",
         "reviewPriority": "manual-check",
-        "lineCount": 2,
-        "charCount": 36,
+        "lineCount": 0,
+        "charCount": 0,
         "reviewReasons": [
-          "possible-joined-lines"
+          "extracted-too-few-lines",
+          "empty-body"
         ]
       },
       "jdsCandidate": {
@@ -25630,11 +25603,11 @@
         "poem": {
           "title_zh": "贈歌者",
           "title_ko": null,
-          "body_zh": "===贈歌者(習家池上春晝長)===\n===贈歌者(鷪喉宛轉舞蹁躚)===",
+          "body_zh": "",
           "category": null,
           "meter": null,
           "country": "CN",
-          "status": "parsed",
+          "status": "needs-review",
           "quality": "category-auto-needs-review"
         }
       },
@@ -25895,7 +25868,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "===春日懷舊===",
+        "poemZh": "",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -25906,10 +25879,11 @@
       "extraction": {
         "status": "needs-review",
         "reviewPriority": "manual-check",
-        "lineCount": 1,
-        "charCount": 10,
+        "lineCount": 0,
+        "charCount": 0,
         "reviewReasons": [
-          "extracted-too-few-lines"
+          "extracted-too-few-lines",
+          "empty-body"
         ]
       },
       "jdsCandidate": {
@@ -25924,11 +25898,11 @@
         "poem": {
           "title_zh": "春日懷舊",
           "title_ko": null,
-          "body_zh": "===春日懷舊===",
+          "body_zh": "",
           "category": null,
           "meter": null,
           "country": "CN",
-          "status": "parsed",
+          "status": "needs-review",
           "quality": "category-auto-needs-review"
         }
       },
@@ -28306,7 +28280,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "====陳汝大====\n汝大長者流，\n涉世嗟不偶。\n𤣥牝有精詣，\n黃庭能自守。\n混迹居泥途，\n飄然出塵垢。\n作賦餘萬言，\n讀書窮二酉。\n振響主詞盟，\n伊餘忝其後。\n非博生前名，\n所志在不朽。\n====陳汝翔====\n汝翔好竒古，\n遯跡在柯嶼。\n詞藻何離離，\n才情尤楚楚。\n能追正始音，\n不作齊梁語。\n臭味既已同，\n素心自相許。\n睽乖勞我思，\n山中正延佇。\n====陳平夫====\n平夫貌不揚，\n意氣何卓犖。\n恥抱齊門竽，\n甘作荆山璞。\n詩解匡生頤，\n談折充宗角。\n一飲動百巡，\n賢聖分清濁。\n古道信寡諧，\n正音久遼邈。\n努力崇令名，\n典籍有先覺。\n====陳伯孺====\n伯孺秉異姿，\n弱冠冨經籍。\n拓落守太𤣥，\n異同辨堅白。\n作賦已馳名，\n耽竒自成癖。\n丹青發妙賞，\n磊磊生泉石。\n把臂結詞盟，\n㣲悰永無斁。\n====陳幼孺====\n薦夫意氣豪，\n逢人作白眼。\n心契道詮，\n矢志稽墳典。\n伯仲既齊名，\n君才良不忝。\n大雅久沉淪，\n俯仰知音鮮。\n凌厲向詞壇，\n片語人矜善。\n結志在千秋，\n令名爾當勉。",
+        "poemZh": "汝大長者流，\n涉世嗟不偶。\n𤣥牝有精詣，\n黃庭能自守。\n混迹居泥途，\n飄然出塵垢。\n作賦餘萬言，\n讀書窮二酉。\n振響主詞盟，\n伊餘忝其後。\n非博生前名，\n所志在不朽。\n汝翔好竒古，\n遯跡在柯嶼。\n詞藻何離離，\n才情尤楚楚。\n能追正始音，\n不作齊梁語。\n臭味既已同，\n素心自相許。\n睽乖勞我思，\n山中正延佇。\n平夫貌不揚，\n意氣何卓犖。\n恥抱齊門竽，\n甘作荆山璞。\n詩解匡生頤，\n談折充宗角。\n一飲動百巡，\n賢聖分清濁。\n古道信寡諧，\n正音久遼邈。\n努力崇令名，\n典籍有先覺。\n伯孺秉異姿，\n弱冠冨經籍。\n拓落守太𤣥，\n異同辨堅白。\n作賦已馳名，\n耽竒自成癖。\n丹青發妙賞，\n磊磊生泉石。\n把臂結詞盟，\n㣲悰永無斁。\n薦夫意氣豪，\n逢人作白眼。\n心契道詮，\n矢志稽墳典。\n伯仲既齊名，\n君才良不忝。\n大雅久沉淪，\n俯仰知音鮮。\n凌厲向詞壇，\n片語人矜善。\n結志在千秋，\n令名爾當勉。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -28317,8 +28291,8 @@
       "extraction": {
         "status": "needs-review",
         "reviewPriority": "manual-check",
-        "lineCount": 61,
-        "charCount": 390,
+        "lineCount": 56,
+        "charCount": 335,
         "reviewReasons": [
           "extracted-too-many-lines"
         ]
@@ -28335,7 +28309,7 @@
         "poem": {
           "title_zh": "五君詠",
           "title_ko": null,
-          "body_zh": "====陳汝大====\n汝大長者流，\n涉世嗟不偶。\n𤣥牝有精詣，\n黃庭能自守。\n混迹居泥途，\n飄然出塵垢。\n作賦餘萬言，\n讀書窮二酉。\n振響主詞盟，\n伊餘忝其後。\n非博生前名，\n所志在不朽。\n====陳汝翔====\n汝翔好竒古，\n遯跡在柯嶼。\n詞藻何離離，\n才情尤楚楚。\n能追正始音，\n不作齊梁語。\n臭味既已同，\n素心自相許。\n睽乖勞我思，\n山中正延佇。\n====陳平夫====\n平夫貌不揚，\n意氣何卓犖。\n恥抱齊門竽，\n甘作荆山璞。\n詩解匡生頤，\n談折充宗角。\n一飲動百巡，\n賢聖分清濁。\n古道信寡諧，\n正音久遼邈。\n努力崇令名，\n典籍有先覺。\n====陳伯孺====\n伯孺秉異姿，\n弱冠冨經籍。\n拓落守太𤣥，\n異同辨堅白。\n作賦已馳名，\n耽竒自成癖。\n丹青發妙賞，\n磊磊生泉石。\n把臂結詞盟，\n㣲悰永無斁。\n====陳幼孺====\n薦夫意氣豪，\n逢人作白眼。\n心契道詮，\n矢志稽墳典。\n伯仲既齊名，\n君才良不忝。\n大雅久沉淪，\n俯仰知音鮮。\n凌厲向詞壇，\n片語人矜善。\n結志在千秋，\n令名爾當勉。",
+          "body_zh": "汝大長者流，\n涉世嗟不偶。\n𤣥牝有精詣，\n黃庭能自守。\n混迹居泥途，\n飄然出塵垢。\n作賦餘萬言，\n讀書窮二酉。\n振響主詞盟，\n伊餘忝其後。\n非博生前名，\n所志在不朽。\n汝翔好竒古，\n遯跡在柯嶼。\n詞藻何離離，\n才情尤楚楚。\n能追正始音，\n不作齊梁語。\n臭味既已同，\n素心自相許。\n睽乖勞我思，\n山中正延佇。\n平夫貌不揚，\n意氣何卓犖。\n恥抱齊門竽，\n甘作荆山璞。\n詩解匡生頤，\n談折充宗角。\n一飲動百巡，\n賢聖分清濁。\n古道信寡諧，\n正音久遼邈。\n努力崇令名，\n典籍有先覺。\n伯孺秉異姿，\n弱冠冨經籍。\n拓落守太𤣥，\n異同辨堅白。\n作賦已馳名，\n耽竒自成癖。\n丹青發妙賞，\n磊磊生泉石。\n把臂結詞盟，\n㣲悰永無斁。\n薦夫意氣豪，\n逢人作白眼。\n心契道詮，\n矢志稽墳典。\n伯仲既齊名，\n君才良不忝。\n大雅久沉淪，\n俯仰知音鮮。\n凌厲向詞壇，\n片語人矜善。\n結志在千秋，\n令名爾當勉。",
           "category": null,
           "meter": null,
           "country": "CN",
@@ -30719,7 +30693,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "====其一====\n即令闗請謁，\n何用乞江湖。\n僻性終難狎，\n浮名本易汙。\n杜門人事過，\n欹枕嵗華徂。\n薄俗還堪畏，\n﨑嶇比宦途。\n====其二====\n白日移髙枕，\n青山答放歌。\n病纔宜偃蹇，\n老自厭婆娑。\n禮數諸生絶，\n交遊二仲多。\n江湖春正滿，\n更欲混漁簔。\n====其三====\n藥餌休官嬾，\n蓬髙謝客深。\n濁醪殊解事，\n髙枕自知音。\n老大翻陵勁，\n文章豈陸沈。\n浮雲終日在，\n瀟灑竟何心。\n====其四====\n五羖功名薄，\n雙龍羽翼乖。\n風塵凋短褐，\n雨雪閉髙齋。\n慘淡幽人色，\n飛揚壯士懷。\n少年何太苦，\n妖冶事形骸。\n====其五====\n奉使談經日，\n單車西入闗。\n掄才牛口下，\n得士鳯毛間。\n白雪千人失，\n黃河萬里還。\n即今髙卧處，\n猶不减商山。\n====其六====\n乞歸君已見，\n削迹我何求。\n交態疎能變，\n時名久自休。\n中原來病色，\n萬里入春愁。\n不是忘機客，\n還驚海上鷗。\n====其七====\n結舌論文地，\n甘心養拙年。\n朱門人自老，\n白雪調空傳。\n世路蓬蒿外，\n浮名燕雀前。\n中原二三子，\n夙昔共周旋。\n====其八====\n病起獨登臺，\n春光萬里來。\n浮沉還我輩，\n俯仰見人才。\n華髪風塵過，\n青山雨雪開。\n浮雲堪倚杖，\n落日好銜杯。\n====其九====\n漂零唯濁酒，\n落拓總狂生。\n彭澤差聞道，\n髙陽横得名。\n罷來詩慘淡，\n卧久興凄清。\n日對春湖色，",
+        "poemZh": "即令闗請謁，\n何用乞江湖。\n僻性終難狎，\n浮名本易汙。\n杜門人事過，\n欹枕嵗華徂。\n薄俗還堪畏，\n﨑嶇比宦途。\n白日移髙枕，\n青山答放歌。\n病纔宜偃蹇，\n老自厭婆娑。\n禮數諸生絶，\n交遊二仲多。\n江湖春正滿，\n更欲混漁簔。\n藥餌休官嬾，\n蓬髙謝客深。\n濁醪殊解事，\n髙枕自知音。\n老大翻陵勁，\n文章豈陸沈。\n浮雲終日在，\n瀟灑竟何心。\n五羖功名薄，\n雙龍羽翼乖。\n風塵凋短褐，\n雨雪閉髙齋。\n慘淡幽人色，\n飛揚壯士懷。\n少年何太苦，\n妖冶事形骸。\n奉使談經日，\n單車西入闗。\n掄才牛口下，\n得士鳯毛間。\n白雪千人失，\n黃河萬里還。\n即今髙卧處，\n猶不减商山。\n乞歸君已見，\n削迹我何求。\n交態疎能變，\n時名久自休。\n中原來病色，\n萬里入春愁。\n不是忘機客，\n還驚海上鷗。\n結舌論文地，\n甘心養拙年。\n朱門人自老，\n白雪調空傳。\n世路蓬蒿外，\n浮名燕雀前。\n中原二三子，\n夙昔共周旋。\n病起獨登臺，\n春光萬里來。\n浮沉還我輩，\n俯仰見人才。\n華髪風塵過，\n青山雨雪開。\n浮雲堪倚杖，\n落日好銜杯。\n漂零唯濁酒，\n落拓總狂生。\n彭澤差聞道，\n髙陽横得名。\n罷來詩慘淡，\n卧久興凄清。\n日對春湖色，\n潺湲嬾濯纓。\n五柳㟙湖濵，\n先生隱是真。\n文章堪側目，\n潦倒竟全身。\n何必論交地，\n長須縱酒人。\n即令東蹈海，\n斷不混風塵。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -30731,7 +30705,7 @@
         "status": "needs-review",
         "reviewPriority": "manual-check",
         "lineCount": 80,
-        "charCount": 516,
+        "charCount": 480,
         "reviewReasons": [
           "extracted-too-many-lines"
         ]
@@ -30748,9 +30722,9 @@
         "poem": {
           "title_zh": "春日閑居",
           "title_ko": null,
-          "body_zh": "====其一====\n即令闗請謁，\n何用乞江湖。\n僻性終難狎，\n浮名本易汙。\n杜門人事過，\n欹枕嵗華徂。\n薄俗還堪畏，\n﨑嶇比宦途。\n====其二====\n白日移髙枕，\n青山答放歌。\n病纔宜偃蹇，\n老自厭婆娑。\n禮數諸生絶，\n交遊二仲多。\n江湖春正滿，\n更欲混漁簔。\n====其三====\n藥餌休官嬾，\n蓬髙謝客深。\n濁醪殊解事，\n髙枕自知音。\n老大翻陵勁，\n文章豈陸沈。\n浮雲終日在，\n瀟灑竟何心。\n====其四====\n五羖功名薄，\n雙龍羽翼乖。\n風塵凋短褐，\n雨雪閉髙齋。\n慘淡幽人色，\n飛揚壯士懷。\n少年何太苦，\n妖冶事形骸。\n====其五====\n奉使談經日，\n單車西入闗。\n掄才牛口下，\n得士鳯毛間。\n白雪千人失，\n黃河萬里還。\n即今髙卧處，\n猶不减商山。\n====其六====\n乞歸君已見，\n削迹我何求。\n交態疎能變，\n時名久自休。\n中原來病色，\n萬里入春愁。\n不是忘機客，\n還驚海上鷗。\n====其七====\n結舌論文地，\n甘心養拙年。\n朱門人自老，\n白雪調空傳。\n世路蓬蒿外，\n浮名燕雀前。\n中原二三子，\n夙昔共周旋。\n====其八====\n病起獨登臺，\n春光萬里來。\n浮沉還我輩，\n俯仰見人才。\n華髪風塵過，\n青山雨雪開。\n浮雲堪倚杖，\n落日好銜杯。\n====其九====\n漂零唯濁酒，\n落拓總狂生。\n彭澤差聞道，\n髙陽横得名。\n罷來詩慘淡，\n卧久興凄清。\n日對春湖色，",
-          "category": null,
-          "meter": null,
+          "body_zh": "即令闗請謁，\n何用乞江湖。\n僻性終難狎，\n浮名本易汙。\n杜門人事過，\n欹枕嵗華徂。\n薄俗還堪畏，\n﨑嶇比宦途。\n白日移髙枕，\n青山答放歌。\n病纔宜偃蹇，\n老自厭婆娑。\n禮數諸生絶，\n交遊二仲多。\n江湖春正滿，\n更欲混漁簔。\n藥餌休官嬾，\n蓬髙謝客深。\n濁醪殊解事，\n髙枕自知音。\n老大翻陵勁，\n文章豈陸沈。\n浮雲終日在，\n瀟灑竟何心。\n五羖功名薄，\n雙龍羽翼乖。\n風塵凋短褐，\n雨雪閉髙齋。\n慘淡幽人色，\n飛揚壯士懷。\n少年何太苦，\n妖冶事形骸。\n奉使談經日，\n單車西入闗。\n掄才牛口下，\n得士鳯毛間。\n白雪千人失，\n黃河萬里還。\n即今髙卧處，\n猶不减商山。\n乞歸君已見，\n削迹我何求。\n交態疎能變，\n時名久自休。\n中原來病色，\n萬里入春愁。\n不是忘機客，\n還驚海上鷗。\n結舌論文地，\n甘心養拙年。\n朱門人自老，\n白雪調空傳。\n世路蓬蒿外，\n浮名燕雀前。\n中原二三子，\n夙昔共周旋。\n病起獨登臺，\n春光萬里來。\n浮沉還我輩，\n俯仰見人才。\n華髪風塵過，\n青山雨雪開。\n浮雲堪倚杖，\n落日好銜杯。\n漂零唯濁酒，\n落拓總狂生。\n彭澤差聞道，\n髙陽横得名。\n罷來詩慘淡，\n卧久興凄清。\n日對春湖色，\n潺湲嬾濯纓。\n五柳㟙湖濵，\n先生隱是真。\n文章堪側目，\n潦倒竟全身。\n何必論交地，\n長須縱酒人。\n即令東蹈海，\n斷不混風塵。",
+          "category": "五言古詩",
+          "meter": 5,
           "country": "CN",
           "status": "parsed",
           "quality": "category-auto-needs-review"
@@ -30794,7 +30768,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "====其一====\n梧桐有良質，\n斲為雙綺琴。\n疏絃映金徽，\n泠泠發佳音。\n一彈薫風至，\n更彈江月沉。\n大雅久以寂，\n志士寄幽吟。\n坐令衆喧息，\n洞見太古心。\n====其二====\n田父晨驅牛，\n叱耕還自喟。\n力作雖苦勤，\n不能救憔悴。\n去年田事登，\n僅以了租税。\n昨夜縣帖來，\n徵派動如蝟。\n哀哉石上茆，\n鉏刈日尋綴。\n苟免憂目前，\n何用計卒歲。\n====其三====\n蘭蕙種不長，\n荆棘日以滋。\n青青野中蔓，\n引身百尺枝。\n春風一吹拂，\n垂垂得其宜。\n夭桃開上苑，\n苦李道傍遺。\n賦命固如此，\n物情胡不怡。\n托根各有所，\n聊用以自持。\n====其四====\n離離庭樹花，\n風日正妍好。\n翻翻辭枝葉，\n忽已及秋杪。\n君子百年心，\n小人計昏曉。\n道謀俗不諧，\n事業滿懷抱。\n行當屬吾徒，\n究竟見稍稍。\n請君平生志，\n慎勿事溫飽。",
+        "poemZh": "梧桐有良質，\n斲為雙綺琴。\n疏絃映金徽，\n泠泠發佳音。\n一彈薫風至，\n更彈江月沉。\n大雅久以寂，\n志士寄幽吟。\n坐令衆喧息，\n洞見太古心。\n田父晨驅牛，\n叱耕還自喟。\n力作雖苦勤，\n不能救憔悴。\n去年田事登，\n僅以了租税。\n昨夜縣帖來，\n徵派動如蝟。\n哀哉石上茆，\n鉏刈日尋綴。\n苟免憂目前，\n何用計卒歲。\n蘭蕙種不長，\n荆棘日以滋。\n青青野中蔓，\n引身百尺枝。\n春風一吹拂，\n垂垂得其宜。\n夭桃開上苑，\n苦李道傍遺。\n賦命固如此，\n物情胡不怡。\n托根各有所，\n聊用以自持。\n離離庭樹花，\n風日正妍好。\n翻翻辭枝葉，\n忽已及秋杪。\n君子百年心，\n小人計昏曉。\n道謀俗不諧，\n事業滿懷抱。\n行當屬吾徒，\n究竟見稍稍。\n請君平生志，\n慎勿事溫飽。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -30805,8 +30779,8 @@
       "extraction": {
         "status": "needs-review",
         "reviewPriority": "manual-check",
-        "lineCount": 50,
-        "charCount": 316,
+        "lineCount": 46,
+        "charCount": 276,
         "reviewReasons": [
           "extracted-too-many-lines"
         ]
@@ -30823,9 +30797,9 @@
         "poem": {
           "title_zh": "感興四首",
           "title_ko": null,
-          "body_zh": "====其一====\n梧桐有良質，\n斲為雙綺琴。\n疏絃映金徽，\n泠泠發佳音。\n一彈薫風至，\n更彈江月沉。\n大雅久以寂，\n志士寄幽吟。\n坐令衆喧息，\n洞見太古心。\n====其二====\n田父晨驅牛，\n叱耕還自喟。\n力作雖苦勤，\n不能救憔悴。\n去年田事登，\n僅以了租税。\n昨夜縣帖來，\n徵派動如蝟。\n哀哉石上茆，\n鉏刈日尋綴。\n苟免憂目前，\n何用計卒歲。\n====其三====\n蘭蕙種不長，\n荆棘日以滋。\n青青野中蔓，\n引身百尺枝。\n春風一吹拂，\n垂垂得其宜。\n夭桃開上苑，\n苦李道傍遺。\n賦命固如此，\n物情胡不怡。\n托根各有所，\n聊用以自持。\n====其四====\n離離庭樹花，\n風日正妍好。\n翻翻辭枝葉，\n忽已及秋杪。\n君子百年心，\n小人計昏曉。\n道謀俗不諧，\n事業滿懷抱。\n行當屬吾徒，\n究竟見稍稍。\n請君平生志，\n慎勿事溫飽。",
-          "category": null,
-          "meter": null,
+          "body_zh": "梧桐有良質，\n斲為雙綺琴。\n疏絃映金徽，\n泠泠發佳音。\n一彈薫風至，\n更彈江月沉。\n大雅久以寂，\n志士寄幽吟。\n坐令衆喧息，\n洞見太古心。\n田父晨驅牛，\n叱耕還自喟。\n力作雖苦勤，\n不能救憔悴。\n去年田事登，\n僅以了租税。\n昨夜縣帖來，\n徵派動如蝟。\n哀哉石上茆，\n鉏刈日尋綴。\n苟免憂目前，\n何用計卒歲。\n蘭蕙種不長，\n荆棘日以滋。\n青青野中蔓，\n引身百尺枝。\n春風一吹拂，\n垂垂得其宜。\n夭桃開上苑，\n苦李道傍遺。\n賦命固如此，\n物情胡不怡。\n托根各有所，\n聊用以自持。\n離離庭樹花，\n風日正妍好。\n翻翻辭枝葉，\n忽已及秋杪。\n君子百年心，\n小人計昏曉。\n道謀俗不諧，\n事業滿懷抱。\n行當屬吾徒，\n究竟見稍稍。\n請君平生志，\n慎勿事溫飽。",
+          "category": "五言古詩",
+          "meter": 5,
           "country": "CN",
           "status": "parsed",
           "quality": "category-auto-needs-review"
@@ -31088,7 +31062,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "====其一====\n微風桃李夕，\n是處鬭春華。\n湖海平三月，\n邊城活萬家。\n土肥秧得意，\n日暖草能芽。\n須識東皇意，\n歸來一徑斜。\n====其二====\n日出東山上，\n相從郭外遊。\n青青千頃麥，\n泛泛一扁舟。\n水鳥窺魚倦，\n山花倩蝶留。\n到來無限意，\n猶許續風流。",
+        "poemZh": "微風桃李夕，\n是處鬭春華。\n湖海平三月，\n邊城活萬家。\n土肥秧得意，\n日暖草能芽。\n須識東皇意，\n歸來一徑斜。\n日出東山上，\n相從郭外遊。\n青青千頃麥，\n泛泛一扁舟。\n水鳥窺魚倦，\n山花倩蝶留。\n到來無限意，\n猶許續風流。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -31099,8 +31073,8 @@
       "extraction": {
         "status": "auto-extracted",
         "reviewPriority": "bulk-review",
-        "lineCount": 18,
-        "charCount": 116,
+        "lineCount": 16,
+        "charCount": 96,
         "reviewReasons": []
       },
       "jdsCandidate": {
@@ -31115,9 +31089,9 @@
         "poem": {
           "title_zh": "春遊",
           "title_ko": null,
-          "body_zh": "====其一====\n微風桃李夕，\n是處鬭春華。\n湖海平三月，\n邊城活萬家。\n土肥秧得意，\n日暖草能芽。\n須識東皇意，\n歸來一徑斜。\n====其二====\n日出東山上，\n相從郭外遊。\n青青千頃麥，\n泛泛一扁舟。\n水鳥窺魚倦，\n山花倩蝶留。\n到來無限意，\n猶許續風流。",
-          "category": null,
-          "meter": null,
+          "body_zh": "微風桃李夕，\n是處鬭春華。\n湖海平三月，\n邊城活萬家。\n土肥秧得意，\n日暖草能芽。\n須識東皇意，\n歸來一徑斜。\n日出東山上，\n相從郭外遊。\n青青千頃麥，\n泛泛一扁舟。\n水鳥窺魚倦，\n山花倩蝶留。\n到來無限意，\n猶許續風流。",
+          "category": "五言古詩",
+          "meter": 5,
           "country": "CN",
           "status": "parsed",
           "quality": "category-auto-needs-review"
@@ -31891,7 +31865,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "====其一====\n疇昔從君處，\n玄都太古壇。\n月高旛影直，\n霜重佩聲寒。\n鶴駕三山近，\n壺天萬里寬。\n相逢初未省，\n但認切雲冠。\n====其二====\n力量超終古，\n光明破積昏。\n獨行寧有待，\n妙用本忘言。\n神定嬰兒戲，\n丹靈豎子奔。\n緒餘應不靳，\n小出濟元元。",
+        "poemZh": "疇昔從君處，\n玄都太古壇。\n月高旛影直，\n霜重佩聲寒。\n鶴駕三山近，\n壺天萬里寬。\n相逢初未省，\n但認切雲冠。\n力量超終古，\n光明破積昏。\n獨行寧有待，\n妙用本忘言。\n神定嬰兒戲，\n丹靈豎子奔。\n緒餘應不靳，\n小出濟元元。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -31902,8 +31876,8 @@
       "extraction": {
         "status": "auto-extracted",
         "reviewPriority": "bulk-review",
-        "lineCount": 18,
-        "charCount": 116,
+        "lineCount": 16,
+        "charCount": 96,
         "reviewReasons": []
       },
       "jdsCandidate": {
@@ -31918,9 +31892,9 @@
         "poem": {
           "title_zh": "贈隱者二首",
           "title_ko": null,
-          "body_zh": "====其一====\n疇昔從君處，\n玄都太古壇。\n月高旛影直，\n霜重佩聲寒。\n鶴駕三山近，\n壺天萬里寬。\n相逢初未省，\n但認切雲冠。\n====其二====\n力量超終古，\n光明破積昏。\n獨行寧有待，\n妙用本忘言。\n神定嬰兒戲，\n丹靈豎子奔。\n緒餘應不靳，\n小出濟元元。",
-          "category": null,
-          "meter": null,
+          "body_zh": "疇昔從君處，\n玄都太古壇。\n月高旛影直，\n霜重佩聲寒。\n鶴駕三山近，\n壺天萬里寬。\n相逢初未省，\n但認切雲冠。\n力量超終古，\n光明破積昏。\n獨行寧有待，\n妙用本忘言。\n神定嬰兒戲，\n丹靈豎子奔。\n緒餘應不靳，\n小出濟元元。",
+          "category": "五言古詩",
+          "meter": 5,
           "country": "CN",
           "status": "parsed",
           "quality": "category-auto-needs-review"
@@ -32913,7 +32887,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "====其一====\n半遮紅粉蹙雙眉，\n一片離心行路知。\n憑為語郎休望妾，\n妾歸猶似未歸時。\n====其二====\n雲雨陽臺舊路迷，\n千山明月照人啼。\n背風縱作孤飛翼，\n索勝金籠裏面棲。\n====其三====\n落花飛絮共悠悠，\n怕入東風燕子樓。\n為看武陵源裏水，\n斷腸東去不西流。",
+        "poemZh": "半遮紅粉蹙雙眉，\n一片離心行路知。\n憑為語郎休望妾，\n妾歸猶似未歸時。\n雲雨陽臺舊路迷，\n千山明月照人啼。\n背風縱作孤飛翼，\n索勝金籠裏面棲。\n落花飛絮共悠悠，\n怕入東風燕子樓。\n為看武陵源裏水，\n斷腸東去不西流。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -32924,8 +32898,8 @@
       "extraction": {
         "status": "auto-extracted",
         "reviewPriority": "bulk-review",
-        "lineCount": 15,
-        "charCount": 126,
+        "lineCount": 12,
+        "charCount": 96,
         "reviewReasons": []
       },
       "jdsCandidate": {
@@ -32940,9 +32914,9 @@
         "poem": {
           "title_zh": "去婦詞三首",
           "title_ko": null,
-          "body_zh": "====其一====\n半遮紅粉蹙雙眉，\n一片離心行路知。\n憑為語郎休望妾，\n妾歸猶似未歸時。\n====其二====\n雲雨陽臺舊路迷，\n千山明月照人啼。\n背風縱作孤飛翼，\n索勝金籠裏面棲。\n====其三====\n落花飛絮共悠悠，\n怕入東風燕子樓。\n為看武陵源裏水，\n斷腸東去不西流。",
-          "category": null,
-          "meter": null,
+          "body_zh": "半遮紅粉蹙雙眉，\n一片離心行路知。\n憑為語郎休望妾，\n妾歸猶似未歸時。\n雲雨陽臺舊路迷，\n千山明月照人啼。\n背風縱作孤飛翼，\n索勝金籠裏面棲。\n落花飛絮共悠悠，\n怕入東風燕子樓。\n為看武陵源裏水，\n斷腸東去不西流。",
+          "category": "七言古詩",
+          "meter": 7,
           "country": "CN",
           "status": "parsed",
           "quality": "category-auto-needs-review"
@@ -32986,7 +32960,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "====其一====\n出戶心悄悄，\n中情向誰道。\n吞聲不敢啼，\n又恐傍人笑。\n妾有嫁時鏡，\n請郎留自照。\n鏡裏見新人，\n還思舊人貌。\n====其二====\n東山生兔絲，\n西山生蒺藜。\n二物不相偶，\n美惡人自知。\n妾有堂上姑，\n妾有懐中兒。\n生兒未及長，\n姑老將何依。\n妾今別夫去，\n裴迴向何處。\n他日黃泉相見時，\n墓前莫種相思樹。\n====其三====\n妾去何足惜，\n妾留不自安。\n高堂有老姑，\n孰知飢與寒。\n妾昔念有家，\n妾今如風花。\n何如千尺松，\n而不附女蘿。\n哀哀別姑去，\n淚下不能語。\n姑若念妾時，\n看取牀頭女。",
+        "poemZh": "出戶心悄悄，\n中情向誰道。\n吞聲不敢啼，\n又恐傍人笑。\n妾有嫁時鏡，\n請郎留自照。\n鏡裏見新人，\n還思舊人貌。\n東山生兔絲，\n西山生蒺藜。\n二物不相偶，\n美惡人自知。\n妾有堂上姑，\n妾有懐中兒。\n生兒未及長，\n姑老將何依。\n妾今別夫去，\n裴迴向何處。\n他日黃泉相見時，\n墓前莫種相思樹。\n妾去何足惜，\n妾留不自安。\n高堂有老姑，\n孰知飢與寒。\n妾昔念有家，\n妾今如風花。\n何如千尺松，\n而不附女蘿。\n哀哀別姑去，\n淚下不能語。\n姑若念妾時，\n看取牀頭女。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -32997,8 +32971,8 @@
       "extraction": {
         "status": "auto-extracted",
         "reviewPriority": "bulk-review",
-        "lineCount": 35,
-        "charCount": 226,
+        "lineCount": 32,
+        "charCount": 196,
         "reviewReasons": []
       },
       "jdsCandidate": {
@@ -33013,7 +32987,7 @@
         "poem": {
           "title_zh": "去婦詞三首",
           "title_ko": null,
-          "body_zh": "====其一====\n出戶心悄悄，\n中情向誰道。\n吞聲不敢啼，\n又恐傍人笑。\n妾有嫁時鏡，\n請郎留自照。\n鏡裏見新人，\n還思舊人貌。\n====其二====\n東山生兔絲，\n西山生蒺藜。\n二物不相偶，\n美惡人自知。\n妾有堂上姑，\n妾有懐中兒。\n生兒未及長，\n姑老將何依。\n妾今別夫去，\n裴迴向何處。\n他日黃泉相見時，\n墓前莫種相思樹。\n====其三====\n妾去何足惜，\n妾留不自安。\n高堂有老姑，\n孰知飢與寒。\n妾昔念有家，\n妾今如風花。\n何如千尺松，\n而不附女蘿。\n哀哀別姑去，\n淚下不能語。\n姑若念妾時，\n看取牀頭女。",
+          "body_zh": "出戶心悄悄，\n中情向誰道。\n吞聲不敢啼，\n又恐傍人笑。\n妾有嫁時鏡，\n請郎留自照。\n鏡裏見新人，\n還思舊人貌。\n東山生兔絲，\n西山生蒺藜。\n二物不相偶，\n美惡人自知。\n妾有堂上姑，\n妾有懐中兒。\n生兒未及長，\n姑老將何依。\n妾今別夫去，\n裴迴向何處。\n他日黃泉相見時，\n墓前莫種相思樹。\n妾去何足惜，\n妾留不自安。\n高堂有老姑，\n孰知飢與寒。\n妾昔念有家，\n妾今如風花。\n何如千尺松，\n而不附女蘿。\n哀哀別姑去，\n淚下不能語。\n姑若念妾時，\n看取牀頭女。",
           "category": null,
           "meter": null,
           "country": "CN",
@@ -33497,7 +33471,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "===其一===\n湖濱宜草木，\n修竹可三尋。\n廛居多野思，\n移種近牆陰。\n及爾迷未醒，\n方予熱正侵。\n無嫌不逮本，\n地薄肯成林。\n===其二===\n南鄰竹甚茂，\n門巷不容賓。\n懸印君當往，\n囊金我患貧。\n翠旌稍亂起，\n犀角筍初勻。\n不惜圖書賣，\n端來作主人。",
+        "poemZh": "湖濱宜草木，\n修竹可三尋。\n廛居多野思，\n移種近牆陰。\n及爾迷未醒，\n方予熱正侵。\n無嫌不逮本，\n地薄肯成林。\n南鄰竹甚茂，\n門巷不容賓。\n懸印君當往，\n囊金我患貧。\n翠旌稍亂起，\n犀角筍初勻。\n不惜圖書賣，\n端來作主人。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -33508,8 +33482,8 @@
       "extraction": {
         "status": "auto-extracted",
         "reviewPriority": "bulk-review",
-        "lineCount": 18,
-        "charCount": 112,
+        "lineCount": 16,
+        "charCount": 96,
         "reviewReasons": []
       },
       "jdsCandidate": {
@@ -33524,9 +33498,9 @@
         "poem": {
           "title_zh": "詠竹二首",
           "title_ko": null,
-          "body_zh": "===其一===\n湖濱宜草木，\n修竹可三尋。\n廛居多野思，\n移種近牆陰。\n及爾迷未醒，\n方予熱正侵。\n無嫌不逮本，\n地薄肯成林。\n===其二===\n南鄰竹甚茂，\n門巷不容賓。\n懸印君當往，\n囊金我患貧。\n翠旌稍亂起，\n犀角筍初勻。\n不惜圖書賣，\n端來作主人。",
-          "category": null,
-          "meter": null,
+          "body_zh": "湖濱宜草木，\n修竹可三尋。\n廛居多野思，\n移種近牆陰。\n及爾迷未醒，\n方予熱正侵。\n無嫌不逮本，\n地薄肯成林。\n南鄰竹甚茂，\n門巷不容賓。\n懸印君當往，\n囊金我患貧。\n翠旌稍亂起，\n犀角筍初勻。\n不惜圖書賣，\n端來作主人。",
+          "category": "五言古詩",
+          "meter": 5,
           "country": "CN",
           "status": "parsed",
           "quality": "category-auto-needs-review"
@@ -33716,7 +33690,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "===其一===\n去年種蒼玉，\n今歲抽華簪。\n初萌節已具，\n欲奮力未任。\n雷風驅急雨，\n滂沱三日霖。\n籜龍不許蟄，\n倏起騰深林。\n遶徑初戢戢，\n穿籬俄森森。\n吾觀植物性，\n漸長歲月深。\n此君獨超軼，\n生來氣駸駸。\n偉哉歲寒種，\n有此特達心。\n大勇久不作，\n進尺退復尋。\n對此發幽興，\n作詩因自箴。\n===其二===\n野性與俗違，\n澹然都無營。\n窓前水蒼玉，\n未能獨忘情。\n對之三伏中，\n爽氣高秋橫。\n數竿亦已好，\n況此繁陰成。\n中虛洞無物，\n節勁老更清。\n霜雪自凌厲，\n柯葉長敷榮。\n物意有相合，\n人心原自明。\n僻居寡朋儕，\n命汝爲友生。\n雖無切磋語，\n而有清越聲。\n入耳久亦佳，\n此意不可名。",
+        "poemZh": "去年種蒼玉，\n今歲抽華簪。\n初萌節已具，\n欲奮力未任。\n雷風驅急雨，\n滂沱三日霖。\n籜龍不許蟄，\n倏起騰深林。\n遶徑初戢戢，\n穿籬俄森森。\n吾觀植物性，\n漸長歲月深。\n此君獨超軼，\n生來氣駸駸。\n偉哉歲寒種，\n有此特達心。\n大勇久不作，\n進尺退復尋。\n對此發幽興，\n作詩因自箴。\n野性與俗違，\n澹然都無營。\n窓前水蒼玉，\n未能獨忘情。\n對之三伏中，\n爽氣高秋橫。\n數竿亦已好，\n況此繁陰成。\n中虛洞無物，\n節勁老更清。\n霜雪自凌厲，\n柯葉長敷榮。\n物意有相合，\n人心原自明。\n僻居寡朋儕，\n命汝爲友生。\n雖無切磋語，\n而有清越聲。\n入耳久亦佳，\n此意不可名。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -33725,13 +33699,11 @@
         "commentaryKoOwned": null
       },
       "extraction": {
-        "status": "needs-review",
-        "reviewPriority": "manual-check",
-        "lineCount": 42,
-        "charCount": 256,
-        "reviewReasons": [
-          "extracted-too-many-lines"
-        ]
+        "status": "auto-extracted",
+        "reviewPriority": "bulk-review",
+        "lineCount": 40,
+        "charCount": 240,
+        "reviewReasons": []
       },
       "jdsCandidate": {
         "poet": {
@@ -33745,9 +33717,9 @@
         "poem": {
           "title_zh": "詠竹二首",
           "title_ko": null,
-          "body_zh": "===其一===\n去年種蒼玉，\n今歲抽華簪。\n初萌節已具，\n欲奮力未任。\n雷風驅急雨，\n滂沱三日霖。\n籜龍不許蟄，\n倏起騰深林。\n遶徑初戢戢，\n穿籬俄森森。\n吾觀植物性，\n漸長歲月深。\n此君獨超軼，\n生來氣駸駸。\n偉哉歲寒種，\n有此特達心。\n大勇久不作，\n進尺退復尋。\n對此發幽興，\n作詩因自箴。\n===其二===\n野性與俗違，\n澹然都無營。\n窓前水蒼玉，\n未能獨忘情。\n對之三伏中，\n爽氣高秋橫。\n數竿亦已好，\n況此繁陰成。\n中虛洞無物，\n節勁老更清。\n霜雪自凌厲，\n柯葉長敷榮。\n物意有相合，\n人心原自明。\n僻居寡朋儕，\n命汝爲友生。\n雖無切磋語，\n而有清越聲。\n入耳久亦佳，\n此意不可名。",
-          "category": null,
-          "meter": null,
+          "body_zh": "去年種蒼玉，\n今歲抽華簪。\n初萌節已具，\n欲奮力未任。\n雷風驅急雨，\n滂沱三日霖。\n籜龍不許蟄，\n倏起騰深林。\n遶徑初戢戢，\n穿籬俄森森。\n吾觀植物性，\n漸長歲月深。\n此君獨超軼，\n生來氣駸駸。\n偉哉歲寒種，\n有此特達心。\n大勇久不作，\n進尺退復尋。\n對此發幽興，\n作詩因自箴。\n野性與俗違，\n澹然都無營。\n窓前水蒼玉，\n未能獨忘情。\n對之三伏中，\n爽氣高秋橫。\n數竿亦已好，\n況此繁陰成。\n中虛洞無物，\n節勁老更清。\n霜雪自凌厲，\n柯葉長敷榮。\n物意有相合，\n人心原自明。\n僻居寡朋儕，\n命汝爲友生。\n雖無切磋語，\n而有清越聲。\n入耳久亦佳，\n此意不可名。",
+          "category": "五言古詩",
+          "meter": 5,
           "country": "CN",
           "status": "parsed",
           "quality": "category-auto-needs-review"
@@ -37007,7 +36979,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "===其一===\n谷深風急帽簷斜，\n滿眼寒雲滿面沙。\n騎馬過山看不盡，\n更多芳樹沒人家。\n===其二===\n五月營門栁始華，\n新新草色舊人家。\n鄉山萬里誰相伴，\n惟有囊中日鑄茶。",
+        "poemZh": "谷深風急帽簷斜，\n滿眼寒雲滿面沙。\n騎馬過山看不盡，\n更多芳樹沒人家。\n五月營門栁始華，\n新新草色舊人家。\n鄉山萬里誰相伴，\n惟有囊中日鑄茶。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -37018,8 +36990,8 @@
       "extraction": {
         "status": "auto-extracted",
         "reviewPriority": "bulk-review",
-        "lineCount": 10,
-        "charCount": 80,
+        "lineCount": 8,
+        "charCount": 64,
         "reviewReasons": []
       },
       "jdsCandidate": {
@@ -37034,9 +37006,9 @@
         "poem": {
           "title_zh": "馬上",
           "title_ko": null,
-          "body_zh": "===其一===\n谷深風急帽簷斜，\n滿眼寒雲滿面沙。\n騎馬過山看不盡，\n更多芳樹沒人家。\n===其二===\n五月營門栁始華，\n新新草色舊人家。\n鄉山萬里誰相伴，\n惟有囊中日鑄茶。",
-          "category": null,
-          "meter": null,
+          "body_zh": "谷深風急帽簷斜，\n滿眼寒雲滿面沙。\n騎馬過山看不盡，\n更多芳樹沒人家。\n五月營門栁始華，\n新新草色舊人家。\n鄉山萬里誰相伴，\n惟有囊中日鑄茶。",
+          "category": "七言律詩",
+          "meter": 7,
           "country": "CN",
           "status": "parsed",
           "quality": "category-auto-needs-review"
@@ -38248,7 +38220,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "====其一====\n霸業重瞳子，\n雄才大耳兒。\n河山猶表裏，\n今古幾興衰。\n彭祖終遺墓，\n蘇公僅有碑。\n伊誰居里閈，\n寒餓得聞思。\n====其二====\n戶口十餘萬，\n承平亦富哉。\n人煙今寂寞，\n洪勢自喧豗。\n可有名駒子，\n空餘戲馬臺。\n登臨興不盡，\n挽纜故相催。",
+        "poemZh": "霸業重瞳子，\n雄才大耳兒。\n河山猶表裏，\n今古幾興衰。\n彭祖終遺墓，\n蘇公僅有碑。\n伊誰居里閈，\n寒餓得聞思。\n戶口十餘萬，\n承平亦富哉。\n人煙今寂寞，\n洪勢自喧豗。\n可有名駒子，\n空餘戲馬臺。\n登臨興不盡，\n挽纜故相催。",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -38259,8 +38231,8 @@
       "extraction": {
         "status": "auto-extracted",
         "reviewPriority": "bulk-review",
-        "lineCount": 18,
-        "charCount": 116,
+        "lineCount": 16,
+        "charCount": 96,
         "reviewReasons": []
       },
       "jdsCandidate": {
@@ -38275,9 +38247,9 @@
         "poem": {
           "title_zh": "彭城懷古二首",
           "title_ko": null,
-          "body_zh": "====其一====\n霸業重瞳子，\n雄才大耳兒。\n河山猶表裏，\n今古幾興衰。\n彭祖終遺墓，\n蘇公僅有碑。\n伊誰居里閈，\n寒餓得聞思。\n====其二====\n戶口十餘萬，\n承平亦富哉。\n人煙今寂寞，\n洪勢自喧豗。\n可有名駒子，\n空餘戲馬臺。\n登臨興不盡，\n挽纜故相催。",
-          "category": null,
-          "meter": null,
+          "body_zh": "霸業重瞳子，\n雄才大耳兒。\n河山猶表裏，\n今古幾興衰。\n彭祖終遺墓，\n蘇公僅有碑。\n伊誰居里閈，\n寒餓得聞思。\n戶口十餘萬，\n承平亦富哉。\n人煙今寂寞，\n洪勢自喧豗。\n可有名駒子，\n空餘戲馬臺。\n登臨興不盡，\n挽纜故相催。",
+          "category": "五言古詩",
+          "meter": 5,
           "country": "CN",
           "status": "parsed",
           "quality": "category-auto-needs-review"
@@ -40586,7 +40558,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "國破山河在人非殿宇空\n中興何日是搔首賦《車攻》\n國破山河在宮庭荆棘春\n衣冠今左𥙛忍作北朝臣",
+        "poemZh": "國破山河在\n人非殿宇空\n中興何日是搔首賦《車攻》\n國破山河在\n宮庭荆棘春\n衣冠今左𥙛\n忍作北朝臣",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -40597,7 +40569,7 @@
       "extraction": {
         "status": "auto-extracted",
         "reviewPriority": "bulk-review",
-        "lineCount": 4,
+        "lineCount": 7,
         "charCount": 42,
         "reviewReasons": []
       },
@@ -40613,7 +40585,7 @@
         "poem": {
           "title_zh": "五絶二首",
           "title_ko": null,
-          "body_zh": "國破山河在人非殿宇空\n中興何日是搔首賦《車攻》\n國破山河在宮庭荆棘春\n衣冠今左𥙛忍作北朝臣",
+          "body_zh": "國破山河在\n人非殿宇空\n中興何日是搔首賦《車攻》\n國破山河在\n宮庭荆棘春\n衣冠今左𥙛\n忍作北朝臣",
           "category": null,
           "meter": null,
           "country": "CN",
@@ -41316,7 +41288,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "==其一==\n==其二==\n==其三==",
+        "poemZh": "",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -41325,11 +41297,14 @@
         "commentaryKoOwned": null
       },
       "extraction": {
-        "status": "auto-extracted",
-        "reviewPriority": "bulk-review",
-        "lineCount": 3,
-        "charCount": 18,
-        "reviewReasons": []
+        "status": "needs-review",
+        "reviewPriority": "manual-check",
+        "lineCount": 0,
+        "charCount": 0,
+        "reviewReasons": [
+          "extracted-too-few-lines",
+          "empty-body"
+        ]
       },
       "jdsCandidate": {
         "poet": {
@@ -41343,11 +41318,11 @@
         "poem": {
           "title_zh": "絶命詩",
           "title_ko": null,
-          "body_zh": "==其一==\n==其二==\n==其三==",
+          "body_zh": "",
           "category": null,
           "meter": null,
           "country": "CN",
-          "status": "parsed",
+          "status": "needs-review",
           "quality": "category-auto-needs-review"
         }
       },
@@ -41902,7 +41877,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "==其一==\n==其二==",
+        "poemZh": "",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -41911,11 +41886,14 @@
         "commentaryKoOwned": null
       },
       "extraction": {
-        "status": "auto-extracted",
-        "reviewPriority": "bulk-review",
-        "lineCount": 2,
-        "charCount": 12,
-        "reviewReasons": []
+        "status": "needs-review",
+        "reviewPriority": "manual-check",
+        "lineCount": 0,
+        "charCount": 0,
+        "reviewReasons": [
+          "extracted-too-few-lines",
+          "empty-body"
+        ]
       },
       "jdsCandidate": {
         "poet": {
@@ -41929,11 +41907,11 @@
         "poem": {
           "title_zh": "絶命詩",
           "title_ko": null,
-          "body_zh": "==其一==\n==其二==",
+          "body_zh": "",
           "category": null,
           "meter": null,
           "country": "CN",
-          "status": "parsed",
+          "status": "needs-review",
           "quality": "category-auto-needs-review"
         }
       },
@@ -42121,7 +42099,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "==其一==\n==其二==\n==其三==\n==其四==\n==其五==\n==其六==",
+        "poemZh": "",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -42130,11 +42108,14 @@
         "commentaryKoOwned": null
       },
       "extraction": {
-        "status": "auto-extracted",
-        "reviewPriority": "bulk-review",
-        "lineCount": 6,
-        "charCount": 36,
-        "reviewReasons": []
+        "status": "needs-review",
+        "reviewPriority": "manual-check",
+        "lineCount": 0,
+        "charCount": 0,
+        "reviewReasons": [
+          "extracted-too-few-lines",
+          "empty-body"
+        ]
       },
       "jdsCandidate": {
         "poet": {
@@ -42148,11 +42129,11 @@
         "poem": {
           "title_zh": "絶命詩",
           "title_ko": null,
-          "body_zh": "==其一==\n==其二==\n==其三==\n==其四==\n==其五==\n==其六==",
+          "body_zh": "",
           "category": null,
           "meter": null,
           "country": "CN",
-          "status": "parsed",
+          "status": "needs-review",
           "quality": "category-auto-needs-review"
         }
       },
@@ -43362,7 +43343,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "==其一==\n==其二==\n==其三==\n==其四==\n==其五==\n==其六==",
+        "poemZh": "",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -43371,11 +43352,14 @@
         "commentaryKoOwned": null
       },
       "extraction": {
-        "status": "auto-extracted",
-        "reviewPriority": "bulk-review",
-        "lineCount": 6,
-        "charCount": 36,
-        "reviewReasons": []
+        "status": "needs-review",
+        "reviewPriority": "manual-check",
+        "lineCount": 0,
+        "charCount": 0,
+        "reviewReasons": [
+          "extracted-too-few-lines",
+          "empty-body"
+        ]
       },
       "jdsCandidate": {
         "poet": {
@@ -43389,11 +43373,11 @@
         "poem": {
           "title_zh": "小遊仙",
           "title_ko": null,
-          "body_zh": "==其一==\n==其二==\n==其三==\n==其四==\n==其五==\n==其六==",
+          "body_zh": "",
           "category": null,
           "meter": null,
           "country": "CN",
-          "status": "parsed",
+          "status": "needs-review",
           "quality": "category-auto-needs-review"
         }
       },
@@ -44092,7 +44076,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "==古詩==\n==五言絶句==",
+        "poemZh": "",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -44101,11 +44085,14 @@
         "commentaryKoOwned": null
       },
       "extraction": {
-        "status": "auto-extracted",
-        "reviewPriority": "bulk-review",
-        "lineCount": 2,
-        "charCount": 14,
-        "reviewReasons": []
+        "status": "needs-review",
+        "reviewPriority": "manual-check",
+        "lineCount": 0,
+        "charCount": 0,
+        "reviewReasons": [
+          "extracted-too-few-lines",
+          "empty-body"
+        ]
       },
       "jdsCandidate": {
         "poet": {
@@ -44119,11 +44106,11 @@
         "poem": {
           "title_zh": "江南曲",
           "title_ko": null,
-          "body_zh": "==古詩==\n==五言絶句==",
+          "body_zh": "",
           "category": null,
           "meter": null,
           "country": "CN",
-          "status": "parsed",
+          "status": "needs-review",
           "quality": "category-auto-needs-review"
         }
       },
@@ -44895,7 +44882,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "==其一==\n==其二==",
+        "poemZh": "",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -44904,11 +44891,14 @@
         "commentaryKoOwned": null
       },
       "extraction": {
-        "status": "auto-extracted",
-        "reviewPriority": "bulk-review",
-        "lineCount": 2,
-        "charCount": 12,
-        "reviewReasons": []
+        "status": "needs-review",
+        "reviewPriority": "manual-check",
+        "lineCount": 0,
+        "charCount": 0,
+        "reviewReasons": [
+          "extracted-too-few-lines",
+          "empty-body"
+        ]
       },
       "jdsCandidate": {
         "poet": {
@@ -44922,11 +44912,11 @@
         "poem": {
           "title_zh": "西湖二首",
           "title_ko": null,
-          "body_zh": "==其一==\n==其二==",
+          "body_zh": "",
           "category": null,
           "meter": null,
           "country": "CN",
-          "status": "parsed",
+          "status": "needs-review",
           "quality": "category-auto-needs-review"
         }
       },
@@ -45698,7 +45688,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "==其一==\n==其二==",
+        "poemZh": "",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -45707,11 +45697,14 @@
         "commentaryKoOwned": null
       },
       "extraction": {
-        "status": "auto-extracted",
-        "reviewPriority": "bulk-review",
-        "lineCount": 2,
-        "charCount": 12,
-        "reviewReasons": []
+        "status": "needs-review",
+        "reviewPriority": "manual-check",
+        "lineCount": 0,
+        "charCount": 0,
+        "reviewReasons": [
+          "extracted-too-few-lines",
+          "empty-body"
+        ]
       },
       "jdsCandidate": {
         "poet": {
@@ -45725,11 +45718,11 @@
         "poem": {
           "title_zh": "古詞二首",
           "title_ko": null,
-          "body_zh": "==其一==\n==其二==",
+          "body_zh": "",
           "category": null,
           "meter": null,
           "country": "CN",
-          "status": "parsed",
+          "status": "needs-review",
           "quality": "category-auto-needs-review"
         }
       },
@@ -46355,7 +46348,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "==古詩==\n==樂府詩==",
+        "poemZh": "",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -46364,11 +46357,14 @@
         "commentaryKoOwned": null
       },
       "extraction": {
-        "status": "auto-extracted",
-        "reviewPriority": "bulk-review",
-        "lineCount": 2,
-        "charCount": 13,
-        "reviewReasons": []
+        "status": "needs-review",
+        "reviewPriority": "manual-check",
+        "lineCount": 0,
+        "charCount": 0,
+        "reviewReasons": [
+          "extracted-too-few-lines",
+          "empty-body"
+        ]
       },
       "jdsCandidate": {
         "poet": {
@@ -46382,11 +46378,11 @@
         "poem": {
           "title_zh": "短歌行",
           "title_ko": null,
-          "body_zh": "==古詩==\n==樂府詩==",
+          "body_zh": "",
           "category": null,
           "meter": null,
           "country": "CN",
-          "status": "parsed",
+          "status": "needs-review",
           "quality": "category-auto-needs-review"
         }
       },
@@ -47507,18 +47503,18 @@
       "country": "CN",
       "eraSlug": "yuan",
       "title": {
-        "zh": "登嶽阳樓",
+        "zh": "登嶽陽樓",
         "ko": null
       },
       "author": {
-        "authorId": "CN-AUTHOR-CANDIDATE-6b50-9633-7384",
-        "zh": "歐阳玄",
+        "authorId": "CN-AUTHOR-CANDIDATE-6b50-967d-7384",
+        "zh": "歐陽玄",
         "ko": null,
         "life": null
       },
       "sourceWork": {
         "collectionTitle": "Category:元詩",
-        "entryTitle": "登嶽阳樓",
+        "entryTitle": "登嶽陽樓",
         "sourceUrl": "https://zh.wikisource.org/wiki/%E7%99%BB%E5%B2%B3%E9%98%B3%E6%A5%BC_(%E6%AC%A7%E9%98%B3%E7%8E%84)",
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
@@ -47540,15 +47536,15 @@
       },
       "jdsCandidate": {
         "poet": {
-          "name_zh": "歐阳玄",
+          "name_zh": "歐陽玄",
           "name_ko": null,
           "life_raw": null,
           "era_period": "元",
           "country": "CN",
-          "slug": "candidate-yuan-6b50-9633-7384"
+          "slug": "candidate-yuan-6b50-967d-7384"
         },
         "poem": {
-          "title_zh": "登嶽阳樓",
+          "title_zh": "登嶽陽樓",
           "title_ko": null,
           "body_zh": "江出夷陵西復西，\n東陵城上倚天梯。\n月生巫山尋常見，\n雪壓君山一字低。\n岩客朗吟歸鶴遠，\n巴童清夢曉猿啼。\n如何偉絶東南觀，\n不遣謫仙蘇二題。",
           "category": "七言律詩",
@@ -47888,7 +47884,7 @@
         "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT"
       },
       "text": {
-        "poemZh": "==其一==\n==其二==",
+        "poemZh": "",
         "poemKoReading": null,
         "poemKoGloss": null
       },
@@ -47897,11 +47893,14 @@
         "commentaryKoOwned": null
       },
       "extraction": {
-        "status": "auto-extracted",
-        "reviewPriority": "bulk-review",
-        "lineCount": 2,
-        "charCount": 12,
-        "reviewReasons": []
+        "status": "needs-review",
+        "reviewPriority": "manual-check",
+        "lineCount": 0,
+        "charCount": 0,
+        "reviewReasons": [
+          "extracted-too-few-lines",
+          "empty-body"
+        ]
       },
       "jdsCandidate": {
         "poet": {
@@ -47915,11 +47914,11 @@
         "poem": {
           "title_zh": "湖上二首",
           "title_ko": null,
-          "body_zh": "==其一==\n==其二==",
+          "body_zh": "",
           "category": null,
           "meter": null,
           "country": "CN",
-          "status": "parsed",
+          "status": "needs-review",
           "quality": "category-auto-needs-review"
         }
       },

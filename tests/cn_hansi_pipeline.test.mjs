@@ -12,6 +12,7 @@ test('normalizes simplified and non-Korean variants to Hanshinaru Hanja style', 
     normalizeChineseForHanshinaru('汉诗 长乐 归来 万里 五言絕句'),
     '漢詩 長樂 歸來 萬里 五言絶句',
   );
+  assert.equal(normalizeChineseForHanshinaru('登岳阳楼 欧阳玄'), '登嶽陽樓 歐陽玄');
 });
 
 test('detects Korean-style category label for jueju', () => {
@@ -105,6 +106,27 @@ test('extracts candidate poem text from Wikisource HTML noise', () => {
   assert.equal(record.text.poemZh.includes('导航'), false);
   assert.equal(record.jdsCandidate.poem.category, '七言絶句');
   assert.equal(record.extraction.status, 'auto-extracted');
+});
+
+test('splits unpunctuated joined regulated verse lines conservatively', () => {
+  const html = `
+    <poem>
+    無花無酒過清明興味蕭然似野僧
+    昨日鄰家乞新火曉窓分與讀書燈
+    </poem>
+  `;
+
+  assert.equal(
+    extractCandidatePoemBody(html),
+    '無花無酒過清明\n興味蕭然似野僧\n昨日鄰家乞新火\n曉窓分與讀書燈',
+  );
+});
+
+test('drops Wikisource section headings from candidate poem text', () => {
+  assert.equal(
+    extractCandidatePoemBody('<div>===其一===</div><poem>梅雪爭春未肯降騷人擱筆費評章</poem>'),
+    '梅雪爭春未肯降\n騷人擱筆費評章',
+  );
 });
 
 test('builds Supabase curated dry-run payloads with provisional ids', () => {
