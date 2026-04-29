@@ -3,7 +3,8 @@ import test from 'node:test';
 
 import { detectCategory, normalizeChineseForHanshinaru } from '../scripts/lib/cn_hansi_text_normalizer.mjs';
 import { buildCuratedDryRun } from '../scripts/lib/cn_curated_payload_builder.mjs';
-import { buildParseApiUrl, extractWikisourceTitle } from '../scripts/lib/cn_wikisource_api.mjs';
+import { buildParseApiUrl, buildWikisourcePageUrl, extractWikisourceTitle } from '../scripts/lib/cn_wikisource_api.mjs';
+import { buildCandidateRecord, extractCandidatePoemBody } from '../scripts/lib/cn_wikisource_candidate_extractor.mjs';
 import { buildRecord } from '../scripts/lib/cn_wikisource_record_builder.mjs';
 
 test('normalizes simplified and non-Korean variants to Hanshinaru Hanja style', () => {
@@ -70,6 +71,40 @@ test('builds stable Chinese Wikisource API URLs from source pages', () => {
   assert.equal(apiUrl.searchParams.get('action'), 'parse');
   assert.equal(apiUrl.searchParams.get('page'), '古詩源');
   assert.equal(apiUrl.searchParams.get('formatversion'), '2');
+  assert.equal(
+    buildWikisourcePageUrl('七夕 (楊樸)'),
+    'https://zh.wikisource.org/wiki/%E4%B8%83%E5%A4%95_(%E6%A5%8A%E6%A8%B8)',
+  );
+});
+
+test('extracts candidate poem text from Wikisource HTML noise', () => {
+  const html = `
+    <table><tr><td>導航雜訊</td></tr></table>
+    <div><p>未會牽牛意若何，須邀織女弄金梭。</p>
+    <p>年年乞與人間巧，不道人間巧已多。</p></div>
+    <div class="printfooter">取自維基文庫</div>
+  `;
+  assert.equal(
+    extractCandidatePoemBody(html),
+    '未會牽牛意若何，\n須邀織女弄金梭。\n年年乞與人間巧，\n不道人間巧已多。',
+  );
+
+  const record = buildCandidateRecord({
+    eraSlug: 'song',
+    pageid: 158917,
+    rawTitle: '七夕 (楊樸)',
+    normalizedTitle: '七夕',
+    authorHint: '楊樸',
+    categoryTitle: 'Category:宋詩',
+    sourceUrl: 'https://zh.wikisource.org/wiki/%E4%B8%83%E5%A4%95_(%E6%A5%8A%E6%A8%B8)',
+    fetchStatus: 'ok',
+    html,
+  }, 0);
+
+  assert.equal(record.author.zh, '楊樸');
+  assert.equal(record.text.poemZh.includes('导航'), false);
+  assert.equal(record.jdsCandidate.poem.category, '七言絶句');
+  assert.equal(record.extraction.status, 'auto-extracted');
 });
 
 test('builds Supabase curated dry-run payloads with provisional ids', () => {

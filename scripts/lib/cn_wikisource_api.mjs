@@ -1,5 +1,3 @@
-import { normalizeChineseForHanshinaru } from './cn_hansi_text_normalizer.mjs';
-
 const ZH_WIKISOURCE_ORIGIN = 'https://zh.wikisource.org';
 
 export function extractWikisourceTitle(sourceUrl) {
@@ -11,7 +9,7 @@ export function extractWikisourceTitle(sourceUrl) {
   if (!match) {
     throw new Error(`Unsupported Wikisource path: ${url.pathname}`);
   }
-  return normalizeChineseForHanshinaru(decodeURIComponent(match[1]).replace(/_/g, ' '));
+  return decodeURIComponent(match[1]).replace(/_/g, ' ');
 }
 
 export function buildParseApiUrl(title) {
@@ -22,6 +20,14 @@ export function buildParseApiUrl(title) {
   url.searchParams.set('format', 'json');
   url.searchParams.set('formatversion', '2');
   return url;
+}
+
+export function buildWikisourcePageUrl(title) {
+  return `${ZH_WIKISOURCE_ORIGIN}/wiki/${encodeURIComponent(title).replace(/%20/g, '_')}`;
+}
+
+export async function fetchWikisourcePageByTitle(title, fetchImpl = fetch) {
+  return fetchWikisourcePage(buildWikisourcePageUrl(title), fetchImpl);
 }
 
 export async function fetchWikisourcePage(sourceUrl, fetchImpl = fetch) {
