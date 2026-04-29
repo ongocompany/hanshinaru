@@ -5,6 +5,7 @@ status: active
 title: 비당대 중국 한시 콘텐츠 우선 결정과 source catalog 착수
 date: 2026-04-30
 author: 지훈
+updated_at: 2026-04-30 04:36 KST
 ---
 
 # 이번 세션에서 완료한 작업
@@ -14,6 +15,8 @@ author: 지훈
 확인 결과 중국 데이터는 jds 기준 당대 4분화와 미분화 당만 있고, 兩漢·魏晉南北朝·宋·元·明·淸은 시인·작품이 0이었다. 따라서 이번 판단은 UI polishing보다 콘텐츠 수집·가공 우선이다.
 
 이후 위키문헌을 1차 기본 소스로 삼는 방향을 확정하고, jds의 Wikisource/normalizer/DB 모델 흐름을 참조해 비당대 중국 한시 1차 수집 파이프라인을 시작했다. 핵심 제약은 간체자를 그대로 노출하지 않고, 한시나루 표시 원칙에 맞춰 한국식 한자 형태를 기본으로 삼는 것이다.
+
+이후 사용자 지시에 따라 목표를 "한국에서 운영하고 서비스하는 한시 관련 사이트 중 가장 많은 한시 제공"으로 상향했다. 따라서 이번 트랙은 대표작 소량 공개가 아니라, 당대/전당시와 분리된 비당대 중국 한시 대량 수집 트랙이다.
 
 # 생성한 문서
 
@@ -61,6 +64,14 @@ author: 지훈
 - 번역 상태: 12수 모두 owned draft 번역·해설 포함
 - 생성 JSON에서 대표 간체자 잔존 검색 결과: 0건
 
+# 최신 커밋
+
+- `0a00fe20 [지훈][Data] 비당대 중국 한시 category 후보 인덱스 추가`
+- `1dfdb334 [지훈][Data] 비당대 중국 한시 대량 수집 대상표 추가`
+- `540febe3 [지훈][Data] 비당대 중국 한시 JDS 적재 SQL 초안 추가`
+- `e93022fe [지훈][Data] 비당대 중국 한시 DB dry-run payload 추가`
+- `59bcf3e4 [지훈][Data] 비당대 중국 한시 위키문헌 수집 파이프라인 착수`
+
 # 검증 결과
 
 - `node --test tests/cn_hansi_pipeline.test.mjs` 통과
@@ -103,16 +114,26 @@ author: 지훈
 
 # 다음 세션 첫 행동
 
-1. `docs/spec/2026-04-30-cn-non-tang-source-catalog.v1.json`을 연다.
-2. `docs/spec/2026-04-30-cn-non-tang-max-collection-targets.md`를 먼저 확인해 Wave 1 수집 대상표를 검토한다.
+1. 최신 커밋 `0a00fe20`과 이 handoff를 먼저 읽는다.
+2. `docs/spec/2026-04-30-cn-non-tang-max-collection-targets.md`를 열어 Wave 1 수집 대상표를 확인한다.
 3. `docs/spec/cn-non-tang-category-targets.raw.v1.json`에서 `清詩` category만 재시도한다.
 4. `docs/spec/cn-non-tang-category-candidate-index.v1.json`의 `author-parentheses-likely` 659쪽을 우선 수집 대상으로 삼는다.
-5. DB 반영은 아직 하지 않는다. 후보 인덱스에서 원문 raw와 normalized records를 만든 뒤 tranche별 검토 큐로 넘긴다.
+5. 다음 스크립트는 `candidate index -> raw page fetch -> normalized candidate records -> review queue` 순서로 만든다.
+6. DB 반영은 아직 하지 않는다. 후보 인덱스에서 원문 raw와 normalized records를 만든 뒤 tranche별 검토 큐로 넘긴다.
+
+# 다음 세션 권장 명령
+
+```bash
+git log --oneline -8
+sed -n '1,220p' docs/handoff/2026-04-30-cn-non-tang-content-priority.md
+node scripts/build_cn_non_tang_collection_targets.mjs
+node scripts/build_cn_non_tang_category_candidate_index.mjs
+```
 
 # 다음 세션이 피해야 할 함정
 
 - UI polishing으로 먼저 빠지지 말 것. 지금 핵심 공백은 디자인이 아니라 대표 시인·작품 0개 상태다.
-- `全宋詩` 같은 대형 자료를 처음부터 전량 파싱하지 말 것. 대표작 10~20수의 얇은 공개 세트부터 만든다.
+- `全宋詩` 같은 대형 자료를 무계획으로 전량 파싱하지 말 것. 목표는 최대 수집이지만, 실행은 category/author 단위로 쪼개고 raw, normalized, review queue, dry-run counts를 매번 남긴다.
 - 무명 작품을 일반 시인처럼 억지로 붙이지 말 것. `anonymous-han-gushi` 같은 별도 규칙이 필요하다.
-- 당대 미분화 2,628명 재분류는 가치가 크지만, "당 제외 시대 전무" 문제 해결 뒤로 둔다.
+- 당대 미분화 2,628명 재분류는 가치가 크지만, 이번 트랙과 섞지 않는다. 전당시/당대 데이터는 수집·저장 방식만 참고한다.
 - 간체자뿐 아니라 `絕/絶`, `内/內` 같은 한국식 한자 표시 차이를 계속 테스트로 고정할 것.
