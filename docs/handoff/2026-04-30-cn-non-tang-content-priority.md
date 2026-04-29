@@ -23,6 +23,7 @@ author: 지훈
 - `docs/spec/cn-non-tang-tranche1.records.v1.json`
 - `docs/spec/cn-non-tang-tranche1.report.v1.json`
 - `docs/spec/cn-non-tang-tranche1.db-dry-run.v1.json`
+- `docs/spec/cn-non-tang-tranche1.jds-upsert.sql`
 
 # 생성한 파이프라인
 
@@ -34,6 +35,7 @@ author: 지훈
 - `scripts/fetch_cn_wikisource_tranche1.mjs`: tranche 1 source URL의 위키문헌 raw page bundle을 생성한다.
 - `scripts/build_cn_non_tang_tranche1.mjs`: seed를 records/report JSON으로 생성한다.
 - `scripts/build_cn_non_tang_tranche1_db_dry_run.mjs`: 실제 DB 쓰기 전 curated upsert 후보를 negative provisional id로 생성한다.
+- `scripts/build_cn_non_tang_tranche1_jds_sql.mjs`: JDS 선적재용 SQL을 생성한다. 기본 끝맺음은 `ROLLBACK`이다.
 - `tests/cn_hansi_pipeline.test.mjs`: 간체자 정규화, 한국식 `絶`, 전당 이전 정형시 과분류 방지, record 구조화를 검증한다.
 
 # 1차 산출물
@@ -41,6 +43,7 @@ author: 지훈
 - 총 12수
 - 위키문헌 raw source page bundle 10페이지
 - DB dry-run: curated poets 9명, curated poems 12수
+- JDS SQL ROLLBACK 검증: insert 예상 poets 9명, poems 12수, 실제 잔존 0건
 - 시대 분포: `qian-han` 6수, `wei-jin` 6수
 - 작가 분포: 劉邦 1, 項羽 1, 劉徹 1, 無名氏 3, 曹操 2, 曹丕 1, 曹植 1, 陶淵明 2
 - 번역 상태: 12수 모두 owned draft 번역·해설 포함
@@ -52,6 +55,7 @@ author: 지훈
 - `node scripts/fetch_cn_wikisource_tranche1.mjs` 통과: raw source 10페이지 생성
 - `node scripts/build_cn_non_tang_tranche1.mjs` 통과
 - `node scripts/build_cn_non_tang_tranche1_db_dry_run.mjs` 통과
+- `ssh jinas "PGPASSWORD=jds psql ..."`로 `cn-non-tang-tranche1.jds-upsert.sql` ROLLBACK 검증 통과
 - 생성 결과: `records=12`, `translatedOwned=12`
 
 # 핵심 판단
@@ -86,8 +90,8 @@ author: 지훈
 
 1. `docs/spec/2026-04-30-cn-non-tang-source-catalog.v1.json`을 연다.
 2. `docs/spec/cn-non-tang-tranche1.records.v1.json`의 12수 원문 URL을 위키문헌 API/raw로 한 번 더 대조한다.
-3. `docs/spec/cn-non-tang-tranche1.db-dry-run.v1.json`을 검토해 JDS 선적재와 Supabase 직접 provisional 적재 중 하나를 결정한다.
-4. JDS 선적재를 택하면 real `jds_id`를 받은 뒤 Supabase `hansi_curated_*` upsert로 전환한다.
+3. `docs/spec/cn-non-tang-tranche1.jds-upsert.sql`의 마지막 `ROLLBACK`을 `COMMIT`으로 바꾸기 전, 품질명 `cn-tranche1`과 중복 방지 조건을 최종 확인한다.
+4. JDS 선적재 후 real `jds_id`를 받은 뒤 Supabase `hansi_curated_*` upsert로 전환한다.
 5. 兩漢/魏晉 tranche 2 또는 宋代 tranche 1로 확장한다.
 
 # 다음 세션이 피해야 할 함정
