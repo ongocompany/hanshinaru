@@ -1,0 +1,187 @@
+---
+// 시대 페이지 본문 — CN/KR 공용
+// 데이터: eras.ts (description/characteristics) + Supabase hansi_curated_*
+import type { Era } from '../data/eras';
+import { getEraPoets, getEraPoems, type CuratedPoet, type CuratedPoem } from '../lib/curated';
+
+interface Props {
+  era: Era;
+}
+const { era } = Astro.props;
+
+let poets: CuratedPoet[] = [];
+let poems: CuratedPoem[] = [];
+if (!era.data_pending) {
+  [poets, poems] = await Promise.all([getEraPoets(era.slug), getEraPoems(era.slug, 12)]);
+}
+
+function formatLife(p: CuratedPoet): string {
+  if (p.life_raw) return p.life_raw;
+  if (p.life_birth || p.life_death) return `${p.life_birth ?? '?'}~${p.life_death ?? '?'}`;
+  return '';
+}
+
+function previewLines(text: string | null, max = 2): string {
+  if (!text) return '';
+  return text.split(/\r?\n/).filter(Boolean).slice(0, max).join('\n');
+}
+---
+
+<article class="era-page">
+  <header class="era-header">
+    <h1 class="era-title">
+      <span class="era-name-ko">{era.name_ko}</span>
+      <span class="era-name-zh">({era.name_zh})</span>
+    </h1>
+    <p class="era-period">{era.period}</p>
+  </header>
+
+  {era.data_pending && (
+    <section class="era-pending">
+      <p>이 시대 한시 콘텐츠는 자료 수집 중입니다.</p>
+      <p class="muted">대표 시인·작품 데이터가 준비되는 대로 공개됩니다.</p>
+    </section>
+  )}
+
+  <section class="era-section">
+    <h2>시대 배경</h2>
+    {era.description
+      ? <p set:html={era.description.replace(/\n/g, '<br>')} />
+      : <p class="placeholder">콘텐츠를 준비하고 있습니다.</p>
+    }
+  </section>
+
+  <section class="era-section">
+    <h2>한시의 특징</h2>
+    {era.characteristics
+      ? <p set:html={era.characteristics.replace(/\n/g, '<br>')} />
+      : <p class="placeholder">콘텐츠를 준비하고 있습니다.</p>
+    }
+  </section>
+
+  {!era.data_pending && (
+    <section class="era-section">
+      <h2>대표 시인 <span class="count">({poets.length})</span></h2>
+      {poets.length > 0 ? (
+        <ul class="poet-grid">
+          {poets.map((p) => (
+            <li class="poet-card">
+              <span class="poet-name-ko">{p.name_ko}</span>
+              {p.name_zh && p.name_zh !== p.name_ko && <span class="poet-name-zh">{p.name_zh}</span>}
+              {formatLife(p) && <span class="poet-life">{formatLife(p)}</span>}
+              {p.poem_count != null && <span class="poet-count">시 {p.poem_count}수</span>}
+            </li>
+          ))}
+        </ul>
+      ) : <p class="placeholder">데이터 준비 중.</p>}
+    </section>
+  )}
+
+  {!era.data_pending && (
+    <section class="era-section">
+      <h2>대표 작품 <span class="count">({poems.length})</span></h2>
+      {poems.length > 0 ? (
+        <ul class="poem-list">
+          {poems.map((pm) => (
+            <li class="poem-card">
+              <header class="poem-card-head">
+                <span class="poem-title">{pm.title_zh ?? pm.title_ko}</span>
+                <span class="poem-poet">{poets.find((p) => p.jds_id === pm.poet_jds_id)?.name_ko ?? ''}</span>
+              </header>
+              {pm.body_zh && <pre class="poem-body-zh">{previewLines(pm.body_zh, 2)}</pre>}
+              {pm.translation_ko && <pre class="poem-translation">{previewLines(pm.translation_ko, 2)}</pre>}
+            </li>
+          ))}
+        </ul>
+      ) : <p class="placeholder">데이터 준비 중.</p>}
+    </section>
+  )}
+
+  <a href={`/hansi/${era.country === 'CN' ? 'chinese' : 'korean'}/reading/?era=${era.slug}`} class="era-cta">
+    → {era.name_ko} 한시 전체 보기
+  </a>
+</article>
+
+<style>
+  .era-page { max-width: 760px; margin: 0 auto; }
+  .era-header { border-bottom: 1px solid var(--c-border); padding-bottom: 16px; margin-bottom: 32px; }
+  .era-title { font-size: var(--fs-h1); margin: 0 0 8px; color: var(--c-ink); font-weight: 600; }
+  .era-name-zh { font-family: 'Noto Serif SC', serif; color: var(--c-muted); margin-left: 6px; }
+  .era-period { color: var(--c-muted); font-size: var(--fs-small); margin: 0; letter-spacing: 0.02em; }
+  .era-section { margin-bottom: 40px; }
+  .era-section h2 { font-size: var(--fs-h3); color: var(--c-ink); margin-bottom: 16px; font-weight: 600; }
+  .era-section h2 .count { color: var(--c-muted); font-weight: 400; font-size: 0.85em; margin-left: 6px; }
+  .era-section p { line-height: 1.8; color: var(--c-ink); }
+  .placeholder { color: var(--c-muted); font-style: italic; }
+  .muted { color: var(--c-muted); font-size: var(--fs-small); }
+
+  .era-pending {
+    border-left: 3px solid var(--c-border);
+    padding: 12px 16px;
+    margin-bottom: 32px;
+    background: var(--c-silver, #f8f8f6);
+  }
+  .era-pending p:first-child { margin: 0 0 6px; }
+  .era-pending p:last-child { margin: 0; }
+
+  .poet-grid {
+    list-style: none; padding: 0; margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 12px;
+  }
+  .poet-card {
+    border: 1px solid var(--c-border);
+    border-radius: 4px;
+    padding: 12px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .poet-name-ko { font-weight: 600; color: var(--c-ink); }
+  .poet-name-zh { color: var(--c-muted); font-family: 'Noto Serif SC', serif; font-size: var(--fs-small); }
+  .poet-life { color: var(--c-muted); font-size: var(--fs-small); }
+  .poet-count { color: var(--c-muted); font-size: var(--fs-small); margin-top: 4px; }
+
+  .poem-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 16px; }
+  .poem-card {
+    border: 1px solid var(--c-border);
+    border-radius: 4px;
+    padding: 16px 18px;
+  }
+  .poem-card-head {
+    display: flex; justify-content: space-between; align-items: baseline;
+    margin-bottom: 10px;
+    gap: 12px;
+  }
+  .poem-title { font-weight: 600; font-family: 'Noto Serif SC', serif; color: var(--c-ink); }
+  .poem-poet { color: var(--c-muted); font-size: var(--fs-small); white-space: nowrap; }
+  .poem-body-zh {
+    font-family: 'Noto Serif SC', serif;
+    margin: 0 0 8px;
+    font-size: 0.95em;
+    line-height: 1.7;
+    color: var(--c-ink);
+    white-space: pre-wrap;
+  }
+  .poem-translation {
+    font-family: inherit;
+    margin: 0;
+    font-size: 0.92em;
+    line-height: 1.7;
+    color: var(--c-muted);
+    white-space: pre-wrap;
+  }
+
+  .era-cta {
+    display: inline-block;
+    margin-top: 24px;
+    padding: 12px 20px;
+    border: 1px solid var(--c-border);
+    color: var(--c-ink);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.15s;
+  }
+  .era-cta:hover { background: var(--c-silver, #f5f5f5); }
+</style>
