@@ -1,0 +1,3848 @@
+{
+  "generated_at": "2026-04-29T09:29:56.902Z",
+  "source": "jds@jinas:5433",
+  "description": "Phase 1 큐레이션. 시대별 시 ID 풀 (notable + quality 우선, 시인당 최대 5수).",
+  "targets": {
+    "ancient-silla": {
+      "poets": 13,
+      "poems": 30,
+      "daily": 12,
+      "per_poet_cap": 12
+    },
+    "goryeo-early-mid": {
+      "poets": 13,
+      "poems": 30,
+      "daily": 8,
+      "per_poet_cap": 6
+    },
+    "goryeo-mal-joseon-cho": {
+      "poets": 25,
+      "poems": 50,
+      "daily": 28,
+      "per_poet_cap": 5
+    },
+    "joseon-jung": {
+      "poets": 20,
+      "poems": 40,
+      "daily": 22,
+      "per_poet_cap": 5
+    },
+    "joseon-hu": {
+      "poets": 20,
+      "poems": 40,
+      "daily": 23,
+      "per_poet_cap": 5
+    },
+    "geundae": {
+      "poets": 7,
+      "poems": 7,
+      "daily": 7,
+      "per_poet_cap": 7
+    },
+    "chu-tang": {
+      "poets": 11,
+      "poems": 35,
+      "daily": 25,
+      "per_poet_cap": 5
+    },
+    "sheng-tang": {
+      "poets": 20,
+      "poems": 60,
+      "daily": 60,
+      "per_poet_cap": 5
+    },
+    "zhong-tang": {
+      "poets": 22,
+      "poems": 70,
+      "daily": 65,
+      "per_poet_cap": 5
+    },
+    "wan-tang": {
+      "poets": 22,
+      "poems": 60,
+      "daily": 50,
+      "per_poet_cap": 5
+    }
+  },
+  "eras": {
+    "chu-tang": [
+      {
+        "id": 271,
+        "poet_id": 25,
+        "poet_name_ko": null,
+        "title_ko": "횡취곡사·농두수",
+        "title_zh": "橫吹曲辭·隴頭水",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 299,
+        "poet_id": 25,
+        "poet_name_ko": null,
+        "title_ko": "횡취곡사·절양류",
+        "title_zh": "橫吹曲辭·折楊柳",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 314,
+        "poet_id": 25,
+        "poet_name_ko": null,
+        "title_ko": "횡취곡사·관산월",
+        "title_zh": "橫吹曲辭·關山月",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 337,
+        "poet_id": 25,
+        "poet_name_ko": null,
+        "title_ko": "횡취곡사·매화락",
+        "title_zh": "橫吹曲辭·梅花落",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 340,
+        "poet_id": 25,
+        "poet_name_ko": null,
+        "title_ko": "횡취곡사·자류마",
+        "title_zh": "橫吹曲辭·紫騮馬",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 280,
+        "poet_id": 34,
+        "poet_name_ko": "진자앙",
+        "title_ko": "횡취곡사·출새",
+        "title_zh": "橫吹曲辭·出塞",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 2932,
+        "poet_id": 34,
+        "poet_name_ko": "진자앙",
+        "title_ko": "경운장",
+        "title_zh": "慶雲章",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 2933,
+        "poet_id": 34,
+        "poet_name_ko": "진자앙",
+        "title_ko": "감우시삼십팔수(그 첫 번째)",
+        "title_zh": "感遇詩三十八首（其一）",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 2934,
+        "poet_id": 34,
+        "poet_name_ko": "진자앙",
+        "title_ko": "감우시삼십팔수(기이)",
+        "title_zh": "感遇詩三十八首（其二）",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 2935,
+        "poet_id": 34,
+        "poet_name_ko": "진자앙",
+        "title_ko": "감우시삼십팔수(그 세 번째)",
+        "title_zh": "感遇詩三十八首（其三）",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 282,
+        "poet_id": 36,
+        "poet_name_ko": "심전기",
+        "title_ko": "횡취곡사·출새",
+        "title_zh": "橫吹曲辭·出塞",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 300,
+        "poet_id": 36,
+        "poet_name_ko": "심전기",
+        "title_ko": "횡취곡사·절양류",
+        "title_zh": "橫吹曲辭·折楊柳",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 315,
+        "poet_id": 36,
+        "poet_name_ko": "심전기",
+        "title_ko": "횡취곡사·관산월",
+        "title_zh": "橫吹曲辭·關山月",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 336,
+        "poet_id": 36,
+        "poet_name_ko": "심전기",
+        "title_ko": "횡취곡사·장안도",
+        "title_zh": "橫吹曲辭·長安道",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 338,
+        "poet_id": 36,
+        "poet_name_ko": "심전기",
+        "title_ko": "횡취곡사·매화락",
+        "title_zh": "橫吹曲辭·梅花落",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 359,
+        "poet_id": 73,
+        "poet_name_ko": "송지문",
+        "title_ko": "상화가사·강남곡",
+        "title_zh": "相和歌辭·江南曲",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 412,
+        "poet_id": 73,
+        "poet_name_ko": "송지문",
+        "title_ko": "상화가사·왕자교",
+        "title_zh": "相和歌辭·王子喬",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 691,
+        "poet_id": 73,
+        "poet_name_ko": "송지문",
+        "title_ko": "금곡가사·녹죽인",
+        "title_zh": "琴曲歌辞·绿竹引",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 1841,
+        "poet_id": 73,
+        "poet_name_ko": "송지문",
+        "title_ko": "식부인",
+        "title_zh": "息夫人",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 1842,
+        "poet_id": 73,
+        "poet_name_ko": "송지문",
+        "title_ko": "초도육혼산장",
+        "title_zh": "初到陸渾山莊",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 392,
+        "poet_id": 84,
+        "poet_name_ko": "낙빈왕",
+        "title_ko": "상화가사·왕소군",
+        "title_zh": "相和歌辭·王昭君",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 454,
+        "poet_id": 84,
+        "poet_name_ko": "낙빈왕",
+        "title_ko": "상화가사·종군행",
+        "title_zh": "相和歌辭·從軍行",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 510,
+        "poet_id": 84,
+        "poet_name_ko": "낙빈왕",
+        "title_ko": "상화가사·도가행",
+        "title_zh": "相和歌辞·棹歌行",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 792,
+        "poet_id": 84,
+        "poet_name_ko": "낙빈왕",
+        "title_ko": "잡곡가사·종군중행로난이수",
+        "title_zh": "雜曲歌辭·從軍中行路難二首",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 2734,
+        "poet_id": 84,
+        "poet_name_ko": "낙빈왕",
+        "title_ko": "하일유덕주증고사",
+        "title_zh": "夏日遊德州贈高四",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 395,
+        "poet_id": 86,
+        "poet_name_ko": null,
+        "title_ko": "상화가사·왕소군",
+        "title_zh": "相和歌辭·王昭君",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 1403,
+        "poet_id": 86,
+        "poet_name_ko": null,
+        "title_ko": "왕소군",
+        "title_zh": "王昭君",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 1404,
+        "poet_id": 86,
+        "poet_name_ko": null,
+        "title_ko": "영설응조",
+        "title_zh": "詠雪應詔",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 1405,
+        "poet_id": 86,
+        "poet_name_ko": null,
+        "title_ko": "봉화산야임추",
+        "title_zh": "奉和山夜臨秋",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 1406,
+        "poet_id": 86,
+        "poet_name_ko": null,
+        "title_ko": "강왕태비만가",
+        "title_zh": "江王太妃挽歌",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 429,
+        "poet_id": 98,
+        "poet_name_ko": "왕발",
+        "title_ko": "상화가사·동작기",
+        "title_zh": "相和歌辭·銅雀妓",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 600,
+        "poet_id": 98,
+        "poet_name_ko": "왕발",
+        "title_ko": "상화가사·강남농",
+        "title_zh": "相和歌辞·江南弄",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 606,
+        "poet_id": 98,
+        "poet_name_ko": "왕발",
+        "title_ko": "상화가사·채련귀",
+        "title_zh": "相和歌辭·採蓮歸",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 855,
+        "poet_id": 98,
+        "poet_name_ko": "왕발",
+        "title_ko": "잡곡가사·추야장",
+        "title_zh": "杂曲歌辞·秋夜长",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 876,
+        "poet_id": 98,
+        "poet_name_ko": "왕발",
+        "title_ko": "잡곡가사·잡곡",
+        "title_zh": "杂曲歌辞·杂曲",
+        "is_notable": false,
+        "quality": null
+      }
+    ],
+    "sheng-tang": [
+      {
+        "id": 48938,
+        "poet_id": 3463,
+        "poet_name_ko": "구위",
+        "title_ko": "〈서산의 은자를 찾아가나 만나지 못하다〉",
+        "title_zh": "尋西山隱者不遇",
+        "is_notable": true,
+        "quality": "canonical"
+      },
+      {
+        "id": 48940,
+        "poet_id": 3464,
+        "poet_name_ko": "김창서",
+        "title_ko": "〈봄날의 원망〉",
+        "title_zh": "春怨",
+        "is_notable": true,
+        "quality": "canonical"
+      },
+      {
+        "id": 48939,
+        "poet_id": 3465,
+        "poet_name_ko": "당 현종",
+        "title_ko": "〈鄒魯를 지나며 孔子에게 제사 드리고 탄식하다〉",
+        "title_zh": "經鄒魯 祭孔子而嘆之",
+        "is_notable": true,
+        "quality": "canonical"
+      },
+      {
+        "id": 268,
+        "poet_id": 22,
+        "poet_name_ko": "왕유",
+        "title_ko": "횡취곡사·농두음",
+        "title_zh": "橫吹曲辭·隴頭吟",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 283,
+        "poet_id": 22,
+        "poet_name_ko": "왕유",
+        "title_ko": "횡취곡사·출새",
+        "title_zh": "橫吹曲辭·出塞",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 462,
+        "poet_id": 22,
+        "poet_name_ko": "왕유",
+        "title_ko": "상화가사·종군행",
+        "title_zh": "相和歌辭·從軍行",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 492,
+        "poet_id": 22,
+        "poet_name_ko": "왕유",
+        "title_ko": "상화가사·농서행",
+        "title_zh": "相和歌辞·陇西行",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 533,
+        "poet_id": 22,
+        "poet_name_ko": "왕유",
+        "title_ko": "상화가사·반첩여삼수",
+        "title_zh": "相和歌辞·班婕妤三首",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 284,
+        "poet_id": 37,
+        "poet_name_ko": "왕창령",
+        "title_ko": "횡취곡사·출새",
+        "title_zh": "橫吹曲辭·出塞",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 415,
+        "poet_id": 37,
+        "poet_name_ko": "왕창령",
+        "title_ko": "상화가사·장가행",
+        "title_zh": "相和歌辭·長歌行",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 463,
+        "poet_id": 37,
+        "poet_name_ko": "왕창령",
+        "title_ko": "상화가사·종군행",
+        "title_zh": "相和歌辭·從軍行",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 502,
+        "poet_id": 37,
+        "poet_name_ko": "왕창령",
+        "title_ko": "상화가사·방가행",
+        "title_zh": "相和歌辞·放歌行",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 603,
+        "poet_id": 37,
+        "poet_name_ko": "왕창령",
+        "title_ko": "상화가사·채련곡 삼수",
+        "title_zh": "相和歌辞·采莲曲三首",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 286,
+        "poet_id": 39,
+        "poet_name_ko": "두보",
+        "title_ko": "횡취곡사·전출새구수",
+        "title_zh": "橫吹曲辭·前出塞九首",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 287,
+        "poet_id": 39,
+        "poet_name_ko": "두보",
+        "title_ko": "횡취곡사·후출새오수",
+        "title_zh": "橫吹曲辭·後出塞五首",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 475,
+        "poet_id": 39,
+        "poet_name_ko": "두보",
+        "title_ko": "상화가사·전고한행이수",
+        "title_zh": "相和歌辞·前苦寒行二首",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 476,
+        "poet_id": 39,
+        "poet_name_ko": "두보",
+        "title_ko": "상화가사·후고한행 이수",
+        "title_zh": "相和歌辞·后苦寒行二首",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 743,
+        "poet_id": 39,
+        "poet_name_ko": "두보",
+        "title_ko": "잡곡가사·소년행 삼수",
+        "title_zh": "杂曲歌辞·少年行三首",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 288,
+        "poet_id": 40,
+        "poet_name_ko": "황보염",
+        "title_ko": "횡취곡사·출새",
+        "title_zh": "橫吹曲辭·出塞",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 536,
+        "poet_id": 40,
+        "poet_name_ko": "황보염",
+        "title_ko": "상화가사·첩여원",
+        "title_zh": "相和歌辞·婕妤怨",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 10591,
+        "poet_id": 40,
+        "poet_name_ko": "황보염",
+        "title_ko": "윤주남곽유별",
+        "title_zh": "潤州南郭留別",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 10592,
+        "poet_id": 40,
+        "poet_name_ko": "황보염",
+        "title_ko": "제장공동이수",
+        "title_zh": "祭張公洞二首",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 10593,
+        "poet_id": 40,
+        "poet_name_ko": "황보염",
+        "title_ko": "임평도증동주인",
+        "title_zh": "臨平道贈同舟人",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 289,
+        "poet_id": 41,
+        "poet_name_ko": "왕지환",
+        "title_ko": "횡취곡사·출새",
+        "title_zh": "橫吹曲辭·出塞",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 10876,
+        "poet_id": 41,
+        "poet_name_ko": "왕지환",
+        "title_ko": "등관작루",
+        "title_zh": "其登鸛雀樓",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 10877,
+        "poet_id": 41,
+        "poet_name_ko": "왕지환",
+        "title_ko": "송별",
+        "title_zh": "其送別",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 10878,
+        "poet_id": 41,
+        "poet_name_ko": "왕지환",
+        "title_ko": "양주사 이수",
+        "title_zh": "其涼州詞二首",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 10879,
+        "poet_id": 41,
+        "poet_name_ko": "왕지환",
+        "title_ko": "기연사",
+        "title_zh": "其宴詞",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 307,
+        "poet_id": 52,
+        "poet_name_ko": "장구령",
+        "title_ko": "횡취곡사·절양류",
+        "title_zh": "橫吹曲辭·折楊柳",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 1616,
+        "poet_id": 52,
+        "poet_name_ko": "장구령",
+        "title_ko": "봉화성제촉룡재제",
+        "title_zh": "奉和聖製燭龍齋祭",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 1617,
+        "poet_id": 52,
+        "poet_name_ko": "장구령",
+        "title_ko": "봉화성제희우",
+        "title_zh": "奉和聖製喜雨",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 1618,
+        "poet_id": 52,
+        "poet_name_ko": "장구령",
+        "title_ko": "남교문무출입서화지악",
+        "title_zh": "南郊文武出入舒和之樂",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 1619,
+        "poet_id": 52,
+        "poet_name_ko": "장구령",
+        "title_ko": "봉화성제행진양궁",
+        "title_zh": "奉和聖製幸晉陽宮",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 308,
+        "poet_id": 53,
+        "poet_name_ko": "이백",
+        "title_ko": "횡취곡사·절양류",
+        "title_zh": "橫吹曲辭·折楊柳",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 316,
+        "poet_id": 53,
+        "poet_name_ko": "이백",
+        "title_ko": "횡취곡사·관산월",
+        "title_zh": "橫吹曲辭·關山月",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 327,
+        "poet_id": 53,
+        "poet_name_ko": "이백",
+        "title_ko": "횡취곡사·낙양맥",
+        "title_zh": "橫吹曲辭·洛陽陌",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 341,
+        "poet_id": 53,
+        "poet_name_ko": "이백",
+        "title_ko": "횡취곡사·자류마",
+        "title_zh": "橫吹曲辭·紫騮馬",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 351,
+        "poet_id": 53,
+        "poet_name_ko": "이백",
+        "title_ko": "횡취곡사·유주호마객가",
+        "title_zh": "橫吹曲辭·幽州胡馬客歌",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 328,
+        "poet_id": 60,
+        "poet_name_ko": "최호",
+        "title_ko": "횡취곡사·장안도",
+        "title_zh": "橫吹曲辭·長安道",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 481,
+        "poet_id": 60,
+        "poet_name_ko": "최호",
+        "title_ko": "상화가사·상봉행",
+        "title_zh": "相和歌辞·相逢行",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 698,
+        "poet_id": 60,
+        "poet_name_ko": "최호",
+        "title_ko": "금곡가사·곽장군",
+        "title_zh": "琴曲歌辞·霍将军",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 749,
+        "poet_id": 60,
+        "poet_name_ko": "최호",
+        "title_ko": "잡곡가사·위성소년행",
+        "title_zh": "雜曲歌辭·渭城少年行",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 755,
+        "poet_id": 60,
+        "poet_name_ko": "최호",
+        "title_ko": "잡곡가사·유협편",
+        "title_zh": "杂曲歌辞·游侠篇",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 339,
+        "poet_id": 66,
+        "poet_name_ko": "류방평",
+        "title_ko": "횡취곡사·매화락",
+        "title_zh": "橫吹曲辭·梅花落",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 582,
+        "poet_id": 66,
+        "poet_name_ko": "류방평",
+        "title_ko": "상화가사·서오곡 이수",
+        "title_zh": "相和歌辞·栖乌曲二首",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 683,
+        "poet_id": 66,
+        "poet_name_ko": "류방평",
+        "title_ko": "금곡가사·완전가 이수",
+        "title_zh": "琴曲歌辞·宛转歌二首",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 10823,
+        "poet_id": 66,
+        "poet_name_ko": "류방평",
+        "title_ko": "대완전가 이수",
+        "title_zh": "代宛轉歌二首",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 10824,
+        "poet_id": 66,
+        "poet_name_ko": "류방평",
+        "title_ko": "조서곡이수",
+        "title_zh": "鳥棲曲二首",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 360,
+        "poet_id": 74,
+        "poet_name_ko": "유신허",
+        "title_ko": "상화가사·강남곡",
+        "title_zh": "相和歌辭·江南曲",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 10952,
+        "poet_id": 74,
+        "poet_name_ko": "유신허",
+        "title_ko": "강남곡",
+        "title_zh": "江南曲",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 10953,
+        "poet_id": 74,
+        "poet_name_ko": "유신허",
+        "title_ko": "구일송인",
+        "title_zh": "九日送人",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 10954,
+        "poet_id": 74,
+        "poet_name_ko": "유신허",
+        "title_ko": "모추양자강기맹호연",
+        "title_zh": "暮秋揚子江寄孟浩然",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 10955,
+        "poet_id": 74,
+        "poet_name_ko": "유신허",
+        "title_ko": "심양도씨별업",
+        "title_zh": "潯陽陶氏別業",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 383,
+        "poet_id": 82,
+        "poet_name_ko": "상건",
+        "title_ko": "상화가사·맥상상",
+        "title_zh": "相和歌辭·陌上桑",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 5182,
+        "poet_id": 82,
+        "poet_name_ko": "상건",
+        "title_ko": "송육탁",
+        "title_zh": "送陸擢",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 5183,
+        "poet_id": 82,
+        "poet_name_ko": "상건",
+        "title_ko": "송이십일위임계",
+        "title_zh": "送李十一尉臨溪",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 5184,
+        "poet_id": 82,
+        "poet_name_ko": "상건",
+        "title_ko": "강상금흥",
+        "title_zh": "江上琴興",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 5185,
+        "poet_id": 82,
+        "poet_name_ko": "상건",
+        "title_ko": "호중만제",
+        "title_zh": "湖中晚霽",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 450,
+        "poet_id": 107,
+        "poet_name_ko": "고적",
+        "title_ko": "상화가사·연가행",
+        "title_zh": "相和歌辭·燕歌行",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 488,
+        "poet_id": 107,
+        "poet_name_ko": "고적",
+        "title_ko": "상화가사·추호행",
+        "title_zh": "相和歌辭·秋胡行",
+        "is_notable": false,
+        "quality": null
+      }
+    ],
+    "wan-tang": [
+      {
+        "id": 275,
+        "poet_id": 29,
+        "poet_name_ko": null,
+        "title_ko": "횡취곡사·농두수",
+        "title_zh": "橫吹曲辭·隴頭水",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 370,
+        "poet_id": 29,
+        "poet_name_ko": null,
+        "title_ko": "상화가사·강남곡",
+        "title_zh": "相和歌辭·江南曲",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 427,
+        "poet_id": 29,
+        "poet_name_ko": null,
+        "title_ko": "상화가사·동작대",
+        "title_zh": "相和歌辭·銅雀台",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 29290,
+        "poet_id": 29,
+        "poet_name_ko": null,
+        "title_ko": "기곡강춘감",
+        "title_zh": "其曲江春感〈一題作《歸五湖》〉",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 29291,
+        "poet_id": 29,
+        "poet_name_ko": null,
+        "title_ko": "기황피",
+        "title_zh": "其皇陂",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 285,
+        "poet_id": 38,
+        "poet_name_ko": "마대",
+        "title_ko": "횡취곡사·출새",
+        "title_zh": "橫吹曲辭·出塞",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 373,
+        "poet_id": 38,
+        "poet_name_ko": "마대",
+        "title_ko": "상화가사·관산곡",
+        "title_zh": "相和歌辭·關山曲",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 440,
+        "poet_id": 38,
+        "poet_name_ko": "마대",
+        "title_ko": "상화가사·작대원",
+        "title_zh": "相和歌辭·雀台怨",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 24614,
+        "poet_id": 38,
+        "poet_name_ko": "마대",
+        "title_ko": "기교렵곡",
+        "title_zh": "其挍獵曲〈第十句缺二字〉",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 24615,
+        "poet_id": 38,
+        "poet_name_ko": "마대",
+        "title_ko": "기만가",
+        "title_zh": "其蠻家",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 294,
+        "poet_id": 44,
+        "poet_name_ko": null,
+        "title_ko": "횡취곡사·출새곡",
+        "title_zh": "橫吹曲辭·出塞曲",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 297,
+        "poet_id": 44,
+        "poet_name_ko": null,
+        "title_ko": "횡취곡사·입새곡",
+        "title_zh": "橫吹曲辭·入塞曲",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 335,
+        "poet_id": 44,
+        "poet_name_ko": null,
+        "title_ko": "횡취곡사·장안도",
+        "title_zh": "橫吹曲辭·長安道",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 375,
+        "poet_id": 44,
+        "poet_name_ko": null,
+        "title_ko": "상화가사·호리",
+        "title_zh": "相和歌辭·蒿裏",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 489,
+        "poet_id": 44,
+        "poet_name_ko": null,
+        "title_ko": "상화가사·선재행",
+        "title_zh": "相和歌辞·善哉行",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 331,
+        "poet_id": 62,
+        "poet_name_ko": null,
+        "title_ko": "횡취곡사·장안도",
+        "title_zh": "橫吹曲辭·長安道",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 416,
+        "poet_id": 62,
+        "poet_name_ko": null,
+        "title_ko": "상화가사·단가행",
+        "title_zh": "相和歌辭·短歌行",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 545,
+        "poet_id": 62,
+        "poet_name_ko": null,
+        "title_ko": "상화가사·잡원삼수",
+        "title_zh": "相和歌辞·杂怨三首",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 832,
+        "poet_id": 62,
+        "poet_name_ko": null,
+        "title_ko": "잡곡가사·음주락",
+        "title_zh": "杂曲歌辞·饮酒乐",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 847,
+        "poet_id": 62,
+        "poet_name_ko": null,
+        "title_ko": "잡곡가사·기야반",
+        "title_zh": "杂曲歌辞·起夜半",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 334,
+        "poet_id": 65,
+        "poet_name_ko": null,
+        "title_ko": "횡취곡사·장안도",
+        "title_zh": "橫吹曲辭·長安道",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 428,
+        "poet_id": 65,
+        "poet_name_ko": null,
+        "title_ko": "상화가사·동작대",
+        "title_zh": "相和歌辭·銅雀台",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 640,
+        "poet_id": 65,
+        "poet_name_ko": null,
+        "title_ko": "무곡가사·척지사 삼수",
+        "title_zh": "舞曲歌辞·柘枝词三首",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 791,
+        "poet_id": 65,
+        "poet_name_ko": null,
+        "title_ko": "잡곡가사·행로난",
+        "title_zh": "杂曲歌辞·行路难",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 1010,
+        "poet_id": 65,
+        "poet_name_ko": null,
+        "title_ko": "잡곡가사·양류지",
+        "title_zh": "雜曲歌辭·楊柳枝",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 343,
+        "poet_id": 68,
+        "poet_name_ko": "진도옥",
+        "title_ko": "횡취곡사·자류마",
+        "title_zh": "橫吹曲辭·紫騮馬",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 29881,
+        "poet_id": 68,
+        "poet_name_ko": "진도옥",
+        "title_ko": "장안서회",
+        "title_zh": "長安書懷",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 29882,
+        "poet_id": 68,
+        "poet_name_ko": "진도옥",
+        "title_ko": "회수(檜樹)",
+        "title_zh": "檜樹",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 29883,
+        "poet_id": 68,
+        "poet_name_ko": "진도옥",
+        "title_ko": "독오후전",
+        "title_zh": "讀五侯傳",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 29884,
+        "poet_id": 68,
+        "poet_name_ko": "진도옥",
+        "title_ko": "춘설 (봄눈)",
+        "title_zh": "春雪",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 349,
+        "poet_id": 70,
+        "poet_name_ko": "온정균",
+        "title_ko": "횡취곡사·옹대가",
+        "title_zh": "橫吹曲辭·雍台歌",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 357,
+        "poet_id": 70,
+        "poet_name_ko": "온정균",
+        "title_ko": "상화가사·공무도하",
+        "title_zh": "相和歌辭·公無渡河",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 368,
+        "poet_id": 70,
+        "poet_name_ko": "온정균",
+        "title_ko": "상화가사·강남곡",
+        "title_zh": "相和歌辭·江南曲",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 561,
+        "poet_id": 70,
+        "poet_name_ko": "온정균",
+        "title_ko": "상화가사·오뇌곡",
+        "title_zh": "相和歌辞·懊恼曲",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 566,
+        "poet_id": 70,
+        "poet_name_ko": "온정균",
+        "title_ko": "상화가사·당당",
+        "title_zh": "相和歌辞·堂堂",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 366,
+        "poet_id": 77,
+        "poet_name_ko": "이상은",
+        "title_ko": "상화가사·강남곡",
+        "title_zh": "相和歌辭·江南曲",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 405,
+        "poet_id": 77,
+        "poet_name_ko": "이상은",
+        "title_ko": "상화가사·왕소군",
+        "title_zh": "相和歌辭·王昭君",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 845,
+        "poet_id": 77,
+        "poet_name_ko": "이상은",
+        "title_ko": "잡곡가사·무수과유수곡",
+        "title_zh": "杂曲歌辞·无愁果有愁曲",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 1002,
+        "poet_id": 77,
+        "poet_name_ko": "이상은",
+        "title_ko": "잡곡가사·양류지",
+        "title_zh": "雜曲歌辭·楊柳枝",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 1072,
+        "poet_id": 77,
+        "poet_name_ko": "이상은",
+        "title_ko": "잡가요사·이부인가",
+        "title_zh": "杂歌谣辞·李夫人歌",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 371,
+        "poet_id": 79,
+        "poet_name_ko": null,
+        "title_ko": "상화가사·강남곡",
+        "title_zh": "相和歌辭·江南曲",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 384,
+        "poet_id": 79,
+        "poet_name_ko": null,
+        "title_ko": "상화가사·맥상상",
+        "title_zh": "相和歌辭·陌上桑",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 422,
+        "poet_id": 79,
+        "poet_name_ko": null,
+        "title_ko": "상화가사·단가행",
+        "title_zh": "相和歌辭·短歌行",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 442,
+        "poet_id": 79,
+        "poet_name_ko": null,
+        "title_ko": "상화가사·치주행",
+        "title_zh": "相和歌辭·置酒行",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 556,
+        "poet_id": 79,
+        "poet_name_ko": null,
+        "title_ko": "상화가사·대자야가이수",
+        "title_zh": "相和歌辞·大子夜歌二首",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 665,
+        "poet_id": 132,
+        "poet_name_ko": "두목",
+        "title_ko": "금곡가사·별학",
+        "title_zh": "琴曲歌辞·别鹤",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 742,
+        "poet_id": 132,
+        "poet_name_ko": "두목",
+        "title_ko": "잡곡가사·소년행 이수",
+        "title_zh": "杂曲歌辞·少年行二首",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 22418,
+        "poet_id": 132,
+        "poet_name_ko": "두목",
+        "title_ko": "회종릉구유사수 (종릉에서의 옛 노닒을 회상하며)",
+        "title_zh": "四）（其懷鐘陵舊遊四首",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 22419,
+        "poet_id": 132,
+        "poet_name_ko": "두목",
+        "title_ko": "대성곡 이수 중 제이수",
+        "title_zh": "四）（其臺城曲二首",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 22420,
+        "poet_id": 132,
+        "poet_name_ko": "두목",
+        "title_ko": "강상우기최갈 (강 위에서 내리는 비를 보며 최갈에게 부치다)",
+        "title_zh": "四）（其江上雨寄崔碣",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 921,
+        "poet_id": 146,
+        "poet_name_ko": "설봉",
+        "title_ko": "잡곡가사·양주사",
+        "title_zh": "杂曲歌辞·凉州词",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 978,
+        "poet_id": 146,
+        "poet_name_ko": "설봉",
+        "title_ko": "잡곡가사·하만자",
+        "title_zh": "杂曲歌辞·何满子",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 24090,
+        "poet_id": 146,
+        "poet_name_ko": "설봉",
+        "title_ko": "설봉(섭백곡)",
+        "title_zh": "鑷白曲",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 24091,
+        "poet_id": 146,
+        "poet_name_ko": "설봉",
+        "title_ko": "설봉(군불견)",
+        "title_zh": "君不見",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 24092,
+        "poet_id": 146,
+        "poet_name_ko": "설봉",
+        "title_ko": "설봉(노거야)",
+        "title_zh": "老去也",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 882,
+        "poet_id": 597,
+        "poet_name_ko": null,
+        "title_ko": "잡곡가사·석석염·수류복금제",
+        "title_zh": "杂曲歌辞·昔昔盐·垂柳覆金堤",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 883,
+        "poet_id": 597,
+        "poet_name_ko": null,
+        "title_ko": "잡곡가사·석석염·미엽부제",
+        "title_zh": "杂曲歌辞·昔昔盐·蘼芜叶复齐",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 884,
+        "poet_id": 597,
+        "poet_name_ko": null,
+        "title_ko": "잡곡가사·석석염·수일부용소",
+        "title_zh": "杂曲歌辞·昔昔盐·水溢芙蓉沼",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 885,
+        "poet_id": 597,
+        "poet_name_ko": null,
+        "title_ko": "잡곡가사·석석염·화비도리혜",
+        "title_zh": "杂曲歌辞·昔昔盐·花飞桃李蹊",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 886,
+        "poet_id": 597,
+        "poet_name_ko": null,
+        "title_ko": "잡곡가사·석석염·채상진씨녀",
+        "title_zh": "杂曲歌辞·昔昔盐·采桑秦氏女",
+        "is_notable": false,
+        "quality": null
+      }
+    ],
+    "zhong-tang": [
+      {
+        "id": 48941,
+        "poet_id": 3466,
+        "poet_name_ko": "두추낭",
+        "title_ko": "〈금루의〉",
+        "title_zh": "金縷衣",
+        "is_notable": true,
+        "quality": "canonical"
+      },
+      {
+        "id": 267,
+        "poet_id": 21,
+        "poet_name_ko": "장적",
+        "title_ko": "횡취곡사·농두",
+        "title_zh": "橫吹曲辭·隴頭（一曰隴頭水）",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 291,
+        "poet_id": 21,
+        "poet_name_ko": "장적",
+        "title_ko": "횡취곡사·출새",
+        "title_zh": "橫吹曲辭·出塞",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 313,
+        "poet_id": 21,
+        "poet_name_ko": "장적",
+        "title_ko": "횡취곡사·망행인",
+        "title_zh": "橫吹曲辭·望行人",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 323,
+        "poet_id": 21,
+        "poet_name_ko": "장적",
+        "title_ko": "횡취곡사·관산월",
+        "title_zh": "橫吹曲辭·關山月",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 369,
+        "poet_id": 21,
+        "poet_name_ko": "장적",
+        "title_ko": "상화가사·강남곡",
+        "title_zh": "相和歌辭·江南曲",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 272,
+        "poet_id": 26,
+        "poet_name_ko": "왕건",
+        "title_ko": "횡취곡사·농두수",
+        "title_zh": "橫吹曲辭·隴頭水",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 312,
+        "poet_id": 26,
+        "poet_name_ko": "왕건",
+        "title_ko": "횡취곡사·망행인",
+        "title_zh": "橫吹曲辭·望行人",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 322,
+        "poet_id": 26,
+        "poet_name_ko": "왕건",
+        "title_ko": "횡취곡사·관산월",
+        "title_zh": "橫吹曲辭·關山月",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 356,
+        "poet_id": 26,
+        "poet_name_ko": "왕건",
+        "title_ko": "상화가사·공무도하",
+        "title_zh": "相和歌辭·公無渡河",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 387,
+        "poet_id": 26,
+        "poet_name_ko": "왕건",
+        "title_ko": "상화가사·채상",
+        "title_zh": "相和歌辭·采桑",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 273,
+        "poet_id": 27,
+        "poet_name_ko": "교연",
+        "title_ko": "횡취곡사·농두수",
+        "title_zh": "橫吹曲辭·隴頭水",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 687,
+        "poet_id": 27,
+        "poet_name_ko": "교연",
+        "title_ko": "금곡가사·풍입송가",
+        "title_zh": "琴曲歌辞·风入松歌",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 748,
+        "poet_id": 27,
+        "poet_name_ko": "교연",
+        "title_ko": "잡곡가사·장안소년행",
+        "title_zh": "杂曲歌辞·长安少年行",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 1094,
+        "poet_id": 27,
+        "poet_name_ko": "교연",
+        "title_ko": "잡가요사·보허사",
+        "title_zh": "杂歌谣辞·步虚词",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 35519,
+        "poet_id": 27,
+        "poet_name_ko": "교연",
+        "title_ko": "기강덕련구",
+        "title_zh": "其講德聯句",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 274,
+        "poet_id": 28,
+        "poet_name_ko": null,
+        "title_ko": "횡취곡사·농두수",
+        "title_zh": "橫吹曲辭·隴頭水",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 472,
+        "poet_id": 28,
+        "poet_name_ko": null,
+        "title_ko": "상화가사·고재원정인",
+        "title_zh": "相和歌辭·苦哉遠征人",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 645,
+        "poet_id": 28,
+        "poet_name_ko": null,
+        "title_ko": "금곡가사·상비열녀조",
+        "title_zh": "琴曲歌辞·湘妃列女操",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 860,
+        "poet_id": 28,
+        "poet_name_ko": null,
+        "title_ko": "잡곡가사·야한음",
+        "title_zh": "杂曲歌辞·夜寒吟",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 20358,
+        "poet_id": 28,
+        "poet_name_ko": null,
+        "title_ko": "포용(고의)",
+        "title_zh": "古意〈一作怨詩〉",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 278,
+        "poet_id": 32,
+        "poet_name_ko": "장호",
+        "title_ko": "횡취곡사·입관",
+        "title_zh": "橫吹曲辭·入關",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 306,
+        "poet_id": 32,
+        "poet_name_ko": "장호",
+        "title_ko": "횡취곡사·절양류",
+        "title_zh": "橫吹曲辭·折楊柳",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 350,
+        "poet_id": 32,
+        "poet_name_ko": "장호",
+        "title_ko": "횡취곡사·착닉가",
+        "title_zh": "橫吹曲辭·捉搦歌",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 353,
+        "poet_id": 32,
+        "poet_name_ko": "장호",
+        "title_ko": "횡취곡사·백비과",
+        "title_zh": "橫吹曲辭·白鼻騧",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 468,
+        "poet_id": 32,
+        "poet_name_ko": "장호",
+        "title_ko": "상화가사·종군행",
+        "title_zh": "相和歌辭·從軍行",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 290,
+        "poet_id": 42,
+        "poet_name_ko": null,
+        "title_ko": "횡취곡사·출새",
+        "title_zh": "橫吹曲辭·出塞",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 296,
+        "poet_id": 42,
+        "poet_name_ko": null,
+        "title_ko": "횡취곡사·입새곡",
+        "title_zh": "橫吹曲辭·入塞曲",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 318,
+        "poet_id": 42,
+        "poet_name_ko": null,
+        "title_ko": "횡취곡사·관산월",
+        "title_zh": "橫吹曲辭·關山月",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 493,
+        "poet_id": 42,
+        "poet_name_ko": null,
+        "title_ko": "상화가사·농서행",
+        "title_zh": "相和歌辞·陇西行",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 11428,
+        "poet_id": 42,
+        "poet_name_ko": null,
+        "title_ko": "발남강야박감석중",
+        "title_zh": "發南康夜泊灨石中",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 309,
+        "poet_id": 54,
+        "poet_name_ko": "맹교",
+        "title_ko": "횡취곡사·절양류",
+        "title_zh": "橫吹曲辭·折楊柳",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 329,
+        "poet_id": 54,
+        "poet_name_ko": "맹교",
+        "title_ko": "횡취곡사·장안도",
+        "title_zh": "橫吹曲辭·長安道",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 522,
+        "poet_id": 54,
+        "poet_name_ko": "맹교",
+        "title_ko": "상화가사·원시",
+        "title_zh": "相和歌辞·怨诗",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 546,
+        "poet_id": 54,
+        "poet_name_ko": "맹교",
+        "title_ko": "상화가사·잡원삼수",
+        "title_zh": "相和歌辞·杂怨三首",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 644,
+        "poet_id": 54,
+        "poet_name_ko": "맹교",
+        "title_ko": "금곡가사·상비원",
+        "title_zh": "琴曲歌辞·湘妃怨",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 310,
+        "poet_id": 55,
+        "poet_name_ko": "이단",
+        "title_ko": "횡취곡사·절양류",
+        "title_zh": "橫吹曲辭·折楊柳",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 321,
+        "poet_id": 55,
+        "poet_name_ko": "이단",
+        "title_ko": "횡취곡사·관산월",
+        "title_zh": "橫吹曲辭·關山月",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 346,
+        "poet_id": 55,
+        "poet_name_ko": "이단",
+        "title_ko": "횡취곡사·우설곡",
+        "title_zh": "橫吹曲辭·雨雪曲",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 372,
+        "poet_id": 55,
+        "poet_name_ko": "이단",
+        "title_ko": "상화가사·도관산",
+        "title_zh": "相和歌辭·度關山",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 409,
+        "poet_id": 55,
+        "poet_name_ko": "이단",
+        "title_ko": "상화가사·소군사",
+        "title_zh": "相和歌辭·昭君詞",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 319,
+        "poet_id": 57,
+        "poet_name_ko": "대숙륜",
+        "title_ko": "횡취곡사·관산월 이수",
+        "title_zh": "橫吹曲辭·關山月二首",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 408,
+        "poet_id": 57,
+        "poet_name_ko": "대숙륜",
+        "title_ko": "상화가사·소군사",
+        "title_zh": "相和歌辭·昭君詞",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 807,
+        "poet_id": 57,
+        "poet_name_ko": "대숙륜",
+        "title_ko": "잡곡가사·신별리",
+        "title_zh": "杂曲歌辞·新别离",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 1032,
+        "poet_id": 57,
+        "poet_name_ko": "대숙륜",
+        "title_ko": "잡곡가사·전응사",
+        "title_zh": "雜曲歌辭·轉應詞",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 11911,
+        "poet_id": 57,
+        "poet_name_ko": "대숙륜",
+        "title_ko": "독불견",
+        "title_zh": "獨不見",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 330,
+        "poet_id": 61,
+        "poet_name_ko": "고황",
+        "title_ko": "횡취곡사·장안도",
+        "title_zh": "橫吹曲辭·長安道",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 418,
+        "poet_id": 61,
+        "poet_name_ko": "고황",
+        "title_ko": "상화가사·단가행 육수",
+        "title_zh": "相和歌辭·短歌行六首",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 576,
+        "poet_id": 61,
+        "poet_name_ko": "고황",
+        "title_ko": "상화가사·오야제이수",
+        "title_zh": "相和歌辞·乌夜啼二首",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 675,
+        "poet_id": 61,
+        "poet_name_ko": "고황",
+        "title_ko": "금곡가사·채씨오롱·유거롱",
+        "title_zh": "琴曲歌辞·蔡氏五弄·幽居弄",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 694,
+        "poet_id": 61,
+        "poet_name_ko": "고황",
+        "title_ko": "금곡가사·용궁조",
+        "title_zh": "琴曲歌辞·龙宫操",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 332,
+        "poet_id": 63,
+        "poet_name_ko": "위응물",
+        "title_ko": "횡취곡사·장안도",
+        "title_zh": "橫吹曲辭·長安道",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 837,
+        "poet_id": 63,
+        "poet_name_ko": "위응물",
+        "title_ko": "잡곡가사·삼대이수",
+        "title_zh": "杂曲歌辞·三台二首",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 838,
+        "poet_id": 63,
+        "poet_name_ko": "위응물",
+        "title_ko": "잡곡가사·상황삼대",
+        "title_zh": "杂曲歌辞·上皇三台",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 839,
+        "poet_id": 63,
+        "poet_name_ko": "위응물",
+        "title_ko": "잡곡가사·돌궐삼대",
+        "title_zh": "杂曲歌辞·突厥三台",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 1031,
+        "poet_id": 63,
+        "poet_name_ko": "위응물",
+        "title_ko": "잡곡가사·궁중조소",
+        "title_zh": "雜曲歌辭·宮中調笑",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 333,
+        "poet_id": 64,
+        "poet_name_ko": "백거이",
+        "title_ko": "횡취곡사·장안도",
+        "title_zh": "橫吹曲辭·長安道",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 379,
+        "poet_id": 64,
+        "poet_name_ko": "백거이",
+        "title_ko": "상화가사·만가",
+        "title_zh": "相和歌辭·輓歌",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 402,
+        "poet_id": 64,
+        "poet_name_ko": "백거이",
+        "title_ko": "상화가사·왕소군이수",
+        "title_zh": "相和歌辭·王昭君二首",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 421,
+        "poet_id": 64,
+        "poet_name_ko": "백거이",
+        "title_ko": "상화가사·단가행이수",
+        "title_zh": "相和歌辭·短歌行二首",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 515,
+        "poet_id": 64,
+        "poet_name_ko": "백거이",
+        "title_ko": "상화가사·반백두음",
+        "title_zh": "相和歌辞·反白头吟",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 342,
+        "poet_id": 67,
+        "poet_name_ko": "이익",
+        "title_ko": "횡취곡사·자류마",
+        "title_zh": "橫吹曲辭·紫騮馬",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 364,
+        "poet_id": 67,
+        "poet_name_ko": "이익",
+        "title_ko": "상화가사·강남곡",
+        "title_zh": "相和歌辭·江南曲",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 441,
+        "poet_id": 67,
+        "poet_name_ko": "이익",
+        "title_ko": "상화가사·치주행",
+        "title_zh": "相和歌辭·置酒行",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 471,
+        "poet_id": 67,
+        "poet_name_ko": "이익",
+        "title_ko": "상화가사·종군유고락행",
+        "title_zh": "相和歌辭·從軍有苦樂行",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 542,
+        "poet_id": 67,
+        "poet_name_ko": "이익",
+        "title_ko": "상화가사·궁원",
+        "title_zh": "相和歌辞·宫怨",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 354,
+        "poet_id": 71,
+        "poet_name_ko": null,
+        "title_ko": "상화가사·공후인",
+        "title_zh": "相和歌辭·箜篌引",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 365,
+        "poet_id": 71,
+        "poet_name_ko": null,
+        "title_ko": "상화가사·강남곡",
+        "title_zh": "相和歌辭·江南曲",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 389,
+        "poet_id": 71,
+        "poet_name_ko": null,
+        "title_ko": "상화가사·일출행",
+        "title_zh": "相和歌辭·日出行",
+        "is_notable": false,
+        "quality": null
+      },
+      {
+        "id": 413,
+        "poet_id": 71,
+        "poet_name_ko": null,
+        "title_ko": "상화가사·촉국현",
+        "title_zh": "相和歌辭·蜀國弦",
+        "is_notable": false,
+        "quality": null
+      }
+    ],
+    "ancient-silla": [
+      {
+        "id": 48490,
+        "poet_id": 3315,
+        "poet_name_ko": "유리왕",
+        "title_ko": "黃鳥歌",
+        "title_zh": "黃鳥歌",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48471,
+        "poet_id": 3316,
+        "poet_name_ko": "을지문덕",
+        "title_ko": "贈隋右翊衛大將軍于仲文",
+        "title_zh": "贈隋右翊衛大將軍于仲文",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 47352,
+        "poet_id": 3325,
+        "poet_name_ko": "최치원",
+        "title_ko": "贈希朗和尙",
+        "title_zh": "贈希朗和尙",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 47353,
+        "poet_id": 3325,
+        "poet_name_ko": "최치원",
+        "title_ko": "寄顥源上人",
+        "title_zh": "寄顥源上人",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48506,
+        "poet_id": 3325,
+        "poet_name_ko": "최치원",
+        "title_ko": "鄕樂雜詠 金丸",
+        "title_zh": "鄕樂雜詠 金丸",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48507,
+        "poet_id": 3325,
+        "poet_name_ko": "최치원",
+        "title_ko": "鄕樂雜詠 月顚",
+        "title_zh": "鄕樂雜詠 月顚",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48508,
+        "poet_id": 3325,
+        "poet_name_ko": "최치원",
+        "title_ko": "鄕樂雜詠 大面",
+        "title_zh": "鄕樂雜詠 大面",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48509,
+        "poet_id": 3325,
+        "poet_name_ko": "최치원",
+        "title_ko": "鄕樂雜詠 束毒",
+        "title_zh": "鄕樂雜詠 束毒",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48510,
+        "poet_id": 3325,
+        "poet_name_ko": "최치원",
+        "title_ko": "鄕樂雜詠 狻猊",
+        "title_zh": "鄕樂雜詠 狻猊",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48878,
+        "poet_id": 3325,
+        "poet_name_ko": "최치원",
+        "title_ko": "月顚",
+        "title_zh": "月顚",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48879,
+        "poet_id": 3325,
+        "poet_name_ko": "최치원",
+        "title_ko": "束毒",
+        "title_zh": "束毒",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48880,
+        "poet_id": 3325,
+        "poet_name_ko": "최치원",
+        "title_ko": "狻猊",
+        "title_zh": "狻猊",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48512,
+        "poet_id": 3474,
+        "poet_name_ko": "박인범",
+        "title_ko": "涇州龍朔寺閣兼柬雲栖上人",
+        "title_zh": "涇州龍朔寺閣兼柬雲栖上人",
+        "is_notable": false,
+        "quality": "opus-subagent-v2"
+      },
+      {
+        "id": 48511,
+        "poet_id": 3483,
+        "poet_name_ko": "최광유",
+        "title_ko": "御溝",
+        "title_zh": "御溝",
+        "is_notable": false,
+        "quality": "opus-subagent-v2"
+      },
+      {
+        "id": 47322,
+        "poet_id": 3325,
+        "poet_name_ko": "최치원",
+        "title_ko": "寓興",
+        "title_zh": "寓興",
+        "is_notable": false,
+        "quality": "sonnet-subagent"
+      },
+      {
+        "id": 47323,
+        "poet_id": 3325,
+        "poet_name_ko": "최치원",
+        "title_ko": "蜀葵花",
+        "title_zh": "蜀葵花",
+        "is_notable": false,
+        "quality": "sonnet-subagent"
+      },
+      {
+        "id": 48491,
+        "poet_id": 3317,
+        "poet_name_ko": "서동",
+        "title_ko": "서동요",
+        "title_zh": "薯童謠",
+        "is_notable": false,
+        "quality": "canonical"
+      },
+      {
+        "id": 47374,
+        "poet_id": 3319,
+        "poet_name_ko": "월명사",
+        "title_ko": "도솔가",
+        "title_zh": "兜率歌",
+        "is_notable": false,
+        "quality": "canonical"
+      },
+      {
+        "id": 47375,
+        "poet_id": 3319,
+        "poet_name_ko": "월명사",
+        "title_ko": "제망매가",
+        "title_zh": "祭亡妹歌",
+        "is_notable": false,
+        "quality": "canonical"
+      },
+      {
+        "id": 47376,
+        "poet_id": 3320,
+        "poet_name_ko": "충담사",
+        "title_ko": "안민가",
+        "title_zh": "安民歌",
+        "is_notable": false,
+        "quality": "canonical"
+      },
+      {
+        "id": 47377,
+        "poet_id": 3320,
+        "poet_name_ko": "충담사",
+        "title_ko": "찬기파랑가",
+        "title_zh": "讚耆婆郞歌",
+        "is_notable": false,
+        "quality": "canonical"
+      },
+      {
+        "id": 47380,
+        "poet_id": 3321,
+        "poet_name_ko": "영재",
+        "title_ko": "우적가",
+        "title_zh": "遇賊歌",
+        "is_notable": false,
+        "quality": "canonical"
+      },
+      {
+        "id": 47378,
+        "poet_id": 3322,
+        "poet_name_ko": "융천사",
+        "title_ko": "혜성가",
+        "title_zh": "彗星歌",
+        "is_notable": false,
+        "quality": "canonical"
+      },
+      {
+        "id": 47381,
+        "poet_id": 3324,
+        "poet_name_ko": "처용",
+        "title_ko": "처용가",
+        "title_zh": "處容歌",
+        "is_notable": false,
+        "quality": "canonical"
+      },
+      {
+        "id": 47379,
+        "poet_id": 3467,
+        "poet_name_ko": "신충",
+        "title_ko": "원가",
+        "title_zh": "怨歌",
+        "is_notable": false,
+        "quality": "canonical"
+      }
+    ],
+    "geundae": [
+      {
+        "id": 48861,
+        "poet_id": 3424,
+        "poet_name_ko": "황현",
+        "title_ko": "絶命詩 四首",
+        "title_zh": "絶命詩 四首",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48862,
+        "poet_id": 3424,
+        "poet_name_ko": "황현",
+        "title_ko": "元宵",
+        "title_zh": "元宵",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48863,
+        "poet_id": 3424,
+        "poet_name_ko": "황현",
+        "title_ko": "孤雲吹笛臺有感",
+        "title_zh": "孤雲吹笛臺有感",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48864,
+        "poet_id": 3424,
+        "poet_name_ko": "황현",
+        "title_ko": "登梅營南門",
+        "title_zh": "登梅營南門",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48865,
+        "poet_id": 3424,
+        "poet_name_ko": "황현",
+        "title_ko": "秋夜吟",
+        "title_zh": "秋夜吟",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48866,
+        "poet_id": 3424,
+        "poet_name_ko": "황현",
+        "title_ko": "一蠧遺墟 二首",
+        "title_zh": "一蠧遺墟 二首",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48867,
+        "poet_id": 3424,
+        "poet_name_ko": "황현",
+        "title_ko": "哀朴長興憲陽",
+        "title_zh": "哀朴長興憲陽",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      }
+    ],
+    "goryeo-early-mid": [
+      {
+        "id": 48494,
+        "poet_id": 3330,
+        "poet_name_ko": "박인량",
+        "title_ko": "舟中夜吟",
+        "title_zh": "舟中夜吟",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48472,
+        "poet_id": 3334,
+        "poet_name_ko": "김부식",
+        "title_ko": "結綺宮",
+        "title_zh": "結綺宮",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48473,
+        "poet_id": 3334,
+        "poet_name_ko": "김부식",
+        "title_ko": "大興寺聞子規",
+        "title_zh": "大興寺聞子規",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48474,
+        "poet_id": 3334,
+        "poet_name_ko": "김부식",
+        "title_ko": "內殿春帖子",
+        "title_zh": "內殿春帖子",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 47354,
+        "poet_id": 3335,
+        "poet_name_ko": "정지상",
+        "title_ko": "送人",
+        "title_zh": "送人",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 47355,
+        "poet_id": 3335,
+        "poet_name_ko": "정지상",
+        "title_ko": "長源亭",
+        "title_zh": "長源亭",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 47356,
+        "poet_id": 3335,
+        "poet_name_ko": "정지상",
+        "title_ko": "春日",
+        "title_zh": "春日",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 47357,
+        "poet_id": 3335,
+        "poet_name_ko": "정지상",
+        "title_ko": "分行驛。寄忠州刺史。",
+        "title_zh": "分行驛。寄忠州刺史。",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 47358,
+        "poet_id": 3335,
+        "poet_name_ko": "정지상",
+        "title_ko": "題登高寺",
+        "title_zh": "題登高寺",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 47359,
+        "poet_id": 3335,
+        "poet_name_ko": "정지상",
+        "title_ko": "開聖寺八尺房",
+        "title_zh": "開聖寺八尺房",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 47367,
+        "poet_id": 3336,
+        "poet_name_ko": "이규보",
+        "title_ko": "江上曉雨",
+        "title_zh": "江上曉雨",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 47368,
+        "poet_id": 3336,
+        "poet_name_ko": "이규보",
+        "title_ko": "夏日卽事 其一",
+        "title_zh": "夏日卽事 其一",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 47369,
+        "poet_id": 3336,
+        "poet_name_ko": "이규보",
+        "title_ko": "夏日卽事 其二",
+        "title_zh": "夏日卽事 其二",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 47370,
+        "poet_id": 3336,
+        "poet_name_ko": "이규보",
+        "title_ko": "東明王篇 幷序",
+        "title_zh": "東明王篇 幷序",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 47371,
+        "poet_id": 3336,
+        "poet_name_ko": "이규보",
+        "title_ko": "山夕詠井中月 其一",
+        "title_zh": "山夕詠井中月 其一",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 47372,
+        "poet_id": 3336,
+        "poet_name_ko": "이규보",
+        "title_ko": "山夕詠井中月 其二",
+        "title_zh": "山夕詠井中月 其二",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48476,
+        "poet_id": 3337,
+        "poet_name_ko": "이인로",
+        "title_ko": "山居",
+        "title_zh": "山居",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48477,
+        "poet_id": 3337,
+        "poet_name_ko": "이인로",
+        "title_ko": "竹醉日移竹",
+        "title_zh": "竹醉日移竹",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48905,
+        "poet_id": 3337,
+        "poet_name_ko": "이인로",
+        "title_ko": "李仁老詩",
+        "title_zh": "李仁老詩",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48513,
+        "poet_id": 3339,
+        "poet_name_ko": "오세재",
+        "title_ko": "次韻金無迹見贈",
+        "title_zh": "次韻金無迹見贈",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48480,
+        "poet_id": 3341,
+        "poet_name_ko": "김극기",
+        "title_ko": "宿香村",
+        "title_zh": "宿香村",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48481,
+        "poet_id": 3341,
+        "poet_name_ko": "김극기",
+        "title_ko": "李花 此咏秋日李花",
+        "title_zh": "李花 此咏秋日李花",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48882,
+        "poet_id": 3341,
+        "poet_name_ko": "김극기",
+        "title_ko": "金克己詩",
+        "title_zh": "金克己詩",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48883,
+        "poet_id": 3341,
+        "poet_name_ko": "김극기",
+        "title_ko": "祓禊",
+        "title_zh": "祓禊",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48896,
+        "poet_id": 3341,
+        "poet_name_ko": "김극기",
+        "title_ko": "金克已詩",
+        "title_zh": "金克已詩",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48912,
+        "poet_id": 3341,
+        "poet_name_ko": "김극기",
+        "title_ko": "朱巖寺持麥石",
+        "title_zh": "朱巖寺持麥石",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48475,
+        "poet_id": 3472,
+        "poet_name_ko": "정서",
+        "title_ko": "題墨竹後",
+        "title_zh": "題墨竹後",
+        "is_notable": false,
+        "quality": "opus-subagent-v2"
+      },
+      {
+        "id": 48492,
+        "poet_id": 3472,
+        "poet_name_ko": "정서",
+        "title_ko": "鄭瓜亭",
+        "title_zh": "鄭瓜亭",
+        "is_notable": false,
+        "quality": "opus-subagent-v2"
+      },
+      {
+        "id": 48478,
+        "poet_id": 3473,
+        "poet_name_ko": "임춘",
+        "title_ko": "留別金璿",
+        "title_zh": "留別金璿",
+        "is_notable": false,
+        "quality": "opus-subagent-v2"
+      },
+      {
+        "id": 48479,
+        "poet_id": 3473,
+        "poet_name_ko": "임춘",
+        "title_ko": "茶店晝睡",
+        "title_zh": "茶店晝睡",
+        "is_notable": false,
+        "quality": "opus-subagent-v2"
+      }
+    ],
+    "goryeo-mal-joseon-cho": [
+      {
+        "id": 48795,
+        "poet_id": 3344,
+        "poet_name_ko": "이제현",
+        "title_ko": "小樂府",
+        "title_zh": "小樂府",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48796,
+        "poet_id": 3344,
+        "poet_name_ko": "이제현",
+        "title_ko": "題長安逆旅",
+        "title_zh": "題長安逆旅",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48797,
+        "poet_id": 3344,
+        "poet_name_ko": "이제현",
+        "title_ko": "寄題白花禪院觀空樓次韻",
+        "title_zh": "寄題白花禪院觀空樓次韻",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48907,
+        "poet_id": 3344,
+        "poet_name_ko": "이제현",
+        "title_ko": "李益齋詩",
+        "title_zh": "李益齋詩",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48465,
+        "poet_id": 3346,
+        "poet_name_ko": "이색",
+        "title_ko": "浮碧樓",
+        "title_zh": "浮碧樓",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48466,
+        "poet_id": 3346,
+        "poet_name_ko": "이색",
+        "title_ko": "歲暮",
+        "title_zh": "歲暮",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48467,
+        "poet_id": 3346,
+        "poet_name_ko": "이색",
+        "title_ko": "渡鴨綠",
+        "title_zh": "渡鴨綠",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48468,
+        "poet_id": 3346,
+        "poet_name_ko": "이색",
+        "title_ko": "送申碩甫歸寧海府",
+        "title_zh": "送申碩甫歸寧海府",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48469,
+        "poet_id": 3346,
+        "poet_name_ko": "이색",
+        "title_ko": "牧牛吟",
+        "title_zh": "牧牛吟",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 47762,
+        "poet_id": 3347,
+        "poet_name_ko": "정몽주",
+        "title_ko": "蓬萊驛。示韓書狀。",
+        "title_zh": "蓬萊驛。示韓書狀。",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 47763,
+        "poet_id": 3347,
+        "poet_name_ko": "정몽주",
+        "title_ko": "龍山驛",
+        "title_zh": "龍山驛",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 47764,
+        "poet_id": 3347,
+        "poet_name_ko": "정몽주",
+        "title_ko": "黃山驛路上",
+        "title_zh": "黃山驛路上",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 47765,
+        "poet_id": 3347,
+        "poet_name_ko": "정몽주",
+        "title_ko": "書諸橋驛壁上",
+        "title_zh": "書諸橋驛壁上",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 47766,
+        "poet_id": 3347,
+        "poet_name_ko": "정몽주",
+        "title_ko": "萊州海神廟",
+        "title_zh": "萊州海神廟",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48227,
+        "poet_id": 3350,
+        "poet_name_ko": "정도전",
+        "title_ko": "亂後還松京",
+        "title_zh": "亂後還松京",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48228,
+        "poet_id": 3350,
+        "poet_name_ko": "정도전",
+        "title_ko": "出城",
+        "title_zh": "出城",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48229,
+        "poet_id": 3350,
+        "poet_name_ko": "정도전",
+        "title_ko": "訪李佐郞",
+        "title_zh": "訪李佐郞",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48230,
+        "poet_id": 3350,
+        "poet_name_ko": "정도전",
+        "title_ko": "雨中訪友",
+        "title_zh": "雨中訪友",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48231,
+        "poet_id": 3350,
+        "poet_name_ko": "정도전",
+        "title_ko": "觀物齋",
+        "title_zh": "觀物齋",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 47899,
+        "poet_id": 3351,
+        "poet_name_ko": "권근",
+        "title_ko": "王京作古",
+        "title_zh": "王京作古",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 47900,
+        "poet_id": 3351,
+        "poet_name_ko": "권근",
+        "title_ko": "李氏異居",
+        "title_zh": "李氏異居",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 47901,
+        "poet_id": 3351,
+        "poet_name_ko": "권근",
+        "title_ko": "出使",
+        "title_zh": "出使",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 47902,
+        "poet_id": 3351,
+        "poet_name_ko": "권근",
+        "title_ko": "奉朝鮮命至京",
+        "title_zh": "奉朝鮮命至京",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 47903,
+        "poet_id": 3351,
+        "poet_name_ko": "권근",
+        "title_ko": "道經西京",
+        "title_zh": "道經西京",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48482,
+        "poet_id": 3354,
+        "poet_name_ko": "길재",
+        "title_ko": "述志",
+        "title_zh": "述志",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48483,
+        "poet_id": 3354,
+        "poet_name_ko": "길재",
+        "title_ko": "泮宮偶吟",
+        "title_zh": "泮宮偶吟",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48484,
+        "poet_id": 3354,
+        "poet_name_ko": "길재",
+        "title_ko": "足夢中聯句",
+        "title_zh": "足夢中聯句",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48485,
+        "poet_id": 3354,
+        "poet_name_ko": "길재",
+        "title_ko": "閑居",
+        "title_zh": "閑居",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48486,
+        "poet_id": 3354,
+        "poet_name_ko": "길재",
+        "title_ko": "偶吟",
+        "title_zh": "偶吟",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48877,
+        "poet_id": 3355,
+        "poet_name_ko": "세종",
+        "title_ko": "龍飛御天歌 卷第一 第一章",
+        "title_zh": "龍飛御天歌 卷第一 第一章",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48544,
+        "poet_id": 3357,
+        "poet_name_ko": "월산대군",
+        "title_ko": "奉賡御製五言排律十韻",
+        "title_zh": "奉賡御製五言排律十韻",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48545,
+        "poet_id": 3357,
+        "poet_name_ko": "월산대군",
+        "title_ko": "進喜雨詩一首",
+        "title_zh": "進喜雨詩一首",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48546,
+        "poet_id": 3357,
+        "poet_name_ko": "월산대군",
+        "title_ko": "題畫蘭竹",
+        "title_zh": "題畫蘭竹",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48556,
+        "poet_id": 3357,
+        "poet_name_ko": "월산대군",
+        "title_ko": "奉賡御製秋懷",
+        "title_zh": "奉賡御製秋懷",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48557,
+        "poet_id": 3357,
+        "poet_name_ko": "월산대군",
+        "title_ko": "奉賡御製賜鷹出獵",
+        "title_zh": "奉賡御製賜鷹出獵",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 47995,
+        "poet_id": 3358,
+        "poet_name_ko": "김시습",
+        "title_ko": "訪友於三淸宮。適醮立冬。",
+        "title_zh": "訪友於三淸宮。適醮立冬。",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 47996,
+        "poet_id": 3358,
+        "poet_name_ko": "김시습",
+        "title_ko": "登三淸宮",
+        "title_zh": "登三淸宮",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 47997,
+        "poet_id": 3358,
+        "poet_name_ko": "김시습",
+        "title_ko": "夜宿祭署感懷",
+        "title_zh": "夜宿祭署感懷",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 47998,
+        "poet_id": 3358,
+        "poet_name_ko": "김시습",
+        "title_ko": "遊仙宮。贈柳別提。",
+        "title_zh": "遊仙宮。贈柳別提。",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 47999,
+        "poet_id": 3358,
+        "poet_name_ko": "김시습",
+        "title_ko": "贈道士",
+        "title_zh": "贈道士",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48829,
+        "poet_id": 3359,
+        "poet_name_ko": "서거정",
+        "title_ko": "松都懷古",
+        "title_zh": "松都懷古",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48830,
+        "poet_id": 3359,
+        "poet_name_ko": "서거정",
+        "title_ko": "田家書事 其一",
+        "title_zh": "田家書事 其一",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48831,
+        "poet_id": 3359,
+        "poet_name_ko": "서거정",
+        "title_ko": "田家書事 其二",
+        "title_zh": "田家書事 其二",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48832,
+        "poet_id": 3359,
+        "poet_name_ko": "서거정",
+        "title_ko": "早朝",
+        "title_zh": "早朝",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48833,
+        "poet_id": 3359,
+        "poet_name_ko": "서거정",
+        "title_ko": "春日卽事",
+        "title_zh": "春日卽事",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48183,
+        "poet_id": 3362,
+        "poet_name_ko": "성삼문",
+        "title_ko": "題卞春亭母夫人賜宴詩卷",
+        "title_zh": "題卞春亭母夫人賜宴詩卷",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48184,
+        "poet_id": 3362,
+        "poet_name_ko": "성삼문",
+        "title_ko": "贈金敎官",
+        "title_zh": "贈金敎官",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48185,
+        "poet_id": 3362,
+        "poet_name_ko": "성삼문",
+        "title_ko": "賜暇酬唱",
+        "title_zh": "賜暇酬唱",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48186,
+        "poet_id": 3362,
+        "poet_name_ko": "성삼문",
+        "title_ko": "三角山聯句",
+        "title_zh": "三角山聯句",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48187,
+        "poet_id": 3362,
+        "poet_name_ko": "성삼문",
+        "title_ko": "高山放石聯句",
+        "title_zh": "高山放石聯句",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      }
+    ],
+    "joseon-hu": [
+      {
+        "id": 48077,
+        "poet_id": 3365,
+        "poet_name_ko": "김창흡",
+        "title_ko": "石室書院",
+        "title_zh": "石室書院",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48078,
+        "poet_id": 3365,
+        "poet_name_ko": "김창흡",
+        "title_ko": "四友堂夜會。呼韻共賦。",
+        "title_zh": "四友堂夜會。呼韻共賦。",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48079,
+        "poet_id": 3365,
+        "poet_name_ko": "김창흡",
+        "title_ko": "自石郊騎牛向檗溪",
+        "title_zh": "自石郊騎牛向檗溪",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48080,
+        "poet_id": 3365,
+        "poet_name_ko": "김창흡",
+        "title_ko": "風雪閉戶",
+        "title_zh": "風雪閉戶",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48081,
+        "poet_id": 3365,
+        "poet_name_ko": "김창흡",
+        "title_ko": "沁州洗心齋。得池字。",
+        "title_zh": "沁州洗心齋。得池字。",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48431,
+        "poet_id": 3389,
+        "poet_name_ko": "윤선도",
+        "title_ko": "自廻舟",
+        "title_zh": "自廻舟",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48432,
+        "poet_id": 3389,
+        "poet_name_ko": "윤선도",
+        "title_ko": "道中",
+        "title_zh": "道中",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48433,
+        "poet_id": 3389,
+        "poet_name_ko": "윤선도",
+        "title_ko": "往途中偶吟",
+        "title_zh": "往途中偶吟",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48434,
+        "poet_id": 3389,
+        "poet_name_ko": "윤선도",
+        "title_ko": "閑居春日卽事",
+        "title_zh": "閑居春日卽事",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48435,
+        "poet_id": 3389,
+        "poet_name_ko": "윤선도",
+        "title_ko": "代遊寺寄城中友生",
+        "title_zh": "代遊寺寄城中友生",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48407,
+        "poet_id": 3391,
+        "poet_name_ko": "장유",
+        "title_ko": "感興",
+        "title_zh": "感興",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48408,
+        "poet_id": 3391,
+        "poet_name_ko": "장유",
+        "title_ko": "山寺與趙金二友有約不至",
+        "title_zh": "山寺與趙金二友有約不至",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48409,
+        "poet_id": 3391,
+        "poet_name_ko": "장유",
+        "title_ko": "寶劍",
+        "title_zh": "寶劍",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48410,
+        "poet_id": 3391,
+        "poet_name_ko": "장유",
+        "title_ko": "芙蓉",
+        "title_zh": "芙蓉",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48411,
+        "poet_id": 3391,
+        "poet_name_ko": "장유",
+        "title_ko": "哭金而好",
+        "title_zh": "哭金而好",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48115,
+        "poet_id": 3392,
+        "poet_name_ko": "신흠",
+        "title_ko": "東飛伯勞西飛燕歌前稿",
+        "title_zh": "東飛伯勞西飛燕歌前稿",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48116,
+        "poet_id": 3392,
+        "poet_name_ko": "신흠",
+        "title_ko": "獨不見",
+        "title_zh": "獨不見",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48117,
+        "poet_id": 3392,
+        "poet_name_ko": "신흠",
+        "title_ko": "艶曲二首",
+        "title_zh": "艶曲二首",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48118,
+        "poet_id": 3392,
+        "poet_name_ko": "신흠",
+        "title_ko": "齊梁體",
+        "title_zh": "齊梁體",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48119,
+        "poet_id": 3392,
+        "poet_name_ko": "신흠",
+        "title_ko": "著作謠",
+        "title_zh": "著作謠",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48868,
+        "poet_id": 3400,
+        "poet_name_ko": "이덕무",
+        "title_ko": "讀莊",
+        "title_zh": "讀莊",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48869,
+        "poet_id": 3400,
+        "poet_name_ko": "이덕무",
+        "title_ko": "論詩",
+        "title_zh": "論詩",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48870,
+        "poet_id": 3400,
+        "poet_name_ko": "이덕무",
+        "title_ko": "紅蜻蜓戱影",
+        "title_zh": "紅蜻蜓戱影",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48871,
+        "poet_id": 3400,
+        "poet_name_ko": "이덕무",
+        "title_ko": "觀軒盆竹",
+        "title_zh": "觀軒盆竹",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48872,
+        "poet_id": 3400,
+        "poet_name_ko": "이덕무",
+        "title_ko": "秋雁",
+        "title_zh": "秋雁",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48514,
+        "poet_id": 3403,
+        "poet_name_ko": "정약용",
+        "title_ko": "耽津村謠 其一",
+        "title_zh": "耽津村謠 其一",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48515,
+        "poet_id": 3403,
+        "poet_name_ko": "정약용",
+        "title_ko": "耽津村謠 其二",
+        "title_zh": "耽津村謠 其二",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48516,
+        "poet_id": 3403,
+        "poet_name_ko": "정약용",
+        "title_ko": "耽津村謠 其三",
+        "title_zh": "耽津村謠 其三",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48517,
+        "poet_id": 3403,
+        "poet_name_ko": "정약용",
+        "title_ko": "耽津村謠 其四",
+        "title_zh": "耽津村謠 其四",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48518,
+        "poet_id": 3403,
+        "poet_name_ko": "정약용",
+        "title_ko": "耽津村謠 其五",
+        "title_zh": "耽津村謠 其五",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48373,
+        "poet_id": 3404,
+        "poet_name_ko": "김려",
+        "title_ko": "兩後觀園丁種蔬。作詩示兒曹誦。",
+        "title_zh": "兩後觀園丁種蔬。作詩示兒曹誦。",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48374,
+        "poet_id": 3404,
+        "poet_name_ko": "김려",
+        "title_ko": "九月二十一日。兄弟陂觀䱷示季良。",
+        "title_zh": "九月二十一日。兄弟陂觀䱷示季良。",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48375,
+        "poet_id": 3404,
+        "poet_name_ko": "김려",
+        "title_ko": "西園散步。往視犀林精舍。遙示述懷之作。",
+        "title_zh": "西園散步。往視犀林精舍。遙示述懷之作。",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48376,
+        "poet_id": 3404,
+        "poet_name_ko": "김려",
+        "title_ko": "孟園寒望。懷李徵君。",
+        "title_zh": "孟園寒望。懷李徵君。",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48377,
+        "poet_id": 3404,
+        "poet_name_ko": "김려",
+        "title_ko": "秋晩。別許處士恪。兼示。",
+        "title_zh": "秋晩。別許處士恪。兼示。",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 47874,
+        "poet_id": 3405,
+        "poet_name_ko": "김병연",
+        "title_ko": "嘲僧儒",
+        "title_zh": "嘲僧儒",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 47875,
+        "poet_id": 3405,
+        "poet_name_ko": "김병연",
+        "title_ko": "蚤",
+        "title_zh": "蚤",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 47876,
+        "poet_id": 3405,
+        "poet_name_ko": "김병연",
+        "title_ko": "步至華楊洞歌",
+        "title_zh": "步至華楊洞歌",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 47877,
+        "poet_id": 3405,
+        "poet_name_ko": "김병연",
+        "title_ko": "論鄭嘉山忠節死 嘆金益淳罪通于天",
+        "title_zh": "論鄭嘉山忠節死 嘆金益淳罪通于天",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 47878,
+        "poet_id": 3408,
+        "poet_name_ko": "정조",
+        "title_ko": "贐原任直提學鄭民始出按關北",
+        "title_zh": "贐原任直提學鄭民始出按關北",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      }
+    ],
+    "joseon-jung": [
+      {
+        "id": 48329,
+        "poet_id": 3326,
+        "poet_name_ko": "최경창",
+        "title_ko": "白苧辭",
+        "title_zh": "白苧辭",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48330,
+        "poet_id": 3326,
+        "poet_name_ko": "최경창",
+        "title_ko": "三淸洞口占",
+        "title_zh": "三淸洞口占",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48331,
+        "poet_id": 3326,
+        "poet_name_ko": "최경창",
+        "title_ko": "送尹子昇之郡海西",
+        "title_zh": "送尹子昇之郡海西",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48332,
+        "poet_id": 3326,
+        "poet_name_ko": "최경창",
+        "title_ko": "奉恩寺僧軸",
+        "title_zh": "奉恩寺僧軸",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48333,
+        "poet_id": 3326,
+        "poet_name_ko": "최경창",
+        "title_ko": "乙卯亂後",
+        "title_zh": "乙卯亂後",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 47923,
+        "poet_id": 3366,
+        "poet_name_ko": "조식",
+        "title_ko": "書釼柄",
+        "title_zh": "書釼柄",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 47924,
+        "poet_id": 3366,
+        "poet_name_ko": "조식",
+        "title_ko": "織女巖",
+        "title_zh": "織女巖",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 47925,
+        "poet_id": 3366,
+        "poet_name_ko": "조식",
+        "title_ko": "次觀水樓韻",
+        "title_zh": "次觀水樓韻",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 47926,
+        "poet_id": 3366,
+        "poet_name_ko": "조식",
+        "title_ko": "贈吳學錄健上京字子强",
+        "title_zh": "贈吳學錄健上京字子强",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 47927,
+        "poet_id": 3366,
+        "poet_name_ko": "조식",
+        "title_ko": "別敬溫師",
+        "title_zh": "別敬溫師",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48840,
+        "poet_id": 3372,
+        "poet_name_ko": "이이",
+        "title_ko": "花石亭",
+        "title_zh": "花石亭",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48841,
+        "poet_id": 3372,
+        "poet_name_ko": "이이",
+        "title_ko": "偶興 其一",
+        "title_zh": "偶興 其一",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48842,
+        "poet_id": 3372,
+        "poet_name_ko": "이이",
+        "title_ko": "偶興 其二",
+        "title_zh": "偶興 其二",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48843,
+        "poet_id": 3372,
+        "poet_name_ko": "이이",
+        "title_ko": "望寶蓋山",
+        "title_zh": "望寶蓋山",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48844,
+        "poet_id": 3372,
+        "poet_name_ko": "이이",
+        "title_ko": "山中",
+        "title_zh": "山中",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48095,
+        "poet_id": 3373,
+        "poet_name_ko": "송순",
+        "title_ko": "次李太白愁陽春賦月課竝序",
+        "title_zh": "次李太白愁陽春賦月課竝序",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48096,
+        "poet_id": 3373,
+        "poet_name_ko": "송순",
+        "title_ko": "庚辰仲秋。登無等山。口號錄呈石軒先生。朴公祐字昌邦。訥齋先生之弟。後改號六峯。",
+        "title_zh": "庚辰仲秋。登無等山。口號錄呈石軒先生。朴公祐字昌邦。訥齋先生之弟。後改號六峯。",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48097,
+        "poet_id": 3373,
+        "poet_name_ko": "송순",
+        "title_ko": "山夜詠懷",
+        "title_zh": "山夜詠懷",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48098,
+        "poet_id": 3373,
+        "poet_name_ko": "송순",
+        "title_ko": "金訓導松命挽二首",
+        "title_zh": "金訓導松命挽二首",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48099,
+        "poet_id": 3373,
+        "poet_name_ko": "송순",
+        "title_ko": "月山李上舍允溫移菊請酌",
+        "title_zh": "月山李上舍允溫移菊請酌",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 47971,
+        "poet_id": 3374,
+        "poet_name_ko": "정철",
+        "title_ko": "秋日作",
+        "title_zh": "秋日作",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 47972,
+        "poet_id": 3374,
+        "poet_name_ko": "정철",
+        "title_ko": "平湖堂二首",
+        "title_zh": "平湖堂二首",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 47973,
+        "poet_id": 3374,
+        "poet_name_ko": "정철",
+        "title_ko": "別退陶先生",
+        "title_zh": "別退陶先生",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 47974,
+        "poet_id": 3374,
+        "poet_name_ko": "정철",
+        "title_ko": "祝堯樓",
+        "title_zh": "祝堯樓",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 47975,
+        "poet_id": 3374,
+        "poet_name_ko": "정철",
+        "title_ko": "冠嶽晴雲",
+        "title_zh": "冠嶽晴雲",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48159,
+        "poet_id": 3375,
+        "poet_name_ko": "기대승",
+        "title_ko": "庚戌二月二十五日泛舟",
+        "title_zh": "庚戌二月二十五日泛舟",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48160,
+        "poet_id": 3375,
+        "poet_name_ko": "기대승",
+        "title_ko": "向兩林書堂路中得之",
+        "title_zh": "向兩林書堂路中得之",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48161,
+        "poet_id": 3375,
+        "poet_name_ko": "기대승",
+        "title_ko": "小軒",
+        "title_zh": "小軒",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48162,
+        "poet_id": 3375,
+        "poet_name_ko": "기대승",
+        "title_ko": "梅花數枝開亦最晩。吟成長句用破幽寂。",
+        "title_zh": "梅花數枝開亦最晩。吟成長句用破幽寂。",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48163,
+        "poet_id": 3375,
+        "poet_name_ko": "기대승",
+        "title_ko": "漫興",
+        "title_zh": "漫興",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48281,
+        "poet_id": 3376,
+        "poet_name_ko": "고경명",
+        "title_ko": "夜坐書懷",
+        "title_zh": "夜坐書懷",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48282,
+        "poet_id": 3376,
+        "poet_name_ko": "고경명",
+        "title_ko": "讀留侯傳",
+        "title_zh": "讀留侯傳",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48283,
+        "poet_id": 3376,
+        "poet_name_ko": "고경명",
+        "title_ko": "觸懷吟",
+        "title_zh": "觸懷吟",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48284,
+        "poet_id": 3376,
+        "poet_name_ko": "고경명",
+        "title_ko": "理圃地",
+        "title_zh": "理圃地",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48285,
+        "poet_id": 3376,
+        "poet_name_ko": "고경명",
+        "title_ko": "上巳。聞諸友爲曲水之會有作。",
+        "title_zh": "上巳。聞諸友爲曲水之會有作。",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48305,
+        "poet_id": 3377,
+        "poet_name_ko": "백광훈",
+        "title_ko": "弘慶寺",
+        "title_zh": "弘慶寺",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48306,
+        "poet_id": 3377,
+        "poet_name_ko": "백광훈",
+        "title_ko": "陵霄臺下。聞笛。",
+        "title_zh": "陵霄臺下。聞笛。",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48307,
+        "poet_id": 3377,
+        "poet_name_ko": "백광훈",
+        "title_ko": "新居。得石井。",
+        "title_zh": "新居。得石井。",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48308,
+        "poet_id": 3377,
+        "poet_name_ko": "백광훈",
+        "title_ko": "題楊通判應遇靑溪障",
+        "title_zh": "題楊通判應遇靑溪障",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      },
+      {
+        "id": 48309,
+        "poet_id": 3377,
+        "poet_name_ko": "백광훈",
+        "title_ko": "贈思峻上人",
+        "title_zh": "贈思峻上人",
+        "is_notable": false,
+        "quality": "opus-subagent"
+      }
+    ],
+    "qian-han": [],
+    "wei-jin": [],
+    "song": [],
+    "yuan": [],
+    "ming": [],
+    "qing": []
+  }
+}

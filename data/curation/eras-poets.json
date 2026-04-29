@@ -1,0 +1,1479 @@
+{
+  "generated_at": "2026-04-29T09:29:56.901Z",
+  "source": "jds@jinas:5433",
+  "description": "Phase 1 큐레이션. 시대별 시인 ID 풀 (poem_count 상위 N명).",
+  "targets": {
+    "ancient-silla": {
+      "poets": 13,
+      "poems": 30,
+      "daily": 12,
+      "per_poet_cap": 12
+    },
+    "goryeo-early-mid": {
+      "poets": 13,
+      "poems": 30,
+      "daily": 8,
+      "per_poet_cap": 6
+    },
+    "goryeo-mal-joseon-cho": {
+      "poets": 25,
+      "poems": 50,
+      "daily": 28,
+      "per_poet_cap": 5
+    },
+    "joseon-jung": {
+      "poets": 20,
+      "poems": 40,
+      "daily": 22,
+      "per_poet_cap": 5
+    },
+    "joseon-hu": {
+      "poets": 20,
+      "poems": 40,
+      "daily": 23,
+      "per_poet_cap": 5
+    },
+    "geundae": {
+      "poets": 7,
+      "poems": 7,
+      "daily": 7,
+      "per_poet_cap": 7
+    },
+    "chu-tang": {
+      "poets": 11,
+      "poems": 35,
+      "daily": 25,
+      "per_poet_cap": 5
+    },
+    "sheng-tang": {
+      "poets": 20,
+      "poems": 60,
+      "daily": 60,
+      "per_poet_cap": 5
+    },
+    "zhong-tang": {
+      "poets": 22,
+      "poems": 70,
+      "daily": 65,
+      "per_poet_cap": 5
+    },
+    "wan-tang": {
+      "poets": 22,
+      "poems": 60,
+      "daily": 50,
+      "per_poet_cap": 5
+    }
+  },
+  "eras": {
+    "ancient-silla": [
+      {
+        "id": 3325,
+        "name_ko": "최치원",
+        "name_zh": "崔致遠",
+        "life": null,
+        "slug": "choe-chiwon",
+        "poem_count": 40
+      },
+      {
+        "id": 3320,
+        "name_ko": "충담사",
+        "name_zh": "忠談師",
+        "life": null,
+        "slug": "chungdamsa",
+        "poem_count": 2
+      },
+      {
+        "id": 3319,
+        "name_ko": "월명사",
+        "name_zh": "月明師",
+        "life": null,
+        "slug": "wolmyeongsa",
+        "poem_count": 2
+      },
+      {
+        "id": 3315,
+        "name_ko": "유리왕",
+        "name_zh": "琉璃王",
+        "life": null,
+        "slug": "yuri-wang",
+        "poem_count": 1
+      },
+      {
+        "id": 3317,
+        "name_ko": "서동",
+        "name_zh": "薯童",
+        "life": null,
+        "slug": "seodong",
+        "poem_count": 1
+      },
+      {
+        "id": 3324,
+        "name_ko": "처용",
+        "name_zh": "處容",
+        "life": null,
+        "slug": "cheoyong",
+        "poem_count": 1
+      },
+      {
+        "id": 3316,
+        "name_ko": "을지문덕",
+        "name_zh": "乙支文德",
+        "life": null,
+        "slug": "eulji-mundeok",
+        "poem_count": 1
+      },
+      {
+        "id": 3321,
+        "name_ko": "영재",
+        "name_zh": "永才",
+        "life": null,
+        "slug": "yeongjae",
+        "poem_count": 1
+      },
+      {
+        "id": 3322,
+        "name_ko": "융천사",
+        "name_zh": "융천사",
+        "life": null,
+        "slug": "yungcheonsa",
+        "poem_count": 1
+      },
+      {
+        "id": 3474,
+        "name_ko": "박인범",
+        "name_zh": "朴仁範",
+        "life": null,
+        "slug": null,
+        "poem_count": 1
+      },
+      {
+        "id": 3483,
+        "name_ko": "최광유",
+        "name_zh": "崔匡裕",
+        "life": "?-?",
+        "slug": null,
+        "poem_count": 1
+      },
+      {
+        "id": 3467,
+        "name_ko": "신충",
+        "name_zh": "信忠",
+        "life": null,
+        "slug": "sin-chung",
+        "poem_count": 0
+      },
+      {
+        "id": 3318,
+        "name_ko": "설총",
+        "name_zh": "薛聰",
+        "life": null,
+        "slug": "seol-chong",
+        "poem_count": 0
+      }
+    ],
+    "geundae": [
+      {
+        "id": 3424,
+        "name_ko": "황현",
+        "name_zh": "黃玹",
+        "life": null,
+        "slug": "hwang-hyeon",
+        "poem_count": 7
+      },
+      {
+        "id": 3412,
+        "name_ko": "강위",
+        "name_zh": "姜瑋",
+        "life": "1820-1884",
+        "slug": "kang-wi",
+        "poem_count": 0
+      },
+      {
+        "id": 3345,
+        "name_ko": "이건창",
+        "name_zh": "李建昌",
+        "life": "1852-1898",
+        "slug": "yi-geonchang",
+        "poem_count": 0
+      },
+      {
+        "id": 3343,
+        "name_ko": "안중근",
+        "name_zh": "安重根",
+        "life": "1879-1910",
+        "slug": "an-junggeun",
+        "poem_count": 0
+      },
+      {
+        "id": 3332,
+        "name_ko": "정인보",
+        "name_zh": "鄭寅普",
+        "life": "1893-1950",
+        "slug": "jeong-inbo",
+        "poem_count": 0
+      },
+      {
+        "id": 3327,
+        "name_ko": "최송설당",
+        "name_zh": "崔松雪堂",
+        "life": null,
+        "slug": "choe-songseoldang",
+        "poem_count": 0
+      },
+      {
+        "id": 3423,
+        "name_ko": "김택영",
+        "name_zh": "金澤榮",
+        "life": null,
+        "slug": "kim-taekyeong",
+        "poem_count": 0
+      }
+    ],
+    "goryeo-early-mid": [
+      {
+        "id": 3335,
+        "name_ko": "정지상",
+        "name_zh": "鄭知常",
+        "life": null,
+        "slug": "jeong-jisang",
+        "poem_count": 14
+      },
+      {
+        "id": 3329,
+        "name_ko": "균여",
+        "name_zh": "均如",
+        "life": null,
+        "slug": "gyunyeo",
+        "poem_count": 11
+      },
+      {
+        "id": 3336,
+        "name_ko": "이규보",
+        "name_zh": "李奎報",
+        "life": null,
+        "slug": "yi-gyubo",
+        "poem_count": 7
+      },
+      {
+        "id": 3333,
+        "name_ko": "고려가요 무명씨",
+        "name_zh": "고려가요 무명씨",
+        "life": null,
+        "slug": "anonymous-goryeo-gayo",
+        "poem_count": 7
+      },
+      {
+        "id": 3341,
+        "name_ko": "김극기",
+        "name_zh": "金克己",
+        "life": null,
+        "slug": "kim-geukgi",
+        "poem_count": 6
+      },
+      {
+        "id": 3334,
+        "name_ko": "김부식",
+        "name_zh": "金富軾",
+        "life": null,
+        "slug": "kim-busik",
+        "poem_count": 3
+      },
+      {
+        "id": 3337,
+        "name_ko": "이인로",
+        "name_zh": "李仁老",
+        "life": null,
+        "slug": "yi-inro",
+        "poem_count": 3
+      },
+      {
+        "id": 3472,
+        "name_ko": "정서",
+        "name_zh": "鄭敍",
+        "life": null,
+        "slug": null,
+        "poem_count": 2
+      },
+      {
+        "id": 3473,
+        "name_ko": "임춘",
+        "name_zh": "林椿",
+        "life": null,
+        "slug": null,
+        "poem_count": 2
+      },
+      {
+        "id": 3481,
+        "name_ko": "이공승",
+        "name_zh": "李公升",
+        "life": "1099-1183",
+        "slug": null,
+        "poem_count": 1
+      },
+      {
+        "id": 3330,
+        "name_ko": "박인량",
+        "name_zh": "朴寅亮",
+        "life": null,
+        "slug": "bak-inryang",
+        "poem_count": 1
+      },
+      {
+        "id": 3339,
+        "name_ko": "오세재",
+        "name_zh": "吳世才",
+        "life": null,
+        "slug": "o-sejae",
+        "poem_count": 1
+      },
+      {
+        "id": 3331,
+        "name_ko": "예종",
+        "name_zh": "睿宗",
+        "life": null,
+        "slug": "yejong-goryeo",
+        "poem_count": 0
+      }
+    ],
+    "goryeo-mal-joseon-cho": [
+      {
+        "id": 3468,
+        "name_ko": "이숭인",
+        "name_zh": "李崇仁",
+        "life": "1347-1392",
+        "slug": null,
+        "poem_count": 252
+      },
+      {
+        "id": 3357,
+        "name_ko": "월산대군",
+        "name_zh": "月山大君",
+        "life": null,
+        "slug": "wolsan-daegun",
+        "poem_count": 238
+      },
+      {
+        "id": 3469,
+        "name_ko": "안축",
+        "name_zh": "安軸",
+        "life": "1287-1348",
+        "slug": null,
+        "poem_count": 128
+      },
+      {
+        "id": 3347,
+        "name_ko": "정몽주",
+        "name_zh": "鄭夢周",
+        "life": "1337-1392",
+        "slug": "jeong-mongju",
+        "poem_count": 114
+      },
+      {
+        "id": 3350,
+        "name_ko": "정도전",
+        "name_zh": "鄭道傳",
+        "life": "1342-1398",
+        "slug": "jeong-dojeon",
+        "poem_count": 33
+      },
+      {
+        "id": 3358,
+        "name_ko": "김시습",
+        "name_zh": "金時習",
+        "life": null,
+        "slug": "kim-siseup",
+        "poem_count": 26
+      },
+      {
+        "id": 3351,
+        "name_ko": "권근",
+        "name_zh": "權近",
+        "life": "1352-1409",
+        "slug": "gwon-geun",
+        "poem_count": 24
+      },
+      {
+        "id": 3471,
+        "name_ko": "신숙주",
+        "name_zh": "申叔舟",
+        "life": "1417-1475",
+        "slug": null,
+        "poem_count": 24
+      },
+      {
+        "id": 3476,
+        "name_ko": "이행",
+        "name_zh": "李荇",
+        "life": "1478-1534",
+        "slug": null,
+        "poem_count": 24
+      },
+      {
+        "id": 3367,
+        "name_ko": "이현보",
+        "name_zh": "李賢輔",
+        "life": "1467-1555",
+        "slug": "yi-hyeonbo",
+        "poem_count": 20
+      },
+      {
+        "id": 3362,
+        "name_ko": "성삼문",
+        "name_zh": "成三問",
+        "life": null,
+        "slug": "seong-sammun",
+        "poem_count": 20
+      },
+      {
+        "id": 3359,
+        "name_ko": "서거정",
+        "name_zh": "徐居正",
+        "life": null,
+        "slug": "seo-geojeong",
+        "poem_count": 16
+      },
+      {
+        "id": 3480,
+        "name_ko": "김일손",
+        "name_zh": "金馹孫",
+        "life": "1464-1498",
+        "slug": null,
+        "poem_count": 10
+      },
+      {
+        "id": 3364,
+        "name_ko": "김종직",
+        "name_zh": "金宗直",
+        "life": null,
+        "slug": "kim-jongjik",
+        "poem_count": 10
+      },
+      {
+        "id": 3354,
+        "name_ko": "길재",
+        "name_zh": "吉再",
+        "life": null,
+        "slug": "gil-jae",
+        "poem_count": 8
+      },
+      {
+        "id": 3346,
+        "name_ko": "이색",
+        "name_zh": "李穡",
+        "life": "1328-1396",
+        "slug": "yi-saek",
+        "poem_count": 6
+      },
+      {
+        "id": 3344,
+        "name_ko": "이제현",
+        "name_zh": "李齊賢",
+        "life": "1287-1367",
+        "slug": "yi-jehyeon",
+        "poem_count": 4
+      },
+      {
+        "id": 3443,
+        "name_ko": "이달충",
+        "name_zh": "李達衷",
+        "life": "1309-1385",
+        "slug": "yi-dalchung",
+        "poem_count": 2
+      },
+      {
+        "id": 3457,
+        "name_ko": "정추",
+        "name_zh": "鄭樞",
+        "life": "1333-1382",
+        "slug": "jeong-chu",
+        "poem_count": 2
+      },
+      {
+        "id": 3486,
+        "name_ko": "장일",
+        "name_zh": "張鎰",
+        "life": "1207-1276",
+        "slug": null,
+        "poem_count": 1
+      },
+      {
+        "id": 3454,
+        "name_ko": "민사평",
+        "name_zh": "閔思平",
+        "life": "1295-1359",
+        "slug": "min-sapyeong",
+        "poem_count": 1
+      },
+      {
+        "id": 3475,
+        "name_ko": "이곡",
+        "name_zh": "李穀",
+        "life": "1298-1351",
+        "slug": null,
+        "poem_count": 1
+      },
+      {
+        "id": 3429,
+        "name_ko": "전록생",
+        "name_zh": "田祿生",
+        "life": "1318-1375",
+        "slug": "jeon-noksaeng",
+        "poem_count": 1
+      },
+      {
+        "id": 3445,
+        "name_ko": "김구용",
+        "name_zh": "金九容",
+        "life": "1338-1384",
+        "slug": "kim-guyong",
+        "poem_count": 1
+      },
+      {
+        "id": 3442,
+        "name_ko": "이첨",
+        "name_zh": "李詹",
+        "life": "1345-1405",
+        "slug": "yi-cheom",
+        "poem_count": 1
+      }
+    ],
+    "joseon-hu": [
+      {
+        "id": 3470,
+        "name_ko": "강정일당",
+        "name_zh": "姜靜一堂",
+        "life": "1772-1832",
+        "slug": null,
+        "poem_count": 24
+      },
+      {
+        "id": 3389,
+        "name_ko": "윤선도",
+        "name_zh": "尹善道",
+        "life": null,
+        "slug": "yun-seondo",
+        "poem_count": 24
+      },
+      {
+        "id": 3404,
+        "name_ko": "김려",
+        "name_zh": "金鑢",
+        "life": null,
+        "slug": "kim-ryeo",
+        "poem_count": 24
+      },
+      {
+        "id": 3391,
+        "name_ko": "장유",
+        "name_zh": "張維",
+        "life": null,
+        "slug": "jang-yu",
+        "poem_count": 24
+      },
+      {
+        "id": 3477,
+        "name_ko": "김창협",
+        "name_zh": "金昌協",
+        "life": "1651-1708",
+        "slug": null,
+        "poem_count": 22
+      },
+      {
+        "id": 3403,
+        "name_ko": "정약용",
+        "name_zh": "丁若鏞",
+        "life": null,
+        "slug": "jeong-yagyong",
+        "poem_count": 21
+      },
+      {
+        "id": 3392,
+        "name_ko": "신흠",
+        "name_zh": "申欽",
+        "life": null,
+        "slug": "shin-heum",
+        "poem_count": 20
+      },
+      {
+        "id": 3365,
+        "name_ko": "김창흡",
+        "name_zh": "金昌翕",
+        "life": "1653-1722",
+        "slug": "kim-changheup",
+        "poem_count": 18
+      },
+      {
+        "id": 3409,
+        "name_ko": "효명세자",
+        "name_zh": "孝明世子",
+        "life": null,
+        "slug": "hyomyeong-seja",
+        "poem_count": 16
+      },
+      {
+        "id": 3400,
+        "name_ko": "이덕무",
+        "name_zh": "李德懋",
+        "life": null,
+        "slug": "yi-deokmu",
+        "poem_count": 8
+      },
+      {
+        "id": 3416,
+        "name_ko": "삼의당 김씨",
+        "name_zh": "三宜堂金氏",
+        "life": null,
+        "slug": "sameuidang-kim",
+        "poem_count": 5
+      },
+      {
+        "id": 3408,
+        "name_ko": "정조",
+        "name_zh": "正祖",
+        "life": null,
+        "slug": "jeongjo",
+        "poem_count": 5
+      },
+      {
+        "id": 3418,
+        "name_ko": "김금원",
+        "name_zh": "金錦園",
+        "life": null,
+        "slug": "kim-geumwon",
+        "poem_count": 5
+      },
+      {
+        "id": 3419,
+        "name_ko": "김부용",
+        "name_zh": "金芙蓉",
+        "life": null,
+        "slug": "kim-buyong",
+        "poem_count": 4
+      },
+      {
+        "id": 3405,
+        "name_ko": "김병연",
+        "name_zh": "金炳淵",
+        "life": null,
+        "slug": "kim-byeongyeon",
+        "poem_count": 4
+      },
+      {
+        "id": 3338,
+        "name_ko": "임윤지당",
+        "name_zh": "任允摯堂",
+        "life": "1721-1793",
+        "slug": "im-yunjidang",
+        "poem_count": 0
+      },
+      {
+        "id": 3348,
+        "name_ko": "이언진",
+        "name_zh": "李彦瑱",
+        "life": "1740-1766",
+        "slug": "yi-eonjin",
+        "poem_count": 0
+      },
+      {
+        "id": 3328,
+        "name_ko": "박제가",
+        "name_zh": "朴齊家",
+        "life": "1750-1805",
+        "slug": "park-jega",
+        "poem_count": 0
+      },
+      {
+        "id": 3387,
+        "name_ko": "홍대용",
+        "name_zh": "洪大容",
+        "life": null,
+        "slug": "hong-daeyong",
+        "poem_count": 0
+      },
+      {
+        "id": 3414,
+        "name_ko": "매창",
+        "name_zh": "梅窓",
+        "life": null,
+        "slug": "maechang",
+        "poem_count": 0
+      }
+    ],
+    "joseon-jung": [
+      {
+        "id": 3374,
+        "name_ko": "정철",
+        "name_zh": "鄭澈",
+        "life": null,
+        "slug": "jeong-cheol",
+        "poem_count": 29
+      },
+      {
+        "id": 3380,
+        "name_ko": "권필",
+        "name_zh": "權韠",
+        "life": null,
+        "slug": "gwon-pil",
+        "poem_count": 26
+      },
+      {
+        "id": 3366,
+        "name_ko": "조식",
+        "name_zh": "曺植",
+        "life": "1501-1572",
+        "slug": "jo-sik",
+        "poem_count": 24
+      },
+      {
+        "id": 3326,
+        "name_ko": "최경창",
+        "name_zh": "崔慶昌",
+        "life": "1539-1583",
+        "slug": "choe-gyeongchang",
+        "poem_count": 24
+      },
+      {
+        "id": 3479,
+        "name_ko": "김상헌",
+        "name_zh": "金尙憲",
+        "life": "1570-1652",
+        "slug": null,
+        "poem_count": 24
+      },
+      {
+        "id": 3376,
+        "name_ko": "고경명",
+        "name_zh": "高敬命",
+        "life": null,
+        "slug": "go-gyeongmyeong",
+        "poem_count": 24
+      },
+      {
+        "id": 3377,
+        "name_ko": "백광훈",
+        "name_zh": "白光勳",
+        "life": null,
+        "slug": "baek-gwanghun",
+        "poem_count": 24
+      },
+      {
+        "id": 3375,
+        "name_ko": "기대승",
+        "name_zh": "奇大升",
+        "life": null,
+        "slug": "gi-daeseung",
+        "poem_count": 24
+      },
+      {
+        "id": 3478,
+        "name_ko": "허봉",
+        "name_zh": "許篈",
+        "life": "1551-1588",
+        "slug": null,
+        "poem_count": 20
+      },
+      {
+        "id": 3373,
+        "name_ko": "송순",
+        "name_zh": "宋純",
+        "life": null,
+        "slug": "song-sun",
+        "poem_count": 20
+      },
+      {
+        "id": 3382,
+        "name_ko": "허난설헌",
+        "name_zh": "許蘭雪軒",
+        "life": null,
+        "slug": "heo-nanseolheon",
+        "poem_count": 14
+      },
+      {
+        "id": 3372,
+        "name_ko": "이이",
+        "name_zh": "李珥",
+        "life": null,
+        "slug": "yi-i",
+        "poem_count": 10
+      },
+      {
+        "id": 3379,
+        "name_ko": "이달",
+        "name_zh": "李達",
+        "life": null,
+        "slug": "yi-dal",
+        "poem_count": 10
+      },
+      {
+        "id": 3388,
+        "name_ko": "이옥봉",
+        "name_zh": "李玉峯",
+        "life": null,
+        "slug": "yi-okbong",
+        "poem_count": 6
+      },
+      {
+        "id": 3435,
+        "name_ko": "이안눌",
+        "name_zh": "李安訥",
+        "life": "1571-1637",
+        "slug": "yi-annul",
+        "poem_count": 3
+      },
+      {
+        "id": 3449,
+        "name_ko": "유성룡",
+        "name_zh": "柳成龍",
+        "life": "1542-1607",
+        "slug": "yu-seongryong",
+        "poem_count": 1
+      },
+      {
+        "id": 3451,
+        "name_ko": "장현광",
+        "name_zh": "張顯光",
+        "life": "1554-1637",
+        "slug": "jang-hyeongwang",
+        "poem_count": 1
+      },
+      {
+        "id": 3430,
+        "name_ko": "전식",
+        "name_zh": "全湜",
+        "life": "1563-1642",
+        "slug": "jeon-sik",
+        "poem_count": 1
+      },
+      {
+        "id": 3456,
+        "name_ko": "조경",
+        "name_zh": "趙絅",
+        "life": "1586-1669",
+        "slug": "jo-gyeong",
+        "poem_count": 1
+      },
+      {
+        "id": 3437,
+        "name_ko": "이민구",
+        "name_zh": "李敏求",
+        "life": "1589-1670",
+        "slug": "yi-mingu",
+        "poem_count": 1
+      }
+    ],
+    "chu-tang": [
+      {
+        "id": 232,
+        "name_ko": null,
+        "name_zh": "李嶠",
+        "life": null,
+        "slug": "li-jiao",
+        "poem_count": 208
+      },
+      {
+        "id": 73,
+        "name_ko": "송지문",
+        "name_zh": "宋之問",
+        "life": "?~712",
+        "slug": "song-zhi-wen",
+        "poem_count": 190
+      },
+      {
+        "id": 36,
+        "name_ko": "심전기",
+        "name_zh": "沈佺期",
+        "life": "656~714?",
+        "slug": "shen-quan-qi",
+        "poem_count": 172
+      },
+      {
+        "id": 34,
+        "name_ko": "진자앙",
+        "name_zh": "陳子昂",
+        "life": "661~702",
+        "slug": "chen-zi-ang",
+        "poem_count": 128
+      },
+      {
+        "id": 84,
+        "name_ko": "낙빈왕",
+        "name_zh": "駱賓王",
+        "life": "627~684?",
+        "slug": "luo-bin-wang",
+        "poem_count": 125
+      },
+      {
+        "id": 25,
+        "name_ko": null,
+        "name_zh": "盧照鄰",
+        "life": null,
+        "slug": "lu-zhao-lin",
+        "poem_count": 110
+      },
+      {
+        "id": 98,
+        "name_ko": "왕발",
+        "name_zh": "王勃",
+        "life": "649~676",
+        "slug": "wang-bo",
+        "poem_count": 87
+      },
+      {
+        "id": 233,
+        "name_ko": "두심언",
+        "name_zh": "杜審言",
+        "life": "645~708",
+        "slug": "du-shen-yan",
+        "poem_count": 39
+      },
+      {
+        "id": 229,
+        "name_ko": null,
+        "name_zh": "楊炯",
+        "life": null,
+        "slug": "yang-jiong",
+        "poem_count": 33
+      },
+      {
+        "id": 86,
+        "name_ko": null,
+        "name_zh": "上官儀",
+        "life": null,
+        "slug": "shang-guan-yi",
+        "poem_count": 20
+      },
+      {
+        "id": 1763,
+        "name_ko": null,
+        "name_zh": "武則天",
+        "life": null,
+        "slug": "wu-ze-tian",
+        "poem_count": 1
+      }
+    ],
+    "sheng-tang": [
+      {
+        "id": 39,
+        "name_ko": "두보",
+        "name_zh": "杜甫",
+        "life": "712~770",
+        "slug": "du-fu",
+        "poem_count": 1160
+      },
+      {
+        "id": 53,
+        "name_ko": "이백",
+        "name_zh": "李白",
+        "life": "701~762",
+        "slug": "li-bai",
+        "poem_count": 1033
+      },
+      {
+        "id": 495,
+        "name_ko": "잠삼",
+        "name_zh": "岑參",
+        "life": "715~770",
+        "slug": "cen-can",
+        "poem_count": 389
+      },
+      {
+        "id": 22,
+        "name_ko": "왕유",
+        "name_zh": "王維",
+        "life": "701~759",
+        "slug": "wang-wei",
+        "poem_count": 364
+      },
+      {
+        "id": 285,
+        "name_ko": null,
+        "name_zh": "張說",
+        "life": null,
+        "slug": "zhang-shuo",
+        "poem_count": 299
+      },
+      {
+        "id": 130,
+        "name_ko": "맹호연",
+        "name_zh": "孟浩然",
+        "life": "689~740",
+        "slug": "meng-hao-ran",
+        "poem_count": 269
+      },
+      {
+        "id": 40,
+        "name_ko": "황보염",
+        "name_zh": "皇甫冉",
+        "life": "717~770",
+        "slug": "huang-fu-ran",
+        "poem_count": 241
+      },
+      {
+        "id": 107,
+        "name_ko": "고적",
+        "name_zh": "高適",
+        "life": "700?~765",
+        "slug": "gao-shi",
+        "poem_count": 211
+      },
+      {
+        "id": 52,
+        "name_ko": "장구령",
+        "name_zh": "張九齡",
+        "life": "678~740",
+        "slug": "zhang-jiu-ling",
+        "poem_count": 193
+      },
+      {
+        "id": 37,
+        "name_ko": "왕창령",
+        "name_zh": "王昌齡",
+        "life": "689?~756",
+        "slug": "wang-chang-ling",
+        "poem_count": 181
+      },
+      {
+        "id": 110,
+        "name_ko": "이기",
+        "name_zh": "李頎",
+        "life": "690~751?",
+        "slug": "li-qi",
+        "poem_count": 127
+      },
+      {
+        "id": 557,
+        "name_ko": "원결",
+        "name_zh": "元結",
+        "life": "723~772",
+        "slug": "yuan-jie",
+        "poem_count": 110
+      },
+      {
+        "id": 60,
+        "name_ko": "최호",
+        "name_zh": "崔顥",
+        "life": "704?~754",
+        "slug": "cui-hao",
+        "poem_count": 53
+      },
+      {
+        "id": 82,
+        "name_ko": "상건",
+        "name_zh": "常建",
+        "life": "708~765?",
+        "slug": "chang-jian",
+        "poem_count": 49
+      },
+      {
+        "id": 469,
+        "name_ko": "조영",
+        "name_zh": "祖詠",
+        "life": "699~746?",
+        "slug": "zu-yong",
+        "poem_count": 36
+      },
+      {
+        "id": 66,
+        "name_ko": "류방평",
+        "name_zh": "劉方平",
+        "life": "생몰년 미상",
+        "slug": "liu-fang-ping",
+        "poem_count": 31
+      },
+      {
+        "id": 470,
+        "name_ko": "기무잠",
+        "name_zh": "綦毋潛",
+        "life": "692?~756?",
+        "slug": "qi-wu-qian",
+        "poem_count": 26
+      },
+      {
+        "id": 404,
+        "name_ko": "하지장",
+        "name_zh": "賀知章",
+        "life": "659~744",
+        "slug": "he-zhi-zhang",
+        "poem_count": 20
+      },
+      {
+        "id": 120,
+        "name_ko": "왕한",
+        "name_zh": "王翰",
+        "life": "생몰년 미상",
+        "slug": "wang-han",
+        "poem_count": 18
+      },
+      {
+        "id": 74,
+        "name_ko": "유신허",
+        "name_zh": "劉眘虛",
+        "life": "생몰년 미상",
+        "slug": "liu-shen-xu",
+        "poem_count": 18
+      }
+    ],
+    "wan-tang": [
+      {
+        "id": 2107,
+        "name_ko": null,
+        "name_zh": "齊己",
+        "life": null,
+        "slug": "qi-ji",
+        "poem_count": 695
+      },
+      {
+        "id": 79,
+        "name_ko": null,
+        "name_zh": "陸龜蒙",
+        "life": null,
+        "slug": "lu-gui-meng",
+        "poem_count": 618
+      },
+      {
+        "id": 77,
+        "name_ko": "이상은",
+        "name_zh": "李商隱",
+        "life": "813~858",
+        "slug": "li-shang-yin",
+        "poem_count": 536
+      },
+      {
+        "id": 132,
+        "name_ko": "두목",
+        "name_zh": "杜牧",
+        "life": "803~852?",
+        "slug": "du-mu",
+        "poem_count": 533
+      },
+      {
+        "id": 44,
+        "name_ko": null,
+        "name_zh": "貫休",
+        "life": null,
+        "slug": "guan-xiu",
+        "poem_count": 514
+      },
+      {
+        "id": 961,
+        "name_ko": "허혼",
+        "name_zh": "許渾",
+        "life": "?~858?",
+        "slug": "xu-hun",
+        "poem_count": 505
+      },
+      {
+        "id": 29,
+        "name_ko": null,
+        "name_zh": "羅隱",
+        "life": null,
+        "slug": "luo-yin",
+        "poem_count": 470
+      },
+      {
+        "id": 1662,
+        "name_ko": null,
+        "name_zh": "皮日休",
+        "life": null,
+        "slug": "pi-ri-xiu",
+        "poem_count": 385
+      },
+      {
+        "id": 70,
+        "name_ko": "온정균",
+        "name_zh": "溫庭筠",
+        "life": "약 812~866",
+        "slug": "wen-ting-yun",
+        "poem_count": 371
+      },
+      {
+        "id": 1197,
+        "name_ko": "위장",
+        "name_zh": "韋莊",
+        "life": "836~910",
+        "slug": "wei-zhuang",
+        "poem_count": 335
+      },
+      {
+        "id": 1149,
+        "name_ko": null,
+        "name_zh": "方干",
+        "life": null,
+        "slug": "fang-gan",
+        "poem_count": 335
+      },
+      {
+        "id": 1172,
+        "name_ko": null,
+        "name_zh": "鄭谷",
+        "life": null,
+        "slug": "zheng-gu",
+        "poem_count": 328
+      },
+      {
+        "id": 609,
+        "name_ko": "두순학",
+        "name_zh": "杜荀鶴",
+        "life": "846~904",
+        "slug": "du-xun-he",
+        "poem_count": 321
+      },
+      {
+        "id": 607,
+        "name_ko": "한악",
+        "name_zh": "韓偓",
+        "life": "842?~923?",
+        "slug": "han-wo",
+        "poem_count": 315
+      },
+      {
+        "id": 1142,
+        "name_ko": null,
+        "name_zh": "司空圖",
+        "life": null,
+        "slug": "si-kong-tu",
+        "poem_count": 287
+      },
+      {
+        "id": 65,
+        "name_ko": null,
+        "name_zh": "薛能",
+        "life": null,
+        "slug": "xue-neng",
+        "poem_count": 271
+      },
+      {
+        "id": 1200,
+        "name_ko": null,
+        "name_zh": "徐夤",
+        "life": null,
+        "slug": "xu-yin",
+        "poem_count": 247
+      },
+      {
+        "id": 1080,
+        "name_ko": null,
+        "name_zh": "李羣玉",
+        "life": null,
+        "slug": "li-qun-yu",
+        "poem_count": 239
+      },
+      {
+        "id": 597,
+        "name_ko": null,
+        "name_zh": "趙嘏",
+        "life": null,
+        "slug": "zhao-gu",
+        "poem_count": 236
+      },
+      {
+        "id": 1082,
+        "name_ko": "이빈",
+        "name_zh": "李頻",
+        "life": "818∼876",
+        "slug": "li-pin",
+        "poem_count": 204
+      },
+      {
+        "id": 608,
+        "name_ko": null,
+        "name_zh": "吳融",
+        "life": null,
+        "slug": "wu-rong",
+        "poem_count": 200
+      },
+      {
+        "id": 1199,
+        "name_ko": null,
+        "name_zh": "黃滔",
+        "life": null,
+        "slug": "huang-tao",
+        "poem_count": 196
+      }
+    ],
+    "zhong-tang": [
+      {
+        "id": 64,
+        "name_ko": "백거이",
+        "name_zh": "白居易",
+        "life": "772~846",
+        "slug": "bai-ju-yi",
+        "poem_count": 2661
+      },
+      {
+        "id": 568,
+        "name_ko": "유우석",
+        "name_zh": "劉禹錫",
+        "life": "772~842",
+        "slug": "liu-yu-xi",
+        "poem_count": 761
+      },
+      {
+        "id": 117,
+        "name_ko": "원진",
+        "name_zh": "元稹",
+        "life": "779~831",
+        "slug": "yuan-zhen",
+        "poem_count": 711
+      },
+      {
+        "id": 63,
+        "name_ko": "위응물",
+        "name_zh": "韋應物",
+        "life": "737~792",
+        "slug": "wei-ying-wu",
+        "poem_count": 546
+      },
+      {
+        "id": 89,
+        "name_ko": "유장경",
+        "name_zh": "劉長卿",
+        "life": "709?~780?",
+        "slug": "liu-zhang-qing",
+        "poem_count": 513
+      },
+      {
+        "id": 26,
+        "name_ko": "왕건",
+        "name_zh": "王建",
+        "life": "약 767~약 830",
+        "slug": "wang-jian",
+        "poem_count": 505
+      },
+      {
+        "id": 27,
+        "name_ko": "교연",
+        "name_zh": "皎然",
+        "life": "생몰년 미상",
+        "slug": "jiao-ran",
+        "poem_count": 495
+      },
+      {
+        "id": 917,
+        "name_ko": null,
+        "name_zh": "姚合",
+        "life": null,
+        "slug": "yao-he",
+        "poem_count": 486
+      },
+      {
+        "id": 106,
+        "name_ko": "한유",
+        "name_zh": "韓愈",
+        "life": "768~824",
+        "slug": "han-yu",
+        "poem_count": 459
+      },
+      {
+        "id": 54,
+        "name_ko": "맹교",
+        "name_zh": "孟郊",
+        "life": "751~814",
+        "slug": "meng-jiao",
+        "poem_count": 447
+      },
+      {
+        "id": 21,
+        "name_ko": "장적",
+        "name_zh": "張籍",
+        "life": "768?~830?",
+        "slug": "zhang-ji",
+        "poem_count": 445
+      },
+      {
+        "id": 556,
+        "name_ko": "전기",
+        "name_zh": "錢起",
+        "life": "722~780",
+        "slug": "qian-qi",
+        "poem_count": 429
+      },
+      {
+        "id": 598,
+        "name_ko": "가도",
+        "name_zh": "賈島",
+        "life": "779~843",
+        "slug": "jia-dao",
+        "poem_count": 401
+      },
+      {
+        "id": 566,
+        "name_ko": "권덕여",
+        "name_zh": "權德輿",
+        "life": "758~818",
+        "slug": "quan-de-yu",
+        "poem_count": 379
+      },
+      {
+        "id": 32,
+        "name_ko": "장호",
+        "name_zh": "張祜",
+        "life": "생몰년 미상",
+        "slug": "zhang-hu",
+        "poem_count": 368
+      },
+      {
+        "id": 114,
+        "name_ko": "노륜",
+        "name_zh": "盧綸",
+        "life": "748?~799",
+        "slug": "lu-lun",
+        "poem_count": 323
+      },
+      {
+        "id": 57,
+        "name_ko": "대숙륜",
+        "name_zh": "戴叔倫",
+        "life": "732~789",
+        "slug": "dai-shu-lun",
+        "poem_count": 288
+      },
+      {
+        "id": 71,
+        "name_ko": null,
+        "name_zh": "李賀",
+        "life": null,
+        "slug": "li-he",
+        "poem_count": 277
+      },
+      {
+        "id": 55,
+        "name_ko": "이단",
+        "name_zh": "李端",
+        "life": "생몰년 미상",
+        "slug": "li-duan",
+        "poem_count": 277
+      },
+      {
+        "id": 61,
+        "name_ko": "고황",
+        "name_zh": "顧況",
+        "life": "727?~815?",
+        "slug": "gu-kuang",
+        "poem_count": 231
+      },
+      {
+        "id": 642,
+        "name_ko": null,
+        "name_zh": "武元衡",
+        "life": null,
+        "slug": "wu-yuan-heng",
+        "poem_count": 203
+      },
+      {
+        "id": 129,
+        "name_ko": null,
+        "name_zh": "施肩吾",
+        "life": null,
+        "slug": "shi-jian-wu",
+        "poem_count": 201
+      }
+    ],
+    "qian-han": [],
+    "wei-jin": [],
+    "song": [],
+    "yuan": [],
+    "ming": [],
+    "qing": []
+  }
+}
