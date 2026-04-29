@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import test from 'node:test';
 
 import { detectCategory, normalizeChineseForHanshinaru } from '../scripts/lib/cn_hansi_text_normalizer.mjs';
+import { buildCuratedDryRun } from '../scripts/lib/cn_curated_payload_builder.mjs';
 import { buildParseApiUrl, extractWikisourceTitle } from '../scripts/lib/cn_wikisource_api.mjs';
 import { buildRecord } from '../scripts/lib/cn_wikisource_record_builder.mjs';
 
@@ -69,4 +70,40 @@ test('builds stable Chinese Wikisource API URLs from source pages', () => {
   assert.equal(apiUrl.searchParams.get('action'), 'parse');
   assert.equal(apiUrl.searchParams.get('page'), '古詩源');
   assert.equal(apiUrl.searchParams.get('formatversion'), '2');
+});
+
+test('builds Supabase curated dry-run payloads with provisional ids', () => {
+  const raw = {
+    recordId: 'CN-TEST-0001',
+    canonicalId: 'CN-CANON-HAN-DAFENGGE',
+    eraSlug: 'qian-han',
+    eraPeriod: '兩漢',
+    titleZh: '大风歌',
+    titleKo: '대풍가',
+    authorId: 'CN-AUTHOR-LIU-BANG',
+    authorZh: '刘邦',
+    authorKo: '유방',
+    authorLife: 'BCE 256~BCE 195',
+    authorSlug: 'liu-bang',
+    collectionTitle: '古诗源',
+    sourceUrl: 'https://zh.wikisource.org/wiki/古詩源',
+    bodyZh: '大风起兮云飞扬\n威加海内兮归故乡\n安得猛士兮守四方',
+    translationKoOwned: '큰 바람이 일고 구름이 날아오르네.',
+    commentaryKoOwned: '짧은 제왕시다.',
+  };
+  const first = buildRecord(raw);
+  const second = buildRecord({
+    ...raw,
+    recordId: 'CN-TEST-0002',
+    canonicalId: 'CN-CANON-HAN-DAFENGGE-2',
+    titleZh: '大风歌 二',
+    titleKo: '대풍가 2',
+  });
+
+  const dryRun = buildCuratedDryRun([first, second]);
+  assert.equal(dryRun.summary.poets, 1);
+  assert.equal(dryRun.summary.poems, 2);
+  assert.equal(dryRun.curatedPoets[0].jds_id, -900001);
+  assert.equal(dryRun.curatedPoems[0].poet_jds_id, -900001);
+  assert.equal(dryRun.curatedPoems[0].body_zh.includes('风'), false);
 });

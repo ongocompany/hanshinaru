@@ -22,21 +22,25 @@ author: 지훈
 - `docs/spec/cn-non-tang-tranche1.sources.raw.json`
 - `docs/spec/cn-non-tang-tranche1.records.v1.json`
 - `docs/spec/cn-non-tang-tranche1.report.v1.json`
+- `docs/spec/cn-non-tang-tranche1.db-dry-run.v1.json`
 
 # 생성한 파이프라인
 
 - `scripts/lib/cn_wikisource_api.mjs`: 위키문헌 URL을 MediaWiki parse API 요청으로 바꾸고 raw HTML을 가져온다.
 - `scripts/lib/cn_hansi_text_normalizer.mjs`: 간체자와 비한국식 이체자를 한국식 한자 표시로 정규화한다.
 - `scripts/lib/cn_wikisource_record_builder.mjs`: 위키문헌 seed를 한시나루/JDS 후보 구조로 바꾼다.
+- `scripts/lib/cn_curated_payload_builder.mjs`: records를 Supabase `hansi_curated_*` 검토용 payload로 바꾼다.
 - `scripts/data/cn_non_tang_tranche1_seed.mjs`: 兩漢 6수, 魏晉 6수의 1차 seed 원문·번역·해설이다.
 - `scripts/fetch_cn_wikisource_tranche1.mjs`: tranche 1 source URL의 위키문헌 raw page bundle을 생성한다.
 - `scripts/build_cn_non_tang_tranche1.mjs`: seed를 records/report JSON으로 생성한다.
+- `scripts/build_cn_non_tang_tranche1_db_dry_run.mjs`: 실제 DB 쓰기 전 curated upsert 후보를 negative provisional id로 생성한다.
 - `tests/cn_hansi_pipeline.test.mjs`: 간체자 정규화, 한국식 `絶`, 전당 이전 정형시 과분류 방지, record 구조화를 검증한다.
 
 # 1차 산출물
 
 - 총 12수
 - 위키문헌 raw source page bundle 10페이지
+- DB dry-run: curated poets 9명, curated poems 12수
 - 시대 분포: `qian-han` 6수, `wei-jin` 6수
 - 작가 분포: 劉邦 1, 項羽 1, 劉徹 1, 無名氏 3, 曹操 2, 曹丕 1, 曹植 1, 陶淵明 2
 - 번역 상태: 12수 모두 owned draft 번역·해설 포함
@@ -47,6 +51,7 @@ author: 지훈
 - `node --test tests/cn_hansi_pipeline.test.mjs` 통과
 - `node scripts/fetch_cn_wikisource_tranche1.mjs` 통과: raw source 10페이지 생성
 - `node scripts/build_cn_non_tang_tranche1.mjs` 통과
+- `node scripts/build_cn_non_tang_tranche1_db_dry_run.mjs` 통과
 - 생성 결과: `records=12`, `translatedOwned=12`
 
 # 핵심 판단
@@ -81,8 +86,8 @@ author: 지훈
 
 1. `docs/spec/2026-04-30-cn-non-tang-source-catalog.v1.json`을 연다.
 2. `docs/spec/cn-non-tang-tranche1.records.v1.json`의 12수 원문 URL을 위키문헌 API/raw로 한 번 더 대조한다.
-3. `jdsCandidate.poet` / `jdsCandidate.poem`을 기준으로 dry-run upsert 스크립트를 만든다.
-4. Supabase `hansi_curated_*` 또는 현 site JSON 반영 경로 중 실제 운영 데이터 경로를 하나로 확정한다.
+3. `docs/spec/cn-non-tang-tranche1.db-dry-run.v1.json`을 검토해 JDS 선적재와 Supabase 직접 provisional 적재 중 하나를 결정한다.
+4. JDS 선적재를 택하면 real `jds_id`를 받은 뒤 Supabase `hansi_curated_*` upsert로 전환한다.
 5. 兩漢/魏晉 tranche 2 또는 宋代 tranche 1로 확장한다.
 
 # 다음 세션이 피해야 할 함정
