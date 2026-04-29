@@ -1,0 +1,237 @@
+{
+  "version": "2026-04-30.v1",
+  "catalogId": "cn-non-tang-source-catalog",
+  "status": "active",
+  "createdAtKst": "2026-04-30 03:41 KST",
+  "purpose": "당을 제외한 중국 한시 6시대의 첫 수집 큐. 바로 DB 적재가 아니라, 대표 시인·작품·소스 후보를 고정해 다음 tranche 작업의 출발점으로 삼는다.",
+  "decision": {
+    "priority": "content-first",
+    "uiPolishingShare": 30,
+    "contentProductionShare": 70,
+    "reason": "현재 6시대는 대표 시인·작품이 0이라 UI를 다듬어도 핵심 공백이 남는다. 최소 공개 세트를 먼저 만든 뒤 공통 컴포넌트를 polishing한다."
+  },
+  "globalRules": [
+    "원문은 저작권 위험이 낮은 고전 원문·공개 텍스트부터 쓴다.",
+    "각 시대 1차 목표는 대표 시인 5명, 대표 작품 10수다.",
+    "시대별 완전 수집보다 6시대 공백 해소를 먼저 한다.",
+    "작품 원문과 메타데이터를 먼저 모으고, 번역·해설은 다음 단계로 분리한다.",
+    "소스 URL은 수집 시점에 다시 열어 본문 노출과 라이선스 표시를 확인한다."
+  ],
+  "sourcesCheckedThisSession": [
+    {
+      "title": "古詩源",
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%A4%E8%A9%A9%E6%BA%90",
+      "status": "opened",
+      "note": "목차와 원문 노출 확인. 兩漢, 魏晉 이전 1차 큐에 적합."
+    },
+    {
+      "title": "明詩綜 (四庫全書本)",
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E8%A9%A9%E7%B6%9C_%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29",
+      "status": "opened",
+      "note": "총목과 권별 원문 노출 확인. 明 1차 큐에 적합."
+    }
+  ],
+  "eras": [
+    {
+      "eraSlug": "qian-han",
+      "eraNameKo": "전한·후한",
+      "eraNameZh": "兩漢",
+      "phase": 1,
+      "firstGoal": {
+        "poets": 5,
+        "poems": 10
+      },
+      "seedAuthors": [
+        { "nameKo": "한 고조", "nameZh": "漢高祖", "life": "BCE 256~BCE 195", "role": "한초 제왕시" },
+        { "nameKo": "항우", "nameZh": "項羽", "life": "BCE 232~BCE 202", "role": "초한 교체기 비가" },
+        { "nameKo": "한 무제", "nameZh": "漢武帝", "life": "BCE 156~BCE 87", "role": "악부 제도와 제왕시" },
+        { "nameKo": "가의", "nameZh": "賈誼", "life": "BCE 200~BCE 168", "role": "초사·부 전통" },
+        { "nameKo": "채염", "nameZh": "蔡琰", "life": "약 177~?", "role": "후한 말 난리 체험시" },
+        { "nameKo": "무명씨", "nameZh": "無名氏", "life": null, "role": "古詩十九首·악부" }
+      ],
+      "seedWorks": [
+        { "titleZh": "大風歌", "authorZh": "漢高祖", "sourceHint": "古詩源" },
+        { "titleZh": "垓下歌", "authorZh": "項羽", "sourceHint": "古詩源" },
+        { "titleZh": "秋風辭", "authorZh": "漢武帝", "sourceHint": "古詩源" },
+        { "titleZh": "悲憤詩", "authorZh": "蔡琰", "sourceHint": "古詩源 or 文選" },
+        { "titleZh": "行行重行行", "authorZh": "無名氏", "sourceHint": "古詩十九首" },
+        { "titleZh": "青青河畔草", "authorZh": "無名氏", "sourceHint": "古詩十九首" }
+      ],
+      "sourceCandidates": [
+        { "title": "古詩源", "url": "https://zh.wikisource.org/wiki/%E5%8F%A4%E8%A9%A9%E6%BA%90", "status": "opened" },
+        { "title": "文選", "url": "https://zh.wikisource.org/wiki/%E6%96%87%E9%81%B8", "status": "needs_verify" },
+        { "title": "樂府詩集", "url": "https://zh.wikisource.org/wiki/%E6%A8%82%E5%BA%9C%E8%A9%A9%E9%9B%86", "status": "needs_verify" }
+      ],
+      "riskNotes": [
+        "무명 작품은 authorId 설계를 별도로 잡아야 한다.",
+        "제왕·역사인물 작품은 시인 페이지에 둘지 시대 대표작으로만 둘지 결정 필요."
+      ]
+    },
+    {
+      "eraSlug": "wei-jin",
+      "eraNameKo": "위진남북조",
+      "eraNameZh": "魏晉南北朝",
+      "phase": 1,
+      "firstGoal": {
+        "poets": 6,
+        "poems": 12
+      },
+      "seedAuthors": [
+        { "nameKo": "조조", "nameZh": "曹操", "life": "155~220", "role": "건안 풍골" },
+        { "nameKo": "조비", "nameZh": "曹丕", "life": "187~226", "role": "문학론과 칠언시" },
+        { "nameKo": "조식", "nameZh": "曹植", "life": "192~232", "role": "건안 시단 정점" },
+        { "nameKo": "완적", "nameZh": "阮籍", "life": "210~263", "role": "정시·영회시" },
+        { "nameKo": "도연명", "nameZh": "陶淵明", "life": "365~427", "role": "전원시" },
+        { "nameKo": "사령운", "nameZh": "謝靈運", "life": "385~433", "role": "산수시" },
+        { "nameKo": "사조", "nameZh": "謝朓", "life": "464~499", "role": "영명체와 산수 서정" },
+        { "nameKo": "유신", "nameZh": "庾信", "life": "513~581", "role": "남북조 교차기" }
+      ],
+      "seedWorks": [
+        { "titleZh": "短歌行", "authorZh": "曹操", "sourceHint": "古詩源" },
+        { "titleZh": "燕歌行", "authorZh": "曹丕", "sourceHint": "文選" },
+        { "titleZh": "七哀詩", "authorZh": "曹植", "sourceHint": "文選" },
+        { "titleZh": "詠懷", "authorZh": "阮籍", "sourceHint": "文選 or 古詩源" },
+        { "titleZh": "歸園田居", "authorZh": "陶淵明", "sourceHint": "陶淵明集" },
+        { "titleZh": "飲酒", "authorZh": "陶淵明", "sourceHint": "陶淵明集" },
+        { "titleZh": "登池上樓", "authorZh": "謝靈運", "sourceHint": "文選" },
+        { "titleZh": "晚登三山還望京邑", "authorZh": "謝朓", "sourceHint": "文選" }
+      ],
+      "sourceCandidates": [
+        { "title": "古詩源", "url": "https://zh.wikisource.org/wiki/%E5%8F%A4%E8%A9%A9%E6%BA%90", "status": "opened" },
+        { "title": "文選", "url": "https://zh.wikisource.org/wiki/%E6%96%87%E9%81%B8", "status": "needs_verify" },
+        { "title": "陶淵明集", "url": "https://zh.wikisource.org/wiki/%E9%99%B6%E6%B7%B5%E6%98%8E%E9%9B%86", "status": "needs_verify" }
+      ],
+      "riskNotes": [
+        "詠懷, 飲酒처럼 연작은 대표 1~3수만 먼저 고른다.",
+        "한자 이체자와 제목 이형을 canonicalTitle로 정리해야 한다."
+      ]
+    },
+    {
+      "eraSlug": "song",
+      "eraNameKo": "송",
+      "eraNameZh": "宋",
+      "phase": 2,
+      "firstGoal": {
+        "poets": 7,
+        "poems": 14
+      },
+      "seedAuthors": [
+        { "nameKo": "구양수", "nameZh": "歐陽修", "life": "1007~1072", "role": "북송 시문혁신" },
+        { "nameKo": "왕안석", "nameZh": "王安石", "life": "1021~1086", "role": "북송 정치가·절구" },
+        { "nameKo": "소식", "nameZh": "蘇軾", "life": "1037~1101", "role": "송시와 사의 정점" },
+        { "nameKo": "황정견", "nameZh": "黃庭堅", "life": "1045~1105", "role": "강서시파" },
+        { "nameKo": "육유", "nameZh": "陸游", "life": "1125~1210", "role": "남송 애국시" },
+        { "nameKo": "양만리", "nameZh": "楊萬里", "life": "1127~1206", "role": "성재체" },
+        { "nameKo": "범성대", "nameZh": "范成大", "life": "1126~1193", "role": "전원·풍속시" }
+      ],
+      "seedWorks": [
+        { "titleZh": "題西林壁", "authorZh": "蘇軾", "sourceHint": "蘇軾詩集" },
+        { "titleZh": "飲湖上初晴後雨", "authorZh": "蘇軾", "sourceHint": "蘇軾詩集" },
+        { "titleZh": "泊船瓜洲", "authorZh": "王安石", "sourceHint": "王荊公詩" },
+        { "titleZh": "梅花", "authorZh": "王安石", "sourceHint": "王荊公詩" },
+        { "titleZh": "示兒", "authorZh": "陸游", "sourceHint": "劍南詩稿" },
+        { "titleZh": "游山西村", "authorZh": "陸游", "sourceHint": "劍南詩稿" },
+        { "titleZh": "小池", "authorZh": "楊萬里", "sourceHint": "誠齋集" }
+      ],
+      "sourceCandidates": [
+        { "title": "宋詩鈔", "url": null, "status": "needs_source_location" },
+        { "title": "蘇軾詩集", "url": null, "status": "needs_source_location" },
+        { "title": "劍南詩稿", "url": null, "status": "needs_source_location" }
+      ],
+      "riskNotes": [
+        "宋은 詩와 詞를 분리해야 한다. 시대 페이지 첫 공개는 詩 중심으로 간다.",
+        "全宋詩 전체 파싱은 과대 작업이다. 대표작 큐레이션부터 시작한다."
+      ]
+    },
+    {
+      "eraSlug": "yuan",
+      "eraNameKo": "원",
+      "eraNameZh": "元",
+      "phase": 4,
+      "firstGoal": {
+        "poets": 5,
+        "poems": 10
+      },
+      "seedAuthors": [
+        { "nameKo": "원호문", "nameZh": "元好問", "life": "1190~1257", "role": "금원 교체기" },
+        { "nameKo": "조맹부", "nameZh": "趙孟頫", "life": "1254~1322", "role": "원대 문인·서화" },
+        { "nameKo": "유인", "nameZh": "劉因", "life": "1249~1293", "role": "원초 도학 시인" },
+        { "nameKo": "살도라", "nameZh": "薩都剌", "life": "약 1272~1355", "role": "색목인 시인" },
+        { "nameKo": "양유정", "nameZh": "楊維楨", "life": "1296~1370", "role": "철애체" }
+      ],
+      "seedWorks": [],
+      "sourceCandidates": [
+        { "title": "元詩選", "url": "https://zh.wikisource.org/wiki/%E5%85%83%E8%A9%A9%E9%81%B8", "status": "needs_verify" },
+        { "title": "遺山集", "url": null, "status": "needs_source_location" }
+      ],
+      "riskNotes": [
+        "元은 대표작 선정 근거를 더 보강해야 한다.",
+        "金末 元初 경계 작가의 시대 배정 규칙이 필요하다."
+      ]
+    },
+    {
+      "eraSlug": "ming",
+      "eraNameKo": "명",
+      "eraNameZh": "明",
+      "phase": 3,
+      "firstGoal": {
+        "poets": 7,
+        "poems": 14
+      },
+      "seedAuthors": [
+        { "nameKo": "고계", "nameZh": "高啓", "life": "1336~1374", "role": "명초 대표 시인" },
+        { "nameKo": "이몽양", "nameZh": "李夢陽", "life": "1473~1530", "role": "전칠자" },
+        { "nameKo": "하경명", "nameZh": "何景明", "life": "1483~1521", "role": "전칠자" },
+        { "nameKo": "이반룡", "nameZh": "李攀龍", "life": "1514~1570", "role": "후칠자" },
+        { "nameKo": "왕세정", "nameZh": "王世貞", "life": "1526~1590", "role": "후칠자" },
+        { "nameKo": "원굉도", "nameZh": "袁宏道", "life": "1568~1610", "role": "공안파" },
+        { "nameKo": "진자룡", "nameZh": "陳子龍", "life": "1608~1647", "role": "명말 항청 시인" }
+      ],
+      "seedWorks": [],
+      "sourceCandidates": [
+        { "title": "明詩綜 (四庫全書本)", "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E8%A9%A9%E7%B6%9C_%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29", "status": "opened" },
+        { "title": "高青丘集", "url": null, "status": "needs_source_location" }
+      ],
+      "riskNotes": [
+        "明詩綜은 권별 구조라 author 위치 찾기 도구가 필요하다.",
+        "의고파와 공안파 균형을 맞춰야 한다."
+      ]
+    },
+    {
+      "eraSlug": "qing",
+      "eraNameKo": "청",
+      "eraNameZh": "淸",
+      "phase": 3,
+      "firstGoal": {
+        "poets": 7,
+        "poems": 14
+      },
+      "seedAuthors": [
+        { "nameKo": "전겸익", "nameZh": "錢謙益", "life": "1582~1664", "role": "명말청초" },
+        { "nameKo": "오위업", "nameZh": "吳偉業", "life": "1609~1672", "role": "매촌체" },
+        { "nameKo": "왕사정", "nameZh": "王士禎", "life": "1634~1711", "role": "신운설" },
+        { "nameKo": "원매", "nameZh": "袁枚", "life": "1716~1797", "role": "성령설" },
+        { "nameKo": "조익", "nameZh": "趙翼", "life": "1727~1814", "role": "청대 시론과 역사 감각" },
+        { "nameKo": "황준헌", "nameZh": "黃遵憲", "life": "1848~1905", "role": "근대 전환기" },
+        { "nameKo": "진삼립", "nameZh": "陳三立", "life": "1853~1937", "role": "동광체" }
+      ],
+      "seedWorks": [],
+      "sourceCandidates": [
+        { "title": "清詩匯", "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E8%A9%A9%E5%8C%AF", "status": "needs_verify" },
+        { "title": "晚晴簃詩匯", "url": "https://zh.wikisource.org/wiki/%E6%99%9A%E6%99%B4%E7%B0%83%E8%A9%A9%E5%8C%AF", "status": "needs_verify" },
+        { "title": "人境廬詩草", "url": null, "status": "needs_source_location" }
+      ],
+      "riskNotes": [
+        "淸末 작가 일부는 1912 이후 생존하므로 시대 표시는 淸/근대 전환기로 분리 검토한다.",
+        "시론 대표성과 독자 체감 대표성을 함께 맞춰야 한다."
+      ]
+    }
+  ],
+  "nextActions": [
+    "兩漢과 魏晉南北朝를 묶어 tranche 1 records를 만든다.",
+    "古詩源에서 원문을 직접 확인해 20수 내외를 수집한다.",
+    "무명씨·제왕·역사인물 authorId 규칙을 정한다.",
+    "검증된 records를 기준으로 jds 적재 또는 Supabase 큐레이션 직접 확장 중 하나를 고른다."
+  ]
+}
+

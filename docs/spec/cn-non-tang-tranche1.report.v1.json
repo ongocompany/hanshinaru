@@ -1,0 +1,30 @@
+{
+  "batchId": "cn-non-tang-tranche1",
+  "generatedAt": "2026-04-29T19:06:35.585Z",
+  "summary": {
+    "records": 12,
+    "eras": {
+      "qian-han": 6,
+      "wei-jin": 6
+    },
+    "authors": {
+      "劉邦": 1,
+      "項羽": 1,
+      "劉徹": 1,
+      "無名氏": 3,
+      "曹操": 2,
+      "曹丕": 1,
+      "曹植": 1,
+      "陶淵明": 2
+    },
+    "statuses": {
+      "translated": 12
+    },
+    "translatedOwned": 12
+  },
+  "nextActions": [
+    "원문 URL을 한 번 더 raw/API로 검증한다.",
+    "jds poets/poems upsert 스크립트를 별도 작성한다.",
+    "Supabase hansi_curated_* 반영 전 data_pending 제거 범위를 결정한다."
+  ]
+}
