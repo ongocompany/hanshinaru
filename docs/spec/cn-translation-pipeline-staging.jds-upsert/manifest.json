@@ -1,0 +1,99 @@
+{
+  "version": "2026-04-30.v1",
+  "batchId": "cn-translation-pipeline-staging-jds-upsert",
+  "generatedAt": "2026-04-30T08:15:57.414Z",
+  "chunkSize": 80,
+  "parts": [
+    {
+      "partNo": 1,
+      "filename": "part-001.sql",
+      "records": 80,
+      "queueStart": "CN-TR-00001",
+      "queueEnd": "CN-TR-00080"
+    },
+    {
+      "partNo": 2,
+      "filename": "part-002.sql",
+      "records": 80,
+      "queueStart": "CN-TR-00081",
+      "queueEnd": "CN-TR-00160"
+    },
+    {
+      "partNo": 3,
+      "filename": "part-003.sql",
+      "records": 80,
+      "queueStart": "CN-TR-00161",
+      "queueEnd": "CN-TR-00240"
+    },
+    {
+      "partNo": 4,
+      "filename": "part-004.sql",
+      "records": 80,
+      "queueStart": "CN-TR-00241",
+      "queueEnd": "CN-TR-00320"
+    },
+    {
+      "partNo": 5,
+      "filename": "part-005.sql",
+      "records": 80,
+      "queueStart": "CN-TR-00321",
+      "queueEnd": "CN-TR-00400"
+    },
+    {
+      "partNo": 6,
+      "filename": "part-006.sql",
+      "records": 80,
+      "queueStart": "CN-TR-00401",
+      "queueEnd": "CN-TR-00480"
+    },
+    {
+      "partNo": 7,
+      "filename": "part-007.sql",
+      "records": 80,
+      "queueStart": "CN-TR-00481",
+      "queueEnd": "CN-TR-00560"
+    },
+    {
+      "partNo": 8,
+      "filename": "part-008.sql",
+      "records": 80,
+      "queueStart": "CN-TR-00561",
+      "queueEnd": "CN-TR-00640"
+    },
+    {
+      "partNo": 9,
+      "filename": "part-009.sql",
+      "records": 80,
+      "queueStart": "CN-TR-00641",
+      "queueEnd": "CN-TR-00720"
+    },
+    {
+      "partNo": 10,
+      "filename": "part-010.sql",
+      "records": 80,
+      "queueStart": "CN-TR-00721",
+      "queueEnd": "CN-TR-00800"
+    },
+    {
+      "partNo": 11,
+      "filename": "part-011.sql",
+      "records": 80,
+      "queueStart": "CN-TR-00801",
+      "queueEnd": "CN-TR-00880"
+    },
+    {
+      "partNo": 12,
+      "filename": "part-012.sql",
+      "records": 80,
+      "queueStart": "CN-TR-00881",
+      "queueEnd": "CN-TR-00960"
+    },
+    {
+      "partNo": 13,
+      "filename": "part-013.sql",
+      "records": 80,
+      "queueStart": "CN-TR-00961",
+      "queueEnd": "CN-TR-01040"
+    }
+  ]
+}

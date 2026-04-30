@@ -1,0 +1,45 @@
+{
+  "batchId": "cn-translation-pipeline-staging",
+  "generatedAt": "2026-04-30T08:15:57.414Z",
+  "summary": {
+    "sourceRecords": 1126,
+    "selectedRecords": 1050,
+    "translationQueue": 1040,
+    "duplicateAliases": 10,
+    "held": 76,
+    "byEra": {
+      "pre-qin": 338,
+      "han": 69,
+      "jin": 27,
+      "song": 202,
+      "ming": 316,
+      "yuan": 88
+    },
+    "byBatch": {
+      "pre-tang-first-tranche": 95,
+      "pre-tang-classic-index": 312,
+      "pre-tang-tao-yuanming": 27,
+      "song-yuan-ming-auto": 606
+    },
+    "byStatus": {
+      "parsed": 1040
+    },
+    "heldByBatch": {
+      "pre-tang-tao-yuanming": 25,
+      "song-yuan-ming-auto": 51
+    },
+    "heldByReason": {
+      "not-selected-for-first-translation-pass": 76
+    },
+    "heldByExtractionStatus": {
+      "ok": 25,
+      "needs-review": 51
+    }
+  },
+  "applyPolicy": [
+    "SQL ends with ROLLBACK by default.",
+    "Apply to JDS only after reviewing counts and switching ROLLBACK to COMMIT.",
+    "Translation backend choice: Gemini gemini-2.5-flash-lite with JDS v5_full prompt for first-pass translation, reading, notes, and commentary.",
+    "Records with non-Tang extraction status needs-review are held out of this first pass."
+  ]
+}
