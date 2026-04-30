@@ -11,6 +11,10 @@ const GUSHIYUAN_SECOND_PASS_PAGES_INPUT = resolve(
   ROOT,
   'docs/spec/cn-pre-tang-gushiyuan-second-pass-pages.dump.raw.v1.json',
 );
+const COMPANION_SOURCE_PAGES_INPUT = resolve(
+  ROOT,
+  'docs/spec/cn-pre-tang-companion-source-pages.dump.raw.v1.json',
+);
 const RECORDS_OUT = resolve(ROOT, 'docs/spec/cn-pre-tang-first-tranche.cached-source-records.v1.json');
 const REPORT_OUT = resolve(ROOT, 'docs/spec/cn-pre-tang-first-tranche.cached-source-records.report.v1.json');
 
@@ -18,16 +22,70 @@ const raw = JSON.parse(readFileSync(INPUT, 'utf8'));
 const sourcePages = raw.pages ?? [];
 const gushiYuanLinkPages = readJsonIfExists(GUSHIYUAN_LINK_PAGES_INPUT)?.pages ?? [];
 const gushiYuanSecondPassPages = readJsonIfExists(GUSHIYUAN_SECOND_PASS_PAGES_INPUT)?.pages ?? [];
+const companionSourcePages = readJsonIfExists(COMPANION_SOURCE_PAGES_INPUT)?.pages ?? [];
+const COMPANION_SOURCE_RECOVERY_SPECS = [
+  {
+    titleZh: '有所思',
+    authorZh: '無名氏/漢樂府',
+    pageTitle: '樂府詩集/016卷',
+    headingIncludes: '有所思',
+  },
+  {
+    titleZh: '東門行',
+    authorZh: '無名氏/漢樂府',
+    pageTitle: '樂府詩集/037卷',
+    headingIncludes: '東門行四解',
+  },
+  {
+    titleZh: '西門行',
+    authorZh: '無名氏/漢樂府',
+    pageTitle: '樂府詩集/037卷',
+    headingIncludes: '西門行六解',
+  },
+  {
+    titleZh: '陌上桑',
+    authorZh: '無名氏/漢樂府',
+    pageTitle: '樂府詩集/028卷',
+    headingIncludes: '陌上桑三解',
+  },
+  {
+    titleZh: '相逢行',
+    authorZh: '無名氏/漢樂府',
+    pageTitle: '樂府詩集/034卷',
+    headingIncludes: '相逢行',
+  },
+  {
+    titleZh: '隴西行',
+    authorZh: '無名氏/漢樂府',
+    pageTitle: '樂府詩集/037卷',
+    headingIncludes: '隴西行',
+  },
+  {
+    titleZh: '梁甫吟',
+    authorZh: '諸葛亮',
+    pageTitle: '樂府詩集/041卷',
+    headingIncludes: '梁甫吟',
+  },
+  {
+    titleZh: '悲歌',
+    authorZh: '無名氏/漢樂府',
+    pageTitle: '樂府詩集/062卷',
+    headingIncludes: '悲歌行',
+  },
+];
 const generatedAt = new Date().toISOString();
 const gushiYuanLinkedResult = extractGushiYuanLinkedDumpPages(gushiYuanLinkPages);
 const gushiYuanLinkedRecords = gushiYuanLinkedResult.records;
 const gushiYuanSecondPassResult = extractGushiYuanLinkedDumpPages(gushiYuanSecondPassPages);
 const gushiYuanSecondPassRecords = gushiYuanSecondPassResult.records;
+const companionSourceResult = extractCompanionSourceDumpPages(companionSourcePages);
+const companionSourceRecords = companionSourceResult.records;
 const records = [
   ...extractGushiYuanFirstTranche(sourcePages.find((page) => page.title === '古詩源')),
   ...extractStandaloneSeedPages(sourcePages),
   ...gushiYuanLinkedRecords,
   ...gushiYuanSecondPassRecords,
+  ...companionSourceRecords,
 ];
 const dedupedRecords = dedupeRecords(records);
 
@@ -55,9 +113,17 @@ const report = {
       skippedWithoutBody: gushiYuanSecondPassResult.skipped.length,
       skippedByReason: countBy(gushiYuanSecondPassResult.skipped, (item) => item.reason),
     },
+    companionSourceDumpPages: {
+      inputPages: companionSourcePages.length,
+      fetchedOk: companionSourcePages.filter((page) => page.fetchStatus === 'ok').length,
+      extractedRecords: companionSourceRecords.length,
+      skippedWithoutBody: companionSourceResult.skipped.length,
+      skippedByReason: countBy(companionSourceResult.skipped, (item) => item.reason),
+    },
   },
   skippedGushiYuanLinkedPages: gushiYuanLinkedResult.skipped,
   skippedGushiYuanSecondPassPages: gushiYuanSecondPassResult.skipped,
+  skippedCompanionSourcePages: companionSourceResult.skipped,
   policy: [
     'This is a companion-source recovery after exact 先秦漢魏晉南北朝詩 volume titles were missing in the zhwikisource dump.',
     'Records are source witnesses, not final DB upserts.',
@@ -169,6 +235,50 @@ function extractGushiYuanLinkedDumpPages(pages) {
   return { records, skipped };
 }
 
+function extractCompanionSourceDumpPages(pages) {
+  const records = [];
+  const skipped = [];
+
+  for (const spec of COMPANION_SOURCE_RECOVERY_SPECS) {
+    const page = pages.find((item) => item.rawTitle === spec.pageTitle);
+    if (!page) {
+      skipped.push({ ...spec, reason: 'companion-page-not-in-input' });
+      continue;
+    }
+    if (page.fetchStatus !== 'ok') {
+      skipped.push({ ...spec, reason: 'companion-page-fetch-missing' });
+      continue;
+    }
+
+    const section = extractWikitextHeadingSection(page.wikitext ?? '', spec.headingIncludes);
+    if (!section) {
+      skipped.push({ ...spec, reason: 'companion-heading-not-found' });
+      continue;
+    }
+
+    const poemZh = extractCompanionPoemBody(section.body);
+    if (!poemZh) {
+      skipped.push({ ...spec, reason: 'companion-body-not-found' });
+      continue;
+    }
+
+    records.push(buildRecord({
+      sourcePage: {
+        title: page.rawTitle,
+        sourceUrl: page.sourceUrl,
+      },
+      sourceSection: section.heading,
+      sourceKind: 'companion-anthology-volume-page',
+      eraSlug: 'han',
+      titleZh: spec.titleZh,
+      authorZh: spec.authorZh,
+      poemZh,
+    }));
+  }
+
+  return { records, skipped };
+}
+
 function extractBodyResultFromGushiYuanLinkedPage(page) {
   const poemZh = extractPoemBodyFromWikitext(page.wikitext ?? '')
     || extractConservativePlainBodyFromWikitext(page);
@@ -241,6 +351,53 @@ function extractPoemBodyFromWikitext(wikitext) {
     .map((match) => cleanPoemWikitext(match[1]))
     .filter(Boolean)
     .join('\n\n');
+}
+
+function extractWikitextHeadingSection(wikitext, headingIncludes) {
+  const text = String(wikitext ?? '');
+  const headingPattern = /^(={2,5})([^=\n]+?)\1\s*$/gm;
+  const headings = [];
+  let match;
+  while ((match = headingPattern.exec(text))) {
+    headings.push({
+      level: match[1].length,
+      heading: match[2].trim(),
+      start: match.index,
+      bodyStart: headingPattern.lastIndex,
+    });
+  }
+
+  const index = headings.findIndex((item) => item.heading.includes(headingIncludes));
+  if (index === -1) return null;
+  const current = headings[index];
+  const next = headings
+    .slice(index + 1)
+    .find((item) => item.level <= current.level);
+  return {
+    heading: current.heading,
+    body: text.slice(current.bodyStart, next?.start ?? text.length),
+  };
+}
+
+function extractCompanionPoemBody(sectionBody) {
+  const text = String(sectionBody ?? '')
+    .replace(/\{\{PUA\|([^{}]+)\}\}/g, '$1')
+    .replace(/\{\{？\|([^{}]+)\}\}/g, '')
+    .replace(/\{\{\*\|[\s\S]*?\}\}/g, '')
+    .replace(/\{\{[^{}]*\}\}/g, '')
+    .replace(/<br\s*\/?>/gi, '\n')
+    .replace(/<BR><BR>/g, '\n')
+    .replace(/<[^>]+>/g, '');
+
+  const lines = text
+    .split(/\r?\n/)
+    .map((line) => line.trim())
+    .filter(Boolean)
+    .filter((line) => !line.startsWith(':'))
+    .filter((line) => !line.startsWith('──'))
+    .filter((line) => !/^[-—]{2,}/.test(line));
+
+  return cleanPoemWikitext(lines.join('\n'));
 }
 
 function extractConservativePlainBodyFromWikitext(page) {

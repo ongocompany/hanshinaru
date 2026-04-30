@@ -23,7 +23,8 @@ WITH input_poets(slug, name_zh, name_ko, life_raw, era_period, country) AS (
     ('cn-pretang-8521-9095', '蔡邕', '蔡邕', NULL, '兩漢', 'CN'),
     ('cn-pretang-73ed-5a55-59a4', '班婕妤', '班婕妤', NULL, '兩漢', 'CN'),
     ('cn-pretang-5353-6587-541b', '卓文君', '卓文君', NULL, '兩漢', 'CN'),
-    ('cn-pretang-8521-7430', '蔡琰', '蔡琰', NULL, '兩漢', 'CN')
+    ('cn-pretang-8521-7430', '蔡琰', '蔡琰', NULL, '兩漢', 'CN'),
+    ('cn-pretang-8af8-845b-4eae', '諸葛亮', '諸葛亮', NULL, '兩漢', 'CN')
 )
 INSERT INTO poets (slug, name_zh, name_ko, life_raw, era_period, country, poem_count)
 SELECT slug, name_zh, name_ko, life_raw, era_period, country, 0
@@ -742,7 +743,17 @@ WITH input_poems(poet_slug, title_zh, title_ko, category, body_zh, translation_k
 有客從外來，聞之常歡喜。迎問其消息，輒復非鄉里。邂逅徼時願，骨肉來迎己。己得自解免，當復棄兒子。天屬綴人心，念別無會期。存亡永乖隔，不忍與之辭。兒前抱我頸，問母欲何之？「人言母當去，豈復有還時？阿母常仁惻，今何更不慈？我尚未成人，奈何不顧思？」見此崩五內，恍惚生狂痴。號泣手撫摩，當發復回疑。
 兼有同時輩，相送告離別。慕我獨得歸，哀叫聲摧裂。馬為立踟躕，車為不轉轍。觀者皆歔欷，行路亦嗚咽。
 去去割情戀，遄征日遐邁。悠悠三千里，何時復交會？念我出腹子，胸臆為摧敗。既至家人盡，又復無中外。城郭為山林，庭宇生荊艾。白骨不知誰，縱橫莫覆蓋。出門無人聲，豺狼號且吠。煢煢對孤景，怛吒詫靡肝肺。登高遠眺望，神魂忽飛逝，奄若壽命盡。旁人相寬大，為復彊視息，雖生何聊賴？
-託命於新人，竭心自勖勵。流離成鄙賤，常恐復捐廢。人生幾何時，懷憂終年歲！', NULL, NULL, 'parsed', 'cn-pretang1', 'CN', 'CN-PRETANG-CACHED-HAN-60b2-61a4-8a69-2d-8521-7430', 'https://zh.wikisource.org/wiki/%E6%82%B2%E6%86%A4%E8%A9%A9_(%E8%94%A1%E7%90%B0)')
+託命於新人，竭心自勖勵。流離成鄙賤，常恐復捐廢。人生幾何時，懷憂終年歲！', NULL, NULL, 'parsed', 'cn-pretang1', 'CN', 'CN-PRETANG-CACHED-HAN-60b2-61a4-8a69-2d-8521-7430', 'https://zh.wikisource.org/wiki/%E6%82%B2%E6%86%A4%E8%A9%A9_(%E8%94%A1%E7%90%B0)'),
+    ('cn-pretang-7121-540d-6c0f-2f-6f22-6a02-5e9c', '有所思', NULL, NULL, '有所思，乃在大海南。何用問遺君？雙珠玳瑁簪，用玉紹繚之。聞君有他心，拉雜摧燒之。摧燒之，當風揚其灰。從今以往，勿復相思。相思與君絶！雞鳴狗吠，兄嫂當知之。秋風肅肅晨風颸，東方須臾高知之。', NULL, NULL, 'parsed', 'cn-pretang1', 'CN', 'CN-PRETANG-CACHED-HAN-6709-6240-601d-2d-7121-540d-6c0f-2f-6f22-6a02-5e9c', 'https://zh.wikisource.org/wiki/%E6%A8%82%E5%BA%9C%E8%A9%A9%E9%9B%86/016%E5%8D%B7'),
+    ('cn-pretang-7121-540d-6c0f-2f-6f22-6a02-5e9c', '東門行', NULL, NULL, '出東門，不顧歸。來入門，悵欲悲。盎中無鬥儲，還視桁上無懸衣。拔劍出門去，兒女牽衣啼。他家但願富貴，賤妾與君共餔糜。共餔糜，上用倉浪天故，下為黃口小兒。今時清廉，難犯教言，君復自愛莫為非。今時清廉，難犯教言，君復自愛，莫為非。行！吾去為遲，平慎行，望君歸。
+出東門，不顧歸。來入門，悵欲悲。盎中無鬥米儲，還視架上無懸衣。拔劍東門去，舍中兒母牽衣啼。他家但願富貴，賤妾與君共餔糜。上用倉浪天故，下當用此黃口兒。今非，咄！行！吾去為遲，白髮時下難久居。', NULL, NULL, 'parsed', 'cn-pretang1', 'CN', 'CN-PRETANG-CACHED-HAN-6771-9580-884c-2d-7121-540d-6c0f-2f-6f22-6a02-5e9c', 'https://zh.wikisource.org/wiki/%E6%A8%82%E5%BA%9C%E8%A9%A9%E9%9B%86/037%E5%8D%B7'),
+    ('cn-pretang-7121-540d-6c0f-2f-6f22-6a02-5e9c', '西門行', NULL, NULL, '出西門，步念之。今日不作樂，當待何時？夫為樂，為樂當及時。何能坐愁怫鬱，當復待來茲。飲醇酒，炙肥牛，請呼心所歡，可用解愁憂。人生不滿百，常懷千歲憂。晝短而夜長，何不秉燭遊。自非仙人王子喬，計會壽命難與期。自非仙人王子喬，計會壽命難與期。人壽非金石，年命安可期。貪財愛惜費，但為後世嗤。
+出西門，步念之，今日不作樂，當待何時？逮為樂，逮為樂，當及時。何能愁怫鬱，當復待來茲。釀美酒，炙肥牛，請呼心所歡，可用解憂愁。人生不滿百，常懷千歲憂。晝短苦夜長，何不秉燭遊。遊行去去如雲除，弊車贏馬為自儲。', NULL, NULL, 'parsed', 'cn-pretang1', 'CN', 'CN-PRETANG-CACHED-HAN-897f-9580-884c-2d-7121-540d-6c0f-2f-6f22-6a02-5e9c', 'https://zh.wikisource.org/wiki/%E6%A8%82%E5%BA%9C%E8%A9%A9%E9%9B%86/037%E5%8D%B7'),
+    ('cn-pretang-7121-540d-6c0f-2f-6f22-6a02-5e9c', '陌上桑', NULL, NULL, '日出東南隅，照我秦氏樓。秦氏有好女，自名為羅敷。羅敷憙蠶桑，采桑城南隅。青絲為籠係，桂枝為籠鉤。頭上倭墮髻，耳中明月珠。緗綺為下裙，紫綺為上襦。行者見羅敷，下擔捋髭須；少年見羅敷，脫帽著肖頭。耕者忘其犁，鋤者忘其鋤。來歸相怒怨，但坐觀羅敷。使君從南來，五馬立踟躕。使君遣吏往，問是誰家姝？秦氏有好女，自名為羅敷。羅敷年幾何？二十尚不足，十五頗有餘。使君謝羅敷：「寧可共載不？」羅敷前置辭：「使君一何愚！使君自有婦，羅敷自有夫。」東方千餘騎，夫婿居上頭。何用識夫婿，白馬從驪駒。青絲係馬尾，黃金絡馬頭。腰中鹿盧劍，可直千萬餘。十五府小史，二十朝大夫。三十侍中郎，四十專城居。為人潔白皙，鬑々頗有須。盈盈公府步，冉冉府中趨。坐中數千人，皆言夫婿殊。', NULL, NULL, 'parsed', 'cn-pretang1', 'CN', 'CN-PRETANG-CACHED-HAN-964c-4e0a-6851-2d-7121-540d-6c0f-2f-6f22-6a02-5e9c', 'https://zh.wikisource.org/wiki/%E6%A8%82%E5%BA%9C%E8%A9%A9%E9%9B%86/028%E5%8D%B7'),
+    ('cn-pretang-7121-540d-6c0f-2f-6f22-6a02-5e9c', '相逢行', NULL, NULL, '相逢狹路間，道隘不容車。不知何年少，夾轂問君家。君家誠易知，易知復難忘。黃金為君門，白玉為君堂。堂上置樽酒，作使邯鄲倡。中庭生桂樹，華燈何煌煌。兄弟兩三人，中子為侍郎。五日一來歸，道上自生光。黃金絡馬頭，觀者盈道傍。入門時左顧，但見雙鴛鴦。鴛鴦七十二，羅列自成行。音聲何雍雍，鶴鳴東西廂。大婦織綺羅，中婦織流黃。小婦無所為，挾瑟上高堂。丈人且安坐，調絲方未央。', NULL, NULL, 'parsed', 'cn-pretang1', 'CN', 'CN-PRETANG-CACHED-HAN-76f8-9022-884c-2d-7121-540d-6c0f-2f-6f22-6a02-5e9c', 'https://zh.wikisource.org/wiki/%E6%A8%82%E5%BA%9C%E8%A9%A9%E9%9B%86/034%E5%8D%B7'),
+    ('cn-pretang-7121-540d-6c0f-2f-6f22-6a02-5e9c', '隴西行', NULL, NULL, '天上何所有，歷歷種白榆。桂樹夾道生，青龍對道隅。鳳凰鳴啾啾，一母將九雛。顧視世間人，為樂甚獨殊。好婦出迎客，顏色正敷愉。伸腰再拜跪，問客平安不。請客北堂上，坐客氈氍毹。清白各異樽，酒上正華疏。酌酒持與客，客言主人持。卻略再拜跪，然後持一杯。談笑未及竟，左顧敕中廚。促令辦粗飯，慎莫使稽留。廢禮送客出，盈盈府中趨。送客亦不遠，足不過門樞。取婦得如此，齊姜亦不如。健婦持門戶，一勝一丈夫。', NULL, NULL, 'parsed', 'cn-pretang1', 'CN', 'CN-PRETANG-CACHED-HAN-96b4-897f-884c-2d-7121-540d-6c0f-2f-6f22-6a02-5e9c', 'https://zh.wikisource.org/wiki/%E6%A8%82%E5%BA%9C%E8%A9%A9%E9%9B%86/037%E5%8D%B7'),
+    ('cn-pretang-8af8-845b-4eae', '梁甫吟', NULL, NULL, '步出齊城門，遙望蕩陰裏。里中有三墓，累累正相似。問是誰家墓，田彊、古冶子。力能排南山，文能絶地紀。一朝被讒言，二桃殺三士。誰能為此謀？國相齊晏子。', NULL, NULL, 'parsed', 'cn-pretang1', 'CN', 'CN-PRETANG-CACHED-HAN-6881-752b-541f-2d-8af8-845b-4eae', 'https://zh.wikisource.org/wiki/%E6%A8%82%E5%BA%9C%E8%A9%A9%E9%9B%86/041%E5%8D%B7'),
+    ('cn-pretang-7121-540d-6c0f-2f-6f22-6a02-5e9c', '悲歌', NULL, NULL, '悲歌可以當泣，遠望可以當歸。思念故鄉，鬱鬱累累。欲歸家無人，欲渡河無船，心思不能言，腸中車輪轉。', NULL, NULL, 'parsed', 'cn-pretang1', 'CN', 'CN-PRETANG-CACHED-HAN-60b2-6b4c-2d-7121-540d-6c0f-2f-6f22-6a02-5e9c', 'https://zh.wikisource.org/wiki/%E6%A8%82%E5%BA%9C%E8%A9%A9%E9%9B%86/062%E5%8D%B7')
 )
 INSERT INTO poems (
   poet_id, poem_no, title_zh, title_ko, category, body_zh,
@@ -774,14 +785,14 @@ SET poem_count = sub.cnt
 FROM (
   SELECT poet_id, count(*)::integer AS cnt
   FROM poems
-  WHERE poet_id IN (SELECT id FROM poets WHERE slug IN ('cn-pretang-4f5a-540d', 'cn-pretang-7121-540d-6c0f-2f-6f22-6a02-5e9c', 'cn-pretang-5289-90a6', 'cn-pretang-6881-9d3b', 'cn-pretang-9805-7fbd', 'cn-pretang-5289-5fb9', 'cn-pretang-5b8b-5b50-4faf', 'cn-pretang-8f9b-5ef6-5e74', 'cn-pretang-8607-4f2f-7389-59bb', 'cn-pretang-5289-7d30-541b', 'cn-pretang-73ed-56fa', 'cn-pretang-5f35-8861', 'cn-pretang-71d5-523a-738b-65e6', 'cn-pretang-8521-9095', 'cn-pretang-73ed-5a55-59a4', 'cn-pretang-5353-6587-541b', 'cn-pretang-8521-7430'))
+  WHERE poet_id IN (SELECT id FROM poets WHERE slug IN ('cn-pretang-4f5a-540d', 'cn-pretang-7121-540d-6c0f-2f-6f22-6a02-5e9c', 'cn-pretang-5289-90a6', 'cn-pretang-6881-9d3b', 'cn-pretang-9805-7fbd', 'cn-pretang-5289-5fb9', 'cn-pretang-5b8b-5b50-4faf', 'cn-pretang-8f9b-5ef6-5e74', 'cn-pretang-8607-4f2f-7389-59bb', 'cn-pretang-5289-7d30-541b', 'cn-pretang-73ed-56fa', 'cn-pretang-5f35-8861', 'cn-pretang-71d5-523a-738b-65e6', 'cn-pretang-8521-9095', 'cn-pretang-73ed-5a55-59a4', 'cn-pretang-5353-6587-541b', 'cn-pretang-8521-7430', 'cn-pretang-8af8-845b-4eae'))
   GROUP BY poet_id
 ) sub
 WHERE p.id = sub.poet_id;
 
 -- Review counts before COMMIT when applying manually:
-SELECT era_period, count(*) FROM poets WHERE slug IN ('cn-pretang-4f5a-540d', 'cn-pretang-7121-540d-6c0f-2f-6f22-6a02-5e9c', 'cn-pretang-5289-90a6', 'cn-pretang-6881-9d3b', 'cn-pretang-9805-7fbd', 'cn-pretang-5289-5fb9', 'cn-pretang-5b8b-5b50-4faf', 'cn-pretang-8f9b-5ef6-5e74', 'cn-pretang-8607-4f2f-7389-59bb', 'cn-pretang-5289-7d30-541b', 'cn-pretang-73ed-56fa', 'cn-pretang-5f35-8861', 'cn-pretang-71d5-523a-738b-65e6', 'cn-pretang-8521-9095', 'cn-pretang-73ed-5a55-59a4', 'cn-pretang-5353-6587-541b', 'cn-pretang-8521-7430') GROUP BY era_period ORDER BY era_period;
-SELECT p.slug, count(pm.id) FROM poets p LEFT JOIN poems pm ON pm.poet_id = p.id WHERE p.slug IN ('cn-pretang-4f5a-540d', 'cn-pretang-7121-540d-6c0f-2f-6f22-6a02-5e9c', 'cn-pretang-5289-90a6', 'cn-pretang-6881-9d3b', 'cn-pretang-9805-7fbd', 'cn-pretang-5289-5fb9', 'cn-pretang-5b8b-5b50-4faf', 'cn-pretang-8f9b-5ef6-5e74', 'cn-pretang-8607-4f2f-7389-59bb', 'cn-pretang-5289-7d30-541b', 'cn-pretang-73ed-56fa', 'cn-pretang-5f35-8861', 'cn-pretang-71d5-523a-738b-65e6', 'cn-pretang-8521-9095', 'cn-pretang-73ed-5a55-59a4', 'cn-pretang-5353-6587-541b', 'cn-pretang-8521-7430') GROUP BY p.slug ORDER BY p.slug;
+SELECT era_period, count(*) FROM poets WHERE slug IN ('cn-pretang-4f5a-540d', 'cn-pretang-7121-540d-6c0f-2f-6f22-6a02-5e9c', 'cn-pretang-5289-90a6', 'cn-pretang-6881-9d3b', 'cn-pretang-9805-7fbd', 'cn-pretang-5289-5fb9', 'cn-pretang-5b8b-5b50-4faf', 'cn-pretang-8f9b-5ef6-5e74', 'cn-pretang-8607-4f2f-7389-59bb', 'cn-pretang-5289-7d30-541b', 'cn-pretang-73ed-56fa', 'cn-pretang-5f35-8861', 'cn-pretang-71d5-523a-738b-65e6', 'cn-pretang-8521-9095', 'cn-pretang-73ed-5a55-59a4', 'cn-pretang-5353-6587-541b', 'cn-pretang-8521-7430', 'cn-pretang-8af8-845b-4eae') GROUP BY era_period ORDER BY era_period;
+SELECT p.slug, count(pm.id) FROM poets p LEFT JOIN poems pm ON pm.poet_id = p.id WHERE p.slug IN ('cn-pretang-4f5a-540d', 'cn-pretang-7121-540d-6c0f-2f-6f22-6a02-5e9c', 'cn-pretang-5289-90a6', 'cn-pretang-6881-9d3b', 'cn-pretang-9805-7fbd', 'cn-pretang-5289-5fb9', 'cn-pretang-5b8b-5b50-4faf', 'cn-pretang-8f9b-5ef6-5e74', 'cn-pretang-8607-4f2f-7389-59bb', 'cn-pretang-5289-7d30-541b', 'cn-pretang-73ed-56fa', 'cn-pretang-5f35-8861', 'cn-pretang-71d5-523a-738b-65e6', 'cn-pretang-8521-9095', 'cn-pretang-73ed-5a55-59a4', 'cn-pretang-5353-6587-541b', 'cn-pretang-8521-7430', 'cn-pretang-8af8-845b-4eae') GROUP BY p.slug ORDER BY p.slug;
 
 ROLLBACK;
 -- COMMIT;

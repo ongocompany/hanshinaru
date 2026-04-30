@@ -33,6 +33,7 @@
     "cn:pre-tang-gushiyuan-links": "node scripts/build_cn_pre_tang_gushiyuan_link_candidates.mjs",
     "cn:pre-tang-cached-first-tranche": "node scripts/build_cn_pre_tang_first_tranche_from_cached_sources.mjs",
     "cn:pre-tang-gushiyuan-second-pass-targets": "node scripts/build_cn_pre_tang_gushiyuan_second_pass_targets.mjs",
+    "cn:pre-tang-companion-source-targets": "node scripts/build_cn_pre_tang_companion_source_targets.mjs",
     "cn:pre-tang-first-db-dry-run": "node scripts/build_cn_pre_tang_first_tranche_db_dry_run.mjs",
     "cn:pre-tang-first-jds-sql": "node scripts/build_cn_pre_tang_first_tranche_jds_sql.mjs"
   },

@@ -4,20 +4,21 @@
   "idPolicy": "negative provisional ids only; replace with real jds ids before Supabase upsert",
   "sourcePolicy": "pre-Tang source witness records; no owned translation/commentary yet",
   "summary": {
-    "records": 87,
-    "poets": 17,
-    "poems": 87,
+    "records": 95,
+    "poets": 18,
+    "poems": 95,
     "eras": {
       "pre-qin": 26,
-      "han": 61
+      "han": 69
     },
     "reviewStatuses": {
-      "needs-review": 87
+      "needs-review": 95
     },
     "sourceKinds": {
       "anthology-section": 26,
       "standalone-page": 3,
-      "gushiyuan-linked-dump-page": 58
+      "gushiyuan-linked-dump-page": 58,
+      "companion-anthology-volume-page": 8
     }
   },
   "curatedPoets": [
@@ -48,7 +49,7 @@
       "life_raw": null,
       "slug": "cn-pretang-7121-540d-6c0f-2f-6f22-6a02-5e9c",
       "era_period": "兩漢",
-      "poem_count": 20,
+      "poem_count": 27,
       "bio_ko": null,
       "sort_order": 2,
       "source_author_id": "CN-PRETANG-AUTHOR-7121-540d-6c0f-2f-6f22-6a02-5e9c"
@@ -292,6 +293,22 @@
       "bio_ko": null,
       "sort_order": 17,
       "source_author_id": "CN-PRETANG-AUTHOR-8521-7430"
+    },
+    {
+      "jds_id": -920018,
+      "country": "CN",
+      "era_slug": "han",
+      "name_ko": "諸葛亮",
+      "name_zh": "諸葛亮",
+      "life_birth": null,
+      "life_death": null,
+      "life_raw": null,
+      "slug": "cn-pretang-8af8-845b-4eae",
+      "era_period": "兩漢",
+      "poem_count": 1,
+      "bio_ko": null,
+      "sort_order": 18,
+      "source_author_id": "CN-PRETANG-AUTHOR-8af8-845b-4eae"
     }
   ],
   "curatedPoems": [
@@ -2400,6 +2417,208 @@
         "standalone-page-reuse",
         "uncertain-author-or-text-marker"
       ]
+    },
+    {
+      "jds_id": -930088,
+      "poet_jds_id": -920002,
+      "country": "CN",
+      "era_slug": "han",
+      "title_ko": null,
+      "title_zh": "有所思",
+      "body_zh": "有所思，乃在大海南。何用問遺君？雙珠玳瑁簪，用玉紹繚之。聞君有他心，拉雜摧燒之。摧燒之，當風揚其灰。從今以往，勿復相思。相思與君絶！雞鳴狗吠，兄嫂當知之。秋風肅肅晨風颸，東方須臾高知之。",
+      "translation_ko": null,
+      "commentary_ko": null,
+      "is_notable": true,
+      "status": "parsed",
+      "quality": "cn-pretang1",
+      "category": null,
+      "genre": "漢樂府",
+      "in_daily_pool": false,
+      "sort_order": 88,
+      "source_record_id": "CN-PRETANG-CACHED-HAN-6709-6240-601d-2d-7121-540d-6c0f-2f-6f22-6a02-5e9c",
+      "source_url": "https://zh.wikisource.org/wiki/%E6%A8%82%E5%BA%9C%E8%A9%A9%E9%9B%86/016%E5%8D%B7",
+      "review_status": "needs-review",
+      "review_reasons": [
+        "standalone-page-reuse",
+        "short-text",
+        "uncertain-author-or-text-marker"
+      ]
+    },
+    {
+      "jds_id": -930089,
+      "poet_jds_id": -920002,
+      "country": "CN",
+      "era_slug": "han",
+      "title_ko": null,
+      "title_zh": "東門行",
+      "body_zh": "出東門，不顧歸。來入門，悵欲悲。盎中無鬥儲，還視桁上無懸衣。拔劍出門去，兒女牽衣啼。他家但願富貴，賤妾與君共餔糜。共餔糜，上用倉浪天故，下為黃口小兒。今時清廉，難犯教言，君復自愛莫為非。今時清廉，難犯教言，君復自愛，莫為非。行！吾去為遲，平慎行，望君歸。\n出東門，不顧歸。來入門，悵欲悲。盎中無鬥米儲，還視架上無懸衣。拔劍東門去，舍中兒母牽衣啼。他家但願富貴，賤妾與君共餔糜。上用倉浪天故，下當用此黃口兒。今非，咄！行！吾去為遲，白髮時下難久居。",
+      "translation_ko": null,
+      "commentary_ko": null,
+      "is_notable": true,
+      "status": "parsed",
+      "quality": "cn-pretang1",
+      "category": null,
+      "genre": "漢樂府",
+      "in_daily_pool": false,
+      "sort_order": 89,
+      "source_record_id": "CN-PRETANG-CACHED-HAN-6771-9580-884c-2d-7121-540d-6c0f-2f-6f22-6a02-5e9c",
+      "source_url": "https://zh.wikisource.org/wiki/%E6%A8%82%E5%BA%9C%E8%A9%A9%E9%9B%86/037%E5%8D%B7",
+      "review_status": "needs-review",
+      "review_reasons": [
+        "standalone-page-reuse"
+      ]
+    },
+    {
+      "jds_id": -930090,
+      "poet_jds_id": -920002,
+      "country": "CN",
+      "era_slug": "han",
+      "title_ko": null,
+      "title_zh": "西門行",
+      "body_zh": "出西門，步念之。今日不作樂，當待何時？夫為樂，為樂當及時。何能坐愁怫鬱，當復待來茲。飲醇酒，炙肥牛，請呼心所歡，可用解愁憂。人生不滿百，常懷千歲憂。晝短而夜長，何不秉燭遊。自非仙人王子喬，計會壽命難與期。自非仙人王子喬，計會壽命難與期。人壽非金石，年命安可期。貪財愛惜費，但為後世嗤。\n出西門，步念之，今日不作樂，當待何時？逮為樂，逮為樂，當及時。何能愁怫鬱，當復待來茲。釀美酒，炙肥牛，請呼心所歡，可用解憂愁。人生不滿百，常懷千歲憂。晝短苦夜長，何不秉燭遊。遊行去去如雲除，弊車贏馬為自儲。",
+      "translation_ko": null,
+      "commentary_ko": null,
+      "is_notable": true,
+      "status": "parsed",
+      "quality": "cn-pretang1",
+      "category": null,
+      "genre": "漢樂府",
+      "in_daily_pool": false,
+      "sort_order": 90,
+      "source_record_id": "CN-PRETANG-CACHED-HAN-897f-9580-884c-2d-7121-540d-6c0f-2f-6f22-6a02-5e9c",
+      "source_url": "https://zh.wikisource.org/wiki/%E6%A8%82%E5%BA%9C%E8%A9%A9%E9%9B%86/037%E5%8D%B7",
+      "review_status": "needs-review",
+      "review_reasons": [
+        "standalone-page-reuse",
+        "uncertain-author-or-text-marker"
+      ]
+    },
+    {
+      "jds_id": -930091,
+      "poet_jds_id": -920002,
+      "country": "CN",
+      "era_slug": "han",
+      "title_ko": null,
+      "title_zh": "陌上桑",
+      "body_zh": "日出東南隅，照我秦氏樓。秦氏有好女，自名為羅敷。羅敷憙蠶桑，采桑城南隅。青絲為籠係，桂枝為籠鉤。頭上倭墮髻，耳中明月珠。緗綺為下裙，紫綺為上襦。行者見羅敷，下擔捋髭須；少年見羅敷，脫帽著肖頭。耕者忘其犁，鋤者忘其鋤。來歸相怒怨，但坐觀羅敷。使君從南來，五馬立踟躕。使君遣吏往，問是誰家姝？秦氏有好女，自名為羅敷。羅敷年幾何？二十尚不足，十五頗有餘。使君謝羅敷：「寧可共載不？」羅敷前置辭：「使君一何愚！使君自有婦，羅敷自有夫。」東方千餘騎，夫婿居上頭。何用識夫婿，白馬從驪駒。青絲係馬尾，黃金絡馬頭。腰中鹿盧劍，可直千萬餘。十五府小史，二十朝大夫。三十侍中郎，四十專城居。為人潔白皙，鬑々頗有須。盈盈公府步，冉冉府中趨。坐中數千人，皆言夫婿殊。",
+      "translation_ko": null,
+      "commentary_ko": null,
+      "is_notable": true,
+      "status": "parsed",
+      "quality": "cn-pretang1",
+      "category": null,
+      "genre": "漢樂府",
+      "in_daily_pool": false,
+      "sort_order": 91,
+      "source_record_id": "CN-PRETANG-CACHED-HAN-964c-4e0a-6851-2d-7121-540d-6c0f-2f-6f22-6a02-5e9c",
+      "source_url": "https://zh.wikisource.org/wiki/%E6%A8%82%E5%BA%9C%E8%A9%A9%E9%9B%86/028%E5%8D%B7",
+      "review_status": "needs-review",
+      "review_reasons": [
+        "standalone-page-reuse",
+        "short-text",
+        "uncertain-author-or-text-marker"
+      ]
+    },
+    {
+      "jds_id": -930092,
+      "poet_jds_id": -920002,
+      "country": "CN",
+      "era_slug": "han",
+      "title_ko": null,
+      "title_zh": "相逢行",
+      "body_zh": "相逢狹路間，道隘不容車。不知何年少，夾轂問君家。君家誠易知，易知復難忘。黃金為君門，白玉為君堂。堂上置樽酒，作使邯鄲倡。中庭生桂樹，華燈何煌煌。兄弟兩三人，中子為侍郎。五日一來歸，道上自生光。黃金絡馬頭，觀者盈道傍。入門時左顧，但見雙鴛鴦。鴛鴦七十二，羅列自成行。音聲何雍雍，鶴鳴東西廂。大婦織綺羅，中婦織流黃。小婦無所為，挾瑟上高堂。丈人且安坐，調絲方未央。",
+      "translation_ko": null,
+      "commentary_ko": null,
+      "is_notable": true,
+      "status": "parsed",
+      "quality": "cn-pretang1",
+      "category": null,
+      "genre": "漢樂府",
+      "in_daily_pool": false,
+      "sort_order": 92,
+      "source_record_id": "CN-PRETANG-CACHED-HAN-76f8-9022-884c-2d-7121-540d-6c0f-2f-6f22-6a02-5e9c",
+      "source_url": "https://zh.wikisource.org/wiki/%E6%A8%82%E5%BA%9C%E8%A9%A9%E9%9B%86/034%E5%8D%B7",
+      "review_status": "needs-review",
+      "review_reasons": [
+        "standalone-page-reuse",
+        "short-text"
+      ]
+    },
+    {
+      "jds_id": -930093,
+      "poet_jds_id": -920002,
+      "country": "CN",
+      "era_slug": "han",
+      "title_ko": null,
+      "title_zh": "隴西行",
+      "body_zh": "天上何所有，歷歷種白榆。桂樹夾道生，青龍對道隅。鳳凰鳴啾啾，一母將九雛。顧視世間人，為樂甚獨殊。好婦出迎客，顏色正敷愉。伸腰再拜跪，問客平安不。請客北堂上，坐客氈氍毹。清白各異樽，酒上正華疏。酌酒持與客，客言主人持。卻略再拜跪，然後持一杯。談笑未及竟，左顧敕中廚。促令辦粗飯，慎莫使稽留。廢禮送客出，盈盈府中趨。送客亦不遠，足不過門樞。取婦得如此，齊姜亦不如。健婦持門戶，一勝一丈夫。",
+      "translation_ko": null,
+      "commentary_ko": null,
+      "is_notable": true,
+      "status": "parsed",
+      "quality": "cn-pretang1",
+      "category": null,
+      "genre": "漢樂府",
+      "in_daily_pool": false,
+      "sort_order": 93,
+      "source_record_id": "CN-PRETANG-CACHED-HAN-96b4-897f-884c-2d-7121-540d-6c0f-2f-6f22-6a02-5e9c",
+      "source_url": "https://zh.wikisource.org/wiki/%E6%A8%82%E5%BA%9C%E8%A9%A9%E9%9B%86/037%E5%8D%B7",
+      "review_status": "needs-review",
+      "review_reasons": [
+        "standalone-page-reuse",
+        "short-text"
+      ]
+    },
+    {
+      "jds_id": -930094,
+      "poet_jds_id": -920018,
+      "country": "CN",
+      "era_slug": "han",
+      "title_ko": null,
+      "title_zh": "梁甫吟",
+      "body_zh": "步出齊城門，遙望蕩陰裏。里中有三墓，累累正相似。問是誰家墓，田彊、古冶子。力能排南山，文能絶地紀。一朝被讒言，二桃殺三士。誰能為此謀？國相齊晏子。",
+      "translation_ko": null,
+      "commentary_ko": null,
+      "is_notable": true,
+      "status": "parsed",
+      "quality": "cn-pretang1",
+      "category": null,
+      "genre": null,
+      "in_daily_pool": false,
+      "sort_order": 94,
+      "source_record_id": "CN-PRETANG-CACHED-HAN-6881-752b-541f-2d-8af8-845b-4eae",
+      "source_url": "https://zh.wikisource.org/wiki/%E6%A8%82%E5%BA%9C%E8%A9%A9%E9%9B%86/041%E5%8D%B7",
+      "review_status": "needs-review",
+      "review_reasons": [
+        "standalone-page-reuse",
+        "short-text",
+        "uncertain-author-or-text-marker"
+      ]
+    },
+    {
+      "jds_id": -930095,
+      "poet_jds_id": -920002,
+      "country": "CN",
+      "era_slug": "han",
+      "title_ko": null,
+      "title_zh": "悲歌",
+      "body_zh": "悲歌可以當泣，遠望可以當歸。思念故鄉，鬱鬱累累。欲歸家無人，欲渡河無船，心思不能言，腸中車輪轉。",
+      "translation_ko": null,
+      "commentary_ko": null,
+      "is_notable": true,
+      "status": "parsed",
+      "quality": "cn-pretang1",
+      "category": null,
+      "genre": "漢樂府",
+      "in_daily_pool": false,
+      "sort_order": 95,
+      "source_record_id": "CN-PRETANG-CACHED-HAN-60b2-6b4c-2d-7121-540d-6c0f-2f-6f22-6a02-5e9c",
+      "source_url": "https://zh.wikisource.org/wiki/%E6%A8%82%E5%BA%9C%E8%A9%A9%E9%9B%86/062%E5%8D%B7",
+      "review_status": "needs-review",
+      "review_reasons": [
+        "standalone-page-reuse",
+        "short-text"
+      ]
     }
   ],
   "jdsUpsertCandidates": {
@@ -2556,6 +2775,15 @@
         "country": "CN",
         "slug": "cn-pretang-8521-7430",
         "source_author_id": "CN-PRETANG-AUTHOR-8521-7430"
+      },
+      {
+        "name_zh": "諸葛亮",
+        "name_ko": "諸葛亮",
+        "life_raw": null,
+        "era_period": "兩漢",
+        "country": "CN",
+        "slug": "cn-pretang-8af8-845b-4eae",
+        "source_author_id": "CN-PRETANG-AUTHOR-8af8-845b-4eae"
       }
     ],
     "poems": [
@@ -3863,6 +4091,126 @@
         "country": "CN",
         "source_record_id": "CN-PRETANG-CACHED-HAN-60b2-61a4-8a69-2d-8521-7430",
         "source_url": "https://zh.wikisource.org/wiki/%E6%82%B2%E6%86%A4%E8%A9%A9_(%E8%94%A1%E7%90%B0)"
+      },
+      {
+        "poet_source_author_id": "CN-PRETANG-AUTHOR-7121-540d-6c0f-2f-6f22-6a02-5e9c",
+        "poet_slug": "cn-pretang-7121-540d-6c0f-2f-6f22-6a02-5e9c",
+        "title_zh": "有所思",
+        "title_ko": null,
+        "body_zh": "有所思，乃在大海南。何用問遺君？雙珠玳瑁簪，用玉紹繚之。聞君有他心，拉雜摧燒之。摧燒之，當風揚其灰。從今以往，勿復相思。相思與君絶！雞鳴狗吠，兄嫂當知之。秋風肅肅晨風颸，東方須臾高知之。",
+        "translation_ko": null,
+        "commentary_ko": null,
+        "category": null,
+        "quality": "cn-pretang1",
+        "status": "parsed",
+        "country": "CN",
+        "source_record_id": "CN-PRETANG-CACHED-HAN-6709-6240-601d-2d-7121-540d-6c0f-2f-6f22-6a02-5e9c",
+        "source_url": "https://zh.wikisource.org/wiki/%E6%A8%82%E5%BA%9C%E8%A9%A9%E9%9B%86/016%E5%8D%B7"
+      },
+      {
+        "poet_source_author_id": "CN-PRETANG-AUTHOR-7121-540d-6c0f-2f-6f22-6a02-5e9c",
+        "poet_slug": "cn-pretang-7121-540d-6c0f-2f-6f22-6a02-5e9c",
+        "title_zh": "東門行",
+        "title_ko": null,
+        "body_zh": "出東門，不顧歸。來入門，悵欲悲。盎中無鬥儲，還視桁上無懸衣。拔劍出門去，兒女牽衣啼。他家但願富貴，賤妾與君共餔糜。共餔糜，上用倉浪天故，下為黃口小兒。今時清廉，難犯教言，君復自愛莫為非。今時清廉，難犯教言，君復自愛，莫為非。行！吾去為遲，平慎行，望君歸。\n出東門，不顧歸。來入門，悵欲悲。盎中無鬥米儲，還視架上無懸衣。拔劍東門去，舍中兒母牽衣啼。他家但願富貴，賤妾與君共餔糜。上用倉浪天故，下當用此黃口兒。今非，咄！行！吾去為遲，白髮時下難久居。",
+        "translation_ko": null,
+        "commentary_ko": null,
+        "category": null,
+        "quality": "cn-pretang1",
+        "status": "parsed",
+        "country": "CN",
+        "source_record_id": "CN-PRETANG-CACHED-HAN-6771-9580-884c-2d-7121-540d-6c0f-2f-6f22-6a02-5e9c",
+        "source_url": "https://zh.wikisource.org/wiki/%E6%A8%82%E5%BA%9C%E8%A9%A9%E9%9B%86/037%E5%8D%B7"
+      },
+      {
+        "poet_source_author_id": "CN-PRETANG-AUTHOR-7121-540d-6c0f-2f-6f22-6a02-5e9c",
+        "poet_slug": "cn-pretang-7121-540d-6c0f-2f-6f22-6a02-5e9c",
+        "title_zh": "西門行",
+        "title_ko": null,
+        "body_zh": "出西門，步念之。今日不作樂，當待何時？夫為樂，為樂當及時。何能坐愁怫鬱，當復待來茲。飲醇酒，炙肥牛，請呼心所歡，可用解愁憂。人生不滿百，常懷千歲憂。晝短而夜長，何不秉燭遊。自非仙人王子喬，計會壽命難與期。自非仙人王子喬，計會壽命難與期。人壽非金石，年命安可期。貪財愛惜費，但為後世嗤。\n出西門，步念之，今日不作樂，當待何時？逮為樂，逮為樂，當及時。何能愁怫鬱，當復待來茲。釀美酒，炙肥牛，請呼心所歡，可用解憂愁。人生不滿百，常懷千歲憂。晝短苦夜長，何不秉燭遊。遊行去去如雲除，弊車贏馬為自儲。",
+        "translation_ko": null,
+        "commentary_ko": null,
+        "category": null,
+        "quality": "cn-pretang1",
+        "status": "parsed",
+        "country": "CN",
+        "source_record_id": "CN-PRETANG-CACHED-HAN-897f-9580-884c-2d-7121-540d-6c0f-2f-6f22-6a02-5e9c",
+        "source_url": "https://zh.wikisource.org/wiki/%E6%A8%82%E5%BA%9C%E8%A9%A9%E9%9B%86/037%E5%8D%B7"
+      },
+      {
+        "poet_source_author_id": "CN-PRETANG-AUTHOR-7121-540d-6c0f-2f-6f22-6a02-5e9c",
+        "poet_slug": "cn-pretang-7121-540d-6c0f-2f-6f22-6a02-5e9c",
+        "title_zh": "陌上桑",
+        "title_ko": null,
+        "body_zh": "日出東南隅，照我秦氏樓。秦氏有好女，自名為羅敷。羅敷憙蠶桑，采桑城南隅。青絲為籠係，桂枝為籠鉤。頭上倭墮髻，耳中明月珠。緗綺為下裙，紫綺為上襦。行者見羅敷，下擔捋髭須；少年見羅敷，脫帽著肖頭。耕者忘其犁，鋤者忘其鋤。來歸相怒怨，但坐觀羅敷。使君從南來，五馬立踟躕。使君遣吏往，問是誰家姝？秦氏有好女，自名為羅敷。羅敷年幾何？二十尚不足，十五頗有餘。使君謝羅敷：「寧可共載不？」羅敷前置辭：「使君一何愚！使君自有婦，羅敷自有夫。」東方千餘騎，夫婿居上頭。何用識夫婿，白馬從驪駒。青絲係馬尾，黃金絡馬頭。腰中鹿盧劍，可直千萬餘。十五府小史，二十朝大夫。三十侍中郎，四十專城居。為人潔白皙，鬑々頗有須。盈盈公府步，冉冉府中趨。坐中數千人，皆言夫婿殊。",
+        "translation_ko": null,
+        "commentary_ko": null,
+        "category": null,
+        "quality": "cn-pretang1",
+        "status": "parsed",
+        "country": "CN",
+        "source_record_id": "CN-PRETANG-CACHED-HAN-964c-4e0a-6851-2d-7121-540d-6c0f-2f-6f22-6a02-5e9c",
+        "source_url": "https://zh.wikisource.org/wiki/%E6%A8%82%E5%BA%9C%E8%A9%A9%E9%9B%86/028%E5%8D%B7"
+      },
+      {
+        "poet_source_author_id": "CN-PRETANG-AUTHOR-7121-540d-6c0f-2f-6f22-6a02-5e9c",
+        "poet_slug": "cn-pretang-7121-540d-6c0f-2f-6f22-6a02-5e9c",
+        "title_zh": "相逢行",
+        "title_ko": null,
+        "body_zh": "相逢狹路間，道隘不容車。不知何年少，夾轂問君家。君家誠易知，易知復難忘。黃金為君門，白玉為君堂。堂上置樽酒，作使邯鄲倡。中庭生桂樹，華燈何煌煌。兄弟兩三人，中子為侍郎。五日一來歸，道上自生光。黃金絡馬頭，觀者盈道傍。入門時左顧，但見雙鴛鴦。鴛鴦七十二，羅列自成行。音聲何雍雍，鶴鳴東西廂。大婦織綺羅，中婦織流黃。小婦無所為，挾瑟上高堂。丈人且安坐，調絲方未央。",
+        "translation_ko": null,
+        "commentary_ko": null,
+        "category": null,
+        "quality": "cn-pretang1",
+        "status": "parsed",
+        "country": "CN",
+        "source_record_id": "CN-PRETANG-CACHED-HAN-76f8-9022-884c-2d-7121-540d-6c0f-2f-6f22-6a02-5e9c",
+        "source_url": "https://zh.wikisource.org/wiki/%E6%A8%82%E5%BA%9C%E8%A9%A9%E9%9B%86/034%E5%8D%B7"
+      },
+      {
+        "poet_source_author_id": "CN-PRETANG-AUTHOR-7121-540d-6c0f-2f-6f22-6a02-5e9c",
+        "poet_slug": "cn-pretang-7121-540d-6c0f-2f-6f22-6a02-5e9c",
+        "title_zh": "隴西行",
+        "title_ko": null,
+        "body_zh": "天上何所有，歷歷種白榆。桂樹夾道生，青龍對道隅。鳳凰鳴啾啾，一母將九雛。顧視世間人，為樂甚獨殊。好婦出迎客，顏色正敷愉。伸腰再拜跪，問客平安不。請客北堂上，坐客氈氍毹。清白各異樽，酒上正華疏。酌酒持與客，客言主人持。卻略再拜跪，然後持一杯。談笑未及竟，左顧敕中廚。促令辦粗飯，慎莫使稽留。廢禮送客出，盈盈府中趨。送客亦不遠，足不過門樞。取婦得如此，齊姜亦不如。健婦持門戶，一勝一丈夫。",
+        "translation_ko": null,
+        "commentary_ko": null,
+        "category": null,
+        "quality": "cn-pretang1",
+        "status": "parsed",
+        "country": "CN",
+        "source_record_id": "CN-PRETANG-CACHED-HAN-96b4-897f-884c-2d-7121-540d-6c0f-2f-6f22-6a02-5e9c",
+        "source_url": "https://zh.wikisource.org/wiki/%E6%A8%82%E5%BA%9C%E8%A9%A9%E9%9B%86/037%E5%8D%B7"
+      },
+      {
+        "poet_source_author_id": "CN-PRETANG-AUTHOR-8af8-845b-4eae",
+        "poet_slug": "cn-pretang-8af8-845b-4eae",
+        "title_zh": "梁甫吟",
+        "title_ko": null,
+        "body_zh": "步出齊城門，遙望蕩陰裏。里中有三墓，累累正相似。問是誰家墓，田彊、古冶子。力能排南山，文能絶地紀。一朝被讒言，二桃殺三士。誰能為此謀？國相齊晏子。",
+        "translation_ko": null,
+        "commentary_ko": null,
+        "category": null,
+        "quality": "cn-pretang1",
+        "status": "parsed",
+        "country": "CN",
+        "source_record_id": "CN-PRETANG-CACHED-HAN-6881-752b-541f-2d-8af8-845b-4eae",
+        "source_url": "https://zh.wikisource.org/wiki/%E6%A8%82%E5%BA%9C%E8%A9%A9%E9%9B%86/041%E5%8D%B7"
+      },
+      {
+        "poet_source_author_id": "CN-PRETANG-AUTHOR-7121-540d-6c0f-2f-6f22-6a02-5e9c",
+        "poet_slug": "cn-pretang-7121-540d-6c0f-2f-6f22-6a02-5e9c",
+        "title_zh": "悲歌",
+        "title_ko": null,
+        "body_zh": "悲歌可以當泣，遠望可以當歸。思念故鄉，鬱鬱累累。欲歸家無人，欲渡河無船，心思不能言，腸中車輪轉。",
+        "translation_ko": null,
+        "commentary_ko": null,
+        "category": null,
+        "quality": "cn-pretang1",
+        "status": "parsed",
+        "country": "CN",
+        "source_record_id": "CN-PRETANG-CACHED-HAN-60b2-6b4c-2d-7121-540d-6c0f-2f-6f22-6a02-5e9c",
+        "source_url": "https://zh.wikisource.org/wiki/%E6%A8%82%E5%BA%9C%E8%A9%A9%E9%9B%86/062%E5%8D%B7"
       }
     ]
   }

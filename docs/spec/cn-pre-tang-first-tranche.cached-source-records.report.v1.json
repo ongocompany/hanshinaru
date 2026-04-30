@@ -1,24 +1,31 @@
 {
   "batchId": "cn-pre-tang-first-tranche-cached-sources",
-  "generatedAt": "2026-04-30T06:55:36.823Z",
+  "generatedAt": "2026-04-30T07:12:52.283Z",
   "source": "/Users/jinwoo/Documents/development/hanshinaru/docs/spec/cn-non-tang-tranche1.sources.raw.json",
   "summary": {
     "sourcePages": 10,
-    "extractedRecords": 87,
+    "extractedRecords": 95,
     "byEra": {
       "pre-qin": 26,
-      "han": 61
+      "han": 69
     },
     "bySourcePage": {
       "古詩源": 84,
       "上邪": 1,
       "行行重行行": 1,
-      "迢迢牽牛星": 1
+      "迢迢牽牛星": 1,
+      "樂府詩集/016卷": 1,
+      "樂府詩集/037卷": 3,
+      "樂府詩集/028卷": 1,
+      "樂府詩集/034卷": 1,
+      "樂府詩集/041卷": 1,
+      "樂府詩集/062卷": 1
     },
     "bySourceKind": {
       "anthology-section": 26,
       "standalone-page": 3,
-      "gushiyuan-linked-dump-page": 58
+      "gushiyuan-linked-dump-page": 58,
+      "companion-anthology-volume-page": 8
     },
     "gushiYuanLinkedDumpPages": {
       "inputPages": 58,
@@ -39,6 +46,13 @@
       "skippedByReason": {
         "dump-fetch-missing": 70
       }
+    },
+    "companionSourceDumpPages": {
+      "inputPages": 179,
+      "fetchedOk": 170,
+      "extractedRecords": 8,
+      "skippedWithoutBody": 0,
+      "skippedByReason": {}
     }
   },
   "skippedGushiYuanLinkedPages": [
@@ -724,6 +738,7 @@
       "reason": "dump-fetch-missing"
     }
   ],
+  "skippedCompanionSourcePages": [],
   "policy": [
     "This is a companion-source recovery after exact 先秦漢魏晉南北朝詩 volume titles were missing in the zhwikisource dump.",
     "Records are source witnesses, not final DB upserts.",
