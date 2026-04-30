@@ -1,19 +1,30 @@
 {
   "batchId": "cn-pre-tang-first-tranche-cached-sources",
-  "generatedAt": "2026-04-29T21:50:15.437Z",
+  "generatedAt": "2026-04-30T06:08:07.170Z",
   "source": "/Users/jinwoo/Documents/development/hanshinaru/docs/spec/cn-non-tang-tranche1.sources.raw.json",
   "summary": {
     "sourcePages": 10,
-    "extractedRecords": 29,
+    "extractedRecords": 57,
     "byEra": {
       "pre-qin": 26,
-      "han": 3
+      "han": 31
     },
     "bySourcePage": {
-      "古詩源": 26,
+      "古詩源": 54,
       "上邪": 1,
       "行行重行行": 1,
       "迢迢牽牛星": 1
+    },
+    "bySourceKind": {
+      "anthology-section": 26,
+      "standalone-page": 3,
+      "gushiyuan-linked-dump-page": 28
+    },
+    "gushiYuanLinkedDumpPages": {
+      "inputPages": 58,
+      "fetchedOk": 58,
+      "extractedRecords": 29,
+      "skippedWithoutBody": 29
     }
   },
   "policy": [

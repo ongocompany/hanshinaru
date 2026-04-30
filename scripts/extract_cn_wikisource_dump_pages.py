@@ -20,18 +20,25 @@ def main():
     parser.add_argument("--out", required=True, help="Output raw pages JSON")
     parser.add_argument("--limit", type=int, default=0, help="Limit selected author-parentheses candidates")
     parser.add_argument("--era", default=None, help="Optional eraSlug filter")
+    parser.add_argument(
+        "--priority",
+        default="author-parentheses-likely",
+        help="Candidate priority to extract",
+    )
     args = parser.parse_args()
 
     candidates_doc = read_json(args.candidates)
     selected = [
         item for item in candidates_doc["candidates"]
-        if item.get("priority") == "author-parentheses-likely"
+        if item.get("priority") == args.priority
         and (args.era is None or item.get("eraSlug") == args.era)
     ]
     if args.limit:
         selected = selected[:args.limit]
 
-    by_title = {item["rawTitle"]: item for item in selected}
+    by_title = {}
+    for item in selected:
+        by_title.setdefault(item["rawTitle"], []).append(item)
     remaining = set(by_title.keys())
     pages = []
 
@@ -42,17 +49,17 @@ def main():
                 continue
             title = text_of(elem, f"{NS}title")
             if title in remaining:
-                candidate = by_title[title]
                 text = text_of(elem, f"{NS}revision/{NS}text")
-                pages.append({
-                    **candidate,
-                    "sourceUrl": f"https://zh.wikisource.org/wiki/{quote_wiki_title(title)}",
-                    "categoryTitle": category_title_for_era(candidate.get("eraSlug")),
-                    "fetchStatus": "ok",
-                    "dumpTitle": title,
-                    "dumpTextBytes": len(text.encode("utf-8")),
-                    "wikitext": text,
-                })
+                for candidate in by_title[title]:
+                    pages.append({
+                        **candidate,
+                        "sourceUrl": f"https://zh.wikisource.org/wiki/{quote_wiki_title(title)}",
+                        "categoryTitle": category_title_for_era(candidate.get("eraSlug")),
+                        "fetchStatus": "ok",
+                        "dumpTitle": title,
+                        "dumpTextBytes": len(text.encode("utf-8")),
+                        "wikitext": text,
+                    })
                 remaining.remove(title)
                 if not remaining:
                     elem.clear()
@@ -60,22 +67,22 @@ def main():
             elem.clear()
 
     for title in sorted(remaining):
-        candidate = by_title[title]
-        pages.append({
-            **candidate,
-            "sourceUrl": f"https://zh.wikisource.org/wiki/{quote_wiki_title(title)}",
-            "categoryTitle": category_title_for_era(candidate.get("eraSlug")),
-            "fetchStatus": "missing-in-dump",
-            "error": "exact title not found in dump",
-            "wikitext": "",
-        })
+        for candidate in by_title[title]:
+            pages.append({
+                **candidate,
+                "sourceUrl": f"https://zh.wikisource.org/wiki/{quote_wiki_title(title)}",
+                "categoryTitle": category_title_for_era(candidate.get("eraSlug")),
+                "fetchStatus": "missing-in-dump",
+                "error": "exact title not found in dump",
+                "wikitext": "",
+            })
 
     doc = {
         "version": "2026-04-30.v1",
         "source": args.candidates,
         "dump": args.dump,
         "selection": {
-            "priority": "author-parentheses-likely",
+            "priority": args.priority,
             "eraFilter": args.era,
             "limit": args.limit,
         },
@@ -113,6 +120,8 @@ def quote_wiki_title(title):
 
 def category_title_for_era(era_slug):
     return {
+        "pre-qin": "Category:先秦詩",
+        "han": "Category:漢詩",
         "song": "Category:宋詩",
         "yuan": "Category:元詩",
         "ming": "Category:明詩",

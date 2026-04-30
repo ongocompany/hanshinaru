@@ -1,7 +1,7 @@
 {
   "version": "2026-04-30.v1",
   "batchId": "cn-pre-tang-first-tranche-cached-sources",
-  "generatedAt": "2026-04-29T21:50:15.437Z",
+  "generatedAt": "2026-04-30T06:08:07.170Z",
   "sourcePolicy": "cached zh Wikisource companion sources",
   "records": [
     {
@@ -1110,6 +1110,1129 @@
       "rights": {
         "originalText": {
           "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-HAN-5927-98a8-6b4c-2d-5289-90a6",
+      "country": "CN",
+      "eraSlug": "han",
+      "title": {
+        "zh": "大風歌",
+        "ko": null
+      },
+      "author": {
+        "zh": "劉邦",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "古詩源",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E5%A4%A7%E9%A2%A8%E6%AD%8C_(%E5%8A%89%E9%82%A6)",
+        "section": "卷二漢詩",
+        "kind": "gushiyuan-linked-dump-page"
+      },
+      "text": {
+        "poemZh": "大風起兮雲飛揚，威加海內兮歸故鄉。安得猛士兮守四方？",
+        "lineCount": 1,
+        "charCount": 26
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "standalone-page-reuse",
+          "short-text",
+          "uncertain-author-or-text-marker"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "sourceUrl": "https://zh.wikisource.org/wiki/%E5%A4%A7%E9%A2%A8%E6%AD%8C_(%E5%8A%89%E9%82%A6)",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-HAN-4e94-566b-6b4c-2d-6881-9d3b",
+      "country": "CN",
+      "eraSlug": "han",
+      "title": {
+        "zh": "五噫歌",
+        "ko": null
+      },
+      "author": {
+        "zh": "梁鴻",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "古詩源",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E4%BA%94%E5%99%AB%E6%AD%8C",
+        "section": "卷二漢詩",
+        "kind": "gushiyuan-linked-dump-page"
+      },
+      "text": {
+        "poemZh": "陟彼北芒兮，噫！\n顧瞻帝京兮，噫！\n宮闕崔巍兮，噫！\n民之劬勞兮，噫！\n遼遼未央兮，噫！",
+        "lineCount": 5,
+        "charCount": 40
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "standalone-page-reuse"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "sourceUrl": "https://zh.wikisource.org/wiki/%E4%BA%94%E5%99%AB%E6%AD%8C",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-HAN-5793-4e0b-6b4c-2d-9805-7fbd",
+      "country": "CN",
+      "eraSlug": "han",
+      "title": {
+        "zh": "垓下歌",
+        "ko": null
+      },
+      "author": {
+        "zh": "項羽",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "古詩源",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E5%9E%93%E4%B8%8B%E6%AD%8C_(%E9%A0%85%E7%BE%BD)",
+        "section": "卷二漢詩",
+        "kind": "gushiyuan-linked-dump-page"
+      },
+      "text": {
+        "poemZh": "力拔山兮氣蓋世，\n時不利兮騅不逝。\n騅不逝兮可奈何，\n虞兮虞兮奈若何。",
+        "lineCount": 4,
+        "charCount": 32
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "standalone-page-reuse"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "sourceUrl": "https://zh.wikisource.org/wiki/%E5%9E%93%E4%B8%8B%E6%AD%8C_(%E9%A0%85%E7%BE%BD)",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-HAN-79cb-98a8-8fad-2d-5289-5fb9",
+      "country": "CN",
+      "eraSlug": "han",
+      "title": {
+        "zh": "秋風辭",
+        "ko": null
+      },
+      "author": {
+        "zh": "劉徹",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "古詩源",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E7%A7%8B%E9%A2%A8%E8%BE%AD_(%E5%8A%89%E5%BE%B9)",
+        "section": "卷二漢詩",
+        "kind": "gushiyuan-linked-dump-page"
+      },
+      "text": {
+        "poemZh": "秋風起兮白雲飛，草木黃落兮鴈南歸。\n蘭有秀兮菊有芳，攜佳人兮不能忘。\n泛樓船兮濟汾河，橫中流兮揚素波。\n簫鼓鳴兮發棹歌，歡樂極兮哀情多。\n少壯幾時兮奈老何！",
+        "lineCount": 5,
+        "charCount": 74
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "standalone-page-reuse"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "sourceUrl": "https://zh.wikisource.org/wiki/%E7%A7%8B%E9%A2%A8%E8%BE%AD_(%E5%8A%89%E5%BE%B9)",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-HAN-67cf-6881-8a69-2d-5289-5fb9",
+      "country": "CN",
+      "eraSlug": "han",
+      "title": {
+        "zh": "柏梁詩",
+        "ko": null
+      },
+      "author": {
+        "zh": "劉徹",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "古詩源",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%9F%8F%E6%A2%81%E8%A9%A9",
+        "section": "卷二漢詩",
+        "kind": "gushiyuan-linked-dump-page"
+      },
+      "text": {
+        "poemZh": "日月星辰和四時，（帝）\n驂駕駟馬從梁來。（梁王）\n郡國士馬羽林材，（大司馬）\n總領天下誠難治。（丞相）\n和撫四夷不易哉，（大將軍）\n刀筆之吏臣執之。（御史大夫）\n撞鐘伐鼓聲中詩，（太常）\n宗室廣大日益滋。（宗正）\n周衛交戟禁不時，（衛尉）\n總領從官柏梁台。（光祿勳）\n平理請讞決嫌疑，（廷尉）\n修飾輿馬待駕來。（太僕）\n郡國吏功差次之，（大鴻臚）\n乘輿御物主治之。（少府）\n陳粟萬石揚以箕，（大司農）\n徼道宮下隨討治。（執金吾）\n三輔盜賊天下危，（左馮翊）\n盜阻南山為民災。（右扶風）\n外家公主不可治，（京兆尹）\n椒房率更領其材。（詹事）\n蠻夷朝賀常會期，（典屬國）\n柱欀欂櫨相枝持。（大匠）\n枇杷橘栗桃李梅，（太官令）\n走狗逐兔張罘罳。（上林令）\n齒妃女唇甘如飴，（郭舍人）\n迫窘詰屈幾窮哉。（東方朔）",
+        "lineCount": 26,
+        "charCount": 327
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "standalone-page-reuse"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "sourceUrl": "https://zh.wikisource.org/wiki/%E6%9F%8F%E6%A2%81%E8%A9%A9",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-HAN-53e4-8a69-70ba-7126-4ef2-537f-59bb-4f5c-2d-4f5a-540d",
+      "country": "CN",
+      "eraSlug": "han",
+      "title": {
+        "zh": "古詩為焦仲卿妻作",
+        "ko": null
+      },
+      "author": {
+        "zh": "佚名",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "古詩源",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%A4%E8%A9%A9%E7%82%BA%E7%84%A6%E4%BB%B2%E5%8D%BF%E5%A6%BB%E4%BD%9C",
+        "section": "卷四漢詩",
+        "kind": "gushiyuan-linked-dump-page"
+      },
+      "text": {
+        "poemZh": "孔雀東南飛 五里一徘徊\n十三能織素 十四學裁衣\n十五彈箜篌 十六誦詩書\n十七為君婦 心中常苦悲\n君既為府吏 守節情不移\n賤妾留空房 相見常日稀\n雞鳴入機織 夜夜不得息\n三日斷五匹 大人故嫌遲\n非為織作遲 君家婦難為\n妾不堪驅使 徒留無所施\n便可白公姥 及時相遣歸\n府吏得聞之 堂上啟阿母\n兒已薄祿相 幸復得此婦\n結髮同枕席 黃泉共為友\n共事{{另|二三|三二}}年 始爾未為久\n女行無偏斜 何意致不厚\n阿母謂府吏 何乃太區區\n此婦無禮節 舉動自專由\n吾意久懷忿 汝豈得自由\n東家有賢女 自名秦羅敷\n可憐體無比 阿母為汝求\n便可速遣之 遣{{另|之|去}}慎莫留\n府吏長跪答 伏惟啟阿母\n今若遣此婦 終老不復取\n阿母得聞之 捶床便大怒\n小子無所畏 何敢助婦語\n吾已失恩義 會不相從許\n府吏默無聲 再拜還入戶\n舉言謂新婦 哽咽不能語\n我自不驅卿 逼迫有阿母\n卿但暫還家 吾今且報府\n不久當歸還 還必相迎取\n以此下心意 慎勿違吾語\n新婦謂府吏 勿復重紛紜\n往昔初陽歲 謝家來貴門\n奉事循公姥 進{{另|止|心}}敢自專\n晝夜勤作息 伶俜縈苦辛\n謂言無罪過 供養卒大恩\n仍更被驅遣 何言復來還\n妾有繡腰襦 葳蕤自生光\n紅羅復鬥帳 四角垂香囊\n箱簾六七十 綠碧青絲繩\n物物各自異 種種在其中\n人賤物亦鄙 不足迎後人\n留待作{{另|遣|遺}}施 於今無會因\n時時為安慰 久久莫相忘\n雞鳴外欲曙 新婦起嚴妝\n著我繡裌裙 事事四五通\n足下躡絲履 頭上玳瑁光\n腰{{另|若|著}}流紈素 耳著明月珰\n指如削蔥根 口若含朱丹\n纖纖作細步 精妙世無雙\n上堂{{另|拜|謝}}阿母 {{另|母聽去不止|阿母怒不止}}\n昔作女兒時 生小出野里\n本自無教訓 兼愧貴家子\n受母錢帛多 不堪母驅使\n今日還家去 念母勞家裡\n卻與小姑別 淚落連珠子\n新婦初來時 小姑始扶床\n今日被驅遣 小姑如我長\n勤心養公姥 好自相扶將\n初七及下九 嬉戲莫相忘\n出門登車去 涕落百餘行\n府吏馬在前 新婦車在後\n隱隱何甸甸 俱會大道口\n下馬入車中 低頭共耳語\n誓不相隔卿 且暫{{另|還|歸}}家去\n吾今且赴府 不久當還歸\n誓天不相負\n新婦謂府吏 感君區區懷\n君既若見錄 不久望君來\n君當作盤石 妾當作蒲葦\n蒲葦紉如絲 盤石無轉移\n我有親父兄 性行暴如雷\n恐不任我意 逆以煎我懷\n舉手長勞勞 二情同依依\n入門上家堂 進退無顏儀\n阿母大拊掌 不圖子自歸\n十三教汝織 十四能裁衣\n十五彈箜篌 十六知禮儀\n十七遣汝嫁 謂言無誓違\n汝今{{另|何|無}}罪過 不迎而自歸\n蘭芝慚阿母 兒實無罪過\n阿母大悲摧\n還家十餘日 縣令遣媒來\n-{雲}-有第三郎 窈窕世無雙\n年始十八九 便言多令才\n阿母謂阿女 汝可去應之\n阿女含淚答 蘭芝初還時\n府吏見丁寧 結誓不別離\n今日違情義 恐此事非{{另|奇|宜}}\n自可斷來信 徐徐更謂之\n阿母白媒人\n貧賤有此女 始適還家門\n不堪吏人婦 豈合令郎君\n幸可廣問訊 不{{另|得|可}}便相許\n媒人去數日 尋遣丞請還\n說有蘭家女 承籍有宦官\n-{雲}-有第五郎 嬌逸未有婚\n遣丞為媒人 主簿通語言\n直說太守家 有此令郎君\n既欲結大義 故遣來貴門\n阿母謝媒人\n女子先有誓 老姥豈敢言\n阿兄得聞之 悵然心中煩\n舉言謂阿妹 作計何不量\n先嫁得府吏 後嫁得郎君\n否泰如天地 足以榮汝身\n不嫁義郎體 其住欲何-{雲}-\n蘭芝仰頭答 理實如兄言\n謝家事夫婿 中道還兄門\n處分適兄意 那得自任專\n雖與府吏要 渠會永無緣\n登即相許和 便可作婚姻\n媒人下床去 諾諾復爾爾\n還部白府君\n下官奉使命 言談大有緣\n府君得聞之 心中大歡喜\n視歷復開書\n便利此月內 六合正相應\n良吉三十日 今已二十七\n卿可去成婚\n交語速裝束 駱繹如浮雲\n青雀白鵠舫 四角龍子幡\n婀娜隨風轉 金車玉作輪\n躑躅青驄馬 流蘇金鏤鞍\n齎錢三百萬 皆用青絲穿\n雜彩三百匹 交廣市鮭珍\n從人四五百 鬱鬱登郡門\n阿母謂阿女\n適得府君書 明日來迎汝\n何不作衣裳 莫令事不舉\n阿女默無聲 手巾掩口啼\n淚落便如瀉\n移我琉璃榻 出置前窓下\n左手持刀尺 右手執綾羅\n朝成繡裌裙 晚成單羅衫\n晻晻日欲暝 愁思出門啼\n府吏聞此變 因求假暫歸\n未至二三里 摧藏馬悲哀\n新婦識馬聲 躡履相逢迎\n悵然遙相望 知是故人來\n舉手拍馬鞍 嗟嘆使心傷\n自君別我後 人事不可量\n果不如先願 又非君所詳\n我有親父母 逼迫兼弟兄\n以我應他人 君還何所望\n府吏謂新婦 賀卿得高遷\n盤石方可厚 可以卒千年\n蒲葦一時紉 便作旦夕間\n卿當日勝貴 吾獨向黃泉\n新婦謂府吏 何意出此言\n同是被逼迫 君爾妾亦然\n黃泉{{另|下|不}}相見 勿違今日言\n執手分道去 各各還家門\n生人作死別 恨恨那可論\n念與世間辭 千萬不復全\n府吏還家去 上堂拜阿母\n今日大風寒\n寒風摧樹木 嚴霜結庭蘭\n兒今日冥冥 令母在後單\n故作不良計 勿復怨鬼神\n命如南山石 四體康且直\n阿母得聞之 零淚應聲落\n汝是大家子 仕宦於台閣\n慎勿為婦死 貴賤情何薄\n東家有賢女 窈窕豔城郭\n阿母為汝求 便復在旦夕\n府吏再拜還\n長嘆空房中 作計乃爾立\n轉頭向戶裡 漸見愁煎迫\n其日馬牛嘶 新婦入青廬\n菴菴黃昏後 寂寂人定初\n我命絶今日 魂去屍長留\n攬裙脫{{另|絲|素}}履 舉身赴清池\n府吏聞此事 心知長別離\n徘徊{{另|庭|顧}}樹下 自掛東南枝\n兩家求合葬 合葬華山傍\n東西植松柏 左右種梧桐\n枝枝相覆蓋 葉葉相交通\n中有雙飛鳥 自名為鴛鴦\n仰頭相向鳴 夜夜達五更\n行人駐足聽 寡婦起徬徨\n多謝後世人 戒之慎勿忘",
+        "lineCount": 184,
+        "charCount": 1914
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "standalone-page-reuse",
+          "long-text"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%A4%E8%A9%A9%E7%82%BA%E7%84%A6%E4%BB%B2%E5%8D%BF%E5%A6%BB%E4%BD%9C",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-HAN-8463-5b0c-5b08-2d-5b8b-5b50-4faf",
+      "country": "CN",
+      "eraSlug": "han",
+      "title": {
+        "zh": "董嬌嬈",
+        "ko": null
+      },
+      "author": {
+        "zh": "宋子侯",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "古詩源",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%91%A3%E5%AC%8C%E5%AC%88",
+        "section": "卷三漢詩",
+        "kind": "gushiyuan-linked-dump-page"
+      },
+      "text": {
+        "poemZh": "洛陽城東路 桃李生路傍\n花花自相對 葉葉自相當\n春風東北起 花葉正低昂\n不知誰家子 提籠行采桑\n纎手折其枝 花落何飄颺\n請謝彼姝子 何為見損傷\n高秋八九月 白露變為霜\n終年會飄墮 安得久馨香\n秋時自零落 春月復芬芳\n何時盛年去 懽愛永相忘\n吾欲竟此曲 此曲愁人腸\n歸來酌美酒 挾瑟上高堂",
+        "lineCount": 12,
+        "charCount": 120
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "standalone-page-reuse"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "sourceUrl": "https://zh.wikisource.org/wiki/%E8%91%A3%E5%AC%8C%E5%AC%88",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-HAN-7fbd-6797-90ce-2d-8f9b-5ef6-5e74",
+      "country": "CN",
+      "eraSlug": "han",
+      "title": {
+        "zh": "羽林郎",
+        "ko": null
+      },
+      "author": {
+        "zh": "辛延年",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "古詩源",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E7%BE%BD%E6%9E%97%E9%83%8E_(%E8%BE%9B%E5%BB%B6%E5%B9%B4)",
+        "section": "卷三漢詩",
+        "kind": "gushiyuan-linked-dump-page"
+      },
+      "text": {
+        "poemZh": "昔有霍家奴 姓馮名子都\n依倚將軍勢 調笑酒家胡\n胡姬年十五 春日獨當壚\n長裾連理帶 廣袖合歡襦\n頭上藍田玉 耳後大秦珠\n兩鬟何窈窕 一世良所無\n一鬟五百萬 兩鬟千萬餘\n不意金吾子 娉婷過我廬\n銀鞍何昱爚 翠蓋空歭{{僻字|{{Unihan|239A0}}}}\n就我求清酒 絲繩提玉壺\n就我求珍肴 金盤膾鯉魚\n貽我青銅鏡 結我紅羅裾\n不惜紅羅裂 何論輕賤軀\n男兒愛後婦 女子重前夫\n人生有新故 貴賤不相踰\n多謝金吾子 私愛徒區區",
+        "lineCount": 16,
+        "charCount": 182
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "standalone-page-reuse"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "sourceUrl": "https://zh.wikisource.org/wiki/%E7%BE%BD%E6%9E%97%E9%83%8E_(%E8%BE%9B%E5%BB%B6%E5%B9%B4)",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-HAN-76e4-4e2d-8a69-2d-8607-4f2f-7389-59bb",
+      "country": "CN",
+      "eraSlug": "han",
+      "title": {
+        "zh": "盤中詩",
+        "ko": null
+      },
+      "author": {
+        "zh": "蘇伯玉妻",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "古詩源",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E7%9B%A4%E4%B8%AD%E8%A9%A9",
+        "section": "卷三漢詩",
+        "kind": "gushiyuan-linked-dump-page"
+      },
+      "text": {
+        "poemZh": "山樹高 鳥鳴悲 泉水深 鯉魚肥\n空倉雀 常苦飢 吏人婦 會夫希\n出門望 見白衣 謂當是 而更非\n還入門 中心悲 北上堂 西入階\n急機絞 杼聲催 長歎息 當語誰\n君有行 妾念之 出有日 還無期\n結中帶 長相思 君忘妾 天知之\n妾忘君 罪當治 妾有行 宜知之\n黃者金 白者玉 高者山 下者谷\n姓為蘇 字伯玉 人才多 智謀足\n家居長安身在蜀 何惜馬蹄歸不數\n羊肉千斤酒百斛 令君馬肥麥與粟\n今時人 智不足 與其書 不能讀\n當從中央週四角",
+        "lineCount": 14,
+        "charCount": 167
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "standalone-page-reuse"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "sourceUrl": "https://zh.wikisource.org/wiki/%E7%9B%A4%E4%B8%AD%E8%A9%A9",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-HAN-53e4-7d76-53e5-2d-4f5a-540d",
+      "country": "CN",
+      "eraSlug": "han",
+      "title": {
+        "zh": "古絶句",
+        "ko": null
+      },
+      "author": {
+        "zh": "佚名",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "古詩源",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%A4%E7%B5%95%E5%8F%A5",
+        "section": "卷四漢詩",
+        "kind": "gushiyuan-linked-dump-page"
+      },
+      "text": {
+        "poemZh": "其一\n藁砧今何在 山上復有山\n何當大刀頭 破鏡飛上天\n其二\n日暮秋雲陰 江水清且深\n何用通音信 蓮花瑇瑁簪\n其三\n菟絲從長風 根莖無斷絶\n無情尚不離 有情安可別\n其四\n南山一桂樹 上有雙鴛鴦\n千年長交頸 歡愛不相忘",
+        "lineCount": 12,
+        "charCount": 88
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "standalone-page-reuse"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%A4%E7%B5%95%E5%8F%A5",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-HAN-60b2-6101-6b4c-2d-5289-7d30-541b",
+      "country": "CN",
+      "eraSlug": "han",
+      "title": {
+        "zh": "悲愁歌",
+        "ko": null
+      },
+      "author": {
+        "zh": "劉細君",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "古詩源",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%82%B2%E6%84%81%E6%AD%8C_(%E5%8A%89%E7%B4%B0%E5%90%9B)",
+        "section": "卷二漢詩",
+        "kind": "gushiyuan-linked-dump-page"
+      },
+      "text": {
+        "poemZh": "吾家嫁我兮天一方，\n遠託異國兮烏孫王。\n穹廬為室兮旃為牆，\n以肉為食兮酪為漿。\n居常土思兮心內傷，\n願為黃鵠兮歸故鄉。",
+        "lineCount": 6,
+        "charCount": 54
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "standalone-page-reuse"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "sourceUrl": "https://zh.wikisource.org/wiki/%E6%82%B2%E6%84%81%E6%AD%8C_(%E5%8A%89%E7%B4%B0%E5%90%9B)",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-HAN-7df4-6642-65e5-2d-7121-540d-6c0f-2f-6f22-6a02-5e9c",
+      "country": "CN",
+      "eraSlug": "han",
+      "title": {
+        "zh": "練時日",
+        "ko": null
+      },
+      "author": {
+        "zh": "無名氏/漢樂府",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "古詩源",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E7%B7%B4%E6%99%82%E6%97%A5",
+        "section": "卷三漢詩",
+        "kind": "gushiyuan-linked-dump-page"
+      },
+      "text": {
+        "poemZh": "練時日 侯有望\n𤋲膋蕭 延四方\n九重開 靈之斿\n垂惠恩 鴻祜休\n靈之車 結玄雲\n駕飛龍 羽旄紛\n靈之下 若風馬\n左倉龍 右白虎\n靈之來 神哉沛\n先以雨 般裔裔\n靈之至 慶陰陰\n相放𢘍 震澹心\n靈已坐 五音飭\n虞至旦 承靈億\n牲繭栗 粢盛香\n尊桂酒 賓八鄉\n靈安留 吟青黃\n遍觀此 眺瑤堂\n眾嫭竝 綽奇麗\n顏如荼 兆逐靡\n被華文 厠霧縠\n曳阿錫 佩珠玉\n俠嘉夜 茝蘭芳\n澹容與 獻嘉觴",
+        "lineCount": 24,
+        "charCount": 144
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "standalone-page-reuse"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "sourceUrl": "https://zh.wikisource.org/wiki/%E7%B7%B4%E6%99%82%E6%97%A5",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-HAN-9752-967d-2d-7121-540d-6c0f-2f-6f22-6a02-5e9c",
+      "country": "CN",
+      "eraSlug": "han",
+      "title": {
+        "zh": "青陽",
+        "ko": null
+      },
+      "author": {
+        "zh": "無名氏/漢樂府",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "古詩源",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E9%9D%92%E9%99%BD",
+        "section": "卷三漢詩",
+        "kind": "gushiyuan-linked-dump-page"
+      },
+      "text": {
+        "poemZh": "青陽開動 根荄以遂\n膏潤幷愛 跂行畢逮\n霆聲發榮 壧處頃聽\n枯槀復產 廼成厥命\n衆庶熙熙 施及夭胎\n羣生啿啿 惟春之祺",
+        "lineCount": 6,
+        "charCount": 48
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "standalone-page-reuse"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "sourceUrl": "https://zh.wikisource.org/wiki/%E9%9D%92%E9%99%BD",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-HAN-897f-9865-2d-7121-540d-6c0f-2f-6f22-6a02-5e9c",
+      "country": "CN",
+      "eraSlug": "han",
+      "title": {
+        "zh": "西顥",
+        "ko": null
+      },
+      "author": {
+        "zh": "無名氏/漢樂府",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "古詩源",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%A5%BF%E9%A1%A5",
+        "section": "卷三漢詩",
+        "kind": "gushiyuan-linked-dump-page"
+      },
+      "text": {
+        "poemZh": "西颢沆砀 秋氣肅殺\n含秀垂颖 续舊不废\n奸伪不萌 妖孽伏息\n隅辟越遠 四貉咸服\n既畏兹威 惟慕纯德\n附而不骄 正心翊翊",
+        "lineCount": 6,
+        "charCount": 48
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "standalone-page-reuse"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "sourceUrl": "https://zh.wikisource.org/wiki/%E8%A5%BF%E9%A1%A5",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-HAN-7384-51a5-2d-7121-540d-6c0f-2f-6f22-6a02-5e9c",
+      "country": "CN",
+      "eraSlug": "han",
+      "title": {
+        "zh": "玄冥",
+        "ko": null
+      },
+      "author": {
+        "zh": "無名氏/漢樂府",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "古詩源",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E7%8E%84%E5%86%A5",
+        "section": "卷三漢詩",
+        "kind": "gushiyuan-linked-dump-page"
+      },
+      "text": {
+        "poemZh": "玄冥陵陰 蛰虫蓋臧\n草木零落 抵冬降霜\n易乱除邪 革正異俗\n兆民反本 抱素懷樸\n條理信義 望禮五嶽\n籍斂之時 掩收嘉穀",
+        "lineCount": 6,
+        "charCount": 48
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "standalone-page-reuse"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "sourceUrl": "https://zh.wikisource.org/wiki/%E7%8E%84%E5%86%A5",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-HAN-60df-6cf0-5143-2d-7121-540d-6c0f-2f-6f22-6a02-5e9c",
+      "country": "CN",
+      "eraSlug": "han",
+      "title": {
+        "zh": "惟泰元",
+        "ko": null
+      },
+      "author": {
+        "zh": "無名氏/漢樂府",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "古詩源",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%83%9F%E6%B3%B0%E5%85%83",
+        "section": "卷三漢詩",
+        "kind": "gushiyuan-linked-dump-page"
+      },
+      "text": {
+        "poemZh": "惟泰元尊 媪神蕃釐\n經纬天地 作成四時\n精建日月 星辰度理\n陰陽五行 周而復始\n雲風雷電 降甘露雨\n百姓蕃滋 咸循厥绪\n继統恭勤 顺皇之德\n鸾路龍鳞 罔不肸饰\n嘉笾列陳 庶几宴享\n灭除凶災 烈腾八荒\n鍾鼓竽笙 雲舞翔翔\n招摇靈旗 九夷宾將",
+        "lineCount": 12,
+        "charCount": 96
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "standalone-page-reuse"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "sourceUrl": "https://zh.wikisource.org/wiki/%E6%83%9F%E6%B3%B0%E5%85%83",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-HAN-5929-99ac-2d-7121-540d-6c0f-2f-6f22-6a02-5e9c",
+      "country": "CN",
+      "eraSlug": "han",
+      "title": {
+        "zh": "天馬",
+        "ko": null
+      },
+      "author": {
+        "zh": "無名氏/漢樂府",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "古詩源",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E5%A4%A9%E9%A6%AC",
+        "section": "卷三漢詩",
+        "kind": "gushiyuan-linked-dump-page"
+      },
+      "text": {
+        "poemZh": "太一況 天馬下\n霑赤汗 沫流赭\n志俶傥 精權奇\n籋浮雲 晻上馳\n體容與 迣萬里\n今安匹 龍為友\n天馬徠 從四極\n涉流沙 九夷服\n天馬徠 出泉水\n虎脊两 化若鬼\n天馬徠 歷無草\n徑千里 循東道\n天馬徠 執徐時\n將摇举 谁與期\n天馬徠 開遠門\n竦予身 逝昆崙\n天馬徠 龍之媒\n遊阊阖 觀玉台",
+        "lineCount": 18,
+        "charCount": 108
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "standalone-page-reuse"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "sourceUrl": "https://zh.wikisource.org/wiki/%E5%A4%A9%E9%A6%AC",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-HAN-5bf6-9f0e-8a69-2d-73ed-56fa",
+      "country": "CN",
+      "eraSlug": "han",
+      "title": {
+        "zh": "寶鼎詩",
+        "ko": null
+      },
+      "author": {
+        "zh": "班固",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "古詩源",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AF%B6%E9%BC%8E%E8%A9%A9",
+        "section": "卷二漢詩",
+        "kind": "gushiyuan-linked-dump-page"
+      },
+      "text": {
+        "poemZh": "嶽脩貢兮川效珍，吐金景兮歊浮雲。\n寶鼎見兮色紛縕。煥其炳兮被龍文。\n登祖廟兮享聖神。昭靈德兮彌億年。",
+        "lineCount": 3,
+        "charCount": 48
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "standalone-page-reuse"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AF%B6%E9%BC%8E%E8%A9%A9",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-HAN-9d3b-9d60-6b4c-2d-5289-90a6",
+      "country": "CN",
+      "eraSlug": "han",
+      "title": {
+        "zh": "鴻鵠歌",
+        "ko": null
+      },
+      "author": {
+        "zh": "劉邦",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "古詩源",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E9%B4%BB%E9%B5%A0%E6%AD%8C",
+        "section": "卷二漢詩",
+        "kind": "gushiyuan-linked-dump-page"
+      },
+      "text": {
+        "poemZh": "鴻鵠高飛\n一舉千里\n羽翼已就\n橫絶四海\n橫絶四海\n{{另|又|當}}可奈何\n{{另|星有繒繳|虽有弓矢}}\n{{另|將|尚}}安所施",
+        "lineCount": 8,
+        "charCount": 59
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "standalone-page-reuse"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "sourceUrl": "https://zh.wikisource.org/wiki/%E9%B4%BB%E9%B5%A0%E6%AD%8C",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-HAN-6b4c-2d-71d5-523a-738b-65e6",
+      "country": "CN",
+      "eraSlug": "han",
+      "title": {
+        "zh": "歌",
+        "ko": null
+      },
+      "author": {
+        "zh": "燕刺王旦",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "古詩源",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%AD%8C",
+        "section": "卷二漢詩",
+        "kind": "gushiyuan-linked-dump-page"
+      },
+      "text": {
+        "poemZh": "漢帝臨汾水，周仙去洛濱。\n郢中吟白雪，梁上繞飛塵。\n響發行雲駐，聲{{另|隨|嬌}}子夜新。\n願君聽扣角，當自識賢臣。",
+        "lineCount": 4,
+        "charCount": 56
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "standalone-page-reuse"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "sourceUrl": "https://zh.wikisource.org/wiki/%E6%AD%8C",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-HAN-50b7-6b4c-884c-2d-7121-540d-6c0f-2f-6f22-6a02-5e9c",
+      "country": "CN",
+      "eraSlug": "han",
+      "title": {
+        "zh": "傷歌行",
+        "ko": null
+      },
+      "author": {
+        "zh": "無名氏/漢樂府",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "古詩源",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E5%82%B7%E6%AD%8C%E8%A1%8C",
+        "section": "卷三漢詩",
+        "kind": "gushiyuan-linked-dump-page"
+      },
+      "text": {
+        "poemZh": "兔走烏飛不相見，人事依稀速如電。\n王母夭桃一度開，玉樓紅粉千回變。\n車馳馬走咸陽道，石家舊宅空荒草。\n秋雨無情不惜花，芙蓉一一驚香倒。\n勸君莫謾栽荆棘，秦皇虛{{另|費|負}}驅山力。\n英風一去更無言，白骨沈埋暮山碧。",
+        "lineCount": 6,
+        "charCount": 104
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "standalone-page-reuse"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "sourceUrl": "https://zh.wikisource.org/wiki/%E5%82%B7%E6%AD%8C%E8%A1%8C",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-HAN-6c5f-5357-2d-7121-540d-6c0f-2f-6f22-6a02-5e9c",
+      "country": "CN",
+      "eraSlug": "han",
+      "title": {
+        "zh": "江南",
+        "ko": null
+      },
+      "author": {
+        "zh": "無名氏/漢樂府",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "古詩源",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B1%9F%E5%8D%97",
+        "section": "卷三漢詩",
+        "kind": "gushiyuan-linked-dump-page"
+      },
+      "text": {
+        "poemZh": "江南春起柂，秋至尚波濤。\n問舍才能定，呼舟已復操。\n行歌付浩蕩，歸夢得蕭騷。\n冉冉欲何補，紛紛為此勞。",
+        "lineCount": 4,
+        "charCount": 48
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "standalone-page-reuse"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B1%9F%E5%8D%97",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-HAN-85a4-9732-6b4c-2d-7121-540d-6c0f-2f-6f22-6a02-5e9c",
+      "country": "CN",
+      "eraSlug": "han",
+      "title": {
+        "zh": "薤露歌",
+        "ko": null
+      },
+      "author": {
+        "zh": "無名氏/漢樂府",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "古詩源",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%96%A4%E9%9C%B2%E6%AD%8C",
+        "section": "卷三漢詩",
+        "kind": "gushiyuan-linked-dump-page"
+      },
+      "text": {
+        "poemZh": "蜀琴且勿彈，齊竽且莫吹。\n四筵並寂聽，聽我薤露詩。\n昨日七尺軀，今日為死屍。\n親戚空滿堂，魂氣安所之。\n金玉素所愛，棄捐篋笥中。\n佩服素所愛，淒涼掛悲風。\n妻妾素所愛，洒淚空房櫳。\n賓客素所愛，分散各西東。\n讎者自相快，親者自相悲。\n有耳不復聞，有目不復窺。\n譬彼燭上火，一滅無光輝。\n譬彼空中雲，散去絶餘姿。\n人生無百歲，百歲復如何。\n誰能將兩手，挽彼東逝波。\n古來英雄士，俱巳歸山阿。\n有酒且盡歡，聽我薤露歌。",
+        "lineCount": 16,
+        "charCount": 192
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "standalone-page-reuse"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "sourceUrl": "https://zh.wikisource.org/wiki/%E8%96%A4%E9%9C%B2%E6%AD%8C",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-HAN-541b-5b50-884c-2d-7121-540d-6c0f-2f-6f22-6a02-5e9c",
+      "country": "CN",
+      "eraSlug": "han",
+      "title": {
+        "zh": "君子行",
+        "ko": null
+      },
+      "author": {
+        "zh": "無名氏/漢樂府",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "古詩源",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E5%90%9B%E5%AD%90%E8%A1%8C",
+        "section": "卷三漢詩",
+        "kind": "gushiyuan-linked-dump-page"
+      },
+      "text": {
+        "poemZh": "君子愼所履，小人多所疑。\n尼甫至聖賢，猶為匡所縻。",
+        "lineCount": 2,
+        "charCount": 24
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "standalone-page-reuse"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "sourceUrl": "https://zh.wikisource.org/wiki/%E5%90%9B%E5%AD%90%E8%A1%8C",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-HAN-674e-592b-4eba-6b4c-2d-5289-5fb9",
+      "country": "CN",
+      "eraSlug": "han",
+      "title": {
+        "zh": "李夫人歌",
+        "ko": null
+      },
+      "author": {
+        "zh": "劉徹",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "古詩源",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%9D%8E%E5%A4%AB%E4%BA%BA%E6%AD%8C",
+        "section": "卷二漢詩",
+        "kind": "gushiyuan-linked-dump-page"
+      },
+      "text": {
+        "poemZh": "紫皇宮殿重重開，夫人飛入瓊瑤臺。\n綠香繡帳何時歇，青雲無光宮水咽。\n翩{{另|聯|翩}}桂花墜秋月，孤鸞驚啼商絲發。\n紅壁闌珊懸珮璫，歌臺小{{另|妓|柏}}遙相望。\n玉蟾滴水雞人唱，露華蘭葉參差光。",
+        "lineCount": 5,
+        "charCount": 96
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "standalone-page-reuse"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "sourceUrl": "https://zh.wikisource.org/wiki/%E6%9D%8E%E5%A4%AB%E4%BA%BA%E6%AD%8C",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-HAN-5b64-5152-884c-2d-7121-540d-6c0f-2f-6f22-6a02-5e9c",
+      "country": "CN",
+      "eraSlug": "han",
+      "title": {
+        "zh": "孤兒行",
+        "ko": null
+      },
+      "author": {
+        "zh": "無名氏/漢樂府",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "古詩源",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AD%A4%E5%85%92%E8%A1%8C",
+        "section": "卷三漢詩",
+        "kind": "gushiyuan-linked-dump-page"
+      },
+      "text": {
+        "poemZh": "蓬頭皸足誰家兒，滿面塵埃雙淚垂。\n爺娘棄我不待老，骨肉無人但兄嫂。\n兩身一氣不相知，陌路茫茫向誰道。\n清晨采薪日入歸，殘羹冷飯難充饑。\n欲言問兄兄不顧，嫂是他人更奚訴。\n人生一世為弟兄，同根自合同枯榮。\n爺娘在日曾眷戀，願兄回看死人面。",
+        "lineCount": 7,
+        "charCount": 112
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "standalone-page-reuse"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AD%A4%E5%85%92%E8%A1%8C",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-HAN-84bf-91cc-66f2-2d-7121-540d-6c0f-2f-6f22-6a02-5e9c",
+      "country": "CN",
+      "eraSlug": "han",
+      "title": {
+        "zh": "蒿里曲",
+        "ko": null
+      },
+      "author": {
+        "zh": "無名氏/漢樂府",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "古詩源",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E8%92%BF%E9%87%8C%E6%9B%B2",
+        "section": "卷三漢詩",
+        "kind": "gushiyuan-linked-dump-page"
+      },
+      "text": {
+        "poemZh": "澗草萋萋泉汩汩，紫蘭香老棠梨發。\n山中無人松柏寒，臥聽狐貍嘯明月。\n白楊樹頭風惻惻，寡烏悲啼山月黑。\n殯宮冷落清夜長，銀鴨金鳧不堪食。\n山花冥冥啼子規，鳥銜紙錢掛花枝。\n山中遊人莫相笑，君到此中當自知。",
+        "lineCount": 6,
+        "charCount": 96
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "standalone-page-reuse"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "sourceUrl": "https://zh.wikisource.org/wiki/%E8%92%BF%E9%87%8C%E6%9B%B2",
+          "publicDisplayAllowedNow": true,
+          "commercialAllowedNow": true,
+          "attributionRequired": true
+        }
+      }
+    },
+    {
+      "recordId": "CN-PRETANG-CACHED-HAN-6731-660e-2d-7121-540d-6c0f-2f-6f22-6a02-5e9c",
+      "country": "CN",
+      "eraSlug": "han",
+      "title": {
+        "zh": "朱明",
+        "ko": null
+      },
+      "author": {
+        "zh": "無名氏/漢樂府",
+        "ko": null,
+        "life": null
+      },
+      "sourcePage": {
+        "title": "古詩源",
+        "sourceUrl": "https://zh.wikisource.org/wiki/%E6%9C%B1%E6%98%8E",
+        "section": "卷三漢詩",
+        "kind": "gushiyuan-linked-dump-page"
+      },
+      "text": {
+        "poemZh": "朱明盛長 旉與萬物\n桐生茂豫 靡有所詘\n敷蕐就實 既阜既昌\n登成甫田 百鬼廸嘗\n廣大建祀 肅雍不忘\n神若宥之 傳世無疆",
+        "lineCount": 6,
+        "charCount": 48
+      },
+      "review": {
+        "status": "needs-review",
+        "reasons": [
+          "standalone-page-reuse"
+        ]
+      },
+      "rights": {
+        "originalText": {
+          "sourcePolicyId": "SRC-ZH-WIKISOURCE-TEXT",
+          "sourceUrl": "https://zh.wikisource.org/wiki/%E6%9C%B1%E6%98%8E",
           "publicDisplayAllowedNow": true,
           "commercialAllowedNow": true,
           "attributionRequired": true

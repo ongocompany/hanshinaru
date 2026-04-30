@@ -6,15 +6,19 @@ import { normalizeChineseForHanshinaru } from './lib/cn_hansi_text_normalizer.mj
 
 const ROOT = resolve(import.meta.dirname, '..');
 const INPUT = resolve(ROOT, 'docs/spec/cn-non-tang-tranche1.sources.raw.json');
+const GUSHIYUAN_LINK_PAGES_INPUT = resolve(ROOT, 'docs/spec/cn-pre-tang-gushiyuan-link-pages.dump.raw.v1.json');
 const RECORDS_OUT = resolve(ROOT, 'docs/spec/cn-pre-tang-first-tranche.cached-source-records.v1.json');
 const REPORT_OUT = resolve(ROOT, 'docs/spec/cn-pre-tang-first-tranche.cached-source-records.report.v1.json');
 
 const raw = JSON.parse(readFileSync(INPUT, 'utf8'));
 const sourcePages = raw.pages ?? [];
+const gushiYuanLinkPages = readJsonIfExists(GUSHIYUAN_LINK_PAGES_INPUT)?.pages ?? [];
 const generatedAt = new Date().toISOString();
+const gushiYuanLinkedRecords = extractGushiYuanLinkedDumpPages(gushiYuanLinkPages);
 const records = [
   ...extractGushiYuanFirstTranche(sourcePages.find((page) => page.title === '古詩源')),
   ...extractStandaloneSeedPages(sourcePages),
+  ...gushiYuanLinkedRecords,
 ];
 const dedupedRecords = dedupeRecords(records);
 
@@ -27,6 +31,14 @@ const report = {
     extractedRecords: dedupedRecords.length,
     byEra: countBy(dedupedRecords, (record) => record.eraSlug),
     bySourcePage: countBy(dedupedRecords, (record) => record.sourcePage.title),
+    bySourceKind: countBy(dedupedRecords, (record) => record.sourcePage.kind),
+    gushiYuanLinkedDumpPages: {
+      inputPages: gushiYuanLinkPages.length,
+      fetchedOk: gushiYuanLinkPages.filter((page) => page.fetchStatus === 'ok').length,
+      extractedRecords: gushiYuanLinkedRecords.length,
+      skippedWithoutBody: gushiYuanLinkPages.filter((page) => page.fetchStatus === 'ok').length
+        - gushiYuanLinkedRecords.length,
+    },
   },
   policy: [
     'This is a companion-source recovery after exact 先秦漢魏晉南北朝詩 volume titles were missing in the zhwikisource dump.',
@@ -105,6 +117,30 @@ function extractStandaloneSeedPages(pages) {
     .filter(Boolean);
 }
 
+function extractGushiYuanLinkedDumpPages(pages) {
+  return pages
+    .filter((page) => page.fetchStatus === 'ok')
+    .map((page) => {
+      const poemZh = extractPoemBodyFromWikitext(page.wikitext ?? '')
+        || extractConservativePlainBodyFromWikitext(page);
+      if (!poemZh) return null;
+      return buildRecord({
+        sourcePage: {
+          title: page.sourcePageTitle || '古詩源',
+          sourceUrl: page.sourceUrl,
+        },
+        sourceSection: page.sourceSection ?? null,
+        sourceKind: 'gushiyuan-linked-dump-page',
+        eraSlug: page.eraSlug,
+        titleZh: page.normalizedTitle || page.rawTitle,
+        authorZh: normalizeGushiYuanAuthorHint(page.authorHint)
+          || inferAuthorFromTitle(page.normalizedTitle || page.rawTitle),
+        poemZh,
+      });
+    })
+    .filter(Boolean);
+}
+
 function buildRecord({ sourcePage, sourceSection, sourceKind, eraSlug, titleZh, authorZh, poemZh }) {
   const normalizedTitle = normalizeChineseForHanshinaru(titleZh);
   const normalizedAuthor = normalizeChineseForHanshinaru(authorZh || '佚名');
@@ -159,6 +195,33 @@ function extractPoemBody(html) {
   return cleanPoemHtml(match[1]);
 }
 
+function extractPoemBodyFromWikitext(wikitext) {
+  const poemMatches = [...String(wikitext ?? '').matchAll(/<poem[^>]*>([\s\S]*?)<\/poem>/gi)];
+  if (!poemMatches.length) return '';
+  return poemMatches
+    .map((match) => cleanPoemWikitext(match[1]))
+    .filter(Boolean)
+    .join('\n\n');
+}
+
+function extractConservativePlainBodyFromWikitext(page) {
+  const wikitext = String(page.wikitext ?? '');
+  if (/disambig|消歧義|消歧义/i.test(wikitext)) return '';
+  if (page.rawTitle === '柏梁詩') {
+    return cleanPoemWikitext(wikitext
+      .split(/\r?\n/)
+      .filter((line) => /[，。！？]/.test(line) && !line.includes('作者:'))
+      .join('\n'));
+  }
+  if (['盤中詩', '古絕句'].includes(page.rawTitle)) {
+    return cleanPoemWikitext(wikitext
+      .split(/\r?\n/)
+      .filter((line) => line.trim().startsWith(':') || /^其[一二三四五六七八九十]/.test(line.trim()))
+      .join('\n'));
+  }
+  return '';
+}
+
 function cleanPoemHtml(html) {
   return decodeHtml(
     html
@@ -170,6 +233,25 @@ function cleanPoemHtml(html) {
       .replace(/<[^>]+>/g, '')
       .replace(/[ \t　]+/g, ' ')
   )
+    .split(/\r?\n/)
+    .map((line) => normalizeChineseForHanshinaru(line).trim())
+    .filter(Boolean)
+    .join('\n');
+}
+
+function cleanPoemWikitext(value) {
+  return decodeHtml(String(value ?? '')
+    .replace(/\{\{(?:注|\*|lang|lang-zh|lang\|zh|SKchar)[\s\S]*?\}\}/g, '')
+    .replace(/<ref[\s\S]*?<\/ref>/gi, '')
+    .replace(/<ref\b[^/>]*\/>/gi, '')
+    .replace(/<br\s*\/?>/gi, '\n')
+    .replace(/<\/?onlyinclude>/gi, '')
+    .replace(/'''?/g, '')
+    .replace(/\[\[([^|\]]+)\|([^\]]+)\]\]/g, '$2')
+    .replace(/\[\[([^\]]+)\]\]/g, '$1')
+    .replace(/<[^>]+>/g, '')
+    .replace(/^:+/gm, '')
+    .replace(/[ \t　]+/g, ' '))
     .split(/\r?\n/)
     .map((line) => normalizeChineseForHanshinaru(line).trim())
     .filter(Boolean)
@@ -205,6 +287,16 @@ function inferAuthorFromPage(page) {
 function inferAuthorFromTitle(title) {
   if (/古詩|行行重行行|迢迢牽牛星|上邪|陌上桑|長歌行/.test(title)) return '無名氏';
   return '佚名';
+}
+
+function normalizeGushiYuanAuthorHint(authorHint) {
+  const normalized = normalizeChineseForHanshinaru(authorHint || '').trim();
+  return {
+    高帝: '劉邦',
+    武帝: '劉徹',
+    烏孫公主: '劉細君',
+    樂府歌辭: '無名氏/漢樂府',
+  }[normalized] ?? normalized;
 }
 
 function reviewReasonsFor(poemZh, sourceKind) {
@@ -261,4 +353,13 @@ function countBy(items, selector) {
 function writeJson(path, payload) {
   mkdirSync(resolve(ROOT, 'docs/spec'), { recursive: true });
   writeFileSync(path, `${JSON.stringify(payload, null, 2)}\n`);
+}
+
+function readJsonIfExists(path) {
+  try {
+    return JSON.parse(readFileSync(path, 'utf8'));
+  } catch (error) {
+    if (error.code === 'ENOENT') return null;
+    throw error;
+  }
 }
