@@ -21,7 +21,7 @@ author: 지훈
   - `先秦漢魏晉南北朝詩/{권명}`
   - `{권명}`
 - 따라서 현재 repo 안에는 `先秦漢魏晉南北朝詩` first tranche의 권별 총 시편수가 아직 없다.
-- 현재 DB dry-run 57편은 exact source volume이 아니라 companion source witness에서 회수한 부분 추출이다.
+- 현재 DB dry-run 87편은 exact source volume이 아니라 companion source witness에서 회수한 부분 추출이다.
 
 # 권별 총 시편수 확인표
 
@@ -49,15 +49,31 @@ author: 지훈
 
 # 현재 확보한 companion source witness
 
-현재 57편은 원 source volume별 완전 추출이 아니라, 공개 witness로 확인 가능한 작품을 먼저 회수한 것이다.
+현재 87편은 원 source volume별 완전 추출이 아니라, 공개 witness로 확인 가능한 작품을 먼저 회수한 것이다.
 
 | companion source | 구간 | 후보/추출 상태 | 현재 DB dry-run 반영 |
 |---|---|---|---:|
 | 古詩源 | 卷一古逸 | anthology-section 직접 추출 | 26 |
 | zh Wikisource standalone | 上邪, 行行重行行, 迢迢牽牛星 | 개별 페이지 직접 추출 | 3 |
-| 古詩源 link candidates | 卷二漢詩 | 후보 15개 중 본문 추출 10개 | 10 |
-| 古詩源 link candidates | 卷三漢詩 | 후보 39개 중 본문 추출 16개 | 16 |
-| 古詩源 link candidates | 卷四漢詩 | 후보 4개 중 본문 추출 2개 | 2 |
+| 古詩源 link candidates | 卷二/三/四漢詩 | 58개 link page 중 1차 본문 추출 | 31 |
+| 古詩源 second-pass targets | 古詩十九首 transclusion + 안전한 동명이의어 target | 101개 exact-title probe 중 본문 추출 | 28 |
+
+중복 제거 후 최종 dry-run은 `pre-qin 26`, `han 61`, 합계 87편이다.
+
+# 현재 목록 처리 상태
+
+| 항목 | 수량 |
+|---|---:|
+| 古詩源 漢詩 link candidates | 58 |
+| 1차 dump page fetched | 58 |
+| 1차 본문 추출 | 31 |
+| second-pass exact-title probe | 101 |
+| second-pass fetched | 28 |
+| second-pass 본문 추출 | 28 |
+| broad probe missing | 73 |
+| 최종 source witness records | 87 |
+
+남은 unresolved는 대부분 위키문헌 동명이의어 페이지가 漢 대상 본문으로 안전하게 이어지지 않는 경우다. `東門行`은 dump title이 鮑照 page로 해소되어 漢樂府 witness로 쓰지 않았다. `悲歌`는 唐朝作品 transclusion index라 제외했다.
 
 # 다음 작업 순서
 
@@ -65,13 +81,13 @@ author: 지훈
 2. 각 권마다 총 시편수를 먼저 확정한다.
 3. `volumeCountStatus=confirmed`가 된 권부터 source witness lookup을 실행한다.
 4. DB dry-run은 “권별 총수 대비 추출수”를 같이 출력하도록 바꾼다.
-5. companion source만으로 회수한 57편은 `volumeId`를 임시 배정하지 않고, source volume 매핑이 확인될 때까지 `sourceVolumeStatus=unmapped-companion-witness`로 둔다.
+5. companion source만으로 회수한 87편은 `volumeId`를 임시 배정하지 않고, source volume 매핑이 확인될 때까지 `sourceVolumeStatus=unmapped-companion-witness`로 둔다.
 
 # 파이프라인 중단 원인 메모
 
 이전 진행이 중간에 자주 멈춘 이유는 파이프라인 완료 조건을 잘못 잡았기 때문이다.
 
-- 잘못된 완료 조건: source witness 57편과 DB dry-run 생성
+- 잘못된 완료 조건: source witness와 DB dry-run 생성만으로 완료 처리
 - 실제 완료 조건: 권별 총 시편수 확인, 권별 추출수 확인, 누락수 산정, review queue 생성, dry-run/SQL 생성
 
 앞으로 이 tranche는 권별 총수 표를 먼저 채우고, 그다음 권 단위로 추출률을 계산한다.

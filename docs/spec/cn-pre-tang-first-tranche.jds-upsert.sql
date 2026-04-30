@@ -18,7 +18,12 @@ WITH input_poets(slug, name_zh, name_ko, life_raw, era_period, country) AS (
     ('cn-pretang-8607-4f2f-7389-59bb', '蘇伯玉妻', '蘇伯玉妻', NULL, '兩漢', 'CN'),
     ('cn-pretang-5289-7d30-541b', '劉細君', '劉細君', NULL, '兩漢', 'CN'),
     ('cn-pretang-73ed-56fa', '班固', '班固', NULL, '兩漢', 'CN'),
-    ('cn-pretang-71d5-523a-738b-65e6', '燕刺王旦', '燕刺王旦', NULL, '兩漢', 'CN')
+    ('cn-pretang-5f35-8861', '張衡', '張衡', NULL, '兩漢', 'CN'),
+    ('cn-pretang-71d5-523a-738b-65e6', '燕刺王旦', '燕刺王旦', NULL, '兩漢', 'CN'),
+    ('cn-pretang-8521-9095', '蔡邕', '蔡邕', NULL, '兩漢', 'CN'),
+    ('cn-pretang-73ed-5a55-59a4', '班婕妤', '班婕妤', NULL, '兩漢', 'CN'),
+    ('cn-pretang-5353-6587-541b', '卓文君', '卓文君', NULL, '兩漢', 'CN'),
+    ('cn-pretang-8521-7430', '蔡琰', '蔡琰', NULL, '兩漢', 'CN')
 )
 INSERT INTO poets (slug, name_zh, name_ko, life_raw, era_period, country, poem_count)
 SELECT slug, name_zh, name_ko, life_raw, era_period, country, 0
@@ -464,6 +469,11 @@ WITH input_poems(poet_slug, title_zh, title_ko, category, body_zh, translation_k
     ('cn-pretang-73ed-56fa', '寶鼎詩', NULL, NULL, '嶽脩貢兮川效珍，吐金景兮歊浮雲。
 寶鼎見兮色紛縕。煥其炳兮被龍文。
 登祖廟兮享聖神。昭靈德兮彌億年。', NULL, NULL, 'parsed', 'cn-pretang1', 'CN', 'CN-PRETANG-CACHED-HAN-5bf6-9f0e-8a69-2d-73ed-56fa', 'https://zh.wikisource.org/wiki/%E5%AF%B6%E9%BC%8E%E8%A9%A9'),
+    ('cn-pretang-5f35-8861', '四愁詩', NULL, NULL, '張衡不樂久處機密，陽嘉中出為河間相。時國王驕奢，不遵法度，又多豪右並兼之家。衡下車，治威嚴，能內察屬縣，姦猾行巧刼，皆密知名，下吏收捕，盡服。擒諸豪俠，遊客悉惶懼逃出境。郡中大治，爭訟息，獄無繫囚。時天下漸弊，鬱鬱不得志，為四愁詩。依屈原以美人為君子，以珍寶為仁義，以水深雪雰為小人，思以道術為報貽於時君，而懼讒邪，不得以通。其辭曰：
+我所思兮在太山，欲往從之梁父艱，側身東望涕霑翰。美人贈我金錯刀，何以報之英瓊瑤。路遠莫致倚逍遙，何為懷憂心煩勞！
+我所思兮在桂林，欲往從之湘水深，側身南望涕沾襟。美人贈我金琅玕，何以報之雙玉盤。路遠莫致倚惆悵，何為懷憂心煩傷！
+我所思兮在漢陽，欲往從之隴阪長，側身西望涕沾裳。美人贈我貂襜褕，何以報之明月珠。路遠莫致倚踟躕，何為懷憂心煩紆！
+我所思兮在雁門，欲往從之雪紛紛，側身北望涕沾巾。美人贈我錦繡緞，何以報之青玉案。路遠莫致倚增歎，何為懷憂心煩惋！', NULL, NULL, 'parsed', 'cn-pretang1', 'CN', 'CN-PRETANG-CACHED-HAN-56db-6101-8a69-2d-5f35-8861', 'https://zh.wikisource.org/wiki/%E5%9B%9B%E6%84%81%E8%A9%A9'),
     ('cn-pretang-5289-90a6', '鴻鵠歌', NULL, NULL, '鴻鵠高飛
 一舉千里
 羽翼已就
@@ -502,6 +512,30 @@ WITH input_poems(poet_slug, title_zh, title_ko, category, body_zh, translation_k
 誰能將兩手，挽彼東逝波。
 古來英雄士，俱巳歸山阿。
 有酒且盡歡，聽我薤露歌。', NULL, NULL, 'parsed', 'cn-pretang1', 'CN', 'CN-PRETANG-CACHED-HAN-85a4-9732-6b4c-2d-7121-540d-6c0f-2f-6f22-6a02-5e9c', 'https://zh.wikisource.org/wiki/%E8%96%A4%E9%9C%B2%E6%AD%8C'),
+    ('cn-pretang-7121-540d-6c0f-2f-6f22-6a02-5e9c', '善哉行', NULL, NULL, '來日大難
+口燥脣乾
+今日相樂
+皆當喜歡
+經歷名山
+芝草翻翻
+仙人王喬
+奉藥一丸
+自惜袖短
+內手知寒
+慚非靈轍
+以報趙宣
+月沒參橫
+北鬥闌乾
+親交在門
+急不急餐
+歡日尚少
+戚日苦多
+以何忘憂
+彈箏酒歌
+淮南八公
+要道不煩
+參駕六龍
+遊戲雲端', NULL, NULL, 'parsed', 'cn-pretang1', 'CN', 'CN-PRETANG-CACHED-HAN-5584-54c9-884c-2d-7121-540d-6c0f-2f-6f22-6a02-5e9c', 'https://zh.wikisource.org/wiki/%E5%96%84%E5%93%89%E8%A1%8C_(%E6%BC%A2%E6%A8%82%E5%BA%9C)'),
     ('cn-pretang-7121-540d-6c0f-2f-6f22-6a02-5e9c', '君子行', NULL, NULL, '君子愼所履，小人多所疑。
 尼甫至聖賢，猶為匡所縻。', NULL, NULL, 'parsed', 'cn-pretang1', 'CN', 'CN-PRETANG-CACHED-HAN-541b-5b50-884c-2d-7121-540d-6c0f-2f-6f22-6a02-5e9c', 'https://zh.wikisource.org/wiki/%E5%90%9B%E5%AD%90%E8%A1%8C'),
     ('cn-pretang-5289-5fb9', '李夫人歌', NULL, NULL, '紫皇宮殿重重開，夫人飛入瓊瑤臺。
@@ -527,7 +561,188 @@ WITH input_poems(poet_slug, title_zh, title_ko, category, body_zh, translation_k
 敷蕐就實 既阜既昌
 登成甫田 百鬼廸嘗
 廣大建祀 肅雍不忘
-神若宥之 傳世無疆', NULL, NULL, 'parsed', 'cn-pretang1', 'CN', 'CN-PRETANG-CACHED-HAN-6731-660e-2d-7121-540d-6c0f-2f-6f22-6a02-5e9c', 'https://zh.wikisource.org/wiki/%E6%9C%B1%E6%98%8E')
+神若宥之 傳世無疆', NULL, NULL, 'parsed', 'cn-pretang1', 'CN', 'CN-PRETANG-CACHED-HAN-6731-660e-2d-7121-540d-6c0f-2f-6f22-6a02-5e9c', 'https://zh.wikisource.org/wiki/%E6%9C%B1%E6%98%8E'),
+    ('cn-pretang-7121-540d-6c0f-2f-6f22-6a02-5e9c', '長歌行', NULL, NULL, '青青園中葵，朝露待日晞。
+陽春布德澤，萬物生光輝。
+常恐秋節至，焜黃華葉衰。
+百川東到海，何時復西歸？
+少壯不努力，老大徒傷悲。', NULL, NULL, 'parsed', 'cn-pretang1', 'CN', 'CN-PRETANG-CACHED-HAN-9577-6b4c-884c-2d-7121-540d-6c0f-2f-6f22-6a02-5e9c', 'https://zh.wikisource.org/wiki/%E9%95%B7%E6%AD%8C%E8%A1%8C_(%E6%BC%A2%E6%A8%82%E5%BA%9C)'),
+    ('cn-pretang-4f5a-540d', '古詩十九首', NULL, NULL, '西北有高樓 上與浮雲齊
+交疏結綺牕 阿閣三重階
+上有絃歌聲 音響一何悲
+誰能為此曲 無乃杞梁妻
+清商隨風發 中曲正徘徊
+一彈再三歎 慷慨有餘哀
+不惜歌者苦 但傷知音稀
+願為雙鳴鶴 奮翅起高飛', NULL, NULL, 'parsed', 'cn-pretang1', 'CN', 'CN-PRETANG-CACHED-HAN-53e4-8a69-5341-4e5d-9996-2d-4f5a-540d', 'https://zh.wikisource.org/wiki/%E8%A5%BF%E5%8C%97%E6%9C%89%E9%AB%98%E6%A8%93'),
+    ('cn-pretang-4f5a-540d', '古詩十九首', NULL, NULL, '東城高且長 逶迤自相屬
+迴風動地起 秋草萋已綠
+四時更變化 歲暮一何速
+晨風懷苦心 蟋蟀傷局促
+蕩滌放情志 何為自結束
+燕趙多佳人 美者顏如玉
+被服羅裳衣 當戶理清曲
+音響一何悲 絃急知柱促
+馳情整中帶 沉吟聊躑躅
+思為雙飛燕 銜泥巢君屋', NULL, NULL, 'parsed', 'cn-pretang1', 'CN', 'CN-PRETANG-CACHED-HAN-53e4-8a69-5341-4e5d-9996-2d-4f5a-540d', 'https://zh.wikisource.org/wiki/%E6%9D%B1%E5%9F%8E%E9%AB%98%E4%B8%94%E9%95%B7'),
+    ('cn-pretang-4f5a-540d', '古詩十九首', NULL, NULL, '行行重行行 與君生別離
+相去萬餘里 各在天一涯
+道路阻且長 會面安可知
+胡馬依北風 越鳥巢南枝
+相去日已遠 衣帶日已緩
+浮雲蔽白日 遊子不顧反
+思君令人老 歲月忽已晚
+棄捐勿復道 努力加餐飯', NULL, NULL, 'parsed', 'cn-pretang1', 'CN', 'CN-PRETANG-CACHED-HAN-53e4-8a69-5341-4e5d-9996-2d-4f5a-540d', 'https://zh.wikisource.org/wiki/%E8%A1%8C%E8%A1%8C%E9%87%8D%E8%A1%8C%E8%A1%8C'),
+    ('cn-pretang-4f5a-540d', '古詩十九首', NULL, NULL, '涉江採芙蓉 蘭澤多芳草
+采之欲遺誰 所思在遠道
+還顧望舊鄉 長路漫浩浩
+同心而離居 憂傷以終老', NULL, NULL, 'parsed', 'cn-pretang1', 'CN', 'CN-PRETANG-CACHED-HAN-53e4-8a69-5341-4e5d-9996-2d-4f5a-540d', 'https://zh.wikisource.org/wiki/%E6%B6%89%E6%B1%9F%E6%8E%A1%E8%8A%99%E8%93%89'),
+    ('cn-pretang-4f5a-540d', '古詩十九首', NULL, NULL, '青青河畔草 鬱鬱園中柳
+盈盈樓上女 皎皎當窓牖
+娥娥紅粉妝 纖纖出素手
+昔為倡家女 今為蕩子婦
+蕩子行不歸 空床難獨守', NULL, NULL, 'parsed', 'cn-pretang1', 'CN', 'CN-PRETANG-CACHED-HAN-53e4-8a69-5341-4e5d-9996-2d-4f5a-540d', 'https://zh.wikisource.org/wiki/%E9%9D%92%E9%9D%92%E6%B2%B3%E7%95%94%E8%8D%89'),
+    ('cn-pretang-4f5a-540d', '古詩十九首', NULL, NULL, '庭中有奇樹 綠葉發華滋
+攀條折其榮 將以遺所思
+馨香盈懷袖 路遠莫致之
+此物何足貴 但感別經時', NULL, NULL, 'parsed', 'cn-pretang1', 'CN', 'CN-PRETANG-CACHED-HAN-53e4-8a69-5341-4e5d-9996-2d-4f5a-540d', 'https://zh.wikisource.org/wiki/%E5%BA%AD%E4%B8%AD%E6%9C%89%E5%A5%87%E6%A8%B9'),
+    ('cn-pretang-4f5a-540d', '古詩十九首', NULL, NULL, '迢迢牽牛星 皎皎河漢女
+纎纎擢素手 札札弄機杼
+終日不成章 泣涕零如雨
+河漢清且淺 相去復幾許
+盈盈一水間 脈脈不得語', NULL, NULL, 'parsed', 'cn-pretang1', 'CN', 'CN-PRETANG-CACHED-HAN-53e4-8a69-5341-4e5d-9996-2d-4f5a-540d', 'https://zh.wikisource.org/wiki/%E8%BF%A2%E8%BF%A2%E7%89%BD%E7%89%9B%E6%98%9F'),
+    ('cn-pretang-4f5a-540d', '古詩十九首', NULL, NULL, '明月何皎皎 照我羅牀幃
+憂愁不能寐 覽衣起徘徊
+客行雖雲樂 不如早旋歸
+出戶獨彷徨 愁思當告誰
+引領還入房 淚下沾裳衣', NULL, NULL, 'parsed', 'cn-pretang1', 'CN', 'CN-PRETANG-CACHED-HAN-53e4-8a69-5341-4e5d-9996-2d-4f5a-540d', 'https://zh.wikisource.org/wiki/%E6%98%8E%E6%9C%88%E4%BD%95%E7%9A%8E%E7%9A%8E'),
+    ('cn-pretang-4f5a-540d', '古詩十九首', NULL, NULL, '冉冉孤生竹 結根泰山阿
+與君為新婚 兔絲附女蘿
+兔絲生有時 夫婦會有宜
+千里遠結婚 悠悠隔山陂
+思君令人老 軒車來何遲
+傷彼蕙蘭花 含英揚光輝
+過時而不采 將隨秋草萎
+君亮執高節 賤妾亦何為', NULL, NULL, 'parsed', 'cn-pretang1', 'CN', 'CN-PRETANG-CACHED-HAN-53e4-8a69-5341-4e5d-9996-2d-4f5a-540d', 'https://zh.wikisource.org/wiki/%E5%86%89%E5%86%89%E5%AD%A4%E7%94%9F%E7%AB%B9'),
+    ('cn-pretang-4f5a-540d', '古詩十九首', NULL, NULL, '孟冬寒氣至 北風何慘慄
+愁多知夜長 仰觀衆星列
+三五明月滿 四五蟾兔缺
+客從遠方來 遺我一書札
+上言長相思 下言久離別
+置書懷袖中 三歲字不滅
+一心抱區區 懼君不識察', NULL, NULL, 'parsed', 'cn-pretang1', 'CN', 'CN-PRETANG-CACHED-HAN-53e4-8a69-5341-4e5d-9996-2d-4f5a-540d', 'https://zh.wikisource.org/wiki/%E5%AD%9F%E5%86%AC%E5%AF%92%E6%B0%A3%E8%87%B3'),
+    ('cn-pretang-4f5a-540d', '古詩十九首', NULL, NULL, '客從遠方來 遺我一端綺
+相去萬餘里 故人心尚爾
+文彩雙鴛鴦 裁為合歡被
+著以長相思 緣以結不解
+以膠投漆中 誰能別離此', NULL, NULL, 'parsed', 'cn-pretang1', 'CN', 'CN-PRETANG-CACHED-HAN-53e4-8a69-5341-4e5d-9996-2d-4f5a-540d', 'https://zh.wikisource.org/wiki/%E5%AE%A2%E5%BE%9E%E9%81%A0%E6%96%B9%E4%BE%86'),
+    ('cn-pretang-8521-9095', '飲馬長城窟行', NULL, NULL, '青青河邊草 綿綿思遠道
+遠道不可思 宿昔夢見之
+夢見在我旁 忽覺在他鄉
+他鄉各異縣 展轉不相見
+枯桑知天風 海水知天寒
+入門各自媚 誰肯相為言
+客從遠方來 遺我雙鯉魚
+呼兒烹鯉魚 中有尺素書
+長跪讀素書 書中竟何如
+上有加餐食 下有長相憶', NULL, NULL, 'parsed', 'cn-pretang1', 'CN', 'CN-PRETANG-CACHED-HAN-98f2-99ac-9577-57ce-7a9f-884c-2d-8521-9095', 'https://zh.wikisource.org/wiki/%E9%A3%B2%E9%A6%AC%E9%95%B7%E5%9F%8E%E7%AA%9F%E8%A1%8C_(%E8%94%A1%E9%82%95)'),
+    ('cn-pretang-73ed-5a55-59a4', '怨歌行', NULL, NULL, '新裂齊紈素，鮮潔如霜雪。
+裁為合歡扇，團團似明月。
+出入君懷袖，動搖微風發。
+常恐秋節至，凉風奪炎熱。
+棄捐篋笥中，恩情中道絶。', NULL, NULL, 'parsed', 'cn-pretang1', 'CN', 'CN-PRETANG-CACHED-HAN-6028-6b4c-884c-2d-73ed-5a55-59a4', 'https://zh.wikisource.org/wiki/%E6%80%A8%E8%A9%A9_(%E7%8F%AD%E5%A9%95%E5%A6%A4)'),
+    ('cn-pretang-7121-540d-6c0f-2f-6f22-6a02-5e9c', '豔歌行', NULL, NULL, '翩翩堂前鷰 冬藏夏來見
+兄弟兩三人 流蕩在他縣
+故衣誰當補 新衣誰當綻
+賴得賢主人 覽取為吾綻
+夫壻從門來 斜柯西北眄
+語卿且勿眄 水清石自見
+石見何纍纍 遠行不如歸', NULL, NULL, 'parsed', 'cn-pretang1', 'CN', 'CN-PRETANG-CACHED-HAN-8c54-6b4c-884c-2d-7121-540d-6c0f-2f-6f22-6a02-5e9c', 'https://zh.wikisource.org/wiki/%E8%B1%94%E6%AD%8C%E8%A1%8C_(%E9%80%B8%E5%90%8D)'),
+    ('cn-pretang-5353-6587-541b', '白頭吟', NULL, NULL, '皚如山上雪 皎若雲間月
+聞君有兩意 故來相訣絶
+今日鬥酒會 明旦溝水頭
+躞蹀御溝上 溝水東西流
+凄凄復凄凄 嫁娶不須啼
+願得一心人 白頭不相離
+竹竿何嫋嫋 魚尾何蓰蓰
+男兒重意氣 何用錢刀為', NULL, NULL, 'parsed', 'cn-pretang1', 'CN', 'CN-PRETANG-CACHED-HAN-767d-982d-541f-2d-5353-6587-541b', 'https://zh.wikisource.org/wiki/%E7%9A%9A%E5%A6%82%E5%B1%B1%E4%B8%8A%E9%9B%AA'),
+    ('cn-pretang-7121-540d-6c0f-2f-6f22-6a02-5e9c', '箜篌引', NULL, NULL, '公無渡河，公竟渡河。
+墮河而死，當奈公何？', NULL, NULL, 'parsed', 'cn-pretang1', 'CN', 'CN-PRETANG-CACHED-HAN-7b9c-7bcc-5f15-2d-7121-540d-6c0f-2f-6f22-6a02-5e9c', 'https://zh.wikisource.org/wiki/%E7%AE%9C%E7%AF%8C%E5%BC%95_(%E4%BD%9A%E5%90%8D)'),
+    ('cn-pretang-4f5a-540d', '古詩十九首', NULL, NULL, '青青陵上柏 磊磊澗中石
+人生天地間 忽如遠行客
+鬥酒相娛樂 聊厚不為薄
+驅車策駑馬 遊戲宛與洛
+洛中何鬱鬱 冠帶自相索
+長衢羅夾巷 王侯多第宅
+兩宮遙相望 雙闕百餘尺
+極宴娛心意 戚戚何所迫', NULL, NULL, 'parsed', 'cn-pretang1', 'CN', 'CN-PRETANG-CACHED-HAN-53e4-8a69-5341-4e5d-9996-2d-4f5a-540d', 'https://zh.wikisource.org/wiki/%E9%9D%92%E9%9D%92%E9%99%B5%E4%B8%8A%E6%9F%8F'),
+    ('cn-pretang-4f5a-540d', '古詩十九首', NULL, NULL, '今日良宴會 歡樂難具陳
+彈箏奮逸響 新聲妙入神
+令德唱高言 識曲聽其眞
+齊心同所願 含意俱未申
+人生寄一世 奄忽若飆塵
+何不策高足 先據要路津
+無為守窮賤 轗軻長苦辛', NULL, NULL, 'parsed', 'cn-pretang1', 'CN', 'CN-PRETANG-CACHED-HAN-53e4-8a69-5341-4e5d-9996-2d-4f5a-540d', 'https://zh.wikisource.org/wiki/%E4%BB%8A%E6%97%A5%E8%89%AF%E5%AE%B4%E6%9C%83'),
+    ('cn-pretang-4f5a-540d', '古詩十九首', NULL, NULL, '明月皎夜光 促織鳴東壁
+玉衡指孟冬 眾星何歷歷
+白露霑野草 時節忽復易
+秋蟬鳴樹間 玄鳥逝安適
+昔我同門友 高舉振六翮
+不念攜手好 棄我如遺跡
+南箕北有鬥 牽牛不負軛
+良無盤石固 虛名復何益', NULL, NULL, 'parsed', 'cn-pretang1', 'CN', 'CN-PRETANG-CACHED-HAN-53e4-8a69-5341-4e5d-9996-2d-4f5a-540d', 'https://zh.wikisource.org/wiki/%E6%98%8E%E6%9C%88%E7%9A%8E%E5%A4%9C%E5%85%89'),
+    ('cn-pretang-4f5a-540d', '古詩十九首', NULL, NULL, '迴車駕言邁 悠悠涉長道
+四顧何茫茫 東風搖百草
+所遇無故物 焉得不速老
+盛衰各有時 立身苦不早
+人生非金石 豈能長壽考
+奄忽隨物化 榮名以為寶', NULL, NULL, 'parsed', 'cn-pretang1', 'CN', 'CN-PRETANG-CACHED-HAN-53e4-8a69-5341-4e5d-9996-2d-4f5a-540d', 'https://zh.wikisource.org/wiki/%E8%BF%B4%E8%BB%8A%E9%A7%95%E8%A8%80%E9%82%81'),
+    ('cn-pretang-4f5a-540d', '古詩十九首', NULL, NULL, '驅車上東門 遙望郭北墓
+白楊何蕭蕭 松柏夾廣路
+下有陳死人 杳杳即長暮
+潛寐黃泉下 千載永不寤
+浩浩陰陽移 年命如朝露
+人生忽如寄 壽無金石固
+萬歲更相送 聖賢莫能度
+服食求神仙 多為藥所誤
+不如飲美酒 被服紈與素', NULL, NULL, 'parsed', 'cn-pretang1', 'CN', 'CN-PRETANG-CACHED-HAN-53e4-8a69-5341-4e5d-9996-2d-4f5a-540d', 'https://zh.wikisource.org/wiki/%E9%A9%85%E8%BB%8A%E4%B8%8A%E6%9D%B1%E9%96%80'),
+    ('cn-pretang-4f5a-540d', '古詩十九首', NULL, NULL, '去者日以疎 生者日以親
+出郭門直視 但見丘與墳
+古墓犁為田 松栢摧為薪
+白楊多悲風 蕭蕭愁殺人
+思還故里閭 欲歸道無因', NULL, NULL, 'parsed', 'cn-pretang1', 'CN', 'CN-PRETANG-CACHED-HAN-53e4-8a69-5341-4e5d-9996-2d-4f5a-540d', 'https://zh.wikisource.org/wiki/%E5%8E%BB%E8%80%85%E6%97%A5%E4%BB%A5%E7%96%8E'),
+    ('cn-pretang-4f5a-540d', '古詩十九首', NULL, NULL, '生年不滿百，常懷千歲憂。
+晝短苦夜長，何不秉燭遊！
+為樂當及時，何能待來茲？
+愚者愛惜費，但為後世嗤。
+仙人王子喬，難可與等期。', NULL, NULL, 'parsed', 'cn-pretang1', 'CN', 'CN-PRETANG-CACHED-HAN-53e4-8a69-5341-4e5d-9996-2d-4f5a-540d', 'https://zh.wikisource.org/wiki/%E7%94%9F%E5%B9%B4%E4%B8%8D%E6%BB%BF%E7%99%BE'),
+    ('cn-pretang-4f5a-540d', '古詩十九首', NULL, NULL, '凜凜歲雲暮 螻蛄夕鳴悲
+涼風率已厲 遊子寒無衣
+錦衾遺洛浦 同袍與我違
+獨宿累長夜 夢想見容輝
+良人惟古歡 枉駕惠前綏
+願得常巧笑 攜手同車歸
+既來不須臾 又不處重闈
+亮無晨風翼 焉能凌風飛
+眄睞以適意 引領遙相睎
+徙倚懷感傷 垂涕沾雙扉', NULL, NULL, 'parsed', 'cn-pretang1', 'CN', 'CN-PRETANG-CACHED-HAN-53e4-8a69-5341-4e5d-9996-2d-4f5a-540d', 'https://zh.wikisource.org/wiki/%E5%87%9C%E5%87%9C%E6%AD%B2%E4%BA%91%E6%9A%AE'),
+    ('cn-pretang-7121-540d-6c0f-2f-6f22-6a02-5e9c', '枯鱼过河泣', NULL, '五言絶句', '枯魚過河泣
+何時悔復及
+作書與魴鱮
+相教慎出入', NULL, NULL, 'parsed', 'cn-pretang1', 'CN', 'CN-PRETANG-CACHED-HAN-67af-9c7c-8fc7-6cb3-6ce3-2d-7121-540d-6c0f-2f-6f22-6a02-5e9c', 'https://zh.wikisource.org/wiki/%E6%9E%AF%E9%AD%9A%E9%81%8E%E6%B2%B3%E6%B3%A3_(%E5%8F%A4%E8%BE%AD)'),
+    ('cn-pretang-7121-540d-6c0f-2f-6f22-6a02-5e9c', '戰城南', NULL, NULL, '戰城南，死郭北，野死不葬鳥可食。
+為我謂鳥：「且為客豪，野死諒不葬，腐肉安能去子逃？」
+水深激激，蒲葦冥冥。梟騎戰鬥死，駑馬裴徊鳴。
+梁築室，何以南？何以北？
+禾黍不獲君何食？願為忠臣安可得？
+思子良臣，良臣誠可思。
+朝行出攻，暮不夜歸。', NULL, NULL, 'parsed', 'cn-pretang1', 'CN', 'CN-PRETANG-CACHED-HAN-6230-57ce-5357-2d-7121-540d-6c0f-2f-6f22-6a02-5e9c', 'https://zh.wikisource.org/wiki/%E6%88%B0%E5%9F%8E%E5%8D%97_(%E4%BD%9A%E5%90%8D)'),
+    ('cn-pretang-8521-7430', '悲憤詩', NULL, NULL, '漢季失權柄，董卓亂天常，志欲圖篡弒，先害諸賢良。逼迫遷舊邦，擁主以自彊。海內興義師，欲共討不祥。卓眾來東下，金甲耀日光。平土人脆弱，來兵皆胡羌。獵野圍城邑，所向悉破亡。斬截無孑遺，尸骸相撐拒。馬邊懸男頭，馬後載婦女。長驅西入關，迥路險且阻。還顧邈冥冥，肝脾為爛腐。所略有萬計，不得令屯聚。或有骨肉俱，欲言不敢語。失意幾微間，輒言斃降虜：「要當以亭刃，我曹不活汝！」豈敢惜性命？不堪其詈罵。或便加棰杖，毒痛參並下。旦則號泣行，夜則悲吟坐。欲死不能得，欲生無一可。彼蒼者何辜，乃遭此厄禍？
+邊荒與華異，人俗少義理。處所多霜雪，胡風春夏起。翩翩吹我衣，肅肅入我耳。感時念父母，哀嘆無終已。
+有客從外來，聞之常歡喜。迎問其消息，輒復非鄉里。邂逅徼時願，骨肉來迎己。己得自解免，當復棄兒子。天屬綴人心，念別無會期。存亡永乖隔，不忍與之辭。兒前抱我頸，問母欲何之？「人言母當去，豈復有還時？阿母常仁惻，今何更不慈？我尚未成人，奈何不顧思？」見此崩五內，恍惚生狂痴。號泣手撫摩，當發復回疑。
+兼有同時輩，相送告離別。慕我獨得歸，哀叫聲摧裂。馬為立踟躕，車為不轉轍。觀者皆歔欷，行路亦嗚咽。
+去去割情戀，遄征日遐邁。悠悠三千里，何時復交會？念我出腹子，胸臆為摧敗。既至家人盡，又復無中外。城郭為山林，庭宇生荊艾。白骨不知誰，縱橫莫覆蓋。出門無人聲，豺狼號且吠。煢煢對孤景，怛吒詫靡肝肺。登高遠眺望，神魂忽飛逝，奄若壽命盡。旁人相寬大，為復彊視息，雖生何聊賴？
+託命於新人，竭心自勖勵。流離成鄙賤，常恐復捐廢。人生幾何時，懷憂終年歲！', NULL, NULL, 'parsed', 'cn-pretang1', 'CN', 'CN-PRETANG-CACHED-HAN-60b2-61a4-8a69-2d-8521-7430', 'https://zh.wikisource.org/wiki/%E6%82%B2%E6%86%A4%E8%A9%A9_(%E8%94%A1%E7%90%B0)')
 )
 INSERT INTO poems (
   poet_id, poem_no, title_zh, title_ko, category, body_zh,
@@ -559,14 +774,14 @@ SET poem_count = sub.cnt
 FROM (
   SELECT poet_id, count(*)::integer AS cnt
   FROM poems
-  WHERE poet_id IN (SELECT id FROM poets WHERE slug IN ('cn-pretang-4f5a-540d', 'cn-pretang-7121-540d-6c0f-2f-6f22-6a02-5e9c', 'cn-pretang-5289-90a6', 'cn-pretang-6881-9d3b', 'cn-pretang-9805-7fbd', 'cn-pretang-5289-5fb9', 'cn-pretang-5b8b-5b50-4faf', 'cn-pretang-8f9b-5ef6-5e74', 'cn-pretang-8607-4f2f-7389-59bb', 'cn-pretang-5289-7d30-541b', 'cn-pretang-73ed-56fa', 'cn-pretang-71d5-523a-738b-65e6'))
+  WHERE poet_id IN (SELECT id FROM poets WHERE slug IN ('cn-pretang-4f5a-540d', 'cn-pretang-7121-540d-6c0f-2f-6f22-6a02-5e9c', 'cn-pretang-5289-90a6', 'cn-pretang-6881-9d3b', 'cn-pretang-9805-7fbd', 'cn-pretang-5289-5fb9', 'cn-pretang-5b8b-5b50-4faf', 'cn-pretang-8f9b-5ef6-5e74', 'cn-pretang-8607-4f2f-7389-59bb', 'cn-pretang-5289-7d30-541b', 'cn-pretang-73ed-56fa', 'cn-pretang-5f35-8861', 'cn-pretang-71d5-523a-738b-65e6', 'cn-pretang-8521-9095', 'cn-pretang-73ed-5a55-59a4', 'cn-pretang-5353-6587-541b', 'cn-pretang-8521-7430'))
   GROUP BY poet_id
 ) sub
 WHERE p.id = sub.poet_id;
 
 -- Review counts before COMMIT when applying manually:
-SELECT era_period, count(*) FROM poets WHERE slug IN ('cn-pretang-4f5a-540d', 'cn-pretang-7121-540d-6c0f-2f-6f22-6a02-5e9c', 'cn-pretang-5289-90a6', 'cn-pretang-6881-9d3b', 'cn-pretang-9805-7fbd', 'cn-pretang-5289-5fb9', 'cn-pretang-5b8b-5b50-4faf', 'cn-pretang-8f9b-5ef6-5e74', 'cn-pretang-8607-4f2f-7389-59bb', 'cn-pretang-5289-7d30-541b', 'cn-pretang-73ed-56fa', 'cn-pretang-71d5-523a-738b-65e6') GROUP BY era_period ORDER BY era_period;
-SELECT p.slug, count(pm.id) FROM poets p LEFT JOIN poems pm ON pm.poet_id = p.id WHERE p.slug IN ('cn-pretang-4f5a-540d', 'cn-pretang-7121-540d-6c0f-2f-6f22-6a02-5e9c', 'cn-pretang-5289-90a6', 'cn-pretang-6881-9d3b', 'cn-pretang-9805-7fbd', 'cn-pretang-5289-5fb9', 'cn-pretang-5b8b-5b50-4faf', 'cn-pretang-8f9b-5ef6-5e74', 'cn-pretang-8607-4f2f-7389-59bb', 'cn-pretang-5289-7d30-541b', 'cn-pretang-73ed-56fa', 'cn-pretang-71d5-523a-738b-65e6') GROUP BY p.slug ORDER BY p.slug;
+SELECT era_period, count(*) FROM poets WHERE slug IN ('cn-pretang-4f5a-540d', 'cn-pretang-7121-540d-6c0f-2f-6f22-6a02-5e9c', 'cn-pretang-5289-90a6', 'cn-pretang-6881-9d3b', 'cn-pretang-9805-7fbd', 'cn-pretang-5289-5fb9', 'cn-pretang-5b8b-5b50-4faf', 'cn-pretang-8f9b-5ef6-5e74', 'cn-pretang-8607-4f2f-7389-59bb', 'cn-pretang-5289-7d30-541b', 'cn-pretang-73ed-56fa', 'cn-pretang-5f35-8861', 'cn-pretang-71d5-523a-738b-65e6', 'cn-pretang-8521-9095', 'cn-pretang-73ed-5a55-59a4', 'cn-pretang-5353-6587-541b', 'cn-pretang-8521-7430') GROUP BY era_period ORDER BY era_period;
+SELECT p.slug, count(pm.id) FROM poets p LEFT JOIN poems pm ON pm.poet_id = p.id WHERE p.slug IN ('cn-pretang-4f5a-540d', 'cn-pretang-7121-540d-6c0f-2f-6f22-6a02-5e9c', 'cn-pretang-5289-90a6', 'cn-pretang-6881-9d3b', 'cn-pretang-9805-7fbd', 'cn-pretang-5289-5fb9', 'cn-pretang-5b8b-5b50-4faf', 'cn-pretang-8f9b-5ef6-5e74', 'cn-pretang-8607-4f2f-7389-59bb', 'cn-pretang-5289-7d30-541b', 'cn-pretang-73ed-56fa', 'cn-pretang-5f35-8861', 'cn-pretang-71d5-523a-738b-65e6', 'cn-pretang-8521-9095', 'cn-pretang-73ed-5a55-59a4', 'cn-pretang-5353-6587-541b', 'cn-pretang-8521-7430') GROUP BY p.slug ORDER BY p.slug;
 
 ROLLBACK;
 -- COMMIT;

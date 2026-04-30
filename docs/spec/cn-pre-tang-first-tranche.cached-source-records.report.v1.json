@@ -1,16 +1,16 @@
 {
   "batchId": "cn-pre-tang-first-tranche-cached-sources",
-  "generatedAt": "2026-04-30T06:21:13.111Z",
+  "generatedAt": "2026-04-30T06:49:31.437Z",
   "source": "/Users/jinwoo/Documents/development/hanshinaru/docs/spec/cn-non-tang-tranche1.sources.raw.json",
   "summary": {
     "sourcePages": 10,
-    "extractedRecords": 57,
+    "extractedRecords": 87,
     "byEra": {
       "pre-qin": 26,
-      "han": 31
+      "han": 61
     },
     "bySourcePage": {
-      "古詩源": 54,
+      "古詩源": 84,
       "上邪": 1,
       "行行重行行": 1,
       "迢迢牽牛星": 1
@@ -18,15 +18,733 @@
     "bySourceKind": {
       "anthology-section": 26,
       "standalone-page": 3,
-      "gushiyuan-linked-dump-page": 28
+      "gushiyuan-linked-dump-page": 58
     },
     "gushiYuanLinkedDumpPages": {
       "inputPages": 58,
       "fetchedOk": 58,
-      "extractedRecords": 29,
-      "skippedWithoutBody": 29
+      "extractedRecords": 31,
+      "skippedWithoutBody": 27,
+      "skippedByReason": {
+        "transclusion-index-page": 2,
+        "disambiguation-page": 23,
+        "no-supported-poem-body": 2
+      }
+    },
+    "gushiYuanSecondPassDumpPages": {
+      "inputPages": 101,
+      "fetchedOk": 28,
+      "extractedRecords": 28,
+      "skippedWithoutBody": 73,
+      "skippedByReason": {
+        "dump-fetch-missing": 73
+      }
     }
   },
+  "skippedGushiYuanLinkedPages": [
+    {
+      "rawTitle": "古詩十九首",
+      "normalizedTitle": "古詩十九首",
+      "authorHint": "佚名",
+      "sourceSection": "卷四漢詩",
+      "reason": "transclusion-index-page"
+    },
+    {
+      "rawTitle": "雜詩",
+      "normalizedTitle": "雜詩",
+      "authorHint": "孔融",
+      "sourceSection": "卷三漢詩",
+      "reason": "disambiguation-page"
+    },
+    {
+      "rawTitle": "怨詩",
+      "normalizedTitle": "怨詩",
+      "authorHint": "王昭君",
+      "sourceSection": "卷二漢詩",
+      "reason": "disambiguation-page"
+    },
+    {
+      "rawTitle": "豔歌行",
+      "normalizedTitle": "豔歌行",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "disambiguation-page"
+    },
+    {
+      "rawTitle": "東門行",
+      "normalizedTitle": "東門行",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "no-supported-poem-body"
+    },
+    {
+      "rawTitle": "樂府",
+      "normalizedTitle": "樂府",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "disambiguation-page"
+    },
+    {
+      "rawTitle": "飲馬長城窟行",
+      "normalizedTitle": "飲馬長城窟行",
+      "authorHint": "蔡邕",
+      "sourceSection": "卷三漢詩",
+      "reason": "disambiguation-page"
+    },
+    {
+      "rawTitle": "有所思",
+      "normalizedTitle": "有所思",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "disambiguation-page"
+    },
+    {
+      "rawTitle": "琴歌",
+      "normalizedTitle": "琴歌",
+      "authorHint": "蔡邕",
+      "sourceSection": "卷三漢詩",
+      "reason": "disambiguation-page"
+    },
+    {
+      "rawTitle": "陌上桑",
+      "normalizedTitle": "陌上桑",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "disambiguation-page"
+    },
+    {
+      "rawTitle": "枯鱼过河泣",
+      "normalizedTitle": "枯鱼过河泣",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "disambiguation-page"
+    },
+    {
+      "rawTitle": "箜篌引",
+      "normalizedTitle": "箜篌引",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "no-supported-poem-body"
+    },
+    {
+      "rawTitle": "臨高臺",
+      "normalizedTitle": "臨高臺",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "disambiguation-page"
+    },
+    {
+      "rawTitle": "怨歌行",
+      "normalizedTitle": "怨歌行",
+      "authorHint": "班婕妤",
+      "sourceSection": "卷二漢詩",
+      "reason": "disambiguation-page"
+    },
+    {
+      "rawTitle": "戰城南",
+      "normalizedTitle": "戰城南",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "disambiguation-page"
+    },
+    {
+      "rawTitle": "猛虎行",
+      "normalizedTitle": "猛虎行",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "disambiguation-page"
+    },
+    {
+      "rawTitle": "相逢行",
+      "normalizedTitle": "相逢行",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "disambiguation-page"
+    },
+    {
+      "rawTitle": "長歌行",
+      "normalizedTitle": "長歌行",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "disambiguation-page"
+    },
+    {
+      "rawTitle": "古歌",
+      "normalizedTitle": "古歌",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "disambiguation-page"
+    },
+    {
+      "rawTitle": "古歌",
+      "normalizedTitle": "古歌",
+      "authorHint": "佚名",
+      "sourceSection": "卷四漢詩",
+      "reason": "disambiguation-page"
+    },
+    {
+      "rawTitle": "白頭吟",
+      "normalizedTitle": "白頭吟",
+      "authorHint": "卓文君",
+      "sourceSection": "卷二漢詩",
+      "reason": "disambiguation-page"
+    },
+    {
+      "rawTitle": "悲歌",
+      "normalizedTitle": "悲歌",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "transclusion-index-page"
+    },
+    {
+      "rawTitle": "悲憤詩",
+      "normalizedTitle": "悲憤詩",
+      "authorHint": "蔡琰",
+      "sourceSection": "卷三漢詩",
+      "reason": "disambiguation-page"
+    },
+    {
+      "rawTitle": "隴西行",
+      "normalizedTitle": "隴西行",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "disambiguation-page"
+    },
+    {
+      "rawTitle": "梁甫吟",
+      "normalizedTitle": "梁甫吟",
+      "authorHint": "諸葛亮",
+      "sourceSection": "卷三漢詩",
+      "reason": "disambiguation-page"
+    },
+    {
+      "rawTitle": "落葉哀蟬曲",
+      "normalizedTitle": "落葉哀蟬曲",
+      "authorHint": "武帝",
+      "sourceSection": "卷二漢詩",
+      "reason": "disambiguation-page"
+    },
+    {
+      "rawTitle": "西門行",
+      "normalizedTitle": "西門行",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "disambiguation-page"
+    }
+  ],
+  "skippedGushiYuanSecondPassPages": [
+    {
+      "rawTitle": "古歌 (佚名)",
+      "normalizedTitle": "古歌",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "古歌 (兩漢樂府)",
+      "normalizedTitle": "古歌",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "古歌 (古辞)",
+      "normalizedTitle": "古歌",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "古歌 (古辭)",
+      "normalizedTitle": "古歌",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "古歌 (樂府歌辭)",
+      "normalizedTitle": "古歌",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "古歌 (漢樂府)",
+      "normalizedTitle": "古歌",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "古歌 (逸名)",
+      "normalizedTitle": "古歌",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "古詩十九首 (佚名)",
+      "normalizedTitle": "古詩十九首",
+      "authorHint": "佚名",
+      "sourceSection": "卷四漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "古詩十九首 (古辞)",
+      "normalizedTitle": "古詩十九首",
+      "authorHint": "佚名",
+      "sourceSection": "卷四漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "古詩十九首 (古辭)",
+      "normalizedTitle": "古詩十九首",
+      "authorHint": "佚名",
+      "sourceSection": "卷四漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "怨詩 (王昭君)",
+      "normalizedTitle": "怨詩",
+      "authorHint": "王昭君",
+      "sourceSection": "卷二漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "有所思 (佚名)",
+      "normalizedTitle": "有所思",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "有所思 (兩漢樂府)",
+      "normalizedTitle": "有所思",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "有所思 (古辞)",
+      "normalizedTitle": "有所思",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "有所思 (古辭)",
+      "normalizedTitle": "有所思",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "有所思 (樂府歌辭)",
+      "normalizedTitle": "有所思",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "有所思 (漢樂府)",
+      "normalizedTitle": "有所思",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "有所思 (逸名)",
+      "normalizedTitle": "有所思",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "東門行 (佚名)",
+      "normalizedTitle": "東門行",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "東門行 (兩漢樂府)",
+      "normalizedTitle": "東門行",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "東門行 (古辞)",
+      "normalizedTitle": "東門行",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "東門行 (古辭)",
+      "normalizedTitle": "東門行",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "東門行 (樂府歌辭)",
+      "normalizedTitle": "東門行",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "東門行 (漢樂府)",
+      "normalizedTitle": "東門行",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "東門行 (逸名)",
+      "normalizedTitle": "東門行",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "梁甫吟 (諸葛亮)",
+      "normalizedTitle": "梁甫吟",
+      "authorHint": "諸葛亮",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "樂府 (佚名)",
+      "normalizedTitle": "樂府",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "樂府 (兩漢樂府)",
+      "normalizedTitle": "樂府",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "樂府 (古辞)",
+      "normalizedTitle": "樂府",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "樂府 (古辭)",
+      "normalizedTitle": "樂府",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "樂府 (樂府歌辭)",
+      "normalizedTitle": "樂府",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "樂府 (漢樂府)",
+      "normalizedTitle": "樂府",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "樂府 (逸名)",
+      "normalizedTitle": "樂府",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "猛虎行 (佚名)",
+      "normalizedTitle": "猛虎行",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "猛虎行 (兩漢樂府)",
+      "normalizedTitle": "猛虎行",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "猛虎行 (古辞)",
+      "normalizedTitle": "猛虎行",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "猛虎行 (古辭)",
+      "normalizedTitle": "猛虎行",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "猛虎行 (樂府歌辭)",
+      "normalizedTitle": "猛虎行",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "猛虎行 (漢樂府)",
+      "normalizedTitle": "猛虎行",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "猛虎行 (逸名)",
+      "normalizedTitle": "猛虎行",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "琴歌 (蔡邕)",
+      "normalizedTitle": "琴歌",
+      "authorHint": "蔡邕",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "相逢行 (佚名)",
+      "normalizedTitle": "相逢行",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "相逢行 (兩漢樂府)",
+      "normalizedTitle": "相逢行",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "相逢行 (古辞)",
+      "normalizedTitle": "相逢行",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "相逢行 (古辭)",
+      "normalizedTitle": "相逢行",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "相逢行 (樂府歌辭)",
+      "normalizedTitle": "相逢行",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "相逢行 (漢樂府)",
+      "normalizedTitle": "相逢行",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "相逢行 (逸名)",
+      "normalizedTitle": "相逢行",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "臨高臺 (兩漢樂府)",
+      "normalizedTitle": "臨高臺",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "落葉哀蟬曲 (劉徹)",
+      "normalizedTitle": "落葉哀蟬曲",
+      "authorHint": "武帝",
+      "sourceSection": "卷二漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "落葉哀蟬曲 (武帝)",
+      "normalizedTitle": "落葉哀蟬曲",
+      "authorHint": "武帝",
+      "sourceSection": "卷二漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "西門行 (佚名)",
+      "normalizedTitle": "西門行",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "西門行 (兩漢樂府)",
+      "normalizedTitle": "西門行",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "西門行 (古辞)",
+      "normalizedTitle": "西門行",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "西門行 (古辭)",
+      "normalizedTitle": "西門行",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "西門行 (樂府歌辭)",
+      "normalizedTitle": "西門行",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "西門行 (漢樂府)",
+      "normalizedTitle": "西門行",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "西門行 (逸名)",
+      "normalizedTitle": "西門行",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "陌上桑 (佚名)",
+      "normalizedTitle": "陌上桑",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "陌上桑 (兩漢樂府)",
+      "normalizedTitle": "陌上桑",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "陌上桑 (古辞)",
+      "normalizedTitle": "陌上桑",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "陌上桑 (古辭)",
+      "normalizedTitle": "陌上桑",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "陌上桑 (樂府歌辭)",
+      "normalizedTitle": "陌上桑",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "陌上桑 (漢樂府)",
+      "normalizedTitle": "陌上桑",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "陌上桑 (逸名)",
+      "normalizedTitle": "陌上桑",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "隴西行 (佚名)",
+      "normalizedTitle": "隴西行",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "隴西行 (兩漢樂府)",
+      "normalizedTitle": "隴西行",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "隴西行 (古辞)",
+      "normalizedTitle": "隴西行",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "隴西行 (古辭)",
+      "normalizedTitle": "隴西行",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "隴西行 (樂府歌辭)",
+      "normalizedTitle": "隴西行",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "隴西行 (漢樂府)",
+      "normalizedTitle": "隴西行",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "隴西行 (逸名)",
+      "normalizedTitle": "隴西行",
+      "authorHint": "樂府歌辭",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    },
+    {
+      "rawTitle": "雜詩 (孔融)",
+      "normalizedTitle": "雜詩",
+      "authorHint": "孔融",
+      "sourceSection": "卷三漢詩",
+      "reason": "dump-fetch-missing"
+    }
+  ],
   "policy": [
     "This is a companion-source recovery after exact 先秦漢魏晉南北朝詩 volume titles were missing in the zhwikisource dump.",
     "Records are source witnesses, not final DB upserts.",
