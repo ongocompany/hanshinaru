@@ -36,6 +36,9 @@
     "cn:pre-tang-companion-source-targets": "node scripts/build_cn_pre_tang_companion_source_targets.mjs",
     "cn:pre-tang-high-yield-source-targets": "node scripts/build_cn_pre_tang_high_yield_source_targets.mjs",
     "cn:pre-tang-high-yield-records": "node scripts/build_cn_pre_tang_high_yield_records.mjs",
+    "cn:pre-tang-classic-index-targets": "node scripts/build_cn_pre_tang_classic_index_targets.mjs",
+    "cn:pre-tang-classic-redirect-targets": "node scripts/build_cn_pre_tang_classic_redirect_targets.mjs",
+    "cn:pre-tang-classic-index-records": "node scripts/build_cn_pre_tang_classic_index_records.mjs",
     "cn:pre-tang-first-db-dry-run": "node scripts/build_cn_pre_tang_first_tranche_db_dry_run.mjs",
     "cn:pre-tang-first-jds-sql": "node scripts/build_cn_pre_tang_first_tranche_jds_sql.mjs"
   },

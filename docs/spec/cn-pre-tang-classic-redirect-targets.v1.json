@@ -1,0 +1,110 @@
+{
+  "version": "2026-04-30.v1",
+  "batchId": "cn-pre-tang-classic-redirect-targets",
+  "source": "/Users/jinwoo/Documents/development/hanshinaru/docs/spec/cn-pre-tang-classic-index-pages.dump.raw.v1.json",
+  "generatedAt": "2026-04-30T07:52:05.499Z",
+  "summary": {
+    "selected": 6,
+    "byFamily": {
+      "chuci": 6
+    }
+  },
+  "candidates": [
+    {
+      "eraSlug": "pre-qin",
+      "priority": "cn-pretang-classic-redirect-target",
+      "rawTitle": "楚辭/九章",
+      "normalizedTitle": "楚辭/九章",
+      "displayTitleZh": "九章",
+      "authorHint": "屈原",
+      "sourceFamily": "chuci",
+      "sourcePageTitle": "楚辭",
+      "sourceLinkHref": "/wiki/楚辭/九章",
+      "order": 4,
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B9%9D%E7%AB%A0",
+      "categoryTitle": "Category:先秦詩",
+      "originRawTitle": "九章",
+      "originSourceUrl": "https://zh.wikisource.org/wiki/%E4%B9%9D%E7%AB%A0"
+    },
+    {
+      "eraSlug": "pre-qin",
+      "priority": "cn-pretang-classic-redirect-target",
+      "rawTitle": "楚辭/大招",
+      "normalizedTitle": "楚辭/大招",
+      "displayTitleZh": "大招",
+      "authorHint": "屈原",
+      "sourceFamily": "chuci",
+      "sourcePageTitle": "楚辭",
+      "sourceLinkHref": "/wiki/楚辭/大招",
+      "order": 10,
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%A4%A7%E6%8B%9B",
+      "categoryTitle": "Category:先秦詩",
+      "originRawTitle": "大招",
+      "originSourceUrl": "https://zh.wikisource.org/wiki/%E5%A4%A7%E6%8B%9B"
+    },
+    {
+      "eraSlug": "pre-qin",
+      "priority": "cn-pretang-classic-redirect-target",
+      "rawTitle": "楚辭/招䰟",
+      "normalizedTitle": "楚辭/招䰟",
+      "displayTitleZh": "招䰟",
+      "authorHint": "屈原",
+      "sourceFamily": "chuci",
+      "sourcePageTitle": "楚辭",
+      "sourceLinkHref": "/wiki/楚辭/招䰟",
+      "order": 9,
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%8B%9B%E4%B0%9F",
+      "categoryTitle": "Category:先秦詩",
+      "originRawTitle": "招䰟",
+      "originSourceUrl": "https://zh.wikisource.org/wiki/%E6%8B%9B%E4%B0%9F"
+    },
+    {
+      "eraSlug": "pre-qin",
+      "priority": "cn-pretang-classic-redirect-target",
+      "rawTitle": "楚辭/惜誓",
+      "normalizedTitle": "楚辭/惜誓",
+      "displayTitleZh": "惜誓",
+      "authorHint": "屈原",
+      "sourceFamily": "chuci",
+      "sourcePageTitle": "楚辭",
+      "sourceLinkHref": "/wiki/楚辭/惜誓",
+      "order": 11,
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%83%9C%E8%AA%93",
+      "categoryTitle": "Category:先秦詩",
+      "originRawTitle": "惜誓",
+      "originSourceUrl": "https://zh.wikisource.org/wiki/%E6%83%9C%E8%AA%93"
+    },
+    {
+      "eraSlug": "pre-qin",
+      "priority": "cn-pretang-classic-redirect-target",
+      "rawTitle": "楚辭/七諫",
+      "normalizedTitle": "楚辭/七諫",
+      "displayTitleZh": "七諫",
+      "authorHint": "東方朔",
+      "sourceFamily": "chuci",
+      "sourcePageTitle": "楚辭",
+      "sourceLinkHref": "/wiki/楚辭/七諫",
+      "order": 13,
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%83%E8%AB%AB",
+      "categoryTitle": "Category:先秦詩",
+      "originRawTitle": "七諫",
+      "originSourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%83%E8%AB%AB"
+    },
+    {
+      "eraSlug": "pre-qin",
+      "priority": "cn-pretang-classic-redirect-target",
+      "rawTitle": "楚辭/哀時命",
+      "normalizedTitle": "楚辭/哀時命",
+      "displayTitleZh": "哀時命",
+      "authorHint": "屈原",
+      "sourceFamily": "chuci",
+      "sourcePageTitle": "楚辭",
+      "sourceLinkHref": "/wiki/楚辭/哀時命",
+      "order": 14,
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%93%80%E6%99%82%E5%91%BD",
+      "categoryTitle": "Category:先秦詩",
+      "originRawTitle": "哀時命",
+      "originSourceUrl": "https://zh.wikisource.org/wiki/%E5%93%80%E6%99%82%E5%91%BD"
+    }
+  ]
+}

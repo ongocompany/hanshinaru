@@ -1,0 +1,93 @@
+{
+  "batchId": "cn-pre-tang-classic-index-extracted-records",
+  "generatedAt": "2026-04-30T07:56:47.000Z",
+  "source": "/Users/jinwoo/Documents/development/hanshinaru/docs/spec/cn-pre-tang-classic-index-pages.dump.raw.v1.json",
+  "summary": {
+    "sourcePages": 328,
+    "redirectTargetPages": 6,
+    "records": 322,
+    "byFamily": {
+      "chuci": 17,
+      "shijing": 305
+    },
+    "skipped": 6,
+    "skippedByReason": {
+      "text-lost": 6
+    },
+    "skippedByFamily": {
+      "shijing": 6
+    }
+  },
+  "skipped": [
+    {
+      "rawTitle": "詩經/南陔",
+      "displayTitleZh": "南陔",
+      "sourceFamily": "shijing",
+      "order": 171,
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%A9%A9%E7%B6%93/%E5%8D%97%E9%99%94",
+      "extraction": {
+        "status": "skipped",
+        "reason": "text-lost"
+      }
+    },
+    {
+      "rawTitle": "詩經/華黍",
+      "displayTitleZh": "華黍",
+      "sourceFamily": "shijing",
+      "order": 173,
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%A9%A9%E7%B6%93/%E8%8F%AF%E9%BB%8D",
+      "extraction": {
+        "status": "skipped",
+        "reason": "text-lost"
+      }
+    },
+    {
+      "rawTitle": "詩經/由庚",
+      "displayTitleZh": "由庚",
+      "sourceFamily": "shijing",
+      "order": 176,
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%A9%A9%E7%B6%93/%E7%94%B1%E5%BA%9A",
+      "extraction": {
+        "status": "skipped",
+        "reason": "text-lost"
+      }
+    },
+    {
+      "rawTitle": "詩經/崇丘",
+      "displayTitleZh": "崇丘",
+      "sourceFamily": "shijing",
+      "order": 177,
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%A9%A9%E7%B6%93/%E5%B4%87%E4%B8%98",
+      "extraction": {
+        "status": "skipped",
+        "reason": "text-lost"
+      }
+    },
+    {
+      "rawTitle": "詩經/由儀",
+      "displayTitleZh": "由儀",
+      "sourceFamily": "shijing",
+      "order": 178,
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%A9%A9%E7%B6%93/%E7%94%B1%E5%84%80",
+      "extraction": {
+        "status": "skipped",
+        "reason": "text-lost"
+      }
+    },
+    {
+      "rawTitle": "詩經/白華",
+      "displayTitleZh": "白華",
+      "sourceFamily": "shijing",
+      "order": 172,
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%A9%A9%E7%B6%93/%E7%99%BD%E8%8F%AF",
+      "extraction": {
+        "status": "skipped",
+        "reason": "text-lost"
+      }
+    }
+  ],
+  "next": [
+    "Decide whether duplicate 詩經 titles should be separate canonical records or linked as same text witness with different canonical positions.",
+    "After review sampling, map these records into the DB ingest payload format."
+  ]
+}

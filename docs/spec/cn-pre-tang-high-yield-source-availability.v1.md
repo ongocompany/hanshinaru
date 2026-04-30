@@ -97,6 +97,25 @@ skipped:
 | dump-fetch-missing | 3 | `作者:陶淵明`, `楚辭/天問`, `楚辭/離騷` |
 | redirect-page | 4 | `楚辭/漁父`, `楚辭/卜居`, `楚辭/九歌`, `歸園田居五首` |
 
+# classic index 전체 추출 결과
+
+고확보성 유명작 배치 뒤에, 확보된 `詩經`/`楚辭` root index에서 전체 작품 후보를 확장했다.
+
+- target manifest: `docs/spec/cn-pre-tang-classic-index-targets.v1.json`
+- raw pages: `docs/spec/cn-pre-tang-classic-index-pages.dump.raw.v1.json`
+- redirect targets: `docs/spec/cn-pre-tang-classic-redirect-targets.v1.json`
+- redirect raw pages: `docs/spec/cn-pre-tang-classic-redirect-pages.dump.raw.v1.json`
+- records: `docs/spec/cn-pre-tang-classic-index.extracted-records.v1.json`
+- report: `docs/spec/cn-pre-tang-classic-index.extracted-records.report.v1.json`
+
+| 단계 | 건수 | 결과 |
+|---|---:|---|
+| index 후보 | 328 | `詩經` 311, `楚辭` 17 |
+| dump exact fetch | 328 | missing 0 |
+| redirect target fetch | 6 | missing 0 |
+| usable records | 322 | `詩經` 305, `楚辭` 17 |
+| skipped | 6 | `詩經` 笙詩 6편은 `有其義而亡其辭`로 원문 없음 |
+
 # 판단
 
 - `詩經`, `楚辭`는 `先秦漢魏晉南北朝詩` 본체에서 제외했던 것이 맞지만, 한시나루 수집 대상에서는 제외하면 안 된다.
