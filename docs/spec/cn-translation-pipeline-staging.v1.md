@@ -13,14 +13,15 @@ author: 지훈
 
 # 번역 담당 결정
 
-1차 번역 담당은 `Gemini CLI`의 Google 로그인 구독 quota를 쓰는 `gemini-2.5-flash-lite`로 둔다.
+1차 번역 담당은 `Gemini CLI`의 Google 로그인 구독 quota를 쓰는 `gemini-3-flash-preview`로 둔다.
 
 이유:
 
 - 형님이 이미 Gemini 구독을 사용 중이라 API key 방식은 이중 지출이 된다.
 - Gemini CLI는 Google 계정 로그인 방식으로 구독 quota를 사용할 수 있다.
-- 기존 `pipeline/translate/prompts/v5_full.txt`가 번역, 독음, 주석, 해설 JSON을 한 번에 받는 구조다.
-- `gemini-2.5-flash-lite`는 대량 초벌 처리용으로 가장 가볍게 쓸 수 있는 Gemini 계열이다.
+- `docs/spec/cn-translation-prompts/gemini-cli-v2-full.txt`가 번역, 독음, 주석, 해설 JSON을 한 번에 받는 구조다.
+- v2 prompt는 해설을 350~500자 정도로 늘리고, 한시나루 사이트 톤에 맞춰 `~이다/~한다` 평서문으로 고정한다.
+- `gemini-3-flash-preview`는 CLI 구독 경로에서 10편 smoke와 50편 batch를 모두 성공 처리했다.
 - 전면 공개 전 초벌 번역을 많이 생산한 뒤 검수하는 흐름에 맞다.
 - API batch보다 느리므로, JSONL 결과 파일에 성공분을 누적 저장하고 중단 시 이어서 실행한다.
 
@@ -32,6 +33,7 @@ author: 지훈
 - report: `docs/spec/cn-translation-pipeline-staging.report.v1.json`
 - JDS SQL chunks: `docs/spec/cn-translation-pipeline-staging.jds-upsert/`
 - builder: `scripts/build_cn_translation_pipeline_staging.mjs`
+- Gemini CLI prompt: `docs/spec/cn-translation-prompts/gemini-cli-v2-full.txt`
 - Gemini CLI runner: `scripts/run_cn_translation_gemini_cli.mjs`
 
 # 현재 queue
@@ -87,4 +89,4 @@ done
 2. 먼저 터미널에서 `gemini`를 한 번 실행해 Google 계정 로그인을 완료한다.
 3. `npm run cn:translate:gemini-cli -- --limit 10`으로 smoke 번역을 돌리고 JSON 파싱/해설 품질을 검토한다.
 4. 문제가 없으면 `--limit`과 `--era` 또는 `--batch`를 조합해 대량 실행한다.
-5. 결과는 `docs/spec/cn-translation-results.gemini-cli.v1.jsonl`에 누적된다.
+5. 결과는 `docs/spec/cn-translation-results.gemini-cli.v2.jsonl`에 누적된다.

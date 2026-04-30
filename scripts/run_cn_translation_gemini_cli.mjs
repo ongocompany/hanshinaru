@@ -6,9 +6,9 @@ import { dirname, resolve } from 'node:path';
 import { createInterface } from 'node:readline';
 
 const DEFAULT_QUEUE_PATH = 'docs/spec/cn-translation-pipeline-staging.v1.json';
-const DEFAULT_PROMPT_PATH = '/Users/jinwoo/Documents/development/jds/pipeline/translate/prompts/v5_full.txt';
-const DEFAULT_OUTPUT_PATH = 'docs/spec/cn-translation-results.gemini-cli.v1.jsonl';
-const DEFAULT_MODEL = 'gemini-2.5-flash-lite';
+const DEFAULT_PROMPT_PATH = 'docs/spec/cn-translation-prompts/gemini-cli-v2-full.txt';
+const DEFAULT_OUTPUT_PATH = 'docs/spec/cn-translation-results.gemini-cli.v2.jsonl';
+const DEFAULT_MODEL = 'gemini-3-flash-preview';
 const JSON_BLOCK_RE = /```(?:json)?\s*\n?([\s\S]*?)\n?\s*```/;
 
 function parseArgs(argv) {
