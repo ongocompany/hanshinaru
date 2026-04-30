@@ -241,6 +241,10 @@ function cleanPoemHtml(html) {
 
 function cleanPoemWikitext(value) {
   return decodeHtml(String(value ?? '')
+    .replace(/\{\{另\|([^|{}]+)\|[^{}]*\}\}/g, '$1')
+    .replace(/-\{([^{}|]+)\}-/g, '$1')
+    .replace(/\{\{[^{}]*\}\}/g, '')
+    .replace(/\{\{[^{}]*\}\}/g, '')
     .replace(/\{\{(?:注|\*|lang|lang-zh|lang\|zh|SKchar)[\s\S]*?\}\}/g, '')
     .replace(/<ref[\s\S]*?<\/ref>/gi, '')
     .replace(/<ref\b[^/>]*\/>/gi, '')

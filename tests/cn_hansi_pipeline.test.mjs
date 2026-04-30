@@ -3,6 +3,7 @@ import test from 'node:test';
 
 import { detectCategory, normalizeChineseForHanshinaru } from '../scripts/lib/cn_hansi_text_normalizer.mjs';
 import { buildCuratedDryRun } from '../scripts/lib/cn_curated_payload_builder.mjs';
+import { buildPreTangDryRun } from '../scripts/lib/cn_pre_tang_db_payload_builder.mjs';
 import { buildParseApiUrl, buildWikisourcePageUrl, extractWikisourceTitle } from '../scripts/lib/cn_wikisource_api.mjs';
 import { buildCandidateRecord, extractCandidatePoemBody } from '../scripts/lib/cn_wikisource_candidate_extractor.mjs';
 import { buildRecord } from '../scripts/lib/cn_wikisource_record_builder.mjs';
@@ -163,4 +164,42 @@ test('builds Supabase curated dry-run payloads with provisional ids', () => {
   assert.equal(dryRun.curatedPoets[0].jds_id, -900001);
   assert.equal(dryRun.curatedPoems[0].poet_jds_id, -900001);
   assert.equal(dryRun.curatedPoems[0].body_zh.includes('风'), false);
+});
+
+test('builds pre-Tang source witness dry-run payloads without translation claims', () => {
+  const dryRun = buildPreTangDryRun([
+    {
+      recordId: 'CN-PRETANG-CACHED-HAN-TEST',
+      country: 'CN',
+      eraSlug: 'han',
+      title: { zh: '大風歌', ko: null },
+      author: { zh: '劉邦', ko: null, life: 'BCE 256~BCE 195' },
+      sourcePage: {
+        title: '大風歌 (劉邦)',
+        sourceUrl: 'https://zh.wikisource.org/wiki/大風歌_(劉邦)',
+        section: '卷二漢詩',
+        kind: 'gushiyuan-linked-dump-page',
+      },
+      text: {
+        poemZh: '大風起兮{{另|雲|云}}飛揚\n威加海內兮歸故鄉\n安得猛士兮守四方',
+        lineCount: 3,
+        charCount: 26,
+      },
+      review: {
+        status: 'needs-review',
+        reasons: ['gushiyuan-linked-dump-page'],
+      },
+    },
+  ]);
+
+  assert.equal(dryRun.summary.records, 1);
+  assert.equal(dryRun.summary.poets, 1);
+  assert.equal(dryRun.summary.poems, 1);
+  assert.equal(dryRun.curatedPoets[0].slug, 'cn-pretang-5289-90a6');
+  assert.equal(dryRun.curatedPoems[0].status, 'parsed');
+  assert.equal(dryRun.curatedPoems[0].quality, 'cn-pretang1');
+  assert.equal(dryRun.curatedPoems[0].translation_ko, null);
+  assert.equal(dryRun.curatedPoems[0].source_record_id, 'CN-PRETANG-CACHED-HAN-TEST');
+  assert.equal(dryRun.curatedPoems[0].body_zh.includes('{{'), false);
+  assert.match(dryRun.curatedPoems[0].body_zh, /大風起兮雲飛揚/);
 });
