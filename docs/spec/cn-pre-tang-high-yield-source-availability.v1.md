@@ -69,6 +69,34 @@ available:
 - `陶淵明集 (四庫全書本)/卷1` ... `卷8`
 - `飲酒二十首`, `歸園田居`, `歸園田居五首`, `桃花源記`, `歸去來辭並序`, `五柳先生傳`
 
+# 추출 결과
+
+- extraction script: `scripts/build_cn_pre_tang_high_yield_records.mjs`
+- records: `docs/spec/cn-pre-tang-high-yield.extracted-records.v1.json`
+- report: `docs/spec/cn-pre-tang-high-yield.extracted-records.report.v1.json`
+
+| 구분 | 추출 건수 | 비고 |
+|---|---:|---|
+| collection witness | 11 | `詩經`, `楚辭`, `陶淵明集 (四庫全書本)` index + 8권 |
+| work | 39 | 詩經 유명작 10편, 楚辭 2편, 陶淵明 시/부 27편 |
+| prose-work | 2 | `桃花源記`, `五柳先生傳` |
+| total usable records | 52 | review 상태는 모두 `needs-review` |
+
+family별 추출:
+
+| family | usable records | 구성 |
+|---|---:|---|
+| shijing | 11 | collection witness 1 + 유명작 10 |
+| chuci | 3 | collection witness 1 + `九章`, `遠遊` |
+| tao-yuanming | 38 | collection witness 9 + 작품 29 |
+
+skipped:
+
+| 사유 | 건수 | 대상 |
+|---|---:|---|
+| dump-fetch-missing | 3 | `作者:陶淵明`, `楚辭/天問`, `楚辭/離騷` |
+| redirect-page | 4 | `楚辭/漁父`, `楚辭/卜居`, `楚辭/九歌`, `歸園田居五首` |
+
 # 판단
 
 - `詩經`, `楚辭`는 `先秦漢魏晉南北朝詩` 본체에서 제외했던 것이 맞지만, 한시나루 수집 대상에서는 제외하면 안 된다.
