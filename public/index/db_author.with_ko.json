@@ -1,6 +1,6 @@
 {
   "createdAt": "2026-02-09T10:38:04.515Z",
-  "count": 76,
+  "count": 97,
   "authors": {
     "C328": {
       "titleId": "C328",
@@ -2862,6 +2862,616 @@
           "desc": "장적과 교유함"
         }
       ]
+    },
+    "cnpreqin-b3ebab776a5d987c": {
+      "titleId": "cnpreqin-b3ebab776a5d987c",
+      "sourceUrl": null,
+      "name": {
+        "zh": "佚名",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "pre-qin",
+        "label": "先秦",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "pre-tang-first-tranche"
+      }
+    },
+    "cnhan-43b38ccd5d1e93f0": {
+      "titleId": "cnhan-43b38ccd5d1e93f0",
+      "sourceUrl": null,
+      "name": {
+        "zh": "無名氏/漢樂府",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "han",
+        "label": "兩漢",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "pre-tang-first-tranche"
+      }
+    },
+    "cnhan-4d1c052feb6f7223": {
+      "titleId": "cnhan-4d1c052feb6f7223",
+      "sourceUrl": null,
+      "name": {
+        "zh": "佚名",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "han",
+        "label": "兩漢",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "pre-tang-first-tranche"
+      }
+    },
+    "cnhan-fee67486cad79d30": {
+      "titleId": "cnhan-fee67486cad79d30",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%A4%A7%E9%A2%A8%E6%AD%8C_(%E5%8A%89%E9%82%A6)",
+      "name": {
+        "zh": "劉邦",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "han",
+        "label": "兩漢",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "pre-tang-first-tranche"
+      }
+    },
+    "cnhan-7f348bc73f2b0239": {
+      "titleId": "cnhan-7f348bc73f2b0239",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%BA%94%E5%99%AB%E6%AD%8C",
+      "name": {
+        "zh": "梁鴻",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "han",
+        "label": "兩漢",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "pre-tang-first-tranche"
+      }
+    },
+    "cnhan-4602ab3c0bfc1b27": {
+      "titleId": "cnhan-4602ab3c0bfc1b27",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%9E%93%E4%B8%8B%E6%AD%8C_(%E9%A0%85%E7%BE%BD)",
+      "name": {
+        "zh": "項羽",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "han",
+        "label": "兩漢",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "pre-tang-first-tranche"
+      }
+    },
+    "cnhan-c5f190ea5ada552a": {
+      "titleId": "cnhan-c5f190ea5ada552a",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E7%A7%8B%E9%A2%A8%E8%BE%AD_(%E5%8A%89%E5%BE%B9)",
+      "name": {
+        "zh": "劉徹",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "han",
+        "label": "兩漢",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "pre-tang-first-tranche"
+      }
+    },
+    "cnhan-87a439b4c51e8dcc": {
+      "titleId": "cnhan-87a439b4c51e8dcc",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%91%A3%E5%AC%8C%E5%AC%88",
+      "name": {
+        "zh": "宋子侯",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "han",
+        "label": "兩漢",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "pre-tang-first-tranche"
+      }
+    },
+    "cnhan-9ed3ed0d95b0da5a": {
+      "titleId": "cnhan-9ed3ed0d95b0da5a",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E7%BE%BD%E6%9E%97%E9%83%8E_(%E8%BE%9B%E5%BB%B6%E5%B9%B4)",
+      "name": {
+        "zh": "辛延年",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "han",
+        "label": "兩漢",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "pre-tang-first-tranche"
+      }
+    },
+    "cnhan-9914998f54ac6ab7": {
+      "titleId": "cnhan-9914998f54ac6ab7",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E7%9B%A4%E4%B8%AD%E8%A9%A9",
+      "name": {
+        "zh": "蘇伯玉妻",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "han",
+        "label": "兩漢",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "pre-tang-first-tranche"
+      }
+    },
+    "cnhan-b63988050d6fa0cf": {
+      "titleId": "cnhan-b63988050d6fa0cf",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%82%B2%E6%84%81%E6%AD%8C_(%E5%8A%89%E7%B4%B0%E5%90%9B)",
+      "name": {
+        "zh": "劉細君",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "han",
+        "label": "兩漢",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "pre-tang-first-tranche"
+      }
+    },
+    "cnhan-0007282eaf7c885b": {
+      "titleId": "cnhan-0007282eaf7c885b",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AF%B6%E9%BC%8E%E8%A9%A9",
+      "name": {
+        "zh": "班固",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "han",
+        "label": "兩漢",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "pre-tang-first-tranche"
+      }
+    },
+    "cnhan-e367bbb59f80b666": {
+      "titleId": "cnhan-e367bbb59f80b666",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%9B%9B%E6%84%81%E8%A9%A9",
+      "name": {
+        "zh": "張衡",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "han",
+        "label": "兩漢",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "pre-tang-first-tranche"
+      }
+    },
+    "cnhan-78ad1ac247c0ee3b": {
+      "titleId": "cnhan-78ad1ac247c0ee3b",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%AD%8C",
+      "name": {
+        "zh": "燕刺王旦",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "han",
+        "label": "兩漢",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "pre-tang-first-tranche"
+      }
+    },
+    "cnhan-362bb6be761dd727": {
+      "titleId": "cnhan-362bb6be761dd727",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E9%A3%B2%E9%A6%AC%E9%95%B7%E5%9F%8E%E7%AA%9F%E8%A1%8C_(%E8%94%A1%E9%82%95)",
+      "name": {
+        "zh": "蔡邕",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "han",
+        "label": "兩漢",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "pre-tang-first-tranche"
+      }
+    },
+    "cnhan-e9e36d29dc166e26": {
+      "titleId": "cnhan-e9e36d29dc166e26",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%80%A8%E8%A9%A9_(%E7%8F%AD%E5%A9%95%E5%A6%A4)",
+      "name": {
+        "zh": "班婕妤",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "han",
+        "label": "兩漢",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "pre-tang-first-tranche"
+      }
+    },
+    "cnhan-1fa4ddb3bc5066fa": {
+      "titleId": "cnhan-1fa4ddb3bc5066fa",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E7%9A%9A%E5%A6%82%E5%B1%B1%E4%B8%8A%E9%9B%AA",
+      "name": {
+        "zh": "卓文君",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "han",
+        "label": "兩漢",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "pre-tang-first-tranche"
+      }
+    },
+    "cnhan-4c77569df016009b": {
+      "titleId": "cnhan-4c77569df016009b",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%82%B2%E6%86%A4%E8%A9%A9_(%E8%94%A1%E7%90%B0)",
+      "name": {
+        "zh": "蔡琰",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "han",
+        "label": "兩漢",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "pre-tang-first-tranche"
+      }
+    },
+    "cnhan-aa408a3758d7e916": {
+      "titleId": "cnhan-aa408a3758d7e916",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A8%82%E5%BA%9C%E8%A9%A9%E9%9B%86/041%E5%8D%B7",
+      "name": {
+        "zh": "諸葛亮",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "han",
+        "label": "兩漢",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "pre-tang-first-tranche"
+      }
+    },
+    "cnpreqin-d9cfb1495fcebc18": {
+      "titleId": "cnpreqin-d9cfb1495fcebc18",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B9%9D%E6%AD%8C",
+      "name": {
+        "zh": "屈原",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "約前340-前278",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "pre-qin",
+        "label": "先秦",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "pre-tang-classic-index"
+      }
+    },
+    "cnpreqin-3fcc3c660d5a7a4d": {
+      "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%A9%A9%E7%B6%93/%E9%97%9C%E9%9B%8E",
+      "name": {
+        "zh": "詩經",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "pre-qin",
+        "label": "先秦",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "pre-tang-classic-index"
+      }
     }
-  }
+  },
+  "updatedAt": "2026-04-30T22:01:39.950Z"
 }

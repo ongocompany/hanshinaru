@@ -5438,5 +5438,6905 @@
     "category": "七言樂府",
     "meter": 7,
     "preview": "勸君莫惜金縷衣 / 勸君惜取少年時"
+  },
+  {
+    "titleId": "cnpreqin-b3ebab776a5d987c",
+    "poemNo": 321,
+    "poemNoStr": "321",
+    "title": {
+      "zh": "〈擊壤歌〉",
+      "ko": "격양가"
+    },
+    "poet": {
+      "zh": "佚名",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "日出而作，日入而息； / 鑿井而飲，耕田而食。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00001",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnpreqin-b3ebab776a5d987c",
+    "poemNo": 322,
+    "poemNoStr": "322",
+    "title": {
+      "zh": "〈康衢謠〉",
+      "ko": "강구요"
+    },
+    "poet": {
+      "zh": "佚名",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "立我蒸民，莫匪爾極。 / 不識不知，順帝之則。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00002",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnpreqin-b3ebab776a5d987c",
+    "poemNo": 323,
+    "poemNoStr": "323",
+    "title": {
+      "zh": "〈伊耆氏蠟辭〉",
+      "ko": "이기씨납사"
+    },
+    "poet": {
+      "zh": "佚名",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "土反其宅，水歸其壑。 / 昆蟲毋作，草木歸其澤。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00003",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnpreqin-b3ebab776a5d987c",
+    "poemNo": 324,
+    "poemNoStr": "324",
+    "title": {
+      "zh": "〈堯戒〉",
+      "ko": "요계"
+    },
+    "poet": {
+      "zh": "佚名",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "戰戰慄慄，日謹一日。 / 人莫躓於山，而躓於垤。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00004",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnpreqin-b3ebab776a5d987c",
+    "poemNo": 325,
+    "poemNoStr": "325",
+    "title": {
+      "zh": "〈卿雲歌〉",
+      "ko": "경운가"
+    },
+    "poet": {
+      "zh": "佚名",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "卿雲爛兮，糺縵縵兮。 / 日月光華，旦復旦兮。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00005",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnpreqin-b3ebab776a5d987c",
+    "poemNo": 326,
+    "poemNoStr": "326",
+    "title": {
+      "zh": "〈八伯歌〉",
+      "ko": "팔백가"
+    },
+    "poet": {
+      "zh": "佚名",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "明明上天，爛然星陳。 / 日月光華，弘於一人。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00006",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnpreqin-b3ebab776a5d987c",
+    "poemNo": 327,
+    "poemNoStr": "327",
+    "title": {
+      "zh": "〈帝載歌〉",
+      "ko": "제재가"
+    },
+    "poet": {
+      "zh": "佚名",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "日月有常，星辰有行。 / 四時從經，萬姓允誠。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00007",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnpreqin-b3ebab776a5d987c",
+    "poemNo": 328,
+    "poemNoStr": "328",
+    "title": {
+      "zh": "〈南風歌〉",
+      "ko": "남풍가"
+    },
+    "poet": {
+      "zh": "佚名",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "南風之熏兮，可以解吾民之慍兮！ / 南風之時兮，可以阜吾民之財兮！",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00008",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnpreqin-b3ebab776a5d987c",
+    "poemNo": 329,
+    "poemNoStr": "329",
+    "title": {
+      "zh": "〈禹玉牒辭〉",
+      "ko": "우옥첩사"
+    },
+    "poet": {
+      "zh": "佚名",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "七言聯句",
+    "meter": null,
+    "preview": "祝融司方發其英， / 沐日浴月百寶生。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00009",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnpreqin-b3ebab776a5d987c",
+    "poemNo": 330,
+    "poemNoStr": "330",
+    "title": {
+      "zh": "〈夏後鑄鼎繇〉",
+      "ko": "하후주정요"
+    },
+    "poet": {
+      "zh": "佚名",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "逢逢白雲，一南一北，一西一東。 / 九鼎既成，遷於三國。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00010",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnpreqin-b3ebab776a5d987c",
+    "poemNo": 331,
+    "poemNoStr": "331",
+    "title": {
+      "zh": "〈商銘〉",
+      "ko": "상명"
+    },
+    "poet": {
+      "zh": "佚名",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "嗛嗛之德，不足就也，不可以矜，而祗取憂也。 / 嗛嗛之食，不足狃也，不能為膏，而祗離咎也。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00011",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnpreqin-b3ebab776a5d987c",
+    "poemNo": 332,
+    "poemNoStr": "332",
+    "title": {
+      "zh": "〈麥秀歌〉",
+      "ko": "맥수가"
+    },
+    "poet": {
+      "zh": "佚名",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "麥秀漸漸兮，禾黍油油， / 彼狡童兮，不與我好兮。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00012",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnpreqin-b3ebab776a5d987c",
+    "poemNo": 333,
+    "poemNoStr": "333",
+    "title": {
+      "zh": "〈采薇歌〉",
+      "ko": "채미가"
+    },
+    "poet": {
+      "zh": "佚名",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "登彼西山兮，采其薇矣。 / 以暴易暴兮，不知其非矣。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00013",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnpreqin-b3ebab776a5d987c",
+    "poemNo": 334,
+    "poemNoStr": "334",
+    "title": {
+      "zh": "〈盥盤銘〉",
+      "ko": "관반명"
+    },
+    "poet": {
+      "zh": "佚名",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "與其溺於人也，甯溺於淵。 / 溺于淵猶可遊也，溺於人不可救也。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00014",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnpreqin-b3ebab776a5d987c",
+    "poemNo": 335,
+    "poemNoStr": "335",
+    "title": {
+      "zh": "〈帶銘〉",
+      "ko": "대명"
+    },
+    "poet": {
+      "zh": "佚名",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "火滅修容，慎戒必恭，恭則壽。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00015",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnpreqin-b3ebab776a5d987c",
+    "poemNo": 336,
+    "poemNoStr": "336",
+    "title": {
+      "zh": "〈杖銘〉",
+      "ko": "장명"
+    },
+    "poet": {
+      "zh": "佚名",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "惡乎危，於忿懥。 / 惡乎失道，於嗜欲。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00016",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnpreqin-b3ebab776a5d987c",
+    "poemNo": 337,
+    "poemNoStr": "337",
+    "title": {
+      "zh": "〈衣銘〉",
+      "ko": "의명"
+    },
+    "poet": {
+      "zh": "佚名",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "桑蠶苦，女工難，得新捐故後必寒。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00017",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnpreqin-b3ebab776a5d987c",
+    "poemNo": 338,
+    "poemNoStr": "338",
+    "title": {
+      "zh": "〈筆銘〉",
+      "ko": "필명"
+    },
+    "poet": {
+      "zh": "佚名",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "豪毛茂茂，陷水可脫，陷文不活。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00018",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnpreqin-b3ebab776a5d987c",
+    "poemNo": 339,
+    "poemNoStr": "339",
+    "title": {
+      "zh": "〈矛銘〉",
+      "ko": "모명"
+    },
+    "poet": {
+      "zh": "佚名",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "造矛造矛，少間弗忍，終身之羞。 / 餘一人所聞。以戒後世子孫。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00019",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnpreqin-b3ebab776a5d987c",
+    "poemNo": 340,
+    "poemNoStr": "340",
+    "title": {
+      "zh": "〈書車〉",
+      "ko": "서거"
+    },
+    "poet": {
+      "zh": "佚名",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "出畏之，入懼之。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00020",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnpreqin-b3ebab776a5d987c",
+    "poemNo": 341,
+    "poemNoStr": "341",
+    "title": {
+      "zh": "〈書戶〉",
+      "ko": "서호"
+    },
+    "poet": {
+      "zh": "佚名",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "行必履正，無懷僥倖。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00021",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnpreqin-b3ebab776a5d987c",
+    "poemNo": 342,
+    "poemNoStr": "342",
+    "title": {
+      "zh": "〈書履〉",
+      "ko": "서리"
+    },
+    "poet": {
+      "zh": "佚名",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "行必履正，無懷僥倖。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00022",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnpreqin-b3ebab776a5d987c",
+    "poemNo": 343,
+    "poemNoStr": "343",
+    "title": {
+      "zh": "〈書硯〉",
+      "ko": "서연"
+    },
+    "poet": {
+      "zh": "佚名",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "石墨相著而黑，邪心讒言，無得汙白。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00023",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnpreqin-b3ebab776a5d987c",
+    "poemNo": 344,
+    "poemNoStr": "344",
+    "title": {
+      "zh": "〈書鋒〉",
+      "ko": "서봉"
+    },
+    "poet": {
+      "zh": "佚名",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "忍之須臾，乃全汝軀。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00024",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnpreqin-b3ebab776a5d987c",
+    "poemNo": 345,
+    "poemNoStr": "345",
+    "title": {
+      "zh": "〈書杖〉",
+      "ko": "서장"
+    },
+    "poet": {
+      "zh": "佚名",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "輔人無苟，扶人無咎。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00025",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnpreqin-b3ebab776a5d987c",
+    "poemNo": 346,
+    "poemNoStr": "346",
+    "title": {
+      "zh": "〈書井〉",
+      "ko": "서정"
+    },
+    "poet": {
+      "zh": "佚名",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "原泉滑滑，連旱則絶。 / 取事有常，賦斂有節。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00026",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-43b38ccd5d1e93f0",
+    "poemNo": 347,
+    "poemNoStr": "347",
+    "title": {
+      "zh": "〈上邪〉",
+      "ko": "상야"
+    },
+    "poet": {
+      "zh": "無名氏/漢樂府",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "我欲與君相知 / 長命無絶衰",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00027",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-4d1c052feb6f7223",
+    "poemNo": 348,
+    "poemNoStr": "348",
+    "title": {
+      "zh": "〈行行重行行〉",
+      "ko": "행행중행행"
+    },
+    "poet": {
+      "zh": "佚名",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "行行重行行 與君生別離 / 相去萬餘里 各在天一涯",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00028",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-4d1c052feb6f7223",
+    "poemNo": 349,
+    "poemNoStr": "349",
+    "title": {
+      "zh": "〈迢迢牽牛星〉",
+      "ko": "초초견우성"
+    },
+    "poet": {
+      "zh": "佚名",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "迢迢牽牛星 皎皎河漢女 / 纎纎擢素手 札札弄機杼",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00029",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-fee67486cad79d30",
+    "poemNo": 350,
+    "poemNoStr": "350",
+    "title": {
+      "zh": "〈大風歌〉",
+      "ko": "대풍가"
+    },
+    "poet": {
+      "zh": "劉邦",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "大風起兮雲飛揚，威加海內兮歸故鄉。安得猛士兮守四方？",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00030",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-7f348bc73f2b0239",
+    "poemNo": 351,
+    "poemNoStr": "351",
+    "title": {
+      "zh": "〈五噫歌〉",
+      "ko": "오희가"
+    },
+    "poet": {
+      "zh": "梁鴻",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "陟彼北芒兮，噫！ / 顧瞻帝京兮，噫！",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00031",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-4602ab3c0bfc1b27",
+    "poemNo": 352,
+    "poemNoStr": "352",
+    "title": {
+      "zh": "〈垓下歌〉",
+      "ko": "해하가"
+    },
+    "poet": {
+      "zh": "項羽",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "力拔山兮氣蓋世， / 時不利兮騅不逝。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00032",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-c5f190ea5ada552a",
+    "poemNo": 353,
+    "poemNoStr": "353",
+    "title": {
+      "zh": "〈秋風辭〉",
+      "ko": "추풍사"
+    },
+    "poet": {
+      "zh": "劉徹",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "秋風起兮白雲飛，草木黃落兮鴈南歸。 / 蘭有秀兮菊有芳，攜佳人兮不能忘。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00033",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-c5f190ea5ada552a",
+    "poemNo": 354,
+    "poemNoStr": "354",
+    "title": {
+      "zh": "〈柏梁詩〉",
+      "ko": "백량시"
+    },
+    "poet": {
+      "zh": "劉徹",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "日月星辰和四時，（帝） / 驂駕駟馬從梁來。（梁王）",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00034",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-4d1c052feb6f7223",
+    "poemNo": 355,
+    "poemNoStr": "355",
+    "title": {
+      "zh": "〈古詩為焦仲卿妻作〉",
+      "ko": "고시위초중경처작"
+    },
+    "poet": {
+      "zh": "佚名",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "孔雀東南飛 五里一徘徊 / 十三能織素 十四學裁衣",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00035",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-87a439b4c51e8dcc",
+    "poemNo": 356,
+    "poemNoStr": "356",
+    "title": {
+      "zh": "〈董嬌嬈〉",
+      "ko": "동교요"
+    },
+    "poet": {
+      "zh": "宋子侯",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "洛陽城東路 桃李生路傍 / 花花自相對 葉葉自相當",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00036",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-9ed3ed0d95b0da5a",
+    "poemNo": 357,
+    "poemNoStr": "357",
+    "title": {
+      "zh": "〈羽林郎〉",
+      "ko": "우림랑"
+    },
+    "poet": {
+      "zh": "辛延年",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "昔有霍家奴 姓馮名子都 / 依倚將軍勢 調笑酒家胡",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00037",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-9914998f54ac6ab7",
+    "poemNo": 358,
+    "poemNoStr": "358",
+    "title": {
+      "zh": "〈盤中詩〉",
+      "ko": "반중시"
+    },
+    "poet": {
+      "zh": "蘇伯玉妻",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "山樹高 鳥鳴悲 泉水深 鯉魚肥 / 空倉雀 常苦飢 吏人婦 會夫希",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00038",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-4d1c052feb6f7223",
+    "poemNo": 359,
+    "poemNoStr": "359",
+    "title": {
+      "zh": "〈古絶句〉",
+      "ko": "고절구"
+    },
+    "poet": {
+      "zh": "佚名",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "其一 / 藁砧今何在 山上復有山",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00039",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-b63988050d6fa0cf",
+    "poemNo": 360,
+    "poemNoStr": "360",
+    "title": {
+      "zh": "〈悲愁歌〉",
+      "ko": "비수가"
+    },
+    "poet": {
+      "zh": "劉細君",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "吾家嫁我兮天一方， / 遠託異國兮烏孫王。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00040",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-43b38ccd5d1e93f0",
+    "poemNo": 361,
+    "poemNoStr": "361",
+    "title": {
+      "zh": "〈練時日〉",
+      "ko": "연시일"
+    },
+    "poet": {
+      "zh": "無名氏/漢樂府",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "練時日 侯有望 / 𤋲膋蕭 延四方",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00041",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-43b38ccd5d1e93f0",
+    "poemNo": 362,
+    "poemNoStr": "362",
+    "title": {
+      "zh": "〈青陽〉",
+      "ko": "청양"
+    },
+    "poet": {
+      "zh": "無名氏/漢樂府",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "青陽開動 根荄以遂 / 膏潤幷愛 跂行畢逮",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00042",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-43b38ccd5d1e93f0",
+    "poemNo": 363,
+    "poemNoStr": "363",
+    "title": {
+      "zh": "〈西顥〉",
+      "ko": "서호"
+    },
+    "poet": {
+      "zh": "無名氏/漢樂府",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "西颢沆砀 秋氣肅殺 / 含秀垂颖 续舊不废",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00043",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-43b38ccd5d1e93f0",
+    "poemNo": 364,
+    "poemNoStr": "364",
+    "title": {
+      "zh": "〈玄冥〉",
+      "ko": "현명"
+    },
+    "poet": {
+      "zh": "無名氏/漢樂府",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "玄冥陵陰 蛰虫蓋臧 / 草木零落 抵冬降霜",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00044",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-43b38ccd5d1e93f0",
+    "poemNo": 365,
+    "poemNoStr": "365",
+    "title": {
+      "zh": "〈惟泰元〉",
+      "ko": "유태원"
+    },
+    "poet": {
+      "zh": "無名氏/漢樂府",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "惟泰元尊 媪神蕃釐 / 經纬天地 作成四時",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00045",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-43b38ccd5d1e93f0",
+    "poemNo": 366,
+    "poemNoStr": "366",
+    "title": {
+      "zh": "〈天馬〉",
+      "ko": "천마"
+    },
+    "poet": {
+      "zh": "無名氏/漢樂府",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "太一況 天馬下 / 霑赤汗 沫流赭",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00046",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-0007282eaf7c885b",
+    "poemNo": 367,
+    "poemNoStr": "367",
+    "title": {
+      "zh": "〈寶鼎詩〉",
+      "ko": "보정시"
+    },
+    "poet": {
+      "zh": "班固",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "嶽脩貢兮川效珍，吐金景兮歊浮雲。 / 寶鼎見兮色紛縕。煥其炳兮被龍文。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00047",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-e367bbb59f80b666",
+    "poemNo": 368,
+    "poemNoStr": "368",
+    "title": {
+      "zh": "〈四愁詩〉",
+      "ko": "사수시"
+    },
+    "poet": {
+      "zh": "張衡",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "張衡不樂久處機密，陽嘉中出為河間相。時國王驕奢，不遵法度，又多豪右並兼之家。衡下車，治威嚴，能內察屬縣，姦猾行巧刼，皆密知名，下吏收捕，盡服。擒諸豪俠，遊客悉惶懼逃出境。郡中大治，爭訟息，獄無繫囚。時天下漸弊，鬱鬱不得志，為四愁詩。依屈原以美人為君子，以珍寶為仁義，以水深雪雰為小人，思以道術為報貽於時君，而懼讒邪，不得以通。其辭曰： / 我所思兮在太山，欲往從之梁父艱，側身東望涕霑翰。美人贈我金錯刀，何以報之英瓊瑤。路遠莫致倚逍遙，何為懷憂心煩勞！",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00048",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-fee67486cad79d30",
+    "poemNo": 369,
+    "poemNoStr": "369",
+    "title": {
+      "zh": "〈鴻鵠歌〉",
+      "ko": "홍곡가"
+    },
+    "poet": {
+      "zh": "劉邦",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "鴻鵠高飛 / 一舉千里",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00049",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-78ad1ac247c0ee3b",
+    "poemNo": 370,
+    "poemNoStr": "370",
+    "title": {
+      "zh": "〈歌〉",
+      "ko": "가"
+    },
+    "poet": {
+      "zh": "燕刺王旦",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "漢帝臨汾水，周仙去洛濱。 / 郢中吟白雪，梁上繞飛塵。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00050",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-43b38ccd5d1e93f0",
+    "poemNo": 371,
+    "poemNoStr": "371",
+    "title": {
+      "zh": "〈傷歌行〉",
+      "ko": "상가행"
+    },
+    "poet": {
+      "zh": "無名氏/漢樂府",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "兔走烏飛不相見，人事依稀速如電。 / 王母夭桃一度開，玉樓紅粉千回變。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00051",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-43b38ccd5d1e93f0",
+    "poemNo": 372,
+    "poemNoStr": "372",
+    "title": {
+      "zh": "〈江南〉",
+      "ko": "강남"
+    },
+    "poet": {
+      "zh": "無名氏/漢樂府",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "江南春起柂，秋至尚波濤。 / 問舍才能定，呼舟已復操。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00052",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-43b38ccd5d1e93f0",
+    "poemNo": 373,
+    "poemNoStr": "373",
+    "title": {
+      "zh": "〈薤露歌〉",
+      "ko": "해로가"
+    },
+    "poet": {
+      "zh": "無名氏/漢樂府",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "蜀琴且勿彈，齊竽且莫吹。 / 四筵並寂聽，聽我薤露詩。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00053",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-43b38ccd5d1e93f0",
+    "poemNo": 374,
+    "poemNoStr": "374",
+    "title": {
+      "zh": "〈善哉行〉",
+      "ko": "선재행"
+    },
+    "poet": {
+      "zh": "無名氏/漢樂府",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "來日大難 / 口燥脣乾",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00054",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-43b38ccd5d1e93f0",
+    "poemNo": 375,
+    "poemNoStr": "375",
+    "title": {
+      "zh": "〈君子行〉",
+      "ko": "군자행"
+    },
+    "poet": {
+      "zh": "無名氏/漢樂府",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "君子愼所履，小人多所疑。 / 尼甫至聖賢，猶為匡所縻。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00055",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-c5f190ea5ada552a",
+    "poemNo": 376,
+    "poemNoStr": "376",
+    "title": {
+      "zh": "〈李夫人歌〉",
+      "ko": "이부인가"
+    },
+    "poet": {
+      "zh": "劉徹",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "紫皇宮殿重重開，夫人飛入瓊瑤臺。 / 綠香繡帳何時歇，青雲無光宮水咽。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00056",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-43b38ccd5d1e93f0",
+    "poemNo": 377,
+    "poemNoStr": "377",
+    "title": {
+      "zh": "〈孤兒行〉",
+      "ko": "고아행"
+    },
+    "poet": {
+      "zh": "無名氏/漢樂府",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "蓬頭皸足誰家兒，滿面塵埃雙淚垂。 / 爺娘棄我不待老，骨肉無人但兄嫂。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00057",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-43b38ccd5d1e93f0",
+    "poemNo": 378,
+    "poemNoStr": "378",
+    "title": {
+      "zh": "〈蒿里曲〉",
+      "ko": "호리곡"
+    },
+    "poet": {
+      "zh": "無名氏/漢樂府",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "澗草萋萋泉汩汩，紫蘭香老棠梨發。 / 山中無人松柏寒，臥聽狐貍嘯明月。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00058",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-43b38ccd5d1e93f0",
+    "poemNo": 379,
+    "poemNoStr": "379",
+    "title": {
+      "zh": "〈朱明〉",
+      "ko": "주명"
+    },
+    "poet": {
+      "zh": "無名氏/漢樂府",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "朱明盛長 旉與萬物 / 桐生茂豫 靡有所詘",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00059",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-43b38ccd5d1e93f0",
+    "poemNo": 380,
+    "poemNoStr": "380",
+    "title": {
+      "zh": "〈長歌行〉",
+      "ko": "장가행"
+    },
+    "poet": {
+      "zh": "無名氏/漢樂府",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "青青園中葵，朝露待日晞。 / 陽春布德澤，萬物生光輝。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00060",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-4d1c052feb6f7223",
+    "poemNo": 381,
+    "poemNoStr": "381",
+    "title": {
+      "zh": "〈古詩十九首〉",
+      "ko": "고시십구수"
+    },
+    "poet": {
+      "zh": "佚名",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "西北有高樓 上與浮雲齊 / 交疏結綺牕 阿閣三重階",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00061",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-4d1c052feb6f7223",
+    "poemNo": 382,
+    "poemNoStr": "382",
+    "title": {
+      "zh": "〈古詩十九首〉",
+      "ko": "고시십구수"
+    },
+    "poet": {
+      "zh": "佚名",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "東城高且長 逶迤自相屬 / 迴風動地起 秋草萋已綠",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00062",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-4d1c052feb6f7223",
+    "poemNo": 383,
+    "poemNoStr": "383",
+    "title": {
+      "zh": "〈古詩十九首〉",
+      "ko": "고시십구수"
+    },
+    "poet": {
+      "zh": "佚名",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "行行重行行 與君生別離 / 相去萬餘里 各在天一涯",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00063",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-4d1c052feb6f7223",
+    "poemNo": 384,
+    "poemNoStr": "384",
+    "title": {
+      "zh": "〈古詩十九首〉",
+      "ko": "고시십구수"
+    },
+    "poet": {
+      "zh": "佚名",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "涉江採芙蓉 蘭澤多芳草 / 采之欲遺誰 所思在遠道",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00064",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-4d1c052feb6f7223",
+    "poemNo": 385,
+    "poemNoStr": "385",
+    "title": {
+      "zh": "〈古詩十九首〉",
+      "ko": "고시십구수"
+    },
+    "poet": {
+      "zh": "佚名",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "青青河畔草 鬱鬱園中柳 / 盈盈樓上女 皎皎當窓牖",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00065",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-4d1c052feb6f7223",
+    "poemNo": 386,
+    "poemNoStr": "386",
+    "title": {
+      "zh": "〈古詩十九首〉",
+      "ko": "고시십구수"
+    },
+    "poet": {
+      "zh": "佚名",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "庭中有奇樹 綠葉發華滋 / 攀條折其榮 將以遺所思",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00066",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-4d1c052feb6f7223",
+    "poemNo": 387,
+    "poemNoStr": "387",
+    "title": {
+      "zh": "〈古詩十九首〉",
+      "ko": "초초견우성"
+    },
+    "poet": {
+      "zh": "佚名",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "迢迢牽牛星 皎皎河漢女 / 纎纎擢素手 札札弄機杼",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00067",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-4d1c052feb6f7223",
+    "poemNo": 388,
+    "poemNoStr": "388",
+    "title": {
+      "zh": "〈古詩十九首〉",
+      "ko": "고시십구수"
+    },
+    "poet": {
+      "zh": "佚名",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "明月何皎皎 照我羅牀幃 / 憂愁不能寐 覽衣起徘徊",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00068",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-4d1c052feb6f7223",
+    "poemNo": 389,
+    "poemNoStr": "389",
+    "title": {
+      "zh": "〈古詩十九首〉",
+      "ko": "고시십구수"
+    },
+    "poet": {
+      "zh": "佚名",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "冉冉孤生竹 結根泰山阿 / 與君為新婚 兔絲附女蘿",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00069",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-4d1c052feb6f7223",
+    "poemNo": 390,
+    "poemNoStr": "390",
+    "title": {
+      "zh": "〈古詩十九首〉",
+      "ko": "맹동한기지"
+    },
+    "poet": {
+      "zh": "佚名",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "孟冬寒氣至 北風何慘慄 / 愁多知夜長 仰觀衆星列",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00070",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-4d1c052feb6f7223",
+    "poemNo": 391,
+    "poemNoStr": "391",
+    "title": {
+      "zh": "〈古詩十九首〉",
+      "ko": "고시십구수"
+    },
+    "poet": {
+      "zh": "佚名",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "客從遠方來 遺我一端綺 / 相去萬餘里 故人心尚爾",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00071",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-362bb6be761dd727",
+    "poemNo": 392,
+    "poemNoStr": "392",
+    "title": {
+      "zh": "〈飲馬長城窟行〉",
+      "ko": "음마장성굴행"
+    },
+    "poet": {
+      "zh": "蔡邕",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "青青河邊草 綿綿思遠道 / 遠道不可思 宿昔夢見之",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00072",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-e9e36d29dc166e26",
+    "poemNo": 393,
+    "poemNoStr": "393",
+    "title": {
+      "zh": "〈怨歌行〉",
+      "ko": "원가행"
+    },
+    "poet": {
+      "zh": "班婕妤",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "新裂齊紈素，鮮潔如霜雪。 / 裁為合歡扇，團團似明月。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00073",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-43b38ccd5d1e93f0",
+    "poemNo": 394,
+    "poemNoStr": "394",
+    "title": {
+      "zh": "〈豔歌行〉",
+      "ko": "염가행"
+    },
+    "poet": {
+      "zh": "無名氏/漢樂府",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "翩翩堂前鷰 冬藏夏來見 / 兄弟兩三人 流蕩在他縣",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00074",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-1fa4ddb3bc5066fa",
+    "poemNo": 395,
+    "poemNoStr": "395",
+    "title": {
+      "zh": "〈白頭吟〉",
+      "ko": "백두음"
+    },
+    "poet": {
+      "zh": "卓文君",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "皚如山上雪 皎若雲間月 / 聞君有兩意 故來相訣絶",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00075",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-43b38ccd5d1e93f0",
+    "poemNo": 396,
+    "poemNoStr": "396",
+    "title": {
+      "zh": "〈箜篌引〉",
+      "ko": "공후인"
+    },
+    "poet": {
+      "zh": "無名氏/漢樂府",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "公無渡河，公竟渡河。 / 墮河而死，當奈公何？",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00076",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-4d1c052feb6f7223",
+    "poemNo": 397,
+    "poemNoStr": "397",
+    "title": {
+      "zh": "〈古詩十九首〉",
+      "ko": "청청릉상백"
+    },
+    "poet": {
+      "zh": "佚名",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "青青陵上柏 磊磊澗中石 / 人生天地間 忽如遠行客",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00077",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-4d1c052feb6f7223",
+    "poemNo": 398,
+    "poemNoStr": "398",
+    "title": {
+      "zh": "〈古詩十九首〉",
+      "ko": "고시십구수"
+    },
+    "poet": {
+      "zh": "佚名",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "今日良宴會 歡樂難具陳 / 彈箏奮逸響 新聲妙入神",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00078",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-4d1c052feb6f7223",
+    "poemNo": 399,
+    "poemNoStr": "399",
+    "title": {
+      "zh": "〈古詩十九首〉",
+      "ko": "고시십구수 (명월교야광)"
+    },
+    "poet": {
+      "zh": "佚名",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "明月皎夜光 促織鳴東壁 / 玉衡指孟冬 眾星何歷歷",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00079",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-4d1c052feb6f7223",
+    "poemNo": 400,
+    "poemNoStr": "400",
+    "title": {
+      "zh": "〈古詩十九首〉",
+      "ko": "고시십구수 (회거가언매)"
+    },
+    "poet": {
+      "zh": "佚名",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "迴車駕言邁 悠悠涉長道 / 四顧何茫茫 東風搖百草",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00080",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-4d1c052feb6f7223",
+    "poemNo": 401,
+    "poemNoStr": "401",
+    "title": {
+      "zh": "〈古詩十九首〉",
+      "ko": "구거상동문"
+    },
+    "poet": {
+      "zh": "佚名",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "驅車上東門 遙望郭北墓 / 白楊何蕭蕭 松柏夾廣路",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00081",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-4d1c052feb6f7223",
+    "poemNo": 402,
+    "poemNoStr": "402",
+    "title": {
+      "zh": "〈古詩十九首〉",
+      "ko": "고시십구수"
+    },
+    "poet": {
+      "zh": "佚名",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "去者日以疎 生者日以親 / 出郭門直視 但見丘與墳",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00082",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-4d1c052feb6f7223",
+    "poemNo": 403,
+    "poemNoStr": "403",
+    "title": {
+      "zh": "〈古詩十九首〉",
+      "ko": "고시십구수"
+    },
+    "poet": {
+      "zh": "佚名",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "生年不滿百，常懷千歲憂。 / 晝短苦夜長，何不秉燭遊！",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00083",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-4d1c052feb6f7223",
+    "poemNo": 404,
+    "poemNoStr": "404",
+    "title": {
+      "zh": "〈古詩十九首〉",
+      "ko": "고시십구수"
+    },
+    "poet": {
+      "zh": "佚名",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "凜凜歲雲暮 螻蛄夕鳴悲 / 涼風率已厲 遊子寒無衣",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00084",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-43b38ccd5d1e93f0",
+    "poemNo": 405,
+    "poemNoStr": "405",
+    "title": {
+      "zh": "〈枯鱼过河泣〉",
+      "ko": "고어과하읍"
+    },
+    "poet": {
+      "zh": "無名氏/漢樂府",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "五言絶句",
+    "meter": null,
+    "preview": "枯魚過河泣 / 何時悔復及",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00085",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-43b38ccd5d1e93f0",
+    "poemNo": 406,
+    "poemNoStr": "406",
+    "title": {
+      "zh": "〈戰城南〉",
+      "ko": "전성남"
+    },
+    "poet": {
+      "zh": "無名氏/漢樂府",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "戰城南，死郭北，野死不葬鳥可食。 / 為我謂鳥：「且為客豪，野死諒不葬，腐肉安能去子逃？」",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00086",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-4c77569df016009b",
+    "poemNo": 407,
+    "poemNoStr": "407",
+    "title": {
+      "zh": "〈悲憤詩〉",
+      "ko": "비분시"
+    },
+    "poet": {
+      "zh": "蔡琰",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "漢季失權柄，董卓亂天常，志欲圖篡弒，先害諸賢良。逼迫遷舊邦，擁主以自彊。海內興義師，欲共討不祥。卓眾來東下，金甲耀日光。平土人脆弱，來兵皆胡羌。獵野圍城邑，所向悉破亡。斬截無孑遺，尸骸相撐拒。馬邊懸男頭，馬後載婦女。長驅西入關，迥路險且阻。還顧邈冥冥，肝脾為爛腐。所略有萬計，不得令屯聚。或有骨肉俱，欲言不敢語。失意幾微間，輒言斃降虜：「要當以亭刃，我曹不活汝！」豈敢惜性命？不堪其詈罵。或便加棰杖，毒痛參並下。旦則號泣行，夜則悲吟坐。欲死不能得，欲生無一可。彼蒼者何辜，乃遭此厄禍？ / 邊荒與華異，人俗少義理。處所多霜雪，胡風春夏起。翩翩吹我衣，肅肅入我耳。感時念父母，哀嘆無終已。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00087",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-43b38ccd5d1e93f0",
+    "poemNo": 408,
+    "poemNoStr": "408",
+    "title": {
+      "zh": "〈有所思〉",
+      "ko": "유소사"
+    },
+    "poet": {
+      "zh": "無名氏/漢樂府",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "有所思，乃在大海南。何用問遺君？雙珠玳瑁簪，用玉紹繚之。聞君有他心，拉雜摧燒之。摧燒之，當風揚其灰。從今以往，勿復相思。相思與君絶！雞鳴狗吠，兄嫂當知之。秋風肅肅晨風颸，東方須臾高知之。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00088",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-43b38ccd5d1e93f0",
+    "poemNo": 409,
+    "poemNoStr": "409",
+    "title": {
+      "zh": "〈東門行〉",
+      "ko": "동문행"
+    },
+    "poet": {
+      "zh": "無名氏/漢樂府",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "出東門，不顧歸。來入門，悵欲悲。盎中無鬥儲，還視桁上無懸衣。拔劍出門去，兒女牽衣啼。他家但願富貴，賤妾與君共餔糜。共餔糜，上用倉浪天故，下為黃口小兒。今時清廉，難犯教言，君復自愛莫為非。今時清廉，難犯教言，君復自愛，莫為非。行！吾去為遲，平慎行，望君歸。 / 出東門，不顧歸。來入門，悵欲悲。盎中無鬥米儲，還視架上無懸衣。拔劍東門去，舍中兒母牽衣啼。他家但願富貴，賤妾與君共餔糜。上用倉浪天故，下當用此黃口兒。今非，咄！行！吾去為遲，白髮時下難久居。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00089",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-43b38ccd5d1e93f0",
+    "poemNo": 410,
+    "poemNoStr": "410",
+    "title": {
+      "zh": "〈西門行〉",
+      "ko": "서문행"
+    },
+    "poet": {
+      "zh": "無名氏/漢樂府",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "出西門，步念之。今日不作樂，當待何時？夫為樂，為樂當及時。何能坐愁怫鬱，當復待來茲。飲醇酒，炙肥牛，請呼心所歡，可用解愁憂。人生不滿百，常懷千歲憂。晝短而夜長，何不秉燭遊。自非仙人王子喬，計會壽命難與期。自非仙人王子喬，計會壽命難與期。人壽非金石，年命安可期。貪財愛惜費，但為後世嗤。 / 出西門，步念之，今日不作樂，當待何時？逮為樂，逮為樂，當及時。何能愁怫鬱，當復待來茲。釀美酒，炙肥牛，請呼心所歡，可用解憂愁。人生不滿百，常懷千歲憂。晝短苦夜長，何不秉燭遊。遊行去去如雲除，弊車贏馬為自儲。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00090",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-43b38ccd5d1e93f0",
+    "poemNo": 411,
+    "poemNoStr": "411",
+    "title": {
+      "zh": "〈陌上桑〉",
+      "ko": "맥상상"
+    },
+    "poet": {
+      "zh": "無名氏/漢樂府",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "日出東南隅，照我秦氏樓。秦氏有好女，自名為羅敷。羅敷憙蠶桑，采桑城南隅。青絲為籠係，桂枝為籠鉤。頭上倭墮髻，耳中明月珠。緗綺為下裙，紫綺為上襦。行者見羅敷，下擔捋髭須；少年見羅敷，脫帽著肖頭。耕者忘其犁，鋤者忘其鋤。來歸相怒怨，但坐觀羅敷。使君從南來，五馬立踟躕。使君遣吏往，問是誰家姝？秦氏有好女，自名為羅敷。羅敷年幾何？二十尚不足，十五頗有餘。使君謝羅敷：「寧可共載不？」羅敷前置辭：「使君一何愚！使君自有婦，羅敷自有夫。」東方千餘騎，夫婿居上頭。何用識夫婿，白馬從驪駒。青絲係馬尾，黃金絡馬頭。腰中鹿盧劍，可直千萬餘。十五府小史，二十朝大夫。三十侍中郎，四十專城居。為人潔白皙，鬑々頗有須。盈盈公府步，冉冉府中趨。坐中數千人，皆言夫婿殊。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00091",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-43b38ccd5d1e93f0",
+    "poemNo": 412,
+    "poemNoStr": "412",
+    "title": {
+      "zh": "〈相逢行〉",
+      "ko": "상봉행"
+    },
+    "poet": {
+      "zh": "無名氏/漢樂府",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "相逢狹路間，道隘不容車。不知何年少，夾轂問君家。君家誠易知，易知復難忘。黃金為君門，白玉為君堂。堂上置樽酒，作使邯鄲倡。中庭生桂樹，華燈何煌煌。兄弟兩三人，中子為侍郎。五日一來歸，道上自生光。黃金絡馬頭，觀者盈道傍。入門時左顧，但見雙鴛鴦。鴛鴦七十二，羅列自成行。音聲何雍雍，鶴鳴東西廂。大婦織綺羅，中婦織流黃。小婦無所為，挾瑟上高堂。丈人且安坐，調絲方未央。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00092",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-43b38ccd5d1e93f0",
+    "poemNo": 413,
+    "poemNoStr": "413",
+    "title": {
+      "zh": "〈隴西行〉",
+      "ko": "농서행"
+    },
+    "poet": {
+      "zh": "無名氏/漢樂府",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "天上何所有，歷歷種白榆。桂樹夾道生，青龍對道隅。鳳凰鳴啾啾，一母將九雛。顧視世間人，為樂甚獨殊。好婦出迎客，顏色正敷愉。伸腰再拜跪，問客平安不。請客北堂上，坐客氈氍毹。清白各異樽，酒上正華疏。酌酒持與客，客言主人持。卻略再拜跪，然後持一杯。談笑未及竟，左顧敕中廚。促令辦粗飯，慎莫使稽留。廢禮送客出，盈盈府中趨。送客亦不遠，足不過門樞。取婦得如此，齊姜亦不如。健婦持門戶，一勝一丈夫。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00093",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-aa408a3758d7e916",
+    "poemNo": 414,
+    "poemNoStr": "414",
+    "title": {
+      "zh": "〈梁甫吟〉",
+      "ko": "양보음"
+    },
+    "poet": {
+      "zh": "諸葛亮",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "步出齊城門，遙望蕩陰裏。里中有三墓，累累正相似。問是誰家墓，田彊、古冶子。力能排南山，文能絶地紀。一朝被讒言，二桃殺三士。誰能為此謀？國相齊晏子。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00094",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnhan-43b38ccd5d1e93f0",
+    "poemNo": 415,
+    "poemNoStr": "415",
+    "title": {
+      "zh": "〈悲歌〉",
+      "ko": "비가"
+    },
+    "poet": {
+      "zh": "無名氏/漢樂府",
+      "ko": ""
+    },
+    "juan": "兩漢",
+    "category": "cnpt-comp",
+    "meter": null,
+    "preview": "悲歌可以當泣，遠望可以當歸。思念故鄉，鬱鬱累累。欲歸家無人，欲渡河無船，心思不能言，腸中車輪轉。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00095",
+      "eraSlug": "han",
+      "batch": "pre-tang-first-tranche"
+    }
+  },
+  {
+    "titleId": "cnpreqin-d9cfb1495fcebc18",
+    "poemNo": 416,
+    "poemNoStr": "416",
+    "title": {
+      "zh": "〈九歌〉",
+      "ko": "구가"
+    },
+    "poet": {
+      "zh": "屈原",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-chuci",
+    "meter": null,
+    "preview": "東皇太一 / 吉日兮辰良，穆將愉兮上皇。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00096",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-d9cfb1495fcebc18",
+    "poemNo": 417,
+    "poemNoStr": "417",
+    "title": {
+      "zh": "〈天問〉",
+      "ko": "천문"
+    },
+    "poet": {
+      "zh": "屈原",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-chuci",
+    "meter": null,
+    "preview": "曰：遂古之初，誰傳道之？上下未形，何由考之？冥昭瞢闇，誰能極之？馮翼惟像，何以識之？明明闇闇，惟時何爲？陰陽三合，何本何化？圜則九重，孰營度之？惟兹何功，孰初作之？斡維焉繫？天極焉加？八柱何當，東南何虧？九天之際，安放安屬？隅隈多有，誰知其數？天何所沓，十二焉分？日月安屬，列星安陳？出自湯谷，次于蒙汜。自明及晦，所行幾里？夜光何德，死則又育？厥利維何，而顧菟在腹？女岐無合，夫焉取九子？伯強何處，惠氣安在？何闔而晦，何開而明？角宿未旦，曜靈安藏？ / 不任汩鴻，師何以尚之？僉曰：何憂？何不課而行之？鴟龜曳銜，鮌何聽焉？順欲成功，帝何刑焉？永遏在羽山，夫何三年不施？伯禹愎鮌，夫何以變化？纂就前緒，遂成考功。何續初繼業，而厥謀不同？洪泉極深，何以窴之？地方九則，何以墳之？河海應龍，何盡何歷？鮌何所營，禹何所成？康回馮怒，墬何故以東南傾？九州安錯，川谷何洿？東流不溢，孰知其故？東西南北，其脩孰多？南北順㯐，其衍幾何？崑崙縣圃，其凥安在？增城九重，其高幾里？四方之門，其誰從焉？西北辟啓，何氣通焉？",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00097",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-d9cfb1495fcebc18",
+    "poemNo": 418,
+    "poemNoStr": "418",
+    "title": {
+      "zh": "〈遠遊〉",
+      "ko": "원유"
+    },
+    "poet": {
+      "zh": "屈原",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-chuci",
+    "meter": null,
+    "preview": "悲時俗之迫阨兮，願輕舉而遠遊。質菲薄而無因兮，焉託乘而上浮？遭沈濁而汙穢兮，獨鬱結其誰語！夜耿耿而不寐兮，魂焭焭而至曙。 / 惟天地之無窮兮，哀人生之長勤。往者餘弗及兮，來者吾不聞。步徙倚而遥思兮，怊惝怳而乖懷。意荒忽而流蕩兮，心愁悽而增悲。神儵忽而不反兮，形枯槁而獨留。內惟省以端操兮，求正氣之所由。漠虛靜以恬愉兮，澹無爲而自得。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00098",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-d9cfb1495fcebc18",
+    "poemNo": 419,
+    "poemNoStr": "419",
+    "title": {
+      "zh": "〈卜居〉",
+      "ko": "복거"
+    },
+    "poet": {
+      "zh": "屈原",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-chuci",
+    "meter": null,
+    "preview": "屈原既放三年，不得復見，竭知盡忠，而蔽鄣於讒。心煩慮亂，不知所從。往見太卜鄭詹尹曰：「餘有所疑，願因先生決之。」詹尹乃端策拂龜，曰：「君將何以教之？」屈原曰：「吾寧悃悃欵欵，樸以忠乎？將送往勞來，斯無窮乎？寧誅鋤草茅，以力耕乎？將遊大人，以成名乎？寧正言不諱，以危身乎？將從俗富貴，以媮生乎？寧超然高舉，㠯保真乎？將哫訾栗斯，喔咿儒兒，以事婦人乎？寧廉潔正直，以自清乎？將突梯滑稽，如脂如韋，以潔楹乎？寧昂昂若千里之駒乎？將氾氾若水中之鳧乎？與波上下，偷以全吾軀乎？寧與騏驥亢軛乎？將隨駑馬之迹乎？寧與黃鵠比翼乎？將與雞鶩爭食乎？此孰吉孰凶？何去何從？世溷濁而不清，蟬翼爲重，千鈞爲輕；黃鐘毀棄，瓦釜雷鳴；讒人高張，賢士無名。吁嗟默默兮，誰知吾之廉貞！」詹尹乃釋策而謝曰：「夫尺有所短，寸有所長；物有所不足，智有所不明；數有所不逮，神有所不通。用君之心，行君之意，龜策誠不能知事。」",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00099",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 420,
+    "poemNoStr": "420",
+    "title": {
+      "zh": "〈關雎〉",
+      "ko": "관저"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "關關雎鳩，在河之洲。 / 窈窕淑女，君子好逑。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00100",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 421,
+    "poemNoStr": "421",
+    "title": {
+      "zh": "〈葛覃〉",
+      "ko": "갈담"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "葛之覃兮，施于中谷，維葉萋萋，黃鳥于飛，集于灌木，其鳴喈喈。 / 葛之覃兮，施于中谷，維葉莫莫，是刈是濩，為絺為綌，服之無斁。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00101",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 422,
+    "poemNoStr": "422",
+    "title": {
+      "zh": "〈卷耳〉",
+      "ko": "권이"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "采采卷耳，不盈頃筐，嗟我懷人，寘彼周行。 / 陟彼崔嵬，我馬虺隤，我姑酌彼金罍，維以不永懷。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00102",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 423,
+    "poemNoStr": "423",
+    "title": {
+      "zh": "〈樛木〉",
+      "ko": "규목"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "南有樛木，葛藟纍之，樂只君子，福履綏之。 / 南有樛木，葛藟荒之，樂只君子，福履將之。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00103",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 424,
+    "poemNoStr": "424",
+    "title": {
+      "zh": "〈螽斯〉",
+      "ko": "종사"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "螽斯羽，詵詵兮，宜爾子孫，振振兮！ / 螽斯羽，薨薨兮，宜爾子孫，繩繩兮！",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00104",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 425,
+    "poemNoStr": "425",
+    "title": {
+      "zh": "〈桃夭〉",
+      "ko": "도요"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "桃之夭夭，灼灼其華，之子于歸，宜其室家。 / 桃之夭夭，有蕡其實，之子于歸，宜其家室。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00105",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 426,
+    "poemNoStr": "426",
+    "title": {
+      "zh": "〈兔罝〉",
+      "ko": "토저"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "肅肅兔罝，椓之丁丁，赳赳武夫，公侯乾城。 / 肅肅兔罝，施于中逵，赳赳武夫，公侯好仇。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00106",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 427,
+    "poemNoStr": "427",
+    "title": {
+      "zh": "〈芣苢〉",
+      "ko": "부이"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "采采芣苢，薄言采之，采采芣苢，薄言有之。 / 采采芣苢，薄言掇之，采采芣苢，薄言捋之。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00107",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 428,
+    "poemNoStr": "428",
+    "title": {
+      "zh": "〈漢廣〉",
+      "ko": "한광"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "南有喬木，不可休息；漢有遊女，不可求思，漢之廣矣，不可泳思，江之永矣，不可方思。 / 翹翹錯薪，言刈其楚，之子于歸，言秣其馬，漢之廣矣，不可泳思，江之永矣，不可方思。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00108",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 429,
+    "poemNoStr": "429",
+    "title": {
+      "zh": "〈汝墳〉",
+      "ko": "여분"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "遵彼汝墳，伐其條枚，未見君子，惄如調飢。 / 遵彼汝墳，伐其條肄，既見君子，不我遐棄。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00109",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 430,
+    "poemNoStr": "430",
+    "title": {
+      "zh": "〈麟之趾〉",
+      "ko": "인지지"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "麟之趾，振振公子，于嗟麟兮。 / 麟之定，振振公姓，于嗟麟兮。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00110",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 431,
+    "poemNoStr": "431",
+    "title": {
+      "zh": "〈鵲巢〉",
+      "ko": "작소"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "維鵲有巢，維鳩居之，之子于歸，百兩御之。 / 維鵲有巢，維鳩方之，之子于歸，百兩將之。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00111",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 432,
+    "poemNoStr": "432",
+    "title": {
+      "zh": "〈采蘩〉",
+      "ko": "채번"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "于以采蘩，于沼于沚，于以用之，公侯之事。 / 于以采蘩，于澗之中，于以用之，公侯之宮。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00112",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 433,
+    "poemNoStr": "433",
+    "title": {
+      "zh": "〈草蟲〉",
+      "ko": "초충"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "喓喓草蟲，趯趯阜螽，未見君子，憂心忡忡，亦既見止，亦既覯止，我心則降。 / 陟彼南山，言采其蕨，未見君子，憂心惙惙，亦既見止，亦既覯止，我心則說。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00113",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 434,
+    "poemNoStr": "434",
+    "title": {
+      "zh": "〈采蘋〉",
+      "ko": "채빈"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "于以采蘋？南澗之濱，于以采藻？于彼行潦。 / 于以盛之？維筐及筥，于以湘之？維錡及釜。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00114",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 435,
+    "poemNoStr": "435",
+    "title": {
+      "zh": "〈甘棠〉",
+      "ko": "감당"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "蔽芾甘棠，勿翦勿伐，召伯所茇。 / 蔽芾甘棠，勿翦勿敗，召伯所憇。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00115",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 436,
+    "poemNoStr": "436",
+    "title": {
+      "zh": "〈行露〉",
+      "ko": "행로"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "厭浥行露，豈不夙夜，謂行多露。 / 誰謂雀無角？何以穿我屋？誰謂女無家？何以速我獄？雖速我獄，室家不足。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00116",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 437,
+    "poemNoStr": "437",
+    "title": {
+      "zh": "〈羔羊〉",
+      "ko": "고양"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "羔羊之皮，素絲五紽，退食自公，委蛇委蛇。 / 羔羊之革，素絲五緎，委蛇委蛇，自公退食。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00117",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 438,
+    "poemNoStr": "438",
+    "title": {
+      "zh": "〈殷其靁〉",
+      "ko": "은기뢰"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "殷其靁，在南山之陽，何斯違斯，莫敢或遑，振振君子，歸哉歸哉。 / 殷其靁，在南山之側，何斯違斯，莫敢遑息，振振君子，歸哉歸哉。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00118",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 439,
+    "poemNoStr": "439",
+    "title": {
+      "zh": "〈摽有梅〉",
+      "ko": "표유매"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "摽有梅，其實七兮，求我庶士，迨其吉兮。 / 摽有梅，其實三兮，求我庶士，迨其今兮。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00119",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 440,
+    "poemNoStr": "440",
+    "title": {
+      "zh": "〈小星〉",
+      "ko": "소성"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "嘒彼小星，三五在東，肅肅宵征，夙夜在公，寔命不同。 / 嘒彼小星，維參與昴，肅肅宵征，抱衾與裯，寔命不猶。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00120",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 441,
+    "poemNoStr": "441",
+    "title": {
+      "zh": "〈江有汜〉",
+      "ko": "강유사"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "江有汜，之子歸，不我以，不我以，其後也悔。 / 江有渚，之子歸，不我與，不我與，其後也處。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00121",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 442,
+    "poemNoStr": "442",
+    "title": {
+      "zh": "〈野有死麕〉",
+      "ko": "야유사균"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "野有死麕，白茅包之，有女懷春，吉士誘之。 / 林有樸樕，野有死鹿，白茅純束，有女如玉。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00122",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 443,
+    "poemNoStr": "443",
+    "title": {
+      "zh": "〈何彼穠矣〉",
+      "ko": "하피농의"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "何彼穠矣，唐棣之華，曷不肅雝，王姬之車。 / 何彼穠矣，華如桃李，平王之孫，齊侯之子。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00123",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 444,
+    "poemNoStr": "444",
+    "title": {
+      "zh": "〈騶虞〉",
+      "ko": "추우"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "彼茁者葭，壹發五豝，于嗟乎騶虞。 / 彼茁者蓬，壹發五豵，于嗟乎騶虞。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00124",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 445,
+    "poemNoStr": "445",
+    "title": {
+      "zh": "〈柏舟〉",
+      "ko": "백주"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "汎彼柏舟，在彼中河，髧彼兩髦，實維我儀，之死矢靡它，母也天只，不諒人只。 / 汎彼柏舟，在彼河側，髧彼兩髦，實維我特，之死矢靡慝，母也天只，不諒人只。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00125",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 446,
+    "poemNoStr": "446",
+    "title": {
+      "zh": "〈綠衣〉",
+      "ko": "녹의"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "綠兮衣兮，綠衣黃裏，心之憂矣，曷維其已。 / 綠兮衣兮，綠衣黃裳，心之憂矣，曷維其亡。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00126",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 447,
+    "poemNoStr": "447",
+    "title": {
+      "zh": "〈燕燕〉",
+      "ko": "연연"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "燕燕于飛，差池其羽，之子于歸，遠送于野，瞻望弗及，泣涕如雨。 / 燕燕于飛，頡之頏之，之子于歸，遠于將之，瞻望弗及，佇立以泣。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00127",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 448,
+    "poemNoStr": "448",
+    "title": {
+      "zh": "〈日月〉",
+      "ko": "일월"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "日居月諸，照臨下土，乃如之人兮，逝不古處，胡能有定，寧不我顧。 / 日居月諸，下土是冒，乃如之人兮，逝不相好，胡能有定，寧不我報。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00128",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 449,
+    "poemNoStr": "449",
+    "title": {
+      "zh": "〈終風〉",
+      "ko": "종풍"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "終風且暴，顧我則笑，謔浪笑敖，中心是悼。 / 終風且霾，惠然肯來，莫往莫來，悠悠我思。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00129",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 450,
+    "poemNoStr": "450",
+    "title": {
+      "zh": "〈擊鼓〉",
+      "ko": "격고 (擊鼓)"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "擊鼓其鏜，踴躍用兵，土國城漕，我獨南行。 / 從孫子仲，平陳與宋，不我以歸，憂心有忡。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00130",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 451,
+    "poemNoStr": "451",
+    "title": {
+      "zh": "〈凱風〉",
+      "ko": "개풍"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "凱風(1)自南，吹彼棘心(2)，棘心夭夭(3)，母氏劬勞。 / 凱風自南，吹彼棘薪(4)，母氏聖善(5)，我無令(6)人。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00131",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 452,
+    "poemNoStr": "452",
+    "title": {
+      "zh": "〈雄雉〉",
+      "ko": "웅치"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "雄雉于飛，泄泄其羽，我之懷矣，自詒伊阻。 / 雄雉于飛，下上其音，展矣君子，實勞我心。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00132",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 453,
+    "poemNoStr": "453",
+    "title": {
+      "zh": "〈匏有苦葉〉",
+      "ko": "포유고엽"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "匏有苦葉，濟有深涉，深則厲，淺則揭。 / 有瀰濟盈，有鷕雉鳴，濟盈不濡軓，雉鳴求其牡。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00133",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 454,
+    "poemNoStr": "454",
+    "title": {
+      "zh": "〈谷風〉",
+      "ko": "곡풍"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "習習谷風，以陰以雨。黽勉同心，不宜有怒。 / 采葑采菲，無以下體？德音莫違，及爾同死。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00134",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 455,
+    "poemNoStr": "455",
+    "title": {
+      "zh": "〈式微〉",
+      "ko": "식미"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "式微式微，胡不歸？微君之故，胡為乎中露？ / 式微式微，胡不歸？微君之躬，胡為乎泥中？",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00135",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 456,
+    "poemNoStr": "456",
+    "title": {
+      "zh": "〈旄丘〉",
+      "ko": "모구"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "旄丘之葛兮，何誕之節兮，叔兮伯兮，何多日也。 / 何其處也，必有與也，何其久也，必有以也。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00136",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 457,
+    "poemNoStr": "457",
+    "title": {
+      "zh": "〈簡兮〉",
+      "ko": "간혜"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "簡兮簡兮，方將萬舞，日之方中，在前上處，碩人俁俁，公庭萬舞。 / 有力如虎，執轡如組，左手執籥，右手秉翟，赫如渥赭，公言錫爵。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00137",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 458,
+    "poemNoStr": "458",
+    "title": {
+      "zh": "〈泉水〉",
+      "ko": "천수"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "毖彼泉水，亦流于淇，有懷于衞，靡日不思，孌彼諸姬，聊與之謀。 / 出宿于泲，飲餞于禰，女子有行，遠父母兄弟，問我諸姑，遂及伯姊。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00138",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 459,
+    "poemNoStr": "459",
+    "title": {
+      "zh": "〈北門〉",
+      "ko": "북문"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "出自北門，憂心殷殷，終窶且貧，莫知我艱，已焉哉，天實為之，謂之何哉。 / 王事適我，政事一埤益我，我入自外，室人交徧讁我，已焉哉，天實為之，謂之何哉。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00139",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 460,
+    "poemNoStr": "460",
+    "title": {
+      "zh": "〈北風〉",
+      "ko": "북풍"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "北風其涼，雨雪其雱， / 惠而好我，攜手同行，【韻：雱行】",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00140",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 461,
+    "poemNoStr": "461",
+    "title": {
+      "zh": "〈靜女〉",
+      "ko": "정녀"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "靜女其姝，俟我於城隅，愛而不見，搔首踟躕。 / 靜女其孌，貽我彤管，彤管有煒，說懌女美。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00141",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 462,
+    "poemNoStr": "462",
+    "title": {
+      "zh": "〈新臺〉",
+      "ko": "신대"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "新臺有泚，河水瀰瀰，燕婉之求，蘧篨不鮮。 / 新臺有洒，河水浼浼，燕婉之求，蘧篨不殄。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00142",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 463,
+    "poemNoStr": "463",
+    "title": {
+      "zh": "〈二子乘舟〉",
+      "ko": "이자승주"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "二子乘舟，汎汎其景，願言思子，中心養養。 / 二子乘舟，汎汎其逝，願言思子，不瑕有害。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00143",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 464,
+    "poemNoStr": "464",
+    "title": {
+      "zh": "〈牆有茨〉",
+      "ko": "장유자"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "牆有茨，不可埽也，中冓之言，不可道也，所可道也，言之醜也。 / 牆有茨，不可襄也，中冓之言，不可詳也，所可詳也，言之長也。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00144",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 465,
+    "poemNoStr": "465",
+    "title": {
+      "zh": "〈君子偕老〉",
+      "ko": "군자해로"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "君子偕老，副笄六珈，委委佗佗，如山如河，象服是宜，子之不淑，雲如之何。 / 玼兮玼兮，其之翟也，鬒髮如雲，不屑髢也，玉之瑱也，象之揥也，揚且之晳也，胡然而天也，胡然而帝也。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00145",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 466,
+    "poemNoStr": "466",
+    "title": {
+      "zh": "〈桑中〉",
+      "ko": "상중"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "爰采唐矣，沬之鄉矣，雲誰之思，美孟姜矣，期我乎桑中，要我乎上宮，送我乎淇之上矣。 / 爰采麥矣，沬之北矣，雲誰之思，美孟弋矣，期我乎桑中，要我乎上宮，送我乎淇之上矣。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00146",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 467,
+    "poemNoStr": "467",
+    "title": {
+      "zh": "〈鶉之奔奔〉",
+      "ko": "순지분분"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "鶉之奔奔，鵲之彊彊，人之無良，我以為兄。 / 鵲之彊彊，鶉之奔奔，人之無良，我以為君。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00147",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 468,
+    "poemNoStr": "468",
+    "title": {
+      "zh": "〈定之方中〉",
+      "ko": "정지방중"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "定之方中，作于楚宮，揆之以日，作于楚室，樹之榛栗，椅桐梓漆，爰伐琴瑟。 / 升彼虛矣，以望楚矣，望楚與堂，景山與京，降觀于桑，卜雲其吉，終然允臧。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00148",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 469,
+    "poemNoStr": "469",
+    "title": {
+      "zh": "〈蝃蝀〉",
+      "ko": "체동"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "蝃蝀在東，莫之敢指，女子有行，遠父母兄弟。 / 朝隮于西，崇朝其雨，女子有行，遠兄弟父母。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00149",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 470,
+    "poemNoStr": "470",
+    "title": {
+      "zh": "〈相鼠〉",
+      "ko": "상서"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "相鼠有皮，人而無儀，人而無儀，不死何為。 / 相鼠有齒，人而無止，人而無止，不死何俟。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00150",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 471,
+    "poemNoStr": "471",
+    "title": {
+      "zh": "〈乾旄〉",
+      "ko": "건모"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "孑孑乾旄，在浚之郊，素絲紕之，良馬四之，彼姝者子，何以畀之。 / 孑孑乾旟，在浚之都，素絲組之，良馬五之，彼姝者子，何以予之。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00151",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 472,
+    "poemNoStr": "472",
+    "title": {
+      "zh": "〈載馳〉",
+      "ko": "재치"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "載馳載驅，歸唁衞侯，驅馬悠悠，言至于漕，大夫跋涉，我心則憂。 / 既不我嘉，不能旋反，視爾不臧，我思不遠。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00152",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 473,
+    "poemNoStr": "473",
+    "title": {
+      "zh": "〈淇奧〉",
+      "ko": "기욱"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "瞻彼淇奧，綠竹猗猗，有匪君子，如切如磋，如琢如磨，瑟兮僩兮，赫兮咺兮，有匪君子，終不可諼兮。 / 瞻彼淇奧，綠竹青青，有匪君子，充耳琇瑩，會弁如星，瑟兮僩兮，赫兮咺兮，有匪君子，終不可諼兮。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00153",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 474,
+    "poemNoStr": "474",
+    "title": {
+      "zh": "〈考槃〉",
+      "ko": "고반"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "考槃在澗，碩人之寬，獨寐寤言，永矢弗諼。 / 考槃在阿，碩人之薖，獨寐寤歌，永矢弗過。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00154",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 475,
+    "poemNoStr": "475",
+    "title": {
+      "zh": "〈碩人〉",
+      "ko": "석인"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "碩人其頎，衣錦褧衣，齊侯之子，衛侯之妻，東宮之妹，邢侯之姨，譚公維私。 / 手如柔荑，膚如凝脂，領如蝤蠐，齒如瓠犀，螓首蛾眉，巧笑倩兮，美目盻兮。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00155",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 476,
+    "poemNoStr": "476",
+    "title": {
+      "zh": "〈氓〉",
+      "ko": "맹"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "氓之蚩蚩，抱布貿絲。匪來貿絲，來即我謀。送子涉淇，至于頓丘。匪我愆期，子無良媒。將子無怒，秋以為期。 / 乘彼垝垣，以望復關。不見復關，泣涕漣漣。既見復關，載笑載言。爾卜爾筮，體無咎言。以爾車來，以我賄遷。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00156",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 477,
+    "poemNoStr": "477",
+    "title": {
+      "zh": "〈竹竿〉",
+      "ko": "죽간"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "籊籊竹竿，以釣于淇，豈不爾思，遠莫致之。 / 泉源在左，淇水在右，女子有行，遠兄弟父母。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00157",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 478,
+    "poemNoStr": "478",
+    "title": {
+      "zh": "〈芄蘭〉",
+      "ko": "환란"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "芄蘭之支，童子佩觿，雖則佩觿，能不我知，容兮遂兮，垂帶悸兮。 / 芄蘭之葉，童子佩韘，雖則佩韘，能不我甲，容兮遂兮，垂帶悸兮。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00158",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 479,
+    "poemNoStr": "479",
+    "title": {
+      "zh": "〈河廣〉",
+      "ko": "하광"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "誰謂河廣，一葦杭之，誰謂宋遠，跂予望之。 / 誰謂河廣，曾不容刀，誰謂宋遠，曾不崇朝。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00159",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 480,
+    "poemNoStr": "480",
+    "title": {
+      "zh": "〈伯兮〉",
+      "ko": "백혜"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "伯兮朅兮，邦之桀兮。伯也執殳，爲王前驅。 / 自伯之東，首如飛蓬。豈無膏沐？誰適爲容！",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00160",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 481,
+    "poemNoStr": "481",
+    "title": {
+      "zh": "〈有狐〉",
+      "ko": "유호"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "有狐綏綏，在彼淇梁，心之憂矣，之子無裳。 / 有狐綏綏，在彼淇厲，心之憂矣，之子無帶。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00161",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 482,
+    "poemNoStr": "482",
+    "title": {
+      "zh": "〈木瓜〉",
+      "ko": "목과"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "投我以木瓜，報之以瓊琚，匪報也，永以為好也。 / 投我以木桃，報之以瓊瑤，匪報也，永以為好也。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00162",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 483,
+    "poemNoStr": "483",
+    "title": {
+      "zh": "〈黍離〉",
+      "ko": "서리"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "彼黍離離，彼稷之苗。行邁靡靡，中心搖搖。知我者，謂我心憂，不知我者，謂我何求。悠悠蒼天，此何人哉！ / 彼黍離離，彼稷之穗。行邁靡靡，中心如醉。知我者，謂我心憂，不知我者，謂我何求。悠悠蒼天，此何人哉！",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00163",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 484,
+    "poemNoStr": "484",
+    "title": {
+      "zh": "〈君子于役〉",
+      "ko": "군자우역"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "君子于役，不知其期。曷至哉？雞棲于塒，日之夕矣，羊牛下來。君子于役，如之何勿思！ / 君子于役，不日不月。曷其有佸？雞棲于桀，日之夕矣，羊牛下括。君子于役，苟無飢渴。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00164",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 485,
+    "poemNoStr": "485",
+    "title": {
+      "zh": "〈君子陽陽〉",
+      "ko": "군자양양"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "君子陽陽，左執簧，右招我由房。其樂只且。 / 君子陶陶，左執翿，右招我由敖。其樂只且。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00165",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 486,
+    "poemNoStr": "486",
+    "title": {
+      "zh": "〈揚之水〉",
+      "ko": "양지수"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "揚之水，不流束薪。彼其之子，不與我戍申。懷哉懷哉！曷月予還歸哉！ / 揚之水，不流束楚。彼其之子，不與我戍甫。懷哉懷哉！曷月予還歸哉！",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00166",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 487,
+    "poemNoStr": "487",
+    "title": {
+      "zh": "〈中谷有蓷〉",
+      "ko": "중곡유퇴"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "中谷有蓷，暵其乾矣。有女仳離，嘅其嘆矣。嘅其嘆矣！遇人之艱難矣！ / 中谷有蓷，暵其脩矣。有女仳離，條其歗矣。條其歗矣！遇人之不淑矣！",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00167",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 488,
+    "poemNoStr": "488",
+    "title": {
+      "zh": "〈兔爰〉",
+      "ko": "토원"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "有兔爰爰，雉離于羅。我生之初，尚無為。我生之後，逢此百罹，尚寐無吪？ / 有兔爰爰，雉離于罦。我生之初，尚無造。我生之後，逢此百憂，尚寐無覺？",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00168",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 489,
+    "poemNoStr": "489",
+    "title": {
+      "zh": "〈葛藟〉",
+      "ko": "갈류"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "緜緜葛藟，在河之滸。終遠兄弟，謂他人父。謂他人父，亦莫我顧。 / 緜緜葛藟，在河之涘。終遠兄弟，謂他人母。謂他人母，亦莫我有。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00169",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 490,
+    "poemNoStr": "490",
+    "title": {
+      "zh": "〈采葛〉",
+      "ko": "채갈"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "彼采葛兮，一日不見，如三月兮。 / 彼采蕭兮，一日不見，如三秋兮。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00170",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 491,
+    "poemNoStr": "491",
+    "title": {
+      "zh": "〈大車〉",
+      "ko": "대거"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "大車檻檻，毳衣如菼。豈不爾思，畏子不敢。 / 大車啍啍，毳衣如璊。豈不爾思，畏子不奔。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00171",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 492,
+    "poemNoStr": "492",
+    "title": {
+      "zh": "〈丘中有麻〉",
+      "ko": "구중유마"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "丘中有麻，彼留子嗟。彼留子嗟，將其來施施。 / 丘中有麥，彼留子國。彼留子國，將其來食。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00172",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 493,
+    "poemNoStr": "493",
+    "title": {
+      "zh": "〈緇衣〉",
+      "ko": "지의"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "緇衣之宜兮，敝，予又改為兮。適子之館兮，還，予授子之粲兮。 / 緇衣之好兮，敝，予又改造兮。適子之館兮，還，予授子之粲兮。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00173",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 494,
+    "poemNoStr": "494",
+    "title": {
+      "zh": "〈將仲子〉",
+      "ko": "장중자"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "將仲子兮，無踰我里，無折我樹杞。豈敢愛之？畏我父母。仲可懷也，父母之言，亦可畏也。 / 將仲子兮，無踰我牆，無折我樹桑。豈敢愛之？畏我諸兄。仲可懷也，諸兄之言，亦可畏也。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00174",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 495,
+    "poemNoStr": "495",
+    "title": {
+      "zh": "〈叔于田〉",
+      "ko": "숙우전"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "叔于田，巷無居人。豈無居人，不如叔也。洵美且仁。 / 叔于狩，巷無飲酒。豈無飲酒，不如叔也。洵美且好。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00175",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 496,
+    "poemNoStr": "496",
+    "title": {
+      "zh": "〈大叔于田〉",
+      "ko": "대숙우전"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "叔于田，乘乘馬。執轡如組，兩驂如舞。叔在藪，火烈具舉，襢裼暴虎，獻于公所。將叔無狃，戒其傷女。 / 叔于田，乘乘黃。兩服上襄，兩驂鴈行。叔在藪，火烈具揚。叔善射忌，又良御忌，抑磬控忌，抑縱送忌。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00176",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 497,
+    "poemNoStr": "497",
+    "title": {
+      "zh": "〈清人〉",
+      "ko": "청인"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "清人在彭，駟介旁旁。二矛重英，河上乎翱翔。 / 清人在消，駟介麃麃。二矛重喬，河上乎逍遙。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00177",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 498,
+    "poemNoStr": "498",
+    "title": {
+      "zh": "〈羔裘〉",
+      "ko": "고구"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "羔裘如濡，洵直且侯。彼其之子，舍命不渝。 / 羔裘豹飾，孔武有力。彼其之子，邦之司直。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00178",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 499,
+    "poemNoStr": "499",
+    "title": {
+      "zh": "〈遵大路〉",
+      "ko": "준대로"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "遵大路兮，摻執子之袪兮。無我惡兮，不寁故也。 / 遵大路兮，摻執子之手兮。無我魗兮，不寁好也。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00179",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 500,
+    "poemNoStr": "500",
+    "title": {
+      "zh": "〈女曰鷄鳴〉",
+      "ko": "여왈계명"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "女曰鷄鳴，士曰昧旦。子興視夜，明星有爛。將翱將翔，弋鳧與鴈。 / 弋言加之，與子宜之。宜言飲酒，與子偕老。琴瑟在御，莫不靜好。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00180",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 501,
+    "poemNoStr": "501",
+    "title": {
+      "zh": "〈有女同車〉",
+      "ko": "유녀동거"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "有女同車，顏如舜華，將翱將翔，佩玉瓊琚，彼美孟姜，洵美且都。 / 有女同行，顏如舜英，將翱將翔，佩玉將將，彼美孟姜，德音不忘。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00181",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 502,
+    "poemNoStr": "502",
+    "title": {
+      "zh": "〈山有扶蘇〉",
+      "ko": "산유부소"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "山有扶蘇，隰有荷華。不見子都，乃見狂且。 / 山有喬松，隰有遊龍。不見子充，乃見狡童。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00182",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 503,
+    "poemNoStr": "503",
+    "title": {
+      "zh": "〈蘀兮〉",
+      "ko": "탁혜"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "蘀兮蘀兮，風其吹女。叔兮伯兮，倡予和女。 / 蘀兮蘀兮，風其漂女。叔兮伯兮，倡予要女。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00183",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 504,
+    "poemNoStr": "504",
+    "title": {
+      "zh": "〈狡童〉",
+      "ko": "교동"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "彼狡童兮，不與我言兮，維子之故，使我不能餐兮。 / 彼狡童兮，不與我食兮，維子之故，使我不能息兮。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00184",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 505,
+    "poemNoStr": "505",
+    "title": {
+      "zh": "〈褰裳〉",
+      "ko": "건상"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "子惠思我，褰裳涉溱。子不我思，豈無他人？狂童之狂也且！ / 子惠思我，褰裳涉洧。子不我思，豈無他士？狂童之狂也且！",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00185",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 506,
+    "poemNoStr": "506",
+    "title": {
+      "zh": "〈丰〉",
+      "ko": "풍"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "子之丰兮，俟我乎巷兮。悔予不送兮。 / 子之昌兮，俟我乎堂兮。悔予不將兮。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00186",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 507,
+    "poemNoStr": "507",
+    "title": {
+      "zh": "〈東門之墠〉",
+      "ko": "동문지선"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "東門之墠，茹藘在阪。其室則邇，其人甚遠。 / 東門之栗，有踐家室。豈不爾思？子不我即。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00187",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 508,
+    "poemNoStr": "508",
+    "title": {
+      "zh": "〈風雨〉",
+      "ko": "풍우"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "風雨淒淒，雞鳴喈喈。既見君子，雲胡不夷。 / 風雨瀟瀟，雞鳴膠膠。既見君子，雲胡不瘳。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00188",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 509,
+    "poemNoStr": "509",
+    "title": {
+      "zh": "〈子衿〉",
+      "ko": "자금"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "青青子衿，悠悠我心。縱我不往，子寧不嗣音。 / 青青子佩，悠悠我思。縱我不往，子寧不來。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00189",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 510,
+    "poemNoStr": "510",
+    "title": {
+      "zh": "〈出其東門〉",
+      "ko": "출기동문"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "出其東門，有女如雲。雖則如雲，匪我思存。縞衣綦巾，聊樂我員。 / 出其闉闍，有女如荼。雖則如荼，匪我思且。縞衣茹藘，聊可與娛。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00190",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 511,
+    "poemNoStr": "511",
+    "title": {
+      "zh": "〈野有蔓草〉",
+      "ko": "야유만초"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "野有蔓草，零露漙兮。有美一人，清揚婉兮。邂逅相遇，適我願兮。 / 野有蔓草，零露瀼瀼。有美一人，婉如清揚。邂逅相遇，與子偕臧。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00191",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 512,
+    "poemNoStr": "512",
+    "title": {
+      "zh": "〈溱洧〉",
+      "ko": "진유"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "溱與洧，方渙渙兮。士與女，方秉蕑兮。女曰觀乎，士曰既且。且往觀乎，洧之外，洵訏且樂。維士與女，伊其相謔。贈之以勺藥。 / 溱與洧，瀏其清矣。士與女，殷其盈矣。女曰觀乎，士曰既且。且往觀乎，洧之外，洵訏且樂。維士與女，伊其將謔。贈之以勺藥。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00192",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 513,
+    "poemNoStr": "513",
+    "title": {
+      "zh": "〈雞鳴〉",
+      "ko": "계명"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "雞既鳴矣，朝既盈矣。匪雞則鳴，蒼蠅之聲。 / 東方明矣，朝既昌矣。匪東方則明，月出之光。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00193",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 514,
+    "poemNoStr": "514",
+    "title": {
+      "zh": "〈還〉",
+      "ko": "환"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "子之還兮，遭我乎峱之閒兮。並驅從兩肩兮，揖我謂我儇兮。 / 子之茂兮，遭我乎峱之道兮。並驅從兩牡兮，揖我謂我好兮。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00194",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 515,
+    "poemNoStr": "515",
+    "title": {
+      "zh": "〈著〉",
+      "ko": "저"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "俟我於著乎而，充耳以素乎而，尚之以瓊華乎而。 / 俟我於庭乎而，充耳以青乎而，尚之以瓊瑩乎而。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00195",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 516,
+    "poemNoStr": "516",
+    "title": {
+      "zh": "〈東方之日〉",
+      "ko": "동방지일"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "東方之日兮，彼姝者子，在我室兮，在我室兮，履我即兮。 / 東方之月兮，彼姝者子，在我闥兮，在我闥兮，履我發兮。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00196",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 517,
+    "poemNoStr": "517",
+    "title": {
+      "zh": "〈東方未明〉",
+      "ko": "동방미명"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "東方未明，顛倒衣裳。顛之倒之，自公召之。 / 東方未晞，顛倒裳衣。倒之顛之，自公令之。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00197",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 518,
+    "poemNoStr": "518",
+    "title": {
+      "zh": "〈南山〉",
+      "ko": "남산"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "南山崔崔，雄狐綏綏。魯道有蕩，齊子由歸。既曰歸止，曷又懷止！ / 葛屨五兩，冠緌雙止。魯道有蕩，齊子庸止。既曰庸止，曷又從止！",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00198",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 519,
+    "poemNoStr": "519",
+    "title": {
+      "zh": "〈甫田〉",
+      "ko": "부전"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "無田甫田，維莠驕驕。無思遠人，勞心忉忉。 / 無田甫田，維莠桀桀。無思遠人，勞心怛怛。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00199",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 520,
+    "poemNoStr": "520",
+    "title": {
+      "zh": "〈盧令〉",
+      "ko": "노령"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "盧令令，其人美且仁。 / 盧重環，其人美且鬈。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00200",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 521,
+    "poemNoStr": "521",
+    "title": {
+      "zh": "〈敝笱〉",
+      "ko": "폐구"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "敝笱在梁，其魚魴鰥。齊子歸止，其從如雲。 / 敝笱在梁，其魚魴鱮。齊子歸止，其從如雨。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00201",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 522,
+    "poemNoStr": "522",
+    "title": {
+      "zh": "〈載驅〉",
+      "ko": "재구"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "載驅薄薄，簟茀朱鞹。魯道有蕩，齊子發夕。 / 四驪濟濟，垂轡濔濔。魯道有蕩，齊子豈弟。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00202",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 523,
+    "poemNoStr": "523",
+    "title": {
+      "zh": "〈猗嗟〉",
+      "ko": "의차"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "猗嗟昌兮！頎而長兮。抑若揚兮，美目揚兮。巧趨蹌兮。射則臧兮。 / 猗嗟名兮！美目清兮。儀既成兮，終日射侯，不出正兮，展我甥兮。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00203",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 524,
+    "poemNoStr": "524",
+    "title": {
+      "zh": "〈葛屨〉",
+      "ko": "갈구"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "糾糾葛屨，可以履霜。摻摻女手，可以縫裳。要之襋之，好人服之。 / 好人提提，宛然左辟。佩其象揥。維是褊心，是以為刺。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00204",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 525,
+    "poemNoStr": "525",
+    "title": {
+      "zh": "〈汾沮洳〉",
+      "ko": "분저여"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "彼汾沮洳，言采其莫。彼其之子，美無度；美無度，殊異乎公路。 / 彼汾一方，言采其桑。彼其之子，美如英；美如英，殊異乎公行。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00205",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 526,
+    "poemNoStr": "526",
+    "title": {
+      "zh": "〈園有桃〉",
+      "ko": "원유도"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "園有桃，其實之殽。心之憂矣，我歌且謠。不知我者，謂我士也驕。彼人是哉，子曰何其？心之憂矣！其誰知之？其誰知之？蓋亦勿思！ / 園有棘，其實之食。心之憂矣，聊以行國。不我知者，謂我士也罔極。彼人是哉，子曰何其？心之憂矣！其誰知之？其誰知之？蓋亦勿思！",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00206",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 527,
+    "poemNoStr": "527",
+    "title": {
+      "zh": "〈陟岵〉",
+      "ko": "척호"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "陟彼岵兮，瞻望父兮。父曰：「嗟予子！行役夙夜無已。上慎旃哉，猶來無止！」 / 陟彼屺兮，瞻望母兮。母曰：「嗟予季！行役夙夜無寐。上慎旃哉！猶來無棄！」",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00207",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 528,
+    "poemNoStr": "528",
+    "title": {
+      "zh": "〈十畝之間〉",
+      "ko": "십무지간"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "十畝之間兮，桑者閑閑兮。行與子還兮。 / 十畝之外兮，桑者泄泄兮。行與子逝兮。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00208",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 529,
+    "poemNoStr": "529",
+    "title": {
+      "zh": "〈伐檀〉",
+      "ko": "벌단"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "坎坎伐檀兮，寘之河之乾兮，河水清且漣猗。不稼不穡，胡取禾三百廛兮！不狩不獵，胡瞻爾庭有縣貆兮。彼君子兮，不素餐兮。 / 坎坎伐輻兮，寘之河之側兮，河水清且直猗。不稼不穡，胡取禾三百億兮！不狩不獵，胡瞻爾庭有縣特兮。彼君子兮，不素食兮。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00209",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 530,
+    "poemNoStr": "530",
+    "title": {
+      "zh": "〈碩鼠〉",
+      "ko": "석서"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "碩鼠碩鼠，無食我黍！三歲貫女，莫我肯顧。逝將去女，適彼樂土。樂土樂土，爰得我所。 / 碩鼠碩鼠，無食我麥！三歲貫女，莫我肯德。逝將去女，適彼樂國。樂國樂國，爰得我直。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00210",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 531,
+    "poemNoStr": "531",
+    "title": {
+      "zh": "〈蟋蟀〉",
+      "ko": "실솔"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "蟋蟀在堂，歲聿其莫。今我不樂，日月其除。無已大康，職思其居。好樂無荒，良士瞿瞿。 / 蟋蟀在堂，歲聿其逝。今我不樂，日月其邁。無已大康，職思其外。好樂無荒，良士蹶蹶。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00211",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 532,
+    "poemNoStr": "532",
+    "title": {
+      "zh": "〈山有樞〉",
+      "ko": "산유추"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "山有樞，隰有榆。子有衣裳，弗曳弗婁。子有車馬，弗馳弗驅。宛其死矣，他人是愉。 / 山有栲，隰有杻。子有廷內，弗洒弗埽。子有鐘鼓，弗鼓弗考。宛其死矣，他人是保。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00212",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 533,
+    "poemNoStr": "533",
+    "title": {
+      "zh": "〈椒聊〉",
+      "ko": "초료"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "椒聊之實，蕃衍盈升。彼其之子，碩大無朋。椒聊且！遠條且！ / 椒聊之實，蕃衍盈匊。彼其之子，碩大且篤。椒聊且！遠條且！",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00213",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 534,
+    "poemNoStr": "534",
+    "title": {
+      "zh": "〈綢繆〉",
+      "ko": "조무"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "綢繆束薪，三星在天。今夕何夕？見此良人！子兮子兮！如此良人何！ / 綢繆束芻，三星在隅。今夕何夕？見此邂逅！子兮子兮！如此邂逅何！",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00214",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 535,
+    "poemNoStr": "535",
+    "title": {
+      "zh": "〈杕杜〉",
+      "ko": "체두"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "有杕之杜，其葉湑湑。獨行踽踽，豈無他人？不如我同父，嗟行之人，胡不比焉？人無兄弟，胡不佽焉？ / 有杕之杜，其葉菁菁。獨行睘睘，豈無他人？不如我同姓，嗟行之人，胡不比焉？人無兄弟，胡不佽焉？",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00215",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 536,
+    "poemNoStr": "536",
+    "title": {
+      "zh": "〈鴇羽〉",
+      "ko": "포우 (鴇羽)"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "肅肅鴇羽，集于苞栩。王事靡盬，不能蓺稷黍。父母何怙？悠悠蒼天，曷其有所。 / 肅肅鴇翼，集于苞棘。王事靡盬，不能蓺黍稷。父母何食？悠悠蒼天，曷其有極。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00216",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 537,
+    "poemNoStr": "537",
+    "title": {
+      "zh": "〈無衣〉",
+      "ko": "무의"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "豈曰無衣七兮、不如子之衣、安且吉兮。 / 豈曰無衣六兮、不如子之衣、安且燠兮。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00217",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 538,
+    "poemNoStr": "538",
+    "title": {
+      "zh": "〈有杕之杜〉",
+      "ko": "유체지두"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "有杕之杜，生于道左。彼君子兮，噬肯適我。中心好之，曷飲食之。 / 有杕之杜，生于道周。彼君子兮，噬肯來遊。中心好之，曷飲食之。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00218",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 539,
+    "poemNoStr": "539",
+    "title": {
+      "zh": "〈葛生〉",
+      "ko": "갈생"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "葛生蒙楚，蘞蔓于野。予美亡此，誰與獨處。 / 葛生蒙棘，蘞蔓于域。予美亡此，誰與獨息。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00219",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 540,
+    "poemNoStr": "540",
+    "title": {
+      "zh": "〈采苓〉",
+      "ko": "채령"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "采苓采苓，首陽之巔。人之為言，苟亦無信。舍旃舍旃，苟亦無然。人之為言，胡得焉！ / 采苦采苦，首陽之下。人之為言，苟亦無與。舍旃舍旃，苟亦無然。人之為言，胡得焉！",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00220",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 541,
+    "poemNoStr": "541",
+    "title": {
+      "zh": "〈車鄰〉",
+      "ko": "거린"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "有車鄰鄰，有馬白顛。未見君子，寺人之令。 / 阪有漆，隰有栗。既見君子，並坐鼓瑟。今者不樂，逝者其耋。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00221",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 542,
+    "poemNoStr": "542",
+    "title": {
+      "zh": "〈駟驖〉",
+      "ko": "사철"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "駟驖孔阜，六轡在手。公之媚子，從公于狩。 / 奉時辰牡，辰牡孔碩。公曰左之，舍拔則獲。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00222",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 543,
+    "poemNoStr": "543",
+    "title": {
+      "zh": "〈小戎〉",
+      "ko": "소융"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "小戎俴收，五楘梁輈，遊環脅驅，陰靷鋈續，文茵暢轂，駕我騏馵。言念君子，溫其如玉。在其板屋，亂我心曲。 / 四牡孔阜，六轡在手，騏駵是中，騧驪是驂，龍盾之合，鋈以觼軜。言念君子，溫其在邑。方何為期，胡然我念之。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00223",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 544,
+    "poemNoStr": "544",
+    "title": {
+      "zh": "〈蒹葭〉",
+      "ko": "겸가"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "蒹葭蒼蒼，白露為霜。所謂殹人，在水弌方。溯違從之，道阻且長。溯違從之，宛在水之中央。 / 蒹葭萋萋，白露未晞。所謂殹人，在水之溦。溯違從之，道阻且躋。 .",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00224",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 545,
+    "poemNoStr": "545",
+    "title": {
+      "zh": "〈終南〉",
+      "ko": "종남"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "終南何有，有條有梅。君子至止，錦衣狐裘。顏如渥丹，其君也哉。 / 終南何有，有紀有堂。君子至止，黻衣繡裳。佩玉將將，壽考不亡。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00225",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 546,
+    "poemNoStr": "546",
+    "title": {
+      "zh": "〈黃鳥〉",
+      "ko": "황조"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "交交黃鳥，止于棘。 / 誰從穆公？子車奄息。維此奄息，百夫之特。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00226",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 547,
+    "poemNoStr": "547",
+    "title": {
+      "zh": "〈晨風〉",
+      "ko": "신풍"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "鴥彼晨風，鬱彼北林，未見君子，憂心欽欽，如何如何，忘我實多。 / 山有苞櫟，隰有六駮，未見君子，憂心靡樂，如何如何，忘我實多。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00227",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 548,
+    "poemNoStr": "548",
+    "title": {
+      "zh": "〈渭陽〉",
+      "ko": "위양"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "我送舅氏，曰至渭陽。何以贈之，路車乘黃。 / 我送舅氏，悠悠我思。何以贈之，瓊瑰玉佩。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00228",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 549,
+    "poemNoStr": "549",
+    "title": {
+      "zh": "〈權輿〉",
+      "ko": "권여"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "於我乎，夏屋渠渠，今也每食無餘。于嗟乎！不承權輿。 / 於我乎，每食四簋，今也每食不飽。于嗟乎！不承權輿。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00229",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 550,
+    "poemNoStr": "550",
+    "title": {
+      "zh": "〈宛丘〉",
+      "ko": "완구"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "子之湯兮，宛丘之上兮，洵有情兮，而無望兮。 / 坎其擊鼓，宛丘之下，無冬無夏，值其鷺羽。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00230",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 551,
+    "poemNoStr": "551",
+    "title": {
+      "zh": "〈東門之枌〉",
+      "ko": "동문지분"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "東門之枌，宛丘之栩。子仲之子，婆娑其下。 / 穀旦于差，南方之原。不績其麻，市也婆娑。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00231",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 552,
+    "poemNoStr": "552",
+    "title": {
+      "zh": "〈衡門〉",
+      "ko": "형문"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "衡門之下，可以棲遲。泌之洋洋，可以樂飢。 / 豈其食魚，必河之魴。豈其取妻，必齊之姜。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00232",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 553,
+    "poemNoStr": "553",
+    "title": {
+      "zh": "〈東門之池〉",
+      "ko": "동문지지"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "東門之池，可以漚麻。彼美淑姬，可與晤歌。 / 東門之池，可以漚紵。彼美淑姬，可與晤語。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00233",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 554,
+    "poemNoStr": "554",
+    "title": {
+      "zh": "〈東門之楊〉",
+      "ko": "동문지양"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "東門之楊，其葉牂牂。昏以為期，明星煌煌。 / 東門之楊，其葉肺肺。昏以為期，明星晢晢。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00234",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 555,
+    "poemNoStr": "555",
+    "title": {
+      "zh": "〈墓門〉",
+      "ko": "묘문"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "墓門有棘，斧以斯之。夫也不良，國人知之。知而不已，誰昔然矣。 / 墓門有梅，有鴞萃止。夫也不良，歌以誶之。訊予不顧，顛倒思予。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00235",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 556,
+    "poemNoStr": "556",
+    "title": {
+      "zh": "〈防有鵲巢〉",
+      "ko": "방유작소"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "防有鵲巢，邛有旨苕。誰侜予美，心焉忉忉。 / 中唐有甓，邛有旨鷊。誰侜予美，心焉惕惕。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00236",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 557,
+    "poemNoStr": "557",
+    "title": {
+      "zh": "〈月出〉",
+      "ko": "월출"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "月出皎兮，佼人僚兮，舒窈糾兮，勞心悄兮。 / 月出皓兮，佼人懰兮，舒懮受兮，勞心慅兮。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00237",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 558,
+    "poemNoStr": "558",
+    "title": {
+      "zh": "〈株林〉",
+      "ko": "주림"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "胡為乎株林？從夏南。匪適株林，從夏南。 / 駕我乘馬，說于株野。乘我乘駒，朝食于株。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00238",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 559,
+    "poemNoStr": "559",
+    "title": {
+      "zh": "〈澤陂〉",
+      "ko": "택피"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "彼澤之陂，有蒲與荷。有美一人，傷如之何。寤寐無為，涕泗滂沱。 / 彼澤之陂，有蒲與蕑。有美一人，碩大且卷。寤寐無為，中心悁悁。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00239",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 560,
+    "poemNoStr": "560",
+    "title": {
+      "zh": "〈素冠〉",
+      "ko": "소관"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "庶見素冠兮，棘人欒欒兮，勞心慱慱兮。 / 庶見素衣兮，我心傷悲兮，聊與子同歸兮。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00240",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 561,
+    "poemNoStr": "561",
+    "title": {
+      "zh": "〈隰有萇楚〉",
+      "ko": "습유장초 (隰有萇楚)"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "隰有萇楚，猗儺其枝。夭之沃沃，樂子之無知。 / 隰有萇楚，猗儺其華。夭之沃沃，樂子之無家。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00241",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 562,
+    "poemNoStr": "562",
+    "title": {
+      "zh": "〈匪風〉",
+      "ko": "비풍"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "匪風發兮，匪車偈兮。顧瞻周道，中心怛兮。 / 匪風飄兮，匪車嘌兮。顧瞻周道，中心弔兮。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00242",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 563,
+    "poemNoStr": "563",
+    "title": {
+      "zh": "〈蜉蝣〉",
+      "ko": "부유"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "蜉蝣之羽，衣裳楚楚。心之憂矣，於我歸處。 / 蜉蝣之翼，采采衣服。心之憂矣，於我歸息。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00243",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 564,
+    "poemNoStr": "564",
+    "title": {
+      "zh": "〈候人〉",
+      "ko": "후인"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "彼候人兮，何戈與祋。彼其之子，三百赤芾。 / 維鵜在梁，不濡其翼。彼其之子，不稱其服。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00244",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 565,
+    "poemNoStr": "565",
+    "title": {
+      "zh": "〈鳲鳩〉",
+      "ko": "시구"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "鳲鳩在桑 其子七兮 淑人君子 其儀一兮 其儀一兮 心如結兮 / 鳲鳩在桑 其子在梅 淑人君子 其帶伊絲 其帶伊絲 其弁伊騏",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00245",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 566,
+    "poemNoStr": "566",
+    "title": {
+      "zh": "〈下泉〉",
+      "ko": "하천"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "洌彼下泉，浸彼苞稂。愾我寤嘆，念彼周京。 / 洌彼下泉，浸彼苞蕭。愾我寤嘆，念彼京周。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00246",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 567,
+    "poemNoStr": "567",
+    "title": {
+      "zh": "〈七月〉",
+      "ko": "칠월"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "七月流火，九月授衣。一之日觱發，二之日栗烈。 / 無衣無褐，何以卒歲？三之日于耜，四之日舉趾。同我婦子，饁彼南畝。田畯至喜。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00247",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 568,
+    "poemNoStr": "568",
+    "title": {
+      "zh": "〈鴟鴞〉",
+      "ko": "치효"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "鴟鴞鴟鴞，既取我子，無毀我室！恩斯勤斯，鬻子之閔斯。 / 迨天之未陰雨，徹彼桑土。綢繆牖戶。今女下民，或敢侮予。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00248",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 569,
+    "poemNoStr": "569",
+    "title": {
+      "zh": "〈東山〉",
+      "ko": "동산"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "我徂東山，慆慆不歸。我來自東，零雨其濛。我東曰歸，我心西悲。 / 制彼裳衣，勿士行枚。蜎蜎者蠋，烝在桑野。敦彼獨宿，亦在車下。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00249",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 570,
+    "poemNoStr": "570",
+    "title": {
+      "zh": "〈破斧〉",
+      "ko": "파부"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "既破我斧，又缺我斨。周公東征，四國是皇。哀我人斯，亦孔之將。 / 既破我斧，又缺我錡。周公東征，四國是吪。哀我人斯，亦孔之嘉。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00250",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 571,
+    "poemNoStr": "571",
+    "title": {
+      "zh": "〈伐柯〉",
+      "ko": "벌가"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "伐柯如何？匪斧不克。取妻如何？匪媒不得。 / 伐柯伐柯，其則不遠。我覯之子？籩豆有踐。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00251",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 572,
+    "poemNoStr": "572",
+    "title": {
+      "zh": "〈九罭〉",
+      "ko": "구역"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "九罭之魚，鱒魴。我覯之子，袞衣繡裳。 / 鴻飛遵渚，公歸無所。於女信處。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00252",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 573,
+    "poemNoStr": "573",
+    "title": {
+      "zh": "〈狼跋〉",
+      "ko": "랑발"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "狼跋其胡，載疐其尾。公孫碩膚，赤舄几几。 / 狼疐其尾，載跋其胡。公孫碩膚，德音不瑕。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00253",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 574,
+    "poemNoStr": "574",
+    "title": {
+      "zh": "〈鹿鳴〉",
+      "ko": "녹명"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "呦呦鹿鳴，食野之苹。我有嘉賓，鼓瑟吹笙。 / 吹笙鼓簧，承筐是將。人之好我，示我周行。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00254",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 575,
+    "poemNoStr": "575",
+    "title": {
+      "zh": "〈四牡〉",
+      "ko": "사모"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "四牡騑騑，周道倭遲。豈不懷歸？王事靡盬，我心傷悲。 / 四牡騑騑，嘽嘽駱馬。豈不懷歸？王事靡盬，不遑啟處。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00255",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 576,
+    "poemNoStr": "576",
+    "title": {
+      "zh": "〈皇皇者華〉",
+      "ko": "황황자화"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "皇皇者華，于彼原隰。駪駪征夫，每懷靡及。 / 我馬維駒，六轡如濡。載馳載驅，周爰咨諏。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00256",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 577,
+    "poemNoStr": "577",
+    "title": {
+      "zh": "〈常棣〉",
+      "ko": "상체"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "常棣之華，鄂不韡韡。凡今之人，莫如兄弟。 / 死喪之威，兄弟孔懷。原隰裒矣，兄弟求矣。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00257",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 578,
+    "poemNoStr": "578",
+    "title": {
+      "zh": "〈伐木〉",
+      "ko": "벌목"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "伐木丁丁，鳥鳴嚶嚶。出自幽谷，遷于喬木。嚶其鳴矣，求其友聲。 / 相彼鳥矣，猶求友聲。矧伊人矣，不求友生。神之聽之，終和且平。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00258",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 579,
+    "poemNoStr": "579",
+    "title": {
+      "zh": "〈天保〉",
+      "ko": "천보"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "天保定爾，亦孔之固。俾爾單厚，何福不除？俾爾多益，以莫不庶。 / 天保定爾，俾爾戩穀。罄無不宜，受天百祿。降爾遐福，維日不足。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00259",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 580,
+    "poemNoStr": "580",
+    "title": {
+      "zh": "〈采薇〉",
+      "ko": "채미"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "采薇采薇，薇亦作止。曰歸曰歸，歲亦莫止。 / 靡室靡家，玁狁之故。不遑啟居，玁狁之故。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00260",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 581,
+    "poemNoStr": "581",
+    "title": {
+      "zh": "〈出車〉",
+      "ko": "출차"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "我出我車，于彼牧矣。自天子所，謂我來矣。 / 召彼僕夫，謂之載矣。王事多難，維其棘矣。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00261",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 582,
+    "poemNoStr": "582",
+    "title": {
+      "zh": "〈魚麗〉",
+      "ko": "어리"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "魚麗于罶，鱨鯊。君子有酒，旨且多。 / 魚麗于罶，魴鱧。君子有酒，多且旨。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00262",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 583,
+    "poemNoStr": "583",
+    "title": {
+      "zh": "〈白華〉",
+      "ko": "백화"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "白華菅兮，白茅束兮。之子之遠，俾我獨兮。 / 英英白雲，露彼菅茅。天步艱難，之子不猶。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00263",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 584,
+    "poemNoStr": "584",
+    "title": {
+      "zh": "〈南有嘉魚〉",
+      "ko": "남유가어"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "南有嘉魚，烝然罩罩。君子有酒，嘉賓式燕以樂。 / 南有嘉魚，烝然汕汕。君子有酒，嘉賓式燕以衎。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00264",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 585,
+    "poemNoStr": "585",
+    "title": {
+      "zh": "〈南山有臺〉",
+      "ko": "남산유대"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "南山有臺，北山有萊。樂只君子，邦家之基。樂只君子，萬壽無期。 / 南山有桑，北山有楊。樂只君子，邦家之光。樂只君子，萬壽無疆。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00265",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 586,
+    "poemNoStr": "586",
+    "title": {
+      "zh": "〈蓼蕭〉",
+      "ko": "료소"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "蓼彼蕭斯，零露湑兮。既見君子，我心寫兮。燕笑語兮，是以有譽處兮。 / 蓼彼蕭斯，零露瀼瀼。既見君子，為龍為光。其德不爽，壽考不忘。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00266",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 587,
+    "poemNoStr": "587",
+    "title": {
+      "zh": "〈湛露〉",
+      "ko": "담로"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "湛湛露斯，匪陽不晞。厭厭夜飲，不醉無歸。 / 湛湛露斯，在彼豐草。厭厭夜飲，在宗載考。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00267",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 588,
+    "poemNoStr": "588",
+    "title": {
+      "zh": "〈彤弓〉",
+      "ko": "동궁"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "彤弓弨兮，受言藏之。我有嘉賓，中心貺之。鐘鼓既設，一朝饗之。 / 彤弓弨兮，受言載之。我有嘉賓，中心喜之。鐘鼓既設，一朝右之。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00268",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 589,
+    "poemNoStr": "589",
+    "title": {
+      "zh": "〈菁菁者莪〉",
+      "ko": "청청자아"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "菁菁者莪，在彼中阿，既見君子，樂且有儀。 / 菁菁者莪，在彼中沚，既見君子，我心則喜。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00269",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 590,
+    "poemNoStr": "590",
+    "title": {
+      "zh": "〈蓼莪〉",
+      "ko": "요아"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "蓼蓼者莪，匪莪伊蒿。 / 哀哀父母，生我劬勞。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00270",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 591,
+    "poemNoStr": "591",
+    "title": {
+      "zh": "〈六月〉",
+      "ko": "유월"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "六月棲棲，戎車既飭。四牡騤騤，載是常服。 / 玁狁孔熾，我是用急。王于出征，以匡王國。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00271",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 592,
+    "poemNoStr": "592",
+    "title": {
+      "zh": "〈采芑〉",
+      "ko": "채기"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "薄言采芑，于彼新田，于此菑畝。 / 方叔涖止，其車三千，師乾之試。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00272",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 593,
+    "poemNoStr": "593",
+    "title": {
+      "zh": "〈車攻〉",
+      "ko": "차공"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "我車既攻，我馬既同。四牡龐龐，駕言徂東。 / 田車既好，四牡孔阜。東有甫草，駕言行狩。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00273",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 594,
+    "poemNoStr": "594",
+    "title": {
+      "zh": "〈吉日〉",
+      "ko": "길일"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "吉日維戊，既伯既禱。田車既好，四牡孔阜。升彼大阜，從其羣醜。 / 吉日庚午，既差我馬。獸之所同，麀鹿麌麌。漆沮之從，天子之所。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00274",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 595,
+    "poemNoStr": "595",
+    "title": {
+      "zh": "〈鴻鴈〉",
+      "ko": "홍안"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "鴻鴈于飛，肅肅其羽。之子于征，劬勞于野。爰及矜人，哀此鰥寡。 / 鴻鴈于飛，集于中澤。之子于垣，百堵皆作。雖則劬勞，其究安宅。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00275",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 596,
+    "poemNoStr": "596",
+    "title": {
+      "zh": "〈庭燎〉",
+      "ko": "정료"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "夜如何其？夜未央。庭燎之光，君子至止，鸞聲將將。 / 夜如何其？夜未艾。庭燎晣晣，君子至止，鸞聲噦噦。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00276",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 597,
+    "poemNoStr": "597",
+    "title": {
+      "zh": "〈沔水〉",
+      "ko": "면수"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "沔彼流水，朝宗于海。鴥彼飛隼，載飛載止。 / 嗟我兄弟，邦人諸友。莫肯念亂，誰無父母？",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00277",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 598,
+    "poemNoStr": "598",
+    "title": {
+      "zh": "〈鶴鳴〉",
+      "ko": "학명"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "鶴鳴于九皐，聲聞于野。魚潛在淵，或在于渚。 / 樂彼之園，爰有樹檀，其下維蘀。他山之石，可以為錯。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00278",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 599,
+    "poemNoStr": "599",
+    "title": {
+      "zh": "〈祈父〉",
+      "ko": "기부"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "祈父！予王之爪牙，胡轉予于恤？靡所止居。 / 祈父！予王之爪士，胡轉予于恤？靡所厎止。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00279",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 600,
+    "poemNoStr": "600",
+    "title": {
+      "zh": "〈白駒〉",
+      "ko": "백구"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "皎皎白駒，食我場苗。縶之維之，以永今朝。所謂伊人，於焉逍遙。 / 皎皎白駒，食我場藿。縶之維之，以永今夕。所謂伊人，於焉嘉客。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00280",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 601,
+    "poemNoStr": "601",
+    "title": {
+      "zh": "〈我行其野〉",
+      "ko": "아행기야"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "我行其野，蔽芾其樗。昏姻之故，言就爾居。爾不我畜，復我邦家。 / 我行其野，言采其蓫。昏姻之故，言就爾宿。爾不我畜，言歸斯復。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00281",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 602,
+    "poemNoStr": "602",
+    "title": {
+      "zh": "〈斯乾〉",
+      "ko": "사간"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "秩秩斯乾，幽幽南山。如竹苞矣，如松茂矣。 / 兄及弟矣，式相好矣，無相猶矣。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00282",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 603,
+    "poemNoStr": "603",
+    "title": {
+      "zh": "〈無羊〉",
+      "ko": "무양"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "誰謂爾無羊？三百維羣。誰謂爾無牛？九十其犉。 / 爾羊來思，其角濈濈，爾牛來思，其耳濕濕。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00283",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 604,
+    "poemNoStr": "604",
+    "title": {
+      "zh": "〈大東〉",
+      "ko": "대동"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "有饛簋飧，有捄棘匕。周道如砥，其直如矢。 / 君子所履，小人所視。睠言顧之，澘焉出涕。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00284",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 605,
+    "poemNoStr": "605",
+    "title": {
+      "zh": "〈四月〉",
+      "ko": "사월"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "四月維夏，六月徂暑。先祖匪人？胡寧忍予？ / 秋日淒淒，百卉具腓。亂離瘼矣，爰其適歸？",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00285",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 606,
+    "poemNoStr": "606",
+    "title": {
+      "zh": "〈北山〉",
+      "ko": "북산"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "陟彼北山，言采其杞。偕偕士子，朝夕從事。王事靡盬，憂我父母。 / 溥天之下，莫非王土。率土之濱，莫非王臣。大夫不均，我從事獨賢。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00286",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 607,
+    "poemNoStr": "607",
+    "title": {
+      "zh": "〈無將大車〉",
+      "ko": "무장대거"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "無將大車，祇自塵兮。無思百憂，祇自疷兮。 / 無將大車，維塵冥冥。無思百憂，不出于熲。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00287",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 608,
+    "poemNoStr": "608",
+    "title": {
+      "zh": "〈小明〉",
+      "ko": "소명"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "明明上天，照臨下土。我征徂西，至于艽野。二月初吉，載離寒暑。 / 心之憂矣，其毒大苦。念彼共人，涕零如雨。豈不懷歸？畏此罪罟。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00288",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 609,
+    "poemNoStr": "609",
+    "title": {
+      "zh": "〈鼓鍾〉",
+      "ko": "고종"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "鼓鍾將將，淮水湯湯。憂心且傷。淑人君子，懷允不忘。 / 鼓鍾喈喈，淮水湝湝。憂心且悲。淑人君子，其德不回。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00289",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 610,
+    "poemNoStr": "610",
+    "title": {
+      "zh": "〈楚茨〉",
+      "ko": "초자"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "楚楚者茨，言抽其棘。自昔何為？我蓺黍稷。 / 我黍與與，我稷翼翼。我倉既盈，我庾維億。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00290",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 611,
+    "poemNoStr": "611",
+    "title": {
+      "zh": "〈信南山〉",
+      "ko": "신남산 (信南山)"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "信彼南山，維禹甸之。畇畇原隰，曾孫田之。我疆我理，南東其畝。 / 上天同雲，雨雪雰雰。益之以霢霂，既優既渥。既霑既足，生我百穀。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00291",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 612,
+    "poemNoStr": "612",
+    "title": {
+      "zh": "〈大田〉",
+      "ko": "대전"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "大田多稼，既種既戒。既備乃事，以我覃耜。 / 俶載南畝，播厥百穀。既庭且碩，曾孫是若。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00292",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 613,
+    "poemNoStr": "613",
+    "title": {
+      "zh": "〈瞻彼洛矣〉",
+      "ko": "첨피락의"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "瞻彼洛矣，維水泱泱。君子至止，福祿如茨。韎韐有奭，以作六師。 / 瞻彼洛矣，維水泱泱。君子至止，鞸琫有珌。君子萬年，保其家室。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00293",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 614,
+    "poemNoStr": "614",
+    "title": {
+      "zh": "〈裳裳者華〉",
+      "ko": "상상자화"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "裳裳者華，其葉湑兮。我覯之子，我心寫兮。我心寫兮，是以有譽處兮。 / 裳裳者華，芸其黃矣。我覯之子，維其有章矣。維其有章矣，是以有慶矣。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00294",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 615,
+    "poemNoStr": "615",
+    "title": {
+      "zh": "〈桑扈〉",
+      "ko": "상호"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "交交桑扈，有鶯其羽。君子樂胥，受天之祜。 / 交交桑扈，有鶯其領。君子樂胥，萬邦之屏。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00295",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 616,
+    "poemNoStr": "616",
+    "title": {
+      "zh": "〈鴛鴦〉",
+      "ko": "원앙"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "鴛鴦于飛，畢之羅之。君子萬年，福祿宜之。 / 鴛鴦在梁，戢其左翼。君子萬年，宜其遐福。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00296",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 617,
+    "poemNoStr": "617",
+    "title": {
+      "zh": "〈頍弁〉",
+      "ko": "규변"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "有頍者弁，實維伊何？爾酒既旨，爾殽既嘉。 / 豈伊異人？兄弟匪他。蔦與女蘿，施于松柏。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00297",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 618,
+    "poemNoStr": "618",
+    "title": {
+      "zh": "〈車舝〉",
+      "ko": "차할"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "閒關車之舝兮，思孌季女逝兮。匪飢匪渴，德音來括。雖無好友，式燕且喜。 / 依彼平林，有集維鷮。辰彼碩女，令德來教。式燕且譽，好爾無射。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00298",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 619,
+    "poemNoStr": "619",
+    "title": {
+      "zh": "〈青蠅〉",
+      "ko": "청승"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "營營青蠅，止於樊。豈弟君子，無信讒言。 / 營營青蠅，止于棘。讒人罔極，交亂四國。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00299",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
+  },
+  {
+    "titleId": "cnpreqin-3fcc3c660d5a7a4d",
+    "poemNo": 620,
+    "poemNoStr": "620",
+    "title": {
+      "zh": "〈賓之初筵〉",
+      "ko": "빈지초연"
+    },
+    "poet": {
+      "zh": "詩經",
+      "ko": ""
+    },
+    "juan": "先秦",
+    "category": "cnpt-shijing",
+    "meter": null,
+    "preview": "賓之初筵，左右秩秩，籩豆有楚，殽核維旅。 / 酒既和旨，飲酒孔偕，鐘鼓既設，舉醻逸逸。",
+    "sourceMeta": {
+      "collection": "cn-translation-gemini-cli-v2",
+      "queueId": "CN-TR-00300",
+      "eraSlug": "pre-qin",
+      "batch": "pre-tang-classic-index"
+    }
   }
 ]
