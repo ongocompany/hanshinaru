@@ -13,14 +13,16 @@ author: 지훈
 
 # 번역 담당 결정
 
-1차 번역 담당은 `Gemini API`의 `gemini-2.5-flash-lite`로 둔다.
+1차 번역 담당은 `Gemini CLI`의 Google 로그인 구독 quota를 쓰는 `gemini-2.5-flash-lite`로 둔다.
 
 이유:
 
-- `jds/pipeline`에 이미 `gemini` backend가 구현되어 있다.
+- 형님이 이미 Gemini 구독을 사용 중이라 API key 방식은 이중 지출이 된다.
+- Gemini CLI는 Google 계정 로그인 방식으로 구독 quota를 사용할 수 있다.
 - 기존 `pipeline/translate/prompts/v5_full.txt`가 번역, 독음, 주석, 해설 JSON을 한 번에 받는 구조다.
-- Google 공식 Gemini API 가격표 기준 `gemini-2.5-flash-lite`는 대량 처리용 저비용 모델이며 Batch API도 지원한다.
+- `gemini-2.5-flash-lite`는 대량 초벌 처리용으로 가장 가볍게 쓸 수 있는 Gemini 계열이다.
 - 전면 공개 전 초벌 번역을 많이 생산한 뒤 검수하는 흐름에 맞다.
+- API batch보다 느리므로, JSONL 결과 파일에 성공분을 누적 저장하고 중단 시 이어서 실행한다.
 
 정밀 검수나 대표작 보강은 나중에 상위 모델로 재번역/비평하는 2차 패스로 분리한다.
 
@@ -30,6 +32,7 @@ author: 지훈
 - report: `docs/spec/cn-translation-pipeline-staging.report.v1.json`
 - JDS SQL chunks: `docs/spec/cn-translation-pipeline-staging.jds-upsert/`
 - builder: `scripts/build_cn_translation_pipeline_staging.mjs`
+- Gemini CLI runner: `scripts/run_cn_translation_gemini_cli.mjs`
 
 # 현재 queue
 
@@ -81,6 +84,7 @@ done
 # 다음 작업
 
 1. SQL의 마지막 `ROLLBACK`을 적용용 복사본에서만 `COMMIT`으로 바꿔 JDS에 적재한다.
-2. JDS 설정은 `JDS_TRANSLATION_BACKEND=gemini`, `JDS_TRANSLATION_MODEL=gemini-2.5-flash-lite`, `JDS_TRANSLATION_PROMPT_PATH=pipeline/translate/prompts/v5_full.txt`로 둔다.
-3. 먼저 `limit=10` 정도로 smoke 번역을 돌리고 JSON 파싱/해설 품질을 검토한다.
-4. 문제가 없으면 `volume=0`, quality별 또는 limit chunk로 대량 실행한다.
+2. 먼저 터미널에서 `gemini`를 한 번 실행해 Google 계정 로그인을 완료한다.
+3. `npm run cn:translate:gemini-cli -- --limit 10`으로 smoke 번역을 돌리고 JSON 파싱/해설 품질을 검토한다.
+4. 문제가 없으면 `--limit`과 `--era` 또는 `--batch`를 조합해 대량 실행한다.
+5. 결과는 `docs/spec/cn-translation-results.gemini-cli.v1.jsonl`에 누적된다.
