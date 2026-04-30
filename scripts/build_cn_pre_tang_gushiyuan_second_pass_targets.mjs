@@ -17,6 +17,7 @@ for (const page of pages) {
     if (shouldSkipTransclusion(page, title)) continue;
     candidates.push(buildCandidate(page, title, 'transclusion-target'));
   }
+  if (transcludedTitles.length && page.rawTitle !== '悲歌') continue;
 
   const explicitTarget = explicitTargetFor(page);
   if (explicitTarget) {

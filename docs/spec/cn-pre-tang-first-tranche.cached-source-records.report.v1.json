@@ -1,6 +1,6 @@
 {
   "batchId": "cn-pre-tang-first-tranche-cached-sources",
-  "generatedAt": "2026-04-30T06:49:31.437Z",
+  "generatedAt": "2026-04-30T06:55:36.823Z",
   "source": "/Users/jinwoo/Documents/development/hanshinaru/docs/spec/cn-non-tang-tranche1.sources.raw.json",
   "summary": {
     "sourcePages": 10,
@@ -32,12 +32,12 @@
       }
     },
     "gushiYuanSecondPassDumpPages": {
-      "inputPages": 101,
+      "inputPages": 98,
       "fetchedOk": 28,
       "extractedRecords": 28,
-      "skippedWithoutBody": 73,
+      "skippedWithoutBody": 70,
       "skippedByReason": {
-        "dump-fetch-missing": 73
+        "dump-fetch-missing": 70
       }
     }
   },
@@ -280,27 +280,6 @@
       "normalizedTitle": "古歌",
       "authorHint": "樂府歌辭",
       "sourceSection": "卷三漢詩",
-      "reason": "dump-fetch-missing"
-    },
-    {
-      "rawTitle": "古詩十九首 (佚名)",
-      "normalizedTitle": "古詩十九首",
-      "authorHint": "佚名",
-      "sourceSection": "卷四漢詩",
-      "reason": "dump-fetch-missing"
-    },
-    {
-      "rawTitle": "古詩十九首 (古辞)",
-      "normalizedTitle": "古詩十九首",
-      "authorHint": "佚名",
-      "sourceSection": "卷四漢詩",
-      "reason": "dump-fetch-missing"
-    },
-    {
-      "rawTitle": "古詩十九首 (古辭)",
-      "normalizedTitle": "古詩十九首",
-      "authorHint": "佚名",
-      "sourceSection": "卷四漢詩",
       "reason": "dump-fetch-missing"
     },
     {

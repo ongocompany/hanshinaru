@@ -2,17 +2,17 @@
   "version": "2026-04-30.v1",
   "batchId": "cn-pre-tang-gushiyuan-second-pass-targets",
   "source": "/Users/jinwoo/Documents/development/hanshinaru/docs/spec/cn-pre-tang-gushiyuan-link-pages.dump.raw.v1.json",
-  "generatedAt": "2026-04-30T06:46:09.866Z",
+  "generatedAt": "2026-04-30T06:52:07.754Z",
   "summary": {
-    "selected": 101,
-    "unresolved": 17,
+    "selected": 98,
+    "unresolved": 16,
     "byReason": {
       "transclusion-target": 19,
-      "broad-unresolved-title-probe": 72,
+      "broad-unresolved-title-probe": 69,
       "explicit-disambiguation-target": 10
     },
     "unresolvedByReason": {
-      "ambiguous-disambiguation-without-safe-target": 15,
+      "ambiguous-disambiguation-without-safe-target": 14,
       "dump-title-resolved-to-non-han-author": 1,
       "wrong-era-transclusion-index": 1
     }
@@ -264,45 +264,6 @@
       "sourceLinkHref": "/wiki/%E5%8F%A4%E8%A9%A9%E5%8D%81%E4%B9%9D%E9%A6%96",
       "originRawTitle": "古詩十九首",
       "reason": "transclusion-target"
-    },
-    {
-      "eraSlug": "han",
-      "priority": "gushiyuan-second-pass",
-      "rawTitle": "古詩十九首 (佚名)",
-      "normalizedTitle": "古詩十九首",
-      "authorHint": "佚名",
-      "sourcePageTitle": "古詩源",
-      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%A4%E8%A9%A9%E5%8D%81%E4%B9%9D%E9%A6%96",
-      "sourceSection": "卷四漢詩",
-      "sourceLinkHref": "/wiki/%E5%8F%A4%E8%A9%A9%E5%8D%81%E4%B9%9D%E9%A6%96",
-      "originRawTitle": "古詩十九首",
-      "reason": "broad-unresolved-title-probe"
-    },
-    {
-      "eraSlug": "han",
-      "priority": "gushiyuan-second-pass",
-      "rawTitle": "古詩十九首 (古辭)",
-      "normalizedTitle": "古詩十九首",
-      "authorHint": "佚名",
-      "sourcePageTitle": "古詩源",
-      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%A4%E8%A9%A9%E5%8D%81%E4%B9%9D%E9%A6%96",
-      "sourceSection": "卷四漢詩",
-      "sourceLinkHref": "/wiki/%E5%8F%A4%E8%A9%A9%E5%8D%81%E4%B9%9D%E9%A6%96",
-      "originRawTitle": "古詩十九首",
-      "reason": "broad-unresolved-title-probe"
-    },
-    {
-      "eraSlug": "han",
-      "priority": "gushiyuan-second-pass",
-      "rawTitle": "古詩十九首 (古辞)",
-      "normalizedTitle": "古詩十九首",
-      "authorHint": "佚名",
-      "sourcePageTitle": "古詩源",
-      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8F%A4%E8%A9%A9%E5%8D%81%E4%B9%9D%E9%A6%96",
-      "sourceSection": "卷四漢詩",
-      "sourceLinkHref": "/wiki/%E5%8F%A4%E8%A9%A9%E5%8D%81%E4%B9%9D%E9%A6%96",
-      "originRawTitle": "古詩十九首",
-      "reason": "broad-unresolved-title-probe"
     },
     {
       "eraSlug": "han",
@@ -1333,13 +1294,6 @@
     }
   ],
   "unresolved": [
-    {
-      "rawTitle": "古詩十九首",
-      "normalizedTitle": "古詩十九首",
-      "authorHint": "佚名",
-      "sourceSection": "卷四漢詩",
-      "reason": "ambiguous-disambiguation-without-safe-target"
-    },
     {
       "rawTitle": "雜詩",
       "normalizedTitle": "雜詩",
