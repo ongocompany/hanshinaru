@@ -148,15 +148,35 @@ function callGeminiCli({ prompt, model, timeoutMs }) {
   return new Promise((resolveCall) => {
     const startedAt = Date.now();
     let settled = false;
+    let timedOut = false;
+    let closed = false;
     const child = spawn('gemini', ['--model', model, '--prompt', prompt, '--output-format', 'text'], {
       stdio: ['ignore', 'pipe', 'pipe'],
       env: process.env,
+      detached: true,
     });
 
     let stdout = '';
     let stderr = '';
+    let killTimer = null;
+    const killChild = (signal) => {
+      if (!child.pid) return;
+      try {
+        process.kill(-child.pid, signal);
+      } catch {
+        try {
+          child.kill(signal);
+        } catch {
+          // The process may already be gone.
+        }
+      }
+    };
     const timer = setTimeout(() => {
-      child.kill('SIGTERM');
+      timedOut = true;
+      killChild('SIGTERM');
+      killTimer = setTimeout(() => {
+        killChild('SIGKILL');
+      }, 10000);
     }, timeoutMs);
 
     child.stdout.setEncoding('utf8');
@@ -165,18 +185,22 @@ function callGeminiCli({ prompt, model, timeoutMs }) {
       stdout += chunk;
       if (!settled && stdout.includes('Opening authentication page in your browser')) {
         settled = true;
-        child.kill('SIGTERM');
+        killChild('SIGTERM');
       }
     });
     child.stderr.on('data', (chunk) => {
       stderr += chunk;
     });
     child.on('close', (code, signal) => {
+      if (closed) return;
+      closed = true;
       clearTimeout(timer);
+      if (killTimer) clearTimeout(killTimer);
       resolveCall({
         code,
         signal,
         authRequired: stdout.includes('Opening authentication page in your browser'),
+        timedOut,
         stdout: stdout.trim(),
         stderr: stderr.trim(),
         elapsedMs: Date.now() - startedAt,
@@ -252,7 +276,7 @@ async function main() {
       console.log(`[${index + 1}/${selected.length}] ${record.queueId} ${record.authorZh} ${record.titleZh} attempt=${attempt}`);
       const result = await callGeminiCli({ prompt, model: args.model, timeoutMs: args.timeoutMs });
       const parsed = extractJson(result.stdout);
-      const status = result.code === 0 && parsed ? 'ok' : result.authRequired ? 'auth_required' : 'error';
+      const status = result.code === 0 && parsed ? 'ok' : result.authRequired ? 'auth_required' : result.timedOut ? 'timeout' : 'error';
       const row = {
         ...baseRow,
         attempt,
@@ -262,6 +286,7 @@ async function main() {
         cliExitCode: result.code,
         cliSignal: result.signal,
         authRequired: result.authRequired,
+        timedOut: result.timedOut,
         parsed,
         raw: result.stdout,
         stderr: result.stderr,
