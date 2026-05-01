@@ -22,6 +22,7 @@ function parseArgs(argv) {
     schemaPath: DEFAULT_SCHEMA_PATH,
     outputPath: DEFAULT_OUTPUT_PATH,
     model: DEFAULT_MODEL,
+    reasoningEffort: 'xhigh',
     limit: 1,
     start: 0,
     timeoutMs: 300000,
@@ -49,6 +50,7 @@ function parseArgs(argv) {
     else if (arg === '--batch-schema') args.batchSchemaPath = next();
     else if (arg === '--output') args.outputPath = next();
     else if (arg === '--model') args.model = next();
+    else if (arg === '--reasoning-effort') args.reasoningEffort = next();
     else if (arg === '--limit') args.limit = Number.parseInt(next(), 10);
     else if (arg === '--start') args.start = Number.parseInt(next(), 10);
     else if (arg === '--timeout-ms') args.timeoutMs = Number.parseInt(next(), 10);
@@ -88,6 +90,7 @@ Options:
   --queue-id ID      Process one exact queueId
   --output PATH      Output JSONL path
   --model MODEL      Codex model. Default: ${DEFAULT_MODEL}
+  --reasoning-effort low|medium|high|xhigh. Default: xhigh
   --group-size N     Translate N records per Codex call. Default: 1
   --dry-run          Print selected records without calling Codex
 `);
@@ -200,6 +203,7 @@ function validateParsed(parsed) {
   if (typeof parsed.title_ko !== 'string' || !parsed.title_ko.trim()) return 'missing-title_ko';
   if (typeof parsed.translation !== 'string' || !parsed.translation.trim()) return 'missing-translation';
   if (typeof parsed.reading !== 'string' || !parsed.reading.trim()) return 'missing-reading';
+  if (/[\u3400-\u9fff]/.test(parsed.reading)) return 'reading-contains-hanzi';
   if (typeof parsed.commentary !== 'string' || !parsed.commentary.trim()) return 'missing-commentary';
   if (!Array.isArray(parsed.notes)) return 'notes-not-array';
   const commentaryChars = [...parsed.commentary].length;
@@ -237,7 +241,7 @@ function parseBatchResults(raw) {
   return null;
 }
 
-async function callCodexCli({ prompt, model, schemaPath, timeoutMs }) {
+async function callCodexCli({ prompt, model, schemaPath, timeoutMs, reasoningEffort }) {
   const workDir = await mkdtemp(resolve(tmpdir(), 'hanshinaru-codex-cn-'));
   const outputPath = resolve(workDir, 'last-message.json');
   const startedAt = Date.now();
@@ -253,6 +257,8 @@ async function callCodexCli({ prompt, model, schemaPath, timeoutMs }) {
       '--ignore-rules',
       '--model',
       model,
+      '--config',
+      `model_reasoning_effort="${reasoningEffort}"`,
       '--cd',
       process.cwd(),
       '--sandbox',
@@ -377,7 +383,13 @@ async function main() {
       let savedGroup = false;
       for (let attempt = 1; attempt <= args.retry; attempt += 1) {
         console.log(`[group ${groupIndex + 1}/${groups.length}] ${group.map((r) => r.queueId).join(',')} attempt=${attempt}`);
-        const result = await callCodexCli({ prompt, model: args.model, schemaPath: batchSchemaPath, timeoutMs: args.timeoutMs });
+        const result = await callCodexCli({
+          prompt,
+          model: args.model,
+          schemaPath: batchSchemaPath,
+          timeoutMs: args.timeoutMs,
+          reasoningEffort: args.reasoningEffort,
+        });
         const batchResults = parseBatchResults(result.finalText);
         const resultById = new Map((batchResults || []).map((item) => [item.queueId, item]));
         const missingIds = [...expectedIds].filter((id) => !resultById.has(id));
@@ -485,7 +497,13 @@ async function main() {
 
     for (let attempt = 1; attempt <= args.retry; attempt += 1) {
       console.log(`[${index + 1}/${selected.length}] ${record.queueId} ${record.authorZh} ${record.titleZh} attempt=${attempt}`);
-      const result = await callCodexCli({ prompt, model: args.model, schemaPath, timeoutMs: args.timeoutMs });
+      const result = await callCodexCli({
+        prompt,
+        model: args.model,
+        schemaPath,
+        timeoutMs: args.timeoutMs,
+        reasoningEffort: args.reasoningEffort,
+      });
       const parsed = extractJson(result.finalText);
       const validationError = validateParsed(parsed);
       const status = result.code === 0 && !validationError ? 'ok' : result.timedOut ? 'timeout' : 'error';
