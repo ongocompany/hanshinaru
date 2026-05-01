@@ -1,6 +1,6 @@
 {
   "createdAt": "2026-02-09T10:38:04.515Z",
-  "count": 97,
+  "count": 271,
   "authors": {
     "C328": {
       "titleId": "C328",
@@ -3471,7 +3471,5053 @@
         "country": "CN",
         "batch": "pre-tang-classic-index"
       }
+    },
+    "cnpreqin-7ffd49878d637ea2": {
+      "titleId": "cnpreqin-7ffd49878d637ea2",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B9%9D%E6%AD%8E",
+      "name": {
+        "zh": "劉向",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "pre-qin",
+        "label": "先秦",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "pre-tang-classic-index"
+      }
+    },
+    "cnpreqin-5d5d2c304cffbc05": {
+      "titleId": "cnpreqin-5d5d2c304cffbc05",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B9%9D%E6%80%9D",
+      "name": {
+        "zh": "王逸",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "pre-qin",
+        "label": "先秦",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "pre-tang-classic-index"
+      }
+    },
+    "cnpreqin-f48dff99e660bf88": {
+      "titleId": "cnpreqin-f48dff99e660bf88",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%8B%9B%E9%9A%B1%E5%A3%AB",
+      "name": {
+        "zh": "淮南小山",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "pre-qin",
+        "label": "先秦",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "pre-tang-classic-index"
+      }
+    },
+    "cnpreqin-987737189eb9dcd1": {
+      "titleId": "cnpreqin-987737189eb9dcd1",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B9%9D%E8%BE%AF",
+      "name": {
+        "zh": "宋玉",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "pre-qin",
+        "label": "先秦",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "pre-tang-classic-index"
+      }
+    },
+    "cnpreqin-53bbb09e02a6c4bb": {
+      "titleId": "cnpreqin-53bbb09e02a6c4bb",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B9%9D%E6%87%B7",
+      "name": {
+        "zh": "王褒",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "pre-qin",
+        "label": "先秦",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "pre-tang-classic-index"
+      }
+    },
+    "cnpreqin-ad3e122891447e2c": {
+      "titleId": "cnpreqin-ad3e122891447e2c",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A5%9A%E8%BE%AD/%E4%B8%83%E8%AB%AB",
+      "name": {
+        "zh": "東方朔",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "pre-qin",
+        "label": "先秦",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "pre-tang-classic-index"
+      }
+    },
+    "cnjin-55ea8c5fa743322e": {
+      "titleId": "cnjin-55ea8c5fa743322e",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%AD%B8%E5%9C%92%E7%94%B0%E5%B1%85",
+      "name": {
+        "zh": "陶淵明",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "365-427",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "jin",
+        "label": "魏晉南北朝",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "pre-tang-tao-yuanming"
+      }
+    },
+    "candidate-song-6b50-967d-4fee": {
+      "titleId": "candidate-song-6b50-967d-4fee",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E7%94%9F%E6%9F%A5%E5%AD%90_(%E6%AD%90%E9%99%BD%E4%BF%AE)",
+      "name": {
+        "zh": "歐陽修",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-6797-900b": {
+      "titleId": "candidate-song-6797-900b",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%B1%B1%E5%9C%92%E5%B0%8F%E6%A2%85_(%E6%9E%97%E9%80%8B)",
+      "name": {
+        "zh": "林逋",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-9678-904a": {
+      "titleId": "candidate-song-9678-904a",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%A4%9C%E6%B3%8A%E6%B0%B4%E6%9D%91_(%E9%99%B8%E6%B8%B8)",
+      "name": {
+        "zh": "陸遊",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-8303-6210-5927": {
+      "titleId": "candidate-song-8303-6210-5927",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%A1%8C%E8%B7%AF%E9%9B%A3_(%E8%8C%83%E6%88%90%E5%A4%A7)",
+      "name": {
+        "zh": "范成大",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-66fe-978f": {
+      "titleId": "candidate-song-66fe-978f",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%A9%A0%E6%9F%B3_(%E6%9B%BE%E9%9E%8F)",
+      "name": {
+        "zh": "曾鞏",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-8d99-4f76": {
+      "titleId": "candidate-song-8d99-4f76",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%83%E7%B5%95_(%E8%B6%99%E4%BD%B6)",
+      "name": {
+        "zh": "趙佶",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-6b50-967d-7d93": {
+      "titleId": "candidate-song-6b50-967d-7d93",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B2%9E%E5%A5%B3%E5%B3%BD_(%E6%AD%90%E9%99%BD%E7%B6%93)",
+      "name": {
+        "zh": "歐陽經",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-5f6d-6c5d-792a": {
+      "titleId": "candidate-song-5f6d-6c5d-792a",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%A5%BF%E6%B9%96_(%E5%BD%AD%E6%B1%9D%E7%A4%AA)",
+      "name": {
+        "zh": "彭汝礪",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-8607-980c": {
+      "titleId": "candidate-song-8607-980c",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%81%9E%E8%9B%99_(%E8%98%87%E9%A0%8C)",
+      "name": {
+        "zh": "蘇頌",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-8607-6d35": {
+      "titleId": "candidate-song-8607-6d35",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%88%9D%E7%99%BC%E5%98%89%E5%B7%9E_(%E8%98%87%E6%B4%B5)",
+      "name": {
+        "zh": "蘇洵",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-90b5-96cd": {
+      "titleId": "candidate-song-90b5-96cd",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%81%B6%E6%9B%B8_(%E9%82%B5%E9%9B%8D)",
+      "name": {
+        "zh": "邵雍",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-674e-5fa9": {
+      "titleId": "candidate-song-674e-5fa9",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E7%A7%8B%E5%A4%9C%E6%9B%B2_(%E6%9D%8E%E5%BE%A9)",
+      "name": {
+        "zh": "李復",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-738b-79b9-5041": {
+      "titleId": "candidate-song-738b-79b9-5041",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E6%98%8E_(%E7%8E%8B%E7%A6%B9%E5%81%81)",
+      "name": {
+        "zh": "王禹偁",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-674e-6e05-7167": {
+      "titleId": "candidate-song-674e-6e05-7167",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E9%A1%8C%E5%85%AB%E8%A9%A0%E6%A8%93_(%E6%9D%8E%E6%B8%85%E7%85%A7)",
+      "name": {
+        "zh": "李清照",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-8607-821c-6b3d": {
+      "titleId": "candidate-song-8607-821c-6b3d",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%B0%8D%E9%85%92_(%E8%98%87%E8%88%9C%E6%AC%BD)",
+      "name": {
+        "zh": "蘇舜欽",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-6731-71b9": {
+      "titleId": "candidate-song-6731-71b9",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%A5%E6%97%A5_(%E6%9C%B1%E7%86%B9)",
+      "name": {
+        "zh": "朱熹",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-675c-8012": {
+      "titleId": "candidate-song-675c-8012",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AF%92%E5%A4%9C_(%E6%9D%9C%E8%80%92)",
+      "name": {
+        "zh": "杜耒",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-8607-8efe": {
+      "titleId": "candidate-song-8607-8efe",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%A5%E5%AE%B5_(%E8%98%87%E8%BB%BE)",
+      "name": {
+        "zh": "蘇軾",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-6797-6d2a": {
+      "titleId": "candidate-song-6797-6d2a",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%AE%E8%A9%9E_(%E6%9E%97%E6%B4%AA)",
+      "name": {
+        "zh": "林洪",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-664f-6b8a": {
+      "titleId": "candidate-song-664f-6b8a",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AF%93%E6%84%8F_(%E6%99%8F%E6%AE%8A)",
+      "name": {
+        "zh": "晏殊",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-8521-8944": {
+      "titleId": "candidate-song-8521-8944",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%8A%E5%85%83%E6%87%89%E8%A3%BD_(%E8%94%A1%E8%A5%84)",
+      "name": {
+        "zh": "蔡襄",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-738b-73ea": {
+      "titleId": "candidate-song-738b-73ea",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%8A%E5%85%83%E6%87%89%E8%A3%BD_(%E7%8E%8B%E7%8F%AA)",
+      "name": {
+        "zh": "王珪",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-9ec3-5ead-5805": {
+      "titleId": "candidate-song-9ec3-5ead-5805",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B8%85%E6%98%8E_(%E9%BB%83%E5%BA%AD%E5%A0%85)",
+      "name": {
+        "zh": "黃庭堅",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-91cb-60e0-6d2a": {
+      "titleId": "candidate-song-91cb-60e0-6d2a",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E9%9E%A6%E9%9F%86_(%E9%87%8B%E6%83%A0%E6%B4%AA)",
+      "name": {
+        "zh": "釋惠洪",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-5f35-8012": {
+      "titleId": "candidate-song-5f35-8012",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%A4%8F%E6%97%A5_(%E5%BC%B5%E8%80%92)",
+      "name": {
+        "zh": "張耒",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-7a0b-9865": {
+      "titleId": "candidate-song-7a0b-9865",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%81%B6%E6%88%90_(%E7%A8%8B%E9%A1%A5)",
+      "name": {
+        "zh": "程顥",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-50e7-5fd7-5b89": {
+      "titleId": "candidate-song-50e7-5fd7-5b89",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E7%B5%95%E5%8F%A5_(%E5%83%A7%E5%BF%97%E5%AE%89)",
+      "name": {
+        "zh": "僧志安",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-5f90-5143-5091": {
+      "titleId": "candidate-song-5f90-5143-5091",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B9%96%E4%B8%8A_(%E5%BE%90%E5%85%83%E5%82%91)",
+      "name": {
+        "zh": "徐元傑",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-6731-6dd1-771f": {
+      "titleId": "candidate-song-6731-6dd1-771f",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%90%BD%E8%8A%B1_(%E6%9C%B1%E6%B7%91%E7%9C%9F)",
+      "name": {
+        "zh": "朱淑真",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-738b-4ee4": {
+      "titleId": "candidate-song-738b-4ee4",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E9%80%81%E6%98%A5_(%E7%8E%8B%E4%BB%A4)",
+      "name": {
+        "zh": "王令",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-694a-6a38": {
+      "titleId": "candidate-song-694a-6a38",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%83%E5%A4%95_(%E6%A5%8A%E6%A8%B8)",
+      "name": {
+        "zh": "楊樸",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-738b-6dc7": {
+      "titleId": "candidate-song-738b-6dc7",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A2%85_(%E7%8E%8B%E6%B7%87)",
+      "name": {
+        "zh": "王淇",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-767d-7389-87fe": {
+      "titleId": "candidate-song-767d-7389-87fe",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%97%A9%E6%98%A5_(%E7%99%BD%E7%8E%89%E8%9F%BE)",
+      "name": {
+        "zh": "白玉蟾",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-5442-5927-81e8": {
+      "titleId": "candidate-song-5442-5927-81e8",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E7%A6%AE%EF%BC%88%E5%91%82%E5%A4%A7%E8%87%A8%EF%BC%89",
+      "name": {
+        "zh": "呂大臨",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-694a-842c-91cc": {
+      "titleId": "candidate-song-694a-842c-91cc",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E9%87%8E%E8%8F%8A_(%E6%A5%8A%E8%90%AC%E9%87%8C)",
+      "name": {
+        "zh": "楊萬里",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-738b-5b89-77f3": {
+      "titleId": "candidate-song-738b-5b89-77f3",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%A9%A0%E9%A2%A8_(%E7%8E%8B%E5%AE%89%E7%9F%B3)",
+      "name": {
+        "zh": "王安石",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-5f90-968e": {
+      "titleId": "candidate-ming-5f90-968e",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E7%A7%8B%E6%87%B7_(%E5%BE%90%E9%9A%8E)",
+      "name": {
+        "zh": "徐階",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-6b66-884d": {
+      "titleId": "candidate-song-6b66-884d",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AE%AE%E8%A9%9E_(%E6%AD%A6%E8%A1%8D)",
+      "name": {
+        "zh": "武衍",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-6731-4e4b-745c": {
+      "titleId": "candidate-ming-6731-4e4b-745c",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%AB%E8%88%88_(%E6%9C%B1%E4%B9%8B%E7%91%9C)",
+      "name": {
+        "zh": "朱之瑜",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-590f-5b8c-6df3": {
+      "titleId": "candidate-ming-590f-5b8c-6df3",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8D%B3%E4%BA%8B_(%E5%A4%8F%E5%AE%8C%E6%B7%B3)",
+      "name": {
+        "zh": "夏完淳",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-5b8b-b7-9673-8944": {
+      "titleId": "candidate-song-5b8b-b7-9673-8944",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E7%80%91%E5%B8%83%EF%BC%88%E5%AE%8B%C2%B7%E9%99%B3%E8%A5%84%EF%BC%89",
+      "name": {
+        "zh": "宋·陳襄",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-9673-8944": {
+      "titleId": "candidate-song-9673-8944",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%81%B6%E6%9B%B8_(%E9%99%B3%E8%A5%84)",
+      "name": {
+        "zh": "陳襄",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-738b-742a": {
+      "titleId": "candidate-song-738b-742a",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%A9%A0%E5%8F%B2_(%E7%8E%8B%E7%90%AA)",
+      "name": {
+        "zh": "王琪",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-5289-9438": {
+      "titleId": "candidate-ming-5289-9438",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E7%B5%95%E5%91%BD%E8%A9%A9_(%E5%8A%89%E9%90%B8)",
+      "name": {
+        "zh": "劉鐸",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-5289-6dd1": {
+      "titleId": "candidate-ming-5289-6dd1",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E7%A7%8B%E6%80%A8_(%E5%8A%89%E6%B7%91)",
+      "name": {
+        "zh": "劉淑",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-738b-7aef-6dd1": {
+      "titleId": "candidate-ming-738b-7aef-6dd1",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%82%B2%E6%86%A4%E8%A9%A9_(%E7%8E%8B%E7%AB%AF%E6%B7%91)",
+      "name": {
+        "zh": "王端淑",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-5468-74ca": {
+      "titleId": "candidate-ming-5468-74ca",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%84%9F%E8%88%88_(%E5%91%A8%E7%93%8A)",
+      "name": {
+        "zh": "周瓊",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-5433-742a": {
+      "titleId": "candidate-ming-5433-742a",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%9D%91%E5%B1%85_(%E5%90%B3%E7%90%AA)",
+      "name": {
+        "zh": "吳琪",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-8881-5f64-82b3": {
+      "titleId": "candidate-ming-8881-5f64-82b3",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B9%9D%E6%97%A5_(%E8%A2%81%E5%BD%A4%E8%8A%B3)",
+      "name": {
+        "zh": "袁彤芳",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-7fc1-5377": {
+      "titleId": "candidate-song-7fc1-5377",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%A5%E9%9B%AA_(%E7%BF%81%E5%8D%B7)",
+      "name": {
+        "zh": "翁卷",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-8d99-5e2b-79c0": {
+      "titleId": "candidate-song-8d99-5e2b-79c0",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E7%A7%8B%E8%89%B2_(%E8%B6%99%E5%B8%AB%E7%A7%80)",
+      "name": {
+        "zh": "趙師秀",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-5f90-7167": {
+      "titleId": "candidate-song-5f90-7167",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%87%AA%E5%90%9B%E4%B9%8B%E5%87%BA%E7%9F%A3_(%E5%BE%90%E7%85%A7)",
+      "name": {
+        "zh": "徐照",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-859b-5e2b-8463": {
+      "titleId": "candidate-song-859b-5e2b-8463",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E7%A7%8B%E9%A2%A8_(%E8%96%9B%E5%B8%AB%E8%91%A3)",
+      "name": {
+        "zh": "薛師董",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-5f90-74a3": {
+      "titleId": "candidate-song-5f90-74a3",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B9%98%E4%B8%AD_(%E5%BE%90%E7%92%A3)",
+      "name": {
+        "zh": "徐璣",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-9673-5085-826f": {
+      "titleId": "candidate-song-9673-5085-826f",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E9%81%8A%E7%99%BD%E7%9F%B3%E5%B7%96_(%E9%99%B3%E5%82%85%E8%89%AF)",
+      "name": {
+        "zh": "陳傅良",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-845b-8d77-8015": {
+      "titleId": "candidate-song-845b-8d77-8015",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A8%93%E4%B8%8A_(%E8%91%9B%E8%B5%B7%E8%80%95)",
+      "name": {
+        "zh": "葛起耕",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-6234-654f": {
+      "titleId": "candidate-song-6234-654f",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%A8%93%E4%B8%8A_(%E6%88%B4%E6%95%8F)",
+      "name": {
+        "zh": "戴敏",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-6c88-660e-81e3": {
+      "titleId": "candidate-ming-6c88-660e-81e3",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%B0%8B%E5%83%A7_(%E6%B2%88%E6%98%8E%E8%87%A3)",
+      "name": {
+        "zh": "沈明臣",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-9127-6df1": {
+      "titleId": "candidate-song-9127-6df1",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%A4%A2%E5%9B%9E_(%E9%84%A7%E6%B7%B1)",
+      "name": {
+        "zh": "鄧深",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-5289-514b-838a": {
+      "titleId": "candidate-song-5289-514b-838a",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%A4%A2%E5%9B%9E_(%E5%8A%89%E5%85%8B%E8%8E%8A)",
+      "name": {
+        "zh": "劉克莊",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-6797-666f-7199": {
+      "titleId": "candidate-song-6797-666f-7199",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%A4%A2%E5%9B%9E_(%E6%9E%97%E6%99%AF%E7%86%99)",
+      "name": {
+        "zh": "林景熙",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-7f85-8207-4e4b": {
+      "titleId": "candidate-song-7f85-8207-4e4b",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%A4%A2%E8%BF%B4_(%E7%BE%85%E8%88%87%E4%B9%8B)",
+      "name": {
+        "zh": "羅與之",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-65bd-6a1e": {
+      "titleId": "candidate-song-65bd-6a1e",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%A4%A2%E5%9B%9E_(%E6%96%BD%E6%A8%9E)",
+      "name": {
+        "zh": "施樞",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-8d99-6c5d-9429": {
+      "titleId": "candidate-song-8d99-6c5d-9429",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%A4%A2%E5%9B%9E_(%E8%B6%99%E6%B1%9D%E9%90%A9)",
+      "name": {
+        "zh": "趙汝鐩",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-8d99-5b5f-5805": {
+      "titleId": "candidate-song-8d99-5b5f-5805",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%A4%A2%E5%9B%9E_(%E8%B6%99%E5%AD%9F%E5%A0%85)",
+      "name": {
+        "zh": "趙孟堅",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-8212-5dbd-7965": {
+      "titleId": "candidate-song-8212-5dbd-7965",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%A4%A2%E5%9B%9E_(%E8%88%92%E5%B2%B3%E7%A5%A5)",
+      "name": {
+        "zh": "舒嶽祥",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-91cb-6587-73e6": {
+      "titleId": "candidate-song-91cb-6587-73e6",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%A4%A2%E5%9B%9E_(%E9%87%8B%E6%96%87%E7%8F%A6)",
+      "name": {
+        "zh": "釋文珦",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-859b-5b63-5ba3": {
+      "titleId": "candidate-song-859b-5b63-5ba3",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%A4%A2%E5%9B%9E%E4%BA%8C%E9%A6%96_(%E8%96%9B%E5%AD%A3%E5%AE%A3)",
+      "name": {
+        "zh": "薛季宣",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-yuan-543e-4e18-884d": {
+      "titleId": "candidate-yuan-543e-4e18-884d",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%A4%A2%E5%9B%9E_(%E5%90%BE%E4%B8%98%E8%A1%8D)",
+      "name": {
+        "zh": "吾丘衍",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "yuan",
+        "label": "元",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-yuan-8036-5f8b-9444": {
+      "titleId": "candidate-yuan-8036-5f8b-9444",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%A4%A2%E5%BB%BB_(%E8%80%B6%E5%BE%8B%E9%91%84)",
+      "name": {
+        "zh": "耶律鑄",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "yuan",
+        "label": "元",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-6bb7-594e": {
+      "titleId": "candidate-ming-6bb7-594e",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%A4%A2%E5%9B%9E_(%E6%AE%B7%E5%A5%8E)",
+      "name": {
+        "zh": "殷奎",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-7d00-9035-5b9c": {
+      "titleId": "candidate-ming-7d00-9035-5b9c",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%A4%A2%E5%9B%9E%E4%BD%9C_(%E7%B4%80%E9%80%B5%E5%AE%9C)",
+      "name": {
+        "zh": "紀逵宜",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-738b-708e": {
+      "titleId": "candidate-song-738b-708e",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E9%96%80%E6%9C%89%E8%BB%8A%E9%A6%AC%E5%AE%A2_(%E7%8E%8B%E7%82%8E)",
+      "name": {
+        "zh": "王炎",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-5c48-5927-5747": {
+      "titleId": "candidate-ming-5c48-5927-5747",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%BD%B3%E4%BA%BA_(%E5%B1%88%E5%A4%A7%E5%9D%87)",
+      "name": {
+        "zh": "屈大均",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-9ec3-6dee": {
+      "titleId": "candidate-ming-9ec3-6dee",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%BD%B3%E4%BA%BA_(%E9%BB%83%E6%B7%AE)",
+      "name": {
+        "zh": "黃淮",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-91cb-51fd-53ef": {
+      "titleId": "candidate-ming-91cb-51fd-53ef",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%BD%B3%E4%BA%BA_(%E9%87%8B%E5%87%BD%E5%8F%AF)",
+      "name": {
+        "zh": "釋函可",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-5f90-71a5": {
+      "titleId": "candidate-ming-5f90-71a5",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%81_(%E5%BE%90%E7%86%A5)",
+      "name": {
+        "zh": "徐熥",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-738b-4e16-8c9e": {
+      "titleId": "candidate-ming-738b-4e16-8c9e",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E9%8A%85%E9%9B%80%E4%BC%8E_(%E7%8E%8B%E4%B8%96%E8%B2%9E)",
+      "name": {
+        "zh": "王世貞",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-738b-7acb-9053": {
+      "titleId": "candidate-ming-738b-7acb-9053",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E9%8A%85%E9%9B%80%E4%BC%8E%E4%BA%8C%E9%A6%96_(%E7%8E%8B%E7%AB%8B%E9%81%93)",
+      "name": {
+        "zh": "王立道",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-674e-5922-967d": {
+      "titleId": "candidate-ming-674e-5922-967d",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E9%8A%85%E9%9B%80%E4%BC%8E_(%E6%9D%8E%E5%A4%A2%E9%99%BD)",
+      "name": {
+        "zh": "李夢陽",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-6c6a-5ee3-6d0b": {
+      "titleId": "candidate-ming-6c6a-5ee3-6d0b",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%93%AC%E9%8A%85%E9%9B%80%E4%BC%8E_(%E6%B1%AA%E5%BB%A3%E6%B4%8B)",
+      "name": {
+        "zh": "汪廣洋",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-80e1-61c9-9e9f": {
+      "titleId": "candidate-ming-80e1-61c9-9e9f",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E9%8A%85%E9%9B%80%E4%BC%8E_(%E8%83%A1%E6%87%89%E9%BA%9F)",
+      "name": {
+        "zh": "胡應麟",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-5f6d-5b6b-8cbd": {
+      "titleId": "candidate-ming-5f6d-5b6b-8cbd",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E9%8A%85%E9%9B%80%E4%BC%8E_(%E5%BD%AD%E5%AD%AB%E8%B2%BD)",
+      "name": {
+        "zh": "彭孫貽",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-5289-5b50-7fec": {
+      "titleId": "candidate-song-5289-5b50-7fec",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%80%81%E8%BE%B2_(%E5%8A%89%E5%AD%90%E7%BF%AC)",
+      "name": {
+        "zh": "劉子翬",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-5f90-4e2d-884c": {
+      "titleId": "candidate-ming-5f90-4e2d-884c",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E7%8E%89%E5%A5%B3%E6%BD%AD_(%E5%BE%90%E4%B8%AD%E8%A1%8C)",
+      "name": {
+        "zh": "徐中行",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-6234-9be8": {
+      "titleId": "candidate-ming-6234-9be8",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%A5%E9%81%8A_(%E6%88%B4%E9%AF%A8)",
+      "name": {
+        "zh": "戴鯨",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-yuan-6234-9c32": {
+      "titleId": "candidate-yuan-6234-9c32",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E7%99%BD%E8%93%AE%E6%B1%A0_(%E6%88%B4%E9%B0%B2)",
+      "name": {
+        "zh": "戴鰲",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "yuan",
+        "label": "元",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-6234-4c80": {
+      "titleId": "candidate-ming-6234-4c80",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B1%9F%E5%A4%9C_(%E6%88%B4%E4%B2%80)",
+      "name": {
+        "zh": "戴䲀",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-5289-93ae": {
+      "titleId": "candidate-song-5289-93ae",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B4%88%E9%9A%B1%E8%80%85_(%E5%8A%89%E9%8E%AE)",
+      "name": {
+        "zh": "劉鎮",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-5433-60df-4fe1": {
+      "titleId": "candidate-song-5433-60df-4fe1",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B4%88%E9%9A%B1%E8%80%85_(%E5%90%B3%E6%83%9F%E4%BF%A1)",
+      "name": {
+        "zh": "吳惟信",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-5b8b-81ea-905c": {
+      "titleId": "candidate-song-5b8b-81ea-905c",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B4%88%E9%9A%B1%E8%80%85_(%E5%AE%8B%E8%87%AA%E9%81%9C)",
+      "name": {
+        "zh": "宋自遜",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-5468-6587-749e": {
+      "titleId": "candidate-song-5468-6587-749e",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B4%88%E9%9A%B1%E8%80%85_(%E5%91%A8%E6%96%87%E7%92%9E)",
+      "name": {
+        "zh": "周文璞",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-84b2-58fd-5bac": {
+      "titleId": "candidate-song-84b2-58fd-5bac",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B4%88%E9%9A%B1%E8%80%85_(%E8%92%B2%E5%A3%BD%E5%AE%AC)",
+      "name": {
+        "zh": "蒲壽宬",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-yuan-5584-4f4f": {
+      "titleId": "candidate-yuan-5584-4f4f",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B4%88%E9%9A%B1%E8%80%85_(%E5%96%84%E4%BD%8F)",
+      "name": {
+        "zh": "善住",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "yuan",
+        "label": "元",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-674e-5ef6-8208": {
+      "titleId": "candidate-ming-674e-5ef6-8208",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B4%88%E9%9A%B1%E8%80%85_(%E6%9D%8E%E5%BB%B6%E8%88%88)",
+      "name": {
+        "zh": "李延興",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-85cd-667a": {
+      "titleId": "candidate-ming-85cd-667a",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B4%88%E9%9A%B1%E8%80%85_(%E8%97%8D%E6%99%BA)",
+      "name": {
+        "zh": "藍智",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-912d-5b78-9187": {
+      "titleId": "candidate-ming-912d-5b78-9187",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B4%88%E9%9A%B1%E8%80%85_(%E9%84%AD%E5%AD%B8%E9%86%87)",
+      "name": {
+        "zh": "鄭學醇",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-76db-9cf4-4e16": {
+      "titleId": "candidate-ming-76db-9cf4-4e16",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%B4%88%E9%9A%B1%E8%80%85_(%E7%9B%9B%E9%B3%B4%E4%B8%96)",
+      "name": {
+        "zh": "盛鳴世",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-6641-6c96-4e4b": {
+      "titleId": "candidate-song-6641-6c96-4e4b",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%A4%9C%E8%A1%8C_(%E6%99%81%E6%B2%96%E4%B9%8B)",
+      "name": {
+        "zh": "晁沖之",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-9b4f-5141-4e2d": {
+      "titleId": "candidate-ming-9b4f-5141-4e2d",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8E%BB%E5%A9%A6%E8%A9%9E%E4%B8%89%E9%A6%96_(%E9%AD%8F%E5%85%81%E4%B8%AD)",
+      "name": {
+        "zh": "魏允中",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-80e1-594e": {
+      "titleId": "candidate-ming-80e1-594e",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8E%BB%E5%A9%A6%E8%A9%9E%E4%B8%89%E9%A6%96_(%E8%83%A1%E5%A5%8E)",
+      "name": {
+        "zh": "胡奎",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-4ef2-4e26": {
+      "titleId": "candidate-song-4ef2-4e26",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%A9%A0%E7%AB%B9_(%E4%BB%B2%E5%B9%B6)",
+      "name": {
+        "zh": "仲並",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-5289-624d-90b5": {
+      "titleId": "candidate-song-5289-624d-90b5",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%A9%A0%E7%AB%B9_(%E5%8A%89%E6%89%8D%E9%82%B5)",
+      "name": {
+        "zh": "劉才邵",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-5b8b-5ea0": {
+      "titleId": "candidate-song-5b8b-5ea0",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%A9%A0%E7%AB%B9_(%E5%AE%8B%E5%BA%A0)",
+      "name": {
+        "zh": "宋庠",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-674e-89af": {
+      "titleId": "candidate-song-674e-89af",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%A9%A0%E7%AB%B9_(%E6%9D%8E%E8%A6%AF)",
+      "name": {
+        "zh": "李覯",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-8607-8f4d": {
+      "titleId": "candidate-song-8607-8f4d",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%A9%A0%E7%AB%B9%E4%BA%8C%E9%A6%96_(%E8%98%87%E8%BD%8D)",
+      "name": {
+        "zh": "蘇轍",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-9112-6d69": {
+      "titleId": "candidate-song-9112-6d69",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%A9%A0%E7%AB%B9_(%E9%84%92%E6%B5%A9)",
+      "name": {
+        "zh": "鄒浩",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-5f90-5ead-7b60": {
+      "titleId": "candidate-song-5f90-5ead-7b60",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%A9%A0%E7%AB%B9_(%E5%BE%90%E5%BA%AD%E7%AD%A0)",
+      "name": {
+        "zh": "徐庭筠",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-8881-71ee": {
+      "titleId": "candidate-song-8881-71ee",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%A9%A0%E7%AB%B9%E4%BA%8C%E9%A6%96_(%E8%A2%81%E7%87%AE)",
+      "name": {
+        "zh": "袁燮",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-8607-6cc2": {
+      "titleId": "candidate-song-8607-6cc2",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%A5%E6%AD%8C_(%E8%98%87%E6%B3%82)",
+      "name": {
+        "zh": "蘇泂",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-516c-9f10": {
+      "titleId": "candidate-ming-516c-9f10",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E7%A7%8B%E6%AD%8C_(%E5%85%AC%E9%BC%90)",
+      "name": {
+        "zh": "公鼐",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-65b9-5b5f-5f0f": {
+      "titleId": "candidate-ming-65b9-5b5f-5f0f",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E7%A7%8B%E6%AD%8C_(%E6%96%B9%E5%AD%9F%E5%BC%8F)",
+      "name": {
+        "zh": "方孟式",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-6c5f-6e90": {
+      "titleId": "candidate-ming-6c5f-6e90",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B4%9E%E6%88%BF%E6%9B%B2_(%E6%B1%9F%E6%BA%90)",
+      "name": {
+        "zh": "江源",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-5f35-55ac": {
+      "titleId": "candidate-ming-5f35-55ac",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B4%9E%E6%88%BF%E6%9B%B2_(%E5%BC%B5%E5%96%AC)",
+      "name": {
+        "zh": "張喬",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-5f35-74a8": {
+      "titleId": "candidate-ming-5f35-74a8",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B4%9E%E6%88%BF%E6%9B%B2_(%E5%BC%B5%E7%92%A8)",
+      "name": {
+        "zh": "張璨",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-5f90-5eb8": {
+      "titleId": "candidate-ming-5f90-5eb8",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B4%9E%E6%88%BF%E6%9B%B2_(%E5%BE%90%E5%BA%B8)",
+      "name": {
+        "zh": "徐庸",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-9ad8-555f": {
+      "titleId": "candidate-ming-9ad8-555f",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B4%9E%E6%88%BF%E6%9B%B2_(%E9%AB%98%E5%95%9F)",
+      "name": {
+        "zh": "高啟",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-5510-82b3-7b2c": {
+      "titleId": "candidate-ming-5510-82b3-7b2c",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B4%9E%E6%88%BF%E6%9B%B2_(%E5%94%90%E8%8A%B3%E7%AC%AC)",
+      "name": {
+        "zh": "唐芳第",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-5b54-5e73-4ef2": {
+      "titleId": "candidate-song-5b54-5e73-4ef2",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E9%A6%AC%E4%B8%8A_(%E5%AD%94%E5%B9%B3%E4%BB%B2)",
+      "name": {
+        "zh": "孔平仲",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-912d-525b-4e2d": {
+      "titleId": "candidate-song-912d-525b-4e2d",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E9%A6%AC%E4%B8%8A_(%E9%84%AD%E5%89%9B%E4%B8%AD)",
+      "name": {
+        "zh": "鄭剛中",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-674e-6771-967d": {
+      "titleId": "candidate-ming-674e-6771-967d",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E9%A6%AC%E4%B8%8A_(%E6%9D%8E%E6%9D%B1%E9%99%BD)",
+      "name": {
+        "zh": "李東陽",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-5510-4e4b-6df3": {
+      "titleId": "candidate-ming-5510-4e4b-6df3",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E9%A6%AC%E4%B8%8A_(%E5%94%90%E4%B9%8B%E6%B7%B3)",
+      "name": {
+        "zh": "唐之淳",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-9ec3-5c0a-7d20": {
+      "titleId": "candidate-ming-9ec3-5c0a-7d20",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E9%A6%AC%E4%B8%8A_(%E9%BB%83%E5%B0%8A%E7%B4%A0)",
+      "name": {
+        "zh": "黃尊素",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-yuan-6d2a-7131-7956": {
+      "titleId": "candidate-yuan-6d2a-7131-7956",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%BD%AD%E5%9F%8E%E6%87%B7%E5%8F%A4%E4%BA%8C%E9%A6%96_(%E6%B4%AA%E7%84%B1%E7%A5%96)",
+      "name": {
+        "zh": "洪焱祖",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "yuan",
+        "label": "元",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-yuan-5b8b-8927": {
+      "titleId": "candidate-yuan-5b8b-8927",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%BC%A2%E5%AE%AE%E6%80%A8_(%E5%AE%8B%E8%A4%A7)",
+      "name": {
+        "zh": "宋褧",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "yuan",
+        "label": "元",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-6c6a-5143-91cf": {
+      "titleId": "candidate-song-6c6a-5143-91cf",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%B7%B4%E9%99%B5_(%E6%B1%AA%E5%85%83%E9%87%8F)",
+      "name": {
+        "zh": "汪元量",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-4faf-606a": {
+      "titleId": "candidate-ming-4faf-606a",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%B7%B4%E9%99%B5_(%E4%BE%AF%E6%81%AA)",
+      "name": {
+        "zh": "侯恪",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-4f55-543e-9a36": {
+      "titleId": "candidate-ming-4f55-543e-9a36",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AF%84%E5%BC%9F_(%E4%BD%95%E5%90%BE%E9%A8%B6)",
+      "name": {
+        "zh": "何吾騶",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-694a-8d77-5143": {
+      "titleId": "candidate-ming-694a-8d77-5143",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AF%84%E5%BC%9F_(%E6%A5%8A%E8%B5%B7%E5%85%83)",
+      "name": {
+        "zh": "楊起元",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-90b1-96f2-9704": {
+      "titleId": "candidate-ming-90b1-96f2-9704",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AF%84%E5%BC%9F_(%E9%82%B1%E9%9B%B2%E9%9C%84)",
+      "name": {
+        "zh": "邱雲霄",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-590f-539f-5409": {
+      "titleId": "candidate-ming-590f-539f-5409",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AF%84%E5%BC%9F_(%E5%A4%8F%E5%8E%9F%E5%90%89)",
+      "name": {
+        "zh": "夏原吉",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-6eab-7d14": {
+      "titleId": "candidate-ming-6eab-7d14",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%AF%84%E5%BC%9F_(%E6%BA%AB%E7%B4%94)",
+      "name": {
+        "zh": "溫純",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-4f5a-540d": {
+      "titleId": "candidate-song-4f5a-540d",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E9%A1%8C%E8%91%B5%E8%8A%B1%E8%9B%BA%E8%9D%B6%E5%9C%96%E5%8D%B7_(%E4%BD%9A%E5%90%8D)",
+      "name": {
+        "zh": "佚名",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-yuan-99ae-5b50-632f": {
+      "titleId": "candidate-yuan-99ae-5b50-632f",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E9%A1%8C%E8%91%B5%E8%8A%B1%E8%9B%BA%E8%9D%B6%E5%9C%96%E5%8D%B7_(%E9%A6%AE%E5%AD%90%E6%8C%AF)",
+      "name": {
+        "zh": "馮子振",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "yuan",
+        "label": "元",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-yuan-8d99-5dd6": {
+      "titleId": "candidate-yuan-8d99-5dd6",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E9%A1%8C%E8%91%B5%E8%8A%B1%E8%9B%BA%E8%9D%B6%E5%9C%96%E5%8D%B7_(%E8%B6%99%E5%B7%96)",
+      "name": {
+        "zh": "趙巖",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "yuan",
+        "label": "元",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-yuan-5f35-821c-54a8": {
+      "titleId": "candidate-yuan-5f35-821c-54a8",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E9%A1%8C%E8%92%BC%E9%B7%B9%E7%AB%B9%E6%A2%A7%E5%9C%96_(%E5%BC%B5%E8%88%9C%E5%92%A8)",
+      "name": {
+        "zh": "張舜咨",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "yuan",
+        "label": "元",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-yuan-5289-5d69": {
+      "titleId": "candidate-yuan-5289-5d69",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E9%A1%8C%E8%92%BC%E9%B7%B9%E7%AB%B9%E6%A2%A7%E5%9C%96_(%E5%8A%89%E5%B5%A9)",
+      "name": {
+        "zh": "劉嵩",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "yuan",
+        "label": "元",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-yuan-85a9-9054-9053": {
+      "titleId": "candidate-yuan-85a9-9054-9053",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E9%A1%8C%E8%92%BC%E9%B7%B9%E7%AB%B9%E6%A2%A7%E5%9C%96_(%E8%96%A9%E9%81%94%E9%81%93)",
+      "name": {
+        "zh": "薩達道",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "yuan",
+        "label": "元",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-yuan-9322-9078": {
+      "titleId": "candidate-yuan-9322-9078",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E9%A1%8C%E7%99%BD%E8%93%AE%E5%9C%96%E5%8D%B7_(%E9%8C%A2%E9%81%B8)",
+      "name": {
+        "zh": "錢選",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "yuan",
+        "label": "元",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-5289-7199-795a": {
+      "titleId": "candidate-ming-5289-7199-795a",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E7%B5%95%E5%91%BD%E8%A9%A9%C2%B7%E5%85%B6%E4%B8%80_(%E5%8A%89%E7%86%99%E7%A5%9A)",
+      "name": {
+        "zh": "劉熙祚",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-7d76-547d-8a69": {
+      "titleId": "candidate-ming-7d76-547d-8a69",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E7%B5%95%E5%91%BD%E8%BE%AD%C2%B7%E5%85%B6%E4%BA%8C_(%E7%B5%95%E5%91%BD%E8%A9%A9)",
+      "name": {
+        "zh": "絶命詩",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-5433-7518-4f86": {
+      "titleId": "candidate-ming-5433-7518-4f86",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E7%B5%95%E5%91%BD%E8%A9%A9_(%E5%90%B3%E7%94%98%E4%BE%86)",
+      "name": {
+        "zh": "吳甘來",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-5468-9cf3-7fd4": {
+      "titleId": "candidate-ming-5468-9cf3-7fd4",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E7%B5%95%E5%91%BD%E8%A9%A9_(%E5%91%A8%E9%B3%B3%E7%BF%94)",
+      "name": {
+        "zh": "周鳳翔",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-5289-7406-9806": {
+      "titleId": "candidate-ming-5289-7406-9806",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E7%B5%95%E5%91%BD%E8%A9%A9_(%E5%8A%89%E7%90%86%E9%A0%86)",
+      "name": {
+        "zh": "劉理順",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-9673-826f-8b28": {
+      "titleId": "candidate-ming-9673-826f-8b28",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E7%B5%95%E5%91%BD%E8%A9%A9%C2%B7%E5%85%B6%E4%B8%80_(%E9%99%B3%E8%89%AF%E8%AC%A8)",
+      "name": {
+        "zh": "陳良謨",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-8a31-76f4": {
+      "titleId": "candidate-ming-8a31-76f4",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E7%B5%95%E5%91%BD%E8%A9%A9%C2%B7%E5%85%B6%E4%B8%80_(%E8%A8%B1%E7%9B%B4)",
+      "name": {
+        "zh": "許直",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-674e-90a6-83ef": {
+      "titleId": "candidate-ming-674e-90a6-83ef",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E7%B5%95%E5%91%BD%E8%A9%A9_(%E6%9D%8E%E9%82%A6%E8%8F%AF)",
+      "name": {
+        "zh": "李邦華",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-8303-666f-6587": {
+      "titleId": "candidate-ming-8303-666f-6587",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E7%B5%95%E5%91%BD%E8%A9%A9_(%E8%8C%83%E6%99%AF%E6%96%87)",
+      "name": {
+        "zh": "范景文",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-8d99-862d-82b3": {
+      "titleId": "candidate-ming-8d99-862d-82b3",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E7%B5%95%E5%91%BD%E8%A9%A9_(%E8%B6%99%E8%98%AD%E8%8A%B3)",
+      "name": {
+        "zh": "趙蘭芳",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-5f35-80af-5802": {
+      "titleId": "candidate-ming-5f35-80af-5802",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E7%B5%95%E5%91%BD%E8%A9%A9_(%E5%BC%B5%E8%82%AF%E5%A0%82)",
+      "name": {
+        "zh": "張肯堂",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-9ec3-6bd3-797a": {
+      "titleId": "candidate-ming-9ec3-6bd3-797a",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%B0%8F%E9%81%8A%E4%BB%99%C2%B7%E5%85%B6%E4%B8%80_(%E9%BB%83%E6%AF%93%E7%A5%BA)",
+      "name": {
+        "zh": "黃毓祺",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-8607-5146-4eba": {
+      "titleId": "candidate-ming-8607-5146-4eba",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E7%B5%95%E5%91%BD%E8%A9%A9_(%E8%98%87%E5%85%86%E4%BA%BA)",
+      "name": {
+        "zh": "蘇兆人",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-9ec3-7aef-4f2f": {
+      "titleId": "candidate-ming-9ec3-7aef-4f2f",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E7%B5%95%E5%91%BD%E8%A9%A9_(%E9%BB%83%E7%AB%AF%E4%BC%AF)",
+      "name": {
+        "zh": "黃端伯",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-5433-53ef-57fa": {
+      "titleId": "candidate-ming-5433-53ef-57fa",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E7%B5%95%E5%91%BD%E8%A9%A9_(%E5%90%B3%E5%8F%AF%E5%9F%BA)",
+      "name": {
+        "zh": "吳可基",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-6587-4e58": {
+      "titleId": "candidate-ming-6587-4e58",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E7%B5%95%E5%91%BD%E8%A9%A9_(%E6%96%87%E4%B9%98)",
+      "name": {
+        "zh": "文乘",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-6881-4e8e-6d98": {
+      "titleId": "candidate-ming-6881-4e8e-6d98",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E7%B5%95%E5%91%BD%E8%A9%A9_(%E6%A2%81%E4%BA%8E%E6%B6%98)",
+      "name": {
+        "zh": "梁于涘",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-590f-5141-5f5e": {
+      "titleId": "candidate-ming-590f-5141-5f5e",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E7%B5%95%E5%91%BD%E8%A9%A9_(%E5%A4%8F%E5%85%81%E5%BD%9E)",
+      "name": {
+        "zh": "夏允彞",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-772d-660e-6c38": {
+      "titleId": "candidate-ming-772d-660e-6c38",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E7%B5%95%E5%91%BD%E8%A9%A9_(%E7%9C%AD%E6%98%8E%E6%B0%B8)",
+      "name": {
+        "zh": "眭明永",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-674e-5411-4e2d": {
+      "titleId": "candidate-ming-674e-5411-4e2d",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E7%B5%95%E5%91%BD%E8%A9%A9_(%E6%9D%8E%E5%90%91%E4%B8%AD)",
+      "name": {
+        "zh": "李向中",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-9ece-9042-7403": {
+      "titleId": "candidate-ming-9ece-9042-7403",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%90%8C%E8%81%B2%E6%AD%8C_(%E9%BB%8E%E9%81%82%E7%90%83)",
+      "name": {
+        "zh": "黎遂球",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-59da-5947-80e4": {
+      "titleId": "candidate-ming-59da-5947-80e4",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E7%A7%8B%E5%A4%9C_(%E5%A7%9A%E5%A5%87%E8%83%A4)",
+      "name": {
+        "zh": "姚奇胤",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-ming-9ec3-9053-5468": {
+      "titleId": "candidate-ming-9ec3-9053-5468",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E9%A3%9B%E4%BE%86%E5%B3%B0_(%E9%BB%83%E9%81%93%E5%91%A8)",
+      "name": {
+        "zh": "黃道周",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "ming",
+        "label": "明",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-yuan-6b50-967d-7384": {
+      "titleId": "candidate-yuan-6b50-967d-7384",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E7%99%BB%E5%B2%B3%E9%98%B3%E6%A5%BC_(%E6%AC%A7%E9%98%B3%E7%8E%84)",
+      "name": {
+        "zh": "歐陽玄",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "yuan",
+        "label": "元",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-yuan-738b-5195": {
+      "titleId": "candidate-yuan-738b-5195",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%98%A5%E5%AF%92_(%E7%8E%8B%E5%86%95)",
+      "name": {
+        "zh": "王冕",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "yuan",
+        "label": "元",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-8d99-8543": {
+      "titleId": "candidate-song-8d99-8543",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%81%9E%E8%9B%99_(%E8%B6%99%E8%95%83)",
+      "name": {
+        "zh": "趙蕃",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-song-65b9-4fe1-5b7a": {
+      "titleId": "candidate-song-65b9-4fe1-5b7a",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%99%9E%E5%B1%B1_(%E6%96%B9%E4%BF%A1%E5%AD%BA)",
+      "name": {
+        "zh": "方信孺",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "song",
+        "label": "宋",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
+    },
+    "candidate-yuan-7518-6cf3": {
+      "titleId": "candidate-yuan-7518-6cf3",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B9%96%E4%B8%8A%E4%BA%8C%E9%A6%96%C2%B7%E5%85%B6%E4%BA%8C_(%E7%94%98%E6%B3%B3)",
+      "name": {
+        "zh": "甘泳",
+        "ko": ""
+      },
+      "life": {
+        "birth": null,
+        "death": null,
+        "raw": "",
+        "birthApprox": false,
+        "deathApprox": false
+      },
+      "bioKo": "",
+      "era": {
+        "period": "yuan",
+        "label": "元",
+        "confidence": "source-record",
+        "source": "cn-translation-gemini-cli-v2"
+      },
+      "birthplace": null,
+      "relations": [],
+      "sourceMeta": {
+        "collection": "cn-translation-gemini-cli-v2",
+        "country": "CN",
+        "batch": "song-yuan-ming-auto"
+      }
     }
   },
-  "updatedAt": "2026-04-30T22:01:39.950Z"
+  "updatedAt": "2026-05-01T09:42:46.978Z"
 }
